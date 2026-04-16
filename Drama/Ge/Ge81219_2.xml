@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.ibsen.uio.no/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
+
 <?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
     <teiHeader xml:lang="nob">
@@ -13,11 +8,11 @@
 <title level="s" type="main">Henrik Ibsens skrifter</title>
 <title level="s" type="sub">Diplomatarisk tekstarkiv</title>
 <title level="a" type="main">[Gengangere]</title>
-<title level="a" type="sub">NBO Ms.8&deg; 1219, s. 5-8</title>
+<title level="a" type="sub">NBO Ms.8° 1219, s. 5-8</title>
 <title level="a" type="origYear">[1881]</title>
 <author>[Henrik Ibsen]</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Nina Marie Evensen, Ingvald Aarstein</name></respStmt>
 <respStmt>
 <resp>Kollasjonering og koding</resp>
@@ -41,7 +36,7 @@
         <msIdentifier>
             <settlement>Oslo</settlement>
             <repository>Nasjonalbiblioteket</repository>
-            <idno>NBO Ms.8&deg; 1219:2</idno>
+            <idno>NBO Ms.8° 1219:2</idno>
         </msIdentifier>
         <msContents>
             <msItem>
@@ -59,21 +54,21 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <list>
-<item>Manuskriptet Ms.8 &deg; 1219 består av flere mindre notater som er bundet sammen. Notatene som tilhører Ge (=denne filen) befinner seg på fakss. 5-8, med unntak av andre avsnitt s. 6.</item>
+<item>Manuskriptet Ms.8 ° 1219 består av flere mindre notater som er bundet sammen. Notatene som tilhører Ge (=denne filen) befinner seg på fakss. 5-8, med unntak av andre avsnitt s. 6.</item>
 <item>Flere skriblerier med blyant (tydeliggjøringer i annen hånd): ikke transkribert</item>
 <item>Faks.sidene 5-8 er foliert med sifrene 1-4; folieringen gjort med rød blyant.</item>
 <item>Noe skjødesløs skrift.</item>
 </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-tei2;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding xmlns="http://www.tei-c.org/ns/1.0" type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -125,18 +120,18 @@ Transkripsjon. Kollasjonerte mot faksimile, kodet og validerte. Klart for andrek
 <lb/><fw scribe="h1" type="page" place="top-right">1</fw>
 <div type="notes">
 <lb/><p>Stykket blir som et billed på livet. Troen undergravet,
-<lb/>men det går ikke an at sige det. &lquo;Asylet&rquo; &dash; for andres
-<lb/>skyld. De skal bli lykkelige &dash; men dette er
-<lb/>også kun et skin &dash; Alt er gengang<unclear reason="writing">ere</unclear></p>
+<lb/>men det går ikke an at sige det. «Asylet» – for andres
+<lb/>skyld. De skal bli lykkelige – men dette er
+<lb/>også kun et skin – Alt er gengang<unclear reason="writing">ere</unclear></p>
 <lb/><note type="editor">Kraftig loddrett strek foran de to første av følgende linjer:</note><p>Et hovedpunkt: Hun har været
-<lb/>troende og romantisk &dash; det udviskes
-<lb/>ikke helt ved det senere vundne stand&typHyp;
-<lb/>punkt &dash; &lquo;alt er gengangere&rquo;.</p>
-<lb/><p>Det bringer en Nemesis over afko<choice><expan>mm</expan><abbr>&mbar;</abbr></choice>et
+<lb/>troende og romantisk – det udviskes
+<lb/>ikke helt ved det senere vundne stand‐
+<lb/>punkt – «alt er gengangere».</p>
+<lb/><p>Det bringer en Nemesis over afko<choice><expan>mm</expan><abbr>m̅</abbr></choice>et
 <lb/>at gifte sig af udenfor liggende grunde
 <lb/>selv religiøse eller moralske</p>
 <lb/><p>Hun, det uægte barn, kan reddes ved
-<lb/>at giftes <unclear reason="writing">med</unclear> &dash; sønnen &dash; men så &dash;?</p>
+<lb/>at giftes <unclear reason="writing">med</unclear> – sønnen – men så –?</p>
 <!--<pb ed="faksBase" n="6"/>-->
 <pb rend="[3]v"/>
 <lb/><fw scribe="h1" type="page" place="top-left">2</fw>
@@ -145,7 +140,7 @@ Transkripsjon. Kollasjonerte mot faksimile, kodet og validerte. Klart for andrek
 <lb/>ham; hun var rig. Han havde villet gifte sig med
 <lb/>en pige, som ansåes uværdig. Han fik en søn i
 <lb/>sit ægteskab; så vendte han tilbage til pigen;
-<lb/>en datter. &dash;</p>
+<lb/>en datter. –</p>
 <lb/><gap reason="irrelevant"/><note resp="editor">Her står tekst som inngår i utgavens prosamateriale (P81219_2).</note>
 <!--<pb ed="faksBase" n="7"/>-->
 <pb rend="[4]r"/>
@@ -153,7 +148,7 @@ Transkripsjon. Kollasjonerte mot faksimile, kodet og validerte. Klart for andrek
 <lb/><p>Disse nutidens kvinder, mishandlede som
 <lb/>døttre, som søstre, som hustruer, ikke opdragne
 <lb/>efter deres <app type="alteration"><lem>beg<HIS:hisAdd place="inline">avelse</HIS:hisAdd></lem><HIS:hisRdg>beg<HIS:hisDel rend="overwritten">g</HIS:hisDel></HIS:hisRdg></app>, holdt borte fra deres kald,
-<lb/>frataget deres arv, forbittrede i sindet, &dash; disse er
+<lb/>frataget deres arv, forbittrede i sindet, – disse er
 <lb/>det, som afgi<unclear reason="writing">ver</unclear> mødrene for den unge
 <lb/>generation. Hvad blir følgen?</p>
 <!--<pb ed="faksBase" n="8"/>-->

@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -16,8 +10,8 @@
 <title level="a" type="sub">annen hovedversjon, TarkUiB NT238r (rollehefte, Asgaut)</title>
 <title level="a" type="origYear">[1853]</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Ingrid Falkenberg, Bjørg Harvey, Ellen Nessheim Wiger, Mette Witting</name></respStmt>
 <respStmt>
 <resp>Transkripsjon, februar 2000:</resp>
@@ -64,7 +58,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <list>
@@ -97,8 +91,8 @@
 <item>bindestrek: dobbel</item>
 </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -114,7 +108,7 @@
 </list>
 </tagUsage></namespace>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="rolleheftekoding">Rolleheftene er kodet med «føljetongkoding»: hvert rollehefte kodet som TEXT (i GROUP og TEXT). Tittelbladene kodet som vanlige tittelblad. Opplysninger om skuespillere etc. på tittelbladene er kodet i P-er i en PERFORMANCE-tag. «Avvikene» i forhold til rollenavn/replikk-systemet (se typografibeskrivelsen) er ikke tatt hensyn til i kodingen. I mangel av rolleliste, er id-attributtene plassert i TITLEPART.</tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 </encodingDesc>
 <profileDesc>
@@ -160,7 +154,7 @@ La inn igjen add i forbindelse med overskriving av annen hånd. Sjekket at alle 
 Omkoding av ms-endringer i henhold til revidert kodepraksis. * Forkortet figure til tom tagg. Ny plassering av sideskifts-tagger innført. SGREP-søk for kodeoversikt utført. Sjekket at del dekker kun faktisk kodet tekst. Sjekket tilføyelser. La inn manglende håndliste og samkjørte den med Tone Modalslis (fjernet punkt om hender i typografibeskrivelsen). Koder inn utelatte endringer vha. gjennomgang mot faksimiler. Gjort om brøker i measure til entiteter. Transkribert ordenstall-endelser mer velvillig. Korrektursjekk mot faksimiler må inkl. vurdering av nykodede endringer, hånd osv..</change>
 <change><date>13.09.04</date>
 <name>HG</name><title>NB!</title>
-Rettet træske til traske, rettet feilplassert pkt. innenfor 'stageRole'. Rettelser/påførsler av andre hender er foreløpig ikke kodet inn i fila - Dette bør gjøres (husk bl. annet å legge inn et apparat med at/komma ved &#91;&#93; der er forsilde).</change>
+Rettet træske til traske, rettet feilplassert pkt. innenfor 'stageRole'. Rettelser/påførsler av andre hender er foreløpig ikke kodet inn i fila - Dette bør gjøres (husk bl. annet å legge inn et apparat med at/komma ved [] der er forsilde).</change>
 <change><date>10.11.03</date>
 <name>HG</name><title>Kodeoppdatering</title>
 Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til unclear, fjernet gammel entitetskoding, validert.</change>
@@ -177,7 +171,7 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <text type="drama" xml:lang="dan-nob" rend="handwritten">
 <front>
 <titlePage>
-<pb/><HIS:hisDocImprint><measure>1&half; Ark.</measure></HIS:hisDocImprint>
+<pb/><HIS:hisDocImprint><measure>1½ Ark.</measure></HIS:hisDocImprint>
 <docTitle>
 <lb/><titlePart xml:id="ASGAUT">Asgaut
 <lb/>en gammel Viking
@@ -213,7 +207,7 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <lb/><HIS:hisSp who="ASGAUT"><HIS:spOpener><speaker>Asgaut</speaker>.</HIS:spOpener>
 <lb/><l>Nei vent kun lidt til vi er bagved Skoven</l>
 <lb/><l>Paa Klippeskraaningen mod Havet stod</l>
-<lb/><l>En Rest af Muren da vi drog afsted, &dash;<note>Hånd usikker. Vanskelig å se ut i fra faksimilen.</note></l>
+<lb/><l>En Rest af Muren da vi drog afsted, –<note>Hånd usikker. Vanskelig å se ut i fra faksimilen.</note></l>
 <lb/><l>Den staaer der sagtens endnu, tænker jeg.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l>I har en Drot at hævne, jeg en Fader</l></HIS:hisSp>
@@ -227,7 +221,7 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <lb/><l>Der søgte jeg forgjæves efter Gandalf;</l>
 <lb/><l>Den unge Ørn var fløien over Havet</l>
 <lb/><l>Til Island eller Færø, blev mig sagt.</l>
-<lb/><l>Jeg stævned efter ham, men fandt ham ei, &dash;</l>
+<lb/><l>Jeg stævned efter ham, men fandt ham ei, –</l>
 <lb/><l>Dog Navnet kjendte de saavidt jeg foer;</l>
 <lb/><l>Thi skjøndt hans Drage fløi som Sky for Stormen,</l>
 <lb/><l>Saa fløi hans Rygte dog paa bedre Vinger.</l>
@@ -262,7 +256,7 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <lb/><l>Det er en muggen Tid vi lever i</l>
 <lb/><l>Det bærer ned ad Bakke med vor Tro</l>
 <lb/><l>Og vore Sæder fra den gamle Tid</l>
-<lb/><l>Held mig! Min Nakke luder alt af Ælde, &dash;<note>Komma og tankestrek tilføyd med blyant? Vanskelig å se ut i fra faksimilen.</note></l>
+<lb/><l>Held mig! Min Nakke luder alt af Ælde, –<note>Komma og tankestrek tilføyd med blyant? Vanskelig å se ut i fra faksimilen.</note></l>
 <lb/><l>Mit Øie skal ei skue Nordens Fald.</l>
 <lb/><l>Men Du, Kong Gandalf, Du er ung og stærk;</l>
 <lb/><l>Og hvor Du færdes i det vide Fjerne,</l>
@@ -310,7 +304,7 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <lb/><l part="F">Er vor Høvding feig?</l>
 <lb/><l>Har Kvindens glatte Tunge daaret ham?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
-<lb/><l part="I">Nu ligemeget, jeg har sagt &dash;</l></HIS:hisSp>
+<lb/><l part="I">Nu ligemeget, jeg har sagt –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ASGAUT"><HIS:spOpener><speaker>Asgaut</speaker></HIS:spOpener>
 <lb/><l part="F">Betænk</l>
 <lb/><l>Det gjælder al Din Agt blandt Dine Kjæmper!</l>
@@ -340,7 +334,7 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <lb/><HIS:hisSp who="ASGAUT"><HIS:spOpener><speaker>Asgaut</speaker>.</HIS:spOpener>
 <lb/><l part="M">Saa skaf ham hid!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
-<lb/><l part="I">Da han er høilagt, saa &dash;</l></HIS:hisSp>
+<lb/><l part="I">Da han er høilagt, saa –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ASGAUT"><HIS:spOpener><speaker>Asgaut</speaker></HIS:spOpener>
 <lb/><l part="F">Nei, ligefuldt</l>
 <lb/><l>Den fangne Konning kræver Blod, slaa til!</l></HIS:hisSp>
@@ -356,7 +350,7 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l part="I">Hvad mener han?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ASGAUT"><HIS:spOpener><speaker>Asgaut</speaker>.</HIS:spOpener>
-<lb/><l part="F">Det er Din Agt; Du vil &dash;?</l></HIS:hisSp>
+<lb/><l part="F">Det er Din Agt; Du vil –?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l>Paa røde Vinger farer jeg til Valhal</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ASGAUT"><HIS:spOpener><speaker>Asgaut</speaker>.</HIS:spOpener>
@@ -372,7 +366,7 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <pb/><lb/><fw type="page" place="top-right">11</fw>
 <lb/><l part="I">Vil nok misunde Dig!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker>.</HIS:spOpener>
-<lb/><l part="I">&dash; i Strid om Byttet. </l><HIS:hisStage>(viser Asgaut sin Arm)</HIS:hisStage></HIS:hisSp>
+<lb/><l part="I">– i Strid om Byttet. </l><HIS:hisStage>(viser Asgaut sin Arm)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="ASGAUT"><HIS:spOpener><speaker>Asgaut</speaker></HIS:spOpener>
 <lb/><l part="F">Ja,</l>
 <lb/><l part="I">Ved Thor, det er Kong Rørek!</l></HIS:hisSp>
@@ -388,13 +382,13 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <lb/><l part="M">Hvor gaaer Du?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ASGAUT"><HIS:spOpener><speaker>Asgaut</speaker>.</HIS:spOpener>
 <lb/><l part="F">Nordpaa med min Snekke!</l>
-<pb/><lb/><l>Nu seer jeg klarlig min Tid er forbi &dash;</l>
+<pb/><lb/><l>Nu seer jeg klarlig min Tid er forbi –</l>
 <lb/><l>Og Vikinglivet ogsaa. Jeg vil gaa</l>
 <lb/><l>Til Island, did er end ei Sotten trængt.</l>
 <lb/><HIS:hisStage>(til Blanka)</HIS:hisStage>
 <lb/><l>Du unge Kvinde, tag min Plads hos Drotten</l>
-<lb/><l>Thor kan ei mere &dash; Mjølnir er af Lave,</l>
-<lb/><l>Nu raade Balder gjennem Dig &dash; Farvel!</l>
+<lb/><l>Thor kan ei mere – Mjølnir er af Lave,</l>
+<lb/><l>Nu raade Balder gjennem Dig – Farvel!</l>
 <lb/><HIS:hisStage>(Han gaaer.)</HIS:hisStage></HIS:hisSp>
 </div>
 <lb/><figure type="bar"/>

@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -13,11 +7,11 @@
 <title level="s" type="main">Henrik Ibsens skrifter</title>
 <title level="s" type="sub">Diplomatarisk tekstarkiv</title>
 <title level="a" type="main">Kejser og Galilæer</title>
-<title level="a" type="sub">NBO Ms.4&deg; 1111a, bl. 300&dash;05</title>
-<title level="a" type="origYear">[1871&dash;1873]</title>
+<title level="a" type="sub">NBO Ms.4° 1111a, bl. 300–05</title>
+<title level="a" type="origYear">[1871–1873]</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt>
 <resp>Konvertering fra ekstern transkripsjon til prosjektspesifikk TEI XML</resp>
 <name xml:id="HIS-HB">Hilde Bøe</name>
@@ -45,12 +39,12 @@
 <sourceDesc><p>Denne filen bygger på KG41111_NBO.xml (KG41111_NBO-0208).</p></sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography><p>Manuskriptets grafiske oppsett finnes beskrevet i typografibeskrivelsen i KG41111_NBO.xml.</p>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -121,7 +115,7 @@
 <label xml:id="PERSEREN"/><item>En persisk overløber/Perseren</item>
 </list>
 </tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -152,14 +146,14 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <div type="act" n="1-2">
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>Så vidt er det allerede kommet! <xptr type="synopticView_msVersions" xml:id="KG_7400ms"/>O, er det ikke
-<lb/>som en forbandelse fulgte med magten og her&typHyp;
+<lb/>som en forbandelse fulgte med magten og her‐
 <lb/>redømmet!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>B.</speaker></HIS:spOpener>
-<lb/><p>Så åbenbar en vold, &dash; midt i den store stad. Hvor
+<lb/><p>Så åbenbar en vold, – midt i den store stad. Hvor
 <lb/>er vi, hvor er vi!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>P: <HIS:hisDel rend="overwritten">G</HIS:hisDel>J.</speaker></HIS:spOpener>
 <lb/><p>Ja du må vel spørge, hvor er vi! En kristen
-<lb/>morder, en kristen bolerske, en kristen &dash;</p></HIS:hisSp>
+<lb/>morder, en kristen bolerske, en kristen –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gr:</speaker></HIS:spOpener>
 <lb/><p>Klager forslår ikke. Hvad agter du at gøre.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
@@ -167,64 +161,64 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/>min Gud og takke ham at han tog magtens
 <lb/>fristelse fra mig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gr.</speaker></HIS:spOpener>
-<lb/><p>Godt; men så &dash;</p></HIS:hisSp>
+<lb/><p>Godt; men så –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>Jeg forstår dig ikke &dash;</p></HIS:hisSp>
+<lb/><p>Jeg forstår dig ikke –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gr.</speaker></HIS:spOpener>
 <lb/><p>Så hør; det er ikke nok med mordet på Clematius
 <lb/>Denne uhørte skændselsdåd har slåt ned som en
 <lb/>pest over Antiochia, <HIS:hisAdd place="offline">alt ondt vågner op og myldrer frem<lb/>af sine smuthuller</HIS:hisAdd> kvinder angiver sine mænd,
-<lb/>sønner sine fædre &dash; præsterne sine menighedslem&typHyp;
-<lb/>mer &dash;</p></HIS:hisSp>
+<lb/>sønner sine fædre – præsterne sine menighedslem‐
+<lb/>mer –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener><p>
 <HIS:hisAdd place="margin"><note resp="editor">Tilføyelsen er skrevet i venstre marg.</note>
 <lb/>Ja jeg kan vide det; ingen
-<lb/>er sikkre &dash;</HIS:hisAdd>
-<lb/>O, om jeg kunde flygte til verdens grænse &dash;</p></HIS:hisSp>
+<lb/>er sikkre –</HIS:hisAdd>
+<lb/>O, om jeg kunde flygte til verdens grænse –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>G.</speaker></HIS:spOpener>
-<lb/><p>Bliv; det er din pligt at træde op her &dash;</p></HIS:hisSp>
+<lb/><p>Bliv; det er din pligt at træde op her –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>Jeg &dash; jeg &dash; hvad kræver du &dash;</p></HIS:hisSp>
+<lb/><p>Jeg – jeg – hvad kræver du –</p></HIS:hisSp>
 <pb ed="faksBase" n="70"/>
 <pb n="[300]v"/>
 <lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gr:</speaker></HIS:spOpener>
 <lb/><p>Du er denne blodtørstige Cæsars broder. Han kalder
-<lb/>sig jo en kristen; &dash; træd frem for ham; slå ham
-<lb/>med rædsel &dash;</p></HIS:hisSp>
+<lb/>sig jo en kristen; – træd frem for ham; slå ham
+<lb/>med rædsel –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>Afsindige &dash; hvad tænker du!</p></HIS:hisSp>
+<lb/><p>Afsindige – hvad tænker du!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gr.</speaker></HIS:spOpener>
 <lb/><p>Har du ham kær? Vil du frelse ham?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>Jeg havde <HIS:hisDel rend="overwritten">g</HIS:hisDel>Gallus kær som ingen anden</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gr.</speaker></HIS:spOpener>
-<lb/><p>Du havde &dash;?</p></HIS:hisSp>
+<lb/><p>Du havde –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr J.</speaker></HIS:spOpener>
-<lb/><p>Sålænge han kun var min broder &dash; men nu &dash;
-<lb/>er han ikke Cæsar &dash;! Gregor &dash; Basilius &dash; o &dash;
+<lb/><p>Sålænge han kun var min broder – men nu –
+<lb/>er han ikke Cæsar –! Gregor – Basilius – o –
 <lb/>I dyrebare venner, jeg skælver for mit liv,
-<lb/>jeg ånder i rædsel for Cæsar Gallus &dash; er ikke selv
-<lb/>min tilværelse en fare for ham &dash;</p></HIS:hisSp>
+<lb/>jeg ånder i rædsel for Cæsar Gallus – er ikke selv
+<lb/>min tilværelse en fare for ham –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gr:</speaker></HIS:spOpener>
 <lb/><p>Hvorfor kom du til Athen? Du sørged for at det
 <lb/>spredtes med pomp og bram over landene: Prins
-<lb/>Julian rejser til Athen for at bekæmpe filoso&typHyp;
-<lb/>ferne &dash; for at hævde kristendommens sandhed
-<lb/>imod den hedenske løgn &dash; hvad har du virket?</p></HIS:hisSp>
+<lb/>Julian rejser til Athen for at bekæmpe filoso‐
+<lb/>ferne – for at hævde kristendommens sandhed
+<lb/>imod den hedenske løgn – hvad har du virket?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr J.</speaker></HIS:spOpener>
 <lb/><p>O, det var heller ikke her slaget skulde stå.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gr.</speaker></HIS:spOpener>
-<lb/><p>Nej det var ikke her &dash; ikke med bog imod bog &dash;
-<lb/>ikke i ordets fægtende leg i læresalen &dash; Nej, Ju&typHyp;
+<lb/><p>Nej det var ikke her – ikke med bog imod bog –
+<lb/>ikke i ordets fægtende leg i læresalen – Nej, Ju‐
 <lb/>lian, det er ude i livet du skal møde frem, med
-<lb/>livet til indsats &dash;</p></HIS:hisSp>
+<lb/>livet til indsats –</p></HIS:hisSp>
 <pb ed="faksBase" n="71"/>
 <pb n="[301]r"/>
 <lb/><fw type="leaf" place="top-right" scribe="h1">301</fw>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>Jeg ser det; jeg ser det!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gr.</speaker></HIS:spOpener>
-<lb/><p>Og dog handler du ikke derefter. <HIS:hisAdd place="offline">Hvor meget af dit hører<lb/>Gud til? Hvor meget tør kejseren<lb/>kræve &dash;</HIS:hisAdd> Du spotted
+<lb/><p>Og dog handler du ikke derefter. <HIS:hisAdd place="offline">Hvor meget af dit hører<lb/>Gud til? Hvor meget tør kejseren<lb/>kræve –</HIS:hisAdd> Du spotted
 <lb/>over Libanius. Han vidste alle dyde<unclear reason="writing">rs</unclear> væsen
 <lb/>og natur. Men læren var ham kun en lære.
 <lb/>Er du bedre end Libanius.</p></HIS:hisSp>
@@ -232,14 +226,14 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><p>Hvad vil du jeg skal gøre.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gr.</speaker></HIS:spOpener>
 <lb/><p>Jeg vil du skal træde frem for Cæsar Gallus
-<lb/>lig profeten fordum &dash; jeg vil du skal
-<lb/>træde frem for kejseren selv om det ford<unclear reason="writing">res</unclear> &dash;</p></HIS:hisSp>
+<lb/>lig profeten fordum – jeg vil du skal
+<lb/>træde frem for kejseren selv om det ford<unclear reason="writing">res</unclear> –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>O, du kender ikke kejseren du ved ikke hvad
-<lb/>du siger &dash; Men du, du er en biskops søn &dash;
-<lb/>hvorfor træder du ikke selv frem &dash;</p></HIS:hisSp>
+<lb/>du siger – Men du, du er en biskops søn –
+<lb/>hvorfor træder du ikke selv frem –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gr</speaker></HIS:spOpener>
-<lb/><p>Jeg har min lille kreds, jeg har min slægt &dash;
+<lb/><p>Jeg har min lille kreds, jeg har min slægt –
 <lb/>at værne om, videre går ikke min magt og
 <lb/>min tanke.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker>
@@ -250,49 +244,49 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>Til bacchanal, I venner!</p></HIS:hisSp>
 <lb/><HIS:hisStage>(Gregor går op ad søjlegangen til venstre. En stor
-<lb/>flok af højskolens lærlinge med de ny ankom&typHyp;
+<lb/>flok af højskolens lærlinge med de ny ankom‐
 <lb/>ne mellem sig strømmer ind på<note resp="editor"><q>å</q> mangler diakritisk tegn.</note> torvet.)</HIS:hisStage>
 <HIS:hisAdd place="margin" hand="HI-2"><note resp="editor">Den tilføyde teksten overskriver helt eller delvis den foregående teksten fom. <q>Til bacchanal!</q></note>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>Lad os ikke tale mer om dette. Hvad
-<lb/>var det for andre nyheder. Du sagde on&typHyp;
-<lb/>de nyheder og &dash; hvad var det andre</p></HIS:hisSp>
+<lb/>var det for andre nyheder. Du sagde on‐
+<lb/>de nyheder og – hvad var det andre</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>B</speaker></HIS:spOpener>
 <lb/><p>Det er <HIS:hisDel rend="overstrike">st</HIS:hisDel> sæls<unclear reason="writing">omme</unclear></p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>P. J.</speaker></HIS:spOpener>
-<lb/><p>Hvad &dash;</p></HIS:hisSp>
+<lb/><p>Hvad –</p></HIS:hisSp>
 </HIS:hisAdd>
 <pb ed="faksBase" n="72"/>
 <pb n="[301]v"/>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil:</speaker></HIS:spOpener>
 <lb/><p>Julian, vil du høre mig?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>Se, se; de har ført sine nye venner i bad, &dash; salvet
-<lb/>deres hår &dash;; se hvor de svinger kniplerne; hvor de
+<lb/><p>Se, se; de har ført sine nye venner i bad, – salvet
+<lb/>deres hår –; se hvor de svinger kniplerne; hvor de
 <lb/>hyler og slår i brostenene!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil:</speaker></HIS:spOpener>
-<lb/><p>Kom, kom &dash;</p></HIS:hisSp>
+<lb/><p>Kom, kom –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>Ha, se ham, som de driver nøgen imellem sig &dash;
-<lb/><HIS:hisDel rend="overstrike">f</HIS:hisDel> der kommer danserinder &dash; &dash; ha, ser du hv<gap reason="writing"/></p></HIS:hisSp>
+<lb/><p>Ha, se ham, som de driver nøgen imellem sig –
+<lb/><HIS:hisDel rend="overstrike">f</HIS:hisDel> der kommer danserinder – – ha, ser du hv<gap reason="writing"/></p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil.</speaker></HIS:spOpener>
-<lb/><p>Fy, fy &dash; vend dit øje bort &dash;</p></HIS:hisSp>
+<lb/><p>Fy, fy – vend dit øje bort –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>Sig mig, Basilius, hvorfor var den hedenske synd
-<lb/>så skøn &dash;</p></HIS:hisSp>
+<lb/>så skøn –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil.</speaker></HIS:spOpener>
 <lb/><p><HIS:hisDel rend="overstrike">Jeg siger dig, den va</HIS:hisDel>r <HIS:hisDel rend="overstrike">Det er et bedrag</HIS:hisDel>; Du fejler, ven;
 <lb/>der er digtet og berettet skønt om den; men den
-<lb/>var ikke skøn &dash;</p></HIS:hisSp>
+<lb/>var ikke skøn –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>O, hvad siger du! Var ikke Alkibiades skøn når han
-<lb/>hed af vin, som en ung gud stormed med sine ven&typHyp;
+<lb/>hed af vin, som en ung gud stormed med sine ven‐
 <lb/>ner gennem Athens gader ved nattetid; var han
 <lb/>ikke skøn i sin trods når han hamred på borgernes
-<lb/>døre, råbte på deres <HIS:hisDel rend="overstrike">kv</HIS:hisDel> hustruer og døttre &dash;, mens
-<lb/>kvinderne skalv og ønsked sig intet heller end at &dash;</p></HIS:hisSp>
+<lb/>døre, råbte på deres <HIS:hisDel rend="overstrike">kv</HIS:hisDel> hustruer og døttre –, mens
+<lb/>kvinderne skalv og ønsked sig intet heller end at –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil.</speaker></HIS:spOpener>
-<lb/><p>O, jeg beder dig bønligt &dash; lån mig øre &dash;</p></HIS:hisSp>
+<lb/><p>O, jeg beder dig bønligt – lån mig øre –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>Var ikke Sokrates skøn i symposiet, og Platon og
 <pb ed="faksBase" n="73"/>
@@ -302,49 +296,49 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/>de ting, som hine stympere der borte skulde
 <lb/>sværge sig fra Gud på, om man beskyldte
 <lb/>dem for det. Og tænk dig så Ødipos, Medea,
-<lb/>Leda &dash;</p></HIS:hisSp>
+<lb/>Leda –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil:</speaker></HIS:spOpener>
-<lb/><p>Digt, digt &dash; du blander digt og sandhed sammen &dash;</p></HIS:hisSp>
+<lb/><p>Digt, digt – du blander digt og sandhed sammen –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>Er ikke digtet sandhed i din forestilling. Og se
 <lb/>så til vore hellige skrifter, både de ældre og de
 <lb/>nye. Var synden skøn i Sodoma og Gomorrah?
-<lb/>Og dog var det den samme synd, Basilius, som So&typHyp;
-<lb/>krates selv ikke veg tilbage for &dash; O, når jeg lever
+<lb/>Og dog var det den samme synd, Basilius, som So‐
+<lb/>krates selv ikke veg tilbage for – O, når jeg lever
 <lb/>dette liv i storm og sværm, tænker jeg tidt
 <lb/>på om sandheden er skønhedens fiende.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>B.</speaker></HIS:spOpener>
-<lb/><p>Og i denne stund kan du kræve skønhed, &dash; efter
-<lb/>det, som <HIS:hisDel rend="overwritten">n</HIS:hisDel>du nys har hørt &dash;</p></HIS:hisSp>
+<lb/><p>Og i denne stund kan du kræve skønhed, – efter
+<lb/>det, som <HIS:hisDel rend="overwritten">n</HIS:hisDel>du nys har hørt –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>Ikke et ord mere om <app type="alteration"><lem><HIS:hisAdd place="offline">hine rædsler</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">de ting</HIS:hisDel></HIS:hisRdg></app>; <app type="alteration"><lem><HIS:hisAdd place="offline">Alt det fra Antiochia</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">de</HIS:hisDel>t</HIS:hisRdg></app> vil vi ryste
-<lb/>af os. Sig mig, hvad skriver <HIS:hisDel rend="overwritten">d</HIS:hisDel>Makrina mere &dash;
-<lb/>&dash; det var noget andet &dash; jeg syntes du sagde &dash; hvad
+<lb/>af os. Sig mig, hvad skriver <HIS:hisDel rend="overwritten">d</HIS:hisDel>Makrina mere –
+<lb/>– det var noget andet – jeg syntes du sagde – hvad
 <lb/>kaldte du de øvrige tidender?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil:</speaker></HIS:spOpener>
 <lb/><p>Sælsomme.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>Ja, ja; hvad var det?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil:</speaker></HIS:spOpener>
-<lb/><p>Hun skriver om Maximus i Efesus &dash;</p></HIS:hisSp>
+<lb/><p>Hun skriver om Maximus i Efesus –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>Mystikeren!</p></HIS:hisSp>
 <pb ed="faksBase" n="74"/>
 <pb n="[302]v"/>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil:</speaker></HIS:spOpener>
 <lb/><p>Ja; hele Asien er i gæring. Maximus nævnes på alles
-<lb/>læber. Enten er han en bedrager, eller han har en dæ&typHyp;
-<lb/>mon; ingen kan forklare de underlige gerninger &dash;</p></HIS:hisSp>
+<lb/>læber. Enten er han en bedrager, eller han har en dæ‐
+<lb/>mon; ingen kan forklare de underlige gerninger –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>Mere, mere, jeg beder dig &dash;</p></HIS:hisSp>
+<lb/><p>Mere, mere, jeg beder dig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil.</speaker></HIS:spOpener>
 <lb/><p>Der er ikke mere om ham. Hun føler hans brøde som
-<lb/>et ansvar, siger hun, thi han er et medmenneske &dash;</p></HIS:hisSp>
+<lb/>et ansvar, siger hun, thi han er et medmenneske –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>Ja dette med ansvar &dash; det er noget som jeg &dash; O, Basilius
-<lb/>hun <app type="alteration"><lem><HIS:hisAdd place="offline">må være</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">er</HIS:hisDel></HIS:hisRdg></app> en skelden kvinde, din søster &dash;</p></HIS:hisSp>
+<lb/><p>Ja dette med ansvar – det er noget som jeg – O, Basilius
+<lb/>hun <app type="alteration"><lem><HIS:hisAdd place="offline">må være</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">er</HIS:hisDel></HIS:hisRdg></app> en skelden kvinde, din søster –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil.</speaker></HIS:spOpener>
-<lb/><p>Ja, i sandhed, det er hun &dash;</p></HIS:hisSp>
+<lb/><p>Ja, i sandhed, det er hun –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>Hendes breve har været som om der bares digte v<HIS:hisDel rend="overstrike"><gap/></HIS:hisDel> med
 <lb/>vinden til mig langvejs fr<HIS:clarification place="inline">a</HIS:clarification>. Sig mig, står endnu
@@ -353,15 +347,15 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><p>Den tanke står fast.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>Hun som alle gaver er drysset ned over. Hun, som jo er
-<lb/>skøn, ung &dash; som har rigdom og skelden kundskab &dash;
-<lb/>Hvor jeg brænder efter engang at se hende &dash; Og
-<lb/>hun vil ud i ensomheden &dash;</p></HIS:hisSp>
+<lb/>skøn, ung – som har rigdom og skelden kundskab –
+<lb/>Hvor jeg brænder efter engang at se hende – Og
+<lb/>hun vil ud i ensomheden –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil:</speaker></HIS:spOpener>
-<lb/><p>Jeg har jo fortalt dig &dash; hendes brudgom døde &dash;</p></HIS:hisSp>
+<lb/><p>Jeg har jo fortalt dig – hendes brudgom døde –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>En brudgom hun aldrig har kendt; en brudgom
 <lb/>hendes fader gav hende mens hun endnu var
-<lb/>barn &dash;</p></HIS:hisSp>
+<lb/>barn –</p></HIS:hisSp>
 <pb ed="faksBase" n="75"/>
 <pb n="[303]r"/>
 <lb/><fw type="leaf" place="top-right" scribe="h1">303</fw>
@@ -369,89 +363,89 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><p>Hun kalder ham sin husbond, hvem hun pligter at
 <lb/>møde ren.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>Denne dragende magt mod ensomheden &dash;. Når du skriver
-<lb/>hende til, kan du fortælle at også jeg &dash;</p></HIS:hisSp>
+<lb/><p>Denne dragende magt mod ensomheden –. Når du skriver
+<lb/>hende til, kan du fortælle at også jeg –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil.</speaker></HIS:spOpener>
-<lb/><p>Hun ved det, Julian; &dash; men hun tror det ikke, &dash;</p></HIS:hisSp>
+<lb/><p>Hun ved det, Julian; – men hun tror det ikke, –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>Hvorfor ikke <HIS:hisDel rend="overstrike">j</HIS:hisDel> <sic>had</sic> siger <HIS:hisDel rend="overwritten">d</HIS:hisDel>hun &dash;</p></HIS:hisSp>
+<lb/><p>Hvorfor ikke <HIS:hisDel rend="overstrike">j</HIS:hisDel> <sic>had</sic> siger <HIS:hisDel rend="overwritten">d</HIS:hisDel>hun –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil.</speaker></HIS:spOpener>
-<lb/><p>Jeg beder dig, ven, forskån mig &dash;</p></HIS:hisSp>
+<lb/><p>Jeg beder dig, ven, forskån mig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr: J.</speaker></HIS:spOpener>
 <lb/><p>Har du mig kær, så dølger du ikke et ord af hvad hun
-<lb/>skriver &dash;</p></HIS:hisSp>
+<lb/>skriver –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil.</speaker></HIS:spOpener>
-<lb/><p>Du vil det; læs &dash; det begynder her &dash;</p></HIS:hisSp>
+<lb/><p>Du vil det; læs – det begynder her –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker>
 <lb/><HIS:hisDel rend="overstrike"><gap/></HIS:hisDel><HIS:hisStage>(læser)</HIS:hisStage></HIS:spOpener>
-<lb/><p>&lquo;Hver gang du skriver om din ven, den kejserlige prins,
-<lb/>fylder det mit sind med en stor og strålende glæde &dash; &dash;&rquo;
-<lb/>O, <sic>Basilus</sic> &dash; jeg beder dig, læs du videre &dash;</p></HIS:hisSp>
+<lb/><p>«Hver gang du skriver om din ven, den kejserlige prins,
+<lb/>fylder det mit sind med en stor og strålende glæde – –»
+<lb/>O, <sic>Basilus</sic> – jeg beder dig, læs du videre –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil:</speaker></HIS:spOpener>
 <lb/><HIS:hisStage>(læser:)</HIS:hisStage>
 <lb/><p>Din fortælling om al den tillidsfulde vished, hvormed
 <lb/>han kom, var mig som et billed fra de gamle
 <lb/>skrifters tid; ja, jeg tror han er den <HIS:hisDel rend="overstrike">y</HIS:hisDel> nye David,
 <lb/>som skal fælde Philisternes kæmpe; Gud være
-<lb/>over ham, i striden og alle dage &dash; &dash;&rquo;</p></HIS:hisSp>
+<lb/>over ham, i striden og alle dage – –»</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr: J.</speaker></HIS:spOpener>
 <lb/><p>Lad det være nok. Hun også! Hvad vil I af mig?
 <pb ed="faksBase" n="76"/>
 <pb n="[303]v"/>
-<lb/>Hvad er det I alle kræver som med en mund &dash; &dash;</p></HIS:hisSp>
+<lb/>Hvad er det I alle kræver som med en mund – –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil.</speaker></HIS:spOpener>
-<lb/><p>Ja, jeg ser det, det var en drøm &dash;</p></HIS:hisSp>
+<lb/><p>Ja, jeg ser det, det var en drøm –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>Giv hid &dash; lad mig se &dash; &lquo;Gud være over ham i striden
-<lb/>og alle dage &dash;&rquo; O, Basilius &dash; om jeg kunde; men jeg føler
+<lb/><p>Giv hid – lad mig se – «Gud være over ham i striden
+<lb/>og alle dage –» O, Basilius – om jeg kunde; men jeg føler
 <lb/>mig som hin Dædalus i havet; en svimlende højde
-<lb/>og et svælgende dyb &dash; Hvor er kristendommen? Er den
+<lb/>og et svælgende dyb – Hvor er kristendommen? Er den
 <lb/>hos kejseren og hans slægt. Deres gerninger skriger nej,
-<lb/>nej! &dash; Er den hos de mægtige og fornemme! Hælder de
-<lb/>ikke sågodtsom alle til Arianus, hin kætter &dash; som kej<gap reason="endline writing"/>
-<lb/>selv <HIS:hisDel rend="overstrike">begy<unclear>nd</unclear></HIS:hisDel><unclear reason="writing">er</unclear> begunstiger &dash; Der rases imod templerne,
-<lb/>hedninger myrdes og udplyndres &dash;; er det for <HIS:hisDel rend="overwritten">k</HIS:hisDel>Kristi skyld
-<lb/>Haha, vore brødre, mo<unclear reason="writing">rderne</unclear>, slås om de ranede efter&typHyp;
+<lb/>nej! – Er den hos de mægtige og fornemme! Hælder de
+<lb/>ikke sågodtsom alle til Arianus, hin kætter – som kej<gap reason="endline writing"/>
+<lb/>selv <HIS:hisDel rend="overstrike">begy<unclear>nd</unclear></HIS:hisDel><unclear reason="writing">er</unclear> begunstiger – Der rases imod templerne,
+<lb/>hedninger myrdes og udplyndres –; er det for <HIS:hisDel rend="overwritten">k</HIS:hisDel>Kristi skyld
+<lb/>Haha, vore brødre, mo<unclear reason="writing">rderne</unclear>, slås om de ranede efter‐
 <lb/>ladenskaber. Du kan spørge Makrina om kristendom<note resp="editor">Bindestrek ved linjeskift mangler.</note>
 <lb/>men er at søge på søjlen, hvor styliten står på et ben.
 <lb/>Eller er den hos hine bagere i Konstantinopel som nys
 <lb/>kæmpede med næverne for at klare det spørgsmål om
-<lb/>guddommen bestod af tre personer eller af tre hypo&typHyp;
+<lb/>guddommen bestod af tre personer eller af tre hypo‐
 <lb/>staser! Hvem af alle disse vilde Kristus kalde sin om
 <lb/>han steg ned til jorden igen? Frem med Diogenes-lygten.
-<lb/>Lys op &dash; lys op &dash; i dette nattemulm. Hvor er kristendom<gap reason="endline"/></p></HIS:hisSp>
+<lb/>Lys op – lys op – i dette nattemulm. Hvor er kristendom<gap reason="endline"/></p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil:</speaker></HIS:spOpener>
 <lb/><p>Den er i de hellige mænds skrifter.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>Det samme fortvivl<unclear reason="writing">elsens</unclear> svar. Bøger, altid bøger.
 <lb/>Stener for brød! Kom jeg til Libanius, så lød det altid,
-<lb/>bøger, bøger &dash;! Kommer jeg til eder &dash; bøger, bøger, bøger
-<lb/>jeg kan ikke bruge bøger &dash; det er liv jeg tørster
-<lb/>efter &dash; blev Paulus seende af en bog &dash; var det ikke
-<lb/>en lysglans der slog ham imøde, et syn, en røst &dash;</p></HIS:hisSp>
+<lb/>bøger, bøger –! Kommer jeg til eder – bøger, bøger, bøger
+<lb/>jeg kan ikke bruge bøger – det er liv jeg tørster
+<lb/>efter – blev Paulus seende af en bog – var det ikke
+<lb/>en lysglans der slog ham imøde, et syn, en røst –</p></HIS:hisSp>
 <pb ed="faksBase" n="77"/>
 <pb n="[304]r"/>
 <lb/><fw type="gathering" place="top-left">3</fw><fw type="leaf" place="top-right" scribe="h1">304</fw>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil.</speaker></HIS:spOpener>
-<lb/><p>Glemmer du synet og røsten, som hin Theodorus fra Ma&typHyp;
-<lb/>cellum &dash;</p></HIS:hisSp>
+<lb/><p>Glemmer du synet og røsten, som hin Theodorus fra Ma‐
+<lb/>cellum –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>Et lys som sluktes i samme stund. Et gådefuldt bud;
 <lb/>et orakel-råb, som jeg ikke kan tyde. Det ved jeg kun
 <lb/>her er ikke løvens hule. Men hvor, hvor! O, jeg famler
 <lb/>som i natten. Vil Gud mig noget, så må han tale
-<lb/>klart. Fingeren i naglesåret, det er nødvendigt &dash;
+<lb/>klart. Fingeren i naglesåret, det er nødvendigt –
 <lb/>Der må komme en ny åbenbaring. Der <emph>må</emph>, siger
 <lb/>jeg! Tiden er inde. <HIS:hisDel rend="overstrike">Den gamle skønhed er ikke
 <lb/>længere skøn, og den nye sandhed ikke længere
-<lb/>sand</HIS:hisDel> &dash; En åbenbaring! O, Basilius, bed den ned
+<lb/>sand</HIS:hisDel> – En åbenbaring! O, Basilius, bed den ned
 <lb/>over mig, og du skal se jeg skal ikke svigte.
 <lb/>Martyriet, om så skal være. Martyriet; o, jeg
 <lb/>føler dets sødme<unclear reason="writing">;</unclear> tornekronen om min tinding.
 <lb/><HIS:hisStage>(han griber sig med begge hænder om hovedet,
 <lb/>fatter rosenkrandsen, som han river af, besinder
 <lb/>sig længe og siger sagte.)</HIS:hisStage> Denne. Det havde jeg
-<lb/>glemt. &dash; <HIS:hisDel rend="overstrike">Den</HIS:hisDel> Et eneste har jeg lært i Athen.</p></HIS:hisSp>
+<lb/>glemt. – <HIS:hisDel rend="overstrike">Den</HIS:hisDel> Et eneste har jeg lært i Athen.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil.</speaker></HIS:spOpener>
 <lb/><p>Hvilket, Julian?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
@@ -470,65 +464,65 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><p>Hvem, hvem, spørger jeg?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>Libanius</speaker></HIS:spOpener>
 <lb/><p>Ved du det ikke? Har du ikke hørt nyheden om
-<lb/>Maximus &dash;</p></HIS:hisSp>
+<lb/>Maximus –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>Om Maximus, nej, nej &dash;</p></HIS:hisSp>
+<lb/><p>Om Maximus, nej, nej –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>Libanius</speaker></HIS:spOpener>
 <lb/><p>Så måtte det komme; skridt for skridt, ind i
-<lb/>vanvidet &dash;</p></HIS:hisSp>
+<lb/>vanvidet –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr J.</speaker></HIS:spOpener>
 <lb/><p>Hvad taler du om vanvid?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>L.</speaker></HIS:spOpener>
-<lb/><p>Held ham om det ikke er noget værre; &dash; men
-<lb/>godt for os, godt for den sande lærdom &dash; derfor er det
-<lb/>at alle flyr fra ham og søger hid &dash; Nu vil det
+<lb/><p>Held ham om det ikke er noget værre; – men
+<lb/>godt for os, godt for den sande lærdom – derfor er det
+<lb/>at alle flyr fra ham og søger hid – Nu vil det
 <lb/>gamle Athen blomstre</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr J.</speaker></HIS:spOpener>
-<lb/><p>Hør, kære broder, såsom jeg ikke er alvidende &dash;</p></HIS:hisSp>
+<lb/><p>Hør, kære broder, såsom jeg ikke er alvidende –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>L.</speaker></HIS:spOpener>
-<lb/><p>Hør, hør &dash; Maximus er trådt åbenlyst frem med
-<lb/>det som ligger på bunden af hans lære &dash;</p></HIS:hisSp>
+<lb/><p>Hør, hør – Maximus er trådt åbenlyst frem med
+<lb/>det som ligger på bunden af hans lære –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr J.</speaker></HIS:spOpener>
 <lb/><p>Og det laster du ham for.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>L.</speaker></HIS:spOpener>
-<lb/><p>Han maner ånder frem &dash;</p></HIS:hisSp>
+<lb/><p>Han maner ånder frem –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr J.</speaker></HIS:spOpener>
-<lb/><p>Libanius &dash;</p></HIS:hisSp>
+<lb/><p>Libanius –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>L.</speaker></HIS:spOpener>
 <lb/><p>Nys har han i en natlig forsamling blandt sine tilhængere
 <pb ed="faksBase" n="79"/>
 <pb n="[305]r"/>
 <lb/><fw type="leaf" place="top-right" scribe="h1">305</fw>
 <lb/>øvet forbudne kunster med Hekates billedstøtte.
-<lb/>Det var mørk nat; Maximus talte sine sæl&typHyp;
+<lb/>Det var mørk nat; Maximus talte sine sæl‐
 <lb/>somme besværgelser, da tændte faklen sig
-<lb/>i støttens hånd &dash;</p></HIS:hisSp>
+<lb/>i støttens hånd –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil</speaker></HIS:spOpener>
-<lb/><p>Ugudeligt værk &dash;</p></HIS:hisSp>
+<lb/><p>Ugudeligt værk –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr J.</speaker></HIS:spOpener>
 <lb/><p>Og så?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>L.</speaker></HIS:spOpener>
-<lb/><p>Og i det stærke blålige lys lo støttens an&typHyp;
-<lb/>sigt imod dem &dash;</p></HIS:hisSp>
+<lb/><p>Og i det stærke blålige lys lo støttens an‐
+<lb/>sigt imod dem –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>Hvad mere?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>L.</speaker></HIS:spOpener>
 <lb/><p>Forfærdelsen greb alle. Mange har ligget i
-<lb/>sygdom eller afsind bagefter &dash;. Men han,
+<lb/>sygdom eller afsind bagefter –. Men han,
 <lb/>trods kejserens strænge bud, turer frem på
-<lb/>sin forargelige b<unclear reason="writing">ane</unclear> &dash;</p></HIS:hisSp>
+<lb/>sin forargelige b<unclear reason="writing">ane</unclear> –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>Forargelig &dash;? Samkvem mellem ånd og ånd &dash;</p></HIS:hisSp>
+<lb/><p>Forargelig –? Samkvem mellem ånd og ånd –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil</speaker></HIS:spOpener>
 <lb/><p>O, dyrebare ven!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>L.</speaker></HIS:spOpener>
-<lb/><p>Mere end forargeligt &dash; Hvad er Hekate? Har ikke
-<lb/>Platon og efter ham kastet lys over det hele &dash;
+<lb/><p>Mere end forargeligt – Hvad er Hekate? Har ikke
+<lb/>Platon og efter ham kastet lys over det hele –
 <lb/>Er det ikke forargeligt med et greb ind i tåger og
 <lb/>gåder at rive ned den lysende bygning af begreb
-<lb/>og betydning &dash;</p></HIS:hisSp>
+<lb/>og betydning –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr J.</speaker></HIS:spOpener>
-<lb/><p>Farvel, Basilius, nu ser jeg vejen &dash;</p></HIS:hisSp>
+<lb/><p>Farvel, Basilius, nu ser jeg vejen –</p></HIS:hisSp>
 <pb ed="faksBase" n="80"/>
 <pb n="[305]v"/>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil.</speaker></HIS:spOpener>
@@ -536,14 +530,14 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr: J.</speaker></HIS:spOpener>
 <lb/><p>Det mægter ingen <sic>menskelig</sic> magt</p></HIS:hisSp>
 <lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>L.</speaker></HIS:spOpener>
-<lb/><p>Hvad afsind griber dig &dash; hvor vil du hen &dash;</p></HIS:hisSp>
+<lb/><p>Hvad afsind griber dig – hvor vil du hen –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>Did, did hvor faklen blusser og støtten smiler</p></HIS:hisSp>
 <lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>L.</speaker></HIS:spOpener>
-<lb/><p>Det kan du; svigte alt, hvad du i disse to år &dash; svigte
-<lb/>Athens høje skole &dash;</p></HIS:hisSp>
+<lb/><p>Det kan du; svigte alt, hvad du i disse to år – svigte
+<lb/>Athens høje skole –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr J.</speaker></HIS:spOpener>
-<lb/><p>O, skole, skole &dash; bliv du hos dine bøger; nu
+<lb/><p>O, skole, skole – bliv du hos dine bøger; nu
 <lb/>har du vist mig den mand jeg søgte.</p>
 <lb/><HIS:hisStage>(ud i b<unclear reason="writing">aggr</unclear>)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>L.</speaker></HIS:spOpener>

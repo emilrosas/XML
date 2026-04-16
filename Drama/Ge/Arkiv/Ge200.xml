@@ -1,10 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.ibsen.uio.no/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
 <?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
     <teiHeader xml:lang="nob">
@@ -14,10 +8,10 @@
 <title level="s" type="sub">Diplomatarisk tekstarkiv</title>
 <title level="a" type="main">Gengangere</title>
 <title level="a" type="sub">NBO Brevs. 200 (i brev)</title>
-<title level="a" type="origYear">&lsqb;1881&rsqb;</title>
-<author>&lsqb;Henrik Ibsen&rsqb;</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<title level="a" type="origYear">[1881]</title>
+<author>[Henrik Ibsen]</author>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Nina Marie Evensen, Ingvald Aarstein</name></respStmt>
 <respStmt>
 <resp>Kollasjonering og koding</resp>
@@ -58,15 +52,15 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <list>
 <item>latinsk håndskrift; steilskrift</item>
 </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -78,7 +72,7 @@
 </list>
 </tagUsage>
 </namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-tei2;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding xmlns="" type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -121,16 +115,16 @@ Transkripsjon. Kollasjonerte mot faksimile. Kodet som replikker i drama. Valider
 
 <text type="drama" rend="handwritten" xml:lang="dan-nob">
 <pb ed="faksBase" n="4"/>
-<pb n="&lsqb;2&rsqb;v"/>
+<pb n="[2]v"/>
 <body>
 <div type="act" n="2">
 <lb/><HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="Ge_136ms"/><HIS:hisSp xml:id="ENGSTRAND" who="ENGSTRAND"><p>Hun var nu et verdensbarn, hun, og så på
-<lb/>det, som vakkert var. Og jeg havde jo denne ska&typHyp;
+<lb/>det, som vakkert var. Og jeg havde jo denne ska‐
 <lb/>vanken i benet. Ja, pastoren ved jo, jeg havde
 <lb/>dristet mig op på en dansesal, hvor sjøfarendes
 <lb/>matroser færdedes, og formaned dem til et nyt
 <lb/>levnet.</p></HIS:hisSp>
-<lb/><HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="Ge_97ms"/><note resp="editor">Følgende tekst mangler i NBO Ms. 4&deg; 1114. Ibsen har satt inn en "a" både foran teksten i dette manuskriptet og der teksten skal inn i Ms. 4&deg; 1114.</note><note resp="author"><ref type="refMark">a</ref></note>
+<lb/><HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="Ge_97ms"/><note resp="editor">Følgende tekst mangler i NBO Ms. 4° 1114. Ibsen har satt inn en "a" både foran teksten i dette manuskriptet og der teksten skal inn i Ms. 4° 1114.</note><note resp="author"><ref type="refMark">a</ref></note>
 <lb/><HIS:hisSp who="ENGSTRAND"><HIS:spOpener><speaker>E.</speaker></HIS:spOpener><p>Men skulde hun da gåt og snakket om
 <lb/>det? Vil nu bare herr pastoren tænke sig at
 <lb/>han var i samme forfatning som salig Johanne</p></HIS:hisSp>
@@ -145,15 +139,15 @@ Transkripsjon. Kollasjonerte mot faksimile. Kodet som replikker i drama. Valider
 <lb/>bebrejdelsen imod.</p></HIS:hisSp>
 <lb/><figure type="bar"/><note resp="editor">Teksten i det følgende er utkast til samme tekststed som replikkutkastet øverst på siden.</note>
 <HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="Ge_137ms"/><HIS:hisSp who="ENGSTRAND"><p>for hun så nu bare på det, som vakkert
-<lb/>var, hun; og jeg havde jo denne her skavan&typHyp;
+<lb/>var, hun; og jeg havde jo denne her skavan‐
 <lb/>ken i benet. Ja, pastoren minds jo, jeg
 <lb/>havde fordristet mig op på en dansesal,
 <lb/>hvor sjøfarendes matroser rejerte med
 <lb/>drukkenskab og beruselse, som de siger.
-<lb/>Og da jeg så vilde formane dem til at van&typHyp;
-<lb/>dre i et nyt levnet &dash;</p></HIS:hisSp>
+<lb/>Og da jeg så vilde formane dem til at van‐
+<lb/>dre i et nyt levnet –</p></HIS:hisSp>
 <HIS:hisAdd place="offline"><lb/><HIS:hisSp xml:id="FRUALVING" who="FRUALVING"><HIS:spOpener><speaker>Fru A</speaker></HIS:spOpener>
-<lb/><p>Hm &dash;</p></HIS:hisSp></HIS:hisAdd>
+<lb/><p>Hm –</p></HIS:hisSp></HIS:hisAdd>
 <lb/><HIS:hisSp who="MANDERS"><HIS:spOpener><speaker>P. M.</speaker></HIS:spOpener>
 <lb/><p>Jeg ved det, E.; de rå mennesker kasted Dem
 <lb/>nedover trapperne. Den begivenhed har De

@@ -1,10 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.ibsen.uio.no/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
 <?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
@@ -13,12 +7,12 @@
 <title level="s" type="main">Henrik Ibsens skrifter</title>
 <title level="s" type="sub">Diplomatarisk tekstarkiv</title>
 <title level="a" type="main">Når vi døde vågner</title>
-<title level="a" type="sub">NBO Ms 4&deg;1119a, bl. 2&dash;5</title>
+<title level="a" type="sub">NBO Ms 4°1119a, bl. 2–5</title>
 <title level="a" type="origYear">1899</title>
 <author>Henrik Ibsen</author>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding">
 <resp>Kollasjonering og koding</resp>
 <name>Helene Grønlien, Henninge Margrethe Solberg</name></respStmt>
@@ -44,7 +38,7 @@
         <msIdentifier>
             <settlement>Oslo</settlement>
             <repository>Nasjonalbiblioteket</repository>
-            <idno>NBO Ms 4&deg;1119a, bl. 2-5</idno>
+            <idno>NBO Ms 4°1119a, bl. 2-5</idno>
         </msIdentifier>
         <msContents><msItem>
             <author>Henrik Ibsen</author>
@@ -59,13 +53,13 @@
 </fileDesc>
 <encodingDesc>
 <projectDesc>
-<p>&projectDesc-tekstkilde;</p>
+<p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p>
 </projectDesc>
 <editorialDecl>
 <HIS:typography><p></p>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -78,7 +72,7 @@
 </list>
 </tagUsage></namespace>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">
-&tagUsage-tei2;</tagUsage></namespace>
+XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -137,8 +131,8 @@ Opprettet fil på grunnlag av transkripsjon av faksimile.</change>
 <lb/><HIS:hisSp who="MAJA"><HIS:hisStage>(kaster på nakken)</HIS:hisStage>
 <lb/><p>Ja han tog hende herlig op med sig, kan de tro.
 <lb/>Å nej, han narred hende ind i et koldt fugtigt
-<lb/>rumm, hvor der hverken var sol eller luft, &dash; syntes
-<lb/>hun da &dash; men bare forgyldning og store forstenede
+<lb/>rumm, hvor der hverken var sol eller luft, – syntes
+<lb/>hun da – men bare forgyldning og store forstenede
 <lb/>menneskeskabninger rundt væggene.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ULFHEJM"><HIS:spOpener><speaker>U.</speaker></HIS:spOpener><p>Det var fanden fløjte mig tilpass for hende!</p>
 </HIS:hisSp>
@@ -189,28 +183,28 @@ Opprettet fil på grunnlag av transkripsjon av faksimile.</change>
 <lb/><HIS:hisStage>(afbrytende)</HIS:hisStage>
 <HIS:hisSp who="MAJA"><HIS:spOpener><speaker/></HIS:spOpener><p>Men hvor har De så Deres jagtslot, som De snakke<HIS:hisDel rend="overwritten">r</HIS:hisDel>t
 <lb/>så vidt og bredt om? Det skulde jo være her omkring
-<lb/>sa&rapo; De<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel></p></HIS:hisSp>
+<lb/>sa’ De<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel></p></HIS:hisSp>
 <lb/><HIS:hisSp who="ULFHEJM"><HIS:spOpener><speaker>Ulf</speaker></HIS:spOpener>
 <lb/><HIS:hisStage>(peger på hytten)
-<lb/><HIS:hisAdd place="inBetweenLines">(med en indbydende hånd<HIS:hisAdd place="offline">&dash; bevægelse</HIS:hisAdd></HIS:hisAdd></HIS:hisStage>
-<lb/><p>Her har De det lige for øjnene, &dash; hvis De så behager <HIS:hisDel rend="overstrike">at</HIS:hisDel>.</p></HIS:hisSp>
+<lb/><HIS:hisAdd place="inBetweenLines">(med en indbydende hånd<HIS:hisAdd place="offline">– bevægelse</HIS:hisAdd></HIS:hisAdd></HIS:hisStage>
+<lb/><p>Her har De det lige for øjnene, – hvis De så behager <HIS:hisDel rend="overstrike">at</HIS:hisDel>.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAJA"><HIS:spOpener><speaker>Fr. M.</speaker></HIS:spOpener>
 <lb/><p>Den gamle svinestien der?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ULFHEJM"><HIS:spOpener><speaker>Ulf</speaker></HIS:spOpener>
 <lb/><p>Den har huset mere end <emph>en</emph> kongedatter, den.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAJA"><HIS:spOpener><speaker>Fr. M.</speaker></HIS:spOpener>
-<lb/><p>Var det der den ækle fyren kom ind <HIS:hisAdd place="offline">til <app type="alteration"><lem><HIS:hisAdd place="offline">kongedatteren</HIS:hisAdd></lem><HIS:hisRdg>h<HIS:hisDel rend="overstrike">end</HIS:hisDel>e</HIS:hisRdg></app></HIS:hisAdd> i en skog&typHyp;
-<lb/>bjørns <app type="alteration"><lem><HIS:hisAdd place="offline">lignelse</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">ham</HIS:hisDel></HIS:hisRdg></app>, som De sa&rapo;?</p></HIS:hisSp>
+<lb/><p>Var det der den ækle fyren kom ind <HIS:hisAdd place="offline">til <app type="alteration"><lem><HIS:hisAdd place="offline">kongedatteren</HIS:hisAdd></lem><HIS:hisRdg>h<HIS:hisDel rend="overstrike">end</HIS:hisDel>e</HIS:hisRdg></app></HIS:hisAdd> i en skog‐
+<lb/>bjørns <app type="alteration"><lem><HIS:hisAdd place="offline">lignelse</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">ham</HIS:hisDel></HIS:hisRdg></app>, som De sa’?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ULFHEJM"><HIS:spOpener><speaker>Ulf.</speaker></HIS:spOpener>
-<lb/><p>Ja, fru<HIS:hisDel rend="overstrike"><gap/></HIS:hisDel> <HIS:hisAdd place="offline">jagtkam<unclear reason="writing">mer</unclear>at</HIS:hisAdd>, &dash; her er åstedet.</p></HIS:hisSp>
+<lb/><p>Ja, fru<HIS:hisDel rend="overstrike"><gap/></HIS:hisDel> <HIS:hisAdd place="offline">jagtkam<unclear reason="writing">mer</unclear>at</HIS:hisAdd>, – her er åstedet.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAJA"><HIS:spOpener><speaker>Fru M.</speaker></HIS:spOpener>
-<lb/><p>Isch. Ikke med min fod vilde jeg &dash;. Isch.</p></HIS:hisSp>
+<lb/><p>Isch. Ikke med min fod vilde jeg –. Isch.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ULFHEJM"><HIS:spOpener><speaker>Ulf.</speaker></HIS:spOpener>
 <lb/><p>Å, et menneskepar kan sove bort en sommernat
 <lb/>nok så lunt derinde. Eller en hel sommer, om så skulde
 <lb/>være.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAJA"><HIS:spOpener><speaker>M.</speaker></HIS:spOpener>
-<lb/><p>Tak. Det måtte der høre appetit til. &dash; <HIS:hisDel rend="overstrike">Men</HIS:hisDel> Men
+<lb/><p>Tak. Det måtte der høre appetit til. – <HIS:hisDel rend="overstrike">Men</HIS:hisDel> Men
 <lb/>nu er jeg ked af Dem <HIS:hisAdd place="offline">og af jagtturen</HIS:hisAdd>. For denne gang. Nu vil jeg ned til
 <lb/>hotellet.</p></HIS:hisSp>
 

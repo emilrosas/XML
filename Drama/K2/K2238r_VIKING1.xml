@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -16,8 +10,8 @@
 <title level="a" type="sub">annen hovedversjon, TarkUiB NT238r (rollehefte, Nogle Vikinger)</title>
 <title level="a" type="origYear">[1853]</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Ingrid Falkenberg, Bjørg Harvey, Ellen Nessheim Wiger, Mette Witting</name></respStmt>
 <respStmt>
 <resp>Transkripsjon, februar 2000:</resp>
@@ -64,7 +58,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <list>
@@ -97,8 +91,8 @@
 <item>bindestrek: dobbel</item>
 </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -114,7 +108,7 @@
 </list>
 </tagUsage></namespace>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="rolleheftekoding">Rolleheftene er kodet med «føljetongkoding»: hvert rollehefte kodet som TEXT (i GROUP og TEXT). Tittelbladene kodet som vanlige tittelblad. Opplysninger om skuespillere etc. på tittelbladene er kodet i P-er i en PERFORMANCE-tag. «Avvikene» i forhold til rollenavn/replikk-systemet (se typografibeskrivelsen) er ikke tatt hensyn til i kodingen. I mangel av rolleliste, er id-attributtene plassert i TITLEPART.</tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 </encodingDesc>
 <profileDesc>
@@ -160,7 +154,7 @@ La inn igjen add i forbindelse med overskriving av annen hånd. Sjekket at alle 
 Omkoding av ms-endringer i henhold til revidert kodepraksis. * Forkortet figure til tom tagg. Ny plassering av sideskifts-tagger innført. SGREP-søk for kodeoversikt utført. Sjekket at del dekker kun faktisk kodet tekst. Sjekket tilføyelser. La inn manglende håndliste og samkjørte den med Tone Modalslis (fjernet punkt om hender i typografibeskrivelsen). Koder inn utelatte endringer vha. gjennomgang mot faksimiler. Gjort om brøker i measure til entiteter. Transkribert ordenstall-endelser mer velvillig. Korrektursjekk mot faksimiler må inkl. vurdering av nykodede endringer, hånd osv..</change>
 <change><date>13.09.04</date>
 <name>HG</name><title>NB!</title>
-Rettet træske til traske, rettet feilplassert pkt. innenfor 'stageRole'. Rettelser/påførsler av andre hender er foreløpig ikke kodet inn i fila - Dette bør gjøres (husk bl. annet å legge inn et apparat med at/komma ved &#91;&#93; der er forsilde).</change>
+Rettet træske til traske, rettet feilplassert pkt. innenfor 'stageRole'. Rettelser/påførsler av andre hender er foreløpig ikke kodet inn i fila - Dette bør gjøres (husk bl. annet å legge inn et apparat med at/komma ved [] der er forsilde).</change>
 <change><date>10.11.03</date>
 <name>HG</name><title>Kodeoppdatering</title>
 Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til unclear, fjernet gammel entitetskoding, validert.</change>
@@ -177,7 +171,7 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <text type="drama" xml:lang="dan-nob" rend="handwritten">
 <front>
 <titlePage>
-<pb/><HIS:hisDocImprint><measure>&half; Ark</measure></HIS:hisDocImprint>
+<pb/><HIS:hisDocImprint><measure>½ Ark</measure></HIS:hisDocImprint>
 <docTitle>
 <lb/><titlePart>Nogle Vikinger,
 <lb/>i
@@ -219,7 +213,7 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 </div>
 <div type="scene" n="6">
 <lb/><head>6<hi>te</hi> Scene.</head>
-<lb/><HIS:hisStage><HIS:stageRole who="BLANKA">Blanka</HIS:stageRole>. <HIS:stageRole who="GANDALF">Gandalf</HIS:stageRole>. &dash; <HIS:stageRole who="ASGAUT">Asgaut</HIS:stageRole>, Hemming og
+<lb/><HIS:hisStage><HIS:stageRole who="BLANKA">Blanka</HIS:stageRole>. <HIS:stageRole who="GANDALF">Gandalf</HIS:stageRole>. – <HIS:stageRole who="ASGAUT">Asgaut</HIS:stageRole>, Hemming og
 <lb/>Vikingerne, der føre Roderik mellem sig.</HIS:hisStage>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="I">Saa er hun fri, ei sandt?</l></HIS:hisSp>

@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.ibsen.uio.no/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
+ 
 <?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS"> 
 <teiHeader xml:lang="nob">
@@ -13,11 +8,11 @@
 <title level="s" type="main">Henrik Ibsens skrifter</title>
 <title level="s" type="sub">Diplomatarisk tekstarkiv</title>
 <title level="a" type="main">Hvide heste &amp; Rosmersholm</title>
-<title level="a" type="sub">NBO Ms.4&deg; 1291a-b</title>
+<title level="a" type="sub">NBO Ms.4° 1291a-b</title>
 <title level="a" type="origYear">1886</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Åshild Haugsland, Henninge Margrethe Solberg, Mette Witting</name></respStmt>
 <respStmt><resp>Oppretting og første kollasjon, juni-november 2006</resp>
 <name xml:id="HIS-HMS">Henninge Solberg</name></respStmt>
@@ -41,19 +36,19 @@
 <msIdentifier>
 <settlement>Oslo</settlement>
 <repository>Nasjonalbiblioteket</repository>
-<idno>NBO Ms.4&deg; 1291a-b</idno>
+<idno>NBO Ms.4° 1291a-b</idno>
 </msIdentifier>
 <msContents><msItem>
 <author>[Henrik Ibsen]</author>
 <title>[Hvide heste &amp; Rosmersholm]</title>
 <docDate>Udatert</docDate>
 </msItem></msContents>
-<physDesc><objectDesc><p>NBO Ms.4&deg; 1291a-b er bundet inn i samme bokbind.</p></objectDesc></physDesc>
+<physDesc><objectDesc><p>NBO Ms.4° 1291a-b er bundet inn i samme bokbind.</p></objectDesc></physDesc>
 </HIS:hisMsDesc></p>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <list>
@@ -86,8 +81,8 @@
 </item>
 </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -98,7 +93,7 @@
 <label xml:id="KROLL"/><item>Hekmann, H.</item>
 </list>
 </tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-tei2;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -224,7 +219,7 @@ Ved margtilføyelser: plasserte linjeskift-koden inni add (i stedet for foran) e
 Rettet typen foliering (Ibsens) fra 'sheet' til 'leafdb' etter prat med MW og SBT. Bør likevel sjekkes mot original når 2.kollasjon tas.</change>
 <change><date>vår 2006 - 28.11.06</date>
 <name>HMS</name><title>Oppretting og første kollasjon</title>
-Opprettet fil med teiHeaderopplysninger ang. NBO Ms.4&deg; 1291. Transkriberte fra faksimile. Tok første kollasjon mot faksimile. Var en rask tur på NBO for å se på mset - det er innbundet i 4 permer: a-b (=t.o.m. faksimileside 14), c (t.o.m. faksimileside 69), d (t.o.m. faksimileside 235 og e (resten, replikkutkast). Bør denne filen deles opp deretter? Ellers noen kommentarer: (1) Har ikke kommentert 'vanlige' mangler som manglende punktum etter rollenavn, manglende anførselstegn o.l. (Men har lagt inn noen slike kommentarer der det er mest påfallende.) Det er fint om andrekollasjonisten kan følge med på om det er noen ting jeg ikke har kommentert, som bør kommenteres. Har siccet de feilstavede ordene jeg har sett. (2) Andrekollasjonisten kan også gjerne se godt på overskrivninger, overstrykninger og lesemåter generelt, samt bruken av attributtverdier i 'place'. Overskrevne bokstaver jeg ikke har klart å tyde, er foreløpig transkribert med 'gap'. (3) 'ref target' fungerer foreløpig ikke i visningen, dette må ses på på nytt. (4) Hand-koding vises ikke, andrekollasjonisten kan gjerne notere de forskjellige hendene slik at dette kan kontrolleres mot kodingen. (5) Enkelte uønskede linjeskift forekommer også i visningen, f.eks. er det foreløpig ikke mulig både å replikk-kode og å ha rollenavnet på samme linje som replikkteksten i visningen. Ved tilføyde replikker: Fint om den som tar andre kollasjon sjekker at disse replikkene er replikk-kodet, også når rollenavn er forkortet og står på samme linje som replikkteksten. (6) Typen foliering bør kontrolleres mot original. (7) Eventuelle blanke ark i mset er ikke fotografert i faksimilebasen og bør noteres av andrekollasjonisten. Validert og klar for annen kollasjon.</change>
+Opprettet fil med teiHeaderopplysninger ang. NBO Ms.4° 1291. Transkriberte fra faksimile. Tok første kollasjon mot faksimile. Var en rask tur på NBO for å se på mset - det er innbundet i 4 permer: a-b (=t.o.m. faksimileside 14), c (t.o.m. faksimileside 69), d (t.o.m. faksimileside 235 og e (resten, replikkutkast). Bør denne filen deles opp deretter? Ellers noen kommentarer: (1) Har ikke kommentert 'vanlige' mangler som manglende punktum etter rollenavn, manglende anførselstegn o.l. (Men har lagt inn noen slike kommentarer der det er mest påfallende.) Det er fint om andrekollasjonisten kan følge med på om det er noen ting jeg ikke har kommentert, som bør kommenteres. Har siccet de feilstavede ordene jeg har sett. (2) Andrekollasjonisten kan også gjerne se godt på overskrivninger, overstrykninger og lesemåter generelt, samt bruken av attributtverdier i 'place'. Overskrevne bokstaver jeg ikke har klart å tyde, er foreløpig transkribert med 'gap'. (3) 'ref target' fungerer foreløpig ikke i visningen, dette må ses på på nytt. (4) Hand-koding vises ikke, andrekollasjonisten kan gjerne notere de forskjellige hendene slik at dette kan kontrolleres mot kodingen. (5) Enkelte uønskede linjeskift forekommer også i visningen, f.eks. er det foreløpig ikke mulig både å replikk-kode og å ha rollenavnet på samme linje som replikkteksten i visningen. Ved tilføyde replikker: Fint om den som tar andre kollasjon sjekker at disse replikkene er replikk-kodet, også når rollenavn er forkortet og står på samme linje som replikkteksten. (6) Typen foliering bør kontrolleres mot original. (7) Eventuelle blanke ark i mset er ikke fotografert i faksimilebasen og bør noteres av andrekollasjonisten. Validert og klar for annen kollasjon.</change>
 </revisionDesc>
 </teiHeader>
 
@@ -235,26 +230,26 @@ Opprettet fil med teiHeaderopplysninger ang. NBO Ms.4&deg; 1291. Transkriberte f
 <pb ed="source" type="folio_nopagination" subtype="recto"  n="1" facs="1"/>
 <lb/><fw type="leaf" place="top-right" scribe="h1">1</fw>
 <div type="relatedToWork">
-<lb/><head>&lquo;Hvide heste&rquo;.</head>
+<lb/><head>«Hvide heste».</head>
 <lb/><p><hi rend="underlined">Han</hi>, den fine fornemme natur,
-<lb/>som er slået om til et frisindet syns&typHyp;
-<lb/>punk og som alle hans tidligere ven&typHyp;
-<lb/>ner og bekendte har trukket sig til&typHyp;
-<lb/>bage fra. Enkemand; har været ulyk&typHyp;
+<lb/>som er slået om til et frisindet syns‐
+<lb/>punk og som alle hans tidligere ven‐
+<lb/>ner og bekendte har trukket sig til‐
+<lb/>bage fra. Enkemand; har været ulyk‐
 <lb/>kelig gift med en tungsindig halvt
-<lb/>sindssyg kone, som til slut drukne&typHyp;
+<lb/>sindssyg kone, som til slut drukne‐
 <lb/>de sig.</p>
 <lb/><p><hi rend="underlined">Hun</hi>, hans to døttres opdragerinde,
-<lb/>frigjort, varmblodig, noget hensyns&typHyp;
-<lb/>løs men under en fin form. Betrag&typHyp;
+<lb/>frigjort, varmblodig, noget hensyns‐
+<lb/>løs men under en fin form. Betrag‐
 <lb/>tes af omgivelserne som husets onde
 <lb/>ånd; er genstand for mistydning og
 <lb/>ba<HIS:hisDel rend="overwritten">d</HIS:hisDel>gvaskelse.</p>
 <lb/><p><hi rend="underlined">Ældste datter</hi>; holder på at bukke
-<lb/>under for uvirksomheden og ensom&typHyp;
-<lb/>heden; rig begavelse uden anven&typHyp;
+<lb/>under for uvirksomheden og ensom‐
+<lb/>heden; rig begavelse uden anven‐
 <lb/>delse derfor.</p>
-<lb/><p><hi rend="underlined">Yngre datter</hi>; iagttagende; opduk&typHyp;
+<lb/><p><hi rend="underlined">Yngre datter</hi>; iagttagende; opduk‐
 <lb/>kende lidenskaber.</p>
 <lb/><p>Journalisten; geni, landstryger.</p>
 </div>
@@ -270,7 +265,7 @@ Opprettet fil med teiHeaderopplysninger ang. NBO Ms.4&deg; 1291. Transkriberte f
 <lb/><fw type="leaf" place="top-right" scribe="h1">2</fw>
 <div type="relatedToWork">
 <lb/><head>Udkast.</head>
-<lb/><p>I prestegårdens dagligstue. S: og frø&typHyp;
+<lb/><p>I prestegårdens dagligstue. S: og frø‐
 <lb/>ken B: i samtale. Studenten kommer fra
 <lb/>spadsertur. <HIS:hisDel rend="overstrike">Amtmanden og datter på besøg
 <lb/>og med invitation</HIS:hisDel>. Den gamle forhenværende
@@ -295,7 +290,7 @@ Opprettet fil med teiHeaderopplysninger ang. NBO Ms.4&deg; 1291. Transkriberte f
 <lb/><head>Udkast.</head>
 <div type="act" n="1">
 <lb/><head>1. akt.</head>
-<lb/><p>I herregårdens dagligstue ud over efter&typHyp;
+<lb/><p>I herregårdens dagligstue ud over efter‐
 <lb/>middagen. Presten og frøkenen;</p>
 </div>
 <pb ed="source" type="folio_nopagination" subtype="verso"  n="4"/>
@@ -320,11 +315,11 @@ Opprettet fil med teiHeaderopplysninger ang. NBO Ms.4&deg; 1291. Transkriberte f
 <pb ed="source" type="folio_nopagination" subtype="verso"  n="5" facs="6"/>
 <div type="relatedToWork">
 <lb/><p>Hun er intrigant og hun elsker ham.
-<lb/>Hun vil bli&rapo; hans hustru og urokkelig
+<lb/>Hun vil bli’ hans hustru og urokkelig
 <lb/>forfølger hun dette mål. Da kommer
 <lb/>han efter det og hun vedkender sig det åbent.
 <lb/>Så er der ingen livslykke mere for ham.
-<lb/>Det dæmoniske vækkes af smerten og bit&typHyp;
+<lb/>Det dæmoniske vækkes af smerten og bit‐
 <lb/>terheden. Han vil dø, og hun skal dø med
 <lb/>ham. Hun gør det.</p>
 </div>
@@ -340,17 +335,17 @@ Opprettet fil med teiHeaderopplysninger ang. NBO Ms.4&deg; 1291. Transkriberte f
 <lb/><HIS:hisStage>(Dagligstue hos Bol<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>dt-Rømer. Stuen
 <lb/>er gammeldags men hyggelig. På væggen
 <lb/>til højre en stor kakkelovn; længere tilbage
-<lb/>en dør. På bagvæggen dobbeltdør til for&typHyp;
+<lb/>en dør. På bagvæggen dobbeltdør til for‐
 <lb/>stuen. På væggen til venstre to vinduer
-<lb/>med potteblomster i karmene. Ved det for&typHyp;
-<lb/>reste vindu et bord med symaskine; i hjør&typHyp;
+<lb/>med potteblomster i karmene. Ved det for‐
+<lb/>reste vindu et bord med symaskine; i hjør‐
 <lb/>net til højre en sofa med bord og lænestole.
 <lb/>På væggene hænger gamle familjeportrætter
 <lb/>forestillende officerer og prester. Det er efter
-<lb/>middagstid. Solen skinner ind på gulv&typHyp;
+<lb/>middagstid. Solen skinner ind på gulv‐
 <lb/>tæppet.)</HIS:hisStage>
-<lb/><HIS:hisStage>(Boldt-Rømer sidder i en gyngestol for&typHyp;
-<lb/>an kakkelovnen og læser i et tidsskrift. Frø&typHyp;
+<lb/><HIS:hisStage>(Boldt-Rømer sidder i en gyngestol for‐
+<lb/>an kakkelovnen og læser i et tidsskrift. Frø‐
 <lb/>ken Badeck sidder henne ved vinduet og
 <lb/>syer ved maskinen.)</HIS:hisStage>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Boldt-Rømer</speaker>
@@ -362,26 +357,26 @@ Opprettet fil med teiHeaderopplysninger ang. NBO Ms.4&deg; 1291. Transkriberte f
 <pb ed="source" type="folio_nopagination" subtype="verso"  n="1" facs="8" gathering="1"/>
 <lb/><p>Hvilket, mener De?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Boldt-Rømer</speaker>.</HIS:spOpener>
-<lb/><p>Det er dog underligt for mig at sidde her &dash;
-<lb/>nu i påskeugen &dash; og slet ikke ha&rapo; nogen ting
-<lb/>at ta&rapo; vare på; ikke noget at bære ansvar for.</p></HIS:hisSp>
+<lb/><p>Det er dog underligt for mig at sidde her –
+<lb/>nu i påskeugen – og slet ikke ha’ nogen ting
+<lb/>at ta’ vare på; ikke noget at bære ansvar for.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Frøken Radeck</speaker>.</HIS:spOpener>
 <lb/><p>Men føler De ikke <emph>det</emph> som en lettelse?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Boldt-Rømer</speaker>.</HIS:spOpener>
-<lb/><p>Jo, det kan De vel tænke. Det er jo også ba&typHyp;
-<lb/>re i førstningen &dash;. Hvor er småpigerne
+<lb/><p>Jo, det kan De vel tænke. Det er jo også ba‐
+<lb/>re i førstningen –. Hvor er småpigerne
 <lb/>henne idag?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Frøken Radeck</speaker>.</HIS:spOpener>
-<lb/><p>De er nok nede på mølledammen og lø&typHyp;
+<lb/><p>De er nok nede på mølledammen og lø‐
 <lb/>ber på skøjter.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Boldt-Rømer</speaker>
 <lb/><HIS:hisStage>(rejser sig.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Jeg har ikke villet sige det før. Lidt mor<HIS:hisDel rend="overwritten"><unclear>o</unclear></HIS:hisDel>skab
-<lb/>må de jo også ha&rapo;. Men det er mig så inder&typHyp;
+<lb/>må de jo også ha’. Men det er mig så inder‐
 <lb/>lig imod at de løber der nede på dammen.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Frøken Radeck</speaker>.</HIS:spOpener>
-<lb/><p>Å, det har såmænd ingen fare. Der er jo ik&typHyp;
-<lb/>ke så dybt; og desuden så er <HIS:hisDel rend="overstrike">ikke</HIS:hisDel> isen gan&typHyp;
+<lb/><p>Å, det har såmænd ingen fare. Der er jo ik‐
+<lb/>ke så dybt; og desuden så er <HIS:hisDel rend="overstrike">ikke</HIS:hisDel> isen gan‐
 <lb/>ske sikker.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Boldt-Rømer</speaker>.</HIS:spOpener>
 <lb/><p>Det ved jeg nok; det er jo ikke <emph>det</emph>, jeg
@@ -390,22 +385,22 @@ Opprettet fil med teiHeaderopplysninger ang. NBO Ms.4&deg; 1291. Transkriberte f
 <lb/><HIS:hisStage>(ser hen på ham.)</HIS:hisStage></HIS:spOpener>
 
 <pb ed="source" type="folio_nopagination" subtype="recto"  n="2" facs="9" gathering="1"/>
-<lb/><p>Nå, det er for &dash; det andets skyld?</p></HIS:hisSp>
+<lb/><p>Nå, det er for – det andets skyld?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Boldt-Rømer</speaker>.</HIS:spOpener>
 <lb/><p>Ja. Jeg synes det er noget uhyggeligt i at <HIS:hisAdd place="offline">børnene</HIS:hisAdd>
 <lb/><HIS:hisDel rend="overstrike">d</HIS:hisDel>e løber <HIS:hisAdd place="offline">der nede</HIS:hisAdd> og tumler sig og støjer lige over det
 <lb/>sted, som var deres mors ligseng.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Frøken Radeck</speaker>.</HIS:spOpener>
-<lb/><p>Men det har jo ikke småpigerne nogen re&typHyp;
+<lb/><p>Men det har jo ikke småpigerne nogen re‐
 <lb/>de på.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Boldt-Rømer</speaker>.</HIS:spOpener>
-<lb/><p>Nej; men vi har rede på det &dash; desværre; og der&typHyp;
-<lb/>for kan jeg ikke gøre mig fri for &dash;. Nå, nå,
-<lb/>jeg ved jo godt at det er noget intetsigende no&typHyp;
-<lb/>get; bare en slags fordom, eller hvad vi skal kal&typHyp;
-<lb/>de det; men alligevel &dash;</p></HIS:hisSp>
+<lb/><p>Nej; men vi har rede på det – desværre; og der‐
+<lb/>for kan jeg ikke gøre mig fri for –. Nå, nå,
+<lb/>jeg ved jo godt at det er noget intetsigende no‐
+<lb/>get; bare en slags fordom, eller hvad vi skal kal‐
+<lb/>de det; men alligevel –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Frøken Radeck</speaker>.</HIS:spOpener>
-<lb/><p>Altså dog ikke kommet ud over sligt no&typHyp;
+<lb/><p>Altså dog ikke kommet ud over sligt no‐
 <lb/>get endnu?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Boldt-Rømer</speaker>.</HIS:spOpener>
 <lb/><p>Helt kommer jeg visst aldrig ud over
@@ -414,7 +409,7 @@ Opprettet fil med teiHeaderopplysninger ang. NBO Ms.4&deg; 1291. Transkriberte f
 <lb/><p>Så skulde De prøve om De ikke komme
 <lb/>tilbage, did, hvor De stod før.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Boldt-Rømer</speaker>.</HIS:spOpener>
-<lb/><p>Did? Aldrig i verden gør jeg det! Det hver&typHyp;
+<lb/><p>Did? Aldrig i verden gør jeg det! Det hver‐
 <lb/>ken kan jeg eller vil jeg.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Frøken Rømer</speaker>.</HIS:spOpener>
 <lb/><p>Bedst havde det i al fald været for Dem
@@ -426,7 +421,7 @@ Opprettet fil med teiHeaderopplysninger ang. NBO Ms.4&deg; 1291. Transkriberte f
 <lb/>aldrig har havt en lykkelig stund før jeg
 <lb/>vandt frem til frigørelse i sindet.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Frøken Radeck</speaker>.</HIS:spOpener>
-<lb/><p>Å det er nok langt frem endnu før De vin&typHyp;
+<lb/><p>Å det er nok langt frem endnu før De vin‐
 <lb/>der fuld frigørelse. Jeg tror Det havde været
 <lb/>bedst for Dem om jeg aldrig var kommen
 <lb/>indenfor Deres dør.</p></HIS:hisSp>
@@ -436,14 +431,14 @@ Opprettet fil med teiHeaderopplysninger ang. NBO Ms.4&deg; 1291. Transkriberte f
 </HIS:spOpener>
 <lb/><p>Hvad De før var.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Boldt-Rømer</speaker>.</HIS:spOpener>
-<lb/><p>Ja, det er sandt. Et menneske uden synsvid&typHyp;
+<lb/><p>Ja, det er sandt. Et menneske uden synsvid‐
 <lb/>de; uden nogensomhelst forståelse af det
 <lb/>virkelighedens liv, som kæmper og arbejder
-<lb/>rundt omkring os. <HIS:hisDel rend="overstrike">&dash; Se</HIS:hisDel>; <HIS:hisDel rend="overstrike">der kommer rek&typHyp;
+<lb/>rundt omkring os. <HIS:hisDel rend="overstrike">– Se</HIS:hisDel>; <HIS:hisDel rend="overstrike">der kommer rek‐
 <lb/>toren</HIS:hisDel>.</p></HIS:hisSp><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Frøken Radeck</speaker>.</HIS:spOpener>
 <lb/><p>Nå, men alli<HIS:hisDel rend="overwritten">B</HIS:hisDel>gevel; så blød, som De er;
 <lb/>og så alt det nedarvede<HIS:hisDel rend="overwritten">;</HIS:hisDel>, som har sat sine
-<lb/>mærker i Dem. Å nej, det går ikke så let &dash;.
+<lb/>mærker i Dem. Å nej, det går ikke så let –.
 <lb/><HIS:hisStage>(ser ud.)</HIS:hisStage> Se; der kommer rektoren.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Boldt-Rømer</speaker>.</HIS:spOpener>
 <lb/><p>Hvem kommer?</p></HIS:hisSp>
@@ -466,7 +461,7 @@ Opprettet fil med teiHeaderopplysninger ang. NBO Ms.4&deg; 1291. Transkriberte f
 <lb/><p>Det er <HIS:clarification place="inline">jo</HIS:clarification> så rimeligt at du ikke kan gå med på
 <lb/>disse mørke pietistiske retninger, som har fåt
 <lb/>overhånd i så mange kredse. Men er det da ikke
-<lb/>din pligt at arbejde imod &dash;</p></HIS:hisSp>
+<lb/>din pligt at arbejde imod –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker><app type="alteration"><lem><HIS:hisAdd place="offline"><HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>Rosenhjelm</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Hekmann</HIS:hisDel></HIS:hisRdg></app></speaker>.</HIS:spOpener>
 <lb/><p>Ikke som prest. Jeg kan ikke bli stående i den
 <lb/>stilling.</p></HIS:hisSp>
@@ -476,31 +471,31 @@ Opprettet fil med teiHeaderopplysninger ang. NBO Ms.4&deg; 1291. Transkriberte f
 <lb/><p>Jeg skulde aldrig tat kirgeligt embede. Det var
 <lb/>jo heller ikke med min gode vilje. Men det lå jo
 <lb/>i slægtens traditionen. Prester og militære har
-<lb/>afvekslet, &dash; far efter søn. Og da nu far var offi&typHyp;
+<lb/>afvekslet, – far efter søn. Og da nu far var offi‐
 <lb/>cer, så var det ganske som naturligt at jeg tog
 <lb/>fat på teologien. Jeg syntes selv dengang at det
 <lb/>var i sin orden.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>H</speaker></HIS:spOpener>
 <lb/><p>Og nu havde du jo levet dig så fast ind i det.
-<lb/>Hvad vil du nu ta&rapo; dig til &dash; nu midt i din kraf&typHyp;
+<lb/>Hvad vil du nu ta’ dig til – nu midt i din kraf‐
 
 <pb ed="source" type="folio_nopagination" subtype="verso"  n="1" facs="12" gathering="2"/>
 <lb/>tigste alder.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>R</speaker></HIS:spOpener>
-<lb/><p>Jeg har jo hele den store gårdsdrift &dash;</p></HIS:hisSp>
+<lb/><p>Jeg har jo hele den store gårdsdrift –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>H.</speaker></HIS:spOpener>
-<lb/><p>Det fylder ikke din tid ud; du har jo både for&typHyp;
-<lb/>valter og forpagtere. Nej nu hjælper ingen und&typHyp;
+<lb/><p>Det fylder ikke din tid ud; du har jo både for‐
+<lb/>valter og forpagtere. Nej nu hjælper ingen und‐
 <lb/>skyldninger mere. Nu skal og må du gribe ind
 <lb/>i det offentlige liv.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>R</speaker></HIS:spOpener>
-<lb/><p>Det har jeg også tænkt på, &dash; på min måde.</p></HIS:hisSp>
+<lb/><p>Det har jeg også tænkt på, – på min måde.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>H</speaker></HIS:spOpener>
-<lb/><p>Ikke på nogen særlig måde. Ind i partiets ræk&typHyp;
+<lb/><p>Ikke på nogen særlig måde. Ind i partiets ræk‐
 <lb/>ker må du. Du ser vel, hvor inderlig det behøve<unclear reason="writing">s</unclear>.
-<lb/>Vælg dig en specialitet. Tred op imod denne Mor&typHyp;
-<lb/>tensgård som vigler op hele den uvidende mæng&typHyp;
-<lb/>de. Og nu hører jeg han tænker på at få et blad i&typHyp;
+<lb/>Vælg dig en specialitet. Tred op imod denne Mor‐
+<lb/>tensgård som vigler op hele den uvidende mæng‐
+<lb/>de. Og nu hører jeg han tænker på at få et blad i‐
 <lb/>stand.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>R</speaker></HIS:spOpener>
 <lb/><p>Så. Ja manden er begavet. Han både skriver og taler
@@ -509,12 +504,12 @@ Opprettet fil med teiHeaderopplysninger ang. NBO Ms.4&deg; 1291. Transkriberte f
 <lb/><p>Å kære, det er <HIS:clarification place="inline">e</HIS:clarification>n let sag når man ikke tar det nøje
 <lb/>med sandheden og med det faktiske.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>R</speaker></HIS:spOpener>
-<lb/><p>Ja jeg kender så lidt til det faktiske i de h<HIS:clarification place="inline">en</HIS:clarification>se<unclear reason="writing">en&typHyp;</unclear>
+<lb/><p>Ja jeg kender så lidt til det faktiske i de h<HIS:clarification place="inline">en</HIS:clarification>se<unclear reason="writing">en‐</unclear>
 <lb/>der.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>H</speaker></HIS:spOpener>
 <lb/><p>Men det gør jeg. Og jeg har havt anledning til at
 <lb/>kontrollere denne Mortensgård. Han er en af de
-<lb/>samvittighedsløseste rabulister vi har, på dis&typHyp;
+<lb/>samvittighedsløseste rabulister vi har, på dis‐
 <lb/>se kanter. Og det vil sige meget, kan du tro.</p></HIS:hisSp>
 
 <pb ed="source" type="folio_nopagination" subtype="recto"  n="2" facs="13" gathering="2"/>
@@ -530,22 +525,22 @@ Opprettet fil med teiHeaderopplysninger ang. NBO Ms.4&deg; 1291. Transkriberte f
 <lb/>kilderne.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>H.</speaker></HIS:spOpener>
 <lb/><p>Driv nu ikke humaniteten for vidt, min kære
-<lb/>Rosenhjelm. Og hvad er det for noget godt, du <HIS:hisDel rend="overstrike">sig</HIS:hisDel>&typHyp;
-<lb/>har opdaget. Sigter du kanske til massehøv&typHyp;
+<lb/>Rosenhjelm. Og hvad er det for noget godt, du <HIS:hisDel rend="overstrike">sig</HIS:hisDel>‐
+<lb/>har opdaget. Sigter du kanske til massehøv‐
 <lb/>dingernes statskup.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>R</speaker></HIS:spOpener>
 <lb/><p>De ting forstår jeg mig ikke på. Men jeg synes
-<lb/>der er kommet ligesom lidt mere slevstændig&typHyp;
+<lb/>der er kommet ligesom lidt mere slevstændig‐
 <lb/>hed ind i de enkeltes tænkning.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>H</speaker></HIS:spOpener>
-<lb/><p>Og det regner du for noget godt hos så ubefæs&typHyp;
+<lb/><p>Og det regner du for noget godt hos så ubefæs‐
 <lb/>tede og ufærdige mennesker? Jeg tror du tar
 <lb/>betydelig fejl. Og <HIS:hisDel rend="overwritten">s</HIS:hisDel>jeg må sige at det højlig undrer
 <lb/>mig at høre slige ord fra dig. Du som dog har
 <lb/>arvet hele din slægts agtelse for autoritet og
 <lb/>for god lovlig orden.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>R</speaker></HIS:spOpener>
-<lb/><p>Hvem ved, &dash; man kan kanske ikke helt und&typHyp;
+<lb/><p>Hvem ved, – man kan kanske ikke helt und‐
 <lb/>gå at smittes af den tid man lever i.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>H</speaker></HIS:spOpener>
 <lb/><p>Det håber jeg dog aldrig skal bli tilfældet med
@@ -554,7 +549,7 @@ Opprettet fil med teiHeaderopplysninger ang. NBO Ms.4&deg; 1291. Transkriberte f
 <lb/>nogen af os to. Vi vil bli ved at stå rene. Ikke
 <lb/>sandt, Rosenhjelm?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>R</speaker></HIS:spOpener>
-<lb/><p>At stå ren, så vidt muligt, er unægtelig opga&typHyp;
+<lb/><p>At stå ren, så vidt muligt, er unægtelig opga‐
 <lb/>ven for enhver.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>H</speaker></HIS:spOpener>
 <lb/><p>Nå, og så skabe renhed omkring sig, eller i alt
@@ -563,8 +558,8 @@ Opprettet fil med teiHeaderopplysninger ang. NBO Ms.4&deg; 1291. Transkriberte f
 <lb/><p>Det er jeg så visst med på.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>H</speaker></HIS:spOpener>
 <lb/><p>Nå så må du også være med på at gribe ind,
-<lb/>ta&rapo; del i det offentlige liv, bekæmpe alle disse u&typHyp;
-<lb/>heldsvangre tendenser &dash;</p></HIS:hisSp>
+<lb/>ta’ del i det offentlige liv, bekæmpe alle disse u‐
+<lb/>heldsvangre tendenser –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>R</speaker></HIS:spOpener>
 <lb/><p>Men kære, når man nu slet ikke er skabt for
 <lb/>det?</p></HIS:hisSp>
@@ -574,13 +569,13 @@ Opprettet fil med teiHeaderopplysninger ang. NBO Ms.4&deg; 1291. Transkriberte f
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>R</speaker></HIS:spOpener>
 <lb/><p>E<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>nhver?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>H</speaker></HIS:spOpener>
-<lb/><p>Jeg mener naturligvis enhver, som har de for&typHyp;
+<lb/><p>Jeg mener naturligvis enhver, som har de for‐
 <lb/>nødne forudsætninger, enhver, som besidder
 <lb/>et visst kvantum af dannelse og indsigter,
-<lb/>jeg fordrer ikke egentlig lærdom. Men alminde&typHyp;
-<lb/>lig dannelse og kundskab burde man dog vir&typHyp;
+<lb/>jeg fordrer ikke egentlig lærdom. Men alminde‐
+<lb/>lig dannelse og kundskab burde man dog vir‐
 <lb/>kelig kunne forlange. Se, det var <emph>det</emph>, som det vilde
-<lb/>være så inderlig velgørende at få gjort indly&typHyp;
+<lb/>være så inderlig velgørende at få gjort indly‐
 <lb/>sende for masserne.</p></HIS:hisSp>
 </div>
 </body>

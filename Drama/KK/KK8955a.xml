@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -13,11 +7,11 @@
 <title level="s" type="main">Henrik Ibsens skrifter</title>
 <title level="s" type="sub">Diplomatarisk tekstarkiv</title>
 <title level="a" type="main">[Kjærlighedens Komedie]</title>
-<title level="a" type="sub">NBO Ms.8&deg; 955a</title>
+<title level="a" type="sub">NBO Ms.8° 955a</title>
 <title level="a" type="origYear">1867</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Ingrid Falkenberg, Ellen Nessheim Wiger, Ingvald Aarstein</name></respStmt>
 <respStmt>
 <resp>Transkripsjon, juni 2002:</resp>
@@ -43,7 +37,7 @@
 <msIdentifier>
 <settlement>Oslo</settlement>
 <repository>Nasjonalbiblioteket</repository>
-<idno>NBO Ms.8&deg; 955a</idno>
+<idno>NBO Ms.8° 955a</idno>
 </msIdentifier>
 <msContents><msItem>
 <author>Henrik Ibsen</author>
@@ -56,7 +50,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <list>
@@ -73,12 +67,12 @@
 <item>skader: Flere hull i papiret. Revne i papiret første blad, tapet på baksiden</item>
 </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="pb-ed-HU-n">Sideskiftene fra Hundreårsutgaven (bd IV) er kodet med pb ed="HU". Dette tekstvitnet dekker sidene 137-138. Sidetallene er oppgitt i n-attributter.</tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -123,27 +117,27 @@ Transkribert og kodet fra faksimiler. NB! Â«JuksekodingÂ»: TEXT kan ikke inn
 <pb ed="HU" n="137"/>
 <div type="preface">
 <lb/><head>Till anden Udgave.</head>
-<lb/><p>Nærværende Digt er skre&typHyp;
+<lb/><p>Nærværende Digt er skre‐
 <lb/>vet i Sommeren 1862 og første
-<lb/>Udgave udkom samme Aars Vin&typHyp;
+<lb/>Udgave udkom samme Aars Vin‐
 <lb/>ter.</p>
 <lb/><p>Men jeg begik den Fejl at
 <lb/>udgive Bogen i Norge. Baade
 <lb/>Tid og Sted var uheldigt valgt.</p>
 <lb/><p>Digtet vakte en Storm af
-<lb/>Uvilje, voldsommere og mere ud&typHyp;
+<lb/>Uvilje, voldsommere og mere ud‐
 <lb/>bredt, end de fleste Bøger skal
-<lb/>kunne rose sig af i et Sam&typHyp;
+<lb/>kunne rose sig af i et Sam‐
 <lb/>fund, hvis overvejende Flerhed
-<lb/>ellers betragter literære Anlig&typHyp;
+<lb/>ellers betragter literære Anlig‐
 <lb/>gender som sig saa temmelig
 <lb/>uvedkommende.</p>
 <lb/><p>Modtagelsen overraskede
-<lb/>mig forøvrigt ikke. &lquo;Den sun&typHyp;
-<lb/>de Realisme&rquo;, som vi Normæn<unclear reason="damage">d</unclear> <gap reason="damage"/>
+<lb/>mig forøvrigt ikke. «Den sun‐
+<lb/>de Realisme», som vi Normæn<unclear reason="damage">d</unclear> <gap reason="damage"/>
 <lb/>ialfald for Realismens om e<unclear reason="damage">n</unclear>d
-<lb/>ikke for Sundhedens Vedkommen&typHyp;
-<lb/>de, med Føje tør tillæg<HIS:hisAdd place="offline" hand="HI-h2">g</HIS:hisAdd>e os, brin&typHyp;
+<lb/>ikke for Sundhedens Vedkommen‐
+<lb/>de, med Føje tør tillæg<HIS:hisAdd place="offline" hand="HI-h2">g</HIS:hisAdd>e os, brin‐
 <lb/>ger os ganske naturligt till i
 <lb/>det Bestaaende at se det Berettigede,
 <pb/>
@@ -155,24 +149,24 @@ Transkribert og kodet fra faksimiler. NB! Â«JuksekodingÂ»: TEXT kan ikke inn
 <lb/>efter bedste Evne svang Pidsken
 <lb/>over Kjærlighederne og Ægteskaberne,
 <lb/>var det i sin Orden at de Mange
-<lb/>skreg paa Kjærlighedens og Ægte&typHyp;
+<lb/>skreg paa Kjærlighedens og Ægte‐
 <lb/>skabets Vegne. Den Tankens Tugt
 <lb/>og Dressur, som kræves for at begribe
 <lb/>Vildfarelsen, har Flertallet indenfor
-<lb/><HIS:hisAdd place="inline" hand="HI-h2">vor</HIS:hisAdd> bogdømmende og læsende Almen&typHyp;
-<lb/>hed kun ufuldstændigt gjennem&typHyp;
+<lb/><HIS:hisAdd place="inline" hand="HI-h2">vor</HIS:hisAdd> bogdømmende og læsende Almen‐
+<lb/>hed kun ufuldstændigt gjennem‐
 <lb/>gaaet. Det er imidlertid ikke min
 <lb/>Sag at give noget Kursus. Et
 <lb/>Forord er ingen ABC.</p><pb ed="HU" n="138"/>
 <lb/><p>Till Danmark kom der i sin
-<lb/>Tid neppe synderlig flere Exempla&typHyp;
-<lb/>rer af Digtet, end dem, der till&typHyp;
+<lb/>Tid neppe synderlig flere Exempla‐
+<lb/>rer af Digtet, end dem, der till‐
 <lb/>stilledes de kjøbenhavnske Blade
 <lb/>till Anmeldelse.</p>
 <lb/><p>For den Kritik, som dersteds
-<lb/>blev min Bog tilldel, har jeg over&typHyp;
+<lb/>blev min Bog tilldel, har jeg over‐
 <lb/>hovedet al Grund till at være
-<lb/>takknemmelig. Mangen Bemærk&typHyp;
+<lb/>takknemmelig. Mangen Bemærk‐
 <lb/>ning derfra har været vækkende
 <lb/>for mig, og naar jeg desuagtet, med
 <lb/>Undtagelse af nogle sproglige
@@ -190,9 +184,9 @@ Transkribert og kodet fra faksimiler. NB! Â«JuksekodingÂ»: TEXT kan ikke inn
 <lb/>Kjernen i det Hele.</p>
 <lb/><p>Enkelte lokale Hentydninger
 <lb/>vil maaske være uforstaaelige for
-<lb/>danske Læsere; men disse Hen&typHyp;
+<lb/>danske Læsere; men disse Hen‐
 <lb/>tydninger ere ikke mange og
-<lb/>desuden <sic>uvæsenlige</sic> for Forstaael&typHyp;
+<lb/>desuden <sic>uvæsenlige</sic> for Forstaael‐
 <lb/>sen af Digtets Gang og Tanke.</p>
 <lb/><dateline>Rom, i <date>Januar 1867</date>.</dateline>
 <lb/><signed>Henrik Ibsen.</signed>

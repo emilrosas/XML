@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -13,11 +7,11 @@
 <title level="s" type="main">Henrik Ibsens skrifter</title>
 <title level="s" type="sub">Diplomatarisk tekstarkiv</title>
 <title level="a" type="main">Fruen fra havet</title>
-<title level="a" type="sub">NBO Ms.4&deg; 1116a, bl. 6r</title>
+<title level="a" type="sub">NBO Ms.4° 1116a, bl. 6r</title>
 <title level="a" type="origYear">1888</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Henninge Margrethe Solberg, Mette Witting</name></respStmt>
 <respStmt>
 <resp>Oppretting og 1. kollasjon, juni - november 2006</resp>
@@ -44,12 +38,12 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <p>Manuskriptets grafiske oppsett finnes beskrevet i typografibeskrivelsen i FH41116_NBO.xml.</p></HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -64,7 +58,7 @@
 <label xml:id="BALLESTED"/><item>Maler Ballesen/-/-</item>
 </list>
 </tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -133,7 +127,7 @@ Gjenstår: kontrollere at delingen i a og b er i tråd med Tone Modalslis manusk
 <lb/><castItem corresp="WANGEL"><app type="alteration"><lem><HIS:hisAdd place="offline">Doktor</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Sagfører</HIS:hisDel></HIS:hisRdg></app> Wangel<HIS:hisDel rend="overwritten">.</HIS:hisDel>, distriktslæge.</castItem>
 <lb/><castItem corresp="ELLIDA">Fru Wangel, hans anden hustru.</castItem>
 <lb/><HIS:hisCastGroup rend="braced"><castItem corresp="BOLETTE"><HIS:hisDel rend="overstrike">Thea</HIS:hisDel>. Annette</castItem>
-<lb/><castItem corresp="HILDE">Frida, halvvoksen</castItem>. <roleDesc>hans døtre af før&typHyp;
+<lb/><castItem corresp="HILDE">Frida, halvvoksen</castItem>. <roleDesc>hans døtre af før‐
 <lb/>ste ægteskab</roleDesc>.</HIS:hisCastGroup>
 <lb/><castItem corresp="ARNHOLM"><HIS:hisDel rend="overstrike">Bureauchef</HIS:hisDel> Hesler, overlærer.</castItem>
 <lb/><castItem corresp="LYNGSTRAND">Hans <HIS:hisDel rend="overstrike">L<HIS:hisDel rend="overwritten">øvs</HIS:hisDel>yngt<HIS:hisDel rend="overwritten">a</HIS:hisDel>rd</HIS:hisDel>, ung billedhugger. <HIS:hisAdd place="inline">Lyngstrand</HIS:hisAdd></castItem>
@@ -141,7 +135,7 @@ Gjenstår: kontrollere at delingen i a og b er i tråd med Tone Modalslis manusk
 <lb/><castItem>Fru Strømme, hans hustru.</castItem>
 <lb/><castItem corresp="BALLESTED">Maler <HIS:hisDel rend="overstrike">Solfeldt</HIS:hisDel>. Ballesen.</castItem>
 <lb/><castItem><HIS:hisDel rend="overstrike">Timelærer Ballesen</HIS:hisDel>.</castItem>
-<lb/><castItem type="list">Byens folk. Sommergæster. Dampskibspas&typHyp;
+<lb/><castItem type="list">Byens folk. Sommergæster. Dampskibspas‐
 <lb/>sagerer og turister.</castItem>
 </HIS:hisCastList>
 <lb/><set><p>(Handlingen foregår på et handelsted i

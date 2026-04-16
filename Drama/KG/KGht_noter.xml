@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader>
 <fileDesc>
@@ -13,8 +7,8 @@
 <title>Henrik Ibsens skrifter</title>
 <title xml:id="KG">Kejser og Galilæer</title>
 <title>KG: tekstkritiske noter</title>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt><resp>Oppretting</resp>
 <name xml:id="HIS_HB">Hilde Bøe</name></respStmt>
 </titleStmt>
@@ -31,23 +25,23 @@
 </revisionDesc>
 </teiHeader>
 <text><body><div type="tcNote">
-<note resp="editor" xml:id="noteKG_1"><HIS:hisRef type="tcNote" target="KGht.xml" corresp="noteKG_1">sex</HIS:hisRef>] <hi rend="italic">KBK Collin 262, 4&deg;, II.3, trykkfeilliste til 2. utg. (i KBK Collin 262, 4&deg;, II.3), 2. utg.,</hi> seks <hi rend="italic">1. utg., 3.&dash;4. utg., FU, 5. utg.</hi></note>
-<note resp="editor" xml:id="noteKG_2"><HIS:hisRef type="tcNote" target="KGht.xml" corresp="noteKG_2">på</HIS:hisRef>] <hi rend="italic">NBO Ms.4&deg; 1111c, KBK Collin 262, 4&deg;, II.3, 2. utg., 4. utg., FU, 5. utg.,</hi> paa <hi rend="italic">1. utg., 3. utg.</hi></note>
+<note resp="editor" xml:id="noteKG_1"><HIS:hisRef type="tcNote" target="KGht.xml" corresp="noteKG_1">sex</HIS:hisRef>] <hi rend="italic">KBK Collin 262, 4°, II.3, trykkfeilliste til 2. utg. (i KBK Collin 262, 4°, II.3), 2. utg.,</hi> seks <hi rend="italic">1. utg., 3.–4. utg., FU, 5. utg.</hi></note>
+<note resp="editor" xml:id="noteKG_2"><HIS:hisRef type="tcNote" target="KGht.xml" corresp="noteKG_2">på</HIS:hisRef>] <hi rend="italic">NBO Ms.4° 1111c, KBK Collin 262, 4°, II.3, 2. utg., 4. utg., FU, 5. utg.,</hi> paa <hi rend="italic">1. utg., 3. utg.</hi></note>
 <note resp="editor" xml:id="noteKG_3"><HIS:hisRef type="tcNote" target="KGht.xml" corresp="noteKG_3">Julian</HIS:hisRef>] <hi rend="italic">HIS</hi> JuIian <hi rend="italic">1. utg.</hi></note>
-<note resp="editor" xml:id="noteKG_4"><HIS:hisRef type="tcNote" target="KGht.xml" corresp="noteKG_4">kilder</HIS:hisRef>] <hi rend="italic">KBK Collin 262, 4&deg;, II.3, 3.&dash;4. utg., FU, 5. utg.,</hi> Kilder <hi rend="italic">1.&dash;2. utg.</hi></note>
-<note resp="editor" xml:id="noteKG_5"><HIS:hisRef type="tcNote" target="KGht.xml" corresp="noteKG_5">dette.</HIS:hisRef>] <hi rend="italic">NBO Ms.4&deg; 1111c, KBK Collin 262, 4&deg;, II.3, 2.&dash;4. utg., FU, 5. utg.,</hi> dette, <hi rend="italic">1. utg.</hi></note>
-<note resp="editor" xml:id="noteKG_6"><HIS:hisRef type="tcNote" target="KGht.xml" corresp="noteKG_6">altså.</HIS:hisRef>] <hi rend="italic">HIS</hi> altså <hi rend="italic">1. utg., KBK Collin 262, 4&deg;, II.3, 2.&dash;4. utg., FU, 5. utg.</hi></note>
-<note resp="editor" xml:id="noteKG_7"><HIS:hisRef type="tcNote" target="KGht.xml" corresp="noteKG_7">Gå</HIS:hisRef>] <hi rend="italic">KBK Collin 262, 4&deg;, II.3, 2.&dash;4. utg., FU, 5. utg.,</hi> Ga <hi rend="italic">1. utg.,</hi> gå <hi rend="italic">NBO Ms.4&deg; 1111c</hi></note>
-<note resp="editor" xml:id="noteKG_8"><HIS:hisRef type="tcNote" target="KGht.xml" corresp="noteKG_8">ængstelser?</HIS:hisRef>] <hi rend="italic">NBO Ms.4&deg; 1111e, 2. utg.,</hi> ængstelser. <hi rend="italic">1. utg., KBK Collin 262, 4&deg;, II.3, 3.&dash;4. utg., FU, 5. utg.</hi></note>
-<note resp="editor" xml:id="noteKG_9"><HIS:hisRef type="tcNote" target="KGht.xml" corresp="noteKG_9">Konstantin</HIS:hisRef>] <hi rend="italic">NBO Ms.4&deg; 1111e, KBK Collin 262, 4&deg;, II.3, trykkfeilliste til 2. utg. (i KBK Collin 262, 4&deg;, II.3), 2. utg.,</hi> Konstanzios <hi rend="italic">1. utg., 3.&dash;4. utg., FU, 5. utg.</hi></note>
-<note resp="editor" xml:id="noteKG_10"><HIS:hisRef type="tcNote" target="KGht.xml" corresp="noteKG_10">mig.</HIS:hisRef>] <hi rend="italic">NBO Ms.4&deg; 1111e, KBK Collin 262, 4&deg;, II.3, 2.&dash;4. utg., FU, 5. utg.,</hi> mig <hi rend="italic">1. utg.</hi></note>
-<note resp="editor" xml:id="noteKG_11"><HIS:hisRef type="tcNote" target="KGht.xml" corresp="noteKG_11">ulykke?</HIS:hisRef>] <hi rend="italic">NBO Ms.4&deg; 1111e,</hi> ulykke. <hi rend="italic">1. utg., KBK Collin 262, 4&deg;, II.3, 2.&dash;4. utg., FU, 5. utg.</hi></note>
-<note resp="editor" xml:id="noteKG_12"><HIS:hisRef type="tcNote" target="KGht.xml" corresp="noteKG_12">kvinde!</HIS:hisRef>] <hi rend="italic">NBO Ms.4&deg; 1111e, KBK Collin 262, 4&deg;, II.3, 4. utg., FU, 5. utg.,</hi> kvinde? <hi rend="italic">1.&dash;3. utg.</hi></note>
-<note resp="editor" xml:id="noteKG_13"><HIS:hisRef type="tcNote" target="KGht.xml" corresp="noteKG_13">Hilarion</HIS:hisRef>] <hi rend="italic">NBO Ms.4&deg; 1111e, KBK Collin 262, 4&deg;, II.3, trykkfeilliste til 2. utg. (i KBK Collin 262, 4&deg;, II.3), 2.&dash;4. utg., FU, 5. utg.,</hi> Harilion <hi rend="italic">1. utg.</hi></note>
-<note resp="editor" xml:id="noteKG_15"><HIS:hisRef type="tcNote" target="KGht.xml" corresp="noteKG_15">Libanios!</HIS:hisRef>] <hi rend="italic">KBK Collin 262, 4&deg;, II.3,</hi> Libanios? <hi rend="italic">1.&dash;4. utg., FU, 5. utg.,</hi> Libanius! <hi rend="italic">NBO Ms.4&deg; 1111e</hi></note>
-<note resp="editor" xml:id="noteKG_16"><HIS:hisRef type="tcNote" target="KGht.xml" corresp="noteKG_16">end nok,</HIS:hisRef>] <hi rend="italic">NBO Ms.4&deg; 1111e, KBK Collin 262, 4&deg;, II.3, 2. utg., 4. utg., FU, 5. utg.,</hi> end nok <hi rend="italic">1. utg., 3. utg.</hi></note>
-<note resp="editor" xml:id="noteKG_17"><HIS:hisRef type="tcNote" target="KGht.xml" corresp="noteKG_17">under</HIS:hisRef>] <hi rend="italic">NBO Ms.4&deg; 1111e, trykkfeilliste til 2. utg. (i KBK Collin 262, 4&deg;, II.3), 2.&dash;4. utg., FU, 5. utg.,</hi> under fra <hi rend="italic">1. utg.,</hi> under <hi rend="italic">endret fra</hi> fra <hi rend="italic">KBK Collin 262, 4&deg;, II.3</hi></note>
-<note resp="editor" xml:id="noteKG_18"><HIS:hisRef type="tcNote" target="KGht.xml" corresp="noteKG_18">vide.</HIS:hisRef>] <hi rend="italic">NBO Ms.4&deg; 1111e, KBK Collin 262, 4&deg;, II.3, 2. utg., 4. utg., FU, 5. utg.,</hi> vide <hi rend="italic">1. utg., 3. utg.</hi></note>
+<note resp="editor" xml:id="noteKG_4"><HIS:hisRef type="tcNote" target="KGht.xml" corresp="noteKG_4">kilder</HIS:hisRef>] <hi rend="italic">KBK Collin 262, 4°, II.3, 3.–4. utg., FU, 5. utg.,</hi> Kilder <hi rend="italic">1.–2. utg.</hi></note>
+<note resp="editor" xml:id="noteKG_5"><HIS:hisRef type="tcNote" target="KGht.xml" corresp="noteKG_5">dette.</HIS:hisRef>] <hi rend="italic">NBO Ms.4° 1111c, KBK Collin 262, 4°, II.3, 2.–4. utg., FU, 5. utg.,</hi> dette, <hi rend="italic">1. utg.</hi></note>
+<note resp="editor" xml:id="noteKG_6"><HIS:hisRef type="tcNote" target="KGht.xml" corresp="noteKG_6">altså.</HIS:hisRef>] <hi rend="italic">HIS</hi> altså <hi rend="italic">1. utg., KBK Collin 262, 4°, II.3, 2.–4. utg., FU, 5. utg.</hi></note>
+<note resp="editor" xml:id="noteKG_7"><HIS:hisRef type="tcNote" target="KGht.xml" corresp="noteKG_7">Gå</HIS:hisRef>] <hi rend="italic">KBK Collin 262, 4°, II.3, 2.–4. utg., FU, 5. utg.,</hi> Ga <hi rend="italic">1. utg.,</hi> gå <hi rend="italic">NBO Ms.4° 1111c</hi></note>
+<note resp="editor" xml:id="noteKG_8"><HIS:hisRef type="tcNote" target="KGht.xml" corresp="noteKG_8">ængstelser?</HIS:hisRef>] <hi rend="italic">NBO Ms.4° 1111e, 2. utg.,</hi> ængstelser. <hi rend="italic">1. utg., KBK Collin 262, 4°, II.3, 3.–4. utg., FU, 5. utg.</hi></note>
+<note resp="editor" xml:id="noteKG_9"><HIS:hisRef type="tcNote" target="KGht.xml" corresp="noteKG_9">Konstantin</HIS:hisRef>] <hi rend="italic">NBO Ms.4° 1111e, KBK Collin 262, 4°, II.3, trykkfeilliste til 2. utg. (i KBK Collin 262, 4°, II.3), 2. utg.,</hi> Konstanzios <hi rend="italic">1. utg., 3.–4. utg., FU, 5. utg.</hi></note>
+<note resp="editor" xml:id="noteKG_10"><HIS:hisRef type="tcNote" target="KGht.xml" corresp="noteKG_10">mig.</HIS:hisRef>] <hi rend="italic">NBO Ms.4° 1111e, KBK Collin 262, 4°, II.3, 2.–4. utg., FU, 5. utg.,</hi> mig <hi rend="italic">1. utg.</hi></note>
+<note resp="editor" xml:id="noteKG_11"><HIS:hisRef type="tcNote" target="KGht.xml" corresp="noteKG_11">ulykke?</HIS:hisRef>] <hi rend="italic">NBO Ms.4° 1111e,</hi> ulykke. <hi rend="italic">1. utg., KBK Collin 262, 4°, II.3, 2.–4. utg., FU, 5. utg.</hi></note>
+<note resp="editor" xml:id="noteKG_12"><HIS:hisRef type="tcNote" target="KGht.xml" corresp="noteKG_12">kvinde!</HIS:hisRef>] <hi rend="italic">NBO Ms.4° 1111e, KBK Collin 262, 4°, II.3, 4. utg., FU, 5. utg.,</hi> kvinde? <hi rend="italic">1.–3. utg.</hi></note>
+<note resp="editor" xml:id="noteKG_13"><HIS:hisRef type="tcNote" target="KGht.xml" corresp="noteKG_13">Hilarion</HIS:hisRef>] <hi rend="italic">NBO Ms.4° 1111e, KBK Collin 262, 4°, II.3, trykkfeilliste til 2. utg. (i KBK Collin 262, 4°, II.3), 2.–4. utg., FU, 5. utg.,</hi> Harilion <hi rend="italic">1. utg.</hi></note>
+<note resp="editor" xml:id="noteKG_15"><HIS:hisRef type="tcNote" target="KGht.xml" corresp="noteKG_15">Libanios!</HIS:hisRef>] <hi rend="italic">KBK Collin 262, 4°, II.3,</hi> Libanios? <hi rend="italic">1.–4. utg., FU, 5. utg.,</hi> Libanius! <hi rend="italic">NBO Ms.4° 1111e</hi></note>
+<note resp="editor" xml:id="noteKG_16"><HIS:hisRef type="tcNote" target="KGht.xml" corresp="noteKG_16">end nok,</HIS:hisRef>] <hi rend="italic">NBO Ms.4° 1111e, KBK Collin 262, 4°, II.3, 2. utg., 4. utg., FU, 5. utg.,</hi> end nok <hi rend="italic">1. utg., 3. utg.</hi></note>
+<note resp="editor" xml:id="noteKG_17"><HIS:hisRef type="tcNote" target="KGht.xml" corresp="noteKG_17">under</HIS:hisRef>] <hi rend="italic">NBO Ms.4° 1111e, trykkfeilliste til 2. utg. (i KBK Collin 262, 4°, II.3), 2.–4. utg., FU, 5. utg.,</hi> under fra <hi rend="italic">1. utg.,</hi> under <hi rend="italic">endret fra</hi> fra <hi rend="italic">KBK Collin 262, 4°, II.3</hi></note>
+<note resp="editor" xml:id="noteKG_18"><HIS:hisRef type="tcNote" target="KGht.xml" corresp="noteKG_18">vide.</HIS:hisRef>] <hi rend="italic">NBO Ms.4° 1111e, KBK Collin 262, 4°, II.3, 2. utg., 4. utg., FU, 5. utg.,</hi> vide <hi rend="italic">1. utg., 3. utg.</hi></note>
 <note resp="editor" xml:id="noteKG_19"><HIS:hisRef type="tcNote" target="KGht.xml" corresp="noteKG_19">til</HIS:hisRef>] <hi rend="italic">HIS</hi> tiI <hi rend="italic">1. utg.</hi></note>
 <p/>
 </div></body></text>

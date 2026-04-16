@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -13,11 +7,11 @@
 <title level="s" type="main">Henrik Ibsens skrifter</title>
 <title level="s" type="sub">Diplomatarisk tekstarkiv</title>
 <title level="a" type="main">Kejser og Galilæer</title>
-<title level="a" type="sub">NBO Ms.4&deg; 1111a, bl. 283, 286 og 287v (fra 3. linje)</title>
-<title level="a" type="origYear">[1871&dash;1873]</title>
+<title level="a" type="sub">NBO Ms.4° 1111a, bl. 283, 286 og 287v (fra 3. linje)</title>
+<title level="a" type="origYear">[1871–1873]</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt>
 <resp>Konvertering fra ekstern transkripsjon til prosjektspesifikk TEI XML</resp>
 <name xml:id="HIS-HB">Hilde Bøe</name>
@@ -45,12 +39,12 @@
 <sourceDesc><p>Denne filen bygger på KG41111_NBO.xml (KG41111_NBO-0208).</p></sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography><p>Manuskriptets grafiske oppsett finnes beskrevet i typografibeskrivelsen i KG41111_NBO.xml.</p>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -121,7 +115,7 @@
 <label xml:id="PERSEREN"/><item>En persisk overløber/Perseren</item>
 </list>
 </tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -153,35 +147,35 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <div type="act" n="1-5">
 <lb/><HIS:hisSp who="EUTHERIOS"><HIS:spOpener><speaker><xptr type="synopticView_msVersions" xml:id="KG_159000ms"/>Euther.</speaker></HIS:spOpener>
 <lb/><p>Jeg lyver ikke, herre! Jeg tror jo ikke på denne lære, men
-<lb/>hvad jeg så kan jeg ikke tvivle på &dash;</p></HIS:hisSp>
+<lb/>hvad jeg så kan jeg ikke tvivle på –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. J.</speaker></HIS:spOpener>
-<lb/><p>Hvad så du &dash;</p></HIS:hisSp>
+<lb/><p>Hvad så du –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="EUTHERIOS"><HIS:spOpener><speaker>Euth</speaker></HIS:spOpener>
-<lb/><p>Hele staden e<HIS:clarification place="inline">r</HIS:clarification> i oprør &dash; der bæres syge og krøblinge ind
-<lb/>til fyrstindens kiste og de går bort helbredede &dash;</p></HIS:hisSp>
+<lb/><p>Hele staden e<HIS:clarification place="inline">r</HIS:clarification> i oprør – der bæres syge og krøblinge ind
+<lb/>til fyrstindens kiste og de går bort helbredede –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. J.</speaker></HIS:spOpener>
 <lb/><p>Og det har du set?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="EUTHERIOS"><HIS:spOpener><speaker>Euth</speaker></HIS:spOpener>
 <lb/><p>Ja, herre, jeg har set en faldsyg kvinde gå sund bort
-<lb/>prisende Galilæernes gud &dash;</p></HIS:hisSp>
+<lb/>prisende Galilæernes gud –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. J.</speaker></HIS:spOpener>
-<lb/><p>O, Maximus &dash; Maximus</p></HIS:hisSp>
+<lb/><p>O, Maximus – Maximus</p></HIS:hisSp>
 <lb/><HIS:hisSp who="EUTHERIOS"><HIS:spOpener><speaker><HIS:hisDel rend="overwritten">C</HIS:hisDel>Euth</speaker></HIS:spOpener>
-<lb/><p>Hør, hvor præsterne jubler; &dash; nu sker et nyt jertegn igen.</p></HIS:hisSp>
+<lb/><p>Hør, hvor præsterne jubler; – nu sker et nyt jertegn igen.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ORIBASES"><HIS:spOpener><speaker>Lægen Oribases</speaker>.
 <lb/><HIS:hisStage>(opp fra gangen til venstre.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Eutherios &dash; fandt du ham? Eutherios, Eutherios, hvor
-<lb/>er Cæsar &dash;</p></HIS:hisSp>
+<lb/><p>Eutherios – fandt du ham? Eutherios, Eutherios, hvor
+<lb/>er Cæsar –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. J.</speaker></HIS:spOpener>
 <lb/><p>Her, her; er det sandt <HIS:hisDel rend="overwritten"><unclear>o</unclear></HIS:hisDel>Oribases?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ORIBASES"><HIS:spOpener><speaker>L. Oribases</speaker></HIS:spOpener>
-<lb/><p>Uforklarligt, og dog sandt &dash;; de rører ved kisten og
-<lb/>vorder <sic>helbrede</sic> &dash; en røst forkynder højt i kirken
-<lb/>Hil være den rene kvinde &dash;</p></HIS:hisSp>
+<lb/><p>Uforklarligt, og dog sandt –; de rører ved kisten og
+<lb/>vorder <sic>helbrede</sic> – en røst forkynder højt i kirken
+<lb/>Hil være den rene kvinde –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. J.</speaker></HIS:spOpener>
-<lb/><p>En røst &dash;?</p></HIS:hisSp>
+<lb/><p>En røst –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ORIBASES"><HIS:spOpener><speaker>L. Orib.</speaker></HIS:spOpener>
-<lb/><p>En usynlig røst &dash; under kirkens hvælving &dash; ingen ved
+<lb/><p>En usynlig røst – under kirkens hvælving – ingen ved
 <pb ed="faksBase" n="38"/>
 <pb n="[283]v"/>
 <lb/>hvor den kommer fra.</p></HIS:hisSp>
@@ -190,89 +184,89 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>M. Maximus</speaker></HIS:spOpener>
 <lb/><p>Vælg!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ORIBASES"><HIS:spOpener><speaker>L. Orib.</speaker></HIS:spOpener>
-<lb/><p>Kom, kom, herre; de skrækslagne <sic>soldat</sic> truer dig &dash;</p></HIS:hisSp>
+<lb/><p>Kom, kom, herre; de skrækslagne <sic>soldat</sic> truer dig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. J.</speaker></HIS:spOpener>
 <lb/><p>Lad dem true</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ORIBASES"><HIS:spOpener><speaker>L. Orib.</speaker></HIS:spOpener>
-<lb/><p>De giver dig og mig skyld for <HIS:hisDel rend="overstrike">ke</HIS:hisDel> fyrstindens død &dash;</p></HIS:hisSp>
+<lb/><p>De giver dig og mig skyld for <HIS:hisDel rend="overstrike">ke</HIS:hisDel> fyrstindens død –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. J.</speaker></HIS:spOpener>
-<lb/><p>Jeg vil komme, jeg vil stille dem tilfreds &dash;</p></HIS:hisSp>
+<lb/><p>Jeg vil komme, jeg vil stille dem tilfreds –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ORIBASES"><HIS:spOpener><speaker>L. Orib</speaker></HIS:spOpener>
-<lb/><p>Der gives kun et middel &dash; du må give deres
-<lb/>tanker en anden retning &dash;</p></HIS:hisSp>
+<lb/><p>Der gives kun et middel – du må give deres
+<lb/>tanker en anden retning –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>Maximus</speaker></HIS:spOpener>
 <lb/><p>Fortabt, du dåre! <HIS:hisDel rend="overwritten">D</HIS:hisDel>Fald for din herre og mester</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. J.</speaker></HIS:spOpener>
-<lb/><p>Jeg vil leve &dash;; hvad løser pakten</p></HIS:hisSp>
+<lb/><p>Jeg vil leve –; hvad løser pakten</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>M</speaker>
 <lb/><HIS:hisStage>(rækker ham offerkniven)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Denne &dash;</p></HIS:hisSp>
+<lb/><p>Denne –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. J.</speaker></HIS:spOpener>
 <lb/><p>Hvad tvætter vandet af?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>M.</speaker></HIS:spOpener>
-<lb/><p>Dyrets blod &dash;</p>
+<lb/><p>Dyrets blod –</p>
 <lb/><HIS:hisStage>(han <gap reason="writing"/> om hans pande.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="ORIBASES"><HIS:spOpener><speaker>Orib.</speaker></HIS:spOpener>
-<lb/><p>Hvad gør du, herre &dash;?</p></HIS:hisSp>
+<lb/><p>Hvad gør du, herre –?</p></HIS:hisSp>
 <pb ed="faksBase" n="43"/>
 <pb n="[286]r"/>
 <lb/><fw type="leaf" place="top-right" scribe="h1">286</fw>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. J.</speaker></HIS:spOpener>
 <lb/><p>Forsk ikke</p></HIS:hisSp>
 <lb/><HIS:hisSp who="EUTHERIOS"><HIS:spOpener><speaker>Euth.</speaker></HIS:spOpener>
-<lb/><p>Hør larmen &dash; op, op &dash; min Cæsar &dash;</p></HIS:hisSp>
+<lb/><p>Hør larmen – op, op – min Cæsar –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. J.</speaker></HIS:spOpener>
-<lb/><p>Først ned, siden op &dash; hvor, Maximus</p></HIS:hisSp>
+<lb/><p>Først ned, siden op – hvor, Maximus</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>Mx.</speaker></HIS:spOpener>
-<lb/><p>Hist i den anden hvælving &dash;</p></HIS:hisSp>
+<lb/><p>Hist i den anden hvælving –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ORIBASES"><HIS:spOpener><speaker>Orib.</speaker></HIS:spOpener>
 <lb/><p>Hvor går du, Cæsar?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>Max.</speaker></HIS:spOpener>
 <lb/><p>Til frihed.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. J.</speaker></HIS:spOpener>
-<lb/><p>Gennem mørke til lys &dash; Ah &dash;</p>
+<lb/><p>Gennem mørke til lys – Ah –</p>
 <lb/><HIS:hisStage>(ned ge<unclear reason="writing">nnem</unclear> trappen.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>Max.</speaker></HIS:spOpener>
 <lb/><p>Så kom det dog.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="EUTHERIOS"><HIS:spOpener><speaker>Euth.</speaker></HIS:spOpener>
-<lb/><p>Tal, tal &dash; hvad gælder disse lønlige kunster</p></HIS:hisSp>
+<lb/><p>Tal, tal – hvad gælder disse lønlige kunster</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ORIBASES"><HIS:spOpener><speaker>Orib.</speaker></HIS:spOpener>
-<lb/><p>Og nu, da hvert øjeblik er dyrebart &dash;</p></HIS:hisSp>
+<lb/><p>Og nu, da hvert øjeblik er dyrebart –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>Max.</speaker></HIS:spOpener>
 <lb/><p>Disse glidende fugtige skygger, dette slimede kryb
 <lb/>om fødderne</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ORIBASES"><HIS:spOpener><speaker>Orib.</speaker></HIS:spOpener>
-<lb/><p>Larmen stiger &dash; hør &dash; hør</p></HIS:hisSp>
+<lb/><p>Larmen stiger – hør – hør</p></HIS:hisSp>
 <lb/><HIS:hisSp who="EUTHERIOS"><HIS:spOpener><speaker>Euth.</speaker></HIS:spOpener>
-<lb/><p>Det er sangen fra kirken &dash;</p></HIS:hisSp>
+<lb/><p>Det er sangen fra kirken –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ORIBASES"><HIS:spOpener><speaker>Orib.</speaker></HIS:spOpener>
-<lb/><p>Nej, det er soldat<unclear reason="writing">er</unclear> &dash; de kommer &dash;</p>
+<lb/><p>Nej, det er soldat<unclear reason="writing">er</unclear> – de kommer –</p>
 <lb/><HIS:hisStage>(Sallust og <sic>soldat</sic> fra venstre.)</HIS:hisStage></HIS:hisSp>
 <pb ed="faksBase" n="44"/>
 <pb n="[286]v"/>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Sall.</speaker></HIS:spOpener>
-<lb/><p>Vær rolige; jeg besværger eder &dash;</p></HIS:hisSp>
+<lb/><p>Vær rolige; jeg besværger eder –</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Soldat<unclear reason="writing">er</unclear></speaker>.</HIS:spOpener>
-<lb/><p>Cæsar har forrådt os! Cæsar skal dø &dash;</p></HIS:hisSp>
+<lb/><p>Cæsar har forrådt os! Cæsar skal dø –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Sall.</speaker></HIS:spOpener>
-<lb/><p>Og hvad så, I rasende &dash;</p></HIS:hisSp>
+<lb/><p>Og hvad så, I rasende –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAUROS"><HIS:spOpener><speaker>Fanebæreren Mauros</speaker>.</HIS:spOpener>
 <lb/><p>Hvad så? Med Cæsars hoved køber vi tilgivelse i Rom<unclear reason="binding">.</unclear></p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Soldat<unclear reason="writing">er</unclear></speaker>.</HIS:spOpener>
-<lb/><p><HIS:hisDel rend="overstrike">Til</HIS:hisDel> Nåde i himlen &dash;; frem, frem, Cæsar!</p></HIS:hisSp>
+<lb/><p><HIS:hisDel rend="overstrike">Til</HIS:hisDel> Nåde i himlen –; frem, frem, Cæsar!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Sall.</speaker></HIS:spOpener>
-<lb/><p>Cæsar, min Cæsar, hvor er du &dash;</p></HIS:hisSp>
+<lb/><p>Cæsar, min Cæsar, hvor er du –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C J.</speaker>
 <lb/><HIS:hisStage>(råber nede i gravkamret)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Helios, Helios!</p></HIS:hisSp>
 <HIS:hisAdd place="offline"><lb/><HIS:hisSp><HIS:spOpener><speaker><HIS:hisDel rend="overstrike">Koret</HIS:hisDel> fra kirken</speaker></HIS:spOpener>
 <lb/><p><HIS:hisDel rend="overstrike">Fader vor, du som er i himlen</HIS:hisDel>.</p></HIS:hisSp></HIS:hisAdd>
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>M.</speaker></HIS:spOpener>
-<lb/><p>Frigjort &dash;</p></HIS:hisSp>
+<lb/><p>Frigjort –</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Koret oppe i <sic>Kirken</sic></speaker>.</HIS:spOpener>
 <lb/><p><HIS:hisDel rend="overstrike">Helliget vorde dit navn</HIS:hisDel> Fader vor, du som er i himlen</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Sall.</speaker></HIS:spOpener>
-<lb/><p>Hvor er han? Euth, Orib &dash; hvad går her for sig &dash;</p></HIS:hisSp>
+<lb/><p>Hvor er han? Euth, Orib – hvad går her for sig –</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Koret</speaker></HIS:spOpener>
 <lb/><p>Helliget vorde dit navn</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. J.</speaker>
@@ -293,24 +287,24 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><HIS:hisSp who="MAUROS"><HIS:spOpener><speaker>Mauros.</speaker></HIS:spOpener>
 <lb/><p>Hvad siger du herre?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. J.</speaker></HIS:spOpener>
-<lb/><p>Ah, min trofaste! Op i dagen &dash; til Konstan<note resp="editor">Bindestrek ved linjeskift mangler.</note>
+<lb/><p>Ah, min trofaste! Op i dagen – til Konstan<note resp="editor">Bindestrek ved linjeskift mangler.</note>
 <lb/>tinopel!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Sall.</speaker></HIS:spOpener>
 <lb/><p>Leve kejser Julian!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. J.</speaker></HIS:spOpener>
-<lb/><p>Vi vil ikke se tilbage. Op i dagen; gennem kir&typHyp;
-<lb/>ken. Løgnerne skal forstumme &dash;</p>
+<lb/><p>Vi vil ikke se tilbage. Op i dagen; gennem kir‐
+<lb/>ken. Løgnerne skal forstumme –</p>
 <lb/><HIS:hisStage>(han iler op ad trappen i baggrunden)</HIS:hisStage>
 <lb/><p>Min hær, min skat, mit kejsersæde!</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Koret</speaker>.</HIS:spOpener>
 <lb/><p>Led os ikke ud i fristelse.</p></HIS:hisSp>
 <HIS:hisDel rend="overstrike"><lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar</speaker></HIS:spOpener></HIS:hisSp></HIS:hisDel>
 <lb/><HIS:hisStage>(Julian slår døren vidt op; man ser ind i den stærkt
-<lb/>oplyste kirke; prest<unclear reason="writing">er</unclear> står for højalteret, andægtige ska&typHyp;
+<lb/>oplyste kirke; prest<unclear reason="writing">er</unclear> står for højalteret, andægtige ska‐
 <lb/>rer knæler nedenfor omkring <sic>furstinde</sic> Helenas
 <lb/>kiste.)</HIS:hisStage>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker></HIS:spOpener>
-<lb/><p>Fri, fri! Mit er riget &dash;!</p></HIS:hisSp>
+<lb/><p>Fri, fri! Mit er riget –!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Sall</speaker></HIS:spOpener>
 <lb/><p>Og magten!</p></HIS:hisSp> <HIS:hisDel rend="overstrike"><gap/></HIS:hisDel>
 <lb/><HIS:hisSp who="ORIBASES"><HIS:spOpener><speaker>Orib.</speaker></HIS:spOpener>

@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -16,8 +10,8 @@
 <title level="a" type="sub">1. versjon, TarkUiB NT280r (rollehefte, Jens Bjelke)</title>
 <title level="a" type="origYear">1854</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Ingrid Falkenberg, Bjørg Harvey, Stine Brenna Taugbøl</name></respStmt>
 <respStmt>
 <resp>Transkripsjon (av faksimiler), oktober 2000</resp>
@@ -59,7 +53,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <list>
@@ -182,8 +176,8 @@ Den eldste teksten er vanligvis overstrøket, slik at bare det som gjelder for d
 </item>
 </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="castItem">
@@ -202,7 +196,7 @@ Den eldste teksten er vanligvis overstrøket, slik at bare det som gjelder for d
 </list>
 </tagUsage></namespace>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="pb-ed-HU">Sideskiftene fra Hundreårsutgaven er ikke ført inn (skulle vært kodet med pb ed="HU"). Dette tekstvitnet dekker sidene 121-228.</tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -265,7 +259,7 @@ Konverterte manuskripttranskripsjonen fra word-format til TEI XML. Leste korrekt
 <lb/><titlePart>Jens Bjelke,
 <lb/>svensk Befalingsmand
 <lb/>i
-<lb/>&lquo;Fru Inger til Østeraad,&rquo;
+<lb/>«Fru Inger til Østeraad,»
 <lb/>historisk Drama i 5 Akter</titlePart>
 </docTitle>
 </titlePage>
@@ -298,11 +292,11 @@ Konverterte manuskripttranskripsjonen fra word-format til TEI XML. Leste korrekt
 <lb/><HIS:hisStage>(Finn fører Niels Lykke og <HIS:stageRole who="BJELKE">Jens
 <lb/>Bjelke</HIS:stageRole> ind fra Høire.)</HIS:hisStage>
 <lb/><HIS:hisSp who="NIELSLYKKE"><HIS:spOpener><speaker>Lykke</speaker>.</HIS:spOpener><p>Det er godt.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage>(hviskende.)</HIS:hisStage></HIS:spOpener><p>Altsaa først og fremst
+<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage>(hviskende.)</HIS:hisStage></HIS:spOpener><p>Altsaa først og fremst
 <lb/>Vagt for Porten, saa har vi
 <lb/>ham sikkert.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>Finn</speaker>.</HIS:spOpener><p>selv som kjender dem.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Saa, for Djævlen!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Saa, for Djævlen!</p></HIS:hisSp>
 </div>
 <pb/>
 <lb/><fw type="page" place="top-left">4.</fw>
@@ -310,37 +304,37 @@ Konverterte manuskripttranskripsjonen fra word-format til TEI XML. Leste korrekt
 <lb/><head>3<hi rend="raised">die</hi> Scene.</head>
 <lb/><HIS:hisStage><HIS:stageRole who="NIELSLYKKE">Niels Lykke.</HIS:stageRole> <HIS:stageRole who="BJELKE">Jens Bjelke</HIS:stageRole>.</HIS:hisStage>
 <lb/><HIS:hisSp who="NIELSLYKKE"><HIS:spOpener><speaker>Niels Lykke</speaker>.</HIS:spOpener><p>Godt! <HIS:hisStage>(peger mod Døren.)</HIS:hisStage></p></HIS:hisSp>
-<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Hør, veed du hvad, Broer Niels,
-<lb/>dette her bliver nok et lum&typHyp;
+<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Hør, veed du hvad, Broer Niels,
+<lb/>dette her bliver nok et lum‐
 <lb/>pent Feldttog for os Beggeto.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="NIELSLYKKE"><HIS:spOpener><speaker>Lykke</speaker>.</HIS:spOpener><p>Ikke for mig, haaber jeg.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Saa. For det Første er der
+<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Saa. For det Første er der
 <lb/>liden Ære i at gjøre Jagt paa
 <lb/>slig en opløben Dreng, som
 <lb/>denne Niels Sture. Er nu det
-<lb/>en Viis at fare frem paa, saa&typHyp;
+<lb/>en Viis at fare frem paa, saa‐
 <lb/>ledes som han har baaret sig
 <lb/>ad? Først sætter han ondt Blod
 <lb/>i Bønderne, lover dem Bistand
 <lb/>og hvad veed jeg Altsammen og
 <pb/>
 <lb/><fw type="page" place="top-right">5.</fw>
-<lb/>naar det saa kommer til Styk&typHyp;
-<lb/>ket, render han sin Vei og kry&typHyp;
+<lb/>naar det saa kommer til Styk‐
+<lb/>ket, render han sin Vei og kry‐
 <lb/>ber i Skjul bag et Kvindeskjørt.
-<lb/>Forresten angrer det mig reentud&typHyp;
+<lb/>Forresten angrer det mig reentud‐
 <lb/>sagt at jeg fulgte dine Raad
 <lb/>og ikke gik frem efter mit
 <lb/>eget Hoved.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="NIELSLYKKE"><HIS:spOpener><speaker>Lykke</speaker>.</HIS:spOpener><p>kommer vel silde, min Broer.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>For, seer du, at rode efter Græv&typHyp;
+<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>For, seer du, at rode efter Græv‐
 <lb/>linger har nu aldrig været min
 <lb/>Fornøielse. Jeg havde ventet
 <lb/>mig noget ganske Andet; jeg
-<lb/>trækker afsted lige fra Jæmte&typHyp;
+<lb/>trækker afsted lige fra Jæmte‐
 <lb/>land med mine Ryttere; jeg
-<lb/>faaer <HIS:hisAdd place="offline" hand="h1">i Trondhjem</HIS:hisAdd> den danske Befalings&typHyp;
-<lb/>mands Brev for at jeg kan sø&typHyp;
+<lb/>faaer <HIS:hisAdd place="offline" hand="h1">i Trondhjem</HIS:hisAdd> den danske Befalings‐
+<lb/>mands Brev for at jeg kan sø‐
 <lb/>ge efter Ufredstifteren overalt
 <lb/>hvor jeg lyster, jeg veed fra
 <pb/>
@@ -348,58 +342,58 @@ Konverterte manuskripttranskripsjonen fra word-format til TEI XML. Leste korrekt
 <lb/>sikker Haand at han staaer i
 <lb/>Forbund med Fru Inger; hvad
 <lb/>var nu vel rimeligere end at
-<lb/>vi havde fundet Portene besat&typHyp;
+<lb/>vi havde fundet Portene besat‐
 <lb/>te med Vagt, saa kunde vi
-<lb/>have slaaet løs, stormet Gaar&typHyp;
-<lb/>den &dash;</p></HIS:hisSp>
+<lb/>have slaaet løs, stormet Gaar‐
+<lb/>den –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="NIELSLYKKE"><HIS:spOpener><speaker>Lykke</speaker>.</HIS:spOpener><p>paa det Bedste.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Det var nu ogsaa dit Indfald
+<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Det var nu ogsaa dit Indfald
 <lb/>at lade mine Ryttere blive
-<lb/>tilbage en Fjerdingvei fra Gaar&typHyp;
-<lb/>den; var vi komne mere mand&typHyp;
-<lb/>stærke, saa &dash;</p></HIS:hisSp>
+<lb/>tilbage en Fjerdingvei fra Gaar‐
+<lb/>den; var vi komne mere mand‐
+<lb/>stærke, saa –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="NIELSLYKKE"><HIS:spOpener><speaker>Lykke</speaker>.</HIS:spOpener><p>det er ikke raadeligt.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Kan saa være; men hvad gjør
-<lb/>jeg nu? Grev Sture er rigtig&typHyp;
+<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Kan saa være; men hvad gjør
+<lb/>jeg nu? Grev Sture er rigtig‐
 <lb/>nok paa Østeraad, men hvad
 <lb/>kan det hjælpe? Fru Inger har
 <lb/>sagtens, ligesom Ræven, mange
 <pb/>
 <lb/><fw type="page" place="top-right">7.</fw>
-<lb/>Smuthuller og mere end een Ud&typHyp;
+<lb/>Smuthuller og mere end een Ud‐
 <lb/>gang. Her kan vi gaa og snuse
 <lb/>om til evig Tid; gid Djævelen
 <lb/>havde den hele Historie!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="NIELSLYKKE"><HIS:spOpener><speaker>Lykke</speaker>.</HIS:spOpener><p>Slagmarken til mig.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Til dig? Hvad vil du gjøre?</p></HIS:hisSp>
-<lb/><HIS:hisSp who="NIELSLYKKE"><HIS:spOpener><speaker>Lykke</speaker>.</HIS:spOpener><p>jeg formaaede dig til &dash;</p></HIS:hisSp>
-<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>O, for Fanden! jeg burde jo
+<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Til dig? Hvad vil du gjøre?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="NIELSLYKKE"><HIS:spOpener><speaker>Lykke</speaker>.</HIS:spOpener><p>jeg formaaede dig til –</p></HIS:hisSp>
+<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>O, for Fanden! jeg burde jo
 <lb/>nok vidst, at du nu som altid
 <lb/>havde en Ræv bag Øret!</p></HIS:hisSp>
-<lb/><HIS:hisSp who="NIELSLYKKE"><HIS:spOpener><speaker>Lykke</speaker>.</HIS:spOpener><p>godt fra det, men &dash;</p></HIS:hisSp>
-<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Det skulde jeg mene. Gud og
+<lb/><HIS:hisSp who="NIELSLYKKE"><HIS:spOpener><speaker>Lykke</speaker>.</HIS:spOpener><p>godt fra det, men –</p></HIS:hisSp>
+<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Det skulde jeg mene. Gud og
 <lb/>Hvermand veed jo at du er den
 <lb/>slueste Djævel i de tre Riger.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="NIELSLYKKE"><HIS:spOpener><speaker>Lykke</speaker>.</HIS:spOpener><p>at besnære en Kvinde.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Ha, ha, ha! I det Haandværk
+<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Ha, ha, ha! I det Haandværk
 <pb/>
 <lb/><fw type="page" place="top-right">8.</fw>
 <lb/>har du for længe siden gjort dit
 <lb/>Mesterstykke, min Bro'er! Mener
 <lb/>du da ikke jeg kjender Visen:</p>
-<lb/><HIS:hisLg><l>&lquo;Hver en Skjøn-Jomfru sukker saa mod,</l>
+<lb/><HIS:hisLg><l>«Hver en Skjøn-Jomfru sukker saa mod,</l>
 <lb/><l>Gud give Niels Lykke var mig huld
-<lb/>og god!&rquo;</l></HIS:hisLg></HIS:hisSp>
+<lb/>og god!»</l></HIS:hisLg></HIS:hisSp>
 <lb/><HIS:hisSp who="NIELSLYKKE"><HIS:spOpener><speaker>Lykke</speaker>.</HIS:spOpener><p>mere end een Ungmø.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Aa, veed du hvad, det Ædelmod
+<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Aa, veed du hvad, det Ædelmod
 <lb/>skulde du ikke minde mig om;
 <lb/>thi for det Første voldte det
 <lb/>mig bare Ærgrelse, og desuden
 <lb/>saa havde du jo Hals og Haand
-<lb/>over dem Allesammen. Men li&typHyp;
+<lb/>over dem Allesammen. Men li‐
 <lb/>gemeget, siden jeg nu engang
 <lb/>har baaret mig galt afsted, saa
-<lb/>seer jeg gjerne, at du tager Sa&typHyp;
+<lb/>seer jeg gjerne, at du tager Sa‐
 <lb/>gen paa dig, dog det er et Ord,
 <lb/>findes den unge Grev Sture her
 <pb/>
@@ -407,17 +401,17 @@ Konverterte manuskripttranskripsjonen fra word-format til TEI XML. Leste korrekt
 <lb/>paa Gaarden, saa skaffer du
 <lb/>ham frem død eller levende.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="NIELSLYKKE"><HIS:spOpener><speaker>Lykke</speaker>.</HIS:spOpener><p>faa Kundskab derom.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Godt, godt; men hvordan slip&typHyp;
+<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Godt, godt; men hvordan slip‐
 <lb/>per jeg ud?</p></HIS:hisSp>
-<lb/><HIS:hisSp who="NIELSLYKKE"><HIS:spOpener><speaker>Lykke</speaker>.</HIS:spOpener><p>men i al Stilhed &dash;</p></HIS:hisSp>
-<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Forstaaer sig. Naa, god Lykke!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="NIELSLYKKE"><HIS:spOpener><speaker>Lykke</speaker>.</HIS:spOpener><p>men i al Stilhed –</p></HIS:hisSp>
+<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Forstaaer sig. Naa, god Lykke!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="NIELSLYKKE"><HIS:spOpener><speaker>Lykke</speaker>.</HIS:spOpener><p>skynd dig nu!</p></HIS:hisSp>
-<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage>(gaaer ud til Høire!)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
+<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage>(gaaer ud til Høire!)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
 <lb/><figure type="bar"/>
 </div>
 </div>
 <div type="act" n="5">
-<lb/><head>Femte Akt. &dash;</head>
+<lb/><head>Femte Akt. –</head>
 <div type="scene" n="10">
 <lb/><HIS:hisStage><HIS:stageRole who="BJORN">Bjørn</HIS:stageRole>. <HIS:stageRole who="FRUINGER">Fru Inger</HIS:stageRole>. <HIS:stageRole who="NIELSLYKKE">Niels
 <lb/>Lykke.</HIS:stageRole></HIS:hisStage>
@@ -429,18 +423,18 @@ Konverterte manuskripttranskripsjonen fra word-format til TEI XML. Leste korrekt
 <lb/><head>11<hi rend="raised">te</hi> Scene.</head>
 <lb/><HIS:hisStage><HIS:stageRole who="BJORN FRUINGER NIELSLYKKE">De Forrige</HIS:stageRole>. Jens Bjelke og
 <lb/>Soldater fra Høire.</HIS:hisStage>
-<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage>(overrasket.)</HIS:hisStage></HIS:spOpener><p> Død!</p></HIS:hisSp>
-<lb/><HIS:hisSp who="SOLDAT"><HIS:spOpener><speaker>En Soldat</speaker>.</HIS:spOpener><p>Selv har han &dash;</p></HIS:hisSp>
-<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage>(med et Blik til Niels Lykke.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Han selv &dash;?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage>(overrasket.)</HIS:hisStage></HIS:spOpener><p> Død!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="SOLDAT"><HIS:spOpener><speaker>En Soldat</speaker>.</HIS:spOpener><p>Selv har han –</p></HIS:hisSp>
+<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage>(med et Blik til Niels Lykke.)</HIS:hisStage></HIS:spOpener>
+<lb/><p>Han selv –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUINGER"><HIS:spOpener><speaker>Inger</speaker>.</HIS:spOpener><p>kommer jeg det Altsammen ihu.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage>(til Soldaterne.)</HIS:hisStage></HIS:spOpener><p>Sæt Liget ned;
+<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage>(til Soldaterne.)</HIS:hisStage></HIS:spOpener><p>Sæt Liget ned;
 <lb/>det er ikke Grev Sture.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUINGER"><HIS:spOpener><speaker>Inger</speaker></HIS:spOpener><p>O Jesus Krist! min Søn!</p></HIS:hisSp>
-<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Inger Gyldenløves Søn!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Inger Gyldenløves Søn!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="NIELSLYKKE"><HIS:spOpener><speaker>Lykke</speaker>.</HIS:spOpener><p>Saa er det.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Men hvorfor sagde du mig
-<lb/>ikke &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Men hvorfor sagde du mig
+<lb/>ikke –</p></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top-right">11.</fw>
 <lb/><HIS:hisSp who="FRUINGER"><HIS:spOpener><speaker>Inger</speaker>.</HIS:spOpener><p>en Grav hos mit Barn!</p></HIS:hisSp>

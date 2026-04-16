@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -16,8 +10,8 @@
 <title level="a" type="sub">2. versjon, NBO Ms.8° 951</title>
 <title level="a" type="origYear">1883</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Stine Brenna Taugbøl, Mette Witting</name></respStmt>
 <respStmt>
 <resp>Konvertering fra Bergensmaterialet til prosjektspesifikk TEI SGML, juni 1999</resp>
@@ -68,7 +62,7 @@
 <msIdentifier>
 <settlement>Oslo</settlement>
 <repository>Nasjonalbiblioteket</repository>
-<idno>Ms.8&deg; 951</idno>
+<idno>Ms.8° 951</idno>
 </msIdentifier>
 <msContents><msItem>
 <author>Henrik Ibsen</author>
@@ -82,11 +76,11 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <list>
-<head>Ms.8&deg; 951: Egenhendig renskrift til: IBSEN, HENRIK. Gildet på Solhaug. Anden udgave. 1883:</head>
+<head>Ms.8° 951: Egenhendig renskrift til: IBSEN, HENRIK. Gildet på Solhaug. Anden udgave. 1883:</head>
 <item>skriftstil: latinsk håndskrift, kun majuskler og minuskler, svensk ø ('ö');</item>
 <item>tall: tabelltall;</item>
 <item>tittelblad: midtstilt tekst;
@@ -167,8 +161,8 @@
 </item>
 </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -185,7 +179,7 @@
 </list>
 </tagUsage></namespace>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="pb-ed-HU">Sideskiftene fra Hundreårsutgaven (bd. 3) er kodet med pb ed="HU". Dette tekstvitnet dekker sidene 35-90.</tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding method="parallel-segmentation" location="internal" type="external" n="170"/>
 <variantEncoding method="parallel-segmentation" location="internal" type="alteration"/>
@@ -239,7 +233,7 @@ Talte opp variantene i G2-filene totalt og for hvert enkelt tekstvitne. Opplysni
 Eksternvariantkoding i tekstkildefilene er forenklet: wit= og var=N/Y er fjernet (forbeholdt grunnteksten). Dessuten er deklarasjonen av variantEncoding i teiHeader utvidet med et typeattributt.</change>
 <change><date>05-06.09.06</date>
 <name>MW</name><title>Eksterne varianter</title>
-Redigerte i de eksterne varianter etter møte med filologene: satte bare 'Heilbronn' (ikke hele tittelen) i var.app. (var 17), fjernet apparater ved ytre tegnsetting i sceneanvisning (var 35, 123); satte inn fast bindestrek (og note) i 'hovedstads-kritik'; 'førsta/första' er nevnt i noten til slutt; feil plassering av rimordet 'være' i G283 og G2FU er nevnt i noten; feil flytting av teksten 'Se så!' er beskrevet i noten. Seks usikre lesemåter ble vurdert igjen: 1. Endret transkripsjonen av 'overhovedet' faksimileside 14 til delt: 'over hovedet'. Tverstreken oppfattes som Ibsens egen og som en deling av ordet. 2. 'største-delen' eller 'største.delen' (s.7-8) ble vurdert til uklar bindestrek, og skal dermed ikke i apparat. 3. 'doktorgrad' eller 'doktorgraden' (s. 12) ble vurdert til 'doktorgrad og skal dermed ikka i apparat. 4. 'hånd..' eller 'hånd.' (s. 75) skal stå med to punktummer og blir dermed stående i apparat. 5. 'hinanden.' eller 'hinanden' (s. 84) ble vurdert til at det ikke er punktum, men en flekk. Skal allikevel stå i apparat siden de andre tekstkilder har komma. 6. 'født. &dash;!' eller 'født &dash;!' (s. 105) ble vurdert til at punktummet er en del av tankestreken. Skal derfor ikke i apparat. Validert.</change>
+Redigerte i de eksterne varianter etter møte med filologene: satte bare 'Heilbronn' (ikke hele tittelen) i var.app. (var 17), fjernet apparater ved ytre tegnsetting i sceneanvisning (var 35, 123); satte inn fast bindestrek (og note) i 'hovedstads-kritik'; 'førsta/första' er nevnt i noten til slutt; feil plassering av rimordet 'være' i G283 og G2FU er nevnt i noten; feil flytting av teksten 'Se så!' er beskrevet i noten. Seks usikre lesemåter ble vurdert igjen: 1. Endret transkripsjonen av 'overhovedet' faksimileside 14 til delt: 'over hovedet'. Tverstreken oppfattes som Ibsens egen og som en deling av ordet. 2. 'største-delen' eller 'største.delen' (s.7-8) ble vurdert til uklar bindestrek, og skal dermed ikke i apparat. 3. 'doktorgrad' eller 'doktorgraden' (s. 12) ble vurdert til 'doktorgrad og skal dermed ikka i apparat. 4. 'hånd..' eller 'hånd.' (s. 75) skal stå med to punktummer og blir dermed stående i apparat. 5. 'hinanden.' eller 'hinanden' (s. 84) ble vurdert til at det ikke er punktum, men en flekk. Skal allikevel stå i apparat siden de andre tekstkilder har komma. 6. 'født. –!' eller 'født –!' (s. 105) ble vurdert til at punktummet er en del av tankestreken. Skal derfor ikke i apparat. Validert.</change>
 <change><date>04.09.06</date>
 <name>MW</name><title>Eksterne varianter</title>
 Gjorde ferdig ekstern variantkoding. Klar for visning og kontroll av denne. Validert.</change>
@@ -485,102 +479,102 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <head>
 <lb/><hi rend="underlined2">Fortale</hi>
 <lb/><hi rend="underlined">til anden udgave.</hi></head>
-<lb/><p>&lquo;Gildet på Solhaug&rquo; skrev jeg
+<lb/><p>«Gildet på Solhaug» skrev jeg
 <lb/>i Bergen i sommeren 1855, altså
 <lb/>for omtrent 28 år siden.</p>
 <lb/><p>Stykket opførtes samme steds
 <lb/>for første gang den 2. Januar 1856
 <lb/>som festforestilling til erindring
-<lb/>om den norske scenes stiftelses&typHyp;
+<lb/>om den norske scenes stiftelses‐
 <lb/>dag.</p>
-<lb/><p>Jeg var dengang ansat som in&typHyp;
+<lb/><p>Jeg var dengang ansat som in‐
 <lb/>struktør ved det bergenske teater
-<lb/>og ledede altså selv <app type="external" subtype="word" xml:id="varG2-1"><HIS:hisRdg>indstuderin&typHyp;
+<lb/>og ledede altså selv <app type="external" subtype="word" xml:id="varG2-1"><HIS:hisRdg>indstuderin‐
 <lb/>gen</HIS:hisRdg></app> af mit stykke. Det fik en
-<lb/>fortrinlig, en sjelden stemnings&typHyp;
-<lb/>fuld udførelse. Med lyst og hen&typHyp;
+<lb/>fortrinlig, en sjelden stemnings‐
+<lb/>fuld udførelse. Med lyst og hen‐
 <lb/>givelse blev det givet, og således
 <pb n="4"/>
 <lb/><fw type="page" place="top">IV</fw>
-<lb/>blev det også modtaget. &lquo;Den bergen&typHyp;
-<lb/>ske lyrik&rquo;, der efter sigende skal ha&typHyp;
+<lb/>blev det også modtaget. «Den bergen‐
+<lb/>ske lyrik», der efter sigende skal ha‐
 <lb/>ve afgjort de seneste politiske valg
-<lb/>deroppe, svulmede på hin teater&typHyp;
+<lb/>deroppe, svulmede på hin teater‐
 <lb/>aften højt i det fuldt besatte hus.
 <lb/>Forestillingen endte med talrige
 <lb/>fremkaldelser af forfatteren og af
 <lb/><HIS:hisDel rend="overwritten">s</HIS:hisDel>de spillende. Senere på aftenen
 <lb/>gav orkestret, ledsaget af en stor del
-<lb/>af publikum, mig en serenade uden&typHyp;
+<lb/>af publikum, mig en serenade uden‐
 <lb/>for mine vinduer. Jeg tror næsten,
 <lb/>jeg lod mig henrive til at holde et
 <lb/>slags tale til de forsamlede; jeg
 <lb/><app type="external" subtype="word" xml:id="varG2-130"><HIS:hisRdg>ved</HIS:hisRdg></app> i al <app type="external" subtype="interpunction" xml:id="varG2-2"><HIS:hisRdg>fald</HIS:hisRdg></app> at jeg følte mig såre
 <lb/>lykkelig.</p>
-<lb/><p>Et par måneder senere opfør&typHyp;
-<lb/>tes &lquo;Gildet på Solhaug&rquo; i Kristi&typHyp;
+<lb/><p>Et par måneder senere opfør‐
+<lb/>tes «Gildet på Solhaug» i Kristi‐
 <lb/>ania. Også dersteds blev det af
-<lb/>almenheden modtaget med me&typHyp;
-<lb/>get bifald, og dagen efter den før&typHyp;
-<lb/>ste opførelse skrev Bjørnson i &lquo;Mor&typHyp;
-<lb/>genbladet&rquo; en varm, elskværdig, ung&typHyp;
-<lb/>dommelig opsats derom. Egent&typHyp;
+<lb/>almenheden modtaget med me‐
+<lb/>get bifald, og dagen efter den før‐
+<lb/>ste opførelse skrev Bjørnson i «Mor‐
+<lb/>genbladet» en varm, elskværdig, ung‐
+<lb/>dommelig opsats derom. Egent‐
 <lb/>lig var det ikke nogen anmeldelse
 <lb/>eller kritik; det var snarere en
 <pb n="5"/>
 <lb/><fw type="page" place="top">V.</fw>
 <lb/>stemningsrig fri fantasi, digterisk
-<lb/>improviseret over stykket og over fo&typHyp;
+<lb/>improviseret over stykket og over fo‐
 <lb/>restillingen.</p><pb ed="HU"/>
 <lb/><p>Men så kom den rigtige kritik,
 <lb/>forfattet af de rigtige kritikere.</p>
-<lb/><p>Hvorledes blev man i hin tid, &dash;
-<lb/>jeg mener i årene <app type="external" subtype="word" xml:id="varG2-3"><HIS:hisRdg><sic>frå</sic></HIS:hisRdg></app> 1850 til om&typHyp;
-<lb/>kring 1860, &dash; en rigtig literatur-kriti&typHyp;
+<lb/><p>Hvorledes blev man i hin tid, –
+<lb/>jeg mener i årene <app type="external" subtype="word" xml:id="varG2-3"><HIS:hisRdg><sic>frå</sic></HIS:hisRdg></app> 1850 til om‐
+<lb/>kring 1860, – en rigtig literatur-kriti‐
 <lb/>ker, og navnlig dramatisk kritiker
 <lb/>i Kristiania?</p>
 <lb/><p>Jo, det gik i regelen således til:
-<lb/>Efter nogen tids forberedende øvel&typHyp;
-<lb/>ser i &lquo;<HIS:hisDel rend="overwritten">s</HIS:hisDel>Samfundsbladet&rquo; og efter oftere
+<lb/>Efter nogen tids forberedende øvel‐
+<lb/>ser i «<HIS:hisDel rend="overwritten">s</HIS:hisDel>Samfundsbladet» og efter oftere
 <lb/>at have påhørt de diskussioner, som
-<lb/>om aftenerne efter teatertid <HIS:hisAdd place="offline">førtes</HIS:hisAdd> på Tre&typHyp;
-<lb/>schows kafé eller &lquo;hos Ingebret&rquo;, be&typHyp;
+<lb/>om aftenerne efter teatertid <HIS:hisAdd place="offline">førtes</HIS:hisAdd> på Tre‐
+<lb/>schows kafé eller «hos Ingebret», be‐
 <lb/>g<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>av den vordende kritiker s<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>ig hen
-<lb/>i Johan Dahls boglade og lod sig for&typHyp;
+<lb/>i Johan Dahls boglade og lod sig for‐
 <lb/>skrive fra København et exemplar
-<lb/>af J. L. Heibergs &lquo;Prosaiske Skrif&typHyp;
-<lb/>ter&rquo;, om hvilke han havde hørt si&typHyp;
-<lb/>ge, <HIS:hisDel rend="overwritten"><unclear>d</unclear></HIS:hisDel>at de skulde indeholde en af&typHyp;
-<lb/>handling betitlet &lquo;Om Vaudevillen&rquo;.
-<lb/>Denne afhandling blev da læst, grub&typHyp;
-<lb/>let over og kanske tildels også for&typHyp;
+<lb/>af J. L. Heibergs «Prosaiske Skrif‐
+<lb/>ter», om hvilke han havde hørt si‐
+<lb/>ge, <HIS:hisDel rend="overwritten"><unclear>d</unclear></HIS:hisDel>at de skulde indeholde en af‐
+<lb/>handling betitlet «Om Vaudevillen».
+<lb/>Denne afhandling blev da læst, grub‐
+<lb/>let over og kanske tildels også for‐
 <pb n="6"/>
 <lb/><fw type="page" place="top">VI.</fw>
 <lb/>stået. Gennem disse skrifter blev
-<lb/>man <app type="external" subtype="word" xml:id="varG2-4"><HIS:hisRdg>end videre</HIS:hisRdg></app> bekendt med en po&typHyp;
+<lb/>man <app type="external" subtype="word" xml:id="varG2-4"><HIS:hisRdg>end videre</HIS:hisRdg></app> bekendt med en po‐
 <lb/>lemik, som Heiberg i sin tid havde
 <lb/>ført imod professor Øhlenschlæger og
-<lb/>imod digteren Hauch i Sorø. Lejlig&typHyp;
+<lb/>imod digteren Hauch i Sorø. Lejlig‐
 <lb/>hedsvis erfarede man deraf <app type="external" subtype="interpunction" xml:id="varG2-5"><HIS:hisRdg>også</HIS:hisRdg></app> at
-<lb/>J. <app type="external" subtype="word" xml:id="varG2-6"><HIS:hisRdg>E.</HIS:hisRdg></app> Baggesen (forfatter af &lquo;G<HIS:hisAdd place="inline">j</HIS:hisAdd>engan&typHyp;
-<lb/>gerbrevene&rquo;) allerede tidligere havde
-<lb/>åbnet et lignende felttog imod den sto&typHyp;
-<lb/>re digter, som havde skrevet både &lquo;Ax&typHyp;
-<lb/>el og Valborg&rquo; og &lquo;Hakon Jarl&rquo;.</p>
-<lb/><p>Megen anden for en kritiker nyt&typHyp;
-<lb/>tig viden lod sig også uddrage af dis&typHyp;
+<lb/>J. <app type="external" subtype="word" xml:id="varG2-6"><HIS:hisRdg>E.</HIS:hisRdg></app> Baggesen (forfatter af «G<HIS:hisAdd place="inline">j</HIS:hisAdd>engan‐
+<lb/>gerbrevene») allerede tidligere havde
+<lb/>åbnet et lignende felttog imod den sto‐
+<lb/>re digter, som havde skrevet både «Ax‐
+<lb/>el og Valborg» og «Hakon Jarl».</p>
+<lb/><p>Megen anden for en kritiker nyt‐
+<lb/>tig viden lod sig også uddrage af dis‐
 <lb/>se skrifter. Af dem lærte man <app type="external" subtype="interpunction" xml:id="varG2-7"><HIS:hisRdg>f. ex.</HIS:hisRdg></app>
 <lb/>at en ret kritiker var på smagens
-<lb/>vegne forpligtet til at føle sig for&typHyp;
+<lb/>vegne forpligtet til at føle sig for‐
 <lb/>arget over hiater. Blev i et eller
-<lb/>andet ver<HIS:clarification place="inline">s</HIS:clarification> et sådant uhyre påtruf&typHyp;
+<lb/>andet ver<HIS:clarification place="inline">s</HIS:clarification> et sådant uhyre påtruf‐
 <lb/>fet, kunde man være sikker <app type="external" subtype="interpunction" xml:id="varG2-8"><HIS:hisRdg>på</HIS:hisRdg></app> at
-<lb/>de unge kristianiensiske kritise&typHyp;
+<lb/>de unge kristianiensiske kritise‐
 <lb/>rende Jeronimusser, ligervis som
-<lb/>Holbergs egen, udråbte deres: Hil&typHyp;
+<lb/>Holbergs egen, udråbte deres: Hil‐
 <lb/>lemænd, verden står ikke til påske!</p>
 <lb/><p>Og så havde den datidige norske
-<lb/>hovedstads-kritik en særegen ejen&typHyp;
+<lb/>hovedstads-kritik en særegen ejen‐
 <pb n="7"/>
 <lb/><fw type="page" place="top">VII.</fw>
 <lb/>dommelighed <HIS:hisDel rend="overstrike">ved sig</HIS:hisDel>, hvis udspring
@@ -590,25 +584,25 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/>forfatter udgav en bog eller fik et<pb ed="HU"/>
 <lb/>lidet teaterstykke opført, at geråde
 <lb/>i en ustyrlig vrede og at gebærde sig
-<lb/>som om der gennem bogens udgivel&typHyp;
-<lb/>se eller stykkets opførelse var til&typHyp;
+<lb/>som om der gennem bogens udgivel‐
+<lb/>se eller stykkets opførelse var til‐
 <lb/>føjet dem selv og de aviser, de skrev
 <lb/>i, en blodig fornærmelse. Som sagt,
-<lb/>jeg grublede længe over denne besyn&typHyp;
-<lb/>derlighed. Endelig fik jeg rede i sa&typHyp;
+<lb/>jeg grublede længe over denne besyn‐
+<lb/>derlighed. Endelig fik jeg rede i sa‐
 <lb/><HIS:hisDel rend="overstrike">der</HIS:hisDel>
 <lb/>gen. Ved nemlig at læse det danske
-<lb/>&lquo;Månedskrift for Literatur&rquo; blev jeg
+<lb/>«Månedskrift for Literatur» blev jeg
 <lb/><HIS:hisDel rend="overwritten">ø</HIS:hisDel>opmærksom <app type="external" subtype="interpunction" xml:id="varG2-9"><HIS:hisRdg>på</HIS:hisRdg></app> at gamle etatsråd
 <lb/>Molbech i sin tid havde plejet at
 <lb/>betages af en svær <app type="external" subtype="interpunction" xml:id="varG2-10"><HIS:hisRdg>vrede</HIS:hisRdg></app> når en ung
-<lb/>digter udgav en bog eller fik et skue&typHyp;
+<lb/>digter udgav en bog eller fik et skue‐
 <lb/>spil opført i København.</p>
 <lb/><p>Således, eller omtrent således, var
-<lb/>den domstol beskaffen, der nu i dags&typHyp;
-<lb/>pressen tog sig for at stille &lquo;Gildet
-<lb/>på Solhaug&rquo; for kritikens skranke
-<lb/>i Kristiania. Den var for største<HIS:hisDel rend="overstrike"><unclear>n</unclear></HIS:hisDel>&typHyp;
+<lb/>den domstol beskaffen, der nu i dags‐
+<lb/>pressen tog sig for at stille «Gildet
+<lb/>på Solhaug» for kritikens skranke
+<lb/>i Kristiania. Den var for største<HIS:hisDel rend="overstrike"><unclear>n</unclear></HIS:hisDel>‐
 <pb n="8"/>
 <lb/><fw type="page" place="top">VIII.</fw>
 <lb/>delen sammensat af unge mænd, der
@@ -616,62 +610,62 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/>fra diverse kanter. Deres kritiske
 <lb/>tanker var for længe siden tænkte og
 <lb/>udtalte af andre; deres meninger
-<lb/>var for lang tid siden formuleret an&typHyp;
-<lb/>detsteds. Lånegods var hele deres æ&typHyp;
+<lb/>var for lang tid siden formuleret an‐
+<lb/>detsteds. Lånegods var hele deres æ‐
 <lb/>st<HIS:hisDel rend="overstrike">h</HIS:hisDel>etiske teori; lånegods var hele
 <lb/>deres kritiske metode; lånegods var
-<lb/>i et og alt, i stort og i småt, den pole&typHyp;
+<lb/>i et og alt, i stort og i småt, den pole‐
 <lb/>miske <HIS:hisDel rend="overstrike"><unclear>p</unclear></HIS:hisDel> taktik, de gjorde brug af<HIS:hisDel rend="overwritten">:</HIS:hisDel>.
 <lb/>Ja, lige til sindsstemningen, så var
-<lb/>den lånt. Lånt, lånt var<HIS:hisDel rend="overstrike"><gap/></HIS:hisDel> det alt sam&typHyp;
+<lb/>den lånt. Lånt, lånt var<HIS:hisDel rend="overstrike"><gap/></HIS:hisDel> det alt sam‐
 <lb/>men. Det eneste originale ved dem
-<lb/>var, at de evig og altid benyttede lå&typHyp;
+<lb/>var, at de evig og altid benyttede lå‐
 <lb/>negodset forkert og i utide.</p>
-<lb/><p>At dette kollegium, hvis medlem&typHyp;
+<lb/><p>At dette kollegium, hvis medlem‐
 <lb/>mer kritisk livnærede sig ved lån,
-<lb/>troede at måtte i digterisk henseen&typHyp;
+<lb/>troede at måtte i digterisk henseen‐
 <lb/>de forudsætte noget lignende hos mig,
 <lb/>kan ikke forundre nogen. Et par
 <lb/>aviser <app type="external" subtype="word" xml:id="varG2-11"><HIS:hisRdg>deroppe</HIS:hisRdg></app>, og muligens flere,
 <lb/>fandt da også ganske rigtig <app type="external" subtype="interpunction" xml:id="varG2-12"><HIS:hisRdg>ud</HIS:hisRdg></app> at
 <lb/>jeg havde lånt dette eller hint fra
-<lb/>Henrik Hertz&rapo;s skuespil &lquo;Svend
+<lb/>Henrik Hertz’s skuespil «Svend
 <pb n="9"/>
 <lb/><fw type="page" place="top">IX.</fw>
-<lb/>Dyrings hus&rquo;.</p>
-<lb/><p>Denne kritiske påstand er grund&typHyp;
+<lb/>Dyrings hus».</p>
+<lb/><p>Denne kritiske påstand er grund‐
 <lb/>løs og uefterrettelig. Det er åbenbart
-<lb/>benyttelsen af kæmpevisernes verse&typHyp;
-<lb/>mål i begge stykkerne, som har for&typHyp;
-<lb/>anlediget de<HIS:hisDel rend="overwritten">m</HIS:hisDel>n. Men hos mig er sprog&typHyp;
+<lb/>benyttelsen af kæmpevisernes verse‐
+<lb/>mål i begge stykkerne, som har for‐
+<lb/>anlediget de<HIS:hisDel rend="overwritten">m</HIS:hisDel>n. Men hos mig er sprog‐
 <lb/>tonen en ganske anden end hos Hertz;<pb ed="HU"/>
 <lb/>diktionen i mit stykke har et ganske
 <lb/>andet klangpræg end i hans; over det
 <lb/>rytmiske i mit stykke vifter en let
 <lb/>sommerluft; over det rytmiske hos
 <lb/>Hertz ruger der høs<HIS:clarification place="inline">tv</HIS:clarification>ejr.</p>
-<lb/><p>Heller ikke, hvad karakterer, hand&typHyp;
-<lb/>ling, eller overhovedet hvad det fak&typHyp;
-<lb/>tiske indhold angår, findes der mel&typHyp;
+<lb/><p>Heller ikke, hvad karakterer, hand‐
+<lb/>ling, eller overhovedet hvad det fak‐
+<lb/>tiske indhold angår, findes der mel‐
 <lb/>lem begge stykker nogen anden eller
-<lb/>større lighed end den, der er en nød&typHyp;
-<lb/>vendig følge <app type="external" subtype="interpunction" xml:id="varG2-13"><HIS:hisRdg>af</HIS:hisRdg></app> at stoffet til dem beg&typHyp;
+<lb/>større lighed end den, der er en nød‐
+<lb/>vendig følge <app type="external" subtype="interpunction" xml:id="varG2-13"><HIS:hisRdg>af</HIS:hisRdg></app> at stoffet til dem beg‐
 <lb/>ge er hentet ud fra kæmpevisernes
 <lb/>trange forestillingskreds.</p>
 <lb/><p>Med fuldt så stor eller vel endnu
 <lb/>større føje kunde man <app type="external" subtype="interpunction" xml:id="varG2-14"><HIS:hisRdg>påstå</HIS:hisRdg></app> at
-<lb/>Hertz i sit &lquo;Svend Dyrings hus&rquo; hav&typHyp;
+<lb/>Hertz i sit «Svend Dyrings hus» hav‐
 <lb/>de lånt et og andet, og det ikke så
-<lb/>l<HIS:clarification place="inline">i</HIS:clarification>dt endda, fra Heinrich v. Kleist&rapo;s
+<lb/>l<HIS:clarification place="inline">i</HIS:clarification>dt endda, fra Heinrich v. Kleist’s
 <pb n="10"/>
 <lb/><fw type="page" place="top">X.</fw>
-<lb/>&lquo;Käthchen von Heilbronn&rquo;, der er
-<lb/>skrevet i begyndelsen af dette århun&typHyp;
+<lb/>«Käthchen von Heilbronn», der er
+<lb/>skrevet i begyndelsen af dette århun‐
 <lb/>drede. Käthchens forhold til grev
 <lb/>Wetter-Strahl er i alt væsentligt
 <lb/>det samme, som Ragnhilds til ridder
 <lb/>Stig Hvide. Ligesom Ragnhild
-<lb/>drives også Käthchen af en gåde&typHyp;
+<lb/>drives også Käthchen af en gåde‐
 <lb/>fuld, uforklarlig magt til at følge den
 <lb/>mand, hun elsker, på alle ha<HIS:clarification place="inline">ns</HIS:clarification> veje,
 <lb/>til lønligt at liste sig efter ham, til
@@ -683,44 +677,44 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/>andre måder både hos Kleist og hos
 <lb/>Hertz.</p>
 <lb/><p>Men er der nogen, som tviler <app type="external" subtype="interpunction" xml:id="varG2-15"><HIS:hisRdg>på</HIS:hisRdg></app>
-<lb/>at man i den  endnu ældre dramati&typHyp;
-<lb/>ske literatur, med en smule god el&typHyp;
+<lb/>at man i den  endnu ældre dramati‐
+<lb/>ske literatur, med en smule god el‐
 <lb/>ler ond vilje, måtte kunne opdrive
-<lb/>et skuespil, om hvilket det kunde <app type="external" subtype="interpunction" xml:id="varG2-16"><HIS:hisRdg>på&typHyp;
+<lb/>et skuespil, om hvilket det kunde <app type="external" subtype="interpunction" xml:id="varG2-16"><HIS:hisRdg>på‐
 <lb/>ståes</HIS:hisRdg></app> at Kleist derfra havde lånt et
-<lb/>eller andet til si<HIS:hisDel rend="overwritten">n</HIS:hisDel>t &lquo;Käthchen von
+<lb/>eller andet til si<HIS:hisDel rend="overwritten">n</HIS:hisDel>t «Käthchen von
 <lb/><app type="external" subtype="word" xml:id="varG2-17"><HIS:hisRdg>
-<sic>Heilbron</sic></HIS:hisRdg></app>&rquo;? <emph>Jeg</emph> tviler i al fald ikke
+<sic>Heilbron</sic></HIS:hisRdg></app>»? <emph>Jeg</emph> tviler i al fald ikke
 <pb n="11"/>
 <lb/><fw type="page" place="top">XI.</fw>
-<lb/>derpå. Men deslige påvisninger vil&typHyp;
-<lb/>de være ørkesløse. Det, der gør et kunst&typHyp;
+<lb/>derpå. Men deslige påvisninger vil‐
+<lb/>de være ørkesløse. Det, der gør et kunst‐
 <lb/>værk til sin ophavsmands åndelige
 <lb/>ejendom, det <app type="external" subtype="interpunction" xml:id="varG2-18"><HIS:hisRdg>er</HIS:hisRdg></app> at han har påtrykt
-<lb/>værket sin egen personligheds stem&typHyp;
+<lb/>værket sin egen personligheds stem‐
 <lb/>pel. Jeg mener <app type="external" subtype="interpunction" xml:id="varG2-19"><HIS:hisRdg>derfor</HIS:hisRdg></app> at til trods
 <lb/>for de antydede lighedspunkter er
-<lb/>&lquo;Svend Dyrings hus&rquo;<pb ed="HU"/> lige så ubestri&typHyp;
-<lb/>delig og udelukkende et original&typHyp;
-<lb/>værk af Henrik Hertz, som &lquo;Käth&typHyp;
-<lb/>chen von Heilbronn&rquo; er et origi&typHyp;
+<lb/>«Svend Dyrings hus»<pb ed="HU"/> lige så ubestri‐
+<lb/>delig og udelukkende et original‐
+<lb/>værk af Henrik Hertz, som «Käth‐
+<lb/>chen von Heilbronn» er et origi‐
 <lb/>nal<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>værk af Heinrich v. Kleist.</p>
 <lb/><p>Den samme ret gør jeg for mit
 <lb/>eget vedkommende gældende med
-<lb/>hensyn til &lquo;Gildet på Solhaug&rquo;. Jeg
+<lb/>hensyn til «Gildet på Solhaug». Jeg
 <lb/>håber <app type="external" subtype="interpunction" xml:id="varG2-20"><HIS:hisRdg>også</HIS:hisRdg></app> at man for fremtiden vil
 <lb/>lade enhver af de tre navnefættere
 <lb/>få beholde ubeskåret, hvad der med
 <lb/>rette tilhører ham.</p>
-<lb/><p>Georg Brandes har ved given an&typHyp;
-<lb/>ledning betegnet &lquo;Gildet på Solhaug&rquo;
-<lb/>i dets forhold til &lquo;Svend Dyrings hus&rquo;,
+<lb/><p>Georg Brandes har ved given an‐
+<lb/>ledning betegnet «Gildet på Solhaug»
+<lb/>i dets forhold til «Svend Dyrings hus»,
 <lb/>ikke som bygget på noget lån, men
-<lb/>som <HIS:hisDel rend="overstrike">som</HIS:hisDel> tilblevet under en påvirk&typHyp;
+<lb/>som <HIS:hisDel rend="overstrike">som</HIS:hisDel> tilblevet under en påvirk‐
 <lb/>ning, en indflydelse, udøvet af <app type="external" subtype="word" xml:id="varG2-21"><HIS:hisRdg>den</HIS:hisRdg></app>
 <pb n="12"/>
 <lb/><fw type="page" place="top">XII.</fw>
-<lb/>ældre digter på den yngre. Hans ud&typHyp;
+<lb/>ældre digter på den yngre. Hans ud‐
 <lb/>talelser om mit arbejde er for resten
 <lb/>så velvillige, at jeg herfor, som for
 <lb/>så meget andet, har al grund til at
@@ -732,127 +726,127 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/>Hertz har aldrig i nogen særlig grad
 <lb/>tiltalt mig som dramatisk digter.
 <lb/>Jeg kan derfor ikke få i mit hoved,
-<lb/>at han<HIS:hisDel rend="overstrike">, mig uafvidende,</HIS:hisDel> nogensin&typHyp;
-<lb/>de skulde, mig uafvidende, have kun&typHyp;
+<lb/>at han<HIS:hisDel rend="overstrike">, mig uafvidende,</HIS:hisDel> nogensin‐
+<lb/>de skulde, mig uafvidende, have kun‐
 <lb/>net øve nogen indflydelse på min
 <lb/>egen dramatiske produktion.</p>
-<lb/><p>På dette punkt og i denne for&typHyp;
+<lb/><p>På dette punkt og i denne for‐
 <lb/>bindelse kunde jeg indskrænke mig
-<lb/>til at henvise til dr. Valfrid Vase&typHyp;
-<lb/>nius, docent i <app type="external" subtype="word" xml:id="varG2-23"><HIS:hisRdg>æstetik</HIS:hisRdg></app> ved universi&typHyp;
-<lb/>tetet i Helsingfors. I sin afhand&typHyp;
+<lb/>til at henvise til dr. Valfrid Vase‐
+<lb/>nius, docent i <app type="external" subtype="word" xml:id="varG2-23"><HIS:hisRdg>æstetik</HIS:hisRdg></app> ved universi‐
+<lb/>tetet i Helsingfors. I sin afhand‐
 <lb/>ling for den filosofiske doktorgrad:
-<lb/>&lquo;Henrik Ibsens dramatiska diktning
-<lb/>i dess førsta skede&rquo; (1879) så vel som
-<lb/>i sit værk &lquo;Henrik Ibsen, ett skalde&typHyp;
+<lb/>«Henrik Ibsens dramatiska diktning
+<lb/>i dess førsta skede» (1879) så vel som
+<lb/>i sit værk «Henrik Ibsen, ett skalde‐
 <pb n="13"/>
 <lb/><fw type="page" place="top">XIII.</fw>
-<lb/>porträtt&rquo; (343 sider. <app type="external" subtype="interpunction" xml:id="varG2-24"><HIS:hisRdg>Jos:</HIS:hisRdg></app> Seligmann &amp; comp.
+<lb/>porträtt» (343 sider. <app type="external" subtype="interpunction" xml:id="varG2-24"><HIS:hisRdg>Jos:</HIS:hisRdg></app> Seligmann &amp; comp.
 <lb/><HIS:hisDel rend="overstrike"><gap/></HIS:hisDel> Stockholm. 1882.) har han gjort rede
-<lb/>for sit grundsyn på mit her omhand&typHyp;
-<lb/>lede skuespil, &dash; i sidstnævnte skrift
-<lb/>suppleret <app type="external" subtype="interpunction" xml:id="varG2-25"><HIS:hisRdg>med</HIS:hisRdg></app> hvad jeg under et sam&typHyp;
+<lb/>for sit grundsyn på mit her omhand‐
+<lb/>lede skuespil, – i sidstnævnte skrift
+<lb/>suppleret <app type="external" subtype="interpunction" xml:id="varG2-25"><HIS:hisRdg>med</HIS:hisRdg></app> hvad jeg under et sam‐
 <lb/>vær i München for tre år siden i
 <lb/>al korthed <HIS:hisDel rend="overstrike">for<gap/></HIS:hisDel> meddelte ham. Hertil
 <lb/>kunde jeg, som sagt, henvise.</p><pb ed="HU"/>
 <lb/><p>Men for god ordens skyld vil jeg
 <lb/>dog selv på de følgende blade <HIS:hisDel rend="overstrike">med</HIS:hisDel>
-<lb/>i omrids fortælle &lquo;Gildet på Sol&typHyp;
-<lb/>haug&rquo;s tilblivelseshistorie.</p>
+<lb/>i omrids fortælle «Gildet på Sol‐
+<lb/>haug»s tilblivelseshistorie.</p>
 <lb/><p>Her er den:</p>
 <lb/><p>Jeg indledede denne fortale med
-<lb/>en oplysning <app type="external" subtype="interpunction" xml:id="varG2-26"><HIS:hisRdg>om</HIS:hisRdg></app> at stykket er skre&typHyp;
+<lb/>en oplysning <app type="external" subtype="interpunction" xml:id="varG2-26"><HIS:hisRdg>om</HIS:hisRdg></app> at stykket er skre‐
 <lb/>vet i sommeren 1855.</p>
 <lb/><p>Året i forvejen havde jeg skrevet
-<lb/>&lquo;Fru Inger til Østråt&rquo;. Beskæfti&typHyp;
+<lb/>«Fru Inger til Østråt». Beskæfti‐
 <lb/>gelsen med dette drama havde
-<lb/>nødsaget mig til literært og histo&typHyp;
-<lb/>risk at fordybe mig i Norges mid&typHyp;
+<lb/>nødsaget mig til literært og histo‐
+<lb/>risk at fordybe mig i Norges mid‐
 <lb/>delalder, navnlig da i den senere
 <lb/>del  af samme. Jeg forsøgte, så godt
 <lb/>det lod sig gøre, at leve mig ind i
-<lb/>hine tiders sæder og skikke, i men&typHyp;
+<lb/>hine tiders sæder og skikke, i men‐
 <pb n="14"/>
 <lb/><fw type="page" place="top">XIV.</fw>
-<lb/>neskernes følelsesliv, i deres tænke&typHyp;
+<lb/>neskernes følelsesliv, i deres tænke‐
 <lb/>sæt og udtryksmåde.</p>
 <lb/><p>Denne periode er imidlertid ikke
 <lb/>særdeles tiltalende at dvæle ved
-<lb/>i længden; den frembyder heller ik&typHyp;
+<lb/>i længden; den frembyder heller ik‐
 <lb/>ke synderlig stof, der egner sig for
 <lb/>dramatisk behandling.</p>
 <lb/><p>Jeg tyede derfor også snart over
-<lb/>til selve sagatiden. Men kongesa&typHyp;
-<lb/>gaerne og over hovedet<note resp="editor">En vertikal strek mellom <q>over</q> og <q>hovedet</q> markerer sannsynligvis at Ibsen ønsket at ordet skulle særskrives.</note> de s<HIS:clarification place="inline">t</HIS:clarification>rænge&typHyp;
-<lb/>re historiske overleveringer fra den&typHyp;
+<lb/>til selve sagatiden. Men kongesa‐
+<lb/>gaerne og over hovedet<note resp="editor">En vertikal strek mellom <q>over</q> og <q>hovedet</q> markerer sannsynligvis at Ibsen ønsket at ordet skulle særskrives.</note> de s<HIS:clarification place="inline">t</HIS:clarification>rænge‐
+<lb/>re historiske overleveringer fra den‐
 <lb/>ne fjerne tidsalder fængslede mig
 <lb/>ikke; jeg kunde dengang ikke for
 <lb/>mine digteriske øjemed gøre nogen
 <lb/>dramatisk brug af stridighederne
-<lb/>mellem konger og høvdinger, mel&typHyp;
+<lb/>mellem konger og høvdinger, mel‐
 <lb/>lem partier og flokke. Det skulde
 <lb/>først komme senere.</p>
 <lb/><p>Derimod fandt jeg i rigt mål i
 <lb/>de islandske ætte-sagaer, hvad jeg
-<lb/>behøvede som menneskelig iklæd&typHyp;
-<lb/>ning for de stemninger, forestillin&typHyp;
-<lb/>ger og tanker, der dengang opfyld&typHyp;
-<lb/>te, eller i al fald mere eller min&typHyp;
-<lb/>dre klart foresvæv<unclear reason="ink">e</unclear>de mig. Disse gam&typHyp;
+<lb/>behøvede som menneskelig iklæd‐
+<lb/>ning for de stemninger, forestillin‐
+<lb/>ger og tanker, der dengang opfyld‐
+<lb/>te, eller i al fald mere eller min‐
+<lb/>dre klart foresvæv<unclear reason="ink">e</unclear>de mig. Disse gam‐
 <pb n="15"/>
 <lb/><fw type="page" place="top">XV.</fw>
 <lb/>melnordiske literære bid<HIS:clarification place="inline">r</HIS:clarification>ag til
-<lb/>vor sagatids personalhistorie hav&typHyp;
+<lb/>vor sagatids personalhistorie hav‐
 <lb/>de jeg hidtil ikke kendt, knapt nok
 <lb/>hørt dem nævne. Da faldt mig ved
 <lb/>et tilfælde N. M. Petersens, i al
-<lb/>fald for sprogtonens vedkommen&typHyp;
-<lb/>de, fortræffelige oversættelse i hæn&typHyp;
+<lb/>fald for sprogtonens vedkommen‐
+<lb/>de, fortræffelige oversættelse i hæn‐
 <lb/>de. Ud fra disse ætte-krøniker med
 <lb/>deres vekslende forhold og optrin
 <lb/>mellem mand og mand, mellem
-<lb/>kvinde og kvinde, over hovedet<pb ed="HU"/> mel&typHyp;
+<lb/>kvinde og kvinde, over hovedet<pb ed="HU"/> mel‐
 <lb/>lem menneske og menneske, slog
 <lb/>mig et personligt, fyldigt, levende
-<lb/>livsindhold imøde; og ud af den&typHyp;
+<lb/>livsindhold imøde; og ud af den‐
 <lb/>ne min leven sammen med alle
-<lb/>disse afsluttede, enkelte, person&typHyp;
+<lb/>disse afsluttede, enkelte, person‐
 <lb/>lige kvinder og mænd fremstod i
 <lb/>min tanke det første rå, tågede
-<lb/>udkast til &lquo;Hærmændene på Hel&typHyp;
-<lb/>geland&rquo;.</p>
+<lb/>udkast til «Hærmændene på Hel‐
+<lb/>geland».</p>
 <lb/><p>Hvor meget der af enkelthederne
-<lb/>udformede sig i mig, <app type="external" subtype="word" xml:id="varG2-131"><HIS:hisRdg>ved</HIS:hisRdg></app> jeg ikke læn&typHyp;
+<lb/>udformede sig i mig, <app type="external" subtype="word" xml:id="varG2-131"><HIS:hisRdg>ved</HIS:hisRdg></app> jeg ikke læn‐
 <lb/>ger at opgive. Men jeg husker <app type="external" subtype="interpunction" xml:id="varG2-27"><HIS:hisRdg>godt</HIS:hisRdg></app> at
 <lb/>de to skikkelser, jeg først fik øje på,
 <lb/>var de to kvinder, som senere blev
 <pb n="16"/>
 <lb/><fw type="page" place="top">XVI.</fw>
 <lb/>til Hjørdis og Dagny. Et stort gilde
-<lb/>med æggende og skæbnesvangre sam&typHyp;
+<lb/>med æggende og skæbnesvangre sam‐
 <lb/>menstød skulde der være i stykket.
-<lb/>For øvrigt vilde jeg af karakterer, li&typHyp;
-<lb/>denskaber og indbyrdes forhold opta&typHyp;
+<lb/>For øvrigt vilde jeg af karakterer, li‐
+<lb/>denskaber og indbyrdes forhold opta‐
 <lb/>ge alt det, der forekom mig at være
 <lb/>mest typisk for sagalivet. Med <emph>et</emph> ord,
-<lb/>&dash; hvad der i Vølsungasagaen var ble&typHyp;
-<lb/>vet episk omdigtet, vilde jeg, drama&typHyp;
+<lb/>– hvad der i Vølsungasagaen var ble‐
+<lb/>vet episk omdigtet, vilde jeg, drama‐
 <lb/>tisk, ligefrem gengive.</p>
 <lb/><p>Nogen hel, sammenhængende plan
 <lb/>udkastede jeg vel ikke dengang. Dog
 <lb/>stod det klart for mig, at et sådant
-<lb/>skuespil var det første, som nu skul&typHyp;
+<lb/>skuespil var det første, som nu skul‐
 <lb/>de skrives.</p>
-<lb/><p>Men så kom der adskilligt imel&typHyp;
-<lb/>lem. Det meste deraf var vel af per&typHyp;
+<lb/><p>Men så kom der adskilligt imel‐
+<lb/>lem. Det meste deraf var vel af per‐
 <lb/>sonlig natur og formodentlig det
 <lb/>stærkest og nærmest afgørende;
 <lb/>men jeg tror nok, det heller ikke
 <lb/>var ganske uden <app type="external" subtype="interpunction" xml:id="varG2-28"><HIS:hisRdg>betydning</HIS:hisRdg></app> at jeg
 <lb/>just på den tid beskæftigede mig
-<lb/>med indgående at studere Land&typHyp;
-<lb/>stads samling af &lquo;Norske folkevi&typHyp;
-<lb/>ser&rquo;, der var udkommet et par år
+<lb/>med indgående at studere Land‐
+<lb/>stads samling af «Norske folkevi‐
+<lb/>ser», der var udkommet et par år
 <pb n="17"/>
 <lb/><fw type="page" place="top">XVII.</fw>
 <lb/>i forvejen. De stemninger, jeg dengang
@@ -860,73 +854,73 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/>middelalderens literære romantik
 <lb/>end med sagaens kendsgerninger,
 <lb/>bedre med verseformen end med
-<lb/>prosastilen, bedre med det sprog&typHyp;
+<lb/>prosastilen, bedre med det sprog‐
 <lb/>musikalske element i kæmpevisen,
-<lb/>end med det karakteriserende i sa&typHyp;
+<lb/>end med det karakteriserende i sa‐
 <lb/>gaen.</p>
 <lb/><p>Således skede det, at det <HIS:hisDel rend="overstrike">første</HIS:hisDel>
-<lb/>formløst gærende udkast til trage&typHyp;
-<lb/>dien &lquo;Hærmændene på Helgeland&rquo;
-<lb/>foreløbig forvandlede sig til det ly&typHyp;
-<lb/>riske drama &lquo;Gildet på Solhaug&rquo;.</p>
-<lb/><p>De to kvindeskikkelser, plejesøstre&typHyp;
+<lb/>formløst gærende udkast til trage‐
+<lb/>dien «Hærmændene på Helgeland»
+<lb/>foreløbig forvandlede sig til det ly‐
+<lb/>riske drama «Gildet på Solhaug».</p>
+<lb/><p>De to kvindeskikkelser, plejesøstre‐
 <lb/>ne Hjørdis og Dagny i den påtænkte
 <lb/>tragedie blev til søstrene Margit<pb ed="HU"/> og
 <lb/>Signe i det fuldførte lyriske drama.
 <lb/>Disse to sidstnævntes <app type="external" subtype="word" xml:id="varG2-29"><HIS:hisRdg>afstamning</HIS:hisRdg></app> fra de
 <lb/>to sagakvinder, vil let falde i øjnene,
 <lb/>når der først gøres opmærksom derpå.
-<lb/>Slægtsligheden er <app type="external" subtype="interpunction" xml:id="varG2-30"><HIS:hisRdg>umiskendelig</HIS:hisRdg></app> Trage&typHyp;
+<lb/>Slægtsligheden er <app type="external" subtype="interpunction" xml:id="varG2-30"><HIS:hisRdg>umiskendelig</HIS:hisRdg></app> Trage‐
 <lb/>diens den gang kun løst planlagte helt,
-<lb/>den vidt berejste og ved fremmede kon&typHyp;
-<lb/>gehoffer vel modtagne høvding, vi&typHyp;
+<lb/>den vidt berejste og ved fremmede kon‐
+<lb/>gehoffer vel modtagne høvding, vi‐
 <pb n="18"/>
 <lb/><fw type="page" place="top">XVIII.</fw>
-<lb/>kingen Sigurd, omformede sig til rid&typHyp;
+<lb/>kingen Sigurd, omformede sig til rid‐
 <lb/>dersmanden og sangeren Gudmund
 <lb/>Alfsøn, der også har færdedes længe
 <lb/>i fremmede lande og levet i kongens
-<lb/>gård. Hans stilling mellem de to sø&typHyp;
+<lb/>gård. Hans stilling mellem de to sø‐
 <lb/>stre blev ændret i overensstemmelse
-<lb/>med de forandrede tidsomstændighe&typHyp;
+<lb/>med de forandrede tidsomstændighe‐
 <lb/>der og forholde; men begge søstrenes
-<lb/>stilling lige over for ham forblev væ&typHyp;
-<lb/>sentlig den samme, som i den oprin&typHyp;
+<lb/>stilling lige over for ham forblev væ‐
+<lb/>sentlig den samme, som i den oprin‐
 <lb/>delig påtænkte og senere fuldførte
 <lb/>tragedie. Det skæbnesvangre gilde,
-<lb/>som det i mit første udkast havde væ&typHyp;
+<lb/>som det i mit første udkast havde væ‐
 <lb/>ret mig så magtpåliggende at male,
 <lb/>blev i dramaet den skueplads, på
-<lb/>hvilken personerne helt igennem op&typHyp;
+<lb/>hvilken personerne helt igennem op‐
 <lb/>trådte; det blev den baggrund, imod
 <lb/>hvilken handlingen hævede sig frem
 <lb/>og meddelte det samlede billede den
 <lb/>grundstemning, jeg havde tilsigtet.
 <lb/>Stykkets afslutning dæmpedes og
-<lb/>formildedes visst nok i overensstem&typHyp;
+<lb/>formildedes visst nok i overensstem‐
 <lb/>melse med dets art som drama og
-<lb/>ikke tr<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>agedi<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>e; men mellem ret&typHyp;
+<lb/>ikke tr<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>agedi<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>e; men mellem ret‐
 <lb/>troen<HIS:hisDel rend="overwritten">ed</HIS:hisDel>de <app type="external" subtype="word" xml:id="varG2-31"><HIS:hisRdg>æstetikere</HIS:hisRdg></app> turde der kanske
 <pb n="19"/>
 <lb/><fw type="page" place="top">XIX.</fw>
 <lb/>alligevel kunne tvistes om, hvor vidt
 <lb/>der i denne afslutning ikke er blevet
 <lb/>tilbage et drag af uformidlet tragik
-<lb/>som et vidnesbyrd om dramaets ud&typHyp;
+<lb/>som et vidnesbyrd om dramaets ud‐
 <lb/>spring.</p>
-<lb/><p>Herpå skal jeg imidlertid ikke vi&typHyp;
-<lb/>dere indlade mig. Jeg har kun vil&typHyp;
-<lb/>let hævde og <app type="external" subtype="interpunction" xml:id="varG2-32"><HIS:hisRdg>fastslå</HIS:hisRdg></app> at det forelig&typHyp;
+<lb/><p>Herpå skal jeg imidlertid ikke vi‐
+<lb/>dere indlade mig. Jeg har kun vil‐
+<lb/>let hævde og <app type="external" subtype="interpunction" xml:id="varG2-32"><HIS:hisRdg>fastslå</HIS:hisRdg></app> at det forelig‐
 <lb/>gende skuespil, lige så fuldt som alle
 <lb/>mine øvrige dramatiske arbejder, er
 <lb/>et naturnødvendigt udslag af min
 <lb/>livsgang på et bestemt punkt. Det er
 <lb/>opstået indenfra og ikke formedelst
-<lb/>nogen ydre påvirkning eller indfly&typHyp;
+<lb/>nogen ydre påvirkning eller indfly‐
 <lb/>delse.</p>
-<lb/><p>Således og ikke anderledes hæn&typHyp;
+<lb/><p>Således og ikke anderledes hæn‐
 <lb/>ger det sammen med tilblivelsen af
-<lb/>&lquo;Gildet på Solhaug&rquo;.</p>
+<lb/>«Gildet på Solhaug».</p>
 <lb/><closer><dateline><name type="place">Rom</name>, i <date>April 1883</date>.</dateline>
 <lb/><signed>Henrik Ibsen.</signed></closer>
 </div>
@@ -962,16 +956,16 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <div type="act" n="1">
 <head>
 <lb/>Første akt.</head>
-<lb/><HIS:hisStage>(En stadselig stue med dør i bag&typHyp;
+<lb/><HIS:hisStage>(En stadselig stue med dør i bag‐
 <lb/>grunden og på begge sidevæggene.
 <lb/>Foran <app type="external" subtype="word" xml:id="varG2-33"><HIS:hisRdg>tilhøjre</HIS:hisRdg></app> et karnap-vindu med
 <lb/>små, runde, blyindfattede ruder, og
 <lb/>ved vinduet et bord med en mængde
-<lb/>kvindesmykker. Langs væggen <app type="external" subtype="word" xml:id="varG2-34"><HIS:hisRdg>tilven&typHyp;
-<lb/>stre</HIS:hisRdg></app> et større bord med sølvkruse, bæ&typHyp;
-<lb/>gre og drikkehorn. Døren i baggrun&typHyp;
+<lb/>kvindesmykker. Langs væggen <app type="external" subtype="word" xml:id="varG2-34"><HIS:hisRdg>tilven‐
+<lb/>stre</HIS:hisRdg></app> et større bord med sølvkruse, bæ‐
+<lb/>gre og drikkehorn. Døren i baggrun‐
 <lb/>den fører ud til en åben svalegang,
-<lb/>hvorigennem ses et vidt fjordland&typHyp;
+<lb/>hvorigennem ses et vidt fjordland‐
 <lb/>skab.)</HIS:hisStage>
 <lb/><HIS:hisStage>(<HIS:stageRole who="BENGT">Bengt Gautesøn</HIS:stageRole>, <HIS:stageRole who="MARGIT">fru Margit</HIS:stageRole>, <HIS:stageRole who="KNUT">Knut
 <lb/>Gæsling</HIS:stageRole> og <HIS:stageRole who="ERIK">Erik fra Hægge</HIS:stageRole> sidder om
@@ -988,40 +982,40 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/>Knut Gæslings bejlermand?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>
 <lb/><HIS:hisStage>(sko<HIS:clarification place="inline">t</HIS:clarification>ter urolig til sin hustru.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Ja, jeg &dash; jeg tænker nu &dash; <HIS:hisStage>(da hun
-<lb/>tier.)</HIS:hisStage> Hm, Margit, lad os først hø&typHyp;
+<lb/><p>Ja, jeg – jeg tænker nu – <HIS:hisStage>(da hun
+<lb/>tier.)</HIS:hisStage> Hm, Margit, lad os først hø‐
 <lb/>re, hvad <emph>du</emph> mener.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(står op.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Herr Knut Gæsling, &dash; det var mig læn&typHyp;
+<lb/><p>Herr Knut Gæsling, – det var mig læn‐
 <lb/>ge vitterligt, hvad Erik fra Hægge nys
 <lb/>fremsatte om eder. Jeg <app type="external" subtype="word" xml:id="varG2-132"><HIS:hisRdg>ved</HIS:hisRdg></app> fuldt <app type="external" subtype="interpunction" xml:id="varG2-38"><HIS:hisRdg>vel</HIS:hisRdg></app>
 <lb/>at I stammer fra en berømmelig
 <lb/>slægt; I er rig på gods og guld, og
-<lb/>vor kongelige herre er eder synder&typHyp;
+<lb/>vor kongelige herre er eder synder‐
 <lb/>lig bevågen.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>
 <lb/><HIS:hisStage>(til Knut.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Synderlig bevågen, &dash; det siger jeg
+<lb/><p>Synderlig bevågen, – det siger jeg
 <lb/>også.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
-<lb/><p>Og visseligen kunde ikke min sø&typHyp;
-<lb/>ster kåre sig nogen gævere husbond &dash;</p></HIS:hisSp>
+<lb/><p>Og visseligen kunde ikke min sø‐
+<lb/>ster kåre sig nogen gævere husbond –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
 <lb/><p>Ingen gævere; det er lige det
 <lb/>samme, som <emph>jeg</emph> tænker.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <pb n="25"/>
 <lb/><fw type="gathering" place="top-left">2.</fw>
-<lb/><p>&dash; dersom I ellers kan formå hen&typHyp;
+<lb/><p>– dersom I ellers kan formå hen‐
 <lb/>de til at fatte godhed for jer.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>
 <lb/><HIS:hisStage>(ængstelig og halv sagte.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Men, &dash; men, min kære hustru &dash;</p></HIS:hisSp><pb ed="HU"/>
+<lb/><p>Men, – men, min kære hustru –</p></HIS:hisSp><pb ed="HU"/>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>
 <lb/><HIS:hisStage>(springer op.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Ja så, fru Margit! I <app type="external" subtype="interpunction" xml:id="varG2-39"><HIS:hisRdg>mener</HIS:hisRdg></app> at e&typHyp;
-<lb/>ders søster &dash;?</p></HIS:hisSp>
+<lb/><p>Ja så, fru Margit! I <app type="external" subtype="interpunction" xml:id="varG2-39"><HIS:hisRdg>mener</HIS:hisRdg></app> at e‐
+<lb/>ders søster –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>
 <lb/><HIS:hisStage>(søger at berolige ham.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Nej vent, Knut Gæsling! Vent nu. I
@@ -1029,18 +1023,18 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><p>Så lidet kan mine ord krænke jer.
 <lb/>Min søster kender eder jo kun af de
-<lb/>viser, som er gjort om eder, &dash; og de vi&typHyp;
+<lb/>viser, som er gjort om eder, – og de vi‐
 <lb/>ser klinger ilde for høviske øren.</p>
 <lb/><l>Eders fædres gård er et utrygt hjem</l>
 <lb/><l>mellem alle de vilde gæster.</l>
 <lb/><l>Både nat og dag har I gilde med dem.</l>
 <lb/><l>Krist hjælpe den ungmø, I fæster!</l>
 <lb/><l>Krist hjælpe den ungmø, I lokker med <app type="external" subtype="interpunction" xml:id="varG2-40"><HIS:hisRdg>guld</HIS:hisRdg></app></l>
-<lb/><l>med gods eller grønne skove; &dash;</l>
+<lb/><l>med gods eller grønne skove; –</l>
 <lb/><l>snart vil I se hende sorrigfuld</l>
 <lb/><l>at længes, under muldet at sove.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ERIK"><HIS:spOpener><speaker>Erik</speaker>.</HIS:spOpener>
-<lb/><p>Nu ja &dash; sandt nok &dash; Knut Gæsling
+<lb/><p>Nu ja – sandt nok – Knut Gæsling
 <pb n="26"/>
 <lb/>lever noget vildt og ustyrligt. Men
 <lb/>sligt ændrer sig let, når han får sig
@@ -1052,11 +1046,11 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/>hos Erik, som her står. Øllet var stærkt;
 <lb/>og da det led ud på kvelden gjorde jeg
 <lb/><HIS:hisDel rend="overstrike">jeg</HIS:hisDel> det løfte, at Signe, eders fagre søster,
-<lb/>skulde vorde min <app type="external" subtype="interpunction" xml:id="varG2-42"><HIS:hisRdg>viv</HIS:hisRdg></app> før året var om&typHyp;
-<lb/>me. Aldrig skal det siges Knut Gæs&typHyp;
+<lb/>skulde vorde min <app type="external" subtype="interpunction" xml:id="varG2-42"><HIS:hisRdg>viv</HIS:hisRdg></app> før året var om‐
+<lb/>me. Aldrig skal det siges Knut Gæs‐
 <lb/>ling på, at han har brudt noget løfte.
 <lb/>Derfor ser I <app type="external" subtype="interpunction" xml:id="varG2-43"><HIS:hisRdg>selv</HIS:hisRdg></app> at I må kåre mig
-<lb/>til eders <HIS:hisDel rend="overwritten">h</HIS:hisDel>søsters husbond, &dash; enten med
+<lb/>til eders <HIS:hisDel rend="overwritten">h</HIS:hisDel>søsters husbond, – enten med
 <lb/>det gode eller med det onde.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><l>Før <emph>det</emph> skal ske, vil jeg ikke fordølge,</l>
@@ -1066,7 +1060,7 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>I må døve den gru, som langvejs står</l>
 <lb/><l>af Knut Gæslings komme til bryllupsgård.</l>
 <lb/><l>Høvisk må I te jer, når I rider til gilde;</l><pb ed="HU"/>
-<lb/><l>øksen skal I hjemme bag stuedøren stille; &dash;</l>
+<lb/><l>øksen skal I hjemme bag stuedøren stille; –</l>
 <lb/><l>I <app type="external" subtype="word" xml:id="varG2-133"><HIS:hisRdg>ved</HIS:hisRdg></app>, den sidder løs i jer hånd, når mjød</l>
 <lb/><l>og øl har gjort jer panden fortumlet og rød.</l>
 <lb/><l>Ærbare kvinder skal I lade med fred;</l>
@@ -1080,38 +1074,38 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>
 <lb/><HIS:hisStage>(med indædt harme.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>I <app type="external" subtype="word" xml:id="varG2-134"><HIS:hisRdg>ved</HIS:hisRdg></app> snildt at belægge eders ord, fru
-<lb/>Margit. For sandt &dash; I burde være <app type="external" subtype="word" xml:id="varG2-45"><HIS:hisRdg>præst</HIS:hisRdg></app>
+<lb/>Margit. For sandt – I burde være <app type="external" subtype="word" xml:id="varG2-45"><HIS:hisRdg>præst</HIS:hisRdg></app>
 <lb/>og ikke eders husbonds frue.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
 <lb/><p>Å, for den sags skyld, så kunde nok jeg
-<lb/>også &dash;</p></HIS:hisSp>
+<lb/>også –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>
 <lb/><HIS:hisStage>(uden at agte på ham.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Men vel skal I mærke jer, at havde en
 <lb/>våbenfør mand talt mig til på slig vis
-<lb/>som I, så &dash;</p></HIS:hisSp>
+<lb/>som I, så –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
-<lb/><p>Nej men hør nu, Knut Gæsling, &dash; I må
+<lb/><p>Nej men hør nu, Knut Gæsling, – I må
 <lb/>forstå os!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>
 <lb/><HIS:hisStage>(som før.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Nu, kort og godt, så skulde han <app type="external" subtype="interpunction" xml:id="varG2-46"><HIS:hisRdg>fornum&typHyp;
+<lb/><p>Nu, kort og godt, så skulde han <app type="external" subtype="interpunction" xml:id="varG2-46"><HIS:hisRdg>fornum‐
 <lb/>met</HIS:hisRdg></app> at øksen sidder mig løs i hånden,
 <lb/>som I fornylig sagde.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>
 <pb n="28"/>
 <lb/><HIS:hisStage>(sagte.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Der har vi det! Margit, Margit, det&typHyp;
+<lb/><p>Der har vi det! Margit, Margit, det‐
 <lb/>te her går aldrig godt.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(til Knut.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>I bad om ærligt svar, og det har jeg gi&typHyp;
+<lb/><p>I bad om ærligt svar, og det har jeg gi‐
 <lb/>vet jer.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
 <lb/><p>Vel, vel; jeg vil heller ikke regne det
 <lb/>så nøje med jer, fru Margit. I har
 <lb/>mere kløgt, end alle vi andre tilhobe.
-<lb/>Der er min hånd; &dash; kan hænde der er
+<lb/>Der er min hånd; – kan hænde der er
 <lb/>skælig grund for alle de hvasse ord,
 <lb/>I sagde mig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
@@ -1136,11 +1130,11 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
 <lb/><p>Vel, fru Margit; jeg takker jer. Dog
 <lb/>var det ikke for at søge kirken, jeg
-<lb/>red herned imorges. Min rejse gæl&typHyp;
+<lb/>red herned imorges. Min rejse gæl‐
 <lb/>der Gudmund Alfsøn, eders frænde.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(studser.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Ham! Min frænde? Hvor vil I sø&typHyp;
+<lb/><p>Ham! Min frænde? Hvor vil I sø‐
 <lb/>ge <emph>ham</emph>?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
 <lb/><p>Hans gård ligger jo bag næsset, på den
@@ -1148,7 +1142,7 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><p>Men han selv færdes langvejs herfra.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ERIK"><HIS:spOpener><speaker>Erik</speaker>.</HIS:spOpener>
-<lb/><p>Sig ikke det; han turde være nærme&typHyp;
+<lb/><p>Sig ikke det; han turde være nærme‐
 <lb/>re, end I tænker.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>
 <lb/><HIS:hisStage>(hvisker.)</HIS:hisStage></HIS:spOpener>
@@ -1156,17 +1150,17 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><p>Nærmere? Hvad mener I?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
-<lb/><p>Har I da ikke hørt, at Gudmund Alf&typHyp;
+<lb/><p>Har I da ikke hørt, at Gudmund Alf‐
 <lb/>søn er kommen tilbage til landet igen?
 <pb n="30"/>
 <lb/>Han fulgte med kansleren Audun
 <lb/>af Hægranæs, som var sendt til
-<lb/>Frankrig for at hente vor nye dron&typHyp;
+<lb/>Frankrig for at hente vor nye dron‐
 <lb/>ning.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><p>Det er ret nok; men kongens bryllup
 <lb/>holdes i disse dage med stor pragt
-<lb/>i Bergen, og der er Gudmund Alf&typHyp;
+<lb/>i Bergen, og der er Gudmund Alf‐
 <lb/>søn med.</p></HIS:hisSp>
 <HIS:hisAdd place="margin">
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
@@ -1175,7 +1169,7 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <note resp="editor">Tilføyelsen er skrevet vertikalt i venstre marg.</note></HIS:hisAdd>
 <lb/><HIS:hisSp who="ERIK"><HIS:spOpener><speaker>Erik</speaker>
 <lb/><HIS:hisStage>(sagte til Knut.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Fru Margit <app type="external" subtype="word" xml:id="varG2-135"><HIS:hisRdg>ved</HIS:hisRdg></app> da <app type="external" subtype="interpunction" xml:id="varG2-47"><HIS:hisRdg>ikke</HIS:hisRdg></app> at &dash;?</p></HIS:hisSp>
+<lb/><p>Fru Margit <app type="external" subtype="word" xml:id="varG2-135"><HIS:hisRdg>ved</HIS:hisRdg></app> da <app type="external" subtype="interpunction" xml:id="varG2-47"><HIS:hisRdg>ikke</HIS:hisRdg></app> at –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>
 <lb/><HIS:hisStage>(sagte.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Det synes så; men lad dig ikke mærke
@@ -1208,15 +1202,15 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><p>Og når vi har bestemt os til noget,
 <lb/>så står det fast.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
-<lb/><p>Det kan jeg lide, herr Bengt Gaute&typHyp;
+<lb/><p>Det kan jeg lide, herr Bengt Gaute‐
 <lb/>søn. Jeg har det på samme sæt; og
-<lb/>jeg har nu engang drukket på svo&typHyp;
+<lb/>jeg har nu engang drukket på svo‐
 <lb/>gerskab mellem os. I får se til, om
 <lb/>ikke jeg også holder fast ved mit
-<lb/>ord. &dash; Guds fred til ikveld!</p></HIS:hisSp>
+<lb/>ord. – Guds fred til ikveld!</p></HIS:hisSp>
 <lb/><HIS:hisStage>(Han og Erik går med mændene
 <lb/>ud i baggrunden. Bengt følger dem
-<lb/>til døren. Klokkeringningen er i&typHyp;
+<lb/>til døren. Klokkeringningen er i‐
 <lb/>midlertid ophørt.)</HIS:hisStage>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>
 <lb/><HIS:hisStage>(kommer tilbage.)</HIS:hisStage></HIS:spOpener>
@@ -1227,10 +1221,10 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><HIS:hisStage>(tankespredt.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Ja, sådan lod det.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
-<lb/><p>Knut Gæsling er ikke god at kom&typHyp;
+<lb/><p>Knut Gæsling er ikke god at kom‐
 <lb/>me ud for. Og når jeg tænker mig
-<lb/>om, så gav vi ham også altfor man&typHyp;
-<lb/>ge umilde ord. Nå, lad os ikke grub&typHyp;
+<lb/>om, så gav vi ham også altfor man‐
+<lb/>ge umilde ord. Nå, lad os ikke grub‐
 <lb/>le over den sag. Idag må vi være
 <lb/>lystige, Margit! Og det, mener jeg, vi
 <lb/>har god grund til begge to.</p></HIS:hisSp>
@@ -1242,7 +1236,7 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/>til dig, det er sandt. Men den rigeste
 <lb/>mand på mange, mange mile, det
 <lb/><app type="external" subtype="word" xml:id="varG2-136"><HIS:hisRdg>ved</HIS:hisRdg></app> jeg da <app type="external" subtype="interpunction" xml:id="varG2-50"><HIS:hisRdg>visst</HIS:hisRdg></app> at jeg var. Du var en
-<lb/>fager ungmø, af ædel slægt; men med&typHyp;
+<lb/>fager ungmø, af ædel slægt; men med‐
 <lb/>giften skulde ikke friste nogen frier.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(hen for sig.)</HIS:hisStage></HIS:spOpener>
@@ -1257,14 +1251,14 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/>Det er jo min glædesfest ikveld.</p></HIS:hisSp><pb ed="HU"/>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
 <lb/><p>Slig tale tykkes jeg vel om. Lad mig se,
-<lb/>du klæder dig i din bedste stads, så vo&typHyp;
+<lb/>du klæder dig i din bedste stads, så vo‐
 <lb/>re gæster kan sige: lyksalig hun, som
-<lb/>fik Bengt Gautesøn til husbond. &dash;
+<lb/>fik Bengt Gautesøn til husbond. –
 <lb/>Men nu må jeg ud i madburet; der
 <lb/>er fuldt op at tage vare på idag.</p>
 <lb/><HIS:hisStage>(han går ud til venstre.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
-<lb/><HIS:hisStage>(<HIS:hisDel rend="overstrike">synker</HIS:hisDel> segner ned i en stol ved bor&typHyp;
+<lb/><HIS:hisStage>(<HIS:hisDel rend="overstrike">synker</HIS:hisDel> segner ned i en stol ved bor‐
 <lb/>det til højre.)</HIS:hisStage></HIS:spOpener>
 <lb/><l>Vel var <app type="external" subtype="interpunction" xml:id="varG2-51"><HIS:hisRdg>det,</HIS:hisRdg></app> han gik. Når jeg ser ham <app type="external" subtype="interpunction" xml:id="varG2-52"><HIS:hisRdg>herinde<HIS:hisDel rend="overstrike">,</HIS:hisDel></HIS:hisRdg></app></l>
 <lb/><l>det er mig som blodet holdt op at rinde;</l>
@@ -1273,12 +1267,12 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><HIS:hisStage><HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>(med frembrydende tårer.)</HIS:hisStage>
 <lb/><l><emph>Han</emph> er min husbond! Jeg er <emph>hans</emph> viv!</l>
 <lb/><l>Hvorlænge varer et menneskes liv?</l>
-<lb/><l>Gud fri mig, &dash; kanhænde halvhundrede år; &dash;</l>
-<lb/><l>og jeg &dash; i det tre og tyvende går!</l>
+<lb/><l>Gud fri mig, – kanhænde halvhundrede år; –</l>
+<lb/><l>og jeg – i det tre og tyvende går!</l>
 <lb/><HIS:hisStage>(roligere, efter en kort taushed.)</HIS:hisStage>
 <lb/><l>Det er tungt at sukke bag gylden mur;</l>
 <lb/><l>det er tungt at sidde så længe i bur.</l>
-<lb/><HIS:hisStage>(famler tankespredt mellem smykker&typHyp;
+<lb/><HIS:hisStage>(famler tankespredt mellem smykker‐
 <lb/>ne og begynder at pynte sig.)</HIS:hisStage>
 <lb/><l>Med perler og ringe alt som <app type="external" subtype="interpunction" xml:id="varG2-53"><HIS:hisRdg>bedst</HIS:hisRdg></app></l>
 <lb/><l>han <app type="external" subtype="interpunction" xml:id="varG2-54"><HIS:hisRdg>bad</HIS:hisRdg></app> at jeg smykke mig skulde.</l>
@@ -1290,54 +1284,54 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>jeg kender en vise, som kan sorgen forslå.</l>
 <lb/><HIS:hisStage>(hun synger.)</HIS:hisStage>
 <lb/><l>Bergkongen red sig under ø;</l>
-<lb/><l>&dash; så klageligt rinde mine dage &dash;</l>
+<lb/><l>– så klageligt rinde mine dage –</l>
 <lb/><l>vilde han fæste den væne mø.</l>
-<lb/><l>&dash; ret aldrig du kommer tilbage &dash;</l>
+<lb/><l>– ret aldrig du kommer tilbage –</l>
 <lb/><l>Bergkongen red til herr Håkons gård;</l>
-<lb/><l>&dash; så klageligt rinde mine dage &dash;</l>
+<lb/><l>– så klageligt rinde mine dage –</l>
 <lb/><l>liden Kirsten stod ude, slog ud sit hår.</l>
-<lb/><l>&dash; ret aldrig du kommer tilbage &dash;</l><pb ed="HU"/>
+<lb/><l>– ret aldrig du kommer tilbage –</l><pb ed="HU"/>
 <lb/><l>Bergkongen fæsted den væne viv;</l>
-<lb/><l>&dash; <HIS:hisDel rend="overwritten">r<gap/></HIS:hisDel>så klageligt rinde mine dage &dash;</l>
+<lb/><l>– <HIS:hisDel rend="overwritten">r<gap/></HIS:hisDel>så klageligt rinde mine dage –</l>
 <lb/><l>han spændte en sølvgjord omkring hendes liv.</l>
-<lb/><l>&dash; ret aldrig du kommer tilbage &dash;</l>
+<lb/><l>– ret aldrig du kommer tilbage –</l>
 <lb/><l>Bergkongen fæsted den liljevånd</l>
-<lb/><l>&dash; så klageligt rinde mine dage &dash;</l>
+<lb/><l>– så klageligt rinde mine dage –</l>
 <lb/><l>med femten guldringe til hver hendes hånd.</l>
-<lb/><l>&dash; ret aldrig du kommer tilbage &dash;</l>
+<lb/><l>– ret aldrig du kommer tilbage –</l>
 <lb/><l>Tre sommere gik, og der gik vel fem;</l>
 <pb n="35"/>
-<lb/><l>&dash; så klageligt rinde mine dage &dash;</l>
+<lb/><l>– så klageligt rinde mine dage –</l>
 <lb/><l>Kirsten sad i berget i alle dem.</l>
-<lb/><l>&dash; ret aldrig du kommer tilbage &dash;</l>
+<lb/><l>– ret aldrig du kommer tilbage –</l>
 <lb/><l>Fem sommere gik, og der gik vel ni;</l>
-<lb/><l>&dash; så klageligt rinde mine dage &dash;</l>
+<lb/><l>– så klageligt rinde mine dage –</l>
 <lb/><l>liden Kirsten så ikke solen i li.</l>
-<lb/><l>&dash; ret aldrig du kommer <app type="external" subtype="interpunction" xml:id="varG2-56"><HIS:hisRdg>tilbage.</HIS:hisRdg></app></l>
+<lb/><l>– ret aldrig du kommer <app type="external" subtype="interpunction" xml:id="varG2-56"><HIS:hisRdg>tilbage.</HIS:hisRdg></app></l>
 <lb/><l>Dalen har blomster og fuglesang;</l>
-<lb/><l>&dash; så klageligt rinde mine dage &dash;</l>
+<lb/><l>– så klageligt rinde mine dage –</l>
 <lb/><l>i berget er der guld og en nat <app type="external" subtype="word" xml:id="varG2-57"><HIS:hisRdg>så</HIS:hisRdg></app> lang.</l>
-<lb/><l><app type="external" subtype="interpunction" xml:id="varG2-58"><HIS:hisRdg>ret</HIS:hisRdg></app> aldrig du kommer tilbage &dash;</l>
+<lb/><l><app type="external" subtype="interpunction" xml:id="varG2-58"><HIS:hisRdg>ret</HIS:hisRdg></app> aldrig du kommer tilbage –</l>
 <lb/><HIS:hisStage>(hun rejser sig og går henover gulvet.)</HIS:hisStage>
 <lb/><l>Den vise sang Gudmund så mangen kveld,</l>
 <lb/><l>da han var hos min fader hjemme.</l>
-<lb/><l>Der er noget deri, &dash; jeg <app type="external" subtype="word" xml:id="varG2-137"><HIS:hisRdg>ved</HIS:hisRdg></app> ikke selv, &dash;</l>
+<lb/><l>Der er noget deri, – jeg <app type="external" subtype="word" xml:id="varG2-137"><HIS:hisRdg>ved</HIS:hisRdg></app> ikke selv, –</l>
 <lb/><l>der er noget, som jeg aldrig kunde glemme;</l>
-<lb/><l>der er noget, som mægtigt fyldte min hu, &dash;</l>
-<lb/><l>som jeg aldrig forstod, &dash; som jeg grubler på endnu.</l>
+<lb/><l>der er noget, som mægtigt fyldte min hu, –</l>
+<lb/><l>som jeg aldrig forstod, – som jeg grubler på endnu.</l>
 <lb/><HIS:hisStage>(forfærdet, standser.)</HIS:hisStage>
-<lb/><l>Røde guldringe! Beltet om mit liv &dash;!</l>
+<lb/><l>Røde guldringe! Beltet om mit liv –!</l>
 <lb/><l>Med guld var det bergkongen fæsted sin viv!</l>
 <lb/><HIS:hisStage>(fortvilet; synker ned på en bænk ved
 <lb/>bordet til venstre.)</HIS:hisStage>
 <lb/><l>Ve mig! Selv er jeg bergkongens brud!</l>
-<lb/><l>Og ingen &dash; ingen kommer for at løse mig ud.</l></HIS:hisSp>
+<lb/><l>Og ingen – ingen kommer for at løse mig ud.</l></HIS:hisSp>
 <pb n="36"/>
-<lb/><HIS:hisStage>(<HIS:stageRole who="SIGNE">Signe</HIS:stageRole>, glædestrålende, kommer løben&typHyp;
+<lb/><HIS:hisStage>(<HIS:stageRole who="SIGNE">Signe</HIS:stageRole>, glædestrålende, kommer løben‐
 <lb/>de ind fra baggrunden.)</HIS:hisStage>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>
 <lb/><HIS:hisStage>(råber.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Margit, Margit, &dash; han kommer!</p></HIS:hisSp>
+<lb/><p>Margit, Margit, – han kommer!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(springer op.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Kommer? Hvem kommer?</p></HIS:hisSp><pb ed="HU"/>
@@ -1345,25 +1339,25 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><p>Gudmund, vor frænde!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><p>Gudmund Alfsøn! Her! Hvor kan du
-<lb/>tro &dash;?</p></HIS:hisSp>
+<lb/>tro –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
 <lb/><p>Å, jeg er viss på det.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(går over mod højre.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Gudmund Alfsøn er med til bryllups&typHyp;
+<lb/><p>Gudmund Alfsøn er med til bryllups‐
 <lb/>gildet i kongsgården; det <app type="external" subtype="word" xml:id="varG2-138"><HIS:hisRdg>ved</HIS:hisRdg></app> du lige
 <lb/>så godt som jeg.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
-<lb/><p>Kan være; men endda så er jeg sik&typHyp;
+<lb/><p>Kan være; men endda så er jeg sik‐
 <lb/>ker på, det var ham.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><p>Har du da set <app type="external" subtype="interpunction" xml:id="varG2-59"><HIS:hisRdg>ham.</HIS:hisRdg></app></p></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
-<lb/><p>Å nej, nej; men nu skal du høre &dash;</p></HIS:hisSp>
+<lb/><p>Å nej, nej; men nu skal du høre –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <pb n="37"/>
 <lb/><fw type="gathering" place="top-left">5.</fw>
-<lb/><p> Ja, skynd dig, &dash; fortæl!</p></HIS:hisSp>
+<lb/><p> Ja, skynd dig, – fortæl!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
 <lb/><l>Det var sig årle, da klokkerne klang,</l>
 <lb/><l>mig lysted at ride til kirke;</l>
@@ -1381,7 +1375,7 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>mig <app type="external" subtype="interpunction" xml:id="varG2-61"><HIS:hisRdg>tyktes</HIS:hisRdg></app> at alle de billeder små</l>
 <lb/><l>vendte sig om for at lytte derpå.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
-<lb/><l>Hvad mere? Signe, &dash; tal ud, tal ud!</l></HIS:hisSp>
+<lb/><l>Hvad mere? Signe, – tal ud, tal ud!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
 <lb/><l>Det var som et dybt, et ufatteligt bud</l>
 <lb/><l>maned mig udenfor kirkens mur</l>
@@ -1404,18 +1398,18 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>men sælsomme tanker steg op herinde.</l>
 <lb/><l>Fuldt vel jeg kendte den dejlige sang;</l>
 <lb/><l>Gudmund har sunget den mangen gang;</l>
-<lb/><l>Gudmund har sunget den mangen kveld, &dash;</l>
+<lb/><l>Gudmund har sunget den mangen kveld, –</l>
 <lb/><l>og<HIS:hisDel rend="overstrike"><unclear>,</unclear></HIS:hisDel> alt, hvad han har sunget, det mindes jeg vel.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
-<lb/><l part="I">Og du tror, det skulde være &dash;?</l></HIS:hisSp>
+<lb/><l part="I">Og du tror, det skulde være –?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
 <lb/><l part="F">Jeg <app type="external" subtype="word" xml:id="varG2-139"><HIS:hisRdg>ved</HIS:hisRdg></app> det så visst!</l>
 <lb/><l>Tro mig, mit ord skal du sande.</l>
 <lb/><HIS:hisStage>(leende.)</HIS:hisStage>
 <lb/><l>Kommer ikke hver en liden sangfugl tilsidst</l>
 <lb/><l>igen fra de fremmede lande?</l>
-<lb/><l>Jeg <app type="external" subtype="word" xml:id="varG2-140"><HIS:hisRdg>ved</HIS:hisRdg></app> ikke selv, &dash; men jeg er så glad &dash;!</l>
-<lb/><l>Der falder mig ind &dash;. Margit, <app type="external" subtype="word" xml:id="varG2-141"><HIS:hisRdg>ved</HIS:hisRdg></app> du hvad?</l>
+<lb/><l>Jeg <app type="external" subtype="word" xml:id="varG2-140"><HIS:hisRdg>ved</HIS:hisRdg></app> ikke selv, – men jeg er så glad –!</l>
+<lb/><l>Der falder mig ind –. Margit, <app type="external" subtype="word" xml:id="varG2-141"><HIS:hisRdg>ved</HIS:hisRdg></app> du hvad?</l>
 <lb/><l>Hans harpe har hængt så længe</l>
 <lb/><l>på væggen derinde. Jeg vil tage den ned;</l>
 <lb/><l>jeg vil pudse den blank og stille den beredt</l>
@@ -1423,7 +1417,7 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <pb n="39"/>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(åndsfraværende.)</HIS:hisStage></HIS:spOpener>
-<lb/><l part="I">Gør, som dig lyster &dash;</l></HIS:hisSp>
+<lb/><l part="I">Gør, som dig lyster –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>
 <lb/><HIS:hisStage>(bebrejdende.)</HIS:hisStage></HIS:spOpener>
 <lb/><l part="F">Det er ikke ret.</l>
@@ -1432,7 +1426,7 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>tilsinds, som da Signe var liden.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(hen for sig.)</HIS:hisStage></HIS:spOpener>
-<lb/><l>Så mangt har forandret sig <app type="external" subtype="interpunction" xml:id="varG2-64"><HIS:hisRdg>siden &dash;</HIS:hisRdg></app></l></HIS:hisSp>
+<lb/><l>Så mangt har forandret sig <app type="external" subtype="interpunction" xml:id="varG2-64"><HIS:hisRdg>siden –</HIS:hisRdg></app></l></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
 <lb/><l>Margit, du <emph>skal</emph> være fro og glad<HIS:hisDel rend="overwritten"><unclear>?</unclear></HIS:hisDel>!</l>
 <lb/><l>Har du ikke terner og svende?</l>
@@ -1450,15 +1444,15 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(vender sig.)</HIS:hisStage></HIS:spOpener>
 <pb n="40"/>
-<lb/><l part="F">Intet. &dash; Gå; smyk dig som bedst.</l>
+<lb/><l part="F">Intet. – Gå; smyk dig som bedst.</l>
 <lb/><l>Min lykke, den, du så lydt monne prise,</l>
 <lb/><l part="I">kunde times dig selv.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
 <lb/><l part="F">Hvad mener du vel?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(stryger hendes hår.)</HIS:hisStage></HIS:spOpener>
-<lb/><l>Jeg mener &dash;; nu ja, det vil sig jo vise &dash;;</l>
-<lb/><l>jeg mener, &dash; hvis en bejler red sig hid <app type="external" subtype="interpunction" xml:id="varG2-65"><HIS:hisRdg>ikveld &dash;?</HIS:hisRdg></app></l></HIS:hisSp>
+<lb/><l>Jeg mener –; nu ja, det vil sig jo vise –;</l>
+<lb/><l>jeg mener, – hvis en bejler red sig hid <app type="external" subtype="interpunction" xml:id="varG2-65"><HIS:hisRdg>ikveld –?</HIS:hisRdg></app></l></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
 <lb/><l part="I">En bejler? Til hvem?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
@@ -1484,22 +1478,22 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l><HIS:hisDel rend="overwritten">n</HIS:hisDel>Nu bæres det mig for, jeg er rig nok med mig selv,</l>
 <lb/><l>med sommer og sol og den susende elv,</l>
 <lb/><l>med dig og de fugle på kviste.</l>
-<lb/><l>Kære søster min, &dash; her vil jeg bygge og bo;</l>
+<lb/><l>Kære søster min, – her vil jeg bygge og bo;</l>
 <lb/><l>og at skænke nogen bejler min hånd og min tro,</l>
 <lb/><l>dertil har jeg ikke tid; dertil er jeg for fro!</l>
 <lb/><HIS:hisStage>(hun iler syngende ud til venstre.)</HIS:hisStage></HIS:hisSp><pb ed="HU"/>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(efter et ophold.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Gudmund Alfsøn skulde komme hid?
-<lb/>Hid &dash; til Solhaug? Nej, nej, det kan ik&typHyp;
-<lb/>ke være. &dash; Signe havde hørt ham syn&typHyp;
+<lb/>Hid – til Solhaug? Nej, nej, det kan ik‐
+<lb/>ke være. – Signe havde hørt ham syn‐
 <lb/>ge, sagde hun. Når jeg hørte granerne
-<lb/>suse dybt derinde i skoven, når jeg hør&typHyp;
-<lb/>te fossen rulle og fuglene lokke i træ&typHyp;
+<lb/>suse dybt derinde i skoven, når jeg hør‐
+<lb/>te fossen rulle og fuglene lokke i træ‐
 <lb/>toppene, da bares det mig tidt nok for,
 <lb/>som om Gudmunds kvæder blanded
-<lb/>sig alt imellem. Og dog var han lang&typHyp;
-<lb/>vejs herfra. &dash; Signe har skuffet sig
+<lb/>sig alt imellem. Og dog var han lang‐
+<lb/>vejs herfra. – Signe har skuffet sig
 <lb/>selv. Gudmund kommer ikke.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>
 <lb/><HIS:hisStage>(i hastværk, fra baggrunden, råber:)</HIS:hisStage></HIS:spOpener>
@@ -1507,10 +1501,10 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><p>Og hvem?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
-<lb/><p>Gudmund Alfsøn, din frænde! <HIS:hisStage>(rå&typHyp;
+<lb/><p>Gudmund Alfsøn, din frænde! <HIS:hisStage>(rå‐
 <pb n="42"/>
 <lb/>ber ud gennem døren til højre.)</HIS:hisStage> Det
-<lb/>bedste gæstekammer må holdes rede &dash;
+<lb/>bedste gæstekammer må holdes rede –
 <lb/>og det på stand!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><p>Han er da alt på gården?</p></HIS:hisSp>
@@ -1519,27 +1513,27 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><p>Ikke så lige endnu; men længe vil det
 <lb/>ikke vare. <HIS:hisStage>(råber ud til højre igen.)</HIS:hisStage> Den
 <lb/>snittede egeseng med dragehovederne!
-<lb/><HIS:hisStage>(går hen til Margit.)</HIS:hisStage> Hans våbendra&typHyp;
+<lb/><HIS:hisStage>(går hen til Margit.)</HIS:hisStage> Hans våbendra‐
 <lb/>ger bragte bud og hilsen fra ham; selv
 <lb/>følger han efter.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><p>Hans våbendrager? Kommer han
 <lb/>hid med våbendrager?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker></HIS:spOpener>
-<lb/><p>Ja, det skulde jeg vel mene. En våben&typHyp;
+<lb/><p>Ja, det skulde jeg vel mene. En våben‐
 <lb/>drager og sex rustede mænd er hos ham.
 <lb/>Nå ja, Gudmund Alfsøn er jo også en
 <lb/>hel<HIS:hisDel rend="overstrike">t</HIS:hisDel> anden mand nu, end dengang han
 <lb/>drog ud på langfærd. Men jeg må ned
 <lb/>og tage imod ham. <HIS:hisStage>(råber ud.)</HIS:hisStage> Læg
 <lb/>gyldenlæders-sadlen på min hest!
-<lb/>Og glem ikke bidslet med orme<HIS:clarification place="inline">h</HIS:clarification>oveder&typHyp;
+<lb/>Og glem ikke bidslet med orme<HIS:clarification place="inline">h</HIS:clarification>oveder‐
 <lb/>ne! <HIS:hisStage>(ser ud i baggrunden.)</HIS:hisStage> Au, der
 <lb/>er han alt ved ledet! Nå, så min stav
 <lb/>da; min sølvknappede stav! Slig en
 <pb n="43"/>
-<lb/>herre, &dash; Krist fri mig &dash; ham må<note resp="editor">å mangler bolle</note> vi ta&typHyp;
-<lb/>ge imod med <app type="external" subtype="interpunction" xml:id="varG2-66"><HIS:hisRdg>ære, &dash;</HIS:hisRdg></app> med stor ære!</p>
+<lb/>herre, – Krist fri mig – ham må<note resp="editor">å mangler bolle</note> vi ta‐
+<lb/>ge imod med <app type="external" subtype="interpunction" xml:id="varG2-66"><HIS:hisRdg>ære, –</HIS:hisRdg></app> med stor ære!</p>
 <lb/><HIS:hisStage>(han går skyndsomt ud i baggrunden.)</HIS:hisStage></HIS:hisSp><pb ed="HU"/>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(grublende.)</HIS:hisStage></HIS:spOpener>
@@ -1549,7 +1543,7 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>om bittert jeg nages af kummer og ve?</l>
 <lb/><l>Lyster det ham at prøve og friste,</l>
 <lb/><l>hvad jeg mægter at <app type="external" subtype="interpunction" xml:id="varG2-67"><HIS:hisRdg>bære</HIS:hisRdg></app> før hjertet må briste?</l>
-<lb/><l>Mener <app type="external" subtype="interpunction" xml:id="varG2-68"><HIS:hisRdg>han</HIS:hisRdg></app> at &dash;? Ah, prøv kun derpå;</l>
+<lb/><l>Mener <app type="external" subtype="interpunction" xml:id="varG2-68"><HIS:hisRdg>han</HIS:hisRdg></app> at –? Ah, prøv kun derpå;</l>
 <lb/><l>så ringe en fryd skal du deraf få!</l>
 <lb/><HIS:hisStage>(hun vinker ud gennem døren til højre.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisStage>(<HIS:stageRole>Tre piger</HIS:stageRole> kommer ind i stuen.)</HIS:hisStage>
@@ -1571,7 +1565,7 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><HIS:hisStage>(<HIS:stageRole who="BENGT">Bengt</HIS:stageRole> fører <HIS:stageRole who="GUDMUND">Gudmund Alfsøn</HIS:stageRole> ind
 <lb/>gennem svalegangen i baggrunden.)</HIS:hisStage>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
-<lb/><p>Og endnu en gang, &dash; hil eder under
+<lb/><p>Og endnu en gang, – hil eder under
 <lb/>Solhaugs tag, min hustrus frænde!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><p>Jeg takker jer. Og hvordan går det
@@ -1586,17 +1580,17 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/>hvad en høvisk kvinde kan begære for
 <lb/>at være fornøjet i sine kår.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><p>Og Margit, &dash; hun er da vel fornøjet?</p></HIS:hisSp><pb ed="HU"/>
+<lb/><p>Og Margit, – hun er da vel fornøjet?</p></HIS:hisSp><pb ed="HU"/>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
-<lb/><p>Gud og hver mand skulde tro, hun<lb/>måtte være det; men, sælsomt nok &dash;</p></HIS:hisSp>
+<lb/><p>Gud og hver mand skulde tro, hun<lb/>måtte være det; men, sælsomt nok –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><p>Hvad mener I?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
 <lb/><p>Ja, enten I nu vil tro det eller ikke,
-<lb/>så bæres det mig for, at Margit var lysti&typHyp;
+<lb/>så bæres det mig for, at Margit var lysti‐
 <pb n="45"/>
 <lb/><fw type="gathering" place="top-left">7.</fw>
-<lb/>gere til sinde alt imens <HIS:hisDel rend="overstrike">hn</HIS:hisDel> hun le&typHyp;
+<lb/>gere til sinde alt imens <HIS:hisDel rend="overstrike">hn</HIS:hisDel> hun le‐
 <lb/>ved i fattige kår, end siden hun
 <lb/>blev frue på Solhaug.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
@@ -1610,29 +1604,29 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/>I fortæller om eders hustru.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
 <lb/><p>Ja, mener I ikke, det går mig lige
-<lb/>så? Jeg vil aldrig gælde for en ær&typHyp;
-<lb/>lig herremand mere, dersom jeg skøn&typHyp;
+<lb/>så? Jeg vil aldrig gælde for en ær‐
+<lb/>lig herremand mere, dersom jeg skøn‐
 <lb/>ner, hvad hun yderligere kan ønske
 <lb/>sig. Jeg er om hende så lang dagen
 <lb/>er; og ingen skal kunne sige mig
 <lb/>på, at jeg holder hende strængt; alt
 <lb/>tilsyn med hus og gård har jeg taget
-<lb/>på mig; og ikke desmindre &dash;. Nå, I
+<lb/>på mig; og ikke desmindre –. Nå, I
 <lb/>var jo altid en lystig svend; jeg tænker
 <lb/>nok, I bringer solskin med jer. Hys;
 <lb/>der kommer fru Margit! Lad jer
-<lb/>ikke mærke med, at jeg &dash;</p></HIS:hisSp>
+<lb/>ikke mærke med, at jeg –</p></HIS:hisSp>
 <lb/><HIS:hisStage>(Margit kommer i rig dragt fra
 <lb/>venstre.)</HIS:hisStage>
 <pb n="46"/>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(går hende imøde.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Margit, &dash; kære Margit!</p></HIS:hisSp>
+<lb/><p>Margit, – kære Margit!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(standser, ser fremmed på ham.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Forlad mig, herr ri<HIS:hisDel rend="overwritten"><unclear>g</unclear></HIS:hisDel>dder; men &dash;? <HIS:hisStage>(som
+<lb/><p>Forlad mig, herr ri<HIS:hisDel rend="overwritten"><unclear>g</unclear></HIS:hisDel>dder; men –? <HIS:hisStage>(som
 <lb/>om hun først nu genkendte ham.)</HIS:hisStage> For
-<lb/>sandt, hvis jeg ikke fejler, så er det Gud&typHyp;
+<lb/>sandt, hvis jeg ikke fejler, så er det Gud‐
 <lb/>mund Alfsøn.</p>
 <lb/><HIS:hisStage>(rækker hånden frem.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
@@ -1642,12 +1636,12 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><HIS:hisStage>(leende.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Nej men, Margit, hvad tænker du dog
 <lb/>på<note resp="editor">å mangler bolle</note>? Jeg meldte dig jo nylig, at din
-<lb/>frænde &dash;</p></HIS:hisSp>
+<lb/>frænde –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(går over mod bordet til højre.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Tolv år er en lang tid, Gudmund. Den
-<lb/>friskeste urt kan dø i tiende led i&typHyp;
-<lb/>mens &dash;</p></HIS:hisSp>
+<lb/>friskeste urt kan dø i tiende led i‐
+<lb/>mens –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><p>Det er syv år siden vi sidst sås.</p></HIS:hisSp><pb ed="HU"/>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
@@ -1665,20 +1659,20 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/>I <app type="external" subtype="word" xml:id="varG2-70"><HIS:hisRdg>danse og forlyste</HIS:hisRdg></app> os med eders sang.
 <lb/><HIS:hisStage>(med et tvungent smil.)</HIS:hisStage> Ja, I <app type="external" subtype="word" xml:id="varG2-142"><HIS:hisRdg>ved</HIS:hisRdg></app>
 <lb/>vel, vi er glade her på gården idag,
-<lb/>&dash; vi holder gilde.</p></HIS:hisSp>
+<lb/>– vi holder gilde.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><p>Det blev mig sagt, ret som jeg gik ind
 <lb/>på tunet.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
-<lb/><p>Ja, idag for tre år siden blev jeg &dash;</p></HIS:hisSp>
+<lb/><p>Ja, idag for tre år siden blev jeg –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(afbrydende.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Min frænde har alt hørt det. <HIS:hisStage>(til Gud&typHyp;
+<lb/><p>Min frænde har alt hørt det. <HIS:hisStage>(til Gud‐
 <lb/>mund.)</HIS:hisStage> Vil I ikke lægge eders kappe
 <lb/>bort?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><p>Jeg takker eder, fru Margit; men
-<lb/>det bæres mig for, som her er koldt, &dash;
+<lb/>det bæres mig for, som her er koldt, –
 <lb/>koldere, end jeg havde ventet.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
 <pb n="48"/>
@@ -1691,16 +1685,16 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><HIS:hisStage>(vil gå.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(tvilrådig.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Går du? Vil du ikke heller &dash;?</p></HIS:hisSp>
+<lb/><p>Går du? Vil du ikke heller –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>
-<lb/><HIS:hisStage>(leende, til Gudmund, idet han kom&typHyp;
+<lb/><HIS:hisStage>(leende, til Gudmund, idet han kom‐
 <lb/>mer tilbage.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Ser I vel; herr Bengt til Solhaug er
 <lb/>manden, som forstår at færdes mellem
 <lb/>kvindfolk. Der er ikke den stund så
 <lb/><app type="external" subtype="interpunction" xml:id="varG2-72"><HIS:hisRdg>kort</HIS:hisRdg></app> at min hustru kan være mig
-<lb/>foruden. <HIS:hisStage>(til Margit, idet han ta&typHyp;
-<lb/>ger hende under hagen.)</HIS:hisStage> Vær du trø&typHyp;
+<lb/>foruden. <HIS:hisStage>(til Margit, idet han ta‐
+<lb/>ger hende under hagen.)</HIS:hisStage> Vær du trø‐
 <lb/>stig; jeg skal snart være hos dig.</p>
 <lb/><HIS:hisStage><app type="external" subtype="word" xml:id="varG2-171"><HIS:hisRdg>(han går ud i baggrunden.)</HIS:hisRdg></app></HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
@@ -1718,7 +1712,7 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l part="F">Det blev sagt, hun <app type="external" subtype="word" xml:id="varG2-129"><HIS:hisRdg>skulde være</HIS:hisRdg></app></l>
 <lb/><l part="I">hos eder.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
-<lb/><l part="F">Her har hun været siden jeg &dash;</l>
+<lb/><l part="F">Her har hun været siden jeg –</l>
 <lb/><HIS:hisStage>(slår om.)</HIS:hisStage>
 <lb/><l><HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>For tre år siden kom hun til Solhaug med mig.</l>
 <lb/><HIS:hisStage>(lidt efter.)</HIS:hisStage>
@@ -1729,13 +1723,13 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>når jeg kommer ihu hendes øjne blå,</l>
 <lb/><l>jeg må på guds engle tænke.</l>
 <lb/><l>Dog, mangt kan i syv års tid forgå.</l>
-<lb/><l>Sig mig, &dash; mens fjernt fra bygden jeg vandred,</l>
+<lb/><l>Sig mig, – mens fjernt fra bygden jeg vandred,</l>
 <lb/><l>har også hun sig så stærkt forandret?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(tvungent spøgende.)</HIS:hisStage></HIS:spOpener>
 <lb/><l>Hun også? Er det i kongens gård</l>
 <lb/><l>slig høvisk tale man lærer?</l>
-<lb/><l>I minder mig om, hvordan tiden <app type="external" subtype="word" xml:id="varG2-74"><HIS:hisRdg><HIS:clarification place="inline">t</HIS:clarification>ærer</HIS:hisRdg></app> &dash;</l></HIS:hisSp>
+<lb/><l>I minder mig om, hvordan tiden <app type="external" subtype="word" xml:id="varG2-74"><HIS:hisRdg><HIS:clarification place="inline">t</HIS:clarification>ærer</HIS:hisRdg></app> –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><l>Margit, hel vel mine ord I forstår.</l>
 <lb/><l>Engang var I mig begge så blide;</l>
@@ -1744,14 +1738,14 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>vi loved at holde som søskende sammen</l>
 <lb/><l>i fryd og i ve, i nød og i gammen.</l>
 <lb/><l>I lyste som en sol mellem jomfruer små;</l>
-<lb/><l>så viden om land eders ry monne gå; &dash;</l>
+<lb/><l>så viden om land eders ry monne gå; –</l>
 <lb/><l>fuldt vel er I endnu så fager en kvinde.</l>
 <lb/><l>Men Solhaugs frue, kan jeg mærke, har glemt</l>
 <lb/><l>den fattige frænde. Så umildt er I stemt,</l>
 <lb/><l>I, der engang var så vennesæl til sinde.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(næsten tårekvalt.)</HIS:hisStage></HIS:spOpener>
-<lb/><l part="I">Ja engang &dash;!</l></HIS:hisSp>
+<lb/><l part="I">Ja engang –!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(ser deltagende på hende, tier lidt og siger
 <lb/>med dæmpet stemme:)</HIS:hisStage></HIS:spOpener>
@@ -1763,10 +1757,10 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><HIS:hisStage>(roligere.)</HIS:hisStage><pb ed="HU"/>
 <lb/><l part="F">Det falder mig så svært</l>
 <lb/><l>at mindes; den ting har jeg aldrig lært.</l>
-<lb/><l>Meld heller om de år, I var borte; &dash;</l>
+<lb/><l>Meld heller om de år, I var borte; –</l>
 <lb/><l>den tid er vel ej på bedrift så arm;</l>
 <lb/><l>meget må I kunne mig berette;</l>
-<lb/><l>derude er jo verden både <app type="alteration"><lem><HIS:hisAdd place="offline">vid</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">rig</HIS:hisDel></HIS:hisRdg></app> og varm, &dash;</l>
+<lb/><l>derude er jo verden både <app type="alteration"><lem><HIS:hisAdd place="offline">vid</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">rig</HIS:hisDel></HIS:hisRdg></app> og varm, –</l>
 <lb/><l>der er sindet og tankerne lette.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <pb n="51"/>
@@ -1774,10 +1768,10 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>som dengang jeg var smådreng i den fattige bo.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(uden at se på ham.)</HIS:hisStage></HIS:spOpener>
-<lb/><l>Og jeg &dash; hver dag, jeg på Solhaug bode,</l>
+<lb/><l>Og jeg – hver dag, jeg på Solhaug bode,</l>
 <lb/><l>takked himlen, at den gjorde mine kår så gode.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><l>Vel eder, dersom I kan takke fordi &dash;</l></HIS:hisSp>
+<lb/><l>Vel eder, dersom I kan takke fordi –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(<app type="external" subtype="word" xml:id="varG2-77"><HIS:hisRdg>hæftigt</HIS:hisRdg></app>.)</HIS:hisStage></HIS:spOpener>
 <lb/><l>Og er jeg da ikke hædret og fri?</l>
@@ -1810,15 +1804,15 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>Eders nød? Nu, højt må I hige, frænde;</l>
 <lb/><l>jeg gad vide, hvor I tænker at ende!</l><pb ed="HU"/>
 <lb/><l>I kan eder klæde i fløjel rød,</l>
-<lb/><l>er kongens mand, ejer gods og guld &dash;</l></HIS:hisSp>
+<lb/><l>er kongens mand, ejer gods og guld –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><l>Bedst må I vide, om lykken er mig huld<HIS:hisDel rend="overwritten">;</HIS:hisDel>.</l>
 <lb/><l>I sagde fornylig, fuldt vel I vidste</l>
-<lb/><l part="I">mit ærend på Solhaug &dash;</l></HIS:hisSp>
+<lb/><l part="I">mit ærend på Solhaug –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><l part="F">Det <app type="external" subtype="word" xml:id="varG2-146"><HIS:hisRdg>v<HIS:clarification place="inline">e</HIS:clarification>d</HIS:hisRdg></app> jeg forsand!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><l>Da kender I og, hvad jeg nys måtte friste; &dash;</l>
+<lb/><l>Da kender I og, hvad jeg nys måtte friste; –</l>
 <lb/><l>da <app type="external" subtype="word" xml:id="varG2-147"><HIS:hisRdg>ved</HIS:hisRdg></app> I, jeg er en fredløs mand.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(skrækslagen.)</HIS:hisStage></HIS:spOpener>
@@ -1833,7 +1827,7 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>Jeg mente, I endnu var mild og god,</l>
 <lb/><l>alt som dengang jeg eder forlod;</l>
 <lb/><l>men jeg vil ikke trygle; skoven er stor,</l>
-<lb/><l>og sikker er min hånd og min bue; &dash;</l>
+<lb/><l>og sikker er min hånd og min bue; –</l>
 <lb/><l>langt heller være hejens sten mit bord</l>
 <lb/><l>og bjørnehiet min stue.</l>
 <lb/><HIS:hisStage>(vil gå.)</HIS:hisStage></HIS:hisSp>
@@ -1852,10 +1846,10 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>min tro var jo frejdig; mit håb var ungt;</l>
 <lb/><l>jeg tænkte: når du til Solhaug kommer,</l>
 <lb/><l>da er du frelst fra al din kvide;</l>
-<lb/><l>der finder du venner; på dem kan du lide. &dash;</l><pb ed="HU"/>
+<lb/><l>der finder du venner; på dem kan du lide. –</l><pb ed="HU"/>
 <lb/><l>Men håbet er skørt som markens blommer.</l>
 <lb/><l>Eders husbond mødte mig med horn og krus;</l>
-<lb/><l>han åbned for mig både dør og porte; &dash;</l>
+<lb/><l>han åbned for mig både dør og porte; –</l>
 <lb/><l>men øde tykkes mig eders hus;</l>
 <pb n="54"/>
 <lb/><l>hallen er mørk; mine venner er borte.</l>
@@ -1872,7 +1866,7 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l part="I">Farvel da, fru Margit!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><l part="F">Nej, Gudmund, hør!</l>
-<lb/><l part="I">Ved gud og mænd &dash;!</l></HIS:hisSp>
+<lb/><l part="I">Ved gud og mænd –!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><l part="F">Forlyst dig som før;</l>
 <lb/><l>lev du i gammen og ære;</l>
@@ -1882,19 +1876,19 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>Nu er det nok. Dine bittre ord</l>
 <lb/><l>vil volde dig anger og kvide.</l>
 <lb/><l>Havde jeg vidst, at du fredløs <app type="external" subtype="word" xml:id="varG2-168"><HIS:hisRdg>fór</HIS:hisRdg></app></l>
-<lb/><l>alt over strande så vide, &dash;</l>
+<lb/><l>alt over strande så vide, –</l>
 <lb/><l>tro mig, da var det min kæreste <app type="external" subtype="interpunction" xml:id="varG2-78"><HIS:hisRdg>dag</HIS:hisRdg></app></l>
 <lb/><l>da du tyed ind under Solhaugs tag;</l>
 <lb/><l>da var det for visst min gladeste fest,</l>
 <pb n="55"/>
 <lb/><l>når den fredløse meldte sig her som gæst.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><l>Du siger &dash;! Hvad skal jeg tænke og tro?</l></HIS:hisSp>
+<lb/><l>Du siger –! Hvad skal jeg tænke og tro?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(rækker ham hånden.)</HIS:hisStage></HIS:spOpener>
 <lb/><l>At frænder og venner på Solhaug bo.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><l part="I">Men det, som du nys &dash;?</l></HIS:hisSp>
+<lb/><l part="I">Men det, som du nys –?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><l part="F">Agt ikke derpå.</l>
 <lb/><l><HIS:hisDel rend="overstrike">H</HIS:hisDel></l>
@@ -1907,7 +1901,7 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>jeg hilded mig selv i brogede lænker.</l>
 <lb/><l>Tro mig, så klageligt vederlag skænker</l>
 <lb/><l>rigdom, når barmen er sorrigfuld.</l>
-<lb/><l>Dengang vi var børn, &dash; hvor var jeg da fro!</l>
+<lb/><l>Dengang vi var børn, – hvor var jeg da fro!</l>
 <lb/><l>Vore kår var ringe, fattigt vort bo;</l>
 <lb/><l>men rigt var håbet i mit bryst herinde.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>,
@@ -1926,7 +1920,7 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l><HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>du havde sunget om det frejdige liv</l>
 <lb/><l>blandt herrer og fruer. Alt som bedst</l>
 <lb/><l>kom bejlere fra øst og bejlere fra vest;</l>
-<lb/><l>og så &dash; så blev jeg min husbonds viv.</l></HIS:hisSp>
+<lb/><l>og så – så blev jeg min husbonds viv.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><l part="I">Å, Margit!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
@@ -1939,11 +1933,11 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>Her gæsted os riddere, <app type="external" subtype="word" xml:id="varG2-80"><HIS:hisRdg>herser</HIS:hisRdg></app> og fruer;</l>
 <lb/><l>her sang mig til ære så mangen skald;</l>
 <lb/><l><HIS:hisDel rend="overwritten">M</HIS:hisDel>men der var ikke én, som ret mig forstod,</l><pb ed="HU"/>
-<lb/><l>ikke én, som fatted min jammer; &dash;</l>
+<lb/><l>ikke én, som fatted min jammer; –</l>
 <lb/><l>jeg frøs, som sad jeg i bergets kammer;</l>
 <lb/><l>dog værked mit hoved, dog brændte mit blod.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><l part="I">Men din husbond &dash;?</l></HIS:hisSp>
+<lb/><l part="I">Men din husbond –?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <pb n="57"/>
 <lb/><fw type="gathering" place="top-left">10.</fw>
@@ -1960,12 +1954,12 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>thi du måtte mindst af alle den vide.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(bevæget.)</HIS:hisStage></HIS:spOpener>
-<lb/><l>Og derfor var det, du vendte dig bort &dash;.</l></HIS:hisSp>
+<lb/><l>Og derfor var det, du vendte dig bort –.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(uden at se på ham.)</HIS:hisStage></HIS:spOpener>
 <lb/><l>Jeg tænkte, du kom for at spotte min vånde.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><l part="I">Margit, kunde du tro &dash;?</l></HIS:hisSp>
+<lb/><l part="I">Margit, kunde du tro –?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><l part="F">Nu, kort</l>
 <lb/><l>og godt, der var grund nok for hånde.</l>
@@ -1974,17 +1968,17 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>om barmen er jeg så let og fri,</l>
 <lb/><l>som et barn under abildgrene.</l>
 <lb/><HIS:hisStage>(farer sammen i skræk.)</HIS:hisStage>
-<lb/><l>Ah, h<HIS:hisDel rend="overwritten">a</HIS:hisDel>vad falder mig ind! Hvor kunde jeg glemme &dash;!</l>
+<lb/><l>Ah, h<HIS:hisDel rend="overwritten">a</HIS:hisDel>vad falder mig ind! Hvor kunde jeg glemme –!</l>
 <pb n="58"/>
 <lb/><l>Alle helgene se til mig nådigt ned!</l>
-<lb/><l part="I">Fredløs, sagde du &dash;?</l></HIS:hisSp>
+<lb/><l part="I">Fredløs, sagde du –?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(smiler.)</HIS:hisStage></HIS:spOpener>
 <lb/><l><HIS:hisDel rend="overstrike">N</HIS:hisDel></l><l part="F">Nu er jeg hjemme;</l>
 <lb/><l>her lader mig kongens mænd med fred.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
-<lb/><l>Men du, som nylig stod højt i <app type="external" subtype="interpunction" xml:id="varG2-82"><HIS:hisRdg>agt;</HIS:hisRdg></app> &dash;</l>
-<lb/><l part="I">sig mig hvorlunde &dash;?</l></HIS:hisSp><pb ed="HU"/>
+<lb/><l>Men du, som nylig stod højt i <app type="external" subtype="interpunction" xml:id="varG2-82"><HIS:hisRdg>agt;</HIS:hisRdg></app> –</l>
+<lb/><l part="I">sig mig hvorlunde –?</l></HIS:hisSp><pb ed="HU"/>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><l part="F">Snart er det sagt.</l>
 <lb/><l>Du <app type="external" subtype="word" xml:id="varG2-148"><HIS:hisRdg>ved</HIS:hisRdg></app>, jeg var i de franske <app type="external" subtype="interpunction" xml:id="varG2-83"><HIS:hisRdg>riger</HIS:hisRdg></app></l>
@@ -1994,15 +1988,15 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>og skatte til <HIS:hisDel rend="overwritten">n</HIS:hisDel>Norge som kongens brud.</l>
 <lb/><l>Herr Audun var så fager og prud;</l>
 <lb/><l>prinsessen var den livsaligste kvinde.</l>
-<lb/><l>Hendes øjne kunde bede den varmeste bøn; &dash;</l>
+<lb/><l>Hendes øjne kunde bede den varmeste bøn; –</l>
 <lb/><l>de talte tilhobe, de hvisked i løn.</l>
-<lb/><l>Hvorom? Det var svært at finde. &dash;</l>
+<lb/><l>Hvorom? Det var svært at finde. –</l>
 <lb/><l>Det var sig en nat; jeg læned mig tyst</l>
 <lb/><l>op imod snekkens side;</l>
 <lb/><l>mine tanker stævned mod Norges kyst</l>
 <lb/><l><HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>alt me<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>d de måger hvide.</l>
-<lb/><l>Da hvisked to røster bag ved min ryg; &dash;</l>
-<lb/><l>jeg vendte mig om; &dash; det var ham og hende;</l>
+<lb/><l>Da hvisked to røster bag ved min ryg; –</l>
+<lb/><l>jeg vendte mig om; – det var ham og hende;</l>
 <lb/><l>de så mig ikke; jeg sad så tryg;</l>
 <pb n="59"/>
 <lb/><l>dog kunde jeg begge kende.</l>
@@ -2015,27 +2009,27 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>Genmæled herr Audun; hun svared <app type="external" subtype="word" xml:id="varG2-84"><HIS:hisRdg><sic>han</sic></HIS:hisRdg></app> kæk,</l>
 <lb/><l>svared med ord så hede, så vilde;</l>
 <lb/><l>jeg så hendes øjne som stjerner spille;</l>
-<lb/><l part="I">hun bad ham &dash;</l>
+<lb/><l part="I">hun bad ham –</l>
 <lb/><HIS:hisStage>(afbrydende.)</HIS:hisStage>
 <lb/><l part="F">De<HIS:clarification place="inline">t</HIS:clarification> greb mig med rædsel og skræk.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
-<lb/><l part="I">Hun bad &dash;?</l></HIS:hisSp>
+<lb/><l part="I">Hun bad –?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><l part="F">Jeg <app type="external" subtype="word" xml:id="varG2-169"><HIS:hisRdg>fór</HIS:hisRdg></app> op; i hast de forsvandt;</l>
-<lb/><l>alene stod jeg på skibets dæk; &dash;</l><pb ed="HU"/>
+<lb/><l>alene stod jeg på skibets dæk; –</l><pb ed="HU"/>
 <lb/><HIS:hisStage>(tager en liden flaske frem.)</HIS:hisStage>
 <lb/><l>men hvor de havde siddet, denne jeg fandt.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
-<lb/><l part="I">Og den &dash;?</l></HIS:hisSp>
+<lb/><l part="I">Og den –?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(med dæmpet stemme.)</HIS:hisStage></HIS:spOpener>
-<lb/><l part="F">Den rummer en gådefuld saft; &dash;</l>
-<lb/><l>en dråbe deraf i din uvens bæger, &dash;</l>
+<lb/><l part="F">Den rummer en gådefuld saft; –</l>
+<lb/><l>en dråbe deraf i din uvens bæger, –</l>
 <lb/><l>så sagtelig sygner hans livsenskraft,</l>
 <lb/><l>og intet i verden ham hjælper og læger.</l></HIS:hisSp>
 <pb n="60"/>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
-<lb/><l part="I">Men sig mig &dash;?</l></HIS:hisSp>
+<lb/><l part="I">Men sig mig –?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(hviskende.)</HIS:hisStage></HIS:spOpener>
 <lb/><l part="F">Den var for kongen bestemt.</l></HIS:hisSp>
@@ -2043,24 +2037,24 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l part="I">Alle helgener!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(idet han atter forvarer flasken.)</HIS:hisStage></HIS:spOpener>
-<lb/><l part="F">Vel, at jeg fik den gemt. &dash;</l>
+<lb/><l part="F">Vel, at jeg fik den gemt. –</l>
 <lb/><l>Tre dage efter var farten tilende.</l>
 <lb/><l>Så lønligt flygted jeg med mine svende;</l>
 <lb/><l>jeg vidste jo nok, i kongens hal</l>
-<lb/><l>vilde Audun listelig volde mit fald, &dash;</l>
-<lb/><l part="I">vilde forklage mig &dash;</l></HIS:hisSp>
+<lb/><l>vilde Audun listelig volde mit fald, –</l>
+<lb/><l part="I">vilde forklage mig –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><l part="F">Nu er forbi</l>
 <lb/><l>din værste nød; <app type="alteration"><lem><HIS:hisAdd place="offline">snart</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">nu</HIS:hisDel></HIS:hisRdg></app> er alt ved det gamle.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><l>Alt? Nej, Margit, &dash; dengang var du fri.</l></HIS:hisSp>
+<lb/><l>Alt? Nej, Margit, – dengang var du fri.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
-<lb/><l part="I">Du mener &dash;?</l></HIS:hisSp>
+<lb/><l part="I">Du mener –?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><l part="F">Jeg? Intet. Å, lad mig samle</l>
 <lb/><l>mine tanker; jeg er så frejdig og fro</l>
 <lb/><l>fordi jeg, som fordum, er hos eder to.</l>
-<lb/><l part="I">Men, sig mig, &dash; Signe &dash;?</l></HIS:hisSp>
+<lb/><l part="I">Men, sig mig, – Signe –?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <pb n="61"/>
 <lb/><fw type="gathering" place="top-left">11.</fw>
@@ -2074,15 +2068,15 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(ser efter ham.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Hvor han er fager og mandig. <HIS:hisStage>(med et
-<lb/>suk.)</HIS:hisStage> Der er ikke megen lighed mel&typHyp;
-<lb/>lem ham og &dash; <HIS:hisStage>(rydder lidt op ved drik&typHyp;
+<lb/>suk.)</HIS:hisStage> Der er ikke megen lighed mel‐
+<lb/>lem ham og – <HIS:hisStage>(rydder lidt op ved drik‐
 <lb/>kebordet, men standser igen dermed.)</HIS:hisStage>
-<lb/>Dengang var<pb ed="HU"/> du fri, sagde han. Ja, den&typHyp;
-<lb/>gang! <HIS:hisStage>(kort taushed.)</HIS:hisStage> Det var en sæl&typHyp;
+<lb/>Dengang var<pb ed="HU"/> du fri, sagde han. Ja, den‐
+<lb/>gang! <HIS:hisStage>(kort taushed.)</HIS:hisStage> Det var en sæl‐
 <lb/>som fortælling, den om <app type="external" subtype="interpunction" xml:id="varG2-85"><HIS:hisRdg>prinsessen;</HIS:hisRdg></app> som
-<lb/>&dash;. Hun havde en anden kær, og så &dash;.
-<lb/>Ja, disse kvinder i de fremmede lande, &dash;
-<lb/>jeg har hørt det før, &dash; de er ikke veke som
+<lb/>–. Hun havde en anden kær, og så –.
+<lb/>Ja, disse kvinder i de fremmede lande, –
+<lb/>jeg har hørt det før, – de er ikke veke som
 <lb/>vi; de ræddes ikke for at gøre en tanke
 <lb/>til dåd. <HIS:hisStage>(tager et bæger, som står på
 <lb/>bordet.)</HIS:hisStage> Af dette bæger drak Gudmund
@@ -2090,11 +2084,11 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/>rejste. Det er fast det eneste arvestykke,
 <lb/>jeg bragte med til Solhaug. <HIS:hisStage>(sætter
 <lb/>bægeret ind i et vægskab.)</HIS:hisStage> Hvor blid
-<lb/>denne sommerdag er. Her er så lyst her&typHyp;
+<lb/>denne sommerdag er. Her er så lyst her‐
 <lb/>inde. Så lifligt har ikke solen skinnet
 <pb n="62"/>
 <lb/>i tre år.</p></HIS:hisSp>
-<lb/><HIS:hisStage>(<HIS:stageRole who="SIGNE">Signe</HIS:stageRole>, og efter hende <HIS:stageRole who="GUDMUND">Gudmun<HIS:hisDel rend="overwritten">k</HIS:hisDel>d</HIS:stageRole> kom&typHyp;
+<lb/><HIS:hisStage>(<HIS:stageRole who="SIGNE">Signe</HIS:stageRole>, og efter hende <HIS:stageRole who="GUDMUND">Gudmun<HIS:hisDel rend="overwritten">k</HIS:hisDel>d</HIS:stageRole> kom‐
 <lb/>mer ind fra venstre.)</HIS:hisStage>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>
 <lb/><HIS:hisStage>(løber leende hen til Margit.)</HIS:hisStage></HIS:spOpener>
@@ -2104,11 +2098,11 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>Ser du; <app type="alteration"><lem><HIS:hisAdd place="offline">mens</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">mens</HIS:hisDel></HIS:hisRdg></app> fjernt fra bygden du vandred,</l>
 <lb/><l>har også <emph>hun</emph> sig så stærkt forandret.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><l>Tilvisse! Men at hun skulde &dash;! Nej, nej,</l>
+<lb/><l>Tilvisse! Men at hun skulde –! Nej, nej,</l>
 <lb/><l>det var dog aldrig faldet mig ind.</l>
 <lb/><HIS:hisStage>(griber Signes hænder og ser på hende.)</HIS:hisStage>
 <lb/><l>Og dog, dit uskyldige barnesind</l>
-<lb/><l>læser jeg endnu i øjnene blå; &dash;</l>
+<lb/><l>læser jeg endnu i øjnene blå; –</l>
 <lb/><l>hvor kan jeg da længer tvile derpå!</l>
 <lb/><l>Jeg må le, når jeg mindes, hvor tidt jeg <app type="alteration"><lem><HIS:hisAdd place="offline">har</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">bar</HIS:hisDel></HIS:hisRdg></app></l>
 <HIS:hisAdd place="margin">
@@ -2118,8 +2112,8 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>nu er du en huldre, som kogler og gækker.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>
 <lb/><HIS:hisStage>(truer med fingeren.)</HIS:hisStage></HIS:spOpener>
-<lb/><l>Ja, vogt dig! Hvis hulderens harme du vækker, &dash;</l>
-<lb/><l>pas på, &dash; hun hilder dig i sit garn!</l></HIS:hisSp>
+<lb/><l>Ja, vogt dig! Hvis hulderens harme du vækker, –</l>
+<lb/><l>pas på, – hun hilder dig i sit garn!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(hen for sig.)</HIS:hisStage></HIS:spOpener>
 <lb/><l>Næsten bæres mig for, som det alt var sket.</l></HIS:hisSp>
@@ -2140,14 +2134,14 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><HIS:hisStage>(griber den.)</HIS:hisStage></HIS:spOpener>
 <lb/><l part="F">Min harpe! Så blank som før!</l>
 <lb/><HIS:hisStage>(slår nogle toner.)</HIS:hisStage>
-<lb/><l>Der er endnu klang i de gamle strenge; &dash;</l>
-<lb/><l>nu skal du ikke længer på væggen hænge &dash;</l></HIS:hisSp>
+<lb/><l>Der er endnu klang i de gamle strenge; –</l>
+<lb/><l>nu skal du ikke længer på væggen hænge –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(ser ud i baggrunden.)</HIS:hisStage></HIS:spOpener>
 <lb/><l part="I">Hist kommer vore gæster.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>,
 <lb/><HIS:hisStage>(mens Gudmund indleder sin sang.)</HIS:hisStage></HIS:spOpener>
-<lb/><l part="F">Hys, &dash; stille! Å hør!</l></HIS:hisSp>
+<lb/><l part="F">Hys, – stille! Å hør!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(synger.)</HIS:hisStage></HIS:spOpener>
 <lb/><HIS:hisDel rend="overstrike">1.</HIS:hisDel>
@@ -2161,7 +2155,7 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>Den spirer så let; i den flygtigste stund</l>
 <lb/><l>fæster den rødder i hjertets grund!</l></HIS:hisSp>
 <lb/><HIS:hisStage><HIS:hisDel rend="overstrike">(han gar</HIS:hisDel></HIS:hisStage>
-<lb/><HIS:hisStage>(Han går under efterspillet op mod bag&typHyp;
+<lb/><HIS:hisStage>(Han går under efterspillet op mod bag‐
 <lb/>grunden, hvor han sætter harpen fra
 <lb/>sig.)</HIS:hisStage>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>,
@@ -2170,9 +2164,9 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>fæster den rødder i hjertets grund.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(adspredt.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Talte du til mig? &dash; Jeg hørte ikke ret &dash;?</p></HIS:hisSp>
+<lb/><p>Talte du til mig? – Jeg hørte ikke ret –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
-<lb/><p>Jeg? Nej visst ikke. Jeg mente kun &dash;</p>
+<lb/><p>Jeg? Nej visst ikke. Jeg mente kun –</p>
 <lb/><HIS:hisStage>(synker atter hen som i drømme.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(halv højt; ser frem for sig.)</HIS:hisStage></HIS:spOpener>
@@ -2180,12 +2174,12 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>den næres ved tanker og sorger og sange.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>
 <lb/><HIS:hisStage>(opvågnende.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Du <app type="external" subtype="interpunction" xml:id="varG2-88"><HIS:hisRdg>siger</HIS:hisRdg></app> at &dash;?</p></HIS:hisSp><pb ed="HU"/>
+<lb/><p>Du <app type="external" subtype="interpunction" xml:id="varG2-88"><HIS:hisRdg>siger</HIS:hisRdg></app> at –?</p></HIS:hisSp><pb ed="HU"/>
 <pb n="65"/>
 <lb/><fw type="gathering" place="top-left">12.</fw>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(farer med hånden over panden.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Å, det var intet. Kom; vi må gå vo&typHyp;
+<lb/><p>Å, det var intet. Kom; vi må gå vo‐
 <lb/>re gæster i møde.</p></HIS:hisSp>
 <lb/><HIS:hisStage>(<HIS:stageRole who="BENGT">Bengt</HIS:stageRole> kommer med <HIS:stageRole>mange gæster</HIS:stageRole>, <HIS:stageRole>mænd</HIS:stageRole>
 <lb/>og <HIS:stageRole>kvinder</HIS:stageRole>, ind gennem svalegangen.)</HIS:hisStage>
@@ -2204,12 +2198,12 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <pb n="66"/><pb ed="HU"/>
 <lb/><head>Anden akt.</head>
 <lb/><HIS:hisStage>(En birkelund, der støder op til huset,
-<lb/>hvoraf et hjørne ses til venstre. En fod&typHyp;
-<lb/>sti fører op i lien i baggrunden. Til høj&typHyp;
-<lb/>re for stien fosser en elv nedover og ta&typHyp;
+<lb/>hvoraf et hjørne ses til venstre. En fod‐
+<lb/>sti fører op i lien i baggrunden. Til høj‐
+<lb/>re for stien fosser en elv nedover og ta‐
 <lb/>ber sig mellem fjeldstykker og stene. Det
 <lb/>er lys sommernat. Døren til huset står
-<lb/>åben; vinduerne er oplyste. Musik hø&typHyp;
+<lb/>åben; vinduerne er oplyste. Musik hø‐
 <lb/>res derinde.)</HIS:hisStage>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Gæsterne</speaker>
 <lb/><HIS:hisStage>(synger i gildestuen.)</HIS:hisStage></HIS:spOpener>
@@ -2219,8 +2213,8 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>Den jomfru brænder så skær som et blod;</l>
 <lb/><l>det er sig den smådreng, bold og god,</l>
 <lb/><l>han favner den væne lilje!</l></HIS:hisSp>
-<lb/><HIS:hisStage>(<HIS:stageRole who="KNUT">Knut Gæsling</HIS:stageRole> og <HIS:stageRole who="ERIK">Erik fra Hægge</HIS:stageRole> kom&typHyp;
-<lb/>mer ud fra huset. Musik, dans og lystig&typHyp;
+<lb/><HIS:hisStage>(<HIS:stageRole who="KNUT">Knut Gæsling</HIS:stageRole> og <HIS:stageRole who="ERIK">Erik fra Hægge</HIS:stageRole> kom‐
+<lb/>mer ud fra huset. Musik, dans og lystig‐
 <lb/>hed vedbliver under det følgende at lyde
 <lb/>dæmpet derinde.)</HIS:hisStage>
 <pb n="67"/>
@@ -2230,7 +2224,7 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
 <lb/><p>Lad du mig om det.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ERIK"><HIS:spOpener><speaker>Erik</speaker>.</HIS:spOpener>
-<lb/><p>Ja, ja, voveligt er det dog. Du er kon&typHyp;
+<lb/><p>Ja, ja, voveligt er det dog. Du er kon‐
 <lb/>gens foged. Der udgår herrebud til dig,
 <lb/>at du skal fange Gudmund Alfsøn,
 <lb/>hvor du kan komme over ham. Og
@@ -2241,33 +2235,33 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><p>Jeg <app type="external" subtype="word" xml:id="varG2-149"><HIS:hisRdg>ved</HIS:hisRdg></app>, hvad jeg gør. I hans egen
 <lb/>stue har jeg søgt ham, og der var
 <lb/>han ikke at finde. Og dersom jeg nu
-<lb/>forsøgte på at gribe ham <emph>her</emph>, &dash; me&typHyp;
-<lb/>ner du <app type="external" subtype="interpunction" xml:id="varG2-89"><HIS:hisRdg>da</HIS:hisRdg></app> at fru Margit var til&typHyp;
+<lb/>forsøgte på at gribe ham <emph>her</emph>, – me‐
+<lb/>ner du <app type="external" subtype="interpunction" xml:id="varG2-89"><HIS:hisRdg>da</HIS:hisRdg></app> at fru Margit var til‐
 <lb/>sinds at give mig Signe til hustru?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ERIK"><HIS:spOpener><speaker>Erik</speaker>
 <lb/><HIS:hisStage>(langtrukket.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Nej, med det gode blev det vel ikke,
-<lb/>men &dash;</p></HIS:hisSp>
+<lb/>men –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
 <lb/><p>Og med det onde gad jeg nødig gå frem.
-<lb/>Gudmund er jo også min ven fra gam&typHyp;
+<lb/>Gudmund er jo også min ven fra gam‐
 <lb/>le tider; og han kan<pb ed="HU"/> gøre mig nytte.
 <pb n="68"/>
 <lb/><HIS:hisStage>(bestemt.)</HIS:hisStage> Derfor bliver det, som jeg har
-<lb/>sagt. Ikveld skal ingen her på går&typHyp;
-<lb/>den vide, at Gudmund Alfsøn er fred&typHyp;
-<lb/>løs; &dash; imorgen får han se at hjælpe
+<lb/>sagt. Ikveld skal ingen her på går‐
+<lb/>den vide, at Gudmund Alfsøn er fred‐
+<lb/>løs; – imorgen får han se at hjælpe
 <lb/>sig selv.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ERIK"><HIS:spOpener><speaker>Erik</speaker>.</HIS:spOpener>
 <lb/><p>Ja, men kongens lov?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
 <lb/><p>Å, kong<HIS:hisDel rend="overwritten">n<gap/></HIS:hisDel>ens lov! Du <app type="external" subtype="word" xml:id="varG2-150"><HIS:hisRdg>ved</HIS:hisRdg></app> lige så godt
 <lb/>som jeg, kongens lov agtes ikke stort
-<lb/>her inde i bygderne. Skulde kon&typHyp;
+<lb/>her inde i bygderne. Skulde kon‐
 <lb/>gens lov gælde, så måtte mangen
 <lb/>staut karl iblandt os bøde både for
-<lb/>bruderov og manddrab. &dash; Kom nu
-<lb/>her! Jeg gad vide, hvor Signe &dash;?</p>
+<lb/>bruderov og manddrab. – Kom nu
+<lb/>her! Jeg gad vide, hvor Signe –?</p>
 <lb/><HIS:hisStage>(de går ud til højre.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisStage>(<HIS:stageRole who="GUDMUND">Gudmund</HIS:stageRole> og <HIS:stageRole who="SIGNE">Signe</HIS:stageRole> kommer nedover
 <lb/>fodstien i baggrunden:)</HIS:hisStage>
@@ -2278,7 +2272,7 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>Signe, min fagre, min yndelige lilje!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>
 <lb/><HIS:hisStage>(med glad og stille forundring)</HIS:hisStage></HIS:spOpener>
-<lb/><l part="I">Jeg &dash; jeg er ham kær!</l></HIS:hisSp>
+<lb/><l part="I">Jeg – jeg er ham kær!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><l part="F">Det er ingen som du.</l></HIS:hisSp>
 <pb n="69"/>
@@ -2292,18 +2286,18 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>Hør mig, Signe. Medens årene randt</l>
 <lb/><l>tænkte jeg trofast både vinter og sommer</l>
 <lb/><l>på eder to, mine fagreste blommer.</l>
-<lb/><l>Men jeg kunde ikke fuldt mine tanker forstå; &dash;</l>
-<lb/><l>da jeg rejste, var du som alferne små, &dash;</l>
+<lb/><l>Men jeg kunde ikke fuldt mine tanker forstå; –</l>
+<lb/><l>da jeg rejste, var du som alferne små, –</l>
 <lb/><l>som alferne små, der færdes i skove</l>
 <lb/><l>og lege som <app type="external" subtype="interpunction" xml:id="varG2-91"><HIS:hisRdg>bedst</HIS:hisRdg></app> når vi drømme og sove.</l>
 <lb/><l>Men idag, da jeg stod i Solhaugs stue,</l>
-<lb/><l>da forstod jeg mig selv tilfulde, &dash;</l>
+<lb/><l>da forstod jeg mig selv tilfulde, –</l>
 <lb/><l>forstod, at Margit var så stolt en frue,</l>
 <lb/><l>men du den allerdejligste blandt ungmøer <HIS:hisAdd place="infralinear">hulde.</HIS:hisAdd></l></HIS:hisSp><pb ed="HU"/>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>,
 <lb/><HIS:hisStage>(der kun halvt har lyttet til hans ord.)</HIS:hisStage></HIS:spOpener>
 <lb/><l>Jeg mindes, vi sad ved arnens glød</l>
-<lb/><l>en vinterkveld, &dash; nu er det længe siden; &dash;</l>
+<lb/><l>en vinterkveld, – nu er det længe siden; –</l>
 <lb/><l>du sang for mig om den jomfru liden,</l>
 <lb/><l>som nøk<HIS:hisAdd place="offline">k</HIS:hisAdd>en havde lokket ned i sit skød.</l>
 <lb/><l>Der glemte hun bort både fader og moder;</l>
@@ -2318,7 +2312,7 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>Den jomfru liden på tjernets bund</l>
 <lb/><l>vågned derved af sin tunge blund;</l>
 <lb/><l>nøkken måtte slippe hende ud af sit skød;</l>
-<lb/><l>mellem liljerne hen over vandet hun flød; &dash;</l>
+<lb/><l>mellem liljerne hen over vandet hun flød; –</l>
 <lb/><l>da kendte hun igen både himmel og jord,</l>
 <lb/><l>da fatted hun tilfulde både gud og hans ord.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
@@ -2333,25 +2327,25 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>mig tykkes, jeg kan fuglenes røst forstå,</l>
 <lb/><l>når jeg vandrer med dig under lide.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><l>Så mægtig er elskov; &dash; i menneskets bryst</l>
-<lb/><l>vækker den tanker og længsel og lyst. &dash;</l>
+<lb/><l>Så mægtig er elskov; – i menneskets bryst</l>
+<lb/><l>vækker den tanker og længsel og lyst. –</l>
 <lb/><l>Men kom, lad os begge til din søster gå ind.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>
 <lb/><HIS:hisStage>(undsélig.)</HIS:hisStage></HIS:spOpener>
-<lb/><l part="I">Vil du sige hende &dash;?</l></HIS:hisSp>
+<lb/><l part="I">Vil du sige hende –?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <pb n="71"/>
 <lb/><l part="F">Alt bør hun kende.</l></HIS:hisSp><pb ed="HU"/>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>,
 <lb/><HIS:hisStage>(som før.)</HIS:hisStage></HIS:spOpener>
-<lb/><l>Ak, gå da alene; &dash; jeg <app type="external" subtype="word" xml:id="varG2-151"><HIS:hisRdg>ved</HIS:hisRdg></app> det, min kind</l>
+<lb/><l>Ak, gå da alene; – jeg <app type="external" subtype="word" xml:id="varG2-151"><HIS:hisRdg>ved</HIS:hisRdg></app> det, min kind</l>
 <lb/><l>vil derinde af blusel brænde.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><l part="I">Nu godt; jeg går.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
 <lb/><l part="F">Og jeg venter dig her;</l>
 <lb/><HIS:hisStage>(lytter mod højre.)</HIS:hisStage>
-<lb/><l>eller bedre, &dash; nede ved elven, der</l>
+<lb/><l>eller bedre, – nede ved elven, der</l>
 <lb/><l>hører jeg Knut Gæsling; der er piger og svende.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><l part="I">Der bier du?</l></HIS:hisSp>
@@ -2371,16 +2365,16 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>her svaler mig nattens vinde.</l>
 <pb n="72"/>
 <lb/><HIS:hisStage>(grublende taushed.)</HIS:hisStage>
-<lb/><l>Denne hæslige tanke &dash;; jeg kan ej forstå &dash;;</l>
+<lb/><l>Denne hæslige tanke –; jeg kan ej forstå –;</l>
 <lb/><l>den følger mig, hvor jeg end monne gå.</l>
-<lb/><l>Flasken, &dash; der rummer en gådefuld saft &dash;?</l>
-<lb/><l>En dråbe deraf i min &dash; uvens bæger, &dash;</l>
+<lb/><l>Flasken, – der rummer en gådefuld saft –?</l>
+<lb/><l>En dråbe deraf i min – uvens bæger, –</l>
 <lb/><l>så sagtelig sygner hans livsenskraft,</l>
 <lb/><l>og intet i verden ham hjælper og læger.</l>
 <lb/><HIS:hisStage>(atter taushed.)</HIS:hisStage>
-<lb/><l>Vidste <app type="external" subtype="interpunction" xml:id="varG2-92"><HIS:hisRdg>jeg</HIS:hisRdg></app> at Gudmund &dash;; havde han mig kær, &dash;</l>
-<lb/><l part="I">da agted jeg lidet &dash;</l></HIS:hisSp>
-<lb/><HIS:hisStage>(<HIS:stageRole who="GUDMUND">Gudmund</HIS:stageRole> kommer ud gennem hus&typHyp;
+<lb/><l>Vidste <app type="external" subtype="interpunction" xml:id="varG2-92"><HIS:hisRdg>jeg</HIS:hisRdg></app> at Gudmund –; havde han mig kær, –</l>
+<lb/><l part="I">da agted jeg lidet –</l></HIS:hisSp>
+<lb/><HIS:hisStage>(<HIS:stageRole who="GUDMUND">Gudmund</HIS:stageRole> kommer ud gennem hus‐
 <lb/>døren.)</HIS:hisStage>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><l part="F">Margit, er du der?</l>
@@ -2390,11 +2384,11 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>Ser du, hvorlunde de tåger hvide</l>
 <lb/><l>sagtelig hen over myren glide?</l><pb ed="HU"/>
 <lb/><l>Her er ikke hverken mørkt eller lyst;</l>
-<lb/><l part="I">det er midt imellem begge &dash;</l>
+<lb/><l part="I">det er midt imellem begge –</l>
 <lb/><HIS:hisStage>(hen for sig.)</HIS:hisStage>
 <lb/><l part="F">ret som i mit bryst.</l>
 <lb/><HIS:hisStage>(ser på ham.)</HIS:hisStage>
-<lb/><l>Ej sandt, &dash; når du færdes i slig en nat,</l>
+<lb/><l>Ej sandt, – når du færdes i slig en nat,</l>
 <lb/><l>du <app type="external" subtype="word" xml:id="varG2-152"><HIS:hisRdg>ved</HIS:hisRdg></app> ikke selv hvordan det er fat;</l>
 <lb/><l>men du føler, der rører sig et lønligt liv</l>
 <lb/><l>i busk og i blad, i blomster og siv!</l>
@@ -2408,7 +2402,7 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l part="F">At jeg var</l>
 <lb/><l>huldren, som sidder i lien derinde.</l>
 <lb/><l>Hvor skulde jeg listigt min trolddom spinde!</l>
-<lb/><l part="I">Tro mig &dash;!</l></HIS:hisSp>
+<lb/><l part="I">Tro mig –!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><l part="F">Hvad fattes dig, Margit? Svar!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
@@ -2417,7 +2411,7 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>Klage og kvæde både nætter og dage!</l>
 <lb/><HIS:hisStage>(med stigende heftighed.)</HIS:hisStage>
 <lb/><l>Hvor skulde jeg lokke den frejdige svend</l>
-<lb/><l>gennem lierne grønne til bergets kammer; &dash;</l>
+<lb/><l>gennem lierne grønne til bergets kammer; –</l>
 <lb/><l>der kunde jeg glemme al verdens jammer;</l>
 <lb/><l>der kunde jeg brænde og leve med mi<HIS:hisDel rend="overwritten">g</HIS:hisDel>n ven!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
@@ -2425,9 +2419,9 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(stedse voldsommere.)</HIS:hisStage></HIS:spOpener>
 <lb/><l part="F">Ved midnatsstund</l>
-<lb/><l>sov vi i lien den sødeste blund; &dash;</l>
-<lb/><l>og ra<choice><expan>mm</expan><abbr>&mbar;</abbr></choice>ed mig <app type="external" subtype="interpunction" xml:id="varG2-93"><HIS:hisRdg>døden</HIS:hisRdg></app> når solen randt, &dash;</l>
-<lb/><l>hvor lystigt at dø på slig vis; &dash; ej sandt?</l></HIS:hisSp>
+<lb/><l>sov vi i lien den sødeste blund; –</l>
+<lb/><l>og ra<choice><expan>mm</expan><abbr>m̅</abbr></choice>ed mig <app type="external" subtype="interpunction" xml:id="varG2-93"><HIS:hisRdg>døden</HIS:hisRdg></app> når solen randt, –</l>
+<lb/><l>hvor lystigt at dø på slig vis; – ej sandt?</l></HIS:hisSp>
 <pb n="74"/>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><l part="I">Du er syg!</l></HIS:hisSp>
@@ -2438,25 +2432,25 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><l part="F">Jeg kan se,</l><pb ed="HU"/>
 <lb/><l><app type="external" subtype="word" xml:id="varG2-95"><HIS:hisRdg>Du</HIS:hisRdg></app> har endnu det samme ustyrlige sind,</l>
-<lb/><l part="I">som fordum &dash;</l></HIS:hisSp>
+<lb/><l part="I">som fordum –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(pludselig alvorlig.)</HIS:hisStage></HIS:spOpener>
 <lb/><l part="F">Du må ikke undres derover;</l>
 <lb/><l>det er kun ved midnat, når menneskene sover;</l>
 <lb/><l>om dagen er jeg så ræd som en hind.</l>
 <lb/><l>Og hvad er det vel mere? Mindes dig kun</l>
-<lb/><l>hine kvinder i fremmede lande, &dash; hun,</l>
-<lb/><l>den fagre prinsesse; &dash; se, <emph>hun</emph> var vild;</l>
+<lb/><l>hine kvinder i fremmede lande, – hun,</l>
+<lb/><l>den fagre prinsesse; – se, <emph>hun</emph> var vild;</l>
 <lb/><l>mod hende er jeg som lammet mild.</l>
 <lb/><l>At længes og hige hun voved ej blot;</l>
-<lb/><l part="I">hun pønsed på dåd; og se <emph>det</emph> &dash;</l></HIS:hisSp>
+<lb/><l part="I">hun pønsed på dåd; og se <emph>det</emph> –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><l part="F">Det er godt,</l>
 <lb/><l>du minder mig derom; jeg vil ikke længer</l>
 <lb/><l>gemme på det, jeg så lidet trænger.</l>
 <lb/><HIS:hisStage>(tager flasken frem.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
-<lb/><l part="I">Flasken! Du mener &dash;?</l></HIS:hisSp>
+<lb/><l part="I">Flasken! Du mener –?</l></HIS:hisSp>
 <pb n="75"/>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><l part="F">Jeg gemte den, fordi</l>
@@ -2472,7 +2466,7 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><HIS:hisStage>(griber hans arm.)</HIS:hisStage></HIS:spOpener>
 <lb/><l part="I">Nej vent! Lad mig få den.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker></HIS:spOpener>
-<lb/><l part="F">Du vil &dash;?</l></HIS:hisSp>
+<lb/><l part="F">Du vil –?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><l>Skænke den til nøkken dernede.</l>
 <lb/><l>Han har mig så tidt forlystet med sit spil</l>
@@ -2487,7 +2481,7 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(idet hun skjuler flasken.)</HIS:hisStage></HIS:spOpener>
 <pb n="76"/>
-<lb/><l part="I">Ja visst; du så jo &dash;</l>
+<lb/><l part="I">Ja visst; du så jo –</l>
 <lb/><HIS:hisStage>(hvisker, går hen imod huset.)</HIS:hisStage>
 <lb/><l part="F">Nu hjælpe mig gud!</l>
 <lb/><l>Nu må det briste eller bære!</l>
@@ -2505,9 +2499,9 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>Den dag de bar hende til jorden hen,</l>
 <lb/><l>han blødede ved sit sværd.</l>
 <lb/><l>Hun jordedes syd under kirkevæg,</l>
-<lb/><l>han stædtes til mulde i nord; &dash;</l>
+<lb/><l>han stædtes til mulde i nord; –</l>
 <lb/><l>der trivedes fordum hverken siljer eller hæg</l>
-<lb/><l>alt i den viede jord; &dash;</l>
+<lb/><l>alt i den viede jord; –</l>
 <lb/><l>men næste vår på de grave to</l>
 <lb/><l>der vokste de fagreste liljeblommer;</l>
 <lb/><l>over kirketaget så monne de gro</l>
@@ -2517,32 +2511,32 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><HIS:hisStage>(ser forskende på hende.)</HIS:hisStage></HIS:spOpener>
 <pb n="77"/>
 <lb/><fw type="gathering" place="top-left">15.</fw>
-<lb/><l part="F">Jeg <app type="external" subtype="word" xml:id="varG2-154"><HIS:hisRdg>ved</HIS:hisRdg></app> ikke ret &dash;</l></HIS:hisSp>
+<lb/><l part="F">Jeg <app type="external" subtype="word" xml:id="varG2-154"><HIS:hisRdg>ved</HIS:hisRdg></app> ikke ret –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><l>Vel sandt, det kan tydes på mange sæt;</l>
 <lb/><l>men jeg tror nu den retteste mening er:</l>
 <lb/><l>kirken kan ej skille <app type="alteration"><lem><HIS:hisAdd place="offline">to</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">dem</HIS:hisDel></HIS:hisRdg></app>, som har hinanden kær.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(sagte.)</HIS:hisStage></HIS:spOpener>
-<lb/><l>Alle helgen<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>er, dersom &dash;! Da er det på <app type="external" subtype="interpunction" xml:id="varG2-97"><HIS:hisRdg>tide</HIS:hisRdg></app></l>
+<lb/><l>Alle helgen<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>er, dersom –! Da er det på <app type="external" subtype="interpunction" xml:id="varG2-97"><HIS:hisRdg>tide</HIS:hisRdg></app></l>
 <lb/><l>at hun får det hele at vide.</l>
 <lb/><HIS:hisStage>(højt.)</HIS:hisStage>
-<lb/><l>Svar mig, Margit, &dash; vil du mit held?</l></HIS:hisSp><pb ed="HU"/>
+<lb/><l>Svar mig, Margit, – vil du mit held?</l></HIS:hisSp><pb ed="HU"/>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(glad, bevæget.)</HIS:hisStage></HIS:spOpener>
 <lb/><l part="I">Om jeg vil!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><l n="1" part="M">Ja, jeg mener &dash;</l></HIS:hisSp>
+<lb/><l n="1" part="M">Ja, jeg mener –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><l n="2" part="M">Sig frem!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><l part="F">Nu vel.</l>
-<lb/><l>Du kunde gøre mig så rig og så fro &dash;</l></HIS:hisSp>
+<lb/><l>Du kunde gøre mig så rig og så fro –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(frembrydende.)</HIS:hisStage></HIS:spOpener>
 <lb/><l part="I">Gudmund!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><l part="F">Hør mig; jeg vil dig fortro &dash;</l></HIS:hisSp>
+<lb/><l part="F">Hør mig; jeg vil dig fortro –</l></HIS:hisSp>
 <lb/><HIS:hisStage>(Han standser pludselig. Stemmer og
 <lb/>latter høres henne ved elvebredden.)</HIS:hisStage>
 <pb n="78"/>
@@ -2554,20 +2548,20 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><p>Gudmund Alfsøn! Vent; jeg må tale
 <lb/>et ord med dig.</p></HIS:hisSp>
 <lb/><HIS:hisStage>(Han bliver stående i samtale med
-<lb/>Erik. De øvrige fremmede går imid&typHyp;
+<lb/>Erik. De øvrige fremmede går imid‐
 <lb/>lertid ind i huset.)</HIS:hisStage>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(for sig selv.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Gøre ham så rig og fro &dash;! Hvad kan
-<lb/>han andet mene, end &dash;! <HIS:hisStage>(halvhøjt.)</HIS:hisStage> Sig&typHyp;
-<lb/>ne, &dash; kære, kære søster!</p></HIS:hisSp>
-<lb/><HIS:hisStage>(Hun griber Signe om livet og går sam&typHyp;
+<lb/><p>Gøre ham så rig og fro –! Hvad kan
+<lb/>han andet mene, end –! <HIS:hisStage>(halvhøjt.)</HIS:hisStage> Sig‐
+<lb/>ne, – kære, kære søster!</p></HIS:hisSp>
+<lb/><HIS:hisStage>(Hun griber Signe om livet og går sam‐
 <lb/>talende med hende op mod baggrunden.)</HIS:hisStage>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(sagte, idet han følger dem med øjnene.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Ja, <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>sådan er det rådeligst. Både Signe
 <lb/>og jeg må fra Solhaug. Knut Gæsling
-<lb/>har jo vist sig som min ven; han hjæl&typHyp;
+<lb/>har jo vist sig som min ven; han hjæl‐
 <lb/>per mig nok.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>
 <lb/><HIS:hisStage>(sagte til Erik.)</HIS:hisStage></HIS:spOpener>
@@ -2579,21 +2573,21 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><HIS:hisStage>(han går ind i huset.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>
 <lb/><HIS:hisStage>(kommer nærmere.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Hør, Gudmund &dash;</p></HIS:hisSp>
+<lb/><p>Hør, Gudmund –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(smilende.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Kommer du for at sige mig, at du ik&typHyp;
+<lb/><p>Kommer du for at sige mig, at du ik‐
 <lb/>ke længer tør lade mig gå fri?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
 <lb/><p>Tør? Vær du rolig for det; Knut Gæsling
-<lb/>tør alt, hvad han vil. Nej, det er no&typHyp;
-<lb/>get andet. &dash; Du<pb ed="HU"/> <app type="external" subtype="word" xml:id="varG2-155"><HIS:hisRdg>ved</HIS:hisRdg></app> jo, jeg gælder her
-<lb/>i bygden for en vild, ustyrlig karl &dash;</p></HIS:hisSp>
+<lb/>tør alt, hvad han vil. Nej, det er no‐
+<lb/>get andet. – Du<pb ed="HU"/> <app type="external" subtype="word" xml:id="varG2-155"><HIS:hisRdg>ved</HIS:hisRdg></app> jo, jeg gælder her
+<lb/>i bygden for en vild, ustyrlig karl –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><p>Ja, og hvis ikke rygtet lyver, så &dash;</p></HIS:hisSp>
+<lb/><p>Ja, og hvis ikke rygtet lyver, så –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
 <lb/><p>Å nej, mangt og meget kan jo være
-<lb/>sandt nok. Men nu skal du høre &dash;</p>
+<lb/>sandt nok. Men nu skal du høre –</p>
 <lb/><HIS:hisStage>(de går i samtale opover mod baggrunden.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>,
 <lb/><HIS:hisStage>(til Margit, idet de kommer nedover ved
@@ -2602,73 +2596,73 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/>en uventet lykke var bleven dig til del.
 <lb/>Hvad er det vel, du mener?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
-<lb/><p>Signe, &dash; du er et barn endnu; du <app type="external" subtype="word" xml:id="varG2-156"><HIS:hisRdg>ved</HIS:hisRdg></app>
+<lb/><p>Signe, – du er et barn endnu; du <app type="external" subtype="word" xml:id="varG2-156"><HIS:hisRdg>ved</HIS:hisRdg></app>
 <pb n="80"/>
 <lb/><app type="external" subtype="interpunction" xml:id="varG2-98"><HIS:hisRdg>ikke,</HIS:hisRdg></app> hvad det vil sige at færdes i en
-<lb/>evig rædsel for at &dash;. <HIS:hisStage>(pludselig afbry&typHyp;
+<lb/>evig rædsel for at –. <HIS:hisStage>(pludselig afbry‐
 <lb/>dende.)</HIS:hisStage> Tænk dig, Signe, at måtte
 <lb/>visne og dø uden at have levet!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>
 <lb/><HIS:hisStage>(ser forundret og hovedrystende på hende.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Nej <app type="external" subtype="interpunction" xml:id="varG2-99"><HIS:hisRdg>men;</HIS:hisRdg></app> Margit &dash;?</p></HIS:hisSp>
+<lb/><p>Nej <app type="external" subtype="interpunction" xml:id="varG2-99"><HIS:hisRdg>men;</HIS:hisRdg></app> Margit –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
-<lb/><p>Ja, ja, du fatter det ikke; lige godt &dash;</p>
+<lb/><p>Ja, ja, du fatter det ikke; lige godt –</p>
 <lb/><HIS:hisStage>(de går samtalende opover igen.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisStage>(Gudmund og Knut kommer nedover
 <lb/>på den anden side.)</HIS:hisStage>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><p>Nu, hvis det er sådan fat, &dash; dersom dette
+<lb/><p>Nu, hvis det er sådan fat, – dersom dette
 <lb/>vilde liv ikke huer dig længer, så vil
-<lb/>jeg skænke dig det bedste råd, som no&typHyp;
-<lb/>gen ven har i eje: fæst dig en ærbar ung&typHyp;
+<lb/>jeg skænke dig det bedste råd, som no‐
+<lb/>gen ven har i eje: fæst dig en ærbar ung‐
 <lb/>mø til hustru.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
 <lb/><p>Se, se. Og hvis jeg nu sagde dig, at det er
 <lb/>lige det samme, jeg har tænkt på?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><p>Held og lykke da, Knut Gæsling! Og nu
-<lb/>må du vide, at også jeg &dash;</p></HIS:hisSp>
+<lb/>må du vide, at også jeg –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
 <lb/><p>Du? Går du også med slige tanker?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><p>Ja vel gør jeg; &dash; men kongens v<HIS:clarification place="inline">r</HIS:clarification>ede &dash;;
+<lb/><p>Ja vel gør jeg; – men kongens v<HIS:clarification place="inline">r</HIS:clarification>ede –;
 <pb n="81"/>
 <lb/><fw type="gathering" place="top-left">16.</fw>
-<lb/>jeg er jo en fredløs mand &dash;</p></HIS:hisSp>
+<lb/>jeg er jo en fredløs mand –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
 <lb/><p>Ej, det skal du lidet agte. Der er jo ingen
 <lb/>her, uden fru Margit, som <app type="external" subtype="word" xml:id="varG2-157"><HIS:hisRdg>ved</HIS:hisRdg></app> besked
 <lb/>om det endnu; og så længe jeg er din
 <lb/>ven, så har du en, du fuldt kan lide
-<lb/>på. Hør nu bare &dash;</p>
-<lb/><HIS:hisStage>(han fortsætter hviskende, idet de i&typHyp;
+<lb/>på. Hør nu bare –</p>
+<lb/><HIS:hisStage>(han fortsætter hviskende, idet de i‐
 <lb/>gen går opover.)</HIS:hisStage></HIS:hisSp><pb ed="HU"/>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>,
 <lb/><HIS:hisStage>(idet hun og Margit atter kommer tilbage.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Me<HIS:hisDel rend="overwritten"><unclear>re</unclear></HIS:hisDel>n så sig mig da, Margit &dash;!</p></HIS:hisSp>
+<lb/><p>Me<HIS:hisDel rend="overwritten"><unclear>re</unclear></HIS:hisDel>n så sig mig da, Margit –!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><p>Mere tør jeg ikke sige dig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
 <lb/><p>Da vil jeg være ærligere mod dig. Men
 <lb/>svar mig først på et. <HIS:hisStage>(undsélig, nølende.)</HIS:hisStage>
-<lb/>Er der &dash; er der ingen, som har sagt dig
+<lb/>Er der – er der ingen, som har sagt dig
 <lb/>noget om mig?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><p>Om dig? Nej; hvad skulde det være?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>,
 <lb/><HIS:hisStage>(som før; ser ned for sig)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Du spurgte mig imorges: hvis en bejler
-<lb/>red sig hid &dash;?</p></HIS:hisSp>
+<lb/>red sig hid –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
-<lb/><p>Det er sandt. <HIS:hisStage>(sagte.)</HIS:hisStage> Knut Gæsling &dash;;
-<lb/>skulde han allerede &dash;? <HIS:hisStage>(spændt, til
+<lb/><p>Det er sandt. <HIS:hisStage>(sagte.)</HIS:hisStage> Knut Gæsling –;
+<lb/>skulde han allerede –? <HIS:hisStage>(spændt, til
 <pb n="82"/>
 <lb/>Signe.)</HIS:hisStage> Nu? Og så?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>S<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>igne</speaker>
 <lb/><HIS:hisStage>(sagte, jublende.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Bejleren er kommen! Han er kommen,
 <lb/>Margit! Dengang vidste jeg ikke, hvem
-<lb/>du mente; men nu &dash;!</p></HIS:hisSp>
+<lb/>du mente; men nu –!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><p>Og hvad har du svaret ham?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
@@ -2678,18 +2672,18 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/>sagde mig, at han havde mig kær.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><p>Men, Signe, Signe; jeg fatter <app type="external" subtype="interpunction" xml:id="varG2-100"><HIS:hisRdg>ikke</HIS:hisRdg></app> at
-<lb/>du så snart &dash;! Du har jo neppe kendt
+<lb/>du så snart –! Du har jo neppe kendt
 <lb/>ham før idag.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
-<lb/><p>Å, jeg forstår mig endnu så lidet på kær&typHyp;
+<lb/><p>Å, jeg forstår mig endnu så lidet på kær‐
 <lb/>lighed; men det <app type="external" subtype="word" xml:id="varG2-159"><HIS:hisRdg>ved</HIS:hisRdg></app> jeg, sandt er det, som
 <lb/>der står i visen:</p>
 <lb/><l>den spirer så let; i den flygtigste stund</l>
-<lb/><l>fæster den rødder i hjertets grund &dash;</l></HIS:hisSp>
+<lb/><l>fæster den rødder i hjertets grund –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
-<lb/><p>Lad så være. Og når så er, da har jeg ik&typHyp;
+<lb/><p>Lad så være. Og når så er, da har jeg ik‐
 <lb/>ke længer nødig at dølge noget for dig.
-<lb/>Ah &dash;</p></HIS:hisSp>
+<lb/>Ah –</p></HIS:hisSp>
 <lb/><HIS:hisStage>(Hun standser <app type="external" subtype="interpunction" xml:id="varG2-101"><HIS:hisRdg>pludselig</HIS:hisRdg></app> da hun ser
 <pb n="83"/>
 <lb/>Knut og Gudmund komme nærmere.)</HIS:hisStage>
@@ -2706,11 +2700,11 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><HIS:hisStage>(de ryster hinandens hænder.)</HIS:hisStage></HIS:hisSp><pb ed="HU"/>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
 <lb/><p>Men nu vil vi også nævne, begge to, hvem
-<lb/>det er &dash;</p></HIS:hisSp>
+<lb/>det er –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><p>Godt. Her på Solhaug, mellem alle
 <lb/>de fagre kvinder, har jeg fundet den,
-<lb/>som &dash;</p></HIS:hisSp>
+<lb/>som –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
 <lb/><p>Jeg lige så. Og jeg fører hende herfra
 <lb/>endnu inat, hvis det gøres behov.</p></HIS:hisSp>
@@ -2741,29 +2735,29 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><HIS:hisStage>(som før, til Knut.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Hvad mener du med det?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
-<lb/><p>Det er jo Signe, som jeg vil &dash;</p></HIS:hisSp>
+<lb/><p>Det er jo Signe, som jeg vil –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><p>Signe! Signe er min fæstemø for gud.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(med et skrig.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Hende var det! Nej, &dash; nej!</p></HIS:hisSp>
+<lb/><p>Hende var det! Nej, – nej!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(sagte, idet han ser hende.)</HIS:hisStage></HIS:spOpener>
 <pb n="85"/>
 <lb/><fw type="gathering" place="top-left">17.</fw>
 <lb/><p>Margit! Hun har hørt alt.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
-<lb/><p>Ej, ej; er det sådan fat? Hør, fru Mar&typHyp;
-<lb/>git, I har ikke nødig at lade så forun&typHyp;
+<lb/><p>Ej, ej; er det sådan fat? Hør, fru Mar‐
+<lb/>git, I har ikke nødig at lade så forun‐
 <lb/>dret; jeg skønner nu det hele.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(til Signe.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Men du sagde jo nys &dash;? <HIS:hisStage>(fatter plud&typHyp;
+<lb/><p>Men du sagde jo nys –? <HIS:hisStage>(fatter plud‐
 <lb/>selig sammenhængen.)</HIS:hisStage> Gudmund var
 <lb/>det, du mente!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>
 <lb/><HIS:hisStage>(forundret.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Ja, vidste du ikke det! Men hvad fat&typHyp;
+<lb/><p>Ja, vidste du ikke det! Men hvad fat‐
 <lb/>tes dig, Margit?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(med næsten toneløs stemme.)</HIS:hisStage></HIS:spOpener>
@@ -2771,14 +2765,14 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>
 <lb/><HIS:hisStage>(til Margit.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Og imorges, da I fik mit ord <app type="external" subtype="interpunction" xml:id="varG2-104"><HIS:hisRdg>på</HIS:hisRdg></app> at jeg
-<lb/>ingen ufred skulde yppe her ikveld, &dash;
+<lb/>ingen ufred skulde yppe her ikveld, –
 <lb/>I har da vidst, at Gudmund Alfsøn
 <lb/>var ivente<HIS:hisDel rend="overwritten">!</HIS:hisDel>. Ha, ha, bild jer aldrig
-<lb/><app type="external" subtype="interpunction" xml:id="varG2-105"><HIS:hisRdg>ind</HIS:hisRdg></app> at I kan drive gæk med Knut Gæs&typHyp;
-<lb/>ling! Signe er bleven mig kær. End&typHyp;
-<lb/>nu før middag var det bare mit ube&typHyp;
-<lb/>sindige løfte, som drev mig til at bej&typHyp;
-<lb/>le efter hende; men <emph>nu</emph> &dash;</p></HIS:hisSp>
+<lb/><app type="external" subtype="interpunction" xml:id="varG2-105"><HIS:hisRdg>ind</HIS:hisRdg></app> at I kan drive gæk med Knut Gæs‐
+<lb/>ling! Signe er bleven mig kær. End‐
+<lb/>nu før middag var det bare mit ube‐
+<lb/>sindige løfte, som drev mig til at bej‐
+<lb/>le efter hende; men <emph>nu</emph> –</p></HIS:hisSp>
 <pb n="86"/>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>
 <lb/><HIS:hisStage>(til Margit.)</HIS:hisStage></HIS:spOpener>
@@ -2787,16 +2781,16 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><p>Stille, stille!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>
 <lb/><HIS:hisStage>(hårdt og bestemt.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Fru Margit, &dash; I er hendes ældre søster;
+<lb/><p>Fru Margit, – I er hendes ældre søster;
 <lb/>et svar skal I give mig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(kæmpende med sig selv.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Signe har alt kåret sin brudgom; &dash;
+<lb/><p>Signe har alt kåret sin brudgom; –
 <lb/>jeg kan <HIS:hisDel rend="overwritten">I</HIS:hisDel>intet svare.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
 <lb/><p>Det er godt; så har jeg ikke mere at
 <lb/>gøre på Solhaug. Men efter midnat,
-<lb/>&dash; mærk jer det, &dash; da er dagen til ende;
+<lb/>– mærk jer det, – da er dagen til ende;
 <lb/>da tør I nok få se mig igen, og så får
 <lb/>lykken råde for, hvem der skal føre
 <lb/>Signe fra gården, Gudmund eller jeg.</p></HIS:hisSp>
@@ -2805,13 +2799,13 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/>så blodig en pande!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>
 <lb/><HIS:hisStage>(angst.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Gudmund! For alle helgener &dash;!</p></HIS:hisSp>
+<lb/><p>Gudmund! For alle helgener –!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
 <lb/><p>Vær spag; vær bare spag, Gudmund
 <pb n="87"/>
 <lb/>Alfsøn! Før solen rinder skal du være
-<lb/>i min magt. Og hun, &dash; din fæstemø &dash;.
-<lb/><HIS:hisStage>(går hen til døren, vinker og råber dæm&typHyp;
+<lb/>i min magt. Og hun, – din fæstemø –.
+<lb/><HIS:hisStage>(går hen til døren, vinker og råber dæm‐
 <lb/>pet.)</HIS:hisStage> Erik! Erik, kom her! Afsted
 <lb/>til vore frænder! <HIS:hisStage>(truende, mens Erik
 <lb/>viser sig i døren.)</HIS:hisStage> Ja, ve jer <app type="external" subtype="interpunction" xml:id="varG2-106"><HIS:hisRdg>alle</HIS:hisRdg></app> når
@@ -2820,24 +2814,24 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/>i <app type="external" subtype="word" xml:id="varG2-107"><HIS:hisRdg><sic>bagrunden</sic></HIS:hisRdg></app>.)</HIS:hisStage>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>
 <lb/><HIS:hisStage>(sagte til Gudmund.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Å, men så sig mig, hvad skal alt det&typHyp;
+<lb/><p>Å, men så sig mig, hvad skal alt det‐
 <lb/>te betyde.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>,
 <lb/><HIS:hisStage>(hviskende.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Vi må begge rejse fra Solhaug end&typHyp;
+<lb/><p>Vi må begge rejse fra Solhaug end‐
 <lb/>nu inat.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
-<lb/><p>Gud stå mig bi, &dash; du vil &dash;!</p></HIS:hisSp>
+<lb/><p>Gud stå mig bi, – du vil –!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><p>Tal ikke om det! Ikke et ord til no&typHyp;
+<lb/><p>Tal ikke om det! Ikke et ord til no‐
 <lb/>get menneske; ikke engang til din<lb/>søster.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(hen for sig.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Hende, &dash; hende er det! Hende, som
+<lb/><p>Hende, – hende er det! Hende, som
 <lb/>han knapt har tænkt på før ikveld.
 <lb/>Havde jeg været fri, så <app type="external" subtype="word" xml:id="varG2-160"><HIS:hisRdg>ved</HIS:hisRdg></app> jeg nok
 <pb n="88"/>
-<lb/>hvem han havde kåret. &dash; Ja, fri!</p></HIS:hisSp>
+<lb/>hvem han havde kåret. – Ja, fri!</p></HIS:hisSp>
 <lb/><HIS:hisStage>(<HIS:stageRole who="BENGT">Bengt</HIS:stageRole> og <HIS:stageRole>gæsterne</HIS:stageRole>, <HIS:stageRole>mænd</HIS:stageRole> og <HIS:stageRole>kvinder</HIS:stageRole>,
 <lb/>kommer ud fra huset.)</HIS:hisStage><pb ed="HU"/>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Unge piger</speaker> og <speaker>svende</speaker>
@@ -2851,8 +2845,8 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>al kvide må ende, når fedlen er stemt</l>
 <lb/><l>i birkelunde.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
-<lb/><p>Se, sådan skal det være! Det må jeg li&typHyp;
-<lb/>de! Jeg er lystig, og min hustru liger&typHyp;
+<lb/><p>Se, sådan skal det være! Det må jeg li‐
+<lb/>de! Jeg er lystig, og min hustru liger‐
 <lb/>vis; og derfor skal I være lystige alle
 <lb/>sammen.</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>En af gæsterne</speaker>.</HIS:spOpener>
@@ -2865,14 +2859,14 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <pb n="89"/>
 <lb/><fw type="gathering" place="top-left">18.</fw>
 <lb/>ufred i laget. <HIS:hisStage>(med dæmpet stemme.)</HIS:hisStage>
-<lb/>I drages vel til <app type="external" subtype="interpunction" xml:id="varG2-110"><HIS:hisRdg>minde</HIS:hisRdg></app> at <HIS:hisDel rend="overwritten">h</HIS:hisDel>Knut Gæs&typHyp;
+<lb/>I drages vel til <app type="external" subtype="interpunction" xml:id="varG2-110"><HIS:hisRdg>minde</HIS:hisRdg></app> at <HIS:hisDel rend="overwritten">h</HIS:hisDel>Knut Gæs‐
 <lb/>ling er på gården ikveld.</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Flere</speaker>
 <lb/><HIS:hisStage>(hviskende mellem hverandre.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Ja, ja, det er sandt. I mindes <app type="external" subtype="interpunction" xml:id="varG2-111"><HIS:hisRdg>sidst</HIS:hisRdg></app> da
-<lb/>han &dash;. Det er bedst at vogte sig.</p></HIS:hisSp>
+<lb/>han –. Det er bedst at vogte sig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GAMMELMAND"><HIS:spOpener><speaker>En gammel mand</speaker>.</HIS:spOpener>
-<lb/><p>Men I, fru Margit &dash;; jeg <app type="external" subtype="word" xml:id="varG2-161"><HIS:hisRdg>ved</HIS:hisRdg></app>, eders
+<lb/><p>Men I, fru Margit –; jeg <app type="external" subtype="word" xml:id="varG2-161"><HIS:hisRdg>ved</HIS:hisRdg></app>, eders
 <lb/>slægt var altid sagnkyndig, og I
 <lb/>selv kunde mange vakkre eventyr,
 <lb/>alt imens I var barn.</p></HIS:hisSp>
@@ -2882,22 +2876,22 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/>er lystigt nok.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(dæmpet, bedende.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Margit &dash;!</p></HIS:hisSp>
+<lb/><p>Margit –!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><p>Ej, hvilket klageligt ansigt du sætter
 <lb/>op! Vær lystig, Gudmund! Vær lystig!
 <lb/>Ja, ja, det falder dig ikke så let, kan
 <lb/>jeg tro. <HIS:hisStage>(leende, til gæsterne.)</HIS:hisStage> Han har
-<lb/>set huldren ikveld. Hun vilde forlok&typHyp;
-<lb/>ke ham; men Gudmund er en tro&typHyp;
-<lb/>fast svend. <HIS:hisStage>(vender sig atter til Gud&typHyp;
+<lb/>set huldren ikveld. Hun vilde forlok‐
+<lb/>ke ham; men Gudmund er en tro‐
+<lb/>fast svend. <HIS:hisStage>(vender sig atter til Gud‐
 <pb n="90"/>
 <lb/>mund.)</HIS:hisStage> Nu ja, eventyret er ikke endt
-<lb/>endnu. Når du fører din hjertenskær o&typHyp;
-<lb/>ver hej og gennem skove, så vend dig al&typHyp;
-<lb/>drig om; se dig aldrig tilbage; &dash; huldren
+<lb/>endnu. Når du fører din hjertenskær o‐
+<lb/>ver hej og gennem skove, så vend dig al‐
+<lb/>drig om; se dig aldrig tilbage; – huldren
 <lb/>sidder bag hver en busk og ler; og til
-<lb/>slut &dash; <HIS:hisStage>(med dæmpet stemme, idet hun<pb ed="HU"/>
+<lb/>slut – <HIS:hisStage>(med dæmpet stemme, idet hun<pb ed="HU"/>
 <lb/>træder tæt hen til ham:)</HIS:hisStage> kommer du
 <lb/>dog ikke længer end hun vil.</p>
 <lb/><HIS:hisStage>(hun går over mod højre.)</HIS:hisStage></HIS:hisSp>
@@ -2912,16 +2906,16 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(for sig selv.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Hun truer; jeg må rive det sidste håb
-<lb/>fra hende; før bliver hun ikke rolig til&typHyp;
+<lb/>fra hende; før bliver hun ikke rolig til‐
 <lb/>sinds. <HIS:hisStage>(vender sig til de fremmede.)</HIS:hisStage> Jeg
 <lb/>kender et lidet kvæde. Hvis det lyster
-<lb/>eder at høre, så &dash;</p></HIS:hisSp>
+<lb/>eder at høre, så –</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Flere af gæsterne</speaker>.</HIS:spOpener>
 <lb/><p>Tak, tak, Gudmund Alfsøn!</p></HIS:hisSp>
-<lb/><HIS:hisStage>(Man slutter sig om ham, nogle sidden&typHyp;
+<lb/><HIS:hisStage>(Man slutter sig om ham, nogle sidden‐
 <lb/>de, andre stående. Margit læner sig til
 <pb n="91"/>
-<lb/>et træ foran til højre. Signe står til ven&typHyp;
+<lb/>et træ foran til højre. Signe står til ven‐
 <lb/>stre nær ved huset.)</HIS:hisStage>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(synger.)</HIS:hisStage></HIS:spOpener>
@@ -2939,7 +2933,7 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>som har hinanden kær!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GAMMELMAND"><HIS:spOpener><speaker>En gammel mand</speaker>.</HIS:spOpener>
 <lb/><p>Det er et vakkert kvæde. Se, hvor de unge
-<lb/>svende skotter did hen. <HIS:hisStage>(peger mod pi&typHyp;
+<lb/>svende skotter did hen. <HIS:hisStage>(peger mod pi‐
 <lb/>gerne.)</HIS:hisStage> Ja, ja, hver har vel sin, kan jeg
 <lb/>tro.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>
@@ -2954,9 +2948,9 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><p>Hvad fattes dig? Mig tykkes, du er så
 <lb/>bleg.</p></HIS:hisSp><pb ed="HU"/>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
-<lb/><p>Det går snart over. <HIS:hisStage>(vender sig til gæster&typHyp;
-<lb/>ne.)</HIS:hisStage> Det bæres mig for, som jeg nys sag&typHyp;
-<lb/>de, jeg havde glemt alle mine even&typHyp;
+<lb/><p>Det går snart over. <HIS:hisStage>(vender sig til gæster‐
+<lb/>ne.)</HIS:hisStage> Det bæres mig for, som jeg nys sag‐
+<lb/>de, jeg havde glemt alle mine even‐
 <lb/>tyr. Men jeg tror dog, jeg mindes et.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
 <lb/><p>Ret så, min hustru! Kom med det.</p></HIS:hisSp>
@@ -2968,31 +2962,31 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/>hue jer; men det får nu <HIS:clarification place="inline">v</HIS:clarification>ære.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(sagte.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Alle helgener, hun vil da vel ikke &dash;!</p></HIS:hisSp>
+<lb/><p>Alle helgener, hun vil da vel ikke –!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><l>Det var sig en ungmø fager og fin,</l>
 <lb/><l>hun sad i sin faders gård;</l>
-<lb/><l>hun sømmed i silke, hun sømmed i lin; &dash;</l>
+<lb/><l>hun sømmed i silke, hun sømmed i lin; –</l>
 <lb/><l>så lidet den gammen forslår.</l>
 <pb n="93"/>
 <lb/><fw type="gathering" place="top-left">19.</fw>
 <lb/><l>Hun sad så ene med sorrig og gru;</l>
 <lb/><l>der var tomt i hal og i stue;</l>
 <lb/><l>den jomfru liden var stolt i hu,</l>
-<lb/><l>hende lysted at vorde en adelsfrue. &dash;</l>
+<lb/><l>hende lysted at vorde en adelsfrue. –</l>
 <lb/><l>Det var sig bergkongen, red han fra nord,</l>
 <lb/><l>kom han til gårde med guld og med svende;</l>
 <lb/><l>tredje dags natten hjemad han <app type="external" subtype="word" xml:id="varG2-170"><HIS:hisRdg>fór</HIS:hisRdg></app></l>
-<lb/><l>alt med sin brud, &dash; med hende.</l>
+<lb/><l>alt med sin brud, – med hende.</l>
 <lb/><l>I berget sad hun hel mangen sommer<HIS:hisDel rend="overwritten">;</HIS:hisDel>,</l>
 <lb/><l>af guldhorn kunde hun mjøden tømme<HIS:hisDel rend="overwritten">;</HIS:hisDel>,</l>
-<lb/><l>i dalen trives de yndigste blom<HIS:hisAdd place="offline">m</HIS:hisAdd>er, &dash;</l>
-<lb/><l>hun sanked dem kun i drømme. &dash;</l>
+<lb/><l>i dalen trives de yndigste blom<HIS:hisAdd place="offline">m</HIS:hisAdd>er, –</l>
+<lb/><l>hun sanked dem kun i drømme. –</l>
 <lb/><l>Det var sig den ungersvend bold og god;</l>
 <lb/><l>vel kunde han lege på gyldne strenge;</l>
 <lb/><l>det klang til bergets inderste rod,</l>
 <lb/><l>hvor hun havde siddet så længe.</l>
-<lb/><l>Så underligt blev hun tilsinde derved; &dash;</l>
+<lb/><l>Så underligt blev hun tilsinde derved; –</l>
 <lb/><l>op sprang fjeldets port som en bue;</l>
 <lb/><l>over dalene lå gud faders fred,</l>
 <lb/><l>og al den herlighed kunde hun skue.</l>
@@ -3003,7 +2997,7 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>Og vel må I vide, hver og en,</l>
 <lb/><l>at den, som er fængslet til fjeldets sten,</l>
 <lb/><l>kan løses så let ved harpeleg!</l>
-<lb/><l>Han så hende bunden, hørte hun skreg, &dash;</l>
+<lb/><l>Han så hende bunden, hørte hun skreg, –</l>
 <pb n="94"/>
 <lb/><l>men han slængte sin harpe bort i en <HIS:clarification place="inline">v</HIS:clarification>rå,</l>
 <lb/><l>hejsede silkesejlet i rå,</l>
@@ -3027,7 +3021,7 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.
 <lb/><HIS:hisStage>(på samme tid, støtter hende.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Hjælp, hjælp; hun dør!</p></HIS:hisSp>
-<lb/><HIS:hisStage>(Bengt og gæsterne stimler under for&typHyp;
+<lb/><HIS:hisStage>(Bengt og gæsterne stimler under for‐
 <lb/>skrækkede udråb sammen om dem.)</HIS:hisStage>
 </div>
 <div type="act" n="3">
@@ -3040,15 +3034,15 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/>værelset og over landskabet udenfor.)</HIS:hisStage>
 <lb/><HIS:hisStage>(<HIS:stageRole who="BENGT">Bengt</HIS:stageRole> står i den åbne svalegang med
 <lb/>en ølbolle i hånden. <HIS:stageRole>En flok gæster</HIS:stageRole> er
-<lb/>i færd med at forlade gården. Inde i stu&typHyp;
+<lb/>i færd med at forlade gården. Inde i stu‐
 <lb/>en går <HIS:stageRole>en pige</HIS:stageRole> og rydder op.)</HIS:hisStage>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>
 <lb/><HIS:hisStage>(råber til de bortdragende.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Guds fred da, og vel mødt igen på Sol&typHyp;
+<lb/><p>Guds fred da, og vel mødt igen på Sol‐
 <lb/>haug! I kunde ellers gerne blevet her og
 <lb/>sovet ud, I, lige så vel som de andre.
-<lb/>Nå ja, ja &dash;; nej vent; jeg følger med
-<lb/>til ledet; jeg må drikke jer til end&typHyp;
+<lb/>Nå ja, ja –; nej vent; jeg følger med
+<lb/>til ledet; jeg må drikke jer til end‐
 <lb/>nu en gang.</p>
 <lb/><HIS:hisStage><app type="external" subtype="word" xml:id="varG2-173"><HIS:hisRdg>(han går ud.)</HIS:hisRdg></app></HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Gæsterne</speaker>
@@ -3056,7 +3050,7 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>Guds fred og farvel til hver og en,</l>
 <lb/><l>som har på gården hjemme!</l>
 <pb n="96"/>
-<lb/><l>Nu går vor sti over stok og sten; &dash;</l>
+<lb/><l>Nu går vor sti over stok og sten; –</l>
 <lb/><l>frisk op; du må fedlen stemme!</l>
 <lb/><l>Med dans og med sang</l>
 <lb/><l>skal vi korte den vej så tung og lang.</l>
@@ -3075,7 +3069,7 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><p>Nej, ikke alle; en del bliver til udover
 <lb/>dagen; de sover visst allerede.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
-<lb/><p>Og Gudmund Alfsøn &dash;?</p></HIS:hisSp>
+<lb/><p>Og Gudmund Alfsøn –?</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Pigen</speaker>.</HIS:spOpener>
 <lb/><p>Han sover nok også. <HIS:hisStage>(peger mod højre.)</HIS:hisStage>
 <lb/>For lidt siden gik han ind i sit kammer,
@@ -3091,9 +3085,9 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><l>Imorgen så drager vel Gudmund herfra,</l>
 <lb/><l>han drager vel ud i den verden vide;</l>
-<lb/><l>jeg sidder igen med min husbond, og <emph>da</emph> &dash;;</l>
+<lb/><l>jeg sidder igen med min husbond, og <emph>da</emph> –;</l>
 <lb/><l>mig vil det gå som blomsterne små,</l>
-<lb/><l>som den fattige urt, som det knækkede strå, &dash;</l>
+<lb/><l>som den fattige urt, som det knækkede strå, –</l>
 <lb/><l>jeg har kun at visne og lide.</l>
 <lb/><HIS:hisStage>(kort ophold; hun læner sig i stolen.)</HIS:hisStage>
 <lb/><l>Jeg hørte en gang om et blindfødt barn,</l>
@@ -3107,11 +3101,11 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>det var forbi med gammen og lege;</l>
 <lb/><l>af savn og længsel blev kinderne blege;</l>
 <lb/><l>det sygnede hen og leved alle dage</l>
-<lb/><l>i en evig, en unævnelig klage. &dash;</l>
+<lb/><l>i en evig, en unævnelig klage. –</l>
 <lb/><l>Ak, også mine øjne var blinde</l>
-<lb/><l>for sommerens liv og for lysets skær &dash;</l>
+<lb/><l>for sommerens liv og for lysets skær –</l>
 <lb/><HIS:hisStage>(hun springer op.)</HIS:hisStage>
-<lb/><l>Men <emph>nu</emph> &dash;! Og så stænges i buret inde!</l>
+<lb/><l>Men <emph>nu</emph> –! Og så stænges i buret inde!</l>
 <lb/><l>Nej, nej, min ungdom er mere værd.</l>
 <pb n="98"/>
 <lb/><l>Tre år af mit liv har jeg offret ham,</l>
@@ -3119,31 +3113,31 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>Mægted jeg længere sligt at friste,</l>
 <lb/><l>måtte jeg være som duen tam.</l>
 <lb/><l>Her kedes jeg tildøde af smålig kiv;</l>
-<lb/><l>gennem verden går der et bølgende liv; &dash;</l><pb ed="HU"/>
+<lb/><l>gennem verden går der et bølgende liv; –</l><pb ed="HU"/>
 <lb/><l>Gudmund vil jeg følge med skjold og med bue,</l>
 <lb/><l>dele hans fryd og mildne hans kummer,</l>
 <lb/><l>vogte hans fjed og værge hans slummer;</l>
 <lb/><l>alt folket skal undrende stå, når de skue</l>
-<lb/><l>den bolde ridder og Mar<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>git, hans viv. &dash;</l>
+<lb/><l>den bolde ridder og Mar<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>git, hans viv. –</l>
 <lb/><l part="I">Hans viv!</l>
 <lb/><HIS:hisStage>(slår hænderne sammen.)</HIS:hisStage>
 <lb/><l part="F">Å herre, tilgiv, tilgiv;</l>
 <lb/><l>jeg <app type="external" subtype="word" xml:id="varG2-164"><HIS:hisRdg>ved</HIS:hisRdg></app> ikke selv, hvad jeg taler.</l>
 <lb/><l>Send mig din fred, som læger og svaler.</l>
 <lb/><HIS:hisStage>(går en stund i grublende taushed.)</HIS:hisStage>
-<lb/><l>Signe, min søster &dash;? Hende jeg skulde</l>
+<lb/><l>Signe, min søster –? Hende jeg skulde</l>
 <lb/><l>lægge før tiden i mulde?</l>
-<lb/><l>Og dog &dash;? Hvem <app type="external" subtype="word" xml:id="varG2-165"><HIS:hisRdg>ved</HIS:hisRdg></app>? Hun er ung endnu;</l>
+<lb/><l>Og dog –? Hvem <app type="external" subtype="word" xml:id="varG2-165"><HIS:hisRdg>ved</HIS:hisRdg></app>? Hun er ung endnu;</l>
 <lb/><l>hun bærer ham vel ikke så dybt i sin hu.</l>
 <lb/><HIS:hisStage>(atter taushed; hun tager den lille flaske
 <lb/>frem, ser længe på den og siger sagte:)</HIS:hisStage>
-<lb/><l>I denne flaske &dash;; med den jeg kunde &dash;;</l>
+<lb/><l>I denne flaske –; med den jeg kunde –;</l>
 <lb/><l>så måtte min husbond for evig blunde.</l>
 <lb/><HIS:hisStage>(i skræk.)</HIS:hisStage>
 <lb/><l>Nej, nej, den skal kastes på elvens bund!</l>
 <lb/><HIS:hisStage>(vil kaste den ud af vinduet, men standser.)</HIS:hisStage>
 <pb n="99"/>
-<lb/><l>Og dog, &dash; jeg kunde i denne stund &dash;.</l>
+<lb/><l>Og dog, – jeg kunde i denne stund –.</l>
 <lb/><HIS:hisStage>(hvisker med et blandet udtryk af gysen og
 <lb/>henrykkelse.)</HIS:hisStage>
 <lb/><l>Hvad for en fristende, koglende magt</l>
@@ -3164,9 +3158,9 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><p>Er porten lukket?</p></HIS:hisSp><pb ed="HU"/>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>
 <lb/><HIS:hisStage>(sætter sig ved bordet til venstre.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Jeg har sørget for al ting. Jeg fulgte de sid&typHyp;
+<lb/><p>Jeg har sørget for al ting. Jeg fulgte de sid‐
 <lb/>ste gæster ned til ledet. Men hvor blev
-<lb/>Knut Gæsling af ikveld? &dash; Lad mig
+<lb/>Knut Gæsling af ikveld? – Lad mig
 <lb/>få mjød, Margit! Jeg er tørstig. Fyld
 <lb/>mig bægeret der.</p></HIS:hisSp>
 <lb/><HIS:hisStage>(Margit henter en mjødkande fra et
@@ -3177,7 +3171,7 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><HIS:hisStage>(går med kanden over til højre.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Du spurgte om Knut Gæsling.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
-<lb/><p>Ja visst gjorde jeg. Den praler, &dash; den stor&typHyp;
+<lb/><p>Ja visst gjorde jeg. Den praler, – den stor‐
 <lb/>skryder! Jeg mindes <app type="external" subtype="interpunction" xml:id="varG2-112"><HIS:hisRdg>nok</HIS:hisRdg></app> at han trued
 <lb/>mig igår<note resp="editor">å mangler bolle</note> morges.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.
@@ -3188,16 +3182,16 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/>ham ihjæl.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(smiler foragteligt.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Hm &dash;</p></HIS:hisSp>
+<lb/><p>Hm –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
 <lb/><p>Jeg vil slå ham ihjæl, siger jeg! Jeg er
 <lb/>ikke ræd for at møde ti slige karle
 <lb/>som han. Ude på stabburet hænger min
 <lb/>farfaders økse; skaftet er indlagt med
-<lb/>sølv, og når jeg kommer med <emph>den</emph>, så &dash;!
+<lb/>sølv, og når jeg kommer med <emph>den</emph>, så –!
 <lb/><HIS:hisStage>(slår i bordet og drikker.)</HIS:hisStage> Imorgen
-<lb/>ruster jeg mig; jeg drager ud med al&typHyp;
-<lb/>le mine mænd og slår Knut Gæs&typHyp;
+<lb/>ruster jeg mig; jeg drager ud med al‐
+<lb/>le mine mænd og slår Knut Gæs‐
 <lb/>ling <HIS:hisDel rend="overstrike">ihæl</HIS:hisDel> ihjæl.</p>
 <lb/><HIS:hisStage>(han drikker tilbunds.)</HIS:hisStage></HIS:hisSp>
 <pb n="101"/>
@@ -3208,8 +3202,8 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><HIS:hisStage>(hun vil gå.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
 <lb/><p>Margit, kom her! Fyld mig mit bæger
-<lb/>igen. <HIS:hisStage>(hun nærmer sig; han <app type="external" subtype="word" xml:id="varG2-113"><HIS:hisRdg>vil drage</HIS:hisRdg></app> hen&typHyp;
-<lb/>de ned på sit knæ.)</HIS:hisStage> Ha-ha-ha; du er vak&typHyp;
+<lb/>igen. <HIS:hisStage>(hun nærmer sig; han <app type="external" subtype="word" xml:id="varG2-113"><HIS:hisRdg>vil drage</HIS:hisRdg></app> hen‐
+<lb/>de ned på sit knæ.)</HIS:hisStage> Ha-ha-ha; du er vak‐
 <lb/>ker, Margit! Jeg holder af dig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(river sig løs.)</HIS:hisStage></HIS:spOpener>
@@ -3220,13 +3214,13 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/>mener det vel ikke så ilde.</p></HIS:hisSp><pb ed="HU"/>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(sagte idet hun skænker i bægeret.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Var det så sandt det sidste bæger jeg skænk&typHyp;
+<lb/><p>Var det så sandt det sidste bæger jeg skænk‐
 <lb/>te for dig.</p>
 <lb/><HIS:hisStage>(hun lader bægeret blive stående og vil gå
 <lb/>ud til venstre.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
 <lb/><p>Hør du, Margit. En ting kan du takke
-<lb/>himlen for, og det er, at jeg tog dig <app type="external" subtype="interpunction" xml:id="varG2-114"><HIS:hisRdg>tilæg&typHyp;
+<lb/>himlen for, og det er, at jeg tog dig <app type="external" subtype="interpunction" xml:id="varG2-114"><HIS:hisRdg>tilæg‐
 <lb/>te</HIS:hisRdg></app> før Gudmund Alfsøn kom igen.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(standser ved døren.)</HIS:hisStage></HIS:spOpener>
@@ -3235,7 +3229,7 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
 <lb/><p>Jo, for hele hans eje er ikke tiende delen
 <lb/>så stort som mit. Og det er jeg sikker på,
-<lb/>at han havde bejlet efter dig, ifald du ik&typHyp;
+<lb/>at han havde bejlet efter dig, ifald du ik‐
 <lb/>ke havde været frue på Solhaug.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(kommer <app type="external" subtype="interpunction" xml:id="varG2-115"><HIS:hisRdg>nærmere,</HIS:hisRdg></app> skotter til bægeret.)</HIS:hisStage></HIS:spOpener>
@@ -3245,14 +3239,14 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/>Gautesøn har to kloge øjne i panden.
 <lb/>Men nu kan han jo tage Signe.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
-<lb/><p>Og du tænker, han vil &dash;?</p></HIS:hisSp>
+<lb/><p>Og du tænker, han vil –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker></HIS:spOpener>
 <lb/><p>Tage hende? Å ja, siden han ikke kan
-<lb/>få dig. Men havde du været fri, så &dash;.
-<lb/>Ha-ha-ha, Gudmund er ligesom de an&typHyp;
-<lb/>dre; han misunder <app type="external" subtype="interpunction" xml:id="varG2-116"><HIS:hisRdg>mig</HIS:hisRdg></app> at jeg er din hus&typHyp;
+<lb/>få dig. Men havde du været fri, så –.
+<lb/>Ha-ha-ha, Gudmund er ligesom de an‐
+<lb/>dre; han misunder <app type="external" subtype="interpunction" xml:id="varG2-116"><HIS:hisRdg>mig</HIS:hisRdg></app> at jeg er din hus‐
 <lb/>bond. Det er derfor, jeg kan så godt lide
-<lb/>dig, Margit. &dash; Hid med bægeret! Fuldt til
+<lb/>dig, Margit. – Hid med bægeret! Fuldt til
 <lb/>randen!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(går modstræbende over til højre.)</HIS:hisStage></HIS:spOpener>
@@ -3262,19 +3256,19 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <pb n="103"/>
 <lb/>men ham vil jeg slå ihjæl. Gudmund er
 <lb/>en hæderlig karl; han skal få hende. Tænk
-<lb/>dig, Margit, hvor godt vi skal leve sam&typHyp;
-<lb/>men som grander. Så drager vi på gæ&typHyp;
+<lb/>dig, Margit, hvor godt vi skal leve sam‐
+<lb/>men som grander. Så drager vi på gæ‐
 <lb/>steri til hinanden, og så sidder vi, så lang
 <lb/>dagen er, hver med sin hustru på skødet,
 <lb/>og drikker og snakker sammen om løst og
 <lb/>fast.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
-<lb/><HIS:hisStage>(røber en stedse stigende sjælekamp; uvil&typHyp;
+<lb/><HIS:hisStage>(røber en stedse stigende sjælekamp; uvil‐
 <lb/>kårligt har hun taget flasken frem, medens
 <lb/>hun siger:)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Ja vel; ja vel.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
-<lb/><p>Ha-ha-ha; i førstningen, tænker jeg, Gud&typHyp;
+<lb/><p>Ha-ha-ha; i førstningen, tænker jeg, Gud‐
 <lb/>mund vil se lidt umildt til <app type="external" subtype="interpunction" xml:id="varG2-117"><HIS:hisRdg>mig</HIS:hisRdg></app> når
 <lb/>jeg favner dig; men sligt forvinder han
 <lb/>snart, kan jeg tro.</p></HIS:hisSp><pb ed="HU"/>
@@ -3291,7 +3285,7 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <pb n="104"/>
 <lb/><p>Drik ikke mere inat!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>
-<lb/><HIS:hisStage>(leende, idet han læner sig bagover i sto&typHyp;
+<lb/><HIS:hisStage>(leende, idet han læner sig bagover i sto‐
 <lb/>len:)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Nå; venter du kanske på mig? <HIS:hisStage>(blinker
 <lb/>til hende.)</HIS:hisStage> Gå du bare; jeg kommer snart
@@ -3308,13 +3302,13 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/>der og de søljer, hun stod brud med.</p>
 <lb/><HIS:hisStage>(han går til bordet ved vinduet og tager
 <lb/>bægeret.)</HIS:hisStage></HIS:hisSp>
-<lb/><HIS:hisStage>(<HIS:stageRole>En huskarl</HIS:stageRole> kommer ilsomt og forskr<unclear reason="endline">æk&typHyp;</unclear>
+<lb/><HIS:hisStage>(<HIS:stageRole>En huskarl</HIS:stageRole> kommer ilsomt og forskr<unclear reason="endline">æk‐</unclear>
 <lb/>ket ind fra baggrunden.)</HIS:hisStage>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Huskarlen</speaker>
 <lb/><HIS:hisStage>(råber.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Herr Bengt, herr Bengt, <app type="external" subtype="word" xml:id="varG2-120"><HIS:hisRdg><sic>i</sic></HIS:hisRdg></app> skynde jer
 <lb/>ud det rappeste <HIS:hisDel rend="overwritten">i</HIS:hisDel>I kan! Knut Gæsling
-<lb/>stævner med et væbnet følge op mod går&typHyp;
+<lb/>stævner med et væbnet følge op mod går‐
 <lb/>den.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>
 <pb n="105"/>
@@ -3326,9 +3320,9 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/>vejen, og så løb de ilsomt tilbage for at
 <lb/>vare jer ad.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
-<lb/><p>Godt; så skal jeg da også &dash;! Hent mig
+<lb/><p>Godt; så skal jeg da også –! Hent mig
 <lb/>min farfaders økse!</p>
-<lb/><HIS:hisStage>(han og huskarlen går ud i baggrun&typHyp;
+<lb/><HIS:hisStage>(han og huskarlen går ud i baggrun‐
 <lb/>den.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisStage>(Lidt efter kommer <HIS:stageRole who="GUDMUND">Gudmund</HIS:stageRole> og <HIS:stageRole who="SIGNE">Signe</HIS:stageRole>
 <lb/>sagte og varsomt ind gennem døren til
@@ -3342,7 +3336,7 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l part="I">tvinger os.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
 <lb/><l part="F">Ak, at drage</l>
-<lb/><l>som flygtning fra bygden, hvor jeg er født &dash;!</l>
+<lb/><l>som flygtning fra bygden, hvor jeg er født –!</l>
 <lb/><HIS:hisStage>(tørrer øjnene.)</HIS:hisStage><pb ed="HU"/>
 <lb/><l>Og dog, jeg vil ikke klage;</l>
 <lb/><l>det er jo for din skyld, jeg drager afsted.</l>
@@ -3366,11 +3360,11 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>alt under bøgenes <HIS:hisDel rend="overstrike"><gap/></HIS:hisDel> skygge.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>
 <lb/><HIS:hisStage>(brister i gråd.)</HIS:hisStage></HIS:spOpener>
-<lb/><l>Min arme søster, &dash; far vel, far vel!</l>
+<lb/><l>Min arme søster, – far vel, far vel!</l>
 <lb/><l>Som en moder har du mig vogtet og fredet,</l>
 <lb/><l>har ledet min fod, har til himlen bedet</l>
-<lb/><l>den frommeste bøn for mit held. &dash;</l>
-<lb/><l>Se, Gudmund, &dash; lad os i dette bæger</l>
+<lb/><l>den frommeste bøn for mit held. –</l>
+<lb/><l>Se, Gudmund, – lad os i dette bæger</l>
 <lb/><l>drikke hende til; lad os <app type="external" subtype="interpunction" xml:id="varG2-121"><HIS:hisRdg>ønske</HIS:hisRdg></app> at snart</l>
 <lb/><l>hendes sind må igen vorde frejdigt og klart,</l>
 <lb/><l>og at gud hendes kvide læger.</l>
@@ -3386,8 +3380,8 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l part="I">Det er Margits bæger.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(ser nøje på det.)</HIS:hisStage></HIS:spOpener>
-<lb/><l part="F">Ved himlen, &dash; ja,</l>
-<lb/><l>nu mindes jeg &dash;. Dengang jeg drog herfra</l><pb ed="HU"/>
+<lb/><l part="F">Ved himlen, – ja,</l>
+<lb/><l>nu mindes jeg –. Dengang jeg drog herfra</l><pb ed="HU"/>
 <lb/><l>monne mosten i bægeret gløde;</l>
 <lb/><l>hun drak mig til på et frydeligt møde;</l>
 <lb/><l>men det blev hende selv til sorg og nød.</l>
@@ -3397,7 +3391,7 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l part="F">Vi må afsted.</l></HIS:hisSp>
 <lb/><HIS:hisStage>(Larm og råb udenfor i baggrunden.)</HIS:hisStage>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
-<lb/><l>Hys! &dash; Gudmund, jeg hører stemmer og fjed!</l></HIS:hisSp>
+<lb/><l>Hys! – Gudmund, jeg hører stemmer og fjed!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(lyttende.)</HIS:hisStage></HIS:spOpener>
 <lb/><l part="I">Knut Gæslings røst!</l></HIS:hisSp>
@@ -3410,7 +3404,7 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><HIS:hisStage>(<HIS:stageRole who="MARGIT">Margit</HIS:stageRole> kommer ilsomt fra venstre.)</HIS:hisStage>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(lyttende til larmen.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Hvad gælder det? Er min husbond &dash;?</p></HIS:hisSp>
+<lb/><p>Hvad gælder det? Er min husbond –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND SIGNE"><HIS:spOpener><speaker>Gudmund</speaker> og <speaker>Signe</speaker>.</HIS:spOpener>
 <lb/><p>Margit!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
@@ -3418,20 +3412,20 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><p>Gudmund! Og Signe! Er I her?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>
 <lb/><HIS:hisStage>(imod hende.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Margit, &dash; kære søster!</p></HIS:hisSp>
+<lb/><p>Margit, – kære søster!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(forfærdet, idet hun bemærker bægeret, som
 <lb/>Gudmund har beholdt i hånden.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Bægeret! Hvem har tømt det?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(forvirret.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Tømt &dash;? Jeg og Signe, vi vilde &dash;</p></HIS:hisSp>
+<lb/><p>Tømt –? Jeg og Signe, vi vilde –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(skriger.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Nåde, nåde! Hjælp! De dør!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(sætter bægeret fra sig.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Margit &dash;!</p></HIS:hisSp>
+<lb/><p>Margit –!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
 <lb/><p>Å gud, hvad fejler <app type="external" subtype="interpunction" xml:id="varG2-122"><HIS:hisRdg>dig?</HIS:hisRdg></app></p></HIS:hisSp>
 <pb n="109"/>
@@ -3439,16 +3433,16 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(mod baggrunden.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Hjælp, hjælp! Vil da ingen hjælpe!</p></HIS:hisSp>
-<lb/><HIS:hisStage>(<HIS:stageRole>En huskarl</HIS:stageRole> kommer skyndsomt fra svale&typHyp;
+<lb/><HIS:hisStage>(<HIS:stageRole>En huskarl</HIS:stageRole> kommer skyndsomt fra svale‐
 <lb/>gangen.)</HIS:hisStage>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Huskarlen</speaker>
 <lb/><HIS:hisStage>(råber forskrækket.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Fru Margit! Eders husbond &dash;!</p></HIS:hisSp>
+<lb/><p>Fru Margit! Eders husbond –!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
-<lb/><p>Han! Har også han drukket &dash;?</p></HIS:hisSp>
+<lb/><p>Han! Har også han drukket –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(sagte.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Ah, nu fatter jeg &dash;</p></HIS:hisSp>
+<lb/><p>Ah, nu fatter jeg –</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Huskarlen</speaker>.</HIS:spOpener>
 <lb/><p>Knut Gæsling har fældet ham!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
@@ -3472,8 +3466,8 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><p>Gæsterne og eders folk har fåt bugt med
 <lb/>voldsmændene. Knut Gæsling og hans
 <lb/>mænd er bundne. Der kommer de.</p></HIS:hisSp>
-<lb/><HIS:hisStage>(<HIS:stageRole>Gudmunds svende</HIS:stageRole>, <HIS:stageRole>gæster</HIS:stageRole> og <HIS:stageRole>huskarle</HIS:stageRole> fø&typHyp;
-<lb/>rer <HIS:stageRole who="KNUT">Knut Gæsling</HIS:stageRole>, <HIS:stageRole who="ERIK">Erik fra Hægge</HIS:stageRole> og <HIS:stageRole>fle&typHyp;
+<lb/><HIS:hisStage>(<HIS:stageRole>Gudmunds svende</HIS:stageRole>, <HIS:stageRole>gæster</HIS:stageRole> og <HIS:stageRole>huskarle</HIS:stageRole> fø‐
+<lb/>rer <HIS:stageRole who="KNUT">Knut Gæsling</HIS:stageRole>, <HIS:stageRole who="ERIK">Erik fra Hægge</HIS:stageRole> og <HIS:stageRole>fle‐
 <lb/>re af Knuts mænd</HIS:stageRole> bundne mellem sig.)</HIS:hisStage>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>
 <lb/><HIS:hisStage>bleg og stille)</HIS:hisStage>.</HIS:spOpener>
@@ -3482,11 +3476,11 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><p>Knut, Knut, hvad har du gjort?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ERIK"><HIS:spOpener><speaker>Erik</speaker>.</HIS:spOpener>
-<lb/><p>Det var en vådesgerning, det kan jeg svær&typHyp;
+<lb/><p>Det var en vådesgerning, det kan jeg svær‐
 <lb/>ge på.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
-<lb/><p>Han løb imod mig med løftet økse; jeg vil&typHyp;
-<lb/>de værge for mig, og så hug jeg uforvaren&typHyp;
+<lb/><p>Han løb imod mig med løftet økse; jeg vil‐
+<lb/>de værge for mig, og så hug jeg uforvaren‐
 <lb/>de til.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ERIK"><HIS:spOpener><speaker>Erik</speaker>.</HIS:spOpener>
 <lb/><p>Her er mange, som så på det.</p></HIS:hisSp>
@@ -3496,10 +3490,10 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <pb n="111"/>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><p>Jeg kræver intet. Gud må dømme os alle. Dog
-<lb/>jo, &dash; et kræver jeg; lad fare eders onde ans<HIS:clarification place="inline">l</HIS:clarification>ag
+<lb/>jo, – et kræver jeg; lad fare eders onde ans<HIS:clarification place="inline">l</HIS:clarification>ag
 <lb/>imod min søster.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
-<lb/><p>Aldrig skal jeg mere prøve på at løse mit u&typHyp;
+<lb/><p>Aldrig skal jeg mere prøve på at løse mit u‐
 <lb/>salige løfte. Tro mig, jeg skal bedre mig.
 <lb/>Bare jeg ikke får lide en uhæderlig straf
 <lb/>for min gerning. <HIS:hisStage>(til Gudmund.)</HIS:hisStage> Skulde
@@ -3539,7 +3533,7 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><p>Kongens mænd!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><p>Så er alt forbi! Å, Signe, at miste dig
-<lb/>nu, &dash; det var det tungeste, jeg kunde fri&typHyp;
+<lb/>nu, – det var det tungeste, jeg kunde fri‐
 <lb/>ste.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
 <lb/><p>Nej, Gudmund, dyrt skal du sælge livet;
@@ -3548,7 +3542,7 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><HIS:hisStage>(ser ud.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Det nytter ikke; de er os for m<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>andstæ<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>rke.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
-<lb/><p>De kommer her ind! <app type="external" subtype="interpunction" xml:id="varG2-125"><HIS:hisRdg>Å,</HIS:hisRdg></app> Gudmund, Gud&typHyp;
+<lb/><p>De kommer her ind! <app type="external" subtype="interpunction" xml:id="varG2-125"><HIS:hisRdg>Å,</HIS:hisRdg></app> Gudmund, Gud‐
 <lb/>mund!</p></HIS:hisSp>
 <lb/><HIS:hisStage>(<HIS:stageRole who="SENDEBUDET">Kongens sendebud</HIS:stageRole> med <HIS:stageRole>følge</HIS:stageRole> kommer
 <pb n="113"/>
@@ -3567,15 +3561,15 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><HIS:hisStage>(Bevægelse blandt de forsamlede.)</HIS:hisStage>
 <lb/><HIS:hisSp who="SENDEBUDET"><HIS:spOpener><speaker>Sendebudet</speaker>.</HIS:spOpener>
 <lb/><p>Jeg har befaling at byde eder til gæst i
-<lb/>kongens gård. Han skænker eder sit ven&typHyp;
-<lb/>skab som før, og rige forleninger der&typHyp;
+<lb/>kongens gård. Han skænker eder sit ven‐
+<lb/>skab som før, og rige forleninger der‐
 <lb/>til.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><p>Signe!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
 <lb/><p>Gudmund!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><p>Men så sig mig da &dash;?</p></HIS:hisSp>
+<lb/><p>Men så sig mig da –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SENDEBUDET"><HIS:spOpener><speaker>Sendebudet</speaker>.</HIS:spOpener>
 <lb/><p>Eders avindsmand, kansleren Audun<lb/>Hugleiksøn er falden.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
@@ -3597,27 +3591,27 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><l>Nu <app type="external" subtype="word" xml:id="varG2-167"><HIS:hisRdg>ved</HIS:hisRdg></app> jeg, at livet vil mere sige</l>
 <lb/><l>end jordens gammen, end verdens rige.</l>
 <lb/><l>Jeg har følt den anger, den rædsel vild,</l>
-<lb/><l>som <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel><app type="external" subtype="interpunction" xml:id="varG2-128"><HIS:hisRdg>kommer</HIS:hisRdg></app> når sjælen er sat på spil. &dash;</l>
-<lb/><l>Til den hellige Sunnives kloster jeg går &dash;.</l>
+<lb/><l>som <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel><app type="external" subtype="interpunction" xml:id="varG2-128"><HIS:hisRdg>kommer</HIS:hisRdg></app> når sjælen er sat på spil. –</l>
+<lb/><l>Til den hellige Sunnives kloster jeg går –.</l>
 <lb/><HIS:hisStage>(da Gudmund og Signe vil tale.)</HIS:hisStage>
 <lb/><l>Stille! At rokke mig intet formår.</l>
 <lb/><HIS:hisStage>(lægger deres hænder sammen.)</HIS:hisStage>
-<lb/><l>Gudmund, &dash; før hende hjem som brud.</l>
+<lb/><l>Gudmund, – før hende hjem som brud.</l>
 <lb/><l>Eders pagt er from; den skærmes af gud!</l></HIS:hisSp>
-<lb/><HIS:hisStage>(Hun vinker til afsked og går mod ven&typHyp;
-<lb/>stre. Gudmund og Signe vil følge hen&typHyp;
-<lb/>de. Margit standser dem med en afvær&typHyp;
+<lb/><HIS:hisStage>(Hun vinker til afsked og går mod ven‐
+<lb/>stre. Gudmund og Signe vil følge hen‐
+<lb/>de. Margit standser dem med en afvær‐
 <lb/>gende bevægelse, går ud og lukker døren
 <lb/>efter sig. I samme øjeblik står solen
 <pb n="115"/>
 <lb/>op og kaster sit skær ind i stuen.)</HIS:hisStage>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><l>Signe, &dash; min viv! &dash; Se, dagen rinder;</l>
+<lb/><l>Signe, – min viv! – Se, dagen rinder;</l>
 <lb/><l>det er vor unge kærligheds dag!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
 <lb/><l>Mine bedste drømme, mine fagreste minder</l>
 <lb/><l>skylder jeg dig og din harpes slag.</l>
-<lb/><l>Min ædle sanger, &dash; i sorrig og lyst</l>
+<lb/><l>Min ædle sanger, – i sorrig og lyst</l>
 <lb/><l>slå kun din harpe, som bedst du lærte;</l>
 <lb/><l>tro mig, der er strenge dybt i mit bryst,</l>
 <lb/><l>som skal svare dig i fryd og i smerte.</l></HIS:hisSp>
@@ -3625,7 +3619,7 @@ har jeg lagt til en kommentar i en note (om feiltolkning av en pil og påfølgen
 <lb/><HIS:hisStage>(af mænd og kvinder.)</HIS:hisStage></HIS:spOpener>
 <lb/><l>Over jorden vogter lysets øje,</l>
 <lb/><l>værner kærligt om den frommes fjed,</l>
-<lb/><l>sender trøstens milde stråler ned; &dash;</l>
+<lb/><l>sender trøstens milde stråler ned; –</l>
 <lb/><l>lovet være herren i det høje!</l></HIS:hisSp>
 </div>
 <lb/><figure type="bar"/>

@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -13,11 +7,11 @@
 <title level="s" type="main">Henrik Ibsens skrifter</title>
 <title level="s" type="sub">Diplomatarisk tekstarkiv</title>
 <title level="a" type="main">Kejser og Galilæer</title>
-<title level="a" type="sub">NBO Ms.4&deg; 1111a, bl. 310&dash;23</title>
-<title level="a" type="origYear">[1871&dash;1873]</title>
+<title level="a" type="sub">NBO Ms.4° 1111a, bl. 310–23</title>
+<title level="a" type="origYear">[1871–1873]</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt>
 <resp>Konvertering fra ekstern transkripsjon til prosjektspesifikk TEI XML</resp>
 <name xml:id="HIS-HB">Hilde Bøe</name>
@@ -45,12 +39,12 @@
 <sourceDesc><p>Denne filen bygger på KG41111_NBO.xml (KG41111_NBO-0208).</p></sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography><p>Manuskriptets grafiske oppsett finnes beskrevet i typografibeskrivelsen i KG41111_NBO.xml.</p>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -121,7 +115,7 @@
 <label xml:id="PERSEREN"/><item>En persisk overløber/Perseren</item>
 </list>
 </tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -153,13 +147,13 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <xptr type="synopticView_msVersions" xml:id="KG_85ms"/>
 <lb/><head>Tredje handling.</head>
 <lb/><head>(År 354.)</head>
-<lb/><HIS:hisStage>(Efesus. Oplyst hal i prins Julians bolig; ind&typHyp;
+<lb/><HIS:hisStage>(Efesus. Oplyst hal i prins Julians bolig; ind‐
 <lb/>gangen fra forhallen er på højre side; til venstre
 <lb/>en dør med forhæng for, som fører ind til de
 <lb/>indre rum.)</HIS:hisStage>
 <lb/><HIS:hisStage>(Tjenere bereder aftensmåltidet og lægger
 <lb/>hynder om bordet. Hushovmesteren står ved
-<lb/>indgangen, hvor Gregor fra Nazianz og Ba&typHyp;
+<lb/>indgangen, hvor Gregor fra Nazianz og Ba‐
 <lb/>silius fra Cæsaræa netop er trådt ind.)</HIS:hisStage>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Hushovmesteren</speaker>.</HIS:spOpener>
 <lb/><p>Jo, jo, det er alt rigtigt; min høje herre venter
@@ -184,33 +178,33 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil:</speaker></HIS:spOpener>
 <lb/><p>Min ven og broder!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gregor</speaker>.</HIS:spOpener>
-<lb/><p>Men forklar dog &dash;; dine tjenere møder os for husdøren, vil
-<lb/>føre os i bad, <HIS:hisDel rend="overstrike">og</HIS:hisDel> salve vort hår &dash; og smykke os med roser <unclear reason="binding">&dash;</unclear></p></HIS:hisSp>
+<lb/><p>Men forklar dog –; dine tjenere møder os for husdøren, vil
+<lb/>føre os i bad, <HIS:hisDel rend="overstrike">og</HIS:hisDel> salve vort hår – og smykke os med roser <unclear reason="binding">–</unclear></p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr: J.</speaker></HIS:spOpener>
 <lb/><p>Jeg har beredt eder en fest. Jeg så eder sidste nat; der
 <lb/>ved mit bord var jeg falden i søvn træt af at skrive.
 <lb/>Da gik et vindstød gennem huset; forhænget ve<HIS:hisDel rend="overwritten"><unclear>d</unclear></HIS:hisDel>g til
 <lb/>side, jeg så ud i natten vidt over havet; jeg
-<lb/>hørte liflig sang; &dash; to svaner skar i høj flugt ind
+<lb/>hørte liflig sang; – to svaner skar i høj flugt ind
 <lb/>mod kysten, der daled de, svaneha<unclear reason="writing">mmene</unclear> løste sig
 <lb/>op som en hvidlig tåge og i et mildt dæmrende skær
 <lb/>så jeg eder to.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gr:</speaker></HIS:spOpener>
-<lb/><p>Du har drømt &dash;</p></HIS:hisSp>
+<lb/><p>Du har drømt –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr: J.</speaker></HIS:spOpener>
-<lb/><p>Tænkte I på mig, talte I om mig i nat &dash;</p></HIS:hisSp>
+<lb/><p>Tænkte I på mig, talte I om mig i nat –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil</speaker></HIS:spOpener>
-<lb/><p>Ja, ja &dash; foran i skibet &dash;</p></HIS:hisSp>
+<lb/><p>Ja, ja – foran i skibet –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr J.</speaker></HIS:spOpener>
-<lb/><p>Og hvad tid på natten var det &dash;?</p></HIS:hisSp>
+<lb/><p>Og hvad tid på natten var det –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gr.</speaker></HIS:spOpener>
 <lb/><p>Hvad tid på natten havde du hint syn.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>En time efter midnat &dash;</p></HIS:hisSp>
+<lb/><p>En time efter midnat –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gr.</speaker></HIS:spOpener>
-<lb/><p>Forunderligt &dash;</p></HIS:hisSp>
+<lb/><p>Forunderligt –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker><HIS:hisDel rend="overstrike">Pr.</HIS:hisDel> J Basil:</speaker></HIS:spOpener>
-<lb/><p>O, så er det dog sandt &dash;</p></HIS:hisSp>
+<lb/><p>O, så er det dog sandt –</p></HIS:hisSp>
 <pb ed="faksBase" n="91"/>
 <pb n="[311]r"/>
 <lb/><fw type="leaf" place="top-right" scribe="h1">311</fw>
@@ -219,8 +213,8 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil:</speaker></HIS:spOpener>
 <lb/><p>Rygtet om de hemmelige kunster du her øver.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>Jeg er jordens lykkeligste søn, I venner! Og Maxi&typHyp;
-<lb/>mus &dash; han er den største som nogen tid har levet &dash;</p></HIS:hisSp>
+<lb/><p>Jeg er jordens lykkeligste søn, I venner! Og Maxi‐
+<lb/>mus – han er den største som nogen tid har levet –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gregor</speaker>.</HIS:spOpener>
 <lb/><p>Vi vilde kun se dig, prins!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr: J:</speaker></HIS:spOpener>
@@ -239,10 +233,10 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><p>Og den er bleven dig til del?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>Næsten; jeg står lige ved det; endnu i denne nat,
-<lb/>har Maximus lovet mig &dash;</p></HIS:hisSp>
+<lb/>har Maximus lovet mig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gr:</speaker></HIS:spOpener>
 <lb/><p>Maximus er en sværmer eller han bedrager
-<lb/>dig &dash;</p></HIS:hisSp>
+<lb/>dig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr: J.</speaker></HIS:spOpener>
 <lb/><p>Hvor kan I dømme om de hemmelige ting;
 <pb ed="faksBase" n="92"/>
@@ -251,20 +245,20 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/>Jeg har betrådt den. Jeg har vandret gennem
 <lb/>mørke egne, et vand, en stille strøm tror jeg,
 <lb/>var ved min venstre side; forvirrede stemmer
-<lb/>talte i natten; fra og til lyste et strejflys op &dash;
-<lb/>skrækkelige skikkelser strøg forbi mig; &dash; jeg
-<lb/>gik og gik i dødens rædsel &dash; men jeg bestod prøven
-<lb/>Siden &dash; <HIS:hisDel rend="overstrike">o</HIS:hisDel>, siden, o, I venner, jeg har været
-<lb/>i paradisets egne &dash; englene har sunget sine
-<lb/>hymner for mig &dash;</p></HIS:hisSp>
+<lb/>talte i natten; fra og til lyste et strejflys op –
+<lb/>skrækkelige skikkelser strøg forbi mig; – jeg
+<lb/>gik og gik i dødens rædsel – men jeg bestod prøven
+<lb/>Siden – <HIS:hisDel rend="overstrike">o</HIS:hisDel>, siden, o, I venner, jeg har været
+<lb/>i paradisets egne – englene har sunget sine
+<lb/>hymner for mig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gr.</speaker></HIS:spOpener>
-<lb/><p>Ve over den ugudelige som har gøglet for dig &dash;</p></HIS:hisSp>
+<lb/><p>Ve over den ugudelige som har gøglet for dig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr J.</speaker></HIS:spOpener>
 <lb/><p>Du fejler <HIS:hisDel rend="overwritten">B</HIS:hisDel>Gregor. Maximus hylder sin broder
-<lb/>profeten fra Nazaret &dash;; ved du hvorledes sandhe&typHyp;
+<lb/>profeten fra Nazaret –; ved du hvorledes sandhe‐
 <lb/>dens ånd fyldte mig? Det var en nat i bøn og faste.
 <lb/>Da følte jeg mig rykket vidt vidt ud i rummet og
-<lb/>stod på et skib midt i det blanke strålende Græker&typHyp;
+<lb/>stod på et skib midt i det blanke strålende Græker‐
 <lb/>hav. Øer tårned sig som lette fæstnede skylag
 <lb/>langt borte, og skibet lå fast og tungt på den
 <lb/>vinblå flade. Se, da blev denne flade mere
@@ -275,7 +269,7 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/>i sin nagne afskylighed. Men ovenover i det
 <lb/>store rum, som før havde syntes mig tomhed,
 <lb/>der var <sic>var</sic> livet, der tog det usynlige former,
-<lb/>og stilhed toner &dash; da gik det op for mig &dash; da fatted
+<lb/>og stilhed toner – da gik det op for mig – da fatted
 <lb/>jeg den store forløsende sandhed.</p></HIS:hisSp>
 <pb ed="faksBase" n="93"/>
 <pb n="[312]r"/>
@@ -288,94 +282,94 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><p>O, du fortabes i dette spind af <app type="alteration"><lem><HIS:hisAdd place="offline">lys og tåger</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">løgn og sandhed</HIS:hisDel></HIS:hisRdg></app>.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>Jeg er sikker; jeg er sejrende. Sker der ikke tegn,
-<lb/>taler ikke varsler og orakler &dash; der strømmer bud
+<lb/>taler ikke varsler og orakler – der strømmer bud
 <lb/>ind på mig som melder at de himmelske magter
-<lb/>har noget stort isinde med mig &dash;</p></HIS:hisSp>
+<lb/>har noget stort isinde med mig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gregor</speaker>.</HIS:spOpener>
 <lb/><p>Tro ikke disse tegn!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>Har jeg ikke nylig fåt troen håndgribelig &dash; har
+<lb/><p>Har jeg ikke nylig fåt troen håndgribelig – har
 <lb/>I ikke hørt det syn som prefekten Appollinaris
-<lb/>i Sidon &dash;</p></HIS:hisSp>
+<lb/>i Sidon –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil.</speaker></HIS:spOpener>
-<lb/><p>Nej nej, hvad kan vi vide &dash;</p></HIS:hisSp>
+<lb/><p>Nej nej, hvad kan vi vide –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr J.</speaker></HIS:spOpener>
 <lb/><p>Det banked på hans dør ved nattetid, han stod op
-<lb/>og se &dash; udenfor stod en skikkelse &dash; mand eller kvinde
-<lb/>&dash; han vidste det ikke &dash; og skikkelsen bød ham
+<lb/>og se – udenfor stod en skikkelse – mand eller kvinde
+<lb/>– han vidste det ikke – og skikkelsen bød ham
 <lb/>bestille en purpurklædning, således som kejseren
-<lb/>bærer den &dash; og skikkelsen lagde til få den hur&typHyp;
-<lb/>tigt færdig &dash;</p></HIS:hisSp>
+<lb/>bærer den – og skikkelsen lagde til få den hur‐
+<lb/>tigt færdig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gr.</speaker></HIS:spOpener>
-<lb/><p>Og hvorledes tyder du det syn &dash;</p></HIS:hisSp>
+<lb/><p>Og hvorledes tyder du det syn –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>Tre dage efter kom et gesandtskab fra kejseren til
 <lb/>Cæsar Gallus, viste ham kejserlig ære og indbød
 <pb ed="faksBase" n="94"/>
 <pb n="[312]v"/>
 <lb/>at komme til Rom. Hans rejse har været som et
-<lb/>triumftog gennem landene &dash; vejen til kejsertronen; &dash;
+<lb/>triumftog gennem landene – vejen til kejsertronen; –
 <lb/>så forunderlig oprejser Gud vor slægt der var falden</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gr.</speaker></HIS:spOpener>
 <lb/><p>Sælsomt; i Athen gik andre rygter</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>Der ser du. De himmelske vidste det; &dash; purpurkåb<unclear reason="writing">en</unclear> &dash;
-<lb/>og skulde jeg så tvivle på hvad der gælder mig &dash;
-<lb/>endnu i denne nat har Maximus lovet mig &dash;
-<lb/>o, bliv, bliv &dash; venner, og vær vidne til &dash;</p></HIS:hisSp>
+<lb/><p>Der ser du. De himmelske vidste det; – purpurkåb<unclear reason="writing">en</unclear> –
+<lb/>og skulde jeg så tvivle på hvad der gælder mig –
+<lb/>endnu i denne nat har Maximus lovet mig –
+<lb/>o, bliv, bliv – venner, og vær vidne til –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>B.</speaker></HIS:spOpener>
-<lb/><p>Aldrig &dash;</p></HIS:hisSp>
+<lb/><p>Aldrig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker><HIS:hisDel rend="overwritten">B</HIS:hisDel>Gr.</speaker></HIS:spOpener>
-<lb/><p>Kan ikke ske &dash; vi er på hjemrejse &dash;</p></HIS:hisSp>
+<lb/><p>Kan ikke ske – vi er på hjemrejse –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr J.</speaker></HIS:spOpener>
-<lb/><p>Blot til i morgen &dash;</p></HIS:hisSp>
+<lb/><p>Blot til i morgen –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gr.</speaker></HIS:spOpener>
-<lb/><p>Umuligt, vort rejsefølge bryder op ved daggry &dash;</p></HIS:hisSp>
+<lb/><p>Umuligt, vort rejsefølge bryder op ved daggry –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil.</speaker></HIS:spOpener>
-<lb/><p>Men du Julian &dash; når alle gåder er udgrund<unclear reason="writing">et</unclear>
-<lb/>hvad så &dash;</p></HIS:hisSp>
+<lb/><p>Men du Julian – når alle gåder er udgrund<unclear reason="writing">et</unclear>
+<lb/>hvad så –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>Da vil jeg gå gennem landene som et tegn til efter&typHyp;
-<lb/>levelse &dash; og så &dash; så ind i ensomheden lig hine
+<lb/><p>Da vil jeg gå gennem landene som et tegn til efter‐
+<lb/>levelse – og så – så ind i ensomheden lig hine
 <lb/>floder der svinder bort i sandet og vender tilbage
-<lb/>til sit ophav &dash;</p></HIS:hisSp>
+<lb/>til sit ophav –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil</speaker></HIS:spOpener>
-<lb/><p>Det vil du &dash;</p></HIS:hisSp>
+<lb/><p>Det vil du –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>Det og intet andet. O, I ved ikke det store. Maximus
-<lb/>har udtydet det &dash; det er i mig at slægten skal genop<gap reason="endline"/>
+<lb/>har udtydet det – det er i mig at slægten skal genop<gap reason="endline"/>
 <pb ed="faksBase" n="95"/>
 <pb n="[313]r"/>
 <lb/><fw type="leaf" place="top-right" scribe="h1">313</fw>
 <lb/>Og at du min Basilius kommer nu, er det ikke
 <lb/>en bekræftelse? Al åndens herlighed ligger vinkende foran
-<lb/>mig &dash; O, ser I det ikke &dash; hele denne slægt går under &dash;
+<lb/>mig – O, ser I det ikke – hele denne slægt går under –
 <lb/>pest vil lægge stæderne øde, græshopper og tørke
 <lb/>vil sprede hungersdød over landene, havet vil
 <lb/>bryde sine volde igen, lægge øer og strande und<gap reason="endline"/>
-<lb/>ma<unclear reason="writing">gterne</unclear> &dash; Det er gennem mig at den nye slægt
-<lb/>skal genoprejses &dash; Jeg er Adam, den anden gang
-<lb/>skabte &dash; jeg kan blive det ved at ville &dash; &dash; og hun
-<lb/>hin herlige Makrina &dash;</p></HIS:hisSp>
+<lb/>ma<unclear reason="writing">gterne</unclear> – Det er gennem mig at den nye slægt
+<lb/>skal genoprejses – Jeg er Adam, den anden gang
+<lb/>skabte – jeg kan blive det ved at ville – – og hun
+<lb/>hin herlige Makrina –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil.</speaker></HIS:spOpener>
-<lb/><p>Ha Julian &dash;</p></HIS:hisSp>
+<lb/><p>Ha Julian –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>Giv mig hende, du er familiens hoved &dash; ser
+<lb/><p>Giv mig hende, du er familiens hoved – ser
 <lb/>du ikke hendes bestemmelse.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil</speaker></HIS:spOpener>
-<lb/><p>Hvad tænker du på &dash; du, en kejserlig prins</p></HIS:hisSp>
+<lb/><p>Hvad tænker du på – du, en kejserlig prins</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>Mere end det &dash; o, denne lokkende røst ind i
-<lb/>ensomheden &dash; var den ikke et forbud &dash; ja
-<lb/>giv mig hende &dash; hånd i hånd går vi mod
-<lb/>øst &dash; søger paradiset &dash; derfra skal det nye
-<lb/>liv udgå &dash; sig mig &dash; du vil jo &dash;</p></HIS:hisSp>
+<lb/><p>Mere end det – o, denne lokkende røst ind i
+<lb/>ensomheden – var den ikke et forbud – ja
+<lb/>giv mig hende – hånd i hånd går vi mod
+<lb/>øst – søger paradiset – derfra skal det nye
+<lb/>liv udgå – sig mig – du vil jo –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil</speaker></HIS:spOpener>
-<lb/><p>Aldrig &dash; det er afsind og vilde drømme &dash;</p></HIS:hisSp>
+<lb/><p>Aldrig – det er afsind og vilde drømme –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>Gå forblindede &dash; over mig er udvælgelsen &dash;</p></HIS:hisSp>
+<lb/><p>Gå forblindede – over mig er udvælgelsen –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil</speaker></HIS:spOpener>
-<lb/><p>Ve dig som forsynder dig mod herren &dash;</p></HIS:hisSp>
+<lb/><p>Ve dig som forsynder dig mod herren –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>Betænk dig, Basilius; vil du skænke mig den rene kvinde</p></HIS:hisSp>
 <pb ed="faksBase" n="96"/>
@@ -391,9 +385,9 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><HIS:hisStage>(alene, går op og ned.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Ja, gå kun! Hvad ved I? Hvad har I to bragt med
 <lb/>fra Athen, du, min stærke, sunde Gregor, og du, Basilius
-<lb/>mere pige end mand. I kender kun to gader i Athen, &dash;
-<lb/>gaden til skolen og gaden til kirken &dash;; den tredje &dash;
-<lb/>&dash; den tredje &dash; ha!</p></HIS:hisSp>
+<lb/>mere pige end mand. I kender kun to gader i Athen, –
+<lb/>gaden til skolen og gaden til kirken –; den tredje –
+<lb/>– den tredje – ha!</p></HIS:hisSp>
 <lb/><HIS:hisStage>(Forhænget på højre side drages tilside; to tjenere<HIS:hisDel rend="overstrike">re</HIS:hisDel>
 <lb/>i østerlandske klæder bringer en temmelig høj tilhyllet
 <lb/>genstand som de stiller bag bordet i Baggrunden, <HIS:hisDel rend="overstrike">og
@@ -414,7 +408,7 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <pb n="[314]r"/>
 <lb/><fw type="gathering" place="top-left"><gap reason="binding"/>.</fw><fw type="leaf" place="top-right" scribe="h1">314</fw>
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>Maximus</speaker>
-<lb/><HIS:hisStage>(drager hyllet bort; man ser en lampe på en høj tre&typHyp;
+<lb/><HIS:hisStage>(drager hyllet bort; man ser en lampe på en høj tre‐
 <lb/>fod; derefter fremtager han fra brystet en sølvkrukke
 <lb/>hvoraf han hælder olje i lampeskålen.)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Prins Julian</speaker>.</HIS:spOpener>
@@ -422,22 +416,22 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>Maximus</speaker>.</HIS:spOpener>
 <lb/><p>Er dit sind og dit legem rent?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr: Julian</speaker>.</HIS:spOpener>
-<lb/><p>Jeg har fastet og salvet mig &dash;</p></HIS:hisSp>
+<lb/><p>Jeg har fastet og salvet mig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>Maximus</speaker>.</HIS:spOpener>
 <lb/><p>Så til måltidet.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr: Julian</speaker>.</HIS:spOpener>
-<lb/><p>Du mener &dash;</p></HIS:hisSp>
+<lb/><p>Du mener –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>Maximus</speaker>.</HIS:spOpener>
 <lb/><p>Roser i håret. Skummende vin. Under dans
 <lb/>og sang af skønne piger skal det himmelske
 <lb/>vise sig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr: Julian</speaker>.</HIS:spOpener>
 <lb/><p>Og du tror at midt under denne sandsernes
-<lb/>tummel &dash;</p></HIS:hisSp>
+<lb/>tummel –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>Maximus</speaker>.</HIS:spOpener>
 <lb/><p>Har du ingen lid til mig?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. Julian</speaker>.</HIS:spOpener>
-<lb/><p>Roser i håret. Skummende vin &dash; <HIS:hisStage>(sætter skå&typHyp;
+<lb/><p>Roser i håret. Skummende vin – <HIS:hisStage>(sætter skå‐
 <lb/>len for munden)</HIS:hisStage> Ha, hvad er der i vinen!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>Maximus</speaker>.</HIS:spOpener>
 <lb/><p>En funke af den ild, som Prometheus stjal.</p></HIS:hisSp>
@@ -454,15 +448,15 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/>blegner.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>Maximus</speaker>
 <lb/><HIS:hisStage>(skriger)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Ned på dit ansigt; timen er over os &dash;</p></HIS:hisSp>
+<lb/><p>Ned på dit ansigt; timen er over os –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker></HIS:spOpener>
-<lb/><p>Maximus, Maximus &dash;</p></HIS:hisSp>
+<lb/><p>Maximus, Maximus –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>M.</speaker></HIS:spOpener>
 <lb/><p>Ser du noget.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker></HIS:spOpener>
-<lb/><p>Ja &dash;</p></HIS:hisSp>
+<lb/><p>Ja –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>M.</speaker></HIS:spOpener>
-<lb/><p>Hvad ser du &dash;</p></HIS:hisSp>
+<lb/><p>Hvad ser du –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>J.</speaker></HIS:spOpener>
 <lb/><p>En skikkelse hæver sig af lampen</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>M.</speaker></HIS:spOpener>
@@ -470,9 +464,9 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>J.</speaker></HIS:spOpener>
 <lb/><p>Jeg ved det ikke</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>M.</speaker></HIS:spOpener>
-<lb/><p>Tal til den &dash;</p></HIS:hisSp>
+<lb/><p>Tal til den –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>J.</speaker></HIS:spOpener>
-<lb/><p>Jeg tør ikke &dash;</p></HIS:hisSp>
+<lb/><p>Jeg tør ikke –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>M.</speaker></HIS:spOpener>
 <lb/><p>Tal, tal!</p></HIS:hisSp>
 <pb ed="faksBase" n="99"/>
@@ -508,7 +502,7 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr: J.</speaker></HIS:spOpener>
 <lb/><p>Og ved hvilken magt.</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Stemmen i lyset</speaker>.</HIS:spOpener>
-<lb/><p>Ved at ville &dash;</p></HIS:hisSp>
+<lb/><p>Ved at ville –</p></HIS:hisSp>
 <pb ed="faksBase" n="100"/>
 <pb n="[315]v"/>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
@@ -516,7 +510,7 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Stemmen i lyset</speaker>.</HIS:spOpener>
 <lb/><p>Hvad du må.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>Det svinder; det blegner &dash;. Tal, tal, hvad må
+<lb/><p>Det svinder; det blegner –. Tal, tal, hvad må
 <lb/>jeg?</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Stemmen i lyset</speaker>
 <lb/><HIS:hisStage>(med et smertesskrig)</HIS:hisStage></HIS:spOpener>
@@ -549,8 +543,8 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>Maximus</speaker>.</HIS:spOpener>
 <lb/><p>Det står for fald, siger jeg dig. Profetens tid
 <lb/>er omme. Hine to riger skal opsluges af det
-<lb/><sic>tridie</sic>, som nu kommer, i det skal ånden gen&typHyp;
-<lb/>nemsyre materien og materien ånden, &dash; da er
+<lb/><sic>tridie</sic>, som nu kommer, i det skal ånden gen‐
+<lb/>nemsyre materien og materien ånden, – da er
 <lb/>målet nået.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>Hvad er målet, vise mester?</p></HIS:hisSp>
@@ -558,19 +552,19 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><p>Det skabtes enheds-vorden med skaberen. Creator
 <lb/><HIS:hisDel rend="overstrike">in creatur<gap/>,</HIS:hisDel> i creaturet, creaturet i creator.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>Min tågede drøm! Jeg ser, jeg ser &dash;!</p></HIS:hisSp>
+<lb/><p>Min tågede drøm! Jeg ser, jeg ser –!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>Maximus</speaker>.</HIS:spOpener>
 <lb/><p>Jeg har regnet og regnet; alt slår til. 3<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>65 dage
 <lb/>har året; for de evige er et år som en dag.
 <lb/>Profeten fra Nazareth skal råde en dag. Jeg
 <lb/>har regnet; om 9 år er hans rige ude; jeg
-<lb/>har regnet og regnet &dash; altid samme udfald &dash;
-<lb/>i året 365 skal et rige være ødelagt &dash; det
-<lb/>er hans &dash;</p></HIS:hisSp>
+<lb/>har regnet og regnet – altid samme udfald –
+<lb/>i året 365 skal et rige være ødelagt – det
+<lb/>er hans –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>Maximus!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>Maximus</speaker>.</HIS:spOpener>
-<lb/><p>Vogt dig for Jehova &dash; <HIS:hisDel rend="overwritten">d</HIS:hisDel>han er den forfærde
+<lb/><p>Vogt dig for Jehova – <HIS:hisDel rend="overwritten">d</HIS:hisDel>han er den forfærde
 <lb/>ligste af dem alle; vogt dig for Jehova
 <lb/>under ham er mennesket i frihed og i nødvendighed
 <lb/>du kan og du kan ikke; du vil og du må.</p></HIS:hisSp>
@@ -581,7 +575,7 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>Maximus</speaker>.</HIS:spOpener>
 <lb/><p>Jeg har regnet og regnet. Altid det samme tal
 <lb/>ud. På bekræftelsens side står altid hin Galilæer.
-<lb/>Og på benægtelsens side &dash; det er sælsomt</p></HIS:hisSp>
+<lb/>Og på benægtelsens side – det er sælsomt</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>Hvilket, hvilket.</p></HIS:hisSp>
 <lb/><note resp="author" scribe="HI-1" place="margin-right">nødvendighedens vrede</note>
@@ -592,22 +586,22 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>M.</speaker></HIS:spOpener>
 <lb/><p>Det er de tre som tjente ham med det største</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr J.</speaker></HIS:spOpener>
-<lb/><p>Nævn dem, siger jeg &dash;</p></HIS:hisSp>
+<lb/><p>Nævn dem, siger jeg –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>M.</speaker></HIS:spOpener>
 <lb/><p>Jeg kan ikke</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>Du vil ikke &dash; er der grænser for din kun<unclear reason="writing">dskab</unclear></p></HIS:hisSp>
+<lb/><p>Du vil ikke – er der grænser for din kun<unclear reason="writing">dskab</unclear></p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>M.</speaker></HIS:spOpener>
 <lb/><p>Jeg kan ikke; men jeg kan vise dig d<unclear reason="writing">em</unclear></p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>Nu strax</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>M.</speaker></HIS:spOpener>
-<lb/><p>Vogt dig &dash;</p></HIS:hisSp>
+<lb/><p>Vogt dig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>Strax, siger jeg &dash; Jeg vil ikke stå på halv<gap reason="writing"/>
+<lb/><p>Strax, siger jeg – Jeg vil ikke stå på halv<gap reason="writing"/>
 <lb/>tilbunds i dette</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>M.</speaker></HIS:spOpener>
-<lb/><p>Betænk dig, Julian &dash;</p></HIS:hisSp>
+<lb/><p>Betænk dig, Julian –</p></HIS:hisSp>
 <pb ed="faksBase" n="103"/>
 <pb n="[317]r"/>
 <lb/><fw type="leaf" place="top-right" scribe="h1">317</fw>
@@ -623,15 +617,15 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>M.</speaker></HIS:spOpener>
 <lb/><p>Hvad ser du?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>Han er stor som Herkules; skøn &dash; og dog ikke &dash;
-<lb/>sit ned &dash; drik &dash; han tømmer skålen, sætter
-<lb/>den fra sig &dash; den er lige fuld &dash; Tal, tal &dash;</p></HIS:hisSp>
+<lb/><p>Han er stor som Herkules; skøn – og dog ikke –
+<lb/>sit ned – drik – han tømmer skålen, sætter
+<lb/>den fra sig – den er lige fuld – Tal, tal –</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>En stemme</speaker>.</HIS:spOpener>
 <lb/><p>Hvad vil du vide.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>Hvad var dit værk i livet?</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>St.</speaker></HIS:spOpener>
-<lb/><p>Min brøde &dash;</p></HIS:hisSp>
+<lb/><p>Min brøde –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>Hvi forbrød du dig?</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>St.</speaker></HIS:spOpener>
@@ -651,20 +645,20 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><HIS:hisSp><HIS:hisDel rend="overstrike"><p>J</p></HIS:hisDel></HIS:hisSp><HIS:hisSp><HIS:spOpener><speaker>St.</speaker></HIS:spOpener>
 <lb/><p>Jeg var <emph>mig</emph>.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>Du er ordknap; drik, drik &dash;</p></HIS:hisSp>
+<lb/><p>Du er ordknap; drik, drik –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>M.</speaker></HIS:spOpener>
 <lb/><p>In vino veritas.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>Herlige ånd i druen. Du liv<gap reason="writing"/>, dit øje <gap reason="writing"/>
-<lb/>&dash; hvi rød<unclear reason="writing">mer</unclear> hin stribe over panden; nej, dæk
+<lb/>– hvi rød<unclear reason="writing">mer</unclear> hin stribe over panden; nej, dæk
 <lb/>den ikke til med håret. Hvad var det.</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>St.</speaker></HIS:spOpener>
 <lb/><p>Tegnet.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>Hm, ikke vide om det. Og hvad frugt har din
-<lb/>brøde båret &dash;</p></HIS:hisSp>
+<lb/>brøde båret –</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>St.</speaker></HIS:spOpener>
-<lb/><p>Den herligste &dash;</p></HIS:hisSp>
+<lb/><p>Den herligste –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>Hvad kalder du den herligste.</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>St.</speaker></HIS:spOpener>
@@ -674,7 +668,7 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><HIS:hisSp><HIS:spOpener><speaker>St.</speaker></HIS:spOpener>
 <lb/><p>Døden.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>Og <HIS:hisDel rend="overstrike">det</HIS:hisDel> dødens &dash;?</p></HIS:hisSp>
+<lb/><p>Og <HIS:hisDel rend="overstrike">det</HIS:hisDel> dødens –?</p></HIS:hisSp>
 <pb ed="faksBase" n="105"/>
 <pb n="[318]r"/>
 <lb/><fw type="gathering" place="top-left">5.</fw><fw type="leaf" place="top-right" scribe="h1">318</fw>
@@ -778,18 +772,18 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>M:</speaker></HIS:spOpener>
 <lb/><p>Han skal komme! <HIS:hisStage>(svinger staven.)</HIS:hisStage> Her frem
 <lb/>du tredje hjørnesten; herfrem du ulydige under
-<lb/>nødvendigheden! &dash; Hvad ser du?</p></HIS:hisSp>
+<lb/>nødvendigheden! – Hvad ser du?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr: J.</speaker></HIS:spOpener>
 <lb/><p>Jeg ser intet.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>M:</speaker></HIS:spOpener>
 <lb/><p>Ved Salomons segl; ved øjet i trekanten, jeg
-<lb/>besværger dig &dash; giv møde her. &dash; Hvad ser
+<lb/>besværger dig – giv møde her. – Hvad ser
 <lb/>du nu?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>Intet; intet!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>M:</speaker></HIS:spOpener>
-<lb/><p>Herfrem du &dash;! Ha, nu har jeg det; al kunst
-<lb/>er forgæves &dash;</p></HIS:hisSp>
+<lb/><p>Herfrem du –! Ha, nu har jeg det; al kunst
+<lb/>er forgæves –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>Hvorfor? Tal, tal!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>M.</speaker></HIS:spOpener>
@@ -801,11 +795,11 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr J.</speaker></HIS:spOpener>
 <lb/><p>Hvor? Hvor?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>M.</speaker></HIS:spOpener>
-<lb/><p>På jorden eller blandt de ufødte; &dash; jeg ved ikke</p></HIS:hisSp>
+<lb/><p>På jorden eller blandt de ufødte; – jeg ved ikke</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>Men jeg må, jeg vil vide det; alt hænger i
 <lb/>dette ene. <HIS:hisStage>(lytter).</HIS:hisStage> Hvad larm og skrig
-<lb/>op, op &dash; man trænger ind i huset</p></HIS:hisSp>
+<lb/>op, op – man trænger ind i huset</p></HIS:hisSp>
 <pb ed="faksBase" n="109"/>
 <pb n="[320]r"/>
 <lb/><fw type="gathering" place="top-left">6.</fw><fw type="leaf" place="top-right" scribe="h1">320</fw>
@@ -816,28 +810,28 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><p>Vær rolig, Maximus, ingen vold kan fælde mig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="EUTHERIOS"><HIS:spOpener><speaker>Hovmesteren Eutherius</speaker>.
 <lb/><HIS:hisStage>(fra venstre)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Herre, herre &dash;</p></HIS:hisSp>
+<lb/><p>Herre, herre –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>Hvad betyder hin larm &dash;</p></HIS:hisSp>
+<lb/><p>Hvad betyder hin larm –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="EUTHERIOS"><HIS:spOpener><speaker>Euth:</speaker></HIS:spOpener>
-<lb/><p>Fremmede mænd trænger ind med vold &dash; de &dash;
-<lb/>kommer &dash; der er de &dash;</p></HIS:hisSp>
+<lb/><p>Fremmede mænd trænger ind med vold – de –
+<lb/>kommer – der er de –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Præfekten Sallustius</speaker>
 <lb/><HIS:hisStage>(med flere væbnede mænd)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Tilgiv, min nådigste herre &dash;</p></HIS:hisSp>
+<lb/><p>Tilgiv, min nådigste herre –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr: J.</speaker></HIS:spOpener>
-<lb/><p>Hvad ser jeg! Du, Sallustius, her i Efesus &dash;</p></HIS:hisSp>
+<lb/><p>Hvad ser jeg! Du, Sallustius, her i Efesus –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Pr: Sall:</speaker></HIS:spOpener>
-<lb/><p>Jeg kommer på kejserens befaling &dash;</p></HIS:hisSp>
+<lb/><p>Jeg kommer på kejserens befaling –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>På kejserens &dash;? Og trænger med vold i mit hus &dash;</p></HIS:hisSp>
+<lb/><p>På kejserens –? Og trænger med vold i mit hus –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Pr. Sall:</speaker></HIS:spOpener>
 <lb/><p>Så stort og glædeligt budskab kan ikke bringes for
-<lb/>tidligt &dash;</p></HIS:hisSp>
+<lb/>tidligt –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr: J.</speaker></HIS:spOpener>
-<lb/><p>Tal, tal &dash; hvad budskab bringer du &dash;</p></HIS:hisSp>
+<lb/><p>Tal, tal – hvad budskab bringer du –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Pf Sall.</speaker></HIS:spOpener>
-<lb/><p>Min høje herre &dash; jeg hilser dig som Cæsar &dash;</p></HIS:hisSp>
+<lb/><p>Min høje herre – jeg hilser dig som Cæsar –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p><HIS:hisDel rend="overwritten">J</HIS:hisDel>Cæsar! Hvad afsind taler du!</p></HIS:hisSp>
 <pb ed="faksBase" n="110"/>
@@ -845,84 +839,84 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Pf: Sall:</speaker></HIS:spOpener>
 <lb/><p>Jeg bringer kejserens bud.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr: J:</speaker></HIS:spOpener>
-<lb/><p>Jeg, jeg &dash; Cæsar &dash; ha, hvor er Gallus &dash;</p></HIS:hisSp>
+<lb/><p>Jeg, jeg – Cæsar – ha, hvor er Gallus –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Pf. Sall.</speaker></HIS:spOpener>
 <lb/><p>O, spørg ikke</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>Hvor er Gallus &dash; tal, tal &dash;</p></HIS:hisSp>
+<lb/><p>Hvor er Gallus – tal, tal –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Pf. Sall.</speaker></HIS:spOpener>
 <lb/><p>Falden på sine gerninger</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>Forvist &dash; i unåde &dash; tal &dash;</p></HIS:hisSp>
+<lb/><p>Forvist – i unåde – tal –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Pf Sa<HIS:hisDel rend="overwritten">f</HIS:hisDel>ll</speaker></HIS:spOpener>
-<lb/><p>O, skån mig &dash; nådigste herre</p></HIS:hisSp>
+<lb/><p>O, skån mig – nådigste herre</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>Tal, siger jeg &dash; hvor er Gallus</p></HIS:hisSp>
+<lb/><p>Tal, siger jeg – hvor er Gallus</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Pf. Sall.</speaker></HIS:spOpener>
-<lb/><p>Henrettet &dash;</p></HIS:hisSp>
+<lb/><p>Henrettet –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>Myrdet &dash; myrdet &dash;</p></HIS:hisSp>
+<lb/><p>Myrdet – myrdet –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Pf. Sall.</speaker></HIS:spOpener>
-<lb/><p>Henrettelsen &dash; i Pala &dash; det var kejserens vilje &dash;</p></HIS:hisSp>
+<lb/><p>Henrettelsen – i Pala – det var kejserens vilje –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>Den tolvte &dash; den sidste &dash; nej &dash; jeg &dash; jeg &dash;</p></HIS:hisSp>
+<lb/><p>Den tolvte – den sidste – nej – jeg – jeg –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Pf. Sall.</speaker></HIS:spOpener>
-<lb/><p>Lad ikke sorgen overvælde dig &dash; han smeded hemmelige
-<lb/>rænker &dash;</p></HIS:hisSp>
+<lb/><p>Lad ikke sorgen overvælde dig – han smeded hemmelige
+<lb/>rænker –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>Ja, ja, jeg ved det &dash; jeg kan det udena<unclear reason="writing">d</unclear></p></HIS:hisSp>
+<lb/><p>Ja, ja, jeg ved det – jeg kan det udena<unclear reason="writing">d</unclear></p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Pf. Sall.</speaker></HIS:spOpener>
 <lb/><p>Kejserens vilje er retfærdig</p></HIS:hisSp>
 <pb ed="faksBase" n="111"/>
 <pb n="[321]r"/>
 <lb/><fw type="leaf" place="top-right" scribe="h1">321</fw>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr: J.</speaker></HIS:spOpener>
-<lb/><p>Myrdet &dash; henrettet &dash; lokket did med kejserlig
-<lb/>pragt, med løfter og med ydmyg tale &dash; og så
-<lb/>myrdet &dash;</p></HIS:hisSp>
+<lb/><p>Myrdet – henrettet – lokket did med kejserlig
+<lb/>pragt, med løfter og med ydmyg tale – og så
+<lb/>myrdet –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Pf. Sall</speaker></HIS:spOpener>
 <lb/><p>Vel for dig; denne rasende skulde ikke skånet
-<lb/>dig &dash;</p></HIS:hisSp>
+<lb/>dig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr: J.</speaker></HIS:spOpener>
-<lb/><p>O, hvor forfærdelig ene &dash;</p></HIS:hisSp>
+<lb/><p>O, hvor forfærdelig ene –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Pf. Sall.</speaker></HIS:spOpener>
-<lb/><p>Værdiges at iføre dig &dash;</p></HIS:hisSp>
+<lb/><p>Værdiges at iføre dig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>P. J.</speaker></HIS:spOpener>
-<lb/><p>Rød af min broders blod &dash;</p></HIS:hisSp>
+<lb/><p>Rød af min broders blod –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Pf Sall</speaker></HIS:spOpener>
 <lb/><p>Den kommer ny fra Sidon</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>P. J.</speaker></HIS:spOpener>
-<lb/><p>Fra Sidon &dash; Purpur &dash; Apollinaruss syn</p></HIS:hisSp>
+<lb/><p>Fra Sidon – Purpur – Apollinaruss syn</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Pf.. Sall</speaker></HIS:spOpener>
-<lb/><p>Se den sendes dig af din frænde kejseren, han øn&typHyp;
-<lb/>sker dig held og lykke &dash; hans vilje er at du
-<lb/>drager til Gallien &dash; hans ord var, ved Julian
-<lb/>skal riget grundfæstes &dash;</p></HIS:hisSp>
+<lb/><p>Se den sendes dig af din frænde kejseren, han øn‐
+<lb/>sker dig held og lykke – hans vilje er at du
+<lb/>drager til Gallien – hans ord var, ved Julian
+<lb/>skal riget grundfæstes –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>M.</speaker></HIS:spOpener>
-<lb/><p>Riget grundfæst<gap reason="writing"/> &dash;</p></HIS:hisSp>
+<lb/><p>Riget grundfæst<gap reason="writing"/> –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>Riget &dash; riget &dash; således var det ment</p></HIS:hisSp>
+<lb/><p>Riget – riget – således var det ment</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Pf. Sall</speaker></HIS:spOpener>
-<lb/><p>Hvorledes, høje Cæsar &dash;</p></HIS:hisSp>
+<lb/><p>Hvorledes, høje Cæsar –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr: J.</speaker></HIS:spOpener>
-<lb/><p>De usynlige magter har bebudet min op&typHyp;
+<lb/><p>De usynlige magter har bebudet min op‐
 <lb/>højelse, I ædle herrer.</p></HIS:hisSp>
 <pb ed="faksBase" n="112"/>
 <pb n="[321]v"/>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Pf: Sall:</speaker></HIS:spOpener>
-<lb/><p>Velsignet være de gode varsler; og tag så purpuret <unclear reason="writing">&dash;</unclear></p></HIS:hisSp>
+<lb/><p>Velsignet være de gode varsler; og tag så purpuret <unclear reason="writing">–</unclear></p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil: f: Cæsaræa</speaker>
 <lb/><HIS:hisStage>(ind fra højre.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Tag det ikke!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>Du her igen?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil:</speaker></HIS:spOpener>
-<lb/><p>Det er rygtedes i herberget, hvad her går for sig &dash;
+<lb/><p>Det er rygtedes i herberget, hvad her går for sig –
 <lb/>tag ikke purpuret; for Gud herrens skyld, ikke Cæsar</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>Hvad ængster dig &dash;</p></HIS:hisSp>
+<lb/><p>Hvad ængster dig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil.</speaker></HIS:spOpener>
-<lb/><p>Hvad der vil komme &dash;</p></HIS:hisSp>
+<lb/><p>Hvad der vil komme –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr: J.</speaker></HIS:spOpener>
 <lb/><p>Ved mig skal riget grundfæstes.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil.</speaker></HIS:spOpener>
@@ -930,13 +924,13 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>Kejserens rige?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil:</speaker></HIS:spOpener>
-<lb/><p>Var det <emph>det</emph> rige som stod dig for øje &dash;</p></HIS:hisSp>
+<lb/><p>Var det <emph>det</emph> rige som stod dig for øje –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
-<lb/><p>Hint andet ligger bag mig som en drøm &dash;</p></HIS:hisSp>
+<lb/><p>Hint andet ligger bag mig som en drøm –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil.</speaker></HIS:spOpener>
-<lb/><p>Paradiset, du vilde søge &dash;? den faldne slægt, du
-<lb/>vilde genoprejse &dash; &dash; Julian, hør, jeg skænker dig
-<lb/>hende &dash;</p></HIS:hisSp>
+<lb/><p>Paradiset, du vilde søge –? den faldne slægt, du
+<lb/>vilde genoprejse – – Julian, hør, jeg skænker dig
+<lb/>hende –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
 <lb/><p>Makrina!</p></HIS:hisSp>
 <pb ed="faksBase" n="113"/>
@@ -944,14 +938,14 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><fw type="gathering" place="top-left"><gap reason="binding"/>.</fw><fw type="leaf" place="top-right" scribe="h1">322</fw>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil:</speaker></HIS:spOpener>
 <lb/><p>Hun skal føje sig; og hun gør det; thi hun er
-<lb/>dig god &dash;</p></HIS:hisSp>
+<lb/>dig god –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr: J.</speaker></HIS:spOpener>
-<lb/><p>O, Basilius, om jeg kunde &dash;</p></HIS:hisSp>
+<lb/><p>O, Basilius, om jeg kunde –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil.</speaker></HIS:spOpener>
-<lb/><p>Kunde? En mand kan hvad han vil &dash;</p></HIS:hisSp>
+<lb/><p>Kunde? En mand kan hvad han vil –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr: J.</speaker></HIS:spOpener>
-<lb/><p>Men han vil, hvad han må &dash; lev vel &dash;
-<lb/>lev vel &dash; til præfektens bolig &dash; I herrer &dash;</p></HIS:hisSp>
+<lb/><p>Men han vil, hvad han må – lev vel –
+<lb/>lev vel – til præfektens bolig – I herrer –</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Råb ved indgangen</speaker></HIS:spOpener>
 <lb/><p>Plads, plads for Cæsar Julian!</p></HIS:hisSp>
 <lb/><figure type="bar"/>

@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
     <teiHeader xml:lang="nob">
         <fileDesc>
@@ -15,8 +10,8 @@
                 <title level="a" type="main">Kongs-Emnerne</title>
                 <title level="a" type="sub">Sanger til oppførelse 1871</title>
                 <author>Henrik Ibsen</author>
-                <funder>&funder;</funder>
-                <editor>&editor;</editor>
+                <funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+                <editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
                 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Helene Grønlien, Henninge Margrethe Solberg</name></respStmt>
                 <respStmt>
                     <resp>Oppretting, august 2012</resp>
@@ -49,13 +44,13 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <projectDesc><p>&projectDesc-grt-ms;</p></projectDesc>
+            <projectDesc><p>GRUNNTEKST BASERT PÅ MANUSKRIPT. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av to medarbeidere. Teksten er kollasjonert en tredje gang i forbindelse med det avsluttende arbeidet med verket.</p></projectDesc>
             <editorialDecl>
-                <stdVals><p>&stdVals;</p></stdVals>
-                <p>&editorialDecl;</p>
+                <stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+                <p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
             </editorialDecl>
             <tagsDecl>
-                <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-tei2;</tagUsage></namespace>
+                <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
             </tagsDecl>
         </encodingDesc>
         <profileDesc>
@@ -79,7 +74,7 @@
                         <HIS:hisLg>
                             <lb/><l>Sankt Olaf og sankt Peder,</l>
                             <lb/><l>stat op og ruster eder,</l>
-                            <lb/><l>knus slangen med jer hæl; &dash;</l>
+                            <lb/><l>knus slangen med jer hæl; –</l>
                             <lb/><l>sankt Halvard og sankt Thomas,</l>
                             <lb/><l>og alle helgne Romas,</l>
                             <lb/><l>slå kreds om bispens sjæl!</l>
@@ -105,7 +100,7 @@
                         <HIS:hisLg>
                             <lb/><l>Slagen er slangen!</l>
                             <lb/><l>Ydmyg og fangen</l>
-                            <lb/><l>synderen kommer! &dash;</l>
+                            <lb/><l>synderen kommer! –</l>
                             <lb/><l>Slut ham i armene,</l>
                             <lb/><l>høje, forbarmende</l>
                             <lb/><l>jordlivets dommer!</l>
@@ -113,7 +108,7 @@
                         <HIS:hisLg>
                             <lb/><l>Vindende viger han,</l>
                             <lb/><l>styrer mod tronen;</l>
-                            <lb/><l>sejrende stiger han &dash; &dash;;</l>
+                            <lb/><l>sejrende stiger han – –;</l>
                             <lb/><l>nu har han kronen!</l>
                         </HIS:hisLg>
                     <figure type="bar"/>
@@ -127,7 +122,7 @@
                     <HIS:hisLg>
                         <lb/><l>Himlens Herre, dine skarer Du sende</l>
                         <lb/><l>til sejr for sandhedens sag!</l>
-                        <lb/><l>Er hun falsk, &dash; hendes kød Du til aske brænde,</l>
+                        <lb/><l>Er hun falsk, – hendes kød Du til aske brænde,</l>
                         <lb/><l>som en lynild på dommens dag!</l>
                     </HIS:hisLg></HIS:hisLg>
             </HIS:hisDiv>
@@ -139,7 +134,7 @@
                     <HIS:hisLg>
                         <lb/><l>Lovet være Herren i det høje!</l>
                         <lb/><l>Åbenbaret har han sin magt.</l>
-                        <lb/><l>Miraklet er fuldbragt. &dash;</l>
+                        <lb/><l>Miraklet er fuldbragt. –</l>
                         <lb/><l>Lovet, lovet være Herren i det høje!</l>
                     </HIS:hisLg>
                 <figure type="bar"/>

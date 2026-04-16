@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
- [
- <!ENTITY % HIS_entiteter SYSTEM
- 'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd' >
- %HIS_entiteter;
- ]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
  <teiHeader xml:lang="nob">
  <fileDesc>
@@ -13,11 +8,11 @@
 <title level="s" type="main">Henrik Ibsens skrifter</title>
 <title level="s" type="sub">Diplomatarisk tekstarkiv</title>
 <title level="a" type="main">Hedda Gabler</title>
-<title level="a" type="sub">NBO Ms.8&deg; 809</title>
+<title level="a" type="sub">NBO Ms.8° 809</title>
 <title level="a" type="origYear">1890</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Åshild Haugsland, Henninge Margrethe Solberg, Eivor Finset Spilling, Mette Witting</name></respStmt>
  <respStmt>
 <resp>Oppretting og 1. kollasjon mot faksimile, november 2006</resp>
@@ -38,12 +33,12 @@
 <pubPlace>Oslo</pubPlace>
 </publicationStmt>
 <sourceDesc>
-<p>Denne filen er opprettet på grunnlag av faksimilen NBO Ms.8&deg; 809 (11.06)</p>
+<p>Denne filen er opprettet på grunnlag av faksimilen NBO Ms.8° 809 (11.06)</p>
  <p><HIS:hisMsDesc type="workingManuscript" xml:id="HG8809">
  <msIdentifier>
  <settlement>Oslo</settlement>
  <repository>Nasjonalbiblioteket</repository>
- <idno>NBO Ms.8&deg; 809</idno>
+ <idno>NBO Ms.8° 809</idno>
  </msIdentifier>
  <msContents><msItem>
  <author>[Henrik Ibsen]</author>
@@ -55,7 +50,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <list>
@@ -85,8 +80,8 @@
 </item>
 </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
  <namespace name="http://www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -101,7 +96,7 @@
 <label xml:id="BERTE">BERTE</label><item>Berte/-/-</item>
 </list>
 </tagUsage></namespace>
- <namespace name="http://www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-tei2;</tagUsage></namespace>
+ <namespace name="http://www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -138,7 +133,7 @@ Transkribert ? mot original som mangler i faksimilebasen. Validert.</change>
 <change><date>25.04.07</date><name>AAH</name><title>Koding</title>
 Koding. Validert.</change>
 <change><date>28.11.06</date><name>AAH</name><title>Oppretting</title>
-Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. Typografibeskrivelsen og id-who-listen er ikke sjekket. handList må sjekkes. Validert.</change>
+Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8° 809. Typografibeskrivelsen og id-who-listen er ikke sjekket. handList må sjekkes. Validert.</change>
 </revisionDesc>
 </teiHeader>
  <text type="drama" rend="handwritten-newfacs" xml:lang="da-nob">
@@ -148,11 +143,11 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <pb ed="source" type="folio_nopagination" subtype="recto" n="1" facs="1" gathering="1"/>
 <lb/><fw type="gathering" place="top-left" hand="h1">1.</fw>
 <div type="relatedToWork">
-<lb/><p>Den blege, tilsyneladende kolde skøn&typHyp;
-<lb/>hed. Store fordringer til livet og til livs&typHyp;
+<lb/><p>Den blege, tilsyneladende kolde skøn‐
+<lb/>hed. Store fordringer til livet og til livs‐
 <lb/>glæden.</p>
-<lb/><p>Han, som nu endelig har besejret hen<HIS:hisDel rend="overwritten">,</HIS:hisDel>&typHyp;
-<lb/>de, tarvelig af person, men hæderlig og be&typHyp;
+<lb/><p>Han, som nu endelig har besejret hen<HIS:hisDel rend="overwritten">,</HIS:hisDel>‐
+<lb/>de, tarvelig af person, men hæderlig og be‐
 <lb/>gavet frisindet videnskabsmand.</p>
 </div></body></text>
 
@@ -161,7 +156,7 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <div type="act" n="2">
 <note resp="editor">Teksten står opp-ned nederst på siden.</note>
 <lb/><p><q type="speech" who="HEDDA">T. fulgte mig hjem fra aftenselskaber ifjor sommer
-<lb/>&dash; Jo, jo &dash; han var om sig. &dash; Og De var ikke ved
+<lb/>– Jo, jo – han var om sig. – Og De var ikke ved
 <lb/>hånden.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Men i <HIS:hisAdd place="offline">dette</HIS:hisAdd> sværmeriet for statsrådinde Fs villa
 <lb/>var det <HIS:hisAdd place="infralinear">altså</HIS:hisAdd> at J. T. og jeg møtte<HIS:hisAdd place="inline">s</HIS:hisAdd> <app type="alteration"><lem><HIS:hisAdd place="infralinear">i forståelse</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">hinanden</HIS:hisDel></HIS:hisRdg></app>, ser De.</q></p>
@@ -169,33 +164,33 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 
 <pb ed="source" type="folio_nopagination" subtype="verso" n="1" facs="2"/>
 <div type="act" n="2"><note resp="editor">Teksten står opp-ned i forhold til arksignaturen på side 1 av arket.</note>
-<lb/><p><q type="speech" who="TESMAN">Hedda, &dash; er der ikke kommet afbud fra E. L. du Hvad</q></p>
+<lb/><p><q type="speech" who="TESMAN">Hedda, – er der ikke kommet afbud fra E. L. du Hvad</q></p>
 <lb/><p><q type="speech" who="HEDDA">Nej.</q> <q type="speech" who="TESMAN">Nå så skal du se, vi har ham såmæn
 <lb/>om lidt.</q> <q type="speech" who="BRACK">Tror De virkelig at han kommer.</q> <q type="speech" who="TESMAN">Ja
-<lb/>det er jeg næsten viss på<ref type="refMark" target="n1" xml:id="nb1">&referenceMark;</ref>. Så Ja tante Julle
-<lb/>sa&rapo; at hun trode aldrig i verden at han vilde
-<lb/>gå mig ivejen. Tænk det &dash;
+<lb/>det er jeg næsten viss på<ref type="refMark" target="n1" xml:id="nb1">※</ref>. Så Ja tante Julle
+<lb/>sa’ at hun trode aldrig i verden at han vilde
+<lb/>gå mig ivejen. Tænk det –
 <HIS:hisAdd place="margin"><note resp="editor">Tilføyelsen står under avsnittet den skal innføyes i.</note>
-<lb/><ref type="refMark" target="nb1" xml:id="n1">&referenceMark;</ref>For det er nok bare løse rygter, det, som
+<lb/><ref type="refMark" target="nb1" xml:id="n1">※</ref>For det er nok bare løse rygter, det, som
 <lb/>De fortalte.</HIS:hisAdd></q></p>
-<lb/><p><q type="speech" who="BRACK">Men herre gud, De har da tidt og ofte nok sko&typHyp;
+<lb/><p><q type="speech" who="BRACK">Men herre gud, De har da tidt og ofte nok sko‐
 <lb/>set over mine små ungkarlsgilder. De skulde ikke
 <lb/>egne sig for andre end rigtig principfaste
 <lb/>mandfolk, mente De.</q></p>
-<lb/><p><q type="speech" who="HEDDA">Men her L. er da vel principfast nok nu &dash;</q></p></div>
+<lb/><p><q type="speech" who="HEDDA">Men her L. er da vel principfast nok nu –</q></p></div>
 
 <pb ed="source" type="folio_nopagination" subtype="recto" n="2"/>
 
 <pb ed="source" type="folio_nopagination" subtype="verso" n="2" facs="3"/>
 <div type="act" n="2">
-<note resp="editor">Teksten står opp-ned i forhold til arksignaturen på side 1 av arket.</note><lb/><p><q type="speech" who="BRACK">Nå så stiger man ud &dash; og moverer sig en
+<note resp="editor">Teksten står opp-ned i forhold til arksignaturen på side 1 av arket.</note><lb/><p><q type="speech" who="BRACK">Nå så stiger man ud – og moverer sig en
 <lb/>smule.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Jeg stiger aldrig ud. <HIS:hisDel rend="overstrike">For der er al</HIS:hisDel>t</q></p>
 <lb/><p><q type="speech" who="BRACK">Virkelig ikke.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Nej, for der er altid nogen tilstede, som sér
 <lb/>på ens ben.</q></p>
 <lb/><p><q type="speech" who="BRACK">Nå, ja, herre gud.</q></p>
-<lb/><p><q type="speech" who="HEDDA">Holder ikke af det. Da blir jeg <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>siddende &dash;
+<lb/><p><q type="speech" who="HEDDA">Holder ikke af det. Da blir jeg <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>siddende –
 <lb/>Hvor jeg nu engang er.</q></p>
 </div>
 </body>
@@ -214,11 +209,11 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <lb/><p>Brack. <q type="speech" who="BRACK">Det ligger ikke for ham.</q></p>
 <lb/><p>H. <q type="speech" who="HEDDA">Men kanske jeg kunde få ham til
 <lb/>det.</q></p>
-<lb/><p><q type="speech" who="HEDDA">Og tror De så han kunde bli statsmi&typHyp;
+<lb/><p><q type="speech" who="HEDDA">Og tror De så han kunde bli statsmi‐
 <lb/>nister.</q></p>
 <lb/><p><HIS:hisDel rend="overwritten">H</HIS:hisDel>Brack. <q type="speech" who="BRACK">Da måtte han være en meget
 <lb/>rig mand.</q></p>
-<lb/><p>H. <q type="speech" who="HEDDA">Ja og så &dash; det vilde visst ikke være
+<lb/><p>H. <q type="speech" who="HEDDA">Ja og så – det vilde visst ikke være
 <lb/>noget tilfredsstillende for mig i længden.</q></p>
 <lb/><figure type="bar"/>
 <lb/><p>Løvborg:
@@ -246,7 +241,7 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <lb/><castItem>Berte, i tjeneste hos Tesmans.</castItem></HIS:hisCastList>
 <lb/><set><p>(Handlingen foregår i Tesmans bolig.)</p></set>
 </front>
-<body><p>&#160;</p></body>
+<body><p> </p></body>
 </text>
 
 <text type="workingManuscript">
@@ -255,20 +250,20 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <lb/><fw type="unknown" place="top-left">1.</fw>
 <div type="act" n="1">
 <lb/><p><hi rend="underlined">Frøken R</hi>. <HIS:hisAdd place="offline">(går omkring i stuen.)<note resp="editor">Det er et tilføyelsestegn etter denne sceneanvisningen, samme tegn er å finne før <q>Så.</q> og etter <q>herligheden</q>. Da det er uklart hvor tilføyelsen skal inn, gjengis den der den står.</note></HIS:hisAdd><q type="speech" who="FRØKENTESMAN">Så. Nu kan en da rigtig se hele
-<lb/>herligheden. Jo, ja, &dash; det tar sig ud, Berte.
+<lb/>herligheden. Jo, ja, – det tar sig ud, Berte.
 <lb/>Blomster både her og der.</q></p>
 <lb/><p><hi rend="underlined">Berte</hi>: <q type="speech" who="BERTE">De kom alle sammen sendendes
 <lb/>i går kveld. For at de skulde holde sig
 <lb/>friske, forstår sig. Men denne her var
-<lb/>der en frue med selv, &dash; nu netop før
+<lb/>der en frue med selv, – nu netop før
 <lb/>frøkenen kom.</q></p>
 <lb/><p><hi rend="underlined">Frøken Rising</hi>. <q type="speech" who="FRØKENTESMAN">Ja, det er som det <emph>skal</emph>
 <lb/>være. Når et ungt par kommer hjem
-<lb/>fra bryllupsrejsen, så &dash;</q></p></div>
+<lb/>fra bryllupsrejsen, så –</q></p></div>
 
 <pb ed="source" type="folio_nopagination" subtype="verso" n="1" facs="7"/>
 <div type="relatedToWork"><!--Innholdsmessig er rekkefølgen her: s. 2v - s. 1v - s. 2r.-->
-<lb/><p>Hedda, som ved en henkastet ytring, i prø&typHyp;
+<lb/><p>Hedda, som ved en henkastet ytring, i prø‐
 <lb/>vende hensigt, bringer ham på den tanke at
 <lb/>beholde det.</p>
 <lb/><p>Så læser han det. En ny tankeretning går
@@ -278,17 +273,17 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <lb/><p>I 3. akt kommer den ene oplysning efter den
 <lb/>anden om Løvborgs bedrifter i løbet af natten.
 <lb/>Tilsidst kommer han selv i stille fortvilelse.
-<lb/><q type="speech" who="LØVBORG">&lquo;Hvor er manuskriptet&rquo;? &lquo;Har jeg ikke lagt det
-<lb/>efter mig her&rquo;?</q> Han véd at han ikke har gjort
+<lb/><q type="speech" who="LØVBORG">«Hvor er manuskriptet»? «Har jeg ikke lagt det
+<lb/>efter mig her»?</q> Han véd at han ikke har gjort
 <lb/>det. Men hvad nytter forresten manuskriptet
-<lb/>ham nu! Han skrive<unclear reason="writing">r</unclear> om &lquo;fremtidens sædelære&rquo;!
+<lb/>ham nu! Han skrive<unclear reason="writing">r</unclear> om «fremtidens sædelære»!
 <lb/>Han, som netop er sluppen ud af politiarresten!</p>
 <lb/><p>Heddas fortvilelse er den forestilling at
 <lb/>der visst findes så mange muligheder til
 <lb/>lykke i verden, men at hun ikke kan få øje
 <lb/>på dem. Det er mangelen på et livsmål som
 <lb/>piner hende.</p>
-<lb/><p>Når Hedda forleder T. til at føre E. L. i for&typHyp;
+<lb/><p>Når Hedda forleder T. til at føre E. L. i for‐
 <lb/>dærvelse sker det for at prøve T<hi rend="raised">s</hi> karakter.</p>
 <lb/><p>Det er i Heddas nærhed at den dragende
 <lb/>trang til udskejelser altid kommer over E. L.</p>
@@ -307,16 +302,16 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <lb/>udtrykke mig så korrekt. Nå da. T: er ikke
 <lb/>kedelig, men jeg keder mig ved at leve sammen
 <lb/>med ham.</q></p>
-<lb/><p>Hedda: <q type="speech" who="HEDDA">... havde ingen udsigt. Ja, kan&typHyp;
+<lb/><p>Hedda: <q type="speech" who="HEDDA">... havde ingen udsigt. Ja, kan‐
 <lb/>ske De vilde se mig i et frøkenkloster. (stiftelse)</q></p>
-<lb/><p>Hedda: <q type="speech" who="HEDDA">... er det så ikke en ærlig sag at gø&typHyp;
+<lb/><p>Hedda: <q type="speech" who="HEDDA">... er det så ikke en ærlig sag at gø‐
 <lb/>re sin person indbringende. Kunstnerinderne
 <lb/>og andre gør jo også sine fortrin indbringende.
-<lb/>Jeg havde ingen anden kapital. Gifte sig &dash; jeg syntes
+<lb/>Jeg havde ingen anden kapital. Gifte sig – jeg syntes
 <lb/>det var som at købe sig en livrente.</q></p>
-<lb/><p>Hedda: <q type="speech" who="HEDDA">Husk på jeg er et gammelmands&typHyp;
-<lb/>barn &dash; og dertil en udlevet mands &dash; eller en af&typHyp;
-<lb/>fældig da &dash; Det har kanske sat sine mærker.</q></p>
+<lb/><p>Hedda: <q type="speech" who="HEDDA">Husk på jeg er et gammelmands‐
+<lb/>barn – og dertil en udlevet mands – eller en af‐
+<lb/>fældig da – Det har kanske sat sine mærker.</q></p>
 <lb/><p>Brack: <q type="speech" who="BRACK">Jeg tror så mænd De er begyndt
 <lb/>at gruble over problemer!</q></p>
 <lb/><p>Hedda. <q type="speech" who="HEDDA">Ja hvad kan man ikke forfalde
@@ -325,31 +320,31 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <pb ed="source" type="folio_nopagination" subtype="verso" n="2" gathering="3"/><!--Siden mangler i faksimilebasen, bilde ligger i verksmappa.-->
 <lb/><fw type="gathering" place="top-left" hand="h1">3</fw>
 <lb/><note resp="author" place="top">NB!</note>
-<lb/><p>Brack havde altid troet at Heddas kor&typHyp;
-<lb/>te forlovelse med Tesman skulde gå over&typHyp;
+<lb/><p>Brack havde altid troet at Heddas kor‐
+<lb/>te forlovelse med Tesman skulde gå over‐
 <lb/>styr.</p>
 <lb/><p>Hedda taler om hvorledes hun følte sig
 <lb/>tilsidesat, skridt for skridt da hendes far
 <lb/>ikke længere var i nåde, tog afsked og døde
-<lb/>uden at efterlade sig noget. &dash; Det stod da i
+<lb/>uden at efterlade sig noget. – Det stod da i
 <lb/>bitterhed for hende, som om det var for hans
-<lb/>skyld at man havde feteret hende. &dash; Og så
+<lb/>skyld at man havde feteret hende. – Og så
 <lb/>var hun imellem da 25 og 26 år allerede.
 <lb/>Nær ved som ugift at gå nedad.</p>
 <lb/><p>Hun mener at Tesman igrunden bare
-<lb/>føler en forfængelig stolthed over at have vun&typHyp;
+<lb/>føler en forfængelig stolthed over at have vun‐
 <lb/>det hende. Hans omhu for hende er som den
 <lb/>man viser en ædel ridehest eller en kostbar
-<lb/>jagthund. &dash; Dette oprører hende for resten
-<lb/>ikke. Hun bare ser på det, som på en kends&typHyp;
+<lb/>jagthund. – Dette oprører hende for resten
+<lb/>ikke. Hun bare ser på det, som på en kends‐
 <lb/>gerning.</p>
 <lb/><p>Hedda siger til Brack at hun ikke synes
-<lb/>man kan kalde Tesman løjerlig. Men i grun&typHyp;
+<lb/>man kan kalde Tesman løjerlig. Men i grun‐
 <lb/>den finder hun det. Senere finder hun også at
 <lb/>han er ynkelig.</p>
-<lb/><p>Tesman: <q type="speech" who="TESMAN">Kunde du ikke kalde mig ved for&typHyp;
+<lb/><p>Tesman: <q type="speech" who="TESMAN">Kunde du ikke kalde mig ved for‐
 <lb/>navn?</q></p>
-<lb/><p>Hedda: <q type="speech" who="HEDDA">Nej, véd du hvad, &dash; da måtte du virke&typHyp;
+<lb/><p>Hedda: <q type="speech" who="HEDDA">Nej, véd du hvad, – da måtte du virke‐
 <lb/>lig ha' et andet, end det, de har git dig.</q></p>
 <lb/><p>Tesman stikker Løvborgs håndskrift til sig
 <lb/>for at det ikke skal komme bort. Siden er det</p>
@@ -366,8 +361,8 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <lb/><p>A. T. kommer trallende fra <app type="alteration"><lem><HIS:hisAdd place="offline">højre side</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">venstre</HIS:hisDel></HIS:hisRdg></app> gennem
 <lb/>bagværel <HIS:hisDel rend="overstrike">med en tom</HIS:hisDel> bærende på en tom
 <lb/>åben håndkuffert. Han er en ungdommeligt
-<lb/>udseende mand <ref type="refMark" target="n2" xml:id="nb2">&referenceMark;</ref> <HIS:hisAdd place="offline">noget fyldig rund</HIS:hisAdd> med et åbent, fornøjet an&typHyp;
-<lb/>sigt, blondt hår og skæg. Påklædt i en be&typHyp;
+<lb/>udseende mand <ref type="refMark" target="n2" xml:id="nb2">※</ref> <HIS:hisAdd place="offline">noget fyldig rund</HIS:hisAdd> med et åbent, fornøjet an‐
+<lb/>sigt, blondt hår og skæg. Påklædt i en be‐
 <lb/>kvem noget skødesløs husdragt.
 <lb/><ptr type="refMark" target="nb2" xml:id="n2"/><HIS:hisAdd place="margin"><note resp="editor">Tilføyelsen står under avsnittet den skal innføyes i.</note>på 33 år</HIS:hisAdd></p>
 </div>
@@ -379,9 +374,9 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <div type="act" n="1">
 <lb/><p><q type="speech" who="TESMAN">Tænk dig, tante J. hel<unclear><HIS:hisDel rend="overwritten">le</HIS:hisDel>e</unclear> den kufferten
 <lb/>havde jeg stoppende fuld af afskrifter.
-<lb/>Det er rent utroligt, hvad jeg har sam&typHyp;
+<lb/>Det er rent utroligt, hvad jeg har sam‐
 <lb/>let sammen rundt om i arkiverne.
-<lb/>Gamle mærkelige sager, som ingen men&typHyp;
+<lb/>Gamle mærkelige sager, som ingen men‐
 <lb/>nesker har vidst besked og</q></p>
 <lb/><p>Fr. T.
 <lb/><q type="speech" who="FRØKENTESMAN">Ja ja, du har nok ikke spildt din tid
@@ -398,24 +393,24 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <pb ed="source" type="folio_nopagination" subtype="verso" n="2" facs="10"/>
 <div type="act" n="1">
 <note resp="editor">Teksten står opp ned sammenlignet med teksten s. 1 r.</note>
-<lb/><p><q type="speech" who="TESMAN">Å H &dash; man skulde dog aldrig vove sig ind i
+<lb/><p><q type="speech" who="TESMAN">Å H – man skulde dog aldrig vove sig ind i
 <lb/>eventyrlandet. Hvad?</q></p>
 <lb/><p><q type="speech" who="HEDDA">Gør du det.</q></p>
 <lb/><p><q type="speech" who="TESMAN">Det var eventyrligt at gå hen og gifte sig og
 <lb/>sætte bo på blotte og bare udsigter.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Du har kanske ret i det.</q></p>
-<lb/><p><q type="speech" who="TESMAN">Men vort hyggelige hjem har vi da, <HIS:hisAdd place="offline">i alfald</HIS:hisAdd> H. Tænk, &dash;
+<lb/><p><q type="speech" who="TESMAN">Men vort hyggelige hjem har vi da, <HIS:hisAdd place="offline">i alfald</HIS:hisAdd> H. Tænk, –
 <lb/>det hjem, som vi begge gik og drømte om.</q></p>
 <lb/><p>H. (rejser sig) <q type="speech" who="HEDDA">Det var jo aftalen at vi skulde
 <lb/>leve selskabeligt. Føre hus.</q></p>
 <lb/><p>T. <q type="speech" who="TESMAN">Ja herre gud, hvor jeg havde glædet mig
-<lb/>til det. Se dig som værtinde. &dash; Ja &dash; f<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>oreløbig
-<lb/>får vi to altså holde sammen i <HIS:hisDel rend="overwritten">E</HIS:hisDel>ensomhed, H. Ba&typHyp;
-<lb/>re se tante J. hos os en gang imellem. A, du &dash; som
-<lb/>skulde havt det så langt &dash; langt anderledes.</q></p>
+<lb/>til det. Se dig som værtinde. – Ja – f<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>oreløbig
+<lb/>får vi to altså holde sammen i <HIS:hisDel rend="overwritten">E</HIS:hisDel>ensomhed, H. Ba‐
+<lb/>re se tante J. hos os en gang imellem. A, du – som
+<lb/>skulde havt det så langt – langt anderledes.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Livrétjeneren får jeg naturligvis ikke nu for
 <lb/>det første.</q></p>
-<lb/><p><q type="speech" who="TESMAN">Å nej, desværre &dash; det kan der jo umulig bli tale
+<lb/><p><q type="speech" who="TESMAN">Å nej, desværre – det kan der jo umulig bli tale
 <lb/>om, ser du.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Og ridehesten tør jeg vel ikke engang tænke på.</q></p>
 <lb/><p><q type="speech" who="TESMAN">Nej, gud bevare mig vel, det siger sig da <HIS:hisAdd place="offline">af sig</HIS:hisAdd> selv <HIS:hisAdd place="offline">kære</HIS:hisAdd>.</q></p>
@@ -423,7 +418,7 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <lb/>til at muntre mig med så længe.</q></p>
 <lb/><p><q type="speech" who="TESMAN">Å, gud ske lov for det! Og hvad er så det for
 <lb/>noget, H.?</q></p>
-<lb/><p>H. (i døråbningen) <q type="speech" who="HEDDA"><HIS:hisAdd place="offline"><HIS:hisDel rend="overstrike">koldt, hånl med kold ha<gap/></HIS:hisDel></HIS:hisAdd> Mine pistoler, &dash; Jørgen.</q></p>
+<lb/><p>H. (i døråbningen) <q type="speech" who="HEDDA"><HIS:hisAdd place="offline"><HIS:hisDel rend="overstrike">koldt, hånl med kold ha<gap/></HIS:hisDel></HIS:hisAdd> Mine pistoler, – Jørgen.</q></p>
 <lb/><p><q type="speech" who="TESMAN">Pistolerne!</q></p>
 <lb/><p><q type="speech" who="HEDDA">General Gablers pistoler.</q>
 <lb/>(Hun går gjennem bagværelset ud til venstre
@@ -440,24 +435,24 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <pb ed="source" type="folio_nopagination" subtype="recto" n="1" facs="11" gathering="5"/>
 <lb/><fw type="gathering" place="top-left" hand="h1">5.</fw>
 <div type="act" n="1">
-<lb/><p>Hedda kommer fra venstre side gennem bag&typHyp;
+<lb/><p>Hedda kommer fra venstre side gennem bag‐
 <lb/>værelset. Hun er en dame på 29 år. Ansigt og
-<lb/>skikkelse ædelt og fornemt formet. Hudfar&typHyp;
-<lb/>ven <HIS:hisAdd place="offline">har en</HIS:hisAdd> mat <HIS:hisAdd place="infralinear">klar</HIS:hisAdd> bleghed Øjnene er stålgrå og udtryk&typHyp;
+<lb/>skikkelse ædelt og fornemt formet. Hudfar‐
+<lb/>ven <HIS:hisAdd place="offline">har en</HIS:hisAdd> mat <HIS:hisAdd place="infralinear">klar</HIS:hisAdd> bleghed Øjnene er stålgrå og udtryk‐
 <lb/>ker en kold ro. Håret er mellembrunt og ikke
-<lb/>synderlig fyldigt. Hun er klædt i en smag&typHyp;
+<lb/>synderlig fyldigt. Hun er klædt i en smag‐
 <lb/>fuld formiddagsdragt hvori lys<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>eblåt og rødt
 <lb/>er de fremherskende farver.</p>
-<lb/><p><q type="speech" who="HEDDA">.... Alle disse velsignede blomsterne. Men, kæ&typHyp;
-<lb/>re, &dash; vil De ikke ta&rapo; plads, frøken T?</q></p>
+<lb/><p><q type="speech" who="HEDDA">.... Alle disse velsignede blomsterne. Men, kæ‐
+<lb/>re, – vil De ikke ta’ plads, frøken T?</q></p>
 <lb/><p>Frk T.
 <lb/><q type="speech" who="FRØKENTESMAN">Nej tak, jeg vilde bare forhøre mig om det
 <lb/>s<HIS:hisDel rend="overwritten">å</HIS:hisDel>tod godt til. Og, det er sandt, jeg har noget
 <lb/>med til dig. (tar en <HIS:hisDel rend="overstrike">papir</HIS:hisDel> pakke <unclear reason="writing">i</unclear> papir op
 <lb/>af lommen.</q></p>
 <lb/><p>T.
-<lb/><q type="speech" who="TESMAN">Nej hvad er det for noget. (åbner.) Nej her&typHyp;
-<lb/>re gud &dash; har du gemt den for mig. Hedda,
+<lb/><q type="speech" who="TESMAN">Nej hvad er det for noget. (åbner.) Nej her‐
+<lb/>re gud – har du gemt den for mig. Hedda,
 <lb/>det er virkelig rørende du. Hvad.</q></p>
 <lb/><p>H.
 <lb/><q type="speech" who="HEDDA">Ja, kære, hvad er det da.</q></p>
@@ -471,7 +466,7 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 
 <pb ed="source" type="folio_nopagination" subtype="verso" n="1" facs="12"/>
 <lb/>se dem.</q> H. <q type="speech" who="HEDDA">Nej tak, det bryder jeg mig virkelig
-<lb/>ikke om.</q> T. <q type="speech" who="TESMAN">Du kan ikke tro, hvor mange er&typHyp;
+<lb/>ikke om.</q> T. <q type="speech" who="TESMAN">Du kan ikke tro, hvor mange er‐
 <lb/>indringer der knytter sig til dem.</q> H. <q type="speech" who="HEDDA">Ikke for
 <lb/>mig.</q> Frk <unclear reason="writing">T</unclear>. <q type="speech" who="FRØKENTESMAN">Nej, det har H. ret i. Gem du dine
 <lb/><HIS:hisDel rend="overstrike">k<gap/></HIS:hisDel> tøfler, min kære gut.</q> T. <q type="speech" who="TESMAN">Ja det skal jeg så
@@ -483,7 +478,7 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <lb/>forhængene fra glasdøren og ser ud.)
 <lb/>Lidt efter kommer T. ind igen og lukker
 <lb/>forstuedøren efter sig.) Derpå samler
-<lb/>han skoene op, <HIS:hisDel rend="overstrike">og</HIS:hisDel> p<HIS:hisDel rend="overwritten">å</HIS:hisDel>akker dem ind og læg&typHyp;
+<lb/>han skoene op, <HIS:hisDel rend="overstrike">og</HIS:hisDel> p<HIS:hisDel rend="overwritten">å</HIS:hisDel>akker dem ind og læg‐
 <lb/>ger dem på bordet.)</p>
 <lb/><p>T. <q type="speech" who="TESMAN">Synes du ikke tante J var underlig du? Kan
 <lb/>du begribe hvad der gik af hende? Hvad?</q></p>
@@ -494,7 +489,7 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <pb ed="source" type="folio_nopagination" subtype="recto" n="2" facs="13"/>
 <note resp="editor">Teksten står opp-ned.</note><lb/><p>T.
 <lb/><q type="speech" who="TESMAN">Det er ganske forbausende, hvorledes hun kom
-<lb/>sig der nede i fjeldluften &dash;</q></p>
+<lb/>sig der nede i fjeldluften –</q></p>
 <lb/><p>H.
 <lb/><q type="speech" who="HEDDA">Det er ikke sandt. Jeg er akkurat som da jeg
 <lb/>rejste.</q></p>
@@ -502,11 +497,11 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <lb/><q type="speech" who="TESMAN">Ja det påstår du. Men nej såmæn om du
 <lb/>er. Synes ikke du også, tante.</q></p>
 <lb/><p>Frk T.
-<lb/><q type="speech" who="FRØKENTESMAN">Dejlig, dejlig, dejlig &dash;</q></p>
+<lb/><q type="speech" who="FRØKENTESMAN">Dejlig, dejlig, dejlig –</q></p>
 <lb/><p>T.
-<lb/><q type="speech" who="TESMAN">Du skulde bare se &dash;</q></p>
+<lb/><q type="speech" who="TESMAN">Du skulde bare se –</q></p>
 <lb/><p>H.
-<lb/><q type="speech" who="HEDDA">Å &dash;</q></p>
+<lb/><q type="speech" who="HEDDA">Å –</q></p>
 <lb/><p>T.
 <lb/><q type="speech" who="TESMAN">Hun formelig svulmer, tan<HIS:hisDel rend="overwritten">k</HIS:hisDel>te Julla.</q></p>
 <lb/><p>H.
@@ -516,7 +511,7 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <lb/><q type="speech" who="FRØKENTESMAN">Gud velsigne og bevare Hedda Tesman.
 <lb/>Hver evige dag kommer jeg indom til jer to.</q></p>
 <lb/><p>T.
-<lb/><q type="speech" who="TESMAN">Ja, gør endelig det, Så skal vi ha&rapo; det morsomt</q></p>
+<lb/><q type="speech" who="TESMAN">Ja, gør endelig det, Så skal vi ha’ det morsomt</q></p>
 <lb/><p>Frk. T.
 <lb/><q type="speech" who="FRØKENTESMAN">Farvel, farvel.</q></p>
 <lb/><p>(hun ud gennem forstuen. T<HIS:hisDel rend="overstrike"><gap/></HIS:hisDel> følger hende
@@ -539,7 +534,7 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <lb/><q type="speech" who="TESMAN">Men se da rigtig på H <HIS:hisAdd place="offline">før du går</HIS:hisAdd> tante, Se hvor
 <lb/>smuk og nydelig <emph>hun</emph> er.</q></p>
 <lb/><p>Frk T.
-<lb/><q type="speech" who="FRØKENTESMAN">Ja det er da ikke noget nyt. H. har jo væ&typHyp;
+<lb/><q type="speech" who="FRØKENTESMAN">Ja det er da ikke noget nyt. H. har jo væ‐
 <lb/>ret deilig alle sine dade</q></p>
 <lb/><p>(går mod højre.)</p>
 <lb/><p>T.
@@ -562,36 +557,36 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <pb ed="source" type="folio_nopagination" subtype="recto" n="1" facs="15" gathering="6"/>
 <lb/><fw type="gathering" place="top-left" hand="h1">6.</fw>
 <div type="act" n="1">
-<lb/><p><q type="speech" who="FRUELVSTED">Og så den store lykke at jeg fik dele hans ar&typHyp;
+<lb/><p><q type="speech" who="FRUELVSTED">Og så den store lykke at jeg fik dele hans ar‐
 <lb/>bejde. Fik lov til at hjælpe ham.</q> <q type="speech" who="HEDDA">Så det
-<lb/>fik du? &dash;</q> <q type="speech" who="FRUELVSTED">Ja.</q> <HIS:hisDel rend="overstrike">A</HIS:hisDel> <q type="speech" who="HEDDA">Som to gode kammerater alt&typHyp;
-<lb/>tå. &dash;</q> <q type="speech" who="FRUELVSTED">Kammerater! Ja tænk, H. så kaldte han
+<lb/>fik du? –</q> <q type="speech" who="FRUELVSTED">Ja.</q> <HIS:hisDel rend="overstrike">A</HIS:hisDel> <q type="speech" who="HEDDA">Som to gode kammerater alt‐
+<lb/>tå. –</q> <q type="speech" who="FRUELVSTED">Kammerater! Ja tænk, H. så kaldte han
 <lb/>det også! Å jeg burde jo føle mig så undelig
 <lb/>lykkelig. Men jeg kan ikke det heller. For
 <lb/>jeg véd jo ikke om det vil vare i længden.
-<lb/>&dash;</q> <q type="speech" who="HEDDA">Hvad! Er du sige med det. &dash;</q> <q type="speech" who="FRUELVSTED">En kvinde,
-<lb/>som han aldrig har kunnet glemme. &dash;</q></p> <HIS:hisDel rend="overstrike">Hv</HIS:hisDel>
+<lb/>–</q> <q type="speech" who="HEDDA">Hvad! Er du sige med det. –</q> <q type="speech" who="FRUELVSTED">En kvinde,
+<lb/>som han aldrig har kunnet glemme. –</q></p> <HIS:hisDel rend="overstrike">Hv</HIS:hisDel>
 <lb/><p><q type="speech" who="HEDDA">Ved du, hvem det er.</q> <q type="speech" who="FRUELVSTED">Nej, han har bare en
 <lb/>gang tydet hen på det.</q> <q type="speech" who="HEDDA">Hvad sa' han?</q> <q type="speech" who="FRUELVSTED">At
 <lb/><HIS:hisDel rend="overstrike">hun en ga</HIS:hisDel> da de skiltes, vilde hun skyde
-<lb/>ham ned med en pistol, &dash;</q> <q type="speech" who="HEDDA">Har du ingen
-<lb/>anelse &dash;?</q> <q type="speech" who="FRUELVSTED">Jo.</q> <q type="speech" who="HEDDA">Nå.</q> <q type="speech" who="FRUELVSTED">Jeg tror det må være
+<lb/>ham ned med en pistol, –</q> <q type="speech" who="HEDDA">Har du ingen
+<lb/>anelse –?</q> <q type="speech" who="FRUELVSTED">Jo.</q> <q type="speech" who="HEDDA">Nå.</q> <q type="speech" who="FRUELVSTED">Jeg tror det må være
 <lb/>den rødhårede sangerinde, som han
-<lb/>en tid &dash;</q> <HIS:hisDel rend="overstrike"><gap/></HIS:hisDel> <q type="speech" who="HEDDA">Ja, ja, det er det vel &dash;</q> <q type="speech" who="FRUELVSTED">Og tænk
+<lb/>en tid –</q> <HIS:hisDel rend="overstrike"><gap/></HIS:hisDel> <q type="speech" who="HEDDA">Ja, ja, det er det vel –</q> <q type="speech" who="FRUELVSTED">Og tænk
 <lb/>dig, H. Nu hører jeg at hun er i byen igen!</q></p></div>
 
 <div type="act" n="1">
-<lb/><p>(A. Br. er en <app type="alteration"><lem><HIS:hisAdd place="offline">herre</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">mand</HIS:hisDel></HIS:hisRdg></app> på 45 år. Undersæt&typHyp;
-<lb/>sig men velbygget og med elastiske be&typHyp;
+<lb/><p>(A. Br. er en <app type="alteration"><lem><HIS:hisAdd place="offline">herre</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">mand</HIS:hisDel></HIS:hisRdg></app> på 45 år. Undersæt‐
+<lb/>sig men velbygget og med elastiske be‐
 <lb/>vægelser. Ansigtet rundagtigt med nobel
-<lb/>profil. Håret <HIS:hisDel rend="overstrike">næsten so</HIS:hisDel> kortklippet, næs&typHyp;
-<lb/>ten sort endnu<ref type="refMark" target="n3" xml:id="nb3">&referenceMark;</ref>. Øjenbrynene tykke. Knebels&typHyp;
+<lb/>profil. Håret <HIS:hisDel rend="overstrike">næsten so</HIS:hisDel> kortklippet, næs‐
+<lb/>ten sort endnu<ref type="refMark" target="n3" xml:id="nb3">※</ref>. Øjenbrynene tykke. Knebels‐
 <lb/>barten ligeså, <HIS:hisDel rend="overwritten">n</HIS:hisDel>med afstudsede spidser. Han
 <lb/>er klædt i elegant spadsérdragt, dog lidt
 <lb/>for ungdommeligt for sin alder. Bruger
 <lb/>lorgnet, som han nu og da lar falde.)
 <HIS:hisAdd place="margin"><note resp="editor">Tilføyelsen står på bunnen av siden.</note>
-<lb/><ref type="refmark" target="nb3" xml:id="n3">&referenceMark;</ref>og omhyggeligt friseret</HIS:hisAdd></p>
+<lb/><ref type="refmark" target="nb3" xml:id="n3">※</ref>og omhyggeligt friseret</HIS:hisAdd></p>
 </div>
 
 <pb ed="source" type="folio_nopagination" subtype="verso" n="1" facs="16"/>
@@ -601,41 +596,41 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <lb/>mig.</q> <q type="speech" who="FRUELVSTED">Ja for når vi mødtes på trapperne <HIS:hisDel rend="overstrike">eller
 <lb/>i gangerne</HIS:hisDel> så brugte De altid at ruske mig
 <lb/>i håret</q> <HIS:hisDel rend="overstrike">G</HIS:hisDel> <q type="speech" who="HEDDA">Nej, gjorde jeg det.</q> <q type="speech" who="FRUELVSTED">Ja og en gang
-<lb/>sa&rapo; De at De vilde svi&rapo;e det af mig.</q> <q type="speech" who="HEDDA">Å hvad
-<lb/>snak.</q> <q type="speech" who="FRUELVSTED">Ja jeg var så dum dengang. &dash; Og siden, fru
+<lb/>sa’ De at De vilde svi’e det af mig.</q> <q type="speech" who="HEDDA">Å hvad
+<lb/>snak.</q> <q type="speech" who="FRUELVSTED">Ja jeg var så dum dengang. – Og siden, fru
 <lb/>T, så er vi jo kommet</q></p>
 </div>
 
 <pb ed="source" type="folio_nopagination" subtype="recto" n="2" facs="17"/>
 <div type="act" n="1">
 <lb/><p><q type="speech" who="TESMAN">Nej<unclear reason="writing">.</unclear> <HIS:hisDel rend="overwritten">f</HIS:hisDel>Fra hvem da? Hvad?</q></p>
-<lb/><p><q type="speech" who="HEDDA">Her står &lquo;Fru foged Elvsted&rquo;.</q></p>
+<lb/><p><q type="speech" who="HEDDA">Her står «Fru foged Elvsted».</q></p>
 <lb/><p><q type="speech" who="TESMAN">Nej virkelig. Fru E. Frøken R. som hun hed før</q></p>
 <lb/><p><q type="speech" who="HEDDA">Ja netop. Hun med det irriterende håret, som
 <lb/>gik omkring og <HIS:hisDel rend="overstrike"><gap/></HIS:hisDel> gjorde sig så til at. Din gamle
 <lb/>flamme, har jeg hørt sige.</q></p>
 <lb/><p><q type="speech" who="TESMAN">Nå, det stod ikke længe på. Og så var det nu
-<lb/>før jeg kendte deg, det, Hedda. Men tænk &dash; at hun
+<lb/>før jeg kendte deg, det, Hedda. Men tænk – at hun
 <lb/>er i byen.</q></p>
 </div><figure type="bar"/>
 <div type="act" n="1">
 <lb/><p>Fru E. er en spæd skikkelse med <HIS:hisAdd place="offline">smukke</HIS:hisAdd> bløde
-<lb/>ansigtsformer. Øjnene er lyseblå, store, run&typHyp;
+<lb/>ansigtsformer. Øjnene er lyseblå, store, run‐
 <lb/>de og noget fremstående, med et forskræmt
-<lb/>udtryk, omtrent som hos en fugl. Håret er på&typHyp;
-<lb/>faldende lyst, næsten hvidgult, og usædvan&typHyp;
+<lb/>udtryk, omtrent som hos en fugl. Håret er på‐
+<lb/>faldende lyst, næsten hvidgult, og usædvan‐
 <lb/>lig rigt og bølgende. Hun er et par år yngre
 <lb/>end H. Hun <HIS:hisAdd place="offline">påklædningen er</HIS:hisAdd> <HIS:hisDel rend="overstrike">er klædt i e</HIS:hisDel>n mørk visitdragt.
-<lb/>der er smagfuld men ikke ganske <HIS:hisDel rend="overstrike">ny og</HIS:hisDel> hel&typHyp;
+<lb/>der er smagfuld men ikke ganske <HIS:hisDel rend="overstrike">ny og</HIS:hisDel> hel‐
 <lb/><HIS:hisDel rend="overstrike">ler ikk</HIS:hisDel>e efter <HIS:hisDel rend="overstrike">aller</HIS:hisDel> nyeste mode.)</p></div>
 
 <pb ed="source" type="folio_nopagination" subtype="verso" n="2" facs="18"/>
 <div type="act" n="1">
 <lb/><p><q type="speech" who="HEDDA">A lad mig bli udenfor. Tak heller assessoren
-<lb/>for al den ulejlighed han har havt. &dash;</q> <q type="speech" who="BRACK">Å hvad;
-<lb/>det er ingenting. &dash;</q> <q type="speech" who="HEDDA">Jo, De er en trofast sjæl, assessor
+<lb/>for al den ulejlighed han har havt. –</q> <q type="speech" who="BRACK">Å hvad;
+<lb/>det er ingenting. –</q> <q type="speech" who="HEDDA">Jo, De er en trofast sjæl, assessor
 <lb/>Men min veninde står og brænder efter at komme
-<lb/>afsted &dash; På gensyn assessor. Jeg kommer straks
+<lb/>afsted – På gensyn assessor. Jeg kommer straks
 <lb/>igen.</q> Gensidige hilsener. Fru E. og H. går ud
 <lb/>gennem <gap/></p>
 </div>
@@ -647,14 +642,14 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <pb ed="source" type="folio_nopagination" subtype="recto" n="1" facs="19" gathering="7"/>
 <lb/><fw type="gathering" place="top-left" hand="h1">7.</fw>
 <div type="act" n="1">
-<lb/><p><q type="speech" who="BRACK">Hm &dash; vi kan nok alligevel komme til at opleve
-<lb/>det. &dash;</q> <q type="speech" who="TESMAN">Nej men assessor B. det vilde jo være den
-<lb/>utroligste hensynsløshed imod mig! Ja, for tænk, &dash;
+<lb/><p><q type="speech" who="BRACK">Hm – vi kan nok alligevel komme til at opleve
+<lb/>det. –</q> <q type="speech" who="TESMAN">Nej men assessor B. det vilde jo være den
+<lb/>utroligste hensynsløshed imod mig! Ja, for tænk, –
 <lb/>jeg er jo en gift mand. Jeg har jo <HIS:hisDel rend="overstrike">gået hen og</HIS:hisDel> giftet
-<lb/>mig på de udsigterne. <ref type="refMark" target="n4" xml:id="nb4">&referenceMark;</ref>Sat svær gæld <HIS:hisDel rend="overstrike">på dem</HIS:hisDel> også &dash;
-<lb/>Ja, for, Herre gud &dash;
+<lb/>mig på de udsigterne. <ref type="refMark" target="n4" xml:id="nb4">※</ref>Sat svær gæld <HIS:hisDel rend="overstrike">på dem</HIS:hisDel> også –
+<lb/>Ja, for, Herre gud –
 <HIS:hisAdd place="margin"><note resp="editor">Tilføyelsen står under avsnittet den skal innføyes i.</note>
-<lb/><ref type="refMark" target="nb4" xml:id="n4">&referenceMark;</ref>Gået hen og sat en s</HIS:hisAdd></q></p>
+<lb/><ref type="refMark" target="nb4" xml:id="n4">※</ref>Gået hen og sat en s</HIS:hisAdd></q></p>
 <pb ed="source" type="folio_nopagination" subtype="verso" n="1"/><pb ed="source" type="folio_nopagination" subtype="recto" n="2"/><pb ed="source" type="folio_nopagination" subtype="verso" n="2"/>
 </div></body></text>
 
@@ -666,7 +661,7 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <lb/><p><q type="speech" who="LØVBORG">Kanske ikke i vort forhold heller, H</q></p>
 <lb/><p><q type="speech" who="HEDDA">Hvorledes.</q></p>
 <lb/><p><q type="speech" who="LØVBORG">Var der kanske ikke kærlighed i det heller. Ikke et
-<lb/>eneste stænk, &dash; ikke et skær af kærlighed <HIS:hisDel rend="overstrike">på</HIS:hisDel> bagved det
+<lb/>eneste stænk, – ikke et skær af kærlighed <HIS:hisDel rend="overstrike">på</HIS:hisDel> bagved det
 <lb/>hele.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Ja, mon der virkelig <emph>var</emph> det.</q></p>
 <lb/><p><q type="speech" who="LØVBORG">Slet ikke fra Deres side altså?</q></p>
@@ -675,15 +670,15 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <lb/>så svært åbenhjertig.</q></p>
 <lb/><p><q type="speech" who="LØVBORG">Jeg var nok altfor åbenhjertig. Men det var Dem,
 <lb/>som vilde ha det så.</q></p>
-<lb/><p><q type="speech" who="HEDDA">Der var noget lokkende, &dash; noget modigt synes jeg der
-<lb/>var over &dash; over denne løndomsfulde fortrolighed, som
+<lb/><p><q type="speech" who="HEDDA">Der var noget lokkende, – noget modigt synes jeg der
+<lb/>var over – over denne løndomsfulde fortrolighed, som
 <lb/>ikke noget menneske havde anelse om.</q></p>
 <lb/><p><q type="speech" who="LØVBORG">Ja ikke sandt H. o. s. v</q></p>
-<lb/><p><q type="speech" who="LØVBORG">Med de illustr... &dash;</q></p>
+<lb/><p><q type="speech" who="LØVBORG">Med de illustr... –</q></p>
 <lb/><p><q type="speech" who="HEDDA">Ligesom her</q></p>
 <lb/><p><q type="speech" who="LØVBORG">Ja og når jeg ...</q></p>
 <lb/><p><q type="speech" who="HEDDA">Tror De ...</q></p>
-<lb/><p><q type="speech" who="LØVBORG">Ja hvorle&dash; ...</q></p>
+<lb/><p><q type="speech" who="LØVBORG">Ja hvorle– ...</q></p>
 <lb/><p><q type="speech" who="HEDDA">Og som ....</q></p>
 <lb/><p><q type="speech" who="LØVBORG">At De ...</q></p>
 <lb/><p><q type="speech" who="HEDDA">Og at ....</q></p>
@@ -692,9 +687,9 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <lb/><p><q type="speech" who="LØVBORG">Men hvad ...</q></p>
 <lb/><p><q type="speech" who="HEDDA">Finder De</q></p>
 <lb/><figure type="bar"/>
-<lb/><p><q type="speech" who="HEDDA">Ja da der var overhængende fare for at der vil&typHyp;
+<lb/><p><q type="speech" who="HEDDA">Ja da der var overhængende fare for at der vil‐
 <lb/>de komme virkelighed ind i forholdet. Da De var ved
-<lb/>at ville forgribe Dem på &dash; på Deres frejdige kammerat</q></p>
+<lb/>at ville forgribe Dem på – på Deres frejdige kammerat</q></p>
 <lb/><p><q type="speech" who="LØVBORG">Hvorfor gjorde De ikke alvor af det. Hvorfor skød
 <HIS:hisAdd place="margin"><note resp="editor">Tilføyelsen står oppover i høyre marg. Den hører ikke direkte sammen med noe av teksten i avsnittet.</note>
 <lb/>livsbegær og fejghed</HIS:hisAdd>
@@ -704,7 +699,7 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <lb/><p><q type="speech" who="HEDDA"><HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>Forfærdelig fejg.</q> (slår om) <q type="speech" who="HEDDA">Men det var jo heldigt for Dem</q></p>
 
 <pb ed="source" type="folio_nopagination" subtype="verso" n="1" facs="21"/>
-<lb/><p><q type="speech" who="HEDDA">Glemmer De den aften &dash; da jeg var nødt til at værge mig
+<lb/><p><q type="speech" who="HEDDA">Glemmer De den aften – da jeg var nødt til at værge mig
 <lb/>med pistolen.</q></p>
 <lb/><p><q type="speech" who="LØVBORG">De havde ikke behøvd at frygte for nogen gentagelse.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Det var ikke den slags frygt som voldte bruddet</q></p>
@@ -718,10 +713,10 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <lb/>det.</q></p>
 <lb/><p><q type="speech" who="LØVBORG">Hedda!</q></p>
 <lb/><p><q type="speech" who="HEDDA">Ja, det var nu værste fejghed. Da følte jeg hvorledes
-<lb/>halvheden sad mig i blodet. At det aldrig vilde bli an&typHyp;
+<lb/>halvheden sad mig i blodet. At det aldrig vilde bli an‐
 <lb/>derledes. Derfor brød jeg med Dem engang for alle.</q></p>
-<lb/><p><q type="speech" who="LØVBORG">Nu først forstår jeg hvad jeg har misted i Dem &dash; De,
-<lb/>min både modige og &dash; fejge kammerat</q></p>
+<lb/><p><q type="speech" who="LØVBORG">Nu først forstår jeg hvad jeg har misted i Dem – De,
+<lb/>min både modige og – fejge kammerat</q></p>
 <lb/><p><q type="speech" who="HEDDA">Nå heldigvis så trøsted De Dem jo snart oppe hos
 <lb/>Elvsteds.</q></p>
 <lb/><p><q type="speech" who="LØVBORG">Jeg ved hvad Thea har fortalt Dem.</q></p>
@@ -729,7 +724,7 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <lb/><p><q type="speech" who="LØVBORG">Ikke et ord. Det er hun for dum til at forstå</q></p>
 <lb/><p><q type="speech" who="HEDDA">Dum?</q></p>
 <lb/><p><q type="speech" who="LØVBORG">I slige ting er hun dum</q></p>
-<lb/><note resp="editor">Teksten står nederst på siden, opp-ned.</note><!-- Her er flere ref-tegn med tekst, tror de hører til HG8808 s. 149-50. Må kodes om i forbindelse med synoptisk visning!--><p>x <q type="speech" who="HEDDA">Og du &dash; du er så rig!</q> x1. <q type="speech" who="HEDDA"><HIS:hisDel rend="overwritten">a</HIS:hisDel>Å jeg tror jeg svier håret af dig
+<lb/><note resp="editor">Teksten står nederst på siden, opp-ned.</note><!-- Her er flere ref-tegn med tekst, tror de hører til HG8808 s. 149-50. Må kodes om i forbindelse med synoptisk visning!--><p>x <q type="speech" who="HEDDA">Og du – du er så rig!</q> x1. <q type="speech" who="HEDDA"><HIS:hisDel rend="overwritten">a</HIS:hisDel>Å jeg tror jeg svier håret af dig
 <lb/>alligvel.</q></p>
 <lb/><p>1. Kl 10 kommer han fra assessorens sviregilde.</p>
 
@@ -753,46 +748,46 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <lb/>er næsten det mærkeligste jeg har læst.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Ja ja, det bryr jeg mig ikke noget om. Og det kommer
 <lb/>jo ikke sagen ved.</q></p>
-<lb/><p><q type="speech" who="TESMAN">Jo, det gør det. Kan du tænke dig, H<gap/> &dash; Noget så stygt
+<lb/><p><q type="speech" who="TESMAN">Jo, det gør det. Kan du tænke dig, H<gap/> – Noget så stygt
 <lb/>som kom over mig.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Stygt? Over dig.</q></p>
-<lb/><p><q type="speech" who="TESMAN">Jeg misundte E. at ha&rapo; skrevet det. T<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>ænk &dash;</q></p>
+<lb/><p><q type="speech" who="TESMAN">Jeg misundte E. at ha’ skrevet det. T<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>ænk –</q></p>
 <lb/><p><q type="speech" who="HEDDA">Ja, jeg tænker.</q></p>
-<lb/><p><q type="speech" who="TESMAN">Og så vide at han desværre nok er rent uforbeder&typHyp;
+<lb/><p><q type="speech" who="TESMAN">Og så vide at han desværre nok er rent uforbeder‐
 <lb/>lig.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Du mener vel at han har mere livsmod end de andre.</q></p>
-<lb/><p><q type="speech" who="TESMAN">Ikke det. Men han kan ikke holde måde i nydelsen &dash;</q></p>
+<lb/><p><q type="speech" who="TESMAN">Ikke det. Men han kan ikke holde måde i nydelsen –</q></p>
 <lb/><p><q type="speech" who="HEDDA">Og hvad blev det så til.</q></p>
 <lb/><p><q type="speech" who="TESMAN">Det blev rent ud sagt til et bakkanal, H.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Havde han vinløv i håret.</q></p>
 <lb/><p><q type="speech" who="TESMAN"><HIS:hisDel rend="overstrike">N</HIS:hisDel>Vinløv? Nej, det så jeg ikke noget til. Men han
 <lb/>holdt en svulmende tale for den kvinde som havde
-<lb/>beåndet ham, som han sa&rapo;.</q></p>
+<lb/>beåndet ham, som han sa’.</q></p>
 <lb/><p><q type="speech" who="TESMAN">Nævnte han hende.</q></p>
 <lb/><p><q type="speech" who="TESMAN">Nej, men jeg kan ikke tænke mig andet end at det må
 <lb/>være fru E. Pas du på.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Hvor skiltes du fra ham.</q></p>
 <lb/><p><q type="speech" who="TESMAN"><HIS:hisDel rend="overwritten">V</HIS:hisDel>På vejen indover. Vi brød op, de fleste af os på
-<lb/>samme ti<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>d &dash; Og så blev vi enige om at følge ham hjem.
+<lb/>samme ti<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>d – Og så blev vi enige om at følge ham hjem.
 <lb/>Ja for han var da så rent overlastet.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Han var vel det.</q></p>
 <lb/><p><q type="speech" who="TESMAN">Men nu kommer det mærkværdige, H. Det sørgelige.
 <lb/>Å jeg skammer mig på Es vegne. Så overlastet var han</q></p>
 <lb/><p><q type="speech" who="HEDDA">Nå da.</q></p>
-<lb/><p><q type="speech" who="TESMAN">Jo mens vi gik sådan indover ser du, så blev jeg til&typHyp;
-<lb/>bage &dash; bare sådan et par minutters tid &dash; tænk det &dash;</q></p>
+<lb/><p><q type="speech" who="TESMAN">Jo mens vi gik sådan indover ser du, så blev jeg til‐
+<lb/>bage – bare sådan et par minutters tid – tænk det –</q></p>
 
 <pb ed="source" type="folio_nopagination" subtype="verso" n="1" facs="24"/>
-<lb/><p><q type="speech" who="HEDDA">Ja ja, herre gud &dash;</q></p>
-<lb/><p><q type="speech" who="TESMAN">Og da jeg så skynder mig efter dem &dash; véd du så hvad
+<lb/><p><q type="speech" who="HEDDA">Ja ja, herre gud –</q></p>
+<lb/><p><q type="speech" who="TESMAN">Og da jeg så skynder mig efter dem – véd du så hvad
 <lb/>jeg finder lige i vejkanten?</q></p>
 <lb/><p><q type="speech" who="HEDDA">Nej, hvor <HIS:hisDel rend="overstrike"><gap/></HIS:hisDel> kan jeg vide det.</q></p>
 <lb/><p><q type="speech" who="TESMAN">Sig det endelig ikke til nogen, H. Hører du, for Es
 <lb/>sky<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>ld. Jeg fandt dette her.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Det er jo hans papirer. Den pakke som han havde
 <lb/>med her.</q></p>
-<lb/><p><q type="speech" who="TESMAN">Ja herre gud &dash; så overlastet, som han var. Tænk,
-<lb/>han havde mistet dem &dash; uden at mærke det.</q></p>
+<lb/><p><q type="speech" who="TESMAN">Ja herre gud – så overlastet, som han var. Tænk,
+<lb/>han havde mistet dem – uden at mærke det.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Du gav ham den ikke igen!</q></p>
 <lb/><p><q type="speech" who="TESMAN">Nej, jeg turde ikke i den tilstand han var.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Så ingen af de andre at du fandt den.</q></p>
@@ -805,16 +800,16 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <lb/>fra os.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Så.</q></p>
 <lb/><p><q type="speech" who="TESMAN">Ja, jeg hørte de havde fulgt ham hjem. Så
-<lb/>drev jeg om en halv times tid, ser du &dash; For jeg vilde
+<lb/>drev jeg om en halv times tid, ser du – For jeg vilde
 <lb/>op til ham når jeg kunde tænke mig at han var
 <lb/>blet alene.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Nå?</q></p>
 <lb/><p><q type="speech" who="TESMAN">Ja men tænk dig, H. så havde jeg glemt hans
 <lb/>husnummer.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Traf ham altså ikke.</q></p>
-<lb/><p><q type="speech" who="TESMAN">Nej jeg ringte på en hel del steder. Men alt&typHyp;
+<lb/><p><q type="speech" who="TESMAN">Nej jeg ringte på en hel del steder. Men alt‐
 <lb/>sammen så var det galt. Du store gud, hvorledes
-<lb/>han må være tilmode <ref type="refMark" target="n8" xml:id="nb8">&referenceMark;</ref>når han savner den. For
+<lb/>han må være tilmode <ref type="refMark" target="n8" xml:id="nb8">※</ref>når han savner den. For
 <lb/>han har ingen afskrift. Bare løse lapper.<ref type="refMark" target="n7" xml:id="nb7">1)</ref></q></p>
 <lb/><p><q type="speech" who="TESMAN">Men når jeg har fåt hvile meg en smule og jeg kan tænke
 <lb/>mig at E, stakker, fåt sovet ud, så må jeg indom til
@@ -823,13 +818,13 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <lb/><p><q type="speech" who="TESMAN">Det tør jeg ved gud ikke kære Hedda</q></p>
 <lb/><p><q type="speech" who="HEDDA">Tør du ikke</q></p>
 <HIS:hisAdd place="margin">
-<lb/><p><q type="speech" who="TESMAN">Nej du kan da vel tænke hvor rent fortvilet han blir</q></p><ref type="refMark" target="nb8" xml:id="n8">&referenceMark;</ref></HIS:hisAdd>
+<lb/><p><q type="speech" who="TESMAN">Nej du kan da vel tænke hvor rent fortvilet han blir</q></p><ref type="refMark" target="nb8" xml:id="n8">※</ref></HIS:hisAdd>
 <HIS:hisAdd place="margin"><note resp="editor">Tilføyelsen står under avsnittet den skal innføyes i.</note>
 <lb/><ref type="refMark" target="nb7" xml:id="n7">1 <gap/></ref><p><q type="speech" who="TESMAN">med notitser og sligt noget.</q></p></HIS:hisAdd>
-<lb/><p><q type="speech" who="HEDDA">kan da ikke sligt et manuskript skrives om igen &dash;
+<lb/><p><q type="speech" who="HEDDA">kan da ikke sligt et manuskript skrives om igen –
 <lb/>Sådan engang til.</q></p>
-<lb/><p><q type="speech" who="TESMAN">Nej, det tror jeg aldrig vilde gå. Beåndelsen, ser du &dash;</q></p>
-<lb/><p><q type="speech" who="HEDDA">Ja, ja, just det er det vel &dash;</q></p>
+<lb/><p><q type="speech" who="TESMAN">Nej, det tror jeg aldrig vilde gå. Beåndelsen, ser du –</q></p>
+<lb/><p><q type="speech" who="HEDDA">Ja, ja, just det er det vel –</q></p>
 
 <pb ed="source" type="folio_nopagination" subtype="recto" n="2" facs="25"/>
 <lb/><p><q type="speech" who="BRACK">Og hvad har så T. fortalt om nattens <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>oplevelser.</q></p>
@@ -839,50 +834,50 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <lb/>med der?</q></p>
 <lb/><p><q type="speech" who="HEDDA">Nej, ham havde fulgt hjem forinden.</q></p>
 <lb/><p><q type="speech" who="BRACK">T. også?</q></p>
-<lb/><p><q type="speech" who="HEDDA">Nej, men et par andre, sa&rapo; han.</q></p>
+<lb/><p><q type="speech" who="HEDDA">Nej, men et par andre, sa’ han.</q></p>
 <lb/><p><q type="speech" who="BRACK">J. T. er en troskyldig sjæl, fru H.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Ja det ved gud han er. Men stikker der da noget under</q></p>
 <lb/><p><q type="speech" who="BRACK">Jo, det er ikke frit for det.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Nå da! Lad os sætte os kære assessor. Så fortæller De
 <lb/>bedre.</q> (<HIS:hisDel rend="overwritten">D</HIS:hisDel>H. sætter sig vel midten af bordet. B. til højre)
 <lb/><q type="speech" who="HEDDA">Nå da altså?</q></p>
-<lb/><p><q type="speech" who="BRACK">Jeg havde særlige grunde til at efterspore mine gæsters &dash;
-<lb/>&dash; eller rigtigere sagt en del af mine gæsters veje inat.</q></p>
+<lb/><p><q type="speech" who="BRACK">Jeg havde særlige grunde til at efterspore mine gæsters –
+<lb/>– eller rigtigere sagt en del af mine gæsters veje inat.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Og imellem dem var kanske E. L.</q></p>
 <lb/><p><q type="speech" who="BRACK">Jeg må tilstå han var det.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Nu gør De mig virkelig nysgærrig.</q></p>
 <lb/><p><q type="speech" who="BRACK">Véd De han og et par af de andre begav sig hen da de var gået
 <lb/>fra mig.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Går det an at fortælle det, så gør så.</q></p>
-<lb/><p><q type="speech" who="BRACK">Bevars, det kan godt fortælles. Jo, de indfandt sig i en sær&typHyp;
+<lb/><p><q type="speech" who="BRACK">Bevars, det kan godt fortælles. Jo, de indfandt sig i en sær‐
 <lb/>deles <HIS:hisDel rend="overstrike">k<gap/></HIS:hisDel> animeret soire.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Nå ja.</q></p>
 <lb/><p><q type="speech" who="BRACK">L. havde fåt indbydelse i forvejen, han også. Men da
 <lb/>han afslåt at komme. For han har jo rejst sig igen, som
 <lb/>man siger.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Nå ja, men så.</q></p>
-<lb/><p><q type="speech" who="BRACK">Ja <HIS:hisDel rend="overstrike">k<gap/></HIS:hisDel> ser De, fru H, &dash; så kommer uheldigvis ån&typHyp;
-<lb/>den over ham oppe hos mig &dash;</q></p>
-<lb/><p><q type="speech" who="HEDDA">Ja, der blev han jo beåndet, sa&rapo; T.</q></p>
+<lb/><p><q type="speech" who="BRACK">Ja <HIS:hisDel rend="overstrike">k<gap/></HIS:hisDel> ser De, fru H, – så kommer uheldigvis ån‐
+<lb/>den over ham oppe hos mig –</q></p>
+<lb/><p><q type="speech" who="HEDDA">Ja, der blev han jo beåndet, sa’ T.</q></p>
 <lb/><p><q type="speech" who="BRACK">I temmelig høj grad beåndet. Så kom han vel på
-<lb/>andre tanker, kan jeg tro. For vi mandspersoner er ikke al&typHyp;
+<lb/>andre tanker, kan jeg tro. For vi mandspersoner er ikke al‐
 <lb/>tid så principfaste som vi burde være. <HIS:hisDel rend="overstrike"><gap/></HIS:hisDel></q></p>
 <lb/><p><q type="speech" who="HEDDA">Nå De danner da visst en undtagelse. Men L. altså?</q></p>
-<lb/><p><q type="speech" who="BRACK">Ja, kort og godt, &dash; enden blev at han havned i frøken Ds salon.</q></p>
+<lb/><p><q type="speech" who="BRACK">Ja, kort og godt, – enden blev at han havned i frøken Ds salon.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Frøken D.</q></p>
 
 <pb ed="source" type="folio_nopagination" subtype="verso" n="2" facs="26"/>
 <lb/><p><q type="speech" who="BRACK">Det var hende som gav soiréen, for en udvalgt kreds af ven
 <lb/>inder og beundrere.</q></p>
-<lb/><p><q type="speech" who="HEDDA">Er det en rødhåret &dash; sådan knejpesangerinde?</q></p>
+<lb/><p><q type="speech" who="HEDDA">Er det en rødhåret – sådan knejpesangerinde?</q></p>
 <lb/><p><q type="speech" who="BRACK">Netop. Og E. L. var som bekendt en af hendes varmeste
 <lb/>beskyttere i sine velmagtsdage.</q></p>
 <lb/><p><q type="speech" who="HEDDA"><HIS:hisDel rend="overstrike">Og hvad endte det så me</HIS:hisDel>d. Og hvorledes endte så dette her.</q></p>
 <lb/><p><q type="speech" who="BRACK">Mindre venskabeligt. Frøken D. skal fra den ømmeste
-<lb/>modtagelse være gåt til håndgribeligheder<ref type="refMark" target="n5" xml:id="nb5">&referenceMark;</ref>. Almindeligt slags&typHyp;
-<lb/>mål mellem både damer og herrer. Politiet hentet &dash;</q></p>
+<lb/>modtagelse være gåt til håndgribeligheder<ref type="refMark" target="n5" xml:id="nb5">※</ref>. Almindeligt slags‐
+<lb/>mål mellem både damer og herrer. Politiet hentet –</q></p>
 <lb/><p><q type="speech" who="HEDDA">Politiet?</q></p>
-<lb/><p><q type="speech" who="BRACK">E. L. skal ha&rapo; gjort voldsom modstand. Måtte så natur&typHyp;
+<lb/><p><q type="speech" who="BRACK">E. L. skal ha’ gjort voldsom modstand. Måtte så natur‐
 <lb/>ligvis på stationen.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Sådan er det gåt for sig. Da har han ikke havt vinløv
 <lb/>i håret.</q></p>
@@ -892,14 +887,14 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <lb/><p><q type="speech" who="BRACK">For det første kan det nu ikke være mig ganske
 <lb/>ligegyldigt om det oplyses ved forhørerne at de kom fra
 <lb/>mig.</q></p>
-<lb/><p><q type="speech" who="HEDDA">Forhører vil der altså bli&rapo;.</q></p>
+<lb/><p><q type="speech" who="HEDDA">Forhører vil der altså bli’.</q></p>
 <lb/><p><q type="speech" who="BRACK">Selvfølgelig. Men det fik nu endda <HIS:hisDel rend="overstrike"><gap/></HIS:hisDel> være for hvad
-<lb/>det var &dash; For mit rygte er nu så vidt rodfæstet i den
-<lb/>almindelige mening &dash;</q></p>
+<lb/>det var – For mit rygte er nu så vidt rodfæstet i den
+<lb/>almindelige mening –</q></p>
 <lb/><p><q type="speech" who="HEDDA"><HIS:hisDel rend="overstrike">Fortjener det også at være det</HIS:hisDel>? Naturligvis.</q></p>
 <lb/><p><q type="speech" who="BRACK">Men De bør vide alt dette her.</q></p>
 <HIS:hisAdd place="margin"><note resp="editor">Tilføyelsen står nederst på siden.</note>
-<lb/><p><ref type="refMark" target="nb5" xml:id="n5">&referenceMark;</ref><q type="speech" who="BRACK">E.L. påstod at <app type="alteration"><lem><HIS:hisAdd place="offline">nogen</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">man<gap/></HIS:hisDel></HIS:hisRdg></app> havde bestjålet ham. Han påstod at hans tegne
+<lb/><p><ref type="refMark" target="nb5" xml:id="n5">※</ref><q type="speech" who="BRACK">E.L. påstod at <app type="alteration"><lem><HIS:hisAdd place="offline">nogen</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">man<gap/></HIS:hisDel></HIS:hisRdg></app> havde bestjålet ham. Han påstod at hans tegne
 <lb/>bog var borte. Og andre sager også. Han gjorde da et morderligt
 <lb/>spektakel.</q></p></HIS:hisAdd></div>
 
@@ -925,21 +920,21 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <lb/><p><q type="speech" who="HEDDA">Og det bør mit også være, mener De.</q></p>
 <lb/><p><q type="speech" who="BRACK">Ja. Jeg tilstår, det vilde være mig mere end pinligt
 <lb/>om han fik indpas her. Om han som en uvedkommende
-<lb/>skulde trænge sig ind i &dash;</q></p>
+<lb/>skulde trænge sig ind i –</q></p>
 <lb/><p><q type="speech" who="HEDDA">Ind i firkanten?</q></p>
-<lb/><p><q type="speech" who="BRACK">Netop. Det vilde for mig være samme som at bli&rapo;
+<lb/><p><q type="speech" who="BRACK">Netop. Det vilde for mig være samme som at bli’
 <lb/>hjemløs.</q></p>
-<lb/><p><q type="speech" who="HEDDA">Altså, &dash; eneste hane i kurven, &dash; det er Deres mål.</q></p>
+<lb/><p><q type="speech" who="HEDDA">Altså, – eneste hane i kurven, – det er Deres mål.</q></p>
 <lb/><p><q type="speech" who="BRACK">Og det vil jeg kæmpe for med alle de midler jeg har
 <lb/>til min rådighed.</q></p>
-<lb/><p><q type="speech" who="HEDDA">De er i grunden et farligt menneske. Ved De vel, &dash; jeg
-<lb/>er hjerteglad &dash; sålænge De ikke har hals og hånd over
+<lb/><p><q type="speech" who="HEDDA">De er i grunden et farligt menneske. Ved De vel, – jeg
+<lb/>er hjerteglad – sålænge De ikke har hals og hånd over
 <lb/>mig.</q></p>
-<lb/><p><q type="speech" who="BRACK"><HIS:hisDel rend="overstrike">Nej nej</HIS:hisDel> Ja, ja, fru H. De kan ha&rapo; ret i det. Hvem
+<lb/><p><q type="speech" who="BRACK"><HIS:hisDel rend="overstrike">Nej nej</HIS:hisDel> Ja, ja, fru H. De kan ha’ ret i det. Hvem
 <lb/>ved om jeg ikke i så fald var kapabel til at finde på
 <lb/>både det ene og det andet.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Det er jo næsten, som om De sidder og truer.</q></p>
-<lb/><p>(rejser sig) <q type="speech" who="BRACK">Langtfra. Trekanten må befæstes og for&typHyp;
+<lb/><p>(rejser sig) <q type="speech" who="BRACK">Langtfra. Trekanten må befæstes og for‐
 <lb/>svares i frivillighed.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Det mener jeg også.</q></p>
 <lb/><p><q type="speech" who="BRACK">Ja nu må jeg indover</q></p>
@@ -958,25 +953,25 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <lb/><p><q type="speech" who="HEDDA">Jeg ved det allerede, som De vel ser. T. sendte et
 <lb/>kort ud til mig.</q></p>
 <lb/><p><q type="speech" who="FRØKENTESMAN">Ja, han lovte mig jo det. Men jeg syntes da at
-<lb/>til H, &dash; her i livets hus &dash; måtte jeg da melde døden
+<lb/>til H, – her i livets hus – måtte jeg da melde døden
 <lb/>selv.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Det var meget venligt af Dem.</q></p>
 <lb/><p><q type="speech" who="FRØKENTESMAN">Å, R. skulde bare ikke gåt bort nettop nu. H<hi rend="raised">s</hi> hus
 <lb/>skulde ikke bære sorg i denne tid.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Hun døde jo så stille?</q></p>
-<lb/><p><q type="speech" who="FRØKENTESMAN">Å så dejligt, &dash; så fredeligt løste det sig op for
+<lb/><p><q type="speech" who="FRØKENTESMAN">Å så dejligt, – så fredeligt løste det sig op for
 <lb/>hende. Og så den usigelige lykke at hun fik se
 <lb/>J. engang til. Og fik sige ham rigtig farvel. Er han
 <lb/>kanske ikke kommen hjem endnu?</q></p>
 <lb/><p><q type="speech" who="HEDDA">Nej, han skrev at jeg ikke måtte vente ham så
 <lb/>snart. Men sæt Dem da ned.</q></p>
-<lb/><p><q type="speech" who="FRØKENTESMAN">Nej tak, kære &dash; velsignede H. Jeg vilde nok gerne.
-<lb/>Men jeg har så liden tid. Nu skal hun stelles og pyn&typHyp;
-<lb/>tes så godt jeg kan. Rigtig pén skal hun kom&typHyp;
+<lb/><p><q type="speech" who="FRØKENTESMAN">Nej tak, kære – velsignede H. Jeg vilde nok gerne.
+<lb/>Men jeg har så liden tid. Nu skal hun stelles og pyn‐
+<lb/>tes så godt jeg kan. Rigtig pén skal hun kom‐
 <lb/>me i sin grav.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Kan ikke jeg hjælpe med noget?</q></p>
 <lb/><p><q type="speech" who="FRØKENTESMAN">Tænk aldrig på det. Sligt noget skal ikke
-<lb/>H. T. ta&rapo; sine hænder i. Og ikke fæste sine tan&typHyp;
+<lb/>H. T. ta’ sine hænder i. Og ikke fæste sine tan‐
 <lb/>ker ved heller. Ja, herre gud, så går det i verden.
 <lb/>Hjemme hos mig skal vi nu sy lintøj til Rina.
 <lb/>Og her skal vel også syes, kan jeg tænke. Men
@@ -990,27 +985,27 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <lb/><p><q type="speech" who="TESMAN">Nej, jeg er virkelig ræd, jeg har glemt halvparten, du.
 <lb/>Jeg får komme ind til dig imorgen igen. For mit hode er så
 <lb/>rent fortumlet. Jeg kan ikke holde tankerne sammen.</q></p>
-<lb/><p><q type="speech" who="FRØKENTESMAN">Men du må da ikke ta&rapo; det på den vis, Jørgen.</q></p>
+<lb/><p><q type="speech" who="FRØKENTESMAN">Men du må da ikke ta’ det på den vis, Jørgen.</q></p>
 <lb/><p><q type="speech" who="TESMAN">Så? Hvorledes da, mener du?</q></p>
 <lb/><p><q type="speech" who="FRØKENTESMAN">Du skal være glad for det, som skét er. For hendes
 <lb/>skyld. Ligesom jeg er det.</q></p>
-<lb/><p><q type="speech" who="TESMAN">Å ja ja. Du mener tante R &dash;</q></p>
+<lb/><p><q type="speech" who="TESMAN">Å ja ja. Du mener tante R –</q></p>
 <lb/><p><q type="speech" who="HEDDA">Det blir ensomt for Dem nu, frøken T.</q></p>
 <lb/><p><q type="speech" who="FRØKENTESMAN">Det kommer ikke til at vare længe. Salig R<hi rend="raised">s</hi> lille
 <lb/>stue skal ikke stå tom.</q></p>
 <lb/><p><q type="speech" who="TESMAN">Hvem vil du skal flytte ind i den. Hvad?</q></p>
 <lb/><p><q type="speech" who="FRØKENTESMAN">Å der findes altid en eller anden syg sjæl, som trænger
-<lb/>røgt og pleje &dash; desværre.</q></p>
-<lb/><p><q type="speech" who="HEDDA">Vil De virkelig ha&rapo; sligt kors på Dem igen.</q></p>
+<lb/>røgt og pleje – desværre.</q></p>
+<lb/><p><q type="speech" who="HEDDA">Vil De virkelig ha’ sligt kors på Dem igen.</q></p>
 <lb/><p><q type="speech" who="FRØKENTESMAN">Kors! <HIS:hisDel rend="overstrike">Det har da ikke været nog</HIS:hisDel>e Gud forlade
-<lb/>Dem, barn, &dash; det har da ikke været noget kors for mig.</q></p>
+<lb/>Dem, barn, – det har da ikke været noget kors for mig.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Men om der nu skulde komme en fremmed.</q></p>
 <lb/><p><q type="speech" who="FRØKENTESMAN">Å med syge blir en snart venner. Og jeg behøver da
-<lb/>så sårt at ha&rapo; nogen at leve for. Nå, gud ske lov, her
-<lb/>i huset turde vel også bli et og andet at ta&rapo; hånd i
+<lb/>så sårt at ha’ nogen at leve for. Nå, gud ske lov, her
+<lb/>i huset turde vel også bli et og andet at ta’ hånd i
 <lb/>for en gammel tante.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Å tal bare ikke om det.</q></p>
-<lb/><p><q type="speech" who="TESMAN">Tænk, hvor dejligt alting kunde være, dersom &dash;</q></p>
+<lb/><p><q type="speech" who="TESMAN">Tænk, hvor dejligt alting kunde være, dersom –</q></p>
 <lb/><p><q type="speech" who="HEDDA">Dersom?</q></p>
 <lb/><p><q type="speech" who="TESMAN">Å ikke noget. Det ordner sig <HIS:hisDel rend="overstrike">nok</HIS:hisDel> vel.</q></p>
 <lb/><p><q type="speech" who="FRØKENTESMAN">Ja, ja, I to to har no<HIS:hisDel rend="overwritten">g</HIS:hisDel>k noget at snakke sammen,
@@ -1022,7 +1017,7 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <lb/>mig og hos salig Jochum.</q></p>
 <lb/><p><q type="speech" who="TESMAN">Ja, tænk det, tante J! Hvad?</q></p>
 <lb/><figure type="bar"/>
-<lb/><p><q type="speech" who="HEDDA">Det lader til at dødsfaldet går dig mere til hjer&typHyp;
+<lb/><p><q type="speech" who="HEDDA">Det lader til at dødsfaldet går dig mere til hjer‐
 <lb/>tet end hende.</q></p>
 <lb/><p><q type="speech" who="TESMAN">Å det er ikke dødsfaldet så meget. Det er E. L.
 <lb/>som jeg er så inderlig urolig for.</q></p>
@@ -1033,22 +1028,22 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <lb/><p><q type="speech" who="TESMAN">Men <HIS:hisAdd place="offline">Han var ikke hjemme</HIS:hisAdd> så mødte jeg fru E. og hun fortalte at han
 <lb/>havde været her tidlig imorges.</q></p>
 <lb/><p><q type="speech" who="HEDDA"><HIS:hisDel rend="overstrike">Ja han var det</HIS:hisDel> Ja straks efter du var gåt.</q></p>
-<lb/><p><q type="speech" who="TESMAN">Og han skal jo ha&rapo; sagt at han havde revet ma&typHyp;
+<lb/><p><q type="speech" who="TESMAN">Og han skal jo ha’ sagt at han havde revet ma‐
 <lb/>nuskriptet i stykker! Hvad?</q></p>
 <lb/><p><q type="speech" who="HEDDA">Ja, han påstod det.</q></p>
 <lb/><p><q type="speech" who="TESMAN">Men herre gud, så er han jo gåt fra forstanden,
-<lb/>H. Og så turde du vel ikke gi&rapo; ham det tilbage heller.</q></p>
+<lb/>H. Og så turde du vel ikke gi’ ham det tilbage heller.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Nej, ha<HIS:hisDel rend="overwritten">m</HIS:hisDel>n fik det ikke.</q></p>
-<lb/><p><q type="speech" who="TESMAN"><HIS:hisDel rend="overstrike">Og du sa&rapo;</HIS:hisDel>. Men du sa&rapo; ham da vel at vi havde det.</q></p>
-<lb/><p><q type="speech" who="HEDDA">Nej. S<HIS:hisDel rend="overwritten">å</HIS:hisDel>a&rapo; du kanske det til fru E. &dash;</q> <q type="speech" who="TESMAN">Nej det vilde jeg ikke
-<lb/>Men det skulde du da i det mindste ha&rapo; sagt. Tænk
+<lb/><p><q type="speech" who="TESMAN"><HIS:hisDel rend="overstrike">Og du sa’</HIS:hisDel>. Men du sa’ ham da vel at vi havde det.</q></p>
+<lb/><p><q type="speech" who="HEDDA">Nej. S<HIS:hisDel rend="overwritten">å</HIS:hisDel>a’ du kanske det til fru E. –</q> <q type="speech" who="TESMAN">Nej det vilde jeg ikke
+<lb/>Men det skulde du da i det mindste ha’ sagt. Tænk
 <lb/>om han i fortvilelse og forvildelse går hen og gør
 <lb/>en ulykke. Lad mig få <app type="alteration"><lem><HIS:hisAdd place="offline">manuskr</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">det</HIS:hisDel></HIS:hisRdg></app>. Lad mig få det, H.
 <lb/>Jeg vil ind til ham med det straks. Hvor er pakken.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Jeg har den ikke mere.</q></p>
 <lb/><p><q type="speech" who="TESMAN">Har du den ikke. Hvad i al verden mener du med
 <lb/>det.</q></p>
-<lb/><note resp="author"><HIS:hisDel rend="overstrike">sid</HIS:hisDel> 53.</note><note resp="editor">Forfatternoten står i venstre marg. Den viser til legg 53 i NBO Ms.8&deg; 808.</note>
+<lb/><note resp="author"><HIS:hisDel rend="overstrike">sid</HIS:hisDel> 53.</note><note resp="editor">Forfatternoten står i venstre marg. Den viser til legg 53 i NBO Ms.8° 808.</note>
 <lb/><p><q type="speech" who="TESMAN">Men hvorledes kunde du da gå hen og gøre
 <lb/>noget så uhørt! Hvorledes kunde sligt falde dig
 <lb/>ind! Hvorledes kunde det komme over dig!</q></p>
@@ -1057,40 +1052,40 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <pb ed="source" type="folio_nopagination" subtype="verso" n="2" facs="31"/>
 <lb/>det for din skyld, Jørgen.</q></p>
 <lb/><p><q type="speech" who="TESMAN">For min skyld.</q></p>
-<lb/><p><q type="speech" who="HEDDA">Da du kom hjem imorges og fortalte om E. L<hi rend="raised">s</hi> værk &dash;</q></p>
+<lb/><p><q type="speech" who="HEDDA">Da du kom hjem imorges og fortalte om E. L<hi rend="raised">s</hi> værk –</q></p>
 <lb/><p><q type="speech" who="TESMAN">Ja, ja, hvad så.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Du tilstod at du misundte ham det.</q></p>
 <lb/><p><q type="speech" who="TESMAN">Å herre gud, det var da ikke så bogstavelig ment</q></p>
 <lb/><p><q type="speech" who="HEDDA">Alligevel. Jeg kunde ikke tåle den tanke at nogen
 <lb/>anden skulde stille dig i skyggen.</q></p>
-<lb/><p><q type="speech" who="TESMAN">Hedda, &dash; er det sandt, du siger &dash; Ja-men, ja-men,
+<lb/><p><q type="speech" who="TESMAN">Hedda, – er det sandt, du siger – Ja-men, ja-men,
 <lb/>på den slags måde har jeg aldrig mærket din kærlighed
 <lb/>før.</q><HIS:hisDel rend="overstrike"><gap/></HIS:hisDel></p>
-<lb/><p><q type="speech" who="HEDDA">Nå, så er det bedst du får vide da &dash; at just i denne
-<lb/>tid &dash;. Nej, nej. Du kan spørge dig for hos tante J., så
+<lb/><p><q type="speech" who="HEDDA">Nå, så er det bedst du får vide da – at just i denne
+<lb/>tid –. Nej, nej. Du kan spørge dig for hos tante J., så
 <lb/>gir hun deg nok besked.</q></p>
-<lb/><p><q type="speech" who="TESMAN">Å jeg tror næsten jeg forstår deg H.! Nej, herre gud &dash;
+<lb/><p><q type="speech" who="TESMAN">Å jeg tror næsten jeg forstår deg H.! Nej, herre gud –
 <lb/>skulde <emph>det</emph> være muligt. Hvad?</q></p>
 <lb/><p><q type="speech" who="HEDDA">Skrig da ikke så. Pigen kan høre dig.</q></p>
-<lb/><p><q type="speech" who="TESMAN">Pigen. Nej, du er god H. Pigen, &dash; det er jo B. det. Jeg vil
+<lb/><p><q type="speech" who="TESMAN">Pigen. Nej, du er god H. Pigen, – det er jo B. det. Jeg vil
 <lb/>selv ud og fortælle det til B.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Å jeg forgår i alt dette.</q></p>
 <lb/><p><q type="speech" who="TESMAN">I hvad for noget, H. Hvad.</q></p>
-<lb/><p><q type="speech" who="HEDDA">I alt dette &dash; løjerlige.</q></p>
-<lb/><p><q type="speech" who="TESMAN">Løjerligt &dash; at jeg er så sjæleglad. Men alligevel &dash; kanske
+<lb/><p><q type="speech" who="HEDDA">I alt dette – løjerlige.</q></p>
+<lb/><p><q type="speech" who="TESMAN">Løjerligt – at jeg er så sjæleglad. Men alligevel – kanske
 <lb/>det ikke passer at sige noget til B.</q></p>
-<lb/><p><q type="speech" who="HEDDA">Å jo &dash; hvorfor ikke det også.</q></p>
+<lb/><p><q type="speech" who="HEDDA">Å jo – hvorfor ikke det også.</q></p>
 <lb/><p><q type="speech" who="TESMAN">Nej nej, ikke endnu. Men tante J. må tilforlatelig
 <lb/>få vide det. Og det at du begynder at kalde mig Jørgen
-<lb/>og så. Tænk det. Å tante J. vil bli så glad, &dash; så glad.</q></p>
+<lb/>og så. Tænk det. Å tante J. vil bli så glad, – så glad.</q></p>
 <lb/><p><q type="speech" who="HEDDA">Når hun hører at jeg har brændt E. L<hi rend="raised">s</hi> papirer.</q></p>
 <lb/><p><q type="speech" who="TESMAN">Nej det er jo også sandt. Det med brændingen, det må
 <lb/>ingen få vide.</q> (ler) <q type="speech" who="TESMAN">Men at du brænder for mig, H, det
-<lb/>skal så sandelig tante J. ha&rapo; del i. For resten gad jeg
+<lb/>skal så sandelig tante J. ha’ del i. For resten gad jeg
 <lb/>vide om sligt noget er almindeligt hos unge koner. Hvad</q></p>
 <lb/><p><q type="speech" who="HEDDA">Du får spørge tante J. om det også.</q></p>
-<lb/><p><q type="speech" who="TESMAN">Ja det vil jeg gøre ved lejlighed. &dash; Nej men, nej men
-<lb/>manuskriptet &dash; Herre gud &dash; det er jo forfærdeligt at
+<lb/><p><q type="speech" who="TESMAN">Ja det vil jeg gøre ved lejlighed. – Nej men, nej men
+<lb/>manuskriptet – Herre gud – det er jo forfærdeligt at
 <lb/>tænke sig for den stakkers E. alligevel!</q></p>
 </div>
 
@@ -1098,10 +1093,10 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <lb/><fw type="gathering" place="top-left" hand="h1">12.</fw>
 <div type="act" n="4">
 <lb/><p>1.) <q type="speech" who="HEDDA">Jeg ved bare at E. L. har havt mod til at leve
-<lb/>livet efter sit eget sind. Og så nu &dash; for første gang
-<lb/>&dash; det store. Det, at han havde kraft til at bryde
-<lb/>op fra livsgildet &dash; så tidligt.</q></p>
-<lb/><p><q type="speech" who="BRACK">Det gør mig ondt fru H, &dash; men jeg nødes til at
+<lb/>livet efter sit eget sind. Og så nu – for første gang
+<lb/>– det store. Det, at han havde kraft til at bryde
+<lb/>op fra livsgildet – så tidligt.</q></p>
+<lb/><p><q type="speech" who="BRACK">Det gør mig ondt fru H, – men jeg nødes til at
 <lb/>rive Dem ud af en smuk indbildning.</q></p>
 <lb/><p><q type="speech" who="HEDDA">En indbildning</q></p>
 <lb/><p><q type="speech" who="BRACK">Som De ....</q></p>
@@ -1109,7 +1104,7 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <lb/><p><q type="speech" who="BRACK">Sagens ...</q></p>
 <lb/><p><q type="speech" who="HEDDA">H<HIS:hisDel rend="overwritten">e</HIS:hisDel>ænger den ikke s<gap/> sam<gap/></q></p>
 <lb/><p><q type="speech" who="BRACK">Nej. For den stakers fru E. skyld brugte jeg et par
-<lb/>små omskrivninger</q><ref type="refMark" target="n6" xml:id="nb6">&referenceMark;</ref></p>
+<lb/>små omskrivninger</q><ref type="refMark" target="n6" xml:id="nb6">※</ref></p>
 <lb/><p><q type="speech" who="HEDDA">Men hvad <HIS:hisDel rend="overstrike">er så det virkelige da</HIS:hisDel> mere er der.</q></p>
 <lb/><p><q type="speech" who="BRACK">Det er det at E. L....</q></p>
 <lb/><p><q type="speech" who="HEDDA">Han har ikke skudt sig selv.!</q></p>
@@ -1118,7 +1113,7 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <lb/><p><q type="speech" who="HEDDA">Og det skede h<gap/>....</q></p>
 <lb/><p><q type="speech" who="BRACK">Det kan jeg</q></p>
 <HIS:hisAdd place="margin"><note resp="editor">Tilføyelsen står på bunnen av siden.</note>
-<lb/><p><ref type="refMark" target="nb6" xml:id="n6">&referenceMark;</ref><q type="speech" who="HEDDA">Hvilke da. &dash;</q> <q type="speech" who="BRACK">Først det at han virkelig er død.</q> <HIS:hisAdd place="offline"><q type="speech" who="HEDDA">På hospitalt.</q></HIS:hisAdd> <q type="speech" who="BRACK"><HIS:hisAdd place="offline">Ja,</HIS:hisAdd>Og
+<lb/><p><ref type="refMark" target="nb6" xml:id="n6">※</ref><q type="speech" who="HEDDA">Hvilke da. –</q> <q type="speech" who="BRACK">Først det at han virkelig er død.</q> <HIS:hisAdd place="offline"><q type="speech" who="HEDDA">På hospitalt.</q></HIS:hisAdd> <q type="speech" who="BRACK"><HIS:hisAdd place="offline">Ja,</HIS:hisAdd>Og
 <lb/>uden at komme til bevidsted.</q></p></HIS:hisAdd>
 </div>
 <pb ed="source" type="folio_nopagination" subtype="verso" n="1"/><pb ed="source" type="folio_nopagination" subtype="recto" n="2"/>
@@ -1137,9 +1132,9 @@ Opprettet filen på grunnlag av transkripsjon av faksimile, NBO Ms.8&deg; 809. T
 <lb/>Eller har hun revet ham pistolen ud af hånden, skudt ham og
 <lb/>stukket pistolen ned i lommen igen. Det kunde nok ligne
 <lb/>hende. For hun er et håndfast pigebarn, den frøken D.</q></p>
-<lb/><p><q type="speech" who="HEDDA">&dash; Men alt dette her kommer jo ikke mig ved.</q></p>
+<lb/><p><q type="speech" who="HEDDA">– Men alt dette her kommer jo ikke mig ved.</q></p>
 <lb/><p><q type="speech" who="BRACK">Nej; men De må svare på det spørsmål: hvorfor
-<lb/>gav De E. L. pistolen? Og hvilke slutninger vil man ud&typHyp;
+<lb/>gav De E. L. pistolen? Og hvilke slutninger vil man ud‐
 <lb/>drage af den kendsgerning, at De gav ham den?
 <lb/>Man plejer at finde sig i det uundgåelige</q></p>
 <lb/><p><q type="speech" who="HEDDA">Ja kanske det.</q></p></div>

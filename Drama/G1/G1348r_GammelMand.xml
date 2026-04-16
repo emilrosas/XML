@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -16,8 +10,8 @@
 <title level="a" type="sub">1. versjon, TarkUiB NT348r (rollehefte, En gammel Mand)</title>
 <title level="a" type="origYear">[1855]</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Helene Grønlien, Stine Brenna Taugbøl</name></respStmt>
 <respStmt>
 <resp>Transkripsjon (av faksimiler), 2000</resp>
@@ -67,7 +61,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <list>
@@ -257,8 +251,8 @@
 </item>
 </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="app-external">
@@ -281,7 +275,7 @@
 <label>SIGNE</label><item>-/Signe/De Forrige, Signe<note>Rolleheftet mangler tittelside; rollenavnet finnes derfor ikke i 'titlePart'.</note></item>
 </list>
 </tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 <variantEncoding type="external" method="parallel-segmentation" location="internal" n=""/>
@@ -415,7 +409,7 @@ Konvertering fra word-dokument til TEI/XML-fil (ikke validert). TeiHeaderen må 
 <lb/><titlePart xml:id="GAMMELMAND">En gammel Mand
 <lb/>blandt Gjæsterne,
 <lb/>i
-<lb/>&lquo;Gildet paa Solhoug.&rquo;
+<lb/>«Gildet paa Solhoug.»
 <lb/>Skuespil i 3 Akter.</titlePart>
 </docTitle>
 </titlePage>
@@ -448,7 +442,7 @@ Konvertering fra word-dokument til TEI/XML-fil (ikke validert). TeiHeaderen må 
 <lb/><l rend="indent">I Birkelunde!</l></HIS:hisLg></HIS:hisSp>
 <lb/><figure type="bar"/>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Flere af Gjæsterne</speaker>. <HIS:hisStage>(hviskende)</HIS:hisStage></HIS:spOpener><p>Det er bedst at vogte sig!</p></HIS:hisSp>
-<lb/><HIS:hisSp who="GAMMELMAND"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Men I, Fru Margit! Jeg veed Eders Slægt
+<lb/><HIS:hisSp who="GAMMELMAND"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Men I, Fru Margit! Jeg veed Eders Slægt
 <lb/>var altid sagakyndig, og I selv kunde mange
 <lb/>vakkre Eventyr, alt imens I var Barn.</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Flere Gjæster</speaker>.</HIS:spOpener><p>Tak, Tak, Gudmund!</p></HIS:hisSp>
@@ -459,10 +453,10 @@ Konvertering fra word-dokument til TEI/XML-fil (ikke validert). TeiHeaderen må 
 <lb/><HIS:hisLg><head>3.</head>
 <lb/><l>To Hjerter kan ei skilles ad,</l>
 <lb/><l>Der har hinanden kjær.</l></HIS:hisLg></HIS:hisSp>
-<lb/><HIS:hisSp who="GAMMELMAND"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Det er et vakkert Kvæde. &dash; See, hvor de
+<lb/><HIS:hisSp who="GAMMELMAND"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Det er et vakkert Kvæde. – See, hvor de
 <pb/>
 <lb/>unge Karle skotte derhen. <HIS:hisStage>(Peger hen paa
-<lb/>Pigerne)</HIS:hisStage>. &dash; Ja, ja, hver har vel sin, kan jeg
+<lb/>Pigerne)</HIS:hisStage>. – Ja, ja, hver har vel sin, kan jeg
 <lb/>tro.</p></HIS:hisSp>
 <lb/><HIS:hisSp rend="braced" who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener><p><anchor xml:id="LB3"/>Margit, min Søster!<anchor xml:id="LE3"/></p></HIS:hisSp>
 <lb/><HIS:hisSp rend="braced" who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener><p><anchor xml:id="LB4"/>Hjælp, Hjælp, hun døer!<anchor xml:id="LE4"/></p></HIS:hisSp>
@@ -470,7 +464,7 @@ Konvertering fra word-dokument til TEI/XML-fil (ikke validert). TeiHeaderen må 
 <ptr xml:id="SP3" type="linkedSegment" target="LB3 LE3"/>
 <ptr xml:id="SP4" type="linkedSegment" target="LB4 LE4"/>
 </linkGrp>
-<lb/><HIS:hisStage>(Almindelig Bevægelse iblandt Gjæsterne, hvor&typHyp;
+<lb/><HIS:hisStage>(Almindelig Bevægelse iblandt Gjæsterne, hvor‐
 <lb/>paa Tæppet falder)</HIS:hisStage>
 <lb/><figure type="bar"/>
 </div>

@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -13,11 +7,11 @@
 <title level="s" type="main">Henrik Ibsens skrifter</title>
 <title level="s" type="sub">Diplomatarisk tekstarkiv</title>
 <title level="a" type="main">Rypen i Justedal</title>
-<title level="a" type="sub">NBO Ms.4&deg; 932, grunntekst</title>
+<title level="a" type="sub">NBO Ms.4° 932, grunntekst</title>
 <title level="a" type="origYear">1850</title>
 <author>Brynjolf Bjarme (pseudonym for Henrik Ibsen)</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Stine Brenna Taugbøl, Ellen Nessheim Wiger</name></respStmt>
 <respStmt>
 <resp>Omgjøring av RJHU til RJ4932, september 2000:</resp>
@@ -43,7 +37,7 @@
 <msIdentifier>
 <settlement>Oslo</settlement>
 <repository>Nasjonalbiblioteket</repository>
-<idno>NBO Ms.4&deg; 932</idno>
+<idno>NBO Ms.4° 932</idno>
 </msIdentifier>
 <msContents><msItem>
 <author>Brynjolf Bjarme (pseudonym for Henrik Ibsen)</author>
@@ -57,11 +51,11 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-grt-ms;</p></projectDesc>
+<projectDesc><p>GRUNNTEKST BASERT PÅ MANUSKRIPT. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av to medarbeidere. Teksten er kollasjonert en tredje gang i forbindelse med det avsluttende arbeidet med verket.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <list>
-<head>NBO Ms.4&deg; 932: arbeidsmanuskript (1850) til Henrik Ibsens &lquo;Rypen i Justedal&rquo;:</head>
+<head>NBO Ms.4° 932: arbeidsmanuskript (1850) til Henrik Ibsens «Rypen i Justedal»:</head>
 <item>skriftgruppe: latinsk håndskrift med innslag av gotisk (s), majuskler og minuskler. Bokstaven 't' etterfølges gjerne av en eller flere streker (særlig på slutten av linjer). I hvert tilfelle er det vurdert om det skal leses som tankestrek eller som en løs strek etter t-en. F.eks. transkriberes streken etter 'for eder og for eders hele Slægt' s. 14v ikke, mens streken etter 'snart er det mørkt' s. 2r kodes som tankestrek.</item>
 <item>tittelside: ca. midtstilt;
 <list>
@@ -154,8 +148,8 @@
 </item>
 </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -173,7 +167,7 @@
 </list>
 </tagUsage></namespace>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="pb-ed-HU">Sideskiftene fra Hundreårsutgaven (bd. 3) er kodet med pb ed="HU". Dette tekstvitnet dekker sidene 239-272. Et n-attributt med faktisk sidetall er lagt til ved første forekomst.</tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -285,7 +279,7 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><castItem xml:id="MERETA">Mereta hans Pleiedatter og Myndling.</castItem>
 <lb/><castItem xml:id="EINAR">Einar en ung Odelsbonde.</castItem>
 <lb/><castItem xml:id="ALFHILD">Alfhild, en ung Pige.</castItem>
-<lb/><castItem xml:id="MOGENS">Mogens, Præst &dash;</castItem>
+<lb/><castItem xml:id="MOGENS">Mogens, Præst –</castItem>
 <lb/><castItem xml:id="KNUD">Knud, en gammel Spillemand.</castItem>
 <lb/><castItem xml:id="PAAL">Paal, en gammel Jæger.</castItem>
 <lb/><HIS:hisCastGroup rend="paragraph"><castItem xml:id="INGEBORG">Ingeborg</castItem> og <castItem>flere Tjenestefolk paa Bjerkehoug</castItem>.</HIS:hisCastGroup></HIS:hisCastList>
@@ -298,12 +292,12 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><HIS:hisStage>Vild Fjeldegn; til Venstre en gammel
 <lb/>Sæterhytte, i Baggrunden høie Fjelde der
 <lb/>hæve sig over hinanden. Bjørn og Paal
-<lb/>komme ned fra Lien med Buer og an&typHyp;
-<lb/>dre Jagtredskaber paa Ryggen; det er Aften. &dash;</HIS:hisStage>
+<lb/>komme ned fra Lien med Buer og an‐
+<lb/>dre Jagtredskaber paa Ryggen; det er Aften. –</HIS:hisStage>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
 <lb/><l>Vi faa nok skynde os ifald vi skal</l>
 <lb/><l>naa frem til Bjerkehoug ilyse, Bjørn!</l>
-<lb/><l part="I">snart er det mørkt &dash;</l></HIS:hisSp>
+<lb/><l part="I">snart er det mørkt –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
 <lb/><l part="F">Det haster ikke, <HIS:hisDel rend="overwritten"><unclear>Paal,</unclear></HIS:hisDel>kom</l>
 <lb/><l>og sæt dig her paa Hellen, lad os hvile.</l></HIS:hisSp>
@@ -318,7 +312,7 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
 <lb/><l>See nu er du igjen paa disse Tanker</l>
 <lb/><l>om Haugafolk og Huldre og Gud veed</l>
-<lb/><l part="I">hvad Alt det heder &dash;</l></HIS:hisSp>
+<lb/><l part="I">hvad Alt det heder –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
 <lb/><l part="F">Troer du da ei</l>
 <lb/><l part="I">at saadant findes meer?</l></HIS:hisSp>
@@ -332,12 +326,12 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><l part="I">det viste sig?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
 <lb/><l part="F">Ja hvorfor ikke det</l>
-<lb/><l part="I">sligt har jeg seet før &dash;</l></HIS:hisSp>
+<lb/><l part="I">sligt har jeg seet før –</l></HIS:hisSp>
 <pb ed="HU"/><lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
 <lb/><l part="M">Har du?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
 <lb/><l part="F">Ja vist</l>
-<lb/><l part="I">og det for ikke længe siden &dash;</l></HIS:hisSp>
+<lb/><l part="I">og det for ikke længe siden –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
 <lb/><l part="F">Hvor?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
@@ -346,34 +340,34 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
 <lb/><l part="F">Du v<HIS:hisDel rend="overwritten"><gap/>l</HIS:hisDel>ar vel</l>
 <pb ed="source" type="page_pagination" subtype="recto" n="3r" facs="5" /><lb/><fw type="leaf" place="top-right" scribe="h2">3</fw>
-<lb/><l part="I">paa Frieri &dash;</l></HIS:hisSp>
+<lb/><l part="I">paa Frieri –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
 <lb/><l part="F">Saa var det nok omtrent,</l>
 <lb/><l>hun Gunborg som engang saanær var bleven</l>
-<lb/><l>min Fæstemø, &dash; det blev nu intet af, &dash;</l>
-<lb/><l part="I">hun ligger der tilsæters &dash;</l></HIS:hisSp>
+<lb/><l>min Fæstemø, – det blev nu intet af, –</l>
+<lb/><l part="I">hun ligger der tilsæters –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker><HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>Bjørn</speaker></HIS:spOpener>
 <lb/><l part="F">Hun, den Gamle</l>
-<lb/><l part="I">vi mødte der imorges &dash;</l></HIS:hisSp>
+<lb/><l part="I">vi mødte der imorges –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
 <lb/><l part="F">Nu, ja vist</l>
 <lb/><l>hun er da ei saa gammel, og desuden</l>
 <lb/><l>saa koger hu<unclear reason="writing">n</unclear> slig prægtig Rømmegrød</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker>.</HIS:spOpener>
-<lb/><l>Ja, det kan være, &dash; men hvad saa du da?</l></HIS:hisSp>
+<lb/><l>Ja, det kan være, – men hvad saa du da?</l></HIS:hisSp>
 <lb/><HIS:hisStage>(han tager Nisten frem medens Paal
 <lb/>fortsætter.)</HIS:hisStage>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
-<lb/><l>Nu skal du høre, &dash; vent nu bare lidt;</l>
+<lb/><l>Nu skal du høre, – vent nu bare lidt;</l>
 <lb/><l>det var i Kvældingen omtrent som nu,</l>
-<lb/><l>jeg trasked opad saa i egne Tanker &dash;</l>
+<lb/><l>jeg trasked opad saa i egne Tanker –</l>
 <lb/><l>men aller bedst jeg gik saa fløi der op</l>
 <lb/><l>en Rype tæt ved mig i Graneholtet</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
 <lb/><l part="I">Og saa?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
 <lb/><l part="F">Jeg spændte Buen i en Fart</l>
-<lb/><l part="I">&dash; men væk var Fuglen &dash;</l></HIS:hisSp>
+<lb/><l part="I">– men væk var Fuglen –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
 <lb/><l part="F">Ja det troer jeg gjerne</l></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
@@ -381,32 +375,32 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <pb ed="source" type="page_nopagination" subtype="verso" n="3v" facs="6" /><lb/><l>stod Huldra høit i Lien netop der</l>
 <lb/><l>paa samme Sted hvor Rypen just blev borte.</l></HIS:hisSp>
 <pb ed="HU"/><lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker>.</HIS:spOpener>
-<lb/><l part="I">Aa, det har sagtens været Gunborg &dash;</l></HIS:hisSp>
+<lb/><l part="I">Aa, det har sagtens været Gunborg –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
 <lb/><l part="F">Saa,</l>
 <lb/><l>troer du da ei at jeg kan skjelne Huldra</l>
-<lb/><l>ifra et christent Menneske, &dash; nei nei, &dash;</l>
-<lb/><l>jeg ved nok hvem det var, &dash; og Rypen da? &dash;</l>
+<lb/><l>ifra et christent Menneske, – nei nei, –</l>
+<lb/><l>jeg ved nok hvem det var, – og Rypen da? –</l>
 <lb/><l>ja jeg tør bande paa det var en Troldfugl.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
 <lb/><l>Men hvordan saa hun ud, hun var vel vakker?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
-<lb/><l>Ja hun var vel nok skabt, det maa jeg sige &dash;</l>
-<lb/><l>men det saa jeg nu ikke vidre efter &dash;</l></HIS:hisSp>
+<lb/><l>Ja hun var vel nok skabt, det maa jeg sige –</l>
+<lb/><l>men det saa jeg nu ikke vidre efter –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
 <lb/><l part="I">Du løb din Vei?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
 <lb/><l part="F">Ja det er nok det bedste</l>
 <lb/><l>i slige Tilfælde; Folk sige jo,</l>
 <lb/><l>at Huldra passer paa; naar det kan skee</l>
-<lb/><l>saa lokker hun de <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>raske Karle til sig &dash;</l></HIS:hisSp>
+<lb/><l>saa lokker hun de <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>raske Karle til sig –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
 <lb/><l part="I"><HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>Det er nok helst de unge!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
 <lb/><l part="F">Nu, ja vel,</l>
 <lb/><l>jeg er da ingen Gamling endnu heller,</l>
 <lb/><l>for tredive Aar tilbage var jeg kun</l>
-<lb/><l part="I">en Unggut endnu, &dash;</l></HIS:hisSp>
+<lb/><l part="I">en Unggut endnu, –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
 <lb/><l part="F">Ja det kan nok være.</l></HIS:hisSp>
 <pb ed="source" type="page_pagination" subtype="recto" n="4r" facs="7" /><lb/><fw type="leaf" place="top-right" scribe="h2">4</fw>
@@ -424,30 +418,30 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><l>Nu ja, hvad Skade var der vel i det?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
 <lb/><l>Du havde maaskee Lyst at følge med</l>
-<lb/><l part="I">hvis Huldra lokked dig &dash;</l></HIS:hisSp>
+<lb/><l part="I">hvis Huldra lokked dig –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
 <lb/><l part="F">Ja hvorfor ikke!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
-<lb/><l>Jeg tænkte det; &dash; jeg har nok længe mærket</l>
+<lb/><l>Jeg tænkte det; – jeg har nok længe mærket</l>
 <lb/><l>at i den sidste Tid stod al din Hu</l>
 <lb/><l>til Sagn og Eventyr og derfor flakker</l>
 <pb ed="HU"/><lb/><l>du her omkring fra Morgen og til Kvæl;</l>
-<lb/><l>igaar da jeg traf paa dig, &dash; hør, hvor havde</l>
+<lb/><l>igaar da jeg traf paa dig, – hør, hvor havde</l>
 <lb/><l part="I">du været da?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
 <lb/><l part="F">Nu, kan du gjætte det?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
 <lb/><l part="I">Vel høit tilfjelds som ellers!</l></HIS:hisSp>
 <pb ed="source" type="page_nopagination" subtype="verso" n="4v" facs="8" /><lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker>.</HIS:spOpener>
-<lb/><l part="F">Endnu længer, &dash;</l>
-<lb/><l part="I">i Justedalen! &dash;</l></HIS:hisSp>
+<lb/><l part="F">Endnu længer, –</l>
+<lb/><l part="I">i Justedalen! –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
-<lb/><l part="F">Gud forlade dig! &dash;</l>
+<lb/><l part="F">Gud forlade dig! –</l>
 <lb/><l>I Justedalen, der hvor ingen Skytte</l>
 <lb/><l>har sat sin Fod i mange Herrens Aar;</l>
 <lb/><l>den ligger øde siden Svartedauen.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
-<lb/><l part="I">Jeg ved det nok &dash;</l></HIS:hisSp>
+<lb/><l part="I">Jeg ved det nok –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
 <lb/><l part="F">Og Folk fortæller jo</l>
 <lb/><l>at det skal spøge der og at de Døde</l>
@@ -457,12 +451,12 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
 <lb/><l part="F">Har du intet seet?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
-<lb/><l part="I">Nei intet seet, &dash; men hørt &dash;</l></HIS:hisSp>
+<lb/><l part="I">Nei intet seet, – men hørt –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
-<lb/><l part="F">Hvad, &dash; har du hørt, &dash;</l></HIS:hisSp>
+<lb/><l part="F">Hvad, – har du hørt, –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
 <lb/><l>Nu, Suus fra Granetop og Fuglekvidder</l>
-<lb/><l>og sligt som altid høres her tilfjelds &dash;</l></HIS:hisSp>
+<lb/><l>og sligt som altid høres her tilfjelds –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
 <lb/><l part="I">Og ikke andet?</l></HIS:hisSp>
 <pb ed="source" type="page_pagination" subtype="recto" n="5r" facs="9" /><lb/><fw type="leaf" place="top-right" scribe="h2">5.</fw>
@@ -475,10 +469,10 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><l part="I">Gjør Huldren?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
 <lb/><l part="F">Ja, og at hun gjæter der</l>
-<lb/><l part="I">sin hele Buskap, &dash;</l></HIS:hisSp>
+<lb/><l part="I">sin hele Buskap, –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
 <lb/><l part="F">Det kan gjerne være</l>
-<lb/><l part="I">jeg saa ei <HIS:hisDel rend="overwritten">n</HIS:hisDel>Noge<HIS:hisDel rend="overwritten">t</HIS:hisDel>n, &dash;</l></HIS:hisSp>
+<lb/><l part="I">jeg saa ei <HIS:hisDel rend="overwritten">n</HIS:hisDel>Noge<HIS:hisDel rend="overwritten">t</HIS:hisDel>n, –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
 <lb/><l part="F">Ja da har jeg dog</l>
 <lb/><l>hørt Sæterjenterne herom fortælle</l>
@@ -487,7 +481,7 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <pb ed="HU"/><lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker> <HIS:hisStage>springer op</HIS:hisStage>.</HIS:spOpener>
 <lb/><l part="I">Det høre de?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
-<lb/><l part="F">Nu ja, &dash; hvad fattes dig?</l></HIS:hisSp>
+<lb/><l part="F">Nu ja, – hvad fattes dig?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
 <lb/><l>Aa det var ingen Ting; men sige de</l>
 <lb/><l>at de kan høre Huldrelok fra Lien.</l></HIS:hisSp>
@@ -496,7 +490,7 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><l>jeg hørte det <HIS:hisDel rend="overwritten"><unclear>af</unclear></HIS:hisDel>paa Sæteren hernede;</l>
 <lb/><l>seer du det gamle Sél som staar forladt</l>
 <pb ed="source" type="page_nopagination" subtype="verso" n="5v" facs="10" /><lb/><l>det er fordi at ingen Jente vover</l>
-<lb/><l part="I">at ligge her tilfjelds &dash;</l></HIS:hisSp>
+<lb/><l part="I">at ligge her tilfjelds –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
 <lb/><l part="F">Forunderligt!</l>
 <lb/><l>Men lad os tage os et Drag af Hornet</l>
@@ -514,8 +508,8 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><l>en Bænk at hvile paa i Sælet der.</l>
 <lb/><HIS:hisStage>(han reiser sig.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
-<lb/><l>Ja gaa du kun, &dash; jeg sidder her paa Hellen</l>
-<lb/><l part="I">og pudser Rusten af min Bue, &dash;</l></HIS:hisSp>
+<lb/><l>Ja gaa du kun, – jeg sidder her paa Hellen</l>
+<lb/><l part="I">og pudser Rusten af min Bue, –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
 <lb/><l part="F">Vel!</l>
 <lb/><l>men skynd dig kun, det er alt seent paa Kvælden.</l>
@@ -530,19 +524,19 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><l>og fra den første Gang jeg hørte det</l>
 <pb ed="source" type="page_pagination" subtype="recto" n="6r" facs="11" /><lb/><fw type="leaf" place="top-right" scribe="h2">6</fw>
 <lb/><l>da forekom det mig som jeg blev dreven</l>
-<pb ed="HU"/><lb/><l>af en usynlig Magt derop; &dash; hver Dag</l>
+<pb ed="HU"/><lb/><l>af en usynlig Magt derop; – hver Dag</l>
 <lb/><l>jeg maatte vandre did, selv mod min Villie.</l>
-<lb/><l>&dash; Hør, lød det ei, <HIS:hisStage>(lytter)</HIS:hisStage> &dash; nei, det var kun en Gjøg</l>
+<lb/><l>– Hør, lød det ei, <HIS:hisStage>(lytter)</HIS:hisStage> – nei, det var kun en Gjøg</l>
 <lb/><l>som sang deroppe, høit i Furutoppen,</l>
 <lb/><l>det skal betyde Lykke siger man,</l>
-<lb/><l>nu, gid det var saavel, &dash; tys, hvad er det?<note resp="editor">Semikolon endret til spørsmålstegn ved delvis overskriving.</note></l>
-<lb/><l>jeg hører Fodtrin, &dash; det er vist en Skytte!</l></HIS:hisSp>
+<lb/><l>nu, gid det var saavel, – tys, hvad er det?<note resp="editor">Semikolon endret til spørsmålstegn ved delvis overskriving.</note></l>
+<lb/><l>jeg hører Fodtrin, – det er vist en Skytte!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUD"><HIS:spOpener><speaker>Harald</speaker> <HIS:hisStage>(kommer fra Lien med sin
 <lb/>Gig i Haanden.)</HIS:hisStage></HIS:spOpener>
 <lb/><l part="I">Godkvæl!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
-<lb/><l part="F">Godkvæl igjen, &dash; hvor skal du hen</l>
-<lb/><l part="I">saa seent paa Kvælden &dash;</l></HIS:hisSp>
+<lb/><l part="F">Godkvæl igjen, – hvor skal du hen</l>
+<lb/><l part="I">saa seent paa Kvælden –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUD"><HIS:spOpener><speaker>Harald</speaker></HIS:spOpener>
 <lb/><l part="F">Nedad imod Bygden!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
@@ -566,7 +560,7 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><l>da, under hvert et Træ i Granelien?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
 <lb/><l>Ja, du har Ret, naar man er ung saa gaar</l>
-<lb/><l part="I">det sagtens an; &dash; men &dash;</l></HIS:hisSp>
+<lb/><l part="I">det sagtens an; – men –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUD"><HIS:spOpener><speaker>Harald</speaker></HIS:spOpener>
 <lb/><l part="F">Snak dog ei om Alder!</l>
 <lb/><l>vid, man kan gjerne leve hundred' Vintre</l>
@@ -574,10 +568,10 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
 <lb/><l part="I">Du taler underligt!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUD"><HIS:spOpener><speaker>Harald</speaker></HIS:spOpener>
-<lb/><l part="F">Det kan nok være, &dash;</l>
-<lb/><l>det er fordi du ikke skjønner mig; &dash;</l>
-<lb/><l>men jeg maa nok begive mig paa Veien. &dash;</l>
-<lb/><l>&dash; Gaaer ikke denne Sti til Bjerkehoug?</l></HIS:hisSp>
+<lb/><l part="F">Det kan nok være, –</l>
+<lb/><l>det er fordi du ikke skjønner mig; –</l>
+<lb/><l>men jeg maa nok begive mig paa Veien. –</l>
+<lb/><l>– Gaaer ikke denne Sti til Bjerkehoug?</l></HIS:hisSp>
 <pb ed="HU"/><lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
 <lb/><l>Til Bjerkehoug? Ja, skal du did iaften?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUD"><HIS:spOpener><speaker>Harald</speaker></HIS:spOpener>
@@ -587,50 +581,50 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><l>er <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>Plads ved Aaren for den trætte Vandrer!</l></HIS:hisSp>
 <pb ed="source" type="page_pagination" subtype="recto" n="7r" facs="13" /><lb/><fw type="leaf" place="top-right" scribe="h2">7</fw>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
-<lb/><l part="I">Det kan du lide paa &dash;</l></HIS:hisSp>
+<lb/><l part="I">Det kan du lide paa –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUD"><HIS:spOpener><speaker>Harald</speaker></HIS:spOpener>
 <lb/><l part="F">Det troer jeg og!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
-<lb/><l>Nu saa farvel, &dash; og lad ei Veien falde</l>
-<lb/><l part="I">dig altfor lang &dash;</l></HIS:hisSp>
+<lb/><l>Nu saa farvel, – og lad ei Veien falde</l>
+<lb/><l part="I">dig altfor lang –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUD"><HIS:spOpener><speaker>Harald</speaker> <HIS:hisStage>idet han vil gaa</HIS:hisStage></HIS:spOpener>
 <lb/><l part="F">For lang, hvor kan den det?</l>
 <lb/><l>gaar du i Skogen med det rette Sind</l>
 <lb/><l>saa savner du ei Selskab, mener jeg,</l>
 <lb/><l>hvad eller tykkes dig at det er énsomt</l>
 <lb/><l>her hvor dog Li og Fjeld er fuldt af Liv?</l>
-<lb/><l>Du troer det ei? &dash; det er dog som jeg siger</l>
+<lb/><l>Du troer det ei? – det er dog som jeg siger</l>
 <lb/><l>og hvis du ikke hører eller seer</l>
 <lb/><l>saa er det kun fordi du ikke eier</l>
-<lb/><l>det rette Syn og Hørelse! &dash; Godkvæl.</l>
+<lb/><l>det rette Syn og Hørelse! – Godkvæl.</l>
 <lb/><HIS:hisStage>(han gaar)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker>. <HIS:hisStage>seer efter ham</HIS:hisStage></HIS:spOpener>
 <lb/><l>Det var dog sælsomt hvad han sagde der,</l>
-<lb/><l>hvad mente han, &dash; jeg kan ei fatte det.</l>
+<lb/><l>hvad mente han, – jeg kan ei fatte det.</l>
 <lb/><HIS:hisStage>(Luurtoner høres fra Baggru<unclear reason="writing">nden</unclear>.)</HIS:hisStage>
 <lb/><l>Hør, hør, der lyder det igjen fra Fjeldet.</l>
 <lb/><HIS:hisStage>(lytter.)</HIS:hisStage>
-<lb/><l>Jeg kjender Tonerne, &dash; ja, det er hende.</l></HIS:hisSp>
-<lb/><HIS:hisStage>(Han lytter i taus <HIS:hisDel rend="overwritten">f</HIS:hisDel>Forventning, Luur&typHyp;
+<lb/><l>Jeg kjender Tonerne, – ja, det er hende.</l></HIS:hisSp>
+<lb/><HIS:hisStage>(Han lytter i taus <HIS:hisDel rend="overwritten">f</HIS:hisDel>Forventning, Luur‐
 <lb/>tonerne høres atter og Alfhild viser
 <lb/>sig i Baggrunden paa en Fjeldtop.)</HIS:hisStage>
 <pb ed="source" type="page_nopagination" subtype="verso" n="7v" facs="14" /><lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker> <HIS:hisStage>(synger
 <lb/>uden at bemærke Bjørn)</HIS:hisStage></HIS:spOpener>
-<lb/><l rend="indent1">&lquo;Det er saa tyst udi Skog og Fjeld,</l>
+<lb/><l rend="indent1">«Det er saa tyst udi Skog og Fjeld,</l>
 <lb/><l rend="indent1"><unclear reason="writing">K</unclear>un Bækken risler bag Stene,</l>
 <lb/><l rend="indent1">Og Trosten kviddrer saa stur i Kvæl</l>
 <lb/><l rend="indent1">En Sang fra Bjerkens Grene.</l>
 <pb ed="HU"/><lb/><l rend="indent2">Dernede bag det grønne Blad</l>
 <lb/><l rend="indent2">Dens Mage sidder hjemme</l>
 <lb/><l rend="indent2">Og lytter fro og lytter glad</l>
-<lb/><l rend="indent2">Alt til den kjære Stemme.&rquo;</l></HIS:hisSp>
+<lb/><l rend="indent2">Alt til den kjære Stemme.»</l></HIS:hisSp>
 <lb/><HIS:hisStage>(Hun gjør et Par <HIS:hisDel rend="overwritten">S</HIS:hisDel>skridt fremad og
 <lb/>bemærker Bjørn; overrasket bliver hun et Øieblik
 <lb/><unclear reason="writing">staaende</unclear> og forsvinder derpaa bag Træerne.)</HIS:hisStage>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker>.</HIS:spOpener>
-<lb/><l>Der stod hun fager høit i Bjerkelien, &dash;</l>
+<lb/><l>Der stod hun fager høit i Bjerkelien, –</l>
 <lb/><l>med Luur i Haanden kvæded hun sin Vise,</l>
-<lb/><l>ja hun var vakker, &dash; og hvor veent hun sang!</l>
+<lb/><l>ja hun var vakker, – og hvor veent hun sang!</l>
 <lb/><l>hun ligned ikke Jenterne i Dalen.</l>
 <lb/><l>D<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>et var da Sandhed hvad den Gamle sagde</l>
 <lb/><l>at Li og Fjeld er fuld af Liv; jeg vil</l>
@@ -638,7 +632,7 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><HIS:hisStage>(raaber ind i Selet.)</HIS:hisStage>
 <lb/><l>staa op og lad os give os paa Veien!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker rend="underlined2">Paal</speaker> <HIS:hisStage>kommer</HIS:hisStage></HIS:spOpener>
-<lb/><l>Hvad er paa færde, &dash; er her Vildt i Lien!</l></HIS:hisSp>
+<lb/><l>Hvad er paa færde, – er her Vildt i Lien!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
 <lb/><l>Ja vist, men kom og lader os gaa hjem.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
@@ -650,25 +644,25 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
 <lb/><l part="F">Nu endnu bedre.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
-<lb/><l part="I">Det var en Fjeldfugl kun. &dash;</l></HIS:hisSp>
+<lb/><l part="I">Det var en Fjeldfugl kun. –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
 <lb/><l part="F">En Rype kanske.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
 <lb/><l>Ja netop ligedan som den du saa,</l>
 <lb/><l>med et forsvandt den oppe der i Lien!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
-<lb/><l>Ja vil du bare see, &dash; jeg havde Ret; &dash;</l>
+<lb/><l>Ja vil du bare see, – jeg havde Ret; –</l>
 <lb/><l>det er da vel at jeg har Staal ved Haanden</l>
 <lb/><l>saa kan ei Haugafolket røre os!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
-<lb/><l>Nei vist, men kom nu, &dash; skynd dig, lad os gaa!</l></HIS:hisSp>
+<lb/><l>Nei vist, men kom nu, – skynd dig, lad os gaa!</l></HIS:hisSp>
 <lb/><HIS:hisStage>(De gaa mod Venstre)</HIS:hisStage>
 <lb/><figure type="bar"/>
 <pb ed="source" type="page_nopagination" subtype="verso" n="8v" facs="16" /><pb ed="HU"/><lb/><HIS:hisStage> En gammeldags Bjelkehal paa
 <lb/>Bjerkehoug, øverst staaer Høisædet, paa den
-<lb/>ene Væg Arnen, paa den anden en Dør. &dash;</HIS:hisStage>
+<lb/>ene Væg Arnen, paa den anden en Dør. –</HIS:hisStage>
 <lb/><HIS:hisStage>Mereta og Ingeborg komme ind;
-<lb/>den sidste bærer et Mjødhorn. &dash;</HIS:hisStage>
+<lb/>den sidste bærer et Mjødhorn. –</HIS:hisStage>
 <lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker>Mereta</speaker></HIS:spOpener>
 <lb/><l>Sæt Hornet der paa Bordet, Ingeborg!</l>
 <lb/><l>vor Gjæst behøver sagtens Tidsfordriv</l>
@@ -676,7 +670,7 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
 <lb/><l>O, derfor kan du være ganske rolig;</l>
 <lb/><l>hvis ei jeg feiler blev ung Einar gjerne</l>
-<lb/><l>paa <sic>Bjerkehaug</sic> sin hele Levetid &dash;</l></HIS:hisSp>
+<lb/><l>paa <sic>Bjerkehaug</sic> sin hele Levetid –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker>Mereta</speaker></HIS:spOpener>
 <lb/><l part="I">Hvorledes mener du?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
@@ -686,7 +680,7 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/>træder ind.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker></HIS:spOpener>
 <lb/><l>Nu løb du atter bort fra mig derude</l>
-<lb/><l part="I">og lod mig staa allene &dash;</l></HIS:hisSp>
+<lb/><l part="I">og lod mig staa allene –</l></HIS:hisSp>
 <pb ed="source" type="page_pagination" subtype="recto" n="9r" facs="17" /><lb/><fw type="leaf" place="top-right" scribe="h2">9</fw>
 <lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker>Mereta</speaker></HIS:spOpener>
 <lb/><l part="F">O, det var</l>
@@ -700,7 +694,7 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><l>Nei, det er sagtens og det klogeste!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker></HIS:spOpener>
 <lb/><l>Du leer kun ad mig, troer ei hvad jeg siger.</l>
-<lb/><l part="I">du tvivler paa min Ærlighed &dash;</l></HIS:hisSp>
+<lb/><l part="I">du tvivler paa min Ærlighed –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker>Mereta</speaker></HIS:spOpener>
 <lb/><l part="F">O <sic>til</sic></l>
 <lb/><l>med Ærlighed, den læres ei i Staden.</l>
@@ -711,7 +705,7 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker>Mereta</speaker></HIS:spOpener>
 <lb/><l part="F">Nu,</l>
 <lb/><l>du har da lært at føie snildt din Tale,</l>
-<lb/><l part="I">sligt skjønne vi ei her &dash;</l></HIS:hisSp>
+<lb/><l part="I">sligt skjønne vi ei her –</l></HIS:hisSp>
 <pb ed="source" type="page_nopagination" subtype="verso" n="9v" facs="18" /><lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker></HIS:spOpener>
 <lb/><l part="F">Jeg vented ei</l>
 <pb ed="HU"/><lb/><l>at komme hid til Bjerkehoug den Dag</l>
@@ -730,7 +724,7 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><l part="I">Det mindes du endnu?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker>Mereta</speaker></HIS:spOpener>
 <lb/><l part="F">Jeg seer til det</l>
-<lb/><l>hver Dag, &dash; det heder Einars Træ, Godkvæl!</l>
+<lb/><l>hver Dag, – det heder Einars Træ, Godkvæl!</l>
 <lb/><HIS:hisStage>(hun <unclear reason="writing">gaar</unclear>)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker></HIS:spOpener>
 <lb/><l>Jeg kan ei rigtig blive klog paa hende,</l>
@@ -747,40 +741,40 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><p>Han kommer sikkert snart</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MOGENS"><HIS:spOpener><speaker>Mogens</speaker></HIS:spOpener>
 <lb/><p>Vel, saa vil jeg vente, <HIS:hisStage>(sætter sig)</HIS:hisStage> ja, nu
-<lb/>er du jo atter bleven vor Nabo, &dash; du har
-<lb/>jo selv overtaget din Faders Gaard igjen, &dash;</p></HIS:hisSp>
+<lb/>er du jo atter bleven vor Nabo, – du har
+<lb/>jo selv overtaget din Faders Gaard igjen, –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker></HIS:spOpener>
-<lb/><p>Ja, ærværdige Fader! jeg er kjed af Hird&typHyp;
+<lb/><p>Ja, ærværdige Fader! jeg er kjed af Hird‐
 <lb/>mandslivet, nu vil jeg slaa mig til Ro
-<lb/>en Stund &dash; &dash;</p></HIS:hisSp>
+<lb/>en Stund – –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MOGENS"><HIS:spOpener><speaker>Mogens</speaker></HIS:spOpener>
-<lb/><p>Du gjør Ret, beati sunt agricolæ, &dash; men
-<lb/><HIS:clarification place="inline">h</HIS:clarification>vad <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>har du i Hornet d<HIS:hisDel rend="overwritten">it</HIS:hisDel>er, &dash; naa, Mjød,
-<lb/>&dash; jeg troer en liden Taar vil gjøre godt <HIS:hisAdd place="offline"><HIS:hisStage>(drikker)</HIS:hisStage></HIS:hisAdd> &dash; &dash;
-<lb/>&dash; jo jo, Bengt af Bjerkehoug har gode Sager
-<lb/>i Kjelderen, men de komme nu skjel&typHyp;
-<lb/>den fordagen, &dash; her gaar ikke saa lystigt
+<lb/><p>Du gjør Ret, beati sunt agricolæ, – men
+<lb/><HIS:clarification place="inline">h</HIS:clarification>vad <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>har du i Hornet d<HIS:hisDel rend="overwritten">it</HIS:hisDel>er, – naa, Mjød,
+<lb/>– jeg troer en liden Taar vil gjøre godt <HIS:hisAdd place="offline"><HIS:hisStage>(drikker)</HIS:hisStage></HIS:hisAdd> – –
+<lb/>– jo jo, Bengt af Bjerkehoug har gode Sager
+<lb/>i Kjelderen, men de komme nu skjel‐
+<lb/>den fordagen, – her gaar ikke saa lystigt
 <lb/>til som i gamle salig Thormods Dage,
-<lb/>Einar! &dash;</p></HIS:hisSp>
+<lb/>Einar! –</p></HIS:hisSp>
 <pb ed="HU"/><lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker>.</HIS:spOpener>
 <lb/><p>Nei, det tykkes mig ogsaa! det lader som
 <pb ed="source" type="page_nopagination" subtype="verso" n="10v" facs="20" /><lb/>Bengt er mørk og tungsindig <HIS:hisAdd place="offline">alt</HIS:hisAdd> imellem.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MOGENS"><HIS:spOpener><speaker>Mogens</speaker></HIS:spOpener>
 <lb/><p>Ja det maa du sige, Gud lad det bare ikke
-<lb/>blive værre, &dash; det er Ungdommens Synder og
+<lb/>blive værre, – det er Ungdommens Synder og
 <lb/>Forfængelighed som tynger paa Alderdommen,
-<lb/>&dash; han er nu et Verdens Barn, en af dem, der
+<lb/>– han er nu et Verdens Barn, en af dem, der
 <lb/>foretrække rumores ante salutem, som
-<lb/>det heder, &dash;</p></HIS:hisSp>
+<lb/>det heder, –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker></HIS:spOpener>
-<lb/><p>Det er nok fra den Tid hans Broder Alf blev borte? &dash;</p></HIS:hisSp>
+<lb/><p>Det er nok fra den Tid hans Broder Alf blev borte? –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MOGENS"><HIS:spOpener><speaker>Mogens</speaker></HIS:spOpener>
-<lb/><p>Ja, saa er det nok &dash;</p></HIS:hisSp>
+<lb/><p>Ja, saa er det nok –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker></HIS:spOpener>
-<lb/><p>Men hvorledes gik det da til &dash; &dash;</p></HIS:hisSp>
+<lb/><p>Men hvorledes gik det da til – –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MOGENS"><HIS:spOpener><speaker>Mogens</speaker></HIS:spOpener>
-<lb/><p>Ja, det kan jeg gjerne sige, &dash; her er vel Ingen
-<lb/>inde, &dash; for du er en brav <HIS:hisDel rend="overwritten">g</HIS:hisDel>Gut og din Fader var al&typHyp;
+<lb/><p>Ja, det kan jeg gjerne sige, – her er vel Ingen
+<lb/>inde, – for du er en brav <HIS:hisDel rend="overwritten">g</HIS:hisDel>Gut og din Fader var al‐
 <lb/>tid rundhaandet <app type="alteration"><lem><HIS:hisAdd place="offline">med al<unclear reason="writing">lhaande</unclear> Gaver og god Skjænk til</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">mod</HIS:hisDel></HIS:hisRdg></app> Klostret; <HIS:hisStage>(drikker)</HIS:hisStage> seer
 <lb/>du, Alf var den ældste Søn, han var en stille
 <lb/>from Sjæl, medens Bengt var vild og hidsig, ret
@@ -788,51 +782,51 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/>efter Faderens Død og det kunde <HIS:hisDel rend="overstrike">Bjørn</HIS:hisDel> Bengt da
 <lb/>ikke finde sig i, for han var nu et Verdens
 <lb/><HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>Barn, og saa satte han altid Ondt i Faderen
-<lb/>imod Alf &dash; &dash;</p></HIS:hisSp>
+<lb/>imod Alf – –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker></HIS:spOpener>
-<lb/><p>Men det var nok is<unclear reason="writing">æ</unclear>r da Alf giftede sig &dash;</p></HIS:hisSp>
+<lb/><p>Men det var nok is<unclear reason="writing">æ</unclear>r da Alf giftede sig –</p></HIS:hisSp>
 <pb ed="source" type="page_pagination" subtype="recto" n="11r" facs="21" /><lb/><fw type="leaf" place="top-right" scribe="h2">11</fw>
 <lb/><HIS:hisSp who="MOGENS"><HIS:spOpener><speaker>Mogens</speaker></HIS:spOpener>
-<lb/><p>Ja, netop da, &dash; Faderen var imod Giftermaalet
+<lb/><p>Ja, netop da, – Faderen var imod Giftermaalet
 <lb/>men Alf vilde have sin Villie dengang, og da
 <lb/>han efter <sic>Byllupet</sic> traadte ind til Faderen
 <lb/>saa lyste han sin Forbandelse over ham og
-<lb/>svor at han aldrig vilde see ham mere, &dash;
-<lb/>det kan da ikke nægtes at det var Beng<unclear reason="writing">ts</unclear> &dash;
-<lb/>Skyld, &dash; Gud forlade ham &dash;</p></HIS:hisSp>
+<lb/>svor at han aldrig vilde see ham mere, –
+<lb/>det kan da ikke nægtes at det var Beng<unclear reason="writing">ts</unclear> –
+<lb/>Skyld, – Gud forlade ham –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker></HIS:spOpener>
-<lb/><p>Men hvor blev der af Alf &dash;</p></HIS:hisSp>
+<lb/><p>Men hvor blev der af Alf –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MOGENS"><HIS:spOpener><speaker>Mogens</speaker>.</HIS:spOpener>
 <lb/><p>Det veed ingen, <HIS:hisDel rend="overwritten">æ</HIS:hisDel>Ægtefolkene var og blev borte,
 <lb/>Folk i Bygden fortælle at Haugafolket tog dem
 <lb/>men det er nok rimeligt at han tog op
 <lb/>til en Plads han havde oppe i Fjeldmarken, men
-<lb/>saa kom Svartedøden og bortrev alle Menne&typHyp;
+<lb/>saa kom Svartedøden og bortrev alle Menne‐
 <lb/>sker deroppe, og ingen tør sætte sin Fod <HIS:clarification place="inline">der</HIS:clarification>
-<lb/>siden. &dash;</p></HIS:hisSp>
+<lb/>siden. –</p></HIS:hisSp>
 <pb ed="HU"/><lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker></HIS:spOpener>
-<lb/><p>Ja, det har jeg hørt, &dash;</p></HIS:hisSp>
+<lb/><p>Ja, det har jeg hørt, –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MOGENS"><HIS:spOpener><speaker>Mogens</speaker>.</HIS:spOpener>
-<lb/><p>Men siden den Tid har det ikke været godt paa Bjer&typHyp;
-<lb/>kehoug, &dash; den Gamle døde nu snart efter, og Bengt
-<lb/>vil ikke lade sig mærke med noget, &dash; men Erindrin&typHyp;
+<lb/><p>Men siden den Tid har det ikke været godt paa Bjer‐
+<lb/>kehoug, – den Gamle døde nu snart efter, og Bengt
+<lb/>vil ikke lade sig mærke med noget, – men Erindrin‐
 <lb/>gen om Alf den nager ham, det skjønner jeg
-<lb/>nok; en mægtig Mand er han da, &dash; og endnu mægtigere
+<lb/>nok; en mægtig Mand er han da, – og endnu mægtigere
 <lb/>vil nu Bjørn blive, dersom det bliver noget af mellem
 <pb ed="source" type="page_nopagination" subtype="verso" n="11v" facs="22" /><lb/>ham og Mereta.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker></HIS:spOpener>
-<lb/><p>Mereta, &dash; tænker Bjørn paa &dash; &dash;</p></HIS:hisSp>
+<lb/><p>Mereta, – tænker Bjørn paa – –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MOGENS"><HIS:spOpener><speaker>Mogens</speaker></HIS:spOpener>
-<lb/><p><sic>Na</sic>, det ved jeg ikke, men hans Fader tænker paa det &dash;</p></HIS:hisSp>
+<lb/><p><sic>Na</sic>, det ved jeg ikke, men hans Fader tænker paa det –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker> <HIS:hisStage>halvt afsides</HIS:hisStage></HIS:spOpener>
-<lb/><p>Ha, saa forstaar jeg hvorfor han gav mig Afslag &dash;</p></HIS:hisSp>
+<lb/><p>Ha, saa forstaar jeg hvorfor han gav mig Afslag –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MOGENS"><HIS:spOpener><speaker>Mogens</speaker></HIS:spOpener>
-<lb/><p>Hvad siger I? &dash; Tys, der kommer han nok! <HIS:hisStage>(reiser sig.)</HIS:hisStage></p></HIS:hisSp>
+<lb/><p>Hvad siger I? – Tys, der kommer han nok! <HIS:hisStage>(reiser sig.)</HIS:hisStage></p></HIS:hisSp>
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker></HIS:spOpener>
-<lb/><p>Saa vil jeg gaa. &dash; <HIS:hisStage>(gaar ud til Venstre idet <HIS:hisDel rend="overstrike">Bjørn</HIS:hisDel> Bengt træ&typHyp;
+<lb/><p>Saa vil jeg gaa. – <HIS:hisStage>(gaar ud til Venstre idet <HIS:hisDel rend="overstrike">Bjørn</HIS:hisDel> Bengt træ‐
 <lb/>der ind fra Baggrunden)</HIS:hisStage></p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
-<lb/><p>Nu, Herr Mogens! er I der; &dash; I bringer vel Papirerne
+<lb/><p>Nu, Herr Mogens! er I der; – I bringer vel Papirerne
 <lb/>med.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MOGENS"><HIS:spOpener><speaker>Mogens</speaker></HIS:spOpener>
 <lb/><p>Her er de allesammen.</p></HIS:hisSp>
@@ -840,41 +834,41 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><p>Og der er ingen anden Arving end Mereta?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MOGENS"><HIS:spOpener><speaker>Mogens</speaker>.</HIS:spOpener>
 <lb/><p>Ingen; det er en Lykke for hende, for hendes salig
-<lb/>Faders Ei<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>endom var da ikke stor &dash;</p></HIS:hisSp>
+<lb/>Faders Ei<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>endom var da ikke stor –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker></HIS:spOpener>
 <lb/><p>Nei, I har Ret!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MOGENS"><HIS:spOpener><speaker>Mogens</speaker></HIS:spOpener>
 <lb/><p>Og nu er d<HIS:hisDel rend="overwritten">a</HIS:hisDel>er da ingenting iveien for Bryllupet kan
-<lb/>jeg tænke &dash;</p></HIS:hisSp>
+<lb/>jeg tænke –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker> <HIS:hisStage>opfarende</HIS:hisStage></HIS:spOpener>
 <lb/><p>Hvad, Præst! mener I at det er derfor jeg har holdt det
-<lb/>hemmeligt, troer I at Mosterens Arv &dash; &dash;</p></HIS:hisSp>
+<lb/>hemmeligt, troer I at Mosterens Arv – –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MOGENS"><HIS:spOpener><speaker>Mogens</speaker>.</HIS:spOpener>
-<lb/><p>Det være langtfra, &dash; men Folk i Bygden &dash;</p></HIS:hisSp>
+<lb/><p>Det være langtfra, – men Folk i Bygden –</p></HIS:hisSp>
 <pb ed="source" type="page_pagination" subtype="recto" n="12r" facs="23" /><lb/><fw type="leaf" place="top-right" scribe="h2">12</fw>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
-<lb/><p>Det bryder jeg mig ikke om, &lquo;lige fremad&rquo;, det er
-<lb/>mit Valgsprog; &dash; Bjørn skal ægte hende, &dash; jeg har holdt
+<lb/><p>Det bryder jeg mig ikke om, «lige fremad», det er
+<lb/>mit Valgsprog; – Bjørn skal ægte hende, – jeg har holdt
 <lb/>det hemmeligt fordi det var min Villie, nu skal det
-<lb/>blive bekjendt fordi det er min Villie &dash; &dash;</p></HIS:hisSp>
+<lb/>blive bekjendt fordi det er min Villie – –</p></HIS:hisSp>
 <pb ed="HU"/><lb/><HIS:hisSp who="MOGENS"><HIS:spOpener><speaker>Mogens</speaker></HIS:spOpener>
-<lb/><p>Men hverken Bjørn eller Mereta ved noget om det &dash;</p></HIS:hisSp>
+<lb/><p>Men hverken Bjørn eller Mereta ved noget om det –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker></HIS:spOpener>
 <lb/><p>Hvad behøves det! Er ikke Bjørn min Søn, har jeg
-<lb/>ikke været <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>hendes Formynder, &dash; skulde han ligesom
-<lb/>Alf, &dash; <HIS:hisStage>(med pludselig forandret Stemme.)</HIS:hisStage> Gud være med ham,
-<lb/>jeg har betalt Sjælemesser for ham, &dash; jeg har givet <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>Alter&typHyp;
-<lb/>lys og anden Skjænk til Klostret &dash; &dash;</p></HIS:hisSp>
+<lb/>ikke været <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>hendes Formynder, – skulde han ligesom
+<lb/>Alf, – <HIS:hisStage>(med pludselig forandret Stemme.)</HIS:hisStage> Gud være med ham,
+<lb/>jeg har betalt Sjælemesser for ham, – jeg har givet <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>Alter‐
+<lb/>lys og anden Skjænk til Klostret – –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MOGENS"><HIS:spOpener><speaker>Mogens</speaker></HIS:spOpener>
-<lb/><p>Det har I gjort som en god Christen &dash; &dash;</p></HIS:hisSp>
+<lb/><p>Det har I gjort som en god Christen – –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker></HIS:spOpener>
-<lb/><p>Og alligevel, &dash; men lad os ikke tale mere herom, &dash;</p>
+<lb/><p>Og alligevel, – men lad os ikke tale mere herom, –</p>
 <lb/><HIS:hisStage>(gaar hen til Arnen.)</HIS:hisStage>
-<lb/><p>Naa, hvad er I saa lystige over. &dash;</p></HIS:hisSp>
+<lb/><p>Naa, hvad er I saa lystige over. –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker><app type="alteration"><lem><HIS:hisAdd place="offline">Einar</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Mereta</HIS:hisDel></HIS:hisRdg></app></speaker></HIS:spOpener>
 <lb/><l>Aa vi fortælle Sagn og Eventyr.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker>Mereta</speaker></HIS:spOpener>
-<lb/><l part="I">Kom, sæt dig Fader, skal du høre &dash;</l></HIS:hisSp>
+<lb/><l part="I">Kom, sæt dig Fader, skal du høre –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker></HIS:spOpener>
 <lb/><l part="F">Nei,</l>
 <lb/><l>jeg kan ei lide denne gamle Skik</l>
@@ -883,11 +877,11 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><l>Men Bedstefa'r fortalte jo saa tit</l>
 <lb/><l part="I">og han sov altid roligt</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker></HIS:spOpener>
-<lb/><l part="F">Gjorde han? &dash;</l></HIS:hisSp>
+<lb/><l part="F">Gjorde han? –</l></HIS:hisSp>
 <pb ed="source" type="page_nopagination" subtype="verso" n="12v" facs="24" /><lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker>Mereta</speaker></HIS:spOpener>
 <lb/><l>O, kan du mindes, Einar! dengang vi</l>
 <lb/><l>var Børn, saa sad vi her om Vinterkvællen</l>
-<lb/><l>jeg sad paa gamle Bedstefaders Knæ &dash;</l></HIS:hisSp>
+<lb/><l>jeg sad paa gamle Bedstefaders Knæ –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker></HIS:spOpener>
 <lb/><l>Og saa fortalte han om Sangerknud</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker>Mereta</speaker></HIS:spOpener>
@@ -898,26 +892,26 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><l part="F">En <sic>Spellimand</sic></l>
 <lb/><l>som vandrer om fra Bygd til Bygd og synger!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker></HIS:spOpener>
-<lb/><l part="I">Her kom han aldrig &dash;</l></HIS:hisSp>
+<lb/><l part="I">Her kom han aldrig –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker>Mereta</speaker></HIS:spOpener>
 <lb/><l part="F">Ikke det jeg veed,</l>
-<lb/><l part="I">jeg saa ham aldrig &dash;</l></HIS:hisSp>
+<lb/><l part="I">jeg saa ham aldrig –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker></HIS:spOpener>
 <lb/><l part="F">Nei det troer jeg gjerne</l>
-<lb/><l>det Hele er jo kun et Eventyr &dash;</l></HIS:hisSp>
+<lb/><l>det Hele er jo kun et Eventyr –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker>Mereta</speaker></HIS:spOpener>
-<lb/><l>Nei vist, han lever endnu, &dash; spørg kun Paal &dash;</l></HIS:hisSp>
+<lb/><l>Nei vist, han lever endnu, – spørg kun Paal –</l></HIS:hisSp>
 <pb ed="HU"/><lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker></HIS:spOpener>
-<lb/><l>Ja, Paal, &dash; han har jo seet Huldren ogsaa &dash;</l></HIS:hisSp>
+<lb/><l>Ja, Paal, – han har jo seet Huldren ogsaa –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker>Mereta</speaker></HIS:spOpener>
-<lb/><l>Men du har selv fortalt om Sangerknud &dash;</l></HIS:hisSp>
+<lb/><l>Men du har selv fortalt om Sangerknud –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker></HIS:spOpener>
-<lb/><l part="I">Ja dengang &dash; &dash;</l></HIS:hisSp>
+<lb/><l part="I">Ja dengang – –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker>Mereta</speaker></HIS:spOpener>
 <lb/><l part="F">Kan du ikke huske det</l>
-<lb/><l>naar jeg og Bjørn og Einar sad omkring dig &dash;</l>
+<lb/><l>naar jeg og Bjørn og Einar sad omkring dig –</l>
 <lb/><l>og naar du saa fortalte, blev du munter,</l>
-<lb/><l part="I">aa, Fa'er fortæl &dash;</l></HIS:hisSp>
+<lb/><l part="I">aa, Fa'er fortæl –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker> <HIS:hisStage><unclear reason="writing">klapper hende paa Kinden</unclear></HIS:hisStage></HIS:spOpener>
 <lb/><l part="F"><sic>Na</sic>, ja, det kan jeg gjerne.</l>
 <lb/><HIS:hisStage>(de sætte sig.)</HIS:hisStage>
@@ -925,7 +919,7 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><l rend="indent1">Der vandred en Spillemand viden om,</l>
 <lb/><l>gjennem Skog og i dybe Dale,</l>
 <lb/><l>men hvorsomhelst han tilhuse kom,</l>
-<lb/><l>man lyttede taus til hans Tale; &dash;</l>
+<lb/><l>man lyttede taus til hans Tale; –</l>
 <lb/><l>der fór fra hans Strenge en deilig Lyd,</l>
 <lb/><l>som Huldreslot det m<unclear reason="writing">on</unclear> klinge,</l>
 <lb/><l>og Fuglen kviddred derved af Fryd</l>
@@ -934,7 +928,7 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><l>taug ofte <HIS:hisDel rend="overwritten">g</HIS:hisDel>den glade Klynge,</l>
 <lb/><l>thi En stod imellem dem rank og høi</l>
 <lb/><l>og redte sig til at synge;</l>
-<lb/><l>&dash; men tit sad han og<HIS:hisDel rend="overstrike">saa</HIS:hisDel> ved A<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>rnen og sang</l>
+<lb/><l>– men tit sad han og<HIS:hisDel rend="overstrike">saa</HIS:hisDel> ved A<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>rnen og sang</l>
 <lb/><l>og stilled den tungeste Kvide</l>
 <lb/><l>ei Fjeld eller Fjord kunde standse hans Gang,</l>
 <lb/><l>han vanked om Lande saa vide!</l></HIS:hisSp>
@@ -967,52 +961,52 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><l>Jeg trænger ikke Sølv, ei hel<HIS:clarification place="inline">l</HIS:clarification>er Guld</l>
 <lb/><l>end aldrig sang jeg nogentid for Penge</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker></HIS:spOpener>
-<lb/><l>Saa sæt dig dog og hvil dig der ved Aaren &dash;</l></HIS:hisSp>
+<lb/><l>Saa sæt dig dog og hvil dig der ved Aaren –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUD"><HIS:spOpener><speaker>Knud</speaker></HIS:spOpener>
-<lb/><l part="I">Jeg takker eder &dash;</l></HIS:hisSp>
+<lb/><l part="I">Jeg takker eder –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker>Mereta</speaker></HIS:spOpener>
 <lb/><l part="F">Jeg vil bringe dig</l>
 <lb/><l><HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>en kraftig Lædskedrik, det skjænker Kræfter.</l>
 <lb/><HIS:hisStage>(bringer ham Mjødhornet.<unclear reason="binding">)</unclear></HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUD"><HIS:spOpener><speaker>Knud</speaker></HIS:spOpener>
-<lb/><l part="I">Tak, Tak, mit vene Barn &dash;</l> <HIS:hisStage>(drikker)</HIS:hisStage></HIS:hisSp>
+<lb/><l part="I">Tak, Tak, mit vene Barn –</l> <HIS:hisStage>(drikker)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker></HIS:spOpener>
 <lb/><l part="F">Og saa maa du</l>
 <pb ed="source" type="page_pagination" subtype="recto" n="14r" facs="27" /><lb/><fw type="leaf" place="top-right" scribe="h2">14</fw>
 <lb/><l>dog synge os en lystig Vise, Gamle!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUD"><HIS:spOpener><speaker>Knud</speaker></HIS:spOpener>
-<lb/><l><HIS:hisDel rend="overwritten">d</HIS:hisDel>Det er jeg rede til naar det forlanges &dash;</l></HIS:hisSp>
+<lb/><l><HIS:hisDel rend="overwritten">d</HIS:hisDel>Det er jeg rede til naar det forlanges –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker></HIS:spOpener>
 <lb/><l>Men ikke disse gamle Eventyr</l>
-<lb/><l part="I">om Haugafolk og sligt &dash;</l></HIS:hisSp>
+<lb/><l part="I">om Haugafolk og sligt –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUD"><HIS:spOpener><speaker>Knud</speaker> <HIS:hisStage>reiser sig</HIS:hisStage></HIS:spOpener>
 <lb/><l part="F">Du troer da ei</l>
-<lb/><l part="I">paa vore Sagn &dash;</l></HIS:hisSp>
+<lb/><l part="I">paa vore Sagn –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker></HIS:spOpener>
 <lb/><l part="F">Sligt er jo kun for Børn</l>
-<lb/><l part="I">og Kvinder &dash;</l></HIS:hisSp>
+<lb/><l part="I">og Kvinder –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker></HIS:spOpener>
 <lb/><l part="F">O nei vist, fortæl og syng!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker> <HIS:hisStage><unclear reason="writing">stolt</unclear></HIS:hisStage></HIS:spOpener>
 <lb/><l>Ja vil du synge, kom da med en Vise</l>
 <lb/><l>om mine gjæve Fædre, der er nok</l>
-<lb/><l part="I">af Kvad om dem &dash;</l></HIS:hisSp>
+<lb/><l part="I">af Kvad om dem –</l></HIS:hisSp>
 <pb ed="HU"/><lb/><HIS:hisSp who="KNUD"><HIS:spOpener><speaker>Knud</speaker>.</HIS:spOpener>
 <lb/><l part="F">Ja, jeg kan ogsaa Een</l>
-<lb/><l>om eders andre Slægtninge, &dash; maaskee</l>
-<lb/><l>at I <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>vil høre den, &dash; om Alf og Ingierd!</l></HIS:hisSp>
+<lb/><l>om eders andre Slægtninge, – maaskee</l>
+<lb/><l>at I <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>vil høre den, – om Alf og Ingierd!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker> <HIS:hisStage>farer tilbage</HIS:hisStage></HIS:spOpener>
 <lb/><l>Fordømte, Ti! ha, vil du haane mig!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker>Mereta</speaker></HIS:spOpener>
-<lb/><l part="I">O, Fader bliv ei v<HIS:hisDel rend="overwritten"><unclear>er</unclear></HIS:hisDel>red &dash;</l></HIS:hisSp>
+<lb/><l part="I">O, Fader bliv ei v<HIS:hisDel rend="overwritten"><unclear>er</unclear></HIS:hisDel>red –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker></HIS:spOpener>
 <lb/><l part="F">Hvad fattes eder?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUD"><HIS:spOpener><speaker>Knud</speaker></HIS:spOpener>
-<lb/><l part="I">Det er jer ærligt ment &dash;</l></HIS:hisSp>
+<lb/><l part="I">Det er jer ærligt ment –</l></HIS:hisSp>
 <pb ed="source" type="page_nopagination" subtype="verso" n="14v" facs="28" /><lb/><HIS:hisSp who="MOGENS"><HIS:spOpener><speaker>Mogens</speaker></HIS:spOpener>
 <lb/><l part="F">Holdt inde, Gamle!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUD"><HIS:spOpener><speaker>Knud</speaker></HIS:spOpener>
-<lb/><l>Det baader eder vel at høre den! &dash;</l></HIS:hisSp>
+<lb/><l>Det baader eder vel at høre den! –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker></HIS:spOpener>
 <lb/><l>Hvis du ei havde drukket af mit Horn</l>
 <lb/><l>og hvilet ved mit Arnested saa skulde</l>
@@ -1023,16 +1017,16 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><l>lad mig kun synge, det vil bringe Held</l>
 <lb/><l>for eder og for eders hele Slægt</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MOGENS"><HIS:spOpener><speaker>Mogens</speaker></HIS:spOpener>
-<lb/><l part="I">Jeg troer han er ifra <HIS:hisDel rend="overwritten">f</HIS:hisDel>Forstanden &dash;</l></HIS:hisSp>
+<lb/><l part="I">Jeg troer han er ifra <HIS:hisDel rend="overwritten">f</HIS:hisDel>Forstanden –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker> <HIS:hisStage>til Knud</HIS:hisStage></HIS:spOpener>
 <lb/><l part="F">Ti,</l>
-<lb/><l>jeg gider ikke høre dine Viser &dash;</l>
+<lb/><l>jeg gider ikke høre dine Viser –</l>
 <lb/><l>hvis du har Noget at berette mig</l>
 <lb/><l part="I">saa siig det frem i Korthed.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUD"><HIS:spOpener><speaker>Knud</speaker></HIS:spOpener>
 <lb/><l part="F">Nei, min Magt</l>
 <lb/><l>er lagt i mine Strænge; kun i Sang</l>
-<lb/><l>og Eventyr jeg virker, &dash; ellers ei &dash;</l></HIS:hisSp>
+<lb/><l>og Eventyr jeg virker, – ellers ei –</l></HIS:hisSp>
 <lb/><HIS:hisStage>(Bjørn og Paal komme.)</HIS:hisStage>
 <lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker>Mereta</speaker></HIS:spOpener>
 <lb/><l part="I">Der kommer Bjørn tilbage!</l></HIS:hisSp>
@@ -1042,11 +1036,11 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <pb ed="source" type="page_pagination" subtype="recto" n="15r" facs="29" /><lb/><fw type="leaf" place="top-right" scribe="h2">15</fw>
 <lb/><HIS:hisSp who="KNUD"><HIS:spOpener><speaker>Knud</speaker></HIS:spOpener>
 <lb/><HIS:hisDel rend="overstrike"><gap/></HIS:hisDel><l part="F">Ha, er det dig,</l>
-<lb/><l>du hører hjemme her paa denne Gaard, &dash;</l>
-<lb/><l part="I">her er ei godt at være &dash;</l></HIS:hisSp>
+<lb/><l>du hører hjemme her paa denne Gaard, –</l>
+<lb/><l part="I">her er ei godt at være –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker></HIS:spOpener>
 <lb/><l part="F">Kjender du</l>
-<lb/><l part="I">den Gamle, &dash;</l></HIS:hisSp>
+<lb/><l part="I">den Gamle, –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker>.</HIS:spOpener>
 <lb/><l part="F"><HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>Ja, jeg mødte ham paa Fjeldet.</l></HIS:hisSp>
 <pb ed="HU"/><lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker> <HIS:hisStage>(mistroisk)</HIS:hisStage></HIS:spOpener>
@@ -1054,24 +1048,24 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
 <lb/><l>Han sagde selv han vilde gjæste dig.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker>Mereta</speaker></HIS:spOpener>
-<lb/><l part="I">Vær ikke vred &dash;</l></HIS:hisSp>
+<lb/><l part="I">Vær ikke vred –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker></HIS:spOpener>
-<lb/><l part="F">Ti, Pige &dash; lad mig raade, &dash;</l></HIS:hisSp>
+<lb/><l part="F">Ti, Pige – lad mig raade, –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUD"><HIS:spOpener><speaker>Knud</speaker></HIS:spOpener>
 <lb/><l>Jeg gaar, thi her er ikke godt at være</l>
 <lb/><l>vee, vee det <unclear reason="writing">Hu</unclear>us hvor Sangen ei maa høres,</l>
-<lb/><l>der har ei Lykken hjemme, &dash; nu Godkvæl!</l>
-<lb/><l>I skal nok endnu engang høre fra mig! &dash;</l>
+<lb/><l>der har ei Lykken hjemme, – nu Godkvæl!</l>
+<lb/><l>I skal nok endnu engang høre fra mig! –</l>
 <lb/><HIS:hisStage>(gaa<unclear reason="writing">er</unclear>)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker> <HIS:hisStage>forskrækket</HIS:hisStage></HIS:spOpener>
 <lb/><l>For Herrens Skyld! I jaged ham vel ei</l>
-<lb/><l part="I">afgaarde Husbond? &dash;</l></HIS:hisSp>
+<lb/><l part="I">afgaarde Husbond? –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker></HIS:spOpener>
 <lb/><l part="F"><HIS:hisDel rend="overstrike">Jo</HIS:hisDel><HIS:hisDel rend="overwritten">, h</HIS:hisDel>Hvorfor ikke det?</l>
-<lb/><l part="I">jeg gad ei høre ham. &dash;</l></HIS:hisSp>
+<lb/><l part="I">jeg gad ei høre ham. –</l></HIS:hisSp>
 <pb ed="source" type="page_nopagination" subtype="verso" n="15v" facs="30" /><lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
 <lb/><l part="F">Nu ved St: Olaf!</l>
-<lb/><l>der har I gjordt et herligt Stykke Arbeid &dash;</l></HIS:hisSp>
+<lb/><l>der har I gjordt et herligt Stykke Arbeid –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker></HIS:spOpener>
 <lb/><l part="I">Hvad mener du?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker>Mereta</speaker></HIS:spOpener>
@@ -1083,10 +1077,10 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><l part="F">Jo!</l>
 <lb/><l part="I">saa tykkes mig!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
-<lb/><l part="F">Ja, &dash; det var Sangerknud!</l></HIS:hisSp>
+<lb/><l part="F">Ja, – det var Sangerknud!</l></HIS:hisSp>
 <lb/><HIS:hisStage>(Bevægelse blandt Huusfolkene)</HIS:hisStage>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
-<lb/><l part="I">Han! &dash; Sangerknud!</l></HIS:hisSp>
+<lb/><l part="I">Han! – Sangerknud!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker></HIS:spOpener>
 <lb/><l part="F">Hvad staar du der og snakker!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker>.</HIS:spOpener>
@@ -1095,21 +1089,21 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><l part="F">Veed du det da vist?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker>.</HIS:spOpener>
 <lb/><l>Ja vist, min gamle Fa'er <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>har tit fortalt</l>
-<lb/><l>om ham; &dash; han bringer Lykke hvor han kommer</l>
+<lb/><l>om ham; – han bringer Lykke hvor han kommer</l>
 <lb/><l>og hvor man lytter til hans Eventyr;</l>
 <lb/><l>men er <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>man streng, og viser man ham bort</l>
-<lb/><l>saa bringer det kun Uheld over Gaarden! &dash;</l></HIS:hisSp>
+<lb/><l>saa bringer det kun Uheld over Gaarden! –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker rend="deviation">Bengt</speaker></HIS:spOpener>
-<lb/><l>Nu det har vi jo sagtens nok af <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>før, &dash;</l>
+<lb/><l>Nu det har vi jo sagtens nok af <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>før, –</l>
 <pb ed="source" type="page_pagination" subtype="recto" n="16r" facs="31" /><lb/><fw type="leaf" place="top-right" scribe="h2">16</fw>
 <lb/><l>men det er seent, det er paa Tid I gaa</l>
 <pb ed="HU"/><lb/><HIS:hisStage>(Mereta og Pigerne gaa)</HIS:hisStage>
 <lb/><l>til Hvile; vil I følge mig Herr Mogens!</l>
-<lb/><l>jeg har dog lidt at tale med jer om. &dash;</l></HIS:hisSp>
+<lb/><l>jeg har dog lidt at tale med jer om. –</l></HIS:hisSp>
 <lb/><HIS:hisStage>(Han og Præsten <unclear reason="writing">gaar</unclear>)</HIS:hisStage>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
-<lb/><l>Saa vil jeg ogsaa lægge mig til Hvile, &dash;</l>
-<lb/><l>men Sangerknud! &dash; Gud <sic>hved</sic> <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>hvad der vil skee! &dash;
+<lb/><l>Saa vil jeg ogsaa lægge mig til Hvile, –</l>
+<lb/><l>men Sangerknud! – Gud <sic>hved</sic> <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>hvad der vil skee! –
 <lb/><HIS:hisStage>(ga<unclear reason="writing">ar</unclear>)</HIS:hisStage></l></HIS:hisSp>
 <lb/><HIS:hisStage>(Bjørn sætter sig i en grunden<unclear reason="writing">de</unclear> Stilling.)</HIS:hisStage>
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker> <HIS:hisStage>(stiller sig foran ham)</HIS:hisStage></HIS:spOpener>
@@ -1119,76 +1113,76 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker></HIS:spOpener>
 <lb/><l>Har noget Uheld truffet dig idag?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker>.</HIS:spOpener>
-<lb/><l>Jeg veed ei enten Uheld eller Held; &dash;</l>
+<lb/><l>Jeg veed ei enten Uheld eller Held; –</l>
 <lb/><HIS:hisStage>(reiser sig.)</HIS:hisStage>
-<lb/><l>men Noget er det, &dash; hør jeg vil betro</l>
-<lb/><l>det til dig &dash; høit imellem Fjeldene</l>
+<lb/><l>men Noget er det, – hør jeg vil betro</l>
+<lb/><l>det til dig – høit imellem Fjeldene</l>
 <lb/><l>hen imod Justedalen traf jeg paa</l>
-<lb/><l part="I">en ung og fager Kvinde &dash;</l></HIS:hisSp>
+<lb/><l part="I">en ung og fager Kvinde –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker> <HIS:hisStage><unclear reason="writing">leende</unclear></HIS:hisStage></HIS:spOpener>
 <lb/><l part="F">Ikke andet,</l>
 <lb/><l>det var da sagtens intet Uheld, Bjørn!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
 <lb/><l>Nei hør mig kun, det var i Ødemarken</l>
-<lb/><l>hvor ingen Sæterjente vover sig &dash;</l></HIS:hisSp>
+<lb/><l>hvor ingen Sæterjente vover sig –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker></HIS:spOpener>
-<lb/><l>Saa har hun sagtens faret vild deroppe &dash;</l></HIS:hisSp>
+<lb/><l>Saa har hun sagtens faret vild deroppe –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker>.</HIS:spOpener>
-<lb/><l>Nei, nei, &dash; hun ligned ikke andre Piger &dash;</l>
+<lb/><l>Nei, nei, – hun ligned ikke andre Piger –</l>
 <pb ed="source" type="page_nopagination" subtype="verso" n="16v" facs="32" /><lb/><l>hun stod imellem Træerne og sang,</l>
-<lb/><l part="I">og saa forsvandt hun pludselig &dash;</l></HIS:hisSp>
+<lb/><l part="I">og saa forsvandt hun pludselig –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker>, <HIS:hisStage><unclear reason="writing">mumlende</unclear></HIS:hisStage></HIS:spOpener>
 <lb/><l part="F">Det var</l>
-<lb/><l part="I">vel aldrig Huldren, &dash;</l></HIS:hisSp>
+<lb/><l part="I">vel aldrig Huldren, –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
 <lb/><l part="F">Flere Gange har</l>
-<lb/><l>jeg hørt hvordan hun blæste der paa Luren, &dash;</l>
-<lb/><l>men nu, da jeg har seet hende; &dash; Einar,</l>
-<lb/><l part="I">jeg maa derop igjen &dash;</l></HIS:hisSp>
+<lb/><l>jeg hørt hvordan hun blæste der paa Luren, –</l>
+<lb/><l>men nu, da jeg har seet hende; – Einar,</l>
+<lb/><l part="I">jeg maa derop igjen –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker></HIS:spOpener>
 <lb/><l part="F">Jeg raader dig</l>
 <pb ed="HU"/><lb/><l>at være lidt forsigtig, vogt dig vel,</l>
-<lb/><l>forsee dig ei paa Sæterjenterne &dash;</l></HIS:hisSp>
-<lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker> &dash;</HIS:spOpener>
-<lb/><l part="I">Jeg siger jo &dash;</l></HIS:hisSp>
+<lb/><l>forsee dig ei paa Sæterjenterne –</l></HIS:hisSp>
+<lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker> –</HIS:spOpener>
+<lb/><l part="I">Jeg siger jo –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker>.</HIS:spOpener>
 <lb/><l part="F">Nu nu, paa Huldren da!</l>
-<lb/><l>Men hør mig Bjørn! det er alvorligt meent, &dash;</l>
+<lb/><l>Men hør mig Bjørn! det er alvorligt meent, –</l>
 <lb/><l>din Fader har nok andre Hensigter,</l>
 <lb/><l>han saae nok gjerne at der blev et Par</l>
-<lb/><l part="I">af dig og af Mereta &dash;</l></HIS:hisSp>
+<lb/><l part="I">af dig og af Mereta –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>B<HIS:hisDel rend="overwritten">engt</HIS:hisDel>jørn</speaker></HIS:spOpener>
 <lb/><l part="F">O, umuligt,</l>
-<lb/><l>det har han aldrig talt om; &dash; hun og jeg</l>
+<lb/><l>det har han aldrig talt om; – hun og jeg</l>
 <lb/><l>betragte jo hinanden blot som Søskend.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker></HIS:spOpener>
 <lb/><l part="I">Men hør mig Bjørn!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker>.</HIS:spOpener>
 <lb/><l part="F">Nei, nei, det nytter ei,</l>
 <lb/><l>det gaar ei an, jeg tænker kun paa hende</l>
-<lb/><l part="I">jeg saa idag &dash;</l></HIS:hisSp>
+<lb/><l part="I">jeg saa idag –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker></HIS:spOpener>
 <lb/><l part="F">Det er jo Galskab, Bjørn!</l>
 <pb ed="source" type="page_pagination" subtype="recto" n="17r" facs="33" /><lb/><fw type="leaf" place="top-right" scribe="h2">17</fw>
 <lb/><l>jeg skulde næsten tro at det er Kogleri</l>
 <lb/><l>og Trolddomskunster som har hildet dig!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker>.</HIS:spOpener>
-<lb/><l>Ja lad det være som det vil, &dash; jeg kan</l>
+<lb/><l>Ja lad det være som det vil, – jeg kan</l>
 <lb/><l>ei stride længer mod, jeg har jo kjæmpet,</l>
 <lb/><l>det nytter ei, ifra den første <sic>Gange</sic></l>
 <lb/><l>jeg hørte Luren tænker jeg paa hende</l>
 <lb/><l>jeg har jo bedet Gud og hellig Olaf</l>
 <lb/><l>at styrke mig, men nei det hjælper ei</l>
-<lb/><l>jeg maa afsted derop at finde hende! &dash;</l></HIS:hisSp>
+<lb/><l>jeg maa afsted derop at finde hende! –</l></HIS:hisSp>
 <lb/><figure type="bar"/>
 </div>
 <div type="act" n="2">
 <pb ed="HU"/><lb/><head>Anden Act</head>
 <lb/><HIS:hisStage>En vild <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>men skjøn Egn i Justedalen; Træer
 <lb/><HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>og Fjeld<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>e i Baggr: og paa Siderne, til Venstre en lille
-<lb/>Bjerghule der sk<HIS:hisAdd place="inline">j</HIS:hisAdd>ules af Grene og Blade. &dash;</HIS:hisStage>
+<lb/>Bjerghule der sk<HIS:hisAdd place="inline">j</HIS:hisAdd>ules af Grene og Blade. –</HIS:hisStage>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker> <HIS:hisStage>kommer</HIS:hisStage></HIS:spOpener>
-<lb/><l>Snart er det Aften, &dash; jeg har vanket om</l>
+<lb/><l>Snart er det Aften, – jeg har vanket om</l>
 <lb/><l>den hele Dag igjennem Skog og Lier</l>
 <lb/><l>jeg fulgte Renens Spor i vildsom Ur</l>
 <lb/><l>indunder Granens mørke Tag paa Fjeldet.</l>
@@ -1205,27 +1199,27 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><l>da standser han og lytter taus dertil</l>
 <lb/><l>og siden kan han aldrig Spillet glemme.</l>
 <lb/><HIS:hisStage>(Luurtoner høres.)</HIS:hisStage>
-<lb/><l>Hvad er det! Ha, ja det er hendes Luur, &dash;</l>
+<lb/><l>Hvad er det! Ha, ja det er hendes Luur, –</l>
 <lb/><l>der seer jeg hende komme gjennem Skoven!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>, <HIS:hisStage>kommer</HIS:hisStage>.</HIS:spOpener>
 <lb/><l>Idag er Alfhild ikke glad som før,</l>
-<lb/><l>han var der ei, han kommer ikke mere, &dash;</l>
+<lb/><l>han var der ei, han kommer ikke mere, –</l>
 <lb/><HIS:hisStage>(bliver ham vaer)</HIS:hisStage>
-<lb/><l part="I">O, jo, der er han, &dash; <HIS:hisStage>(iler imod ham)</HIS:hisStage> nu maa du ei meer</l>
-<lb/><l part="I">saasnart forlade Alfhild, &dash;</l></HIS:hisSp>
+<lb/><l part="I">O, jo, der er han, – <HIS:hisStage>(iler imod ham)</HIS:hisStage> nu maa du ei meer</l>
+<lb/><l part="I">saasnart forlade Alfhild, –</l></HIS:hisSp>
 <pb ed="HU"/><lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker> <HIS:hisStage>overrasket</HIS:hisStage></HIS:spOpener>
 <lb/><l part="F"><HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>Fagre Pige!</l>
-<lb/><l part="I">hvo er du? &dash;</l></HIS:hisSp>
+<lb/><l part="I">hvo er du? –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker></HIS:spOpener>
-<lb/><l part="F">Spørger du hvem Alfhild er, &dash;</l>
-<lb/><l>det veed du jo, &dash; men her, her maa du blive,</l>
+<lb/><l part="F">Spørger du hvem Alfhild er, –</l>
+<lb/><l>det veed du jo, – men her, her maa du blive,</l>
 <lb/><l>du maa ei gaa saa hastigt som i Nat!</l></HIS:hisSp>
 <pb ed="source" type="page_pagination" subtype="recto" n="18r" facs="35" /><lb/><fw type="leaf" place="top-right" scribe="h2">18</fw>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker> <HIS:hisStage>forundret</HIS:hisStage></HIS:spOpener>
 <lb/><l>Inat! hvad mener du? <seg type="transposition" part="I"><HIS:hisDel rend="overstrike" hand="h2"><seg rend="supralinear" subtype="no">2</seg></HIS:hisDel><seg subtype="txt">har</seg></seg> <seg type="transposition" part="F"><HIS:hisDel rend="overstrike" hand="h2"><seg rend="supralinear" subtype="no">1</seg></HIS:hisDel><seg subtype="txt">jeg</seg></seg> <HIS:hisDel rend="overwritten"><unclear>da</unclear></HIS:hisDel>ei været</l>
-<lb/><l part="I">i Nat paa Fjeldet &dash;</l></HIS:hisSp>
+<lb/><l part="I">i Nat paa Fjeldet –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
-<lb/><l part="F">O, du gik saa s<HIS:hisDel rend="overwritten"><unclear>a</unclear></HIS:hisDel>nart, &dash;</l></HIS:hisSp>
+<lb/><l part="F">O, du gik saa s<HIS:hisDel rend="overwritten"><unclear>a</unclear></HIS:hisDel>nart, –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
 <lb/><l part="I">Hvad mener du?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
@@ -1236,7 +1230,7 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><l>Det var saa underligt; men hør du kjender</l>
 <lb/><l part="I">vel Alferne?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
-<lb/><l part="M"><HIS:hisDel rend="overwritten">H</HIS:hisDel>Nei, nei &dash;</l></HIS:hisSp>
+<lb/><l part="M"><HIS:hisDel rend="overwritten">H</HIS:hisDel>Nei, nei –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker></HIS:spOpener>
 <lb/><l part="F"><HIS:hisDel rend="overstrike">Hvad <gap/></HIS:hisDel> Du kjender ei</l>
 <lb/><l>de smaa, de gode Alfer, de som lege</l>
@@ -1244,88 +1238,88 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><l>det store Øie lukker sig bag Aasen.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker>.</HIS:spOpener>
 <lb/><l>Nu ja, det veed jeg, men fortæl, fortæl!</l></HIS:hisSp>
-<lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker> &dash;</HIS:spOpener>
+<lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker> –</HIS:spOpener>
 <lb/><l>Naar det er mørkt og Alfhild lukker Øiet</l>
 <lb/><l>da komme de og lege <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>rundt om hende</l>
-<lb/><l>de bringe Blomster med, &dash; da er hun glad, &dash;</l>
-<lb/><l>de eie alle Blomsterne i Skoven &dash;</l>
-<lb/><l>men nu i Nat kom Alferne ei hid &dash;</l></HIS:hisSp>
+<lb/><l>de bringe Blomster med, – da er hun glad, –</l>
+<lb/><l>de eie alle Blomsterne i Skoven –</l>
+<lb/><l>men nu i Nat kom Alferne ei hid –</l></HIS:hisSp>
 <pb ed="source" type="page_nopagination" subtype="verso" n="18v" facs="36" /><lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
 <lb/><l part="I">Og hvorfor ei?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker></HIS:spOpener>
 <lb/><l part="F">Det veed <HIS:hisDel rend="overwritten"><unclear>j</unclear></HIS:hisDel>ei Alfhild heller,</l>
 <lb/><l>hun tror de frygtede for dig, som hun</l>
-<lb/><l>dengang hun saa dig første Gang i Lien. &dash;</l>
+<lb/><l>dengang hun saa dig første Gang i Lien. –</l>
 <lb/><l>O, Alfhild tænkte siden kun paa dig,</l>
 <lb/><l>da kom du hid igjen; vi vandred sammen</l>
-<lb/><l>igjennem Skoven, &dash; da var Alfhild glad! &dash;</l>
-<lb/><l>O, men idag var du her ikke mere! &dash;</l></HIS:hisSp>
+<lb/><l>igjennem Skoven, – da var Alfhild glad! –</l>
+<lb/><l>O, men idag var du her ikke mere! –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
 <lb/><l part="I">Du har kun drømt!</l></HIS:hisSp>
 <pb ed="HU"/><lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker></HIS:spOpener>
 <lb/><l part="F">Hvad mener du med det!</l>
-<lb/><l>Men nu maa du ei gaa igjen iaften, &dash;</l></HIS:hisSp>
+<lb/><l>Men nu maa du ei gaa igjen iaften, –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker>.</HIS:spOpener>
 <lb/><l part="I">Jeg maa ei gaa?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
 <lb/><l part="F">Nei, nei du maa ei gaa!</l>
 <lb/><l>du kjender vel den lille Blomst paa Fjeld<unclear reason="writing">et</unclear></l>
-<lb/><l>den <HIS:hisDel rend="overstrike">lille</HIS:hisDel> blaa som <app type="alteration"><lem><HIS:hisAdd place="offline">voxer <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel><unclear>n</unclear>ær</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">staar</HIS:hisDel></HIS:hisRdg></app> ved Granens Fod, &dash;</l></HIS:hisSp>
+<lb/><l>den <HIS:hisDel rend="overstrike">lille</HIS:hisDel> blaa som <app type="alteration"><lem><HIS:hisAdd place="offline">voxer <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel><unclear>n</unclear>ær</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">staar</HIS:hisDel></HIS:hisRdg></app> ved Granens Fod, –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
-<lb/><l part="I">Ja vist jeg kjender den &dash;</l></HIS:hisSp>
+<lb/><l part="I">Ja vist jeg kjender den –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker></HIS:spOpener>
 <lb/><l part="F">Om Aftnen kommer</l>
 <lb/><l>det store Lys fra Aasen der og skinner</l>
 <lb/><l>ned paa dens Blade, og de blanke Lys</l>
-<lb/><l>de smaa deroppe allesammen skinne &dash;</l>
-<lb/><l>&dash; da blier den lille Blomst saa glad, saa glad!</l>
+<lb/><l>de smaa deroppe allesammen skinne –</l>
+<lb/><l>– da blier den lille Blomst saa glad, saa glad!</l>
 <lb/><HIS:hisDel rend="overstrike"><l part="Y">men ak, saa gaa de alle bort</l></HIS:hisDel>
 <pb ed="source" type="page_pagination" subtype="recto" n="19r" facs="37" /><lb/><fw type="leaf" place="top-right" scribe="h2">19</fw>
 <lb/><l>men ak, saa gaa de alle bort med Natten,</l>
 <lb/><l>og da er Blomsten ikke mere glad,</l>
-<lb/><l>da lukker den sit lille Blad og græder; &dash;</l>
+<lb/><l>da lukker den sit lille Blad og græder; –</l>
 <lb/><HIS:hisStage>(hæftigt idet hun griber hans <sic>Haad</sic>.)</HIS:hisStage>
 <lb/><l><HIS:hisDel rend="overwritten">Du</HIS:hisDel>O, du maa blive her; thi Alfhild er</l>
-<lb/><l>ret som den blaa, den lille Blomst paa Fjeldet! &dash;</l></HIS:hisSp>
+<lb/><l>ret som den blaa, den lille Blomst paa Fjeldet! –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker>.</HIS:spOpener>
 <lb/><l>Ja ja, jeg bliver, men fortæl mig dog</l>
 <lb/><l>hvorledes kom du hid, er der da Ingen</l>
-<lb/><l part="I">som lever her hos dig &dash;</l></HIS:hisSp>
+<lb/><l part="I">som lever her hos dig –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
 <lb/><l part="F">Hvad mener du?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker>.</HIS:spOpener>
 <lb/><l>Har du da ingen Fader eller Moder?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker></HIS:spOpener>
 <lb/><l>O jo, men de er ikke meer hos Alfhild!</l>
-<lb/><l>nu sove de; &dash; de komme ei igjen.</l>
+<lb/><l>nu sove de; – de komme ei igjen.</l>
 <lb/><l>Dengang da Alfhild var en liden Pige</l>
 <lb/><l>da var hun hos sin Fader og sin Moder</l>
 <lb/><l>men det er længe, meget længe siden.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker> <HIS:hisStage>afsides</HIS:hisStage></HIS:spOpener>
-<lb/><l>Saa er de sikkert døde, stakkels Barn! &dash;</l></HIS:hisSp>
+<lb/><l>Saa er de sikkert døde, stakkels Barn! –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
-<lb/><l><HIS:hisDel rend="overstrike">M</HIS:hisDel><HIS:hisDel rend="overwritten">in</HIS:hisDel>O Moder var saa god, &dash; <HIS:hisDel rend="overstrike">min</HIS:hisDel> <HIS:hisAdd place="inline">og</HIS:hisAdd> Fader ogsaa,</l>
-<lb/><l part="I">han ligned dig &dash;</l></HIS:hisSp>
+<lb/><l><HIS:hisDel rend="overstrike">M</HIS:hisDel><HIS:hisDel rend="overwritten">in</HIS:hisDel>O Moder var saa god, – <HIS:hisDel rend="overstrike">min</HIS:hisDel> <HIS:hisAdd place="inline">og</HIS:hisAdd> Fader ogsaa,</l>
+<lb/><l part="I">han ligned dig –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker>.</HIS:spOpener>
 <lb/><l part="F">Og siden leved du</l>
-<lb/><l part="I">allene her &dash;</l></HIS:hisSp>
+<lb/><l part="I">allene her –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker></HIS:spOpener>
 <lb/><l part="F">Nei, Alfhild er ei ene</l>
 <pb ed="HU"/><lb/><l>see her er Blomster jo, og Fugle smaa</l>
 <pb ed="source" type="page_nopagination" subtype="verso" n="19v" facs="38" /><lb/><l>og Alfhild kjender godt dem allesammen,</l>
 <lb/><l>og saa har Alfhild sine hvide Lam</l>
-<lb/><l>og si<HIS:hisDel rend="overwritten"><unclear>tt</unclear></HIS:hisDel>ne Gjeder, &dash; nu er de paa Fjeldet;</l>
+<lb/><l>og si<HIS:hisDel rend="overwritten"><unclear>tt</unclear></HIS:hisDel>ne Gjeder, – nu er de paa Fjeldet;</l>
 <lb/><l>og Alferne, de bo i Skoven her,</l>
 <lb/><HIS:hisDel rend="overstrike"><l part="Y"><unclear>en</unclear> Alf</l></HIS:hisDel>
 <lb/><l rhyme="X">naar hun er glad saa lege de med hende,</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
-<lb/><l part="I">Og her er ingen anden &dash;</l></HIS:hisSp>
+<lb/><l part="I">Og her er ingen anden –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker></HIS:spOpener>
-<lb/><l part="F">Stundom, jo, &dash;</l>
-<lb/><l>saa kommer ogsaa Alfhilds gamle Fader, &dash;</l></HIS:hisSp>
-<lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker> &dash;</HIS:spOpener>
-<lb/><l>Din gamle Fader! &dash; Du fortalte jo</l>
-<lb/><l part="I">han var ei mere her &dash;</l></HIS:hisSp>
+<lb/><l part="F">Stundom, jo, –</l>
+<lb/><l>saa kommer ogsaa Alfhilds gamle Fader, –</l></HIS:hisSp>
+<lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker> –</HIS:spOpener>
+<lb/><l>Din gamle Fader! – Du fortalte jo</l>
+<lb/><l part="I">han var ei mere her –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker></HIS:spOpener>
 <lb/><l part="F">Det er den Anden,</l>
 <lb/><l>o, kjender du da ei den gamle Mand</l>
@@ -1338,21 +1332,21 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><l>Men hvorfor tager han dig ikke med,</l>
 <lb/><l>hvi lader han dig blive her i Dalen!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker></HIS:spOpener>
-<lb/><l>O, det har Alfhild aldrig spurgt ham om; &dash;</l>
+<lb/><l>O, det har Alfhild aldrig spurgt ham om; –</l>
 <lb/><HIS:hisStage>(betænker sig og siger pludselig)</HIS:hisStage>
-<lb/><l>&dash; men hør, &dash; nu falder der mig Noget <sic><unclear reason="ink">Ind</unclear></sic>,</l>
-<lb/><l>&dash; kan Alfhild være Andetsteds end her? &dash;</l></HIS:hisSp>
+<lb/><l>– men hør, – nu falder der mig Noget <sic><unclear reason="ink">Ind</unclear></sic>,</l>
+<lb/><l>– kan Alfhild være Andetsteds end her? –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker>.</HIS:spOpener>
-<lb/><l>Det kan du, &dash; Alfhild! hvis du vilde følge</l>
-<lb/><l part="I">mig til mit Hjem &dash;</l></HIS:hisSp>
+<lb/><l>Det kan du, – Alfhild! hvis du vilde følge</l>
+<lb/><l part="I">mig til mit Hjem –</l></HIS:hisSp>
 <pb ed="source" type="page_pagination" subtype="recto" n="20r" facs="39" /><lb/><fw type="leaf" place="top-right" scribe="h2">20</fw>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker> <HIS:hisStage>glad</HIS:hisStage>.</HIS:spOpener>
 <lb/><l part="F">O, har du og et Hjem</l>
 <lb/><l>en Dal som her med Blomster og med Skove?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
-<lb/><l>Det har jeg, Alfhild! vil du følge med &dash;</l></HIS:hisSp>
+<lb/><l>Det har jeg, Alfhild! vil du følge med –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker></HIS:spOpener>
-<lb/><l>Ja gjerne, gjerne følger Alfhild dig! &dash;</l></HIS:hisSp>
+<lb/><l>Ja gjerne, gjerne følger Alfhild dig! –</l></HIS:hisSp>
 <lb/><HIS:hisStage>(Knud kommer langsomt
 <lb/>ud af Skoven.)</HIS:hisStage>
 <lb/><HIS:hisSp who="KNUD"><HIS:spOpener><speaker>Knud</speaker></HIS:spOpener>
@@ -1360,12 +1354,12 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker> <HIS:hisStage>iler ham imøde</HIS:hisStage>.</HIS:spOpener>
 <lb/><l part="F">Fader! kommer du</l>
 <lb/><l part="I">saa seent,</l></HIS:hisSp>
-<pb ed="HU"/><lb/><HIS:hisSp who="KNUD"><HIS:spOpener><speaker>Knud</speaker> &dash;</HIS:spOpener>
+<pb ed="HU"/><lb/><HIS:hisSp who="KNUD"><HIS:spOpener><speaker>Knud</speaker> –</HIS:spOpener>
 <lb/><l part="F">Jeg maatte see til dig iaften!</l>
 <lb/><HIS:hisStage>(bemærker Bjørn)</HIS:hisStage>
-<lb/><l>ha, er det dig, &dash; hvorledes kom du hid?</l></HIS:hisSp>
+<lb/><l>ha, er det dig, – hvorledes kom du hid?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker> <HIS:hisStage>overrasket</HIS:hisStage></HIS:spOpener>
-<lb/><l part="I">Jeg var paa Jagt &dash; &dash;</l></HIS:hisSp>
+<lb/><l part="I">Jeg var paa Jagt – –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
 <lb/><l part="F">O, Fader! han har lovet</l>
 <lb/><l>at han ei vil forlade Alfhild meer!</l></HIS:hisSp>
@@ -1375,29 +1369,29 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><l part="F">Ja, det har jeg, Gamle!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker></HIS:spOpener>
 <lb/><l>Han siger at han har et Hjem, en Dal</l>
-<lb/><l>som denne, &dash; didhen vil han føre Alfhild!</l>
-<lb/><l>&dash; o, Alfhild vil saa gjerne følge ham</l>
-<lb/><l>hun kan ei blive her naar han er borte! &dash;</l></HIS:hisSp>
-<pb ed="source" type="page_nopagination" subtype="verso" n="20v" facs="40" /><lb/><HIS:hisSp who="KNUD"><HIS:spOpener><speaker>Knud</speaker> &dash;</HIS:spOpener>
+<lb/><l>som denne, – didhen vil han føre Alfhild!</l>
+<lb/><l>– o, Alfhild vil saa gjerne følge ham</l>
+<lb/><l>hun kan ei blive her naar han er borte! –</l></HIS:hisSp>
+<pb ed="source" type="page_nopagination" subtype="verso" n="20v" facs="40" /><lb/><HIS:hisSp who="KNUD"><HIS:spOpener><speaker>Knud</speaker> –</HIS:spOpener>
 <lb/><l>Du fører hende til din Faders Gaard?</l></HIS:hisSp>
-<lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker> &dash;</HIS:spOpener>
-<lb/><l part="I">Det er min Agt &dash;</l></HIS:hisSp>
+<lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker> –</HIS:spOpener>
+<lb/><l part="I">Det er min Agt –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker></HIS:spOpener>
 <lb/><l part="F">Da maa du komme, Fader</l>
 <lb/><l>og synge for ham alt hvad du har sunget</l>
-<lb/><l part="I">for Alfhild før, &dash;</l></HIS:hisSp>
+<lb/><l part="I">for Alfhild før, –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUD"><HIS:spOpener><speaker>Knud</speaker></HIS:spOpener>
 <lb/><l part="F">Det skal jeg gjøre, Barn!</l>
-<lb/><l part="I">jeg skal nok voge over dig &dash;</l></HIS:hisSp>
+<lb/><l part="I">jeg skal nok voge over dig –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
 <lb/><l part="F">Men siig,</l>
 <lb/><l>hvi lod du hende blive her i Dalen</l>
-<lb/><l part="I">saa ene, saa forladt &dash;</l></HIS:hisSp>
+<lb/><l part="I">saa ene, saa forladt –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUD"><HIS:spOpener><speaker>Knud</speaker></HIS:spOpener>
 <lb/><l part="F">Jeg raader ei</l>
 <lb/><l>for hendes Skjæbne; kun i mine Strænge</l>
 <lb/><l>og i min Sang er lagt hvad jeg formaaer!</l></HIS:hisSp>
-<lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker> &dash;</HIS:spOpener>
+<lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker> –</HIS:spOpener>
 <lb/><l>Hvo er du da, forunderlige Gamle?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUD"><HIS:spOpener><speaker>Knud</speaker></HIS:spOpener>
 <lb/><l>Det kan jeg ikke sige dig, min Søn,</l>
@@ -1406,7 +1400,7 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><l>Og vil du ikke følge med os Fader?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUD"><HIS:spOpener><speaker>Knud</speaker>.</HIS:spOpener>
 <lb/><l>Det kan jeg ikke, Alfhild! jeg maa gaa</l>
-<lb/><l>fra Gaard til Gaard; &dash; der er saamang <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>et Hjerte,</l>
+<lb/><l>fra Gaard til Gaard; – der er saamang <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>et Hjerte,</l>
 <lb/><l>som trænger til at lindres, mang et Bryst</l>
 <lb/><l>som gjærer, svangert med sin egen Fylde,</l>
 <pb ed="HU"/><lb/><l>og hvad der rører sig i Folkets Barm</l>
@@ -1414,51 +1408,51 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><l>det maa jeg tolke gjennem mine Strenge!</l>
 <lb/><HIS:hisStage>(han gaar)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
-<lb/><l part="I">Du vil da følge mig? &dash;</l></HIS:hisSp>
+<lb/><l part="I">Du vil da følge mig? –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker></HIS:spOpener>
-<lb/><l part="F">Ja, ja, jeg vil! &dash;</l>
+<lb/><l part="F">Ja, ja, jeg vil! –</l>
 <lb/><l>o, du vil sikkert være god mod Alfhild,</l>
 <lb/><l>naar hun forlader denne fagre Dal</l>
 <lb/><l>da har hun Intet, Intet uden dig.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker> <HIS:hisStage>griber <unclear reason="writing">hendes Haand</unclear></HIS:hisStage></HIS:spOpener>
-<lb/><l>Ja, Alfhild, jeg vil være god mod dig, &dash;</l>
-<lb/><l>o, jeg vil elske dig mit hele Liv &dash;</l></HIS:hisSp>
+<lb/><l>Ja, Alfhild, jeg vil være god mod dig, –</l>
+<lb/><l>o, jeg vil elske dig mit hele Liv –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker></HIS:spOpener>
-<lb/><l>Hvad vil du? &dash; elske mig? hvad mener du?</l></HIS:hisSp>
+<lb/><l>Hvad vil du? – elske mig? hvad mener du?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker>,</HIS:spOpener>
 <lb/><l>At jeg vil være god mod dig og tænke</l>
-<lb/><l>paa dig allene alle mine Dage &dash;</l></HIS:hisSp>
+<lb/><l>paa dig allene alle mine Dage –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker></HIS:spOpener>
 <lb/><l>O, nu er Alfhild glad, nu troer hun at</l>
 <lb/><l>hun har forstaaet dig men hør, saa maa du</l>
-<lb/><l part="I">bestandig elske mig &dash;</l></HIS:hisSp>
+<lb/><l part="I">bestandig elske mig –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener>
-<lb/><l part="F">Bestandig Alfhild &dash;</l></HIS:hisSp>
+<lb/><l part="F">Bestandig Alfhild –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker></HIS:spOpener>
 <lb/><l>Thi ellers maatte Alfhild sikkert dø;</l>
 <lb/><l>Hør kun, to Duer byggede sin Rede</l>
 <lb/><l>i Furutoppen under Aasen der,</l>
 <lb/><l>saa kom en fremmed Due did, da fløi</l>
-<lb/><l>den ene bort med den, &dash; den anden sad</l>
+<lb/><l>den ene bort med den, – den anden sad</l>
 <pb ed="source" type="page_nopagination" subtype="verso" n="21v" facs="42" /><lb/><l>og vented efter den ved Nat, ved Dag,</l>
 <lb/><l>men ak, den vendte aldrig meer tilbage,</l>
-<lb/><l part="I">&dash; da maatte Duen dø; &dash;</l></HIS:hisSp>
+<lb/><l part="I">– da maatte Duen dø; –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker>.</HIS:spOpener>
 <lb/><l part="F">Nei, Alfhild, nei!</l>
 <lb/><l>forlad dig roligt kun paa mig men hvad</l>
-<lb/><l part="I">er det du lytter efter &dash;</l><HIS:hisStage>(en sagte Musik høres)</HIS:hisStage></HIS:hisSp>
+<lb/><l part="I">er det du lytter efter –</l><HIS:hisStage>(en sagte Musik høres)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker> <HIS:hisStage>sagte</HIS:hisStage></HIS:spOpener>
-<lb/><l part="F">Hører du &dash;</l>
+<lb/><l part="F">Hører du –</l>
 <lb/><HIS:hisDel rend="overstrike"><l part="Y">hvor Alfeflokken</l></HIS:hisDel>
 <lb/><l rhyme="X">de lette Alfer synge rundt omkring os!</l></HIS:hisSp>
-<lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker> &dash;</HIS:spOpener>
-<lb/><l part="I">Det er kun Aftenvinden &dash;</l></HIS:hisSp>
+<lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker> –</HIS:spOpener>
+<lb/><l part="I">Det er kun Aftenvinden –</l></HIS:hisSp>
 <pb ed="HU"/><lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker></HIS:spOpener>
 <lb/><l part="F">Hører du</l>
-<lb/><l>de hviske mellem Blomsterne, &dash; o hør! &dash;</l></HIS:hisSp>
+<lb/><l>de hviske mellem Blomsterne, – o hør! –</l></HIS:hisSp>
 <lb/><HIS:hisStage>(Under det Følgen<unclear reason="writing">de</unclear> staar Alfhild taus
-<lb/>og lytter idet hun yttrer sine Fø&typHyp;
-<lb/>lelser efter Sangens Indhold, &dash; Bjørn
+<lb/>og lytter idet hun yttrer sine Fø‐
+<lb/>lelser efter Sangens Indhold, – Bjørn
 <lb/>betragter hen<unclear reason="writing">de</unclear> med ængstelig Forundring.)</HIS:hisStage>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Chor af Alfer</speaker>.</HIS:spOpener>
 <lb/><l rend="indent1">Alferne hviske ved Kvæl</l>
@@ -1475,82 +1469,82 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><l rend="indent1">vil du endnu engang stige</l>
 <lb/><l rend="indent2">O da ville</l>
 <lb/><l rend="indent2">vi i stille</l>
-<lb/><l rend="indent1">Aften atter hilse Dalens Pige! &dash;</l></HIS:hisSp>
+<lb/><l rend="indent1">Aften atter hilse Dalens Pige! –</l></HIS:hisSp>
 <lb/><HIS:hisStage>(<HIS:hisDel rend="overwritten">m</HIS:hisDel>Musikken hendøer
 <lb/>efterhaanden.)</HIS:hisStage>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker>, <HIS:hisStage>halv sagte</HIS:hisStage></HIS:spOpener>
 <lb/><l>Du hvisker Alfhild, kom, hvad fattes dig,</l>
-<lb/><l>jeg bli'er saa sært tilmode, &dash; lad os gaa &dash;</l></HIS:hisSp>
+<lb/><l>jeg bli'er saa sært tilmode, – lad os gaa –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker> <HIS:hisStage>griber hans Haand</HIS:hisStage></HIS:spOpener>
 <lb/><l>Nu følger Alfhild dig, nu har hun hvisket</l>
 <lb/><l>Farvel til Blomster og til Alfer smaa<unclear reason="writing">e</unclear></l>
 <lb/><HIS:hisStage>(de g<unclear reason="writing">aae</unclear>)</HIS:hisStage></HIS:hisSp>
 <lb/><figure type="bar"/>
-<lb/><HIS:hisStage>Thunet paa Bjerkehoug; Træer i Baggrun&typHyp;
-<lb/>den, til Venstre sees <HIS:hisDel rend="overwritten">v</HIS:hisDel>Væggen af Huset <gap/> &dash;</HIS:hisStage>
+<lb/><HIS:hisStage>Thunet paa Bjerkehoug; Træer i Baggrun‐
+<lb/>den, til Venstre sees <HIS:hisDel rend="overwritten">v</HIS:hisDel>Væggen af Huset <gap/> –</HIS:hisStage>
 <lb/><figure type="bar"/>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker> <HIS:hisStage><HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>kommer og møder <HIS:stageRole who="MERETA">Mereta</HIS:stageRole></HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Nei nei, der er ingen Lykke paa Bjerkehoug, &dash;
+<lb/><p>Nei nei, der er ingen Lykke paa Bjerkehoug, –
 <lb/>Herre Gud! er dette Lystighed paa en Jonsokskvæl,
-<lb/>nu havde jeg faaet muntret dem lidt op der&typHyp;
-<lb/>borte paa Hougen &dash; &dash;</p></HIS:hisSp>
+<lb/>nu havde jeg faaet muntret dem lidt op der‐
+<lb/>borte paa Hougen – –</p></HIS:hisSp>
 <pb ed="HU"/><lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker>Mereta</speaker>.</HIS:spOpener>
-<lb/><p>Og saa? &dash;</p></HIS:hisSp>
+<lb/><p>Og saa? –</p></HIS:hisSp>
 <pb ed="source" type="page_nopagination" subtype="verso" n="22v" facs="44" /><lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
 <lb/><p>Saa kom Bengt Alfsen og saa blev det stille som i
-<lb/>en Kirke &dash;</p></HIS:hisSp>
+<lb/>en Kirke –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker>Mereta</speaker>.</HIS:spOpener>
 <lb/><p>Ja, Paal, jeg har mærket det, alle Folk er bange for
-<lb/>ham &dash;</p></HIS:hisSp>
+<lb/>ham –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
 <lb/><p>Gud veed hvad der er iveien, alle skyer ham, selv
-<lb/>Bjørn hans egen Søn &dash;</p></HIS:hisSp>
+<lb/>Bjørn hans egen Søn –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker>Mereta</speaker></HIS:spOpener>
 <lb/><p>Gud, troer du det?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker>.</HIS:spOpener>
-<lb/><p>Det har jeg længe mærket &dash;</p></HIS:hisSp>
+<lb/><p>Det har jeg længe mærket –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker><HIS:hisDel rend="overwritten">Paal</HIS:hisDel>Mereta</speaker></HIS:spOpener>
 <lb/><p>Og derfor er det han flakker om paa Jagt i Fjeldene,
-<lb/>og aldrig har Ro hjemme &dash;</p></HIS:hisSp>
+<lb/>og aldrig har Ro hjemme –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker>.</HIS:spOpener>
-<lb/><p>Ja det var den første Grund, men siden &dash;</p></HIS:hisSp>
-<lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker>Mereta</speaker> &dash;</HIS:spOpener>
-<lb/><p>Men siden? hvad da &dash;</p></HIS:hisSp>
+<lb/><p>Ja det var den første Grund, men siden –</p></HIS:hisSp>
+<lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker>Mereta</speaker> –</HIS:spOpener>
+<lb/><p>Men siden? hvad da –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
-<lb/><p>Aa det var ikke Noget, &dash; Spørg mig ikke mere,
-<lb/>der kommer Bengt Alfsen! &dash;</p></HIS:hisSp>
+<lb/><p>Aa det var ikke Noget, – Spørg mig ikke mere,
+<lb/>der kommer Bengt Alfsen! –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker>Mereta</speaker></HIS:spOpener>
-<lb/><p>Saa vil jeg gaa &dash;</p><HIS:hisStage>(hun gaar)</HIS:hisStage></HIS:hisSp>
+<lb/><p>Saa vil jeg gaa –</p><HIS:hisStage>(hun gaar)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt Alfsen</speaker> <HIS:hisStage>kommer</HIS:hisStage></HIS:spOpener>
-<lb/><p>Hvem var det du talte med her &dash;</p></HIS:hisSp>
+<lb/><p>Hvem var det du talte med her –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
 <lb/><p>Det var jers Pleiedatter!</p></HIS:hisSp>
 <pb ed="source" type="page_pagination" subtype="recto" n="23r" facs="45" /><lb/><fw type="leaf" place="top-right" scribe="h2">23</fw>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
-<lb/><p>Og hvorfor gik hun bort da hun saa mig kom&typHyp;
+<lb/><p>Og hvorfor gik hun bort da hun saa mig kom‐
 <lb/>me!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
 <lb/><p>Hun havde noget at tage Vare paa i Huset,
 <lb/>sagde hun.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker></HIS:spOpener>
-<lb/><p>Saa, &dash; det hender altid naar jeg kommer; &dash;
-<lb/>saadan er det med dem allesammen, sidder Piger&typHyp;
+<lb/><p>Saa, – det hender altid naar jeg kommer; –
+<lb/>saadan er det med dem allesammen, sidder Piger‐
 <lb/>ne ved Arnen og spinder, saa gjøre de sig strax
-<lb/>Ærind i Kjøkken og Kjelder naar jeg kom&typHyp;
-<lb/>mer ind &dash; &dash;</p></HIS:hisSp>
+<lb/>Ærind i Kjøkken og Kjelder naar jeg kom‐
+<lb/>mer ind – –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker>.</HIS:spOpener>
-<lb/><p>Bengt Alfsen det er eders egen Skyld &dash;</p></HIS:hisSp>
-<lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker> &dash;</HIS:spOpener>
+<lb/><p>Bengt Alfsen det er eders egen Skyld –</p></HIS:hisSp>
+<lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker> –</HIS:spOpener>
 <lb/><p>Ti stille, jeg vil ikke høre mere derom.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker> &dash;</HIS:spOpener>
+<lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker> –</HIS:spOpener>
 <lb/><p>Naa, jeg kan sagtens tie; det var ellers til je<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>rs eget
-<lb/>Vel jeg sagde det &dash;</p></HIS:hisSp>
-<lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker> &dash;</HIS:spOpener>
-<lb/><p>Godt, godt; &dash; har du ikke seet Herr Mogens iaften &dash;</p></HIS:hisSp>
+<lb/>Vel jeg sagde det –</p></HIS:hisSp>
+<lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker> –</HIS:spOpener>
+<lb/><p>Godt, godt; – har du ikke seet Herr Mogens iaften –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
-<lb/><p>Han var i Borgestuen saa i Mørkningen &dash;</p></HIS:hisSp>
+<lb/><p>Han var i Borgestuen saa i Mørkningen –</p></HIS:hisSp>
 <pb ed="HU"/><lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker></HIS:spOpener>
-<lb/><p>Saa søg ham op, &dash; siig ham at jeg venter paa ham.</p></HIS:hisSp>
+<lb/><p>Saa søg ham op, – siig ham at jeg venter paa ham.</p></HIS:hisSp>
 <pb ed="source" type="page_nopagination" subtype="verso" n="23v" facs="46" /><lb/><HIS:hisSp who="PAAL"><HIS:spOpener><speaker>Paal</speaker></HIS:spOpener>
 <lb/><p>Det skal jeg!</p>
 <lb/><HIS:hisStage>(gaaer)</HIS:hisStage></HIS:hisSp>
@@ -1558,81 +1552,81 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><l>Jeg er ei mere frisk og rask som før,</l>
 <lb/><l>der ligger noget Tungt paa mine Skuldre,</l>
 <lb/><l>Folk mærke vist det er ei rigtigt fat</l>
-<lb/><l>med mig, &dash; de gaa saasnart de see mig komme;</l>
-<lb/><l>men denne Præst! &dash; fordømt, hvor blier han af,</l>
-<lb/><l>det letter stundom mig at tale med ham; &dash;</l>
-<lb/><l>&dash; du ta'er dig dyrt betalt, min Broder Alf! &dash;</l>
+<lb/><l>med mig, – de gaa saasnart de see mig komme;</l>
+<lb/><l>men denne Præst! – fordømt, hvor blier han af,</l>
+<lb/><l>det letter stundom mig at tale med ham; –</l>
+<lb/><l>– du ta'er dig dyrt betalt, min Broder Alf! –</l>
 <lb/><HIS:hisStage>(seer sig om)</HIS:hisStage>
-<lb/><l>det rører sig blandt Træerne, &dash; Sanct Olaf!</l>
+<lb/><l>det rører sig blandt Træerne, – Sanct Olaf!</l>
 <lb/><HIS:hisStage>(korser sig og gaa<unclear reason="writing">er</unclear> ind i Huset.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisStage><HIS:stageRole who="EINAR">Einar</HIS:stageRole> og <HIS:stageRole who="MERETA">Mereta</HIS:stageRole> komme.</HIS:hisStage>
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker></HIS:spOpener>
 <lb/><l>Og hvorfor vil du ikke dandse med mig?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker>Mereta</speaker>.</HIS:spOpener>
-<lb/><l>Fordi jeg ikke vil, &dash; see det er Grunden.</l></HIS:hisSp>
+<lb/><l>Fordi jeg ikke vil, – see det er Grunden.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker></HIS:spOpener>
 <lb/><l>Du handler ikke ret mod mig, Mereta!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker>Mereta</speaker></HIS:spOpener>
 <lb/><l part="I">Jasaa! hvad har du da at fordre?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker></HIS:spOpener>
-<lb/><l part="F">Nu; &dash;</l>
+<lb/><l part="F">Nu; –</l>
 <lb/><l>Vist ingen Ting, men du veed meget <app type="alteration"><lem><HIS:hisAdd place="offline">vel</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">godt</HIS:hisDel></HIS:hisRdg></app></l>
-<lb/><l part="I">jeg er dig god &dash;</l></HIS:hisSp>
+<lb/><l part="I">jeg er dig god –</l></HIS:hisSp>
 <pb ed="source" type="page_pagination" subtype="recto" n="24r" facs="47" /><lb/><fw type="leaf" place="top-right" scribe="h2">24</fw>
 <lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker>Mereta</speaker></HIS:spOpener>
 <lb/><l part="F">Og derfor blier du vred</l>
 <lb/><l>naar bare lidt jeg snakker med en anden</l></HIS:hisSp>
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker></HIS:spOpener>
-<lb/><l part="I">Ja snakker! &dash; leer, hvisker &dash;</l></HIS:hisSp>
-<lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker>Mereta</speaker>. <HIS:hisStage><unclear reason="writing">muntert</unclear></HIS:hisStage> &dash;</HIS:spOpener>
+<lb/><l part="I">Ja snakker! – leer, hvisker –</l></HIS:hisSp>
+<lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker>Mereta</speaker>. <HIS:hisStage><unclear reason="writing">muntert</unclear></HIS:hisStage> –</HIS:spOpener>
 <lb/><l part="F">Ha, ha, ha!</l>
-<lb/><l>jo meer du muler, &dash; desto mere blier</l>
-<lb/><l part="I">jeg munter &dash;</l></HIS:hisSp>
+<lb/><l>jo meer du muler, – desto mere blier</l>
+<lb/><l part="I">jeg munter –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker></HIS:spOpener>
 <lb/><l part="F">Ja, jeg seer det nok, Mereta!</l>
 <lb/><l>Saa var jeg ogsaa dengang jeg kom hid,</l>
-<lb/><l>men det Par Dage har forandret mig, &dash;</l>
-<lb/><l part="I">Mereta, hør mig &dash;</l></HIS:hisSp>
+<lb/><l>men det Par Dage har forandret mig, –</l>
+<lb/><l part="I">Mereta, hør mig –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker>Mereta</speaker></HIS:spOpener>
 <lb/><l part="F">Kom nu ei igjen</l>
-<lb/><l part="I">med denn<unclear>e</unclear><HIS:hisDel rend="overstrike">g</HIS:hisDel> gamle Snak &dash;</l></HIS:hisSp>
-<pb ed="HU"/><lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker> <HIS:hisStage>fornærmet</HIS:hisStage> &dash;</HIS:spOpener>
+<lb/><l part="I">med denn<unclear>e</unclear><HIS:hisDel rend="overstrike">g</HIS:hisDel> gamle Snak –</l></HIS:hisSp>
+<pb ed="HU"/><lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker> <HIS:hisStage>fornærmet</HIS:hisStage> –</HIS:spOpener>
 <lb/><l part="F">Nu vel, du skal</l>
-<lb/><l part="I">ei høre meer fra mig &dash;</l><HIS:hisStage>(vil gaa)</HIS:hisStage></HIS:hisSp>
+<lb/><l part="I">ei høre meer fra mig –</l><HIS:hisStage>(vil gaa)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker>Mereta</speaker></HIS:spOpener>
 <lb/><l part="F">Nu, gaaer du Einar!</l></HIS:hisSp>
-<lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker> &dash;</HIS:spOpener>
-<lb/><l part="I">Farvel, Mereta! &dash;</l></HIS:hisSp>
+<lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker> –</HIS:spOpener>
+<lb/><l part="I">Farvel, Mereta! –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker>Mereta</speaker>, <HIS:hisStage>skjelmsk</HIS:hisStage>.</HIS:spOpener>
-<lb/><l part="F">Lykke da paa Reisen &dash;</l>
+<lb/><l part="F">Lykke da paa Reisen –</l>
 <lb/><HIS:hisStage>(idet han er ved Udgangen)</HIS:hisStage>
 <lb/><l>Nei ve<HIS:hisDel rend="overwritten"><unclear>l</unclear></HIS:hisDel>nt dog lad mig snakke med dig Lidt</l></HIS:hisSp>
-<pb ed="source" type="page_nopagination" subtype="verso" n="24v" facs="48" /><lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker>. <HIS:hisStage>vender sig</HIS:hisStage> &dash;</HIS:spOpener>
-<lb/><l part="I">Hvad vil du da &dash;</l></HIS:hisSp>
+<pb ed="source" type="page_nopagination" subtype="verso" n="24v" facs="48" /><lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker>. <HIS:hisStage>vender sig</HIS:hisStage> –</HIS:spOpener>
+<lb/><l part="I">Hvad vil du da –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker>Mereta</speaker>.</HIS:spOpener>
-<lb/><l part="F">Kom hid, &dash; hør Einar</l>
+<lb/><l part="F">Kom hid, – hør Einar</l>
 <lb/><l>du lover mig at tie stille med</l>
-<lb/><l part="I">det Snak om Kjærlighed &dash;</l></HIS:hisSp>
+<lb/><l part="I">det Snak om Kjærlighed –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker> <HIS:hisStage>mørk</HIS:hisStage></HIS:spOpener>
-<lb/><l part="F">Ja vist, det gjør jeg &dash;</l></HIS:hisSp>
+<lb/><l part="F">Ja vist, det gjør jeg –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker>Mereta</speaker></HIS:spOpener>
 <lb/><l>Og naar jeg leer lidt ad dig saa maa</l>
-<lb/><l part="I">du ei see suurt &dash;</l></HIS:hisSp>
+<lb/><l part="I">du ei see suurt –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker></HIS:spOpener>
-<lb/><l part="F">Aa nei, gjør som du vil &dash;</l></HIS:hisSp>
+<lb/><l part="F">Aa nei, gjør som du vil –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker>Mereta</speaker></HIS:spOpener>
-<lb/><l>See det er Ret; Tak, Tak, nu kan du gaa &dash;</l>
+<lb/><l>See det er Ret; Tak, Tak, nu kan du gaa –</l>
 <lb/><l>nu vil jeg bare gi'e dig med paa Reisen</l>
-<lb/><l part="I">en liden Skjænk &dash;</l></HIS:hisSp>
+<lb/><l part="I">en liden Skjænk –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker></HIS:spOpener>
-<lb/><l part="M">Og hvad er det &dash;</l></HIS:hisSp>
+<lb/><l part="M">Og hvad er det –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker>Mereta</speaker></HIS:spOpener>
 <lb/><l part="F">See der!</l>
 <lb/><HIS:hisStage>(rækker ham Haanden)</HIS:hisStage>
-<lb/><l part="I">der har du den, &dash; min Haand og Tro!</l></HIS:hisSp>
+<lb/><l part="I">der har du den, – min Haand og Tro!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker> <HIS:hisStage>omfavner hende</HIS:hisStage>.</HIS:spOpener>
 <lb/><l part="F">Mereta!</l>
-<lb/><l part="I">Er det dit Alvor? &dash;</l></HIS:hisSp>
+<lb/><l part="I">Er det dit Alvor? –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MERETA"><HIS:spOpener><speaker>Mereta</speaker>.</HIS:spOpener>
 <lb/><l part="F">Ja, det er det Einar!</l>
 <lb/><HIS:hisStage>(idet Bengt <HIS:hisAdd place="offline">og Mogens</HIS:hisAdd> træder ind)</HIS:hisStage>
@@ -1641,10 +1635,10 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker></HIS:spOpener>
 <lb/><l part="F">Nu hvad er paafærde?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker>.</HIS:spOpener>
-<lb/><l part="I">Bengt Alfsen! hør! &dash; &dash;</l></HIS:hisSp>
+<lb/><l part="I">Bengt Alfsen! hør! – –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
-<lb/><l part="F">Ti, &dash; det behøves ikke,</l>
-<lb/><l>jeg saa nok hvad her foregik, &dash; Mereta!</l>
+<lb/><l part="F">Ti, – det behøves ikke,</l>
+<lb/><l>jeg saa nok hvad her foregik, – Mereta!</l>
 <lb/><l>det bedre sømmed sig om du forslog</l>
 <pb ed="HU"/><lb/><l>dig Tid blandt Ternerne, end med ung Einar.</l>
 <lb/><HIS:hisStage>(Mereta gaa<unclear reason="writing">er</unclear>)</HIS:hisStage>
@@ -1652,13 +1646,13 @@ Bruker RJHU som utgangstekst. Gikk gjennom TEI-headeren og typografibeskrivelsen
 <lb/><l>Og dig, min Ven! kan jeg berette kort</l>
 <lb/><l>at hvis du beiler til Meretas Gunst</l>
 <lb/><l><app type="alteration"><lem><HIS:hisAdd place="offline">da</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike"><HIS:hisAdd place="inline">da</HIS:hisAdd> <emph rend="underlined">det</emph></HIS:hisDel></HIS:hisRdg></app> nytter <HIS:hisAdd place="offline">det dig</HIS:hisAdd> ei, thi alt jeg har</l>
-<lb/><l>bestemt det anderledes, &dash; kom Herr Mogens!</l></HIS:hisSp>
+<lb/><l>bestemt det anderledes, – kom Herr Mogens!</l></HIS:hisSp>
 <lb/><HIS:hisStage>(De gaa)</HIS:hisStage>
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker>.</HIS:spOpener>
 <lb/><l>Det var da sandt hvad Præsten sagde mig</l>
 <lb/><l>Nu, lad det gaa! Mereta har mig kjær,</l>
 <lb/><l>Hun sætter nok igjennem hvad hun vil</l>
-<lb/><l>Forresten stoler jeg paa Lykkens Hjælp &dash;</l></HIS:hisSp>
+<lb/><l>Forresten stoler jeg paa Lykkens Hjælp –</l></HIS:hisSp>
 <lb/><HIS:hisStage>(<HIS:stageRole who="PAAL">Paal</HIS:stageRole>, <HIS:stageRole>flere Spillemænd</HIS:stageRole>, <HIS:stageRole>Bønder</HIS:stageRole> og <HIS:stageRole>Bondepiger</HIS:stageRole>
 <lb/>komme under Musi<unclear reason="writing">k</unclear>.)</HIS:hisStage>
 <lb/><figure type="bar"/>

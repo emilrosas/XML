@@ -1,10 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.ibsen.uio.no/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
 <?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
     <teiHeader xml:lang="nob">
@@ -13,11 +7,11 @@
 <title level="s" type="main">Henrik Ibsens skrifter</title>
 <title level="s" type="sub">Diplomatarisk tekstarkiv</title>
 <title level="a" type="main">[Gengangere]</title>
-<title level="a" type="sub">NBO Ms.8&deg; 1452</title>
+<title level="a" type="sub">NBO Ms.8° 1452</title>
 <title level="a" type="origYear">[1881]</title>
 <author>[Henrik Ibsen]</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Nina Marie Evensen, Ingvald Aarstein</name></respStmt>
 <respStmt>
 <resp>Kollasjonering og koding</resp>
@@ -41,7 +35,7 @@
         <msIdentifier>
             <settlement>Oslo</settlement>
             <repository>Nasjonalbiblioteket</repository>
-            <idno>NBO Ms.8&deg; 1452</idno>
+            <idno>NBO Ms.8° 1452</idno>
         </msIdentifier>
         <msContents>
             <msItem>
@@ -60,7 +54,7 @@
 </fileDesc>
 
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <list>
@@ -68,11 +62,11 @@
 <item>skrevet med grå blyant</item>
 </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-tei2;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 </encodingDesc>
 
@@ -125,9 +119,9 @@ Transkripsjon. Kollasjonerte mot faksimile, kodet og validerte. Klart for andrek
 <pb rend="[1]v"/>
 <div type="notes">
 <lb/><p>Grundstemningen skal være:
-<lb/>Det stærke opblomstrende ånde&typHyp;
+<lb/>Det stærke opblomstrende ånde‐
 <lb/>lige liv hos os i literatur, kunst
-<lb/>o. s. v. &dash; og så som modsætning:
+<lb/>o. s. v. – og så som modsætning:
 <lb/>hele menneskeheden på afveje.<note resp="editor">Uleselig påskrift nederst.</note></p>
 </div>
 </body>

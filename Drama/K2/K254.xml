@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -16,8 +10,8 @@
 <title level="a" type="sub">annen hovedversjon, grunntekst, 1. utg. (føljetong)</title>
 <title level="a" type="origDate">1854</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Ingrid Falkenberg, Mette Witting</name></respStmt>
 <respStmt>
 <resp>Konvertering av kjem-53.txt (Bergensmaterialet) til TEI SGML mars 1999:</resp>
@@ -83,7 +77,7 @@
 </series>
 <monogr>
 <title level="s">Bergenske Blade</title>
-<title level="a">Kjæmpehøien, &#91;2. scene&#93;</title>
+<title level="a">Kjæmpehøien, [2. scene]</title>
 <imprint>
 <biblScope unit="issue">7. årgang, nr. 10</biblScope>
 <date when="1854-02-01">onsdag 1. februar 1854</date>
@@ -91,7 +85,7 @@
 </monogr>
 <monogr>
 <title level="s">Bergenske Blade</title>
-<title level="a">Kjæmpehøien, &#91;3. og 4. scene&#93;</title>
+<title level="a">Kjæmpehøien, [3. og 4. scene]</title>
 <imprint>
 <biblScope unit="issue">7. årgang, nr. 11</biblScope>
 <date when="1854-02-05">søndag 5. februar 1854</date>
@@ -99,7 +93,7 @@
 </monogr>
 <monogr>
 <title level="s">Bergenske Blade</title>
-<title level="a">Kjæmpehøien, &#91;5. og 6. scene&#93;</title>
+<title level="a">Kjæmpehøien, [5. og 6. scene]</title>
 <imprint>
 <biblScope unit="issue">7. årgang, nr. 12</biblScope>
 <date when="1854-02-08">onsdag 8. februar 1854</date>
@@ -109,7 +103,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-grt-trykk;</p></projectDesc>
+<projectDesc><p>GRUNNTEKST BASERT PÅ TRYKT FORELEGG. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av to medarbeidere. I tillegg er tre eksemplarer av det trykte forelegget kollasjonert mot hverandre (internkollasjon). Teksten er kollasjonert en tredje gang i forbindelse med det avsluttende arbeidet med verket.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <list>
@@ -184,8 +178,8 @@
 </item>
 </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -201,9 +195,9 @@
 </list>
 </tagUsage></namespace>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="pb-ed-HU">Sideskiftene fra Hundreårsutgaven (bd I) er kodet med pb ed="HU". Dette tekstvitnet dekker sidene 279-309. Det første sidetallet er oppgitt i et n-attributt.</tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
-<metDecl><p>&metDecl;</p></metDecl>
+<metDecl><p>Den metriske notasjonen er beskrevet i Kodepraksis for HIS og bygger på Jørgen Fafners verslære (Fafner 1989).</p></metDecl>
 </encodingDesc>
 <profileDesc>
 <langUsage>
@@ -361,14 +355,14 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <body><pb ed="HU"/>
 <div type="act" n="1" part="I">
 <HIS:synopticViewPtr type="synopticView_mainVersions" target="K182586.xml" xml:id="K1_281main"/>
-<lb/><HIS:hisStage>(En aaben Plads, omgiven af Træer, nær ved Strand&typHyp;
+<lb/><HIS:hisStage>(En aaben Plads, omgiven af Træer, nær ved Strand‐
 <lb/>bredden. Til Venstre i Baggrunden en antik Tempelruin.
 <lb/>Midt paa Scenen en stor Kjæmpehøi, hvorpaa en Bauta,
 <lb/>omvunden af Blomsterkrandse).</HIS:hisStage>
 <lb/><figure type="bar"/>
 <div type="scene" n="1">
 <lb/><head>1ste Scene.</head>
-<lb/><HIS:hisStage><HIS:stageRole who="RODERIK">Roderik</HIS:stageRole> sidder skrivende til Høire. Til Venstre <HIS:stageRole who="BLANKA">Blan&typHyp;
+<lb/><HIS:hisStage><HIS:stageRole who="RODERIK">Roderik</HIS:stageRole> sidder skrivende til Høire. Til Venstre <HIS:stageRole who="BLANKA">Blan‐
 <lb/>ka</HIS:stageRole> i en halvt liggende Stilling.</HIS:hisStage>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l>Aftenrødens sidste Luer</l>
@@ -390,7 +384,7 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><l>Høie marmorhugne Minder</l>
 <lb/><l>Om en Verden, som gik under;</l>
 <lb/><l>Troskab, Tapperheden, Dyden</l>
-<lb/><l>Staa forstenet, dødt og rigt, &dash;</l>
+<lb/><l>Staa forstenet, dødt og rigt, –</l>
 <lb/><l>Gives vel et mere ligt</l>
 <lb/><l>Billed paa det sjunkne Syden.</l>
 <lb/><HIS:hisStage>(reiser sig).</HIS:hisStage><note>eg. luft mellom siste verselinje i strofen over og scenanv.</note>
@@ -399,7 +393,7 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><l>Hvor et frodigt Liv sig dølger,</l>
 <lb/><l>Ei et meislet eller malt.</l><pb ed="HU"/>
 <lb/><l>Her er Guddomslivet veget,</l>
-<lb/><l>Spores kun i Stenens Træk, &dash;</l>
+<lb/><l>Spores kun i Stenens Træk, –</l>
 <lb/><l>Der det aander, kraftigt præget,</l>
 <lb/><l>Som en Kjæmper stærk og kjæk.</l>
 <lb/><l rend="line">Og naar Aftnens lumre Stilhed</l>
@@ -407,19 +401,19 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><l>See, da stiger Nordens Billed</l>
 <lb/><l>For mit Øie sneebelyst.</l>
 <lb/><l>Her er smuldrende Ruiner,</l>
-<lb/><l>Døsig Dvale tung og blød, &dash;</l>
+<lb/><l>Døsig Dvale tung og blød, –</l>
 <lb/><l>Der er styrtende Laviner</l>
 <lb/><l>Foraarsliv og Vinterdød!</l>
 <lb/><l rend="line">Hvis jeg havde Svanehammen</l></HIS:hisSp>
-<lb/><l type="dashes">&dash; &dash;</l>
+<lb/><l type="dashes">– –</l>
 <cb rend="bottom-right"/>
 <HIS:synopticViewPtr type="synopticView_mainVersions" target="K182586.xml" xml:id="K1_282main"/>
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker>
 <lb/><HIS:hisStage>(efter en Pause, skrivende)</HIS:hisStage>.</HIS:spOpener>
-<lb/><l>&lquo;Da, hedder det, har Ragnarok forsonet</l>
+<lb/><l>«Da, hedder det, har Ragnarok forsonet</l>
 <lb/><l>De vilde Kræfter, vakt et luttret Liv;</l>
 <lb/><l>Alfader, Balder og den milde Freia</l>
-<lb/><l>Skal styre Askurs Æt i Fred paany.&rquo;</l>
+<lb/><l>Skal styre Askurs Æt i Fred paany.»</l>
 <lb/><HIS:hisStage>(Efter et Øieblik at have betragtet hende)</HIS:hisStage>
 <lb/><l>Men Blanka, see, nu drømmer du igjen;</l>
 <lb/><l>Du stirrer tankefuld igjennem Luften,</l>
@@ -472,7 +466,7 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l>Og hvis er Skylden, Fader, om saa var?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker>.</HIS:spOpener>
-<lb/><l part="I">Du mener, at jeg selv &dash;?</l></HIS:hisSp>
+<lb/><l part="I">Du mener, at jeg selv –?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l part="F">O ja, hvad Andet?</l>
 <lb/><l>Du lever selv jo kun i Mindet om</l>
@@ -489,7 +483,7 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><l>Du derimod, som fostredes i Syden,</l>
 <lb/><l>Som aldrig saa de sølvblaa Vinterfjelde,</l>
 <cb rend="bottom-middle"/>
-<lb/><l>Som aldrig hørte Ludurhornets Klang, &dash;</l>
+<lb/><l>Som aldrig hørte Ludurhornets Klang, –</l>
 <lb/><l>Hvor kan det fængsle dig hvad jeg fortæller?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l>O siig, behøver Mennesket at see</l>
@@ -509,7 +503,7 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><l part="F">Fast jeg skulde tro,</l>
 <lb/><l>At just fordi jeg ikke skued selv,</l>
 <lb/><l>Saa staaer det Hele mere skjønt for Tanken.</l>
-<lb/><l>Saa gaaer det idetmindste dig, min Fader, &dash;</l>
+<lb/><l>Saa gaaer det idetmindste dig, min Fader, –</l>
 <lb/><l>De gamle Gudesagn og Heltekvæder,</l>
 <lb/><l>Dem mindes du og taler om med Lyst</l>
 <lb/><l>Og ridser dem paa Pergament med Runer;</l>
@@ -522,17 +516,17 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><l>Nævn ikke mere derom, gode Barn!</l><pb ed="HU"/>
 <lb/><l>Hvo er vel den, hvis Ungdomsminder ei</l>
 <lb/><l>Er blandede med mangt et bittert Nag?</l>
-<lb/><l>Du veed, Normannerne er vilde Kjæmper &dash;</l></HIS:hisSp>
+<lb/><l>Du veed, Normannerne er vilde Kjæmper –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l>Men er da Sydens Kriger mindre grum?</l>
 <cb rend="bottom-right"/>
 <lb/><l>Har du <sic>forgleml</sic> hiin Nat for ti Aar siden,</l>
 <lb/><l>Dengang de Fremmede paa Kysten landed</l>
-<lb/><l part="I">Og plyndrede &dash;</l></HIS:hisSp>
+<lb/><l part="I">Og plyndrede –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker>
 <lb/><HIS:hisStage>(med synlig Uro)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l part="F">Nok derom, lad os gaa.</l>
-<lb/><l>Det lakker alt mod Aftentide; &dash; kom!</l></HIS:hisSp>
+<lb/><l>Det lakker alt mod Aftentide; – kom!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>
 <lb/><HIS:hisStage>(idet de gaae)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l part="I">Giv mig din Haand!</l>
@@ -541,18 +535,18 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker>.</HIS:spOpener>
 <lb/><l part="F">Hvad fattes dig?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
-<lb/><l>For første Gang har jeg idag forglemt &dash;</l></HIS:hisSp>
+<lb/><l>For første Gang har jeg idag forglemt –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker>.</HIS:spOpener>
 <lb/><l part="I">Hvad har du glemt?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>
 <lb/><HIS:hisStage>(pegende mod Høien)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l part="F">See Stenen der og Krandsen!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker>.</HIS:spOpener>
-<lb/><l part="I">Det er &dash;</l></HIS:hisSp>
+<lb/><l part="I">Det er –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l part="F">Den gamle, visne fra igaar;</l>
-<lb/><l>Jeg har forglemt at bytte den i Aften, &dash;</l>
-<lb/><l>Dog &dash; lad mig følge dig til Hytten først,</l>
+<lb/><l>Jeg har forglemt at bytte den i Aften, –</l>
+<lb/><l>Dog – lad mig følge dig til Hytten først,</l>
 <lb/><l>Saa gaaer jeg siden ud paa Blomsterfangst:</l>
 <lb/><l>Violen dufter bedst, naar Aftnens Dug</l>
 <lb/><l>Har badet den i blanke Perlevover,</l>
@@ -682,7 +676,7 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l>Det er Jer Troskab mod den faldne Drot.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="JOSTEIN"><HIS:spOpener><speaker>Jostein</speaker>.</HIS:spOpener>
-<lb/><l>Nu, nu, godt Ord igjen, jeg meente blot &dash;</l>
+<lb/><l>Nu, nu, godt Ord igjen, jeg meente blot –</l>
 <lb/><l part="I">Den Faldne kunde vente.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ASGAUT"><HIS:spOpener><speaker>Asgaut</speaker>
 <lb/><HIS:hisStage>(med undertrykt Forbittrelse)</HIS:hisStage>.</HIS:spOpener>
@@ -690,7 +684,7 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <pb/>
 <cb rend="bottom-left"/>
 <lb/><HIS:hisSp who="JOSTEIN"><HIS:spOpener><speaker>Jostein</speaker>.</HIS:spOpener>
-<lb/><l part="I">Men siden vi nu engang er her &dash;</l></HIS:hisSp>
+<lb/><l part="I">Men siden vi nu engang er her –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="HROLLOUG"><HIS:spOpener><speaker>Hrolloug</speaker>.</HIS:spOpener>
 <lb/><l part="F">Ja</l>
 <lb/><l>Saa lad os reise ham et værdigt Minde!</l></HIS:hisSp>
@@ -708,7 +702,7 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><l part="F">Det svoer han.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l>Det svoer jeg dyrt ved alle Valhals Guder!</l>
-<lb/><l part="I">Og end engang jeg sværger &dash;</l></HIS:hisSp>
+<lb/><l part="I">Og end engang jeg sværger –</l></HIS:hisSp>
 <HIS:synopticViewPtr type="synopticView_mainVersions" target="K182586.xml" xml:id="K1_285main"/>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>
 <lb/><HIS:hisStage>(med en Harpe over Skulderen, har under det Foregaaende
@@ -769,7 +763,7 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><l>Min Faders Gaard! Hvo veed hvordan det nu</l>
 <lb/><l>Seer ud derhjemme paa de gamle Tomter!</l>
 <lb/><l>Ja Fjeld og Skov er sagtens end de samme,</l><pb ed="HU"/>
-<lb/><l>Men Folkets Bryst? &dash; Har det de gamle Strænge?</l>
+<lb/><l>Men Folkets Bryst? – Har det de gamle Strænge?</l>
 <lb/><l>Nei, der er falden Meeldug over Tiden,</l>
 <lb/><l>Og det er den, som suger Nordens Saft</l>
 <lb/><l>Og tærer giftigt paa dets bedste Blomster.</l>
@@ -793,7 +787,7 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><l>Men da jeg vilde vide lidt om Freia,</l>
 <lb/><l>Hvordan hun selv saa ud, da smaalo Gubben</l>
 <lb/><l>Og satte mig paa Gulvet ned og svared:</l>
-<lb/><l>&lquo;Det vil en Kvinde nok fortælle Dig!&rquo;</l>
+<lb/><l>«Det vil en Kvinde nok fortælle Dig!»</l>
 <lb/><HIS:hisStage>(lyttende).</HIS:hisStage>
 <lb/><l>Tys! Fodtrin gjennem Skoven! Rolig Gandalf!</l>
 <lb/><l>De bringe Førstegrøden af Din Hævn.</l></HIS:hisSp>
@@ -844,7 +838,7 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><l>Den plukker Blomster ved Naturens Bryst,</l>
 <lb/><l>Og dækker Mindets haarde Kampesteen</l>
 <lb/><l>Med hvide Lilier, duftende Kjærminder.</l>
-<lb/><HIS:hisStage>(Hun stiger op paa Høien, hænger Krandsen over Bauta&typHyp;
+<lb/><HIS:hisStage>(Hun stiger op paa Høien, hænger Krandsen over Bauta‐
 <lb/>stenen og siger derpaa efter en Pause:)</HIS:hisStage>
 <lb/><l>Nu seiler atter mine Drømmes Flok,</l>
 <lb/><l>Som Trækfuglskaren over Havets Bølger;</l>
@@ -856,12 +850,12 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><l>Bag blanke Bølger dukker Snekken frem;</l>
 <cb rend="bottom-middle"/>
 <lb/><l>O flye som Maagen mod din Fædrestrand!</l>
-<lb/><l>Jeg er et Sydens Barn jeg kan ei vente; &dash;</l>
+<lb/><l>Jeg er et Sydens Barn jeg kan ei vente; –</l>
 <lb/><l>Jeg river Egekrandsen af mit Haar,</l>
 <lb/><l>Tag den min Helt! den er det andet Bud,</l>
-<lb/><l>Der hilser Dig &dash; min Længsel var det Første.</l>
+<lb/><l>Der hilser Dig – min Længsel var det Første.</l>
 <lb/><HIS:hisStage>(Hun kaster Krandsen. Gandalf træder frem og griber den.)</HIS:hisStage>
-<lb/><l part="I">Hvad nu? Der staaer &dash;<HIS:synopticViewPtr type="synopticView_mainVersions" target="K182586.xml" xml:id="K1_287main"/></l>
+<lb/><l part="I">Hvad nu? Der staaer –<HIS:synopticViewPtr type="synopticView_mainVersions" target="K182586.xml" xml:id="K1_287main"/></l>
 <lb/><HIS:hisStage>(Hun gnider Øinene og stirrer forundret paa ham)</HIS:hisStage>
 <lb/><l part="F">Nei det er ingen Drøm.</l>
 <lb/><l>Hvo er Du, Fremmede? Hvad søger Du</l>
@@ -897,8 +891,8 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><l part="F">Ingen Anden?</l></HIS:hisSp>
 <cb rend="bottom-right"/>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
-<lb/><l>Med mindre, at min Fa&rapo;er, &dash; men han er gammel</l>
-<lb/><l>Og har et sølvgraat Skjæg saa langt som saa &dash;,</l>
+<lb/><l>Med mindre, at min Fa’er, – men han er gammel</l>
+<lb/><l>Og har et sølvgraat Skjæg saa langt som saa –,</l>
 <lb/><l>O nei, saa troer jeg dog <emph>jeg</emph> vinder Prisen.</l></HIS:hisSp><pb ed="HU"/>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="I">Du har et lystigt Sind.</l></HIS:hisSp>
@@ -911,12 +905,12 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><l>At Øen skulde være rigt bebygget.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l>Det var den engang, for en treaars Tid;</l>
-<lb/><l>Men &dash; ja det er en sørgelig Fortælling,</l>
+<lb/><l>Men – ja det er en sørgelig Fortælling,</l>
 <lb/><l>Dog Du skal høre den, ifald Du vil.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="I">Javist jeg vil!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
-<lb/><l part="F">Seer Du, for tre Aar siden &dash;</l>
+<lb/><l part="F">Seer Du, for tre Aar siden –</l>
 <lb/><HIS:hisStage>(sætter sig.)</HIS:hisStage>
 <lb/><l part="I">Kom, sæt Dig ned!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.
@@ -927,7 +921,7 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><l>Af Røvere, Gud veed hvorfra, til Øen;</l>
 <lb/><l>De plyndred rundtomkring, hvor de drog frem</l>
 <lb/><l>Og myrded Alt, hvad levende de fandt,</l>
-<lb/><l>De Faa, som kunde, redded&rapo; sig ved Flugten</l>
+<lb/><l>De Faa, som kunde, redded’ sig ved Flugten</l>
 <lb/><l>Og søgte til min Faders Borg, som laa</l>
 <lb/><l>Paa Klippepynten ikke langt fra Havet.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
@@ -943,7 +937,7 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><l>Og søgte mig et Skjulested i Skoven.</l>
 <lb/><l>Jeg saa vort Hjem at hvirvles op i Flammer,</l>
 <lb/><l>Jeg hørte Skjoldebrag og bange Dødsskrig.</l>
-<lb/><l>Tilsidst blev Alting tyst; thi Alt var myrdet. &dash;</l>
+<lb/><l>Tilsidst blev Alting tyst; thi Alt var myrdet. –</l>
 <lb/><l>Den vilde Skare drog mod Stranden ned</l>
 <lb/><l>Og seiled bort. Den næste Morgen sad jeg</l><pb ed="HU"/>
 <lb/><l>Paa Klippen ved de rygende Ruiner.</l>
@@ -975,7 +969,7 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><l>Og blev mig kjær, o kjær, som ingen Anden;</l>
 <lb/><l part="I">Men kom, Du maa dog see ham!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
-<lb/><l part="F">Nei &dash; nei vent!</l>
+<lb/><l part="F">Nei – nei vent!</l>
 <lb/><l>Vi træffe tidsnok sammen, tænker jeg.</l></HIS:hisSp>
 <cb rend="bottom-middle"/>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
@@ -985,25 +979,25 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><l part="I">Ei blot i Norden hjemme.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="F">Norden? Saa</l>
-<lb/><l part="I">Du veed da &dash;</l></HIS:hisSp>
+<lb/><l part="I">Du veed da –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l part="F">Hvor Du kommer fra? O ja!</l><pb ed="HU"/>
 <lb/><l><sic>Men</sic> Fader har fortalt om Jer saatidt,</l>
-<lb/><l part="I">At jeg ved første Øiekast &dash;</l></HIS:hisSp>
+<lb/><l part="I">At jeg ved første Øiekast –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="F">Og dog,</l>
 <lb/><l part="I">Du blev ei bange?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l part="F">Bange? Hvorfor bange?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
-<lb/><l>Nu, har han ikke sagt &dash; ja, har han ei &dash;</l></HIS:hisSp>
+<lb/><l>Nu, har han ikke sagt – ja, har han ei –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l>Fortalt at I er djærve Helte? Jo!</l>
 <lb/><l>Men hvorfor skulde det forskrække mig?</l>
 <lb/><l>Jeg veed, I søger Ry paa fjerne Strande</l>
 <lb/><l>I mandig Dyst med drabelige Kjæmper,</l>
 <lb/><l>Men jeg har hverken Pantser eller Sværd,</l>
-<lb/><l part="I">Hvi skulde jeg vel da &dash;</l></HIS:hisSp>
+<lb/><l part="I">Hvi skulde jeg vel da –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="F">Nei vist, nei vist!</l>
 <lb/><l>Men hine Fremmede, som brændte Borgen?</l></HIS:hisSp>
@@ -1025,7 +1019,7 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><l>Og tage Blodhævn som I kalde det.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l>Ha, Blodhævn! Tak! Du minder mig om Ondet;</l>
-<lb/><l part="I">Fast havde jeg forglemt &dash;</l></HIS:hisSp>
+<lb/><l part="I">Fast havde jeg forglemt –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l part="F">Men veed Du vel,</l>
 <lb/><l part="I">Det er en hæslig Skik.</l></HIS:hisSp>
@@ -1083,7 +1077,7 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><l part="I">Hør! tag mig med derop!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="F">Hvad mener Du?</l>
-<lb/><l part="I">Jeg styrer hjemad &dash;</l></HIS:hisSp><pb ed="HU"/>
+<lb/><l part="I">Jeg styrer hjemad –</l></HIS:hisSp><pb ed="HU"/>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l part="F">Ja jeg seiler med Dig;</l>
 <lb/><l>Jeg har jo længst i Tankerne gjort Farten</l>
@@ -1091,7 +1085,7 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><l>Og Snee og store sorte Graneskove!</l>
 <lb/><l>Der skulde komme Lystighed i Hallen,</l>
 <lb/><l>Ifald jeg maatte raade kan Du troe,</l>
-<lb/><l>Thi jeg er munter; &dash; har Du nogen Skjald?</l></HIS:hisSp>
+<lb/><l>Thi jeg er munter; – har Du nogen Skjald?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l>Jeg havde En, men her i Syden har</l>
 <lb/><l>Den lumre Luftning slapped Harpens Strenge,</l>
@@ -1100,7 +1094,7 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><l part="F">Godt! saa skal jeg være</l>
 <lb/><l part="I">Din Skjald.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
-<lb/><l part="F">Og Du? &dash; Du<note type="typo">'u' er snudd.</note> kunde følge med os,</l>
+<lb/><l part="F">Og Du? – Du<note type="typo">'u' er snudd.</note> kunde følge med os,</l>
 <lb/><l part="I">Forlade Hjem og Fader?</l></HIS:hisSp>
 <cb rend="bottom-middle"/>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker> <HIS:hisStage>(leende)</HIS:hisStage>.</HIS:spOpener>
@@ -1125,7 +1119,7 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><l part="I">Paa Intet?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="F">Ja, jeg veed ei selv paa hvad,</l>
-<lb/><l>Dog jo, jeg veed &dash; og Du skal høre det:</l>
+<lb/><l>Dog jo, jeg veed – og Du skal høre det:</l>
 <lb/><l>Jeg tænker paa hvordan Du plante vil</l>
 <lb/><l>I Norden Dine Blomster, og imens</l>
 <lb/><l>Saa falder mig min egen Tro isinde;</l><pb ed="HU"/>
@@ -1138,14 +1132,14 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><l>Faaer kun en Halvdeel af de slagne Kjæmper,</l>
 <lb/><l>Den anden Halvdeel hører Freia til-<note type="typo">Trykkfeil. Skal ikke være bindestrek her.</note></l>
 <lb/><l>Det har jeg aldrig kunnet ret begribe;</l>
-<lb/><l>Men nu, nu fatter jeg &dash; jeg er jo selv</l>
+<lb/><l>Men nu, nu fatter jeg – jeg er jo selv</l>
 <lb/><l>En slagen Kjæmpe og min bedste Halvdeel</l>
 <lb/><l part="I">Blev Freias Eiendom.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka<note type="typo">'n' er snudd.</note></speaker> <HIS:hisStage>(studsende)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l part="F">Hvad skal det sige?</l></HIS:hisSp>
 <cb rend="bottom-right"/>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
-<lb/><l part="I">Nu, kort og godt, saa viid &dash;</l></HIS:hisSp>
+<lb/><l part="I">Nu, kort og godt, saa viid –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker> <HIS:hisStage>(hurtigt)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l part="F">Nei, lad kun være!</l>
 <lb/><l>Jeg tør ei dvæle længer her i Aften;</l>
@@ -1223,20 +1217,20 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l>Jeg vilde dulgt det for Dig; derfor gik jeg</l>
 <lb/><l>At kalde Folket ned igjen til Snekken</l>
-<lb/><l>Og seile bort; Du skulde aldrig vidst &dash;</l>
+<lb/><l>Og seile bort; Du skulde aldrig vidst –</l>
 <lb/><l>Dog Hornet varsler, at det er forsilde;</l>
 <lb/><l part="I">De komme hid.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
-<lb/><l part="M">Hvem kommer &dash; hvem?</l></HIS:hisSp>
+<lb/><l part="M">Hvem kommer – hvem?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="F">Saa vid da:</l>
-<lb/><l>De Fremmede, som fordum hærjed&rapo; Øen,</l>
+<lb/><l>De Fremmede, som fordum hærjed’ Øen,</l>
 <lb/><l part="I">Var Vikinger som jeg.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l part="M">Fra Norden?</l></HIS:hisSp><pb ed="HU"/>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="F">Ja.</l>
-<lb/><l>Min Fader faldt, og han var deres Drot, &dash;</l>
+<lb/><l>Min Fader faldt, og han var deres Drot, –</l>
 <lb/><l part="I">Thi maa han hævnes.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l part="M">Hævnes?</l></HIS:hisSp>
@@ -1257,7 +1251,7 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><HIS:hisStage><HIS:stageRole>De Forrige</HIS:stageRole>. <HIS:stageRole who="ASGAUT">Asgaut</HIS:stageRole>, <HIS:stageRole who="HEMMING">Hemming</HIS:stageRole> og <HIS:stageRole>Vikingerne</HIS:stageRole> (der
 <lb/>føre <HIS:stageRole who="RODERIK">Roderik</HIS:stageRole> mellem sig.)</HIS:hisStage>
 <lb/><HIS:hisSp who="ASGAUT"><HIS:spOpener><speaker>Asgaut</speaker> <HIS:hisStage>(til Gandalf.)</HIS:hisStage></HIS:spOpener>
-<lb/><l>En mager Fangst &dash; dog altid Noget, Gandalf!</l></HIS:hisSp>
+<lb/><l>En mager Fangst – dog altid Noget, Gandalf!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l part="I">Min Fader!</l><HIS:hisStage>(kaster sig i hans Arme).</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker>.</HIS:spOpener>
@@ -1268,7 +1262,7 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><HIS:hisSp who="ASGAUT"><HIS:spOpener><speaker>Asgaut</speaker>.</HIS:spOpener>
 <lb/><l part="F">Ja, til Hel!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
-<lb/><l>O Fader, hvorfor har Du aldrig sagt mig &dash;</l></HIS:hisSp>
+<lb/><l>O Fader, hvorfor har Du aldrig sagt mig –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker>.</HIS:spOpener>
 <lb/><l part="I">Tys, tys, min Datter!</l><HIS:hisStage>(pegende paa Gandalf.)</HIS:hisStage>
 <lb/><l part="F">Er det Eders Høvding?</l></HIS:hisSp>
@@ -1292,14 +1286,14 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><l part="F">Er vor Høvding feig?</l>
 <lb/><l>Har Kvindens glatte Tunge daaret ham?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
-<lb/><l part="I">Nu ligemeget! Jeg har sagt &dash;</l></HIS:hisSp>
+<lb/><l part="I">Nu ligemeget! Jeg har sagt –</l></HIS:hisSp>
 <cb rend="bottom-right"/>
 <lb/><HIS:hisSp who="ASGAUT"><HIS:spOpener><speaker>Asgaut</speaker>.</HIS:spOpener>
 <lb/><l part="F">Betænk,</l>
 <lb/><l>Det gjælder al din Agt blandt Dine Kjæmper.</l>
 <lb/><l>Dit Løfte gav Du Valhals høie Guder,</l>
 <lb/><l>Og brydes det, saa er Du Hvermands Nidding.</l>
-<lb/><l>Glem ei, vor gamle Tro er svagt befæsted, &dash;</l>
+<lb/><l>Glem ei, vor gamle Tro er svagt befæsted, –</l>
 <lb/><l>Den vakler alt; et Stød kan rokke den,</l>
 <lb/><l>Og kommer Stødet ovenfra, fra Drotten,</l>
 <lb/><l part="I">Da har den faaet Banesaaret.</l></HIS:hisSp>
@@ -1329,7 +1323,7 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><l part="I">Ifald I skaane hende!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker> <HIS:hisStage>(hurtigt.)</HIS:hisStage></HIS:spOpener>
 <lb/><l part="F">Bring os ham,</l>
-<lb/><l part="I">Saa er hun fri &dash; ei sandt?</l></HIS:hisSp>
+<lb/><l part="I">Saa er hun fri – ei sandt?</l></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Vikingerne</speaker>.</HIS:spOpener>
 <lb/><l part="F">Jo, jo, det er hun!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker> <HIS:hisStage>(til Roderik.)</HIS:hisStage></HIS:spOpener>
@@ -1345,7 +1339,7 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="M">O vee!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
-<lb/><l part="F">Nei, nei, Du skal ei &dash;</l></HIS:hisSp>
+<lb/><l part="F">Nei, nei, Du skal ei –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker>.</HIS:spOpener>
 <lb/><l>For denne Haand fandt Vikingen sin Bane;</l>
 <lb/><l>Nu hviler han i Kjæmpehøien der!</l></HIS:hisSp>
@@ -1353,18 +1347,18 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><l part="I">Min Faders Gravhøi!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker>.</HIS:spOpener>
 <lb/><l part="F">Han var stærk og djærv;</l>
-<lb/><l>Thi jorded&rapo; jeg ham paa hans Fædres Viis.</l></HIS:hisSp>
+<lb/><l>Thi jorded’ jeg ham paa hans Fædres Viis.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
-<lb/><l part="I">Da han er høilagt, saa &dash;</l></HIS:hisSp>
+<lb/><l part="I">Da han er høilagt, saa –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ASGAUT"><HIS:spOpener><speaker>Asgaut</speaker>.</HIS:spOpener>
 <lb/><l part="F">Nei, ligefuldt</l>
-<lb/><l>Den faldne Konning kræver Blod, &dash; slaa til!</l></HIS:hisSp>
+<lb/><l>Den faldne Konning kræver Blod, – slaa til!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l part="I">Han skuffer Eder!</l><HIS:hisStage>(til Gandalf.)</HIS:hisStage>
 <lb/><l part="F">Har Du ei begrebet,</l>
 <lb/><l>Det er kun mig, sin Datter, han vil frelse?</l>
 <lb/><l>Dog, hvad forstaar vel Du et kjærligt Sind,</l>
-<lb/><l part="I">Der offrer Alt for den, som &dash;</l></HIS:hisSp>
+<lb/><l part="I">Der offrer Alt for den, som –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="F">Jeg forstaar ei?</l>
 <lb/><l part="I">Du troer ei, jeg forstaar?</l><HIS:hisStage>(til Vikingerne)</HIS:hisStage>
@@ -1385,17 +1379,17 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="F">Jeg har jo svoret</l>
 <lb/><l>At hævne Drotten eller falde selv.</l>
-<lb/><l>Nu vel! han der er fri &dash; jeg gaaer til Valhal!</l></HIS:hisSp>
+<lb/><l>Nu vel! han der er fri – jeg gaaer til Valhal!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker> <HIS:hisStage>(til Roderik.)</HIS:hisStage></HIS:spOpener>
 <lb/><l part="I">Hvad mener han?</l></HIS:hisSp>
 <cb rend="bottom-middle"/>
 <lb/><HIS:hisSp who="ASGAUT"><HIS:spOpener><speaker>Asgaut</speaker>.</HIS:spOpener>
-<lb/><l part="F">Det er Din Agt &dash; du vil &dash; ?</l></HIS:hisSp>
+<lb/><l part="F">Det er Din Agt – du vil – ?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l>I holde en af mine Snekker rede,</l>
 <lb/><l>Med spændte Seil og Baalet tændt <sic>Vi</sic> Stavnen;</l>
 <lb/><l>Paa Fortids Viis jeg vil bestige den!</l><pb ed="HU"/>
-<lb/><l>See, Aftenvinden blæser ud fra Stranden, &dash;</l>
+<lb/><l>See, Aftenvinden blæser ud fra Stranden, –</l>
 <lb/><l>Paa røde Vinger farer jeg til Valhal!</l></HIS:hisSp>
 <lb/><HIS:hisStage>(<HIS:stageRole who="JOSTEIN">Jostein</HIS:stageRole> gaaer ud tilhøire.)</HIS:hisStage>
 <lb/><HIS:hisSp who="ASGAUT"><HIS:spOpener><speaker>Asgaut</speaker>.</HIS:spOpener>
@@ -1406,17 +1400,17 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><l part="F">Leve? Jeg er tro</l>
 <lb/><l>Mod mine Guder, kan ei svige dem.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
-<lb/><l>Din Ed er blodig &dash; Balder hader den.</l></HIS:hisSp>
+<lb/><l>Din Ed er blodig – Balder hader den.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l>O, Balder lever ikke meer iblandt os!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l>For Dig han lever; thi dit Sind er mildt.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l>Ja, til min Undergang! Det blev mit Kald</l>
-<lb/><l>Som Drot at værne om vort Kjæmpeliv, &dash;</l>
+<lb/><l>Som Drot at værne om vort Kjæmpeliv, –</l>
 <lb/><l>Men Kraften svigter mig! Kom Asgaut, Du</l>
 <lb/><l>Skal tage Kongespiret af min Haand;</l>
-<lb/><l>Du er en Kjæmper af det ægte Malm &dash;</l>
+<lb/><l>Du er en Kjæmper af det ægte Malm –</l>
 <lb/><l>Paa mig har Sydens Gift alt længe tæret;</l>
 <lb/><l>Men kan jeg ikke leve for mit Folk,</l>
 <lb/><l part="I">Saa kan jeg dø for det.</l></HIS:hisSp>
@@ -1434,13 +1428,13 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><l part="F">Mit Liv var ligt</l>
 <lb/><l>En Blomsterknop, i fremmed Jordbund plantet,</l>
 <lb/><l>Og derfor blunded den i Svøbet fængslet:</l>
-<lb/><l>Da kom en Straale fra det fjerne Hjem, &dash;</l>
+<lb/><l>Da kom en Straale fra det fjerne Hjem, –</l>
 <cb rend="bottom-right"/>
 <lb/><l>O, det var Dig, min Gandalf! Blomsten aabned</l>
-<lb/><l>Sit Bæger, &dash; ak, et flygtigt Øieblik!</l>
-<lb/><l>Saa blegned Straalen &dash; Blomsten maatte dø</l></HIS:hisSp>
+<lb/><l>Sit Bæger, – ak, et flygtigt Øieblik!</l>
+<lb/><l>Saa blegned Straalen – Blomsten maatte dø</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
-<lb/><l>O, har jeg fattet Dig? Du kunde &dash; Ha,</l>
+<lb/><l>O, har jeg fattet Dig? Du kunde – Ha,</l>
 <lb/><l>Saa er mit Løfte tifold ulyksaligt!</l></HIS:hisSp><pb ed="HU"/>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l part="I">Vi mødes atter!</l></HIS:hisSp>
@@ -1510,7 +1504,7 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><l part="I">O, tag min Tak!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker>
 <lb/><HIS:hisStage>(nedslaaet; til Blanka.)</HIS:hisStage></HIS:spOpener>
-<lb/><l part="F">Og Du &dash; hvad skjænker Du</l>
+<lb/><l part="F">Og Du – hvad skjænker Du</l>
 <lb/><l part="I">Den gamle Røver?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l part="F">Kjærlighed som før!</l>
@@ -1519,16 +1513,16 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><HIS:hisSp who="ASGAUT"><HIS:spOpener><speaker>Asgaut</speaker>.</HIS:spOpener>
 <lb/><l>Men saa forklar dog, at Du endnu lever!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
-<lb/><l part="I">Hun redded&rapo; ham.</l></HIS:hisSp>
+<lb/><l part="I">Hun redded’ ham.</l></HIS:hisSp>
 <HIS:synopticViewPtr type="synopticView_mainVersions" target="K182586.xml" xml:id="K1_297main"/>
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker>.</HIS:spOpener>
 <lb/><l part="F">Ja, som en venlig Alf</l>
-<lb/><l>Hun heled&rapo; mine Saar og sysled&rapo; om mig;</l>
+<lb/><l>Hun heled’ mine Saar og sysled’ om mig;</l>
 <lb/><l>Og alt imens fortalte hun saa smukt</l>
 <lb/><l>Om Troen hos de stille Folk i Syden,</l>
 <lb/><l>At selv mit haarde Bryst blev blødt derved.</l>
 <lb/><l>Og Dag for Dag jeg dulgte, hvem jeg var;</l>
-<lb/><l part="I">Jeg voved ei &dash;</l></HIS:hisSp>
+<lb/><l part="I">Jeg voved ei –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="F">Men Kjæmpehøien der?</l></HIS:hisSp>
 <cb rend="bottom-middle"/>
@@ -1544,20 +1538,20 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><l part="M">Hvor gaar Du?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ASGAUT"><HIS:spOpener><speaker>Asgaut</speaker>.</HIS:spOpener>
 <lb/><l part="F">Nordpaa med min Snekke!</l>
-<lb/><l>Nu seer jeg klarlig, min Tid er forbi &dash;</l>
+<lb/><l>Nu seer jeg klarlig, min Tid er forbi –</l>
 <lb/><l>Og Vikinglivet ogsaa. Jeg vil gaa</l>
 <lb/><l>Til Island; did er end ei Sotten trængt.</l>
 <lb/><HIS:hisStage>(til Blanka)</HIS:hisStage><pb ed="HU"/>
 <lb/><l>Du unge Kvinde, tag min Plads hos Drotten!</l>
-<lb/><l>Thor kan ei mere &dash; Mjølner er af Lave;</l>
-<lb/><l>Nu raade Balder gjennem Dig. &dash; Farvel!</l></HIS:hisSp>
+<lb/><l>Thor kan ei mere – Mjølner er af Lave;</l>
+<lb/><l>Nu raade Balder gjennem Dig. – Farvel!</l></HIS:hisSp>
 <lb/><HIS:hisStage>(Han gaaer).</HIS:hisStage>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l>Ja, Balder raader gjennem Dig, min Blanka!</l>
 <lb/><l>Nu føler jeg mit Vikinglivs Betydning:</l>
 <lb/><l>Det var ei ene Lyst til Ry og Rigdom,</l>
 <lb/><l>Som drev mig bort fra mine Fædres Hjem;</l>
-<lb/><l>Nei, hvad mig leded&rapo; var en lønlig Længsel,</l>
+<lb/><l>Nei, hvad mig leded’ var en lønlig Længsel,</l>
 <lb/><l>En stille Higen efter Balder. See,</l>
 <lb/><l>Nu er min Længsel stillet; Hjem vi fare;</l>
 <lb/><l>Der vil jeg leve fredsel blandt mit Folk.</l>
@@ -1571,8 +1565,8 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><l part="F">Jeg? Jeg er jo og</l>
 <lb/><l>Et Nordens Barn; thi mellem Eders Bjerge</l>
 <lb/><l>Slog jo mit Hjertes bedste Blomster Rod.</l>
-<lb/><l>Til Eder stævned&rapo; jeg i mine Drømme,</l>
-<lb/><l>Fra Eder hented&rapo; jeg min Kjærlighed!</l></HIS:hisSp>
+<lb/><l>Til Eder stævned’ jeg i mine Drømme,</l>
+<lb/><l>Fra Eder hented’ jeg min Kjærlighed!</l></HIS:hisSp>
 <HIS:synopticViewPtr type="synopticView_mainVersions" target="K182586.xml" xml:id="K1_299main"/>
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker>.</HIS:spOpener>
 <lb/><l part="I">Og saa afsted!</l></HIS:hisSp>
@@ -1600,13 +1594,13 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><l>Det maa saa være; Du er Drot, min Gandalf,</l>
 <lb/><l>Og Du har høie Pligter mod Dit Folk.</l>
 <lb/><HIS:hisStage>(Lægger deres Hænder sammen)</HIS:hisStage>
-<lb/><l>I er den unge Morgenrødes Børn, &dash;</l>
+<lb/><l>I er den unge Morgenrødes Børn, –</l>
 <lb/><l>Drag did, hvor Kongestolen Eder venter;</l>
 <lb/><l>Jeg er den Sidste fra de sjunkne Tider,</l>
-<lb/><l>Min Kongestol er Graven &dash; und mig den!</l></HIS:hisSp>
+<lb/><l>Min Kongestol er Graven – und mig den!</l></HIS:hisSp>
 <HIS:synopticViewPtr type="synopticView_mainVersions" target="K182586.xml" xml:id="K1_302main"/>
 <lb/><HIS:hisStage>(Gandalf og Blanka styrte sig tause i hans Arme.
-<lb/>Roderik stiger op paa Høien; Hemming sætter sig med Har&typHyp;
+<lb/>Roderik stiger op paa Høien; Hemming sætter sig med Har‐
 <lb/>pen ved hans Fødder.)</HIS:hisStage>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker> <HIS:hisStage>(med Fatning)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l part="I">Og nu til Norge!</l></HIS:hisSp>
@@ -1627,7 +1621,7 @@ Oppdaterte elementet shy til entitet, for å minske feilmargin la jeg app kun ru
 <lb/><l>Og Norden vorder selv en Kjæmpegrav.</l>
 <lb/><l>Men glem ei Løftet, som Alfader gav:</l>
 <lb/><l>Naar Mos og Blommer dække Høiens Side,</l>
-<lb/><l>Skal Heltens Aand paa Idavold jo stride! &dash;</l>
+<lb/><l>Skal Heltens Aand paa Idavold jo stride! –</l>
 <lb/><l><emph>Saa stiger ogsaa Norden fra sin Grav</emph></l>
 <lb/><l><emph>Til luttret Aandsbedrift paa Tankens Hav!</emph></l></HIS:hisSp>
 <lb/><figure type="bar"/>

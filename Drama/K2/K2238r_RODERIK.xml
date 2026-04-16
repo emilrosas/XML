@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -16,8 +10,8 @@
 <title level="a" type="sub">annen hovedversjon, TarkUiB NT238r (rollehefte, Roderik)</title>
 <title level="a" type="origYear">[1853]</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Ingrid Falkenberg, Bjørg Harvey, Ellen Nessheim Wiger, Mette Witting</name></respStmt>
 <respStmt>
 <resp>Transkripsjon, februar 2000:</resp>
@@ -64,7 +58,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <list>
@@ -97,8 +91,8 @@
 <item>bindestrek: dobbel</item>
 </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -114,7 +108,7 @@
 </list>
 </tagUsage></namespace>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="rolleheftekoding">Rolleheftene er kodet med «føljetongkoding»: hvert rollehefte kodet som TEXT (i GROUP og TEXT). Tittelbladene kodet som vanlige tittelblad. Opplysninger om skuespillere etc. på tittelbladene er kodet i P-er i en PERFORMANCE-tag. «Avvikene» i forhold til rollenavn/replikk-systemet (se typografibeskrivelsen) er ikke tatt hensyn til i kodingen. I mangel av rolleliste, er id-attributtene plassert i TITLEPART.</tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 </encodingDesc>
 <profileDesc>
@@ -160,7 +154,7 @@ La inn igjen add i forbindelse med overskriving av annen hånd. Sjekket at alle 
 Omkoding av ms-endringer i henhold til revidert kodepraksis. * Forkortet figure til tom tagg. Ny plassering av sideskifts-tagger innført. SGREP-søk for kodeoversikt utført. Sjekket at del dekker kun faktisk kodet tekst. Sjekket tilføyelser. La inn manglende håndliste og samkjørte den med Tone Modalslis (fjernet punkt om hender i typografibeskrivelsen). Koder inn utelatte endringer vha. gjennomgang mot faksimiler. Gjort om brøker i measure til entiteter. Transkribert ordenstall-endelser mer velvillig. Korrektursjekk mot faksimiler må inkl. vurdering av nykodede endringer, hånd osv..</change>
 <change><date>13.09.04</date>
 <name>HG</name><title>NB!</title>
-Rettet træske til traske, rettet feilplassert pkt. innenfor 'stageRole'. Rettelser/påførsler av andre hender er foreløpig ikke kodet inn i fila - Dette bør gjøres (husk bl. annet å legge inn et apparat med at/komma ved &#91;&#93; der er forsilde).</change>
+Rettet træske til traske, rettet feilplassert pkt. innenfor 'stageRole'. Rettelser/påførsler av andre hender er foreløpig ikke kodet inn i fila - Dette bør gjøres (husk bl. annet å legge inn et apparat med at/komma ved [] der er forsilde).</change>
 <change><date>10.11.03</date>
 <name>HG</name><title>Kodeoppdatering</title>
 Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til unclear, fjernet gammel entitetskoding, validert.</change>
@@ -178,7 +172,7 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <front>
 <titlePage>
 <note>"238" (bibliotekarblyant?) skrevet i øvre høyre hjørne.</note>
-<pb/><HIS:hisDocImprint><measure>1&half; Ark</measure></HIS:hisDocImprint>
+<pb/><HIS:hisDocImprint><measure>1½ Ark</measure></HIS:hisDocImprint>
 <docTitle>
 <lb/><titlePart xml:id="RODERIK">Roderik,
 <lb/>en gammel Eneboer,
@@ -191,7 +185,7 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <lb/><docAuthor>Henrik Ibsen.</docAuthor>
 </byline></titlePage>
 <performance>
-<p>Hr: Isachsen, 25/1 56. <HIS:hisDel rend="overstrike"><unclear>d</unclear>: 28/12.53 &dash;</HIS:hisDel> Henr: Ibsen</p>
+<p>Hr: Isachsen, 25/1 56. <HIS:hisDel rend="overstrike"><unclear>d</unclear>: 28/12.53 –</HIS:hisDel> Henr: Ibsen</p>
 </performance>
 </front>
 <body>
@@ -202,7 +196,7 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <lb/><HIS:hisStage>(sidder skrivende til Høire, naar Tæppet
 <lb/>gaaer op.)</HIS:hisStage>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
-<lb/><l>Hvis jeg havde Svanehammen &dash; &dash;</l></HIS:hisSp>
+<lb/><l>Hvis jeg havde Svanehammen – –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker>
 <lb/><HIS:hisStage>(efter en Pause; skrivende)</HIS:hisStage></HIS:spOpener>
 <lb/><l>"Da, hedder det, har Ragnarok forsonet</l>
@@ -233,9 +227,9 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l>Og hvis er Skylden, Fader, om saa var?</l></HIS:hisSp>
 <pb/><lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker></HIS:spOpener>
-<lb/><l part="I">Du mener at jeg selv &dash;?</l></HIS:hisSp>
+<lb/><l part="I">Du mener at jeg selv –?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
-<lb/><l>Det tykkes mig, Du vorder ung paany &dash;</l></HIS:hisSp>
+<lb/><l>Det tykkes mig, Du vorder ung paany –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker></HIS:spOpener>
 <lb/><l>Vel sandt; men jeg har ogsaa Grund dertil.</l>
 <lb/><l>Jeg har jo selv blandt Nordens Helte levet,</l>
@@ -257,13 +251,13 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <lb/><l>Nævn ikke mere derom, gode Barn!</l>
 <lb/><l>Hvo er vel den, hvis Ungdomsminder ei</l>
 <lb/><l>Er blandede med mangt et bittert Nag;</l>
-<lb/><l>Du veed Normannerne er vilde Kjæmper &dash;</l></HIS:hisSp>
+<lb/><l>Du veed Normannerne er vilde Kjæmper –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
-<lb/><l part="I">Og plyndrede &dash;</l></HIS:hisSp>
+<lb/><l part="I">Og plyndrede –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker>
 <lb/><HIS:hisStage>(med synlig Uro.)</HIS:hisStage></HIS:spOpener>
 <lb/><l part="F">Nok derom. Lad os gaa,</l>
-<lb/><l>Det lakker alt mod Solnedgang <HIS:hisAdd place="inline" hand="h1">&dash;</HIS:hisAdd>, <HIS:hisAdd place="offline" hand="h1">nu</HIS:hisAdd> kom!</l>
+<lb/><l>Det lakker alt mod Solnedgang <HIS:hisAdd place="inline" hand="h1">–</HIS:hisAdd>, <HIS:hisAdd place="offline" hand="h1">nu</HIS:hisAdd> kom!</l>
 <lb/><HIS:hisStage>(De gaa.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker></HIS:spOpener>
 <lb/><l>Giv mig Din Haand! <HIS:hisStage>(standser)</HIS:hisStage> Nei vent!</l></HIS:hisSp>
@@ -277,7 +271,7 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker></HIS:spOpener>
 <lb/><l part="F">See Stenen der og Krandsen.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker></HIS:spOpener>
-<lb/><l part="I">Det er &dash;</l></HIS:hisSp>
+<lb/><l part="I">Det er –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l>Som naar den plukkes mens den barnligt sover.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker>
@@ -299,7 +293,7 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker>.</HIS:spOpener>
 <lb/><l part="M">Blanka! O mit Barn!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
-<lb/><l>O Fader, hvorfor har Du aldrig sagt mig &dash;</l></HIS:hisSp>
+<lb/><l>O Fader, hvorfor har Du aldrig sagt mig –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker></HIS:spOpener>
 <lb/><l part="I">Tys, tys, min Datter!</l>
 <lb/><HIS:hisStage>(Pegende paa Gandalf.)</HIS:hisStage>
@@ -316,7 +310,7 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker>.</HIS:spOpener>
 <lb/><l part="F">Her staaer han!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
-<lb/><l part="F">Nei, nei, Du skal ei &dash;</l></HIS:hisSp>
+<lb/><l part="F">Nei, nei, Du skal ei –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker></HIS:spOpener>
 <lb/><l>For denne Haand fandt Vikingen sin Bane.</l>
 <lb/><l>Nu hviler han i Kjæmpehøien der.</l></HIS:hisSp>
@@ -361,7 +355,7 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <lb/><l part="I">O, tag min Tak!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker>
 <lb/><HIS:hisStage>(nedslaaet; til Blanka)</HIS:hisStage></HIS:spOpener>
-<lb/><l part="F">Og Du &dash; hvad skjænker
+<lb/><l part="F">Og Du – hvad skjænker
 <lb/>Du</l>
 <lb/><l part="I">Den gamle Røver?</l></HIS:hisSp>
 <pb/><lb/><fw type="page" place="top-right">11.</fw>
@@ -374,7 +368,7 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <lb/><l>Om Troen hos de stille Folk i Syden,</l>
 <lb/><l>At selv mit haarde Bryst blev blødt derved.</l>
 <lb/><l>Og Dag for Dag jeg dulgte hvem jeg var;</l>
-<lb/><l part="I">Jeg voved ei &dash;</l></HIS:hisSp>
+<lb/><l part="I">Jeg voved ei –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="F">Men Kjæmpehøien der?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker></HIS:spOpener>
@@ -402,7 +396,7 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <lb/><l>I er den unge Morgenrødes Børn,</l>
 <lb/><l>Drag did, hvor Kongestolen Eder venter.</l>
 <lb/><l>Jeg er den Sidste fra de sjunkne Tider,</l>
-<lb/><l>Min Kongestol er Graven &dash; und mig den!</l>
+<lb/><l>Min Kongestol er Graven – und mig den!</l>
 <lb/><HIS:hisStage>(Han stiger op paa Kjæmpehøien, efterat
 <lb/>Gandalf og Blanka først have styrtet sig i
 <lb/>hans Arme.)</HIS:hisStage></HIS:hisSp>

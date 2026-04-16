@@ -1,21 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.ibsen.uio.no/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?> <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS"> 
+<?xml version="1.0" encoding="UTF-8"?>  <?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?> <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS"> 
 <teiHeader xml:lang="nob">
 <fileDesc>
 <titleStmt>
 <title level="s" type="main">Henrik Ibsens skrifter</title>
 <title level="s" type="sub">Diplomatarisk tekstarkiv</title>
 <title level="a" type="main">Samfundets støtter</title>
-<title level="a" type="sub">NBO Ms.8&deg; 1469, bl. 1-2</title>
+<title level="a" type="sub">NBO Ms.8° 1469, bl. 1-2</title>
 <title level="a" type="origYear">1870</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Hilde Bøe, Mette Witting</name></respStmt>
 <respStmt>
 <resp>Transkripsjon av faksimile, mars 2003</resp>
@@ -39,11 +33,11 @@
         <msIdentifier>
             <settlement>Oslo</settlement>
             <repository>Nasjonalbiblioteket</repository>
-            <idno>NBO Ms.8&deg; 1469</idno>
+            <idno>NBO Ms.8° 1469</idno>
         </msIdentifier>
         <msContents><msItem>
             <author>Henrik Ibsen</author>
-            <title>Uten tittel (omtalt &lquo;lystspillet&rquo;)</title>
+            <title>Uten tittel (omtalt «lystspillet»)</title>
             <docDate>Udatert</docDate>
         </msItem></msContents>
         <physDesc><objectDesc><p>Opptegnelser, egenhendig. 13. okt. 1870, står det på annet utkast.</p></objectDesc></physDesc>
@@ -51,15 +45,15 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <p>Manuskriptets grafiske oppsett finnes beskrevet i typografibeskrivelsen i SS81469_NBO.xml.</p></HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-tei2;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 </encodingDesc>
 <profileDesc>
@@ -140,7 +134,7 @@ Opprettet fil og transkriberte og kodet teksten. Ikke korrekturlest. Filen er va
 <lb/><p>Grundklangen gennem det hele
 <lb/>må blive kvinderne ligesom i skyhed midt
 <lb/>i den mandlige travlhed med dens små
-<lb/>formål der gør sig brede med en sikker&typHyp;
+<lb/>formål der gør sig brede med en sikker‐
 <lb/>hed som på engang tirrer og imponerer.</p>
 <lb/><p>Hovedpersonerne bør være: 1.) den gamle
 <lb/>hvidhårede <HIS:hisDel rend="overwritten">D</HIS:hisDel>dame, moderen, med klarhed, med
@@ -150,40 +144,40 @@ Opprettet fil og transkriberte og kodet teksten. Ikke korrekturlest. Filen er va
 <lb/>binde sin tilværelse under forpligtelser har
 <lb/>drevet ham ud; nu søger han hjemmet med
 <lb/>en angstfuld længsel efter hvil<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>e. 3.) Hendes
-<lb/>anden søn, skibsrederen, den store forretnings&typHyp;
+<lb/>anden søn, skibsrederen, den store forretnings‐
 <lb/>mand, der sidder i de mange kommessioner
 <lb/>og har de mange ombud. Der er hån i
 <lb/>ham mod det ideale og det er mest imod
 <lb/>konen han ytrer den, fordi hun mest udfordrer.
 <lb/>4.) Hans kone, som ugift en feteret skønhed,
-<lb/>poesifyldt men med bitterhed og uden til&typHyp;
-<lb/>fredsstillelse; med fordringer, der på en må&typHyp;
+<lb/>poesifyldt men med bitterhed og uden til‐
+<lb/>fredsstillelse; med fordringer, der på en må‐
 <lb/>de er overdrevne, eller synes så. 5.) Hendes
 
 <pb ed="source" type="folio_nopagination" subtype="verso" n="1" facs="2" />
 <lb/>søster, endnu uklar over sig selv; opvokset i stille
 <lb/>beundring over den fraværende. 6.) Deres fader,
 <lb/>gammel <restore type="del" rend="subpunction"><HIS:hisDel rend="overstrike">skibsfører, senere</HIS:hisDel></restore> købmand; begrænset syn,
-<lb/>men med lune. &dash; Omkring disse grupperer
-<lb/>de øvrige sig; unge piger, med livslyst og læng&typHyp;
+<lb/>men med lune. – Omkring disse grupperer
+<lb/>de øvrige sig; unge piger, med livslyst og læng‐
 <lb/>sler, men alt dæmpet eller nedstemt under de
-<lb/>små og trange forholde; &dash; unge mænd, usik&typHyp;
+<lb/>små og trange forholde; – unge mænd, usik‐
 <lb/>kre, un<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>ge, delt mellem liv og forretning.
 <lb/>En ung fuldmægtig, kandidat, forlovet med søsteren.
-<lb/>Søofficeren i kærlighed til hende. Hans moder træ&typHyp;
-<lb/>dende imellem. En brøde mod den anden kræver ud&typHyp;
-<lb/>soning; en moder må ikke forstyrres i sin ger&typHyp;
-<lb/>ning ved et nærliggende spørsmål. Han over&typHyp;
-<lb/>vinder fordommene; kvinden frigøres men han be&typHyp;
+<lb/>Søofficeren i kærlighed til hende. Hans moder træ‐
+<lb/>dende imellem. En brøde mod den anden kræver ud‐
+<lb/>soning; en moder må ikke forstyrres i sin ger‐
+<lb/>ning ved et nærliggende spørsmål. Han over‐
+<lb/>vinder fordommene; kvinden frigøres men han be‐
 <lb/>sejrer sig selv, idet han vækker sin medbejler.
 <lb/>Han rejser. Moderen: Å, kære børn, der er kun en
-<lb/>fuld sejr i verden, &dash; sejren over sig selv! &dash;
+<lb/>fuld sejr i verden, – sejren over sig selv! –
 <lb/><HIS:hisDel rend="overstrike">(moderen (<gap/>) Kære Barn, ved du hvad der er
 <lb/>den største sejr? Hun: Nej? Hvad er den største sejr?
-<lb/>Moderen: Sejren over sig selv &dash;)</HIS:hisDel> Til personerne
-<lb/>bør føjes købmandens ven, den gamle forhen&typHyp;
+<lb/>Moderen: Sejren over sig selv –)</HIS:hisDel> Til personerne
+<lb/>bør føjes købmandens ven, den gamle forhen‐
 <lb/>værende skipper; hans døtre er blandt de unge
-<lb/>piger. Blandt bipersonerne er et par embeds&typHyp;
+<lb/>piger. Blandt bipersonerne er et par embeds‐
 <lb/>mænd, der intet gør for at hæve samfundet.
 <lb/>Småstadslivet har tidligt sløvet dem.</p>
 <lb/><p>(Moderen: Å, kære børn, der er kun en fuld sejr
@@ -198,13 +192,13 @@ Opprettet fil og transkriberte og kodet teksten. Ikke korrekturlest. Filen er va
 <lb/>sin hjemkomst i kort tid bragt liv og røre.
 <lb/>Men det er især i den unge dameverden,
 <lb/>og blandt ungdommen forresten. At han
-<lb/>derved <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>har fremkaldt misfornøjelse i de skikke&typHyp;
+<lb/>derved <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>har fremkaldt misfornøjelse i de skikke‐
 <lb/>lige borgeres k<HIS:hisDel rend="overwritten">j</HIS:hisDel>reds er naturligt. En stor ridetur
 <lb/>har været holdt og vakt forargelse nu er igære en
 <lb/>stor sejlbådfart, officerens nye kutter i spidsen,
 <lb/>alle både med flag og om natten, efter et skovbal,
 <lb/>hjem med lamper og musik; damer og
-<lb/>herrer i sømandskostumer. Rasende opposi&typHyp;
+<lb/>herrer i sømandskostumer. Rasende opposi‐
 <lb/>tion fra borgerne; sagen tager fra spøg overgang
 <lb/>til alvor. Det ligger en betydning under; noget
 <lb/>symbolsk, frigørelsen fra alle trange vedtægter;

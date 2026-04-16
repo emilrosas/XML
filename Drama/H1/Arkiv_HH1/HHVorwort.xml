@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -15,8 +9,8 @@
 <title level="a" type="main">Vorwort [til en tysk oversettelse av Hærmændene paa Helgeland]</title>
 <title level="a" type="sub">Tekstkilde</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Oliver Blomqvist, Inger Marie Kjølstadmyr, Stine Brenna Taugbøl</name></respStmt><respStmt>
 <resp>Oppretting</resp>
 <name>NME</name>
@@ -66,13 +60,13 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-grt-trykk;</p></projectDesc>
+<projectDesc><p>GRUNNTEKST BASERT PÅ TRYKT FORELEGG. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av to medarbeidere. I tillegg er tre eksemplarer av det trykte forelegget kollasjonert mot hverandre (internkollasjon). Teksten er kollasjonert en tredje gang i forbindelse med det avsluttende arbeidet med verket.</p></projectDesc>
 <editorialDecl>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 </encodingDesc>
 <profileDesc>
@@ -107,44 +101,44 @@ Etablerte fil på grunnlag av Olivers transkripsjon.</change>
 <lb/><head>Vorwort.</head>
 <lb/><p>Indem ich diese deutsche Ausgabe einer meiner
 <lb/>älteren dramatischen Arbeiten erscheinen lasse, dürfte
-<lb/>es vielleicht nicht überflü&szlig;ig sein, darauf aufmerksam
-<lb/>zu machen, da&szlig; ich den Stoff zu diesem Schauspiele
-<lb/>nicht dem Nibelungenliede, sondern der damit ver&typHyp;
+<lb/>es vielleicht nicht überflüßig sein, darauf aufmerksam
+<lb/>zu machen, daß ich den Stoff zu diesem Schauspiele
+<lb/>nicht dem Nibelungenliede, sondern der damit ver‐
 <lb/>wandten nordischen Wölsungasage entnommen habe.
 <lb/>Doch auch dies nur theilweise. Die hauptsächliche
 <lb/>Grundlage meiner Dichtung beruht vielmehr auf den
-<lb/>verschiedenen, noch vorhandenen isländischen Familien&typHyp;
+<lb/>verschiedenen, noch vorhandenen isländischen Familien‐
 <lb/>sagen, in denen die aus dem Nibelungenliede und der
 <lb/>Wölsungasage bekannten riesenhaften Verhältnisse und
 <lb/>Vorgänge sehr oft nur auf menschliche Dimensionen
-<lb/>zurückgeführt erscheinen. Ich glaube daraus schlie&szlig;en
-<lb/>zu dürfen, da&szlig; die in den zwei eben erwähnten Dicht&typHyp;
+<lb/>zurückgeführt erscheinen. Ich glaube daraus schließen
+<lb/>zu dürfen, daß die in den zwei eben erwähnten Dicht‐
 <lb/>ungen geschilderten Situationen und Begebenheiten
 <lb/>für unser gesammtgermanisches Leben in den ältesten
 <lb/>historischen Zeiten typisch gewesen sind. Hält man
-<lb/>diese Annahme fest, so entfällt wohl auch der Vor&typHyp;
-<lb/>wurf, durch das vorliegende Schauspiel unsere natio&typHyp;
+<lb/>diese Annahme fest, so entfällt wohl auch der Vor‐
+<lb/>wurf, durch das vorliegende Schauspiel unsere natio‐
 <lb/>nale Sagenwelt in eine Sphäre herabgezogen zu haben,
 <lb/>in welche sie nicht hingehört. Für die Darstellung
-<lb/>auf der Bühne eignen sich die idealisirten und ge&typHyp;
+<lb/>auf der Bühne eignen sich die idealisirten und ge‐
 <pb/>
-<lb/>wisserma&szlig;en unpersönlichen Sagengestalten heutzutage
+<lb/>wissermaßen unpersönlichen Sagengestalten heutzutage
 <lb/>weniger als je; doch hievon ganz abgesehen hatte ich
 <lb/>überhaupt nur die Absicht, nicht unsere Sagenwelt,
 <lb/>sondern unser Leben in der alten Zeit darzustellen.</p>
-<lb/><p>Was das Zustandekommen dieser deutschen Aus&typHyp;
+<lb/><p>Was das Zustandekommen dieser deutschen Aus‐
 <lb/>gabe anlangt, sei es mir erlaubt, der hochgeehrten
-<lb/>Uebersetzerin meinen verbindlichsten Dank für die Un&typHyp;
+<lb/>Uebersetzerin meinen verbindlichsten Dank für die Un‐
 <lb/>verdrossenheit und Liebe zur Sache abzustatten, womit
 <lb/>sie die allerdings nicht leichte Aufgabe unternommen
-<lb/>und gelöst hat. Ebenso bezeige ich meinem hochge&typHyp;
-<lb/>schätzten Freunde, dem hiesigen kgl. Opernregis&typHyp;
+<lb/>und gelöst hat. Ebenso bezeige ich meinem hochge‐
+<lb/>schätzten Freunde, dem hiesigen kgl. Opernregis‐
 <lb/>seur, Herrn <foreign xml:lang="lat">Dr.</foreign> Grandaur, meinen Dank. Es ist
-<lb/>dies nicht das erste Mal, da&szlig; er skandinavischen
+<lb/>dies nicht das erste Mal, daß er skandinavischen
 <lb/>Schriftstellern eine bereitwillige Hand gereicht hat,
 <lb/>und ohne seinen einsichtsvollen Beistand durch Rath
 <lb/>und That hätte auch dieses Vorhaben schwerlich weder
-<lb/>so schnell noch so gelungen zu Stande gebracht wer&typHyp;
+<lb/>so schnell noch so gelungen zu Stande gebracht wer‐
 <lb/>den können.</p>
 <lb/><dateline>München, im März 1876.</dateline>
 <lb/><signed>Henrik Ibsen.</signed>

@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -13,11 +7,11 @@
 <title level="s" type="main">Henrik Ibsens skrifter</title>
 <title level="s" type="sub">Diplomatarisk tekstarkiv</title>
 <title level="a" type="main">[Hærmændene på Helgeland]</title>
-<title level="a" type="sub">2. versjon, grunntekst, NBO Ms.8&deg; 1935</title>
+<title level="a" type="sub">2. versjon, grunntekst, NBO Ms.8° 1935</title>
 <title level="a" type="origYear">[1893]</title>
 <author>[Henrik Ibsen]</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Karl Johan Sæth, Ellen Nessheim Wiger, Mette Witting</name></respStmt>
 <respStmt>
 <resp>Transkripsjon, juni 2000:</resp>
@@ -56,7 +50,7 @@
 <msIdentifier>
 <settlement>Oslo</settlement>
 <repository>Nasjonalbiblioteket</repository>
-<idno>NBO Ms.8&deg; 1935</idno>
+<idno>NBO Ms.8° 1935</idno>
 </msIdentifier>
 <msContents><msItem>
 <author>[Henrik Ibsen]</author>
@@ -69,11 +63,11 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-grt-ms;</p></projectDesc>
+<projectDesc><p>GRUNNTEKST BASERT PÅ MANUSKRIPT. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av to medarbeidere. Teksten er kollasjonert en tredje gang i forbindelse med det avsluttende arbeidet med verket.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <list>
-<head>NBO Ms.8&deg; 1935</head>
+<head>NBO Ms.8° 1935</head>
 <item>skriftgruppe: latinsk håndskrift; ujevn, venstrehellende</item>
 <item>akt:
 <list>
@@ -98,8 +92,8 @@
 </item>
 </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -111,9 +105,9 @@
 <label xml:id="SONNER">SONNER</label><item>Sønnerne, Øs. sønner, Ø. sønner</item>
 </list>
 </tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
-<metDecl><p>&metDecl;</p></metDecl>
+<metDecl><p>Den metriske notasjonen er beskrevet i Kodepraksis for HIS og bygger på Jørgen Fafners verslære (Fafner 1989).</p></metDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
 <profileDesc>
@@ -227,7 +221,7 @@ Opprettet fila med operautkastet NBO Ms 8° 1935. Kodet og validerte teksten.</c
 <lb/><p rend="indent">Se først dit eget.</p>
 <lb/><HIS:hisStage>(kamp)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="ORNULF"><HIS:spOpener><speaker>Ø.</speaker></HIS:spOpener>
-<lb/><p>Godt var det hugget, hermand &dash;</p>
+<lb/><p>Godt var det hugget, hermand –</p>
 <lb/><l rend="indent2">Snygt du sværdet <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>svinger.</l>
 <lb/><l rend="indent1">Hvast du véd at ramme.</l>
 <lb/><l rend="indent1">Sigurd selv, hin stærke,</l>
@@ -245,7 +239,7 @@ Opprettet fila med operautkastet NBO Ms 8° 1935. Kodet og validerte teksten.</c
 <lb/><p>Viking! Hvassere ramte du mig
 <lb/>da du raned Dagny, min datter.</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>S.</speaker> og <speaker>hans mænd</speaker>.</HIS:spOpener>
-<lb/><p>Ørnulf fra fjordene <HIS:hisDel rend="overwritten">&dash;<unclear>!</unclear></HIS:hisDel>her!</p></HIS:hisSp>
+<lb/><p>Ørnulf fra fjordene <HIS:hisDel rend="overwritten">–<unclear>!</unclear></HIS:hisDel>her!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="DAGNY"><HIS:spOpener><speaker>Dagny</speaker></HIS:spOpener>
 <lb/><p>Min far! Mine brødre alle!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGURD"><HIS:spOpener><speaker>S.</speaker></HIS:spOpener>
@@ -271,7 +265,7 @@ Opprettet fila med operautkastet NBO Ms 8° 1935. Kodet og validerte teksten.</c
 <lb/><HIS:hisSp who="SIGURD"><HIS:spOpener><speaker>Sigurd</speaker>.</HIS:spOpener>
 <lb/><p>Lad høre, hvad bod du kræver for ranet.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ORNULF"><HIS:spOpener><speaker>Ørnulf</speaker>.</HIS:spOpener>
-<lb/><p>Tre hundred i sølv. Med det er din ger&typHyp;
+<lb/><p>Tre hundred i sølv. Med det er din ger‐
 <lb/>ning sonet.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGURD"><HIS:spOpener><speaker><HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>Sigurd</speaker>.</HIS:spOpener>
 <lb/><p>Billige kår. Dem tar jeg imod.
@@ -288,7 +282,7 @@ Opprettet fila med operautkastet NBO Ms 8° 1935. Kodet og validerte teksten.</c
 <lb/><p>Ret nu vil jeg friste, hvor god du er mig.</p></HIS:hisSp>
 <pb n="[2]v"/><lb/><HIS:hisSp who="SIGURD"><HIS:spOpener><speaker>Sigurd</speaker>.</HIS:spOpener>
 <lb/><p>Så gerne jeg tjener dig, Ørnulf.</p>
-<lb/><p>Men sig mig, &dash; <app type="alteration"><lem><HIS:hisAdd place="offline">med</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">i</HIS:hisDel></HIS:hisRdg></app> hvad?</p></HIS:hisSp>
+<lb/><p>Men sig mig, – <app type="alteration"><lem><HIS:hisAdd place="offline">med</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">i</HIS:hisDel></HIS:hisRdg></app> hvad?</p></HIS:hisSp>
 <lb/><HIS:synopticViewPtr type="synopticView_mainVersions" target="HH58.xml" xml:id="HH1_4main"/><HIS:hisSp who="ORNULF"><HIS:spOpener><speaker>Ørnulf</speaker>.</HIS:spOpener>
 <lb/><p>Med råd og med dåd. <note resp="editor">Et korrekturtegn foran <q>Hid</q> markerer sannsynligvis at Ibsen har ønsket et linjeskift her.</note>Hid er jeg kommen
 <lb/>for at søge Gunnar herse.</p>

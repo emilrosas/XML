@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -13,11 +7,11 @@
 <title level="s" type="main">Henrik Ibsens skrifter</title>
 <title level="s" type="sub">Diplomatarisk tekstarkiv</title>
 <title level="a" type="main">Kejser og Galilæer</title>
-<title level="a" type="sub">NBO Ms.4&deg; 1111a, bl. 338&dash;49</title>
-<title level="a" type="origYear">[1871&dash;1873]</title>
+<title level="a" type="sub">NBO Ms.4° 1111a, bl. 338–49</title>
+<title level="a" type="origYear">[1871–1873]</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt>
 <resp>Konvertering fra ekstern transkripsjon til prosjektspesifikk TEI XML</resp>
 <name xml:id="HIS-HB">Hilde Bøe</name>
@@ -45,12 +39,12 @@
 <sourceDesc><p>Denne filen bygger på KG41111_NBO.xml (KG41111_NBO-0208).</p></sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography><p>Manuskriptets grafiske oppsett finnes beskrevet i typografibeskrivelsen i KG41111_NBO.xml.</p>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -121,7 +115,7 @@
 <label xml:id="PERSEREN"/><item>En persisk overløber/Perseren</item>
 </list>
 </tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -153,47 +147,47 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <HIS:hisDel rend="diagonalOverstrike">
 <lb/><HIS:hisSp who="JULIAN"><p><xptr type="synopticView_msVersions" xml:id="KG_12500ms"/>Så blindt er venskab! Så blindt, blindt, blindt!
 <lb/>Her har jeg det skrevet. Hør efter og sug det ind
-<lb/>som en erkendelsens læskende dugg. Det er kej&typHyp;
-<lb/>serens melding til provinserne, som hin udmær&typHyp;
+<lb/>som en erkendelsens læskende dugg. Det er kej‐
+<lb/>serens melding til provinserne, som hin udmær‐
 <lb/>kede Decentius har medbragt. Jeg har intet
 <lb/>udrettet. Det var en drøm, som jeg sagde. Her
 <lb/>har vi kejserens egne ord. Det er under kejserens
-<lb/>lykkelige forvarsler at oprøret er kuet &dash;</p></HIS:hisSp>
+<lb/>lykkelige forvarsler at oprøret er kuet –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLORENTIUS"><HIS:spOpener><speaker>Prætorianhøvdingen Florentius</speaker>.</HIS:spOpener>
 <lb/><p>Kejseren er stor.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Mere, mere! Her berettes det at det er kejseren
 <lb/>som har kæmpet og sejret, det er ham som
 <lb/>har løftet op den ydmygt bedende Alemanerkonge
-<lb/>som kasted sig ned for ham &dash; mit navn
-<lb/>er ikke nævnt<xptr type="synopticView_msVersions" xml:id="KG_126ms"/> &dash; og ikke dit, Florentius, og ikke
-<lb/>dit, Severus, &dash; og her, i beskrivelsen over slaget
-<lb/>ved Argentoratum, her står det &dash; det var kejseren
+<lb/>som kasted sig ned for ham – mit navn
+<lb/>er ikke nævnt<xptr type="synopticView_msVersions" xml:id="KG_126ms"/> – og ikke dit, Florentius, og ikke
+<lb/>dit, Severus, – og her, i beskrivelsen over slaget
+<lb/>ved Argentoratum, her står det – det var kejseren
 <lb/>som påbød slagordningen, det var kejseren
-<lb/>som kæmped selv i forreste række &dash; det var
+<lb/>som kæmped selv i forreste række – det var
 <lb/>kejseren som drev barbarerne på hovedkuls
-<lb/>flugt &dash; for ham var det Chnodomar blev
-<lb/>ført &dash; læs, læs, siger jeg &dash;</p></HIS:hisSp>
+<lb/>flugt – for ham var det Chnodomar blev
+<lb/>ført – læs, læs, siger jeg –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SEVERUS"><HIS:spOpener><speaker>Hærføreren Severus</speaker>.</HIS:spOpener>
-<lb/><p>Høje cæsar, dit ord er nok &dash;</p></HIS:hisSp>
+<lb/><p>Høje cæsar, dit ord er nok –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Men når så er, hvor vil I da hen med eders
 <lb/>smigrende tale? Vil I gøre mig til en usling?
 <lb/>Vil I tilegne mig min høje frændes fortjeneste?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLORENTIUS"><HIS:spOpener><speaker>Florent</speaker></HIS:spOpener>
-<lb/><p>I sandhed, mit ord er bleven mistydet, ifald &dash;</p></HIS:hisSp>
+<lb/><p>I sandhed, mit ord er bleven mistydet, ifald –</p></HIS:hisSp>
 <pb ed="faksBase" n="146"/>
 <pb n="[338]v"/>
 <lb/><HIS:hisSp who="SEVERUS"><HIS:spOpener><speaker>Hærføreren Severus</speaker>.</HIS:spOpener>
-<lb/><p>Det kunde aldrig komme i min tanke at &dash;</p></HIS:hisSp>
+<lb/><p>Det kunde aldrig komme i min tanke at –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Jeg ved, jeg ved; vi har alle svævet i vildfarelse; det var
 <lb/>sandheds-erkendelsen som mangled i cæsars lykke.
-<lb/>Ind med bigaen, Scintula &dash; <HIS:hisStage>(Scintula går<note resp="editor"><q>å</q> mangler diakritisk tegn.</note>)</HIS:hisStage>
+<lb/>Ind med bigaen, Scintula – <HIS:hisStage>(Scintula går<note resp="editor"><q>å</q> mangler diakritisk tegn.</note>)</HIS:hisStage>
 <lb/>Og du kan spare din sølvhjelm, tappre Florentius
 <lb/>Kejseren har triumferet i Rom. Lad alle festligheder
-<lb/>afsige. Det er bedst således &dash;<xptr type="synopticView_msVersions" xml:id="KG_127ms"/> Var jeg ikke engang
-<lb/>en visdomsven? jeg tror det. Man sagde det idet&typHyp;
+<lb/>afsige. Det er bedst således –<xptr type="synopticView_msVersions" xml:id="KG_127ms"/> Var jeg ikke engang
+<lb/>en visdomsven? jeg tror det. Man sagde det idet‐
 <lb/>mindste. Jeg er bleven visdommen utro; jeg er falden
 <lb/>fra; kejseren har påmindet mig; tak ham kær<unclear reason="endline">ligst</unclear>
 <lb/>Decentius. Har du mer at melde.</p></HIS:hisSp>
@@ -203,13 +197,13 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker></HIS:spOpener>
 <lb/><p>I sandhed, kejseren har udført store gerninger i Gallien</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLORENTIUS"><HIS:spOpener><speaker>Florentius</speaker></HIS:spOpener>
-<lb/><p>Rigets grænser er si<unclear reason="writing">kk</unclear>ret for lange tider &dash; herre</p></HIS:hisSp>
+<lb/><p>Rigets grænser er si<unclear reason="writing">kk</unclear>ret for lange tider – herre</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. Julian</speaker></HIS:spOpener>
 <lb/><p>Af kejseren, af kejseren, ja, ja</p></HIS:hisSp>
 <lb/><HIS:hisSp who="DECENTIUS"><HIS:spOpener><speaker>Decentius</speaker></HIS:spOpener>
 <lb/><p>Og i det <unclear reason="writing">indre</unclear> er intet at frygte</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SEVERUS"><HIS:spOpener><speaker>Severus</speaker></HIS:spOpener>
-<lb/><p>Ingen provins er mere at lide på &dash;</p></HIS:hisSp>
+<lb/><p>Ingen provins er mere at lide på –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. Julian</speaker></HIS:spOpener>
 <lb/><p>Som venteligt var, efter de for<unclear reason="writing">an</unclear>staltninger, som kejseren
 <lb/>har truffet.</p></HIS:hisSp>
@@ -227,17 +221,17 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><p>Kejseren behager at slå dem ad åre. Her er hans
 <lb/>vilje, høje cæsar. <HIS:hisStage>(rækker ham en papirrulle.)</HIS:hisStage></p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. Julian</speaker>.</HIS:spOpener>
-<lb/><p>Lad se, lad se! <HIS:hisStage>(læser)</HIS:hisStage> Ah, &dash; Severus, Floren&typHyp;
-<lb/>tius! &dash; Godt, godt, ædle Decentius, kejserens vilje
+<lb/><p>Lad se, lad se! <HIS:hisStage>(læser)</HIS:hisStage> Ah, – Severus, Floren‐
+<lb/>tius! – Godt, godt, ædle Decentius, kejserens vilje
 <lb/>skal blive efterlevet.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="DECENTIUS"><HIS:spOpener><speaker>Decentius</speaker>.</HIS:spOpener>
-<lb/><p>Det er nødvendigt at endnu idag &dash;</p></HIS:hisSp>
+<lb/><p>Det er nødvendigt at endnu idag –</p></HIS:hisSp>
 </HIS:hisDel>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. Julian</speaker></HIS:spOpener>
-<lb/><p>Endnu idag &dash; forstår sig &dash; endnu idag &dash; <HIS:hisDel rend="overstrike">Scintula
+<lb/><p>Endnu idag – forstår sig – endnu idag – <HIS:hisDel rend="overstrike">Scintula
 <lb/>skal komme</HIS:hisDel>.<xptr type="synopticView_msVersions" xml:id="KG_128ms"/></p></HIS:hisSp>
 <lb/><HIS:hisSp who="SEVERUS"><HIS:spOpener><speaker>Severus</speaker>.</HIS:spOpener>
-<lb/><p>Nu forstår jeg &dash;</p></HIS:hisSp>
+<lb/><p>Nu forstår jeg –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLORENTIUS"><HIS:spOpener><speaker>Florentius</speaker></HIS:spOpener>
 <lb/><p>Cæsar er falden.</p></HIS:hisSp>
 <HIS:hisDel rend="diagonalOverstrike">
@@ -256,7 +250,7 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <pb ed="faksBase" n="148"/>
 <pb n="[339]v"/>
 <lb/>Fest, fest! Jeg vil vugge mig i festens pragt. Jeg,
-<lb/>selv anden &dash;</p></HIS:hisSp>
+<lb/>selv anden –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. Julian</speaker>.</HIS:spOpener>
 <lb/><p>Helena!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="DECENTIUS"><HIS:spOpener><speaker>Decentius</speaker>.</HIS:spOpener>
@@ -266,26 +260,26 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. Julian</speaker></HIS:spOpener>
 <lb/><p>Helena, Helena!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Helena</speaker>.</HIS:spOpener>
-<lb/><p>Gud Herren har hørt mine bønner og gydt sin nå&typHyp;
+<lb/><p>Gud Herren har hørt mine bønner og gydt sin nå‐
 <lb/>des skåler over mig; triumftoget skulde vie den
-<lb/>ufødte til hans kald &dash; og nu &dash; o, er du en
-<lb/>fader &dash;</p></HIS:hisSp>
+<lb/>ufødte til hans kald – og nu – o, er du en
+<lb/>fader –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. Julian</speaker>.</HIS:spOpener>
-<lb/><p>Jeg beder dig, Decentius, min hustru er upasselig &dash;</p></HIS:hisSp>
+<lb/><p>Jeg beder dig, Decentius, min hustru er upasselig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Helena</speaker>.</HIS:spOpener>
-<lb/><p>Decentius, ah, kejserens udsending. Tak ham kær&typHyp;
+<lb/><p>Decentius, ah, kejserens udsending. Tak ham kær‐
 <lb/>ligst. Ved du, Julian, han har skikket mig to
 <lb/>nubiske slaver med frugter i gyldne skåler,
-<lb/>ferskener fra Damaskus &dash; o, han har gættet &dash;
+<lb/>ferskener fra Damaskus – o, han har gættet –
 <lb/>frugt, frugt, jeg tørster og forsmægter i dette
-<lb/>rå land &dash;</p></HIS:hisSp>
+<lb/>rå land –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. Julian</speaker></HIS:spOpener>
 <lb/><p>Scintula skal komme, har jeg sagt! Ak, er du
-<lb/>der &dash;</p></HIS:hisSp>
+<lb/>der –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Helena</speaker>.</HIS:spOpener>
 <lb/><p>Altså ingen fest? O, men ikke sandt, Julian, du elsker mig.
 <lb/>Ja, ja, så er det godt. Hvor længe blir du hos os, ædle De<unclear reason="binding">cen</unclear>
-<lb/>tius? Nu, nu, jeg vil ikke sp<unclear>ørge</unclear> &dash;; længe, håber</p></HIS:hisSp>
+<lb/>tius? Nu, nu, jeg vil ikke sp<unclear>ørge</unclear> –; længe, håber</p></HIS:hisSp>
 </HIS:hisDel>
 <pb ed="faksBase" n="149"/>
 <pb n="[340]r"/>
@@ -294,15 +288,15 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><HIS:hisSp who="HELENA"><p>jeg. Jeg må i messe; jeg har så meget at bede for,
 <lb/>så meget at takke for. Jeg føler det som om alle
 <lb/><sic>kejserriget</sic> øjne ser store på mig, som om alle
-<lb/>munde åb<unclear reason="writing">nes</unclear> af forventning &dash; hvorledes går det
-<lb/>min ophøjede broder &dash;; hans sundhed er dog
+<lb/>munde åb<unclear reason="writing">nes</unclear> af forventning – hvorledes går det
+<lb/>min ophøjede broder –; hans sundhed er dog
 <lb/>god?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. Julian</speaker></HIS:spOpener>
-<lb/><p>Den er god, god &dash; ja visst &dash; o, gå, Helena, skån
-<lb/>dig, jeg beder &dash;</p></HIS:hisSp>
+<lb/><p>Den er god, god – ja visst – o, gå, Helena, skån
+<lb/>dig, jeg beder –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Helena</speaker>.</HIS:spOpener>
-<lb/><p>Altså i messen; ingen triumf; ja, ja &dash; det er bedre
-<lb/>således. Tak, min elskede husbond &dash; led mig; peg frem
+<lb/><p>Altså i messen; ingen triumf; ja, ja – det er bedre
+<lb/>således. Tak, min elskede husbond – led mig; peg frem
 <lb/>for mig; du ser det rette. På gensyn, I samtlige herrer!</p>
 <lb/><HIS:hisStage>(ud til højre.)</HIS:hisStage></HIS:hisSp>
 </HIS:hisDel>
@@ -313,32 +307,32 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. Julian</speaker>.</HIS:spOpener>
 <lb/><p>Lad <emph>et</emph> ord præge sig fast i dit minde; så sandt jeg her
 <lb/>står for dig, så sandt er det min agt at af<unclear reason="writing">føre</unclear> mig
-<lb/>min værdighed &dash;</p></HIS:hisSp>
+<lb/>min værdighed –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="DECENTIUS"><HIS:spOpener><speaker>Decentius</speaker></HIS:spOpener>
 <lb/><p>Det skal blive kejseren meldt.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. Ju<gap reason="writing"/></speaker></HIS:spOpener>
 <lb/><p>Jeg kræver himlen til vidne på at jeg aldrig har
-<lb/>efter<unclear reason="writing">tragtet</unclear> denne højhed &dash;; &dash; hvor er min husmester
-<lb/> &dash; Eutherius skal komme &dash;</p></HIS:hisSp>
+<lb/>efter<unclear reason="writing">tragtet</unclear> denne højhed –; – hvor er min husmester
+<lb/> – Eutherius skal komme –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLORENTIUS"><HIS:spOpener><speaker>Florentius</speaker>
 <lb/><HIS:hisStage>(til Decentius.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Jeg beder ydmygt, mistyd ikke hvad jeg før sagde.
 <pb ed="faksBase" n="150"/>
 <pb n="[340]v"/>
-<lb/>Når jeg tillagde cæsar æren, så var det naturligvis &dash;</p></HIS:hisSp>
+<lb/>Når jeg tillagde cæsar æren, så var det naturligvis –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SEVERUS"><HIS:spOpener><speaker>Severus</speaker>.</HIS:spOpener>
 <lb/><p>Aldrig kunde det komme i min tanke at det ikke
-<lb/>var kejserens øverste vise ledelse som &dash;</p></HIS:hisSp>
+<lb/>var kejserens øverste vise ledelse som –</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>En hofmand</speaker>.</HIS:spOpener>
 <lb/><p>Jeg beder dig høje herre, læg et ord ind for mig i hofl<unclear reason="writing">ejren</unclear>
 <lb/>og forløs mig fra denne pinlige post hos en cæsar som
-<lb/>ja, han er kejserens høje slægtning &dash; men &dash;</p></HIS:hisSp>
+<lb/>ja, han er kejserens høje slægtning – men –</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>En anden hofmand</speaker>.</HIS:spOpener>
 <lb/><p>Jeg kunde desværre fortælle ting, som vidner lige så meget
 <lb/>om grænseløs forfængelighed som om forvovne <app type="alteration"><lem><HIS:hisAdd place="offline">håb</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">ønsker</HIS:hisDel></HIS:hisRdg></app></p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>En tredje hofmand</speaker>.</HIS:spOpener>
-<lb/><p>Hvis du ønsker at vide visse ting, så har jeg her i Gal&typHyp;
-<lb/>lien været nødt til at høre på &dash; &dash;</p></HIS:hisSp>
+<lb/><p>Hvis du ønsker at vide visse ting, så har jeg her i Gal‐
+<lb/>lien været nødt til at høre på – –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. Julian</speaker>.
 <lb/><HIS:hisStage>(til Eutherius)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Kan du tvivle på at cæsars skib er i havsnød? Se
@@ -347,13 +341,13 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><p><HIS:hisDel rend="overstrike">Ufornu</HIS:hisDel> Forhastet vil jeg håbe.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. Julian</speaker>.</HIS:spOpener>
 <lb/><p>Vi må være beredt på alt. Kan flugt, om det behøves,
-<lb/>gå for sig inat &dash;?</p></HIS:hisSp>
+<lb/>gå for sig inat –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="EUTHERIOS"><HIS:spOpener><speaker>Eutherius</speaker>.</HIS:spOpener>
-<lb/><p>Alt er rede som sædvanligt &dash; men jeg frygter at De<unclear reason="endline">cen&typHyp;</unclear>
-<lb/>tius &dash; ak, herre, hans opmærksomhed er vakt &dash;</p></HIS:hisSp>
+<lb/><p>Alt er rede som sædvanligt – men jeg frygter at De<unclear reason="endline">cen‐</unclear>
+<lb/>tius – ak, herre, hans opmærksomhed er vakt –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. Julian</speaker>.</HIS:spOpener>
 <lb/><p>Min elskede Helena! O, hvilken uforsigtighed at
-<lb/>antyde &dash;, du går, Decentius?</p></HIS:hisSp>
+<lb/>antyde –, du går, Decentius?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="DECENTIUS"><HIS:spOpener><speaker>Decentius</speaker>.</HIS:spOpener>
 <lb/><p>Jeg har at forhandle med hærfør<unclear reason="writing">erne</unclear>, høje cæsar.</p></HIS:hisSp>
 <pb ed="faksBase" n="151"/>
@@ -378,15 +372,15 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><p>Jeg har aldrig dristet mig til at forsikre cæsar derom.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. Julian</speaker>
 <lb/><HIS:hisStage>(slår på papirrullen)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Her står det. Du skal forlade mig, Scintula &dash;</p></HIS:hisSp>
+<lb/><p>Her står det. Du skal forlade mig, Scintula –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SINTULA"><HIS:spOpener><speaker>Scintula</speaker></HIS:spOpener>
 <lb/><p><HIS:clarification place="inline">H</HIS:clarification>vorledes, <sic>herr</sic>?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. Julian</speaker>.</HIS:spOpener>
-<lb/><p>Kejseren befaler at hæren i Gallien skal opløses &dash;</p></HIS:hisSp>
+<lb/><p>Kejseren befaler at hæren i Gallien skal opløses –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SINTULA"><HIS:spOpener><speaker>Scintula</speaker></HIS:spOpener>
 <lb/><p>Umuligt!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. Julian</speaker></HIS:spOpener>
-<lb/><p>Jeg kalder det opløses &dash;; det heder at hvis så store
+<lb/><p>Jeg kalder det opløses –; det heder at hvis så store
 <lb/>ting er udrettet her, så må provinsens ro være sikkret.
 <lb/>Kejseren behøver forstærkning i <HIS:hisDel rend="overwritten">d</HIS:hisDel>Dacien og imod Pers<unclear reason="writing">ernes,</unclear>
 <lb/><HIS:hisDel rend="overstrike">Ärul<unclear>ernes</unclear></HIS:hisDel> og Ærulernes og Batavernes hjælpetropper
@@ -395,78 +389,78 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/>skal afgå i ilmarsch<unclear reason="writing">en</unclear> for at kunne stå i Asien
 <lb/>til næste forår.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SINTULA"><HIS:spOpener><speaker>Scintula</speaker>.</HIS:spOpener>
-<lb/><p>Men herre, du har jo højtideligt tilsagt disse bund&typHyp;
+<lb/><p>Men herre, du har jo højtideligt tilsagt disse bund‐
 <lb/>forvandte at de ikke må bruges hinsides Alp<unclear reason="writing">erne</unclear>.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. Julian</speaker></HIS:spOpener>
-<lb/><p>Der er det, Scintula! Jeg skal tvinges til at bry&typHyp;
+<lb/><p>Der er det, Scintula! Jeg skal tvinges til at bry‐
 <lb/>de mit ord, vanære mig i hærens øjne. Kejseren
 <lb/>er stor; hans vilje skal ske. Men ikke nok
 <lb/>med dette. Af hver af de andre legi<unclear reason="writing">oner</unclear> skal 300
-<lb/><HIS:hisDel rend="overstrike">m<unclear>æ</unclear></HIS:hisDel> udvalgte mænd sendes til Rom &dash; Tre
+<lb/><HIS:hisDel rend="overstrike">m<unclear>æ</unclear></HIS:hisDel> udvalgte mænd sendes til Rom – Tre
 <lb/>hundre mænd; det vil sige, jeg skal stå magtesløs
 <lb/>her!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SINTULA"><HIS:spOpener><speaker>Scintula</speaker></HIS:spOpener>
-<lb/><p>Udvalgte mænd, står det så &dash;</p></HIS:hisSp>
+<lb/><p>Udvalgte mænd, står det så –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker><HIS:hisDel rend="overwritten">S</HIS:hisDel>Julian</speaker></HIS:spOpener>
-<lb/><p>Ja, ja &dash;, se selv &dash;</p></HIS:hisSp>
+<lb/><p>Ja, ja –, se selv –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SINTULA"><HIS:spOpener><speaker>Sc</speaker>.</HIS:spOpener>
-<lb/><p>Udvalgte mænd &dash; så vælg, herre &dash; vælg &dash; dem
-<lb/>som er dig mest hengivne &dash;</p></HIS:hisSp>
+<lb/><p>Udvalgte mænd – så vælg, herre – vælg – dem
+<lb/>som er dig mest hengivne –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker></HIS:spOpener>
-<lb/><p>Ha &dash; og hvorfor &dash; hvad mener du jeg skulde
-<lb/>bruge en hengiven hær til &dash;?</p></HIS:hisSp>
+<lb/><p>Ha – og hvorfor – hvad mener du jeg skulde
+<lb/>bruge en hengiven hær til –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SINTULA"><HIS:spOpener><speaker>Sc.</speaker></HIS:spOpener>
-<lb/><p>Du mistyder mig, herre &dash;</p></HIS:hisSp>
+<lb/><p>Du mistyder mig, herre –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
 <lb/><p>Du ved mere end du vil ud med.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SINTULA"><HIS:spOpener><speaker>Sc.</speaker></HIS:spOpener>
 <lb/><p>Om hvad herre?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker></HIS:spOpener>
-<lb/><p>Tilgiv<gap reason="writing"/> mig Scintula &dash; jeg tror dig &dash;; hør videre
+<lb/><p>Tilgiv<gap reason="writing"/> mig Scintula – jeg tror dig –; hør videre
 <pb ed="faksBase" n="153"/>
 <pb n="[342]r"/>
 <lb/><fw type="gathering" place="top-left">9.</fw><fw type="leaf" place="top-right" scribe="h1">342</fw>
-<lb/>Også blandt Skut<gap reason="writing"/> og Gentilerne skal de dyg&typHyp;
-<lb/>tigste folk sendes til kejseren &dash; under din
+<lb/>Også blandt Skut<gap reason="writing"/> og Gentilerne skal de dyg‐
+<lb/>tigste folk sendes til kejseren – under din
 <lb/>kommand<HIS:clarification place="inline">o</HIS:clarification>, Scintula</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SINTULA"><HIS:spOpener><speaker>Sc</speaker></HIS:spOpener>
 <lb/><p>Min?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker></HIS:spOpener>
-<lb/><p>Se selv &dash; e<unclear reason="writing">ndvidere</unclear> fordrer han Celt<unclear reason="writing">erne</unclear>
-<lb/>og Petulant<unclear reason="writing">erne</unclear>. Hvad vil han med dem, de ky&typHyp;
-<lb/>niske hunde. Nu, han om det &dash; Scintula,
-<lb/>fatter du min stilling &dash; der er ingen klage
-<lb/>mod kejseren, mistyd mig ikke &dash; &dash; nu, nu &dash;
-<lb/>jeg tror dig &dash; nu gå &dash; kejserens bud skal efter&typHyp;
-<lb/>leves &dash; bogstaveligt &dash; ah &dash; <HIS:hisStage>(op og ned)</HIS:hisStage></p></HIS:hisSp>
+<lb/><p>Se selv – e<unclear reason="writing">ndvidere</unclear> fordrer han Celt<unclear reason="writing">erne</unclear>
+<lb/>og Petulant<unclear reason="writing">erne</unclear>. Hvad vil han med dem, de ky‐
+<lb/>niske hunde. Nu, han om det – Scintula,
+<lb/>fatter du min stilling – der er ingen klage
+<lb/>mod kejseren, mistyd mig ikke – – nu, nu –
+<lb/>jeg tror dig – nu gå – kejserens bud skal efter‐
+<lb/>leves – bogstaveligt – ah – <HIS:hisStage>(op og ned)</HIS:hisStage></p></HIS:hisSp>
 <lb/><HIS:hisSp who="SINTULA"><HIS:spOpener><speaker>Sc</speaker>.</HIS:spOpener>
 <lb/><p>Hvad er det herre?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker></HIS:spOpener>
-<lb/><p>Intet, intet &dash; &dash; det var dog en mulighed.
-<lb/>Vælg de bedste &dash;; de, som er mig mest hengivne</p></HIS:hisSp>
+<lb/><p>Intet, intet – – det var dog en mulighed.
+<lb/>Vælg de bedste –; de, som er mig mest hengivne</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SINTULA"><HIS:spOpener><speaker>Scintula</speaker></HIS:spOpener>
-<lb/><p>Cæsar, cæsar &dash;</p></HIS:hisSp>
+<lb/><p>Cæsar, cæsar –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Jul</speaker></HIS:spOpener>
 <lb/><p>Cæsar tør ikke fornægte sin fortid. Hvorledes vilde
 <lb/>forbilled<gap reason="writing"/> handlet i mit sted, Pla<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>ton eller <HIS:hisDel rend="overwritten">O</HIS:hisDel>Xenofon
 <lb/>Efter ordet eller b<unclear reason="writing">ogstaven</unclear>? Et rent sind, fre<HIS:hisDel rend="overwritten">m</HIS:hisDel>d
-<lb/>med de him<unclear reason="writing">mel</unclear>ske &dash;</p></HIS:hisSp>
+<lb/>med de him<unclear reason="writing">mel</unclear>ske –</p></HIS:hisSp>
 <note resp="editor">Regnestykker.</note>
 <lb/><HIS:hisSp who="MYRRHA"><HIS:spOpener><speaker>Myrrha</speaker></HIS:spOpener>
-<lb/><p>O, forb<unclear reason="writing">armende</unclear> frel<unclear reason="writing">s</unclear>er! &dash;<xptr type="synopticView_msVersions" xml:id="KG_131ms"/></p></HIS:hisSp>
+<lb/><p>O, forb<unclear reason="writing">armende</unclear> frel<unclear reason="writing">s</unclear>er! –<xptr type="synopticView_msVersions" xml:id="KG_131ms"/></p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker></HIS:spOpener>
-<lb/><p>Myrrha, hvad er det &dash;</p></HIS:hisSp>
+<lb/><p>Myrrha, hvad er det –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MYRRHA"><HIS:spOpener><speaker>Myrrha</speaker></HIS:spOpener>
 <lb/><p>O, kom, kom, min herskerinde</p></HIS:hisSp>
 <pb ed="faksBase" n="154"/>
 <pb n="[342]v"/>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker></HIS:spOpener>
-<lb/><p>Helena &dash; hvad hun!</p></HIS:hisSp>
+<lb/><p>Helena – hvad hun!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MYRRHA"><HIS:spOpener><speaker>Myrrha</speaker></HIS:spOpener>
-<lb/><p>Sygdom eller afsind &dash; o, kom, kom</p></HIS:hisSp>
+<lb/><p>Sygdom eller afsind – o, kom, kom</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Jul</speaker></HIS:spOpener>
-<lb/><p>Også hun, min eneste, min sidste &dash; nej, nej
-<lb/>nej &dash; <HIS:hisStage>(ud i b<unclear reason="writing">yen</unclear> Myrrha følger.)</HIS:hisStage></p></HIS:hisSp>
+<lb/><p>Også hun, min eneste, min sidste – nej, nej
+<lb/>nej – <HIS:hisStage>(ud i b<unclear reason="writing">yen</unclear> Myrrha følger.)</HIS:hisStage></p></HIS:hisSp>
 <lb/><HIS:hisDel rend="overstrike"><figure type="bar"/></HIS:hisDel>
 <lb/><HIS:hisStage><HIS:hisDel rend="overstrike">(Have ved Cæsars palats.</HIS:hisDel>)</HIS:hisStage>
 <lb/><HIS:hisStage>(Fyrstinde Helena omringet af slavinder.)</HIS:hisStage>
@@ -474,127 +468,127 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><p>Løs kammen! Løs kammen, siger jeg! Den er
 <lb/>gloende! Ild i håret. Jeg brænder, jeg brænder!</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Slavinderne</speaker>.</HIS:spOpener>
-<lb/><p>O, nådigste herskerinde &dash;!</p></HIS:hisSp>
+<lb/><p>O, nådigste herskerinde –!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Fyrstinde Helena</speaker>.</HIS:spOpener>
-<lb/><p>Hjælp, hjælp; de myrder mig med nålestik &dash;!</p></HIS:hisSp>
+<lb/><p>Hjælp, hjælp; de myrder mig med nålestik –!</p></HIS:hisSp>
 <lb/><HIS:hisDel rend="overstrike"><HIS:hisStage>(<HIS:hisDel rend="overstrike">Fyrst</HIS:hisDel> Cæsar Julian og Myrrha kommer; straks
 <lb/>efter livlægen Oribases.)</HIS:hisStage></HIS:hisDel>
 <lb/><HIS:hisSp who="MYRRHA"><HIS:spOpener><speaker>Myrrha</speaker>.</HIS:spOpener>
-<lb/><p>Se der, herre! O, se, se &dash;</p></HIS:hisSp>
+<lb/><p>Se der, herre! O, se, se –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>Helena, for Guds nådes skyld &dash;</p></HIS:hisSp>
+<lb/><p>Helena, for Guds nådes skyld –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ORIBASES"><HIS:spOpener><speaker>Livlægen Oribases</speaker>.
 <lb/><HIS:hisStage>(kommer.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Hvilket rædselsbudskab fortælles i palatset! Er det
-<lb/>sandt &dash;</p></HIS:hisSp>
+<lb/>sandt –</p></HIS:hisSp>
 <pb ed="faksBase" n="155"/>
 <pb n="[343]r"/>
 <lb/><fw type="leaf" place="top-right" scribe="h1">343</fw>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>Helena! Min kærlighed, mit livs krone &dash;</p></HIS:hisSp>
+<lb/><p>Helena! Min kærlighed, mit livs krone –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Fyrstinde Helena</speaker>.</HIS:spOpener>
-<lb/><p>Væk fra mig &dash;; o, søde Jesus hjælp &dash;</p></HIS:hisSp>
+<lb/><p>Væk fra mig –; o, søde Jesus hjælp –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>Hun ser ikke &dash;; hvad kan det være, Oribases?
-<lb/>O, se, se, øjnene &dash; hvor store &dash;</p></HIS:hisSp>
+<lb/><p>Hun ser ikke –; hvad kan det være, Oribases?
+<lb/>O, se, se, øjnene – hvor store –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ORIBASES"><HIS:spOpener><speaker>Livlægen Oribases</speaker>.
 <lb/><HIS:hisStage>(til Myrrha)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Hvad har fyrstinden nydt &dash; hvad har hun spist
-<lb/>eller drukket &dash;</p></HIS:hisSp>
+<lb/><p>Hvad har fyrstinden nydt – hvad har hun spist
+<lb/>eller drukket –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>Ah, du tror &dash;?</p></HIS:hisSp>
+<lb/><p>Ah, du tror –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ORIBASES"><HIS:spOpener><speaker>Livlægen Oribases</speaker>.</HIS:spOpener>
-<lb/><p>Svar, kvinder, &dash; hvad har I givet fyrstinden &dash;</p></HIS:hisSp>
+<lb/><p>Svar, kvinder, – hvad har I givet fyrstinden –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MYRRHA"><HIS:spOpener><speaker>Myrrha</speaker>.</HIS:spOpener>
-<lb/><p>Vi? O, intet &dash; intet &dash;; hun har selv &dash;<xptr type="synopticView_msVersions" xml:id="KG_132ms"/></p></HIS:hisSp>
+<lb/><p>Vi? O, intet – intet –; hun har selv –<xptr type="synopticView_msVersions" xml:id="KG_132ms"/></p></HIS:hisSp>
 <lb/><HIS:hisSp who="ORIBASES"><HIS:spOpener><speaker>Livlægen Oribases</speaker>.</HIS:spOpener>
-<lb/><p>Nu nu &dash;</p></HIS:hisSp>
+<lb/><p>Nu nu –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MYRRHA"><HIS:spOpener><speaker>Myrrha</speaker>.</HIS:spOpener>
-<lb/><p>Nogle frugter &dash; det var ferskener tror jeg &dash; o, jeg
-<lb/>ved ikke &dash;</p></HIS:hisSp>
+<lb/><p>Nogle frugter – det var ferskener tror jeg – o, jeg
+<lb/>ved ikke –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>Frugter, ferskener &dash;? Af dem som kejseren sendte?</p></HIS:hisSp>
+<lb/><p>Frugter, ferskener –? Af dem som kejseren sendte?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MYRRHA"><HIS:spOpener><speaker>Myrrha</speaker></HIS:spOpener>
-<lb/><p>Ja, nej &dash; ja &dash; jeg ved ikke &dash; to nubiske slaver
-<lb/>bragte dem &dash;.</p></HIS:hisSp>
+<lb/><p>Ja, nej – ja – jeg ved ikke – to nubiske slaver
+<lb/>bragte dem –.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker></HIS:spOpener>
-<lb/><p>O, skændselsfulde mord &dash; hjælp &dash; hjælp &dash; Oribases</p></HIS:hisSp>
+<lb/><p>O, skændselsfulde mord – hjælp – hjælp – Oribases</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ORIBASES"><HIS:spOpener><speaker>Livlægen Oribases</speaker>.</HIS:spOpener>
-<lb/><p>Desværre, jeg frygter &dash;</p></HIS:hisSp>
+<lb/><p>Desværre, jeg frygter –</p></HIS:hisSp>
 <pb ed="faksBase" n="156"/>
 <pb n="[343]v"/>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker></HIS:spOpener>
-<lb/><p>Men nej, nej &dash; dette er dog umuligt</p></HIS:hisSp>
+<lb/><p>Men nej, nej – dette er dog umuligt</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ORIBASES"><HIS:spOpener><speaker>Livlægen Oribases</speaker>.</HIS:spOpener>
-<lb/><p>Stille, herre, hun kommer til sig selv &dash;</p></HIS:hisSp>
+<lb/><p>Stille, herre, hun kommer til sig selv –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Fyrstinde Helena</speaker>.</HIS:spOpener>
 <lb/><p>Hvi gik solen ned? O, hellige løndomsfulde
 <lb/>mørke!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker></HIS:spOpener>
-<lb/><p>Helena! Tal, fort dig &dash; du, min elskede &dash; o,
-<lb/>red hende, Oribases &dash;, jeg kan ikke miste hende
-<lb/>hun er den eneste kvinde, som har elsket mig &dash;</p></HIS:hisSp>
+<lb/><p>Helena! Tal, fort dig – du, min elskede – o,
+<lb/>red hende, Oribases –, jeg kan ikke miste hende
+<lb/>hun er den eneste kvinde, som har elsket mig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ORIBASES"><HIS:spOpener><speaker>Livlægen Oribases</speaker>.</HIS:spOpener>
-<lb/><p>Min høje fyrstinde &dash;</p></HIS:hisSp>
+<lb/><p>Min høje fyrstinde –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>Det er lægen, Helena &dash; nej. her, her hvor jeg
-<lb/>står &dash;</p></HIS:hisSp>
+<lb/><p>Det er lægen, Helena – nej. her, her hvor jeg
+<lb/>står –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Fyrstinde Helena</speaker>
 <lb/><HIS:hisStage>(river sig løs.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Fy, munken &dash;!</p></HIS:hisSp>
+<lb/><p>Fy, munken –!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Hun ser mig ikke. Her, her, Helena!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Fyrstinde Helena</speaker>.</HIS:spOpener>
-<lb/><p>Den afskyelige! Altid er han om mig &dash;</p></HIS:hisSp>
+<lb/><p>Den afskyelige! Altid er han om mig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker></HIS:spOpener>
 <lb/><p>Hvad mener hun?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ORIBASES"><HIS:spOpener><speaker>Livlægen Oribases</speaker>.</HIS:spOpener>
-<lb/><p>Kom, kom, herre &dash;</p></HIS:hisSp>
+<lb/><p>Kom, kom, herre –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Fyrstinde Helena</speaker>.</HIS:spOpener>
-<lb/><p>Søde stilhed! Han aner ikke &dash;; o, min Gallus &dash;</p></HIS:hisSp>
+<lb/><p>Søde stilhed! Han aner ikke –; o, min Gallus –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Gallus?</p></HIS:hisSp>
 <lb/><note resp="author" scribe="HI-1" place="bottom-right">Du skal forlade søster og broder; hustruen sin
 <lb/>mand; denne skånselløse Gud. Giv Gud hvad
-<lb/>Guds er &dash; hustruens hjerte &dash;</note>
+<lb/>Guds er – hustruens hjerte –</note>
 <lb/><note resp="author" scribe="HI-1" place="margin-right">NB Julian
 <lb/>Alle har vidst det, uden en; men der
 <lb/>var ingen af dem alle <unclear reason="writing">som</unclear> vidste at den
 <lb/>ene ikke vidste det. Den vorde<unclear reason="writing">nde</unclear> Cæsar!
 <lb/>Kun en Gud kan herske over menneskene! Halv Gud halv menneske. Josefs skæbne;
-<lb/>det ligger i Galilæerens æt! Han selv &dash;</note>
+<lb/>det ligger i Galilæerens æt! Han selv –</note>
 <pb ed="faksBase" n="157"/>
 <pb n="[344]r"/>
 <lb/><fw type="gathering" place="top-left"><gap reason="binding"/>0.</fw><fw type="leaf" place="top-right" scribe="h1">344</fw>
 <lb/><HIS:hisSp who="ORIBASES"><HIS:spOpener><speaker>Livlægen Oribases</speaker>.</HIS:spOpener>
-<lb/><p>Kom, høje cæsar; det er ikke tjenligt &dash;</p></HIS:hisSp>
+<lb/><p>Kom, høje cæsar; det er ikke tjenligt –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Fyrstinde Helena</speaker>.</HIS:spOpener>
 <lb/><p>Hvor dit tætte krøllede hår runder sig trodsigt om
-<lb/>nakken! O, denne korte kødfulde nakke &dash;</p></HIS:hisSp>
+<lb/>nakken! O, denne korte kødfulde nakke –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>Alle afgrundes afgrund &dash;</p></HIS:hisSp>
+<lb/><p>Alle afgrundes afgrund –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ORIBASES"><HIS:spOpener><speaker>Livlægen Oribases</speaker>.</HIS:spOpener>
-<lb/><p>Feberen tager til &dash;</p></HIS:hisSp>
+<lb/><p>Feberen tager til –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>Jeg mærker, jeg mærker. Vi må forske, Ori&typHyp;
+<lb/><p>Jeg mærker, jeg mærker. Vi må forske, Ori‐
 <lb/>bases!<xptr type="synopticView_msVersions" xml:id="KG_133ms"/></p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Fyrstinde Helena</speaker>.</HIS:spOpener>
 <lb/><p>Nu vil han forske igen! Blæk på fingrene,
-<lb/>bogstøv i håret <HIS:hisAdd place="offline">uvasket</HIS:hisAdd>; fy, fy, hvad han stinker &dash;</p></HIS:hisSp>
+<lb/>bogstøv i håret <HIS:hisAdd place="offline">uvasket</HIS:hisAdd>; fy, fy, hvad han stinker –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MYRRHA"><HIS:spOpener><speaker>Myrrha</speaker>.</HIS:spOpener>
-<lb/><p>Herre, befaler du ikke at jeg skal &dash;?</p></HIS:hisSp>
+<lb/><p>Herre, befaler du ikke at jeg skal –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Væk med dig, kvinde!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Fyrstinde Helena</speaker>.</HIS:spOpener>
 <lb/><p>Hvor kunde du lade dig overvinde af ham,
 <lb/>du brune svulmende barbar? Han kan ikke
 <lb/>overvinde kvinder. Han er dydig, dydig; hvor
-<lb/>jeg ækles ved denne vanmagtens dyd &dash;</p></HIS:hisSp>
+<lb/>jeg ækles ved denne vanmagtens dyd –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Til side, kvinder! Hvad lytter I efter? Jeg selv
 <lb/>skal vogte fyrstinden.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Fyrstinde Helena</speaker>.</HIS:spOpener>
-<lb/><p>Barbarkongen er dø<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>d; <HIS:hisDel rend="overwritten">g</HIS:hisDel>Gallus også, halshugget. &dash;
+<lb/><p>Barbarkongen er dø<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>d; <HIS:hisDel rend="overwritten">g</HIS:hisDel>Gallus også, halshugget. –
 <lb/>Hvilket hugg det må have været. Ikke skinsyg
 <lb/>du min første og sidste, du min søde, min eneste</p></HIS:hisSp>
 <pb ed="faksBase" n="158"/>
@@ -603,14 +597,14 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><p>Ikke nærmere, Oribases!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Fyrstinde Helena</speaker>.</HIS:spOpener>
 <lb/><p>Ikke skinsyg! Du ved jo vor søde hemmelighed.
-<lb/>O mine dages længsel, mine nætters henrykkelse &dash;
+<lb/>O mine dages længsel, mine nætters henrykkelse –
 <lb/>du var der jo, i mørket, i luften, om mit leje da den
-<lb/>vordende Cæsar under mit hjerte &dash;</p></HIS:hisSp>
+<lb/>vordende Cæsar under mit hjerte –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Tal!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Fyrstinde Helena</speaker>.</HIS:spOpener>
-<lb/><p>O, lad mig suge såret i din side &dash; lad mig kysse nagle&typHyp;
-<lb/>gabet i dine hænder og fødder &dash;; min husbond
+<lb/><p>O, lad mig suge såret i din side – lad mig kysse nagle‐
+<lb/>gabet i dine hænder og fødder –; min husbond
 <lb/>og herre! <HIS:hisStage>(falder til <HIS:hisDel rend="overstrike">J</HIS:hisDel> jorden;<HIS:hisDel rend="overwritten">)</HIS:hisDel>slavinde<gap reason="writing"/>
 <lb/>udstøder et råb men uden at nærme sig.)</HIS:hisStage></p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>
@@ -619,12 +613,12 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><p>Galilæer!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Ridderen Sallust</speaker>
 <lb/><HIS:hisStage>(kommer fra palatset.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Fyrstinden &dash;! O, så er det dog sandt.<xptr type="synopticView_msVersions" xml:id="KG_134ms"/></p></HIS:hisSp>
+<lb/><p>Fyrstinden –! O, så er det dog sandt.<xptr type="synopticView_msVersions" xml:id="KG_134ms"/></p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Før hende varligt bort. Lad ingen uvedkommende
-<lb/>&dash; hvor vil du hen, Oribases?</p></HIS:hisSp>
+<lb/>– hvor vil du hen, Oribases?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ORIBASES"><HIS:spOpener><speaker>Livlægen Oribases</speaker>.</HIS:spOpener>
-<lb/><p>Prøve de midler, som min kunst &dash;</p></HIS:hisSp>
+<lb/><p>Prøve de midler, som min kunst –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Jeg tror at din kunst vil vise sig unyttig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ORIBASES"><HIS:spOpener><speaker>Livlægen Oribases</speaker>.</HIS:spOpener>
@@ -639,11 +633,11 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><p>Høje Cæsar, det er min pligt at være dig ulydig i
 <lb/>dette.</p></HIS:hisSp>
 <HIS:hisAdd place="margin"><note resp="editor">Tilføyelsen er skrevet i høyre marg.</note>
-<lb/><HIS:hisSp who="JULIAN"><p><HIS:hisRef type="refMark" xml:id="nb5" target="n5">&referenceMark;</HIS:hisRef> Frugterne kom fra Rom,
+<lb/><HIS:hisSp who="JULIAN"><p><HIS:hisRef type="refMark" xml:id="nb5" target="n5">※</HIS:hisRef> Frugterne kom fra Rom,
 <lb/>fra kejseren.</p></HIS:hisSp></HIS:hisAdd>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Ulydig i dette? Hvorledes tyder du mine ord.
-<lb/>Gå! Gør, som du kan forsvare.<HIS:hisRef type="refMark" xml:id="n5" target="nb5">&referenceMark;</HIS:hisRef> Din pligt, siger jeg.
+<lb/>Gå! Gør, som du kan forsvare.<HIS:hisRef type="refMark" xml:id="n5" target="nb5">※</HIS:hisRef> Din pligt, siger jeg.
 <lb/>Gå, gå<note resp="editor"><q>å</q> mangler diakritisk tegn.</note>!</p></HIS:hisSp>
 <HIS:hisAdd place="inBetweenLines">
 <lb/><HIS:hisSp who="ORIBASES"><HIS:spOpener><speaker>Livlægen Oribases</speaker>.</HIS:spOpener>
@@ -653,15 +647,15 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/>ud; Oribases følger.)</HIS:hisStage>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Ah, du, Sallust! Hvad tykkes dig. Det begynder
-<lb/>at gære i slægten igen.<xptr type="synopticView_msVersions" xml:id="KG_135ms"/> Først de <sic>ellve</sic>; så Gallus, &dash;
-<lb/>det var den tolvte; og nu den trettende og &dash;
+<lb/>at gære i slægten igen.<xptr type="synopticView_msVersions" xml:id="KG_135ms"/> Først de <sic>ellve</sic>; så Gallus, –
+<lb/>det var den tolvte; og nu den trettende og –
 <lb/>den fjortende.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Ridderen Sallust</speaker>.</HIS:spOpener>
-<lb/><p>Nej, nej, der er redning. Oribases vil &dash;</p></HIS:hisSp>
+<lb/><p>Nej, nej, der er redning. Oribases vil –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><HIS:hisStage>(kort og afværgende.)</HIS:hisStage>
 <lb/><p>Fyrstinden dør. <HIS:hisStage>(går op og ned.)</HIS:hisStage> <HIS:hisAdd place="offline">Øjner du tråden i<lb/>dette, Sallust?</HIS:hisAdd><HIS:hisDel rend="overstrike">Den fjortend</HIS:hisDel>e.
-<lb/><HIS:hisDel rend="overstrike">Ja, ja, hvem ved &dash;! Ingen mand skulde tage en
+<lb/><HIS:hisDel rend="overstrike">Ja, ja, hvem ved –! Ingen mand skulde tage en
 <lb/>kristen kvinde til ægte</HIS:hisDel>.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><HIS:hisDel rend="overstrike"><speaker>Ridderen Sallust</speaker></HIS:hisDel></HIS:spOpener>
 <lb/><p><HIS:hisDel rend="overstrike">Hvorledes, herre</HIS:hisDel>?</p></HIS:hisSp>
@@ -673,89 +667,89 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <pb n="[345]v"/>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><HIS:hisDel rend="overstrike"><speaker>Cæsar Julian</speaker></HIS:hisDel></HIS:spOpener>
 <lb/><p><HIS:hisDel rend="overstrike">Nå, nå, du er ingen kristen. Du ser ikke hvor det
-<lb/>bærer hen. Men der skal ske ting som &dash;! Mor</HIS:hisDel>d,
+<lb/>bærer hen. Men der skal ske ting som –! Mor</HIS:hisDel>d,
 <lb/><HIS:hisDel rend="overstrike"><unclear>nu!</unclear> Fatter du gangen i dette, Sallust?</HIS:hisDel> <restore type="del" rend="subpunction"><HIS:hisDel rend="overstrike">En affældig
 <lb/>mand på tronen; lude</HIS:hisDel>nde</restore> over sin egen ligkiste;
-<lb/>børnløs, og så et håb om at se slægten forplantet &dash;
-<lb/>og dette håb gør han til intet &dash;</p></HIS:hisSp>
+<lb/>børnløs, og så et håb om at se slægten forplantet –
+<lb/>og dette håb gør han til intet –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Ridderen Sallust</speaker>.</HIS:spOpener>
-<lb/><p>O, om jeg turde tale. Ædle Cæsar, vær på din post &dash;
-<lb/><HIS:hisDel rend="overstrike">der truer dig farer som</HIS:hisDel> &dash; tro ingen; o, jeg beder
-<lb/>dig bønligt &dash; tro ingen.</p></HIS:hisSp>
+<lb/><p>O, om jeg turde tale. Ædle Cæsar, vær på din post –
+<lb/><HIS:hisDel rend="overstrike">der truer dig farer som</HIS:hisDel> – tro ingen; o, jeg beder
+<lb/>dig bønligt – tro ingen.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>Vær rolig, ven; alt skal for en dag. Decentius &dash;</p></HIS:hisSp>
+<lb/><p>Vær rolig, ven; alt skal for en dag. Decentius –</p></HIS:hisSp>
 <lb/><HIS:hisDel rend="overstrike"><HIS:hisSp who="EUTHERIOS"><HIS:spOpener><speaker>Husmesteren Eutherius</speaker></HIS:spOpener>
 <lb/><HIS:hisStage>(fra palatset.)</HIS:hisStage>
-<lb/><p>Jeg tror det er gørligt, herre; men det må ske straks &dash;</p></HIS:hisSp></HIS:hisDel>
+<lb/><p>Jeg tror det er gørligt, herre; men det må ske straks –</p></HIS:hisSp></HIS:hisDel>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><HIS:hisDel rend="overstrike"><speaker>Cæsar Julian</speaker></HIS:hisDel></HIS:spOpener>
 <lb/><p><HIS:hisDel rend="overstrike">Hvad må ske</HIS:hisDel>?</p></HIS:hisSp>
 <lb/><HIS:hisDel rend="overstrike"><HIS:hisSp who="EUTHERIOS"><HIS:spOpener><speaker>Husmesteren Eutherius</speaker></HIS:spOpener>
-<lb/><p>Flugten, som du bød &dash;</p></HIS:hisSp></HIS:hisDel>
+<lb/><p>Flugten, som du bød –</p></HIS:hisSp></HIS:hisDel>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><HIS:hisDel rend="overstrike"><speaker>Cæsar Julian</speaker></HIS:hisDel></HIS:spOpener>
-<lb/><p><HIS:hisDel rend="overstrike">Nu ikke &dash; jeg skælver ikke mere; det var ikke mig
+<lb/><p><HIS:hisDel rend="overstrike">Nu ikke – jeg skælver ikke mere; det var ikke mig
 <lb/>jeg skalv for</HIS:hisDel>.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="EUTHERIOS"><HIS:spOpener><HIS:hisDel rend="overstrike"><speaker>Husmesteren Eutherius</speaker></HIS:hisDel></HIS:spOpener>
-<lb/><p><HIS:hisDel rend="overstrike">Og dog, herre, er du i dødens fare</HIS:hisDel> &dash;</p></HIS:hisSp>
+<lb/><p><HIS:hisDel rend="overstrike">Og dog, herre, er du i dødens fare</HIS:hisDel> –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="DECENTIUS"><HIS:spOpener><speaker>Tribunen Decentius</speaker></HIS:spOpener>
 <lb/><HIS:hisStage>(kommer.)</HIS:hisStage>
 <lb/><p>Hvorledes skal jeg nærme mig Cæsars åsyn! Sønderknust,
 <lb/>o, om du kunde læse i mine indvolde; jeg sorgens
-<lb/>og ulykkens bud &dash;</p></HIS:hisSp>
+<lb/>og ulykkens bud –</p></HIS:hisSp>
 <pb ed="faksBase" n="161"/>
 <pb n="[346]r"/>
 <lb/><fw type="gathering" place="top-left"><gap reason="binding"/>1.</fw><fw type="leaf" place="top-right" scribe="h1">346</fw>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>J<HIS:hisDel rend="overwritten">eg</HIS:hisDel>a, det må du vel sige, <sic>æde</sic> Decentius! Og hvor&typHyp;
-<lb/>ledes skal jeg finde ord bløde og bøjelige og skånsel&typHyp;
+<lb/><p>J<HIS:hisDel rend="overwritten">eg</HIS:hisDel>a, det må du vel sige, <sic>æde</sic> Decentius! Og hvor‐
+<lb/>ledes skal jeg finde ord bløde og bøjelige og skånsel‐
 <lb/>fulde nok for at bringe dette i en tålelig form for
-<lb/>kejserens kærlige broderlige øre &dash;</p></HIS:hisSp>
+<lb/>kejserens kærlige broderlige øre –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="DECENTIUS"><HIS:spOpener><speaker>Tribunen Decentius</speaker>.</HIS:spOpener>
-<lb/><p>Usalig var den stund da valget faldt på mig &dash;</p></HIS:hisSp>
+<lb/><p>Usalig var den stund da valget faldt på mig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>En velsignelse i ulykken var dit valg, &dash; jeg mener
-<lb/>for freden og den gode forståelse i slægten; hav&typHyp;
+<lb/><p>En velsignelse i ulykken var dit valg, – jeg mener
+<lb/>for freden og den gode forståelse i slægten; hav‐
 <lb/>de han sendt en mindre utvivlsom mand, hvor
-<lb/>let kunde jeg ikke falde på at tro &dash;</p></HIS:hisSp>
+<lb/>let kunde jeg ikke falde på at tro –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="DECENTIUS"><HIS:spOpener><speaker><HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>Tribunen Decentius</speaker>.</HIS:spOpener>
-<lb/><p>Og nu &dash;! Just nu! Dette lynslag fra forjættelsernes
-<lb/>klare himmel &dash;</p></HIS:hisSp>
+<lb/><p>Og nu –! Just nu! Dette lynslag fra forjættelsernes
+<lb/>klare himmel –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Ja, denne skæbnens opdukkende og opslugende
-<lb/>Leviathan just som skibet var i havn &dash; o, o, o &dash;
-<lb/>ak, ak, ak &dash; &dash; sorgen gør os veltalende, Decentius, &dash;
+<lb/>Leviathan just som skibet var i havn – o, o, o –
+<lb/>ak, ak, ak – – sorgen gør os veltalende, Decentius, –
 <lb/>dig, som mig. Men først forretninger; de to Nubier
 <lb/>skal forhøres <HIS:hisDel rend="overstrike">S</HIS:hisDel></p></HIS:hisSp>
 <lb/><HIS:hisSp who="DECENTIUS"><HIS:spOpener><speaker>Tribunen Decentius</speaker>.</HIS:spOpener>
-<lb/><p>Herre, tror du min iver kunde tåle at de to upå&typHyp;
-<lb/>lidelige tjenere et øjeblik længere &dash;</p></HIS:hisSp>
+<lb/><p>Herre, tror du min iver kunde tåle at de to upå‐
+<lb/>lidelige tjenere et øjeblik længere –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker></HIS:spOpener>
 <lb/><p>Hvorledes?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="DECENTIUS"><HIS:spOpener><speaker>Tribunen Decentius</speaker>.</HIS:spOpener>
 <lb/><p>Min kærlighed til kejseren og til Cæsars hus var
-<lb/>i sandhed ringe ifald jeg ikke &dash;<xptr type="synopticView_msVersions" xml:id="KG_136ms"/></p></HIS:hisSp>
+<lb/>i sandhed ringe ifald jeg ikke –<xptr type="synopticView_msVersions" xml:id="KG_136ms"/></p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker></HIS:spOpener>
 <lb/><p>Du har ladet dem dræbe?</p></HIS:hisSp>
 <pb ed="faksBase" n="162"/>
 <pb n="[346]v"/>
 <lb/><HIS:hisSp who="DECENTIUS"><HIS:spOpener><speaker>Tribunen Decentius</speaker>.</HIS:spOpener>
 <lb/><p><HIS:hisDel rend="overstrike">Har de</HIS:hisDel> Har de ikke tifold fortjent døden, de efterlad<gap reason="endline"/>
-<lb/>&dash; lade så vigtige ting stå uden bevogtning &dash; tilgængelige
-<lb/>for enhver &dash;</p></HIS:hisSp>
+<lb/>– lade så vigtige ting stå uden bevogtning – tilgængelige
+<lb/>for enhver –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker></HIS:spOpener>
 <lb/><p>Aha, ja så!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="DECENTIUS"><HIS:spOpener><speaker>Tribunen Decentius</speaker>.</HIS:spOpener>
-<lb/><p>Jeg anklager ingen &dash; o, men Cæsar, du er omgiven af
-<lb/>utro tjenere &dash;</p></HIS:hisSp>
+<lb/><p>Jeg anklager ingen – o, men Cæsar, du er omgiven af
+<lb/>utro tjenere –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Ridderen Sallust</speaker>.</HIS:spOpener>
 <lb/><p>Herre!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="DECENTIUS"><HIS:spOpener><speaker>Tribunen Decentius</speaker></HIS:spOpener>
-<lb/><p>Dit hof &dash; hvilken usalig misforståelse &dash; må<note resp="editor"><q>å</q> mangler diakritisk tegn.</note> h<unclear reason="endline">ave</unclear>
-<lb/>troet at øjne en unåde fra kejserens side &dash;</p></HIS:hisSp>
+<lb/><p>Dit hof – hvilken usalig misforståelse – må<note resp="editor"><q>å</q> mangler diakritisk tegn.</note> h<unclear reason="endline">ave</unclear>
+<lb/>troet at øjne en unåde fra kejserens side –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker><HIS:hisDel rend="overstrike">Cæsar Juli</HIS:hisDel><unclear reason="writing">an</unclear></speaker></HIS:spOpener>
-<lb/><p><HIS:hisDel rend="overstrike">Rotterne, ja, ja</HIS:hisDel> &dash;</p></HIS:hisSp>
+<lb/><p><HIS:hisDel rend="overstrike">Rotterne, ja, ja</HIS:hisDel> –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="DECENTIUS"><HIS:spOpener><HIS:hisDel rend="overstrike"><speaker>Tribunen Decentius</speaker></HIS:hisDel>.</HIS:spOpener>
 <lb/><p><HIS:hisDel rend="overstrike">Jeg siger dig, herre, du har ikke en i dine omgivelser
-<lb/>du kan stole på</HIS:hisDel> &dash;</p></HIS:hisSp>
+<lb/>du kan stole på</HIS:hisDel> –</p></HIS:hisSp>
 <HIS:hisDel rend="overstrike"><lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker></HIS:spOpener>
 <lb/><p>Det ved jeg, det ved jeg kun altfor godt. Hvem har
 <lb/>været i <HIS:hisDel rend="overstrike">kejser<unclear>in</unclear></HIS:hisDel> fyrst<unclear>indens</unclear> forværelse idag?</p></HIS:hisSp>
@@ -784,24 +778,24 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><HIS:hisSp who="EUTHERIOS"><HIS:spOpener><speaker><HIS:hisDel rend="overstrike">Husmesteren Eutheriu</HIS:hisDel>s</speaker>.</HIS:spOpener>
 <lb/><p><HIS:hisDel rend="overstrike">Kejseren har ingen tid, herr</HIS:hisDel>e. Kejseren gifter sig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker><HIS:hisDel rend="overstrike">Cæsar Julia</HIS:hisDel>n</speaker>.</HIS:spOpener>
-<lb/><p><HIS:hisDel rend="overstrike">H<unclear>va</unclear>d skal det sige</HIS:hisDel> &dash;</p></HIS:hisSp>
+<lb/><p><HIS:hisDel rend="overstrike">H<unclear>va</unclear>d skal det sige</HIS:hisDel> –</p></HIS:hisSp>
 <HIS:hisDel rend="overstrike"><lb/><HIS:hisSp who="DECENTIUS"><HIS:spOpener><speaker>Tribunen Decentius</speaker></HIS:spOpener>
-<lb/><p>Ah, h<unclear>un har</unclear> vovet &dash;</p></HIS:hisSp></HIS:hisDel>
+<lb/><p>Ah, h<unclear>un har</unclear> vovet –</p></HIS:hisSp></HIS:hisDel>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker><HIS:hisDel rend="overstrike">Ridderen Sallus</HIS:hisDel>t</speaker></HIS:spOpener>
 <lb/><p><HIS:hisDel rend="overstrike">Jeg har intet sagt. Jeg har intet vidst; jeg ved inte</HIS:hisDel>t.</p></HIS:hisSp>
 <HIS:hisDel rend="overstrike"><lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker></HIS:spOpener>
-<lb/><p>Gifter sig &dash;? Decentius, er det sandt?</p></HIS:hisSp></HIS:hisDel>
+<lb/><p>Gifter sig –? Decentius, er det sandt?</p></HIS:hisSp></HIS:hisDel>
 <lb/><HIS:hisSp who="DECENTIUS"><HIS:spOpener><speaker><HIS:hisDel rend="overstrike">Tribunen Decentius</HIS:hisDel></speaker>.</HIS:spOpener>
-<lb/><p><HIS:hisDel rend="overstrike">Nu ja, herre cæsar, det er sandt &dash;</HIS:hisDel></p></HIS:hisSp>
+<lb/><p><HIS:hisDel rend="overstrike">Nu ja, herre cæsar, det er sandt –</HIS:hisDel></p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker><HIS:hisDel rend="overstrike">Cæsar Julian</HIS:hisDel></speaker>.</HIS:spOpener>
-<lb/><p><HIS:hisDel rend="overstrike">Kejseren gifter sig &dash; <unclear reason="smudge">ah<gap/></unclear> dette lyser op i meget</HIS:hisDel> &dash;
+<lb/><p><HIS:hisDel rend="overstrike">Kejseren gifter sig – <unclear reason="smudge">ah<gap/></unclear> dette lyser op i meget</HIS:hisDel> –
 <lb/><HIS:hisDel rend="overstrike">og hvem tager han til ægte?</HIS:hisDel></p></HIS:hisSp>
 <lb/><HIS:hisSp who="DECENTIUS"><HIS:spOpener><HIS:hisDel rend="overstrike"><speaker>Decentius</speaker></HIS:hisDel>.</HIS:spOpener>
-<lb/><p><HIS:hisDel rend="overstrike">Faustina, k<unclear>onsulens</unclear> søster</HIS:hisDel> &dash;</p></HIS:hisSp>
+<lb/><p><HIS:hisDel rend="overstrike">Faustina, k<unclear>onsulens</unclear> søster</HIS:hisDel> –</p></HIS:hisSp>
 <HIS:hisDel rend="overstrike"><lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker></HIS:spOpener>
 <lb/><p>Ung?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="DECENTIUS"><HIS:spOpener><speaker>Decentius</speaker></HIS:spOpener>
-<lb/><p>Atten år &dash;</p></HIS:hisSp>
+<lb/><p>Atten år –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker></HIS:spOpener>
 <lb/><p>Og kristen <unclear>naturligvis</unclear>?</p></HIS:hisSp></HIS:hisDel>
 <pb ed="faksBase" n="164"/>
@@ -809,68 +803,68 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><HIS:hisSp who="DECENTIUS"><HIS:spOpener><HIS:hisDel rend="overstrike"><speaker>Decentius</speaker></HIS:hisDel></HIS:spOpener>
 <lb/><p><HIS:hisDel rend="overstrike">Forstår <gap/> sig, herre</HIS:hisDel>!</p></HIS:hisSp>
 <HIS:hisDel rend="overstrike"><lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. J.</speaker></HIS:spOpener>
-<lb/><p>Forstår sig &dash; forstår sig. Kristen &dash; <HIS:hisStage>(ler)</HIS:hisStage> Ættens
-<lb/>forplantelse er sik<unclear>kret</unclear> &dash; men hvorfor har du
-<lb/>intet sagt &dash;</p></HIS:hisSp></HIS:hisDel>
+<lb/><p>Forstår sig – forstår sig. Kristen – <HIS:hisStage>(ler)</HIS:hisStage> Ættens
+<lb/>forplantelse er sik<unclear>kret</unclear> – men hvorfor har du
+<lb/>intet sagt –</p></HIS:hisSp></HIS:hisDel>
 <note resp="editor">Regnestykker.</note>
 <lb/><HIS:hisSp who="DECENTIUS"><HIS:spOpener><HIS:hisDel rend="overstrike"><speaker>Decent</speaker></HIS:hisDel></HIS:spOpener>
-<lb/><p><HIS:hisDel rend="overstrike">Jeg havde ingen ordre</HIS:hisDel> &dash;</p></HIS:hisSp>
+<lb/><p><HIS:hisDel rend="overstrike">Jeg havde ingen ordre</HIS:hisDel> –</p></HIS:hisSp>
 <HIS:hisDel rend="overstrike"><lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. J.</speaker></HIS:spOpener>
-<lb/><p>Kejseren gifter sig &dash; Sallust, hvad sagde du? Nå &dash;
-<lb/>tilgiv mig, Eutherius &dash; hør, svar mig på en ting,
-<lb/>har nogen vidst min hustrus tilstand før idag &dash;</p></HIS:hisSp></HIS:hisDel>
+<lb/><p>Kejseren gifter sig – Sallust, hvad sagde du? Nå –
+<lb/>tilgiv mig, Eutherius – hør, svar mig på en ting,
+<lb/>har nogen vidst min hustrus tilstand før idag –</p></HIS:hisSp></HIS:hisDel>
 <lb/><HIS:hisSp who="EUTHERIOS"><HIS:spOpener><HIS:hisDel rend="overstrike"><speaker>Husmesteren Euth</speaker></HIS:hisDel></HIS:spOpener>
 <lb/><p><HIS:hisDel rend="overstrike">Jeg tror du har været den sidste som erfor d</HIS:hisDel>en</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><HIS:hisDel rend="overstrike"><speaker>C. Julian</speaker></HIS:hisDel></HIS:spOpener>
-<lb/><p><HIS:hisDel rend="overstrike">Ja, ja, ja &dash; &dash; og de to <HIS:hisDel rend="overwritten">n</HIS:hisDel>Nubere er hugget ned &dash;
-<lb/>kom, kom, Euthe</HIS:hisDel>erius &dash;</p></HIS:hisSp>
+<lb/><p><HIS:hisDel rend="overstrike">Ja, ja, ja – – og de to <HIS:hisDel rend="overwritten">n</HIS:hisDel>Nubere er hugget ned –
+<lb/>kom, kom, Euthe</HIS:hisDel>erius –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SINTULA"><HIS:spOpener><speaker>Staldmesteren Scintula</speaker></HIS:spOpener>
 <lb/><HIS:hisStage>(kommer)</HIS:hisStage>
 <lb/><p>Herre, du har givet mig et hverv, som jeg ikke magter</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. Julian</speaker></HIS:spOpener>
-<lb/><p>K<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>ejseren har givet dig hvervet &dash;</p></HIS:hisSp>
+<lb/><p>K<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>ejseren har givet dig hvervet –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SINTULA"><HIS:spOpener><speaker>Stalmester Sintula</speaker></HIS:spOpener>
-<lb/><p>Tag det fra mig, jeg er det ikke voksen &dash;</p></HIS:hisSp>
+<lb/><p>Tag det fra mig, jeg er det ikke voksen –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="DECENTIUS"><HIS:spOpener><speaker>Decentius</speaker>.</HIS:spOpener>
-<lb/><p>Hvad er hændt &dash;</p></HIS:hisSp>
+<lb/><p>Hvad er hændt –</p></HIS:hisSp>
 <note resp="editor">Regnestykker.</note>
 <lb/><HIS:hisSp who="SINTULA"><HIS:spOpener><speaker>Sintula</speaker></HIS:spOpener>
-<lb/><p>Lejren er i voldsomt røre &dash;</p></HIS:hisSp>
+<lb/><p>Lejren er i voldsomt røre –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="DECENTIUS"><HIS:spOpener><speaker>Decentius</speaker>.</HIS:spOpener>
-<lb/><p>Opsætsighed mod kejserens befalinger &dash; <HIS:hisDel rend="overstrike">høje Cæsar
-<lb/>jeg beder dig ydmygst &dash;</HIS:hisDel></p></HIS:hisSp>
+<lb/><p>Opsætsighed mod kejserens befalinger – <HIS:hisDel rend="overstrike">høje Cæsar
+<lb/>jeg beder dig ydmygst –</HIS:hisDel></p></HIS:hisSp>
 <pb ed="faksBase" n="165"/>
 <pb n="[348]r"/>
 <lb/><fw type="gathering" place="top-left">12.</fw><fw type="leaf" place="top-right" scribe="h1">348</fw>
 <note resp="editor">Regnestykker.</note>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker><HIS:hisDel rend="overstrike">Cæsar Julian</HIS:hisDel></speaker>.</HIS:spOpener>
-<lb/><p><HIS:hisDel rend="overstrike">Træd selv op; jeg har ingen myndighed mer</HIS:hisDel>e &dash;</p></HIS:hisSp>
+<lb/><p><HIS:hisDel rend="overstrike">Træd selv op; jeg har ingen myndighed mer</HIS:hisDel>e –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="DECENTIUS"><HIS:spOpener><speaker><HIS:hisDel rend="overstrike">Decenti</HIS:hisDel>us</speaker>.</HIS:spOpener>
 <lb/><p><HIS:hisDel rend="overstrike">Da, herre, er jeg nødt til at sætte alle omsvøb til
-<lb/>side og erklære dig rent ud &dash;</HIS:hisDel></p></HIS:hisSp>
+<lb/>side og erklære dig rent ud –</HIS:hisDel></p></HIS:hisSp>
 <note resp="editor">Regnestykker.</note>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><HIS:hisDel rend="overstrike"><speaker>C. Julian</speaker></HIS:hisDel></HIS:spOpener>
 <lb/><p><HIS:hisDel rend="overstrike">Nu</HIS:hisDel>?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="DECENTIUS"><HIS:spOpener><speaker><HIS:hisDel rend="overstrike">Decentius</HIS:hisDel></speaker>.</HIS:spOpener>
 <lb/><p><HIS:hisDel rend="overstrike">Enten sørger du for at de forlangte hærafdelinger
-<lb/>drager bort og tilføres kejseren &dash; eller</HIS:hisDel> &dash;</p></HIS:hisSp>
+<lb/>drager bort og tilføres kejseren – eller</HIS:hisDel> –</p></HIS:hisSp>
 <lb/><HIS:hisDel rend="overstrike"><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. Julian</speaker></HIS:spOpener>
-<lb/><p>Eller &dash;? Ud med det</p></HIS:hisSp></HIS:hisDel>
+<lb/><p>Eller –? Ud med det</p></HIS:hisSp></HIS:hisDel>
 <lb/><HIS:hisSp who="DECENTIUS"><HIS:spOpener><speaker>Decentius</speaker></HIS:spOpener>
-<lb/><p>Eller &dash; ja, herre, jeg har min befaling at gå
-<lb/>efter &dash; <HIS:hisDel rend="overstrike">jeg</HIS:hisDel> hvis jeg ser at Cæsar ikke længere
-<lb/>mægter at tøjle hæren &dash; så må jeg i bekymring
-<lb/>for Cæsars liv &dash;</p></HIS:hisSp>
+<lb/><p>Eller – ja, herre, jeg har min befaling at gå
+<lb/>efter – <HIS:hisDel rend="overstrike">jeg</HIS:hisDel> hvis jeg ser at Cæsar ikke længere
+<lb/>mægter at tøjle hæren – så må jeg i bekymring
+<lb/>for Cæsars liv –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. Julian</speaker></HIS:spOpener>
 <lb/><p>Bringe mig for kejseren?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="DECENTIUS"><HIS:spOpener><speaker>Decentius</speaker></HIS:spOpener>
-<lb/><p>Under sikker bevogtning <sic>here</sic> &dash;</p></HIS:hisSp>
+<lb/><p>Under sikker bevogtning <sic>here</sic> –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker><HIS:hisDel rend="overstrike">Ridderen Sallust</HIS:hisDel></speaker></HIS:spOpener>
-<lb/><p><HIS:hisDel rend="overstrike">Nådigste herre, det yderste må forsøge</HIS:hisDel>s &dash;</p></HIS:hisSp>
+<lb/><p><HIS:hisDel rend="overstrike">Nådigste herre, det yderste må forsøge</HIS:hisDel>s –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="EUTHERIOS"><HIS:spOpener><speaker><HIS:hisDel rend="overstrike">Euthe</HIS:hisDel>rius</speaker></HIS:spOpener>
-<lb/><p><HIS:hisDel rend="overstrike">Dyrebare herre &dash; alt står på spil</HIS:hisDel> &dash;</p></HIS:hisSp>
+<lb/><p><HIS:hisDel rend="overstrike">Dyrebare herre – alt står på spil</HIS:hisDel> –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SINTULA"><HIS:spOpener><speaker><HIS:hisDel rend="overstrike">Sintul</HIS:hisDel>a</speaker></HIS:spOpener>
-<lb/><p><restore type="del" rend="subpunction"><HIS:hisDel rend="overstrike">Hør, hør &dash; disse skrig</HIS:hisDel> &dash;</restore></p></HIS:hisSp>
+<lb/><p><restore type="del" rend="subpunction"><HIS:hisDel rend="overstrike">Hør, hør – disse skrig</HIS:hisDel> –</restore></p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker><HIS:hisDel rend="overstrike">C. Julia</HIS:hisDel>n</speaker>.</HIS:spOpener>
 <lb/><p><HIS:hisDel rend="overstrike">Hvor er opløbet st<unclear>ort</unclear></HIS:hisDel>.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SINTULA"><HIS:spOpener><HIS:hisDel rend="overstrike"><speaker>Sintula</speaker></HIS:hisDel></HIS:spOpener>
@@ -878,28 +872,28 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <pb ed="faksBase" n="166"/>
 <pb n="[348]v"/>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. Julian</speaker>.</HIS:spOpener>
-<lb/><p>Til badepladsen, I venner &dash;</p></HIS:hisSp>
+<lb/><p>Til badepladsen, I venner –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="EUTHERIOS"><HIS:spOpener><speaker>Eutherius</speaker>.</HIS:spOpener>
 <lb/><p>Herre!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SINTULA"><HIS:spOpener><speaker>Sintula</speaker>.</HIS:spOpener>
 <lb/><p>Vogt dig, nådige Cæsar; det er at gå lige ind i løvens
-<lb/>hule &dash;</p></HIS:hisSp>
+<lb/>hule –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. Julian</speaker>.</HIS:spOpener>
 <lb/><p>Ah, hvilket minde! <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>Falder jeg, Decentius, da skal
 <lb/>du vidne at Cæsar gjorde sin pligt til det sidste.</p></HIS:hisSp>
 <lb/><HIS:hisStage>(ud til venstre; de andre følger ham.)</HIS:hisStage>
 <lb/><figure type="bar"/>
-<lb/><HIS:hisStage>(Stor lejrplads udenfor staden. Telte, vogne og krigsred&typHyp;
+<lb/><HIS:hisStage>(Stor lejrplads udenfor staden. Telte, vogne og krigsred‐
 <lb/>skaber rundt omkring.)</HIS:hisStage>
 <lb/><HIS:hisStage>(Romerske legions-soldater, Bataviske hjælpetropper og andre
 <lb/>bundsforvandte, kvinder og børn i store støjende klynger.)</HIS:hisStage>
 <lb/><HIS:hisSp who="MAUROS"><HIS:spOpener><speaker>Hastaten Maurus</speaker>.</HIS:spOpener>
-<lb/><p>Gør det fort, siger jeg; her er ikke tid at spilde &dash;</p></HIS:hisSp>
+<lb/><p>Gør det fort, siger jeg; her er ikke tid at spilde –</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>En kvinde</speaker>.</HIS:spOpener>
-<lb/><p>O, vær dog barmhjertig &dash; jeg må sige ham det sidste
-<lb/>farvel &dash;</p></HIS:hisSp>
+<lb/><p>O, vær dog barmhjertig – jeg må sige ham det sidste
+<lb/>farvel –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAUROS"><HIS:spOpener><speaker>Hastaten Maurus</speaker>.</HIS:spOpener>
-<lb/><p>Det har du nu gjort ti gange &dash; afsted, afsted &dash;</p></HIS:hisSp>
+<lb/><p>Det har du nu gjort ti gange – afsted, afsted –</p></HIS:hisSp>
 <pb ed="faksBase" n="167"/>
 <pb n="[349]r"/>
 <lb/><fw type="leaf" place="top-right" scribe="h1">349</fw>

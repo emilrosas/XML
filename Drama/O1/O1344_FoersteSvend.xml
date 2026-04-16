@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -16,8 +10,8 @@
 <title level="a" type="sub">første hovedversjon, TarkUiB NT344r (rollehefte, Første Svend)</title>
 <title level="a" type="origYear">1856</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Bjørg Harvey, Helene Grønlien, Ellen Nessheim Wiger</name></respStmt>
 <respStmt>
 <resp>Kodeteknisk støtte og utvikling</resp>
@@ -65,7 +59,7 @@
 <title type="sub">Skuespil i 3 Akter</title>
 <docDate>1856</docDate>
 </msItem>
-<msItem n="FoersteSvend"><locus>10 s</locus><title>Første Svend, hos Fru Kirsten, i &lquo;Olaf Liliekrands.&rquo; Skuespil i 3 Akter. af Henr: Ibsen.</title></msItem>
+<msItem n="FoersteSvend"><locus>10 s</locus><title>Første Svend, hos Fru Kirsten, i «Olaf Liliekrands.» Skuespil i 3 Akter. af Henr: Ibsen.</title></msItem>
 </msContents>
 <physDesc><objectDesc><p>Rollehefte, ikke egenhendig. Se forøvrig Tone Modalslis manuskriptbeskrivelse.</p></objectDesc></physDesc>
 </HIS:hisMsDesc>
@@ -73,7 +67,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <list>
@@ -331,8 +325,8 @@
 </item>
 </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -347,7 +341,7 @@
 <label>THORGJERD</label><item>-/Thorgjerd, Thorgj, Thorg/Thorgjerd<note>Rolleheftene til Thorgjerd og Arne mangler; id-attributt for disse er derfor lagt inn i sp/stageRole ved første forekomst (replikk eller stageRole).</note></item>
 </list>
 </tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -453,7 +447,7 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><titlePart type="main">Første Svend,
 <lb/>hos Fru Kirsten,
 <lb/>i
-<lb/>&lquo;Olaf Liliekrands.&rquo;</titlePart>
+<lb/>«Olaf Liliekrands.»</titlePart>
 <lb/><titlePart type="desc">Skuespil i 3 Akter.</titlePart></docTitle>
 <byline>
 <lb/>af
@@ -475,20 +469,20 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 </div>
 <div type="scene" n="3">
 <lb/><head>3<hi rend="raised">die</hi> Scene.</head>
-<lb/><HIS:hisSp><HIS:spOpener><speaker/> <HIS:hisStage>(komme med Fru Kirsten fra ven&typHyp;
+<lb/><HIS:hisSp><HIS:spOpener><speaker/> <HIS:hisStage>(komme med Fru Kirsten fra ven‐
 <lb/>stre Side.)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
-<lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fruen</speaker>.</HIS:spOpener><p>&dash; med vort Ærinde heroppe!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fruen</speaker>.</HIS:spOpener><p>– med vort Ærinde heroppe!</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker/> <HIS:hisStage>(<hi>En</hi> Svend.)</HIS:hisStage></HIS:spOpener><p>Det kan I lide paa!</p></HIS:hisSp>
 </div>
 <div type="scene" n="4">
 <lb/><head>4<hi rend="raised">d</hi> Scene.</head>
 <lb/><HIS:hisStage>De Forrige. Ingeborg.</HIS:hisStage>
-<lb/><HIS:hisSp><HIS:spOpener><speaker>Gjæsterne</speaker>.</HIS:spOpener><p>&dash; Hævn over Liliekransætten!</p></HIS:hisSp>
-<lb/><HIS:hisSp><HIS:spOpener><speaker/> <HIS:hisStage>(som hæve Øxerne og sætte sig til Mod&typHyp;
-<lb/>værge.)</HIS:hisStage></HIS:spOpener><p>Slaa til! Ned med Mæn&typHyp;
+<lb/><HIS:hisSp><HIS:spOpener><speaker>Gjæsterne</speaker>.</HIS:spOpener><p>– Hævn over Liliekransætten!</p></HIS:hisSp>
+<lb/><HIS:hisSp><HIS:spOpener><speaker/> <HIS:hisStage>(som hæve Øxerne og sætte sig til Mod‐
+<lb/>værge.)</HIS:hisStage></HIS:spOpener><p>Slaa til! Ned med Mæn‐
 <lb/>dene fra Guldvik!</p></HIS:hisSp>
-<lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener><p>&dash; seer I ikke, hvem det er?</p></HIS:hisSp>
-<lb/><HIS:hisSp><HIS:spOpener><speaker/> <HIS:hisStage>(hviskende mellem hverandre.)</HIS:hisStage></HIS:spOpener><p>Thor&typHyp;
+<lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener><p>– seer I ikke, hvem det er?</p></HIS:hisSp>
+<lb/><HIS:hisSp><HIS:spOpener><speaker/> <HIS:hisStage>(hviskende mellem hverandre.)</HIS:hisStage></HIS:spOpener><p>Thor‐
 <pb/>
 <lb/>gjerd Spillemand! Den gale Thorgjerd!</p></HIS:hisSp>
 </div>
@@ -499,20 +493,20 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <div type="scene" n="6">
 <lb/><head>6<hi rend="raised">te</hi> Scene</head>
 <lb/><HIS:hisStage>De Forrige uden Thorgjerd.</HIS:hisStage>
-<lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener><p>&dash; Imorgen drikke vi Bryllup!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener><p>– Imorgen drikke vi Bryllup!</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker/> <HIS:hisStage>(gaa i forskjellige Grupper ud til
 <lb/>begge Sider.)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
 </div>
 <div type="scene" n="12">
 <lb/><head>12<hi rend="raised">te</hi> Scene.</head>
 <lb/><HIS:hisStage>Olaf. Alfhild. Fru Kirsten.</HIS:hisStage>
-<lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener><p>&dash; vakt mig, nu er Alting ude!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener><p>– vakt mig, nu er Alting ude!</p></HIS:hisSp>
 </div>
 <div type="scene" n="13">
 <lb/><head>13<hi rend="raised">de</hi>Scene</head>
 <lb/><HIS:hisSp><HIS:spOpener><speaker/> <HIS:hisStage>(komme fra Venstre med Arne,
 <lb/>Ingeborg, Hemming m. Fl.)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
-<lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener><p>&dash; tage Vare derpaa.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener><p>– tage Vare derpaa.</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker/> <HIS:hisStage>(gaa med de Andre ud til Venstre.)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
 <lb/><figure type="bar"/>
 </div>
@@ -524,7 +518,7 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><head>1<hi rend="raised">te</hi> Scene.</head>
 <lb/><HIS:hisSp><HIS:spOpener><speaker/> <HIS:hisStage>(beskjæftigede med Tilberedelser til
 <lb/>Festen.)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
-<lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fruen</speaker>.</HIS:spOpener><p>&dash; fat Jer til, hver især.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fruen</speaker>.</HIS:spOpener><p>– fat Jer til, hver især.</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker/> <HIS:hisStage>(gaar.)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
 </div>
 <div type="scene" n="8">
@@ -534,10 +528,10 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 </div>
 <div type="scene" n="9">
 <lb/><head>9<hi rend="raised">de</hi> Scene.</head>
-<lb/><HIS:hisSp><HIS:spOpener><speaker/> <HIS:hisStage>(komme efterhaanden ind fra forskjel&typHyp;
+<lb/><HIS:hisSp><HIS:spOpener><speaker/> <HIS:hisStage>(komme efterhaanden ind fra forskjel‐
 <lb/>lige Sider med Olaf, Ingeborg, Fruen,
 <lb/>med Flere.)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
-<lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener><p>&dash; vee, nu forstaar jeg &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener><p>– vee, nu forstaar jeg –</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker/></HIS:spOpener><p>Hemming og Alfhild! Fjeldjenten!</p>
 <lb/><HIS:hisStage>(Latter og Hvisken.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener><p>Beskjæmmet!</p></HIS:hisSp>
@@ -550,43 +544,43 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener><p>Her er jeg!</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker/></HIS:spOpener><p>Hvordan, hun tager Olaf!</p></HIS:hisSp>
 <lb/><HIS:hisStage>(Almindelig Forbauselse.)</HIS:hisStage>
-<lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fruen</speaker>.</HIS:spOpener><p>&dash; hende det selv, min Søn!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fruen</speaker>.</HIS:spOpener><p>– hende det selv, min Søn!</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker/> <HIS:hisStage>(see forlegne paa hinanden.)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
-<lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener><p>&dash; Du er en listig Hund.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener><p>– Du er en listig Hund.</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker/> <HIS:hisStage>(gaar ud tilvenstre.)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
 </div>
 <div type="scene" n="11">
 <lb/><head>11<hi rend="raised">te</hi> Scene</head>
-<lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener><p>&dash; er mig falsk eller god!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener><p>– er mig falsk eller god!</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker/> <HIS:hisStage>(komme efter en liden Pause fra
 <lb/>Venstre med Fakler.)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
-<lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener><p>&dash; Hvad skal der skee?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener><p>– Hvad skal der skee?</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker/></HIS:spOpener><p>Ei, see, see! Det er jo Alfhild; hun
 <lb/>er her endnu!</p></HIS:hisSp>
 <pb/>
-<lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener><p>&dash; hvad skal gaa for sig?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener><p>– hvad skal gaa for sig?</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker/></HIS:spOpener><p>Vielsen! Har du ikke Lyst til at
 <lb/>see derpaa?</p></HIS:hisSp>
-<lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener><p>&dash; forbi for mig, jeg veed det!</p></HIS:hisSp>
-<lb/><HIS:hisSp><HIS:spOpener><speaker/></HIS:spOpener><p>Vente! Nei, Alfhild! det er nok hver&typHyp;
+<lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener><p>– forbi for mig, jeg veed det!</p></HIS:hisSp>
+<lb/><HIS:hisSp><HIS:spOpener><speaker/></HIS:spOpener><p>Vente! Nei, Alfhild! det er nok hver‐
 <lb/>ken efter Brudgommens eller Brudens
 <lb/>Sind!</p></HIS:hisSp>
-<lb/><HIS:hisSp><HIS:spOpener><speaker>2<hi rend="raised">den</hi> Karl</speaker>.</HIS:spOpener><p>&dash; du nok ikke vente!</p></HIS:hisSp>
+<lb/><HIS:hisSp><HIS:spOpener><speaker>2<hi rend="raised">den</hi> Karl</speaker>.</HIS:spOpener><p>– du nok ikke vente!</p></HIS:hisSp>
 <lb/><HIS:hisStage>(Latter.)</HIS:hisStage>
 <lb/><HIS:hisSp><HIS:spOpener><speaker/></HIS:spOpener><p>Nu skal vi ned til Kirkeporten og
-<lb/>lyse med de røde Brudeblus, naar Føl&typHyp;
+<lb/>lyse med de røde Brudeblus, naar Føl‐
 <lb/>get rider fra Gaarden.</p></HIS:hisSp>
-<lb/><HIS:hisSp><HIS:spOpener><speaker>2<hi rend="raised">den</hi> Karl</speaker>.</HIS:spOpener><p>&dash; et Blus at bære!</p></HIS:hisSp>
+<lb/><HIS:hisSp><HIS:spOpener><speaker>2<hi rend="raised">den</hi> Karl</speaker>.</HIS:spOpener><p>– et Blus at bære!</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker/> <HIS:hisStage>(og Flere.)</HIS:hisStage></HIS:spOpener><p>Ja ja, det maa du! Det
 <lb/>er jo Hr: Olafs Hædersdag! <HIS:hisStage>(Latter.)</HIS:hisStage></p></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener><p>Siig, at I troe det!</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker/> <HIS:hisStage>(og Alle.)</HIS:hisStage></HIS:spOpener><p>Ha, ha, ha! Det vil han
 <pb/>
-<lb/>vist, &dash; kom nu! <HIS:hisStage>(Ud tilhøire bag Huset.)</HIS:hisStage></p></HIS:hisSp>
-<lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener><p>&dash; paa Brudgommens Arm!</p></HIS:hisSp>
+<lb/>vist, – kom nu! <HIS:hisStage>(Ud tilhøire bag Huset.)</HIS:hisStage></p></HIS:hisSp>
+<lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener><p>– paa Brudgommens Arm!</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker/> <HIS:hisStage>(styrte efterhaanden ind uden Fakler
 <lb/>og blive som forstenet staaende.)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
-<lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener><p>&dash; Brudeblusset ved dit Gilde!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener><p>– Brudeblusset ved dit Gilde!</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker/> <HIS:hisStage>(styrte til for at hjælpe ved det brændende
 <lb/>Brudehuus.)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
 </div>
@@ -596,19 +590,19 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <div type="scene" n="5">
 <lb/><head>5<hi rend="raised">te</hi> Scene.</head>
 <lb/><HIS:hisStage>Ingeborg. Olaf.</HIS:hisStage>
-<lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener><p>&dash; bare ikke for Alteret.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener><p>– bare ikke for Alteret.</p></HIS:hisSp>
 </div>
 <div type="scene" n="6">
 <lb/><head>6<hi rend="raised">te</hi> Scene.</head>
 <lb/><HIS:hisSp><HIS:spOpener><speaker/> <HIS:hisStage>(kommer fra Høire med Fru Kirsten,
 <lb/>Arne, Slægtninge o. Fl:)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
-<lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fruen</speaker>.</HIS:spOpener><p>&dash; følge Lyden til vi samles.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fruen</speaker>.</HIS:spOpener><p>– følge Lyden til vi samles.</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker/> <HIS:hisStage>(gaar til forskjellige Sider.)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
 </div>
 <div type="scene" n="7">
 <lb/><head>7<hi rend="raised">de</hi> Scene.</head>
 <pb/>
-<lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener><l>&dash; er kun Gravens Læ!</l></HIS:hisSp>
+<lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener><l>– er kun Gravens Læ!</l></HIS:hisSp>
 </div>
 <div type="scene" n="8">
 <lb/><head>8<hi rend="raised">de</hi> Scene.</head>
@@ -618,10 +612,10 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><HIS:hisSp><HIS:spOpener><speaker/> <HIS:hisStage>(og flere Karle binde Alfhild.)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fruen</speaker>.</HIS:spOpener><p>Før hende op paa Fjeldstupet!</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker/> <HIS:hisStage>(og 2<hi rend="raised">den</hi> Karl føre Alfhild op.)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
-<lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fruen</speaker>.</HIS:spOpener><p>&dash; derved stiger i Priis!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fruen</speaker>.</HIS:spOpener><p>– derved stiger i Priis!</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker/> <HIS:hisStage>(sætter en Krone paa Alfhilds Hoved.)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
-<lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fruen</speaker>.</HIS:spOpener><p>&dash; frelser og ægter hende?</p></HIS:hisSp>
-<lb/><HIS:hisStage>(Alle tie. Fruen giver et Tegn; <HIS:stageRole>Kar&typHyp;
+<lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fruen</speaker>.</HIS:spOpener><p>– frelser og ægter hende?</p></HIS:hisSp>
+<lb/><HIS:hisStage>(Alle tie. Fruen giver et Tegn; <HIS:stageRole>Kar‐
 <lb/>lene</HIS:stageRole> gribe Alfhild for at styrte hende
 <lb/>ud; <HIS:stageRole who="OLAF">Olaf</HIS:stageRole> kommer og støder dem bort.)</HIS:hisStage>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener><p>frelser og ægter hende!</p></HIS:hisSp>
@@ -634,12 +628,12 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><head>9<hi rend="raised">de</hi> Scene</head>
 <lb/><HIS:hisStage>Ingeborg og Hemming komme.</HIS:hisStage>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener><p>Hemming har fundet mig!</p></HIS:hisSp>
-<lb/><HIS:hisSp><HIS:spOpener><speaker/></HIS:spOpener><p>Ingeborg og Hemming. &dash; Heroppe!</p></HIS:hisSp>
+<lb/><HIS:hisSp><HIS:spOpener><speaker/></HIS:spOpener><p>Ingeborg og Hemming. – Heroppe!</p></HIS:hisSp>
 </div>
 <div type="scene" n="10">
 <lb/><head>10<hi rend="raised">d</hi> Scene</head>
 <lb/><HIS:hisStage>De Forrige. Thorgjerd.</HIS:hisStage>
-<lb/><HIS:hisSp who="THORGJERD"><HIS:spOpener><speaker>Thorgjerd</speaker>.</HIS:spOpener><p>&dash; folksomt i Dalen idag!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="THORGJERD"><HIS:spOpener><speaker>Thorgjerd</speaker>.</HIS:spOpener><p>– folksomt i Dalen idag!</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker/></HIS:spOpener><p>Thorgjerd Spillemand!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener><p>Min Fader!</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker/></HIS:spOpener><p>Hendes Fader!</p></HIS:hisSp>

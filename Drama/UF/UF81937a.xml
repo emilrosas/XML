@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -13,11 +7,11 @@
 <title level="s" type="main">Henrik Ibsens skrifter</title>
 <title level="s" type="sub">Diplomatarisk tekstarkiv</title>
 <title level="a" type="main">[De unges Forbund] (kladd til vedlegg i tapt brev)</title>
-<title level="a" type="sub">NBO Ms.8&deg; 1937a</title>
+<title level="a" type="sub">NBO Ms.8° 1937a</title>
 <title level="a" type="origYear">udatert</title>
 <author>[Henrik Ibsen]</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Stine Brenna Taugbøl, Ellen Nessheim Wiger</name></respStmt>
 <respStmt>
 <resp>Transkripsjon fra faksimile, august 2001</resp>
@@ -52,20 +46,20 @@
 <msIdentifier>
 <settlement>Oslo</settlement>
 <repository>Nasjonalbiblioteket, avdeling Oslo</repository>
-<idno>NBO Ms.8&deg; 1937a</idno>
+<idno>NBO Ms.8° 1937a</idno>
 </msIdentifier>
 <msContents><msItem>
 <author>[Henrik Ibsen]</author>
 <title>Uten tittel</title>
 <docDate>Udatert</docDate>
 </msItem></msContents>
-<physDesc><objectDesc><p>Arbeidsmanuskript, egenhendig, ett blad. Kladd til vedlegg i tapt brev (rollebesetning med ønsker om skuespillere til oppsetning av &lquo;De unges Forbund&rquo;). På motsatt side et arbeidsmanuskript (notater til forord) til &lquo;Kejser og Galilæer&rquo; (KG81937a). Se for øvrig Tone Modalslis manuskriptbeskrivelse.</p></objectDesc></physDesc>
+<physDesc><objectDesc><p>Arbeidsmanuskript, egenhendig, ett blad. Kladd til vedlegg i tapt brev (rollebesetning med ønsker om skuespillere til oppsetning av «De unges Forbund»). På motsatt side et arbeidsmanuskript (notater til forord) til «Kejser og Galilæer» (KG81937a). Se for øvrig Tone Modalslis manuskriptbeskrivelse.</p></objectDesc></physDesc>
 </HIS:hisMsDesc>
 </p>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <list>
@@ -85,8 +79,8 @@
 </item>
 </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -112,7 +106,7 @@
 <label>MADAM-R-PIGE</label><item>En pige</item>
 </list>
 </tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 </encodingDesc>
 <profileDesc>
@@ -183,26 +177,26 @@ Transkriberte tekst fra faksimile. Foreløpig kodet som rolleliste. Ikke valider
 <pb ed="source" type="folio_nopagination" subtype="recto" n="1" facs="1" gathering="1"/>
 <HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="UF_355ms"/>
 <lb/><HIS:hisCastList><head>Rollebesættning.</head>
-<lb/><castItem xml:id="KAMMERHERREN">Kammerherre Brattsberg &dash; &dash; <actor>Wolf</actor>.</castItem>
-<lb/><castItem xml:id="ERIK">Erik Brattsberg, hans Søn, <HIS:hisAdd place="inline">Cand. ju<unclear reason="writing">r</unclear>, Gross<unclear reason="writing">erer</unclear> &dash;</HIS:hisAdd> <actor>Abelsted</actor>.</castItem>
-<lb/><castItem xml:id="THORA">Thora, Kammerherrens Datter &dash; <actor>Fru Juel</actor>.</castItem>
-<lb/><castItem xml:id="SELMA">Selma, Erik Brattsbergs Frue &dash; <actor>Fru Gundersen</actor>.</castItem>
-<lb/><castItem xml:id="FJELDBO">Doktor Fjeldbo, Værkslæge &dash; &dash; <actor>Gundersen</actor>.</castItem>
-<lb/><castItem xml:id="STENSGAARD">Sagfører Stensgaard &dash; &dash; <actor>Reimers</actor>.</castItem>
-<lb/><castItem xml:id="MONSEN">Proprietær Monsen &dash; &dash; <actor>Bucher</actor>.</castItem>
-<lb/><castItem xml:id="BASTIAN">Bastian Monsen &dash; &dash; <actor>Selmer</actor>.</castItem>
-<lb/><castItem xml:id="RAGNA">Ragna &dash; &dash; &dash; <actor>Fru Isachsen</actor>.</castItem>
-<lb/><castItem xml:id="HELLE">Kandidat Helle &dash; &dash; <actor>H. Brun</actor>.</castItem>
-<lb/><castItem xml:id="RINGDAL"><HIS:hisAdd place="inline">Værksf<gap reason="writing"/></HIS:hisAdd> Ringdal &dash; &dash; <actor><HIS:hisDel rend="overstrike">Juel</HIS:hisDel><HIS:hisDel rend="overwritten">.</HIS:hisDel>Nilsen</actor></castItem>
-<lb/><castItem xml:id="LUNDESTAD">Gaardbruger Lundestad &dash; <actor>Isachsen</actor>.</castItem>
-<lb/><castItem xml:id="HEJRE">Daniel Hejre &dash; &dash; <actor>J. Brun</actor>.</castItem>
-<lb/><castItem xml:id="MADAM-R">Madam Rundholmen &dash; <actor>Fru Wolf</actor>.</castItem>
-<lb/><castItem xml:id="ASLAKSEN">Bogtrykker Aslaksen &dash; <actor>Juel</actor>.</castItem>
+<lb/><castItem xml:id="KAMMERHERREN">Kammerherre Brattsberg – – <actor>Wolf</actor>.</castItem>
+<lb/><castItem xml:id="ERIK">Erik Brattsberg, hans Søn, <HIS:hisAdd place="inline">Cand. ju<unclear reason="writing">r</unclear>, Gross<unclear reason="writing">erer</unclear> –</HIS:hisAdd> <actor>Abelsted</actor>.</castItem>
+<lb/><castItem xml:id="THORA">Thora, Kammerherrens Datter – <actor>Fru Juel</actor>.</castItem>
+<lb/><castItem xml:id="SELMA">Selma, Erik Brattsbergs Frue – <actor>Fru Gundersen</actor>.</castItem>
+<lb/><castItem xml:id="FJELDBO">Doktor Fjeldbo, Værkslæge – – <actor>Gundersen</actor>.</castItem>
+<lb/><castItem xml:id="STENSGAARD">Sagfører Stensgaard – – <actor>Reimers</actor>.</castItem>
+<lb/><castItem xml:id="MONSEN">Proprietær Monsen – – <actor>Bucher</actor>.</castItem>
+<lb/><castItem xml:id="BASTIAN">Bastian Monsen – – <actor>Selmer</actor>.</castItem>
+<lb/><castItem xml:id="RAGNA">Ragna – – – <actor>Fru Isachsen</actor>.</castItem>
+<lb/><castItem xml:id="HELLE">Kandidat Helle – – <actor>H. Brun</actor>.</castItem>
+<lb/><castItem xml:id="RINGDAL"><HIS:hisAdd place="inline">Værksf<gap reason="writing"/></HIS:hisAdd> Ringdal – – <actor><HIS:hisDel rend="overstrike">Juel</HIS:hisDel><HIS:hisDel rend="overwritten">.</HIS:hisDel>Nilsen</actor></castItem>
+<lb/><castItem xml:id="LUNDESTAD">Gaardbruger Lundestad – <actor>Isachsen</actor>.</castItem>
+<lb/><castItem xml:id="HEJRE">Daniel Hejre – – <actor>J. Brun</actor>.</castItem>
+<lb/><castItem xml:id="MADAM-R">Madam Rundholmen – <actor>Fru Wolf</actor>.</castItem>
+<lb/><castItem xml:id="ASLAKSEN">Bogtrykker Aslaksen – <actor>Juel</actor>.</castItem>
 <HIS:hisAdd place="margin">
 <lb/><castItem xml:id="KAMMERHERREPIGE">En Tjenestepige hos K<unclear reason="writing">ammer</unclear>h<unclear reason="writing">erren</unclear></castItem>
-<lb/><castItem xml:id="OPVARTER">En Oppvarter &dash;</castItem>
+<lb/><castItem xml:id="OPVARTER">En Oppvarter –</castItem>
 <lb/><castItem xml:id="MADAM-R-PIGE">En Pige hos Mad<unclear reason="writing">am</unclear> Rundhol<unclear reason="writing">men</unclear></castItem>
-<lb/><castItem type="list">Folk af Almu<unclear reason="writing">en</unclear>, Gjæster hos K<unclear reason="writing">ammerherren</unclear>, o. s v. o s. v &dash;</castItem>
+<lb/><castItem type="list">Folk af Almu<unclear reason="writing">en</unclear>, Gjæster hos K<unclear reason="writing">ammerherren</unclear>, o. s v. o s. v –</castItem>
 </HIS:hisAdd>
 </HIS:hisCastList>
 <lb/><set><HIS:hisAdd place="margin"><p>Handling<unclear reason="writing">en</unclear> forega<unclear reason="writing">a</unclear>r p<unclear reason="writing">aa</unclear> Værket i Nærheden af en Kjøbstad i

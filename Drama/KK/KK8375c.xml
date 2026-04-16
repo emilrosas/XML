@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -16,8 +10,8 @@
 <title level="a" type="sub">UBiT Ms Oct. 375 c</title>
 <title level="a" type="origYear">[1862]</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Ellen Nessheim Wiger, Ingvald Aarstein</name></respStmt>
 <respStmt>
 <resp>Klargjøring for HISe</resp>
@@ -50,10 +44,10 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -73,7 +67,7 @@
 </list>
 </tagUsage></namespace>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="pb-n">Sideskiftene i manuskriptet er kodet med pb n="". Nummereringen (i n-attributtet) viser til faksimilesidene.</tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -98,40 +92,40 @@ Laget versjonsvisning av KK41394-KK8375a, KK8375a-KK8375b, KK8375a-KK8375c. * Op
 <pb n="143"/>
 <div type="act" n="1">
 <div type="scene" n="3">
-<lb/><HIS:hisStage>(Falk har under det Foregaaende ufravendt <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>betragtet Straa&typHyp;
+<lb/><HIS:hisStage>(Falk har under det Foregaaende ufravendt <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>betragtet Straa‐
 <lb/>mand og hans Kone; han bliver alene tilbage i Haven.
 <lb/>Det er nu fuldkommen Aften. <HIS:hisDel rend="overstrike">Efter en kort Pause kommer
 <lb/>Svanhild ud paa Altanen med en Blomsterpotte som hun
 <lb/>sætter paa Rækværket</HIS:hisDel>)</HIS:hisStage>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
-<lb/><l>Alt er som afbrændt, dødt, &dash; en trøstløs Jammer &dash; &dash;</l>
-<lb/><l>Slig gaar de gjennem <app type="alteration"><lem><HIS:hisAdd place="offline">Verden</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Livet</HIS:hisDel></HIS:hisRdg></app> To og To &dash;</l>
+<lb/><l>Alt er som afbrændt, dødt, – en trøstløs Jammer – –</l>
+<lb/><l>Slig gaar de gjennem <app type="alteration"><lem><HIS:hisAdd place="offline">Verden</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Livet</HIS:hisDel></HIS:hisRdg></app> To og To –</l>
 <lb/><l>Tilhobe staar de, som de sorte Stammer,</l>
-<lb/><l>En Skogbrand levned paa den <app type="alteration"><lem><HIS:hisAdd place="offline">øde</HIS:hisAdd></lem><HIS:hisRdg><unclear><HIS:hisDel rend="overstrike">tørre</HIS:hisDel></unclear></HIS:hisRdg></app> Mo &dash;</l>
-<lb/><HIS:hisAdd place="inBetweenLines"><l>Saa langt som Synet rækker &dash; er kun Tørke, &dash;</l></HIS:hisAdd>
-<lb/><l>O, bringer <HIS:hisAdd place="offline">har det</HIS:hisAdd> Ingen <app type="alteration"><lem><HIS:hisAdd place="infralinear">Livets</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">mig det</HIS:hisDel></HIS:hisRdg></app> friske Grøn<HIS:hisDel rend="overwritten">ne</HIS:hisDel>t &dash;!</l>
-<lb/><l part="I">Jo <HIS:hisAdd place="infralinear">der er</HIS:hisAdd> En &dash;!</l></HIS:hisSp>
+<lb/><l>En Skogbrand levned paa den <app type="alteration"><lem><HIS:hisAdd place="offline">øde</HIS:hisAdd></lem><HIS:hisRdg><unclear><HIS:hisDel rend="overstrike">tørre</HIS:hisDel></unclear></HIS:hisRdg></app> Mo –</l>
+<lb/><HIS:hisAdd place="inBetweenLines"><l>Saa langt som Synet rækker – er kun Tørke, –</l></HIS:hisAdd>
+<lb/><l>O, bringer <HIS:hisAdd place="offline">har det</HIS:hisAdd> Ingen <app type="alteration"><lem><HIS:hisAdd place="infralinear">Livets</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">mig det</HIS:hisDel></HIS:hisRdg></app> friske Grøn<HIS:hisDel rend="overwritten">ne</HIS:hisDel>t –!</l>
+<lb/><l part="I">Jo <HIS:hisAdd place="infralinear">der er</HIS:hisAdd> En –!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker>Svanhild</speaker>.
 <lb/><HIS:hisStage>(kommer ud paa Altanen med et blomstrende Rosen
 <lb/>træ som hun sætter paa Rækværket.)</HIS:hisStage></HIS:spOpener>
-<lb/><l part="F">Falk! &dash; Staar De her i Mørke &dash;</l>
+<lb/><l part="F">Falk! – Staar De her i Mørke –</l>
 <lb/><l><HIS:hisDel rend="overstrike">Og er ej ræd</HIS:hisDel>?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
-<lb/><l>Og er ej ræd? Nej; Mørket er just skjønt &dash;</l>
+<lb/><l>Og er ej ræd? Nej; Mørket er just skjønt –</l>
 <lb/><l>Men sig mig, ræddes ikke De derinde</l>
-<lb/><l>Hvor Lampen lyser paa de gustne Lig &dash;</l></HIS:hisSp>
+<lb/><l>Hvor Lampen lyser paa de gustne Lig –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker>Svanhild</speaker>.</HIS:spOpener>
 <lb/><l part="I"><app type="alteration"><lem><HIS:hisAdd place="offline">O fy</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Paa Lig</HIS:hisDel></HIS:hisRdg></app>!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
 <lb/><l part="F"><HIS:hisDel rend="overstrike">De var jo <gap/></HIS:hisDel></l>
-<lb/><l part="F">Han fordum var paa Mod saa rig &dash;</l>
+<lb/><l part="F">Han fordum var paa Mod saa rig –</l>
 <lb/><l>Han stred med Verden om en elsket Kvinde</l>
 <lb/><l>Som <app type="alteration"><lem><HIS:hisAdd place="offline">Vedtægts Kirkestormer</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">F<gap/> Skrankestormer</HIS:hisDel></HIS:hisRdg></app> da han gjaldt,</l>
 <lb/><l>Hans Kjærlighed slog ud i glade Sange,</l>
-<lb/><l>Se paa ham nu! I Kisteklæder lange &dash;</l>
+<lb/><l>Se paa ham nu! I Kisteklæder lange –</l>
 <lb/><l>Et Tobens<app type="alteration"><lem><HIS:hisAdd place="offline">drama</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike"> Bille</HIS:hisDel>d</HIS:hisRdg></app> <app type="alteration"><lem><HIS:hisAdd place="offline">om,</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">paa</HIS:hisDel></HIS:hisRdg></app> hvor dybt han faldt!</l>
 <lb/><l><HIS:synopticViewPtr type="synopticView_msVersions" xml:id="KK_175ms"/><HIS:hisDel rend="overwritten">Og</HIS:hisDel>Se Fruentimret med det skidne Skjørt</l>
-<lb/><l>Med skjæve Sko som klasker under Hælene &dash;</l>
+<lb/><l>Med skjæve Sko som klasker under Hælene –</l>
 <lb/><l>Hun er den <HIS:hisDel rend="overwritten">v</HIS:hisDel>Vingemø som skulde ført</l>
 <lb/><l>Ham ind til Samfundsliv med Skjønhedssjælene</l>
 <pb n="144"/>
@@ -139,28 +133,28 @@ Laget versjonsvisning av KK41394-KK8375a, KK8375a-KK8375b, KK8375a-KK8375c. * Op
 <lb/><l>Sic transit gloria amoris, Frøken!</l></HIS:hisSp>
 <lb/><HIS:hisDel rend="overstrike"><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker>Svanhild</speaker>.</HIS:spOpener></HIS:hisSp></HIS:hisDel>
 <lb/><HIS:hisSp who="FALK"><l><HIS:hisDel rend="overstrike">Og tror De ikke Smærten <HIS:hisDel rend="overstrike"><gap/></HIS:hisDel> mangen Gang</HIS:hisDel></l>
-<lb/><l><HIS:hisDel rend="overstrike">Mit Syn har mørknet og gjort Barmen trang</HIS:hisDel> &dash;</l>
-<lb/><l><HIS:hisDel rend="overstrike">Jeg vilde bryde mine egne Veje &dash;</HIS:hisDel></l></HIS:hisSp>
+<lb/><l><HIS:hisDel rend="overstrike">Mit Syn har mørknet og gjort Barmen trang</HIS:hisDel> –</l>
+<lb/><l><HIS:hisDel rend="overstrike">Jeg vilde bryde mine egne Veje –</HIS:hisDel></l></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><HIS:hisDel rend="overstrike"><speaker>Falk</speaker>.</HIS:hisDel></HIS:spOpener>
-<lb/><l><HIS:hisDel rend="overstrike">Ja, i den &lquo;stille Tanke&rquo;?</HIS:hisDel></l></HIS:hisSp>
+<lb/><l><HIS:hisDel rend="overstrike">Ja, i den «stille Tanke»?</HIS:hisDel></l></HIS:hisSp>
 <lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker><HIS:hisDel rend="overstrike">Svanhild</HIS:hisDel></speaker>.</HIS:spOpener></HIS:hisSp>
 <lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker>Svanhild</speaker></HIS:spOpener>
-<lb/><l>Ja det er usselt, usselt dog det Hele &dash;</l>
+<lb/><l>Ja det er usselt, usselt dog det Hele –</l>
 <lb/><l>Jeg ved ej <HIS:hisDel rend="overwritten">n</HIS:hisDel>Nogens Lod jeg vilde dele.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.
 <lb/><HIS:hisStage>(rask)</HIS:hisStage></HIS:spOpener>
 <lb/><l>Nu vel; vi To gjør <HIS:hisDel rend="overwritten">o</HIS:hisDel>Oprør mod en Orden</l>
-<lb/><l>Som ej Naturens er, men kunstigt skabt &dash;</l></HIS:hisSp>
+<lb/><l>Som ej Naturens er, men kunstigt skabt –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker>Svanhild</speaker>.</HIS:spOpener>
 <lb/><l>Da ved jeg at vort Forbunds Sag var tabt,</l>
-<lb/><l>Saa vist som det vi træder paa er Jorden &dash;</l></HIS:hisSp>
+<lb/><l>Saa vist som det vi træder paa er Jorden –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
 <lb/><l>Nej der er Sejr hvor To gaar frem i Enighed.</l>
 <lb/><l>Vi vil ej <sic>søgne</sic> mer til Platheds Kirke</l>
-<lb/><l>Som Led af Trivialitetens Menighed &dash;</l>
+<lb/><l>Som Led af Trivialitetens Menighed –</l>
 <lb/><l><HIS:synopticViewPtr type="synopticView_msVersions" xml:id="KK_1651ms"/>Se, Maalet <HIS:hisDel rend="overwritten"><unclear>paa</unclear></HIS:hisDel>for Personlighedens Virke</l>
-<lb/><l>Er dog at staa selvstændig, sand og fri &dash;</l>
-<lb/><l>Det svigter ikke jeg og ikke De &dash;</l>
+<lb/><l>Er dog at staa selvstændig, sand og fri –</l>
+<lb/><l>Det svigter ikke jeg og ikke De –</l>
 <lb/><l>Et Sjæleliv i Deres Aarer banker</l>
 <lb/><l>De ejer varme Ord for stærke Tanker</l>
 <lb/><l>De vil ej taale Formens Snørliv lagt</l>
@@ -173,20 +167,20 @@ Laget versjonsvisning av KK41394-KK8375a, KK8375a-KK8375b, KK8375a-KK8375c. * Op
 <lb/><l>Mit Syn har mørknet og gjort Barmen trang;</l>
 <lb/><l>Jeg vilde bryde mine egne Veje</l></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
-<lb/><l part="I">Ja i den &lquo;stille Tanke&rquo;?</l></HIS:hisSp>
+<lb/><l part="I">Ja i den «stille Tanke»?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker>Svanhild</speaker>.</HIS:spOpener>
-<lb/><l part="F">Nej i Daad &dash;</l>
-<lb/><l>Men saa kom Tanterne med gode Raad &dash;</l>
-<lb/><l>De skulde Sagen drøfte, granske, veje &dash; &dash; &dash;</l>
-<lb/><l><HIS:synopticViewPtr type="synopticView_msVersions" xml:id="KK_176ms"/>&lquo;Den stille Tanke&rquo; siger De &dash; nej kjækt <HIS:hisDel rend="overstrike">d</HIS:hisDel>et</l>
+<lb/><l part="F">Nej i Daad –</l>
+<lb/><l>Men saa kom Tanterne med gode Raad –</l>
+<lb/><l>De skulde Sagen drøfte, granske, veje – – –</l>
+<lb/><l><HIS:synopticViewPtr type="synopticView_msVersions" xml:id="KK_176ms"/>«Den stille Tanke» siger De – nej kjækt <HIS:hisDel rend="overstrike">d</HIS:hisDel>et</l>
 <lb/><l><HIS:hisDel rend="overstrike">Blev engang prøvet, Plads for mig at finde</HIS:hisDel></l>
-<lb/><l>Forsøg jeg vovet har &dash; som Malerinde &dash;</l></HIS:hisSp>
+<lb/><l>Forsøg jeg vovet har – som Malerinde –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker></HIS:spOpener>
-<lb/><l part="I">Og saa &dash;?</l></HIS:hisSp>
+<lb/><l part="I">Og saa –?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker>Svanhild</speaker>.</HIS:spOpener>
-<lb/><l part="F">Det glapp, thi Evnen var mig nægtet &dash;</l>
-<lb/><l>Men Frihedstrangen lod sig ikke binde &dash;</l>
-<lb/><l>Bag Staffeliet søgte den Theatret &dash;</l></HIS:hisSp>
+<lb/><l part="F">Det glapp, thi Evnen var mig nægtet –</l>
+<lb/><l>Men Frihedstrangen lod sig ikke binde –</l>
+<lb/><l>Bag Staffeliet søgte den Theatret –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
 <lb/><l>Den Plan blev sagtens ogsaa omkalfatret</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker>Svanhild</speaker>.</HIS:spOpener>
@@ -198,26 +192,26 @@ Laget versjonsvisning av KK41394-KK8375a, KK8375a-KK8375b, KK8375a-KK8375c. * Op
 <lb/><l><app type="alteration"><lem><HIS:hisAdd place="offline">Naturligvis; de tog sig</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Nej derfor tog sig <unclear>klok</unclear></HIS:hisDel></HIS:hisRdg></app> vel iagt.</l>
 <lb/><HIS:hisStage>(med et Smil)</HIS:hisStage>
 <lb/><l>De frygted <app type="alteration"><lem><HIS:hisAdd place="offline">nok</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">for</HIS:hisDel></HIS:hisRdg></app> min Fremtid skulde lide</l>
-<lb/><l>Hvis unge Herrer fik den <HIS:hisDel rend="overwritten">s</HIS:hisDel>Sag at vide &dash;</l></HIS:hisSp><HIS:synopticViewPtr type="synopticView_msVersions" xml:id="KK_177ms"/>
+<lb/><l>Hvis unge Herrer fik den <HIS:hisDel rend="overwritten">s</HIS:hisDel>Sag at vide –</l></HIS:hisSp><HIS:synopticViewPtr type="synopticView_msVersions" xml:id="KK_177ms"/>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
-<lb/><l>Nej le ej, Svanhild, &dash; bagved deres Spot</l>
+<lb/><l>Nej le ej, Svanhild, – bagved deres Spot</l>
 <lb/><l>Der glittrer Taarer, o jeg ser det godt;</l>
 <lb/><l>Og jeg ser mer; er De i Støvet traadt</l>
 <lb/><l>Og æltet til et Ler hvis Form ej huskes</l>
 <lb/><l>Da skal af hver en Tusindkunstner fuskes</l>
 <lb/><l><HIS:synopticViewPtr type="synopticView_msVersions" xml:id="KK_1655ms"/>Med Moddelérkniv plumpt og dumt og raat</l>
-<lb/><l>Vorherres Gjerning Verden plagierer &dash;</l>
+<lb/><l>Vorherres Gjerning Verden plagierer –</l>
 <lb/><l>Den skaber Dem paany, i eget Billed,</l>
 <pb n="146"/>
-<lb/><l>Den ændrer, lægger til, tar fra, formerer; &dash;</l>
+<lb/><l>Den ændrer, lægger til, tar fra, formerer; –</l>
 <lb/><l>Og er De saa paa Postamentet stillet,</l>
-<lb/><l><HIS:synopticViewPtr type="synopticView_msVersions" xml:id="KK_178ms"/>Da jubler den, se nu er hun normal &dash;</l>
-<lb/><l>Se hvilken plastisk Ro, som Marmor sval &dash;</l>
+<lb/><l><HIS:synopticViewPtr type="synopticView_msVersions" xml:id="KK_178ms"/>Da jubler den, se nu er hun normal –</l>
+<lb/><l>Se hvilken plastisk Ro, som Marmor sval –</l>
 <lb/><l>Bestraalt af Lys fra Lampen og fra Kronen</l>
-<lb/><l>Hun passer dejligt til Dekorationen &dash;</l>
+<lb/><l>Hun passer dejligt til Dekorationen –</l>
 <lb/><HIS:hisStage>(gl: l. h. H.)</HIS:hisStage>
-<lb/><l>Men skal De aandigt dø, &dash; da lev forinden</l>
-<lb/><l>Vær min i Herrens vaarlige Natur &dash;</l>
+<lb/><l>Men skal De aandigt dø, – da lev forinden</l>
+<lb/><l>Vær min i Herrens vaarlige Natur –</l>
 <lb/><l part="Y"><HIS:hisDel rend="overstrike">De<HIS:hisDel rend="overwritten">t</HIS:hisDel>r sygner De</HIS:hisDel></l>
 <lb/><l>De kommer tidsnok i det gyldne Bur;</l>
 <lb/><l>Der trives Damen, men der sygner Kvinden</l></HIS:hisSp>

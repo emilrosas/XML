@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -16,8 +10,8 @@
 <title level="a" type="sub">annen hovedversjon, 2. utg. (utgave med Kjæmpehøien)</title>
 <title level="a" type="origYear">1904</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt>
 <resp>Kodeteknisk støtte og utvikling</resp>
 <name>AKSIS: Avdeling for kultur, språk og informasjonsteknologi, Universitetsforskning i Bergen (Unifob AS)</name>
@@ -72,7 +66,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <list>
@@ -151,8 +145,8 @@
 </item>
 </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="app-external">
@@ -174,7 +168,7 @@
 </list>
 </tagUsage></namespace>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="pb-ed-HU">For synkroniseringsformål er sideskiftene fra Hundreårsutgaven (bd 5) kodet med pb ed="HU". Dette tekstvitnet dekker sidene 135-238 (bind 3). Det første sidetallet er oppgitt i et n-attributt.</tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding type="external" method="parallel-segmentation" location="internal" n="4"/>
 </encodingDesc>
@@ -316,7 +310,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><l rend="indent1">hvorhelst du end sidder bunden,</l>
 <lb/><l rend="indent1">du vågne derved, du fri din sjæl</l>
 <lb/><l rend="indent1">fra listige alfer i lunden!</l></HIS:hisSp>
-<lb/><HIS:hisStage>(<HIS:stageRole who="THORGJERD">Thorgjerd</HIS:stageRole> forsvinder i kløften, hvor elven løber; efter et raskt mellem&typHyp;
+<lb/><HIS:hisStage>(<HIS:stageRole who="THORGJERD">Thorgjerd</HIS:stageRole> forsvinder i kløften, hvor elven løber; efter et raskt mellem‐
 <lb/>spil høres nærmere:)</HIS:hisStage>
 <pb ed="HU"/><lb/><HIS:hisSp><HIS:spOpener><speaker>Arnes slægtninge</speaker>.</HIS:spOpener>
 <lb/><l rend="indent1">Vor vej vi korte med skæmt og sang,</l>
@@ -356,8 +350,8 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><p>Har jeg ikke sagt, du skal holde dig nær hos
 <lb/>for at gå mig tilhånde.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
-<lb/><p>Det var jomfru Ingeborg &dash; hun vilde, &dash; og
-<lb/>så &dash;</p></HIS:hisSp>
+<lb/><p>Det var jomfru Ingeborg – hun vilde, – og
+<lb/>så –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>
 <lb/><HIS:hisStage>(ærgerlig)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Jomfru Ingeborg! Jomfru Ingeborg! Er du
@@ -366,7 +360,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>Nå, sig os, hvor vejen går, vi sidder fast.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>
 <lb/><HIS:hisStage>(uviss)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Vejen? Ja, jeg er lidet kendt heroppe, men &dash;</p></HIS:hisSp>
+<lb/><p>Vejen? Ja, jeg er lidet kendt heroppe, men –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener>
 <lb/><p>Kunde jeg ikke tænke det, det er altid den
 <pb ed="HU"/><lb/>gavn, jeg har af dig! Ja, så må vi holde til i
@@ -384,11 +378,11 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisStage>(går over elven og kommer ned i forgrunden)</HIS:hisStage>.</HIS:spOpener></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>
 <lb/><HIS:hisStage>(ser sig om)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Ja, nu kender jeg mig igen. Elven der er grænse&typHyp;
+<lb/><p>Ja, nu kender jeg mig igen. Elven der er grænse‐
 <lb/>skellet mellem mine og fru Kirstens enemærker. <HIS:hisStage>(peger
 <lb/>tilvenstre.)</HIS:hisStage> Dernede ligger hendes gård; om en time
 <lb/>eller to kan vi sidde lunt i brudehuset, men så må
-<lb/>vi også rappe os. <HIS:hisStage>(kalder.)</HIS:hisStage> Ingeborg! &dash; Hemming!
+<lb/>vi også rappe os. <HIS:hisStage>(kalder.)</HIS:hisStage> Ingeborg! – Hemming!
 <lb/>hvor er nu Ingeborg igen?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
 <lb/><p>Bagved, oppe i lien. <HIS:hisStage>(viser til højre.)</HIS:hisStage> Hun leger
@@ -397,12 +391,12 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>latter.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>
 <lb/><HIS:hisStage>(forbitret, men med dæmpet stemme)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Hemming! dette bryllup gør mig helseløs, så&typHyp;
+<lb/><p>Hemming! dette bryllup gør mig helseløs, så‐
 <lb/>megen harme voldes mig derved. <HIS:hisStage>(ser udad til højre.)</HIS:hisStage>
 <lb/>Der render de, se, nej se kun! Det var hende, som
 <lb/>fandt på, at vi skulde tage over fjeldet, istedetfor
 <lb/>at følge vejen, så kom vi snarere frem, mente hun,
-<lb/>og ikke desmindre så &dash; hu! jeg kunde blive gal
+<lb/>og ikke desmindre så – hu! jeg kunde blive gal
 <lb/>derover; alt imorgen skal hun for alteret; er det de
 <lb/>høviske sæder, hun skulde beflitte sig på! Hvad vil
 <lb/>fru Kirsten sige, når hun finder min datter så ilde
@@ -413,7 +407,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <pb/>
 <lb/><fw type="page" place="top">53</fw>
 <lb/>i fru Kirstens æt; fru Kirsten og hendes frænder er
-<lb/>højbårne folk og &dash;</p></HIS:hisSp>
+<lb/>højbårne folk og –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener>
 <lb/><p>Du er dum, Hemming! højbåren, højbåren! jo,
 <lb/>det skal godt forslå, det hverken gøder eller føder
@@ -435,11 +429,11 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>gøre nidviser om Arne fra Guldvik. Jeg har magt;
 <lb/>jeg kan jage dem fra hus og gård, såsnart det lyster
 <lb/>mig. Nidvise! jo, du skønner dig godt på nidviser!
-<lb/>&dash; Har de gjort viser, så er det til hæder for bru&typHyp;
+<lb/>– Har de gjort viser, så er det til hæder for bru‐
 <lb/>den og hendes fader! <HIS:hisStage>(opbrusende.)</HIS:hisStage> Men det er en
 <lb/>ussel vise forresten, ret en ussel vise,<note type="typo">Skadet komma.</note> siger jeg dig;
 <lb/>det er ingen kvædekyndig mand, som har sat den
-<lb/>sammen, og får jeg engang tag i ham, så &dash;</p></HIS:hisSp>
+<lb/>sammen, og får jeg engang tag i ham, så –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
 <lb/><p>Ej, <sic>hushond</sic>! så kender I den da? Er der
 <lb/>nogen, som har dristet sig til at synge den for jer?</p></HIS:hisSp>
@@ -452,12 +446,12 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>før midnat. I skulde hørt, hvad Hemming fortæller.
 <lb/>Han siger, der går et sikkert ord om, at fru Kirsten
 <lb/>har både brygget og baget i fem fulde dage for at
-<lb/>tage imod os med ære; er det ikke sandt, Hem&typHyp;
+<lb/>tage imod os med ære; er det ikke sandt, Hem‐
 <lb/>ming?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
 <lb/><p>Jo, husbond!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener>
-<lb/><p>Han siger, hun ejer ikke det sølvkrus så <sic>koste&typHyp;
+<lb/><p>Han siger, hun ejer ikke det sølvkrus så <sic>koste‐
 <lb/>isgt</sic>, at hun jo sætter det på bordet både blankt og
 <lb/>pudset; så prægtigt et gilde har hun ikke beredt,
 <lb/><sic>liden</sic> kongen gæstede hendes salig herre for tyve
@@ -471,8 +465,8 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>
 <lb/><HIS:hisStage>(sagte)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Ej, hvilken snak. <HIS:hisStage>(til de andre.)</HIS:hisStage> Han siger, fru
-<lb/>Kirsten har ingen ro på sig; både dag og nat fær&typHyp;
-<lb/>des hun i fadebur og i kælder. Er det ikke &dash;?
+<lb/>Kirsten har ingen ro på sig; både dag og nat fær‐
+<lb/>des hun i fadebur og i kælder. Er det ikke –?
 <lb/><HIS:hisStage>(studsende, idet han ser ud til venstre.)</HIS:hisStage> Hemming! hvad er
 <lb/>det! Se hid, hvo kommer der?</p></HIS:hisSp>
 <pb/>
@@ -508,10 +502,10 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><p>Jeg mener, for stor er den hæder, I viser mig,
 <pb/>
 <lb/><fw type="page" place="top">56</fw>
-<lb/>når I drager milevidt afsted igennem lier og øde&typHyp;
+<lb/>når I drager milevidt afsted igennem lier og øde‐
 <lb/>marker for at byde mig velkommen på eders grund.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
-<lb/><p>Ej, herr Arne &dash; <HIS:hisStage>(afsides<note type="typo">Skadet 'e' i 'afsides'.</note>.)</HIS:hisStage> Han véd intet endnu!</p></HIS:hisSp>
+<lb/><p>Ej, herr Arne – <HIS:hisStage>(afsides<note type="typo">Skadet 'e' i 'afsides'.</note>.)</HIS:hisStage> Han véd intet endnu!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener>
 <lb/><p>Og det på en dag som denne, da I har fuldt
 <lb/>op at agte på; det er jo hos jer, vore børns bryllup
@@ -528,22 +522,22 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>forliget for at ende de lange tvistigheder, som faldt
 <lb/>jer til besvær, nu da I var bleven enke og tog til
 <lb/>at ældes; og havde ikke det været, så skulde I
-<lb/>aldrig &dash;</p></HIS:hisSp>
+<lb/>aldrig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Hvor gider I lytte til, hvad onde tunger kan
-<lb/>spinde sammen. Ikke vil vi mere tænke på tvistig&typHyp;
+<lb/>spinde sammen. Ikke vil vi mere tænke på tvistig‐
 <lb/>hederne, som nu har varet ved siden jer stamfaders
-<lb/>tid. Jeg mener, vore ætter har lidt tungt nok der&typHyp;
+<lb/>tid. Jeg mener, vore ætter har lidt tungt nok der‐
 <lb/>under, eders såvel som min. Se jer om, herr Arne!
 <lb/>Er ikke lien her at ligne med de vildeste udmarker,
 <lb/>og i vore fædres dage var her dog folksomt og rigt.
-<lb/>En bro var lagt over elven, og vej gik der fra Guld&typHyp;
+<lb/>En bro var lagt over elven, og vej gik der fra Guld‐
 <lb/>vik til min faders hus. Men med ild og sværd drog
 <lb/>de frem fra begge sider; de lagde øde alt, hvad de
 <pb/>
 <lb/><fw type="page" place="top">57</fw>
 <lb/>traf på, thi det tyktes dem, at de var hinanden for
-<lb/>nære grander. Nu vokser der alleslags urter i al&typHyp;
+<lb/>nære grander. Nu vokser der alleslags urter i al‐
 <lb/>farvejen, broen er brækket ned, og det er kun ulv
 <lb/>og bjørn, som holder tilhuse herinde.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener>
@@ -554,17 +548,17 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Tilvisse, tilvisse! Men Ingeborg, bruden, hvor
 <lb/>har I hende? Jeg ser hende ej, og brudepigerne
-<lb/>fattes med; skulde hun ikke &dash;</p></HIS:hisSp>
+<lb/>fattes med; skulde hun ikke –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener>
 <lb/><p>Hun følger efter; ret nu må hun komme. Men
-<lb/>&dash; ja, hør, fru Kirsten! En ting vil jeg sige jer,
+<lb/>– ja, hør, fru Kirsten! En ting vil jeg sige jer,
 <lb/>ligesågodt først som sidst, skøndt I sagtens véd det,
 <pb ed="HU"/><lb/>kan jeg tro. Ingeborg har stundom nykker og luner
-<lb/>&dash; jeg svær jer til, hun har det, så vel optugtet hun
+<lb/>– jeg svær jer til, hun har det, så vel optugtet hun
 <lb/>end kan være.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>
 <lb/><HIS:hisStage>(spændt)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Nu, hvad så? <HIS:hisStage>(afsides.)</HIS:hisStage> Skulde hun også &dash;</p></HIS:hisSp>
+<lb/><p>Nu, hvad så? <HIS:hisStage>(afsides.)</HIS:hisStage> Skulde hun også –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener>
 <lb/><p>Sligt må I tæmme; mig, som hendes fader, vil
 <lb/>det ikke ret lykkes, men I finder vel råd.</p></HIS:hisSp>
@@ -606,9 +600,9 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <pb/>
 <lb/><fw type="page" place="top">59</fw>
 <lb/>skønner jeg hel vel, hvi det kommer sig, at vi
-<lb/>mødes her, &dash; det er ham, som volder at &dash;</p></HIS:hisSp>
+<lb/>mødes her, – det er ham, som volder at –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
-<lb/><p>Ham &dash; I mener &dash; I véd, at &dash;</p></HIS:hisSp>
+<lb/><p>Ham – I mener – I véd, at –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener>
 <lb/><p>Jeg mener, at tiden er falden ham for lang
 <lb/>dernede i gildestuen. Jo, jo, jeg mindes nok fra
@@ -617,7 +611,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>ske kunde, og så fik han jer til at følge med.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Stærkt lystede det ham visst at møde bruden,
-<lb/>men &dash;</p></HIS:hisSp>
+<lb/>men –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
 <lb/><p>Hvad nu?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
@@ -643,14 +637,14 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisStage>(mistænkeligt til <HIS:stageRole who="FRUKIRSTEN">fru Kirsten</HIS:stageRole>)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Svar først, så skal vi følge.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
-<lb/><p>Nu da, &dash; han er reden sig ud for at jage. <HIS:hisStage>(Idet
+<lb/><p>Nu da, – han er reden sig ud for at jage. <HIS:hisStage>(Idet
 <lb/>hun vil gå.)</HIS:hisStage> Kom nu, det tager stærkt til at mørknes.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
 <lb/><p>At jage?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Ej! Kan det undre jer? I kender vel visen:</p>
-<lb/><l rend="indent1">&lquo;Den riddersmand lyster at ride sig i lunde,</l>
-<lb/><l rend="indent1">at prøve sine heste og hunde!&rquo;</l></HIS:hisSp>
+<lb/><l rend="indent1">«Den riddersmand lyster at ride sig i lunde,</l>
+<lb/><l rend="indent1">at prøve sine heste og hunde!»</l></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
 <lb/><p>Agter han sin unge brud så ringe, at han nytter
 <lb/>bryllupsdagene til at vejde dyr.</p></HIS:hisSp>
@@ -659,7 +653,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>
 <lb/><HIS:hisStage>(der imidlertid har holdt øje med <HIS:stageRole who="FRUKIRSTEN">fru Kirsten</HIS:stageRole> og hendes følge)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Nej, vent, fru Kirsten! Vel tør jeg ikke måle
-<lb/>mig med jer i kløgt, men ét skelner jeg dog klar&typHyp;
+<lb/>mig med jer i kløgt, men ét skelner jeg dog klar‐
 <lb/>ligen, og det er, at I dølger jert rette ærinde heroppe.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>
 <lb/><HIS:hisStage>(truffen)</HIS:hisStage>.</HIS:spOpener>
@@ -670,7 +664,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><p>På store og små kan jeg mærke, at der er
 <pb ed="HU"/><lb/>noget, I ej vil ud med. I er sært forstemt, og dog
 <lb/>stiller I jer an, som om I var skemtsom tilsinde;
-<lb/>men det har ingen art &dash;</p></HIS:hisSp>
+<lb/>men det har ingen art –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Ikke er det nyt, at I tænker ilde om mig og
 <lb/>mine.</p></HIS:hisSp>
@@ -683,8 +677,8 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><p>Hvad vil her følge på?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener>
 <lb/><p>Jeg lod mig dåre af jer, men nu ser jeg grant
-<lb/>nok. I sagde, at I kom for at hilse mig ved grændse&typHyp;
-<lb/>skellet; hvor vidste I da, at vi tog vejen over fjel&typHyp;
+<lb/>nok. I sagde, at I kom for at hilse mig ved grændse‐
+<lb/>skellet; hvor vidste I da, at vi tog vejen over fjel‐
 <lb/>dene? Det var Ingeborg, som vilde det så, da vi
 <lb/>rejste fra Guldvik, og ingen kunde melde jer derom.
 <lb/><HIS:hisStage>(da <HIS:stageRole who="FRUKIRSTEN">fru Kirsten</HIS:stageRole> ikke svarer.)</HIS:hisStage> I tier, det tænkte jeg nok.</p></HIS:hisSp>
@@ -701,23 +695,23 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <pb/>
 <lb/><fw type="page" place="top">62</fw>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener>
-<lb/><p>Så sig da &dash;</p></HIS:hisSp>
+<lb/><p>Så sig da –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
 <lb/><p>Hvad mener I?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Ved ord og håndslag er forliget sluttet mellem
 <lb/>os, mange hæderlige mænd ser jeg her, som kan
 <lb/>vidne i den sag: Olaf, min søn, skulde ægte jer
-<lb/>datter, hos mig skulde gildet holdes imorgen &dash;</p></HIS:hisSp>
+<lb/>datter, hos mig skulde gildet holdes imorgen –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>
 <lb/><HIS:hisStage>(utålmodig)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Javisst, javisst!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
-<lb/><p>Skændsel over den, der bryder sit ord, men &dash;</p></HIS:hisSp>
+<lb/><p>Skændsel over den, der bryder sit ord, men –</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Arne</speaker> og <speaker>gæsterne</speaker>.</HIS:spOpener>
 <lb/><p>Hvad nu! Sig frem!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener><note type="typo">Skadet 'r' i 'Fru'.</note>
-<lb/><p>Ikke kan brylluppet holdes imorgen, som be&typHyp;
+<lb/><p>Ikke kan brylluppet holdes imorgen, som be‐
 <lb/>sluttet var.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener>
 <lb/><p>Ikke holdes?</p></HIS:hisSp>
@@ -750,14 +744,14 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>min vrede. Havde jeg tænkt mig om, så måtte jeg
 <lb/>vel skønne, at det alt tilhobe var jert skemt, jeg
 <lb/>beder jer, sig mig ikke imod, så må det være! Ej
-<lb/>bryllup imorgen, &dash; hvor kunde sligt hændes! Træn&typHyp;
+<lb/>bryllup imorgen, – hvor kunde sligt hændes! Træn‐
 <lb/>ger I øl og mjød, skorter det jer på sølv eller
 <lb/>blommede linklæder, så kom I til mig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Ikke er det fattigmands hus, I gifter jer datter
 <lb/>ind i, herr Arne! Mød I frem til gildet med alle
-<lb/>eders frænder og venner, ja, kom med trefold så&typHyp;
-<lb/>mange, om det lyster jer, &dash; hos mig skal I finde
+<lb/>eders frænder og venner, ja, kom med trefold så‐
+<lb/>mange, om det lyster jer, – hos mig skal I finde
 <lb/>både husrum og bryllupskost, såmeget I vil tære.
 <lb/>Tro aldrig, at slig uhæderlig årsag <sic>kundre</sic> hindre mig.</p></HIS:hisSp>
 <pb/>
@@ -769,19 +763,19 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>jeg også rede til at holde det, og det ligeså gerne
 <lb/>idag som imorgen; thi så var stedse sæd og skik
 <lb/>i min æt. Men i denne sag står det ikke til mig;
-<lb/>det skorter på én &dash;</p></HIS:hisSp>
+<lb/>det skorter på én –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
 <lb/><p>På én? På hvem? Vel skulde jeg mene, at
-<lb/>når bruden er rede, så &dash;</p></HIS:hisSp>
+<lb/>når bruden er rede, så –</p></HIS:hisSp>
 <pb ed="HU"/><lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
-<lb/><p>Til brudefærd er to fornødne, brudgommen så&typHyp;
-<lb/>vel som bruden &dash;</p></HIS:hisSp>
+<lb/><p>Til brudefærd er to fornødne, brudgommen så‐
+<lb/>vel som bruden –</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Arne</speaker> og <speaker>gæsterne</speaker>.</HIS:spOpener>
 <lb/><p>Olaf!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
 <lb/><p>Min fæstemand!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
-<lb/><p>Ja han, min søn &dash; inat er han flygtet både fra
+<lb/><p>Ja han, min søn – inat er han flygtet både fra
 <lb/>hjem og brud.</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Gæsterne</speaker>.</HIS:spOpener>
 <lb/><p>Flygtet!</p></HIS:hisSp>
@@ -803,7 +797,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>sværger jeg højt og dyrt.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Uskellig grund er det, I bygger på, om I kunde
-<lb/>tro, at &dash;</p></HIS:hisSp>
+<lb/>tro, at –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener>
 <lb/><p>Sig ikke så, fru Kirsten, sig ikke så! Vi to
 <lb/>har en gammel regning at klare med hinanden; det
@@ -812,7 +806,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>for, når I og jere frænder pønsede på underfundighed
 <lb/>og list! Magten havde vi, vi havde gods og penge
 <lb/>med; men I var os for snedige. I vidste at lokke
-<lb/>os med dårende ord og talemåder, &dash; det er varer,
+<lb/>os med dårende ord og talemåder, – det er varer,
 <lb/>som jeg lidet mægter at værdsætte, som det bør sig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Herr Arne! I høre mig!</p></HIS:hisSp>
@@ -829,11 +823,11 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <pb/>
 <lb/><fw type="page" place="top">66</fw>
 <lb/>dåre, at jeg slog lid til eders glatte tunge. De, der
-<lb/>mente mig det ærligt, varede mig ad, mine avinds&typHyp;
+<lb/>mente mig det ærligt, varede mig ad, mine avinds‐
 <lb/>mænd spottede mig; men lidet agtede jeg begge
 <lb/>dele. Jeg tog mine højtidsklæder på, samlede frænder
 <lb/>og venner; med sang og leg drog vi til gildehuset,
-<lb/>og så, &dash; så er brudgommen rømt.</p></HIS:hisSp>
+<lb/>og så, – så er brudgommen rømt.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
 <lb/><p>Ikke går jeg til kirken med ham, der holder
 <lb/>mig så lidet værd.</p></HIS:hisSp>
@@ -851,25 +845,25 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>men holder I mig svigfuld i hu, da gør I mig uskel,
 <lb/>mere end billigt kan være. I mener, der føres en
 <lb/>underfundig leg med jer; men sig mig, hvad skulde
-<lb/>friste mig og min søn til sligt? Har han ikke Inge&typHyp;
+<lb/>friste mig og min søn til sligt? Har han ikke Inge‐
 <lb/>borg kær; hvor kunde han kåre sig en bedre brud?
 <lb/>Er hun ikke vakker og djærv? Er hendes fader
 <lb/>ikke rig og mægtig? Nævnes ikke hendes slægt
 <lb/>med hæderlige ord, så langt den er kendt?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener>
-<lb/><p>Men hvor kunde så Olaf &dash;</p></HIS:hisSp>
+<lb/><p>Men hvor kunde så Olaf –</p></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top">67</fw>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Den lod, jeg har fristet, er værre end I mener.
 <lb/>I vil ynke mig og ikke vredes, når I får det at høre.
-<lb/>&dash; Fra solen randt imorges har jeg nu færdedes her&typHyp;
+<lb/>– Fra solen randt imorges har jeg nu færdedes her‐
 <lb/>oppe for at finde ham igen.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener>
 <lb/><p>Heroppe?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
-<lb/><p>Ja, heroppe, for I må da vide &dash; I vil ræddes
-<lb/>derved &dash; men ligegodt, &dash; Olaf er bergtagen!</p></HIS:hisSp>
+<lb/><p>Ja, heroppe, for I må da vide – I vil ræddes
+<lb/>derved – men ligegodt, – Olaf er bergtagen!</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Gæsterne</speaker>.</HIS:spOpener>
 <lb/><p>Bergtagen!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>
@@ -878,7 +872,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener>
 <lb/><p>Hvad siger I, fru Kirsten?</p></HIS:hisSp>
 <pb ed="HU"/><lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
-<lb/><p>Han er bergtagen! Ej kan det være andet. &dash;
+<lb/><p>Han er bergtagen! Ej kan det være andet. –
 <lb/>For tre uger siden, da fæstensøllet var drukket på
 <lb/>Guldvik, kom han ikke hjem før langt ud på den
 <lb/>næste dag. Bleg var han og stur og stille med,
@@ -915,7 +909,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>mig sagt, drog jeg ud med mine folk, men vi har
 <lb/>intet fundet.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
-<lb/><p>Og ingen traf I, som kunde sige jer &dash;</p></HIS:hisSp>
+<lb/><p>Og ingen traf I, som kunde sige jer –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>I véd jo, lien ligger øde.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>
@@ -938,7 +932,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
 <lb/><p>Lad ham gå, lad ham gå!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener>
-<lb/><p>Ej, om han så var nøkken selv &dash;</p></HIS:hisSp>
+<lb/><p>Ej, om han så var nøkken selv –</p></HIS:hisSp>
 </div>
 <div type="scene" n="5">
 <lb/><head>FEMTE SCENE.</head>
@@ -956,7 +950,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <pb/>
 <lb/><fw type="page" place="top">70</fw>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker></HIS:spOpener>
-<lb/><p>Lad mig råde. <HIS:hisStage>(til <HIS:stageRole who="THORGJERD">Thorgjerd</HIS:stageRole>.)</HIS:hisStage> Vi søger Olaf Lilje&typHyp;
+<lb/><p>Lad mig råde. <HIS:hisStage>(til <HIS:stageRole who="THORGJERD">Thorgjerd</HIS:stageRole>.)</HIS:hisStage> Vi søger Olaf Lilje‐
 <lb/>krans, har du mødt ham herinde idag?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="THORGJERD"><HIS:spOpener><speaker>Thorgjerd</speaker>.</HIS:spOpener>
 <lb/><p>Olaf Liljekrans?</p></HIS:hisSp>
@@ -978,7 +972,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener>
 <lb/><p>Hvi så?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="THORGJERD"><HIS:spOpener><speaker>Thorgjerd</speaker>.</HIS:spOpener>
-<lb/><p>I spørger om Olaf Liljekrans? Er han vild&typHyp;
+<lb/><p>I spørger om Olaf Liljekrans? Er han vild‐
 <lb/>farende herinde? Søger I efter ham, men kan ikke
 <lb/>finde ham?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
@@ -986,7 +980,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <pb/>
 <lb/><fw type="page" place="top">71</fw>
 <lb/><HIS:hisSp who="THORGJERD"><HIS:spOpener><speaker>Thorgjerd</speaker>.</HIS:spOpener>
-<lb/><p>Da er det godt for ham; &dash; var det løgn jeg
+<lb/><p>Da er det godt for ham; – var det løgn jeg
 <lb/>sagde, så har han ingen nød.</p></HIS:hisSp>
 <pb ed="HU"/><lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
 <lb/><p>Sig frem, hvad du véd!</p></HIS:hisSp>
@@ -994,7 +988,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><p>Sent blev jeg da færdig! <HIS:hisStage>(ondskabsfuldt.)</HIS:hisStage> Alfer og
 <lb/>vætter råder herinde. Vær I trøstige! Finder I ham
 <lb/>ej, så er han i alfernes leg; de lider godt den, der
-<lb/>har småfuglen kær, og Olaf sagde I jo &dash; Drag hjem,
+<lb/>har småfuglen kær, og Olaf sagde I jo – Drag hjem,
 <lb/>drag kun hjem igen. Olaf sidder i berget,<note type="typo">Skadet komma.</note> han har
 <lb/>ingen nød.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
@@ -1005,7 +999,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="THORGJERD"><HIS:spOpener><speaker>Thorgjerd</speaker>
 <lb/><HIS:hisStage>(nærmer sig atter)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Nu går jeg for at spille op. Olaf Liljekrans
-<lb/>sidder i berget, der skal hans bryllup stå. &dash; Gale
+<lb/>sidder i berget, der skal hans bryllup stå. – Gale
 <lb/>Thorgjerd må være med, han kan få bord og bænke
 <lb/>til at danse, så såre han rører ved sin felestreng.
 <lb/>Men I, agt jer vel, drag hjem igen; her er ikke godt
@@ -1015,14 +1009,14 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><l rend="indent1">og alt hvad du ser og hører der,</l>
 <lb/><l rend="indent1">det går aldrig mer af dit sind.</l>
 <lb/><HIS:hisStage>(pludselig udbrydende med vild glæde.)</HIS:hisStage>
-<lb/><p>Men her er jo bryllupsfolk med, &dash; ha, ha! Hver
+<lb/><p>Men her er jo bryllupsfolk med, – ha, ha! Hver
 <lb/>kvinde har sin bedste stak, hver mand har sin bedste
 <pb/>
 <lb/><fw type="page" place="top">72</fw>
-<lb/>kofte på, &dash; nu skønner jeg. Olaf Liljekrans er
+<lb/>kofte på, – nu skønner jeg. Olaf Liljekrans er
 <lb/>brudgom i bygden med, han har sig en fæstemø
 <lb/>der også! Ja sligt har I vel spurgt før! Jeg véd
-<lb/>nu engang, &dash; det er mange år siden &dash; men jeg
+<lb/>nu engang, – det er mange år siden – men jeg
 <lb/>mindes det vel.</p>
 <lb/><HIS:hisStage>(vedbliver efter et øjebliks <sic>pavse</sic> stedse mere og mere forvirret.)</HIS:hisStage>
 <lb/><l rend="indent1">Hr. Alvar havde liden Ingrid fæst',</l>
@@ -1036,21 +1030,21 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><l rend="indent1">sad han som en spillemand på sengestok</l>
 <lb/><l rend="indent1">og slog de forlokkende strenge!</l>
 <lb/><l rend="indent1">Da dansed i ring både bord og bænke,</l>
-<lb/><l rend="indent1">så let som terner og drenge. &dash;</l>
+<lb/><l rend="indent1">så let som terner og drenge. –</l>
 <lb/><l rend="indent1 line">Og nøkken han gik sig af stuedøren ud,</l>
-<lb/><l rend="indent1">det båder lidet at dølge &dash;</l>
+<lb/><l rend="indent1">det båder lidet at dølge –</l>
 <lb/><l rend="indent1">og alt som han spilled på felestreng,</l>
 <lb/><l rend="indent1">monne bruden efter ham følge!</l>
 <pb ed="HU"/><lb/><HIS:hisStage>(vildt, triumferende.)</HIS:hisStage>
 <lb/><l rend="indent1">Trolddomsbunden stod ridder og svend,</l>
 <lb/><l rend="indent1">brudgommen så sig ud så vide;</l>
-<lb/><l rend="indent1">nøkken redte liden Ingrids seng &dash;</l>
+<lb/><l rend="indent1">nøkken redte liden Ingrids seng –</l>
 <lb/><l rend="indent1">hendes brudeseng i elven hin stride.</l>
 <lb/><HIS:hisStage>(bliver pludselig stille og siger sagte:)</HIS:hisStage>
-<lb/><p>Den vise glemmer jeg aldrig! &dash; &dash; &dash; Men gå
+<lb/><p>Den vise glemmer jeg aldrig! – – – Men gå
 <lb/>I hjem, det tager til at kveldes, og er solen nede,
 <lb/>så hører skoven de andre til. Farvel! Jeg bringer
-<lb/>bud og hilsen til Olaf, der han sidder &dash; i berget!</p>
+<lb/>bud og hilsen til Olaf, der han sidder – i berget!</p>
 <lb/><HIS:hisStage>(går ind i lien til venstre.)</HIS:hisStage></HIS:hisSp>
 </div>
 <pb/>
@@ -1076,7 +1070,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><p>Ti stille!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
 <lb/><p>Er han koglet i fjeldet, så lad den tage ham,
-<lb/>som har gjort det; jeg agter ikke at dele min fæste&typHyp;
+<lb/>som har gjort det; jeg agter ikke at dele min fæste‐
 <lb/>mands hu og hjerte.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>
 <lb/><HIS:hisStage>(sagte og inderligt)</HIS:hisStage>.</HIS:spOpener>
@@ -1096,7 +1090,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <pb ed="HU"/><lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>
 <lb/><HIS:hisStage>(sagte til <HIS:stageRole who="FRUKIRSTEN">fru Kirsten</HIS:stageRole>)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Han må findes! Det vilde volde mig evig skam,
-<lb/>om brylluppet &dash;</p></HIS:hisSp>
+<lb/>om brylluppet –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Følg med, følg med!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>
@@ -1129,35 +1123,35 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><p>Der, spænd mig også den fast!<pb ed="HU"/> Nu, hvorfor
 <lb/>bøjer du hovedet? Er der gået dig noget imod?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
-<lb/><p>Kræver I, at jeg ærligt skal sige jer &dash;</p></HIS:hisSp>
+<lb/><p>Kræver I, at jeg ærligt skal sige jer –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
 <lb/><p>Javisst gør jeg.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
-<lb/><p>Så må I da vide &dash;</p></HIS:hisSp>
+<lb/><p>Så må I da vide –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>
 <lb/><HIS:hisStage>(hurtigt)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Å nej, det trænges ikke.</p></HIS:hisSp>
 <lb/><HIS:hisStage>(Hun fjærner sig nogle skridt; <HIS:stageRole who="HEMMING">Hemming</HIS:stageRole> rejser sig.)</HIS:hisStage>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
 <lb/><p>Ak, jomfru Ingeborg! engang var I mig så god;
-<lb/>men nu, siden I er bleven stor og fuldvoksen jom&typHyp;
-<lb/>fru &dash; og mest, kan jeg tro, siden I gav jert fæstens&typHyp;
-<lb/>ord &dash;</p></HIS:hisSp>
+<lb/>men nu, siden I er bleven stor og fuldvoksen jom‐
+<lb/>fru – og mest, kan jeg tro, siden I gav jert fæstens‐
+<lb/>ord –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
 <lb/><p>Hvad så?</p></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top">76</fw>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
-<lb/><p>Å nej, intet! &dash; <HIS:hisStage>(Pause.)</HIS:hisStage> Kan I mindes, vi har
+<lb/><p>Å nej, intet! – <HIS:hisStage>(Pause.)</HIS:hisStage> Kan I mindes, vi har
 <lb/>været heroppe engang før?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>
 <lb/><HIS:hisStage>(kort)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Jeg mindes aldrig!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
 <lb/><p>I var løbet efter jer brogede ged, og jeg skulde
-<lb/>nu følge jer, som jeg altid plejede, &dash; ja, det er
+<lb/>nu følge jer, som jeg altid plejede, – ja, det er
 <lb/>længe siden, men jeg kommer det ihu, som om det
-<lb/>var idag; lige dernede ligger myren, som &dash;</p></HIS:hisSp>
+<lb/>var idag; lige dernede ligger myren, som –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>
 <lb/><HIS:hisStage>(nærmer sig)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Var det dengang vi hørte bjørnen?</p></HIS:hisSp>
@@ -1182,10 +1176,10 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><p>Derborte i bakken, ja! Og du havde gjort en
 <lb/>næverskrukke til mig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
-<lb/><p>Men så var det, vi hørte &dash;</p></HIS:hisSp>
+<lb/><p>Men så var det, vi hørte –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
 <lb/><p>Bjørnen, ha, ha, ha! Vi måtte over myren, der
-<lb/>hvor den var blødest, &dash;</p></HIS:hisSp>
+<lb/>hvor den var blødest, –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
 <lb/><p>Og så tog jeg dig på armen.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
@@ -1194,8 +1188,8 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
 <lb/><p>Ja, jeg var nu mest ræd for din skyld.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
-<lb/><p>Og jeg for din &dash; &dash; <HIS:hisStage>(standser pludselig og vedbliver at
-<lb/>betragte ham, idet hendes ansigt antager et bydende og krænket ud&typHyp;
+<lb/><p>Og jeg for din – – <HIS:hisStage>(standser pludselig og vedbliver at
+<lb/>betragte ham, idet hendes ansigt antager et bydende og krænket ud‐
 <lb/>tryk.)</HIS:hisStage> Hvad er det, du her står og siger? Hvorfor
 <lb/>går du ikke? Sømmer det sig at tale så til din
 <lb/>herres datter? Gå, gå, du skulde jo finde min
@@ -1210,7 +1204,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>trøje til jul, så glad bliver jeg derved.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
 <lb/><p>Jeg vil ingen trøje have; jeg tjener jer hverken
-<lb/>for guld eller sølv, hverken for kost eller ridder&typHyp;
+<lb/>for guld eller sølv, hverken for kost eller ridder‐
 <lb/>klæder. Men nu går jeg; hvad jeg mægter, det skal
 <lb/>jeg gøre, når jeg véd, det glæder jer.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>
@@ -1267,18 +1261,18 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>mere! Ej at du har en fæstemand,<pb ed="HU"/> ej at du er
 <pb/>
 <lb/><fw type="page" place="top">80</fw>
-<lb/>min husbonds datter; &dash; ja, såsandt jeg lever, jeg
+<lb/>min husbonds datter; – ja, såsandt jeg lever, jeg
 <lb/>røver dig endnu inat!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>
 <lb/><HIS:hisStage>(heftigt, idet hun stedse kæmper med et frembrydende smil)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Hjælpe mig Gud! hvordan er det fat med dig?
 <lb/>Hvad er det, du tænker på? Vil du røve din herres
 <lb/>datter? Du må være syg eller gal, siden du kan
-<lb/>falde på sligt! Dog, det skal være glemt &dash; for
+<lb/>falde på sligt! Dog, det skal være glemt – for
 <lb/>denne gang. Gå nu! og tak himlen, at du slap så
-<lb/>let; thi vel har du fortjent et rap &dash; <HIS:hisStage>(løfter kvistene, men
-<lb/>lader dem synke og siger med forandret stemme:)</HIS:hisStage> &dash; og min røde
-<lb/>guldring &dash; se der, tag den! <HIS:hisStage>(tilkaster ham en ring, som hun
+<lb/>let; thi vel har du fortjent et rap – <HIS:hisStage>(løfter kvistene, men
+<lb/>lader dem synke og siger med forandret stemme:)</HIS:hisStage> – og min røde
+<lb/>guldring – se der, tag den! <HIS:hisStage>(tilkaster ham en ring, som hun
 <lb/>har trukket af armen og iler hurtigt ud til venstre.)</HIS:hisStage></p></HIS:hisSp>
 </div>
 <div type="scene" n="8">
@@ -1320,7 +1314,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><l part="F">Hvad ligger jer på sinde,</l>
 <lb/><l>at I færdes tre samfulde dage herinde?</l>
 <lb/><HIS:hisStage>(betragter ham nærmere.)</HIS:hisStage>
-<lb/><l>Hvad øver I der for sælsom en leg, &dash;</l>
+<lb/><l>Hvad øver I der for sælsom en leg, –</l>
 <lb/><l>eders kind er hvid, eders pande er bleg!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><l>Du må ikke undres, hvi min kind er hvid,</l>
@@ -1353,7 +1347,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <pb ed="HU"/><lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><l part="F">Snart kommer min brud!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
-<lb/><l part="I">Eders brud! I véd da &dash;?</l></HIS:hisSp>
+<lb/><l part="I">Eders brud! I véd da –?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>
 <lb/><HIS:hisStage>(vedblivende)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l part="F">Når dagen går under,</l>
@@ -1383,7 +1377,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><l>som var der et bristende hjertes nød,</l>
 <lb/><l>som var der en dødsens ve og vånde</l>
 <lb/><l>lagt i det koglende kvæde, der flød</l>
-<pb ed="HU"/><lb/><l>lig en strøm omkring mig! &dash; Knapt kunde jeg ånde!</l>
+<pb ed="HU"/><lb/><l>lig en strøm omkring mig! – Knapt kunde jeg ånde!</l>
 <lb/><l>Så sært forvildet blev sans og sind;</l>
 <lb/><l>det var som om både stærke og milde</l>
 <lb/><l>magter drog mig i lien ind,</l>
@@ -1393,13 +1387,13 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>
 <lb/><HIS:hisStage>(afsides)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Og bruden, som spillemanden fortalte om, hun
-<lb/>måtte jo også følge &dash;</p></HIS:hisSp>
+<lb/>måtte jo også følge –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><l>Da standsed min fole, jeg vaktes derved,</l>
 <lb/><l>jeg så mig om med undrende blikke;</l>
 <lb/><l>hvor var der fagert og vént! Men det sted,</l>
 <lb/><l>jeg var kommen til, kendte jeg ikke!</l>
-<lb/><l>jeg stod i en dal; &dash; skygge og fred</l>
+<lb/><l>jeg stod i en dal; – skygge og fred</l>
 <lb/><l>var drysset som dugg derover!</l>
 <lb/><l>Månen legte ved kærnets bred,</l>
 <lb/><l>det var som den lo, når den dukked sig ned</l>
@@ -1421,13 +1415,13 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><l>hun så mig i sjælen med øjne så blide,</l>
 <lb/><l>hun hvisked i mit øre et gådefuldt ord,</l>
 <lb/><l>som aldrig går mig af minde:</l>
-<lb/><l>&lquo;Olaf Liljekrans! véd du, hvor lykken gror,</l>
+<lb/><l>«Olaf Liljekrans! véd du, hvor lykken gror,</l>
 <lb/><l>véd du, når fred for dig er at vinde?</l>
 <lb/><l>Mellem alle de urter små på rad</l>
 <lb/><l>må du den fagreste finde,</l>
 <pb ed="HU"/><lb/><l>og plukke den sønder, blad for blad,</l>
 <lb/><l>og drysse den ud for alle vinde,</l>
-<lb/><l>da &dash; først da skal du lykken finde!&rquo;</l></HIS:hisSp>
+<lb/><l>da – først da skal du lykken finde!»</l></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
 <lb/><l part="I">I har sovet og drømt!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
@@ -1440,7 +1434,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><fw type="page" place="top">85</fw>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>
 <lb/><HIS:hisStage>(træder forbauset tilbage)</HIS:hisStage>.</HIS:spOpener>
-<lb/><l>Hvad nu, har I vågen fundet &dash;?</l></HIS:hisSp>
+<lb/><l>Hvad nu, har I vågen fundet –?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><l>Min fæstensring tog jeg og skød med den</l>
 <lb/><l>I<note type="typo">Majuskel/minuskel-feil (evnt. manglende tegn i linjen over).</note> luften over hendes hoved hen;</l>
@@ -1464,7 +1458,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><l>Alt imorgen skal hans bryllup stå,</l>
 <lb/><l>men sin fæstemø agter han lidet på,</l>
 <lb/><l>lidet véd han, at hun er nær,</l>
-<lb/><l>og mindre, at hun har en anden kær! &dash;</l>
+<lb/><l>og mindre, at hun har en anden kær! –</l>
 <lb/><l>Han færdes forvildet i skoven omkring,</l>
 <lb/><l>og mig gav Ingeborg den gyldne ring!</l>
 <lb/><l>Hvad jeg har set, skal hans moder kende;</l>
@@ -1478,11 +1472,11 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisStage><HIS:stageRole who="OLAF">Olaf Liljekrans</HIS:stageRole> (træder atter ind fra højre).</HIS:hisStage>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>
 <lb/><HIS:hisStage>(idet han sønderriver nogle blomster, som han har plukket udenfor)</HIS:hisStage>.</HIS:spOpener>
-<lb/><l>&lquo;Mellem alle de urter små på rad</l>
+<lb/><l>«Mellem alle de urter små på rad</l>
 <lb/><l>må du den fagreste finde;</l>
 <lb/><l>og plukke den sønder, blad for blad,</l>
-<lb/><l>og drysse den ud for alle vinde, &dash;</l>
-<lb/><l>da &dash; først da skal du lykken finde!&rquo;</l>
+<lb/><l>og drysse den ud for alle vinde, –</l>
+<lb/><l>da – først da skal du lykken finde!»</l>
 <lb/><l>Jeg får ikke fred for de sælsomme ord.</l>
 <lb/><l>Den fagreste urt? Hvor er det den gror?</l>
 <lb/><l>Hvorpå skal den kendes? Er dens fagerhed lagt</l>
@@ -1533,9 +1527,9 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>hvor dit hjem er, der er jeg rede til at færdes!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
 <lb/><p>Hvi taler du så? Vel må du vide bedre, end
-<lb/>du der siger. &dash; Vætter og alfer råder i houg og
+<lb/>du der siger. – Vætter og alfer råder i houg og
 <lb/>fjeld, og på elvens bund bor nøkken, det har fader
-<lb/>sagt. Mener du.<note type="typo">Feil tegn.</note> jeg er en alf eller &dash;</p></HIS:hisSp>
+<lb/>sagt. Mener du.<note type="typo">Feil tegn.</note> jeg er en alf eller –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><p>Du er den fagreste i verden; vær for mig, hvad
 <lb/>du vil, når du kun er min!</p></HIS:hisSp>
@@ -1562,15 +1556,15 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><p>Har jeg?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><p>Gennem lien red jeg, dybt dernede hvor elven
-<pb ed="HU"/><lb/>løber, &dash; det var nat, sælsomt lød sange og klagende
-<lb/>kvæder rundt om mig &dash; &dash; &dash; &dash;</p>
+<pb ed="HU"/><lb/>løber, – det var nat, sælsomt lød sange og klagende
+<lb/>kvæder rundt om mig – – – –</p>
 <lb/><p>Forvildet blev mig min sti, jeg kom langt, langt
 <lb/>ind mellem bergene, jeg fandt den dejlige dal, hvor
 <lb/>ingen fod har trådt, hvor intet øje har forlystet sig
-<lb/>før mit &dash; &dash; &dash; &dash;</p>
+<lb/>før mit – – – –</p>
 <lb/><p>Tungt faldt en slummer på mig derinde, men
 <lb/>alfekvinderne legte imens, og de drog mig ind i
-<lb/>legen &dash; &dash; &dash; &dash;</p>
+<lb/>legen – – – –</p>
 <lb/><p>Men da jeg vågned, var der bedrøvelse i mit
 <lb/>sind; hjemad red jeg, men dernede kunde jeg ikke
 <pb/>
@@ -1578,30 +1572,30 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>trives mere; det bares mig for, som jeg havde glemt
 <lb/>efter mig det rigeste og bedste i livet, som om en
 <lb/>herlig skat var mig beskåret, ifald jeg kun søgte og
-<lb/>fandt den &dash; &dash; &dash; &dash;</p>
+<lb/>fandt den – – – –</p>
 <lb/><p>Til dalen måtte jeg op, før var der ikke fred
-<lb/>for mig &dash; &dash; &dash; &dash;</p>
+<lb/>for mig – – – –</p>
 <lb/><p>Du kom mig imøde, fager og varm som i denne
-<lb/>stund; jeg greb din hånd, jeg så dig ind i øjet &dash;
+<lb/>stund; jeg greb din hånd, jeg så dig ind i øjet –
 <lb/>himmel og jord, alverdens dejlighed var i dit øje!
-<lb/>&dash; &dash; &dash; &dash;</p>
-<lb/><p>Da glemte jeg venner og frænder! &dash; &dash; &dash; &dash;</p>
+<lb/>– – – –</p>
+<lb/><p>Da glemte jeg venner og frænder! – – – –</p>
 <lb/><p>Jeg kom der næste nat, jeg favnede din midje,
 <lb/>jeg krystede dig til mit bryst, himlens herlighed var
-<lb/>i dit favntag &dash; &dash; &dash; &dash;</p>
-<lb/><p>&dash; Da glemte jeg mit kristen-navn og mine
-<lb/>fædres hjem. &dash; &dash; &dash; &dash;</p>
+<lb/>i dit favntag – – – –</p>
+<lb/><p>– Da glemte jeg mit kristen-navn og mine
+<lb/>fædres hjem. – – – –</p>
 <lb/><p>Og jeg kom den tredje nat, jeg måtte komme,
 <lb/>jeg kyssed dine røde læber, mine øjne åd sig ind
-<lb/>i din sjæl. &dash; Mere end alverdens herlighed var deri!
-<lb/>Jeg glemte mere end Gud og hjem, mere end him&typHyp;
+<lb/>i din sjæl. – Mere end alverdens herlighed var deri!
+<lb/>Jeg glemte mere end Gud og hjem, mere end him‐
 <lb/>mel og jord, jeg glemte mig selv! <HIS:hisStage>(styrter ned for hende.)</HIS:hisStage>
 <lb/>Alfhild! <sic>Afhild</sic>!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
 <lb/><p>Er det en glemselsdrik,<note type="typo">Skadet komma.</note> det som du der<pb ed="HU"/> nævner,
 <lb/>da har jeg koglet mig selv dermed. Mig er det
 <lb/>gået som spillemanden, der lærte nøkkens kvæder,
-<lb/>for at kogle sin hjertenskær; &dash; han koglede og kog&typHyp;
+<lb/>for at kogle sin hjertenskær; – han koglede og kog‐
 <lb/>lede sålænge til kogleriet omspandt hans eget sind,
 <lb/>og han aldrig kunde vinde sig ud deraf. <HIS:hisStage>(standser og
 <lb/>bliver tankefuld stående.)</HIS:hisStage></p></HIS:hisSp>
@@ -1618,7 +1612,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>ligger langt borte; det er som den længedes efter
 <lb/>sine søstre i den friske, frodige lund, som om den
 <lb/>higede efter at plantes ind i det solvarme liv dernede.
-<lb/>&dash; &dash; &dash; &dash;</p>
+<lb/>– – – –</p>
 <lb/><p>Som birken på fjeldet så var mit liv, jeg
 <lb/>længedes udad, efter dig længedes jeg i lange, lange
 <lb/>tider, før jeg vidste, du var til. Dalen blev mig for
@@ -1627,19 +1621,19 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>som gæstede mig hver nat, var mig ikke nok, og de
 <lb/>sagde mig intet om livet derude!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
-<lb/><p>Riddere og fruer? Du har jo sagt mig, at ingen&typHyp;
+<lb/><p>Riddere og fruer? Du har jo sagt mig, at ingen‐
 <lb/>tid mødte du nogen derinde.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
 <lb/><p>Ingen som du! Men hver kveld sang min
 <lb/>fader sine viser for mig, og når det blev nat og mine
 <lb/>øjne lukkedes, da kom de og gæstede mig, alle de,
 <lb/>der lever i min faders viser. Frejdige riddere, fagre
-<lb/>kvinder var blandt dem, de kom med falk på hån&typHyp;
+<lb/>kvinder var blandt dem, de kom med falk på hån‐
 <lb/>den, ridende på stolte gangere. På engen dansede
 <lb/>de, lyst og skemt lød rundt om, hvor de færdedes;
 <lb/>alferne lyttede tyst fra hver en blomst og fuglene
 <lb/>fra grenen, der de var sovet ind. Men når dagen
-<lb/>randt, da var de alle borte, ensom gik jeg, jeg pyn&typHyp;
+<lb/>randt, da var de alle borte, ensom gik jeg, jeg pyn‐
 <pb ed="HU"/><lb/>tede mig med blomster og med grønne blade; thi
 <lb/>jeg vidste, at næste nat vilde de komme igen. Ak,
 <lb/>det liv var mig dog ikke nok; en mægtig længsel
@@ -1669,10 +1663,10 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>dyreste skat, at være livet selv; nu gælder de lidet
 <lb/>for mig; de er mig kun et bud om al den herlighed,
 <lb/>som skulde komme. I dem alle var der en fager
-<lb/>ridder; ham tænkte jeg mig som det bedste og her&typHyp;
+<lb/>ridder; ham tænkte jeg mig som det bedste og her‐
 <lb/>ligste i alle dale, det bedste og herligste sålangt
 <lb/>fugl kan flyve, sålangt sky kan stævne. Olaf! det
-<lb/>var dig, jeg kender dig vel igen! O, du må for&typHyp;
+<lb/>var dig, jeg kender dig vel igen! O, du må for‐
 <lb/>tælle mig om dit hjem, om den fjerne dal, du
 <lb/>kommer fra; rigt og lyst må det være derude; did
 <lb/>må det være mine fugle drager hen ved løvfaldstid;
@@ -1694,13 +1688,13 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>mig alt som en tåget drøm, der glemmes i den
 <lb/>stund vi vågner. Dog, kom! langt dernede ligger
 <lb/>en bygd, der bæres det mig for, at jeg færdedes,
-<lb/>før jeg så dig, der bæres det mig for, at mine fræn&typHyp;
+<lb/>før jeg så dig, der bæres det mig for, at mine fræn‐
 <lb/>der bor. Hører du, hvor elven maner og suser, lad
 <lb/>os følge den; ude på kanten, ved fossefaldet, der
-<lb/>kan vi se over bygden, hvor jeg &dash; engang hørte
+<lb/>kan vi se over bygden, hvor jeg – engang hørte
 <lb/>hjemme. Kom, kom!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
-<lb/><p>Men tør jeg &dash;</p></HIS:hisSp>
+<lb/><p>Men tør jeg –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><p>Følg trøstig, jeg skal værne om dig!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
@@ -1718,7 +1712,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><head>ELLEVTE SCENE.</head>
 <lb/><HIS:hisStage><HIS:stageRole who="FRUKIRSTEN">Fru<note type="typo">Utydelig 'r' i 'Fru'.</note> Kirsten</HIS:stageRole> og <HIS:stageRole who="HEMMING">Hemming</HIS:stageRole> (kommer ind fra venstre).</HIS:hisStage>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
-<lb/><p>Her var han; &dash; se &dash; nej, nu er han borte!</p></HIS:hisSp>
+<lb/><p>Her var han; – se – nej, nu er han borte!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Og han sagde, at han ventede på bruden, som
 <lb/>skulde komme?</p></HIS:hisSp>
@@ -1730,27 +1724,27 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><p>Stille, gode Hemming! stille med det, han har
 <lb/>sagt! Velgjort var det, at du lod mig alene vide,
 <pb ed="HU"/><lb/>han var her. Rigelig skal du lønnes derfor, men
-<lb/>først må vi finde ham fat &dash;</p></HIS:hisSp>
+<lb/>først må vi finde ham fat –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>
 <lb/><HIS:hisStage>(idet han ser ud til højre)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Se, se der, i måneskinnet, på bakken ved elven,
-<lb/>&dash; ja, forvisst tror jeg &dash; &dash;</p></HIS:hisSp>
+<lb/>– ja, forvisst tror jeg – –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Stille, stille, det er Olaf!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
-<lb/><p>Der er to; en kvinde står hos &dash;</p></HIS:hisSp>
+<lb/><p>Der er to; en kvinde står hos –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Alle gode ånder!</p></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top">94</fw>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
-<lb/><p>Han viser udover bygden, som om &dash; der går
+<lb/><p>Han viser udover bygden, som om – der går
 <lb/>de begge!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Hent herr Arne og vore folk! Vi vil mødes
 <lb/>her; jeg bringer Olaf hid!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
-<lb/><p>Men tør I også &dash;?</p></HIS:hisSp>
+<lb/><p>Men tør I også –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Gør som jeg siger; men ti vel med det, du
 <lb/>har hørt og set. Du kan sige, at Olaf drog herop
@@ -1762,9 +1756,9 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><p>Skulde det da være sandt? Skulde onde vætter
 <lb/>have fået magt over ham? Ej, sligt kan jeg bilde
 <lb/>Arne fra Guldvik ind, men lidet tror jeg det selv;
-<lb/>&dash; og dog siges der, at det tidt nok hændte i for&typHyp;
+<lb/>– og dog siges der, at det tidt nok hændte i for‐
 <lb/>dums tider. Men det er nok alfekvinder af kød og
-<lb/>blod, som &dash; &dash;. Der stiger han ned til elven, jeg
+<lb/>blod, som – –. Der stiger han ned til elven, jeg
 <lb/>må rappe mig!</p>
 <lb/><HIS:hisStage>(går ud til højre i mellemgrunden.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Kor</speaker>
@@ -1784,19 +1778,19 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><l>O, du må fortælle mig mere endnu!</l>
 <lb/><l>I mit sind falder dine ord, som duggen hin svale,</l>
 <lb/><l>det er mig, som råded du alle min længsels runer</l>
-<lb/><l>med din liflige tale! &dash; &dash; &dash;</l>
+<lb/><l>med din liflige tale! – – –</l>
 <lb/><l>Sad du aldrig en sommernat ved det øde fjeldvand,</l>
 <lb/><l>der er så dybt, at du ej kan bunde?</l>
 <lb/><l>Så du ikke alle himlens små lys dernede,</l>
 <lb/><l>de kloge øjne, der tolker mere end du kan udgrunde,</l>
 <lb/><l>mere end du kan udsige, om du havde tusinde munde.</l>
-<lb/><l type="dashes">&dash; &dash; &dash; &dash; &dash;</l>
+<lb/><l type="dashes">– – – – –</l>
 <lb/><l>Tidt sad jeg så; med mine hænder vilde jeg fange</l>
-<lb/><l>de dybe, de tindrende gåder dernede &dash;</l>
+<lb/><l>de dybe, de tindrende gåder dernede –</l>
 <lb/><l>jeg greb efter dem, vilde se dem nær,</l>
-<lb/><l>da blev de dunkle, som øjne, der græde, &dash;</l>
-<lb/><l>det var fåfængt at spejde og lede &dash;</l>
-<lb/><l type="dashes">&dash; &dash; &dash; &dash; &dash;</l>
+<lb/><l>da blev de dunkle, som øjne, der græde, –</l>
+<lb/><l>det var fåfængt at spejde og lede –</l>
+<lb/><l type="dashes">– – – – –</l>
 <lb/><l>Så var det også fordum i mit sind!</l>
 <lb/><l>Mange, mange gåder, som jeg vilde forstå;</l>
 <lb/><l>men de gækked mig som stjernen i det dybe vand,</l>
@@ -1807,15 +1801,15 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><l>den ætstore mand, der broutede af sin slægt,</l>
 <lb/><l>og lod hånt om elskov og fuglekvidder!</l>
 <lb/><l>Dog ligegodt, jeg river ud af mindet, hvad jeg var!</l>
-<lb/><l>Lykkelig er jeg, det kan jeg forstå &dash; &dash;</l>
-<lb/><l>din spådom slog fejl, &dash; Lykken skulde jeg finde,</l>
+<lb/><l>Lykkelig er jeg, det kan jeg forstå – –</l>
+<lb/><l>din spådom slog fejl, – Lykken skulde jeg finde,</l>
 <pb/>
 <lb/><fw type="page" place="top">96</fw>
 <lb/><l>når jeg fandt den fagreste blandt urter små.</l>
 <lb/><l part="I">Ha! Lykken har jeg alt fundet!</l></HIS:hisSp>
 <pb ed="HU"/><lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
 <lb/><l part="F">Jeg har intet spået.</l>
-<lb/><l>Dog &dash; fortæl mig mere om livet derude!</l></HIS:hisSp>
+<lb/><l>Dog – fortæl mig mere om livet derude!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><l>Lad livet derude gå sin egen gang,</l>
 <lb/><l>her er mit hjem, hos dig, min prude,</l>
@@ -1832,7 +1826,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisStage>(griber hende lidenskabeligt i sine arme.)</HIS:hisStage>
 <lb/><l>Farvel jeg skikker til bygden dernede!</l>
 <lb/><l>heroppe vil jeg min brudeseng rede;</l>
-<lb/><l>farvel jeg skikker over verden ud, &dash;</l>
+<lb/><l>farvel jeg skikker over verden ud, –</l>
 <lb/><l>nu vil jeg favne min fagre brud!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>
 <lb/><HIS:hisStage>(viger ængsteligt tilbage)</HIS:hisStage>.</HIS:spOpener>
@@ -1840,19 +1834,19 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>
 <lb/><HIS:hisStage>(standser pludselig, som greben af en uklar og smertelig erindring)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l part="F">Min brud! Hvad sagde jeg der!</l>
-<lb/><l>Sig mig &dash; Alfhild &dash; da jeg første gang kom her &dash;</l>
-<lb/><l>kan du &dash; kan du mindes den første kveld?</l>
-<lb/><l>Hvad var det jeg søgte, &dash; hvad vilde jeg vel?</l>
+<lb/><l>Sig mig – Alfhild – da jeg første gang kom her –</l>
+<lb/><l>kan du – kan du mindes den første kveld?</l>
+<lb/><l>Hvad var det jeg søgte, – hvad vilde jeg vel?</l>
 <pb/>
 <lb/><fw type="page" place="top">97</fw>
-<lb/><l>Kom jeg for at hente dig &dash; til &dash; bygden ned?</l>
-<lb/><l>Var det for at bede til bryllup jeg red &dash;?</l></HIS:hisSp>
+<lb/><l>Kom jeg for at hente dig – til – bygden ned?</l>
+<lb/><l>Var det for at bede til bryllup jeg red –?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
-<lb/><l>Hvad mener du? Bryllup? Jeg kan ej forstå &dash;?</l></HIS:hisSp>
+<lb/><l>Hvad mener du? Bryllup? Jeg kan ej forstå –?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><l>Vort fæstensøl var jo drukket på Guldvik! Ej så?</l>
-<lb/><l>Tre uger efter skulde vort bryllup stande &dash;</l>
-<pb ed="HU"/><lb/><l>men det tykkes mig, at &dash; nej, det brænder i min pande!</l>
+<lb/><l>Tre uger efter skulde vort bryllup stande –</l>
+<pb ed="HU"/><lb/><l>men det tykkes mig, at – nej, det brænder i min pande!</l>
 <lb/><l>Jeg vil ikke mere tænke derpå!</l></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Kor</speaker>
 <lb/><HIS:hisStage>(dæmpet og langt inde i skoven)</HIS:hisStage>.</HIS:spOpener>
@@ -1871,7 +1865,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>
 <lb/><HIS:hisStage>(afsides, idet hun træder ind fra baggrunden, uden at bemærkes af de
 <lb/>øvrige)</HIS:hisStage>.</HIS:spOpener>
-<lb/><l>Der er de! Han taler; kunde jeg forstå &dash;!</l>
+<lb/><l>Der er de! Han taler; kunde jeg forstå –!</l>
 <lb/><HIS:hisStage>(nærmer sig lyttende.<note type="typo">Kun rester av punktum.</note>)</HIS:hisStage></HIS:hisSp>
 <lb/><fw type="sheet" place="bottom-left">Henrik Ibsen: Olaf Liljekrans.</fw><fw type="sheet" place="bottom-right">7</fw>
 <pb/>
@@ -1901,7 +1895,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><l rend="indent1">der de lystige svende monne ride!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>
 <lb/><HIS:hisStage>(afsides, under koret)</HIS:hisStage>.</HIS:spOpener>
-<lb/><l>Himlen være lovet! Hemming har fortalt &dash;!</l></HIS:hisSp>
+<lb/><l>Himlen være lovet! Hemming har fortalt –!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>
 <lb/><HIS:hisStage>(jublende)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l>De kommer, de kommer, jeg hører dem alt!</l>
@@ -1920,7 +1914,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><l>Der kommer herr Arne med Ingeborg, din viv.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>
 <lb/><HIS:hisStage>(med et skrig, og ligesom på engang opvågnende)</HIS:hisStage>.</HIS:spOpener>
-<lb/><l>Ingeborg! &dash; Med det navn har I brudt mit liv!</l>
+<lb/><l>Ingeborg! – Med det navn har I brudt mit liv!</l>
 <lb/><l>Min lykke var da idel tant og skrømt!</l>
 <lb/><l>Ak, at I måtte mig sligt bebude!</l>
 <lb/><HIS:hisStage>(fortvilet.)</HIS:hisStage>
@@ -1935,7 +1929,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><p>Til lykke, fru Kirsten! I har jo fundet ham,
 <lb/>som jeg hører.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
-<lb/><p>Javisst, jeg har fundet ham. &dash; Og nu hjemad!</p></HIS:hisSp>
+<lb/><p>Javisst, jeg har fundet ham. – Og nu hjemad!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>
 <lb/><HIS:hisStage>(til <HIS:stageRole who="OLAF">Olaf</HIS:stageRole>)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Og der er ingen skade voldt jer?</p></HIS:hisSp>
@@ -1948,10 +1942,10 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>
 <lb/><HIS:hisStage>(afbrydende)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Visst ikke, herr Arne! Han fór vild på jagten
-<lb/>og &dash;</p></HIS:hisSp>
+<lb/>og –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>
 <lb/><HIS:hisStage>(peger på <HIS:stageRole who="ALFHILD">Alfhild</HIS:stageRole>)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Men denne unge kvinde &dash;?</p></HIS:hisSp>
+<lb/><p>Men denne unge kvinde –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Et fattigt barn! Hun har skænket ham ly og
 <lb/>tilhold.</p></HIS:hisSp>
@@ -1967,7 +1961,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><p>Min moder! jeg kan ikke!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>
 <lb/><HIS:hisStage>(sagte og bestemt)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Du må! Det vil volde dig evig skændsel ifald &dash;</p></HIS:hisSp>
+<lb/><p>Du må! Det vil volde dig evig skændsel ifald –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener>
 <lb/><p>Hvad mener han?</p></HIS:hisSp>
 <pb/>
@@ -1977,7 +1971,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>kom! <HIS:hisStage>(med et betydningsfuldt blik til <HIS:stageRole who="OLAF">Olaf</HIS:stageRole>.)</HIS:hisStage> Den unge kvinde
 <lb/>følger med!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
-<lb/><p>I mener, at hun &dash;!</p></HIS:hisSp>
+<lb/><p>I mener, at hun –!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Trolig har hun plejet ham; vel bør det sig, at
 <lb/>hun lønnes derfor.</p></HIS:hisSp>
@@ -2014,7 +2008,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="THORGJERD"><HIS:spOpener><speaker>Thorgjerd</speaker>
 <lb/><HIS:hisStage>(i baggrunden)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l>Alfhild! mit barn! Hvor kommer du her?</l>
-<lb/><l part="I">Jeg har jo sagt dig &dash;</l></HIS:hisSp>
+<lb/><l part="I">Jeg har jo sagt dig –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
 <lb/><l part="F">Min fader kær!</l>
 <lb/><l>Nu må jeg flyve fri som alle vinde,</l>
@@ -2036,7 +2030,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><l>Mangen kveld har vi siddet ved striden elv,</l>
 <lb/><l>du sang om kongens datter, som var hekset i fjeldet!</l>
 <lb/><l>Kongens datter, min fader! det er jeg selv;</l>
-<lb/><l>men han, den fagre ridder! har trolden fældet! &dash;</l>
+<lb/><l>men han, den fagre ridder! har trolden fældet! –</l>
 <lb/><l>Nu er jeg fri, jeg véd, hvad jeg vil,</l>
 <lb/><l>jeg vil udad i livets brogede spil!</l>
 <lb/><l>Hans ord var sang! Det var, som gav han mig vinger;</l>
@@ -2070,7 +2064,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><l>mig vinker alverdens jubel og sang!</l>
 <lb/><l>Imorgen skal jeg smykkes med gyldenskrud</l>
 <lb/><l>og ride til kirken som Olafs brud!</l>
-<lb/><l>Sammen skal vi sidde på højsædets hynde &dash;</l>
+<lb/><l>Sammen skal vi sidde på højsædets hynde –</l>
 <lb/><l>ja, nu, først nu skal mit liv begynde!</l></HIS:hisSp>
 <lb/><HIS:hisStage>(hun iler ud til venstre. <HIS:stageRole who="THORGJERD">Thorgjerd</HIS:stageRole> ser tankefuld efter hende, <HIS:stageRole>koret</HIS:stageRole>
 <lb/>taber sig i det fjerne, idet tæppet falder.)</HIS:hisStage>
@@ -2081,11 +2075,11 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <div type="act" n="2">
 <lb/><head>ANDEN AKT.</head>
 <lb/><figure type="bar"/>
-<lb/><HIS:hisStage>(Tunet ved <hi>fru Kirstens</hi> gård. På tilskuernes højre side ses hoved&typHyp;
+<lb/><HIS:hisStage>(Tunet ved <hi>fru Kirstens</hi> gård. På tilskuernes højre side ses hoved‐
 <lb/>bygningen med en luge i gavlen; vinduer eller døre er ikke synlige.
 <lb/>Længer mod baggrunden på samme side en liden stavkirke med en
 <lb/>kirkegård. På venstre side stabur og andre udhusbygninger. På begge
-<lb/>sider i forgrunden simple stenbænke<note type="typo">Tegn mangler?</note> &dash; Det er eftermiddag.)</HIS:hisStage>
+<lb/>sider i forgrunden simple stenbænke<note type="typo">Tegn mangler?</note> – Det er eftermiddag.)</HIS:hisStage>
 <div type="scene" n="1">
 <lb/><head>FØRSTE SCENE.</head>
 <lb/><HIS:hisStage><HIS:stageRole who="FRUKIRSTEN">Fru Kirsten</HIS:stageRole>. <HIS:stageRole>Karle</HIS:stageRole> og <HIS:stageRole>piger</HIS:stageRole> (beskæftigede med tilberedelser til gildet).</HIS:hisStage>
@@ -2094,23 +2088,23 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisStage>(for sig selv.)</HIS:hisStage> Hårdt holdt det og tungt har jeg stridt,
 <lb/>før det kom så vidt; men nu vil jeg også gøre et
 <lb/>gilde, som skal høres og spørges. <HIS:hisStage>(til tyendet.)</HIS:hisStage> Se vel
-<lb/>efter på bryllupsbordet om &dash; dog nej, det vil jeg
+<lb/>efter på bryllupsbordet om – dog nej, det vil jeg
 <lb/>selv gøre. Vinen skal hældes i sølvkanderne, de
 <lb/>store drikkehorn skal fyldes med den vælske most,
 <lb/>øllet er kun for huskarlene, og den hjemmebryggede
-<lb/>mjød ligeså, &dash; og hør, se vel til, at der findes nok
+<lb/>mjød ligeså, – og hør, se vel til, at der findes nok
 <lb/>af gule vokslys i kirken, brudefolkene skal ikke for
 <lb/>alteret før sent på kvelden, med røde blus skal de
 <lb/>lyses og følges didhen fra gildestuen. Gå nu alle,
 <lb/>og tag vare på det, jeg har sat jer til, hver især.
 <lb/><HIS:hisStage>(folkene går.)</HIS:hisStage> Gud véd, dette bryllup koster mere end
-<lb/>jeg vel kan bære; men Ingeborg bringer god med&typHyp;
-<lb/>gift og desforuden &dash; o ja, Arne står vel til at styres
+<lb/>jeg vel kan bære; men Ingeborg bringer god med‐
+<lb/>gift og desforuden – o ja, Arne står vel til at styres
 <pb/>
 <lb/><fw type="page" place="top">106</fw>
-<lb/>og rådes, som det bedst lyster mig, når han først &dash;
+<lb/>og rådes, som det bedst lyster mig, når han først –
 <lb/><HIS:hisStage>(ser ud til højre.)</HIS:hisStage> Der kommer Olaf! Ifald jeg kun vidste,
-<lb/>at han &dash; &dash;</p></HIS:hisSp>
+<lb/>at han – –</p></HIS:hisSp>
 </div>
 <pb ed="HU"/><div type="scene" n="2">
 <lb/><head>ANDEN SCENE.</head>
@@ -2118,10 +2112,10 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>tankefuld.)</HIS:hisStage>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>
 <lb/><HIS:hisStage>(for sig selv)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Igår og idag! Der ligger kun en midsommer&typHyp;
+<lb/><p>Igår og idag! Der ligger kun en midsommer‐
 <lb/>nat imellem, og dog bæres det mig for, som både
 <lb/>høst og vinter var faldet på mit sind, siden den tid
-<lb/>jeg færdedes deroppe i lierne &dash; hos hende, hos Alf&typHyp;
+<lb/>jeg færdedes deroppe i lierne – hos hende, hos Alf‐
 <lb/>hild! <HIS:hisStage>(bemærker <HIS:stageRole who="FRUKIRSTEN">fru Kirsten</HIS:stageRole>.)</HIS:hisStage> Ak, kære moder min, er I der!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Retså, min søn! Pyntet med guld og silke,
@@ -2155,7 +2149,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisStage>(går nogle gange frem og tilbage; endelig standser han foran sin moder
 <lb/>og siger)</HIS:hisStage>:</HIS:spOpener>
 <lb/><p>Om jeg havde fæstet en fattigmands datter,
-<lb/>uden gods og uden slægt, &dash; sig mig, min moder!
+<lb/>uden gods og uden slægt, – sig mig, min moder!
 <lb/>hvad havde I så gjort?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>
 <lb/><HIS:hisStage>(betragter ham skarpt)</HIS:hisStage>.</HIS:spOpener>
@@ -2163,7 +2157,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><p>Svar mig først. Hvad havde I så gjort?</p></HIS:hisSp>
 <pb ed="HU"/><lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
-<lb/><p>Forbandet dig og gået i jorden af sorg! &dash; Men
+<lb/><p>Forbandet dig og gået i jorden af sorg! – Men
 <lb/>sig mig, hvi spørger du?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><p>Ej, det var kun skemt, jeg tænkte lidet derved.</p></HIS:hisSp>
@@ -2182,7 +2176,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><p>Den fagreste urt, som jeg skulde plukke sønder
 <lb/>og drysse ud for alle vinde.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
-<lb/><p>Den tossede drøm; &dash; tænk ikke mere derpå.</p></HIS:hisSp>
+<lb/><p>Den tossede drøm; – tænk ikke mere derpå.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><p>Kanhænde det bådede mig bedst, om jeg kunde det.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
@@ -2196,7 +2190,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><p>I fruerstuen, som jeg sagde dig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>
 <lb/><HIS:hisStage>(livligt)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Intet skal fattes hende efter denne dag. Sølv&typHyp;
+<lb/><p>Intet skal fattes hende efter denne dag. Sølv‐
 <lb/>spændte sko vil jeg skænke hende; hun skal bære
 <lb/>søljer og ringe. De visne blomsterkviste skal hun
 <lb/>lægge af, jeg vil give hende en gylden kæde at bære.</p></HIS:hisSp>
@@ -2214,7 +2208,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><p>Det har hun! Ja, forsandt, min moder! jeg har
 <lb/>været forhekset. Jeg har været i alfekvindernes leg;
-<lb/>salig og fro var jeg, sålænge det stod på, men nu &dash;.
+<lb/>salig og fro var jeg, sålænge det stod på, men nu –.
 <lb/>I lange, lange år vil jeg tynges af kummer og ve,
 <lb/>såtidt jeg drages det til minde.</p></HIS:hisSp>
 <pb ed="HU"/><lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
@@ -2233,8 +2227,8 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><fw type="page" place="top">110</fw>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Og Ingeborg, som du har trolovet og som har
-<lb/>dig kær, ja, Olaf! kær af hjertet &dash; himlens straf
-<lb/>vilde ramme dig, ifald &dash;</p></HIS:hisSp>
+<lb/>dig kær, ja, Olaf! kær af hjertet – himlens straf
+<lb/>vilde ramme dig, ifald –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><p>Vel sandt, vel sandt!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
@@ -2250,14 +2244,14 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><p>Med Arnes penge kan det altsammen bødes på;
 <lb/>en hæderlig plads vil du vinde blandt kongens mænd.
 <lb/>Tænk dig vel om; har du lovet Alfhild mere end
-<lb/>du kan holde &dash; og mig tykkes at mærke noget
-<lb/>sligt hos hende, så stille hun end går med det &dash;
+<lb/>du kan holde – og mig tykkes at mærke noget
+<lb/>sligt hos hende, så stille hun end går med det –
 <lb/>så tal med hende derom. Sig hende, nu ja, sig
 <lb/>hende, hvad du selv vil; tomhændet skal hun ikke
 <lb/>gå herfra, det kan du frit love. Se, der kommer
 <lb/>hun! Olaf, min søn! tænk på din fæstemø og på
 <lb/>din stolte æt, tænk på din gamle moder, som måtte
-<lb/>gå i jorden af blussel, ifald &dash; vær mand, Olaf! Nu
+<lb/>gå i jorden af blussel, ifald – vær mand, Olaf! Nu
 <lb/>går jeg ind og ser efter gildebordet.</p>
 <lb/><HIS:hisStage>(går ind i huset.)</HIS:hisStage></HIS:hisSp>
 </div>
@@ -2274,7 +2268,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><l>og trænges af nød og kvide!</l>
 <lb/><l>Snart må jeg bryde hendes frejdige tro</l>
 <lb/><l>og vække hende op af drømme,</l>
-<lb/><l>og så &dash; ja så må vi skilles, vi to.</l>
+<lb/><l>og så – ja så må vi skilles, vi to.</l>
 <lb/><l>Arme Alfhild! så bitter en skål må Du tømme.</l>
 <lb/><HIS:hisStage>(grublende.)</HIS:hisStage>
 <lb/><l>Hvad var mig ære, hvad var mig magt,</l>
@@ -2284,13 +2278,13 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><l>Jeg havde glemt bort både nød og strid,</l>
 <lb/><l>men alt fra i nat, da jeg atter kom hid,</l>
 <lb/><l>da jeg sad til højbords i mine fædres stue,</l>
-<lb/><l>da jeg gik at træde for min moder frem &dash;</l>
+<lb/><l>da jeg gik at træde for min moder frem –</l>
 <lb/><HIS:hisStage>(afbrydende.)</HIS:hisStage>
 <lb/><l>Ja, ja, jeg er født og båren af en adelsfrue,</l>
 <lb/><l>og på fjeldet har den frændeløse Alfhild sit hjem.</l>
 <lb/><l>For Olaf Liljekrans vilde hun lidet sig skikke.</l>
-<lb/><l>Jeg må sige hende &dash; nej, nej, jeg kan det ikke!</l>
-<lb/><l>Og dog &dash; ikveld &dash; ja, forvisst det må ske,</l>
+<lb/><l>Jeg må sige hende – nej, nej, jeg kan det ikke!</l>
+<lb/><l>Og dog – ikveld – ja, forvisst det må ske,</l>
 <lb/><l>høre må hun, hvad der volder mig den bitreste ve!</l></HIS:hisSp>
 </div>
 <pb/>
@@ -2306,7 +2300,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <pb ed="HU"/><lb/><l>Her hos dig er forvisst så vén en ø,</l>
 <lb/><l>her kan jeg sorgeløs leve og syndeløs dø!</l>
 <lb/><l>Såmeget gad jeg spørge, så lidet jeg forstår,</l>
-<lb/><l>alle de underlige gåder må du klare. &dash;</l>
+<lb/><l>alle de underlige gåder må du klare. –</l>
 <lb/><l>Grønnes altid herude sommer og vår?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><l part="I">Ak, Alfhild!</l></HIS:hisSp>
@@ -2347,7 +2341,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><l>Hans hus er jo højt over stjernerne små,</l>
 <pb ed="HU"/><lb/><l>hvor den hvide skysvane svømmer,</l>
 <lb/><l>så højt som intet øje kan nå</l>
-<lb/><l>uden barnets, der det blunder og drømmer! &dash;</l>
+<lb/><l>uden barnets, der det blunder og drømmer! –</l>
 <lb/><l>Men kirken, du nævnte! Så er det jo did</l>
 <lb/><l>vi skal ride i festligt følge,</l>
 <lb/><l part="I">som brud og brudgom!</l></HIS:hisSp>
@@ -2372,7 +2366,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><l>hver den lilje på stien skulde bøje sig som en vånd,</l>
 <lb/><l>alle de urter små skulde sig for bruden neje!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
-<lb/><l part="I">Har jeg sagt &dash;</l></HIS:hisSp>
+<lb/><l part="I">Har jeg sagt –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
 <lb/><l part="F">O, du drages det vel til minde!</l>
 <lb/><l>Se dig om, det er sket på dit bud;</l>
@@ -2382,7 +2376,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><l>Aldrig skinned himlens lysende øje</l>
 <lb/><l>så lifligt som her fra det høje;</l>
 <lb/><l>aldrig sang de fugle så vent som idag!</l>
-<lb/><l>De synger jo brud og brudgom til behag! &dash;</l>
+<lb/><l>De synger jo brud og brudgom til behag! –</l>
 <lb/><l>Du, du har voldt mig så livsalig en lyst,</l>
 <lb/><l>jeg kunde trykke jord og himmel til mit bryst!</l>
 <lb/><l>Ej findes på marken så fattigt strå,</l>
@@ -2405,7 +2399,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><l>havde jeg englenes tunge,</l>
 <lb/><l>højt jeg skulde din lovsang sjunge;</l>
 <lb/><l>men jeg kan det ikke; du er for stor,</l>
-<lb/><l>jeg kan kun bøje mig for dig til jord &dash;</l>
+<lb/><l>jeg kan kun bøje mig for dig til jord –</l>
 <lb/><l>tak, du unævnelige! Lov og ære</l>
 <lb/><l>for alt, hvad jeg her monne nemme og lære!</l>
 <lb/><HIS:hisStage>(rejser sig.)</HIS:hisStage>
@@ -2417,7 +2411,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><l>Jeg véd ej, hvad du mener, men jeg grubled så såre,</l>
 <lb/><l>og spurgte min fader, hvad døden var,</l>
 <lb/><l>da sang han mig en vise derom til svar:</l>
-<lb/><l rend="indent2 line">&lquo;Når menneskets barn er stedet i kval</l>
+<lb/><l rend="indent2 line">«Når menneskets barn er stedet i kval</l>
 <lb/><l rend="indent1">og lyster at vugges i slummer,</l>
 <lb/><l rend="indent1">da kommer en alf med hvide vinger</l>
 <lb/><l rend="indent1">og frier det ud fra nød og kummer.</l>
@@ -2437,14 +2431,14 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><l rend="indent1">de drysser alt over det rosenbolster</l>
 <lb/><l rend="indent1">perler, både hvide og blå.</l>
 <lb/><l rend="indent2 line">Så vågner det lidet menneskebarn,</l>
-<lb/><l rend="indent1">det vågner til himmelens glæde, &dash;</l>
+<lb/><l rend="indent1">det vågner til himmelens glæde, –</l>
 <lb/><l rend="indent1">men al den fryd og megen gammen</l>
-<lb/><l rend="indent1">slet ingen véd om hernede.&rquo;</l></HIS:hisSp>
+<lb/><l rend="indent1">slet ingen véd om hernede.»</l></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><l>Alfhild! bedre det var, om dit liv</l>
 <lb/><l>var rundet i fred deroppe på fjeldet.</l>
 <lb/><l>Din fryd vil visne som et brækket siv,</l>
-<lb/><l part="I">din tro vil dødes &dash;</l></HIS:hisSp>
+<lb/><l part="I">din tro vil dødes –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
 <lb/><l part="F">Som Olafs viv</l>
 <lb/><l>er jeg stærk og modig lig fossevældet!</l>
@@ -2506,7 +2500,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><l>Ej var døden så i min faders kvæde.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><l>Vel sandt; den megen gammen og glæde</l>
-<lb/><l>sletingen véd om hernede. &dash;</l>
+<lb/><l>sletingen véd om hernede. –</l>
 <lb/><l>Har du aldrig hørt om hougkongens skat,</l>
 <lb/><l>der lyser som røden guld hver nat;</l>
 <lb/><l>men vil du med hænder tage derpå,</l>
@@ -2518,10 +2512,10 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><l>Vel sandt, det skinner som himmelens stjerne,</l>
 <lb/><l>men kun <sic>naar</sic> du ser det fra det fjerne.</l>
 <lb/><HIS:hisStage>(bemærker <HIS:stageRole who="FRUKIRSTEN">fru Kirsten</HIS:stageRole> udenfor til højre <note type="typo">Tegn mangler, mellomrom intakt.</note>)</HIS:hisStage>
-<lb/><l>Min moder &dash; hun vil sige dig &dash; nu går jeg ind.</l>
+<lb/><l>Min moder – hun vil sige dig – nu går jeg ind.</l>
 <lb/><l>Alle engle drysse sin fred i <sic>sit</sic> sind!</l></HIS:hisSp>
-<lb/><HIS:hisStage>(Han går mod huset, men standses af <HIS:stageRole who="FRUKIRSTEN">fru Kirsten</HIS:stageRole>. &dash; Himlen over&typHyp;
-<lb/>trækkes af mørke skyer, vinden begynder at suse i trætoppene. &dash; <HIS:stageRole who="ALFHILD">Alf&typHyp;
+<lb/><HIS:hisStage>(Han går mod huset, men standses af <HIS:stageRole who="FRUKIRSTEN">fru Kirsten</HIS:stageRole>. – Himlen over‐
+<lb/>trækkes af mørke skyer, vinden begynder at suse i trætoppene. – <HIS:stageRole who="ALFHILD">Alf‐
 <lb/>hild</HIS:stageRole> <sic>staar</sic> hensunken i dybe tanker.<note type="typo">Kun rester av punktum.</note>)</HIS:hisStage>
 </div>
 <div type="scene" n="5">
@@ -2529,7 +2523,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisStage><HIS:stageRole who="ALFHILD OLAF">De forrige</HIS:stageRole>. <HIS:stageRole who="FRUKIRSTEN">Fru Kirsten</HIS:stageRole>.</HIS:hisStage>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>
 <lb/><HIS:hisStage>(sagte)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Nu, min søn! ej sandt, du har vel sagt hende &dash;?</p></HIS:hisSp>
+<lb/><p>Nu, min søn! ej sandt, du har vel sagt hende –?</p></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top">119</fw>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
@@ -2539,9 +2533,9 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisStage>(kaster et blik på <HIS:stageRole who="ALFHILD">Alfhild</HIS:stageRole> og går ud ved huset.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Den dårskab vil snart brændes ud af ham,
-<lb/>hvis &dash; <HIS:hisStage>(som om hun pludselig fik et indfald.)</HIS:hisStage> Men ifald jeg &dash;
-<lb/>&dash; Ha, ha, vilde det lykkes, da var han helbredet,
-<lb/>det lover jeg for. Men Alfhild &dash;? Nu ja, ligegodt,
+<lb/>hvis – <HIS:hisStage>(som om hun pludselig fik et indfald.)</HIS:hisStage> Men ifald jeg –
+<lb/>– Ha, ha, vilde det lykkes, da var han helbredet,
+<lb/>det lover jeg for. Men Alfhild –? Nu ja, ligegodt,
 <lb/>det må fristes.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>
 <lb/><HIS:hisStage>(for sig selv)</HIS:hisStage>.</HIS:spOpener>
@@ -2559,7 +2553,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Af Olaf?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
-<lb/><p>Javisst af Olaf, han har sagt mig &dash;</p></HIS:hisSp>
+<lb/><p>Javisst af Olaf, han har sagt mig –</p></HIS:hisSp>
 <pb ed="HU"/><lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Jeg véd det, Alfhild! jeg véd, hvad han har
 <lb/>sagt. <HIS:hisStage>(afsides.)</HIS:hisStage> Han har nævnt sit bryllup for hende,
@@ -2599,7 +2593,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><fw type="page" place="top">121</fw>
 <lb/>snare, selv om han gifter sig. Ja, ja, det skal vi
 <lb/>strides om. <HIS:hisStage>(højt.)</HIS:hisStage> Alfhild! jeg under dig alt godt, og
-<lb/>dersom du turde lide på mig &dash;</p></HIS:hisSp>
+<lb/>dersom du turde lide på mig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
 <lb/><p>Ja, det tør jeg forvisst!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
@@ -2615,13 +2609,13 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
 <lb/><p>Det har Olaf selv sagt.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
-<lb/><p>Olaf! <HIS:hisStage>(afsides.)</HIS:hisStage> Skulde Olaf &dash;? Ja, forsandt, han
+<lb/><p>Olaf! <HIS:hisStage>(afsides.)</HIS:hisStage> Skulde Olaf –? Ja, forsandt, han
 <lb/>har havt den samme tanke som jeg, at gifte hende bort
 <lb/>for at skille sig af med hende. Eller<pb ed="HU"/> kanhænde for at
-<lb/>&dash; nu, ligegodt, er hun først bortgiftet, og er Olaf
-<lb/>ligeledes på sin side bleven ægtemand, så &dash; <HIS:hisStage>(højt.<note type="typo">Kun rester av punktum.</note>)</HIS:hisStage>
+<lb/>– nu, ligegodt, er hun først bortgiftet, og er Olaf
+<lb/>ligeledes på sin side bleven ægtemand, så – <HIS:hisStage>(højt.<note type="typo">Kun rester av punktum.</note>)</HIS:hisStage>
 <lb/>Ja, ja, godt, Alfhild! når Olaf har sagt vor hensigt
-<lb/>med dig, så har jo ikke jeg fornødent at &dash; Men
+<lb/>med dig, så har jo ikke jeg fornødent at – Men
 <lb/>skynd dig nu, gå derind i staburet, der hænger min
 <lb/>egen bryllupsklædning, den skal du bære!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>
@@ -2635,7 +2629,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
 <lb/><p>Og får jeg også brudekrone?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
-<lb/><p>Javisst! Brudekrone og sølvringe og røde guld&typHyp;
+<lb/><p>Javisst! Brudekrone og sølvringe og røde guld‐
 <lb/>bånd. Du vil finde nok deraf i kister og skabe.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
 <lb/><p>Sølvringe og røde guldbånd!</p></HIS:hisSp>
@@ -2665,17 +2659,17 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>koglet og lokket for ham, og så, ja så er hun ham
 <lb/>ikke længer<pb ed="HU"/> farlig. <HIS:hisStage>(smilende.)</HIS:hisStage> Se, se! Olaf tænkte dog
 <lb/>på den samme frelse som jeg; så snild havde jeg
-<lb/>ikke holdt ham for at være. &dash; Men hvor finder vi
-<lb/>den svend, som er villig til &dash; Nu, vakker er hun,
+<lb/>ikke holdt ham for at være. – Men hvor finder vi
+<lb/>den svend, som er villig til – Nu, vakker er hun,
 <lb/>og på sølv og en liden grund dertil, skal det ikke
 <lb/>komme an. Skulde Olaf allerede have talt til nogen
-<lb/>derom? Det er ikke tænkeligt! &dash; Nu, så vil jeg
+<lb/>derom? Det er ikke tænkeligt! – Nu, så vil jeg
 <lb/>sørge for den sag. Jeg har jo huskarle nok på
-<lb/>gården og &dash; <HIS:hisStage>(ser ud til højre.)</HIS:hisStage> Hemming! om jeg prø&typHyp;
+<lb/>gården og – <HIS:hisStage>(ser ud til højre.)</HIS:hisStage> Hemming! om jeg prø‐
 <lb/>vede med ham! Men han så dem jo sammen på
 <lb/>fjeldet igår, han må vel vide, at der er noget mellem
-<lb/>de to. Men ikke desmindre &dash; han er en ringe svend,
-<lb/>og derhos fattig og veg af sind &dash; vi får se, vi får se!</p></HIS:hisSp>
+<lb/>de to. Men ikke desmindre – han er en ringe svend,
+<lb/>og derhos fattig og veg af sind – vi får se, vi får se!</p></HIS:hisSp>
 </div>
 <div type="scene" n="7">
 <lb/><head>SYVENDE SCENE.</head>
@@ -2697,7 +2691,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <pb/>
 <lb/><fw type="page" place="top">124</fw>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
-<lb/><p>Ej, min høje frue! hvad skulde &dash;</p></HIS:hisSp>
+<lb/><p>Ej, min høje frue! hvad skulde –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Jo, Hemming! der er noget, som du går og
 <lb/>bærer på iløn; du er ikke frejdig tilsinds!</p></HIS:hisSp>
@@ -2713,14 +2707,14 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Og hun er dig god igen.</p></HIS:hisSp>
 <pb ed="HU"/><lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
-<lb/><p>Mig &dash; Hvem? Ikke véd jeg, hvem I mener.</p></HIS:hisSp>
+<lb/><p>Mig – Hvem? Ikke véd jeg, hvem I mener.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Ej, Hemming, tal ikke så, for mig skal du lidet
 <lb/>blues. Jo, jo, jeg ser grant, kan du tro.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>
 <lb/><HIS:hisStage>(afsides)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Himmel! hun må have mærket på Ingeborg,
-<lb/>at &dash;</p></HIS:hisSp>
+<lb/>at –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Jeg har vel set, at bryllupsgildet volder dig liden
 <lb/>gammen. Kirkefærden er dig imod, efterdi du selv
@@ -2746,7 +2740,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Retvel, retvel, så I har talt tilhobe derom?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
-<lb/><p>Ja, &dash; men kun én, kun én eneste gang, det
+<lb/><p>Ja, – men kun én, kun én eneste gang, det
 <lb/>sværger jeg.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>En eller ti gange, det er mig lige kært. <HIS:hisStage>(afsides.)</HIS:hisStage>
@@ -2780,7 +2774,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>det. <HIS:hisStage>(betænkeligt.)</HIS:hisStage> Men mener I, at herr Arne vil give
 <lb/>sit minde?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
-<lb/><p>Din Husbond<note type="typo">Majuskel/minuskel-feil.</note>? Jeg skal vide at tale ham til&typHyp;
+<lb/><p>Din Husbond<note type="typo">Majuskel/minuskel-feil.</note>? Jeg skal vide at tale ham til‐
 <lb/>rette, det vil nok lykkes.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
 <lb/><p>Mener I? Ak, men jeg er jo dog så fattig en
@@ -2799,16 +2793,16 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><p>Det lover jeg.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Så hold dig rede, herude samles gæsterne om
-<lb/>føje tid, vær så ikke langt fra hånden. <HIS:hisStage>(går op mod sta&typHyp;
+<lb/>føje tid, vær så ikke langt fra hånden. <HIS:hisStage>(går op mod sta‐
 <lb/>burdøren og spejder efter <HIS:stageRole who="ALFHILD">Alfhild</HIS:stageRole>).</HIS:hisStage></p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>
 <lb/><HIS:hisStage>(for sig selv)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Nej, dette her er mig som en forunderlig, gæk&typHyp;
+<lb/><p>Nej, dette her er mig som en forunderlig, gæk‐
 <lb/>kende drøm. Ingeborg og jeg, vi skulde få hinanden!
 <lb/>Ak, kan det være sandt? Så højt turde jeg aldrig
-<lb/>tænke; &dash; det var mig hver morgen, som jeg havde
+<lb/>tænke; – det var mig hver morgen, som jeg havde
 <lb/>gjort en formastelig gerning, når jeg om natten blot
-<lb/>drømte derom. &dash; Hm! jeg véd forresten ret vel, at
+<lb/>drømte derom. – Hm! jeg véd forresten ret vel, at
 <lb/>det ikke er for min skyld, fru Kirsten gør sig al den
 <lb/>besvær. Hun har noget isinde; det gælder for hende
 <lb/>at bryde forliget med herr Arne, og nu hun har
@@ -2834,19 +2828,19 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisStage>(for sig selv)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Så ung er hun og dog så underfundig; hun har
 <lb/>leflet med Hemming, alt imens hun bildte min søn
-<lb/>ind, at &dash; &dash; Godt, han skal snart lære hendes kun&typHyp;
+<lb/>ind, at – – Godt, han skal snart lære hendes kun‐
 <lb/>ster at kende. Men først må jeg have herr Arne fat;
 <lb/>han holder meget af Hemming, vil nødig skilles fra
 <lb/>ham; det lod også som Hemming frygtede for, at
 <lb/>det skulde være til hinder; men de kan jo mageligt
-<lb/>blive sammen, om end Hemming gifter sig. &dash; Hem&typHyp;
+<lb/>blive sammen, om end Hemming gifter sig. – Hem‐
 <lb/>ming ser ellers mere grant i tingen, end jeg tænkte
 <lb/>mig. Hvad vil Olaf sige dertil, spurgte han; han
 <lb/>har da altså mærket, at Alfhild endnu ligger min
 <lb/>søn på hjertet. Nu, lad ham det; tager han hende,
-<lb/>så tier han også, og er Alfhild først gift &dash; jeg kender
+<lb/>så tier han også, og er Alfhild først gift – jeg kender
 <lb/>Olaf; han har stedse sat høj pris på at stå i agt
-<lb/>og ære hos bygdens mænd, og derfor vil han vel &dash;
+<lb/>og ære hos bygdens mænd, og derfor vil han vel –
 <lb/>ja, ja, det må, det skal lykkes.</p>
 <lb/><HIS:hisStage>(går ud til højre.)</HIS:hisStage></HIS:hisSp>
 </div>
@@ -2876,7 +2870,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><p>Er det ikke nok, synes dig, at hun og alle
 <lb/>hendes fornemme frænder lader hånt om mig; ved
 <lb/>nadverden lo de og skemtede mellem hinanden, efterdi
-<lb/>jeg ikke kunde komme mig for at æde af alle de ugude&typHyp;
+<lb/>jeg ikke kunde komme mig for at æde af alle de ugude‐
 <lb/>lige udenlandske retter. Og hvad var det så vi fik
 <lb/>at drikke dertil? Sød vin og most, som vil ligge
 <lb/>mig i maven i otte dage. Nej, da priser jeg mit gode
@@ -2893,11 +2887,11 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <pb/>
 <lb/><fw type="page" place="top">130</fw>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener>
-<lb/><p>Å &dash; varet mig ad! Du er dum, Hemming!
+<lb/><p>Å – varet mig ad! Du er dum, Hemming!
 <lb/>mener du ikke, jeg selv har mærket det; men bi
-<lb/>kun, bi kun! <HIS:hisStage>(opfarende.)</HIS:hisStage> At sætte mit gode, kvæg&typHyp;
-<lb/>somme øl for huskarlene, som om det ikke var vær&typHyp;
-<lb/>digt at komme på et herremandsbord. &dash;</p></HIS:hisSp>
+<lb/>kun, bi kun! <HIS:hisStage>(opfarende.)</HIS:hisStage> At sætte mit gode, kvæg‐
+<lb/>somme øl for huskarlene, som om det ikke var vær‐
+<lb/>digt at komme på et herremandsbord. –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
 <lb/><p>Ja, fru Kirsten handler ilde med jer, det er visst.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>
@@ -2908,11 +2902,11 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><p>Ja, mig huer det ikke her i bryllupsgården.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener>
 <lb/><p>Nej, da lover jeg min gamle stue på Guldvik;
-<pb ed="HU"/><lb/>&dash; når vi to sad sammen om kvelden og legede
-<lb/>brikkespil og havde ølkruset mellem os &dash;</p></HIS:hisSp>
+<pb ed="HU"/><lb/>– når vi to sad sammen om kvelden og legede
+<lb/>brikkespil og havde ølkruset mellem os –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
-<lb/><p>Medens jomfru Ingeborg sad ved væven og bal&typHyp;
-<lb/>dyrede roser og alskens blomster i lindugen &dash;</p></HIS:hisSp>
+<lb/><p>Medens jomfru Ingeborg sad ved væven og bal‐
+<lb/>dyrede roser og alskens blomster i lindugen –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener>
 <lb/><p>Og sang derhos så lifligt, at det bares mig for,
 <lb/>som jeg blev ung og rørig igen. Ja, Hemming!
@@ -2928,7 +2922,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>Det vil gå mig hårdt til hjerte; hun er vild og
 <lb/>selvrådig, men savne hende vil jeg dog, og det tungt.
 <lb/><HIS:hisStage>(tænker sig om.)</HIS:hisStage> Imellemstunder kunde jeg vel gæste
-<lb/>hende her &dash; &dash; Men nej.<note type="typo">Feil tegn.</note> det vil jeg ikke! Her ler
+<lb/>hende her – – Men nej.<note type="typo">Feil tegn.</note> det vil jeg ikke! Her ler
 <lb/>de af mig, de hvisker bag min ryg, jeg mærker det nok.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
 <lb/><p>Men ifald I vilde, så kunde det jo endnu gøres om.</p></HIS:hisSp>
@@ -2940,9 +2934,9 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>tanke i mig at komme i slægt med fru Kirsten. Men
 <lb/>nu er det sket; de fornemme frænder får te sig, som
 <lb/>de vil, men mine grander skal ikke spotte over mig,
-<lb/>&dash; har jeg givet mit ord, så vil jeg også holde det.<note type="typo">Kun rester av punktum.</note>
+<lb/>– har jeg givet mit ord, så vil jeg også holde det.<note type="typo">Kun rester av punktum.</note>
 <lb/><HIS:hisStage>(forsagt.)</HIS:hisStage> Bare jeg vidste, at Olaf vilde være god mod
-<lb/>hende, jeg vil bede ham derom &dash; <HIS:hisStage>(heftigt.)</HIS:hisStage> Han skal
+<lb/>hende, jeg vil bede ham derom – <HIS:hisStage>(heftigt.)</HIS:hisStage> Han skal
 <lb/>være det, ellers kommer jeg med mine gamle næver
 <lb/>og banker ham.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
@@ -2965,7 +2959,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><p>Hvad skal det sige?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
 <lb/><p>Olaf har hende kær! Tidt og mange gange
-<lb/>gæstede han hende deroppe; &dash; hvad fru Kirsten har
+<lb/>gæstede han hende deroppe; – hvad fru Kirsten har
 <lb/>snakket jer for, må I aldrig tro.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener>
 <lb/><p>Og hvad du snakker mig for, tror jeg endnu
@@ -2973,15 +2967,15 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>stundom gækker dig, og derfor under du hende ikke
 <lb/>dette anselige gifte; jo, jo, jeg kender dig nok.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
-<lb/><p>Ej, husbond! kunde I tro, at &dash;</p></HIS:hisSp>
+<lb/><p>Ej, husbond! kunde I tro, at –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener>
-<lb/><p>Bilde mig ind, at Olaf Liljekrans har den tigger&typHyp;
+<lb/><p>Bilde mig ind, at Olaf Liljekrans har den tigger‐
 <lb/>kvinde kær! En anselig, højbyrdig herre som han!
 <lb/>Det var jo ligervis som én vilde sige, at Ingeborg,<note type="typo">Skadet komma.</note>
 <lb/>min datter, havde sind til dig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>
 <lb/><HIS:hisStage>(forlegen)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Til mig &dash; hvor kunde I vel falde på &dash;</p></HIS:hisSp>
+<lb/><p>Til mig – hvor kunde I vel falde på –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener>
 <lb/><p>Nej, jeg falder ikke på! Men det ene er ligeså
 <lb/>urimeligt som det andet. Se der, drik! og kom ikke
@@ -3009,7 +3003,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>mener du din husbond er sindet?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>
 <lb/><HIS:hisStage>(sagte)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Ak, fru Kirsten! Jeg har kun ringe fortrøst&typHyp;
+<lb/><p>Ak, fru Kirsten! Jeg har kun ringe fortrøst‐
 <lb/>ning, hvis ikke I hjælper til.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Ej, det kommer vi nok ud af.</p>
@@ -3020,7 +3014,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>håb du taler om?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
 <lb/><p>Ak, jeg tør ikke selv tro derpå; men fru Kirsten
-<lb/>mener det vel med os. Hun vil snart vise jer, at &dash;</p></HIS:hisSp>
+<lb/>mener det vel med os. Hun vil snart vise jer, at –</p></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top">134</fw>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
@@ -3077,7 +3071,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Det véd jeg vel, herr Arne! men det er snart
 <lb/>gjort. Først skal til evindelige tider hver splid og
-<lb/>ufred mellem vore slægter være forbi, &dash; og den
+<lb/>ufred mellem vore slægter være forbi, – og den
 <lb/>ugavn og skade, som de gamle tvistigheder har
 <lb/>voldt på både sider, skal ingen kræve fyldest for;
 <lb/>det må bæres, som enhver bedst véd og kan. Ej
@@ -3117,7 +3111,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <pb/><pb ed="HU"/>
 <lb/><fw type="page" place="top">137</fw>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
-<lb/><p>Så række da brud og brudgom hinanden hæn&typHyp;
+<lb/><p>Så række da brud og brudgom hinanden hæn‐
 <lb/>der for at gå til gildesbordet og derfra til kirken.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>
 <lb/><HIS:hisStage>(afsides)</HIS:hisStage>.</HIS:spOpener>
@@ -3151,22 +3145,22 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisStage>(ligeså)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Alfhild!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
-<lb/><p>O, ve! ve! nu forstår jeg &dash;</p></HIS:hisSp>
+<lb/><p>O, ve! ve! nu forstår jeg –</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Gæsterne</speaker>
 <lb/><HIS:hisStage>(på samme tid)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Hemming og Alfhild! Fjeldjenten!</p>
 <lb/><HIS:hisStage>(latter og hvisken.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
-<lb/><p>Alfhild! I vil gifte hende bort med &dash; Nej,
+<lb/><p>Alfhild! I vil gifte hende bort med – Nej,
 <lb/>nej, det skal ikke ske! Aldrig, aldrig!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
-<lb/><p>Stille! &dash; Olaf, min Søn<note type="typo">Majuskel/minuskel-feil.</note>! vær stille! jeg beder dig.</p></HIS:hisSp>
+<lb/><p>Stille! – Olaf, min Søn<note type="typo">Majuskel/minuskel-feil.</note>! vær stille! jeg beder dig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>
 <lb/><HIS:hisStage>(for sig selv)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Hvad nu! Ja, forsandt, Hemming havde ret,
 <lb/>der er noget mellem Olaf og Alfhild. <HIS:hisStage>(hviskende.)</HIS:hisStage> Ej,
 <lb/>fru Kirsten! jeg skønner eders færd. Nu véd jeg,
-<lb/>hvi Olaf var tre døgn på fjeldet, og nu skal Hem&typHyp;
+<lb/>hvi Olaf var tre døgn på fjeldet, og nu skal Hem‐
 <lb/>ming skille jer af med hende. Ha, ha!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>
 <lb/><HIS:hisStage>(med tvungen fatning)</HIS:hisStage>.</HIS:spOpener>
@@ -3193,7 +3187,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>at det var eder, jeg tænkte på.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
 <lb/><p>Godt, så vil jeg. <HIS:hisStage>(højt.)</HIS:hisStage> Hemming skal ikke
-<lb/>for alteret med Alfhild; &dash; han er for god til at
+<lb/>for alteret med Alfhild; – han er for god til at
 <lb/>ægte anden mands frille!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>
 <lb/><HIS:hisStage>(med et udråb)</HIS:hisStage>.</HIS:spOpener>
@@ -3223,13 +3217,13 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>Hemming gift!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>
 <lb/><HIS:hisStage>(forbløffet)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Min datter! Kunde I tænke jer, at hun &dash;</p></HIS:hisSp>
+<lb/><p>Min datter! Kunde I tænke jer, at hun –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Stil jer kun ikke slig an! Ingeborg har sind
 <lb/>til eders huskarl; nu skulde jeg mene, at jeg har
 <lb/>skellig grund til at bryde vort forlig!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener>
-<lb/><p>Bryde, bryde &dash;! Hvad tænker I på! At volde
+<lb/><p>Bryde, bryde –! Hvad tænker I på! At volde
 <lb/>mig slig tort!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>
 <lb/><HIS:hisStage>(spottende)</HIS:hisStage>.</HIS:spOpener>
@@ -3258,7 +3252,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>
 <lb/><HIS:hisStage>(der imidlertid har genvundet sin fatning)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Og nu til gildesalen! Hemming kan vi siden
-<lb/>tænke på. &dash; Olaf, tag bruden ved hånd!</p></HIS:hisSp>
+<lb/>tænke på. – Olaf, tag bruden ved hånd!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>
 <lb/><HIS:hisStage>(uvillig, da han ser <HIS:stageRole who="INGEBORG">Ingeborg</HIS:stageRole> hviske til <HIS:stageRole who="HEMMING">Hemming</HIS:stageRole>)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Hvor er bruden? Træd frem, træd frem!</p></HIS:hisSp>
@@ -3278,7 +3272,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><p>Jovisst, det er jo Olaf!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>
 <lb/><HIS:hisStage>(slipper hans hånd)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Han har da lovet hende &dash;!</p></HIS:hisSp>
+<lb/><p>Han har da lovet hende –!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>
 <lb/><HIS:hisStage>(i stærkt oprør)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Olaf er ikke din brudgom, siger jeg. Sig hende
@@ -3296,10 +3290,10 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><p>Det ske da, som I vil, min moder! Ja, ved
 <lb/>alle helgene! jeg skal svare.<pb ed="HU"/> Alfhild! du fejler!
 <lb/>Jeg er ikke din brudgom. <HIS:hisStage>(pegende på <HIS:stageRole who="INGEBORG">Ingeborg</HIS:stageRole>.)</HIS:hisStage> Der
-<lb/>&dash; der står min brud!</p></HIS:hisSp>
+<lb/>– der står min brud!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>
 <lb/><HIS:hisStage>(træder som forstenet et skridt tilbage og stirrer på ham)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Hun! Din &dash; &dash;</p></HIS:hisSp>
+<lb/><p>Hun! Din – –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>
 <lb/><HIS:hisStage>(med stigende ophidselse)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Alfhild! gå bort herfra?<note type="typo">Gal tegnsetting.</note> Gå, gå, langt ind på
@@ -3309,9 +3303,9 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>syg og forvildet i sind, da jeg gik deroppe! Hvad
 <lb/>jeg har sagt dig, mindes jeg lidet af! Jeg véd det
 <lb/>ikke, og jeg vil ikke vide det! Hører du, jeg vil
-<lb/>ikke! &dash; Guldkronen kan du beholde! Behold alt,
+<lb/>ikke! – Guldkronen kan du beholde! Behold alt,
 <lb/>både sølv og guld, som du der er klædt i. Mere,
-<lb/>ja tifold mere skal du få. &dash; Nu! hvi ser du sådan
+<lb/>ja tifold mere skal du få. – Nu! hvi ser du sådan
 <lb/>på mig?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>
 <lb/><HIS:hisStage>(tager kronen og de øvrige smykker af og lægger dem for <hi>Olafs</hi> fødder,
@@ -3320,7 +3314,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><p>Kanhænde jeg bildte dig ind, at du skulde
 <lb/>være min brud ikveld, kanhænde du troede mig!
 <lb/>Kanhænde du tænkte, at Olaf Liljekrans vilde ægte
-<lb/>en &dash; en &dash; hvordan var det, I kaldte hende? <HIS:hisStage>(<sic>stam&typHyp;
+<lb/>en – en – hvordan var det, I kaldte hende? <HIS:hisStage>(<sic>stam‐
 <lb/>med</sic> foden.)</HIS:hisStage> Se ikke sådan på mig, siger jeg! Jeg
 <lb/>kender dig nok, du har forhekset mig. Jeg glemte,
 <lb/>hvad slægt jeg var af; jeg glemte min brud, min
@@ -3331,11 +3325,11 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisStage>(synker på knæ og bedækker ansigtet med sine hænder)</HIS:hisStage>.</HIS:spOpener></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><p>Rejs dig, Alfhild! rejs dig, siger jeg! Dersom
-<lb/>du tør sørge så, da slår jeg dig ihjel! &dash; Hvi er du
-<lb/>ikke glad? Vær lystig og vild som jeg! &dash; Og I
-<lb/>andre! Hvi står I der så tause og ser på hin&typHyp;
+<lb/>du tør sørge så, da slår jeg dig ihjel! – Hvi er du
+<lb/>ikke glad? Vær lystig og vild som jeg! – Og I
+<lb/>andre! Hvi står I der så tause og ser på hin‐
 <lb/>anden? Ler, ler dog, så det kan runge i gården!
-<lb/>&dash; Alfhild! hvi svarer du ikke? Har jeg ikke sagt
+<lb/>– Alfhild! hvi svarer du ikke? Har jeg ikke sagt
 <lb/>dig nok endnu! Ha, ha! så sig hende et ord, I
 <lb/>andre med! Læg også I et ord med i laget; fru
 <lb/>Kirsten vil det! Le dog ad<pb ed="HU"/> hende, forhån hende,
@@ -3344,24 +3338,24 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>træd hende under fødder! <HIS:hisStage>(med skingrende latter.)</HIS:hisStage> Ha,
 <lb/>ha, ha! Hun er jo Olafs frille!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>
-<lb/><HIS:hisStage>(synker mod jorden således, at hun kommer til at hvile i en liggende stil&typHyp;
+<lb/><HIS:hisStage>(synker mod jorden således, at hun kommer til at hvile i en liggende stil‐
 <lb/>ling ved stenbænken til venstre. Et stærkt lyn oplyser scenen, tordenen
-<lb/>ruller; under det følgende tiltager mørket og uvejret mere og mere, ind&typHyp;
+<lb/>ruller; under det følgende tiltager mørket og uvejret mere og mere, ind‐
 <lb/>til aktens slutning)</HIS:hisStage>.</HIS:spOpener></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><p>Se, se! Det må jeg lide; nu stemmer de i
 <lb/>med derovenfra! Ret nu vil jeg til kirken med min
 <lb/>brud! Kom, jomfru Ingeborg! Men først vil vi
 <lb/>drikke, ja drikke, drikke! Hid med krus og horn
-<lb/>&dash; nej derinde &dash;! Tænd lys i kirken! Orgelet
-<lb/>skal spille op til dans &dash; ikke klagelige salmer &dash;
-<lb/>fy, fy, nej, dans! <HIS:hisStage>(lyn og torden.)</HIS:hisStage> Ha, ha! Det spør&typHyp;
+<lb/>– nej derinde –! Tænd lys i kirken! Orgelet
+<lb/>skal spille op til dans – ikke klagelige salmer –
+<lb/>fy, fy, nej, dans! <HIS:hisStage>(lyn og torden.)</HIS:hisStage> Ha, ha! Det spør‐
 <lb/>ges i himlen, at Olaf Liljekrans holder brudefærd!</p>
 <lb/><HIS:hisStage>(styrter ud til højre.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener>
 <lb/><p>Krist fri mig! hans forstand er borte!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
-<lb/><p>Ej, vær kun trøstig; det er snart forbi, &dash; jeg
+<lb/><p>Ej, vær kun trøstig; det er snart forbi, – jeg
 <lb/>kender ham.</p>
 <lb/><HIS:hisStage>(trækker <HIS:stageRole who="ARNE">Arne</HIS:stageRole> med sig.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>
@@ -3385,7 +3379,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
 <lb/><p>Hold min hest sadlet og rede!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
-<lb/><p>Hvad! I vil &dash;!</p></HIS:hisSp>
+<lb/><p>Hvad! I vil –!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
 <lb/><p>Jeg vil! Nu véd jeg først, hvor kær du er
 <lb/>mig, nu jeg står fare for at miste dig. Gå, gør
@@ -3444,11 +3438,11 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><l>lidet at agte mod det hvasse sting</l>
 <pb/>
 <lb/><fw type="page" place="top">147</fw>
-<lb/><l>her i min venstre side. &dash;</l>
+<lb/><l>her i min venstre side. –</l>
 <lb/><l>Mit hjem, min fader, alt gav jeg hen</l>
 <lb/><l>for at følge Olaf, min hjertensven!</l>
 <lb/><l>Han svor mig til, du skal vorde min brud!</l>
-<lb/><l>og jeg kom &dash; Guds kærlighed var i mit hjerte;</l>
+<lb/><l>og jeg kom – Guds kærlighed var i mit hjerte;</l>
 <lb/><l>men han jog mig fra sig, han stødte mig ud;</l>
 <lb/><l>så højt han lo, da jeg vred mig i smerte!</l>
 <lb/><l>Lig en hund må jeg sidde ved gildehusets port</l>
@@ -3460,7 +3454,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><l>selver sig med rod oprive!</l>
 <lb/><l>hos Olaf har jeg vokset mig fast med rod,</l>
 <lb/><l>enten han er mig falsk eller god!</l></HIS:hisSp>
-<lb/><HIS:hisStage>(Pause. &dash; Huskarlene kommer fra venstre med fakler.)</HIS:hisStage>
+<lb/><HIS:hisStage>(Pause. – Huskarlene kommer fra venstre med fakler.)</HIS:hisStage>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>
 <lb/><HIS:hisStage>(ligesom greben af en ængstelig anelse)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Hvorhen går I? Hvorhen, hvorhen? Hvad
@@ -3495,7 +3489,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><p>Kom og vær med, Alfhild! Du skal også få
 <lb/>et blus at bære!</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Flere</speaker>.</HIS:spOpener>
-<lb/><p>Ja, ja, det må du! Det er jo herr Olafs hæ&typHyp;
+<lb/><p>Ja, ja, det må du! Det er jo herr Olafs hæ‐
 <lb/>dersdag!</p></HIS:hisSp>
 <lb/><HIS:hisStage>(latter.)</HIS:hisStage>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>
@@ -3503,7 +3497,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><p>Ja, ja, jeg vil! Som den ringeste i rækken
 <lb/>vil jeg stå dernede, og så, når han ser mig, når
 <lb/>jeg beder ham derom, når jeg minder ham om alt,
-<lb/>hvad han har lovet og svoret, &dash; o, sig mig, sig
+<lb/>hvad han har lovet og svoret, – o, sig mig, sig
 <lb/>mig, tror I da ikke, han vil blive mig god igen!
 <lb/>Tror I det? O, sig ja, sig ja! Sig, at I tror det!</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Karlene</speaker>.</HIS:spOpener>
@@ -3513,10 +3507,10 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><fw type="page" place="top">149</fw>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>
 <lb/><HIS:hisStage>(med frembrydende tårer.)</HIS:hisStage></HIS:spOpener>
-<lb/><l>De håner mig alle, &dash; hver og en!</l>
+<lb/><l>De håner mig alle, – hver og en!</l>
 <lb/><l>så hård er end ikke fjeldkammens sten;</l>
 <lb/><l>den lader dog mosset trives derpå;</l>
-<lb/><l>mig er ingen så god! Jeg &dash; jeg må forgå!</l>
+<lb/><l>mig er ingen så god! Jeg – jeg må forgå!</l>
 <lb/><HIS:hisStage>(lyn og torden.)</HIS:hisStage>
 <lb/><l>Himlen selv er mig ond og gram,</l>
 <lb/><l>den øser sin vrede over mit hoved;</l>
@@ -3542,18 +3536,18 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><l>Vær stille! o, vær stille! kun så liden en stund!</l>
 <lb/><l>nu er han dysset i glemselsblund!</l>
 <lb/><l>o, vækker ham ikke, ellers vil han ride</l>
-<lb/><l>til kirken &dash; og da må jeg døden lide!</l>
+<lb/><l>til kirken – og da må jeg døden lide!</l>
 <lb/><HIS:hisStage>(orgelet lyder stærkere gennem stormen. <HIS:stageRole who="ALFHILD">Alfhild</HIS:stageRole> springer op fortvilet
 <lb/>og ude af sig selv.)</HIS:hisStage>
 <pb/>
 <lb/><fw type="page" place="top">150</fw>
 <lb/><l>Nej, alle Guds engle har mig forladt!</l>
 <lb/><l>de håner mig i min jammer!</l>
-<lb/><l>de maner ham ud; &dash; nu har de ham fat!</l>
+<lb/><l>de maner ham ud; – nu har de ham fat!</l>
 <lb/><l>Haha! Skal jeg færdes i sorten nat,</l>
 <lb/><l>lyst skal der være i dit brudekammer!</l>
 <lb/><HIS:hisStage>(kaster faklen ind igennem den åbne luge i gavlen og styrter til jorden.
-<lb/>&dash; <HIS:stageRole who="INGEBORG">Ingeborg</HIS:stageRole> og <HIS:stageRole who="HEMMING">Hemming</HIS:stageRole> kommer hurtig frem bag ved huset.)</HIS:hisStage></HIS:hisSp>
+<lb/>– <HIS:stageRole who="INGEBORG">Ingeborg</HIS:stageRole> og <HIS:stageRole who="HEMMING">Hemming</HIS:stageRole> kommer hurtig frem bag ved huset.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
 <lb/><p>Nu er det tid! Hesten står sadlet bag ved
 <lb/>staburet.</p></HIS:hisSp>
@@ -3568,15 +3562,15 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>talt om!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
 <lb/><p>Ja, didop! Der vil ingen søge os!</p></HIS:hisSp>
-<lb/><HIS:hisStage>(de iler ud til venstre. &dash; <HIS:stageRole who="ALFHILD">Alfhild</HIS:stageRole> bliver en tid lang ubevægelig liggende.
+<lb/><HIS:hisStage>(de iler ud til venstre. – <HIS:stageRole who="ALFHILD">Alfhild</HIS:stageRole> bliver en tid lang ubevægelig liggende.
 <lb/>Pludselig høres støj og skrig i brudehuset; luerne <sic>slaar</sic> ud
 <lb/>igennem taget.)</HIS:hisStage>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>
 <lb/><HIS:hisStage>(springer fortvilet op)</HIS:hisStage>.</HIS:spOpener>
-<lb/><l>Det brænder! &dash; Haha! Jeg kommer ihu!</l>
-<lb/><l>her var mig for mørkt &dash; det voldte mig gru!</l>
+<lb/><l>Det brænder! – Haha! Jeg kommer ihu!</l>
+<lb/><l>her var mig for mørkt – det voldte mig gru!</l>
 <lb/><l>ha, Olaf! før var det dig, som lo,</l>
-<lb/><l>nu ler Alfhild, så vild og fro! &dash;</l>
+<lb/><l>nu ler Alfhild, så vild og fro! –</l>
 <lb/><l>I brudehuset er nød og harm,</l>
 <lb/><l>bruden brænder på brudgommens arm!</l></HIS:hisSp>
 <pb/>
@@ -3593,7 +3587,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><l>Ja, jeg véd, du holder så vel dit ord!</l>
 <lb/><l>rid nu til kirken med spillemand og præst!</l>
 <lb/><l>hold nu dit bryllup og glem din frille!</l>
-<lb/><l>Alfhild har hædret dig, som hun kunde bedst, &dash;</l>
+<lb/><l>Alfhild har hædret dig, som hun kunde bedst, –</l>
 <lb/><l>hun har svunget brudeblusset ved dit gilde!</l></HIS:hisSp>
 <lb/><HIS:hisStage>(hun styrter ud i baggrunden. Karlene iler til for at hjælpe; en del af
 <lb/>taget styrter sammen, <HIS:stageRole who="OLAF">Olaf</HIS:stageRole> ses højt oppe, omringet af luerne, idet
@@ -3610,7 +3604,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>venstre side en fjeldpynt, der styrter stejlt nedad mod vandet. På
 <lb/>samme side nærmere i forgrunden en ældgammel bjælkestue, næsten
 <lb/>ganske overvokset og skjult af buske og græs. Morgenrøden skinner
-<lb/>på fjeldene; i dalen selv er dagen kun halvt brudt frem; under de føl&typHyp;
+<lb/>på fjeldene; i dalen selv er dagen kun halvt brudt frem; under de føl‐
 <lb/>gende scener står solen op.)</HIS:hisStage>
 <div type="scene" n="1">
 <lb/><head>FØRSTE SCENE.</head>
@@ -3619,13 +3613,13 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>fra lien til højre. Over bryllupsklædningen bærer han en grov kofte.)</HIS:hisStage>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><p>Her var det; jeg kender grønningen her ved
-<lb/>vandet. Hist under lindetræet drømte jeg min sæl&typHyp;
+<lb/>vandet. Hist under lindetræet drømte jeg min sæl‐
 <lb/>somme drøm. På hældingen der ved fjeldet stod
 <lb/>jeg, da Alfhild første gang kom mig imøde; lagde
-<lb/>min fæstensring for buestrengen og skød; &dash; det skud
+<lb/>min fæstensring for buestrengen og skød; – det skud
 <lb/>har været et trolddomsskud; det rammede skytten
 <lb/>selv.</p>
-<lb/><p>Sælsomt, når jeg færdes heroppe, højt over byg&typHyp;
+<lb/><p>Sælsomt, når jeg færdes heroppe, højt over byg‐
 <lb/>den, da er det som en anden luft legte om mig,
 <lb/>som om et friskere blod rullede i mine årer, som
 <lb/>om jeg fik et andet sind, et andet tænkesæt.</p>
@@ -3634,17 +3628,17 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><fw type="page" place="top">153</fw>
 <lb/><p>Jeg skal, jeg vil finde hende igen! Hidop må
 <lb/>hun komme; hun har jo intet hjem derude i den
-<lb/>kolde, vide verden. Og jeg &dash; er ikke også jeg en
+<lb/>kolde, vide verden. Og jeg – er ikke også jeg en
 <lb/>hjemløs flygtning derude? Blev jeg ikke en <sic>fremad</sic>
 <lb/>i min moders hus, en fremmed mellem mine frænder,
 <lb/>fra den første stund jeg mødte hende?</p>
-<pb ed="HU"/><lb/><p>Er hun da en heks, råder hun over lønlige kun&typHyp;
-<lb/>ster, som &dash; &dash;?</p>
+<pb ed="HU"/><lb/><p>Er hun da en heks, råder hun over lønlige kun‐
+<lb/>ster, som – –?</p>
 <lb/><p>Min moder! Hm! det bæres mig for, som det
 <lb/>ikke vilde både mig vel at lade hende styre min
 <lb/>færd; hun blæser mig tanker ind i hjertet, som ikke
 <lb/>har tilhuse der. Nej, nej, jeg vil finde Alfhild igen,
-<lb/>afbede al min uret og så &dash;</p>
+<lb/>afbede al min uret og så –</p>
 <lb/><HIS:hisStage>(standser og ser ud til venstre.)</HIS:hisStage></HIS:hisSp>
 </div>
 <div type="scene" n="2">
@@ -3666,7 +3660,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><fw type="page" place="top">154</fw>
 <lb/><HIS:hisSp who="THORGJERD"><HIS:spOpener><speaker>Thorgjerd</speaker>.</HIS:spOpener>
 <lb/><p>Der ens hu er bunden, der har en hjemme;
-<lb/>det er derfor jeg helst færdes her; &dash; mine grander
+<lb/>det er derfor jeg helst færdes her; – mine grander
 <lb/>skal ingen uskel gøre mig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><p>Det har jeg mærket.</p></HIS:hisSp>
@@ -3689,7 +3683,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="THORGJERD"><HIS:spOpener><speaker>Thorgjerd</speaker>.</HIS:spOpener>
 <lb/><p>Farvel, og god lykke!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
-<lb/><p>Få du last og skam! Ønsker du en jægers&typHyp;
+<lb/><p>Få du last og skam! Ønsker du en jægers‐
 <pb ed="HU"/><lb/>mand til lykke, så kommer ham ikke vildtet på
 <lb/>skud.</p></HIS:hisSp>
 <pb/>
@@ -3712,7 +3706,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="THORGJERD"><HIS:spOpener><speaker>Thorgjerd</speaker>.</HIS:spOpener>
 <lb/><p>Så var min agt. Der er lystige dage dernede,
 <lb/>har jeg spurgt. En mægtig riddersmand holder sit
-<lb/>bryllup &dash;</p></HIS:hisSp>
+<lb/>bryllup –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><p>Da skulde du været med inat; nu er nok den
 <lb/>bedste gammen forbi.</p></HIS:hisSp>
@@ -3729,7 +3723,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><p>Jeg kender den, som måtte stå udenfor.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="THORGJERD"><HIS:spOpener><speaker>Thorgjerd</speaker>.</HIS:spOpener>
-<lb/><p>Ja, ja! udenfor, &dash; det er fattigmands plads.</p></HIS:hisSp>
+<lb/><p>Ja, ja! udenfor, – det er fattigmands plads.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><p>Jeg kender den, som måtte stå udenfor, og
 <lb/>som endda havde det både bedre og værre end de,
@@ -3737,7 +3731,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="THORGJERD"><HIS:spOpener><speaker>Thorgjerd</speaker>.</HIS:spOpener>
 <lb/><p>Jeg må nok derned, kan jeg skønne; jeg vil
 <lb/>spille op i laget. Nu henter jeg min strengeleg og
-<lb/>så &dash;</p></HIS:hisSp>
+<lb/>så –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><p>Du er spillemand?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="THORGJERD"><HIS:spOpener><speaker>Thorgjerd</speaker>.</HIS:spOpener>
@@ -3745,8 +3739,8 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>min strengeleg, der den ligger gemt ved fossen; de
 <pb ed="HU"/><lb/>strenge skulde du høre. Med dem sad jeg engang
 <lb/>på sengestok og spillede bruden ud af gildehuset
-<lb/>over hej og mark &dash; Har du aldrig hørt liden Ingrids
-<lb/>vise? Den, som kunde spille bruden af fæste&typHyp;
+<lb/>over hej og mark – Har du aldrig hørt liden Ingrids
+<lb/>vise? Den, som kunde spille bruden af fæste‐
 <lb/>mandens arm, kan vel spille barnet hjem til sin
 <lb/>fader igen. Farvel! Dvæler du her, så kan vi mødes,
 <lb/>når jeg kommer nedover.</p>
@@ -3758,35 +3752,35 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><head>TREDJE SCENE.</head>
 <lb/><HIS:hisStage><HIS:stageRole who="OLAF">Olaf</HIS:stageRole>. <HIS:stageRole who="ALFHILD">Alfhild</HIS:stageRole>.</HIS:hisStage>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
-<lb/><p>Ha, om det var &dash; Ja forvisst, jeg kan ikke
+<lb/><p>Ha, om det var – Ja forvisst, jeg kan ikke
 <lb/>tvile derpå. Alfhild sagde jo selv, hendes fader slog
 <lb/>strengelegen så lifligt, at det, engang hørt, aldrig
 <lb/>kunde glemmes igen. Han nævnte jomfru Ingrid,
 <lb/>som blev borte på bryllupskvelden for mange år
-<lb/>siden, &dash; der var en ung spillemand, hed Thorgjerd,
+<lb/>siden, – der var en ung spillemand, hed Thorgjerd,
 <lb/>han havde hende kær, så blev der sagt. Mange
 <lb/>underlige sagn gik siden om ham; stundom stod
 <lb/>han midt nede i bygden og spillede så fagert, at
 <lb/>alle måtte græde derved; men ingen vidste, hvor
-<lb/>han havde tilhuse. Alfhild &dash; ja, hun er hans barn!
+<lb/>han havde tilhuse. Alfhild – ja, hun er hans barn!
 <lb/>Her er hun vokset op, her i denne øde dal, som
 <lb/>ingen har vidst af at sige i mange år; og Ingrid,
-<lb/>som forsvandt &dash; han sagde jo &dash; <HIS:hisStage>(bemærker <HIS:stageRole who="ALFHILD">Alfhild</HIS:stageRole>.)</HIS:hisStage>
-<lb/>Alfhild! Der er hun! I brudeklæderne er hun flyg&typHyp;
-<lb/>tet herop. Her skal du altså vågne efter bryllups&typHyp;
+<lb/>som forsvandt – han sagde jo – <HIS:hisStage>(bemærker <HIS:stageRole who="ALFHILD">Alfhild</HIS:stageRole>.)</HIS:hisStage>
+<lb/>Alfhild! Der er hun! I brudeklæderne er hun flyg‐
+<lb/>tet herop. Her skal du altså vågne efter bryllups‐
 <lb/>natten; så tung en dag blev min hædersdag for dig!
-<lb/>Du vilde ud i livet, sagde du; du vilde lære alver&typHyp;
+<lb/>Du vilde ud i livet, sagde du; du vilde lære alver‐
 <lb/>dens herlighed at kende. Så tung en vandring har
 <lb/>du været på; men nu skal det alt blive godt. Hun
 <lb/>rører sig; det er som hun vånder sig i sorg og
-<lb/>angst; &dash; når du vågner, skal det være til fryd og
+<lb/>angst; – når du vågner, skal det være til fryd og
 <lb/>glæde!</p></HIS:hisSp>
 <pb ed="HU"/><lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>
 <lb/><HIS:hisStage>(endnu halvt i drømme)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l>Det brænder! Frels ham, han er derinde!</l>
 <lb/><l>Han må ikke dø! Lad ham redning finde!</l>
 <lb/><HIS:hisStage>(springer forfærdet op; musiken standser.)</HIS:hisStage>
-<lb/><l>Hvor er jeg! Mig tykkes &dash; der står han jo!</l>
+<lb/><l>Hvor er jeg! Mig tykkes – der står han jo!</l>
 <lb/><HIS:hisStage>(iler hen til ham.)</HIS:hisStage>
 <lb/><l>Olaf Liljekrans! frels mig fra mine drømme!</l></HIS:hisSp>
 <pb/>
@@ -3803,7 +3797,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><l>jeg er jo Olaf, din hjertensven!</l>
 <lb/><l>tungt er du krænket; jeg har handlet dig imod;<note type="typo">Utydelig semikolon.</note></l>
 <lb/><l>men jeg var dig dog altid i hjertet god!</l>
-<lb/><l>Svag har jeg været, forblindet, bedåret,<note type="typo">Utydelig komma.</note> &dash;</l>
+<lb/><l>Svag har jeg været, forblindet, bedåret,<note type="typo">Utydelig komma.</note> –</l>
 <lb/><l>det er deraf jeg har dig tildøde såret!</l>
 <lb/><l>Alfhild! kan du forlade mig min færd,</l>
 <lb/><l>jeg sværger dig til, jeg skal blive dig værd!</l>
@@ -3849,14 +3843,14 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
 <lb/><l>Ak, om jeg sænktes i graven ned,</l>
 <lb/><l>jeg føler det vel, min sorg fulgte med!</l>
-<lb/><l>Jeg vidste det ikke, &dash; jeg sværger dig til,</l>
+<lb/><l>Jeg vidste det ikke, – jeg sværger dig til,</l>
 <lb/><l>jeg tænkte, jeg var ham så lidet mild;</l>
 <lb/><l>nu ser jeg, jeg må mig tildøde græmme,</l>
 <lb/><l>og kan ham dog ikke forglemme!</l>
 <lb/><HIS:hisStage>(kort pause.)</HIS:hisStage>
 <lb/><l>Sig mig, ejer du strenge i dit bryst?</l>
 <lb/><l>Jeg tror det; thi lifligt klinger din røst;</l>
-<lb/><l>lifligt &dash; skøndt den med svig er blandet.</l>
+<lb/><l>lifligt – skøndt den med svig er blandet.</l>
 <lb/><l>Har du strenge i dit bryst, da gå trindt om landet</l>
 <pb/>
 <lb/><fw type="page" place="top">160</fw>
@@ -3940,12 +3934,12 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><l>var der duftende løv på alle grene!</l>
 <lb/><l>Alle fugle sang, alle blomster sprang ud,</l>
 <lb/><l>da du tog mig i favn og kaldte mig din brud!</l>
-<lb/><l>Men nu &dash; hele dalen er brændt inat;</l>
+<lb/><l>Men nu – hele dalen er brændt inat;</l>
 <lb/><l>brændt er både trær og krat;</l>
 <lb/><l>visnet er strået, brændt er løv,</l>
-<lb/><l>hver en blomst er vorden til smuldrende støv! &dash;</l>
-<lb/><l>Ja, jeg ser det vel, &dash; på en eneste nat</l>
-<lb/><l>er verden bleven gammel! &dash; Da jeg gik forladt</l>
+<lb/><l>hver en blomst er vorden til smuldrende støv! –</l>
+<lb/><l>Ja, jeg ser det vel, – på en eneste nat</l>
+<lb/><l>er verden bleven gammel! – Da jeg gik forladt</l>
 <lb/><l>derude, og segned af kval og skam,</l>
 <lb/><l>da blegnede livets gyldne ham.</l>
 <lb/><l>Intet lever igen uden svig og bedrag;</l>
@@ -3959,7 +3953,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><l>selv er jeg sænket i jorden ned.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><l>Alfhild! Dit ord falder knusende tungt!</l>
-<lb/><l>O, Gud! dit sind var så friskt og ungt &dash; &dash;</l>
+<lb/><l>O, Gud! dit sind var så friskt og ungt – –</l>
 <lb/><l>forlad mig min brøde, forglem din ve!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>
 <lb/><HIS:hisStage>(med et stærkt og stigende udtryk af forvildelse.)</HIS:hisStage></HIS:spOpener>
@@ -3968,7 +3962,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><l>men der er ingen moder, ingen søskende fem,</l>
 <pb/>
 <lb/><fw type="page" place="top">163</fw>
-<lb/><l>der er ingen bolster, hverken røde eller blå, &dash;</l>
+<lb/><l>der er ingen bolster, hverken røde eller blå, –</l>
 <lb/><l>Alfhild ligger på spåner og strå!</l>
 <lb/><l>Aldrig skal jeg køres i himmelens karm</l>
 <lb/><l>for at vågne i Gud Faders arm.</l>
@@ -3995,8 +3989,8 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><l>og kan ikke mildne hans jammer!</l>
 <lb/><l>O, hvor mit bryst er trangt sluttet inde!</l>
 <lb/><l>Jeg er gåen Guds engle af minde!</l>
-<lb/><l>Ingen af dem hører mig klage og bede &dash;</l>
-<lb/><l>jeg er stængt ude bag livets port &dash;</l>
+<lb/><l>Ingen af dem hører mig klage og bede –</l>
+<lb/><l>jeg er stængt ude bag livets port –</l>
 <lb/><l>grav mig op igen! Lad mig ikke ligge hernede!</l>
 <lb/><HIS:hisStage>(iler ud til venstre.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
@@ -4010,17 +4004,17 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><head>FJERDE SCENE.</head>
 <lb/><HIS:hisStage><HIS:stageRole who="INGEBORG">Ingeborg</HIS:stageRole> og <HIS:stageRole who="HEMMING">Hemming</HIS:stageRole> (kommer efter en kort pause ind fra højre.)</HIS:hisStage>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
-<lb/><p>Se så, nu er vi da heroppe! Hvor her er dej&typHyp;
+<lb/><p>Se så, nu er vi da heroppe! Hvor her er dej‐
 <lb/>ligt og lyst og fredsomt.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
 <lb/><p>Ja, her skal vi leve godt tilsammen!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
 <lb/><p>Men mærk dig vel, at du er min svend, ikke
-<lb/>andet, &dash; sålænge til min fader har givet sit minde.</p></HIS:hisSp>
+<lb/>andet, – sålænge til min fader har givet sit minde.</p></HIS:hisSp>
 <pb ed="HU"/><lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
 <lb/><p>Det gør han aldrig!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
-<lb/><p>Vær du rolig, vi finder nok på råd. &dash; Men nu
+<lb/><p>Vær du rolig, vi finder nok på råd. – Men nu
 <lb/>må vi tænke på at vælge os en stue til at bo i.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
 <lb/><p>Her er nok af dem. Over hele dalen ligger
@@ -4042,7 +4036,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
 <lb/><p>Ja, ja da, som du vil. O, et lysteligt liv skal
 <lb/>vi leve! <HIS:hisStage>(standser og tilføjer noget forknyt.)</HIS:hisStage> Men når jeg ret
-<lb/>tænker mig om; &dash; jeg har hverken bue eller fiske&typHyp;
+<lb/>tænker mig om; – jeg har hverken bue eller fiske‐
 <lb/>redskab med.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>
 <lb/><HIS:hisStage>(ligeledes med et udtryk af forsagthed.)</HIS:hisStage></HIS:spOpener>
@@ -4051,7 +4045,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
 <lb/><p>Det gør jeg så gerne!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
-<lb/><p>Nej, ellers tak. &dash; Og alle mine gode klæder &dash;
+<lb/><p>Nej, ellers tak. – Og alle mine gode klæder –
 <lb/>Jeg tog ikke andet med end brudestakken, som jeg
 <lb/>står og går i.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
@@ -4068,8 +4062,8 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>Ingen mennesker er heroppe, dans og sang får
 <pb/>
 <lb/><fw type="page" place="top">166</fw>
-<lb/>vi aldrig at høre &dash; Hemming! skal vi blive her
-<lb/>eller &dash; &dash;</p></HIS:hisSp>
+<lb/>vi aldrig at høre – Hemming! skal vi blive her
+<lb/>eller – –</p></HIS:hisSp>
 <pb ed="HU"/><lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
 <lb/><p>Ja, hvor skulde vi ellers ty hen?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>
@@ -4094,13 +4088,13 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
 <lb/><p>Ja,<note type="typo">Skadet komma.</note> men om de nu slår mig ihjel?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
-<lb/><p>Nu, det kan vi altid tænke på. Idag og imor&typHyp;
+<lb/><p>Nu, det kan vi altid tænke på. Idag og imor‐
 <lb/>gen får vi vel blive her; sålænge sidder gæsterne i
 <pb/>
 <lb/><fw type="page" place="top">167</fw>
-<lb/>gildehuset og tærer bryllupskosten, &dash; søger de efter
+<lb/>gildehuset og tærer bryllupskosten, – søger de efter
 <lb/>os, så sker det vel rundt om i bygden; heroppe
-<lb/>kan vi være trygge og &dash; &dash;</p>
+<lb/>kan vi være trygge og – –</p>
 <lb/><HIS:hisStage>(standser og lytter.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisStage>(Udenfor til højre høres langt borte følgende:)</HIS:hisStage>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Kor</speaker>.</HIS:spOpener>
@@ -4113,12 +4107,12 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
 <lb/><p>Hvor skal vi ty hen?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
-<lb/><p>Ja, hvor kan jeg vide &dash;</p></HIS:hisSp>
+<lb/><p>Ja, hvor kan jeg vide –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
 <lb/><p>Gå ind i stuen; gør døren tilrette, så den kan
 <lb/>stænges indenfra.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
-<lb/><p>Ja, men &dash;</p></HIS:hisSp>
+<lb/><p>Ja, men –</p></HIS:hisSp>
 <pb ed="HU"/><lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
 <lb/><p>Gør som jeg siger! Jeg går op på bakken
 <lb/>imens og ser efter, om de er langt borte.</p>
@@ -4136,9 +4130,9 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisStage>(ser sig om og kalder med dæmpet stemme)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Alfhild! Alfhild! Intet sted er hun at se! Som
 <lb/>en fugl smuttede hun mig afsyne inde i skoven og
-<lb/>jeg &dash;</p></HIS:hisSp>
+<lb/>jeg –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
-<lb/><p>De er lige herved og &dash; <HIS:hisStage>(standser forskrækket.)</HIS:hisStage> Olaf
+<lb/><p>De er lige herved og – <HIS:hisStage>(standser forskrækket.)</HIS:hisStage> Olaf
 <lb/>Liljekrans!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><p>Ingeborg!</p></HIS:hisSp>
@@ -4172,10 +4166,10 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><p>Hvi kommer du da hid, sammen med mine
 <lb/>frænder?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
-<lb/><p>Gør jeg det? Det er jo tvertom dig, som &dash;</p></HIS:hisSp>
+<lb/><p>Gør jeg det? Det er jo tvertom dig, som –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
 <lb/><p>Det påfund dårer mig ikke; jeg så jo nylig hele
-<lb/>følget &dash;</p></HIS:hisSp>
+<lb/>følget –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><p>Hvem? Hvem?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
@@ -4200,8 +4194,8 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><p>Dig!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>
 <lb/><HIS:hisStage>(begynder at fatte sammenhængen)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Eller &dash; bi lidt &dash; Ha, ha, ha! hvad falder mig
-<lb/>ind! &dash; Hør, skal vi to være ærlige mod hinanden?</p></HIS:hisSp>
+<lb/><p>Eller – bi lidt – Ha, ha, ha! hvad falder mig
+<lb/>ind! – Hør, skal vi to være ærlige mod hinanden?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><p>Ja, det var just min agt!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
@@ -4220,7 +4214,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
 <lb/><p>Jeg ligeså!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
-<lb/><p>Men så sig mig &dash;</p></HIS:hisSp>
+<lb/><p>Men så sig mig –</p></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top">171</fw>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
@@ -4228,12 +4222,12 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>fordi du havde kun ringe lyst til at følge mig for
 <lb/>alteret?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
-<lb/><p>Ej, hvor kan du tro &dash;</p></HIS:hisSp>
+<lb/><p>Ej, hvor kan du tro –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
 <lb/><p>Jo, det kan jeg godt tro. Sig kun frem; vi
 <lb/>skulde jo tales ærligt ved.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
-<lb/><p>Nuvel da, det var derfor jeg &dash;</p></HIS:hisSp>
+<lb/><p>Nuvel da, det var derfor jeg –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
 <lb/><p>Godt, godt, jeg gjorde ligeså!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
@@ -4258,12 +4252,12 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><p>Jeg forstår!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
-<lb/><p>Thi fandt de os sammen, så &dash;</p></HIS:hisSp>
+<lb/><p>Thi fandt de os sammen, så –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><p>Ja, så vilde det falde dig sværere at blive fri
 <lb/>for mig!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
-<lb/><p>Farvel! Kommer jeg engang til at holde bryl&typHyp;
+<lb/><p>Farvel! Kommer jeg engang til at holde bryl‐
 <lb/>lup, så skal du være min brudesvend.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><p>Og skulde sligt times mig, så vil du nok være
@@ -4275,7 +4269,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><p>Visst ikke; jeg skal række dig hånden, hvor
 <lb/>vi mødes!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
-<lb/><p>Jeg ligeså! Hvor vi mødes &dash; bare ikke for
+<lb/><p>Jeg ligeså! Hvor vi mødes – bare ikke for
 <lb/>alteret.</p>
 <lb/><HIS:hisStage>(går ind i huset. <HIS:stageRole who="OLAF">Olaf</HIS:stageRole> ind i skoven til højre i baggrunden,<note type="typo">Feil tegn.</note>)</HIS:hisStage></HIS:hisSp>
 </div>
@@ -4287,14 +4281,14 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>(fra højre).</HIS:hisStage>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Se, her vil vi begynde jagten. Vore folk må
-<lb/>spredes ad og søge rundt om vandet; &dash; hun skal
-<lb/>herfrem og da &dash; ve,<note type="typo">Skadet komma.</note> ve hende! der er ikke nåde
+<lb/>spredes ad og søge rundt om vandet; – hun skal
+<lb/>herfrem og da – ve,<note type="typo">Skadet komma.</note> ve hende! der er ikke nåde
 <lb/>og barmhjertighed i mit sind.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener>
 <lb/><p>Hvad vil I da gøre?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
-<lb/><p>Holde dom over hende &dash; lige på stedet, der
-<lb/>hun træffes! Den udåd, hun har øvet på mine ene&typHyp;
+<lb/><p>Holde dom over hende – lige på stedet, der
+<lb/>hun træffes! Den udåd, hun har øvet på mine ene‐
 <lb/>mærker, har jeg magt og myndighed til at straffe
 <lb/>efter ret og skøn.</p></HIS:hisSp>
 <pb ed="HU"/><lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener>
@@ -4304,7 +4298,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><p>Nej, men jeg får hævn over hende, og det er
 <lb/>ingen ringe vinding. Hævn, hævn må jeg have,
 <lb/>ifald jeg skal bære og overleve mit tab og al den
-<lb/>skam, hun har påført mig. Uvejret inat har for&typHyp;
+<lb/>skam, hun har påført mig. Uvejret inat har for‐
 <lb/>dærvet hele årets grøde for mig, ikke et uskadt
 <lb/>strå står igen på min ager, og herinde, hvor hun
 <lb/>selv har sagt, at hun holder til, her blomstrer og
@@ -4315,21 +4309,21 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>hende. Mit hus har hun brændt af lige til grunden;
 <pb/>
 <lb/><fw type="page" place="top">174</fw>
-<lb/>alle luger og døre havde hun stængt udenfra; &dash; det
+<lb/>alle luger og døre havde hun stængt udenfra; – det
 <lb/>var et Guds under, at huskarlene bragte betimelig
 <lb/>hjælp!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker><sic>Arre</sic></speaker>.</HIS:spOpener>
 <lb/><p>Ak, Gud bedre det; jeg er dog ræd for, at det
-<lb/>har kostet to liv, som jeg såmeget holdt af, &dash; Inge&typHyp;
+<lb/>har kostet to liv, som jeg såmeget holdt af, – Inge‐
 <lb/>borg og min svend, Hemming!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Ej, ej, herr Arne! I må ikke rent fortvile
 <lb/>endnu. Ingeborg kan nok være sluppen derfra; alle
 <lb/>vi andre kom jo uskadte ud, trods den forbandede
-<lb/>heksekvindes list; &dash; Ingeborg er bleven forvildet af
+<lb/>heksekvindes list; – Ingeborg er bleven forvildet af
 <lb/>skrækken og er flygtet et sted hen.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener>
-<lb/><p>Ja, ja, lad så være med Ingeborg; men Hem&typHyp;
+<lb/><p>Ja, ja, lad så være med Ingeborg; men Hem‐
 <lb/>ming er nu aldrig at spørge efter, det véd jeg visst!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Hvi så?</p></HIS:hisSp>
@@ -4351,7 +4345,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>imorges var den borte både med sadel og bidsel.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>
 <lb/><HIS:hisStage>(afsides)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Ingeborg og Hemming borte, og hans hest lige&typHyp;
+<lb/><p>Ingeborg og Hemming borte, og hans hest lige‐
 <lb/>så; var jeg i hans sted, jeg véd nok, hvad jeg
 <lb/>vilde tro. <HIS:hisStage>(højt.)</HIS:hisStage> Nu bryder vi op og deles ad i
 <lb/>små hobe; den, som først får øje på Alfhild, blæser
@@ -4362,7 +4356,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisStage>(som er bleven alene tilbage)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Og jeg, som ikke er kendt her, hvor skal jeg
 <lb/>finde frem. <HIS:hisStage>(kalder.)</HIS:hisStage> Hemming, Hemming! <HIS:hisStage>(holder inde.)</HIS:hisStage>
-<lb/>Nå, det er jo sandt, han er &dash; <HIS:hisStage>(hovedrystende.)</HIS:hisStage> Hm!
+<lb/>Nå, det er jo sandt, han er – <HIS:hisStage>(hovedrystende.)</HIS:hisStage> Hm!
 <lb/>hm! Det var skammeligt gjort af ham.</p>
 <lb/><HIS:hisStage>(går ud til <sic>hojre</sic>.)</HIS:hisStage></HIS:hisSp>
 </div>
@@ -4403,7 +4397,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><l>Ak, da skulde han tiet dermed;</l>
 <lb/><l>hans sange har røvet mig livsens fred,</l>
 <lb/><l>hans sange bygged i min barm et hus</l>
-<lb/><l>for verdens fryd, &dash; nu ligger det i grus!</l>
+<lb/><l>for verdens fryd, – nu ligger det i grus!</l>
 <lb/><HIS:hisStage>(luren høres atter.)</HIS:hisStage>
 <lb/><l rend="indent1">Sølvet er sig så ædelt malm,</l>
 <lb/><l>det smuldres ikke som høstens halm;</l>
@@ -4420,8 +4414,8 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <pb/>
 <lb/><fw type="page" place="top">177</fw>
 <lb/><l>deraf skal dryppe ved dag og nat</l>
-<lb/><l>ikke ni, &dash; nej tusinde perler små,</l>
-<lb/><l>og skatten vil dog aldrig forgå! &dash;</l>
+<lb/><l>ikke ni, – nej tusinde perler små,</l>
+<lb/><l>og skatten vil dog aldrig forgå! –</l>
 <pb ed="HU"/><lb/><l>Ja, verden har gjort mig så klog, så klog!</l>
 <lb/><l>Fordum fulgte jeg skyernes tog,</l>
 <lb/><l>fløj drømmende med på de vide baner</l>
@@ -4430,12 +4424,12 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><l>bredte sig ud for at skygge min vandring,</l>
 <lb/><l>jeg tænkte mig liv i fjeldets stene.</l>
 <lb/><l>Nu er mig voldt så tung en forandring.</l>
-<lb/><l>Nu véd jeg det bedre; &dash; kun menneskets bryst</l>
+<lb/><l>Nu véd jeg det bedre; – kun menneskets bryst</l>
 <lb/><l>kan våndes i smerte, kan vugges i lyst.</l>
 <lb/><l>Der bor ingen ven mellem blomster og grene,</l>
 <lb/><l>jeg må bære min sorg alene.</l>
 <lb/><HIS:hisStage>(rejser sig.)</HIS:hisStage>
-<lb/><l>Velan da! Op mellem is og sne, &dash;</l>
+<lb/><l>Velan da! Op mellem is og sne, –</l>
 <lb/><l>både her og hist er kun gravens læ!</l>
 <lb/><HIS:hisStage>(vil gå.)</HIS:hisStage></HIS:hisSp>
 </div>
@@ -4471,7 +4465,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>til at fælde dom efter landets lov over hver den,
 <lb/>der gør mig uskel på min egen grund. Dette er
 <lb/>hvad du, Alfhild! har fordristet dig til, og derfor
-<lb/>står du nu her som anklaget for din dommer. For&typHyp;
+<lb/>står du nu her som anklaget for din dommer. For‐
 <lb/>svar dig, om du kan, men glem ikke, at det gælder
 <lb/>livet.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener>
@@ -4483,13 +4477,13 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
 <lb/><p>Spørg du kun, jeg skal svare!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
-<lb/><p>Mange og hårde er de beskyldninger, som rej&typHyp;
+<lb/><p>Mange og hårde er de beskyldninger, som rej‐
 <lb/>ses mod dig. Først og fremst påsiger jeg dig her
 <pb/>
 <lb/><fw type="page" place="top">179</fw>
 <lb/>ved ugudelige kunster at have dåret min søn, Olaf
 <lb/>Liljekrans, så at hans sind og tanker vendte sig fra
-<lb/>hans fæstemø, som han havde trolovet, &dash; så at han,
+<lb/>hans fæstemø, som han havde trolovet, – så at han,
 <lb/>syg i hjertet, ingen dag fandt fred i sit hjem, men
 <lb/>drog hid op til denne ukendte dal, hvor du har
 <lb/>holdt til. Alt sligt kan ikke være tilgået på vanlig
@@ -4499,7 +4493,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><p>Lidet har jeg hertil at svare. Trolddom kalder
 <lb/>du hin sælsomme magt, som drog Olaf hid op.
 <lb/>Kanhænde du har ret; men denne trolddom kom
-<lb/>ikke fra den onde; &dash; hver den stund Olaf har været
+<lb/>ikke fra den onde; – hver den stund Olaf har været
 <lb/>her, Guds øje måtte se derpå! hver den tanke jeg
 <pb ed="HU"/><lb/>har fæstet på Olaf, Guds engle måtte kende den!
 <lb/>og de skulde ikke blues derover.</p></HIS:hisSp>
@@ -4529,7 +4523,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>du ham?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>
 <lb/><HIS:hisStage>(trykker hænderne mod brystet)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Herinde &dash; i hjertet! Kan du rive ham ud
+<lb/><p>Herinde – i hjertet! Kan du rive ham ud
 <lb/>deraf, da hekser du bedre end jeg!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Det svar gavner lidet; sig frem! hvor er han?</p></HIS:hisSp>
@@ -4547,10 +4541,10 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><p>Nu kommer den tredie klage mod dig: du har
 <lb/>inat stukket ild på min gård og brændt den af til
 <lb/>grunden. Kanhænde menneskeliv er gået tilspilde,
-<lb/>det véd vi endnu ikke, men hvad som end er, der&typHyp;
+<lb/>det véd vi endnu ikke, men hvad som end er, der‐
 <lb/>ved hverken skades eller rettes på din sag; thi din
 <lb/>agt at brænde os inde alle tilhobe ligger klarlig for
-<lb/>dagen. Nægter du mit påsagn at have brændt går&typHyp;
+<lb/>dagen. Nægter du mit påsagn at have brændt går‐
 <lb/>den af inat?</p></HIS:hisSp>
 <pb/><pb ed="HU"/>
 <lb/><fw type="page" place="top">181</fw>
@@ -4558,7 +4552,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><p>Jeg nægter det ikke, jeg har brændt din gård!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Og hvormed vil du besmykke din gerning?
-<lb/><HIS:hisStage>(med bitter spot.)</HIS:hisStage> Du skal ej kunne sige, at du hand&typHyp;
+<lb/><HIS:hisStage>(med bitter spot.)</HIS:hisStage> Du skal ej kunne sige, at du hand‐
 <lb/>lede overilet. God lejlighed havde du,<note type="typo">Kun rester av komma.</note> såvidt jeg
 <lb/>mindes, til at tænke dig om;<note type="typo">Skadet semikolon.</note> du stod udenfor, ingen
 <lb/>kom dig nær, ingen hindrede dig fra at overlægge
@@ -4572,7 +4566,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><p>Ja, jeg har brændt din gård inat; men du og
 <lb/>Olaf og alle I andre derude har øvet en værre færd
 <lb/>mod mig. Verden var mig en højsal, som hørte
-<lb/>den store fader til. Himlen blå var dens tag, stjer&typHyp;
+<lb/>den store fader til. Himlen blå var dens tag, stjer‐
 <lb/>nerne var de lamper, som lyste fra dens loft. Jeg
 <lb/>gik glad og rig derinde; men I, I kastede en brand
 <lb/>midt ind i den gyldne herlighed; nu er alting dødt
@@ -4583,7 +4577,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
 <lb/><p>Jeg har svaret!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
-<lb/><p>Så har du også fældet din dom, og jeg vil be&typHyp;
+<lb/><p>Så har du også fældet din dom, og jeg vil be‐
 <lb/>kræfte den.</p></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top">182</fw>
@@ -4591,7 +4585,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>af de tilstedeværende.)</HIS:hisStage>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>
 <lb/><HIS:hisStage>(afsides)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Alfhild &dash;! Hjælp Gud! hvad er det?</p>
+<lb/><p>Alfhild –! Hjælp Gud! hvad er det?</p>
 <lb/><HIS:hisStage>(trækker sig uset tilbage.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Som skyldig i trolddomskunster og mordbrand
@@ -4605,12 +4599,12 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
 <lb/><p>Gør som dig lyster; lidet skal jeg være dig
 <lb/>hinderlig deri. Da Olaf fornægtede sin kærlighed,
-<lb/>da slukkedes mit liv, &dash; jeg lever ikke længer.</p></HIS:hisSp>
+<lb/>da slukkedes mit liv, – jeg lever ikke længer.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Før hende op på fjeldstupet der!</p></HIS:hisSp>
 <lb/><HIS:hisStage>(To <HIS:stageRole>karle</HIS:stageRole> fører <HIS:stageRole who="ALFHILD">Alfhild</HIS:stageRole> op.)</HIS:hisStage>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
-<lb/><p>For sidste gang, Alfhild! giv mig min søn til&typHyp;
+<lb/><p>For sidste gang, Alfhild! giv mig min søn til‐
 <lb/>bage!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
 <lb/><p>Jeg svarer ikke mere!</p></HIS:hisSp>
@@ -4623,13 +4617,13 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>du igår trådte frem med guldkronen på og mente,
 <lb/>at du var Olaf Liljekrans værdig til brud. Nu skal
 <lb/>vi dog se, hvormeget du agtes; her er bønder og
-<lb/>karle og mange ringe mænd tilstede; &dash; kanhænde
+<lb/>karle og mange ringe mænd tilstede; – kanhænde
 <lb/>dit liv end står til at frelses! Ja, Alfhild! Du ser
 <lb/>på mig, men så er det; jeg vil være dig nådig!
 <lb/><HIS:hisStage>(vender sig til de øvrige.)</HIS:hisStage> Ej sandt, I kender alle den gamle
 <lb/>vedtægt, at når en kvinde er dømt for en halsløs
 <lb/>gerning, som hun der, da frelses hendes liv og hun
-<lb/>er fri, ifald en uberygtet mand træder frem og næv&typHyp;
+<lb/>er fri, ifald en uberygtet mand træder frem og næv‐
 <lb/>ner hende uskyldig og siger sig villig og rede til at
 <lb/>ægte hende. Ej sandt, den vedtægt kender I?</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Alle</speaker>.</HIS:spOpener>
@@ -4656,15 +4650,15 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <pb/>
 <lb/><fw type="page" place="top">184</fw>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
-<lb/><p>Nu gælder det; nu frygter jeg for, at dine øje&typHyp;
+<lb/><p>Nu gælder det; nu frygter jeg for, at dine øje‐
 <lb/>blikke er talte. Hører mig vel, I karle deroppe! Ifald
 <lb/>ingen svarer på det tredje opråb, da agte I på mit
 <lb/>tegn og styrter hende i søen! Brug nu dine kunster,
 <lb/>Alfhild! se til, om du kan kogle dig fra døden.
 <lb/><HIS:hisStage>(Med høj røst.)</HIS:hisStage> For sidste gang! Der står heksekvinden
 <lb/>og mordbrændersken; hvo frelser og ægter hende?</p></HIS:hisSp>
-<lb/><HIS:hisStage>(Hun ser sig om. Alle tier. &dash; <HIS:stageRole who="FRUKIRSTEN">Fru Kirsten</HIS:stageRole> hæver raskt hånden til tegn,
-<lb/><HIS:stageRole>karlene</HIS:stageRole> griber <HIS:stageRole who="ALFHILD">Alfhild</HIS:stageRole>; i samme øjeblik styrter <HIS:stageRole who="OLAF">Olaf</HIS:stageRole> frem på klippe&typHyp;
+<lb/><HIS:hisStage>(Hun ser sig om. Alle tier. – <HIS:stageRole who="FRUKIRSTEN">Fru Kirsten</HIS:stageRole> hæver raskt hånden til tegn,
+<lb/><HIS:stageRole>karlene</HIS:stageRole> griber <HIS:stageRole who="ALFHILD">Alfhild</HIS:stageRole>; i samme øjeblik styrter <HIS:stageRole who="OLAF">Olaf</HIS:stageRole> frem på klippe‐
 <lb/>pynten i fuld bryllupsklædning.)</HIS:hisStage>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><p>Jeg frelser og ægter hende!</p></HIS:hisSp>
@@ -4685,12 +4679,12 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>højt og lydt denne unge kvinde som min brud!
 <lb/>Hun er uskyldig i alt det, som er påsagt hende;
 <lb/>kun jeg har forbrudt mig. <HIS:hisStage>(bøjer knæ for hende.)</HIS:hisStage> Og for
-<lb/>din fod beder jeg dig glemme og forlade &dash;</p></HIS:hisSp>
+<lb/>din fod beder jeg dig glemme og forlade –</p></HIS:hisSp>
 <pb/><pb ed="HU"/>
 <lb/><fw type="page" place="top">185</fw>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>
 <lb/><HIS:hisStage>(hæver ham op)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Ak, Olaf! Du har givet mig al verdens herlig&typHyp;
+<lb/><p>Ak, Olaf! Du har givet mig al verdens herlig‐
 <lb/>hed tilbage!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><p>Du vil ægte hende! Godt og vel, så er jeg
@@ -4703,7 +4697,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>vundet kraft og vilje; nu står jeg fast på mine
 <lb/>fødder og grunder min egen lykkes bygning!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
-<lb/><p>Men betænker du da ikke &dash;</p></HIS:hisSp>
+<lb/><p>Men betænker du da ikke –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><p>Intet vil jeg mer betænke, jeg véd hvad jeg
 <lb/>vil. Nu først forstår jeg min sælsomme drøm. Det
@@ -4724,9 +4718,9 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>
 <lb/><HIS:hisStage>(afsides)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Ingeborg er borte, denne rige dal hører Alfhild
-<lb/>til; ingen anden har ret dertil &dash; <HIS:hisStage>(højt.)</HIS:hisStage> Nuvel, Olaf!
+<lb/>til; ingen anden har ret dertil – <HIS:hisStage>(højt.)</HIS:hisStage> Nuvel, Olaf!
 <lb/>Jeg vil ikke være din lykke imod. Mener du at
-<lb/>finde den på den vis, så &dash; &dash; Mit minde har I dertil!</p></HIS:hisSp>
+<lb/>finde den på den vis, så – – Mit minde har I dertil!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><p>Tak, min moder, tak! Nu fattes mig Intet mere!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>
@@ -4737,7 +4731,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/>med, lad os ikke tale mere derom!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener>
 <lb/><p>Men jeg da? Og min datter, som herr Olaf
-<pb ed="HU"/><lb/>havde trolovet &dash; Dog, det er jo sandt, kanhænde
+<pb ed="HU"/><lb/>havde trolovet – Dog, det er jo sandt, kanhænde
 <lb/>hun ikke mere er til!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><p>Jovisst er hun til!</p></HIS:hisSp>
@@ -4747,7 +4741,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><p>Det kan jeg ikke sige; men det er at nævne,<note type="typo">Skadet komma.</note>
 <lb/>at vi begge to i venskab har brudt trolovelsen.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
-<lb/><p>I ser, herr Arne! at jeg &dash; &dash;</p></HIS:hisSp>
+<lb/><p>I ser, herr Arne! at jeg – –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener>
 <lb/><p>Ja, ja, min datter skal ikke tvinges på nogen.
 <pb/>
@@ -4778,7 +4772,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><p>Ingeborg og Hemming! Heroppe!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>
 <lb/><HIS:hisStage>(forbitret)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Ej, så skal da også &dash; &dash;</p></HIS:hisSp>
+<lb/><p>Ej, så skal da også – –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>
 <lb/><HIS:hisStage>(kaster sig om hans hals)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>O, fader, fader! Det nytter dig ikke; du har
@@ -4797,15 +4791,15 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>
 <lb/><HIS:hisStage>(sagte)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Så sig ja, straks på stedet! Ellers fortæller jeg
-<lb/>til alle mennesker, at det var mig, som &dash; &dash;</p></HIS:hisSp>
+<lb/>til alle mennesker, at det var mig, som – –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener>
 <lb/><p>Ti, ti! Jeg siger jo ja! <HIS:hisStage>(træder mellem dem og ser
 <lb/>bistert på <HIS:stageRole who="HEMMING">Hemming</HIS:stageRole>.)</HIS:hisStage> Dig var det altså, som stjal min
 <lb/>abildgrå hest med sadel og bidsel?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
-<lb/><p>Ak, herr Arne! &dash;</p></HIS:hisSp>
+<lb/><p>Ak, herr Arne! –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener>
-<lb/><p>O, Hemming! Hemming! Du er en &dash; <HIS:hisStage>(betænker
+<lb/><p>O, Hemming! Hemming! Du er en – <HIS:hisStage>(betænker
 <lb/>sig.)</HIS:hisStage> Nå, du er min datters fæstemand; lad det så
 <lb/>være godt dermed.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING INGEBORG"><HIS:spOpener><speaker>Hemming</speaker> og <speaker>Ingeborg</speaker>.</HIS:spOpener>
@@ -4827,11 +4821,11 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Alle</speaker>.</HIS:spOpener>
 <lb/><p>Hendes fader!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
-<lb/><p>Ja, ja, gubbe! Idag er her folksomt og lyste&typHyp;
+<lb/><p>Ja, ja, gubbe! Idag er her folksomt og lyste‐
 <lb/>ligt herinde, og så skal det herefterdags blive ved.
 <lb/>Det er din datters bryllup, som holdes; af kærlighed
 <lb/>har hun kåret sin fæstemand, om kærlighed har du
-<lb/>sjunget for hende, &dash; du vil ikke være os imod!</p></HIS:hisSp>
+<lb/>sjunget for hende, – du vil ikke være os imod!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="THORGJERD"><HIS:spOpener><speaker>Thorgjerd</speaker>.</HIS:spOpener>
 <lb/><p>Alle gode vætter værne om eder!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
@@ -4867,10 +4861,10 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><l>I har atter skænket mig trøst og fred!</l>
 <lb/><l>I styred min gang ved afgrundsranden,</l>
 <lb/><l>I støtted min fod, der var veg og svag!</l>
-<lb/><l>O, kan jeg end ikke tro med forstanden, &dash;</l>
+<lb/><l>O, kan jeg end ikke tro med forstanden, –</l>
 <lb/><l>med hjertet vil jeg tro til min sidste dag!</l>
 <lb/><l>Ja, himmelske magter! I våger endnu!</l>
-<lb/><l>Klart skinner solen efter uvejrets gru; &dash;</l>
+<lb/><l>Klart skinner solen efter uvejrets gru; –</l>
 <lb/><l>af livets brand blev min kærlighed frelst;<note type="typo">Skadet semikolon.</note></l>
 <lb/><l>lad så times og mødes hvadhelst!</l>
 <pb/>
@@ -4878,7 +4872,7 @@ Fjernet all OLFU-spesifikk teiHeader-informasjon og la inn ny titleStmt, edition
 <lb/><l>Nu er jeg frejdig, nu er jeg stærk,</l>
 <lb/><l>rede til livets vekslende værk!</l>
 <lb/><HIS:hisStage>(med et blik til <HIS:stageRole who="OLAF">Olaf</HIS:stageRole>.)</HIS:hisStage>
-<lb/><l part="I">Og når vi engang &dash; &dash;</l>
+<lb/><l part="I">Og når vi engang – –</l>
 <lb/><HIS:hisStage>(afbryder og hæver hænderne højt i vejret.)</HIS:hisStage>
 <lb/><l part="F">På englenes arm</l>
 <lb/><l>bæres vi hjem i himmelens karm!</l></HIS:hisSp>

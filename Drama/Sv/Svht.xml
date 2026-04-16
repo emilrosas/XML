@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
 <titleStmt>
 <title level="a" type="main" xml:id="Sv">Svanhild</title>
 <title level="s" type="main">Henrik Ibsens skrifter 2008, bind 4</title>
-<title level="s" type="sub">Hovedtekst, tekstgrunnlag: NBO Ms.4&deg; 926</title>
-<title level="s" type="copyright">&copy; cc by-nc 4.0</title>
+<title level="s" type="sub">Hovedtekst, tekstgrunnlag: NBO Ms.4° 926</title>
+<title level="s" type="copyright">© cc by-nc 4.0</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="editing"><resp>Edering</resp><name>Christian Janss (ansv.), Hilde Bøe, Ellen Nessheim Wiger</name></respStmt>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Ingrid Falkenberg, Mette Witting, Ingvald Aarstein</name></respStmt>
 <respStmt type="commenting"><resp>Kommentering</resp><name>Vigdis Ystad (ansv.), Erik Henning Edvardsen, Narve Fulsås, Dag Gundersen, Arnbjørn Jakobsen, Kristoffer Kruken, Stine Brenna Taugbøl, Erlend Lønnum (manusred.)</name></respStmt>
@@ -64,7 +58,7 @@
 <msIdentifier>
 <settlement>Oslo</settlement>
 <repository>Nasjonalbiblioteket</repository>
-<idno>NBO Ms.4&deg; 926</idno>
+<idno>NBO Ms.4° 926</idno>
 </msIdentifier>
 <msContents><msItem>
 <author>Henrik Ibsen</author>
@@ -78,11 +72,11 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-ht-ms;</p></projectDesc>
+<projectDesc><p>HOVEDTEKST BASERT PÅ MANUSKRIPT. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i trykt og elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av to medarbeidere. Teksten er kollasjonert en tredje gang i forbindelse med det avsluttende arbeidet med verket. Teksten er edert og kollasjonert en fjerde gang etter edering.</p></projectDesc>
 <editorialDecl>
 <HIS:typography><p>Grunntekstens typografi fins beskrevet i typografibeskrivelsen i grunntekstfilen (Sv4926.xml).</p></HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -102,9 +96,9 @@
 </list>
 </tagUsage></namespace>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="pb-ed-HU-n">For synkroniseringsformål er sideskiftene fra Hundreårsutgaven (bd. 4) kodet med pb ed="HU" n="". Dette tekstvitnet dekker sidene 251-267. Alle sidetallene er oppgitt i n-attributt.</tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
-<metDecl><p>&metDecl;</p></metDecl>
+<metDecl><p>Den metriske notasjonen er beskrevet i Kodepraksis for HIS og bygger på Jørgen Fafners verslære (Fafner 1989).</p></metDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
 <profileDesc>
@@ -157,7 +151,7 @@ Har gjort manuelle endringer etter skripting. Er nå valid TEI P5 for HISe.</cha
 </HIS:hisCastList>
 <lb/><set><p>Handlingen foregaar paa Fru Halms <anchor type="lemma" xml:id="koSv_17"/>Landsted
 <lb/>ved Drammensveien. Tiden er en <anchor type="lemma" xml:id="koSv_18"/>Sommer-
-<lb/>dag iaar. &dash;</p></set>
+<lb/>dag iaar. –</p></set>
 </front>
 <pb rend="noprint" ed="HU" n="254"/>
 <body>
@@ -178,7 +172,7 @@ Har gjort manuelle endringer etter skripting. Er nå valid TEI P5 for HISe.</cha
 <lb/>Lysthuset sees Falk, Johan, Fladland, Guld-
 <lb/>stad og Pasop om Bordet hvorpaa <anchor type="lemma" xml:id="koSv_22"/>Punsch<HIS:hisDel rend="overwritten"> o<gap/></HIS:hisDel><unclear>b</unclear>olle
 <lb/>og Glasse. Svanhild sidder i Baggrunden ved Vandet.</HIS:hisStage>
-<HIS:hisLg rend="opAlign"><HIS:hisLg versetype="strofegruppe trokeisk firtakter" an="no" met="bi (8 7)&sup2; (8 7)&sup2;" rhyme="(A b)&sup2; (C d)&sup2;">
+<HIS:hisLg rend="opAlign"><HIS:hisLg versetype="strofegruppe trokeisk firtakter" an="no" met="bi (8 7)² (8 7)²" rhyme="(A b)² (C d)²">
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker><pb ed="HISb"/><anchor type="lemma" xml:id="koSv_23"/>Falk</speaker> <HIS:hisStage>(reiser sig med hævet Glas
 <lb/>og synger:)</HIS:hisStage></HIS:spOpener>
 <lb/><HIS:hisLg versetype="strofe"><head>1.</head>
@@ -189,7 +183,7 @@ Har gjort manuelle endringer etter skripting. Er nå valid TEI P5 for HISe.</cha
 <lb/><l rhyme="C"><pb n="[3]v"/><anchor type="lemma" xml:id="koSv_28"/>Æbleblomsten, hvid og vakker,</l>
 <lb/><l rhyme="d">Breder over dig sit <anchor type="lemma" xml:id="koSv_29"/>Tjeld;</l>
 <lb/><HIS:hisLg versetype="refreng"><l rhyme="C">Lad den saa langs alle Bakker</l>
-<lb/><l rhyme="d">Drysses <anchor type="lemma" xml:id="koSv_30"/>vejrslaa&rapo;t næste Kvæld!</l></HIS:hisLg></HIS:hisLg></HIS:hisSp>
+<lb/><l rhyme="d">Drysses <anchor type="lemma" xml:id="koSv_30"/>vejrslaa’t næste Kvæld!</l></HIS:hisLg></HIS:hisLg></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Chor af Herrerne</speaker>.</HIS:spOpener>
 <lb/><HIS:hisLg versetype="strofe" part="Y"><HIS:hisLg versetype="refreng"><l rhyme="C">Lad den saa langs alle Bakker</l>
 <lb/><l>o. s. v. o. s. v.</l></HIS:hisLg></HIS:hisLg></HIS:hisSp>
@@ -214,10 +208,10 @@ Har gjort manuelle endringer etter skripting. Er nå valid TEI P5 for HISe.</cha
 <lb/><l rhyme="b">Din Forhaabning en for en.</l>
 <lb/><l rhyme="C">Tro mig, <emph rend="underlined">Du</emph> ved Byttet vinder,</l>
 <lb/><l rhyme="d"><anchor type="lemma" xml:id="koSv_36"/>Tusker Sang m<HIS:hisDel rend="overwritten">e</HIS:hisDel>od <anchor type="lemma" xml:id="koSv_37"/>sildig Frugt;</l>
-<lb/><HIS:hisLg versetype="refreng"><l rhyme="C">Husk Moralen: &lquo;<anchor type="lemma" xml:id="koSv_42"/>Tiden rinder&rquo;;</l>
+<lb/><HIS:hisLg versetype="refreng"><l rhyme="C">Husk Moralen: «<anchor type="lemma" xml:id="koSv_42"/>Tiden rinder»;</l>
 <lb/><l rhyme="d">Snart din <anchor type="lemma" xml:id="koSv_38"/>Friluftslund er lukt!</l></HIS:hisLg></HIS:hisLg></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Chor af Herrerne</speaker>.</HIS:spOpener>
-<lb/><HIS:hisLg versetype="strofe" part="Y"><HIS:hisLg versetype="refreng"><l rhyme="C">Husk Moralen: &lquo;Tiden rinder&rquo;</l>
+<lb/><HIS:hisLg versetype="strofe" part="Y"><HIS:hisLg versetype="refreng"><l rhyme="C">Husk Moralen: «Tiden rinder»</l>
 <lb/><l>o. s. v. o. s. v.</l></HIS:hisLg></HIS:hisLg></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker><pb ed="HISb"/>Falk</speaker>.</HIS:spOpener>
 <lb/><HIS:hisLg versetype="strofe"><head>4.</head>
@@ -236,7 +230,7 @@ Har gjort manuelle endringer etter skripting. Er nå valid TEI P5 for HISe.</cha
 <lb/><HIS:hisStage>(til Fruen.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>See, det var Havevisen, som De bad om igaar.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="LAERKE"><HIS:spOpener><speaker><pb ed="HISb"/>Frøken Lærke</speaker></HIS:spOpener>
-<lb/><p>Men, undskyld, Hr. Falk, &dash; jeg synes ikke De har lagt
+<lb/><p>Men, undskyld, Hr. Falk, – jeg synes ikke De har lagt
 <lb/>Poesi nok ind i det sidste Vers.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="PASOP"><HIS:spOpener><speaker>Pasop</speaker>.</HIS:spOpener>
 <lb/><p>Ja, og <anchor type="lemma" xml:id="koSv_45a"/>du havde dog havt saa let for at faa
@@ -265,7 +259,7 @@ Har gjort manuelle endringer etter skripting. Er nå valid TEI P5 for HISe.</cha
 <lb/><HIS:hisSp who="PASOP"><HIS:spOpener><speaker>Pasop</speaker>.
 <lb/><HIS:hisStage>(forklarende til Guldstad.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Jo, naar man lægger en <anchor type="lemma" xml:id="koSv_50"/>allegorisk Mening
-<lb/>i det, saa er det ganske rigtigt. Seer du &dash;</p>
+<lb/>i det, saa er det ganske rigtigt. Seer du –</p>
 <lb/><HIS:hisStage>(han fortsætter hviskende med Forklaringen.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="LAERKE"><HIS:spOpener><speaker>Frøken Lærke</speaker>.
 <lb/><HIS:hisStage>(til Falk.)</HIS:hisStage></HIS:spOpener>
@@ -284,7 +278,7 @@ Har gjort manuelle endringer etter skripting. Er nå valid TEI P5 for HISe.</cha
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
 <lb/><p><anchor type="lemma" xml:id="koSv_53"/>Lad mig miste Synet saa skal jeg digte om
 <lb/>den blaa Himmel. Jeg <HIS:hisDel rend="overstrike">skulde</HIS:hisDel> kunde fristes
-<lb/>til at <anchor type="lemma" xml:id="koSv_54"/>bede Vorherre om en stor Sorg, &dash; havde jeg
+<lb/>til at <anchor type="lemma" xml:id="koSv_54"/>bede Vorherre om en stor Sorg, – havde jeg
 <lb/>den saa skulde jeg ikke længere døse Tiden
 <lb/>bort</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUHALM"><HIS:spOpener><speaker><pb ed="HU" n="258"/>Fru Halm</speaker>.</HIS:spOpener>
@@ -300,9 +294,9 @@ Har gjort manuelle endringer etter skripting. Er nå valid TEI P5 for HISe.</cha
 <lb/><p>Jo, det er ganske rigtigt; jeg skriver aldrig bedre
 <lb/><pb n="[6]r"/><anchor type="lemma" xml:id="koSv_56"/>Ledere, end naar jeg har Noget at ærgre
 <lb/>mig over. <HIS:hisStage>(til Guldstad)</HIS:hisStage> Jeg skal forklare
-<lb/>dig det &dash; <HIS:hisStage>(fort<HIS:clarification place="inline">s</HIS:clarification>ætter hviskende.)</HIS:hisStage></p></HIS:hisSp>
+<lb/>dig det – <HIS:hisStage>(fort<HIS:clarification place="inline">s</HIS:clarification>ætter hviskende.)</HIS:hisStage></p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLADLAND"><HIS:spOpener><speaker>Fladland</speaker>.</HIS:spOpener>
-<lb/><p>Falk spøger bare. Nei, leve Lykken &dash; <anchor type="lemma" xml:id="koSv_57"/>Hjerteglæden!</p></HIS:hisSp>
+<lb/><p>Falk spøger bare. Nei, leve Lykken – <anchor type="lemma" xml:id="koSv_57"/>Hjerteglæden!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.
 <lb/><HIS:hisStage>(tager Glasset.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Eller Sorgen! <HIS:hisStage>(<anchor type="lemma" xml:id="koSv_58"/>sagte)</HIS:hisStage> <anchor type="lemma" xml:id="koSv_59"/>Jeg ved Fanden ikke hvad
@@ -322,7 +316,7 @@ Har gjort manuelle endringer etter skripting. Er nå valid TEI P5 for HISe.</cha
 <lb/><anchor type="lemma" xml:id="koSv_62"/>Sigurds og Gudruns Datter hed ogsaa Svan-
 <lb/>hild; det er jo hende De er opkaldt efter.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker>Svanhild</speaker>.</HIS:spOpener>
-<lb/><p>Aa, altid gjør De Nar &dash; <HIS:hisStage>(hun fjerner sig.)</HIS:hisStage></p></HIS:hisSp>
+<lb/><p>Aa, altid gjør De Nar – <HIS:hisStage>(hun fjerner sig.)</HIS:hisStage></p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUHALM"><HIS:spOpener><speaker>Fru Halm</speaker>.</HIS:spOpener>
 <lb/><p>Aldrig kan han lade det stakkels Barn være
 <lb/>i Fred.</p></HIS:hisSp>
@@ -354,7 +348,7 @@ Har gjort manuelle endringer etter skripting. Er nå valid TEI P5 for HISe.</cha
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
 <lb/><p>Det er jo herligt! Han maa være en rigt begavet
 <lb/>Mand; jeg husker han skrev nogle ypperlige
-<lb/><anchor type="lemma" xml:id="koSv_69"/>Noveller for en 14&dash;16 Aar siden.</p></HIS:hisSp>
+<lb/><anchor type="lemma" xml:id="koSv_69"/>Noveller for en 14–16 Aar siden.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="PASOP"><HIS:spOpener><speaker><pb n="[7]v"/>Pasop</speaker>.</HIS:spOpener>
 <lb/><p>Ja, og jeg anmeldte dem i Bladet. Det var
 <lb/><anchor type="lemma" xml:id="koSv_70"/>min første Debut.</p></HIS:hisSp>
@@ -369,7 +363,7 @@ Har gjort manuelle endringer etter skripting. Er nå valid TEI P5 for HISe.</cha
 <lb/>godt, det var dengang jeg begyndte at blive
 <lb/>forelsket i min nuværende Kjæreste.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker><pb ed="HISb"/>Falk</speaker>.</HIS:spOpener>
-<lb/><p>Nuværende? Har du da før &dash;?</p></HIS:hisSp>
+<lb/><p>Nuværende? Har du da før –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="PASOP"><HIS:spOpener><speaker>Pasop</speaker>.</HIS:spOpener>
 <lb/><p>Aa nei, Snak; jeg mener hun, som nu er
 <lb/>bleven min Kjæreste. Nei, det kan jeg sige
@@ -379,7 +373,7 @@ Har gjort manuelle endringer etter skripting. Er nå valid TEI P5 for HISe.</cha
 <lb/><p>Straamand havde ogsaa en Historie herinde.
 <lb/>Ja, dengang var han nu bare <anchor type="lemma" xml:id="koSv_71"/>Kandidat.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="PASOP"><HIS:spOpener><speaker>Pasop</speaker>.</HIS:spOpener>
-<lb/><p>Ja, det er saagud sandt. Hans Kone &dash;</p></HIS:hisSp>
+<lb/><p>Ja, det er saagud sandt. Hans Kone –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GULDSTAD"><HIS:spOpener><speaker>Guldstad</speaker>.</HIS:spOpener>
 <lb/><p>Hun er Datter af et rigt <anchor type="lemma" xml:id="koSv_72"/>Trælasthus, som ikke
 <lb/>vilde vide noget af Forlovelsen; men de To
@@ -396,14 +390,14 @@ Har gjort manuelle endringer etter skripting. Er nå valid TEI P5 for HISe.</cha
 <lb/><p>Ja, en af vore erfarne Poeter siger rigtignok
 <lb/><pb n="[8]v"/>at:</p>
 <HIS:hisLg rend="opAlign"><HIS:hisLg versetype="stikisk jambisk firtakter" an="single" met="bi '9 '9" rhyme="A A">
-<lb/><l realAn="no" rhyme="A">&lquo;<anchor type="lemma" xml:id="koSv_73"/><anchor type="lemma" xml:id="koSv_74"/>Kjærligheden gjør <anchor type="lemma" xml:id="koSv_75"/>Petrarker,</l>
-<lb/><l rhyme="A">Som Fæ og Ladhed <anchor type="lemma" xml:id="koSv_76"/>Patriarker;&rquo;</l></HIS:hisLg></HIS:hisLg>
+<lb/><l realAn="no" rhyme="A">«<anchor type="lemma" xml:id="koSv_73"/><anchor type="lemma" xml:id="koSv_74"/>Kjærligheden gjør <anchor type="lemma" xml:id="koSv_75"/>Petrarker,</l>
+<lb/><l rhyme="A">Som Fæ og Ladhed <anchor type="lemma" xml:id="koSv_76"/>Patriarker;»</l></HIS:hisLg></HIS:hisLg>
 <lb/><p>men jeg tror der er en dybere Grund hos Straamand,
 <lb/>og hans Kone skal være en fortræffelig Dame, som
 <lb/>nok vil holde ham oppe.</p></HIS:hisSp>
 <lb/><HIS:hisStage>(Damerne har imidlertid taget Hatte og <anchor type="lemma" xml:id="koSv_77"/>Mantiller.)</HIS:hisStage>
 <lb/><HIS:hisSp who="FRUHALM"><HIS:spOpener><speaker>Fru Halm</speaker>.</HIS:spOpener>
-<lb/><p>See saa, hvis Herrerne nu er færdige &dash;</p></HIS:hisSp>
+<lb/><p>See saa, hvis Herrerne nu er færdige –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLADLAND"><HIS:spOpener><speaker>Fladland</speaker>.
 <lb/><HIS:hisStage>(sagte til Sofie.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Jeg kommer strax.</p></HIS:hisSp>
@@ -432,14 +426,14 @@ Har gjort manuelle endringer etter skripting. Er nå valid TEI P5 for HISe.</cha
 <lb/><HIS:hisSp who="FLADLAND"><HIS:spOpener><speaker>Fladland</speaker>.</HIS:spOpener>
 <lb/><p>Nei, tvertimod. Jeg har <anchor type="lemma" xml:id="koSv_79"/>aldrig været bedre Theo-
 <lb/>log end nu, men det er ikke af Bøgerne
-<lb/>jeg henter det; &dash; Aa, Falk, Falk, min Ven jeg
+<lb/>jeg henter det; – Aa, Falk, Falk, min Ven jeg
 <lb/>er saa glad, saa lykkelig! Jeg er <anchor type="lemma" xml:id="koSv_80"/>forlovet!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
 <lb/><p>Med Sofie?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLADLAND"><HIS:spOpener><speaker>Fladmark</speaker>.</HIS:spOpener>
 <lb/><p>Ja, naturligvis! Det er nu tre Dage siden,
 <lb/><pb n="[9]v"/>men Ingen veed det. O, dersom Du kunde tænke
-<lb/>Dig hvilken Lykke &dash;! Jeg er ganske som et nyt
+<lb/>Dig hvilken Lykke –! Jeg er ganske som et nyt
 <lb/>Menneske; jeg har faaet Tanker og Ideer, som
 <lb/>jeg aldrig før vidste af. Jeg er bleven bedre,
 <lb/>jeg holder inderligere af Gud <pb ed="HU" n="261"/>og Verden; seer
@@ -471,7 +465,7 @@ Har gjort manuelle endringer etter skripting. Er nå valid TEI P5 for HISe.</cha
 <lb/><p>Han behøver ikke nogen Sorg for at fylde Li-
 <lb/>vet ud, han hjælper sig med en Forlovelse.
 <lb/>Han var bleven saa varm og saa glad, saa
-<lb/>frisk og sund; &dash; og jeg! Aa jeg er en Nar! Jeg
+<lb/>frisk og sund; – og jeg! Aa jeg er en Nar! Jeg
 <lb/>er en forskruet, <HIS:hisDel rend="overstrike">syglig</HIS:hisDel> sygelig, overspændt affek-
 <lb/>teret Karl! Hei, din Pedant, hvad bilder du
 <lb/>dig ind; hvad er det for et stort Indhold i
@@ -491,7 +485,7 @@ Har gjort manuelle endringer etter skripting. Er nå valid TEI P5 for HISe.</cha
 <lb/><p>Nei, men De fortjener det heller ikke saa godt
 <lb/>som jeg.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker>Svanhild</speaker>.</HIS:spOpener>
-<lb/><p>Det kan vel saa være, men &dash;</p></HIS:hisSp>
+<lb/><p>Det kan vel saa være, men –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker><pb ed="HU" n="262"/>Falk</speaker>.</HIS:spOpener>
 <lb/><p>Jo jo, De fortjener det; eller rettere, De fortjener
 <lb/>Noget som er tusinde Gange bedre.</p></HIS:hisSp>
@@ -519,7 +513,7 @@ Har gjort manuelle endringer etter skripting. Er nå valid TEI P5 for HISe.</cha
 <lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker>Svanhild</speaker>.</HIS:spOpener>
 <lb/><p>Ja oppe fra Vinduet. Den sad og sang der-
 <lb/>nede<HIS:hisDel rend="overwritten">,</HIS:hisDel>. <HIS:hisDel rend="overwritten">d</HIS:hisDel>De laa og hørte paa, og da den holdt op
-<lb/>ventede De en Stund, saa tog De en Sten og &dash;</p></HIS:hisSp>
+<lb/>ventede De en Stund, saa tog De en Sten og –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
 <lb/><p>Det er ganske sandt. Gud ved hvor den <anchor type="lemma" xml:id="koSv_83"/>Stær
 <lb/><pb ed="HISb"/>er kommen fra saa tidligt paa Aaret; den
@@ -527,7 +521,7 @@ Har gjort manuelle endringer etter skripting. Er nå valid TEI P5 for HISe.</cha
 <lb/>me, jeg kjendte den igjen paa en hvid
 <lb/>Fjær i Halen.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker><pb n="[11]v"/>Svanhild</speaker>.</HIS:spOpener>
-<lb/><p>Og saa kunde De være saa umenneskelig &dash;!</p></HIS:hisSp>
+<lb/><p>Og saa kunde De være saa umenneskelig –!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
 <lb/><p>Aa hvad. Den havde sunget alt hvad den vid-
 <lb/>ste, og hvad den sang, det formede sig i mig
@@ -552,7 +546,7 @@ Har gjort manuelle endringer etter skripting. Er nå valid TEI P5 for HISe.</cha
 <lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker><pb n="[12]r"/>Svanhild</speaker>.</HIS:spOpener>
 <lb/><p>En Bog!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
-<lb/><p>Deres Familiekrønike. &dash; Nei nei da &dash; det er <anchor type="lemma" xml:id="koSv_87"/>Vøl-
+<lb/><p>Deres Familiekrønike. – Nei nei da – det er <anchor type="lemma" xml:id="koSv_87"/>Vøl-
 <lb/>sungasaga. Der kan De læse om den rette
 <lb/>Svanhild; det har De jo saa stor Lyst til sagde
 <lb/>De igaar. Hun var en Kongedatter og en herlig
@@ -579,12 +573,12 @@ Har gjort manuelle endringer etter skripting. Er nå valid TEI P5 for HISe.</cha
 <lb/>af fire Heste. Det er omtrent hvad man kalder
 <lb/><anchor type="lemma" xml:id="koSv_95"/>Fatum.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker>Svanhild</speaker>.</HIS:spOpener>
-<lb/><p>Revet sønder &dash;</p></HIS:hisSp>
+<lb/><p>Revet sønder –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
 <lb/><p>Kan De nu forstaa hvorfor jeg finder det
 <lb/><pb ed="HISb"/>saa latterligt at De har faaet dette Navn
 <lb/>som rummer i sig <HIS:hisDel rend="overwritten">et</HIS:hisDel>Begrebet af Offring for
-<lb/>Tidens <anchor type="lemma" xml:id="koSv_96"/>Brøde. &dash; Og dog, og det er det værste, &dash;
+<lb/>Tidens <anchor type="lemma" xml:id="koSv_96"/>Brøde. – Og dog, og det er det værste, –
 <lb/>De <anchor type="lemma" xml:id="koSv_97"/>tør komme til at bære Deres Navn med Rette.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker>Svanhild</speaker>.</HIS:spOpener>
 <lb/><p>Jeg forstaar ikke hvad De mener.</p></HIS:hisSp>
@@ -608,22 +602,22 @@ Har gjort manuelle endringer etter skripting. Er nå valid TEI P5 for HISe.</cha
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
 <lb/><p>O, havde jeg kun een stærk Evne i min
 <lb/>Sjæl; en eneste Evne, som jeg ved jeg mang-
-<lb/>ler, da skulde <HIS:hisDel rend="overwritten">d</HIS:hisDel>De <anchor type="lemma" xml:id="koSv_102"/>ved den levende Gud &dash;
+<lb/>ler, da skulde <HIS:hisDel rend="overwritten">d</HIS:hisDel>De <anchor type="lemma" xml:id="koSv_102"/>ved den levende Gud –
 <lb/>ikke gaa tilgrunde. Sig mig, Svanhild, hav-
 <lb/>de De <anchor type="lemma" xml:id="koSv_103"/>Mod til at opoffre Dem ganske for mig
-<lb/>istedetfor for Verden &dash; tør De &dash; aa, jeg er gal, at
-<lb/>jeg siger alt dette &dash;</p></HIS:hisSp>
+<lb/>istedetfor for Verden – tør De – aa, jeg er gal, at
+<lb/>jeg siger alt dette –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker>Svanhild</speaker>.</HIS:spOpener>
 <lb/><p>Opoffre mig, o Gud, hvad skulde De kunne bruge
 <lb/><HIS:hisRef type="tcNote" xml:id="noteSv_9" target="Svht_noter.xml" corresp="noteSv_9">big</HIS:hisRef> til?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
 <lb/><p>Dem!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker>Svanhild</speaker>.</HIS:spOpener>
-<lb/><p>Ja, &dash; <HIS:hisAdd place="offline">De</HIS:hisAdd> som staar saa høit over mig.</p></HIS:hisSp>
+<lb/><p>Ja, – <HIS:hisAdd place="offline">De</HIS:hisAdd> som staar saa høit over mig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
 <lb/><p>Lad os ikke tænke mere paa den Sag. Tag
 <lb/>nu <HIS:hisRef type="tcNote" xml:id="noteSv_10" target="Svht_noter.xml" corresp="noteSv_10">deres</HIS:hisRef> Saga og læs. <anchor type="lemma" xml:id="koSv_104"/>Commune naufra-
-<lb/><pb n="[13]v"/><pb ed="HISb"/>gium &dash; naa &dash;! Den er fuldgod med den bedste Ro-
+<lb/><pb n="[13]v"/><pb ed="HISb"/>gium – naa –! Den er fuldgod med den bedste Ro-
 <lb/>man; ja det vil De rigtignok ikke synes om
 <lb/>nogle Aar.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker>Svanhild</speaker>.</HIS:spOpener>
@@ -642,19 +636,19 @@ Har gjort manuelle endringer etter skripting. Er nå valid TEI P5 for HISe.</cha
 <lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker>Svanhild</speaker>.</HIS:spOpener>
 <lb/><p>Ikke hos mig. Falk, der er noget som <anchor type="lemma" xml:id="koSv_108"/>feiler
 <lb/>Dem; kan ikke jeg hjælpe? Dersom De bare
-<lb/>vilde sige mig &dash;</p></HIS:hisSp>
+<lb/>vilde sige mig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker><pb ed="HISb"/>Falk</speaker>.</HIS:spOpener>
-<lb/><p><pb n="[14]r"/>Jeg har jo sagt Dem, &dash; det slap mig <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>jo ud af
+<lb/><p><pb n="[14]r"/>Jeg har jo sagt Dem, – det slap mig <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>jo ud af
 <lb/>Munden.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker><pb ed="HU" n="265"/>Svanhild</speaker>.</HIS:spOpener>
 <lb/><p>Men jeg forstod Dem ikke.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
-<lb/><p>De kunde tage Stærens Rolle; synge for mig, &dash; ikke
+<lb/><p>De kunde tage Stærens Rolle; synge for mig, – ikke
 <lb/>inde, ikke ved <anchor type="lemma" xml:id="koSv_109"/>Pianofortet; nei, hvor De gik og
-<lb/>stod, &dash; <HIS:hisDel rend="overstrike">ikke</HIS:hisDel> hørligt for mig alene; ikke i Toner,
-<lb/>men <anchor type="lemma" xml:id="koSv_110"/>i Ord, i Tanke, i Gjerning, i Taushed, &dash;
+<lb/>stod, – <HIS:hisDel rend="overstrike">ikke</HIS:hisDel> hørligt for mig alene; ikke i Toner,
+<lb/>men <anchor type="lemma" xml:id="koSv_110"/>i Ord, i Tanke, i Gjerning, i Taushed, –
 <lb/>jeg skulde give Digt for Digt igjen naar vi
-<lb/>to holdt sammen &dash;</p></HIS:hisSp>
+<lb/>to holdt sammen –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker>Svanhild</speaker>.</HIS:spOpener>
 <lb/><p>Og naar <HIS:hisDel rend="overwritten">d</HIS:hisDel>De saa kunde mig udenad?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.
@@ -664,7 +658,7 @@ Har gjort manuelle endringer etter skripting. Er nå valid TEI P5 for HISe.</cha
 <lb/><HIS:hisStage>(tier og græder stille ved <anchor type="lemma" xml:id="koSv_112"/>Lysthuset.)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
 <lb/><p>De græder, Svanhild! O, gjør ikke det, <HIS:hisStage>(tager hendes
-<lb/><pb ed="HISb"/>Tørklæde og tørrer Taarerne af)</HIS:hisStage> Saa, saa, &dash; vær nu ikke
+<lb/><pb ed="HISb"/>Tørklæde og tørrer Taarerne af)</HIS:hisStage> Saa, saa, – vær nu ikke
 <lb/>bedrøvet; Gud ved, jeg vil ikke gjøre Dem ondt.
 <lb/><pb n="[14]v"/>Der kommer d<HIS:clarification place="inline">e</HIS:clarification> Andre. Svar mig havde De Mod
 <lb/>til at leve det Liv med mig, rigt, men kort,
@@ -681,9 +675,9 @@ Har gjort manuelle endringer etter skripting. Er nå valid TEI P5 for HISe.</cha
 <lb/><p>Hvad der spørges om, er om et Offer for mig,
 <lb/>et Offer, fuldstændigt fra Deres Side; <HIS:hisDel rend="overstrike">a<unclear>t</unclear></HIS:hisDel> <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>som Stæren
 <lb/>at synge <HIS:hisRef type="tcNote" xml:id="noteSv_12" target="Svht_noter.xml" corresp="noteSv_12">dem</HIS:hisRef> tom og fylde mig med Ind-
-<lb/>holdet, og naar jeg er færdig med Dem <HIS:hisAdd place="offline"><HIS:hisRef type="tcNote" xml:id="noteSv_13" target="Svht_noter.xml" corresp="noteSv_13">naar jeg kan <HIS:hisDel rend="overwritten">d</HIS:hisDel>Dem</HIS:hisRef></HIS:hisAdd> &dash; Alt
-<lb/>forbi, &dash; ingen Vinter bagefter &dash; saa skilles vi &dash;
-<lb/><pb ed="HISb"/>Svanhild &dash; svar mig for Gud, har De Mod?</p></HIS:hisSp>
+<lb/>holdet, og naar jeg er færdig med Dem <HIS:hisAdd place="offline"><HIS:hisRef type="tcNote" xml:id="noteSv_13" target="Svht_noter.xml" corresp="noteSv_13">naar jeg kan <HIS:hisDel rend="overwritten">d</HIS:hisDel>Dem</HIS:hisRef></HIS:hisAdd> – Alt
+<lb/>forbi, – ingen Vinter bagefter – saa skilles vi –
+<lb/><pb ed="HISb"/>Svanhild – svar mig for Gud, har De Mod?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker>Svanhild</speaker>
 <lb/><HIS:hisStage>(efter et Øiebliks Pause)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Nei!</p></HIS:hisSp>
@@ -693,7 +687,7 @@ Har gjort manuelle endringer etter skripting. Er nå valid TEI P5 for HISe.</cha
 <div type="scene" n="4">
 <lb/><head><pb ed="HU" n="266"/>4<hi rend="raised">de</hi> Scene.</head>
 <lb/><HIS:hisStage>De Forrige. Fru Halm, Guldstad, Pasop,
-<lb/>Frøken Lærke, Johan, Fladland og Sofie &dash;
+<lb/>Frøken Lærke, Johan, Fladland og Sofie –
 <lb/>kommer fra Baggrunden.</HIS:hisStage>
 <lb/><HIS:hisSp who="FRUHALM"><HIS:spOpener><speaker>Fru Halm</speaker>.</HIS:spOpener>
 <lb/><p><anchor type="lemma" xml:id="koSv_114"/>Dampskibet er alt inde paa Havnen; nu kan vi
@@ -709,18 +703,18 @@ Har gjort manuelle endringer etter skripting. Er nå valid TEI P5 for HISe.</cha
 <lb/><p>Ja <emph rend="underlined">isaafald</emph> kan han jo <emph rend="underlined">hellerikke</emph> høre til Oppositionen.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="LAERKE"><HIS:spOpener><speaker>Frøken Lærke</speaker>
 <lb/><HIS:hisStage>(<anchor type="lemma" xml:id="koSv_116"/>sagte til Pasop, som gaar tilbage)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Nu, er han &dash;?</p></HIS:hisSp>
+<lb/><p>Nu, er han –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="PASOP"><HIS:spOpener><speaker><pb n="[15]v"/>Pasop</speaker>.</HIS:spOpener>
 <lb/><p>Jeg ved ikke; men han skal nu <anchor type="lemma" xml:id="koSv_117"/>abonnere <HIS:hisRef type="tcNote" xml:id="noteSv_14" target="Svht_noter.xml" corresp="noteSv_14">aligevel</HIS:hisRef>.</p>
 <lb/><HIS:hisStage>(de gaar mod Huset.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="FLADLAND"><HIS:spOpener><speaker>Fladland</speaker>
 <lb/><HIS:hisStage>(sagte til Falk, idet han nærmer sig med Sofie.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Maa jeg forestille dig &dash;</p></HIS:hisSp>
+<lb/><p>Maa jeg forestille dig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
 <lb/><p>Jeg ved ikke hvad du mener.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLADLAND"><HIS:spOpener><speaker>Fladland</speaker>.</HIS:spOpener>
 <lb/><p>Aa du behøver ikke at forstille dig; det er med
-<lb/>Sofies Tilladelse at jeg &dash; &dash;</p></HIS:hisSp>
+<lb/>Sofies Tilladelse at jeg – –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker><pb ed="HISb"/>Falk</speaker>.</HIS:spOpener>
 <lb/><p>Og det kan du gjøre uden al Nødvendig-
 <lb/>hed?</p></HIS:hisSp>
@@ -737,21 +731,21 @@ Har gjort manuelle endringer etter skripting. Er nå valid TEI P5 for HISe.</cha
 <lb/><p>Nei, nei; gjør ikke det! Det vil I angre. Er det
 <lb/>da ikke velsignet godt saaledes som det er?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SOFIE"><HIS:spOpener><speaker>Sofie</speaker>.</HIS:spOpener>
-<lb/><p>Jo det er det jeg ogsaa siger; men Fladland &dash;</p></HIS:hisSp>
+<lb/><p>Jo det er det jeg ogsaa siger; men Fladland –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLADLAND"><HIS:spOpener><speaker><pb ed="HISb"/>Fladland</speaker>.</HIS:spOpener>
 <lb/><p>Ja jeg kan ikke holde ud alle disse <anchor type="lemma" xml:id="koSv_119"/>Vanske-
 <lb/>ligheder som er forbundne med at faa Sofie
-<lb/>itale, ja blot for at faa see hende &dash;</p></HIS:hisSp>
+<lb/>itale, ja blot for at faa see hende –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Fal<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>k</speaker>.</HIS:spOpener>
-<lb/><p>Aa, min Ven &dash; du skjønner ikke paa &dash; &dash;</p></HIS:hisSp>
+<lb/><p>Aa, min Ven – du skjønner ikke paa – –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLADLAND"><HIS:spOpener><speaker><pb ed="HU" n="267"/>Fladland</speaker>.</HIS:spOpener>
 <lb/><p>Desuden kan jeg ikke fordrage at denne
-<lb/>Grosserer idelig er om hende &dash; &dash; Gud ved
-<lb/>hvad Hensigter han egentlig kan have &dash;</p></HIS:hisSp>
+<lb/>Grosserer idelig er om hende – – Gud ved
+<lb/>hvad Hensigter han egentlig kan have –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
-<lb/><p>Guldstad? Tror du at han &dash; &dash;?</p></HIS:hisSp>
+<lb/><p>Guldstad? Tror du at han – –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SOFIE"><HIS:spOpener><speaker>Sofie</speaker>.</HIS:spOpener>
-<lb/><p>Aa, det er bare Indbildning &dash;</p></HIS:hisSp>
+<lb/><p>Aa, det er bare Indbildning –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLADLAND"><HIS:spOpener><speaker><pb n="[16]v"/>Fladland</speaker>.</HIS:spOpener>
 <lb/><p>Nei, det er paa ingen Maade Indbildning. Det er
 <lb/>jo ikke længere siden end nu nylig nede i Haven!
@@ -761,16 +755,16 @@ Har gjort manuelle endringer etter skripting. Er nå valid TEI P5 for HISe.</cha
 <lb/>ste Tid.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker><pb ed="HISb"/>Falk</speaker>.</HIS:spOpener>
 <lb/><p>Ja, ja; lad det være som det vil; men lov mig Begge
-<lb/>to, for <anchor type="lemma" xml:id="koSv_120"/>eders egen Skyld, &dash; at vente indtil vidre &dash;
-<lb/>I maa ikke nu strax &dash;</p></HIS:hisSp>
+<lb/>to, for <anchor type="lemma" xml:id="koSv_120"/>eders egen Skyld, – at vente indtil vidre –
+<lb/>I maa ikke nu strax –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLADLAND"><HIS:spOpener><speaker>Fladland</speaker>.</HIS:spOpener>
-<lb/><p>Naa ja da, indtil videre, men ikke længe &dash;
-<lb/>min gode velsignede Sofie &dash; hm &dash; Frøken Lærke
-<lb/>seer paa os &dash; <HIS:hisStage>(de fjerner sig hver for sig.)</HIS:hisStage></p></HIS:hisSp>
+<lb/><p>Naa ja da, indtil videre, men ikke længe –
+<lb/>min gode velsignede Sofie – hm – Frøken Lærke
+<lb/>seer paa os – <HIS:hisStage>(de fjerner sig hver for sig.)</HIS:hisStage></p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
-<lb/><p><anchor type="lemma" xml:id="koSv_121"/>Færdig med første Akt i tre Dage, &dash;! Det er en
-<lb/>produktiv Forfatter &dash; eller, det er nok snarere fordi
-<lb/>Stoffet alt er forbrugt &dash; hvorledes vil de To <HIS:hisAdd place="inline">ud</HIS:hisAdd>fylde Re-
+<lb/><p><anchor type="lemma" xml:id="koSv_121"/>Færdig med første Akt i tre Dage, –! Det er en
+<lb/>produktiv Forfatter – eller, det er nok snarere fordi
+<lb/>Stoffet alt er forbrugt – hvorledes vil de To <HIS:hisAdd place="inline">ud</HIS:hisAdd>fylde Re-
 <lb/>sten af det lange lange Stykke?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GULDSTAD"><HIS:spOpener><speaker>Guldstad</speaker>
 <lb/><HIS:hisStage>(slaar ham paa Skuldren)</HIS:hisStage></HIS:spOpener>

@@ -1,21 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?> <!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.ibsen.uio.no/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?> <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS"> 
+<?xml version="1.0" encoding="UTF-8"?>  <?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?> <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS"> 
 <teiHeader xml:lang="nob">
 <fileDesc>
 <titleStmt>
 <title level="s" type="main">Henrik Ibsens skrifter</title>
 <title level="s" type="sub">Diplomatarisk tekstarkiv</title>
 <title level="a" type="main">Samfundets støtter</title>
-<title level="a" type="sub">NBO Ms.4&deg; 1112f, legg 9-10</title>
+<title level="a" type="sub">NBO Ms.4° 1112f, legg 9-10</title>
 <title level="a" type="origYear">1877</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Mette Witting, Ingvald Aarstein</name></respStmt>
 <respStmt>
 <resp>Oppretting av SS41112 (transkripsjon og kollasjon)</resp>
@@ -39,7 +33,7 @@
         <msIdentifier>
             <settlement>Oslo</settlement>
             <repository>Nasjonalbiblioteket</repository>
-            <idno>NBO Ms.4&deg; 1112</idno>
+            <idno>NBO Ms.4° 1112</idno>
         </msIdentifier>
         <msContents><msItem>
             <author>Henrik Ibsen</author>
@@ -51,12 +45,12 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <p>Manuskriptets grafiske oppsett finnes beskrevet i typografibeskrivelsen i SS41112_NBO.xml.</p></HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id_who">
@@ -78,7 +72,7 @@
 <label xml:id="AUNE">AUNE</label><item>-/Aune/-</item>
 </list>
 </tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-tei2;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -187,26 +181,26 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/><HIS:hisSp who="DINA"><HIS:spOpener><speaker>Dina</speaker>.</HIS:spOpener>
 <lb/><p>Din hustru.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JOHAN"><HIS:spOpener><speaker>Johan</speaker>.</HIS:spOpener>
-<lb/><p>Og alt, hvad der ligger &dash; hvad du tror der lig&typHyp;
-<lb/>ger bag os &dash;</p></HIS:hisSp>
+<lb/><p>Og alt, hvad der ligger – hvad du tror der lig‐
+<lb/>ger bag os –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="DINA"><HIS:spOpener><speaker>Dina</speaker>.</HIS:spOpener>
 <lb/><p>Det ved jeg ikke, jeg ved kun at jeg må
-<lb/>elske dig &dash;</p></HIS:hisSp>
+<lb/>elske dig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JOHAN"><HIS:spOpener><speaker>Johan</speaker>.</HIS:spOpener>
-<lb/><p>Så kaster jeg alle broer af &dash; dette skinnhellige
+<lb/><p>Så kaster jeg alle broer af – dette skinnhellige
 <lb/>hyklerske samfund skal aldrig se os igen.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKHESSEL"><HIS:spOpener><speaker>Frøken H.</speaker></HIS:spOpener>
-<lb/><p><HIS:hisDel rend="overstrike">Hes</HIS:hisDel> Ombord &dash; ombord &dash; Johan &dash;</p></HIS:hisSp>
+<lb/><p><HIS:hisDel rend="overstrike">Hes</HIS:hisDel> Ombord – ombord – Johan –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JOHAN"><HIS:spOpener><speaker>Johan</speaker>.</HIS:spOpener>
-<lb/><p>Ja, ombord &dash; ah men &dash; Lona &dash; du kære
-<lb/>søster &dash; hør her &dash;</p>
+<lb/><p>Ja, ombord – ah men – Lona – du kære
+<lb/>søster – hør her –</p>
 <lb/><HIS:hisStage>(han fører hende op i baggrunden og taler
 <lb/>ilsomt med hende.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKBERNICK"><HIS:spOpener><speaker>Marta</speaker>.</HIS:spOpener>
-<lb/><p>Dina, du lykkelige, &dash; lad mig se på dig,
-<lb/>kysse dig endnu en gang, den sidste &dash;</p></HIS:hisSp>
+<lb/><p>Dina, du lykkelige, – lad mig se på dig,
+<lb/>kysse dig endnu en gang, den sidste –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="DINA"><HIS:spOpener><speaker>Dina</speaker>.</HIS:spOpener>
-<lb/><p>Ikke den sidste, nej, kære elskede tante &dash;
+<lb/><p>Ikke den sidste, nej, kære elskede tante –
 
 <pb ed="source" type="folio_nopagination" subtype="verso" n="1" facs="171" gathering="9" />
 <lb/>vi ses nok igen.</p></HIS:hisSp><HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="SS_127ms"/>
@@ -214,7 +208,7 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/><p>Aldrig! Lov mig det, Dina, kom aldrig
 <lb/>tilbage. Hvad vil I her? Her er ikke sted
 <lb/>for eder; her fratager de en modet til at
-<lb/>ville være lykkelig &dash;</p></HIS:hisSp>
+<lb/>ville være lykkelig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="DINA"><HIS:spOpener><speaker>Dina</speaker>.</HIS:spOpener>
 <lb/><p>O, nu har jeg mod til alt; nu trodser
 <lb/>jeg alle.</p></HIS:hisSp>
@@ -222,17 +216,17 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/><p>Ja, derude i den store fri verden, når
 <lb/>du er alene med ham, uden fortid, uden alle
 <lb/>disse opskræmmende hensyn, uden tryk af al denne
-<lb/>dræbende agtværdighed &dash;</p></HIS:hisSp>
+<lb/>dræbende agtværdighed –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="DINA"><HIS:spOpener><speaker>Dina</speaker>.</HIS:spOpener>
 <lb/><p>Ja, ja; der er det!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKBERNICK"><HIS:spOpener><speaker>Marta</speaker>.</HIS:spOpener>
-<lb/><p>Du elskede barn! Nu går du til lykken &dash;
+<lb/><p>Du elskede barn! Nu går du til lykken –
 <lb/>over havet. O, hvor ofte har jeg ikke i skolestuen
-<lb/>stundet didover. Derude må det være skønt; en stør&typHyp;
+<lb/>stundet didover. Derude må det være skønt; en stør‐
 <lb/>re himmel, skyerne går højere end her; en renere
-<lb/>luft svaler om menneskenes hoveder &dash;</p></HIS:hisSp>
+<lb/>luft svaler om menneskenes hoveder –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="DINA"><HIS:spOpener><speaker>Dina</speaker>.</HIS:spOpener>
-<lb/><p>O, tante Marta &dash; hvorfor følger du os ikke?</p></HIS:hisSp>
+<lb/><p>O, tante Marta – hvorfor følger du os ikke?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKBERNICK"><HIS:spOpener><speaker>Marta</speaker>.</HIS:spOpener>
 <lb/><p>Jeg? Aldrig! Nu er min stilling given. Gud
 <lb/>ske lov at jeg kom til klarhed; nu tænker jeg
@@ -245,10 +239,10 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/><HIS:hisSp who="FRKBERNICK"><HIS:spOpener><speaker>Marta</speaker>.</HIS:spOpener>
 <lb/><p>Ak, et menneske kan skilles fra meget,
 <lb/>Dina, <HIS:hisStage>(kysser hende)</HIS:hisStage> Men det får du aldrig
-<lb/>prøve, søde barn! Lov mig at gøre ham lyk&typHyp;
-<lb/>kelig &dash;</p></HIS:hisSp>
+<lb/>prøve, søde barn! Lov mig at gøre ham lyk‐
+<lb/>kelig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="DINA"><HIS:spOpener><speaker>Dina</speaker>.</HIS:spOpener>
-<lb/><p>Love? Jeg ved intet at love, vil intet love &dash;
+<lb/><p>Love? Jeg ved intet at love, vil intet love –
 <lb/>her har jeg læt at hade den ting: at love.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKBERNICK"><HIS:spOpener><speaker>Marta</speaker>.</HIS:spOpener>
 <lb/><p>Du skal heller intet love; du skal blot
@@ -263,14 +257,14 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/>være. Og nu ombord!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JOHAN"><HIS:spOpener><speaker>Johan</speaker>.</HIS:spOpener>
 <lb/><p>Ja, der er ingen tid at spilde. Farvel,
-<lb/>Lona! Tak for al din kærlighed! Farvel, Mar&typHyp;
+<lb/>Lona! Tak for al din kærlighed! Farvel, Mar‐
 <lb/>ta; hav tak du også. Bliv lykkelig; den
-<lb/>enlige stand, ser du &dash;</p></HIS:hisSp>
+<lb/>enlige stand, ser du –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKBERNICK"><HIS:spOpener><speaker>Marta</speaker>.</HIS:spOpener>
 
 <pb ed="source" type="folio_nopagination" subtype="verso" n="2" facs="173" gathering="9" />
 <lb/><p>O, at dette skal være dit sidste ord! Nej, nej,
-<lb/>nej; men rejs; farvel, Johan; farvel, Dina, &dash;
+<lb/>nej; men rejs; farvel, Johan; farvel, Dina, –
 <lb/>og lykke over alle eders dage!</p></HIS:hisSp>
 <lb/><HIS:hisStage>(hun og frøken Hessel trænger dem mod døren
 <lb/>i baggrunden; håndtryk og afsked; Johan og Dina
@@ -280,10 +274,10 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/><p>Nu er vi alene, Marta! Du har mistet
 <lb/>hende og jeg ham.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKBERNICK"><HIS:spOpener><speaker>Marta</speaker>.</HIS:spOpener>
-<lb/><p>Du &dash; ham?</p></HIS:hisSp><HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="SS_128ms"/>
+<lb/><p>Du – ham?</p></HIS:hisSp><HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="SS_128ms"/>
 <lb/><HIS:hisSp who="FRKHESSEL"><HIS:spOpener><speaker>Frøken Hessel</speaker>.</HIS:spOpener>
-<lb/><p>Hvad er jeg for ham efter dette? En gam&typHyp;
-<lb/>mel halvsøster &dash; hvad skal han med hende?
+<lb/><p>Hvad er jeg for ham efter dette? En gam‐
+<lb/>mel halvsøster – hvad skal han med hende?
 <lb/>Et påhæng. Mændene river mangt og meget isønder
 <lb/>omkring sig for at komme til lykken.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKBERNICK"><HIS:spOpener><speaker>Marta</speaker>.</HIS:spOpener>
@@ -302,57 +296,57 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/>jeg har elsket ham højere end du.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKBERNICK"><HIS:spOpener><HIS:hisDel rend="overstrike"><speaker>Marta</speaker></HIS:hisDel>.</HIS:spOpener></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKHESSEL"><HIS:spOpener><speaker>Frøken Hessel</speaker>.</HIS:spOpener>
-<lb/><p>Marta! &dash; Er dette sandhed?</p></HIS:hisSp>
+<lb/><p>Marta! – Er dette sandhed?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKBERNICK"><HIS:spOpener><speaker>Marta</speaker>.</HIS:spOpener>
 <lb/><p>Hele mit livs indhold ligger i de ord. Jeg
 <lb/>har elsket ham og ventet på ham. Og så kom
 <lb/>han; men han så mig ikke.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKHESSEL"><HIS:spOpener><speaker>Frøken Hessel</speaker>.</HIS:spOpener>
-<lb/><p>Elsket ham! Og selv var du den, som så of&typHyp;
+<lb/><p>Elsket ham! Og selv var du den, som så of‐
 <lb/>fervillig gav ham lykken ihænde!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKBERNICK"><HIS:spOpener><speaker>Marta</speaker>.</HIS:spOpener>
 <lb/><p>Hvorledes kunde jeg elske ham, hvis jeg
-<lb/>ikke var villig til at give ham lykken ihæn&typHyp;
+<lb/>ikke var villig til at give ham lykken ihæn‐
 <lb/>de. Ja, jeg har elsket ham; hele mit liv har
 <lb/>været et liv for ham lige siden han rejste.
 <lb/>O, det var et lykkeligt liv igrunden, skønt et liv
-<lb/>i længsel og utålmodighed &dash;</p></HIS:hisSp>
+<lb/>i længsel og utålmodighed –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKHESSEL"><HIS:spOpener><speaker>Frøken Hessel</speaker>.</HIS:spOpener>
-<lb/><p>Og du kalder dig utålmodig som har ven&typHyp;
+<lb/><p>Og du kalder dig utålmodig som har ven‐
 <lb/>tet i alle de mange år?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKBERNICK"><HIS:spOpener><speaker>Marta</speaker>.</HIS:spOpener>
 <lb/><p>Ja, det var ulykken, at jeg ikke mærked
 <lb/>hvorledes årene gik. Da han rejste, var vi
-<lb/>jævnaldrende, og da<HIS:hisDel rend="overstrike"><gap/></HIS:hisDel> jeg så ham igen &dash; o,<HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="SS_129ms"/>
-<lb/>den forfærdelige stund &dash; da gik det op for
+<lb/>jævnaldrende, og da<HIS:hisDel rend="overstrike"><gap/></HIS:hisDel> jeg så ham igen – o,<HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="SS_129ms"/>
+<lb/>den forfærdelige stund – da gik det op for
 <lb/><HIS:hisDel rend="overstrike">ham</HIS:hisDel> mig at nu var jeg ti år ældre end
-<lb/>han &dash; der havde han færdedes ude i det blanke
+<lb/>han – der havde han færdedes ude i det blanke
 
 <pb ed="source" type="folio_nopagination" subtype="verso" n="3" facs="175" gathering="9" />
 <lb/>dirrende solskin og suget sundhed af hvert
 <lb/>luftdrag, og her sad jeg imens og spandt og
-<lb/>spandt &dash;</p></HIS:hisSp>
+<lb/>spandt –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKHESSEL"><HIS:spOpener><speaker>Frøken Hessel</speaker>.</HIS:spOpener>
-<lb/><p>&dash; hans lykkes tråd, Marta!</p></HIS:hisSp>
+<lb/><p>– hans lykkes tråd, Marta!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKBERNICK"><HIS:spOpener><speaker>Marta</speaker>.</HIS:spOpener>
-<lb/><p>Ja, det var guld, jeg spandt. Ingen bitter&typHyp;
+<lb/><p>Ja, det var guld, jeg spandt. Ingen bitter‐
 <lb/>hed; opgaven er jo ikke at være lykkelig men
 <lb/>at fortjene at være det.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKHESSEL"><HIS:spOpener><speaker>Frøken Hessel</speaker>.</HIS:spOpener>
-<lb/><p>Så er det, Marta &dash; gid visse andre tænkte
+<lb/><p>Så er det, Marta – gid visse andre tænkte
 <lb/>det samme.</p></HIS:hisSp>
 <lb/><HIS:hisStage>(Konsul Bernick kommer ud fra værelset
 <lb/>til venstre.)</HIS:hisStage>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>
 <lb/><HIS:hisStage>(taler indad.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Ja ja, styr med det hele, som I vil; når tiden
-<lb/>kommer skal jeg nok &dash; <HIS:hisStage>(lukker døren.)</HIS:hisStage> Nå, er
+<lb/>kommer skal jeg nok – <HIS:hisStage>(lukker døren.)</HIS:hisStage> Nå, er
 <lb/>man der? Men, Marta, du kunde dog gerne
 <lb/>klæde dig en smule om; og sig Betty, at hun
 <lb/>gør det samme. Ingen pragt naturligvis; men
-<lb/>dog et visst festligt tilsnit &dash; men skynd jer blot &dash;</p></HIS:hisSp>
+<lb/>dog et visst festligt tilsnit – men skynd jer blot –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKHESSEL"><HIS:spOpener><speaker>Frøken Hessel</speaker>.</HIS:spOpener>
-<lb/><p>Og en lykkelig oprømt mine, Marta; glade øj&typHyp;
+<lb/><p>Og en lykkelig oprømt mine, Marta; glade øj‐
 <lb/>ne, det glemte din Broder.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKBERNICK"><HIS:spOpener><speaker>Marta</speaker>.</HIS:spOpener>
 <lb/><p>Jeg skal sige Betty besked.</p>
@@ -375,22 +369,22 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
 <lb/><p>Ja, de har faldet på noget sådant.</p></HIS:hisSp><HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="SS_130ms"/>
 <lb/><HIS:hisSp who="FRKHESSEL"><HIS:spOpener><speaker>Frøken Hessel</speaker>.</HIS:spOpener>
-<lb/><p>Alle korporationer vil møde frem med si&typHyp;
+<lb/><p>Alle korporationer vil møde frem med si‐
 <lb/>ne faner; Hilmar har skrevet en sang og pastor
 <lb/>Rørlund skal holde en tale. Inat vil det blive
 <lb/>telegraferet til alle kanter af landet: Omgiven
 <lb/>af sin lykkelige familje modtog konsul Bernick
 <lb/>sine medborgeres hyldest som en af samfundets
-<lb/>hovedstøtter &dash;</p></HIS:hisSp>
+<lb/>hovedstøtter –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
 <lb/><p>Det vil ske; og der vil blive råbt hurra
 <lb/>udenfor og mængden vil råbe mig frem i
-<lb/>vinduet &dash; og jeg vil blive nødt til at bukke
-<lb/>mig og takke &dash;</p></HIS:hisSp>
+<lb/>vinduet – og jeg vil blive nødt til at bukke
+<lb/>mig og takke –</p></HIS:hisSp>
 
 <pb ed="source" type="folio_nopagination" subtype="verso" n="4" facs="177" gathering="9" />
 <lb/><HIS:hisSp who="FRKHESSEL"><HIS:spOpener><speaker>Frøken Hessel</speaker>.</HIS:spOpener>
-<lb/><p>Å, <emph>nødt</emph> til det &dash; det er vel ikke egentlig det
+<lb/><p>Å, <emph>nødt</emph> til det – det er vel ikke egentlig det
 <lb/>rette udtryk.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
 <lb/><p>Tror du, jeg føler mig lykkelig i denne
@@ -404,15 +398,15 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/><HIS:hisSp who="FRKHESSEL"><HIS:spOpener><speaker>Frøken Hessel</speaker>.</HIS:spOpener>
 <lb/><p>Endnu ikke.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
-<lb/><p>Du har heller ikke ret til det. Og dog &dash; jo,
+<lb/><p>Du har heller ikke ret til det. Og dog – jo,
 <lb/>jo, <HIS:hisDel rend="overstrike">der</HIS:hisDel> alligevel, der er tider da jeg foragter
 <lb/>mig selv. Men du kan ikke fatte hvor usigelig
 <lb/>ens<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>om jeg står her i dette sammenknebne,
-<lb/>forhyklede samfund &dash; du kan ikke fatte
+<lb/>forhyklede samfund – du kan ikke fatte
 <lb/>hvorledes jeg år for år har måttet slå af
-<lb/>på min fordring til en hel udfyldende livs&typHyp;
+<lb/>på min fordring til en hel udfyldende livs‐
 <lb/>gerning. <HIS:hisDel rend="overstrike"><gap/></HIS:hisDel> Hvad har jeg udrettet, så mangfoldigt
-<lb/>det end kan synes &dash; stykværk, småpuslerier &dash;
+<lb/>det end kan synes – stykværk, småpuslerier –
 <lb/>men andet eller mere tåles ikke her.
 <lb/>Vilde jeg gå et skridt foran den stemning
 <lb/>og det syn, som just er oppe i døgnet, så
@@ -420,7 +414,7 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 
 <pb ed="source" type="folio_nopagination" subtype="recto" n="5" facs="178" gathering="9" />
 <lb/>hvad vi er, vi, som regnes for samfundets
-<lb/>støtter? Vi er samfundets slaver, hver&typHyp;
+<lb/>støtter? Vi er samfundets slaver, hver‐
 <lb/>ken mere eller mindre.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKHESSEL"><HIS:spOpener><speaker>Frøken Hessel</speaker>.</HIS:spOpener>
 <lb/><p>Og hvorfor ser du dette først nu?</p></HIS:hisSp>
@@ -428,13 +422,13 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/><p>Tror du ikke jeg har havt øjeblikke,
 <lb/>da det er dukket op i mig? Men så kom
 <lb/>de hverdagslige strømninger lumrende over
-<lb/>mig igen. Og så ene, som jeg stod! Lona &dash;
+<lb/>mig igen. Og så ene, som jeg stod! Lona –
 <lb/>hvorfor kendte jeg dig ikke tilbunds
 <lb/>dengang.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKHESSEL"><HIS:spOpener><speaker>Frøken Hessel</speaker>.</HIS:spOpener>
 <lb/><p>Hvad så?</p></HIS:hisSp><HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="SS_131ms"/>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
-<lb/><p>Aldrig havde jeg da givet slip på dig &dash;
+<lb/><p>Aldrig havde jeg da givet slip på dig –
 <lb/>og havde jeg havt dig, da stod jeg ikke,
 <lb/>hvor jeg nu står.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKHESSEL"><HIS:spOpener><speaker>Frøken Hessel</speaker>.</HIS:spOpener>
@@ -443,31 +437,31 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
 <lb/><p>Jeg ved ialfald at hun intet er blevet for
 <lb/>mig af det, jeg trængte til. Du vil sige at
-<lb/>skylden er min &dash; men hvad hjælper det.
+<lb/>skylden er min – men hvad hjælper det.
 <lb/>Og hun måtte dog være kommen mig imøde,
 <lb/>måtte have delt mine interesser, måtte
 <lb/>have nu og da kasted ind i mig et glimt af
 
 <pb ed="source" type="folio_nopagination" subtype="verso" n="5" facs="179" gathering="9" />
 <lb/>dette usammenhængende springende i
-<lb/>betragtningen, som en mand vel ikke lige&typHyp;
+<lb/>betragtningen, som en mand vel ikke lige‐
 <lb/>frem kan bruge for sin gerning, men
 <lb/>som dog virker vækkende og rensende på
 <lb/>hele hans retning. Det er denne evne, som
-<lb/>kvinderne hos os ikke får lov til at gøre gæl&typHyp;
+<lb/>kvinderne hos os ikke får lov til at gøre gæl‐
 <lb/>dende, de fleste har den ikke engang;
-<lb/>du Lona &dash; ikke en blandt tusend har,
-<lb/>har mod til at være som du &dash;</p></HIS:hisSp>
+<lb/>du Lona – ikke en blandt tusend har,
+<lb/>har mod til at være som du –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKHESSEL"><HIS:spOpener><speaker>Frøken Hessel</speaker>.</HIS:spOpener>
-<lb/><p>Det vil sige &dash; at være sig selv.</p></HIS:hisSp>
+<lb/><p>Det vil sige – at være sig selv.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
 <lb/><p>Ja, og være, hvad en <HIS:hisDel rend="overstrike">k</HIS:hisDel> en mand dybest
-<lb/>tiltrænger. Derfor har jeg aldrig følt tilfreds&typHyp;
-<lb/>hed i lykkens dage, aldrig den æggende kraft&typHyp;
+<lb/>tiltrænger. Derfor har jeg aldrig følt tilfreds‐
+<lb/>hed i lykkens dage, aldrig den æggende kraft‐
 <lb/>forøgelse som kan ligge i modgang; det hele
 <lb/>har været en samling af smålige ærgelser eller
-<lb/>af smålige flade triumfer &dash; ligesom den,
-<lb/>der nu forestår &dash;</p></HIS:hisSp>
+<lb/>af smålige flade triumfer – ligesom den,
+<lb/>der nu forestår –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKHESSEL"><HIS:spOpener><speaker>Frøken Hessel</speaker>.</HIS:spOpener>
 <lb/><p>Også den?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
@@ -489,7 +483,7 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/>virker for egen fordel, men det er ikke så;
 <lb/>hvad jeg har udrettet, har bragt mig fordel,
 <lb/>det er sandt, men det er ikke derfor at jeg
-<lb/>har virket &dash; jeg har villet være det første &dash;
+<lb/>har virket – jeg har villet være det første –
 <lb/>men jeg ved også at dermed er samfundet
 <lb/>bedst tjent.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKHESSEL"><HIS:spOpener><speaker>Frøken Hessel</speaker>.</HIS:spOpener>
@@ -498,37 +492,37 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
 <lb/><p>Ingen; hele denne forløjede generation
 <lb/>må gå tilgrunde; men der vokser op en
-<lb/>slægt efter os; det er min søn jeg arbej&typHyp;
-<lb/>der for; det er for ham jeg lægger et grund&typHyp;
+<lb/>slægt efter os; det er min søn jeg arbej‐
+<lb/>der for; det er for ham jeg lægger et grund‐
 <lb/>lag tilrette; der vil komme en tid da der
 <lb/>lægger sig sandhed ind i samfundslivet
-<lb/>og på den skal han grunde en lykkeligere til&typHyp;
-<lb/>værelse, end hans fader &dash;</p></HIS:hisSp>
+<lb/>og på den skal han grunde en lykkeligere til‐
+<lb/>værelse, end hans fader –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKHESSEL"><HIS:spOpener><speaker>Frøken Hessel</speaker>.</HIS:spOpener>
 <lb/><p>Med en løgn til underlag? Betænk,
-<lb/>hvad det er du giver ham i arv &dash;</p></HIS:hisSp>
+<lb/>hvad det er du giver ham i arv –</p></HIS:hisSp>
 
 <pb ed="source" type="folio_nopagination" subtype="verso" n="6" facs="181" gathering="9" /><note resp="editor">Her mangler det noe tekst, jf. 1. utg. øverst s. 182: <q>Frøken Hessel. Med en løgn ... over mit hoved!</q></note>
-<lb/><HIS:hisSp who="KONSULBERNICK"><p>må dog forbandelsen vige. Jeg er gåt hun&typHyp;
+<lb/><HIS:hisSp who="KONSULBERNICK"><p>må dog forbandelsen vige. Jeg er gåt hun‐
 <lb/>drede gange videre, end du aner; men
 <lb/>det gode kan vende sig til ondt og således
-<lb/>kan vel også det onde &dash;; hvorfor kom I
+<lb/>kan vel også det onde –; hvorfor kom I
 <lb/>her? Jeg viger ikke; kan ikke vige; det skal
-<lb/>ikke lykkes jer at få knust mig &dash;</p></HIS:hisSp><HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="SS_132ms"/>
+<lb/>ikke lykkes jer at få knust mig –</p></HIS:hisSp><HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="SS_132ms"/>
 <lb/><HIS:hisSp who="HILMAR"><HIS:spOpener><speaker>Hilmar Tønnesen</speaker>
 <lb/><HIS:hisStage>(ilsomt fra højre.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Men dette er jo &dash; Betty, Betty!</p></HIS:hisSp>
+<lb/><p>Men dette er jo – Betty, Betty!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
 <lb/><p>Hvad nu? Kommer de allerede?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HILMAR"><HIS:spOpener><speaker>Hilmar Tønnesen</speaker>.</HIS:spOpener>
 <lb/><p>Nej visst ikke; men jeg må nødvendig
-<lb/>tale med nogen &dash;</p>
+<lb/>tale med nogen –</p>
 <lb/><HIS:hisStage>ud gennem den øverste dør tilhøjre <HIS:hisAdd place="offline">venstre</HIS:hisAdd>.</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKHESSEL"><HIS:spOpener><speaker>Frøken Hessel</speaker>.</HIS:spOpener>
 <lb/><p>Bernick, du taler om at vi kom for at
 <lb/>knuse dig. Så lad mig sige dig, hvad han
 <lb/>er, denne forlorne søn, som dette eders
-<lb/>moralske samfund skyr som en pest&typHyp;
+<lb/>moralske samfund skyr som en pest‐
 <lb/>befængt. Han kan undvære je<HIS:hisDel rend="overwritten"><unclear>g</unclear></HIS:hisDel>r, han er
 <lb/>rejst.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
@@ -542,57 +536,57 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
 <lb/><p>Rejst? Dina rejst med ham!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKHESSEL"><HIS:spOpener><speaker>Frøken Hessel</speaker>.</HIS:spOpener>
-<lb/><p>Ja, som hans hustru, uden prest og viel&typHyp;
-<lb/>se; således slår han eders samfund i ansig&typHyp;
-<lb/>tet, ligesom jeg engang &dash; nå &dash;</p></HIS:hisSp>
+<lb/><p>Ja, som hans hustru, uden prest og viel‐
+<lb/>se; således slår han eders samfund i ansig‐
+<lb/>tet, ligesom jeg engang – nå –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
-<lb/><p>Rejst; hun også med Indian Girl &dash;</p></HIS:hisSp>
+<lb/><p>Rejst; hun også med Indian Girl –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKHESSEL"><HIS:spOpener><speaker>Frøken Hessel</speaker>.</HIS:spOpener>
 <lb/><p>Nej; så dyr en fragt betroede han ikke til
-<lb/>disse afskum; han er rejst med &lquo;Oljebla&typHyp;
-<lb/>det &dash;&rquo;</p></HIS:hisSp>
+<lb/>disse afskum; han er rejst med «Oljebla‐
+<lb/>det –»</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
-<lb/><p>Ah; og altså &dash; forgæves &dash; <HIS:hisStage>(råber ind
-<lb/>af døren)</HIS:hisStage> Krap &dash; stands Indian Girl &dash;
-<lb/>den må ikke sejle iaften &dash;</p></HIS:hisSp>
+<lb/><p>Ah; og altså – forgæves – <HIS:hisStage>(råber ind
+<lb/>af døren)</HIS:hisStage> Krap – stands Indian Girl –
+<lb/>den må ikke sejle iaften –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KRAP"><HIS:spOpener><speaker>Fuldmægtig Krap</speaker>
 <lb/><HIS:hisStage>(indenfor.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Indian Girl står alt tilhavs, herr kon&typHyp;
-<lb/>sul &dash;</p></HIS:hisSp>
+<lb/><p>Indian Girl står alt tilhavs, herr kon‐
+<lb/>sul –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
-<lb/><p>Forsent &dash; og uden nytte</p></HIS:hisSp>
+<lb/><p>Forsent – og uden nytte</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKHESSEL"><HIS:spOpener><speaker>Frøken Hessel</speaker>.</HIS:spOpener>
-<lb/><p>Hvad mener du &dash;</p></HIS:hisSp>
+<lb/><p>Hvad mener du –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
-<lb/><p>Intet, intet &dash; vig fra mig, du hævnens
+<lb/><p>Intet, intet – vig fra mig, du hævnens
 <lb/>ånd.</p></HIS:hisSp><HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="SS_133ms"/>
 <lb/><HIS:hisSp who="FRKHESSEL"><HIS:spOpener><speaker>Frøken Hessel</speaker>.</HIS:spOpener>
 
 <pb ed="source" type="folio_nopagination" subtype="verso" n="7" facs="183" gathering="9" />
 <lb/><p>Hm! Se her, Bernick; Johan lader dig
-<lb/>sige, at han skænker dig det navn og ryg&typHyp;
+<lb/>sige, at han skænker dig det navn og ryg‐
 <lb/>te, som han engang lånte dig; se her
-<lb/>holder jeg dine breve i min hånd &dash;</p></HIS:hisSp>
+<lb/>holder jeg dine breve i min hånd –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
-<lb/><p>Du har dem! Og nu &dash; nu vil du &dash;
-<lb/>allerede iaften &dash; kanske når festtoget &dash;</p></HIS:hisSp>
+<lb/><p>Du har dem! Og nu – nu vil du –
+<lb/>allerede iaften – kanske når festtoget –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKHESSEL"><HIS:spOpener><speaker>Frøken Hessel</speaker>.</HIS:spOpener>
 <lb/><p>Hvor lidet du kender mig tilbunds,
-<lb/>Karsten &dash; se her &dash; her river jeg dine
-<lb/>breve sønder, nu er der intet, som vid&typHyp;
-<lb/>ner imod dig &dash; uden din egen samvit&typHyp;
-<lb/>tighed; nu er du tryg &dash; vær nu også
-<lb/>lykkelig &dash; om du kan &dash;</p></HIS:hisSp>
+<lb/>Karsten – se her – her river jeg dine
+<lb/>breve sønder, nu er der intet, som vid‐
+<lb/>ner imod dig – uden din egen samvit‐
+<lb/>tighed; nu er du tryg – vær nu også
+<lb/>lykkelig – om du kan –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
-<lb/><p>Lona &dash; hvorfor gjorde du ikke før; nu
-<lb/>er det for sent &dash; nu har du forstyrret hele
-<lb/>mit liv &dash; jeg kan ikke leve efter denne
-<lb/>dag &dash;</p></HIS:hisSp>
+<lb/><p>Lona – hvorfor gjorde du ikke før; nu
+<lb/>er det for sent – nu har du forstyrret hele
+<lb/>mit liv – jeg kan ikke leve efter denne
+<lb/>dag –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKHESSEL"><HIS:spOpener><speaker>Frøken Hessel</speaker>.</HIS:spOpener>
 <lb/><p>Hvad er der sket?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
 <lb/><p>Spørg mig ikke? Ikke leve! Jo, jeg
-<lb/>vil &dash; leve, leve &dash; virke &dash; det er dyrekøbt
+<lb/>vil – leve, leve – virke – det er dyrekøbt
 <lb/><unclear reason="writing">nok</unclear></p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKHESSEL"><HIS:spOpener><speaker>Frøken Hessel</speaker>.</HIS:spOpener>
 <lb/><p>Karsten!</p></HIS:hisSp>
@@ -604,23 +598,23 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
 <lb/><p>Hvad er det!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HILMAR"><HIS:spOpener><speaker>Hilmar Tønnesen</speaker></HIS:spOpener>
-<lb/><p>Jeg kan ikke sige dig det &dash;</p></HIS:hisSp>
+<lb/><p>Jeg kan ikke sige dig det –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker></HIS:spOpener>
-<lb/><p>Tal, siger jeg &dash;</p></HIS:hisSp>
+<lb/><p>Tal, siger jeg –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HILMAR"><HIS:spOpener><speaker>Hilmar Tønnesen</speaker>.</HIS:spOpener>
-<lb/><p>Nu vel &dash; Olaf er rømt med &lquo;Indian
-<lb/>Girl&rquo;.</p></HIS:hisSp><HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="SS_134ms"/>
+<lb/><p>Nu vel – Olaf er rømt med «Indian
+<lb/>Girl».</p></HIS:hisSp><HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="SS_134ms"/>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
-<lb/><p>Rømt &dash; og med Indian Girl &dash; nej, nej &dash;</p></HIS:hisSp>
+<lb/><p>Rømt – og med Indian Girl – nej, nej –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKHESSEL"><HIS:spOpener><speaker>Frøken Hessel</speaker>.</HIS:spOpener>
-<lb/><p>Ah ja &dash; nu forstår jeg &dash; han gik nys her
-<lb/>igennem og &dash;</p></HIS:hisSp>
+<lb/><p>Ah ja – nu forstår jeg – han gik nys her
+<lb/>igennem og –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>
 <lb/><HIS:hisStage>(i døren tilvenstre)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Krap &dash; stands Indian Girl for enhver
+<lb/><p>Krap – stands Indian Girl for enhver
 <lb/>pris!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KRAP"><HIS:spOpener><speaker>Fuldmægtig Krap</speaker>.</HIS:spOpener>
-<lb/><p>Umuligt, herr konsul &dash; allerede tilsøs &dash;</p></HIS:hisSp>
+<lb/><p>Umuligt, herr konsul – allerede tilsøs –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
 <lb/><p>Og min søn er ombord.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KRAP"><HIS:spOpener><speaker>Fuldmægtig Krap</speaker>.</HIS:spOpener>
@@ -637,12 +631,12 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
 <lb/><p>Jeg ser ham aldrig mere.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GROSSRUMMEL"><HIS:spOpener><speaker>Grosserer Rummel</speaker>.</HIS:spOpener>
-<lb/><p>Å hvad snak; et stærkt godt skib; ny&typHyp;
-<lb/>lig repareret &dash;</p></HIS:hisSp>
+<lb/><p>Å hvad snak; et stærkt godt skib; ny‐
+<lb/>lig repareret –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="VIGELAND"><HIS:spOpener><speaker>Købmand Vigeland</speaker>.</HIS:spOpener>
-<lb/><p>&dash; fra Deres eget værft, herr konsul &dash;</p></HIS:hisSp>
+<lb/><p>– fra Deres eget værft, herr konsul –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
-<lb/><p>Jeg ser ham aldrig mere, siger jeg &dash; <HIS:hisStage>(lytter)</HIS:hisStage>
+<lb/><p>Jeg ser ham aldrig mere, siger jeg – <HIS:hisStage>(lytter)</HIS:hisStage>
 <lb/>hvad er det?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GROSSRUMMEL"><HIS:spOpener><speaker>Grosserer Rummel</speaker>.</HIS:spOpener>
 <lb/><p>Musik. Nu kommer festtoget.</p></HIS:hisSp>
@@ -652,8 +646,8 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/><HIS:hisSp who="GROSSRUMMEL"><HIS:spOpener><speaker>Grosserer Rummel</speaker>.</HIS:spOpener>
 <lb/><p>Hvad tænker du på? Det går umuligt an.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SANDSTAD"><HIS:spOpener><speaker>Købmand Sandstad</speaker>.</HIS:spOpener>
-<lb/><p>Umuligt, herr konsul &dash; foretagendet står ikke
-<lb/>på faste fødder endnu &dash; betænk hvad der står
+<lb/><p>Umuligt, herr konsul – foretagendet står ikke
+<lb/>på faste fødder endnu – betænk hvad der står
 <lb/>på spil for Dem.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
 <lb/><p>Hvad gælder alt det nu for mig. Hvem
@@ -667,22 +661,22 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/><p>Ja, det var et sandt ord.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SANDSTAD"><HIS:spOpener><speaker>Købmand Sandstad</speaker>.</HIS:spOpener>
 <lb/><p>Og vi andre; konsulen glemmer da vel
-<lb/>ikke at &dash;</p></HIS:hisSp>
+<lb/>ikke at –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKBERNICK"><HIS:spOpener><speaker>Marta</speaker>
 <lb/><HIS:hisStage>(fra venstre.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Nu kommer de; men Betty er ikke
-<lb/>hjemme &dash;</p></HIS:hisSp>
+<lb/>hjemme –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
 <lb/><p>Ikke hjemme? Der ser du, Lona; på
 <lb/>en aften som denne; ingen støtte hverken
-<lb/>i glæde eller i sorg &dash;</p></HIS:hisSp>
+<lb/>i glæde eller i sorg –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GROSSRUMMEL"><HIS:spOpener><speaker>Grosserer Rummel</speaker>.</HIS:spOpener>
 <lb/><p>Op med gardinerne; flere lys; op med
 <lb/>alle gardinerne; hjælp mig herr Sandstad!</p></HIS:hisSp>
 <lb/><HIS:hisStage>(Gardinerne rulles op; man ser hele
 <lb/>gaden illumineret; på huset lige overfor
-<lb/>er et stort transparent med indskrift: &lquo;Leve
-<lb/>Karsten Bernick, vort samfunds støtte&rquo;.)</HIS:hisStage>
+<lb/>er et stort transparent med indskrift: «Leve
+<lb/>Karsten Bernick, vort samfunds støtte».)</HIS:hisStage>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
 <lb/><p>Hvad skal alt dette til; jeg vil ikke
 <lb/>se det. Sluk, sluk.</p></HIS:hisSp>
@@ -692,10 +686,10 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <pb ed="source" type="folio_nopagination" subtype="verso" n="1" facs="187" gathering="10" />
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker></HIS:spOpener>
 <lb/><p>Væk med denne spottende indskrift,
-<lb/>siger jeg. Ser I ikke at alle disse lys ræk&typHyp;
+<lb/>siger jeg. Ser I ikke at alle disse lys ræk‐
 <lb/>ker tungen ud efter os!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GROSSRUMMEL"><HIS:spOpener><speaker>Grosserer Rummel</speaker>.</HIS:spOpener>
-<lb/><p>Nej, dette må jeg sige &dash;</p></HIS:hisSp>
+<lb/><p>Nej, dette må jeg sige –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
 <lb/><p>O, hvad forstår I! Men jeg, jeg; ser I ikke
 <lb/>at alt dette er lys om en ligbåre.</p></HIS:hisSp>
@@ -703,10 +697,10 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/><p>Hm!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GROSSRUMMEL"><HIS:spOpener><speaker>Grosserer Rummel</speaker>.</HIS:spOpener>
 <lb/><p>Nej, men ved du hvad; du tager dig det
-<lb/>også altfor nær &dash;</p></HIS:hisSp><HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="SS_136ms"/>
+<lb/>også altfor nær –</p></HIS:hisSp><HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="SS_136ms"/>
 <lb/><HIS:hisSp who="SANDSTAD"><HIS:spOpener><speaker>Købmand Sandstad</speaker>.</HIS:spOpener>
 <lb/><p>Gutten får sig en tur over Atlanterhavet,
-<lb/>og så har De ham igen &dash;</p></HIS:hisSp>
+<lb/>og så har De ham igen –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="VIGELAND"><HIS:spOpener><speaker>Købmand Vigeland</speaker>.</HIS:spOpener>
 <lb/><p>Bare tillid til almagtens hånd, herr
 <lb/>konsul!</p></HIS:hisSp>
@@ -714,23 +708,23 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/><p>Og til skuden, Bernick! Den er da ikke
 <lb/>synkefærdig, ved jeg.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KRAP"><HIS:spOpener><speaker>Fuldmægtig Krap</speaker>.</HIS:spOpener>
-<lb/><p>Hm &dash;</p></HIS:hisSp>
+<lb/><p>Hm –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GROSSRUMMEL"><HIS:spOpener><speaker>Grosserer Rummel</speaker>.</HIS:spOpener>
 <lb/><p>Ja, var det en af disse svømmende
 <lb/>ligkister, som man hører om i de store
 
 <pb ed="source" type="folio_nopagination" subtype="recto" n="2" facs="188" gathering="10" />
-<lb/>samfund &dash;</p></HIS:hisSp>
+<lb/>samfund –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
 <lb/><p>O, jeg føler at mit hår gråner i denne
 <lb/>aften!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUBERNICK"><HIS:spOpener><speaker>Fru Bernick</speaker>
 <lb/><HIS:hisStage>(med et stort schawl over hovedet kommer
 <lb/>gennem havedøren.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Bernick, Bernick, ved du &dash;?</p></HIS:hisSp>
+<lb/><p>Bernick, Bernick, ved du –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
-<lb/><p>Ja, jeg ved &dash;; men du &dash; du, som intet ser &dash;
-<lb/>som aldrig har hjælp for mig &dash;</p></HIS:hisSp>
+<lb/><p>Ja, jeg ved –; men du – du, som intet ser –
+<lb/>som aldrig har hjælp for mig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUBERNICK"><HIS:spOpener><speaker>Fru Bernick</speaker>.</HIS:spOpener>
 <lb/><p>O, hør dog!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
@@ -738,7 +732,7 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/>Nu har vi mistet ham. Giv mig ham
 <lb/>igen om du kan!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUBERNICK"><HIS:spOpener><speaker>Fru Bernick</speaker>.</HIS:spOpener>
-<lb/><p>Ja, jeg kan; jeg har ham &dash;</p></HIS:hisSp>
+<lb/><p>Ja, jeg kan; jeg har ham –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
 <lb/><p>Du har ham!</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Herrerne</speaker>.</HIS:spOpener>
@@ -746,7 +740,7 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/><HIS:hisSp who="FRKBERNICK"><HIS:spOpener><speaker>Marta</speaker>.</HIS:spOpener>
 <lb/><p>Men hvad er det?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKHESSEL"><HIS:spOpener><speaker>Frøken Hessel</speaker>.</HIS:spOpener>
-<lb/><p>Hys, jeg skal sige dig &dash;</p></HIS:hisSp>
+<lb/><p>Hys, jeg skal sige dig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
 
 <pb ed="source" type="folio_nopagination" subtype="verso" n="2" facs="189" gathering="10" />
@@ -756,42 +750,42 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/><p>Det får du ikke vide, før du har tilgivet
 <lb/>ham.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
-<lb/><p>Å, hvad, tilgivet &dash;. Men hvorledes fik
-<lb/>du vide &dash;?</p></HIS:hisSp>
+<lb/><p>Å, hvad, tilgivet –. Men hvorledes fik
+<lb/>du vide –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUBERNICK"><HIS:spOpener><speaker>Fru Bernick</speaker>.</HIS:spOpener>
 <lb/><p>Tror du ikke en moder ser. Jeg var
-<lb/>dødsangst for at du skulde få vide &dash; nogle
-<lb/>ord,<HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="SS_137ms"/> som han lod falde igår, &dash; og da hans
-<lb/>randsel og klæder og gevær var borte &dash;</p></HIS:hisSp>
+<lb/>dødsangst for at du skulde få vide – nogle
+<lb/>ord,<HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="SS_137ms"/> som han lod falde igår, – og da hans
+<lb/>randsel og klæder og gevær var borte –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
-<lb/><p>Ja, ja &dash;?</p></HIS:hisSp>
+<lb/><p>Ja, ja –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUBERNICK"><HIS:spOpener><speaker>Fru Bernick</speaker>.</HIS:spOpener>
-<lb/><p>Jeg fik fat på Aune &dash; hans sejlbåd &dash;
-<lb/>det amerikanske skib holdt på at sejle &dash;
-<lb/>Gud ske lov, vi kom dog tidsnok &dash; fik
-<lb/>undersøgt i rummet &dash; fandt ham &dash; o, Ber&typHyp;
-<lb/>nick, du må ikke straffe ham &dash;</p></HIS:hisSp>
+<lb/><p>Jeg fik fat på Aune – hans sejlbåd –
+<lb/>det amerikanske skib holdt på at sejle –
+<lb/>Gud ske lov, vi kom dog tidsnok – fik
+<lb/>undersøgt i rummet – fandt ham – o, Ber‐
+<lb/>nick, du må ikke straffe ham –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
-<lb/><p>Betty &dash;!</p></HIS:hisSp>
+<lb/><p>Betty –!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUBERNICK"><HIS:spOpener><speaker>Fru Bernick</speaker>.</HIS:spOpener>
-<lb/><p>Og ikke Aune heller &dash;</p></HIS:hisSp>
+<lb/><p>Og ikke Aune heller –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
-<lb/><p>Aune &dash; hvad ved du om ham &dash;? Er
+<lb/><p>Aune – hvad ved du om ham –? Er
 <lb/>Indian Girl <HIS:hisDel rend="overstrike">Fru Bernick</HIS:hisDel> under sejl?</p></HIS:hisSp>
 
 <pb ed="source" type="folio_nopagination" subtype="recto" n="3" facs="190" gathering="10" />
 <lb/><HIS:hisSp who="FRUBERNICK"><HIS:spOpener><speaker>Fru Bernick</speaker>.</HIS:spOpener>
-<lb/><p>Nej, det er just sagen &dash;</p></HIS:hisSp>
+<lb/><p>Nej, det er just sagen –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
 <lb/><p>Tal, tal.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUBERNICK"><HIS:spOpener><speaker>Fru Bernick</speaker>.</HIS:spOpener>
 <lb/><p>Aune var ligeså rystet som jeg;
 <lb/>undersøgelsen tog tid, mørket faldt på
-<lb/>og så tog han sig til &dash; i dit navn &dash;</p></HIS:hisSp>
+<lb/>og så tog han sig til – i dit navn –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
-<lb/><p>Nu &dash;?</p></HIS:hisSp>
+<lb/><p>Nu –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUBERNICK"><HIS:spOpener><speaker>Fru Bernick</speaker>.</HIS:spOpener>
-<lb/><p>At standse skibet til imorgen &dash;</p></HIS:hisSp>
+<lb/><p>At standse skibet til imorgen –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
 <lb/><p>Gud være evig lovet?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUBERNICK"><HIS:spOpener><speaker>Fru Bernick</speaker>.</HIS:spOpener>
@@ -799,7 +793,7 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
 <lb/><p>Gud være lovet, Betty!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GROSSRUMMEL"><HIS:spOpener><speaker>Grosserer Rummel</speaker>.</HIS:spOpener>
-<lb/><p>Du er da også altfor samvittighedsfuld &dash;</p></HIS:hisSp>
+<lb/><p>Du er da også altfor samvittighedsfuld –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HILMAR"><HIS:spOpener><speaker>Hilmar Tønnesen</speaker></HIS:spOpener>
 <lb/><p>Der har vi toget.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
@@ -812,40 +806,40 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <pb ed="source" type="folio_nopagination" subtype="verso" n="3" facs="191" gathering="10" />
 <lb/>et ydmygt sind.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GROSSRUMMEL"><HIS:spOpener><speaker>Grosserer Rummel</speaker>.</HIS:spOpener>
-<lb/><p>Alle fanerne er ude; hvilket tog &dash;</p></HIS:hisSp>
+<lb/><p>Alle fanerne er ude; hvilket tog –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker></HIS:spOpener>
-<lb/><p>Lad dem komme &dash;</p></HIS:hisSp>
+<lb/><p>Lad dem komme –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GROSSRUMMEL"><HIS:spOpener><speaker>Grosserer Rummel</speaker>.</HIS:spOpener>
-<lb/><p>Der kommer festkommiteen med ad&typHyp;
+<lb/><p>Der kommer festkommiteen med ad‐
 <lb/>junkt Rørlund i spidsen.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
 <lb/><p>Lad dem komme, siger jeg.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GROSSRUMMEL"><HIS:spOpener><speaker>Grosserer Rummel</speaker>.</HIS:spOpener>
-<lb/><p>Men hør &dash; i den oprørte sindstilstand
-<lb/>du er &dash;</p></HIS:hisSp>
+<lb/><p>Men hør – i den oprørte sindstilstand
+<lb/>du er –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
-<lb/><p>Hvad så &dash;?</p></HIS:hisSp>
+<lb/><p>Hvad så –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GROSSRUMMEL"><HIS:spOpener><speaker>Grosserer Rummel</speaker>.</HIS:spOpener>
 <lb/><p>Jeg skal gerne tage ordet på dine
-<lb/>vegne &dash;</p></HIS:hisSp>
+<lb/>vegne –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
-<lb/><p>Nej tak, iaften vil jeg tale selv &dash;</p></HIS:hisSp>
+<lb/><p>Nej tak, iaften vil jeg tale selv –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GROSSRUMMEL"><HIS:spOpener><speaker>Grosserer Rummel</speaker>.</HIS:spOpener>
 <lb/><p>Men ved du også hvad du bør sige.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
-<lb/><p>Ja, vær tryg, Rummel, &dash; nu ved jeg,
+<lb/><p>Ja, vær tryg, Rummel, – nu ved jeg,
 <lb/>hvad jeg bør sige.</p></HIS:hisSp>
 <lb/><HIS:hisStage>(Havedøren slås op. Adjunkt Rørlund
 <lb/>i spidsen for festkommitteen kommer ind.
 <lb/>Efter dem kommer byens borgere af alle klasser
 
 <pb ed="source" type="folio_nopagination" subtype="recto" n="4" facs="192" gathering="10" />
-<lb/>så mange, salen kan rumme; en uoverskue&typHyp;
+<lb/>så mange, salen kan rumme; en uoverskue‐
 <lb/>lig mænge med faner og flag skimtes
 <lb/>udenfor i haven og på gaden.)</HIS:hisStage>
 <lb/><HIS:hisSp who="RORLUND"><HIS:spOpener><speaker>Adjunkt Rørlund</speaker>.</HIS:spOpener>
 <lb/><p>Jeg ser af den overraskelse, der maler sig
-<lb/>i Deres ansigt, at vi her som uventede gæ&typHyp;
+<lb/>i Deres ansigt, at vi her som uventede gæ‐
 <lb/>ter trænger ind til Dem i Deres lykkelige
 <lb/>og fredelig familjekreds, ved Deres arne,
 <lb/>omringet af en liden kreds af hæderlige og
@@ -855,11 +849,11 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/>sådant sker; men dog første gang i en så
 <lb/>storarte<HIS:hisDel rend="overwritten">d</HIS:hisDel>t målestok. Vi har mangen gang
 <lb/>bragt Dem vor tak for det brede moralske
-<lb/>grundlag hvorpå De så at sige har byg&typHyp;
+<lb/>grundlag hvorpå De så at sige har byg‐
 <lb/>get vort samfund. Dennegang hylder vi
-<lb/>Dem navnlig som den klartskuende, selv&typHyp;
-<lb/>opofrende uegennyttige og utrættelige med&typHyp;
-<lb/>borger, der har taget initiativet til et fore&typHyp;
+<lb/>Dem navnlig som den klartskuende, selv‐
+<lb/>opofrende uegennyttige og utrættelige med‐
+<lb/>borger, der har taget initiativet til et fore‐
 <lb/>tagende, som efter praktiske mænds<HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="SS_139ms"/> mening
 <lb/>vil give et mægtigt stød til dette samfunds
 <lb/>timelige trivsel og velvære.</p></HIS:hisSp>
@@ -872,16 +866,16 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <pb ed="source" type="folio_nopagination" subtype="verso" n="4" facs="193" gathering="10" />
 <lb/>Jeg taler ikke her om Deres mønstergyldige
 <lb/>familjeliv eller om Deres uplettede moralske
-<lb/>vandel overhovedet, &dash; deslige ting være henviste
+<lb/>vandel overhovedet, – deslige ting være henviste
 <lb/>til lønkamret og ikke til festsalen; men jeg
 <lb/>taler om Deres borgerlige virksomhed, således
-<lb/>som den ligger åben for alles øjne. Velud&typHyp;
+<lb/>som den ligger åben for alles øjne. Velud‐
 <lb/>rustede skibe går ud fra Deres værfter og viser
 <lb/>flaget på de fjerneste have. En lykkelig og
 <lb/>talrig arbejdsstok ser op til Dem som til
 <lb/>en fader. Gennem grundlæggelsen af nye
 <lb/>erhvervsgrene har De grundlagt hundreder
-<lb/>af familjers velfærd. Med andre ord &dash; De er dette
+<lb/>af familjers velfærd. Med andre ord – De er dette
 <lb/>samfunds grundpille i eminent betydning.</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Stemmer</speaker></HIS:spOpener>
 <lb/><p>Hør, hør, bravo!</p></HIS:hisSp>
@@ -890,32 +884,32 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/>hviler over al Deres vandel, er det, der virker
 <lb/>så usigelig velgørende besynderligen i disse
 <lb/>tider. De står nu i begreb med at skaffe os
-<lb/>en &dash; ja, jeg tager ikke i betænkning at nævne
-<lb/>ordet prosaisk og ligefrem, &dash; en jernbane.</p></HIS:hisSp>
+<lb/>en – ja, jeg tager ikke i betænkning at nævne
+<lb/>ordet prosaisk og ligefrem, – en jernbane.</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Stemmer</speaker>.</HIS:spOpener>
 <lb/><p>Bravo, bravo!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="RORLUND"><HIS:spOpener><speaker>Adjunkt Rørlund</speaker>.</HIS:spOpener>
 <lb/><p>Men dette foretagende lader til at skulle
 <lb/>støde på vanskeligheder, væsentlig dikterede
-<lb/>af snevre selviske hensyn &dash;</p></HIS:hisSp>
+<lb/>af snevre selviske hensyn –</p></HIS:hisSp>
 
 <pb ed="source" type="folio_nopagination" subtype="recto" n="5" facs="194" gathering="10" />
 <lb/><HIS:hisSp who="RORLUND"><HIS:spOpener><speaker>Adjunkt Rørlund</speaker>.</HIS:spOpener>
 <lb/><p>Det er nemlig ikke forbleven ubekendt
 <lb/>at visse havesyge individer, der ikke hører
-<lb/>til vort samfund, er kommen os i for&typHyp;
+<lb/>til vort samfund, er kommen os i for‐
 <lb/>købet og har sat sig i besiddelse af visse
 <lb/>fordele, der rettelig burde være kommen
 <lb/>vor egen by tilgode.</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Stemmer</speaker>.</HIS:spOpener>
 <lb/><p>Ja, ja!</p></HIS:hisSp><HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="SS_140ms"/>
 <lb/><HIS:hisSp who="RORLUND"><HIS:spOpener><speaker>Adjunkt Rørlund</speaker>.</HIS:spOpener>
-<lb/><p>Dette rygte er Dem naturligvis ikke ube&typHyp;
-<lb/>kendt, herr konsul &dash; men ikke destomindre
+<lb/><p>Dette rygte er Dem naturligvis ikke ube‐
+<lb/>kendt, herr konsul – men ikke destomindre
 <lb/>forfølger De urokkelig Deres forehavende,
 <lb/>vel vidende, at en statsborger ikke blot bør
 <lb/>have sin egen kommune men også det
-<lb/>hele fædreneland for øje &dash;</p></HIS:hisSp>
+<lb/>hele fædreneland for øje –</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Stemmer</speaker>.</HIS:spOpener>
 <lb/><p>Hm; nej, nej; jo, jo.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="RORLUND"><HIS:spOpener><speaker>Adjunkt Rørlund</speaker>.</HIS:spOpener>
@@ -924,7 +918,7 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/>hvem vi idag i Dem bringer vor hyldest.
 <lb/>Gid Deres foretagende vorde til held for dette
 <lb/>samfund! Det vil visselig blive en vej, hvorpå
-<lb/>vi udsættes for at tilføres fordærvelige ele&typHyp;
+<lb/>vi udsættes for at tilføres fordærvelige ele‐
 <lb/>menter fra de store samfund udenfra;
 <lb/>men også en vej, der hurtigt kan skaffe
 <lb/>os af med dem. Og slette elementer udenfra
@@ -938,21 +932,21 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Stemmer</speaker></HIS:spOpener>
 <lb/><p>Hys, hys!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="RORLUND"><HIS:spOpener><speaker>Adjunkt Rørlund</speaker>.</HIS:spOpener>
-<lb/><p>Det tager jeg for et lykkeligt varsel for fore&typHyp;
+<lb/><p>Det tager jeg for et lykkeligt varsel for fore‐
 <lb/>tagendet. At jeg berører dette punkt her,
 <lb/>viser at vi befinder os i et hus, hvor den
-<lb/>ethiske fordring stilles højere en<HIS:hisDel rend="overwritten">e</HIS:hisDel>d familje&typHyp;
+<lb/>ethiske fordring stilles højere en<HIS:hisDel rend="overwritten">e</HIS:hisDel>d familje‐
 <lb/>båndet.</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Stemmer</speaker>.</HIS:spOpener>
 <lb/><p>Hør! Bravo!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
-<lb/><p>Tillad mig &dash;</p></HIS:hisSp>
+<lb/><p>Tillad mig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="RORLUND"><HIS:spOpener><speaker>Adjunkt Rørlund</speaker>.</HIS:spOpener>
 <lb/><p>Kun få ord endnu, herr konsul! Hvad
 <lb/>De har udrettet i denne kommune, har De
 <lb/>visselig ikke udrettet med den bagtanke at
-<lb/>det for Dem skulde drage nogen verdslig for&typHyp;
-<lb/>del efter sig. Men et ringe tegn på erkendt&typHyp;
+<lb/>det for Dem skulde drage nogen verdslig for‐
+<lb/>del efter sig. Men et ringe tegn på erkendt‐
 <lb/>lige medborgeres påskønnelse tør De dog ikke
 <lb/>tilbagevise.
 <HIS:hisAdd hand="HI_2" place="margin"><note resp="editor">Tilføyelsen står nederst på siden, og er plassert inn i teksten hvor den hører til i førstetrykket.</note>
@@ -960,7 +954,7 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/>for<unclear reason="writing">sikri</unclear>ng står f<unclear reason="writing">oran</unclear> begyndelsen til en <unclear reason="writing">ny tid</unclear>.</HIS:hisAdd><HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="SS_141ms"/> Så har vi da her at overrække
 <lb/>Dem et sølv-kaffe-service; lad det smykke Deres
 <lb/>bord når vi i fremtiden, som så ofte før, har
-<lb/>den glæde at samles i dette gæstfrie hus. &dash;</p>
+<lb/>den glæde at samles i dette gæstfrie hus. –</p>
 
 <pb ed="source" type="folio_nopagination" subtype="recto" n="6" facs="196" gathering="10" />
 <lb/><p>Og også Dem, mine herrer, der så redebon
@@ -968,23 +962,23 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/>beder vi modtage en liden erindringsgave.
 <lb/>Denne sølvpokal er til Dem, herr grosserer
 <lb/>Rummel; De har så ofte, i veltalende ord,
-<lb/>under pokalernes klang forfægtet dette sam&typHyp;
+<lb/>under pokalernes klang forfægtet dette sam‐
 <lb/>funds borgerlige interesser, gid De ofte må
-<lb/>finde værdige anledninger til at løfte og tøm&typHyp;
-<lb/>me denne pokal. Dem, herr købmand Sand&typHyp;
-<lb/>stad overrækker jeg dette album med foto&typHyp;
-<lb/>grafier af medborgere; Deres medfødte og vel&typHyp;
-<lb/>bekendte humanitet har sat Dem i den be&typHyp;
+<lb/>finde værdige anledninger til at løfte og tøm‐
+<lb/>me denne pokal. Dem, herr købmand Sand‐
+<lb/>stad overrækker jeg dette album med foto‐
+<lb/>grafier af medborgere; Deres medfødte og vel‐
+<lb/>bekendte humanitet har sat Dem i den be‐
 <lb/>hagelige stilling at tælle venner indenfor alle
-<lb/>partier i samfundet. Og til Dem, herr køb&typHyp;
+<lb/>partier i samfundet. Og til Dem, herr køb‐
 <lb/>mand Vigeland, har jeg at frembyde denne
 <lb/>huspostille på velin og i pragtbind; under
 <lb/>årenes modnende indflydelse har De nået frem
-<lb/>til en alvorsfuld livsbetragtning; Deres virksom&typHyp;
+<lb/>til en alvorsfuld livsbetragtning; Deres virksom‐
 <lb/>hed i døgnets gøremål har gennem en årrække
 <lb/>været lutret og adlet at tanken på det højere og
 <lb/>det hinsidige. Og dermed, kære medborgere,
-<lb/>et leve for konsul Bernick og hans medkæm&typHyp;
+<lb/>et leve for konsul Bernick og hans medkæm‐
 <lb/>pere, et leve for vort samfunds støtter!</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Alle</speaker>.</HIS:spOpener>
 <lb/><p>Leve konsul Bernick! Leve samfundets
@@ -995,7 +989,7 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <pb ed="source" type="folio_nopagination" subtype="verso" n="6" facs="197" gathering="10" />
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
 <lb/><p>Mine medborgere, gennem Deres ordfører
-<lb/>blev det sagt at vi iaften står foran begyndel&typHyp;
+<lb/>blev det sagt at vi iaften står foran begyndel‐
 <lb/>sen til en ny tid, og<HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="SS_142ms"/> det håber jeg skal blive
 <lb/>sandhed. Men for at dette kan ske må vi
 <lb/>tilegne os sandheden, sandheden, som indtil
@@ -1005,14 +999,14 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/><p>Jeg må da begynde med at vise tilbage
 <lb/>de lovord, som De, herr adjunkt, har
 <lb/>havt den godhed at ødsle på mig. Thi jeg
-<lb/>har indtil idag ikke været nogen uegennyt&typHyp;
+<lb/>har indtil idag ikke været nogen uegennyt‐
 <lb/>tig mand; har jeg end ikke altid efterstræbt
 <lb/>pengefordel, så er jeg mig ialfald nu bevidst
-<lb/>at en trang og en higen efter magt, indflydel&typHyp;
+<lb/>at en trang og en higen efter magt, indflydel‐
 <lb/>se, anseelse har været drivkraften i de fleste
-<lb/>af mine handlinger &dash;</p></HIS:hisSp>
+<lb/>af mine handlinger –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GROSSRUMMEL"><HIS:spOpener><speaker>Grosserer Rummel</speaker>.</HIS:spOpener>
-<lb/><p>Hvad nu &dash;?</p></HIS:hisSp>
+<lb/><p>Hvad nu –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
 <lb/><p>Jeg gør mig ingen bebrejdelser herfor; thi jeg
 <lb/>tror endnu at jeg tør stille mig i første række
@@ -1020,7 +1014,7 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Stemmer</speaker>.</HIS:spOpener>
 <lb/><p>Ja, ja!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
-<lb/><p>&dash; men hvad jeg lægger mig til last er at
+<lb/><p>– men hvad jeg lægger mig til last er at
 
 <pb ed="source" type="folio_nopagination" subtype="recto" n="7" facs="198" gathering="10" />
 <lb/>jeg så ofte har bøjet ind på krogveje, fordi
@@ -1040,15 +1034,15 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/><p>De er foreløbig i min hånd. Naturligvis
 <lb/>har jeg betroet mig til mine venner, de<HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="SS_143ms"/> herrer
 <lb/>Rummel, Vigeland og Sandstad, og vi er
-<lb/>bleven enige om &dash;</p></HIS:hisSp>
+<lb/>bleven enige om –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GROSSRUMMEL"><HIS:spOpener><speaker>Grosserer Rummel</speaker>.</HIS:spOpener>
-<lb/><p>Det er ikke sandt &dash; bevis, bevis &dash;!</p></HIS:hisSp>
+<lb/><p>Det er ikke sandt – bevis, bevis –!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SANDSTAD"><HIS:spOpener><speaker>Købmand <HIS:hisDel rend="overwritten">V</HIS:hisDel>Sandstad</speaker>.</HIS:spOpener>
-<lb/><p>Vi er ikke bleven enige om nogenting &dash;</p></HIS:hisSp>
+<lb/><p>Vi er ikke bleven enige om nogenting –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="VIGELAND"><HIS:spOpener><speaker>Købmand Vigeland</speaker>.</HIS:spOpener>
-<lb/><p>Nej, nu må jeg da sige &dash;</p></HIS:hisSp>
+<lb/><p>Nej, nu må jeg da sige –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
-<lb/><p>Ingen falsk beskedenhed, mine venner &dash;
+<lb/><p>Ingen falsk beskedenhed, mine venner –
 <lb/>vi er bleven enige om at disse ejendomme
 <lb/>bør udbydes til almindelig aktietegning;
 
@@ -1057,29 +1051,29 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Mange stemmer</speaker>.</HIS:spOpener>
 <lb/><p>Hurra! Leve konsul Bernick!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GROSSRUMMEL"><HIS:spOpener><speaker>Grosserer Rummel</speaker>.</HIS:spOpener>
-<lb/><p>Et, så nedrigt forræderi &dash;!</p></HIS:hisSp>
+<lb/><p>Et, så nedrigt forræderi –!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SANDSTAD"><HIS:spOpener><speaker>Købmand Sandstad</speaker>.</HIS:spOpener>
-<lb/><p>Altså narret os &dash;</p></HIS:hisSp>
+<lb/><p>Altså narret os –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="VIGELAND"><HIS:spOpener><speaker>Købmand Vigeland</speaker>.</HIS:spOpener>
-<lb/><p>Nå så dævelen rive &dash; uf, Gud forlade
+<lb/><p>Nå så dævelen rive – uf, Gud forlade
 <lb/>mig!</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Mængden</speaker>.</HIS:spOpener>
 <lb/><p>Hurra, hurra, hurra!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
 <lb/><p>Stilhed, mine herrer; mine venner og
 <lb/>jeg gør afkald på enhver hyldest; thi jeg
-<lb/>ialfald er mig bevidst &dash; nå; så meget står
+<lb/>ialfald er mig bevidst – nå; så meget står
 <lb/>fast at fra iaften begynder vi en ny tid;
 <lb/>den gamle med sin sminke, med sit hykleri,
 <lb/>sin løjede hæderlighed og sine jam<HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="SS_144ms"/>merlige
 <lb/>hensyn skal stå for os som et museum
-<lb/>åbent til belærelse &dash; og til dette musæum
-<lb/>skænker vi både kaffeservicet og pokal og al&typHyp;
-<lb/>bum og huspostillen på velin og i pragtbind &dash;</p></HIS:hisSp>
+<lb/>åbent til belærelse – og til dette musæum
+<lb/>skænker vi både kaffeservicet og pokal og al‐
+<lb/>bum og huspostillen på velin og i pragtbind –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GROSSRUMMEL"><HIS:spOpener><speaker>Grosserer Rummel</speaker>.</HIS:spOpener>
-<lb/><p>Ja, naturligvis &dash;</p></HIS:hisSp>
+<lb/><p>Ja, naturligvis –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SANDSTAD"><HIS:spOpener><speaker>Kbmd Sandstad</speaker>.</HIS:spOpener>
-<lb/><p>Har De taget det andet så &dash;</p></HIS:hisSp>
+<lb/><p>Har De taget det andet så –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="VIGELAND"><HIS:spOpener><speaker>Kbmd. Vigeland</speaker>.</HIS:spOpener>
 
 <pb ed="source" type="folio_nopagination" subtype="recto" n="8" facs="200" gathering="10" />
@@ -1087,28 +1081,28 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
 <lb/><p>Og nu hovedopgøret med mit samfund og
 <lb/>med min samvittighed. Betty, fat dig og bær
-<lb/>hvad der nu kommer. &dash; Der blev sagt at slette
-<lb/>elementer har forladt os iaften &dash;; jeg kan tilføje,
+<lb/>hvad der nu kommer. – Der blev sagt at slette
+<lb/>elementer har forladt os iaften –; jeg kan tilføje,
 <lb/>hvad man ikke, ved; den mand, man
-<lb/>sigtede til, er ikke rejst alene &dash; med ham
-<lb/>fulgte som hans hustru &dash;</p></HIS:hisSp>
+<lb/>sigtede til, er ikke rejst alene – med ham
+<lb/>fulgte som hans hustru –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKHESSEL"><HIS:spOpener><speaker>Frøken Hessel</speaker>.</HIS:spOpener>
 <lb/><p>Dina Dorf!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="RORLUND"><HIS:spOpener><speaker>Adjunkt Rørlund</speaker></HIS:spOpener>
 <lb/><p>Hvad!</p></HIS:hisSp>
 <lb/><HIS:hisStage>(stor bevægelse blandt mængden.)</HIS:hisStage>
 <lb/><HIS:hisSp who="RORLUND"><HIS:spOpener><speaker>Adjunkt Rørlund</speaker>.</HIS:spOpener>
-<lb/><p>Flygtet &dash; løbet bort, umuligt!</p></HIS:hisSp>
+<lb/><p>Flygtet – løbet bort, umuligt!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker></HIS:spOpener>
-<lb/><p>Som hans hustru, uden både prest og viel&typHyp;
+<lb/><p>Som hans hustru, uden både prest og viel‐
 <lb/>se, og dog siger jeg at jeg sætter dette ægteskab
 <lb/>højere end mangt blandt os, hvor alle former
-<lb/>er i<gap reason="writing"/> &dash; og jeg tilføjer mere &dash; hatten
-<lb/>af for den mand &dash; thi han har højmodig
-<lb/>taget en andens brøde på <HIS:hisDel rend="overwritten">m</HIS:hisDel>sig &dash; mine med&typHyp;
-<lb/>borgere, jeg vil ud af usandheden &dash; De skal
-<lb/>vide alt &dash; jeg var for femten år siden den
-<lb/>skyldige &dash;</p></HIS:hisSp>
+<lb/>er i<gap reason="writing"/> – og jeg tilføjer mere – hatten
+<lb/>af for den mand – thi han har højmodig
+<lb/>taget en andens brøde på <HIS:hisDel rend="overwritten">m</HIS:hisDel>sig – mine med‐
+<lb/>borgere, jeg vil ud af usandheden – De skal
+<lb/>vide alt – jeg var for femten år siden den
+<lb/>skyldige –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUBERNICK"><HIS:spOpener><speaker>Fru Bernick</speaker></HIS:spOpener>
 <lb/><p>O, Karsten, tak, tak.</p></HIS:hisSp>
 
@@ -1117,17 +1111,17 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/><p>Der vandt du endelig dig selv.</p></HIS:hisSp>
 <lb/><HIS:hisStage>(hviskende forbauselse blandt mængden)</HIS:hisStage><HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="SS_145ms"/>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
-<lb/><p>Se så; nu står vi på ren fod med hver&typHyp;
+<lb/><p>Se så; nu står vi på ren fod med hver‐
 <lb/>andre; det vil nu vise sig om femten års
 <lb/>virksomhed kan udslette en ungdomsforvildelse
 <lb/>enhver, der føler sig ren, kaste den første sten;
 <lb/>men ingen afgørelse iaften; jeg beder enhver
-<lb/>gå til sit &dash; at samle sig &dash; bort med al festpragt &dash;
-<lb/>det vil i føle, er ikke her på sin plads &dash;</p></HIS:hisSp>
+<lb/>gå til sit – at samle sig – bort med al festpragt –
+<lb/>det vil i føle, er ikke her på sin plads –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="RORLUND"><HIS:spOpener><speaker>Adjunkt Rørlund</speaker>.</HIS:spOpener>
-<lb/><p>Visselig ikke &dash; nå, jeg takker <HIS:hisDel rend="overwritten">g</HIS:hisDel>Gud &dash; det havde
-<lb/>været et forgæves offer &dash; Ja, mine herrer,
-<lb/>jeg tænker det er bedst vi &dash;</p></HIS:hisSp>
+<lb/><p>Visselig ikke – nå, jeg takker <HIS:hisDel rend="overwritten">g</HIS:hisDel>Gud – det havde
+<lb/>været et forgæves offer – Ja, mine herrer,
+<lb/>jeg tænker det er bedst vi –</p></HIS:hisSp>
 <lb/><HIS:hisStage>(meddelelsen går hviskende fra mund til
 <lb/>mund; mængden fjerner sig i lydløs stilhed.)</HIS:hisStage>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
@@ -1135,27 +1129,27 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/><HIS:hisSp who="FRUBERNICK"><HIS:spOpener><speaker>Fru Bernick</speaker>.</HIS:spOpener>
 <lb/><p>Dette er den gladeste fest i femten år.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker></HIS:spOpener>
-<lb/><p>Hvorledes? Har du &dash;?</p></HIS:hisSp>
+<lb/><p>Hvorledes? Har du –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUBERNICK"><HIS:spOpener><speaker>Fru Bernick</speaker>.</HIS:spOpener>
 <lb/><p>Vidst alt.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker></HIS:spOpener>
-<lb/><p>Vidst &dash;?</p></HIS:hisSp>
+<lb/><p>Vidst –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUBERNICK"><HIS:spOpener><speaker>Fru Bernick</speaker>.</HIS:spOpener>
 
 <pb ed="source" type="folio_nopagination" subtype="recto" n="9" facs="202" gathering="10" />
 <lb/><p>Fra aftenen før vor bryllupsdag. Det var hendes
 <lb/>hævn.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
-<lb/><p>Vidst &dash; og dog tiet?</p></HIS:hisSp>
+<lb/><p>Vidst – og dog tiet?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUBERNICK"><HIS:spOpener><speaker>Fru Bernick</speaker>.</HIS:spOpener>
 <lb/><p>O, hvorfor har du tiet, Karsten? Hvorfor har
-<lb/>du aldrig holdt mig værdig til at tilgive et forvil&typHyp;
+<lb/>du aldrig holdt mig værdig til at tilgive et forvil‐
 <lb/>det øjeblik?</p></HIS:hisSp><HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="SS_146ms"/>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
 <lb/><p>Fordi jeg aldrig har kendt dig før iaften.
 <lb/>Men lad ham nu komme!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUBERNICK"><HIS:spOpener><speaker>Fru Bernick</speaker>.</HIS:spOpener>
-<lb/><p>Ja, ja; du skal få ham. &dash; Herr Krap &dash;</p>
+<lb/><p>Ja, ja; du skal få ham. – Herr Krap –</p>
 <lb/><HIS:hisStage>(taler sagte med ham; han går ud gennem
 <lb/>havedøren.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
@@ -1163,7 +1157,7 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/><HIS:hisSp who="FRKHESSEL"><HIS:spOpener><speaker>Frøken Hessel</speaker>.</HIS:spOpener>
 <lb/><p>Var det andet, jeg vilde?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
-<lb/><p>Hvorledes? Ikke had; &dash; ikke hævn?</p></HIS:hisSp>
+<lb/><p>Hvorledes? Ikke had; – ikke hævn?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKHESSEL"><HIS:spOpener><speaker>Frøken Hessel</speaker>.</HIS:spOpener>
 <lb/><p>Gammel kærlighed ruster ikke.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul <HIS:hisDel rend="overwritten">Lona</HIS:hisDel>Bernick</speaker>.</HIS:spOpener>
@@ -1173,84 +1167,84 @@ Transkribert og kodet SS41112 med utg.pkt. i SS.xml. Kodet med group/text. Av he
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
 
 <pb ed="source" type="folio_nopagination" subtype="verso" n="9" facs="203" gathering="10" />
-<lb/><p>O, hvorved har jeg jammerlige fejge karl for&typHyp;
-<lb/>tjent &dash;</p></HIS:hisSp>
+<lb/><p>O, hvorved har jeg jammerlige fejge karl for‐
+<lb/>tjent –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKHESSEL"><HIS:spOpener><speaker>Frøken Hessel</speaker>.</HIS:spOpener>
 <lb/><p>Ja, dersom vi kvinder spurgte<HIS:hisDel rend="overstrike">t</HIS:hisDel> efter fortjenesten,
-<lb/>Karsten &dash;</p></HIS:hisSp>
+<lb/>Karsten –</p></HIS:hisSp>
 <lb/><HIS:hisStage>(Aune kommer med Olaf fra haven.)</HIS:hisStage>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
 <lb/><p>Olaf!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
-<lb/><p>Fader, jeg skal aldrig &dash;</p></HIS:hisSp>
+<lb/><p>Fader, jeg skal aldrig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
-<lb/><p>Aldrig gøre det mere? Jo, du skal &dash; men
-<lb/>ikke hemmeligt &dash; hør, gut &dash; herefter skal du få
-<lb/>lov til at være dig selv &dash;</p></HIS:hisSp><HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="SS_147ms"/>
+<lb/><p>Aldrig gøre det mere? Jo, du skal – men
+<lb/>ikke hemmeligt – hør, gut – herefter skal du få
+<lb/>lov til at være dig selv –</p></HIS:hisSp><HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="SS_147ms"/>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><p>Ikke samfundets støtte?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
 <lb/><p>Nej, nej; dig selv, hører du; lad det så gå,
-<lb/>som det kan. Og De, Aune &dash;</p></HIS:hisSp>
+<lb/>som det kan. Og De, Aune –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="AUNE"><HIS:spOpener><speaker>Aune</speaker>.</HIS:spOpener>
-<lb/><p>Jeg ved det, herr konsul &dash; jeg har min afsked &dash;</p></HIS:hisSp>
+<lb/><p>Jeg ved det, herr konsul – jeg har min afsked –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
-<lb/><p>Vi bliver sammen, Aune &dash;; tilgiv mig &dash;</p></HIS:hisSp>
+<lb/><p>Vi bliver sammen, Aune –; tilgiv mig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="AUNE"><HIS:spOpener><speaker>Aune</speaker>.</HIS:spOpener>
 <lb/><p>Hvorledes; skibet sejler ikke.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
-<lb/><p>Gud være lovet for det; og &dash; tilgiv mig &dash;
-<lb/>imorgen må det efterses &dash; kanske en ny re&typHyp;
+<lb/><p>Gud være lovet for det; og – tilgiv mig –
+<lb/>imorgen må det efterses – kanske en ny re‐
 
 <pb ed="source" type="folio_nopagination" subtype="recto" n="10" facs="204" gathering="10" />
-<lb/>paration turde være nødvendig &dash;</p></HIS:hisSp>
+<lb/>paration turde være nødvendig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="AUNE"><HIS:spOpener><speaker>Aune</speaker>.</HIS:spOpener>
 <lb/><p>Kanske.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
 <lb/><p>Ja, j<HIS:hisDel rend="overwritten">eg</HIS:hisDel>a, her er meget at reparere. Godnat,
 <lb/>Aune!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="AUNE"><HIS:spOpener><speaker>Aune</speaker>.</HIS:spOpener>
-<lb/><p>Godnat, herr konsul &dash; og tak, tak, tak.</p>
+<lb/><p>Godnat, herr konsul – og tak, tak, tak.</p>
 <lb/><HIS:hisStage>(ud til højre.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUBERNICK"><HIS:spOpener><speaker>Fru Bernick</speaker>.</HIS:spOpener>
 <lb/><p>Nu er de alle borte.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
-<lb/><p>Og vi er alene. Alle lys er slukket i vin&typHyp;
-<lb/>duerne &dash;</p></HIS:hisSp>
+<lb/><p>Og vi er alene. Alle lys er slukket i vin‐
+<lb/>duerne –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUBERNICK"><HIS:spOpener><speaker>Fru Bernick</speaker>.</HIS:spOpener>
 <lb/><p>Vilde du ønske dem tændt igen.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
-<lb/><p>Ikke for nogen pris i verden. O, kom nær&typHyp;
-<lb/>mere, tættere omkring mig &dash; jeg er bleven mig
-<lb/>igen! Kom, Betty &dash; kom, Olaf &dash; og du, Marta &dash;
-<lb/>jeg har ikke set dig i alle disse år, synes jeg &dash;
-<lb/>vort samfund er et samfund af pebersvendsjæle &dash;
-<lb/>vi ser ikke kvinden &dash;<HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="SS_148ms"/> og du, Lona &dash; ja det &dash;
-<lb/>står fast &dash; du rejser ikke fra os &dash;</p></HIS:hisSp>
+<lb/><p>Ikke for nogen pris i verden. O, kom nær‐
+<lb/>mere, tættere omkring mig – jeg er bleven mig
+<lb/>igen! Kom, Betty – kom, Olaf – og du, Marta –
+<lb/>jeg har ikke set dig i alle disse år, synes jeg –
+<lb/>vort samfund er et samfund af pebersvendsjæle –
+<lb/>vi ser ikke kvinden –<HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="SS_148ms"/> og du, Lona – ja det –
+<lb/>står fast – du rejser ikke fra os –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKHESSEL"><HIS:spOpener><speaker>Frøken Hessel</speaker>.</HIS:spOpener>
 <lb/><p>Nej, hvor kunde jeg forsvare at rejse fra
 <lb/>jer unge folk, som skal begynde at sætte
-<lb/>bo. Er jeg ikke fostermoder &dash; jeg og du Marta
+<lb/>bo. Er jeg ikke fostermoder – jeg og du Marta
 
 <pb ed="source" type="folio_nopagination" subtype="verso" n="10" facs="205" gathering="10" />
-<lb/>vi to gamle tanter &dash; hvad ser du efter?</p></HIS:hisSp>
+<lb/>vi to gamle tanter – hvad ser du efter?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKBERNICK"><HIS:spOpener><speaker>Marta</speaker>.</HIS:spOpener>
-<lb/><p>Hvor himlen klarner &dash;; hvor det lysner i
-<lb/>vejret &dash; &lquo;Oljegrenen&rquo; har lykken med sig.</p></HIS:hisSp>
+<lb/><p>Hvor himlen klarner –; hvor det lysner i
+<lb/>vejret – «Oljegrenen» har lykken med sig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKHESSEL"><HIS:spOpener><speaker>Frøken Hessel</speaker>.</HIS:spOpener>
-<lb/><p>Og lykken ombord &dash;</p></HIS:hisSp>
+<lb/><p>Og lykken ombord –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KONSULBERNICK"><HIS:spOpener><speaker>Konsul Bernick</speaker>.</HIS:spOpener>
-<lb/><p>Og vi, vi har en lang alvorlig arbejdsdag ivente &dash;
-<lb/>jeg mest &dash; men lad den komme &dash; slut jer blot
-<lb/>tæt om mig<HIS:hisDel rend="overwritten">;</HIS:hisDel>, <HIS:hisDel rend="overstrike">slut</HIS:hisDel> I stærke trofaste kvinder &dash;
+<lb/><p>Og vi, vi har en lang alvorlig arbejdsdag ivente –
+<lb/>jeg mest – men lad den komme – slut jer blot
+<lb/>tæt om mig<HIS:hisDel rend="overwritten">;</HIS:hisDel>, <HIS:hisDel rend="overstrike">slut</HIS:hisDel> I stærke trofaste kvinder –
 <lb/>et har jeg lært idag: det er I kvinder, som er
-<lb/>samfundets støtter &dash;</p></HIS:hisSp>
+<lb/>samfundets støtter –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRKHESSEL"><HIS:spOpener><speaker>Frøken Hessel</speaker>.</HIS:spOpener>
 <lb/><p>Da har du lært en skrøbelig visdom, svoger.
-<lb/><HIS:hisStage>(griber hans hånd)</HIS:hisStage> &dash; Sandhedens og frihedens
-<lb/>ånd, &dash; <emph>det</emph> er samfundets støtter.</p></HIS:hisSp>
+<lb/><HIS:hisStage>(griber hans hånd)</HIS:hisStage> – Sandhedens og frihedens
+<lb/>ånd, – <emph>det</emph> er samfundets støtter.</p></HIS:hisSp>
 <lb/><figure type="bar"/>
-<lb/><note resp="author" place="margin_right">15. 6. 77. &dash;</note>
+<lb/><note resp="author" place="margin_right">15. 6. 77. –</note>
 </div>
 </body>
 </text>

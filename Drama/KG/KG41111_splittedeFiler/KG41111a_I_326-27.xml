@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -13,11 +7,11 @@
 <title level="s" type="main">Henrik Ibsens skrifter</title>
 <title level="s" type="sub">Diplomatarisk tekstarkiv</title>
 <title level="a" type="main">Kejser og Galilæer</title>
-<title level="a" type="sub">NBO Ms.4&deg; 1111a, bl. 326&dash;27</title>
-<title level="a" type="origYear">[1871&dash;1873]</title>
+<title level="a" type="sub">NBO Ms.4° 1111a, bl. 326–27</title>
+<title level="a" type="origYear">[1871–1873]</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt>
 <resp>Konvertering fra ekstern transkripsjon til prosjektspesifikk TEI XML</resp>
 <name xml:id="HIS-HB">Hilde Bøe</name>
@@ -45,12 +39,12 @@
 <sourceDesc><p>Denne filen bygger på KG41111_NBO.xml (KG41111_NBO-0208).</p></sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography><p>Manuskriptets grafiske oppsett finnes beskrevet i typografibeskrivelsen i KG41111_NBO.xml.</p>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -121,7 +115,7 @@
 <label xml:id="PERSEREN"/><item>En persisk overløber/Perseren</item>
 </list>
 </tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -163,20 +157,20 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Helena</speaker></HIS:spOpener>
 <lb/><p>Hvor hen, min dyrebare herre?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. J.</speaker></HIS:spOpener>
-<lb/><p>Farvel &dash; Eutherius vil s<unclear reason="writing">ige</unclear> dig &dash; &dash;</p></HIS:hisSp>
+<lb/><p>Farvel – Eutherius vil s<unclear reason="writing">ige</unclear> dig – –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Helena</speaker></HIS:spOpener>
-<lb/><p>Ikke Eutherius &dash; <gap reason="writing"/> &dash; og inat; hvi
-<lb/>var mit leje enligt &dash;</p></HIS:hisSp>
+<lb/><p>Ikke Eutherius – <gap reason="writing"/> – og inat; hvi
+<lb/>var mit leje enligt –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. J.</speaker></HIS:spOpener>
-<lb/><p>Krigsrådet &dash;</p></HIS:hisSp>
+<lb/><p>Krigsrådet –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Helena</speaker>.</HIS:spOpener>
-<lb/><p>Krigs<unclear reason="writing">rådet &dash;</unclear>, o, så er slaget nær &dash;</p></HIS:hisSp>
+<lb/><p>Krigs<unclear reason="writing">rådet –</unclear>, o, så er slaget nær –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. J.</speaker></HIS:spOpener>
-<lb/><p>Nær og uundgåeligt &dash;; spørg ikke m<unclear reason="writing">ere</unclear> &dash;</p></HIS:hisSp>
+<lb/><p>Nær og uundgåeligt –; spørg ikke m<unclear reason="writing">ere</unclear> –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Helena</speaker></HIS:spOpener>
-<lb/><p>O, for Kristi nådes skyld &dash;</p></HIS:hisSp>
+<lb/><p>O, for Kristi nådes skyld –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. J.</speaker></HIS:spOpener>
-<lb/><p>Hvor skøn i angsten &dash;</p></HIS:hisSp>
+<lb/><p>Hvor skøn i angsten –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Helena</speaker></HIS:spOpener>
 <lb/><p><emph>Er</emph> jeg skøn, Julian?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. Julian</speaker></HIS:spOpener>
@@ -185,29 +179,29 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <pb n="[326]v"/>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Helena</speaker>.</HIS:spOpener>
 <lb/><p>Jeg er ældre end du. Jeg vil ikke ældes mere. Når
-<lb/>Du har sejret, skænker du mig prydelser &dash;</p></HIS:hisSp>
+<lb/>Du har sejret, skænker du mig prydelser –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. Jul.</speaker></HIS:spOpener>
-<lb/><p>Du skal få vælge af byttet hvad du vil &dash;</p></HIS:hisSp>
+<lb/><p>Du skal få vælge af byttet hvad du vil –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Helena</speaker></HIS:spOpener>
-<lb/><p>Har Alaman<unclear reason="writing">erne</unclear> rav &dash; til perler og armbånd</p></HIS:hisSp>
+<lb/><p>Har Alaman<unclear reason="writing">erne</unclear> rav – til perler og armbånd</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. Julian</speaker>.</HIS:spOpener>
-<lb/><p>I overflod min elskede &dash;</p></HIS:hisSp>
+<lb/><p>I overflod min elskede –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Helena</speaker></HIS:spOpener>
-<lb/><p>O, så skik din hær imod dem &dash; slå dem i slag på
-<lb/>slag &dash;</p></HIS:hisSp>
+<lb/><p>O, så skik din hær imod dem – slå dem i slag på
+<lb/>slag –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. Jn</speaker></HIS:spOpener>
-<lb/><p>Dette ene vil afgøre krigen &dash;</p></HIS:hisSp>
+<lb/><p>Dette ene vil afgøre krigen –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Helena</speaker></HIS:spOpener>
-<lb/><p>O, gå gå &dash; slå dem</p></HIS:hisSp>
+<lb/><p>O, gå gå – slå dem</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. Jn</speaker></HIS:spOpener>
 <lb/><p>Og du frygter ikke</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Hell<gap reason="writing"/></speaker></HIS:spOpener>
-<lb/><p>Er ikke lykken med dig &dash; gå, slå dem &dash; gør
-<lb/>ende på dette liv i ud<unclear reason="writing">ørken</unclear> &dash; jeg holder det
+<lb/><p>Er ikke lykken med dig – gå, slå dem – gør
+<lb/>ende på dette liv i ud<unclear reason="writing">ørken</unclear> – jeg holder det
 <lb/>ikke ud <HIS:hisDel rend="overstrike">hil</HIS:hisDel> Julian; jeg vil hjem igen til
-<lb/>Rom og Grækenland &dash;</p></HIS:hisSp>
+<lb/>Rom og Grækenland –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. J.</speaker></HIS:spOpener>
-<lb/><p>Til kejserens nærhed &dash;</p></HIS:hisSp>
+<lb/><p>Til kejserens nærhed –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>H.</speaker></HIS:spOpener>
 <lb/><p>Kejseren er affæld<unclear reason="writing">dig</unclear></p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. J.</speaker></HIS:spOpener>
@@ -218,62 +212,62 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <pb n="[327]r"/>
 <lb/><fw type="leaf" place="top-right" scribe="h1">327</fw>
 <lb/>tiden går; Eu<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>sebia sidder i hæder og herlighed men
-<lb/>jeg ældes &dash;</p></HIS:hisSp>
+<lb/>jeg ældes –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. J.</speaker></HIS:spOpener>
-<lb/><p>Du ældes ikke, du er ung og skøn &dash;</p></HIS:hisSp>
+<lb/><p>Du ældes ikke, du er ung og skøn –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Helena</speaker></HIS:spOpener>
-<lb/><p>Nej nej &dash; tiden går &dash; jeg kan ikke bære dette med
-<lb/>tålmod &dash;</p></HIS:hisSp>
+<lb/><p>Nej nej – tiden går – jeg kan ikke bære dette med
+<lb/>tålmod –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. Julian</speaker></HIS:spOpener>
 <lb/><p>Hvilket kan du ikke bære?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Helena</speaker>.</HIS:spOpener>
 <lb/><p>Han dør lidt hver dag; hænger med en tråd mellem
-<lb/>død og liv &dash; gå elskede &dash; kæmp, kæmp &dash;; <HIS:hisDel rend="overstrike">taber
-<lb/>du, vil skrækken</HIS:hisDel> &dash; vi<HIS:hisDel rend="overwritten">l</HIS:hisDel>nder du, vil glæden &dash;</p></HIS:hisSp>
+<lb/>død og liv – gå elskede – kæmp, kæmp –; <HIS:hisDel rend="overstrike">taber
+<lb/>du, vil skrækken</HIS:hisDel> – vi<HIS:hisDel rend="overwritten">l</HIS:hisDel>nder du, vil glæden –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. J.</speaker></HIS:spOpener>
 <lb/><p>Helena!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Helena</speaker></HIS:spOpener>
-<lb/><p>Han tåler ingen rystelse, &dash; vinder du, så vil
-<lb/>glæden &dash;</p></HIS:hisSp>
+<lb/><p>Han tåler ingen rystelse, – vinder du, så vil
+<lb/>glæden –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. J.</speaker></HIS:spOpener>
-<lb/><p>Og hvis jeg taber &dash;</p></HIS:hisSp>
+<lb/><p>Og hvis jeg taber –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Helena</speaker></HIS:spOpener>
-<lb/><p>Skrækk<unclear reason="writing">en</unclear> &dash;.</p></HIS:hisSp>
+<lb/><p>Skrækk<unclear reason="writing">en</unclear> –.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. J.</speaker></HIS:spOpener>
 <lb/><p>Og hvilke magter er med mig, om jeg går i kampen
-<lb/>med den t<unclear reason="writing">anke</unclear> &dash;</p></HIS:hisSp>
+<lb/>med den t<unclear reason="writing">anke</unclear> –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEKEBOLIOS"><HIS:spOpener><speaker>H.</speaker></HIS:spOpener>
-<lb/><p>Kristus er god &dash; bønner skal sendes op for dig &dash;
-<lb/>lo<unclear reason="writing">v</unclear>et være de hellige &dash; lovet være martyr<unclear reason="writing">erne</unclear>
-<lb/>Blodoffer til soning, Julian &dash; giv mig de
-<lb/>fangne unge kvinder &dash; jeg vil <unclear reason="writing">omvende</unclear> dem
+<lb/><p>Kristus er god – bønner skal sendes op for dig –
+<lb/>lo<unclear reason="writing">v</unclear>et være de hellige – lovet være martyr<unclear reason="writing">erne</unclear>
+<lb/>Blodoffer til soning, Julian – giv mig de
+<lb/>fangne unge kvinder – jeg vil <unclear reason="writing">omvende</unclear> dem
 <pb ed="faksBase" n="124"/>
 <pb n="[327]v"/>
-<lb/>de skal bøje sig ind under korsets nåde &dash;</p></HIS:hisSp>
+<lb/>de skal bøje sig ind under korsets nåde –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. J.</speaker></HIS:spOpener>
 <lb/><p>Det lykkes dig ikke</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Helena</speaker></HIS:spOpener>
-<lb/><p>Så skal de dø &dash;; som en sød røg skal blodet stige op
-<lb/>til ham den velsignede; hans herlighed skal øges &dash;
-<lb/>og jeg &dash; forynget, forynget &dash; Julian &dash; et bad i nyt jomfru&typHyp;
-<lb/>blod &dash;</p></HIS:hisSp>
+<lb/><p>Så skal de dø –; som en sød røg skal blodet stige op
+<lb/>til ham den velsignede; hans herlighed skal øges –
+<lb/>og jeg – forynget, forynget – Julian – et bad i nyt jomfru‐
+<lb/>blod –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. J.</speaker></HIS:spOpener>
 <lb/><p>Ingen brøde, Helena?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEKEBOLIOS"><HIS:spOpener><speaker>H.</speaker></HIS:spOpener>
-<lb/><p>Er det en brøde at ville behage dig? &dash;</p></HIS:hisSp>
+<lb/><p>Er det en brøde at ville behage dig? –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. J.</speaker></HIS:spOpener>
 <lb/><p>Er det kun for mig? O, svar, svar?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEKEBOLIOS"><HIS:spOpener><speaker>H.</speaker></HIS:spOpener>
-<lb/><p>Min herre for Gud og mennesker &dash;</p></HIS:hisSp>
+<lb/><p>Min herre for Gud og mennesker –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>C. J.</speaker></HIS:spOpener>
-<lb/><p>Farvel, min elskede &dash;</p></HIS:hisSp>
+<lb/><p>Farvel, min elskede –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEKEBOLIOS"><HIS:spOpener><speaker>H.</speaker></HIS:spOpener>
-<lb/><p>Min helt, min cæsar &dash; farvel &dash;! &dash; Myrrha, lad
+<lb/><p>Min helt, min cæsar – farvel –! – Myrrha, lad
 <lb/>hofprest<unclear reason="writing">en</unclear> komme, alle mine kvinder skal samles
-<lb/>i bøn og anråbelse &dash; &dash; O, du velsignede, o, du her
-<lb/>sk<unclear reason="writing">arernes</unclear> Gud &dash; <HIS:hisDel rend="overwritten">u</HIS:hisDel>Du som har sejren i din hånd,
-<lb/>vær med os &dash; vær med os &dash; din er æren og magten!
-<lb/>i evighed &dash; amen! <HIS:hisStage>(ud.)</HIS:hisStage></p></HIS:hisSp>
+<lb/>i bøn og anråbelse – – O, du velsignede, o, du her
+<lb/>sk<unclear reason="writing">arernes</unclear> Gud – <HIS:hisDel rend="overwritten">u</HIS:hisDel>Du som har sejren i din hånd,
+<lb/>vær med os – vær med os – din er æren og magten!
+<lb/>i evighed – amen! <HIS:hisStage>(ud.)</HIS:hisStage></p></HIS:hisSp>
 </div>
 </body>
 </text>

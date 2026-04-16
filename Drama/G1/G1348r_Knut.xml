@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -16,8 +10,8 @@
 <title level="a" type="sub">1. versjon, TarkUiB NT348r (rollehefte, Knut Gjæsling)</title>
 <title level="a" type="origYear">[1855]</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Helene Grønlien, Stine Brenna Taugbøl</name></respStmt>
 <respStmt>
 <resp>Transkripsjon (av faksimiler), 2000</resp>
@@ -67,7 +61,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <list>
@@ -257,8 +251,8 @@
 </item>
 </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="app-external">
@@ -281,7 +275,7 @@
 <label>SIGNE</label><item>-/Signe/De Forrige, Signe<note>Rolleheftet mangler tittelside; rollenavnet finnes derfor ikke i 'titlePart'.</note></item>
 </list>
 </tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 <variantEncoding type="external" method="parallel-segmentation" location="internal" n=""/>
@@ -416,7 +410,7 @@ Konvertering fra word-dokument til TEI/XML-fil (ikke validert). TeiHeaderen må 
 <lb/><titlePart xml:id="KNUT">Knut Gjæsling,
 <lb/>Kongens Foged,
 <lb/>i
-<lb/>&lquo;Gildet paa Solhoug&rquo;.
+<lb/>«Gildet paa Solhoug».
 <lb/>Skuespil i 3 Akter</titlePart>
 </docTitle>
 </titlePage>
@@ -434,80 +428,80 @@ Konvertering fra word-dokument til TEI/XML-fil (ikke validert). TeiHeaderen må 
 <lb/>om Bordet tilvenstre.) I Baggrunden <HIS:stageRole>Knuts Mænd</HIS:stageRole>.
 <lb/>(Ringning til Høimesse høres fra en nærliggende Kirke)</HIS:hisStage>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener><p>Men, men, min kjære Hustru!</p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage>(springer op fra Bordet)</HIS:hisStage></HIS:spOpener><p>Jasaa, Fru <app type="external" subtype="word" xml:id="varG1-17"><HIS:hisRdg>Mar<HIS:hisDel rend="overwritten">g</HIS:hisDel><HIS:hisAdd place="inline" hand="h2">j</HIS:hisAdd>it</HIS:hisRdg></app>!
-<lb/><app type="external" subtype="interpunction" xml:id="varG1-18"><HIS:hisRdg>I mener<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd></HIS:hisRdg></app> at Eders Søster &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage>(springer op fra Bordet)</HIS:hisStage></HIS:spOpener><p>Jasaa, Fru <app type="external" subtype="word" xml:id="varG1-17"><HIS:hisRdg>Mar<HIS:hisDel rend="overwritten">g</HIS:hisDel><HIS:hisAdd place="inline" hand="h2">j</HIS:hisAdd>it</HIS:hisRdg></app>!
+<lb/><app type="external" subtype="interpunction" xml:id="varG1-18"><HIS:hisRdg>I mener<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd></HIS:hisRdg></app> at Eders Søster –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ERIK"><HIS:spOpener><speaker>Erik</speaker>.</HIS:spOpener><p>naar Signe bliver hans Hustru<HIS:clarification place="inline" hand="h2">.</HIS:clarification></p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Og vel skal I mærke Jer dette, Fru <app type="external" subtype="word" xml:id="varG1-25"><HIS:hisRdg>Mar<HIS:hisDel rend="overwritten">g</HIS:hisDel><HIS:hisAdd place="inline" hand="h2">j</HIS:hisAdd>it</HIS:hisRdg></app>!
-<lb/>Det kan være en Uge <app type="external" subtype="interpunction" xml:id="varG1-26"><HIS:hisRdg>siden<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd></HIS:hisRdg></app> at jeg var til <app type="external" subtype="word" xml:id="varG1-27"><HIS:hisRdg>Drik&typHyp;
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Og vel skal I mærke Jer dette, Fru <app type="external" subtype="word" xml:id="varG1-25"><HIS:hisRdg>Mar<HIS:hisDel rend="overwritten">g</HIS:hisDel><HIS:hisAdd place="inline" hand="h2">j</HIS:hisAdd>it</HIS:hisRdg></app>!
+<lb/>Det kan være en Uge <app type="external" subtype="interpunction" xml:id="varG1-26"><HIS:hisRdg>siden<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd></HIS:hisRdg></app> at jeg var til <app type="external" subtype="word" xml:id="varG1-27"><HIS:hisRdg>Drik‐
 <lb/>keg<HIS:hisAdd place="inline" hand="h2">j</HIS:hisAdd>ilde</HIS:hisRdg></app> paa <app type="external" subtype="interpunction" xml:id="varG1-28"><HIS:hisRdg>Hægge,</HIS:hisRdg></app> hos <app type="external" subtype="interpunction" xml:id="varG1-29"><HIS:hisRdg>Erik<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd></HIS:hisRdg></app> <app type="external" subtype="word" xml:id="varG1-30"><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h2">som</HIS:hisDel> d<HIS:hisDel rend="overwritten">e</HIS:hisDel><HIS:hisAdd place="inline" hand="h2">é</HIS:hisAdd>r <app type="alteration"><lem><HIS:hisAdd place="offline" hand="h2">sidder</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h2">staaer</HIS:hisDel></HIS:hisRdg></app></HIS:hisRdg></app>;
-<lb/>Øllet var stærkt, og da det led ud paa <app type="external" subtype="interpunction" xml:id="varG1-34"><HIS:hisRdg>Kvæl&typHyp;
+<lb/>Øllet var stærkt, og da det led ud paa <app type="external" subtype="interpunction" xml:id="varG1-34"><HIS:hisRdg>Kvæl‐
 <lb/>den<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd></HIS:hisRdg></app> gjorde jeg det <app type="external" subtype="interpunction" xml:id="varG1-35"><HIS:hisRdg>Løfte<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd></HIS:hisRdg></app> at Signe, Eders fagre
-<lb/>Søster, skulde vorde min Viv før Aaret var om&typHyp;
+<lb/>Søster, skulde vorde min Viv før Aaret var om‐
 <lb/>me. Aldrig skal I sige Knut Gjæsling paa,
 <pb/>
 <lb/><fw type="page" place="top-left">4.</fw>
 <lb/>at han har brudt noget Løfte; I seer da
-<lb/><app type="external" subtype="interpunction" xml:id="varG1-36"><HIS:hisRdg>vel<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd></HIS:hisRdg></app> at I maa kaare mig til Eders Søsters Huus&typHyp;
+<lb/><app type="external" subtype="interpunction" xml:id="varG1-36"><HIS:hisRdg>vel<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd></HIS:hisRdg></app> at I maa kaare mig til Eders Søsters Huus‐
 <lb/>bond, enten med det Gode eller med det Onde!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker></HIS:spOpener>
 <lb/><p>Saa kunde I nok vinde Jer min Søster til <HIS:clarification place="inline">B</HIS:clarification>rud.)</p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage>(med indædt Harme)</HIS:hisStage></HIS:spOpener><p>I veed snildt at belægge
-<lb/>Eders Ord, Fru <app type="external" subtype="word" xml:id="varG1-49"><HIS:hisRdg>Mar<HIS:hisDel rend="overwritten">g</HIS:hisDel><HIS:hisAdd place="inline" hand="h2">j</HIS:hisAdd>it</HIS:hisRdg></app>! <app type="external" subtype="interpunction" xml:id="varG1-50"><HIS:hisRdg>Forsandt,</HIS:hisRdg></app> I burde væ&typHyp;
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage>(med indædt Harme)</HIS:hisStage></HIS:spOpener><p>I veed snildt at belægge
+<lb/>Eders Ord, Fru <app type="external" subtype="word" xml:id="varG1-49"><HIS:hisRdg>Mar<HIS:hisDel rend="overwritten">g</HIS:hisDel><HIS:hisAdd place="inline" hand="h2">j</HIS:hisAdd>it</HIS:hisRdg></app>! <app type="external" subtype="interpunction" xml:id="varG1-50"><HIS:hisRdg>Forsandt,</HIS:hisRdg></app> I burde væ‐
 <lb/>re Præst og ikke Eders Huusbonds Frue.</p>
 <HIS:hisAdd place="margin" hand="h2"><lb/><HIS:hisStage>gaar fra Bordet
 <lb/>og frem</HIS:hisStage><note resp="editor">Tilføyelsen er skrevet i høyre marg.</note></HIS:hisAdd></HIS:hisSp>
-<lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener><p>saa kunde nok jeg ogsaa &dash;</p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage>(vedbliver uden at agte paa Bengt)</HIS:hisStage></HIS:spOpener><p>Men vel
+<lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener><p>saa kunde nok jeg ogsaa –</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage>(vedbliver uden at agte paa Bengt)</HIS:hisStage></HIS:spOpener><p>Men vel
 <lb/>skal I mærke <app type="external" subtype="interpunction" xml:id="varG1-51"><HIS:hisRdg>Jer<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd></HIS:hisRdg></app> at havde en <app type="external" subtype="word" xml:id="varG1-52"><HIS:hisRdg>vaaben<app type="alteration"><lem><HIS:hisAdd place="offline" hand="h2">før</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h2">kyndig</HIS:hisDel></HIS:hisRdg></app></HIS:hisRdg></app>
 <lb/>Mand talt mig til paa saadan Viis som I,
-<lb/>saa &dash;</p></HIS:hisSp>
+<lb/>saa –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener><p>I maa forstaa os!</p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage>(som før)</HIS:hisStage></HIS:spOpener><p>Nu, kort og godt, saa skulde han
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage>(som før)</HIS:hisStage></HIS:spOpener><p>Nu, kort og godt, saa skulde han
 <lb/><app type="external" subtype="interpunction" xml:id="varG1-54"><HIS:hisRdg>fornummet<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd></HIS:hisRdg></app> at Øxen sidder mig løs i Haanden,
 <pb/>
 <lb/><fw type="page" place="top-right">5.</fw>
 <lb/>som I fornylig sagde<HIS:hisAdd place="inline" hand="h2">.</HIS:hisAdd></p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener><p>og det har jeg givet Jer.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisAdd place="margin" hand="h2"><HIS:hisStage>Er kommet fræm</HIS:hisStage><note resp="editor">Tilføyelsen er skrevet i venstre marg.</note></HIS:hisAdd></HIS:spOpener><p><app type="external" subtype="interpunction" xml:id="varG1-57"><HIS:hisRdg>Vel! vel!</HIS:hisRdg></app> jeg vil heller ikke <app type="external" subtype="word" xml:id="varG1-58"><HIS:hisRdg><emph hand="h2">regne</emph></HIS:hisRdg></app> det saa
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker> <HIS:hisAdd place="margin" hand="h2"><HIS:hisStage>Er kommet fræm</HIS:hisStage><note resp="editor">Tilføyelsen er skrevet i venstre marg.</note></HIS:hisAdd></HIS:spOpener><p><app type="external" subtype="interpunction" xml:id="varG1-57"><HIS:hisRdg>Vel! vel!</HIS:hisRdg></app> jeg vil heller ikke <app type="external" subtype="word" xml:id="varG1-58"><HIS:hisRdg><emph hand="h2">regne</emph></HIS:hisRdg></app> det saa
 <lb/>nøie med Jer, Fru <app type="external" subtype="word" xml:id="varG1-59"><HIS:hisRdg>Mar<HIS:hisDel rend="overwritten">g</HIS:hisDel><HIS:hisAdd place="inline" hand="h2">j</HIS:hisAdd>it</HIS:hisRdg></app>! I har mere <app type="external" subtype="word" xml:id="varG1-60"><HIS:hisRdg>Kløgt
 <lb/><HIS:hisDel rend="overstrike" hand="h2">og Betænksomhed</HIS:hisDel></HIS:hisRdg></app> end alle vi Andre <app type="external" subtype="interpunction" xml:id="varG1-61"><HIS:hisRdg>tilhobe.</HIS:hisRdg></app>
 <lb/>Der er min Haand<HIS:clarification place="inline" hand="h2">;</HIS:clarification> <app type="external" subtype="interpunction" xml:id="varG1-62"><HIS:hisRdg>kanhænde<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd></HIS:hisRdg></app> der er skjællig
 <lb/>Grund for alle de haarde <app type="external" subtype="interpunction" xml:id="varG1-63"><HIS:hisRdg>Ord<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd></HIS:hisRdg></app> I sagde mig<HIS:clarification place="inline" hand="h2">.</HIS:clarification></p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener><p>et Gilde her paa Solhoug idag.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Et <app type="external" subtype="word" xml:id="varG1-66"><HIS:hisRdg>G<HIS:hisAdd place="inline" hand="h2">j</HIS:hisAdd>ilde</HIS:hisRdg></app>?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Et <app type="external" subtype="word" xml:id="varG1-66"><HIS:hisRdg>G<HIS:hisAdd place="inline" hand="h2">j</HIS:hisAdd>ilde</HIS:hisRdg></app>?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker></HIS:spOpener><p>I kan da lære min Søster at kjende.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Vel, Fru <app type="external" subtype="interpunction word" xml:id="varG1-71"><HIS:hisRdg>Mar<HIS:hisDel rend="overwritten">g</HIS:hisDel><HIS:hisAdd place="inline" hand="h2">j</HIS:hisAdd>it!</HIS:hisRdg></app> jeg takker Jer; dog var
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Vel, Fru <app type="external" subtype="interpunction word" xml:id="varG1-71"><HIS:hisRdg>Mar<HIS:hisDel rend="overwritten">g</HIS:hisDel><HIS:hisAdd place="inline" hand="h2">j</HIS:hisAdd>it!</HIS:hisRdg></app> jeg takker Jer; dog var
 <lb/>det ikke for at søge <app type="external" subtype="interpunction word" xml:id="varG1-72"><HIS:hisRdg>K<HIS:hisAdd place="inline" hand="h2">j</HIS:hisAdd>irken<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd></HIS:hisRdg></app> jeg red herned
-<lb/><app type="external" subtype="interpunction" xml:id="varG1-73"><HIS:hisRdg>imorges. &dash;</HIS:hisRdg></app> Min Reise gjælder Gudmund Alfsøn,
+<lb/><app type="external" subtype="interpunction" xml:id="varG1-73"><HIS:hisRdg>imorges. –</HIS:hisRdg></app> Min Reise gjælder Gudmund Alfsøn,
 <lb/>Eders Frænde.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener><p>Hvor vil I søge Ham?</p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Hans Gaard ligger jo bag ved Næsset, paa
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Hans Gaard ligger jo bag ved Næsset, paa
 <pb/>
 <lb/><fw type="page" place="top-left">6.</fw>
 <lb/>den anden Side af Fjorden<HIS:hisAdd place="inline" hand="h2">.</HIS:hisAdd></p></HIS:hisSp>
 <lb/><HIS:hisSp who="ERIK"><HIS:spOpener><speaker>Erik</speaker>.</HIS:spOpener><p>han turde være nærmere<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd> end I tænker</p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage>(sagte til Erik)</HIS:hisStage></HIS:spOpener><p>Ti stille!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage>(sagte til Erik)</HIS:hisStage></HIS:spOpener><p>Ti stille!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener><p>Nærmere? Hvad mener I?</p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Har I da ikke <app type="external" subtype="interpunction" xml:id="varG1-75"><HIS:hisRdg>hørt<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd></HIS:hisRdg></app> at han er kommen til&typHyp;
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Har I da ikke <app type="external" subtype="interpunction" xml:id="varG1-75"><HIS:hisRdg>hørt<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd></HIS:hisRdg></app> at han er kommen til‐
 <lb/>bage til <app type="alteration"><lem><HIS:hisAdd place="offline" hand="h2"><app type="external" subtype="interpunction word" xml:id="varG1-76"><HIS:hisRdg>Landet.</HIS:hisRdg></app> <app type="external" subtype="word" xml:id="varG1-77"><HIS:hisRdg>Han fulgte</HIS:hisRdg></app></HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h2">Norge, ifølge</HIS:hisDel></HIS:hisRdg></app> med Kantsleren Audun
 <lb/>af <app type="external" subtype="word" xml:id="varG1-78"><HIS:hisRdg>Hægranæs</HIS:hisRdg></app>, som var sendt til Frankrig for
 <lb/>at hente vor nye Dronning.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="ERIK"><HIS:spOpener><speaker>Erik</speaker>.</HIS:spOpener><p>Fru Margit veed da ikke &dash;</p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage>(sagte til Erik)</HIS:hisStage></HIS:spOpener><p>Det synes saa; men lad Dig
-<lb/>ikke mærke med Noget. <HIS:hisStage>(høit.)</HIS:hisStage> <app type="external" subtype="word" xml:id="varG1-82"><HIS:hisRdg>Nu, <HIS:hisAdd place="infralinear" hand="h2">ja,</HIS:hisAdd></HIS:hisRdg></app> Fru <app type="external" subtype="word" xml:id="varG1-83"><HIS:hisRdg>Mar&typHyp;
-<lb/><HIS:hisDel rend="overwritten">g</HIS:hisDel><HIS:hisAdd place="inline" hand="h2">j</HIS:hisAdd>it</HIS:hisRdg></app>, jeg faaer ligefuldt tage afsted paa Lyk&typHyp;
+<lb/><HIS:hisSp who="ERIK"><HIS:spOpener><speaker>Erik</speaker>.</HIS:spOpener><p>Fru Margit veed da ikke –</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage>(sagte til Erik)</HIS:hisStage></HIS:spOpener><p>Det synes saa; men lad Dig
+<lb/>ikke mærke med Noget. <HIS:hisStage>(høit.)</HIS:hisStage> <app type="external" subtype="word" xml:id="varG1-82"><HIS:hisRdg>Nu, <HIS:hisAdd place="infralinear" hand="h2">ja,</HIS:hisAdd></HIS:hisRdg></app> Fru <app type="external" subtype="word" xml:id="varG1-83"><HIS:hisRdg>Mar‐
+<lb/><HIS:hisDel rend="overwritten">g</HIS:hisDel><HIS:hisAdd place="inline" hand="h2">j</HIS:hisAdd>it</HIS:hisRdg></app>, jeg faaer ligefuldt tage afsted paa Lyk‐
 <lb/>ke og Fromme; ved Kvældstid kommer jeg
 <lb/>igjen.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener><p>det har vi fast bestemt os til</p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage>(til Margit)</HIS:hisStage></HIS:spOpener><p>Vær I kun rolig!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage>(til Margit)</HIS:hisStage></HIS:spOpener><p>Vær I kun rolig!</p></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top-right">7.</fw>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener><p>til Noget saa staaer det fast.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Det kan jeg lide, Herr Bengt Gautesøn! Jeg
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Det kan jeg lide, Herr Bengt Gautesøn! Jeg
 <lb/>har det paa samme Sæt, og jeg har nu engang
 <lb/>drukket paa <app type="external" subtype="word" xml:id="varG1-91"><HIS:hisRdg><app type="alteration"><lem><HIS:hisAdd place="offline" hand="h2">Svogerskab</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h2">Slægtskab</HIS:hisDel></HIS:hisRdg></app></HIS:hisRdg></app> mellem os; I faaer see
 <lb/><app type="external" subtype="interpunction" xml:id="varG1-92"><HIS:hisRdg>til<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd></HIS:hisRdg></app> om ikke <app type="external" subtype="word" xml:id="varG1-93"><HIS:hisRdg><emph hand="h2">jeg</emph></HIS:hisRdg></app> ogsaa holder fast ved mit <app type="external" subtype="interpunction" xml:id="varG1-94"><HIS:hisRdg>Ord.</HIS:hisRdg></app>
-<lb/>Guds <app type="external" subtype="interpunction" xml:id="varG1-95"><HIS:hisRdg>Fred <HIS:hisAdd place="inline" hand="h2">&dash;</HIS:hisAdd></HIS:hisRdg></app> til ikvæld! <HIS:hisStage>(gaaer ud af Baggrun&typHyp;
+<lb/>Guds <app type="external" subtype="interpunction" xml:id="varG1-95"><HIS:hisRdg>Fred <HIS:hisAdd place="inline" hand="h2">–</HIS:hisAdd></HIS:hisRdg></app> til ikvæld! <HIS:hisStage>(gaaer ud af Baggrun‐
 <lb/>den med sine Mænd.)</HIS:hisStage></p></HIS:hisSp>
 </div>
 </div>
@@ -515,88 +509,88 @@ Konvertering fra word-dokument til TEI/XML-fil (ikke validert). TeiHeaderen må 
 <lb/><head>Anden Akt.</head>
 <div type="scene" n="1">
 <lb/><head>1<hi rend="raised">ste</hi> Scene.</head>
-<lb/><HIS:hisStage><HIS:stageRole>Chor af Gjæster</HIS:stageRole>. &dash; Derefter <HIS:stageRole who="KNUT">Knut</HIS:stageRole> og <HIS:stageRole who="ERIK">Erik</HIS:stageRole>.</HIS:hisStage>
+<lb/><HIS:hisStage><HIS:stageRole>Chor af Gjæster</HIS:stageRole>. – Derefter <HIS:stageRole who="KNUT">Knut</HIS:stageRole> og <HIS:stageRole who="ERIK">Erik</HIS:stageRole>.</HIS:hisStage>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Chor</speaker>
 <HIS:hisStage>(udenfor)</HIS:hisStage></HIS:spOpener>
 <lb/><l>Han favner den væne Lilje!</l></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage>(kommer ud fra Huset med Erik. Musik
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage>(kommer ud fra Huset med Erik. Musik
 <lb/>vedbliver under deres Replikker at lyde indenfor)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
 <lb/><HIS:hisSp who="ERIK"><HIS:spOpener><speaker>Erik</speaker>.</HIS:spOpener><p>til at angre Dig, Knut!</p></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top-left">8.</fw>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Lad Du mig om det<HIS:hisDel hand="h2" rend="overwritten">.</HIS:hisDel><HIS:hisAdd place="inline" hand="h2">!</HIS:hisAdd></p></HIS:hisSp>
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Lad Du mig om det<HIS:hisDel hand="h2" rend="overwritten">.</HIS:hisDel><HIS:hisAdd place="inline" hand="h2">!</HIS:hisAdd></p></HIS:hisSp>
 <lb/><HIS:hisSp who="ERIK"><HIS:spOpener><speaker>Erik</speaker>.</HIS:spOpener><p>frit hvor det lyster ham.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Jeg veed<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd> hvad jeg gjør. I hans <emph hand="h2">egen</emph> Stue har
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Jeg veed<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd> hvad jeg gjør. I hans <emph hand="h2">egen</emph> Stue har
 <lb/>jeg søgt ham<HIS:hisAdd place="inline" hand="h2"><unclear>,</unclear></HIS:hisAdd> og der var han ikke at finde.
 <lb/>Og dersom jeg nu forsøgte paa at gribe ham <emph hand="h2">her</emph>,
-<lb/>mener Du da<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd> at Fru Margit var tilsinds at g<HIS:hisAdd place="inline" hand="h2">j</HIS:hisAdd>i&typHyp;
+<lb/>mener Du da<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd> at Fru Margit var tilsinds at g<HIS:hisAdd place="inline" hand="h2">j</HIS:hisAdd>i‐
 <lb/>ve mig Signe til Hustru?</p></HIS:hisSp>
-<lb/><HIS:hisSp who="ERIK"><HIS:spOpener><speaker>Erik</speaker>.</HIS:spOpener><p>med det Gode blev det vel ikke, men &dash;</p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Og med det <emph hand="h2">Onde</emph> gad jeg nødig gaa frem<HIS:hisDel rend="overwritten">;</HIS:hisDel><HIS:hisAdd place="inline" hand="h2">. &dash;</HIS:hisAdd>
+<lb/><HIS:hisSp who="ERIK"><HIS:spOpener><speaker>Erik</speaker>.</HIS:spOpener><p>med det Gode blev det vel ikke, men –</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Og med det <emph hand="h2">Onde</emph> gad jeg nødig gaa frem<HIS:hisDel rend="overwritten">;</HIS:hisDel><HIS:hisAdd place="inline" hand="h2">. –</HIS:hisAdd>
 <lb/>Gudmund er jo ogsaa min <emph hand="h2">Ven</emph> fra gamle Tider,
 <lb/>og han kan gjøre mig Nytte. <HIS:hisStage>(bestemt.)</HIS:hisStage> Derfor
 <lb/>bliver det<HIS:hisAdd place="inline" hand="h2"><unclear>,</unclear></HIS:hisAdd> som jeg har sagt; <emph hand="h2">ikvæld</emph> skal Ingen
 <lb/>her paa Gaarden vide<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd> at Gudmund Alfsøn er
 <lb/>fredløs<HIS:hisDel rend="overwritten">,</HIS:hisDel><HIS:hisAdd place="inline" hand="h2">;</HIS:hisAdd> <emph hand="h2">imorgen</emph> faaer han see at hjælpe sig selv.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ERIK"><HIS:spOpener><speaker>Erik</speaker>.</HIS:spOpener><p>Ja, men Kongens Lov!</p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Aa, Kongens Lov! Du veed ligesaa godt som
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Aa, Kongens Lov! Du veed ligesaa godt som
 <pb/>
 <lb/><fw type="page" place="top-right">9.</fw>
 <lb/>jeg, Kongens Lov agtes ikke stort herinde i
 <lb/>Bygderne; skulde Kongens Lov gjælde, saa
 <lb/>maatte mangen stout Kar<HIS:hisDel rend="overstrike" hand="h2">l</HIS:hisDel> iblandt os bøde
-<lb/>baade for Bru<app type="alteration"><lem><HIS:hisAdd place="offline" hand="h2">r</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h2">d</HIS:hisDel></HIS:hisRdg></app>erov og Manddrab. &dash; Kom
-<lb/>nu! <HIS:hisAdd place="offline" hand="h2">jeg gad vide, hvor Signe &dash; &dash; &dash;</HIS:hisAdd> <HIS:hisStage>(gaaer ud til Høire med Erik.) <HIS:hisAdd place="margin" hand="h2">i 2<hi rend="raised">den</hi> Culisse<note resp="editor">Tilføyelsen er skrevet i høyre marg.</note></HIS:hisAdd></HIS:hisStage></p></HIS:hisSp>
+<lb/>baade for Bru<app type="alteration"><lem><HIS:hisAdd place="offline" hand="h2">r</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h2">d</HIS:hisDel></HIS:hisRdg></app>erov og Manddrab. – Kom
+<lb/>nu! <HIS:hisAdd place="offline" hand="h2">jeg gad vide, hvor Signe – – –</HIS:hisAdd> <HIS:hisStage>(gaaer ud til Høire med Erik.) <HIS:hisAdd place="margin" hand="h2">i 2<hi rend="raised">den</hi> Culisse<note resp="editor">Tilføyelsen er skrevet i høyre marg.</note></HIS:hisAdd></HIS:hisStage></p></HIS:hisSp>
 </div>
 <div type="scene" n="4">
 <lb/><head>4<hi rend="raised">de</hi> Scene.</head>
 <lb/><HIS:hisStage><HIS:stageRole who="MARGIT">Margit</HIS:stageRole>. <HIS:stageRole who="GUDMUND">Gudmund</HIS:stageRole>.</HIS:hisStage>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><p>Hør kun, jeg vil Dig <app type="alteration"><lem><HIS:hisAdd place="offline" hand="h2">fortro</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h2">betro</HIS:hisDel></HIS:hisRdg></app> &dash;</p></HIS:hisSp>
-<lb/><HIS:hisStage>(Man hører de efternævnte Personer tale uden&typHyp;
+<lb/><p>Hør kun, jeg vil Dig <app type="alteration"><lem><HIS:hisAdd place="offline" hand="h2">fortro</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h2">betro</HIS:hisDel></HIS:hisRdg></app> –</p></HIS:hisSp>
+<lb/><HIS:hisStage>(Man hører de efternævnte Personer tale uden‐
 <lb/>for, førend de komme ind.)</HIS:hisStage>
 </div>
 <div type="scene" n="5">
 <lb/><head>5<hi rend="raised">te</hi> Scene.</head>
-<lb/><HIS:hisStage><HIS:stageRole who="GUDMUND MARGIT">De Forrige</HIS:stageRole>. &dash; <HIS:stageRole who="SIGNE">Signe</HIS:stageRole>, <HIS:stageRole who="KNUT">Knut</HIS:stageRole>, <HIS:stageRole who="ERIK">Erik</HIS:stageRole> og <HIS:stageRole>flere
+<lb/><HIS:hisStage><HIS:stageRole who="GUDMUND MARGIT">De Forrige</HIS:stageRole>. – <HIS:stageRole who="SIGNE">Signe</HIS:stageRole>, <HIS:stageRole who="KNUT">Knut</HIS:stageRole>, <HIS:stageRole who="ERIK">Erik</HIS:stageRole> og <HIS:stageRole>flere
 <lb/>Gjæster</HIS:stageRole> (komme fra Høire)</HIS:hisStage>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage>(endnu i Baggrunden)</HIS:hisStage></HIS:spOpener><p>Gudmund Alfsøn! vent<HIS:clarification place="inline" hand="h2">,</HIS:clarification>
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage>(endnu i Baggrunden)</HIS:hisStage></HIS:spOpener><p>Gudmund Alfsøn! vent<HIS:clarification place="inline" hand="h2">,</HIS:clarification>
 <lb/>jeg maa tale et Ord med Dig. <HIS:hisStage>(bliver staaende
 <pb/>
 <lb/><fw type="page" place="top-left">10.</fw>
 <lb/>i Samtale med Erik, som under det Følgende
 <lb/>gaaer ud.)</HIS:hisStage></p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener><p>han <HIS:hisDel rend="overstrike" hand="h2">maa</HIS:hisDel> hjælpe<HIS:hisAdd place="inline" hand="h2">r</HIS:hisAdd> mig <app type="alteration"><lem><HIS:hisAdd place="offline" hand="h2">nok</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h2">dermed</HIS:hisDel></HIS:hisRdg></app>.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage>(sagte til Erik, idet denne gaaer)</HIS:hisStage></HIS:spOpener><p><HIS:hisAdd place="offline" hand="h2">Jo, jo! siger jeg.</HIS:hisAdd> Gudmund
-<lb/>er hendes Frænde, han maa tale min Sag. &dash;
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage>(sagte til Erik, idet denne gaaer)</HIS:hisStage></HIS:spOpener><p><HIS:hisAdd place="offline" hand="h2">Jo, jo! siger jeg.</HIS:hisAdd> Gudmund
+<lb/>er hendes Frænde, han maa tale min Sag. –
 <lb/><HIS:hisStage>(høit, idet han nærmer sig)</HIS:hisStage> Hør, Gudmund!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener><p>længer tør lade mig gaa fri?</p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p><emph hand="h2">Tør</emph>? Vær kun rolig for det; Knut Gjæsling
-<lb/>tør Alt<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd> hvad han vil<HIS:hisDel rend="overwritten">.</HIS:hisDel><HIS:hisAdd place="inline" hand="h2">! &dash;</HIS:hisAdd> Nei, det er noget An&typHyp;
-<lb/>det; &dash; Du veed jo, jeg gjælder her i Bygden
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p><emph hand="h2">Tør</emph>? Vær kun rolig for det; Knut Gjæsling
+<lb/>tør Alt<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd> hvad han vil<HIS:hisDel rend="overwritten">.</HIS:hisDel><HIS:hisAdd place="inline" hand="h2">! –</HIS:hisAdd> Nei, det er noget An‐
+<lb/>det; – Du veed jo, jeg gjælder her i Bygden
 <lb/>for en vild, ustyrlig Kar<HIS:hisDel rend="overstrike" hand="h2">l</HIS:hisDel><HIS:clarification place="inline" hand="h2">.</HIS:clarification></p></HIS:hisSp>
-<lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener><p>og hvis Rygtet lyver, saa &dash;</p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Aa nei, Mangt og Meget kan jo være sandt
-<lb/>nok; men nu skal Du høre &dash; <HIS:hisStage>(gaaer i Sam&typHyp;
+<lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener><p>og hvis Rygtet lyver, saa –</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Aa nei, Mangt og Meget kan jo være sandt
+<lb/>nok; men nu skal Du høre – <HIS:hisStage>(gaaer i Sam‐
 <lb/>tale med Gudmund op mod Baggrunden.)</HIS:hisStage></p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener><p>Du fatter det ikke; ligegodt. <HIS:hisStage>(gaaer tilbage)</HIS:hisStage></p></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top-right">11.</fw>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage>(kommer atter ned i Forgrunden)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage>(kommer atter ned i Forgrunden)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener><p>fæst Dig en fager Ungmø til Viv!</p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>See, see<HIS:hisDel rend="overwritten">,</HIS:hisDel><HIS:hisAdd place="inline" hand="h2">.</HIS:hisAdd> <HIS:hisDel rend="overwritten">o</HIS:hisDel><HIS:hisAdd place="inline" hand="h2">O</HIS:hisAdd>g <app type="alteration"><lem><HIS:hisAdd place="offline" hand="h2">hvis</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h2">dersom</HIS:hisDel></HIS:hisRdg></app> jeg nu sagde Dig, at det
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>See, see<HIS:hisDel rend="overwritten">,</HIS:hisDel><HIS:hisAdd place="inline" hand="h2">.</HIS:hisAdd> <HIS:hisDel rend="overwritten">o</HIS:hisDel><HIS:hisAdd place="inline" hand="h2">O</HIS:hisAdd>g <app type="alteration"><lem><HIS:hisAdd place="offline" hand="h2">hvis</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h2">dersom</HIS:hisDel></HIS:hisRdg></app> jeg nu sagde Dig, at det
 <lb/>er <app type="alteration"><lem><HIS:hisAdd place="offline" hand="h2">netop</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h2">lige</HIS:hisDel></HIS:hisRdg></app> det Samme<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd> jeg selv har tænkt paa<HIS:hisAdd place="inline" hand="h2">.</HIS:hisAdd> <HIS:hisDel rend="overstrike" hand="h2">idag.</HIS:hisDel></p></HIS:hisSp>
-<lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener><p>maa Du vide<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd> at ogsaa jeg &dash;</p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Du? Gaaer Du ogsaa med slige Tanker?</p></HIS:hisSp>
-<lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener><p>&dash; jeg er jo fredløs &dash;</p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Ei, det skal Du lidet agte. Der er jo In&typHyp;
+<lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener><p>maa Du vide<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd> at ogsaa jeg –</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Du? Gaaer Du ogsaa med slige Tanker?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener><p>– jeg er jo fredløs –</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Ei, det skal Du lidet agte. Der er jo In‐
 <lb/>gen her paa Gaarden uden Fru Margit som
 <lb/>veed Besk<HIS:hisAdd place="inline" hand="h2">j</HIS:hisAdd>ed derom, og saalænge jeg er din
-<lb/>Ven, saa har Du En<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd> Du kan lide paa. &dash;
-<lb/>Hør <app type="alteration"><lem><HIS:hisAdd place="offline" hand="h2">nu bare</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h2">kun</HIS:hisDel></HIS:hisRdg></app> &dash;! <HIS:hisStage>(fortsætter hviskende, idet han
+<lb/>Ven, saa har Du En<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd> Du kan lide paa. –
+<lb/>Hør <app type="alteration"><lem><HIS:hisAdd place="offline" hand="h2">nu bare</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h2">kun</HIS:hisDel></HIS:hisRdg></app> –! <HIS:hisStage>(fortsætter hviskende, idet han
 <lb/>med Gudmund gaaer op mod Baggrunden)</HIS:hisStage></p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker></HIS:spOpener><p>at dølge Noget for Dig</p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage>(til Gudmund, idet de Begge komme ned i Forgrun&typHyp;
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage>(til Gudmund, idet de Begge komme ned i Forgrun‐
 <lb/>den)</HIS:hisStage></HIS:spOpener><p><HIS:hisAdd place="inline" hand="h2">See,</HIS:hisAdd> Det maa jeg <app type="alteration"><lem><HIS:hisAdd place="offline" hand="h2">like</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h2">lide</HIS:hisDel></HIS:hisRdg></app>; der er min Haand!
 <HIS:hisAdd place="margin" hand="h2">
 <lb/>NB
@@ -604,39 +598,39 @@ Konvertering fra word-dokument til TEI/XML-fil (ikke validert). TeiHeaderen må 
 <pb/>
 <lb/><fw type="page" place="top-left">12.</fw>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener><p>Og der er min! <HIS:hisStage>(giver Knut Haanden)</HIS:hisStage></p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Men nu maa vi da ogsaa nævne hinanden<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd> hvem
-<lb/>det er &dash;</p></HIS:hisSp>
-<lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener><p>har jeg fundet den, som &dash;</p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Jeg ligesaa. Jeg fører min herfra endnu inat,
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Men nu maa vi da ogsaa nævne hinanden<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd> hvem
+<lb/>det er –</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener><p>har jeg fundet den, som –</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Jeg ligesaa. Jeg fører min herfra endnu inat,
 <lb/>hvis det gjøres Behov.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener><p>Gudmund!</p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisAdd place="inline" hand="h2">(</HIS:hisAdd> og <speaker>Gudmund</speaker> <HIS:hisStage>(hviske paa engang til hinanden,
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker> <HIS:hisAdd place="inline" hand="h2">(</HIS:hisAdd> og <speaker>Gudmund</speaker> <HIS:hisStage>(hviske paa engang til hinanden,
 <lb/>idet de Begge pege paa Signe)</HIS:hisStage></HIS:spOpener><p>Der er hun!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener><p>Ja, min!</p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage>(studsende)</HIS:hisStage></HIS:spOpener><p>Nei, min!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage>(studsende)</HIS:hisStage></HIS:spOpener><p>Nei, min!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener><p>Hvad mener Du?</p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Det er jo hende<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd> som jeg vil &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Det er jo hende<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd> som jeg vil –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener><p><emph hand="h2">Margit</emph>! <HIS:hisAdd place="inline" hand="h2">(</HIS:hisAdd><HIS:hisDel rend="overstrike" hand="h2">hun har hørt Alt</HIS:hisDel><HIS:hisAdd place="inline" hand="h2">)</HIS:hisAdd>!</p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Ei, er det saadan fat! Hør, Fru Mar<HIS:hisDel rend="overwritten">g</HIS:hisDel><HIS:hisAdd place="inline" hand="h2">j</HIS:hisAdd>it,
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Ei, er det saadan fat! Hør, Fru Mar<HIS:hisDel rend="overwritten">g</HIS:hisDel><HIS:hisAdd place="inline" hand="h2">j</HIS:hisAdd>it,
 <lb/>da har I ikke nødig at lade saa forundret; jeg
 <pb/>
 <lb/><fw type="page" place="top-right">13.</fw>
 <lb/>skjønner <HIS:hisAdd place="offline" hand="h2">nu</HIS:hisAdd> det Hele.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener><p>O, Intet! Intet!</p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage>(til Margit.)</HIS:hisStage></HIS:spOpener><p>Og imorges da I fik mit Ord
-<lb/>paa<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd> at <HIS:hisAdd place="offline" hand="h2">jeg skulde</HIS:hisAdd> holde mig rolig her paa Gaarden ikvæld, &dash;
-<lb/><seg type="transposition" part="I"><seg rend="supralinear" subtype="no" scribe="h2">3</seg><seg subtype="txt">I</seg></seg> <seg type="transposition" part="M"><seg rend="supralinear" subtype="no" scribe="h2">2</seg><seg subtype="txt">har</seg></seg> <seg type="transposition" part="F"><seg rend="supralinear" subtype="no" scribe="h2">1</seg><seg subtype="txt">da</seg></seg> vidst<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd> at Gudmund skulde komme<HIS:clarification place="inline" hand="h2">!</HIS:clarification> <HIS:hisAdd place="inline" hand="h2">&dash;</HIS:hisAdd>
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage>(til Margit.)</HIS:hisStage></HIS:spOpener><p>Og imorges da I fik mit Ord
+<lb/>paa<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd> at <HIS:hisAdd place="offline" hand="h2">jeg skulde</HIS:hisAdd> holde mig rolig her paa Gaarden ikvæld, –
+<lb/><seg type="transposition" part="I"><seg rend="supralinear" subtype="no" scribe="h2">3</seg><seg subtype="txt">I</seg></seg> <seg type="transposition" part="M"><seg rend="supralinear" subtype="no" scribe="h2">2</seg><seg subtype="txt">har</seg></seg> <seg type="transposition" part="F"><seg rend="supralinear" subtype="no" scribe="h2">1</seg><seg subtype="txt">da</seg></seg> vidst<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd> at Gudmund skulde komme<HIS:clarification place="inline" hand="h2">!</HIS:clarification> <HIS:hisAdd place="inline" hand="h2">–</HIS:hisAdd>
 <lb/>Ha, ha! bild Jer aldrig ind<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd> at I kan drive
 <lb/>Gjæk med Knut Gjæsling! Signe er bleven
-<lb/>mig kjær; endnu før Middag var det mit u&typHyp;
+<lb/>mig kjær; endnu før Middag var det mit u‐
 <lb/>besindige Løfte, som drev mig til at beile
-<lb/>efter hende, &dash; men nu &dash;!</p></HIS:hisSp>
+<lb/>efter hende, – men nu –!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener><p>Stille! Stille!</p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage><HIS:hisAdd place="offline" hand="h2">Haardt og bestemt</HIS:hisAdd> (til Margit)</HIS:hisStage></HIS:spOpener><p>Fru Mar<HIS:hisDel rend="overwritten">g</HIS:hisDel><HIS:hisAdd place="inline" hand="h2">j</HIS:hisAdd>it! I er hendes ældre
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage><HIS:hisAdd place="offline" hand="h2">Haardt og bestemt</HIS:hisAdd> (til Margit)</HIS:hisStage></HIS:spOpener><p>Fru Mar<HIS:hisDel rend="overwritten">g</HIS:hisDel><HIS:hisAdd place="inline" hand="h2">j</HIS:hisAdd>it! I er hendes ældre
 <lb/>Søster; et Svar skal I give mig<HIS:hisAdd place="inline" hand="h2">.</HIS:hisAdd></p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener><p>jeg kan Intet svare.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Det er godt, saa har jeg ikke mere at gjøre
-<lb/>paa Solhoug! Men efter Midnat &dash; mærk
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Det er godt, saa har jeg ikke mere at gjøre
+<lb/>paa Solhoug! Men efter Midnat – mærk
 <pb/>
 <lb/><fw type="page" place="top-left">14.</fw>
 <lb/>Jer det, da er Dagen tilende<HIS:hisDel rend="overwritten">,</HIS:hisDel><HIS:hisAdd place="inline" hand="h2">;</HIS:hisAdd> da tør I nok
@@ -644,12 +638,12 @@ Konvertering fra word-dokument til TEI/XML-fil (ikke validert). TeiHeaderen må 
 <lb/>hvem der skal føre Signe fra Gaarden, han
 <lb/>eller jeg<HIS:hisDel rend="overwritten">.</HIS:hisDel><HIS:hisAdd place="inline" hand="h2">!</HIS:hisAdd></p></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener><p>Gudmund! for alle Helgene!</p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Vær spa<app type="alteration"><lem><HIS:hisAdd place="offline" hand="h2">k</HIS:hisAdd></lem><HIS:hisRdg>g</HIS:hisRdg></app>, vær bare spa<app type="alteration"><lem><HIS:hisAdd place="offline" hand="h2">k</HIS:hisAdd></lem><HIS:hisRdg>g</HIS:hisRdg></app>, Gudmund Alfsøn!
-<lb/>Før Solen rinder<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd> skal Du være i min Magt &dash;
-<lb/>og hun, din Fæstemø, &dash; <HIS:hisStage>(raaber ud til Venstre)</HIS:hisStage>
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Vær spa<app type="alteration"><lem><HIS:hisAdd place="offline" hand="h2">k</HIS:hisAdd></lem><HIS:hisRdg>g</HIS:hisRdg></app>, vær bare spa<app type="alteration"><lem><HIS:hisAdd place="offline" hand="h2">k</HIS:hisAdd></lem><HIS:hisRdg>g</HIS:hisRdg></app>, Gudmund Alfsøn!
+<lb/>Før Solen rinder<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd> skal Du være i min Magt –
+<lb/>og hun, din Fæstemø, – <HIS:hisStage>(raaber ud til Venstre)</HIS:hisStage>
 <lb/>Kom Erik, afsted til vore Frænder! <HIS:hisStage>(truende,
 <lb/>idet han gaaer)</HIS:hisStage> Ja, vee Jer Alle, naar jeg
-<lb/>kommer igjen! <HIS:hisStage>(gaaer ud til Høire i Baggrun&typHyp;
+<lb/>kommer igjen! <HIS:hisStage>(gaaer ud til Høire i Baggrun‐
 <lb/>den med Erik.)</HIS:hisStage></p></HIS:hisSp>
 </div>
 </div>
@@ -657,7 +651,7 @@ Konvertering fra word-dokument til TEI/XML-fil (ikke validert). TeiHeaderen må 
 <lb/><head>Tredie Akt.</head>
 <div type="scene" n="8">
 <lb/><head>8<hi rend="raised">de</hi> Scene.</head>
-<lb/><HIS:hisStage><HIS:stageRole who="GUDMUND">Gudmund</HIS:stageRole>. <HIS:stageRole who="SIGNE">Signe</HIS:stageRole>. <HIS:stageRole who="MARGIT">Margit</HIS:stageRole>. <HIS:stageRole>Første</HIS:stageRole> og <HIS:stageRole>anden Huus&typHyp;
+<lb/><HIS:hisStage><HIS:stageRole who="GUDMUND">Gudmund</HIS:stageRole>. <HIS:stageRole who="SIGNE">Signe</HIS:stageRole>. <HIS:stageRole who="MARGIT">Margit</HIS:stageRole>. <HIS:stageRole>Første</HIS:stageRole> og <HIS:stageRole>anden Huus‐
 <pb/>
 <lb/><fw type="page" place="top-right">15.</fw>
 <lb/>karl</HIS:stageRole>.</HIS:hisStage>
@@ -665,24 +659,24 @@ Konvertering fra word-dokument til TEI/XML-fil (ikke validert). TeiHeaderen må 
 </div>
 <div type="scene" n="9">
 <lb/><head>9<hi rend="raised">de</hi> Scene.</head>
-<lb/><HIS:hisStage><HIS:stageRole>De Forrige</HIS:stageRole>. &dash; <HIS:stageRole>Gjæster</HIS:stageRole> og <HIS:stageRole>Huuskarle</HIS:stageRole>, som føre
+<lb/><HIS:hisStage><HIS:stageRole>De Forrige</HIS:stageRole>. – <HIS:stageRole>Gjæster</HIS:stageRole> og <HIS:stageRole>Huuskarle</HIS:stageRole>, som føre
 <lb/><HIS:stageRole who="KNUT">Knut Gjæsling</HIS:stageRole>, <HIS:stageRole who="ERIK">Erik fra Hægge</HIS:stageRole> og <HIS:stageRole>flere af
 <lb/>Knuts Mænd</HIS:stageRole> bundne mellem sig.</HIS:hisStage>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage>(bleg og stille)</HIS:hisStage></HIS:spOpener><p>Manddraber! Gudmund! hvad
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage>(bleg og stille)</HIS:hisStage></HIS:spOpener><p>Manddraber! Gudmund! hvad
 <lb/>siger Du til det?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener><p>Knut! Knut! hvad har Du gjort?</p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Det var en Vaadesgjerning, det svær<HIS:hisDel rend="overstrike" hand="h2">ger</HIS:hisDel> jeg. &dash;
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Det var en Vaadesgjerning, det svær<HIS:hisDel rend="overstrike" hand="h2">ger</HIS:hisDel> jeg. –
 <lb/>Han <app type="alteration"><lem><HIS:hisAdd place="offline" hand="h2">løb imod mig med løftet Økse jeg</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h2">mødte mig i Svalegangen; det var mørkt</HIS:hisDel></HIS:hisRdg></app>
 <lb/><app type="alteration"><lem><HIS:hisAdd place="offline" hand="h2">vilde værge for mig</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h2">derinde</HIS:hisDel></HIS:hisRdg></app> og saa hug jeg uforvarende til<HIS:hisAdd place="inline" hand="h2">.</HIS:hisAdd> <HIS:hisDel rend="overstrike" hand="h2">med Øxen</HIS:hisDel></p></HIS:hisSp>
 <lb/><HIS:hisSp who="ERIK"><HIS:spOpener><speaker>Erik</speaker>.</HIS:spOpener><p>Det er Sandhed!</p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Fru Mar<HIS:hisDel rend="overwritten">g</HIS:hisDel><HIS:hisAdd place="inline" hand="h2">j</HIS:hisAdd>it! kræv<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd> hvad Bod I vil<HIS:hisDel rend="overwritten">,</HIS:hisDel><HIS:hisAdd place="inline" hand="h2">;</HIS:hisAdd> jeg er
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Fru Mar<HIS:hisDel rend="overwritten">g</HIS:hisDel><HIS:hisAdd place="inline" hand="h2">j</HIS:hisAdd>it! kræv<HIS:hisAdd place="inline" hand="h2">,</HIS:hisAdd> hvad Bod I vil<HIS:hisDel rend="overwritten">,</HIS:hisDel><HIS:hisAdd place="inline" hand="h2">;</HIS:hisAdd> jeg er
 <lb/>rede til at betale den.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener><p>Eders onde Anslag mod min Søster.</p></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top-left">16.</fw>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Aldrig skal jeg mere prøve paa at løse
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Aldrig skal jeg mere prøve paa at løse
 <lb/>mit usalige Løfte. Tro mig, jeg skal bedre mig,
-<lb/>bare <HIS:hisAdd place="offline" hand="h2">jeg</HIS:hisAdd> ikke <app type="alteration"><lem><HIS:hisAdd place="offline" hand="h2">faaer lide en uhæderlig</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h2">min gamle Moder &dash; det gaaer mig</HIS:hisDel></HIS:hisRdg></app>
+<lb/>bare <HIS:hisAdd place="offline" hand="h2">jeg</HIS:hisAdd> ikke <app type="alteration"><lem><HIS:hisAdd place="offline" hand="h2">faaer lide en uhæderlig</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h2">min gamle Moder – det gaaer mig</HIS:hisDel></HIS:hisRdg></app>
 <lb/><app type="alteration"><lem><HIS:hisAdd place="offline" hand="h2">straf for min gjerning</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h2">mest til Hjertet</HIS:hisDel></HIS:hisRdg></app>. Gudmund! skulde Du komme
 <lb/>til Ære og Værdighed igjen, saa tal godt for
 <lb/>mig hos Kongen<HIS:hisDel rend="overwritten">.</HIS:hisDel><HIS:hisAdd place="inline" hand="h2">!</HIS:hisAdd></p></HIS:hisSp>
@@ -691,7 +685,7 @@ Konvertering fra word-dokument til TEI/XML-fil (ikke validert). TeiHeaderen må 
 <lb/><head>10<hi rend="raised">de</hi> Scene.</head>
 <lb/><HIS:hisStage><HIS:stageRole>De Forrige</HIS:stageRole>. <HIS:stageRole>En Karl</HIS:stageRole>.</HIS:hisStage>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener><p>det Tungeste jeg kunde friste.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Nei, Gudmund! dyrt skal Du sælge Livet; <HIS:hisAdd place="offline" hand="h2">løs os!</HIS:hisAdd> <HIS:hisDel rend="overwritten">v</HIS:hisDel><HIS:hisAdd place="inline" hand="h2">V</HIS:hisAdd>i
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Nei, Gudmund! dyrt skal Du sælge Livet; <HIS:hisAdd place="offline" hand="h2">løs os!</HIS:hisAdd> <HIS:hisDel rend="overwritten">v</HIS:hisDel><HIS:hisAdd place="inline" hand="h2">V</HIS:hisAdd>i
 <lb/>ere Alle rede til at slaa for Dig.</p></HIS:hisSp>
 </div>
 <div type="scene" n="11">
@@ -699,18 +693,18 @@ Konvertering fra word-dokument til TEI/XML-fil (ikke validert). TeiHeaderen må 
 <lb/><HIS:hisStage><HIS:stageRole>De Forrige</HIS:stageRole>. <HIS:stageRole who="SENDEBUDET">Kongens Sendebud</HIS:stageRole> med
 <lb/><HIS:stageRole>Følge</HIS:stageRole>.</HIS:hisStage>
 <lb/><HIS:hisSp who="SENDEBUDET"><HIS:spOpener><speaker>Sendebudet</speaker>.</HIS:spOpener><p>Det vide vi Alle!</p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage>(Alle)</HIS:hisStage></HIS:spOpener><p>Hvorledes?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage>(Alle)</HIS:hisStage></HIS:spOpener><p>Hvorledes?</p></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top-right">17.</fw>
 <lb/><HIS:hisSp who="SENDEBUDET"><HIS:spOpener><speaker>Sendebudet</speaker>.</HIS:spOpener><p>Audun Hugleiksøn er falden.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage>(Alle)</HIS:hisStage></HIS:spOpener><p>Falden!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage>(Alle)</HIS:hisStage></HIS:spOpener><p>Falden!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
 <lb/><l>Som skal svare Dig i Fryd og i Smerte.</l></HIS:hisSp>
 <lb/><HIS:hisStage>Slutningssang.</HIS:hisStage>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Chor</speaker>.</HIS:spOpener>
 <lb/><l>Over Jorden vogter Lysets Øie,</l>
 <lb/><l>Værner kjærligt om den Frommes Fjed,</l>
-<lb/><l>Sender Trøstens milde Straaler ned; &dash;</l>
+<lb/><l>Sender Trøstens milde Straaler ned; –</l>
 <lb/><l>Lovet være Herren i det Høie!</l></HIS:hisSp>
 <lb/><figure type="bar"/>
 </div>

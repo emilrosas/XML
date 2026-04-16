@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -13,10 +7,10 @@
 <title level="s" type="main">Henrik Ibsens skrifter</title>
 <title level="s" type="desc">Diplomatarisk tekstarkiv</title>
 <title level="a" type="main">[Episk Brand]</title>
-<title level="a" type="desc">Grunntekst, KBK NKS 2869, 4&deg;, 1, I. bl. 1-3</title>
+<title level="a" type="desc">Grunntekst, KBK NKS 2869, 4°, 1, I. bl. 1-3</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt>
 <resp>Kollasjonering, transkripsjon, koding og korrekturlesing</resp>
 <name xml:id="HIS-HB">Hilde Bøe</name>
@@ -37,13 +31,13 @@
 <sourceDesc><p>Denne filen bygger på BE428691.xml (BE428691-0106).</p></sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-grt-ms;</p></projectDesc>
+<projectDesc><p>GRUNNTEKST BASERT PÅ MANUSKRIPT. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av to medarbeidere. Teksten er kollasjonert en tredje gang i forbindelse med det avsluttende arbeidet med verket.</p></projectDesc>
 <editorialDecl>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -70,8 +64,8 @@ Arkiverte pre-splitting-kopi + lagret kopi som inneholder KBKs ordning av mset (
 <lb/><l>hvor Solen stænges ude bag Faan og Fjelle,</l>
 <lb/><l>hvor Foden hæmmes af Urd og Fjord,</l>
 <lb/><l>og Sjælevingen stækkes af værre Vælde,</l>
-<lb/><l>for dig vil jeg synge en Tungsindssang, &dash;</l>
-<lb/><l>kanhænde, som Norges Sanger, min sidste, &dash;</l>
+<lb/><l>for dig vil jeg synge en Tungsindssang, –</l>
+<lb/><l>kanhænde, som Norges Sanger, min sidste, –</l>
 <lb/><l>thi ingen Digter synger end en Gang,</l>
 <lb/><l>hvor Salmen er sungen over Folkets Kiste.</l>
 <lb/><figure type="num"/>
@@ -107,7 +101,7 @@ Arkiverte pre-splitting-kopi + lagret kopi som inneholder KBKs ordning av mset (
 <lb/><l>sminket Liget af de stærkere Tider,</l>
 <lb/><l>festklædt alle Mindehallens Bjelker og Sider,</l>
 <lb/><l>til Fryd for Dverge, med Kjæmpev<unclear reason="writing">aa</unclear><gap/> Vægt.</l>
-<lb/><l>Om Forleden Dag bruste Sangen i Nuets Natt &dash;</l>
+<lb/><l>Om Forleden Dag bruste Sangen i Nuets Natt –</l>
 <lb/><l>alt var Rus; alt var Gilde; ingen husked at drøfte</l>
 <lb/><l>om <emph>den</emph> kan med Rette tage Arvens Skatt</l>
 <lb/><l>som fattes den Næve, der skal Arven løfte.</l>
@@ -129,7 +123,7 @@ Arkiverte pre-splitting-kopi + lagret kopi som inneholder KBKs ordning av mset (
 <lb/><l><seg type="transposition" subtype="words_numbered"><seg rend="supralinear" subtype="no">2</seg><seg subtype="phrase">Folkets sugende Længsel</seg> <seg rend="supralinear" subtype="no">1</seg><seg subtype="phrase">han løser</seg></seg> med sin Sang,</l>
 <lb/><l>han skrifter dets Brøde, tolker lydt dets Ang<HIS:hisDel rend="overwritten">r</HIS:hisDel>er,</l>
 <xptr type="synopticView_msVersions" xml:id="BE_367ms"/><lb/><l>sukker, naar det <HIS:hisDel rend="overwritten">S</HIS:hisDel>skakes af Angst; dets dulgte Trang</l>
-<lb/><l>klæder han i Ord, &dash; derfor er han Sanger.</l>
+<lb/><l>klæder han i Ord, – derfor er han Sanger.</l>
 <lb/><figure type="num"/>
 <lb/><l rend="indent">Se, derfor har jeg vendt mit Syn <app type="alteration"><lem><HIS:hisAdd place="offline">som</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">og</HIS:hisDel></HIS:hisRdg></app> mit Sind</l>
 <lb/><l>bort fra Fortidens sjæledræbte Sage,</l>
@@ -147,8 +141,8 @@ Arkiverte pre-splitting-kopi + lagret kopi som inneholder KBKs ordning av mset (
 <lb/><l><HIS:hisDel rend="overstrike">kan du skimte</HIS:hisDel> en Krands af glitrende Tinder<HIS:hisDel rend="overwritten">.</HIS:hisDel>du øjner.</l>
 <lb/><l>Snart stærkt snart lindt er till Sangen mit Langspil stemmt,</l>
 <lb/><l>underspundne Strenge dirrer og farver Klagen,</l>
-<lb/><l>inderst inde er et Digt i Digtet gjemt, &dash;</l>
-<lb/><l>og fatter du <emph>det</emph>, mit Folk, &dash; da fatter du Sange<HIS:hisAdd place="inline">n.</HIS:hisAdd></l>
+<lb/><l>inderst inde er et Digt i Digtet gjemt, –</l>
+<lb/><l>og fatter du <emph>det</emph>, mit Folk, – da fatter du Sange<HIS:hisAdd place="inline">n.</HIS:hisAdd></l>
 <lb/><figure type="bar"/>
 </div>
 <pb n="[3]r"/><lb/><fw type="leaf" place="top-right" scribe="h4">3</fw>
@@ -158,7 +152,7 @@ Arkiverte pre-splitting-kopi + lagret kopi som inneholder KBKs ordning av mset (
 <lb/><l rend="indent">Det var Lørdag; det lakked mod Kveld; der var Fred og <seg type="raised" rend="supralinear">Stillhed;</seg></l>
 <lb/><l>hin aandende Fred som du vist har kjendt,</l>
 <lb/><l>hin Fred, svanger med <HIS:hisDel rend="overwritten">F</HIS:hisDel>Hvile, rig paa Mildhed</l>
-<lb/><l>der øges, som Solen daler og Ugens Gjerning er endt, &dash;</l>
+<lb/><l>der øges, som Solen daler og Ugens Gjerning er endt, –</l>
 <lb/><l>hin Fred, med den festlige Spænding islægt,</l>
 <lb/><l>der raader i Huset naar Lampen hentes,</l>
 <lb/><l>naar Gildet er rede og Bordet dækt</l>

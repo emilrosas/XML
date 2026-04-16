@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -13,11 +7,11 @@
 <title level="s" type="main">Henrik Ibsens skrifter</title>
 <title level="s" type="sub">Diplomatarisk tekstarkiv</title>
 <title level="a" type="main">Kejser og Galilæer</title>
-<title level="a" type="sub">NBO Ms.4&deg; 1111d, bl. 134v&dash;38</title>
-<title level="a" type="origYear">[1871&dash;1873]</title>
+<title level="a" type="sub">NBO Ms.4° 1111d, bl. 134v–38</title>
+<title level="a" type="origYear">[1871–1873]</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt>
 <resp>Konvertering fra ekstern transkripsjon til prosjektspesifikk TEI XML</resp>
 <name xml:id="HIS-HB">Hilde Bøe</name>
@@ -45,12 +39,12 @@
 <sourceDesc><p>Denne filen bygger på KG41111_NBO.xml (KG41111_NBO-0208).</p></sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography><p>Manuskriptets grafiske oppsett finnes beskrevet i typografibeskrivelsen i KG41111_NBO.xml.</p>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -121,7 +115,7 @@
 <label xml:id="PERSEREN"/><item>En persisk overløber/Perseren</item>
 </list>
 </tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -154,7 +148,7 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><HIS:hisStage>(Cæsars palats udenfor Paris. En hal,
 <lb/>festligt smykket med alemanske <sic>vålen</sic>
 <lb/>og kostbarheder.)</HIS:hisStage>
-<lb/><HIS:hisStage>(Cæsar Julian i triumfator-klædning med laurbær&typHyp;
+<lb/><HIS:hisStage>(Cæsar Julian i triumfator-klædning med laurbær‐
 <lb/>krans om hovedet går op og ned. Statssekretæren
 <lb/>Decentius står ubevægelig i nogen frastand.)</HIS:hisStage>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker></HIS:spOpener>
@@ -163,13 +157,13 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><p>Høje cæsar, det er alt.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Virkelig? Er det alt? Har kejseren sendt
-<lb/>dig den lange vej kun for at &dash;?</p></HIS:hisSp>
+<lb/>dig den lange vej kun for at –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="DECENTIUS"><HIS:spOpener><speaker>Decentius</speaker>.</HIS:spOpener>
 <lb/><p>For at tilsige sin høje frænde al kejserlig
-<lb/>nåde og kærlighed &dash;</p></HIS:hisSp>
+<lb/>nåde og kærlighed –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Ja, ja, så er det. Han er bekymret for mit
-<lb/>åndelige vel. Han vil ikke tåle at forfæn&typHyp;
+<lb/>åndelige vel. Han vil ikke tåle at forfæn‐
 <lb/>gelige tanker vokser sig store i mig. Er
 <lb/>det ikke så, Decentius?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="DECENTIUS"><HIS:spOpener><speaker>Decentius</speaker>.</HIS:spOpener>
@@ -189,7 +183,7 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><p>Og hvorledes hjælper han sig i det fremmede
 <lb/>land, ukyndig i sproget, som han er? Ja,
 <lb/>han er <unclear><HIS:hisDel rend="overstrike">ko</HIS:hisDel></unclear> højst ukyndig, Decentius. Var til
-<lb/>latter for mine soldater. Tænk dig, han for&typHyp;
+<lb/>latter for mine soldater. Tænk dig, han for‐
 <lb/>veksled så gængse ord som kejser og cæsar.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="DECENTIUS"><HIS:spOpener><speaker>Decentius</speaker>.</HIS:spOpener>
 <lb/><p>En barbar. Hvad skal man sige?</p></HIS:hisSp>
@@ -205,10 +199,10 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Død? Så? Ja, luften i Rom er usund.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="DECENTIUS"><HIS:spOpener><speaker>Decentius</speaker>.</HIS:spOpener>
-<lb/><p>Han døde af hjemve, herre. Længselen ef&typHyp;
-<lb/>ter slægt og hjem &dash;</p></HIS:hisSp>
+<lb/><p>Han døde af hjemve, herre. Længselen ef‐
+<lb/>ter slægt og hjem –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>&dash; den tærer, Decentius. Ja, ja, jeg ved det.
+<lb/><p>– den tærer, Decentius. Ja, ja, jeg ved det.
 <lb/>Jeg burde ikke skikket ham levende til
 <pb ed="faksBase" n="442"/>
 <pb n="[135]v"/>
@@ -221,7 +215,7 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><HIS:hisSp who="DECENTIUS"><HIS:spOpener><speaker>Decentius</speaker>.</HIS:spOpener>
 <lb/><p>Jeg ved intet.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>Hm &dash;! Hjemve? Ja så!</p></HIS:hisSp>
+<lb/><p>Hm –! Hjemve? Ja så!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SINTULA"><HIS:spOpener><speaker>Staldmesteren Scintula</speaker>
 <lb/><HIS:hisStage>(kommer.)</HIS:hisStage></HIS:spOpener>
 <lb/><p><HIS:hisDel rend="overstrike">Nu er tiden inde, herre</HIS:hisDel>!</p></HIS:hisSp>
@@ -232,9 +226,9 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Til Phaëtons færd mellem himmel og jord?
 <lb/>Lok mig ikke ud på farlige veje, gamle faun!
-<lb/>Hvorledes endte det med Phaëton? Med fald og død, &dash;
-<lb/>har du glemt &dash; har du glemt dit hedenskab, havde
-<lb/>jeg nær sagt. Om forladelse, Decentius, det var ik&typHyp;
+<lb/>Hvorledes endte det med Phaëton? Med fald og død, –
+<lb/>har du glemt – har du glemt dit hedenskab, havde
+<lb/>jeg nær sagt. Om forladelse, Decentius, det var ik‐
 <lb/>ke min agt at såre dit fromme øre.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="DECENTIUS"><HIS:spOpener><speaker>Decentius</speaker>.</HIS:spOpener>
 <lb/><p>Mit fromme øre er usårligt, herre!</p></HIS:hisSp>
@@ -244,11 +238,11 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <pb ed="faksBase" n="443"/>
 <pb n="[136]r"/>
 <lb/><fw type="leaf" place="top-right" scribe="h1">136</fw>
-<lb/><HIS:hisStage>(g<HIS:hisDel rend="overstrike">år op</HIS:hisDel> og ned.)</HIS:hisStage> <HIS:hisDel rend="overstrike">Bigaen, &dash; den gyldne karm</HIS:hisDel> &dash;
+<lb/><HIS:hisStage>(g<HIS:hisDel rend="overstrike">år op</HIS:hisDel> og ned.)</HIS:hisStage> <HIS:hisDel rend="overstrike">Bigaen, – den gyldne karm</HIS:hisDel> –
 <lb/><HIS:hisDel rend="overstrike">med hvide hingste for? Var det ikke s</HIS:hisDel>å?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SINTULA"><HIS:spOpener><speaker><HIS:hisDel rend="overstrike">Staldmesteren Scintul</HIS:hisDel>a</speaker>.</HIS:spOpener>
 <lb/><p><HIS:hisDel rend="overstrike">Som brugeligt er, herre</HIS:hisDel>!</p></HIS:hisSp>
-<lb/><HIS:hisStage>(Hærførerne Florentius og Severus, høje befalings&typHyp;
+<lb/><HIS:hisStage>(Hærførerne Florentius og Severus, høje befalings‐
 <lb/>mænd og herrer ved cæsars hof kommer.)</HIS:hisStage>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Der har vi dem. <app type="alteration"><lem><HIS:hisAdd place="offline">Se på dem</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Jeg havde tænkt at triumfer</HIS:hisDel>e</HIS:hisRdg></app>
@@ -257,7 +251,7 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/>barbar-fyrster med bundne hænder skulde
 <lb/>gå ved vognhjulene. Kvinder og slaver
 <lb/>fra tyve overvundne folkeslag skulde følge
-<lb/>efter, tæt, hoved ved hoved. &dash; God morgen,
+<lb/>efter, tæt, hoved ved hoved. – God morgen,
 <lb/>ædle Florentius! Sølvskinner, ser jeg; du går
 <lb/>cæsar en høj gang.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLORENTIUS"><HIS:spOpener><speaker>Prætorianhøvdingen Florentius</speaker>.</HIS:spOpener>
@@ -277,7 +271,7 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <pb n="[136]v"/>
 <lb/><HIS:hisSp who="SEVERUS"><HIS:spOpener><speaker>Hærføreren Severus</speaker>.
 <lb/><HIS:hisStage>(sagte.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Hvorledes har I båret jer ad &dash;?</p></HIS:hisSp>
+<lb/><p>Hvorledes har I båret jer ad –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLORENTIUS"><HIS:spOpener><speaker>Prætorianhøvdingen Florentius</speaker>.
 <lb/><HIS:hisStage>(ligeså.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Ufatteligt!</p></HIS:hisSp>
@@ -287,23 +281,23 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><p>Hvo udgrunder kejseren, ven?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>I står så stille der. Ja, I har ret; I finder, det
-<lb/>er for meget &dash;</p></HIS:hisSp>
+<lb/>er for meget –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLORENTIUS"><HIS:spOpener><speaker>Prætorianhøvdingen Florentius</speaker>.</HIS:spOpener>
-<lb/><p>Hvor kan det komme i din tanke &dash;</p></HIS:hisSp>
+<lb/><p>Hvor kan det komme i din tanke –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SEVERUS"><HIS:spOpener><speaker>Hærføreren Severus</speaker>.</HIS:spOpener>
-<lb/><p>Skulde jeg være af en anden mening end kejseren &dash;?</p></HIS:hisSp>
+<lb/><p>Skulde jeg være af en anden mening end kejseren –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLORENTIUS"><HIS:spOpener><speaker>Prætorianhøvdingen Florentius</speaker>.</HIS:spOpener>
 <lb/><p>Vel sandt; det er en høj nådesbevisning; men
-<lb/>for meget? For meget; nej, høje cæsar &dash;</p></HIS:hisSp>
+<lb/>for meget? For meget; nej, høje cæsar –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SEVERUS"><HIS:spOpener><speaker>Hærføreren Severus</speaker>.</HIS:spOpener>
 <lb/><p>Hvad har du ikke udrettet i disse år i Gallien?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>En årlang drøm, I dyrebare venner! Intet, intet.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLORENTIUS"><HIS:spOpener><speaker>Prætorianhøvdingen Florentius</speaker>.</HIS:spOpener>
 <lb/><p>Og det regner du for intet? Hvad var hæren da du
-<lb/>overtog den? En uordnet hob &dash;</p></HIS:hisSp>
+<lb/>overtog den? En uordnet hob –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SEVERUS"><HIS:spOpener><speaker>Hærføreren Severus</speaker>.</HIS:spOpener>
-<lb/><p>&dash; uden sammenhæng, uden lydighed, uden ledelse &dash;</p></HIS:hisSp>
+<lb/><p>– uden sammenhæng, uden lydighed, uden ledelse –</p></HIS:hisSp>
 <pb ed="faksBase" n="445"/>
 <pb n="[137]r"/>
 <lb/><fw type="leaf" place="top-right" scribe="h1">137</fw>
@@ -313,10 +307,10 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><p>Og var det ikke med denne utøjlede hob, at du
 <lb/>gik imod Alamanerne, slog dem med den hær,
 <lb/>som du selv dannede, tog Colonia Agrippina
-<lb/>tilbage &dash;</p></HIS:hisSp>
+<lb/>tilbage –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>Ej, ej, du ser med venskabs øje. &dash; Eller er
-<lb/>det virkelig sandt? Er det så at jeg jog bar&typHyp;
+<lb/><p>Ej, ej, du ser med venskabs øje. – Eller er
+<lb/>det virkelig sandt? Er det så at jeg jog bar‐
 <lb/>barerne bort fra øerne i Rhin? At jeg satte
 <lb/>det forfaldne Tres Tabernæ i forsvarstilstand?
 <lb/>Er det virkelig så?</p></HIS:hisSp>
@@ -324,16 +318,16 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><p>Hvorledes, herre? Kan du tvivle om så store
 <lb/>ting?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>Nej, i sandhed, jeg synes &dash;. Og slaget ved
+<lb/><p>Nej, i sandhed, jeg synes –. Og slaget ved
 <lb/>Argentoratum? Var jeg ikke med der?
 <lb/>Det svæver mig så visst for at jeg sejrede over
-<lb/>Chnodomar. Og efter sejren, Florentius &dash;?
+<lb/>Chnodomar. Og efter sejren, Florentius –?
 <lb/>Har jeg drømt; eller byggede vi ikke Trajans
-<lb/>kastel op igen da vi rykkede ind i Germa&typHyp;
+<lb/>kastel op igen da vi rykkede ind i Germa‐
 <lb/>nien?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SEVERUS"><HIS:spOpener><speaker>Hærføreren Severus</speaker>
 <lb/><HIS:hisStage>(vendt til Decentius.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Jeg priser min lykke at det blev mig for&typHyp;
+<lb/><p>Jeg priser min lykke at det blev mig for‐
 <lb/>undt på mine gamle dage at tjene så
 <lb/>stor en fører.</p></HIS:hisSp>
 <pb ed="faksBase" n="446"/>
@@ -349,57 +343,57 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Andre</speaker>.</HIS:spOpener>
 <lb/><p>Cæsar er uden lige!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>
-<lb/><HIS:hisStage>(ser en stund afvekslende på Decentius og de an&typHyp;
+<lb/><HIS:hisStage>(ser en stund afvekslende på Decentius og de an‐
 <lb/>dre; derpå brister han ud i en høj kort latter:)</HIS:hisStage></HIS:spOpener>
-<lb/><p><xptr type="synopticView_msVersions" xml:id="KG_12500ms"/>Så blindt er venskab! Så blindt, blindt, blindt! &dash;
+<lb/><p><xptr type="synopticView_msVersions" xml:id="KG_12500ms"/>Så blindt er venskab! Så blindt, blindt, blindt! –
 <lb/>Her har jeg det skrevet. Hør efter og sug det ind
-<lb/>som en erkendelsens læskende dugg. Det er kej&typHyp;
+<lb/>som en erkendelsens læskende dugg. Det er kej‐
 <lb/>serens melding til provinserne, som vor udmærkede
-<lb/>Decentius har medbragt. Jeg har intet udret&typHyp;
+<lb/>Decentius har medbragt. Jeg har intet udret‐
 <lb/>tet i Gallien. Det var en drøm, som jeg sagde.
 <lb/>Her har vi kejserens eget ord. Det er under
 <lb/>kejserens lykkelige forvarsler at oprøret er
-<lb/>kuet &dash;</p></HIS:hisSp>
+<lb/>kuet –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLORENTIUS"><HIS:spOpener><speaker>Prætorianhøvdingen Florentius</speaker>.</HIS:spOpener>
 <lb/><p>Alt lykkes under kejserens forvarsler.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Mere, mere! Her berettes det at det er kejseren,
 <lb/>som har kæmpet og sejret; det er kejseren, som
-<lb/>har løftet op den ydmygt bedende Alemaner&typHyp;
+<lb/>har løftet op den ydmygt bedende Alemaner‐
 <lb/>konge, der kasted sig ned for ham. Mit navn
 <pb ed="faksBase" n="447"/>
 <pb n="[138]r"/>
 <lb/><fw type="leaf" place="top-right" scribe="h1">138</fw>
-<lb/>er ikke nævnt; og ikke dit, Florentius; og hel&typHyp;
+<lb/>er ikke nævnt; og ikke dit, Florentius; og hel‐
 <lb/>ler ikke dit, Severus! Og her, i beskrivelsen
-<lb/>over slaget ved Argentoratum &dash; hvor var det
-<lb/>jeg havde det &dash;? jo her; her står det;
+<lb/>over slaget ved Argentoratum – hvor var det
+<lb/>jeg havde det –? jo her; her står det;
 <lb/>det var kejseren, som påbød slagordningen;
 <lb/>det var kejseren, som kæmped selv i forreste
 <lb/>række; det var kejseren som drev barbarerne
-<lb/>på hovedkuls flugt; for ham var det Chno&typHyp;
-<lb/>domar blev ført &dash;; læs, læs, &dash; siger jeg &dash;</p></HIS:hisSp>
+<lb/>på hovedkuls flugt; for ham var det Chno‐
+<lb/>domar blev ført –; læs, læs, – siger jeg –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SEVERUS"><HIS:spOpener><speaker>Hærføreren Severus</speaker>.</HIS:spOpener>
 <lb/><p>Høje cæsar, dit ord er nok.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Men hvor vil I så hen med eders smigrende
 <lb/>tale? Vil I gøre mig til en usling? Vil I tilegne
-<lb/>mig min høje frændes fortjeneste? Hvad tyk&typHyp;
+<lb/>mig min høje frændes fortjeneste? Hvad tyk‐
 <lb/>kes dig, Decentius? Hvorledes tænker du det
 <lb/>vil blive optaget i Rom?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLORENTIUS"><HIS:spOpener><speaker>Prætorian-høvdingen Florentius</speaker>.</HIS:spOpener>
-<lb/><p>I sandhed, mit ord er bleven mistydet, ifald &dash;</p></HIS:hisSp>
+<lb/><p>I sandhed, mit ord er bleven mistydet, ifald –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SEVERUS"><HIS:spOpener><speaker>Hærføreren Severus</speaker>.</HIS:spOpener>
-<lb/><p>Det kunde aldrig komme mig i sinde på den vis at &dash;</p></HIS:hisSp>
+<lb/><p>Det kunde aldrig komme mig i sinde på den vis at –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Så skal det være, I kampbrødre; lad os alle tilhobe æde
-<lb/>vore store indbildninger i os. Det var sandheds&typHyp;
+<lb/>vore store indbildninger i os. Det var sandheds‐
 <lb/>erkendelsen, som mangled i Cæsars lykke. <HIS:hisDel rend="overstrike">Ind med
 <lb/>bigaen, Sintula! <HIS:hisStage>(Sintula går.)<xptr type="synopticView_msVersions" xml:id="KG_127ms"/></HIS:hisStage></HIS:hisDel> Din sølvhjelm
 <lb/>vil ikke komme til at dækkes af festtogets støv,
 <lb/>tappre Florentius! Kejseren har triumferet
 <lb/>i Rom. Lad alle optog afsiges; soldaterne skal
-<lb/>gå tilbage i lejren. &dash; Var jeg ikke engang en
+<lb/>gå tilbage i lejren. – Var jeg ikke engang en
 <pb ed="faksBase" n="448"/>
 <pb n="[138]v"/>
 <lb/>visdoms-ven? Man sagde det idetmindste, både i
@@ -411,9 +405,9 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/>ført til ende her i Gallien.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Visselig; kejseren har dels ved sin tapperhed og
-<lb/>dels ved sin højmodige mildhed &dash;</p></HIS:hisSp>
+<lb/>dels ved sin højmodige mildhed –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="DECENTIUS"><HIS:spOpener><speaker>Præfekten Decentius</speaker>.</HIS:spOpener>
-<lb/><p>Rigets grænse er sikkret imod øst &dash;</p></HIS:hisSp>
+<lb/><p>Rigets grænse er sikkret imod øst –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Af kejseren, af kejseren.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="DECENTIUS"><HIS:spOpener><speaker>Præfekten Decentius</speaker>.</HIS:spOpener>
@@ -427,8 +421,8 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/>Her er hans vilje, høje Cæsar! <HIS:hisStage>(rækker ham en
 <lb/>papirrulle.)</HIS:hisStage></p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>Lad se, lad se! <HIS:hisStage>(læser.)</HIS:hisStage> Ah! &dash; Det er altså kejserens
-<lb/>vilje at &dash;! Godt, godt, ædle Decentius; kejserens
+<lb/><p>Lad se, lad se! <HIS:hisStage>(læser.)</HIS:hisStage> Ah! – Det er altså kejserens
+<lb/>vilje at –! Godt, godt, ædle Decentius; kejserens
 <lb/>vilje skal blive efterkommet.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="DECENTIUS"><HIS:spOpener><speaker>Præfekten Decentius</speaker>.</HIS:spOpener>
 <lb/><p>Det er nødvendigt at den efterkommes endnu idag.</p></HIS:hisSp>

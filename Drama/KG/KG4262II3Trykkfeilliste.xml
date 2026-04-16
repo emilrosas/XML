@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -13,11 +7,11 @@
 <title level="s" type="main">Henrik Ibsens skrifter</title>
 <title level="s" type="sub">Diplomatarisk tekstarkiv</title>
 <title level="a" type="main">Kejser og Galilæer</title>
-<title level="a" type="sub">Kgl.Bibl.Kbh. Collin 262, 4&deg;, II, 3 (trykkfeilliste)</title>
+<title level="a" type="sub">Kgl.Bibl.Kbh. Collin 262, 4°, II, 3 (trykkfeilliste)</title>
 <title level="a" type="origYear">[1873]</title>
 <author>[Henrik Ibsen]</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Ellen Nessheim Wiger, Ingvald Aarstein</name></respStmt>
 <respStmt>
 <resp>Transkripsjon, kollasjon og koding, oktober 2002:</resp>
@@ -42,7 +36,7 @@
 <msIdentifier>
 <settlement>København</settlement>
 <repository>Det Kongelige Bibliotek</repository>
-<idno>Collin 262, 4&deg;, II, 3</idno>
+<idno>Collin 262, 4°, II, 3</idno>
 </msIdentifier>
 <msContents><msItem>
 <author>[Henrik Ibsen]</author>
@@ -55,7 +49,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <list>
@@ -72,11 +66,11 @@
 <item>understrekningen i siste punkt er kodet med hi rend="underlined"</item>
 </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 </encodingDesc>
 <profileDesc>
@@ -129,24 +123,24 @@ Opprettet filen. Koding påvirket av F281939 (bruken av xptr) og av KG41111 (bru
 <pb n="460"/>
 <list>
 <lb/><head>Rettelser:</head>
-<lb/><label><HIS:synopticViewPtr type="synopticView_msVersions" xml:id="KG_1"/>Side 25</label><item>står &dash; &dash; glade år, hine seks
+<lb/><label><HIS:synopticViewPtr type="synopticView_msVersions" xml:id="KG_1"/>Side 25</label><item>står – – glade år, hine seks
 <lb/>rettes til gl: år, hine sex</item>
-<lb/><label><HIS:synopticViewPtr type="synopticView_msVersions" xml:id="KG_2"/>&rep; 36</label><item>synes at stå Hotklædningen
+<lb/><label><HIS:synopticViewPtr type="synopticView_msVersions" xml:id="KG_2"/>" 36</label><item>synes at stå Hotklædningen
 <lb/>rettes til Hofklædningen</item>
-<lb/><label><HIS:synopticViewPtr type="synopticView_msVersions" xml:id="KG_3"/>&rep; 40</label><item>synes at stå hotkrybet
+<lb/><label><HIS:synopticViewPtr type="synopticView_msVersions" xml:id="KG_3"/>" 40</label><item>synes at stå hotkrybet
 <lb/>rettes til hofkrybet</item>
-<lb/><label><HIS:synopticViewPtr type="synopticView_msVersions" xml:id="KG_4"/>&rep; 247</label><item>står &dash; &dash; store farbroder Konstanzios
-<lb/>rettes til &dash; store farbroder Konstantin</item>
-<lb/><label><HIS:synopticViewPtr type="synopticView_msVersions" xml:id="KG_5"/>&rep; 328</label><item>står Harilion
+<lb/><label><HIS:synopticViewPtr type="synopticView_msVersions" xml:id="KG_4"/>" 247</label><item>står – – store farbroder Konstanzios
+<lb/>rettes til – store farbroder Konstantin</item>
+<lb/><label><HIS:synopticViewPtr type="synopticView_msVersions" xml:id="KG_5"/>" 328</label><item>står Harilion
 <lb/>rettes til Hilarion</item>
-<lb/><label><HIS:synopticViewPtr type="synopticView_msVersions" xml:id="KG_6"/>&rep; 339</label><item>står &dash; &dash; dragt og herlighed
-<lb/>rettes til &dash; pragt og herlighed</item>
-<lb/><label><HIS:synopticViewPtr type="synopticView_msVersions" xml:id="KG_7"/>&rep; 367</label><item>står &dash; fra Heliopolis under fra Libanon
-<lb/>rettes til &dash; fra H: under Libanon</item>
-<lb/><label><HIS:synopticViewPtr type="synopticView_msVersions" xml:id="KG_8"/>&rep; 376</label><item><hi rend="underlined">i anmærkn</hi>: står &dash; et stykke derfra, imod
+<lb/><label><HIS:synopticViewPtr type="synopticView_msVersions" xml:id="KG_6"/>" 339</label><item>står – – dragt og herlighed
+<lb/>rettes til – pragt og herlighed</item>
+<lb/><label><HIS:synopticViewPtr type="synopticView_msVersions" xml:id="KG_7"/>" 367</label><item>står – fra Heliopolis under fra Libanon
+<lb/>rettes til – fra H: under Libanon</item>
+<lb/><label><HIS:synopticViewPtr type="synopticView_msVersions" xml:id="KG_8"/>" 376</label><item><hi rend="underlined">i anmærkn</hi>: står – et stykke derfra, imod
 <lb/>venstre, er en stenkumm<unclear reason="writing">e</unclear>
-<lb/>rettes til &dash; et stykke derfra, imod højre,
-<lb/>o. s. v. &dash;</item>
+<lb/>rettes til – et stykke derfra, imod højre,
+<lb/>o. s. v. –</item>
 </list>
 </body>
 </text>

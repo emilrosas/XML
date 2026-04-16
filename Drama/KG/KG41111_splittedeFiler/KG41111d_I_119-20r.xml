@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -13,11 +7,11 @@
 <title level="s" type="main">Henrik Ibsens skrifter</title>
 <title level="s" type="sub">Diplomatarisk tekstarkiv</title>
 <title level="a" type="main">Kejser og Galilæer</title>
-<title level="a" type="sub">NBO Ms.4&deg; 1111d, bl. 119&dash;20r</title>
-<title level="a" type="origYear">[1871&dash;1873]</title>
+<title level="a" type="sub">NBO Ms.4° 1111d, bl. 119–20r</title>
+<title level="a" type="origYear">[1871–1873]</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt>
 <resp>Konvertering fra ekstern transkripsjon til prosjektspesifikk TEI XML</resp>
 <name xml:id="HIS-HB">Hilde Bøe</name>
@@ -45,12 +39,12 @@
 <sourceDesc><p>Denne filen bygger på KG41111_NBO.xml (KG41111_NBO-0208).</p></sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography><p>Manuskriptets grafiske oppsett finnes beskrevet i typografibeskrivelsen i KG41111_NBO.xml.</p>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -121,7 +115,7 @@
 <label xml:id="PERSEREN"/><item>En persisk overløber/Perseren</item>
 </list>
 </tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -154,14 +148,14 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <div type="act" n="1-4">
 <lb/><HIS:hisSp who="HELENA"><p>uovervindelig i alle træfninger? Jeg ser ham;<xptr type="synopticView_msVersions" xml:id="KG_118ms"/>
 <lb/>jeg ser engelen<HIS:hisDel rend="overstrike">, som</HIS:hisDel> med flammesværdet, som
-<lb/>baned vej for Konstantin over den mulvi&typHyp;
+<lb/>baned vej for Konstantin over den mulvi‐
 <lb/>ske bro!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p><emph>Du</emph> er min himmelske udsending, min til&typHyp;
+<lb/><p><emph>Du</emph> er min himmelske udsending, min til‐
 <lb/>værelses krone.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Prinsesse Helena</speaker>.</HIS:spOpener>
-<lb/><p>O, gå, gå; &dash; slå dem med din vredes lyn! &dash; Gør
-<lb/>ende på dette tærende glædeløse liv her i udør&typHyp;
+<lb/><p>O, gå, gå; – slå dem med din vredes lyn! – Gør
+<lb/>ende på dette tærende glædeløse liv her i udør‐
 <lb/>ken. Jeg bærer det ikke længer, Julian! Jeg
 <lb/>vil hjem igen til Rom og Grækenland.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.
@@ -176,7 +170,7 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Prinsesse Helena</speaker>.</HIS:spOpener>
 <lb/><p>Jeg holder det ikke længer ud, siger jeg
 <lb/>dig! Tiden går; Eusebia sidder i hæder
-<lb/>og herlighed, mens jeg ældes &dash;</p></HIS:hisSp>
+<lb/>og herlighed, mens jeg ældes –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Du ældes ikke; du er ung og skøn!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Prinsesse Helena</speaker>.</HIS:spOpener>
@@ -185,21 +179,21 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <pb n="[119]v"/>
 <lb/>dette med tålmod.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>Stille! Om nogen hører dig &dash;!</p></HIS:hisSp>
+<lb/><p>Stille! Om nogen hører dig –!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Prinsesse Helena</speaker>.</HIS:spOpener>
-<lb/><p>Han dør lidt hver dag, &dash; hænger i et hår over
-<lb/>graven. Gå, elskede; kæmp, kæmp; &dash; vinder
-<lb/>du, så vil glæden &dash;</p></HIS:hisSp>
+<lb/><p>Han dør lidt hver dag, – hænger i et hår over
+<lb/>graven. Gå, elskede; kæmp, kæmp; – vinder
+<lb/>du, så vil glæden –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Helena!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Prinsesse Helena</speaker>.
 <lb/><HIS:hisStage>(sagte.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Han tåler ingen rystelse; jeg ved det ganske
-<lb/>sikkert.<xptr type="synopticView_msVersions" xml:id="KG_11900ms"/> Vinder du en stor sejr, så vil glæden &dash;</p></HIS:hisSp>
+<lb/>sikkert.<xptr type="synopticView_msVersions" xml:id="KG_11900ms"/> Vinder du en stor sejr, så vil glæden –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>Men ifald et nederlag &dash;</p></HIS:hisSp>
+<lb/><p>Men ifald et nederlag –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Prinsesse Helena</speaker>.</HIS:spOpener>
-<lb/><p>Da vil skrækken gøre det. <HIS:hisDel rend="overstrike">&dash;</HIS:hisDel></p></HIS:hisSp>
+<lb/><p>Da vil skrækken gøre det. <HIS:hisDel rend="overstrike">–</HIS:hisDel></p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Ikke mere om dette. Mener du engelen med
 <lb/>flammesværdet baner mig vej, hvis jeg går
@@ -208,8 +202,8 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><p>Kristus er god. Bønner skal sendes op for
 <lb/>dig. Lovet være de hellige mænd! Lovet være
 <lb/>martyrerne! Blodoffer til soning, Julian!
-<lb/>Giv mig de fangne unge kvinder. Jeg vil om&typHyp;
-<lb/>vende dem. De skal bøje sig ind under kor&typHyp;
+<lb/>Giv mig de fangne unge kvinder. Jeg vil om‐
+<lb/>vende dem. De skal bøje sig ind under kor‐
 <lb/>sets nåde.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Alamanerne bøjer sig ikke did under.</p></HIS:hisSp>
@@ -220,9 +214,9 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><p>Så skal de dø. Som en sød røg skal blodet
 <lb/>stige op til ham, den højt velsignede.
 <lb/>Hans herlighed skal øges, hans pris skal
-<lb/>forkyndes ved mig. Og jeg; &dash; forynget,
-<lb/>forynget, Julian &dash;; midlet er usvigeligt;
-<lb/>et bad i ungt jomfrublod &dash;</p></HIS:hisSp>
+<lb/>forkyndes ved mig. Og jeg; – forynget,
+<lb/>forynget, Julian –; midlet er usvigeligt;
+<lb/>et bad i ungt jomfrublod –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Du forbryder dig!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Prinsesse Helena</speaker>.
@@ -237,12 +231,12 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><p>Farvel, min elskede!</p>
 <lb/><HIS:hisStage>(ud i baggrunden.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Prinsesse Helena</speaker>.</HIS:spOpener>
-<lb/><p>Min helt, min cæsar, &dash; farvel! <HIS:hisStage>(råber ud
+<lb/><p>Min helt, min cæsar, – farvel! <HIS:hisStage>(råber ud
 <lb/>til venstre.)</HIS:hisStage> Myrrha, Myrrha, lad presterne
 <lb/>komme! Alle mine kvinder skal samles i bøn
-<lb/>og anråbelse. <HIS:hisStage>(med oprakte hænder.)</HIS:hisStage> O, du vel&typHyp;
-<lb/>signede! O, du hærskarernes Gud, &dash; du, som har
-<lb/>dommen og sejren i din hånd, &dash; vær med os; vær
+<lb/>og anråbelse. <HIS:hisStage>(med oprakte hænder.)</HIS:hisStage> O, du vel‐
+<lb/>signede! O, du hærskarernes Gud, – du, som har
+<lb/>dommen og sejren i din hånd, – vær med os; vær
 <lb/>med os! Din er magten og æren i evighed. Amen!</p>
 <lb/><HIS:hisStage>(ud til venstre.)</HIS:hisStage></HIS:hisSp>
 <lb/><figure type="bar"/></div>

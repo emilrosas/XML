@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -13,11 +7,11 @@
 <title level="s" type="main">Henrik Ibsens skrifter</title>
 <title level="s" type="sub">Diplomatarisk tekstarkiv</title>
 <title level="a" type="main">Kejser og Galilæer</title>
-<title level="a" type="sub">NBO Ms.4&deg; 1111c, bl. 117&dash;118</title>
-<title level="a" type="origYear">[1871&dash;1873]</title>
+<title level="a" type="sub">NBO Ms.4° 1111c, bl. 117–118</title>
+<title level="a" type="origYear">[1871–1873]</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt>
 <resp>Konvertering fra ekstern transkripsjon til prosjektspesifikk TEI XML</resp>
 <name xml:id="HIS-HB">Hilde Bøe</name>
@@ -45,12 +39,12 @@
 <sourceDesc><p>Denne filen bygger på KG41111_NBO.xml (KG41111_NBO-0208).</p></sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography><p>Manuskriptets grafiske oppsett finnes beskrevet i typografibeskrivelsen i KG41111_NBO.xml.</p>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -121,7 +115,7 @@
 <label xml:id="PERSEREN"/><item>En persisk overløber/Perseren</item>
 </list>
 </tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -158,22 +152,22 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Jul.</speaker></HIS:spOpener>
 <lb/><p>Gå, gå!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>Stemmen</speaker>.</HIS:spOpener>
-<lb/><p>Døv sangen, Julian! &dash;</p></HIS:hisSp>
+<lb/><p>Døv sangen, Julian! –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Sall.</speaker></HIS:spOpener>
-<lb/><p>O, så er det dog sandt &dash;</p></HIS:hisSp>
+<lb/><p>O, så er det dog sandt –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Jul.</speaker></HIS:spOpener>
-<lb/><p>Hvad er sandt &dash;</p></HIS:hisSp>
+<lb/><p>Hvad er sandt –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Sall.</speaker></HIS:spOpener>
 <lb/><p>At du lever hernede med en gådefuld fremmed som
-<lb/>er kommen til dig ved nattetid &dash;</p></HIS:hisSp>
+<lb/>er kommen til dig ved nattetid –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Jul.</speaker></HIS:spOpener>
 <lb/><p>Så det siger man<HIS:hisDel rend="overwritten">;</HIS:hisDel>? gå, gå.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Sall</speaker></HIS:spOpener>
-<lb/><p>Jeg besværger dig herre &dash; lad disse fordærvelige drømme fare,
-<lb/>kom med op i d<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>agen &dash;</p></HIS:hisSp>
+<lb/><p>Jeg besværger dig herre – lad disse fordærvelige drømme fare,
+<lb/>kom med op i d<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>agen –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>Stemmen</speaker>.
 <lb/><HIS:hisStage>(nede i trappen)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Al møje er spildt &dash;</p></HIS:hisSp>
+<lb/><p>Al møje er spildt –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>
 <lb/><HIS:hisStage>(ved åbningen)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Intet tegn, min Maximos?</p></HIS:hisSp>
@@ -182,12 +176,12 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <pb ed="faksBase" n="404"/>
 <pb n="[117]v"/>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Jul.</speaker></HIS:spOpener>
-<lb/><p>Gå, gå<note resp="editor"><q>å</q> mangler diakritisk tegn.</note> &dash; træder jeg ud af dette forrådnelsens hus, så kom&typHyp;
-<lb/>mer jeg som kejser &dash;</p></HIS:hisSp>
+<lb/><p>Gå, gå<note resp="editor"><q>å</q> mangler diakritisk tegn.</note> – træder jeg ud af dette forrådnelsens hus, så kom‐
+<lb/>mer jeg som kejser –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Sall.</speaker></HIS:spOpener>
-<lb/><p>O, jeg bønfalder dig &dash; hvad søger du her i mørket &dash;</p></HIS:hisSp>
+<lb/><p>O, jeg bønfalder dig – hvad søger du her i mørket –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Jul</speaker></HIS:spOpener>
-<lb/><p>Lys &dash; gå, gå!</p></HIS:hisSp>
+<lb/><p>Lys – gå, gå!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Sall.</speaker></HIS:spOpener>
 <lb/><p>Nøler Cæsar, så frygter jeg han finder vejen spærret</p>
 <lb/><HIS:hisStage>(han går ud <HIS:hisDel rend="overwritten"><unclear>i</unclear></HIS:hisDel>gennem gangen til venstre)</HIS:hisStage></HIS:hisSp>
@@ -195,14 +189,14 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><p>Tal, min Maximos</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>M. Max.</speaker>
 <lb/><HIS:hisStage>(stiger op med offerbind om</HIS:hisStage></HIS:spOpener>
-<lb/><p>Al møje er spildt &dash; &dash;; hvi døver du ikke kirkesangen
-<lb/>den <HIS:hisDel rend="overstrike">de</HIS:hisDel> dræber alle varsler &dash; de vil tale men kan ikke
-<lb/>komme til orde &dash;</p></HIS:hisSp>
+<lb/><p>Al møje er spildt – –; hvi døver du ikke kirkesangen
+<lb/>den <HIS:hisDel rend="overstrike">de</HIS:hisDel> dræber alle varsler – de vil tale men kan ikke
+<lb/>komme til orde –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Jul</speaker></HIS:spOpener>
 <lb/><p>Taushed, mørke, og jeg kan ikke vente længer. Hvad
 <lb/>råder du mig til.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MAXIMOS"><HIS:spOpener><speaker>Max.</speaker></HIS:spOpener>
-<lb/><p>Gå<note resp="editor"><q>å</q> mangler diakritisk tegn.</note> i blinde &dash; kejser Julian &dash; lyset søger dig.</p></HIS:hisSp>
+<lb/><p>Gå<note resp="editor"><q>å</q> mangler diakritisk tegn.</note> i blinde – kejser Julian – lyset søger dig.</p></HIS:hisSp>
 </div>
 <pb ed="faksBase" n="405"/>
 <pb n="[118]r"/>

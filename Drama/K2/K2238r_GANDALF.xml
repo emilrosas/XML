@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -16,8 +10,8 @@
 <title level="a" type="sub">annen hovedversjon, TarkUiB NT238r (rollehefte, Gandalf)</title>
 <title level="a" type="origYear">[1853]</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Ingrid Falkenberg, Bjørg Harvey, Ellen Nessheim Wiger, Mette Witting</name></respStmt>
 <respStmt>
 <resp>Transkripsjon, februar 2000:</resp>
@@ -64,7 +58,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <list>
@@ -97,8 +91,8 @@
 <item>bindestrek: dobbel</item>
 </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -114,7 +108,7 @@
 </list>
 </tagUsage></namespace>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="rolleheftekoding">Rolleheftene er kodet med «føljetongkoding»: hvert rollehefte kodet som TEXT (i GROUP og TEXT). Tittelbladene kodet som vanlige tittelblad. Opplysninger om skuespillere etc. på tittelbladene er kodet i P-er i en PERFORMANCE-tag. «Avvikene» i forhold til rollenavn/replikk-systemet (se typografibeskrivelsen) er ikke tatt hensyn til i kodingen. I mangel av rolleliste, er id-attributtene plassert i TITLEPART.</tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 </encodingDesc>
 <profileDesc>
@@ -160,7 +154,7 @@ La inn igjen add i forbindelse med overskriving av annen hånd. Sjekket at alle 
 Omkoding av ms-endringer i henhold til revidert kodepraksis. * Forkortet figure til tom tagg. Ny plassering av sideskifts-tagger innført. SGREP-søk for kodeoversikt utført. Sjekket at del dekker kun faktisk kodet tekst. Sjekket tilføyelser. La inn manglende håndliste og samkjørte den med Tone Modalslis (fjernet punkt om hender i typografibeskrivelsen). Koder inn utelatte endringer vha. gjennomgang mot faksimiler. Gjort om brøker i measure til entiteter. Transkribert ordenstall-endelser mer velvillig. Korrektursjekk mot faksimiler må inkl. vurdering av nykodede endringer, hånd osv..</change>
 <change><date>13.09.04</date>
 <name>HG</name><title>NB!</title>
-Rettet træske til traske, rettet feilplassert pkt. innenfor 'stageRole'. Rettelser/påførsler av andre hender er foreløpig ikke kodet inn i fila - Dette bør gjøres (husk bl. annet å legge inn et apparat med at/komma ved &#91;&#93; der er forsilde).</change>
+Rettet træske til traske, rettet feilplassert pkt. innenfor 'stageRole'. Rettelser/påførsler av andre hender er foreløpig ikke kodet inn i fila - Dette bør gjøres (husk bl. annet å legge inn et apparat med at/komma ved [] der er forsilde).</change>
 <change><date>10.11.03</date>
 <name>HG</name><title>Kodeoppdatering</title>
 Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til unclear, fjernet gammel entitetskoding, validert.</change>
@@ -177,7 +171,7 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <text type="drama" xml:lang="dan-nob" rend="handwritten">
 <front>
 <titlePage>
-<pb/><HIS:hisDocImprint><measure>4&frac14; Ark.</measure></HIS:hisDocImprint>
+<pb/><HIS:hisDocImprint><measure>4¼ Ark.</measure></HIS:hisDocImprint>
 <docTitle>
 <lb/><titlePart xml:id="GANDALF">Gandalf,
 <lb/>Søkonge fra Norge,
@@ -233,7 +227,7 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <lb/><l part="F">J<HIS:hisDel rend="overwritten">a</HIS:hisDel><HIS:hisAdd place="inline" hand="h1">o</HIS:hisAdd>, saadan er det!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l><HIS:hisDel rend="overwritten">J</HIS:hisDel><HIS:hisAdd place="inline" hand="h1">S</HIS:hisAdd>a<HIS:hisDel rend="overwritten">,</HIS:hisDel><HIS:hisAdd place="inline" hand="h1">a</HIS:hisAdd> værer rede da med Sværd og Skjold,</l>
-<lb/><l>I har en Drot at hævne, &dash; jeg en Fader!</l></HIS:hisSp>
+<lb/><l>I har en Drot at hævne, – jeg en Fader!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="HROLLOUG"><HIS:spOpener><speaker>Hrolloug</speaker>.</HIS:spOpener>
 <lb/><l part="M">En Fader?</l></HIS:hisSp>
 <pb/><lb/><fw type="page" place="top-left">4.</fw>
@@ -276,7 +270,7 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <pb/><lb/><fw type="page" place="top-left">6.</fw>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l>Det svoer jeg dyrt ved alle Valhals Guder!</l>
-<lb/><l part="I">Og end engang jeg sværger &dash;</l></HIS:hisSp>
+<lb/><l part="I">Og end engang jeg sværger –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker></HIS:spOpener>
 <lb/><l part="F">Sværg ei, Gandalf!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
@@ -303,19 +297,19 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <lb/><HIS:hisSp who="ASGAUT"><HIS:spOpener><speaker>Asgaut</speaker></HIS:spOpener>
 <lb/><l>Om Folkets Guder og dets Kraft at værne. </l><HIS:hisStage>(gaaer.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.
-<lb/><HIS:hisStage>(alene; &dash; efter en Pause)</HIS:hisStage></HIS:spOpener>
+<lb/><HIS:hisStage>(alene; – efter en Pause)</HIS:hisStage></HIS:spOpener>
 <lb/><l>Han har ei nogen freidig Lid til mig</l>
 <lb/><l>Vel at han gik! Der ligger som en Tyngsel</l>
 <lb/><l>Paa mine Skuldre, naar han er mig nær<HIS:hisAdd place="inline" hand="h1">!</HIS:hisAdd></l>
 <lb/><l>Den gamle Steenmand med de barske Træk,</l>
 <lb/><l>Han ligner Asathor, som stod med Mjølnir</l>
 <lb/><l>Og Styrkebæltet hugget ud i Graasteen</l>
-<lb/><l>I Offerlunden ved min Faders Gaard<HIS:hisAdd place="inline" hand="h1">. &dash;</HIS:hisAdd></l>
+<lb/><l>I Offerlunden ved min Faders Gaard<HIS:hisAdd place="inline" hand="h1">. –</HIS:hisAdd></l>
 <pb/><lb/><fw type="page" place="top-left">8.</fw>
 <lb/><l>Min Faders Gaard! Hvo veed hvordan det nu</l>
 <lb/><l>Seer ud derhjemme paa de gamle Tomter<HIS:hisAdd place="inline" hand="h1">!</HIS:hisAdd></l>
 <lb/><l>Ja Fjeld og Skov er sagtens end de Samme<HIS:hisAdd place="inline" hand="h1">,</HIS:hisAdd></l>
-<lb/><l>Men Folkets Bryst? &dash; Har det de gamle Strænge?</l>
+<lb/><l>Men Folkets Bryst? – Har det de gamle Strænge?</l>
 <lb/><l>Nei, der er falden Meeldug over Tiden<HIS:hisAdd place="inline" hand="h1">,</HIS:hisAdd></l>
 <lb/><l>Og det er den som suger Nordens Saft<HIS:hisAdd place="inline" hand="h1">,</HIS:hisAdd></l>
 <lb/><l>Og tærer giftigt paa dets bedste Blomster<HIS:hisAdd place="inline" hand="h1">!</HIS:hisAdd></l>
@@ -327,7 +321,7 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <lb/><HIS:hisStage>(Han bemærker Høien.)</HIS:hisStage>
 <lb/><l>Hvad nu? En Kjæmpegrav? Den gjemmer nok</l>
 <lb/><l>En Landsmand fra de gamle, friske Dage<HIS:hisAdd place="inline" hand="h1">.</HIS:hisAdd></l>
-<lb/><l>En Kjæmpegrav i Syden! Det er billigt<HIS:hisAdd place="inline" hand="h1">, &dash;</HIS:hisAdd></l>
+<lb/><l>En Kjæmpegrav i Syden! Det er billigt<HIS:hisAdd place="inline" hand="h1">, –</HIS:hisAdd></l>
 <lb/><l>Thi Syden gav os jo vort Ulivssaar.</l>
 <lb/><l>Hvor her er vakkert! Jeg maa tænke paa</l>
 <pb/><lb/><fw type="page" place="top-right">9.</fw>
@@ -413,34 +407,34 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l>Men Du fortalte jo Din Fader lever.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
-<lb/><l part="I">Forbandt hans Saar og pleied ham &dash;</l></HIS:hisSp>
+<lb/><l part="I">Forbandt hans Saar og pleied ham –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="F">Og han?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l part="I">Men kom, Du maa dog see ham.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
-<lb/><l part="F">Nei &dash; nei, vent!</l>
+<lb/><l part="F">Nei – nei, vent!</l>
 <lb/><l>Vi træffe tidsnok sammen, tænker jeg.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l part="I">Ei blot i Norden hjemme.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="F">Norden? Saa</l>
-<lb/><l part="I">Du veed da &dash;</l></HIS:hisSp>
+<lb/><l part="I">Du veed da –</l></HIS:hisSp>
 <pb/><lb/><fw type="page" place="top-left">14.</fw>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
-<lb/><l part="I">At jeg ved første Øiekast &dash;</l></HIS:hisSp>
+<lb/><l part="I">At jeg ved første Øiekast –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="F">Og dog</l>
 <lb/><l part="I">Du blev ei bange?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l part="F">Bange! Hvorfor bange?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
-<lb/><l>Nu har han ikke sagt, &dash; ja har han ei &dash; <HIS:hisAdd place="inline" hand="h1">?</HIS:hisAdd></l></HIS:hisSp>
+<lb/><l>Nu har han ikke sagt, – ja har han ei – <HIS:hisAdd place="inline" hand="h1">?</HIS:hisAdd></l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
-<lb/><l part="I">Hvi skulde jeg vel da &dash;</l></HIS:hisSp>
+<lb/><l part="I">Hvi skulde jeg vel da –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="F">Nei vist, nei vist<HIS:hisAdd place="inline" hand="h1">.</HIS:hisAdd></l>
-<lb/><l>Men hine Fremmede<HIS:hisAdd place="inline" hand="h1">,</HIS:hisAdd> som brændte Borgen <HIS:hisAdd place="inline" hand="h1">&dash; ?</HIS:hisAdd></l></HIS:hisSp>
+<lb/><l>Men hine Fremmede<HIS:hisAdd place="inline" hand="h1">,</HIS:hisAdd> som brændte Borgen <HIS:hisAdd place="inline" hand="h1">– ?</HIS:hisAdd></l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l part="I">Hvad de?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
@@ -453,10 +447,10 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <lb/><HIS:hisStage>(hurtigt.)</HIS:hisStage></HIS:spOpener>
 <lb/><l part="I">Nei, lad kun være.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
-<lb/><l>Og tage Blodhævn, som I kalde det &dash;</l></HIS:hisSp>
+<lb/><l>Og tage Blodhævn, som I kalde det –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
-<lb/><l>Ha, Blodhævn! Tak! Du minde<HIS:hisDel rend="overwritten">t</HIS:hisDel><HIS:hisAdd place="inline" hand="h1">r</HIS:hisAdd> mig om Ordet<HIS:hisAdd place="inline" hand="h1">, &dash;</HIS:hisAdd></l>
-<lb/><l part="I">Fast havde jeg forglemt &dash;</l></HIS:hisSp>
+<lb/><l>Ha, Blodhævn! Tak! Du minde<HIS:hisDel rend="overwritten">t</HIS:hisDel><HIS:hisAdd place="inline" hand="h1">r</HIS:hisAdd> mig om Ordet<HIS:hisAdd place="inline" hand="h1">, –</HIS:hisAdd></l>
+<lb/><l part="I">Fast havde jeg forglemt –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l part="I">Det er en hæslig Skik.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.
@@ -503,7 +497,7 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="F">Hvad mener Du?</l>
 <pb/><lb/><fw type="page" place="top-left">18.</fw>
-<lb/><l part="I">Jeg styrer hjemad &dash;</l></HIS:hisSp>
+<lb/><l part="I">Jeg styrer hjemad –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l>har Du nogen Skjald?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
@@ -513,7 +507,7 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l part="I">Din Skjald.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
-<lb/><l part="F">Og Du? &dash; Du kunde følge med os <HIS:hisAdd place="inline" hand="h1">&dash;</HIS:hisAdd></l>
+<lb/><l part="F">Og Du? – Du kunde følge med os <HIS:hisAdd place="inline" hand="h1">–</HIS:hisAdd></l>
 <lb/><l part="I">Forlade Hjem og Fader?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l part="I">Jeg troer Du tager det for Alvor.</l></HIS:hisSp>
@@ -533,10 +527,10 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <lb/><l part="I">Paa Intet?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="F">Ja, jeg veed ei selv paa hvad<HIS:hisAdd place="inline" hand="h1">!</HIS:hisAdd></l>
-<lb/><l>Dog jo jeg veed &dash; og Du skal høre det<HIS:hisAdd place="inline" hand="h1">:</HIS:hisAdd></l>
+<lb/><l>Dog jo jeg veed – og Du skal høre det<HIS:hisAdd place="inline" hand="h1">:</HIS:hisAdd></l>
 <lb/><l>Jeg tænker paa hvordan Du plante vil</l>
 <lb/><l>I Norden Dine Blomster<HIS:hisAdd place="inline" hand="h1">,</HIS:hisAdd> og imens</l>
-<lb/><l>Saa falder mig min egen Tro isinde<HIS:hisAdd place="inline" hand="h1">, &dash;</HIS:hisAdd></l>
+<lb/><l>Saa falder mig min egen Tro isinde<HIS:hisAdd place="inline" hand="h1">, –</HIS:hisAdd></l>
 <lb/><l>Der er et Ord deri<HIS:hisAdd place="inline" hand="h1">,</HIS:hisAdd> som aldrig før</l>
 <lb/><l>Jeg fatte<HIS:hisDel rend="overwritten">d</HIS:hisDel><HIS:hisAdd place="inline" hand="h1">t</HIS:hisAdd> har; nu har Du lært mig det.</l></HIS:hisSp>
 <pb/><lb/><fw type="page" place="top-left">20.</fw>
@@ -545,15 +539,15 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="F">Der siges at Valfader</l>
 <lb/><l>Faaer kun en Halvdeel af de slagne Kjæmper<HIS:hisAdd place="inline" hand="h1">,</HIS:hisAdd></l>
-<lb/><l>Den anden Halvdeel hører Freia til<HIS:hisAdd place="inline" hand="h1">, &dash;</HIS:hisAdd></l>
+<lb/><l>Den anden Halvdeel hører Freia til<HIS:hisAdd place="inline" hand="h1">, –</HIS:hisAdd></l>
 <lb/><l>Det har jeg aldrig kunnet ret begribe<HIS:hisAdd place="inline" hand="h1">,</HIS:hisAdd></l>
-<lb/><l>Men nu, nu fatter jeg &dash; jeg er jo selv</l>
+<lb/><l>Men nu, nu fatter jeg – jeg er jo selv</l>
 <lb/><l>En slagen Kjæmpe<HIS:hisDel rend="overwritten">,</HIS:hisDel><HIS:hisAdd place="inline" hand="h1">og</HIS:hisAdd> min bedste Halvdeel</l>
 <lb/><l part="I">Blev Freias Eiendom.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l part="F">Hvad skal det sige?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
-<lb/><l part="I">Nu kort og godt, saa vid &dash;</l></HIS:hisSp>
+<lb/><l part="I">Nu kort og godt, saa vid –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l>Min Fader venter, jeg maa gaa, Farvel!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
@@ -596,8 +590,8 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l>Jeg vilde dulgt <HIS:hisDel rend="overstrike" hand="h1"><gap/></HIS:hisDel> det for Dig, derfor gik jeg</l>
 <lb/><l>At kalde Folket ned igjen til Snekken</l>
-<lb/><l>Og seile bort; Du skulde aldrig vidst &dash;</l>
-<lb/><l>Dog Hornet varsler<HIS:hisDel rend="overwritten">,</HIS:hisDel><HIS:hisAdd place="inline" hand="h1">at</HIS:hisAdd> det er forsilde<HIS:hisAdd place="inline" hand="h1">, &dash;</HIS:hisAdd></l>
+<lb/><l>Og seile bort; Du skulde aldrig vidst –</l>
+<lb/><l>Dog Hornet varsler<HIS:hisDel rend="overwritten">,</HIS:hisDel><HIS:hisAdd place="inline" hand="h1">at</HIS:hisAdd> det er forsilde<HIS:hisAdd place="inline" hand="h1">, –</HIS:hisAdd></l>
 <lb/><l part="I">De komme hid.</l></HIS:hisSp>
 <pb/><lb/><fw type="page" place="top-right">23.</fw>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
@@ -625,7 +619,7 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 </div>
 <div type="scene" n="6">
 <lb/><head>6<hi>te</hi> Scene</head>
-<lb/><HIS:hisStage><HIS:stageRole>De Forrige</HIS:stageRole>. <HIS:stageRole who="ASGAUT">Asgaut</HIS:stageRole>, Hemming og Vikin&typHyp;
+<lb/><HIS:hisStage><HIS:stageRole>De Forrige</HIS:stageRole>. <HIS:stageRole who="ASGAUT">Asgaut</HIS:stageRole>, Hemming og Vikin‐
 <lb/>gerne, der føre Roderik mellem sig.</HIS:hisStage>
 <lb/><HIS:hisSp who="ASGAUT"><HIS:spOpener><speaker>Asgaut</speaker>.</HIS:spOpener>
 <lb/><l>Og slap derfra med Livet har han sagt</l></HIS:hisSp>
@@ -640,7 +634,7 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <lb/><l>Har Kvindens glatte Tunge daaret ham?</l></HIS:hisSp>
 <pb/><lb/><fw type="page" place="top-right">25.</fw>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
-<lb/><l part="I">Nu ligemeget, jeg har sagt &dash;</l></HIS:hisSp>
+<lb/><l part="I">Nu ligemeget, jeg har sagt –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ASGAUT"><HIS:spOpener><speaker>Asgaut</speaker></HIS:spOpener>
 <lb/><l part="I">Da har den faaet Banesaaret.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
@@ -668,9 +662,9 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker></HIS:spOpener>
 <lb/><l>Thi jorde<HIS:hisDel rend="overwritten">t</HIS:hisDel><HIS:hisAdd place="inline" hand="h1">d</HIS:hisAdd> jeg ham paa hans Fædres Viis</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
-<lb/><l part="I">Da han er høilagt, saa &dash;</l></HIS:hisSp>
+<lb/><l part="I">Da han er høilagt, saa –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
-<lb/><l part="I">Der offrer Alt for den som &dash;</l></HIS:hisSp>
+<lb/><l part="I">Der offrer Alt for den som –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="F">Jeg forstaaer ei?</l>
 <lb/><l part="I">Du troer ei, jeg forstaaer.</l>
@@ -688,7 +682,7 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <lb/><l>At hævne Drotten eller falde selv<HIS:hisAdd place="inline" hand="h1">.</HIS:hisAdd></l>
 <lb/><l>Nu vel, han der er fri, jeg gaaer til Valhal<HIS:hisAdd place="inline" hand="h1">!</HIS:hisAdd></l></HIS:hisSp>
 <lb/><HIS:hisSp who="ASGAUT"><HIS:spOpener><speaker>Asgaut</speaker>.</HIS:spOpener>
-<lb/><l part="F">Det er Din Agt, Du vil &dash;</l></HIS:hisSp>
+<lb/><l part="F">Det er Din Agt, Du vil –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l>I holde en af mine Snekker rede</l>
 <lb/><l>Med spændte Seil og Baalet tændt i Stavnen<HIS:hisAdd place="inline" hand="h1">,</HIS:hisAdd></l>
@@ -712,9 +706,9 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <lb/><l>Som Drot at værne om vort Kjæmpeliv.</l>
 <lb/><l>Men Kraften svigter mig! Kom Asgaut, Du</l>
 <lb/><l>Skal tage Kongespiret af min Haand<HIS:hisAdd place="inline" hand="h1">!</HIS:hisAdd></l>
-<lb/><l>Du er en Kjæmper af det ægte Malm<HIS:hisDel rend="overwritten">!</HIS:hisDel><HIS:hisAdd place="inline" hand="h1">, &dash;</HIS:hisAdd></l>
+<lb/><l>Du er en Kjæmper af det ægte Malm<HIS:hisDel rend="overwritten">!</HIS:hisDel><HIS:hisAdd place="inline" hand="h1">, –</HIS:hisAdd></l>
 <pb/><lb/><fw type="page" place="top-right">29.</fw>
-<lb/><l>Paa mig har Sydens Gift alt længe tæret<HIS:hisAdd place="inline" hand="h1">, &dash;</HIS:hisAdd></l>
+<lb/><l>Paa mig har Sydens Gift alt længe tæret<HIS:hisAdd place="inline" hand="h1">, –</HIS:hisAdd></l>
 <lb/><l>Men kan jeg ikke <emph hand="h1">leve</emph> for mit Folk,</l>
 <lb/><l part="I">Saa kan jeg <emph hand="h1">dø</emph> for det!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
@@ -722,9 +716,9 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="I">Hvordan? Til Døden Dig?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
-<lb/><l>Saa blegned Straalen &dash; Blomsten maatte dø.</l></HIS:hisSp>
+<lb/><l>Saa blegned Straalen – Blomsten maatte dø.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
-<lb/><l>O, har jeg fatted Dig! Du kunde &dash; ha!</l>
+<lb/><l>O, har jeg fatted Dig! Du kunde – ha!</l>
 <lb/><l>Saa er mid Løfte tifold ulyksaligt<HIS:hisAdd place="inline" hand="h1">!</HIS:hisAdd></l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l part="I">Vi mødes atter! </l></HIS:hisSp>
@@ -734,7 +728,7 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <lb/><l><emph hand="h1">Jeg</emph> gaaer til Valhal; taus jeg sætter mig</l>
 <pb/><lb/><fw type="page" place="top-left">30.</fw>
 <lb/><l>Ved Bordets Ende nederst imod Døren;</l>
-<lb/><l>Thi Hallens Lystighed er ei for mig &dash;</l></HIS:hisSp>
+<lb/><l>Thi Hallens Lystighed er ei for mig –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ASGAUT"><HIS:spOpener><speaker>Asgaut</speaker>.</HIS:spOpener>
 <lb/><l part="I">Vil nok misunde Dig.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.
@@ -766,7 +760,7 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="I">Hun rædded ham!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker></HIS:spOpener>
-<lb/><l part="I">Jeg voved ei &dash;</l></HIS:hisSp>
+<lb/><l part="I">Jeg voved ei –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="F">Men Kjæmpehøien der?</l></HIS:hisSp>
 <pb/><lb/><fw type="page" place="top-left">32.</fw>
@@ -775,12 +769,12 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="M">Hvor gaaer Du?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ASGAUT"><HIS:spOpener><speaker>Asgaut</speaker>.</HIS:spOpener>
-<lb/><l>Nu raade Balder gjennem Dig &dash; Farvel! </l><HIS:hisStage>(gaaer)</HIS:hisStage></HIS:hisSp>
+<lb/><l>Nu raade Balder gjennem Dig – Farvel! </l><HIS:hisStage>(gaaer)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l>Ja, Balder raader gjennem Dig, min Blanka<HIS:hisAdd place="inline" hand="h1">!</HIS:hisAdd></l>
 <lb/><l>Nu føler jeg mit Vikinglivs Betydning<HIS:hisAdd place="inline" hand="h1">!</HIS:hisAdd></l>
 <lb/><l>Det var ei ene Lyst til Ry og Rigdom<HIS:hisAdd place="inline" hand="h1">,</HIS:hisAdd></l>
-<lb/><l>Som drev mig bort fra mine Fædres Hjem<HIS:hisAdd place="inline" hand="h1">; &dash;</HIS:hisAdd></l>
+<lb/><l>Som drev mig bort fra mine Fædres Hjem<HIS:hisAdd place="inline" hand="h1">; –</HIS:hisAdd></l>
 <lb/><l>Nei, hvad mig leded var en lønlig Længsel</l>
 <lb/><l>En stille Higen efter Balder. See</l>
 <lb/><l>Nu er min Længsel stillet; hjem vi fare;</l>
@@ -797,7 +791,7 @@ Erstattet div1/div2 med bare div, lagt rend-attr. til del og reason-attr. til un
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="M">Men Du?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker>.</HIS:spOpener>
-<lb/><l>Min Kongestol er Graven &dash; und mig den!</l></HIS:hisSp>
+<lb/><l>Min Kongestol er Graven – und mig den!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>
 <lb/><HIS:hisStage>(og Blanka styrte sig tause i Roderiks Arme)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker>

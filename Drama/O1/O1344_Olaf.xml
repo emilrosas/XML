@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -16,8 +10,8 @@
 <title level="a" type="sub">første hovedversjon, TarkUiB NT344r (rollehefte, Olaf)</title>
 <title level="a" type="origYear">1856</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Bjørg Harvey, Helene Grønlien, Ellen Nessheim Wiger</name></respStmt>
 <respStmt>
 <resp>Kodeteknisk støtte og utvikling</resp>
@@ -65,7 +59,7 @@
 <title type="sub">Skuespil i 3 Akter</title>
 <docDate>1856</docDate>
 </msItem>
-<msItem n="Olaf"><locus>70 s</locus><title>&lquo;Olaf Liljekrans.&rquo; Skuespil i 3 Acter af Henr. Ibsen.</title></msItem>
+<msItem n="Olaf"><locus>70 s</locus><title>«Olaf Liljekrans.» Skuespil i 3 Acter af Henr. Ibsen.</title></msItem>
 </msContents>
 <physDesc><objectDesc><p>Rollehefte, ikke egenhendig. Se forøvrig Tone Modalslis manuskriptbeskrivelse.</p></objectDesc></physDesc>
 </HIS:hisMsDesc>
@@ -73,7 +67,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <list>
@@ -331,8 +325,8 @@
 </item>
 </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -347,7 +341,7 @@
 <label>THORGJERD</label><item>-/Thorgjerd, Thorgj, Thorg/Thorgjerd<note>Rolleheftene til Thorgjerd og Arne mangler; id-attributt for disse er derfor lagt inn i sp/stageRole ved første forekomst (replikk eller stageRole).</note></item>
 </list>
 </tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -450,13 +444,13 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <front>
 <titlePage>
 <docTitle>
-<lb/><titlePart type="main" xml:id="OLAF">&lquo;Olaf Liljekrans.&rquo;</titlePart>
+<lb/><titlePart type="main" xml:id="OLAF">«Olaf Liljekrans.»</titlePart>
 <lb/><titlePart type="desc">Skuespil i 3 Acter</titlePart></docTitle>
 <byline>
 <lb/>af
 <lb/><docAuthor>Henr. Ibsen</docAuthor>.</byline>
 </titlePage>
-<lb/><performance><p>&lquo;Olaf Liljekrans&rquo; udleveret til
+<lb/><performance><p>«Olaf Liljekrans» udleveret til
 <lb/><gap/>: Hr: Prom.
 <lb/>12/12 56. December 1856
 <lb/><unclear reason="writing">P Nielsen</unclear></p></performance>
@@ -473,10 +467,10 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker></HIS:spOpener>
 <lb/><l>han aldrig mere kom igjen.</l>
 <lb/><l part="I">Olaf der er han!</l></HIS:hisSp>
-<lb/><HIS:hisStage>(Olaf kommer langsomt frem mel&typHyp;
+<lb/><HIS:hisStage>(Olaf kommer langsomt frem mel‐
 <lb/>lem Klipperne i Baggrunden.
 <lb/>Han gaaer drømmende, med blottet
-<lb/>Hoved og Hænderne fulde af Blom&typHyp;
+<lb/>Hoved og Hænderne fulde af Blom‐
 <lb/>ster, som han sønderriver og strøer
 <lb/>paa Veien; hans hele Færd bærer
 <lb/>under det Følgende Præg af en
@@ -550,7 +544,7 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><l><HIS:hisDel rend="overstrike" hand="AI-2">Det er Bryllupsterner,</HIS:hisDel> <HIS:hisDel rend="overwritten">s</HIS:hisDel><HIS:hisAdd place="inline" hand="AI-2">S</HIS:hisAdd>nart kommer min
 <lb/>Brud!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
-<lb/><l part="I">I veed da &dash;?</l></HIS:hisSp>
+<lb/><l part="I">I veed da –?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.
 <lb/><HIS:hisStage>(vedblivende)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l part="F">Naar Dagen gaar under,</l>
@@ -582,7 +576,7 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><l>Som var der en Dødsens Vee og Vaande</l>
 <lb/><l>Lagt i det koglende Kvæde, der flød</l>
 <lb/><l>Lig en Strøm omkring mig! Knapt kunde
-<lb/>jeg aande! <HIS:hisAdd place="inline" hand="AI-2">&dash;</HIS:hisAdd></l>
+<lb/>jeg aande! <HIS:hisAdd place="inline" hand="AI-2">–</HIS:hisAdd></l>
 <lb/><l>Saa sært forvildet blev Sands og Sind<HIS:hisAdd place="inline" hand="AI-2">,</HIS:hisAdd></l>
 <lb/><l>Det var som om baade stærke og milde</l>
 <lb/><l>Magter drog mig i Lien ind,</l>
@@ -590,7 +584,7 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><l>Og stedse det lokked' og lød paa min Vei;</l>
 <lb/><l>Hvorlangt jeg reed, det mindes jeg ei.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
-<lb/><l>hun maatte jo ogsaa følge &dash;</l></HIS:hisSp>
+<lb/><l>hun maatte jo ogsaa følge –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><l>Da standsed' min Fole, jeg vaktes derved,</l>
 <lb/><l>Jeg saa mig om med undrende Blikke;</l>
@@ -619,13 +613,13 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <pb/>
 <lb/><l>Hun hvisked' i mit Øre et gaadefuldt Ord,</l>
 <lb/><l>Som aldrig gaaer mig af Minde:</l>
-<lb/><l>&lquo;Olaf Liljekrans! veed du hvor Lykken groe<unclear reason="binding">,</unclear></l>
+<lb/><l>«Olaf Liljekrans! veed du hvor Lykken groe<unclear reason="binding">,</unclear></l>
 <lb/><l>Veed du naar Fred <HIS:hisDel rend="overstrike">er</HIS:hisDel> for dig <HIS:hisAdd place="offline">er</HIS:hisAdd> at vinde?</l>
 <lb/><l>Mellem alle de Urter smaa paa Rad</l>
 <lb/><l>Maa du den Fagreste finde,</l>
 <lb/><l>Og plukke den sønder, Blad for Blad,</l>
 <lb/><l>Og drysse den ud for alle Vinde,</l>
-<lb/><l>Da &dash; først da skal du Lykken finde!&rquo;</l></HIS:hisSp>
+<lb/><l>Da – først da skal du Lykken finde!»</l></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
 <lb/><l part="I">I har sovet og drømt!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
@@ -636,7 +630,7 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><l>Der mødte jeg Alfepigen igjen.</l></HIS:hisSp>
 <pb/>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener>
-<lb/><l>har I vaagen fundet &dash;?</l></HIS:hisSp>
+<lb/><l>har I vaagen fundet –?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><l>Min Fæstensring tog jeg og skjød med den</l>
 <lb/><l>I Luften over hendes Hoved hen;</l>
@@ -650,7 +644,7 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><l part="F">Her er det godt og trygt</l>
 <lb/><l>At vugges i Drømme blide!</l>
-<lb/><HIS:hisStage>(Gaaer langsomt ind mellem Klippestyk&typHyp;
+<lb/><HIS:hisStage>(Gaaer langsomt ind mellem Klippestyk‐
 <lb/>kerne i Forgrunden tilhøire).</HIS:hisStage></HIS:hisSp>
 <pb/>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker> <HIS:hisStage>(alene)</HIS:hisStage>.</HIS:spOpener>
@@ -663,11 +657,11 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>
 <lb/><HIS:hisStage>(idet han sønderriver nogle Blomster, ha<unclear reason="binding">n</unclear>
 <lb/>har plukket udenfor)</HIS:hisStage>.</HIS:spOpener>
-<lb/><l>&lquo;Mellem alle de Urter smaa paa Rad</l>
+<lb/><l>«Mellem alle de Urter smaa paa Rad</l>
 <lb/><l>Maa du den Fagreste finde,</l>
 <lb/><l>Og plukke den sønder, Blad for Blad,</l>
-<lb/><l>Og drysse den ud for alle Vinde, &dash;</l>
-<lb/><l>Da &dash; først da skal du Lykken finde!&rquo;</l>
+<lb/><l>Og drysse den ud for alle Vinde, –</l>
+<lb/><l>Da – først da skal du Lykken finde!»</l>
 <lb/><l>Jeg faaer ikke Fred for de sælsomme Ord.</l>
 <lb/><l>Den fagreste Urt? Hvor er det den groer?</l>
 <pb/>
@@ -695,21 +689,21 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Men siig mig, hvi frygter du
 <lb/>stedse for at komme hid?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener><p>jeg har dig igjen.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Har mig! Ak ja, Alfhild! Du li&typHyp;
+<lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Har mig! Ak ja, Alfhild! Du li‐
 <lb/>stige,<note>"listelige" skrevet med blyant over "stige".</note> du deilige Kvinde, vel har du
-<lb/>mig igjen! Mit Sind har du kog&typHyp;
+<lb/>mig igjen! Mit Sind har du kog‐
 <lb/>let saa dybt, saa dybt, før mig
 <lb/>hvorhen og saa langt du vil, i
 <lb/>Bjerget, dybt under Haugen, i den
 <lb/>grønne Græsvold, hvor Slaat og
-<lb/>Sang klinge saa lifligt ved Kvælds&typHyp;
+<lb/>Sang klinge saa lifligt ved Kvælds‐
 <lb/>tid, paa Elvens Bund, dybt under
 <lb/>Fossen, hvor der er Harper for de
 <lb/>store, klagende Kvæder; hvor dit
 <lb/>Hjem er, der er jeg rede til at
 <lb/>færdes.</p></HIS:hisSp>
 <pb/>
-<lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener><p><HIS:hisDel rend="overwritten">m</HIS:hisDel>Mener du jeg er en Alf eller &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener><p><HIS:hisDel rend="overwritten">m</HIS:hisDel>Mener du jeg er en Alf eller –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Du er den Fagreste i Verden; vær
 <lb/>for mig hvad du vil, naar du kun
 <lb/>er min.</p></HIS:hisSp>
@@ -722,49 +716,49 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/>mig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener><p>Har jeg?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Gjennem Lien reed jeg, dybt dernede
-<lb/>hvor Elven løber, &dash; det var Nat, sæl&typHyp;
-<lb/>somt lød Sange og klagende Kvæ&typHyp;
-<lb/>der rundt om mig &dash; &dash; &dash; &dash; &dash; &dash; &dash;</p>
+<lb/>hvor Elven løber, – det var Nat, sæl‐
+<lb/>somt lød Sange og klagende Kvæ‐
+<lb/>der rundt om mig – – – – – – –</p>
 <lb/><p>Forvildet blev mig min Sti, jeg kom
 <lb/>langt, langt ind mellem Bjergene,
 <pb/>
 <lb/>jeg fandt den deilige Dal, hvor ingen
 <lb/>Fod har traadt, hvor intet Øie har
-<lb/>forlystet sig før mit &dash; &dash; &dash; &dash; &dash; &dash;
+<lb/>forlystet sig før mit – – – – – –
 <lb/>Tungt faldt en Slummer paa mig
 <lb/>derinde; men Alfekvinderne legte
 <lb/>imens og de drog mig ind i Legen
-<lb/>&dash; &dash; &dash; &dash; &dash; &dash;</p>
-<lb/><p>Men da jeg vaagnede var der Be&typHyp;
+<lb/>– – – – – –</p>
+<lb/><p>Men da jeg vaagnede var der Be‐
 <lb/>drøvelse i mit Sind; hjemad reed'
 <lb/>jeg; men dernede kunde jeg ikke
 <lb/>trives mere; det bares mig for som
-<lb/>jeg havde glemt efter mig det Rige&typHyp;
+<lb/>jeg havde glemt efter mig det Rige‐
 <lb/>ste og Bedste i Livet, som om en
 <lb/>herlig Skat var mig beskaaret,
-<lb/>ifald jeg kun søgte og fandt den &dash;
-<lb/>&dash; &dash; &dash; &dash; &dash; &dash;</p>
+<lb/>ifald jeg kun søgte og fandt den –
+<lb/>– – – – – –</p>
 <lb/><p>Til Dalen maatte jeg op, før var
-<lb/>der ikke Fred for mig &dash; &dash; &dash; &dash; &dash; &dash; &dash;</p>
+<lb/>der ikke Fred for mig – – – – – – –</p>
 <lb/><p>Du kom mig imøde, fager og
 <pb/>
 <lb/>varm som i denne Stund; jeg greb
 <lb/>din Haand, jeg saa dig ind i Øiet
-<lb/>&dash; Himmel og Jord, Alverdens Deilig&typHyp;
-<lb/>hed var i dit Øie! &dash; &dash; &dash; &dash; &dash; &dash;</p>
-<lb/><p><HIS:hisDel rend="overstrike" hand="AI-2">Det var den første Drik! &dash;</HIS:hisDel> &dash; &dash;
-<lb/>Da glemte jeg Venner og Frænder! &dash; &dash; &dash;
+<lb/>– Himmel og Jord, Alverdens Deilig‐
+<lb/>hed var i dit Øie! – – – – – –</p>
+<lb/><p><HIS:hisDel rend="overstrike" hand="AI-2">Det var den første Drik! –</HIS:hisDel> – –
+<lb/>Da glemte jeg Venner og Frænder! – – –
 <lb/>Jeg kom der næste Nat, jeg favnede
 <lb/>din Midje, jeg krystede dig til mit
 <lb/>Bryst, Himlens Herlighed var i
-<lb/>dit Favnlag! &dash; &dash; &dash; &dash; &dash; &dash; &dash;</p>
-<lb/><p><HIS:hisDel rend="overstrike" hand="AI-2">Det var den anden Drik</HIS:hisDel> &dash; da glemte
-<lb/>jeg mit Christen-Navn og mine F<unclear reason="writing">æ</unclear>&typHyp;
-<lb/>dres Hjem &dash; &dash; &dash; &dash; &dash;</p>
-<lb/><p>Og jeg kom den tredie Nat, jeg maat&typHyp;
+<lb/>dit Favnlag! – – – – – – –</p>
+<lb/><p><HIS:hisDel rend="overstrike" hand="AI-2">Det var den anden Drik</HIS:hisDel> – da glemte
+<lb/>jeg mit Christen-Navn og mine F<unclear reason="writing">æ</unclear>‐
+<lb/>dres Hjem – – – – –</p>
+<lb/><p>Og jeg kom den tredie Nat, jeg maat‐
 <lb/>te komme, jeg kyssede dine røde
 <lb/>Læber, mine Øine aad sig ind i din
-<lb/>Sjæl &dash; Mere end Alverdens Herlig&typHyp;
+<lb/>Sjæl – Mere end Alverdens Herlig‐
 <lb/>hed var deri! Jeg glemte mere end
 <pb/>
 <lb/>Gud og Hjem, mere end Himmel
@@ -788,24 +782,24 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener><p>aldrig glemmer dem.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Javist, javist!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener><p>kræver Svar i mit Bryst.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Lidet er jeg det mægtig. Du spør&typHyp;
+<lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Lidet er jeg det mægtig. Du spør‐
 <lb/>ger om mit Hjem. Mit Hjem?
 <lb/>Har jeg havt et andet Hjem end
 <lb/>her, da mindes jeg kun ringe Ting
-<lb/>deraf. Det er mig alt som en Taa&typHyp;
+<lb/>deraf. Det er mig alt som en Taa‐
 <lb/>get Drøm, der glemmes i den Stund
-<lb/>vi vaagne. Dog, kom! langt derne&typHyp;
+<lb/>vi vaagne. Dog, kom! langt derne‐
 <lb/>de ligger en Bygd, der bæres det
 <lb/>mig for, at jeg færdedes før jeg
 <lb/>saa dig, der bæres det mig for at
 <lb/>mine Frænder bo. Hører du hvor
 <lb/>Elven maner og suser, lad os følge
-<lb/>den; ude paa Kanten, ved Fosse&typHyp;
+<lb/>den; ude paa Kanten, ved Fosse‐
 <lb/>faldet, der kan vi see over Bygden,
-<lb/>hvor jeg &dash; engang hørte hjemme;
+<lb/>hvor jeg – engang hørte hjemme;
 <pb/>
 <lb/>kom, kom!</p></HIS:hisSp>
-<lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener><p>Men tør jeg &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener><p>Men tør jeg –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Følg trøstig, jeg skal værne om
 <lb/>dig!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener><p>hvor du færdes.</p>
@@ -815,7 +809,7 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 </div>
 <div>
 <lb/><head>12<hi rend="raised">te</hi> Scene.</head>
-<lb/><HIS:hisStage><HIS:stageRole who="OLAF">Olaf</HIS:stageRole> (og) <HIS:stageRole who="ALFHILD">Alfhild</HIS:stageRole> (komme fra Høire i &typHyp;
+<lb/><HIS:hisStage><HIS:stageRole who="OLAF">Olaf</HIS:stageRole> (og) <HIS:stageRole who="ALFHILD">Alfhild</HIS:stageRole> (komme fra Høire i ‐
 <lb/>Baggrunden. Senere <HIS:stageRole who="FRUKIRSTEN">Fru Kirsten</HIS:stageRole>).</HIS:hisStage>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener><l>desmere jeg grunded' derpaa.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
@@ -828,8 +822,8 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><l>Og lod haant om Elskov og Fuglekvidder.</l>
 <lb/><l>Dog ligegodt, jeg river ud af Mindet
 <lb/>hvad jeg var!</l>
-<lb/><l>Lykkelig er jeg, det kan jeg forstaa &dash; &dash;</l>
-<lb/><l>Din Spaadom slog feil &dash; Lykken skulde
+<lb/><l>Lykkelig er jeg, det kan jeg forstaa – –</l>
+<lb/><l>Din Spaadom slog feil – Lykken skulde
 <lb/>jeg finde,</l>
 <lb/><l>Naar jeg fandt den Fagreste blandt
 <lb/>Urter smaa.</l>
@@ -855,7 +849,7 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><HIS:hisStage>(Griber hende lidenskabeligt i sine Arme).</HIS:hisStage>
 <lb/><l>Farvel jeg skikker til Bygden dernede!</l>
 <lb/><l>Heroppe vil jeg min Brudeseng rede;</l>
-<lb/><l>Farvel jeg skikker over Verden ud, &dash;</l>
+<lb/><l>Farvel jeg skikker over Verden ud, –</l>
 <lb/><l>Nu vil jeg favne min fagre Brud!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
 <lb/><l part="I">Olaf!</l></HIS:hisSp>
@@ -864,18 +858,18 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <pb/><lb/><fw type="page" place="top-left">24.</fw>
 <lb/>og smertelig Erindring)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l part="F">Min Brud! Hvad sagde jeg der!</l>
-<lb/><l>Siig mig Alfhild &dash; da jeg førstegang kom her &dash;</l>
-<lb/><l>Kan du &dash; kan du mindes den første Kvæld?</l>
-<lb/><l>Hvad var det jeg søgte &dash; hvad vilde jeg vel</l>
-<lb/><l>Kom jeg for at hente dig &dash; til &dash; Bygden ned?</l>
+<lb/><l>Siig mig Alfhild – da jeg førstegang kom her –</l>
+<lb/><l>Kan du – kan du mindes den første Kvæld?</l>
+<lb/><l>Hvad var det jeg søgte – hvad vilde jeg vel</l>
+<lb/><l>Kom jeg for at hente dig – til – Bygden ned?</l>
 <lb/><l>Var det for at bede til Bryllups jeg red?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
-<lb/><l>Jeg kan ei forstaa &dash;?</l></HIS:hisSp>
+<lb/><l>Jeg kan ei forstaa –?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><l>Vort Fæstensøl var jo drukket paa
 <lb/>Guldvik! Ei saa?</l>
 <lb/><l>Tre Uger efter skulde vort Bryllup stande,</l>
-<lb/><l>Men det tykkes mig at &dash; Nei det brænder
+<lb/><l>Men det tykkes mig at – Nei det brænder
 <lb/>i min Pande!</l>
 <lb/><l>Jeg vil ikke mere tænke derpaa!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
@@ -892,7 +886,7 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><l>Det vil mig ilde, det vil mane mig til
 <lb/>Bygden ned.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
-<lb/><l>Han taler, kunde jeg forstaa &dash;!</l></HIS:hisSp>
+<lb/><l>Han taler, kunde jeg forstaa –!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>
 <lb/><HIS:hisStage>(med stigende Heftighed)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l>Ja ja jeg kommer; men ene vil jeg ikke
@@ -926,9 +920,9 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener>
 <lb/><l>med Ingeborg, din Viv.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.
-<lb/><HIS:hisStage>(med et Skrig og ligesom paa engang op&typHyp;
+<lb/><HIS:hisStage>(med et Skrig og ligesom paa engang op‐
 <lb/>vaagnende)</HIS:hisStage></HIS:spOpener>
-<lb/><l>Ingeborg! &dash; Med det Navn har I brudt
+<lb/><l>Ingeborg! – Med det Navn har I brudt
 <lb/>mit Liv!</l>
 <lb/><l>Min Lykke var da idel Tant og Skrømt;</l>
 <lb/><l>Ak at I maatte mig Sligt bebude!</l>
@@ -945,7 +939,7 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/>I?</p></HIS:hisSp>
 <pb/>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener><p>vente nede under Lien.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/> <HIS:hisStage>(smerteligt, med et Blik paa Alf&typHyp;
+<lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/> <HIS:hisStage>(smerteligt, med et Blik paa Alf‐
 <lb/>hild)</HIS:hisStage>.</HIS:spOpener><p>Min Moder, jeg kan ikke.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener><p>Jeg har Jert Ord.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/> <HIS:hisStage>(følger med de Øvrige)</HIS:hisStage>.</HIS:spOpener></HIS:hisSp>
@@ -956,18 +950,18 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <div>
 <lb/><head>Anden Act.</head>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker> <HIS:hisStage>(alene)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Der kommer Olaf. Ifald jeg kun vidste at han &dash;</p></HIS:hisSp>
+<lb/><p>Der kommer Olaf. Ifald jeg kun vidste at han –</p></HIS:hisSp>
 <div>
 <lb/><head>2<hi rend="raised">den</hi>Scene.</head>
-<lb/><HIS:hisStage>Fru <HIS:stageRole who="FRUKIRSTEN">Kirsten</HIS:stageRole>. <HIS:stageRole who="OLAF">Olaf</HIS:stageRole> (kommer fra Hu&typHyp;
+<lb/><HIS:hisStage>Fru <HIS:stageRole who="FRUKIRSTEN">Kirsten</HIS:stageRole>. <HIS:stageRole who="OLAF">Olaf</HIS:stageRole> (kommer fra Hu‐
 <lb/>set i Høitidsdragt; han er bleg og
 <lb/>tankefuld).</HIS:hisStage>
-<lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/> <HIS:hisStage>(for sig selv)</HIS:hisStage>.</HIS:spOpener><p>Igaar og idag! &dash; Der
-<lb/>ligger kun en Midsommernat imel&typHyp;
+<lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/> <HIS:hisStage>(for sig selv)</HIS:hisStage>.</HIS:spOpener><p>Igaar og idag! – Der
+<lb/>ligger kun en Midsommernat imel‐
 <lb/>lem, og dog bæres det mig for som
 <lb/>baade Høst og Vinter var faldet
 <lb/>paa mit Sind, siden den Tid jeg
-<lb/>færdedes deroppe i Lierne &dash; hos
+<lb/>færdedes deroppe i Lierne – hos
 <lb/>hende, hos Alfhild! <HIS:hisStage>(bemærker
 <lb/>Fru Kirsten).</HIS:hisStage> Ak kjære Moder min,
 <pb/>
@@ -979,19 +973,19 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Min bedste Drøm er ude; lad os
 <lb/>ikke tænke mere derpaa.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Kirsten</speaker>.</HIS:spOpener><p>en lystig Dag, mener jeg.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Ikke lader det, som min Hæders&typHyp;
+<lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Ikke lader det, som min Hæders‐
 <lb/>dag huer Himlen.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Kirsten</speaker>.</HIS:spOpener><p>Hvi saa?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Det arter sig til Uveir; seer I
 <lb/>hvor tungt Skyerne trække op i
 <lb/>Vest?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Kirsten</speaker>.</HIS:spOpener><p>Du gaaer til Kirke ikvæld.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/> <HIS:hisStage>(gaaer nogle Gange frem og tilba&typHyp;
+<lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/> <HIS:hisStage>(gaaer nogle Gange frem og tilba‐
 <lb/>ge; endelig standser han foran sin
 <lb/>Moder og siger)</HIS:hisStage>:</HIS:spOpener>
 <pb/>
 <lb/><p>Om jeg havde fæstet en Fattigmands
-<lb/>Datter, uden Gods og uden Slægt, &dash;
+<lb/>Datter, uden Gods og uden Slægt, –
 <lb/>siig mig, min Moder, hvad havde
 <lb/>I saa gjort?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Kirsten</speaker>.</HIS:spOpener><p>Hvi spørger Du?</p></HIS:hisSp>
@@ -1029,7 +1023,7 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/>Moder! jeg har været forhexet. Jeg
 <lb/>har været i Alfekvindernes Leg;
 <lb/>salig og fro var jeg saalænge det
-<lb/>stod paa, men nu &dash; I lange, lan&typHyp;
+<lb/>stod paa, men nu – I lange, lan‐
 <lb/>ge Aar vil jeg tynges af Kummer
 <lb/>og Vee, saatidt jeg drages det til
 <lb/>Minde.</p></HIS:hisSp>
@@ -1038,7 +1032,7 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Kirsten</speaker>.</HIS:spOpener><p>agtede meer paa hende.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Jeg fatter det vel; heel vel min
 <lb/>Moder.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Kirsten</speaker>.</HIS:spOpener><p>vilde ramme dig, ifald &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Kirsten</speaker>.</HIS:spOpener><p>vilde ramme dig, ifald –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Vel sandt, vel sandt!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Kirsten</speaker>.</HIS:spOpener><p>tage Tiggerstaven ihaand.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Jeg veed det nok.</p></HIS:hisSp>
@@ -1056,7 +1050,7 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><l>Og trænges af Nød og Kvide!</l>
 <lb/><l>Snart maa jeg bryde hendes freidige Tro</l>
 <lb/><l>Og vække hende op af Drømme,</l>
-<lb/><l>Og saa &dash; ja saa maa vi skilles, vi To.</l>
+<lb/><l>Og saa – ja saa maa vi skilles, vi To.</l>
 <lb/><l>Arme Alfhild! saa bitter en Skaal maa
 <lb/>du tømme!</l>
 <lb/><HIS:hisStage>(Grublende).</HIS:hisStage>
@@ -1069,7 +1063,7 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><l>Men alt fra inat, da jeg atter kom hid,</l>
 <lb/><l>Da jeg sad til Høibords i mine Fædres
 <lb/>Stue,</l>
-<lb/><l>Da jeg gik at træde for min Moder frem &dash;</l>
+<lb/><l>Da jeg gik at træde for min Moder frem –</l>
 <lb/><HIS:hisStage>(afbrydende).</HIS:hisStage>
 <lb/><l>Ja, ja, jeg er født og baaren af en
 <lb/>Adelsfrue,</l>
@@ -1077,9 +1071,9 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/>sit Hjem.</l>
 <lb/><l>For Olaf Liljekrans vilde hun lidet sig
 <lb/>skikke.</l>
-<lb/><l>Jeg maa sige hende &dash; &dash; Nei nei jeg kan
+<lb/><l>Jeg maa sige hende – – Nei nei jeg kan
 <lb/>det ikke!</l>
-<lb/><l>Og dog &dash; ikvæld &dash; ja, forvist det maa skee,</l>
+<lb/><l>Og dog – ikvæld – ja, forvist det maa skee,</l>
 <lb/><l>Høre maa hun hvad der volder mig den
 <lb/>bittreste Vee!</l></HIS:hisSp>
 </div>
@@ -1111,7 +1105,7 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
 <lb/><l>sig for Bruden neie!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
-<lb/><l part="I">Har jeg sagt &dash;</l></HIS:hisSp>
+<lb/><l part="I">Har jeg sagt –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
 <lb/><l>bruser som en Skov i Storm!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker> <HIS:hisStage>(afsides)</HIS:hisStage>.</HIS:spOpener>
@@ -1128,7 +1122,7 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <pb/>
 <lb/><l>Var rundet i Fred deroppe paa Fjeldet.</l>
 <lb/><l>Din Fryd vil visne som et brækket Siv,</l>
-<lb/><l part="I">Din Tro vil dødes &dash;</l></HIS:hisSp>
+<lb/><l part="I">Din Tro vil dødes –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
 <lb/><l>hvad er det? siig frem!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
@@ -1166,7 +1160,7 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><l>Vel sandt; den megen Gammen og Glæde</l>
 <pb/>
 <lb/><fw type="page" place="top-left">40.</fw>
-<lb/><l>Sletingen veed om hernede. &dash;</l>
+<lb/><l>Sletingen veed om hernede. –</l>
 <lb/><l>Har du aldrig hørt om Haugkongens Skat,</l>
 <lb/><l>Der lyser som røden Guld hver Nat;</l>
 <lb/><l>Men vil du med Hænder tage derpaa,</l>
@@ -1179,7 +1173,7 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/>Stjerne,</l>
 <lb/><l>Men kun naar du seer det fra det Fjerne</l>
 <lb/><HIS:hisStage>(Bemærker Fru Kirsten).</HIS:hisStage>
-<lb/><l>Min Moder &dash; hun vil sige dig &dash; nu gaaer
+<lb/><l>Min Moder – hun vil sige dig – nu gaaer
 <lb/>jeg ind.</l>
 <lb/><l>Alle Engle drysse sin Fred i dit Sind!</l>
 <lb/><HIS:hisStage>(Han gaaer mod Huset, men standses
@@ -1190,7 +1184,7 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <pb/>
 <lb/><fw type="page" place="top-right">41.</fw>
 <lb/><HIS:hisStage>De Forrige. Fru Kirsten.</HIS:hisStage>
-<lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Kirsten</speaker>.</HIS:spOpener><p>Du har vel sagt hende &dash;?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Kirsten</speaker>.</HIS:spOpener><p>Du har vel sagt hende –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Alt hvad jeg mægtede at føre over
 <lb/>mine Læber har jeg sagt. Siig nu I
 <lb/>hende Resten og saa min Moder!
@@ -1219,10 +1213,10 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Kirsten</speaker>.</HIS:spOpener><p>Eders Svend og Alfhild.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener><p>Hemming!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/> <HIS:hisStage>(med et Udraab)</HIS:hisStage>.</HIS:spOpener><p>Alfhild!</p></HIS:hisSp>
-<lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener><p>nu forstaaer jeg &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener><p>nu forstaaer jeg –</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Gjæsterne</speaker>.</HIS:spOpener><p>Hemming og Alfhild! Fjeldjenten!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Alfhild! I vil gifte hende bort
-<lb/>med &dash; Nei, nei, det skal ikke skee.
+<lb/>med – Nei, nei, det skal ikke skee.
 <pb/>
 <lb/>Aldrig, aldrig!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener><p>ægte anden Mands Frille!</p></HIS:hisSp>
@@ -1240,35 +1234,35 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/>Moder! Ja ved alle Helgene! jeg
 <lb/>skal svare. Alfhild! du feiler!
 <lb/>Jeg er ikke din Brudgom. <HIS:hisStage>(pegende
-<lb/>paa Ingeborg).</HIS:hisStage> Der &dash; der staaer min
+<lb/>paa Ingeborg).</HIS:hisStage> Der – der staaer min
 <lb/>Brud.</p></HIS:hisSp>
 <pb/>
-<lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener><p>Hun! Din &dash; &dash;</p></HIS:hisSp>
-<lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/> <HIS:hisStage>(med stigende Ophidselse)</HIS:hisStage>.</HIS:spOpener><p>Alf&typHyp;
+<lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener><p>Hun! Din – –</p></HIS:hisSp>
+<lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/> <HIS:hisStage>(med stigende Ophidselse)</HIS:hisStage>.</HIS:spOpener><p>Alf‐
 <lb/>hild! gaa bort herfra! Gaa, gaa
 <lb/>langt ind paa Fjeldet igjen; det
 <lb/>tjener dig bedst. Jeg har været syg
-<lb/>og forvildet i Sind, da jeg gik der&typHyp;
-<lb/>oppe! Hvad jeg har sagt dig, min&typHyp;
+<lb/>og forvildet i Sind, da jeg gik der‐
+<lb/>oppe! Hvad jeg har sagt dig, min‐
 <lb/>des jeg lidet af! Jeg veed det ikke
 <lb/>og jeg vil ikke vide det! Hører
-<lb/>du, jeg vil ikke! &dash; Guldkronen kan
+<lb/>du, jeg vil ikke! – Guldkronen kan
 <lb/>du beholde! Behold Alt baade Sølv
 <lb/>og Guld, som du der er klædt i.
-<lb/>Mere ja tifold mere skal du faa &dash;
+<lb/>Mere ja tifold mere skal du faa –
 <lb/>Nu, hvi seer du saadan paa mig?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker> <HIS:hisStage>(lægger sin Pynt for Olafs Fødder)</HIS:hisStage>.</HIS:spOpener></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Kanhænde jeg bildte dig ind at du
-<lb/>skulde være min Brud ikvæld, kanhæn&typHyp;
+<lb/>skulde være min Brud ikvæld, kanhæn‐
 <lb/>de du troede mig! Kanhænde du
 <pb/>
 <lb/>tænkte, at Olaf Liljekrans vilde ægte
-<lb/>en &dash; en &dash; hvordan var det I kaldte
+<lb/>en – en – hvordan var det I kaldte
 <lb/>hende? <HIS:hisStage>(stamper med Foden).</HIS:hisStage> See
 <lb/>ikke saadan paa mig, siger jeg!
 <lb/>Jeg kjender Dig nok, du har forhexet
 <lb/>mig. Jeg glemte hvad Slægt jeg var
-<lb/>af; jeg glemte min Brud, min Fæste&typHyp;
+<lb/>af; jeg glemte min Brud, min Fæste‐
 <lb/>mø, hun som der staaer. <HIS:hisStage>(Griber
 <lb/>Alfhild med Heftighed i Armen)</HIS:hisStage>
 <lb/>See paa hende Alfhild! Ha, ha, ha!
@@ -1276,13 +1270,13 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker> <HIS:hisStage>(synker paa Knæ!)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Reis dig Alfhild! reis dig, siger jeg.
 <lb/>Dersom du tør sørge saa, da slaaer
-<lb/>jeg dig ihjel! &dash; Hvi er du ikke
+<lb/>jeg dig ihjel! – Hvi er du ikke
 <lb/>glad? Vær lystig og vild som jeg!
 <pb/>
-<lb/>&dash; Og I Andre! Hvi staa I der saa
+<lb/>– Og I Andre! Hvi staa I der saa
 <lb/>tause og see paa hinanden? Leer,
 <lb/>leer dog, saa det kan runge i
-<lb/>Gaarden! &dash; Alfhild! hvi svarer du
+<lb/>Gaarden! – Alfhild! hvi svarer du
 <lb/>ikke? Har jeg ikke sagt dig nok
 <lb/>endnu! Ha ha! saa siig hende et
 <lb/>Ord I Andre med! Læg ogsaa I et
@@ -1298,12 +1292,12 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/>Kom, Jomfru Ingeborg! Men først
 <pb/>
 <lb/>vil vi drikke, ja drikke, drikke!
-<lb/>Hid med Horn og Kruus &dash; nei der&typHyp;
-<lb/>inde &dash;! Tænd Lys i Kirken! Orge&typHyp;
-<lb/>let skal spille op til Dands &dash; ikke
-<lb/>klagelige Psalmer &dash; Fy, fy! nei
+<lb/>Hid med Horn og Kruus – nei der‐
+<lb/>inde –! Tænd Lys i Kirken! Orge‐
+<lb/>let skal spille op til Dands – ikke
+<lb/>klagelige Psalmer – Fy, fy! nei
 <lb/>Dands! <HIS:hisStage>(Lyn og Torden).</HIS:hisStage> Ha, ha!
-<lb/>Det spørges i Himlen, at Olaf Lilje&typHyp;
+<lb/>Det spørges i Himlen, at Olaf Lilje‐
 <lb/>krans holder Brudefærd!</p>
 <lb/><HIS:hisStage>(Styrter ud tilhøire).</HIS:hisStage></HIS:hisSp>
 </div>
@@ -1323,7 +1317,7 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
 <lb/><l>Hun har svunget Brudeblusset ved dit Gilde.</l></HIS:hisSp>
 <lb/><HIS:hisStage>(Hun styrter ud; Karlene ile til for at
-<lb/>hjælpe; en Deel af Taget styrter sam&typHyp;
+<lb/>hjælpe; en Deel af Taget styrter sam‐
 <lb/>men; Olaf sees høit oppe, omringet af
 <lb/>Luerne, idet Tæppet falder).</HIS:hisStage>
 <lb/><figure type="bar"/>
@@ -1335,38 +1329,38 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <div>
 <lb/><head>1<hi rend="raised">ste</hi> Scene.</head>
 <lb/><HIS:hisStage>Alfhild (sovende). Olaf (kommer
-<lb/>ned fra Lien tilhøire. Over Bryl&typHyp;
+<lb/>ned fra Lien tilhøire. Over Bryl‐
 <lb/>lupsklædningen bærer han en grov
 <lb/>Kofte.</HIS:hisStage>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><p>Her var det. Jeg kjender Grønningen
-<lb/>her ved Vandet. Hist under Linde&typHyp;
+<lb/>her ved Vandet. Hist under Linde‐
 <lb/>træet drømte jeg min sælsomme Drøm.
 <lb/>Paa Hældingen der ved Fjeldet stod
 <lb/>jeg, da Alfhild første Gang kom
 <lb/>mig imøde; lagde min Fæstensring
-<lb/>for Buestrængen og skjød; &dash; det
+<lb/>for Buestrængen og skjød; – det
 <lb/>Skud har været et Troldomsskud;
-<lb/>det rammede Skytten selv. &dash; &dash;
+<lb/>det rammede Skytten selv. – –
 <pb/>
 <lb/>Sælsomt! Naar jeg færdes heroppe,
 <lb/>høit over Bygden, da er det som en
 <lb/>anden Luft legte om mig, som
-<lb/>om et friskere Blod rullede i mi&typHyp;
+<lb/>om et friskere Blod rullede i mi‐
 <lb/>ne Aarer, som om jeg fik et andet
 <lb/>Sind, et andet Tænkesæt.</p>
 <lb/><p><HIS:hisAdd place="offline" hand="AI-2"><HIS:hisStage>(Sætter sig.)</HIS:hisStage></HIS:hisAdd> Hvor er hun nu?
-<lb/>Jeg skal, jeg vil finde hende i&typHyp;
+<lb/>Jeg skal, jeg vil finde hende i‐
 <lb/>gjen! Hidop maa hun komme;
 <lb/>hun har jo intet Hjem derude
 <lb/>i den kolde, vide Verden. Og jeg
-<lb/> &dash; er ikke ogsaa jeg en hjemløs Flygt&typHyp;
+<lb/> – er ikke ogsaa jeg en hjemløs Flygt‐
 <lb/>ning derude? Blev jeg ikke en
 <lb/>Fremmed i min Moders Huus, en
 <lb/>Fremmed mellem mine Frænder, fra
 <lb/>den første Stund jeg mødte hende?</p>
 <lb/><p>Er hun da en Hex, raader hun
-<lb/>over lønlige Kunster, som &dash; &dash; &dash; &dash;?
+<lb/>over lønlige Kunster, som – – – –?
 <pb/>
 <lb/>Min Moder! Hm! det bæres mig for,
 <lb/>som det ikke vilde baade mig vel at
@@ -1374,7 +1368,7 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/>blæser mig Tanker ind i Hjertet,
 <lb/>som ikke har tilhuse der. Nei,
 <lb/>nei, jeg vil finde Alfhild igjen,
-<lb/>afbede al min Uret, og saa &dash;</p>
+<lb/>afbede al min Uret, og saa –</p>
 <lb/><HIS:hisStage>(standser og seer ud tilvenstre).</HIS:hisStage></HIS:hisSp>
 </div>
 <div>
@@ -1396,13 +1390,13 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><HIS:hisSp who="THORGJERD"><HIS:spOpener><speaker>Thorgjerd</speaker>.</HIS:spOpener><p>Den Jagt er farlig!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>For Skytten?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="THORGJERD"><HIS:spOpener><speaker>Thorgjerd</speaker> <HIS:hisStage>(nikker)</HIS:hisStage>.</HIS:spOpener></HIS:hisSp>
-<lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Ja jeg sad just og tænkte det Sam&typHyp;
+<lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Ja jeg sad just og tænkte det Sam‐
 <lb/>me ved mig selv; det bares mig for
 <lb/>at jeg var bleven troldskudt paa
 <lb/>den Jagt.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="THORGJERD"><HIS:spOpener><speaker>Thorgjerd</speaker>.</HIS:spOpener><p>Farvel og god Lykke.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Faa du Last og Skam! Ønsker du
-<lb/>en Jægersmand til Lykke, sa kom&typHyp;
+<lb/>en Jægersmand til Lykke, sa kom‐
 <lb/>mer ham ikke Vildtet paa Skud.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="THORGJERD"><HIS:spOpener><speaker>Thorg</speaker>.</HIS:spOpener><p>Lykke har med sig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Du taler kløgtigt.</p></HIS:hisSp>
@@ -1412,7 +1406,7 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/>jeg veed.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="THORGJERD"><HIS:spOpener><speaker>Thorgj</speaker>.</HIS:spOpener><p>Hilsen fra dig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Agter du dig nedover<HIS:hisDel rend="overwritten">?</HIS:hisDel><HIS:hisAdd place="inline" hand="AI-2">til Bygden?</HIS:hisAdd></p></HIS:hisSp>
-<lb/><HIS:hisSp who="THORGJERD"><HIS:spOpener><speaker>Thorgj</speaker>.</HIS:spOpener><p>holder sit Bryllup &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="THORGJERD"><HIS:spOpener><speaker>Thorgj</speaker>.</HIS:spOpener><p>holder sit Bryllup –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Da skulde du været med inat; nu
 <lb/>er <HIS:hisAdd place="offline">nok</HIS:hisAdd> den bedste Gammen forbi.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="THORGJERD"><HIS:spOpener><speaker>Thorgj</speaker>.</HIS:spOpener><p>kommer tidsnok endda.</p></HIS:hisSp>
@@ -1423,25 +1417,25 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><HIS:hisSp who="THORGJERD"><HIS:spOpener><speaker>Thorgj</speaker>.</HIS:spOpener><p>den, som var inde.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Jeg kjender den, som maatte staa udenfor.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="THORGJERD"><HIS:spOpener><speaker>Thorgj</speaker>.</HIS:spOpener><p>det er Fattigmands Plads.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Jeg kjender den, som maatte staa uden&typHyp;
+<lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Jeg kjender den, som maatte staa uden‐
 <lb/>for, og som endda havde de baade
 <pb/>
 <lb/>bedre og værre end de, som var inde.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="THORGJERD"><HIS:spOpener><speaker>Thorgj</speaker>.</HIS:spOpener><p>min Strengeleg og saa &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="THORGJERD"><HIS:spOpener><speaker>Thorgj</speaker>.</HIS:spOpener><p>min Strengeleg og saa –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Du er Spillemand?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="THORGJERD"><HIS:spOpener><speaker>Thorgj</speaker>.</HIS:spOpener><p>naar jeg kommer nedover</p></HIS:hisSp>
 </div>
 <div>
 <lb/><head>3<hi rend="raised">die</hi> Scene.</head>
 <lb/><HIS:hisStage><HIS:stageRole who="OLAF">Olaf</HIS:stageRole>. <HIS:stageRole who="ALFHILD">Alfhild</HIS:stageRole>.</HIS:hisStage>
-<lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Ha, om det var &dash; Ja forvist, jeg
-<lb/>kan ikke tvivle derpaa. Alfhild sag&typHyp;
-<lb/>de jo selv, hendes Fader slog Strengele&typHyp;
+<lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Ha, om det var – Ja forvist, jeg
+<lb/>kan ikke tvivle derpaa. Alfhild sag‐
+<lb/>de jo selv, hendes Fader slog Strengele‐
 <lb/>gen saa lifligt, at det, engang hørt,
 <lb/>aldrig kunde glemmes igjen. Han
 <lb/>nævnte Jomfru Ingrid, som blev borte
 <lb/>paa Brullupskvælden for mange Aar
-<lb/>siden, &dash; der var en ung Spillemand, hed
+<lb/>siden, – der var en ung Spillemand, hed
 <lb/>Thorgjerd, han havde hende kjær, saa
 <lb/>blev der sagt. Mange underlige Sagn
 <lb/>gik siden om ham; stundom stod han
@@ -1449,22 +1443,22 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <pb/>
 <lb/>fagert, at Alle maatte græde derved; men
 <lb/>Ingen vidste hvor han havde tilhuse.
-<lb/>Alfhild &dash; ja, hun er hans Barn! Her
+<lb/>Alfhild – ja, hun er hans Barn! Her
 <lb/>er hun voxet op, her i denne øde Dal,
 <lb/>som Ingen har vidst af at sige i
 <lb/>mange Aar; og Ingrid, som forsvandt
-<lb/>&dash; han sagde jo <HIS:hisStage>(bemærker Alfhild).</HIS:hisStage>
+<lb/>– han sagde jo <HIS:hisStage>(bemærker Alfhild).</HIS:hisStage>
 <lb/>Alfhild! Der er hun! I Brudeklæderne
-<lb/>er hun flygtet herop. &dash; Her skal du
+<lb/>er hun flygtet herop. – Her skal du
 <lb/>altsaa vaagne efter Bryllupsnatten;
-<lb/>saa tung en Dag blev min Hæders&typHyp;
+<lb/>saa tung en Dag blev min Hæders‐
 <lb/>dag for dig! Du vilde ud i Livet,
 <lb/>sagde du! Du vilde lære Alverdens
 <lb/>Herlighed at kjende. Saa tung en
 <lb/>Vandring har du været paa; men
 <lb/>nu skal det Alt blive godt. Hun
 <lb/>rører sig; det er som hun vaander sig
-<lb/>i Sorg og Angst; &dash; naar du vaagner
+<lb/>i Sorg og Angst; – naar du vaagner
 <lb/>skal det være til Fryd og Glæde!</p></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top-left">56</fw>
@@ -1480,7 +1474,7 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><l>Tungt er du krænket, jeg har handlet dig
 <lb/>imod;</l>
 <lb/><l>Men jeg var dig dog altid i Hjertet god!</l>
-<lb/><l>Svag har jeg været, forblindet, bedaaret, &dash;</l>
+<lb/><l>Svag har jeg været, forblindet, bedaaret, –</l>
 <lb/><l>Det er deraf jeg har dig tildøde saaret!</l>
 <lb/><l>Alfhild! kan du forlade mig min Færd,</l>
 <lb/><l>Jeg sværger dig til jeg skal blive dig værd!</l>
@@ -1489,7 +1483,7 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><l>Skal svale Sorgen, som svider i dit Sind,</l>
 <pb/>
 <lb/><fw type="page" place="top-right">57.</fw>
-<lb/><l>Skal læge det Saar, som i Hjertet brænder. &dash;</l></HIS:hisSp>
+<lb/><l>Skal læge det Saar, som i Hjertet brænder. –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
 <lb/><l>Saa var ei den Anden!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
@@ -1533,7 +1527,7 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><l>Selv er jeg sænket i Jorden ned.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>
 <lb/><l>Alfhild! Dit Ord falder knusende tungt!</l>
-<lb/><l>O Gud! dit Sind var saa friskt og ungt &dash;</l>
+<lb/><l>O Gud! dit Sind var saa friskt og ungt –</l>
 <lb/><l>Forlad mig min Brøde, forglem din Vee!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
 <lb/><l>drømmer og sover</l></HIS:hisSp>
@@ -1557,8 +1551,8 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/> <HIS:hisStage>(seer sig om, og kalder med dæmpet
 <lb/>Stemme)</HIS:hisStage>.</HIS:spOpener><p>Alfhild! Alfhild! Intet
 <lb/>Sted er hun at see! Som en Fugl
-<lb/>smuttede hun mig afsyne inde i Sko&typHyp;
-<lb/>ven og jeg &dash;</p></HIS:hisSp>
+<lb/>smuttede hun mig afsyne inde i Sko‐
+<lb/>ven og jeg –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener><p>Olaf Lilie<HIS:hisDel rend="overwritten">j</HIS:hisDel>krans!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Ingeborg!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener><p>være redet i Forveien.</p></HIS:hisSp>
@@ -1571,7 +1565,7 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Det er saalidet min Agt!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener><p>sammen med mine Frænder?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Gjør jeg det? Det er jo tvertom dig
-<lb/>som &dash;</p></HIS:hisSp>
+<lb/>som –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener><p>saa jo nylig hele Følget.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Hvem? Hvem?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener><p>og vore Slægtninge.</p></HIS:hisSp>
@@ -1592,11 +1586,11 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeb</speaker>.</HIS:spOpener><p>Nogen vidste derom?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Ja!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeb</speaker>.</HIS:spOpener><p>Jeg ligesaa!</p></HIS:hisSp>
-<lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Men saa siig mig &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Men saa siig mig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeb</speaker>.</HIS:spOpener><p>følge mig for Alteret?</p></HIS:hisSp>
-<lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Ei, hvor kan du tro &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Ei, hvor kan du tro –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeb</speaker>.</HIS:spOpener><p>tales ærligt ved.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Nuvel da, det var derfor jeg &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Nuvel da, det var derfor jeg –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeb</speaker>.</HIS:spOpener><p>jeg gjorde ligesaa!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Du Ingeborg!</p></HIS:hisSp>
 <pb/>
@@ -1606,15 +1600,15 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Det er et Ord.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeb</speaker>.</HIS:spOpener><p>maa vi skilles ad.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Jeg forstaaer!</p></HIS:hisSp>
-<lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeb</speaker>.</HIS:spOpener><p>os sammen saa &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeb</speaker>.</HIS:spOpener><p>os sammen saa –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Ja, saa vilde det falde dig sværere
 <lb/>at blive fri for mig!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeb</speaker>.</HIS:spOpener><p>være min Brudesvend.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Og skulde Sligt times mig, saa vil
-<lb/>du nok være mig til Villie paa sam&typHyp;
+<lb/>du nok være mig til Villie paa sam‐
 <lb/>me Viis.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeb</speaker>.</HIS:spOpener><p>umildt sindet mod mig.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Vist ikke, jeg skal række dig Haan&typHyp;
+<lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Vist ikke, jeg skal række dig Haan‐
 <lb/>den hvor vi mødes!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeb</speaker>.</HIS:spOpener><p>bare ikke for Alteret.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/> <HIS:hisStage>(gaaer ind i Skoven tilhøire)</HIS:hisStage>.</HIS:spOpener></HIS:hisSp>
@@ -1631,7 +1625,7 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/>mellem Træerne, uden at bemærkes)</HIS:hisStage>.</HIS:spOpener></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/> <HIS:hisStage>(afsides)</HIS:hisStage>.</HIS:spOpener><p>Alfhild! Hjælp Gud! hvad er det!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener><p>hvo frelser og ægter hende?</p>
-<lb/><HIS:hisStage>(Hun seer sig om; Alle tie. &dash; Fru Kirsten
+<lb/><HIS:hisStage>(Hun seer sig om; Alle tie. – Fru Kirsten
 <lb/>hæver raskt Haanden til Tegn; Karlene
 <lb/>gribe Alfhild; i samme Øieblik
 <lb/>styrter Olaf frem paa Klippepynten
@@ -1640,15 +1634,15 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <pb/>
 <lb/><HIS:hisStage>(Han støder Karlene bort og afriver
 <lb/>hendes Baand. Alfhild synker med
-<lb/>et Skrig til h<HIS:hisDel rend="overwritten">e</HIS:hisDel>an<HIS:hisDel rend="overwritten">d</HIS:hisDel>s<HIS:hisDel rend="overstrike">es</HIS:hisDel> Bryst; han om&typHyp;
+<lb/>et Skrig til h<HIS:hisDel rend="overwritten">e</HIS:hisDel>an<HIS:hisDel rend="overwritten">d</HIS:hisDel>s<HIS:hisDel rend="overstrike">es</HIS:hisDel> Bryst; han om‐
 <lb/>slynger hende med den venstre
 <lb/>Arm og løfter den Høire truende i
 <lb/>Veiret).</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener><p>Beskjæmmet dig for evig.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Nei, jeg aftvætter den Skam og Skjænd&typHyp;
+<lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Nei, jeg aftvætter den Skam og Skjænd‐
 <lb/>sel, som jeg paadrog mig ved min
 <lb/>Færd mod hende! Min Brøde <HIS:hisDel rend="overstrike">Min</HIS:hisDel>
-<lb/>vil jeg udsone og gjøre mig selv lyk&typHyp;
+<lb/>vil jeg udsone og gjøre mig selv lyk‐
 <lb/>kelig derved! <HIS:hisStage>(fører Alfhild frem).</HIS:hisStage>
 <lb/>Ja, for Eder Alle nævner jeg høit og
 <lb/>lydt denne unge Kvinde som min
@@ -1656,30 +1650,30 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/>som er paasagt hende; kun jeg har
 <lb/>forbrudt mig. <HIS:hisStage>(Bøier Knæ for hende).</HIS:hisStage>
 <lb/>Og for din Fod beder jeg dig glemme og
-<lb/>forlade &dash;</p></HIS:hisSp>
+<lb/>forlade –</p></HIS:hisSp>
 <pb/>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fru Kirsten</speaker>.</HIS:spOpener><p>ikke længer Moder for dig</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Stor Sorg voldes mig derved, skjøndt
-<lb/>det er længesiden I var en sand Mo&typHyp;
+<lb/>det er længesiden I var en sand Mo‐
 <lb/>der for mig. I brugte mig kun til
 <lb/>at bygge Eders egen Stolthed iveiret,
 <lb/>jeg var svag og fandt mig deri.
-<lb/>Men nu har jeg vundet Kraft og Vil&typHyp;
+<lb/>Men nu har jeg vundet Kraft og Vil‐
 <lb/>lie; nu staaer jeg fast paa mine
-<lb/>Fødder og grunder min egen Lyk&typHyp;
+<lb/>Fødder og grunder min egen Lyk‐
 <lb/>kes Bygning.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Kirsten</speaker>.</HIS:spOpener><p>Men betænker du da ikke &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Kirsten</speaker>.</HIS:spOpener><p>Men betænker du da ikke –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Intet vil jeg <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>meer betænke; jeg veed
 <lb/>hvad jeg vil. Nu først forstaaer jeg
 <lb/>min sælsomme Drøm. Det blev mig
-<lb/>spaaet at jeg skulde finde den fa&typHyp;
+<lb/>spaaet at jeg skulde finde den fa‐
 <lb/>greste Blomst, at jeg skulde plukke
 <lb/>den sønder og drysse den ud for alle
 <lb/>Vinde. O, saaledes er det skeet! En
 <pb/>
 <lb/>Kvindes Hjerte er den fagreste Blomst
-<lb/>i Verden; alle de rige og gyldne Bla&typHyp;
-<lb/>de deri har jeg sønderrevet og drys&typHyp;
+<lb/>i Verden; alle de rige og gyldne Bla‐
+<lb/>de deri har jeg sønderrevet og drys‐
 <lb/>set ud for alle Vinde. Men trøst
 <lb/>dig Alfhild! Mangt et Sædefrø er
 <lb/>fulgt med, Sorgen har modnet det,
@@ -1707,13 +1701,13 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><HIS:hisStage><HIS:stageRole>Forrige</HIS:stageRole>. <HIS:stageRole who="THORGJERD">Thorgjerd</HIS:stageRole>.</HIS:hisStage>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener><p>Min Fader!</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Alle</speaker>.</HIS:spOpener><p>Hendes Fader!</p></HIS:hisSp>
-<lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Ja, ja Gubbe! Idag er her folk&typHyp;
+<lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker/></HIS:spOpener><p>Ja, ja Gubbe! Idag er her folk‐
 <lb/>somt og lysteligt herinde, og saa
 <lb/>skal det herefterdags blive ved.
 <lb/>Det er din Datters Bryllup, som holdes;
 <lb/>af Kjærlighed har hun kaaret sin
 <lb/>Fæstemand, om Kjærlighed har du
-<lb/>sjunget for hende, &dash; du vil ikke
+<lb/>sjunget for hende, – du vil ikke
 <lb/>være os imod!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="THORGJERD"><HIS:spOpener><speaker>Thorgjerd</speaker>.</HIS:spOpener><l>Og klare dets gjærende Tanker!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="OLAF"><HIS:spOpener><speaker>Olaf</speaker>.</HIS:spOpener>

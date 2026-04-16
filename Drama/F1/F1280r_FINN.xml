@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -16,8 +10,8 @@
 <title level="a" type="sub">1. versjon, TarkUiB NT280r (rollehefte, Finn)</title>
 <title level="a" type="origYear">1854</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Ingrid Falkenberg, Bjørg Harvey, Stine Brenna Taugbøl</name></respStmt>
 <respStmt>
 <resp>Transkripsjon (av faksimiler), oktober 2000</resp>
@@ -59,7 +53,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <list>
@@ -182,8 +176,8 @@ Den eldste teksten er vanligvis overstrøket, slik at bare det som gjelder for d
 </item>
 </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="castItem">
@@ -202,7 +196,7 @@ Den eldste teksten er vanligvis overstrøket, slik at bare det som gjelder for d
 </list>
 </tagUsage></namespace>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="pb-ed-HU">Sideskiftene fra Hundreårsutgaven er ikke ført inn (skulle vært kodet med pb ed="HU"). Dette tekstvitnet dekker sidene 121-228.</tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -265,7 +259,7 @@ Konverterte manuskripttranskripsjonen fra word-format til TEI XML. Leste korrekt
 <lb/><titlePart>Finn
 <lb/>Fru Ingers Huuskarl
 <lb/>i
-<lb/>&lquo;Fru Inger til Østeraad;&rquo;
+<lb/>«Fru Inger til Østeraad;»
 <lb/>historisk Drama i 5 Akte<unclear>r</unclear></titlePart>
 </docTitle>
 </titlePage>
@@ -279,9 +273,9 @@ Konverterte manuskripttranskripsjonen fra word-format til TEI XML. Leste korrekt
 <lb/><HIS:hisDel rend="overstrike" hand="h1">Henr. Ibsen</HIS:hisDel></HIS:hisAdd><note resp="editor">Teksten er skrevet på pålimt lapp, under lappen ser det ut som det står: af / Henr. Ibsen</note></p>
 </performance>
 <pb/>
-<lb/><set><p>Handlingen foregaaer paa Herresæ&typHyp;
-<lb/>det Østeraad ved Trondhjems&typHyp;
-<lb/>fjorden i Aaret 1528. &dash;</p></set>
+<lb/><set><p>Handlingen foregaaer paa Herresæ‐
+<lb/>det Østeraad ved Trondhjems‐
+<lb/>fjorden i Aaret 1528. –</p></set>
 </front>
 <body>
 <pb/>
@@ -290,91 +284,91 @@ Konverterte manuskripttranskripsjonen fra word-format til TEI XML. Leste korrekt
 <lb/><head>Første Akt.</head>
 <div type="scene" n="1">
 <lb/><head>1<hi rend="raised">ste</hi> Scene.</head>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage>(og Bjørn sidde ved Ildste&typHyp;
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage>(og Bjørn sidde ved Ildste‐
 <lb/>det. <HIS:stageRole who="FINN">Finn</HIS:stageRole> er beskjæftiget
 <lb/>med at afpudse en Hjelm.)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage>(efter en Pause.)</HIS:hisStage></HIS:spOpener><p>Hvem var
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage>(efter en Pause.)</HIS:hisStage></HIS:spOpener><p>Hvem var
 <lb/>Knud Alfsøn?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker>.</HIS:spOpener><p>Norges sidste Riddersmand.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Og Danskerne fældte ham
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Og Danskerne fældte ham
 <lb/>jo i Oslofjord?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker>.</HIS:spOpener><p>ifald du ikke veed det.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Saa Knud Alfsøn var alt&typHyp;
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Saa Knud Alfsøn var alt‐
 <lb/>saa vor sidste Riddersmand?
 <lb/>Og nu er han død og borte!</p></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top-right">4.</fw>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage>(Idet han holder Hjelmen ivei&typHyp;
-<lb/>ret.)</HIS:hisStage></HIS:spOpener><p>Ja, saa kan du gjerne <HIS:clarification place="inline">f</HIS:clarification>in&typHyp;
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage>(Idet han holder Hjelmen ivei‐
+<lb/>ret.)</HIS:hisStage></HIS:spOpener><p>Ja, saa kan du gjerne <HIS:clarification place="inline">f</HIS:clarification>in‐
 <lb/>de dig i at hænge blank og
 <lb/>pudset i Riddersalen, for nu
 <lb/>er du ikke andet end en tom
-<lb/>Nøddeskal; Kjærnen, &dash; <HIS:hisDel rend="overstrike">ja</HIS:hisDel> den
+<lb/>Nøddeskal; Kjærnen, – <HIS:hisDel rend="overstrike">ja</HIS:hisDel> den
 <lb/>har Ormene ædt for mange
 <lb/>Vintre siden. Hør du, Bjørn!
-<lb/>kunde man ikke sige at Nor&typHyp;
+<lb/>kunde man ikke sige at Nor‐
 <lb/>ges Land ogsaa er slig en
 <lb/><app type="alteration"><lem><HIS:hisAdd place="offline" hand="h1">tom</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h1">huul</HIS:hisDel></HIS:hisRdg></app> Nøddeskal ligerviis
-<lb/>som Hjelmen her, blank uden&typHyp;
+<lb/>som Hjelmen her, blank uden‐
 <lb/>paa, ormstukken indeni?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker>.</HIS:spOpener><p>Er Hjelmen færdig?</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Den skinner som Sølv i Maa&typHyp;
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Den skinner som Sølv i Maa‐
 <lb/>neskin!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener><p>Gravrusten af Sværdet.</p></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top-right">5.</fw>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage>(idet han betragter det.)</HIS:hisStage></HIS:spOpener><p>Men kan
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage>(idet han betragter det.)</HIS:hisStage></HIS:spOpener><p>Men kan
 <lb/>det lønne sig?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener><p>Hvad mener du?</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Eggen er borte.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Eggen er borte.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener><p>see der er Skjoldet.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage>(ondskabsfuld.)</HIS:hisStage></HIS:spOpener><p>Det mangler Haand&typHyp;
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage>(ondskabsfuld.)</HIS:hisStage></HIS:spOpener><p>Det mangler Haand‐
 <lb/>grebet, du.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker>.</HIS:spOpener><p>Haandgreb i dig, saa &dash;</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage>(nynner med sig selv.)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
+<lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker>.</HIS:spOpener><p>Haandgreb i dig, saa –</p></HIS:hisSp>
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage>(nynner med sig selv.)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker>.</HIS:spOpener><p>Hvad er der nu?</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>En tom Hjelm, et Sværd uden
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>En tom Hjelm, et Sværd uden
 <lb/>Eg, et Skjold uden Haandgreb,
 <lb/>see det er hele Herligheden.
 <lb/>Jeg troer Ingen skal kunne
-<lb/>laste Fru Inger, fordi hun hæn&typHyp;
+<lb/>laste Fru Inger, fordi hun hæn‐
 <lb/>ger slige Vaabenstykker pudsede
 <pb/>
 <lb/><fw type="page" place="top-right">6.</fw>
 <lb/>paa Salsvæggen, istedetfor at lade
 <lb/>dem rustne i Danerblod.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker>.</HIS:spOpener><p>Fred i Landet veed jeg.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Fred? Ja, naar Bonden har
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Fred? Ja, naar Bonden har
 <lb/>skudt væk sin sidste Piil, og
 <lb/>Ulven har st<HIS:hisDel rend="overwritten">a</HIS:hisDel>jaalet hans sidste
-<lb/>Lam ud af Fjøset, saa hol&typHyp;
-<lb/>de <emph>de</emph> ogsaa Fred sig imel&typHyp;
+<lb/>Lam ud af Fjøset, saa hol‐
+<lb/>de <emph>de</emph> ogsaa Fred sig imel‐
 <lb/>lem; men det er nu saadant
 <lb/>et underligt Venskab! Naa,
 <lb/>naa, lad den Ting fare.
 <lb/>Det er ganske rimeligt som
-<lb/>jeg sagde, at Rustningen hæn&typHyp;
+<lb/>jeg sagde, at Rustningen hæn‐
 <lb/>ger blank i Salen, for du
 <lb/>kjender vel det gamle Ord:
 <lb/>Kun Riddersmanden er en
-<lb/>Mand, og da vi nu ikke <app type="alteration"><lem><HIS:hisAdd place="offline" hand="h1">længer</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h1">me&typHyp;</HIS:hisDel></HIS:hisRdg></app>
+<lb/>Mand, og da vi nu ikke <app type="alteration"><lem><HIS:hisAdd place="offline" hand="h1">længer</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h1">me‐</HIS:hisDel></HIS:hisRdg></app>
 <lb/><HIS:hisDel rend="overstrike" hand="h1">re</HIS:hisDel> har nogen Riddersmand
 <pb/>
 <lb/><fw type="page" place="top-right">7.</fw>
 <lb/>hertillands, saa har vi <HIS:hisAdd place="offline" hand="h1">altså</HIS:hisAdd> heller
 <lb/><app type="alteration"><lem><HIS:hisAdd place="offline" hand="h1">ikke nogen</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h1">ingen</HIS:hisDel></HIS:hisRdg></app> Mand, og hvor der ingen
 <lb/>Mand er, der faaer Kvinden
-<lb/>raade, see derfor &dash;</p></HIS:hisSp>
+<lb/>raade, see derfor –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener><p>ind i Salen igjen.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Nei, lad det heller være til
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Nei, lad det heller være til
 <lb/>imorgen.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker>.</HIS:spOpener><p>vel aldrig mørkræd?</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Ikke om Dagen. Skulde det
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Ikke om Dagen. Skulde det
 <lb/>hænde sig, at jeg var det ved
 <lb/>Kvældstid, saa <app type="alteration"><lem><HIS:hisAdd place="offline" hand="h1">er jeg ikke alene om det.</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h1">kan du tro</HIS:hisDel> mig,</HIS:hisRdg></app>
 <lb/><HIS:hisDel rend="overstrike" hand="h1">det var ikke min Skyld.</HIS:hisDel> Ja
 <lb/>du seer paa mig, men du
-<lb/>skal vide, <HIS:hisDel rend="overstrike">der</HIS:hisDel> nede i Borge&typHyp;
+<lb/>skal vide, <HIS:hisDel rend="overstrike">der</HIS:hisDel> nede i Borge‐
 <lb/>stuen gaaer der Snak om <HIS:hisDel rend="overstrike">saa</HIS:hisDel>
 <lb/><seg type="transposition" part="I"><seg rend="supralinear" subtype="no">2</seg><seg subtype="txt">Meget</seg></seg> og <seg type="transposition" part="F"><seg rend="supralinear" subtype="no">1</seg><seg subtype="txt">Mangt</seg></seg>. <HIS:hisStage>(hviskende.)</HIS:hisStage>
 <lb/>Der er <HIS:hisDel rend="overstrike">nok</HIS:hisDel> en og anden som
@@ -384,27 +378,27 @@ Konverterte manuskripttranskripsjonen fra word-format til TEI XML. Leste korrekt
 <lb/>sortklædt Skikkelse derinde
 <lb/>hver evige Nat.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker>.</HIS:spOpener><p>Kjærringsludder!</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Ja men de bande Allesammen
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Ja men de bande Allesammen
 <lb/>paa at det er sandt.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker>.</HIS:spOpener><p>Det troer jeg nok.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Det forunderligste er, at Fru
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Det forunderligste er, at Fru
 <lb/>Inger er af samme Mening
 <lb/>som vi.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker>.</HIS:spOpener><p>Naa hvad mener hun?</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Hvad <app type="alteration"><lem><HIS:hisAdd place="offline" hand="h1">fru Inger</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h1">hun</HIS:hisDel></HIS:hisRdg></app> mener; ja see det
-<lb/><app type="alteration"><lem><HIS:hisAdd place="offline" hand="h1">er der nok ikke mange som véd</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h1">veed jeg nu ikke saa lige&typHyp;</HIS:hisDel></HIS:hisRdg></app>
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Hvad <app type="alteration"><lem><HIS:hisAdd place="offline" hand="h1">fru Inger</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h1">hun</HIS:hisDel></HIS:hisRdg></app> mener; ja see det
+<lb/><app type="alteration"><lem><HIS:hisAdd place="offline" hand="h1">er der nok ikke mange som véd</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h1">veed jeg nu ikke saa lige‐</HIS:hisDel></HIS:hisRdg></app>
 <lb/><HIS:hisDel rend="overstrike" hand="h1">til</HIS:hisDel>; men vist er det at hun
-<lb/>har ingen Ro paa sig &dash; Kan
+<lb/>har ingen Ro paa sig – Kan
 <lb/>du ikke see at hun bliver
 <lb/>blegere og magrere Dag for
 <pb/>
 <lb/><fw type="page" place="top-right">9.</fw>
 <lb/>Dag. <HIS:hisStage>(med forskende Øiekast.)</HIS:hisStage>
 <lb/>Folkene sige<HIS:hisAdd place="inline" hand="h1">r</HIS:hisAdd> at hun aldrig
-<lb/>sover &dash; og at det er for Spø&typHyp;
-<lb/>gelsets Skyld &dash;</p></HIS:hisSp>
+<lb/>sover – og at det er for Spø‐
+<lb/>gelsets Skyld –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker>.</HIS:spOpener><p>Dumhed troer du paa?</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Ja, saa halvveis; der er ellers
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Ja, saa halvveis; der er ellers
 <lb/>de som udlægge den Ting
 <lb/>paa en anden Maade, men
 <lb/>see det er nu bare Ondskab.
@@ -412,7 +406,7 @@ Konverterte manuskripttranskripsjonen fra word-format til TEI XML. Leste korrekt
 <lb/>Visen som gaaer Landet
 <lb/>rundt?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker>.</HIS:spOpener><p>En Vise?</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Ja, den er i Folkemunde; det
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Ja, den er i Folkemunde; det
 <lb/>er en skammelig Nidvise, det
 <lb/>forstaaer sig, men den gaaer
 <lb/>ret artigt forresten; hør nu
@@ -420,31 +414,31 @@ Konverterte manuskripttranskripsjonen fra word-format til TEI XML. Leste korrekt
 <pb/>
 <lb/><fw type="page" place="top-right">10.</fw>
 <lb/>Stemme.)</HIS:hisStage></p>
-<lb/><HIS:hisLg versetype="stanzaGroup"><HIS:hisLg versetype="stanza"><l>&lquo;Fru Inger sidder paa <sic>Øteraad</sic>
+<lb/><HIS:hisLg versetype="stanzaGroup"><HIS:hisLg versetype="stanza"><l>«Fru Inger sidder paa <sic>Øteraad</sic>
 <lb/>Gaard.</l>
 <lb/><l>Hun er vel svøbt i Skind,</l>
 <lb/><l>Hun er vel svøbt i Fløiel og Maard,</l>
 <lb/><l>Hun fletter de røde Guldperler i
 <lb/>Haar</l>
-<lb/><l>Men har ikke Fred i sit Sind.&rquo;</l></HIS:hisLg>
-<lb/><HIS:hisLg versetype="stanza"><l>&lquo;Fru Inger har solgt sig til Dan&typHyp;
-<lb/>skens Drot &dash;&rquo;</l>
+<lb/><l>Men har ikke Fred i sit Sind.»</l></HIS:hisLg>
+<lb/><HIS:hisLg versetype="stanza"><l>«Fru Inger har solgt sig til Dan‐
+<lb/>skens Drot –»</l>
 <lb/><HIS:hisAdd place="inline" hand="h1"><l>Hun skikker sit <HIS:clarification place="inline">F</HIS:clarification>olk i Fremmedes
 <lb/>Vold</l>
-<lb/><l part="Y">Som Vederlag &dash;</l></HIS:hisAdd></HIS:hisLg></HIS:hisLg></HIS:hisSp>
+<lb/><l part="Y">Som Vederlag –</l></HIS:hisAdd></HIS:hisLg></HIS:hisLg></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener><p>Ord til om Fru Inger.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage>(river sig løs.)</HIS:hisStage></HIS:spOpener><p>Naa, naa, er det
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage>(river sig løs.)</HIS:hisStage></HIS:spOpener><p>Naa, naa, er det
 <lb/>mig der har gjort Visen?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener><p>Tys! hvad er det?</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Et Horn; saa faa vi nok
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Et Horn; saa faa vi nok
 <lb/>Gjæster ikvæld.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener><p>være en Riddersmand.</p></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top-right"><gap reason="damage"/></fw>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>En Riddersmand? Det kan
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>En Riddersmand? Det kan
 <lb/>det vel neppe være.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BJORN"><HIS:spOpener><speaker>Bjørn</speaker></HIS:spOpener><p>Hvorfor ikke?</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Selv har du sagt det, vor
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Selv har du sagt det, vor
 <lb/><emph hand="h1">sidste</emph> Riddersmand er død og
 <lb/>borte. <HIS:hisStage>(gaaer ud tilhøire.)</HIS:hisStage></p></HIS:hisSp>
 </div>
@@ -452,11 +446,11 @@ Konverterte manuskripttranskripsjonen fra word-format til TEI XML. Leste korrekt
 <lb/><head>4<hi rend="raised">de</hi> Scene.</head>
 <lb/><HIS:hisStage><HIS:stageRole who="FRUINGER">Fru Inger.</HIS:stageRole> Eline. Bjørn. <HIS:stageRole>Huuskarle</HIS:stageRole>.</HIS:hisStage>
 <lb/><HIS:hisSp who="EINAR"><HIS:spOpener><speaker>Einar</speaker>.</HIS:spOpener><p>Banner nogen Mand vil forlange.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage>(kommer med et Brev fra Venstre.)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage>(til Fru Inger.)</HIS:hisStage></HIS:spOpener><p>Jeg har <app type="alteration"><lem><HIS:hisAdd place="offline" hand="h1">ledt</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h1">søgt</HIS:hisDel></HIS:hisRdg></app>
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage>(kommer med et Brev fra Venstre.)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage>(til Fru Inger.)</HIS:hisStage></HIS:spOpener><p>Jeg har <app type="alteration"><lem><HIS:hisAdd place="offline" hand="h1">ledt</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h1">søgt</HIS:hisDel></HIS:hisRdg></app>
 <lb/>Eder i alle Stuer.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUINGER"><HIS:spOpener><speaker>Inger</speaker>.</HIS:spOpener><p>Hvad vil du?</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage>(rækker hende Brevet.)</HIS:hisStage></HIS:spOpener><p>En Svend
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage>(rækker hende Brevet.)</HIS:hisStage></HIS:spOpener><p>En Svend
 <lb/>fra Trondhjem har bragt Brev
 <lb/>og Bud til Eder.</p></HIS:hisSp>
 <pb/>
@@ -464,7 +458,7 @@ Konverterte manuskripttranskripsjonen fra word-format til TEI XML. Leste korrekt
 <lb/><HIS:hisSp who="FRUINGER"><HIS:spOpener><speaker>Inger</speaker>.</HIS:spOpener><p>forlade Østeraad for det Første.</p></HIS:hisSp>
 <lb/><HIS:hisStage>(Bevægelse blandt Mængden.)</HIS:hisStage>
 <lb/><HIS:hisSp who="FRUINGER"><HIS:spOpener><speaker>Inger</speaker>.</HIS:spOpener><p>min Villie at vide. Gaa!</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage>(gaaer tilhøire.)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage>(gaaer tilhøire.)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
 <lb/><figure type="bar"/>
 </div>
 </div>
@@ -476,44 +470,44 @@ Konverterte manuskripttranskripsjonen fra word-format til TEI XML. Leste korrekt
 <lb/><HIS:hisSp who="SKAKTAVL"><HIS:spOpener><speaker>Skaktavl</speaker>.</HIS:spOpener><p>Nu, hvis I saa lyster.</p></HIS:hisSp>
 <lb/><HIS:hisStage>(De gaa.)</HIS:hisStage>
 <HIS:hisAdd place="inline" hand="h1"><HIS:hisStage>(Ophold)</HIS:hisStage></HIS:hisAdd>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage>(<app type="alteration"><lem><HIS:hisAdd place="offline" hand="h1">Kommer ind forsigtig. ser sig omkring, kiker ind i riddersalen går tilbage til døren, gir <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>tegn, derefter kommer</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h1">fører</HIS:hisDel></HIS:hisRdg></app> Niels Lykke og Jens Bjelke
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage>(<app type="alteration"><lem><HIS:hisAdd place="offline" hand="h1">Kommer ind forsigtig. ser sig omkring, kiker ind i riddersalen går tilbage til døren, gir <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>tegn, derefter kommer</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h1">fører</HIS:hisDel></HIS:hisRdg></app> Niels Lykke og Jens Bjelke
 <lb/>ind fra Høire.)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
 <lb/><HIS:hisAdd place="inline" hand="h1"><HIS:hisSp who="NIELSLYKKE"><HIS:spOpener><speaker><sic>Nils</sic> Lykke</speaker>:</HIS:spOpener><p>Ingen?</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Nej herre!</p></HIS:hisSp></HIS:hisAdd>
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Nej herre!</p></HIS:hisSp></HIS:hisAdd>
 <lb/><HIS:hisSp who="NIELSLYKKE"><HIS:spOpener><speaker>Lykke</speaker>.</HIS:spOpener><p>paa Dig i Et og Alt?</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Befalingsmanden i Trondhjem har
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Befalingsmanden i Trondhjem har
 <pb/>
 <lb/><fw type="page" place="top-right"><unclear reason="damage">13</unclear></fw>
 <lb/>stedse givet mig Skudsmaal for
 <lb/>at være paalidelig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="NIELSLYKKE"><HIS:spOpener><speaker>Lykke</speaker>.</HIS:spOpener><p>før os iaften?</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>For en Time siden kom der <HIS:hisDel rend="overwritten">E</HIS:hisDel><HIS:hisAdd place="inline" hand="h1">e</HIS:hisAdd>n. <HIS:hisAdd place="offline" hand="h1">fremmed mand</HIS:hisAdd></p></HIS:hisSp>
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>For en Time siden kom der <HIS:hisDel rend="overwritten">E</HIS:hisDel><HIS:hisAdd place="inline" hand="h1">e</HIS:hisAdd>n. <HIS:hisAdd place="offline" hand="h1">fremmed mand</HIS:hisAdd></p></HIS:hisSp>
 <lb/><HIS:hisSp who="NIELSLYKKE"><HIS:spOpener><speaker>Lykke</speaker>.</HIS:spOpener><p>Har du seet ham?</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Nei det har nok Ingen uden
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Nei det har nok Ingen uden
 <lb/>Portvægteren, saavidt jeg veed.
 <lb/>Han blev strax stedet for Fru
-<lb/>Inger, og hun &dash;</p></HIS:hisSp>
+<lb/>Inger, og hun –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="NIELSLYKKE"><HIS:spOpener><speaker>Lykke</speaker>.</HIS:spOpener><p>allerede borte igjen?</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Nei, men hun holder ham
-<lb/>nok skjult inde i en af si&typHyp;
-<lb/>ne egne Stuer, for &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Nei, men hun holder ham
+<lb/>nok skjult inde i en af si‐
+<lb/>ne egne Stuer, for –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="NIELSLYKKE"><HIS:spOpener><speaker>Lykke</speaker>.</HIS:spOpener><p>Borgeporten holdes lukket?</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Ja, det veed jeg ikke; der tales
-<lb/>rigtignok om Løngange neden&typHyp;
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Ja, det veed jeg ikke; der tales
+<lb/>rigtignok om Løngange neden‐
 <lb/>under i Kj<gap reason="damage"/>lder<HIS:hisDel rend="overwritten">en</HIS:hisDel><HIS:hisAdd place="inline" hand="h1">ne</HIS:hisAdd>, men der er
 <pb/>
 <lb/><fw type="page" place="top-right">14.</fw>
 <lb/>nok Ingen uden Fru Inger
-<lb/>selv; <app type="alteration"><lem><HIS:hisAdd place="offline" hand="h1">ja &dash; og så <sic>kanske</sic> Jomfru Eline</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h1">som kjender dem</HIS:hisDel></HIS:hisRdg></app>.</p></HIS:hisSp>
+<lb/>selv; <app type="alteration"><lem><HIS:hisAdd place="offline" hand="h1">ja – og så <sic>kanske</sic> Jomfru Eline</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h1">som kjender dem</HIS:hisDel></HIS:hisRdg></app>.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="NIELSLYKKE"><HIS:spOpener><speaker>Lykke</speaker>.</HIS:spOpener><p>du kan gaa.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Vel. Skulle I senere ville mig
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Vel. Skulle I senere ville mig
 <lb/>Noget saa behøver I <app type="alteration"><lem><HIS:hisAdd place="offline" hand="h1">bare</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h1">kun</HIS:hisDel></HIS:hisRdg></app> at
-<lb/>lukke paa den anden Dør til&typHyp;
+<lb/>lukke paa den anden Dør til‐
 <lb/>venstre derinde i Riddersalen;
 <lb/>jeg skal da strax være ved
 <lb/>Haanden.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="NIELSLYKKE"><HIS:spOpener><speaker>Lykke</speaker>.</HIS:spOpener><p>Godt. <HIS:hisStage>(<unclear reason="damage">p</unclear>eger mod Døren.)</HIS:hisStage></p></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage>(gaaer ud <unclear reason="damage">ti</unclear>lhøire.)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage>(gaaer ud <unclear reason="damage">ti</unclear>lhøire.)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
 <lb/><figure type="bar"/>
 </div>
 </div>
@@ -531,17 +525,17 @@ Konverterte manuskripttranskripsjonen fra word-format til TEI XML. Leste korrekt
 <lb/><HIS:hisStage><HIS:stageRole who="FRUINGER NIELSLYKKE STEENSSON">De Forrige.</HIS:stageRole> <HIS:stageRole who="SKAKTAVL">Skaktavl</HIS:stageRole>, <HIS:stageRole who="BJORN">Bjørn</HIS:stageRole>, <HIS:stageRole who="FINN">Finn,</HIS:stageRole>
 <lb/><HIS:stageRole>Huuskarle</HIS:stageRole> og Tjenere (komme fra
 <lb/>Høire i Baggrunden.)</HIS:hisStage>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Leve! leve Inger Gyldenløve!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Leve! leve Inger Gyldenløve!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUINGER"><HIS:spOpener><speaker>Inger</speaker>.</HIS:spOpener><p>hvis Gud saa vil det.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Hil ham! Hil Grev Sture!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Hil ham! Hil Grev Sture!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="NIELSLYKKE"><HIS:spOpener><speaker>Lykke</speaker> <HIS:hisStage>(har imidlertid kaldt Finn
 <lb/>til sig og talt hemmeligt med
 <lb/>ham.)</HIS:hisStage></HIS:spOpener><p>hans Liv er mig Tusinder værdt.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Det skal skee!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Det skal skee!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUINGER"><HIS:spOpener><speaker>Inger</speaker>.</HIS:spOpener><p>Bevogtning i Borgkjælderen!</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Jeg?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Jeg?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUINGER"><HIS:spOpener><speaker>Inger</speaker>.</HIS:spOpener><p>I Borgekjælderen!</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage>(Føres ud til Venstre af to Huus<unclear reason="binding">&typHyp;</unclear>
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage>(Føres ud til Venstre af to Huus<unclear reason="binding">‐</unclear>
 <lb/>karle.)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
 <lb/><figure type="bar"/>
 <pb/>
@@ -549,17 +543,17 @@ Konverterte manuskripttranskripsjonen fra word-format til TEI XML. Leste korrekt
 <HIS:hisAdd place="margin" hand="h1">
 <pb/>
 <lb/><HIS:hisStage rend="deviation">(<HIS:stageRole who="FINN">Finn</HIS:stageRole> ind sammen med Bjørn og de andre)</HIS:hisStage>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Hil <unclear reason="writing">være</unclear> fru Inger Gyldenløve!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Hil <unclear reason="writing">være</unclear> fru Inger Gyldenløve!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUINGER"><HIS:spOpener><speaker rend="deviation">Fru Inger</speaker></HIS:spOpener><p><hi>og Norges med, hvis Gud så vil det.</hi></p></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Hil ham! Hil grev Sture!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Hil ham! Hil grev Sture!</p></HIS:hisSp>
 <lb/><HIS:hisStage rend="deviation">(Almindelig bevægelse. Bønder og huskarle
-<lb/><unclear reason="writing">udsøke</unclear> sig i våben &dash; stor larm.</HIS:hisStage>
-<lb/><HIS:hisSp who="SKAKTAVL"><HIS:spOpener><speaker>Olaf Skaktavl</speaker></HIS:spOpener><p><hi>&dash; Er I så rede?</hi></p></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Ja ja ja</p></HIS:hisSp>
-<lb/><HIS:hisSp who="NIELSLYKKE"><HIS:spOpener><speaker><sic>Nils</sic> Lykke</speaker></HIS:spOpener><p><hi>&dash; at junkerens liv er mig tusener værdt</hi></p></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Det skal ske</p></HIS:hisSp>
+<lb/><unclear reason="writing">udsøke</unclear> sig i våben – stor larm.</HIS:hisStage>
+<lb/><HIS:hisSp who="SKAKTAVL"><HIS:spOpener><speaker>Olaf Skaktavl</speaker></HIS:spOpener><p><hi>– Er I så rede?</hi></p></HIS:hisSp>
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Ja ja ja</p></HIS:hisSp>
+<lb/><HIS:hisSp who="NIELSLYKKE"><HIS:spOpener><speaker><sic>Nils</sic> Lykke</speaker></HIS:spOpener><p><hi>– at junkerens liv er mig tusener værdt</hi></p></HIS:hisSp>
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Det skal ske</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUINGER"><HIS:spOpener><speaker>Fru Inger</speaker></HIS:spOpener><p><hi>sikker <sic>bevgtning</sic> i borgekælderen</hi></p></HIS:hisSp>
-<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Jeg!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="FINN"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Jeg!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUINGER"><HIS:spOpener><speaker>Fru Inger</speaker></HIS:spOpener><p><hi>I borgekælderen</hi></p></HIS:hisSp>
 <lb/><HIS:hisSp who="FINN" rend="deviation"><HIS:spOpener><HIS:hisStage rend="deviation">føres ud</HIS:hisStage></HIS:spOpener></HIS:hisSp>
 <pb/>

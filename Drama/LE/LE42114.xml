@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -16,8 +10,8 @@
 <title level="a" type="sub">Ms 2114/1</title>
 <title level="a" type="origYear">1894</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Henninge Margrethe Solberg, Ellen Nessheim Wiger, Mette Witting</name></respStmt>
 <respStmt>
 <resp>Oppretting og 1. kollasjon, mars 2009</resp>
@@ -59,7 +53,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <list>
@@ -67,8 +61,8 @@
 <item>ikke kodet: påskrift med blyant i øvre høyre hjørne s. 1: manuskriptsignatur "ms 2114/1", under signaturen står noen utydelige tall/bokstaver, kan være "1.50" eller "I.50"</item>
 </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -79,7 +73,7 @@
 </list>
 </tagUsage></namespace>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="pb-ed-HU-n">For synkroniseringsformål er sideskiftene fra Hundreårsutgaven (bd XII) kodet med pb ed="HU" n="". Dette tekstvitnet dekker sidene 218-219. Alle sidetall er oppgitt i n-attributter.</tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 </encodingDesc>
 <profileDesc>
@@ -116,27 +110,27 @@ Opprettet fila. Kollasjonerte mot kopien. Har ikke ført inn blekktype i handlis
 <div type="act" n="1">
     <pb ed="source" type="folio_pagination" subtype="recto" n="[1]" facs="1" gathering="1"/> 
 <lb/><head>1<hi rend="raised">ste</hi> Akt.</head><note resp="editor">Overskriften står skråstilt i venstre hjørne.</note>
-<lb/><pb ed="HU" n="218"/><HIS:hisSp who="ALLMERS"><HIS:spOpener><speaker>A.</speaker></HIS:spOpener><p>Du R. &dash; tror du der er noget imellem de to.</p></HIS:hisSp>
+<lb/><pb ed="HU" n="218"/><HIS:hisSp who="ALLMERS"><HIS:spOpener><speaker>A.</speaker></HIS:spOpener><p>Du R. – tror du der er noget imellem de to.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="RITA"><HIS:spOpener><speaker>R.</speaker></HIS:spOpener><p>Jeg ved ikke hvad jeg skal sige. Før trode
-<lb/>jeg det. Men A. er ble&rapo;t mig så uforklarlig
+<lb/>jeg det. Men A. er ble’t mig så uforklarlig
 <lb/>i den sidste tid.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ALLMERS"><HIS:spOpener><speaker>A</speaker></HIS:spOpener><p>Så? Er hun det? Mens jeg var borte?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="RITA"><HIS:spOpener><speaker>R.</speaker></HIS:spOpener><p>Ja, i de sidste par uger synes jeg.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ALLMERS"><HIS:spOpener><speaker>A.</speaker></HIS:spOpener><p>Og du tror ikke at hun <HIS:hisDel rend="overstrike">bryr</HIS:hisDel> nu læ<HIS:hisDel rend="overwritten"><unclear>r</unclear></HIS:hisDel>nger
-<lb/>bry&rapo;r sig <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>vi<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>dere om ham.</p></HIS:hisSp>
+<lb/>bry’r sig <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>vi<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>dere om ham.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="RITA"><HIS:spOpener><speaker>R.</speaker></HIS:spOpener><p>Ikke alvorligt. Ikke helt og holdent. Det
 <lb/>tror jeg ikke. <HIS:hisStage>(ser på ham)</HIS:hisStage> Vilde det være
 <lb/>dig imod, ifald hun gjorde det?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ALLMERS"><HIS:spOpener><speaker>A.</speaker></HIS:spOpener><p>Ikke egentlig imod. Men husk på at jeg
 <lb/>har ansvar for A. For hendes livs lykke.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="RITA"><HIS:spOpener><speaker>R.</speaker></HIS:spOpener><p>Å hvad &dash; ansvar! A. er da vel voksen.
+<lb/><HIS:hisSp who="RITA"><HIS:spOpener><speaker>R.</speaker></HIS:spOpener><p>Å hvad – ansvar! A. er da vel voksen.
 <lb/>Hun forstår da <HIS:hisDel rend="overstrike">vel</HIS:hisDel> <HIS:hisDel rend="overwritten"><unclear>a</unclear></HIS:hisDel>sagtens at vælge selv,
 <lb/>skulde jeg tro.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ALLMERS"><HIS:spOpener><speaker>A.</speaker></HIS:spOpener><p>Ja, vi får jo håbe det, R.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="RITA"><HIS:spOpener><speaker>R.</speaker></HIS:spOpener><p><HIS:hisDel rend="overstrike">Jeg for min part skulde gerne sé a</HIS:hisDel>t
 <lb/><pb ed="source" type="folio_pagination" subtype="verso" n="1" facs="1" gathering="1"/><HIS:hisDel rend="overstrike">der blev et pår</HIS:hisDel><pb ed="HU" n="219"/> Jeg for min part tror nu
 <lb/>sletikke noget ondt om B.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="ALLMERS"><HIS:spOpener><speaker>A.</speaker></HIS:spOpener><p>Nej kære, &dash; det gør jo ikke jeg heller.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="ALLMERS"><HIS:spOpener><speaker>A.</speaker></HIS:spOpener><p>Nej kære, – det gør jo ikke jeg heller.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="RITA"><HIS:spOpener><speaker><HIS:hisDel rend="overwritten">A</HIS:hisDel>R.</speaker></HIS:spOpener><p>Og jeg skulde svært gerne sé at der blev
     <pb ed="source" type="folio_pagination" subtype="verso" n="[1]" facs="1" gathering="1"/> 
     
@@ -146,9 +140,9 @@ Opprettet fila. Kollasjonerte mot kopien. Har ikke ført inn blekktype i handlis
 <lb/><HIS:hisSp who="RITA"><HIS:spOpener><speaker>R.</speaker></HIS:spOpener><p>Jo, for så måtte hun rejse langt bort med
 <lb/>ham. Og kunde aldrig komme herud ligesom
 <lb/>nu.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="ALLMERS"><HIS:spOpener><speaker>A.</speaker></HIS:spOpener><p>Hvad! Kunde du ønske at bli&rapo; A kvit!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="ALLMERS"><HIS:spOpener><speaker>A.</speaker></HIS:spOpener><p>Hvad! Kunde du ønske at bli’ A kvit!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="RITA"><HIS:spOpener><speaker>R.</speaker></HIS:spOpener><p>Ja, ja, Alfred!</p></HIS:hisSp>
-<lb/><HIS:hisSp who="ALLMERS"><HIS:spOpener><speaker>A.</speaker></HIS:spOpener><p>Men hvorfor i alverden &dash;?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="ALLMERS"><HIS:spOpener><speaker>A.</speaker></HIS:spOpener><p>Men hvorfor i alverden –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="RITA"><HIS:spOpener><speaker>R.</speaker><HIS:hisStage>(slår armene <HIS:hisDel rend="overstrike">om</HIS:hisDel> lidenskabelig om ham)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Jo for så havde jeg dig for mig selv alene</p></HIS:hisSp>
     <pb ed="source" type="folio_pagination" subtype="recto" n="[2]" facs="1" gathering="1"/> 

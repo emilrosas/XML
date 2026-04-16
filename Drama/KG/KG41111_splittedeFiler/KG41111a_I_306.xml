@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -13,11 +7,11 @@
 <title level="s" type="main">Henrik Ibsens skrifter</title>
 <title level="s" type="sub">Diplomatarisk tekstarkiv</title>
 <title level="a" type="main">Kejser og Galilæer</title>
-<title level="a" type="sub">NBO Ms.4&deg; 1111a, bl. 306</title>
-<title level="a" type="origYear">[1871&dash;1873]</title>
+<title level="a" type="sub">NBO Ms.4° 1111a, bl. 306</title>
+<title level="a" type="origYear">[1871–1873]</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt>
 <resp>Konvertering fra ekstern transkripsjon til prosjektspesifikk TEI XML</resp>
 <name xml:id="HIS-HB">Hilde Bøe</name>
@@ -45,12 +39,12 @@
 <sourceDesc><p>Denne filen bygger på KG41111_NBO.xml (KG41111_NBO-0208).</p></sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography><p>Manuskriptets grafiske oppsett finnes beskrevet i typografibeskrivelsen i KG41111_NBO.xml.</p>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -121,7 +115,7 @@
 <label xml:id="PERSEREN"/><item>En persisk overløber/Perseren</item>
 </list>
 </tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -151,20 +145,20 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><fw type="leaf" place="top-right" scribe="h1">306</fw>
 <div type="act" n="1-1">
 <lb/><HIS:hisSp><p>ved jeg hvorhen din tanke går. Ikke til
-<lb/>ensomhed; <xptr type="synopticView_msVersions" xml:id="KG_3100ms"/>kræv noget bedre &dash; alt hvad du vil.</p></HIS:hisSp>
+<lb/>ensomhed; <xptr type="synopticView_msVersions" xml:id="KG_3100ms"/>kræv noget bedre – alt hvad du vil.</p></HIS:hisSp>
 <HIS:hisAdd place="inBetweenLines">
-<lb/><HIS:hisSp who="HEKEBOLIOS"><HIS:spOpener><speaker>Ekebolios</speaker>:</HIS:spOpener><p>For min lærlings skyld &dash; før kejseren bort</p></HIS:hisSp>
+<lb/><HIS:hisSp who="HEKEBOLIOS"><HIS:spOpener><speaker>Ekebolios</speaker>:</HIS:spOpener><p>For min lærlings skyld – før kejseren bort</p></HIS:hisSp>
 </HIS:hisAdd>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>En i følget</speaker></HIS:spOpener>
-<lb/><p>Det er på tiden &dash;</p></HIS:hisSp>
+<lb/><p>Det er på tiden –</p></HIS:hisSp>
 <HIS:hisAdd place="margin"><note resp="editor">Tilføyelsen er skrevet i høyre marg.</note>
 <lb/><HIS:hisSp who="MEMNON"><HIS:spOpener><speaker>Memnon</speaker> <HIS:hisStage>(tager ham i
 <lb/>armen.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Kom, kom!</p></HIS:hisSp>
 </HIS:hisAdd>
 <lb/><HIS:hisSp who="KONSTANZIOS"><HIS:spOpener><speaker>K.</speaker></HIS:spOpener>
-<lb/><p>Ja kom &dash;; jeg vil derind &dash; hent Gallus &dash;
-<lb/>her skal han <unclear reason="writing">vente</unclear> mig &dash;</p></HIS:hisSp>
+<lb/><p>Ja kom –; jeg vil derind – hent Gallus –
+<lb/>her skal han <unclear reason="writing">vente</unclear> mig –</p></HIS:hisSp>
 <lb/><HIS:hisStage>(Toget går mod kirken. Betlere, krøblinge og
 <lb/>blinde flokkes om kejseren.)</HIS:hisStage>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>En værkbruden</speaker>.</HIS:spOpener>
@@ -183,7 +177,7 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><p>Hvorfor denne angst?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker></HIS:spOpener>
 <lb/><p>Spurgte han ikke hvor <HIS:hisDel rend="overwritten">g</HIS:hisDel>Gallus var? Er der
-<lb/>ikke en dødsdom i det spørgsmål &dash; hvor er
+<lb/>ikke en dødsdom i det spørgsmål – hvor er
 <lb/>han?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEKEBOLIOS"><HIS:spOpener><speaker>Ek.</speaker></HIS:spOpener>
 <lb/><p>I kejserens ord er livet.</p></HIS:hisSp>
@@ -197,19 +191,19 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><p>Mord også? Hvor er min fader; hvor er min
 <lb/>moder; hvor er min ældste broder?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEKEBOLIOS"><HIS:spOpener><speaker>Ek.</speaker></HIS:spOpener>
-<lb/><p>Hos gud &dash; eller blandt guderne; ingen har viss&typHyp;
+<lb/><p>Hos gud – eller blandt guderne; ingen har viss‐
 <lb/>hed.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker></HIS:spOpener>
-<lb/><p>Ekebolios, din lære er tveægget; den har skå&typHyp;
-<lb/>ret mig s<unclear reason="writing">ønder</unclear> til begge sider. Gå, gå; søg Gal&typHyp;
-<lb/>lus; mærker du uråd &dash;</p></HIS:hisSp>
+<lb/><p>Ekebolios, din lære er tveægget; den har skå‐
+<lb/>ret mig s<unclear reason="writing">ønder</unclear> til begge sider. Gå, gå; søg Gal‐
+<lb/>lus; mærker du uråd –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEKEBOLIOS"><HIS:spOpener><speaker>Ek.</speaker></HIS:spOpener>
-<lb/><p>Men kejserens vrede &dash;</p></HIS:hisSp>
+<lb/><p>Men kejserens vrede –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>J.</speaker></HIS:spOpener>
 <lb/><p>Har du kejseren kær, så hold hans hånd
-<lb/>tilbage &dash;</p></HIS:hisSp>
+<lb/>tilbage –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HEKEBOLIOS"><HIS:spOpener><speaker>Ek.</speaker></HIS:spOpener>
-<lb/><p>Og du &dash;?</p></HIS:hisSp>
+<lb/><p>Og du –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker></HIS:spOpener>
 <lb/><p>Jeg venter her; jeg viger ikke fra kejserens
 <lb/>side. Gå, gå!</p></HIS:hisSp>

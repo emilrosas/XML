@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -13,11 +7,11 @@
 <title level="s" type="main">Henrik Ibsens skrifter</title>
 <title level="s" type="sub">Diplomatarisk tekstarkiv</title>
 <title level="a" type="main">Kejser og Galilæer</title>
-<title level="a" type="sub">NBO Ms.8&deg; 1937b</title>
+<title level="a" type="sub">NBO Ms.8° 1937b</title>
 <title level="a" type="origYear">[1871]</title>
 <author>[Henrik Ibsen]</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Hilde Bøe, Ingvald Aarstein</name></respStmt>
 <respStmt>
 <resp>Transkripsjon av faksimile, oktober 2001</resp>
@@ -58,7 +52,7 @@
 <msIdentifier>
 <settlement>Oslo</settlement>
 <repository>Nasjonalbiblioteket</repository>
-<idno>NBO Ms.8&deg; 1937b</idno>
+<idno>NBO Ms.8° 1937b</idno>
 </msIdentifier>
 <msContents><msItem>
 <author>[Henrik Ibsen]</author>
@@ -71,7 +65,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <list>
@@ -88,11 +82,11 @@
 </item>
 </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -152,7 +146,7 @@ Transkribert og kodet. Jeg har oppfattet den siste innførselen som en replikk o
 <lb/><p><HIS:hisStage>Ved hulvejen.</HIS:hisStage> De kejserlige soldater stormer forgæves.
 <lb/>Hærføreren Severus kommer til; det lykkes ham
 <lb/>ikke at få tropperne til at gå frem. Cæsar
-<lb/>Julian kommer; soldaterne vægrer sig frem&typHyp;
+<lb/>Julian kommer; soldaterne vægrer sig frem‐
 <lb/>deles; han taler til dem, finder det rimeligt
 <lb/>at de er forsagte; minder om nederlagene i
 <lb/>kampen mod Perserne; minder om Barbatios
@@ -164,24 +158,24 @@ Transkribert og kodet. Jeg har oppfattet den siste innførselen som en replikk o
 <lb/><p>En højde i en kornager med udsigt over slagmarken.
 <lb/>Julian og følge på højden. Legaten Sallust er hos ham.
 <lb/>Julian forråder sine bekymringer; det er fare både at sejre
-<lb/>og lide nederlag; han minder om hvorledes han er omrin&typHyp;
+<lb/>og lide nederlag; han minder om hvorledes han er omrin‐
 <lb/>get af forrædere; minder om Arketos adfærd ved at lade
 <lb/>ham i stikken ved Sennones.</p>
 <lb/><p>Cæsar Julian taler med varme om kampens glæde, dette
-<lb/>er livet &dash; dette er en slags samliv med guderne, som han
+<lb/>er livet – dette er en slags samliv med guderne, som han
 <lb/>i sin ungdom higede efter.</p>
-<lb/><p>&dash; han udtaler sin glæde over at have Sallust hos sig; der
-<lb/>er mænd om ham, som lægger ondt for ham hos kejseren &dash;</p>
-<lb/><p>&dash; han skildrer slagets gang &dash;</p>
-<lb/><p>&dash; han taler om Helena og det døde barn &dash;</p>
-<lb/><p>&dash; han gribes af hemmelig angst for sejren &dash;</p>
+<lb/><p>– han udtaler sin glæde over at have Sallust hos sig; der
+<lb/>er mænd om ham, som lægger ondt for ham hos kejseren –</p>
+<lb/><p>– han skildrer slagets gang –</p>
+<lb/><p>– han taler om Helena og det døde barn –</p>
+<lb/><p>– han gribes af hemmelig angst for sejren –</p>
 <pb ed="source" type="page_nopagination" n="2" facs="2" />
 <lb/><p>Modsigende efterretninger om Chnodomar.</p>
 <lb/><p>Man melder hans tilfangetag<unclear reason="writing">else</unclear>.</p>
 <lb/><p>Helena <HIS:hisDel rend="overstrike"><gap/></HIS:hisDel> gribes af hans kraftfulde skø<unclear reason="writing">nhed</unclear></p>
-<lb/><p>Han føres for cæsar og beder for sit liv &dash;</p>
+<lb/><p>Han føres for cæsar og beder for sit liv –</p>
 <lb/><p>Helena beder for ham.</p>
-<lb/><p>Cæsar skænker ham livet &dash;</p>
+<lb/><p>Cæsar skænker ham livet –</p>
 <lb/><p>Han takker og priser Kejser Julian</p>
 <lb/><p>Råbet g<unclear reason="writing">entages</unclear> af sol<unclear reason="writing">daterne</unclear></p>
 <lb/><p>Udlægges <unclear reason="writing">ondt</unclear> af felth<unclear reason="writing">errerne</unclear></p>
@@ -191,14 +185,14 @@ Transkribert og kodet. Jeg har oppfattet den siste innførselen som en replikk o
 <lb/><figure type="bar"/>
 <text><body><div>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Julian</speaker></HIS:spOpener>
-<lb/><p>I bøge<unclear reason="writing">rne</unclear> søgte jeg livet; i drøm<unclear reason="writing">men</unclear> søgte jeg det &dash; &dash;
-<lb/>så søgte jeg det i den lyse dags virkelighed &dash; virkeligheden
-<lb/>var <HIS:hisDel rend="overstrike">jeg</HIS:hisDel> just drøm<unclear reason="writing">men</unclear> &dash; drøm<unclear reason="writing">men</unclear>, det gådefulde, det
+<lb/><p>I bøge<unclear reason="writing">rne</unclear> søgte jeg livet; i drøm<unclear reason="writing">men</unclear> søgte jeg det – –
+<lb/>så søgte jeg det i den lyse dags virkelighed – virkeligheden
+<lb/>var <HIS:hisDel rend="overstrike">jeg</HIS:hisDel> just drøm<unclear reason="writing">men</unclear> – drøm<unclear reason="writing">men</unclear>, det gådefulde, det
 <lb/>er den sande virkelighed.</p>
 <lb/><p>Kristus skal begraves under vinløv; han skal
 <lb/>overdøves af bacchus-sange</p></HIS:hisSp>
 </div>
-<note resp="editor">Nederst, i motsatt skriveretning, har Ibsen påbegynt et brev til Georg Brandes: <q>Dresden den 25<hi rend="raised">de</hi> November 1871. &dash;&sol;Kære Brandes!</q>. Et brev til Brandes novemberdesember 1871 er ellers ikke kjent.</note>
+<note resp="editor">Nederst, i motsatt skriveretning, har Ibsen påbegynt et brev til Georg Brandes: <q>Dresden den 25<hi rend="raised">de</hi> November 1871. –/Kære Brandes!</q>. Et brev til Brandes novemberdesember 1871 er ellers ikke kjent.</note>
 </body>
 </text>
 </group>

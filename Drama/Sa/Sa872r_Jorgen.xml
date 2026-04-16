@@ -1,11 +1,5 @@
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
     <teiHeader xml:lang="nob">
         <fileDesc>
@@ -16,8 +10,8 @@
                 <title level="a" type="sub">TarkUiB NT872r (rollehefte, Jørgen)</title>
                 <title level="a" type="origYear">1852</title>
                 <author>Henrik Ibsen</author>
-                <funder>&funder;</funder>
-                <editor>&editor;</editor>
+                <funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+                <editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
                 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Hilde Bøe, Karl Johan Sæth</name></respStmt>
                 <respStmt>
                     <resp>Kodeteknisk støtte og utvikling</resp>
@@ -86,7 +80,7 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+            <projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
             <editorialDecl>
                 <HIS:typography>
                     <list>
@@ -159,13 +153,13 @@
                             <list>
                                 <item>blyantskriblerier i Paulsens rollehefte er kommentert i noter, og ikke transkribert.</item>
                                 <item>blyantunderstrekinger i Birks rollehefte er kommentert i noter, og ikke kodet.</item>
-                                <item>Minnevers skrevet med blyant sist i Birks rollehefte (s. 68), navnet "Kornelia" dannes med første bokstav i hver linje: "Kan et Ønske bringe Held,|O, da gid det gaae dig vel!|Roser spire paa din Vei &dash;|Nogen Steen du møde ei!Er ei Skjebnen altid (strøket: mild) huld,|Lad ei saadant Modet binde:|I vor (strøket: Pregers) Frelsers Bog er Guld,|Altid der du Trøst vil finde!". Har ikke noe med teksten å gjøre, og er derfor utelatt.</item>
+                                <item>Minnevers skrevet med blyant sist i Birks rollehefte (s. 68), navnet "Kornelia" dannes med første bokstav i hver linje: "Kan et Ønske bringe Held,|O, da gid det gaae dig vel!|Roser spire paa din Vei –|Nogen Steen du møde ei!Er ei Skjebnen altid (strøket: mild) huld,|Lad ei saadant Modet binde:|I vor (strøket: Pregers) Frelsers Bog er Guld,|Altid der du Trøst vil finde!". Har ikke noe med teksten å gjøre, og er derfor utelatt.</item>
                             </list>
                         </item>
                     </list>
                 </HIS:typography>
-                <stdVals><p>&stdVals;</p></stdVals>
-                <p>&editorialDecl;</p>
+                <stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+                <p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
             </editorialDecl>
             <tagsDecl>
                 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -186,7 +180,7 @@
                     </list>
                 </tagUsage></namespace>
                 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="rolleheftekoding">Rolleheftene er kodet med «føljetongkoding»: hvert rollehefte kodet som TEXT (i GROUP og TEXT). Tittelbladene kodet som vanlige tittelblad. Opplysninger om skuespillere etc. på tittelbladene er kodet i P-er i en PERFORMANCE-tag. «Avvikene» i forhold til rollenavn/replikk-systemet (se typografibeskrivelsen) er ikke tatt hensyn til i kodingen</tagUsage></namespace>
-                <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+                <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
                 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="titlePartOgTypografi">Flere titlePart-elementer er benyttet når tittelen er delt inn i flere biter med forskjellige typografisk markering (understreking, hevet tekst, i noen grad skriftstørrelse, men ikke linjeinndeling.).</tagUsage></namespace>
             </tagsDecl>
             <variantEncoding method="parallel-segmentation" location="internal"/>
@@ -238,17 +232,17 @@
 <lb/><p>Jo, javist!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
 <lb/><p>Og da der er en Ven i Farvandet, som ikke
-<lb/>er indviet i Hemmeligheden, saa &dash; &dash;</p></HIS:hisSp>
+<lb/>er indviet i Hemmeligheden, saa – –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUEN JULIANE"><HIS:spOpener><speaker>Juliane</speaker> og <speaker>Fruen</speaker></HIS:spOpener>
 <lb/><p>En Ven?!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
 <pb/><lb/><fw type="page" place="top-right">3</fw>
 <lb/><p>Ja, en, som jeg har bragt med, en prægtig
-<lb/>Fyr; &dash; &dash; aa ja &dash; Du kjender ham vist af Bladene,
-<lb/>Juliane! Det er Kritikeren Julian Paulsen, &dash;
-<lb/>han er meget bekjendt derinde i Christiania &dash; &dash;
-<lb/>han og jeg er Duus &dash; vi gaae ofte Arm i
-<lb/>Arm og røge vor Cigar &dash; &dash; ikke sandt,
+<lb/>Fyr; – – aa ja – Du kjender ham vist af Bladene,
+<lb/>Juliane! Det er Kritikeren Julian Paulsen, –
+<lb/>han er meget bekjendt derinde i Christiania – –
+<lb/>han og jeg er Duus – vi gaae ofte Arm i
+<lb/>Arm og røge vor Cigar – – ikke sandt,
 <lb/>Birk?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BIRK"><HIS:spOpener><speaker>Birk</speaker></HIS:spOpener>
 <lb/><p>har fortalt om hende.</p></HIS:hisSp>
@@ -258,16 +252,16 @@
 <lb/><p>er han ogsaa Digter?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
 <lb/><p>Ja vel er han Digter, og det en ægte
-<lb/>Digter &dash; mørk og vild &dash; &dash; han er især
+<lb/>Digter – mørk og vild – – han er især
 <pb/><lb/><fw type="page" place="top-left">4</fw>
-<lb/>stærk i det Nationale &dash; &dash;</p></HIS:hisSp>
+<lb/>stærk i det Nationale – –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIANE"><HIS:spOpener><speaker>Juliane</speaker></HIS:spOpener>
 <lb/><p>Saa?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
 <lb/><p>Rigtignok har han ikke offentliggjort
 <lb/>Noget endnu, men Alle ere enige i
 <lb/>at det vil blive noget Udmærket, naar
-<lb/>det først kommer. &dash;</p></HIS:hisSp>
+<lb/>det først kommer. –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUEN"><HIS:spOpener><speaker>Fruen</speaker></HIS:spOpener>
 <lb/><p>Theebordet venter allerede.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
@@ -313,12 +307,12 @@
 <lb/><p>De forstaaer mig nok</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
 <lb/><p>Det er Bedstefaderens Eventyr, som har
-<lb/>gjort hende fortumlet i Hovedet; &dash; men &dash;
+<lb/>gjort hende fortumlet i Hovedet; – men –
 <pb/><lb/><fw type="page" place="top-right"><gap reason="damage"/></fw>
-<lb/>for at komme til noget Andet &dash; jeg synes
-<lb/>her blev talt om Punsch &dash; &dash; ialfald skulde
+<lb/>for at komme til noget Andet – jeg synes
+<lb/>her blev talt om Punsch – – ialfald skulde
 <lb/>jeg foreslaae, at vi fik Noget at styrke
-<lb/>os paa, inden vi gjæste Sancthanshaugen. &dash;</p></HIS:hisSp>
+<lb/>os paa, inden vi gjæste Sancthanshaugen. –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUEN"><HIS:spOpener><speaker>Fruen</speaker></HIS:spOpener>
 <lb/><p>dog vel paa Punschlavning?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
@@ -330,9 +324,9 @@
 <lb/><head>Ottende Scene</head>
 <lb/><HIS:hisStage>De Forrige. Jørgen</HIS:hisStage>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker>
-<lb/><HIS:hisStage>(med to Punschglas)</HIS:hisStage></HIS:spOpener><p>See, her er Fortrop&typHyp;
+<lb/><HIS:hisStage>(med to Punschglas)</HIS:hisStage></HIS:spOpener><p>See, her er Fortrop‐
 <lb/>perne, Gutter! I har ikke godt af at
-<lb/>staae her med tørre Munde &dash; &dash;</p></HIS:hisSp>
+<lb/>staae her med tørre Munde – –</p></HIS:hisSp>
 <pb/><lb/><fw type="page" place="top-left">8</fw>
 <lb/><HIS:hisSp who="PAULSEN"><HIS:spOpener><speaker>Paulsen</speaker></HIS:spOpener>
 <lb/><p>en prægtig Fyr, Jørgen!</p></HIS:hisSp>
@@ -373,8 +367,8 @@
 <lb/><p>synes jeg saamen ogsaa!</p></HIS:hisSp>
 <pb/><lb/><fw type="page" place="top-left">10</fw>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
-<lb/><p>Saa? &dash; &dash; den er s'gu lavet efter den gam&typHyp;
-<lb/>le Forskrift. &dash; Men nu &dash; Fremad, Marsch!</p></HIS:hisSp>
+<lb/><p>Saa? – – den er s'gu lavet efter den gam‐
+<lb/>le Forskrift. – Men nu – Fremad, Marsch!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIANE"><HIS:spOpener><speaker>Juliane</speaker></HIS:spOpener>
 <lb/><p>velkommen efter!</p></HIS:hisSp>
 <lb/><HIS:hisStage>(Fruen og Jørgen, J: og P. gaae ud i Baggrunden)</HIS:hisStage>
@@ -389,9 +383,9 @@
 <lb/><HIS:hisStage>Fruen og Jørgen (komme fra Baggrunden)</HIS:hisStage>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
 <lb/><p>Ja, i Phantasien kan det være behageligt
-<lb/>nok at sværme Natten hen paa Sancthans&typHyp;
+<lb/>nok at sværme Natten hen paa Sancthans‐
 <lb/>haugen; men i Virkeligheden vil jeg
-<lb/>saagu heller tilbringe den i Sengen. &dash;</p></HIS:hisSp>
+<lb/>saagu heller tilbringe den i Sengen. –</p></HIS:hisSp>
 <pb/><lb/><fw type="page" place="top-right">11</fw>
 <lb/><HIS:hisSp who="FRUEN"><HIS:spOpener><speaker>Fruen</speaker></HIS:spOpener>
 <lb/><p>os inde og vente paa dem.</p></HIS:hisSp>
@@ -409,20 +403,20 @@
 <lb/><HIS:hisStage>(kommer frem paa Trappen og seer
 <lb/>sig om)</HIS:hisStage></HIS:spOpener><p>Men hvor blive de dog af?
 <lb/>Paulsen og Juliane gik fra os paa
-<lb/>Henveien &dash; og Birk er ogsaa ræd. &dash;
+<lb/>Henveien – og Birk er ogsaa ræd. –
 <lb/>Mon de da virkelig skulde have faaet
 <lb/>isinde at blive deroppe Natten over, som
-<lb/>der blev spøgt om ved Aftensbordet? &dash;
+<lb/>der blev spøgt om ved Aftensbordet? –
 <pb/><lb/><fw type="page" place="top-left">12</fw>
 <lb/>Ja, det kunde saagu ligne Paulsens originale
-<lb/>Ideer; og dersom nu han og Juliane føi&typHyp;
-<lb/>ter omkring deroppe &dash; hvem veed, hvor&typHyp;
-<lb/>ledes Birk vil optage det? &dash; Nei &dash; jeg
-<lb/>maa see efter. &dash; &dash; Heida! &dash; jeg skimter
-<lb/>tydelig noget Hvidt derhenne &dash; &dash; det maa
-<lb/>være dem! &dash; &dash; <HIS:hisStage>(Idet han gaaer)</HIS:hisStage> Vent
-<lb/>lidt! &dash; &dash; Saa vent dog! &dash; &dash; Nei, de hører
-<lb/>mig ikke. &dash; <HIS:hisStage>(Gaaer ud i Baggrunden)</HIS:hisStage></p></HIS:hisSp>
+<lb/>Ideer; og dersom nu han og Juliane føi‐
+<lb/>ter omkring deroppe – hvem veed, hvor‐
+<lb/>ledes Birk vil optage det? – Nei – jeg
+<lb/>maa see efter. – – Heida! – jeg skimter
+<lb/>tydelig noget Hvidt derhenne – – det maa
+<lb/>være dem! – – <HIS:hisStage>(Idet han gaaer)</HIS:hisStage> Vent
+<lb/>lidt! – – Saa vent dog! – – Nei, de hører
+<lb/>mig ikke. – <HIS:hisStage>(Gaaer ud i Baggrunden)</HIS:hisStage></p></HIS:hisSp>
 </div>
 </div>
 <div type="act" n="2">
@@ -431,7 +425,7 @@
 <lb/><head>Anden Scene</head>
 <lb/><HIS:hisStage>Paulsen og Juliane</HIS:hisStage>
 <lb/><HIS:hisSp who="PAULSEN"><HIS:spOpener><speaker>Paulsen</speaker></HIS:spOpener>
-<lb/><p>vi talte om &dash; seer De &dash; &dash;</p></HIS:hisSp>
+<lb/><p>vi talte om – seer De – –</p></HIS:hisSp>
 </div>
 <div type="scene" n="3">
 <lb/><head>Tredie Scene</head>
@@ -439,22 +433,22 @@
 <pb/><lb/><fw type="page" place="top-right">13</fw>
 <lb/><HIS:hisStage>(kommer, efter en Pause, ilende ind fra
 <lb/>venstre, standser og seer sig om)</HIS:hisStage></HIS:spOpener><p>Væk er
-<lb/>de igjen! &dash; &dash; Men dette maa jo gaae
-<lb/>til med Fandens Kunster! &dash; Og dersom
-<lb/>jeg faae ret saa var det fremdeles Paul&typHyp;
-<lb/>sen, som sværmede om med hende. &dash; Det
+<lb/>de igjen! – – Men dette maa jo gaae
+<lb/>til med Fandens Kunster! – Og dersom
+<lb/>jeg faae ret saa var det fremdeles Paul‐
+<lb/>sen, som sværmede om med hende. – Det
 <lb/>er ikke saa frit, at Du er en Smule
-<lb/>letsindig, min kjære Søster &dash; &dash; saaledes at
+<lb/>letsindig, min kjære Søster – – saaledes at
 <lb/>række Armen<HIS:hisDel rend="overstrike" hand="h1">e</HIS:hisDel> til Een iaften, naar Du
 <lb/>imorgen skal række Haanden til en
-<lb/>Anden. &dash; Naa! &dash; Paulsen er jo en plato&typHyp;
+<lb/>Anden. – Naa! – Paulsen er jo en plato‐
 <lb/>nisk Sværmer, som han selv siger, og
 <lb/>desuden er jo Sancthansnatten en Frihedens
-<lb/>Dag heroppe &dash; man holder ikke
-<lb/>saa strængt paa Formerne; &dash; men alligevel &dash;
-<lb/>alligevel &dash; &dash; det var nok bedst.
+<lb/>Dag heroppe – man holder ikke
+<lb/>saa strængt paa Formerne; – men alligevel –
+<lb/>alligevel – – det var nok bedst.
 <pb/><lb/><fw type="page" place="top-left">14</fw>
-<lb/>om jeg kunde faae fat paa dem. &dash;</p>
+<lb/>om jeg kunde faae fat paa dem. –</p>
 <lb/><HIS:hisStage>(Gaar ud tilhøire)</HIS:hisStage></HIS:hisSp>
 </div>
 </div>
@@ -467,12 +461,12 @@
 </div>
 <div type="scene" n="3">
 <lb/><head>Tredie Scene</head>
-<lb/><HIS:hisStage>De Forrige. &dash; Jørgen. (kommer frem
+<lb/><HIS:hisStage>De Forrige. – Jørgen. (kommer frem
 <lb/>paa Trappen)</HIS:hisStage>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
-<lb/><p>Ei, see der har vi dem jo begge to. &dash; Paul&typHyp;
-<lb/>sen! &dash; naa, han snorker endnu! <HIS:hisStage>(han
-<lb/>kommer ned)</HIS:hisStage> Og Du? Du har vel alle&typHyp;
+<lb/><p>Ei, see der har vi dem jo begge to. – Paul‐
+<lb/>sen! – naa, han snorker endnu! <HIS:hisStage>(han
+<lb/>kommer ned)</HIS:hisStage> Og Du? Du har vel alle‐
 <lb/>rede udsovet!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BIRK"><HIS:spOpener><speaker>Birk</speaker></HIS:spOpener>
 <lb/><p>hvad gaar der af Paulsen?</p></HIS:hisSp>
@@ -483,35 +477,35 @@
 <lb/><p>Gud veed, hvad det var.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker>
 <lb/><HIS:hisStage>(afsides)</HIS:hisStage></HIS:spOpener><p>For Fanden! skulde han have røbet
-<lb/>Noget! <HIS:hisStage>(høit)</HIS:hisStage> Aa, seer Du, det er rime&typHyp;
-<lb/>ligviis hans gamle ulykkelige Inclination &dash; &dash;</p></HIS:hisSp>
+<lb/>Noget! <HIS:hisStage>(høit)</HIS:hisStage> Aa, seer Du, det er rime‐
+<lb/>ligviis hans gamle ulykkelige Inclination – –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BIRK"><HIS:spOpener><speaker>Birk</speaker></HIS:spOpener>
-<lb/><p>han fundet hende, og &dash; &dash;</p></HIS:hisSp>
+<lb/><p>han fundet hende, og – –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
 <lb/><p>Ja, jeg kan jo nok saa omtrent sige dig,
 <lb/>hvad det er. <HIS:hisStage>(afsides)</HIS:hisStage> Jeg maa finde
 <lb/>paa Noget! <HIS:hisStage>(høit)</HIS:hisStage> Seer Du, det er Anne,
-<lb/>som &dash; &dash; &dash;</p></HIS:hisSp>
+<lb/>som – – –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BIRK"><HIS:spOpener><speaker>Birk</speaker>.</HIS:spOpener>
 <pb/><lb/><fw type="page" place="top-left">16</fw>
 <lb/><p>det er umuligt!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker>
-<lb/><HIS:hisStage>(afsides)</HIS:hisStage></HIS:spOpener><p>Han har bestemt Mistanke! &dash;
-<lb/><HIS:hisStage>(høit)</HIS:hisStage> Jo, jeg forsikkrer &dash; jeg er næsten
-<lb/>vis paa &dash; &dash; Men hvor var Du henne
+<lb/><HIS:hisStage>(afsides)</HIS:hisStage></HIS:spOpener><p>Han har bestemt Mistanke! –
+<lb/><HIS:hisStage>(høit)</HIS:hisStage> Jo, jeg forsikkrer – jeg er næsten
+<lb/>vis paa – – Men hvor var Du henne
 <lb/>inat?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BIRK"><HIS:spOpener><speaker>Birk</speaker></HIS:spOpener>
 <lb/><p>sige det med Vished.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
 <lb/><p>Hahaha! Du har nok seet lidt for
-<lb/>dybt i Punschglasset igaaraften. &dash;</p></HIS:hisSp>
+<lb/>dybt i Punschglasset igaaraften. –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BIRK"><HIS:spOpener><speaker>Birk</speaker></HIS:spOpener>
 <lb/><p>jeg har seet for dybt.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
 <lb/><p>Ja, kunde jeg ikke tænke det!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BIRK"><HIS:spOpener><speaker>Birk</speaker></HIS:spOpener>
 <pb/><lb/><fw type="page" place="top-right">17</fw>
-<lb/><p>Skov og Dal og sig selv &dash; &dash;</p></HIS:hisSp>
+<lb/><p>Skov og Dal og sig selv – –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
 <lb/><p>Af Guldhornet? Hvad Fanden er det
 <lb/>for en Historie, Du?</p></HIS:hisSp>
@@ -521,9 +515,9 @@
 <lb/>(soven<gap reason="writing"/>)</HIS:hisStage></HIS:hisAdd>
 <lb/><p>Ja saa min Sjæl maa han have mærket,
 <lb/>at Paulsen gjør Hanebeen, eller ogsaa
-<lb/>har han en Skrue løs. &dash; Jeg maa tage
+<lb/>har han en Skrue løs. – Jeg maa tage
 <lb/>Paulsen lidt i Skole for at faae Vished
-<lb/>i Sagerne. <HIS:hisStage>(ryster i ham)</HIS:hisStage> Paulsen! &dash; Paul&typHyp;
+<lb/>i Sagerne. <HIS:hisStage>(ryster i ham)</HIS:hisStage> Paulsen! – Paul‐
 <lb/>sen! saa vaagn dog, Menneske!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="PAULSEN"><HIS:spOpener><speaker>Paulsen</speaker></HIS:spOpener>
 <lb/><p>Au, der er han!</p></HIS:hisSp>
@@ -536,7 +530,7 @@
 <lb/><HIS:hisSp who="PAULSEN"><HIS:spOpener><speaker>Paulsen</speaker></HIS:spOpener>
 <lb/><p>er det Dig!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
-<lb/><p>Javist er det mig &dash; Hvordan er det fat
+<lb/><p>Javist er det mig – Hvordan er det fat
 <lb/>med Dig?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="PAULSEN"><HIS:spOpener><speaker>Paulsen</speaker></HIS:spOpener>
 <lb/><p>Har I spiist Frokost?</p></HIS:hisSp>
@@ -546,27 +540,27 @@
 <lb/><p>og sælsomme Geschichter</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
 <pb/><lb/><fw type="page" place="top-right">19</fw>
-<lb/><p>Ja, Du og Juliane sværmede jo i Maane&typHyp;
+<lb/><p>Ja, Du og Juliane sværmede jo i Maane‐
 <lb/>skinnet.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="PAULSEN"><HIS:spOpener><speaker>Paulsen</speaker></HIS:spOpener>
 <lb/><p>gik for os som et Lyn.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
-<lb/><p>Ja, især paa Hjemveien, efter hvad Julia&typHyp;
+<lb/><p>Ja, især paa Hjemveien, efter hvad Julia‐
 <lb/>ne har fortalt.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="PAULSEN"><HIS:spOpener><speaker>Paulsen</speaker></HIS:spOpener>
 <lb/><p>nogen Anelse derom.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
-<lb/><p>Og saa lot Du din Vei &dash; ha, ha, ha!</p></HIS:hisSp>
+<lb/><p>Og saa lot Du din Vei – ha, ha, ha!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="PAULSEN"><HIS:spOpener><speaker>Paulsen</speaker></HIS:spOpener>
 <lb/><p>hvor er Din Søster?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
 <lb/><p>Min Søster?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="PAULSEN"><HIS:spOpener><speaker>Paulsen</speaker></HIS:spOpener>
 <pb/><lb/><fw type="page" place="top-left">20</fw>
-<lb/><p>jeg maa tilforladelig, &dash;</p></HIS:hisSp>
+<lb/><p>jeg maa tilforladelig, –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
-<lb/><p>Nei, hør, Paulsen! &dash; &dash; jeg maa sige
-<lb/>Dig Noget! &dash;</p></HIS:hisSp>
+<lb/><p>Nei, hør, Paulsen! – – jeg maa sige
+<lb/>Dig Noget! –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="PAULSEN"><HIS:spOpener><speaker>Paulsen</speaker></HIS:spOpener>
 <lb/><p>jeg bliver Din Svoger.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
@@ -575,59 +569,59 @@
 <lb/><p>min Erklæring og hendes Ja.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
 <lb/><p>Men hvem mener Du da Menneske!
-<lb/>Er det Juliane &dash;</p></HIS:hisSp>
+<lb/>Er det Juliane –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="PAULSEN"><HIS:spOpener><speaker>Paulsen</speaker></HIS:spOpener>
 <lb/><p>absolut tale med hende.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
 <pb/><lb/><fw type="page" place="top-right">21</fw>
 <lb/><p>Nu da, siden Du er reent splittergal,
 <lb/>saa nødes jeg til at indvie Dig i Noget,
-<lb/>som rigtignok skulde være en hemme&typHyp;
-<lb/>lighed. &dash; Viid da &dash;</p></HIS:hisSp>
+<lb/>som rigtignok skulde være en hemme‐
+<lb/>lighed. – Viid da –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="PAULSEN"><HIS:spOpener><speaker>Paulsen</speaker></HIS:spOpener>
 <lb/><p>Nu?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker>
-<lb/><HIS:hisStage>(hviskende)</HIS:hisStage></HIS:spOpener><p>Der er en Hage ved hende &dash;</p></HIS:hisSp>
+<lb/><HIS:hisStage>(hviskende)</HIS:hisStage></HIS:spOpener><p>Der er en Hage ved hende –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="PAULSEN"><HIS:spOpener><speaker>Paulsen</speaker></HIS:spOpener>
 <lb/><p>En Hale!! Det er Nummer to!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
-<lb/><p>Vrøvl! &dash; Jeg siger, der er en Hage ved
-<lb/>hende. &dash; Kort og godt &dash; hun er forlo&typHyp;
-<lb/>vet. &dash;</p></HIS:hisSp>
+<lb/><p>Vrøvl! – Jeg siger, der er en Hage ved
+<lb/>hende. – Kort og godt – hun er forlo‐
+<lb/>vet. –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="PAULSEN"><HIS:spOpener><speaker>Paulsen</speaker></HIS:spOpener>
-<lb/><p>For &dash; forlovet?</p></HIS:hisSp>
+<lb/><p>For – forlovet?</p></HIS:hisSp>
 <pb/><lb/><fw type="page" place="top-left">22</fw>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
 <lb/><p>Forlovet med Birk; nu veed Du det!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="PAULSEN"><HIS:spOpener><speaker>Paulsen</speaker></HIS:spOpener>
 <lb/><p>vil jeg haabe<HIS:hisDel rend="overwritten">?</HIS:hisDel>!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
-<lb/><p>Paulsen, vær en Mand og fat Dig! &dash; Det
+<lb/><p>Paulsen, vær en Mand og fat Dig! – Det
 <lb/>er som jeg siger.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="PAULSEN"><HIS:spOpener><speaker>Paulsen</speaker></HIS:spOpener>
-<lb/><p>afstaae hende, han maa &dash;</p></HIS:hisSp>
+<lb/><p>afstaae hende, han maa –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
-<lb/><p>Tys, tys! &dash; er Du da forrykt!</p></HIS:hisSp>
+<lb/><p>Tys, tys! – er Du da forrykt!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="PAULSEN"><HIS:spOpener><speaker>Paulsen</speaker></HIS:spOpener>
 <lb/><p>maa have ham fat!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
 <lb/><p>Men saa betænk Dig dog! Du vækker
-<lb/>jo Skandale, og &dash; &dash; er det en Maneer
+<lb/>jo Skandale, og – – er det en Maneer
 <pb/><lb/><fw type="page" place="top-right">23</fw>
 <lb/>at opføre sig paa?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="PAULSEN"><HIS:spOpener><speaker>Paulsen</speaker></HIS:spOpener>
 <lb/><p>Svar mig, hvor er han?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
-<lb/><p>Nu vel da &dash; derhenne etsteds langsmed
-<lb/>Veien. &dash; <HIS:hisStage>(peger mod Baggrunden. &dash; Afsides )</HIS:hisStage>
+<lb/><p>Nu vel da – derhenne etsteds langsmed
+<lb/>Veien. – <HIS:hisStage>(peger mod Baggrunden. – Afsides )</HIS:hisStage>
 <lb/>Der vil jeg haabe, at han ikke træffer
 <lb/>ham<unclear reason="writing">.</unclear></p></HIS:hisSp>
 <lb/><HIS:hisSp who="PAULSEN"><HIS:spOpener><speaker>Paulsen</speaker></HIS:spOpener>
-<lb/><p>eller ogsaa &dash; aldrig! &dash;</p></HIS:hisSp>
+<lb/><p>eller ogsaa – aldrig! –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
 <lb/><p>Nei, jeg følger Dig, min Ven! jeg kan
-<lb/>ikke forsvare at lade Dig alene i Ulykken &dash; &dash;
-<lb/>Bi dog &dash; bi dog! &dash; <HIS:hisStage>(Han følger
+<lb/>ikke forsvare at lade Dig alene i Ulykken – –
+<lb/>Bi dog – bi dog! – <HIS:hisStage>(Han følger
 <lb/>efter Paulsen ud i Baggrunden)</HIS:hisStage></p></HIS:hisSp>
 </div>
 <div type="scene" n="5">
@@ -646,31 +640,31 @@
 <lb/><HIS:hisSp who="JULIANE"><HIS:spOpener><speaker>Juliane</speaker></HIS:spOpener>
 <lb/><p>Hvad er paafærde?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
-<lb/><p>Han er som besat &dash; &dash; Du har gjort
+<lb/><p>Han er som besat – – Du har gjort
 <lb/>ham reent ør i Hovedet, og han vil
 <lb/>strax ud med en Erklæring.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIANE"><HIS:spOpener><speaker>Juliane</speaker></HIS:spOpener>
 <lb/><p>Nu?</p></HIS:hisSp>
 <pb/><lb/><fw type="page" place="top-right">25.</fw>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
-<lb/><p>Hvad skulde jeg vel gjøre? &dash; Jeg sagde
-<lb/>ham ligeud at Du allerede var for&typHyp;
-<lb/>lovet og &dash; &dash; &dash;</p></HIS:hisSp>
+<lb/><p>Hvad skulde jeg vel gjøre? – Jeg sagde
+<lb/>ham ligeud at Du allerede var for‐
+<lb/>lovet og – – –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIANE"><HIS:spOpener><speaker>Juliane</speaker></HIS:spOpener>
 <lb/><p>Og saa?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
 <lb/><p>Ja, saa blev han reent gal; han vilde
 <lb/>have fat i Birk og løb henover Veien
-<lb/>for at finde ham &dash; jeg efter &dash; men
+<lb/>for at finde ham – jeg efter – men
 <lb/>han havde faaet et Forspring og jeg
 <lb/>tabte ham af Sigte.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIANE"><HIS:spOpener><speaker>Juliane</speaker></HIS:spOpener>
-<lb/><p>han faar fat paa Birk, saa &dash;</p></HIS:hisSp>
+<lb/><p>han faar fat paa Birk, saa –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
 <lb/><p>Ja, det maa for enhver Priis forhindres!</p></HIS:hisSp>
 <pb/><lb/><fw type="page" place="top-left">26</fw>
 <lb/><HIS:hisSp who="JULIANE"><HIS:spOpener><speaker>Juliane</speaker></HIS:spOpener>
-<lb/><p>saa ligefrem at tilstaae &dash; &dash;</p></HIS:hisSp>
+<lb/><p>saa ligefrem at tilstaae – –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
 <lb/><p>Ja, men hvad skulde jeg gjøre?</p></HIS:hisSp>
 </div>
@@ -681,7 +675,7 @@
 <lb/><p>hvad skal det sige?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker>
 <lb/><HIS:hisStage>(sagte til Juliane)</HIS:hisStage></HIS:spOpener><p>Paulsen maa have
-<lb/>røbet sig &dash; det er klart! <HIS:hisStage>(Til Fruen)</HIS:hisStage> Men
+<lb/>røbet sig – det er klart! <HIS:hisStage>(Til Fruen)</HIS:hisStage> Men
 <lb/>hvad komme Papirerne den Sag ved?</p></HIS:hisSp>
 </div>
 <div type="scene" n="8">
@@ -693,16 +687,16 @@
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
 <lb/><p><HIS:hisDel rend="overstrike" hand="h1">Den er jo alt fløiten!</HIS:hisDel></p></HIS:hisSp>
 <lb/><HIS:hisSp who="BIRK"><HIS:spOpener><speaker>Birk</speaker></HIS:spOpener>
-<lb/><p>at det var Anne &dash;</p></HIS:hisSp>
+<lb/><p>at det var Anne –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker>
-<lb/><HIS:hisStage>(forvirret)</HIS:hisStage></HIS:spOpener><p>Ja ja &dash; jeg sagde &dash; for jeg troede &dash;
-<lb/>jeg havde ingen Idee om &dash; &dash;</p></HIS:hisSp>
+<lb/><HIS:hisStage>(forvirret)</HIS:hisStage></HIS:spOpener><p>Ja ja – jeg sagde – for jeg troede –
+<lb/>jeg havde ingen Idee om – –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="PAULSEN"><HIS:spOpener><speaker>Paulsen</speaker></HIS:spOpener>
-<lb/><p>Du fortalte jo &dash; &dash;</p></HIS:hisSp>
+<lb/><p>Du fortalte jo – –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
-<lb/><p>Ja jeg vidste tilforladelig ikke &dash; eller
-<lb/>rettere sagt &dash; det var &dash; hahaha! det
-<lb/>var mit Spøg &dash; &dash; bare for at sætte lidt
+<lb/><p>Ja jeg vidste tilforladelig ikke – eller
+<lb/>rettere sagt – det var – hahaha! det
+<lb/>var mit Spøg – – bare for at sætte lidt
 <lb/>Skræk i Dig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUEN"><HIS:spOpener><speaker>Fruen</speaker></HIS:spOpener>
 <lb/><p>hvorledes skal jeg forstaae dette?</p></HIS:hisSp>
@@ -711,11 +705,11 @@
 <lb/><HIS:hisStage>(gjør Miner til ham)</HIS:hisStage></HIS:spOpener><p>Ja, Du glemmer nok
 <lb/>Erklæringen.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIANE"><HIS:spOpener><speaker>Juliane</speaker></HIS:spOpener>
-<lb/><p>De maa ikke troe &dash; &dash;</p></HIS:hisSp>
+<lb/><p>De maa ikke troe – –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker>
 <lb/><HIS:hisStage>(afsides)</HIS:hisStage></HIS:spOpener><p>Den Fandens Sladderhank!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BIRK"><HIS:spOpener><speaker>Birk</speaker></HIS:spOpener>
-<lb/><p>det skulde være Anne, som &dash;</p></HIS:hisSp>
+<lb/><p>det skulde være Anne, som –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker></HIS:spOpener>
 <lb/><p>Tys, tys! jeg beer Dig!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BIRK"><HIS:spOpener><speaker>Birk</speaker></HIS:spOpener>
@@ -732,7 +726,7 @@
 <lb/><p>at offentliggjøre istedetfor een.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JORGEN"><HIS:spOpener><speaker>Jørgen</speaker>
 <lb/><HIS:hisStage>(leende)</HIS:hisStage></HIS:spOpener><p>Og derfor kan vi takke Paulsens
-<lb/>brændbare Hjerte. &dash;</p></HIS:hisSp>
+<lb/>brændbare Hjerte. –</p></HIS:hisSp>
 </div>
 </div>
 </body>

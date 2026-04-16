@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -16,8 +10,8 @@
 <title level="a" type="sub">1. versjon, TarkUiB NT280r (rollehefte, En Soldat)</title>
 <title level="a" type="origYear">1854</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Ingrid Falkenberg, Bjørg Harvey, Stine Brenna Taugbøl</name></respStmt>
 <respStmt>
 <resp>Transkripsjon (av faksimiler), oktober 2000</resp>
@@ -59,7 +53,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <list>
@@ -182,8 +176,8 @@ Den eldste teksten er vanligvis overstrøket, slik at bare det som gjelder for d
 </item>
 </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="castItem">
@@ -202,7 +196,7 @@ Den eldste teksten er vanligvis overstrøket, slik at bare det som gjelder for d
 </list>
 </tagUsage></namespace>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="pb-ed-HU">Sideskiftene fra Hundreårsutgaven er ikke ført inn (skulle vært kodet med pb ed="HU"). Dette tekstvitnet dekker sidene 121-228.</tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -264,7 +258,7 @@ Konverterte manuskripttranskripsjonen fra word-format til TEI XML. Leste korrekt
 <gap/>
 <lb/><titlePart>En <unclear reason="damage">Soldat</unclear>
 <lb/>i
-<lb/>&lquo;Fru Inger til Østeraad&rquo;
+<lb/>«Fru Inger til Østeraad»
 <lb/>Historisk Drama i 5 Akter.</titlePart>
 </docTitle>
 </titlePage>
@@ -284,47 +278,47 @@ Konverterte manuskripttranskripsjonen fra word-format til TEI XML. Leste korrekt
 <lb/><gap reason="damage"/>
 <lb/><HIS:hisStage><HIS:stageRole who="FRUINGER"><gap reason="damage"/>ger</HIS:stageRole> <HIS:stageRole who="BJORN"><unclear reason="damage">Bjørn</unclear></HIS:stageRole> og nogle svenske
 <lb/><HIS:stageRole>Soldater</HIS:stageRole> fra Høire.</HIS:hisStage>
-<lb/><HIS:hisSp who="FRUINGER"><HIS:spOpener><speaker>Fru Inger</speaker>.</HIS:spOpener><p>&dash; blive mig dyrekjøbt nu.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="SOLDAT"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Tilgiv, hvis I er Husets Frue &dash;</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FRUINGER"><HIS:spOpener><speaker>Fru Inger</speaker>.</HIS:spOpener><p>&dash; Det er Grev Sture I søger?</p></HIS:hisSp>
-<lb/><HIS:hisSp who="SOLDAT"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Det er <HIS:hisDel rend="overstrike" hand="h1">det!</HIS:hisDel> <HIS:hisAdd place="inline" hand="h1">så!</HIS:hisAdd></p></HIS:hisSp>
-<lb/><HIS:hisSp who="FRUINGER"><HIS:spOpener><speaker>Fru Inger</speaker>.</HIS:spOpener><p>&dash; søgt <app type="alteration"><lem><HIS:hisAdd place="offline" hand="h1">tilflugt</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h1">Beskyttelse</HIS:hisDel></HIS:hisRdg></app> hos mig.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="SOLDAT"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p><app type="alteration"><lem><HIS:hisAdd place="offline" hand="h1">Tilflugt</HIS:hisAdd>?</lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h1">Beskyttelse</HIS:hisDel>?</HIS:hisRdg></app> <app type="alteration"><lem><HIS:hisAdd place="offline" hand="h1">Forlad</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h1">Tillad</HIS:hisDel></HIS:hisRdg></app>, min <HIS:hisAdd place="offline" hand="h1">høj-</HIS:hisAdd>ædle Frue,
-<lb/><HIS:hisAdd place="inline" hand="h1">men</HIS:hisAdd> den mægter I ei at give ham, thi &dash;</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FRUINGER"><HIS:spOpener><speaker>Fru Inger</speaker>.</HIS:spOpener><p>&dash; har han aflivet sig.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="FRUINGER"><HIS:spOpener><speaker>Fru Inger</speaker>.</HIS:spOpener><p>– blive mig dyrekjøbt nu.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="SOLDAT"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Tilgiv, hvis I er Husets Frue –</p></HIS:hisSp>
+<lb/><HIS:hisSp who="FRUINGER"><HIS:spOpener><speaker>Fru Inger</speaker>.</HIS:spOpener><p>– Det er Grev Sture I søger?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="SOLDAT"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Det er <HIS:hisDel rend="overstrike" hand="h1">det!</HIS:hisDel> <HIS:hisAdd place="inline" hand="h1">så!</HIS:hisAdd></p></HIS:hisSp>
+<lb/><HIS:hisSp who="FRUINGER"><HIS:spOpener><speaker>Fru Inger</speaker>.</HIS:spOpener><p>– søgt <app type="alteration"><lem><HIS:hisAdd place="offline" hand="h1">tilflugt</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h1">Beskyttelse</HIS:hisDel></HIS:hisRdg></app> hos mig.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="SOLDAT"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p><app type="alteration"><lem><HIS:hisAdd place="offline" hand="h1">Tilflugt</HIS:hisAdd>?</lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h1">Beskyttelse</HIS:hisDel>?</HIS:hisRdg></app> <app type="alteration"><lem><HIS:hisAdd place="offline" hand="h1">Forlad</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h1">Tillad</HIS:hisDel></HIS:hisRdg></app>, min <HIS:hisAdd place="offline" hand="h1">høj-</HIS:hisAdd>ædle Frue,
+<lb/><HIS:hisAdd place="inline" hand="h1">men</HIS:hisAdd> den mægter I ei at give ham, thi –</p></HIS:hisSp>
+<lb/><HIS:hisSp who="FRUINGER"><HIS:spOpener><speaker>Fru Inger</speaker>.</HIS:spOpener><p>– har han aflivet sig.</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Soldaterne</speaker>.</HIS:spOpener><p>Aflivet sig!</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FRUINGER"><HIS:spOpener><speaker>Fru Inger</speaker>.</HIS:spOpener><p>&dash; Grev Stures Liig til Sverrig.</p></HIS:hisSp>
-<lb/><HIS:hisSp who="SOLDAT"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Det skal skee, som I byder. <HIS:hisStage>(til Een
+<lb/><HIS:hisSp who="FRUINGER"><HIS:spOpener><speaker>Fru Inger</speaker>.</HIS:spOpener><p>– Grev Stures Liig til Sverrig.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="SOLDAT"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Det skal skee, som I byder. <HIS:hisStage>(til Een
 <pb/>
 <lb/>af de Andre)</HIS:hisStage> <app type="alteration"><lem><HIS:hisAdd place="offline" hand="h1">Løb</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h1">Du gaaer</HIS:hisDel></HIS:hisRdg></app> med dette Budskab
 <lb/>til <app type="alteration"><lem><HIS:hisAdd place="offline" hand="h1">Hr. Jens</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h1">Ridder</HIS:hisDel></HIS:hisRdg></app> <app type="alteration"><lem>Bjelke<HIS:hisDel rend="overwritten">,</HIS:hisDel><HIS:hisAdd place="inline" hand="h1">.</HIS:hisAdd> <app type="alteration"><lem><HIS:hisAdd place="offline" hand="h1">Han</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h1">som endnu</HIS:hisDel></HIS:hisRdg></app> holder <app type="alteration"><lem><HIS:hisAdd place="offline" hand="h1">med</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h1">Vagt</HIS:hisDel></HIS:hisRdg></app>
 <lb/><HIS:hisAdd place="offline" hand="h1">resten af rytterne borte</HIS:hisAdd></lem><HIS:hisRdg/></app> paa Landeveien. <app type="alteration"><lem><HIS:hisAdd place="offline" hand="h1">Vi andre får gå</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="h1">Følg mig herind, I Andre.</HIS:hisDel></HIS:hisRdg></app>
-<lb/><HIS:hisAdd place="inline" hand="h1">herind og &dash;</HIS:hisAdd></p></HIS:hisSp>
+<lb/><HIS:hisAdd place="inline" hand="h1">herind og –</HIS:hisAdd></p></HIS:hisSp>
 <lb/><HIS:hisStage>(En Soldat gaaer ud til Høire; Bjørn og
 <lb/>de Øvrige til Venstre.)</HIS:hisStage>
 </div>
 <div type="scene" n="10">
 <lb/><head>10<hi rend="raised">de</hi> Scene.</head>
 <lb/><HIS:hisStage><HIS:stageRole who="FRUINGER">Fru Inger.</HIS:stageRole> <HIS:stageRole who="BJORN">Bjørn</HIS:stageRole>. <HIS:stageRole who="NIELSLYKKE">Niels Lykke</HIS:stageRole>.</HIS:hisStage>
-<lb/><HIS:hisSp who="FRUINGER"><HIS:spOpener><speaker>Fru Inger</speaker>.</HIS:spOpener><p>&dash; Gud eller jeg?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="FRUINGER"><HIS:spOpener><speaker>Fru Inger</speaker>.</HIS:spOpener><p>– Gud eller jeg?</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Soldaterne</speaker>. <HIS:hisStage>(komme med Kisten)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
 </div>
 <div type="scene" n="11">
 <lb/><head>11<hi rend="raised">te</hi> Scene.</head>
 <lb/><HIS:hisStage><HIS:stageRole who="BJORN FRUINGER NIELSLYKKE">De Forrige</HIS:stageRole>. <HIS:stageRole>Soldaterne</HIS:stageRole>. <HIS:stageRole who="BJELKE">Jens Bjelke.</HIS:stageRole></HIS:hisStage>
-<lb/><HIS:hisSp who="FRUINGER"><HIS:spOpener><speaker>Fru Inger</speaker>.</HIS:spOpener><p>&dash; det er en hæslig Drøm!</p></HIS:hisSp>
-<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>Bjelke</speaker>.</HIS:spOpener><p>&dash; Død!</p></HIS:hisSp>
-<lb/><HIS:hisSp who="SOLDAT"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Selv har han &dash;</p></HIS:hisSp>
-<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>Bjelke</speaker>.</HIS:spOpener><p>&dash; det er ikke Grev Sture!</p></HIS:hisSp>
-<lb/><HIS:hisSp who="SOLDAT"><HIS:spOpener><speaker>&dash;</speaker></HIS:spOpener><p>Tilgiv mig Hr. Ridder! men denne Ring
-<lb/>som han bar om sin Hals &dash;</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FRUINGER"><HIS:spOpener><speaker>Fru Inger</speaker>.</HIS:spOpener><p>&dash; Ringen! <HIS:hisStage>(river den med Heftighed
+<lb/><HIS:hisSp who="FRUINGER"><HIS:spOpener><speaker>Fru Inger</speaker>.</HIS:spOpener><p>– det er en hæslig Drøm!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>Bjelke</speaker>.</HIS:spOpener><p>– Død!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="SOLDAT"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Selv har han –</p></HIS:hisSp>
+<lb/><HIS:hisSp who="BJELKE"><HIS:spOpener><speaker>Bjelke</speaker>.</HIS:spOpener><p>– det er ikke Grev Sture!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="SOLDAT"><HIS:spOpener><speaker>–</speaker></HIS:spOpener><p>Tilgiv mig Hr. Ridder! men denne Ring
+<lb/>som han bar om sin Hals –</p></HIS:hisSp>
+<lb/><HIS:hisSp who="FRUINGER"><HIS:spOpener><speaker>Fru Inger</speaker>.</HIS:spOpener><p>– Ringen! <HIS:hisStage>(river den med Heftighed
 <pb/>
 <lb/>af Soldatens Haand)</HIS:hisStage></p></HIS:hisSp>
-<lb/><HIS:hisSp who="FRUINGER"><HIS:spOpener><speaker>Fru Inger</speaker>.</HIS:spOpener><p>&dash; Jesus Christ! min Søn!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="FRUINGER"><HIS:spOpener><speaker>Fru Inger</speaker>.</HIS:spOpener><p>– Jesus Christ! min Søn!</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Soldaterne</speaker>.</HIS:spOpener><p>Hendes Søn!</p></HIS:hisSp>
-<lb/><HIS:hisSp who="FRUINGER"><HIS:spOpener><speaker>Fru Inger</speaker>.</HIS:spOpener><p> &dash; en Grav hos mit Barn!</p></HIS:hisSp>
-<lb/><HIS:hisSp who="SOLDAT"><HIS:spOpener><speaker>&dash;</speaker> <HIS:hisStage>(Hun synker kraftløs ned over Kisten.
+<lb/><HIS:hisSp who="FRUINGER"><HIS:spOpener><speaker>Fru Inger</speaker>.</HIS:spOpener><p> – en Grav hos mit Barn!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="SOLDAT"><HIS:spOpener><speaker>–</speaker> <HIS:hisStage>(Hun synker kraftløs ned over Kisten.
 <lb/>Almindelig Bev<gap reason="damage"/>gelse.)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
 <lb/><figure type="bar"/>
 </div>

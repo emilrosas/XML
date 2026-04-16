@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -16,8 +10,8 @@
 <title level="a" type="sub">grunntekst, 1. utg. (føljetong)</title>
 <title level="a" type="origYear">1851</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Karl Johan Sæth, Hallvard Ystad, Mette Witting</name></respStmt>
 <respStmt>
 <resp>Koding og kollasjonering</resp>
@@ -85,7 +79,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-grt-trykk;</p></projectDesc>
+<projectDesc><p>GRUNNTEKST BASERT PÅ TRYKT FORELEGG. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av to medarbeidere. I tillegg er tre eksemplarer av det trykte forelegget kollasjonert mot hverandre (internkollasjon). Teksten er kollasjonert en tredje gang i forbindelse med det avsluttende arbeidet med verket.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <list>
@@ -161,8 +155,8 @@
 </list></item>
 </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -177,7 +171,7 @@
 </list>
 </tagUsage></namespace>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="pb-ed-HU">For synkroniseringsformål er sideskiftene fra Hundreårsutgaven (bd I) kodet med pb ed="HU". Dette tekstvitnet dekker sidene 325-340. Det første sidetallet er oppgitt i et n-attributt.</tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -280,18 +274,18 @@ Brente inn denne filen på en CD som legges i John Gabriel, og slettet hele revi
 <pb ed="HU"/>
 <div type="preface">
 <lb/><head>Fortale.</head>
-<lb/><p>Forleden Dag befandt jeg mig paa Storthings&typHyp;
+<lb/><p>Forleden Dag befandt jeg mig paa Storthings‐
 <cb n="138"/>
 <lb/><fw type="column" place="top">138</fw>
 <lb/>galleriet; den Sag, der diskutteredes, var af samme
-<lb/>Natur som de fleste, og jeg kan derfor ikke læn&typHyp;
+<lb/>Natur som de fleste, og jeg kan derfor ikke læn‐
 <lb/>gere erindre, hvorom den dreiede sig. Da Schydtz
-<lb/>tilfældigviis talede og jeg saaledes ikke havde No&typHyp;
-<lb/>get at fæste min Opmærksomhed til, lod jeg Phan&typHyp;
+<lb/>tilfældigviis talede og jeg saaledes ikke havde No‐
+<lb/>get at fæste min Opmærksomhed til, lod jeg Phan‐
 <lb/>tasien frit Spillerum, og overgav mig til denne
 <lb/>behagelige Svævenom halvt paa Virkelighedens, halvt
-<lb/>paa Uvirkelighedens Gebet, hvortil vi i ledige Ti&typHyp;
-<lb/>mer saa gjerne overlade os, naar Sjælen enten fø&typHyp;
+<lb/>paa Uvirkelighedens Gebet, hvortil vi i ledige Ti‐
+<lb/>mer saa gjerne overlade os, naar Sjælen enten fø‐
 <lb/>ler sig trættet eller den Yderverden, der omgiver os,
 <lb/>fremkalder det tilbørlige søvndyssende Indtryk. Jeg
 <lb/>tænkte som saa: I disse 106 Hoveder dels med,
@@ -299,27 +293,27 @@ Brente inn denne filen på en CD som legges i John Gabriel, og slettet hele revi
 <lb/>den Fortrinlighed, af al den aandelige Begavelse,
 <lb/>som gamle Norge har at opvise ligefra Nordkap
 <lb/>til Lindesnæs, ligefra Svinesund til Stavanger
-<lb/>(hvorfra Natvig jo er valgt). Her findes Genia&typHyp;
+<lb/>(hvorfra Natvig jo er valgt). Her findes Genia‐
 <lb/>liteten, Veltalenheden, Patriotismen, Liberaliteten
 <lb/>sammendynget i kompakte Masser. Og af alle disse
-<lb/>fortrinlige Egenskaber have selv de sjeldneste Fore&typHyp;
-<lb/>komstformer deres Repræsentanter, saaledes <sic>repræ&typHyp;
+<lb/>fortrinlige Egenskaber have selv de sjeldneste Fore‐
+<lb/>komstformer deres Repræsentanter, saaledes <sic>repræ‐
 <lb/>senterers</sic> f. Ex. en vis Nuance af Genialiteten ved
 <lb/><hi rend="spaced">Skjerkholdt</hi>, en vis dito af Veltalenheden ved
-<lb/><hi rend="spaced">Parneman</hi>, o. s. v., o. s. v. Den lyriske Be&typHyp;
+<lb/><hi rend="spaced">Parneman</hi>, o. s. v., o. s. v. Den lyriske Be‐
 <lb/>gavelse finder naturligviis sit Udtryk gjennem Natvig,
-<lb/>der saaledes paa en vis Maade danner Formidlings&typHyp;
+<lb/>der saaledes paa en vis Maade danner Formidlings‐
 <lb/>ledet mellem Poesien og Politiken.</p>
-<lb/><p>I denne Retning fortsatte jeg mine Betragt&typHyp;
+<lb/><p>I denne Retning fortsatte jeg mine Betragt‐
 <lb/>ninger i<pb ed="HU"/> nogle Timer, indtil <hi rend="spaced">Schydtz</hi> blev færdig og
 <lb/>min uforstyrrede Tankeflugt saaledes afbrødes.</p>
-<lb/><p>Om Aftenen saa jeg &lquo;<hi rend="spaced">Norma</hi>&rquo;, og pludse&typHyp;
-<lb/>lig gik der et Lys op for mig: &lquo;Storthinget er
-<lb/>en dramatisk begavet Korporation!&rquo; Jeg vil ikke
+<lb/><p>Om Aftenen saa jeg «<hi rend="spaced">Norma</hi>», og pludse‐
+<lb/>lig gik der et Lys op for mig: «Storthinget er
+<lb/>en dramatisk begavet Korporation!» Jeg vil ikke
 <lb/>søge at gjøre hverken mig selv eller Læseren Rede
 <lb/>for den Slutningsrække, der ledede mig til dette
 <lb/>Resultat, thi hvo kjender vel ikke Tonernes Magt,
-<lb/>hvo veed vel ikke, at det er Musiken givet med A&typHyp;
+<lb/>hvo veed vel ikke, at det er Musiken givet med A‐
 <lb/>lexandersværdet at overhugge Tanketraadens gordiske
 <lb/>Knuder, med Lynfart at skyde os fremad paa den
 <lb/>logiske Spiralvandring og stille os paa et Punkt,
@@ -329,7 +323,7 @@ Brente inn denne filen på en CD som legges i John Gabriel, og slettet hele revi
 <lb/>i Skuespillet, Motzfeldt, Lange og Harris den gamle
 <lb/>vrantne Onkel, som har tabt Følelsen for Livets
 <lb/>Poesi, men som dog er god at have i Baghaanden,
-<lb/>hvormeget hans prosaiske Verdensviisdom end op&typHyp;
+<lb/>hvormeget hans prosaiske Verdensviisdom end op‐
 <lb/>træder fientlig mod de unge Elskendes phantastiske
 <lb/>Planer og Luftkasteller. Oppositionen overhovedet
 <lb/>er Koketten, som enhver ung Fusentast gjerne courer
@@ -341,54 +335,54 @@ Brente inn denne filen på en CD som legges i John Gabriel, og slettet hele revi
 <lb/>Medbeilerinde gjerne bringer ham en klækkeligere
 <lb/>Medgift). Stabell er naturligviis Intriguestykkets
 <lb/>Helt, han er en af disse ægte dramatiske Charakterer,
-<lb/>som Heiberg omtaler, &lquo;som man mere maa gjætte
+<lb/>som Heiberg omtaler, «som man mere maa gjætte
 <lb/>sig til end anskue og som omsider ved Stykkets
 <lb/>Slutning standse der, hvor man af Begyndelsen
-<lb/>at dømme mindst skulde vente det.&rquo;</p>
+<lb/>at dømme mindst skulde vente det.»</p>
 <lb/><p>Disse Betragtninger var det, som bevægede
-<lb/>mig til at arrangere Operaen &lquo;<hi rend="spaced">Norma eller en
-<lb/>Politikers Kjærlighed</hi>,&rquo; hvis Text medfølger
-<lb/>aftrykt, og som jeg herved tilbyder Thinget til Op&typHyp;
-<lb/>førelse ved en eller anden festlig Leilighed. Mu&typHyp;
+<lb/>mig til at arrangere Operaen «<hi rend="spaced">Norma eller en
+<lb/>Politikers Kjærlighed</hi>,» hvis Text medfølger
+<lb/>aftrykt, og som jeg herved tilbyder Thinget til Op‐
+<lb/>førelse ved en eller anden festlig Leilighed. Mu‐
 <lb/>siken maa det selv sørge for, og da det<pb ed="HU"/> jo eier
 <lb/>Virtuoser paa alle mulige Instrumenter ligefra
-<lb/>Trompet til Tromme og Basun, saa vil dette for&typHyp;
+<lb/>Trompet til Tromme og Basun, saa vil dette for‐
 <lb/>haabentlig ikke falde vanskeligt. Rigtignok veed jeg,
-<lb/>at Thinget &lquo;<hi rend="spaced">indtil videre</hi>&rquo; har fuldt op at be&typHyp;
+<lb/>at Thinget «<hi rend="spaced">indtil videre</hi>» har fuldt op at be‐
 <lb/>stille, men det var jo dog ikke umuligt, at hans
 <lb/>Majestæt kunde befrygte farlige Følger af disse
 <lb/>overvættes Anstrængelser, især i Hundedagene, og
 <lb/>dersom altsaa Thinget en skjøn Dag skulde blive
-<lb/>bevilget Ferie &lquo;<hi rend="spaced">indtil videre,</hi>&rquo; saa vilde det være
-<lb/>godt, om det havde en nyttig og behagelig Tids&typHyp;
+<lb/>bevilget Ferie «<hi rend="spaced">indtil videre,</hi>» saa vilde det være
+<lb/>godt, om det havde en nyttig og behagelig Tids‐
 <lb/>fordriv at divertere sig med.</p>
 <lb/><figure type="bar"/>
 </div><pb ed="HU"/><pb ed="HU"/>
 <lb/><HIS:hisCastList><head>Personerne:</head>
 <lb/><castItem xml:id="NORMA"><role>Norma</role> (udføres af) <actor>Oppositionen</actor>.</castItem>
 <lb/><castItem xml:id="ADALGISA"><role>Adalgisa</role>, <roleDesc>hendes gode
-<lb/>Veninde</roleDesc> &dash; <actor>Regjeringspartiet</actor>.</castItem>
-<lb/><castItem xml:id="SEVERUS"><role>Severus</role>, <roleDesc>begge Da&typHyp;
-<lb/>mers Elsker</roleDesc> &dash; <actor>en &lquo;Liberal&rquo; (eller
+<lb/>Veninde</roleDesc> – <actor>Regjeringspartiet</actor>.</castItem>
+<lb/><castItem xml:id="SEVERUS"><role>Severus</role>, <roleDesc>begge Da‐
+<lb/>mers Elsker</roleDesc> – <actor>en «Liberal» (eller
 <lb/>i Mangel deraf: Hr.
 <lb/>Stabell)</actor>.</castItem>
-<lb/><castItem xml:id="ARIOVIST"><role>Ariovist</role>, <roleDesc>Normas Fa&typHyp;
+<lb/><castItem xml:id="ARIOVIST"><role>Ariovist</role>, <roleDesc>Normas Fa‐
 <lb/>der, en gammel
-<lb/>Druide</roleDesc> &dash; <actor>Hr. Ueland</actor>.
+<lb/>Druide</roleDesc> – <actor>Hr. Ueland</actor>.
 <lb/><note resp="narrator" place="inline">(NB. Druiderne vare hedenske
 <lb/>Hunde, der ligesom Uglerne og
 <lb/>Flaggermusene helst dreve deres
-<lb/>Spil i mørke Skove, hvor Op&typHyp;
+<lb/>Spil i mørke Skove, hvor Op‐
 <lb/>lysningen (fra Sol og Maane)
 <lb/>vanskelig kunde trænge ind).</note></castItem>
 <lb/><castItem><hi rend="bold">Normas</hi> og <hi rend="bold">Severs</hi><sic>,</sic> to
-<lb/>svindsottige Søn&typHyp;
-<lb/>ner &dash; <actor>Addressen af 1848</actor>.
+<lb/>svindsottige Søn‐
+<lb/>ner – <actor>Addressen af 1848</actor>.
 <lb/><actor>Do. af 1851</actor>.</castItem>
-<lb/><castItem xml:id="DRUIDER">Chor af Druider &dash; <actor>Fornuftige Oppo&typHyp;
+<lb/><castItem xml:id="DRUIDER">Chor af Druider – <actor>Fornuftige Oppo‐
 <lb/>sitionsmænd samt
 <lb/>Skjerkholdt</actor>.</castItem>
-<lb/><castItem xml:id="DRUIDINDER">Do. af Druidinder &dash; <actor>de Stumme i Thin&typHyp;
+<lb/><castItem xml:id="DRUIDINDER">Do. af Druidinder – <actor>de Stumme i Thin‐
 <lb/>get</actor>.</castItem>
 </HIS:hisCastList>
 <lb/><figure type="bar"/>
@@ -398,10 +392,10 @@ Brente inn denne filen på en CD som legges i John Gabriel, og slettet hele revi
 <body>
 <div type="act" n="1">
 <lb/><head>Første Akt.</head>
-<lb/><HIS:hisStage>En tyk Skov med tilbørligt Halvmørke, i Baggrun&typHyp;
-<lb/>den &lquo;norske Klipper&rquo;; Blaaveis og Frihedskokarder blomstre
-<lb/>i Granernes Ly. Midt paa Scenen en hellig Afguds&typHyp;
-<lb/>steen, hvori &lquo;Frihedsværket&rquo; er indfattet i Glas og Ramme.</HIS:hisStage>
+<lb/><HIS:hisStage>En tyk Skov med tilbørligt Halvmørke, i Baggrun‐
+<lb/>den «norske Klipper»; Blaaveis og Frihedskokarder blomstre
+<lb/>i Granernes Ly. Midt paa Scenen en hellig Afguds‐
+<lb/>steen, hvori «Frihedsværket» er indfattet i Glas og Ramme.</HIS:hisStage>
 <div type="scene" n="1">
 <lb/><head>Første Scene.</head>
 <lb/><HIS:hisStage><HIS:stageRole who="ARIOVIST">Ariovist</HIS:stageRole>, <HIS:stageRole who="DRUIDER">Druider</HIS:stageRole> og <HIS:stageRole who="DRUIDINDER">Druidinder</HIS:stageRole> komme
@@ -418,9 +412,9 @@ Brente inn denne filen på en CD som legges i John Gabriel, og slettet hele revi
 <lb/><l>Ja i det gamle, det ældgamle Nor!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ARIOVIST"><HIS:spOpener><speaker>Ariovist</speaker>.</HIS:spOpener>
 <lb/><l>Saa stærk som Egens kneisende Stamme</l>
-<lb/><l>Staar &lquo;Frihedsværket&rquo;<note type="typo">Skadet anførselstegn.</note> i Glas og Ramme! &dash;</l>
+<lb/><l>Staar «Frihedsværket»<note type="typo">Skadet anførselstegn.</note> i Glas og Ramme! –</l>
 <lb/><l>Det staar der saa fast i Stenen indfattet,</l>
-<lb/><l>(Desværre det bliver ei tilfulde skattet) &dash; &dash; &dash;</l></HIS:hisSp>
+<lb/><l>(Desværre det bliver ei tilfulde skattet) – – –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="DRUIDER"><HIS:spOpener><speaker>Chor af Druider</speaker>.</HIS:spOpener>
 <lb/><l>Desværre, det blier ei tilfulde skattet!</l>
 <lb/><l>Desværre, desværre, desværre, desværre!!!</l></HIS:hisSp>
@@ -461,7 +455,7 @@ Brente inn denne filen på en CD som legges i John Gabriel, og slettet hele revi
 <lb/>Bevægelse.</HIS:hisStage>
 <lb/><HIS:hisSp who="SEVERUS"><HIS:spOpener><speaker>Severus</speaker>.</HIS:spOpener>
 <lb/><l>O skyggende Skov, du i dit Skjød</l>
-<lb/><l>Gjemmer vor Helligdom, Frihedsværket! &dash;</l>
+<lb/><l>Gjemmer vor Helligdom, Frihedsværket! –</l>
 <lb/><HIS:hisStage>(seer sig om.)</HIS:hisStage>
 <lb/><p>For Fanden, de ere jo alt borte; saa kunde jeg have
 <lb/>sparet det hele Vrøvl.</p>
@@ -489,7 +483,7 @@ Brente inn denne filen på en CD som legges i John Gabriel, og slettet hele revi
 <lb/><l>Eftersom du, S. T. o Severus!</l>
 <lb/><l>Har her mig i Lunden et Stævne sat,</l>
 <lb/><note resp="narrator" place="bottom"><HIS:hisRef type="refMark" target="fn1b" xml:id="fn1">*)</HIS:hisRef> Man vil bemærke at de Vers, der fremsiges afsides, ere anderledes
-<lb/>byggede, end de, der maa høres af Alle og Enhver; dette er in&typHyp;
+<lb/>byggede, end de, der maa høres af Alle og Enhver; dette er in‐
 <lb/>genlunde nogen Skjødesløshed, men med Forsæt iagttaget, da vel
 <lb/>underrettede Personer ville vide, at vore politiske Skuespillere endog
 <lb/>til Dagligbrug betjene sig af et særegent Versemaal, naar de
@@ -499,7 +493,7 @@ Brente inn denne filen på en CD som legges i John Gabriel, og slettet hele revi
 <lb/><l>Saa skulde jeg herved ikke undlade</l>
 <lb/><l>Tjenstligst at melde min Ankomst for dig!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SEVERUS"><HIS:spOpener><speaker>Severus</speaker>.</HIS:spOpener>
-<lb/><l>O, søde Stemme, o tryllende Ord! &dash;</l>
+<lb/><l>O, søde Stemme, o tryllende Ord! –</l>
 <lb/><l>Saa hør da hvad i mit Hjerte boer!</l>
 <lb/><HIS:hisStage>(vil knæle, men betænker sig.)</HIS:hisStage>
 <lb/><p>Dog nei, unter uns gesagt, veed du virkelig ikke, hvad
@@ -508,7 +502,7 @@ Brente inn denne filen på en CD som legges i John Gabriel, og slettet hele revi
 <lb/><l>Som en ærbar og sædelig Mø</l>
 <lb/><l>Holder jeg strængt paa Form og Dekorum.</l>
 <lb/><l>Hjertet er ikke det rette Forum</l>
-<lb/><l part="I">Hos mig &dash; &dash;</l></HIS:hisSp>
+<lb/><l part="I">Hos mig – –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SEVERUS"><HIS:spOpener><speaker>Severus</speaker>.</HIS:spOpener>
 <lb/><l part="F">O vee mig, da maa jeg dø!</l>
 <lb/><l>Laer du ei Naade gaae for Ret,</l>
@@ -529,25 +523,25 @@ Brente inn denne filen på en CD som legges i John Gabriel, og slettet hele revi
 <lb/><l>Nu er det forbi, det var kun et Digt,</l>
 <lb/><l>Det var kun en flygtig, poetisk Drøm,</l>
 <lb/><l>En bristende Boble paa Livets Strøm.</l>
-<lb/><l>Ja, jeg vil dig min Forvildelse male, &dash;</l>
+<lb/><l>Ja, jeg vil dig min Forvildelse male, –</l>
 <lb/><l>Reent ud af Skjægget maa her jeg tale:</l>
 <lb/><l>Jeg hørte engang til de Radikale.</l>
 <lb/><l>(Som gaae under Navn af de Liberale),</l>
 <lb/><l>Som tale haanligt om gyldne Sale,</l>
-<lb/><l>Som skrue sig op med &lquo;Klipper&rquo; og &lquo;Dale,&rquo;</l>
+<lb/><l>Som skrue sig op med «Klipper» og «Dale,»</l>
 <lb/><l>Som fast germanisk forstaae at prale</l>
 <lb/><l>Med Norden, som vaagnede af sin Dvale,</l>
 <lb/><l>Og jubler omkap med Vaarens Svale</l>
-<lb/><l>Paa Frihedsdagen, &dash; kort, til de Gale!</l>
+<lb/><l>Paa Frihedsdagen, – kort, til de Gale!</l>
 <pb/>
 <cb n="143"/>
 <lb/><fw type="column" place="top">143</fw>
 <lb/><l>Men nu er jeg kjed af længer at ride</l>
 <lb/><l>Min gamle Kjæphest; for det Solide</l>
-<lb/><l>Jeg sværmer grundig; &dash; &dash; du mig forstaar!</l></HIS:hisSp>
+<lb/><l>Jeg sværmer grundig; – – du mig forstaar!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ADALGISA"><HIS:spOpener><speaker>Adalgisa</speaker> <HIS:hisStage>(overvældet)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l>Kom til mit Bryst, du gjenfundne Faar!</l></HIS:hisSp>
-<lb/><HIS:hisStage>(Rørende Omfavnelse; Tæppet gaar for Velanstæn&typHyp;
+<lb/><HIS:hisStage>(Rørende Omfavnelse; Tæppet gaar for Velanstæn‐
 <lb/>dighedens Skyld ned.)</HIS:hisStage>
 </div>
 </div>
@@ -622,12 +616,12 @@ Brente inn denne filen på en CD som legges i John Gabriel, og slettet hele revi
 <lb/><HIS:hisSp who="NORMA"><HIS:spOpener><speaker>Norma</speaker>.</HIS:spOpener>
 <lb/><l>Hvad, utro? O nei kom ikke med Sligt,</l>
 <lb/><l>Det er kun Opspind, det er kun Digt;</l>
-<lb/><l>Han veed jo dog hvad der er hans Pligt &dash;</l>
+<lb/><l>Han veed jo dog hvad der er hans Pligt –</l>
 <lb/><l>Det har han ofte i Bladet sagt.</l>
 <lb/><HIS:hisStage>(betænker sig.)</HIS:hisStage>
 <lb/><l>Men Et har dog min Mistænksomhed vakt</l>
 <lb/><l>Han sniger sig om i Lunden herinde</l>
-<lb/><l>Hvem veed hvad han egentlig har i Sinde. &dash;</l></HIS:hisSp>
+<lb/><l>Hvem veed hvad han egentlig har i Sinde. –</l></HIS:hisSp>
 </div>
 <div type="scene" n="3">
 <lb/><head>Tredie Scene.</head>
@@ -646,14 +640,14 @@ Brente inn denne filen på en CD som legges i John Gabriel, og slettet hele revi
 <cb n="158"/>
 <lb/><fw type="column" place="top">158</fw>
 <lb/><HIS:hisSp who="NORMA"><HIS:spOpener><speaker>Norma</speaker>.</HIS:spOpener>
-<lb/><l>For &dash; &dash;</l></HIS:hisSp>
+<lb/><l>For – –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SEVERUS"><HIS:spOpener><speaker>Severus</speaker> <HIS:hisStage>(hidsig.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Nei, vil du nu bare holde Mund, det gaar saagu
-<lb/>ikke an for dannede Mænd at lytte til ufornuftige Kvin&typHyp;
+<lb/>ikke an for dannede Mænd at lytte til ufornuftige Kvin‐
 <lb/>ders Skrig over Ting, som de ikke forstaae.</p>
 <lb/><HIS:hisStage>(hvisker ud til en Maskinkarl.)</HIS:hisStage>
 <lb/><p>Aa, lad Tæppet gaae ned, dette er jo en skandaløs Scene.</p></HIS:hisSp>
-<lb/><HIS:hisStage>(Tæppet siger: &lquo;Det har De saagu Ret i&rquo;, hvorpaa
+<lb/><HIS:hisStage>(Tæppet siger: «Det har De saagu Ret i», hvorpaa
 <lb/>det gaar hurtigt ned.)</HIS:hisStage>
 <lb/><figure type="bar"/>
 </div>
@@ -667,14 +661,14 @@ Brente inn denne filen på en CD som legges i John Gabriel, og slettet hele revi
 <lb/>Druiderne, der, som bekjendt, altid holde sig et Stykke
 <lb/>bagud for Tiden, ligge endnu under Træerne i dyb
 <lb/>Søvn; Nogle ere dog vaagnede, da Allarmtrommer og
-<lb/>vilde Hyl høres bag Scenen ligesom i &lquo;Huldrens Hjem.&rquo;</HIS:hisStage>
+<lb/>vilde Hyl høres bag Scenen ligesom i «Huldrens Hjem.»</HIS:hisStage>
 <lb/><HIS:hisSp who="DRUIDER"><HIS:spOpener><speaker>En vaagen Druide</speaker>.</HIS:spOpener>
 <lb/><l>Hvad er det for Larm, hvad er det for Skrig.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="DRUIDER"><HIS:spOpener><speaker>En Anden</speaker>.</HIS:spOpener>
 <lb/><l>Det er sikkert Signal til en blodig Krig,</l>
 <lb/><l>Hør kun det vilde forbitrede Skraal,</l>
 <lb/><l>Du veed jo, at Norma vil gjøre Kaal</l>
-<lb/><l>Paa Severus, &dash; det hørte jeg selv hun svor.</l></HIS:hisSp>
+<lb/><l>Paa Severus, – det hørte jeg selv hun svor.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="DRUIDER"><HIS:spOpener><speaker>Første</speaker>.</HIS:spOpener>
 <lb/><l>Nu ja, den Skade er ikke saa stor,</l>
 <lb/><l>Han er jo i Grunden ei nogen af Vore,</l>
@@ -688,7 +682,7 @@ Brente inn denne filen på en CD som legges i John Gabriel, og slettet hele revi
 <lb/>foreslaaet at forbedre Grundloven.)</HIS:hisStage>
 <lb/><HIS:hisSp who="NORMA"><HIS:spOpener><speaker>Norma</speaker>.</HIS:spOpener>
 <lb/><l>Vaagn dog, Druider! o kom, o kom!</l>
-<lb/><l>Alle som Een, &dash; her holder jeg Dom.</l>
+<lb/><l>Alle som Een, – her holder jeg Dom.</l>
 <lb/><HIS:hisStage>(Druiderne fare op i stor Forskrækkelse.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="DRUIDER"><HIS:spOpener><speaker>En søvndrukken Druide</speaker> <HIS:hisStage>(forbitret.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Gaa ad Regjeringen til! Hvad er det for Spektakel!</p></HIS:hisSp>
@@ -706,12 +700,12 @@ Brente inn denne filen på en CD som legges i John Gabriel, og slettet hele revi
 <lb/><HIS:hisStage>(Severus føres frem, indviklet i sin egen Snare.)</HIS:hisStage>
 <lb/><HIS:hisSp who="NORMA"><HIS:spOpener><speaker>Norma</speaker>.</HIS:spOpener>
 <lb/><l>Der er han nu skal vor Standret sættes,</l>
-<lb/><l part="I">Bekjend dine Synder &dash;</l></HIS:hisSp>
+<lb/><l part="I">Bekjend dine Synder –</l></HIS:hisSp>
 <pb/>
 <cb n="159"/>
 <lb/><fw type="column" place="top">159</fw>
 <lb/><HIS:hisSp who="SEVERUS"><HIS:spOpener><speaker>Severus</speaker> <HIS:hisStage>(afsides.)</HIS:hisStage></HIS:spOpener>
-<lb/><l part="F">Ah, hvor jeg lettes &dash;</l>
+<lb/><l part="F">Ah, hvor jeg lettes –</l>
 <lb/><l>Listen er noget drøi i Længden,</l>
 <lb/><l>Saa vinder jeg Tid, maaskee kan jeg reddes.</l>
 <lb/><HIS:hisStage>(Høit.)</HIS:hisStage>
@@ -719,34 +713,34 @@ Brente inn denne filen på en CD som legges i John Gabriel, og slettet hele revi
 <lb/><l>Var engang den Guldkalv jeg ofrede til,</l>
 <lb/><l>Det var kun et fiffigt beregnet Spil.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="NORMA"><HIS:spOpener><speaker>Norma</speaker>.</HIS:spOpener>
-<lb/><p>Ha, da skal du døe &dash;</p></HIS:hisSp>
-<lb/><HIS:hisStage>(Hæver Dolken med oppositionelt Raseri, men stø&typHyp;
-<lb/>der naturligviis ikke til. Adalgisa kommer i det Sam&typHyp;
+<lb/><p>Ha, da skal du døe –</p></HIS:hisSp>
+<lb/><HIS:hisStage>(Hæver Dolken med oppositionelt Raseri, men stø‐
+<lb/>der naturligviis ikke til. Adalgisa kommer i det Sam‐
 <lb/>me i en Engels Skikkelse og forvandler ham til en
 <lb/>Halvgud, eller, som man nutildags udtrykker sig, til en
 <lb/>Minister.)</HIS:hisStage>
 <lb/><HIS:hisSp who="DRUIDER"><HIS:spOpener><speaker>Druiderne</speaker> <HIS:hisStage>(forbløffede.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Hva &dash; hvad behager ærbødigste Tjener! &dash;</p>
+<lb/><p>Hva – hvad behager ærbødigste Tjener! –</p>
 <lb/><HIS:hisStage>(bukke dybt.)</HIS:hisStage></HIS:hisSp>
 <cb n="160"/>
 <lb/><fw type="column" place="top">160</fw>
 <lb/><HIS:hisSp who="SEVERUS"><HIS:spOpener><speaker>Severus</speaker>
 <lb/><HIS:hisStage>(med imponerende Holdning.)</HIS:hisStage></HIS:spOpener>
 <lb/><l>Da af vor vise Lykurg det sagt er:</l>
-<lb/><l>&lquo;Der hersker den skjønneste Enighed</l>
-<lb/><l>Imellem Statens forskjellige Magter,&rquo;</l>
+<lb/><l>«Der hersker den skjønneste Enighed</l>
+<lb/><l>Imellem Statens forskjellige Magter,»</l>
 <lb/><l>Saa haaber jeg, jeg kan gaae bort i Fred!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="NORMA"><HIS:spOpener><speaker>Norma</speaker> <HIS:hisStage>(forekommende.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Ih, ja Gud bevare's, hvor kan deres Velbaarenhed
-<lb/>troe andet &dash; &dash;</p></HIS:hisSp>
+<lb/>troe andet – –</p></HIS:hisSp>
 <lb/><HIS:hisStage>(Severus gaar.)</HIS:hisStage>
 <lb/><HIS:hisStage>(Tæppet falder.)</HIS:hisStage>
 <lb/><HIS:hisSp who="ARIOVIST"><HIS:spOpener><speaker>Ariovist</speaker>
 <lb/><HIS:hisStage>bliver staaende i en grublende Stilling</HIS:hisStage>.</HIS:spOpener>
 <lb/><HIS:hisStage>(afsides.)</HIS:hisStage>
 <lb/><p>Det var da Fanden til Historie; hvem veed om ikke
-<lb/>ogsaa jeg &dash; &dash; &dash; nu ja, kommer Tid, kommer
-<lb/>Raad! &dash; &dash; &dash;</p></HIS:hisSp>
+<lb/>ogsaa jeg – – – nu ja, kommer Tid, kommer
+<lb/>Raad! – – –</p></HIS:hisSp>
 <lb/><HIS:hisStage rend="spaced">Ende.</HIS:hisStage>
 </div>
 </div>

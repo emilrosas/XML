@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -13,11 +7,11 @@
 <title level="s" type="main">Henrik Ibsens skrifter</title>
 <title level="s" type="sub">Diplomatarisk tekstarkiv</title>
 <title level="a" type="main">Fjeldfuglen</title>
-<title level="a" type="desc">NBO Ms.4&deg; 935, grunntekst</title>
+<title level="a" type="desc">NBO Ms.4° 935, grunntekst</title>
 <title level="a" type="origYear">1859</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Stine Brenna Taugbøl, Ellen Nessheim Wiger</name></respStmt>
 <respStmt>
 <resp>Omgjøring av FjHU til Fj4935, desember 2000:</resp>
@@ -48,7 +42,7 @@
 <msIdentifier>
 <settlement>Oslo</settlement>
 <repository>Nasjonalbiblioteket</repository>
-<idno>NBO Ms.4&deg; 935</idno>
+<idno>NBO Ms.4° 935</idno>
 </msIdentifier>
 <msContents><msItem>
 <author>Henrik Ibsen</author>
@@ -62,7 +56,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-grt-ms;</p></projectDesc>
+<projectDesc><p>GRUNNTEKST BASERT PÅ MANUSKRIPT. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av to medarbeidere. Teksten er kollasjonert en tredje gang i forbindelse med det avsluttende arbeidet med verket.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <list>
@@ -151,8 +145,8 @@
 </item>
 </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -169,7 +163,7 @@
 </list>
 </tagUsage></namespace>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="stage">Replikker og verselinjer som skal framføres samtidig (markert med klamme og felles sceneanvisning) er kodet innenfor samme sceneanvisning (stage rend="braced") med 'paa engang' i egen sceneanvisning. Denne sceneanvisningen er plassert før sekvensen og kodet som stage rend="bracedLeft".</tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -277,7 +271,7 @@ Begynt etableringen av Fj4935.xml - basis: FjHU-1000. Endret TEI-header, fjernet
 <pb ed="source" type="page-pagination" n="1" subtype="recto" facs="01r"/>
 <lb/><fw type="leaf" place="top-right" scribe="h3">1.</fw>
 <docTitle>
-<lb/><titlePart type="main"><HIS:synopticViewPtr type="synopticView_msVersions" xml:id="Fj_273ms"/><app type="alteration"><lem><HIS:hisAdd place="offline">&lquo;Fjeldfuglen&rquo;</HIS:hisAdd></lem><HIS:hisRdg><unclear><HIS:hisDel rend="overstrike">Alfhild</HIS:hisDel></unclear></HIS:hisRdg></app></titlePart>
+<lb/><titlePart type="main"><HIS:synopticViewPtr type="synopticView_msVersions" xml:id="Fj_273ms"/><app type="alteration"><lem><HIS:hisAdd place="offline">«Fjeldfuglen»</HIS:hisAdd></lem><HIS:hisRdg><unclear><HIS:hisDel rend="overstrike">Alfhild</HIS:hisDel></unclear></HIS:hisRdg></app></titlePart>
 <titlePart type="desc">
 <lb/>romantisk Opera
 <lb/>i
@@ -289,7 +283,7 @@ Begynt etableringen av Fj4935.xml - basis: FjHU-1000. Endret TEI-header, fjernet
 </byline>
 <docEdition>
 <lb/>Christiania
-<lb/><date>1859. &dash;</date>
+<lb/><date>1859. –</date>
 </docEdition>
 </titlePage>
 <pb ed="source" type="page-nopagination" n="1" subtype="verso" facs="01v"/>
@@ -325,18 +319,18 @@ Begynt etableringen av Fj4935.xml - basis: FjHU-1000. Endret TEI-header, fjernet
 <lb/>Hele Landskabet straaler i stærk Aftenrøde;
 <lb/>lidt efter lidt falder Tusmørket paa.)</HIS:hisStage>
 <lb/><HIS:hisStage>Thorgejr sidder ved Fossen og spiller.</HIS:hisStage>
-<lb/><HIS:hisStage>Alfhild ligger tankefuld mellem Træ&typHyp;
+<lb/><HIS:hisStage>Alfhild ligger tankefuld mellem Træ‐
 <lb/>erne tilvenstre.</HIS:hisStage>
 <lb/><HIS:hisSp who="THORGEJR"><HIS:spOpener><speaker>Thorgejr</speaker>.</HIS:spOpener>
 <lb/><l rend="indent1">Det Kvad, som kvædes</l>
-<lb/><l rend="indent1">I Fossen den stride, &dash;</l>
+<lb/><l rend="indent1">I Fossen den stride, –</l>
 <lb/><l rend="indent1">Den Slaat, som ljomer</l>
-<lb/><l rend="indent1">Langs Bjørkelide, &dash;</l>
+<lb/><l rend="indent1">Langs Bjørkelide, –</l>
 <lb/><l rend="indent1">Den Laat, som lokker</l>
 <lb/><l rend="indent1">I Lauv og Bar,</l>
 <lb/><l rend="indent1">Tykkes mig kræve</l>
 <lb/><l rend="indent1">Et Strengeleiksvar!</l></HIS:hisSp>
-<lb/><HIS:hisStage>Græsvolden aabner sig, Hougfolket kom&typHyp;
+<lb/><HIS:hisStage>Græsvolden aabner sig, Hougfolket kom‐
 <lb/>mer sagte frem og lytter.</HIS:hisStage>
 <lb/><HIS:hisSp who="HOUGFOLK"><HIS:spOpener><speaker>Chor af Hougfolk</speaker>.</HIS:spOpener>
 <lb/><l rend="indent1">Hys! hør paa!</l>
@@ -349,11 +343,11 @@ Begynt etableringen av Fj4935.xml - basis: FjHU-1000. Endret TEI-header, fjernet
 <HIS:hisStage rend="braced"><HIS:hisStage rend="bracedLeft">paa engang.</HIS:hisStage>
 <lb/><HIS:hisSp who="THORGEJR"><HIS:spOpener><speaker rend="deviation">Thorgejr</speaker>.</HIS:spOpener>
 <lb/><l rend="indent1">Det Kvad som kvædes</l>
-<lb/><l rend="indent1">o. s. v, &dash; o. s. v.</l></HIS:hisSp>
+<lb/><l rend="indent1">o. s. v, – o. s. v.</l></HIS:hisSp>
 <HIS:synopticViewPtr type="synopticView_msVersions" xml:id="Fj_278ms"/><lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.
 <lb/><HIS:hisStage>(drømmende)</HIS:hisStage></HIS:spOpener>
 <lb/><l rend="indent1">Det Kvad, som kvædes</l>
-<lb/><l rend="indent1">I Fossen den stride, &dash;</l>
+<lb/><l rend="indent1">I Fossen den stride, –</l>
 <lb/><l rend="indent1">Det tykkes mig rumme</l>
 <lb/><l rend="indent1">Saa tung en Kvide;</l>
 <lb/><l rend="indent1">Den Laat, som ljomer</l>
@@ -363,7 +357,7 @@ Begynt etableringen av Fj4935.xml - basis: FjHU-1000. Endret TEI-header, fjernet
 <lb/><HIS:hisSp who="HOUGFOLK"><HIS:spOpener><speaker>Chor af Hougfolk</speaker>
 <lb/><HIS:hisStage>(idet de sagte nærme sig.)</HIS:hisStage></HIS:spOpener>
 <lb/><l>Alfhild, den Væne!</l>
-<lb/><l rend="indent1">Stille, stille, &dash;</l>
+<lb/><l rend="indent1">Stille, stille, –</l>
 <lb/><l rend="indent1">Væk hende ikke,</l>
 <lb/><l rend="indent1">Lad hende drømme!</l>
 <lb/><l rend="indent1">Hør Strengen graater,</l>
@@ -372,10 +366,10 @@ Begynt etableringen av Fj4935.xml - basis: FjHU-1000. Endret TEI-header, fjernet
 <lb/><l rend="indent1">Mens Dandsen vi træder!</l></HIS:hisSp>
 </HIS:hisStage>
 <lb/><HIS:hisSp who="HOUGFOLK"><HIS:hisStage>(Thorgejr spiller, Alfhild synes drømmende
-<lb/>at lytte mens Hougfolket danser og gjen&typHyp;
+<lb/>at lytte mens Hougfolket danser og gjen‐
 <lb/>tager:)</HIS:hisStage>
 <lb/><l rend="indent1">Hør Strengen graater</l>
-<lb/><l rend="indent1">o. s. v, &dash; o. s. v.</l></HIS:hisSp>
+<lb/><l rend="indent1">o. s. v, – o. s. v.</l></HIS:hisSp>
 <pb ed="source" type="page-pagination" n="4" subtype="recto" facs="04r"/>
 <lb/><fw type="leaf" place="top-right" scribe="h3">4</fw>
 <lb/><HIS:hisSp who="GJAESTER"><HIS:spOpener><speaker>Chor af Bryllupsgjæster</speaker>.
@@ -387,7 +381,7 @@ Begynt etableringen av Fj4935.xml - basis: FjHU-1000. Endret TEI-header, fjernet
 <lb/><l rend="indent1">Skræk og Gru</l>
 <lb/><l rend="indent1">Fylder Hougafolkets Hug!</l></HIS:hisSp>
 <HIS:hisStage rend="braced"><HIS:hisStage rend="bracedLeft">paa engang.</HIS:hisStage>
-<lb/><HIS:hisSp who="HOUGFOLK" xml:id="HOUGFOLK_2"><l rend="indent1">Rap og snygg, &dash;</l>
+<lb/><HIS:hisSp who="HOUGFOLK" xml:id="HOUGFOLK_2"><l rend="indent1">Rap og snygg, –</l>
 <lb/><l rend="indent1">Hougens Ryg</l>
 <lb/><l rend="indent1">Dølge dig; der er du tryg!</l>
 <lb/><HIS:hisStage>(de forsvinde.)</HIS:hisStage></HIS:hisSp>
@@ -413,9 +407,9 @@ Begynt etableringen av Fj4935.xml - basis: FjHU-1000. Endret TEI-header, fjernet
 <pb n="8"/><lb/><l>See deroppe; bag Koll og Knat</l>
 <lb/><l>Blaaner Jøklernes Rygge!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SVEND"><HIS:spOpener><speaker>Svend</speaker>.</HIS:spOpener>
-<lb/><l>Husbond, vilde I lyde mit Ord, &dash;</l>
+<lb/><l>Husbond, vilde I lyde mit Ord, –</l>
 <lb/><l>Nedigjen som en Vind <sic>i</sic> foer;</l>
-<lb/><l>Kom ihu, &dash; det er utrygt herinde!</l></HIS:hisSp>
+<lb/><l>Kom ihu, – det er utrygt herinde!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="INGEBORG"><HIS:spOpener><speaker>Ingeborg</speaker>.</HIS:spOpener>
 <lb/><l>Og Sagnet siger at Nøkkens Spil</l>
 <lb/><l>Kværver hver den som herinde foer vild,</l>
@@ -434,8 +428,8 @@ Begynt etableringen av Fj4935.xml - basis: FjHU-1000. Endret TEI-header, fjernet
 <lb/><l part="F">Saa kom!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SVEND"><HIS:spOpener><speaker>Svend</speaker></HIS:spOpener>
 <lb/><l>Øde laa Dalen i lange Aar;</l>
-<lb/><l>Den som I søger, I aldrig naaer, &dash;</l>
-<lb/><l>Husbond, dersom I vidste &dash;</l></HIS:hisSp>
+<lb/><l>Den som I søger, I aldrig naaer, –</l>
+<lb/><l>Husbond, dersom I vidste –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="IVAR"><HIS:spOpener><speaker>Ivar</speaker>.</HIS:spOpener>
 <lb/><l part="I">Naa, hvad er det?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GJAESTER"><HIS:spOpener><speaker>Gjæsterne</speaker>.</HIS:spOpener>
@@ -444,7 +438,7 @@ Begynt etableringen av Fj4935.xml - basis: FjHU-1000. Endret TEI-header, fjernet
 <HIS:synopticViewPtr type="synopticView_msVersions" xml:id="Fj_280ms"/><lb/><fw type="leaf" place="top-right" scribe="h3">5</fw>
 <lb/><HIS:hisSp who="SVEND"><HIS:spOpener><speaker>Svend</speaker>.</HIS:spOpener>
 <lb/><l>Dersom I kjendte bare lidt</l>
-<lb/><l>Af det som jeg her maatte friste! &dash;</l>
+<lb/><l>Af det som jeg her maatte friste! –</l>
 <lb/><l rend="indent1">Jeg jog de vilde Rener</l>
 <lb/><l rend="indent1">Paa Vidden langt derinde;</l>
 <lb/><l rend="indent1">Da ljomed lydt fra Juvet</l>
@@ -456,14 +450,14 @@ Begynt etableringen av Fj4935.xml - basis: FjHU-1000. Endret TEI-header, fjernet
 <lb/><HIS:hisSp who="SVEND"><HIS:spOpener><speaker>Svend</speaker>.</HIS:spOpener>
 <lb/><l rend="indent1">Jeg glytted udfor Berget,</l>
 <lb/><l rend="indent1">Jeg saa i de stride Strømme;</l>
-<lb/><l rend="indent1" part="I">Der sad hun &dash; &dash;</l>
+<lb/><l rend="indent1" part="I">Der sad hun – –</l>
 <lb/><HIS:hisStage>(han viser mod Baggrunden hvor Thorgejr
 <lb/>sidder; Alle faar Øie paa ham og viger
 <lb/>overraskede tilside.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="GJAESTER"><HIS:spOpener><speaker>Gjæsterne</speaker>.</HIS:spOpener>
 <lb/><l part="F">Thorgejr, Thorgejr!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SVEND"><HIS:spOpener><speaker>Svend</speaker>.</HIS:spOpener>
-<lb/><l rend="indent1">Ja, Husbond, &dash; nu kan I dømme!</l></HIS:hisSp>
+<lb/><l rend="indent1">Ja, Husbond, – nu kan I dømme!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GJAESTER"><HIS:spOpener><speaker>Gjæsterne</speaker>.
 <lb/><HIS:hisStage>(hviskende mellem hverandre.)</HIS:hisStage></HIS:spOpener>
 <lb/><l rend="indent2">Huldrelok,</l>
@@ -513,7 +507,7 @@ Begynt etableringen av Fj4935.xml - basis: FjHU-1000. Endret TEI-header, fjernet
 <lb/><l rend="indent1">Men Brudgommen er ei at finde!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="THORGEJR"><HIS:spOpener><speaker>Thorgejr</speaker>.</HIS:spOpener>
 <lb/><l rend="indent1">Huldrens Hal har en Port saa stærk;</l>
-<lb/><l rend="indent1">Der glemmes Alverdens Vee og Værk; &dash;</l>
+<lb/><l rend="indent1">Der glemmes Alverdens Vee og Værk; –</l>
 <lb/><l rend="indent1">Den som engang sidder derinde</l>
 <lb/><l rend="indent2">Aldrig kommer</l>
 <lb/><l rend="indent1">Ud i Dagen, i den lyse Sommer!</l></HIS:hisSp>
@@ -529,7 +523,7 @@ Begynt etableringen av Fj4935.xml - basis: FjHU-1000. Endret TEI-header, fjernet
 <lb/><l rend="indent1">Skjønt vi gaar m<unclear reason="writing">e</unclear>d Skræk ihug!</l>
 <lb/><l rend="indent1">Knut Skytte, Knut Skytte!</l>
 <lb/><l rend="indent1">Tyst paa Bergets Port du glytte!</l>
-<lb/><l rend="indent1">Vi raaber dit Navn i Kvælden den svale &dash;</l>
+<lb/><l rend="indent1">Vi raaber dit Navn i Kvælden den svale –</l>
 <lb/><l rend="indent1">Blund ikke længer i Huldrens Sale!</l></HIS:hisSp>
 <lb/><HIS:hisStage>(Thorgejr forsvinder ved Elven; de Øvrige gaar
 <lb/>ud til Venstre; Efterspillet glider sagte over
@@ -537,7 +531,7 @@ Begynt etableringen av Fj4935.xml - basis: FjHU-1000. Endret TEI-header, fjernet
 <pb ed="source" type="page-nopagination" n="6" subtype="verso" facs="06v"/>
 <lb/><HIS:hisSp who="HOUGFOLK"><HIS:spOpener><speaker>Usynligt Chor af Hougfolk</speaker>.</HIS:spOpener>
 <lb/><l rend="indent2">Aldrig han kommer</l>
-<lb/><l rend="indent1">Ud i Dagen, &dash; i den lyse Sommer!</l></HIS:hisSp>
+<lb/><l rend="indent1">Ud i Dagen, – i den lyse Sommer!</l></HIS:hisSp>
 <HIS:synopticViewPtr type="synopticView_msVersions" xml:id="Fj_282ms"/><lb/><HIS:hisStage>Alfhild og Knut kommer tilsyne oppe i
 <lb/>Lien tilvenstre.</HIS:hisStage>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
@@ -549,7 +543,7 @@ Begynt etableringen av Fj4935.xml - basis: FjHU-1000. Endret TEI-header, fjernet
 <lb/><l rend="indent1">Lad dem kvæde, lad dem lokke;</l>
 <lb/><l rend="indent1">Lad de glemte Minder flokke</l>
 <lb/><l rend="indent2">Sig og klinge</l>
-<lb/><l rend="indent2">I min Bringe, &dash;</l>
+<lb/><l rend="indent2">I min Bringe, –</l>
 <lb/><l rend="indent1">Lukt er Bygden nedenunder,</l>
 <lb/><l rend="indent1">Aldrig did jeg stunder!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
@@ -560,7 +554,7 @@ Begynt etableringen av Fj4935.xml - basis: FjHU-1000. Endret TEI-header, fjernet
 <lb/><l rend="indent1">Vist har du hjemme langt derborte</l>
 <lb/><l rend="indent2">Bag Skogen den sorte!</l>
 <lb/><l rend="indent1">Vist er du Svenden fager og god,</l>
-<lb/><l rend="indent1">Som prises i Sagn og Sange, &dash;</l>
+<lb/><l rend="indent1">Som prises i Sagn og Sange, –</l>
 <lb/><l rend="indent1">Han som Hugen min har stundet imod</l>
 <lb/><l rend="indent2">I Nætter lange!</l>
 <lb/><figure type="bar"/>
@@ -571,22 +565,22 @@ Begynt etableringen av Fj4935.xml - basis: FjHU-1000. Endret TEI-header, fjernet
 <lb/><l rend="indent1">Jeg hvilte saa lunt under Bergets Væg,</l>
 <lb/><l rend="indent1">Jeg var Søster til Skogens Dyr;</l>
 <lb/><l rend="indent1">Og Gubben fra Fossen isøvn mig kvad</l>
-<lb/><l rend="indent1">Alt med sine Viser saa vene, &dash;</l>
+<lb/><l rend="indent1">Alt med sine Viser saa vene, –</l>
 <lb/><l rend="indent1">Det voldte jeg gik baade varm og glad,</l>
 <lb/><l rend="indent1">Og glemte jeg var alene!</l>
 <lb/><figure type="bar"/>
-<lb/><l rend="indent1">Han kvad om en Slægt, jeg aldrig saa, &dash;</l>
+<lb/><l rend="indent1">Han kvad om en Slægt, jeg aldrig saa, –</l>
 <lb/><l rend="indent1">Om Kvinder og stærke Mænd,</l>
-<lb/><l rend="indent1"><HIS:synopticViewPtr type="synopticView_msVersions" xml:id="Fj_283ms"/>Om Noget jeg tidt maa tænke paa &dash;</l>
+<lb/><l rend="indent1"><HIS:synopticViewPtr type="synopticView_msVersions" xml:id="Fj_283ms"/>Om Noget jeg tidt maa tænke paa –</l>
 <lb/><l rend="indent1">Om Elskog; sig, kjender du den?</l>
 <lb/><l rend="indent1">Han kvad om en Dal, jeg aldrig har kjendt,</l>
-<lb/><l rend="indent1">Han kaldte den Verden den vide, &dash;</l>
+<lb/><l rend="indent1">Han kaldte den Verden den vide, –</l>
 <lb/><l rend="indent1">Det voldte jeg gik baade tidligt og sent</l>
 <lb/><l rend="indent1">Og bar paa en lønlig Kvide!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
 <lb/><l rend="indent1">Jeg aatte Gaard og jeg aatte Guld,</l>
 <lb/><l rend="indent1">De gav mig en Fæstemø;</l>
-<lb/><l rend="indent1">Men endda var Hugen min tung og fuld, &dash;</l>
+<lb/><l rend="indent1">Men endda var Hugen min tung og fuld, –</l>
 <lb/><l rend="indent1">Jeg rømte fra Brud og Bø!</l>
 <lb/><l rend="indent1">I Vildske jeg vandred; da fandt jeg dig,</l>
 <lb/><l rend="indent1">Min fagreste Sommerglæde!</l>
@@ -656,7 +650,7 @@ Begynt etableringen av Fj4935.xml - basis: FjHU-1000. Endret TEI-header, fjernet
 <lb/>til Venstre.)</HIS:hisStage>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
 <lb/><l>Lunt under Bakken vil jeg bygge vor Stue,</l>
-<lb/><l>Her vil vi færdes tilsammen, &dash;</l>
+<lb/><l>Her vil vi færdes tilsammen, –</l>
 <lb/><l>Færdes frit som Rener paa Vidden</l>
 <lb/><l rend="indent1">Bag Jøkulkammen!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker></HIS:spOpener>
@@ -670,7 +664,7 @@ Begynt etableringen av Fj4935.xml - basis: FjHU-1000. Endret TEI-header, fjernet
 <lb/><l rend="indent2">Trofast paa Færden</l>
 <lb/><l rend="indent1">Kom og min Styrismand bliv!</l>
 <lb/><l rend="indent2">Høit over Heiene</l>
-<lb/><l rend="indent2">Bugter sig Veiene, &dash;</l>
+<lb/><l rend="indent2">Bugter sig Veiene, –</l>
 <lb/><l rend="indent2">Der vi lig svømmende</l>
 <lb/><l rend="indent2">Skyer og strømmende</l>
 <lb/><l rend="indent2">Bække vil stævne til Liv!</l></HIS:hisSp>
@@ -703,7 +697,7 @@ Begynt etableringen av Fj4935.xml - basis: FjHU-1000. Endret TEI-header, fjernet
 <lb/><l rend="indent2">I Høitidsklæder</l>
 <lb/><l rend="indent2">Dig til Hæder</l>
 <lb/><l rend="indent2">At hente din Brud!</l></HIS:hisSp>
-<HIS:synopticViewPtr type="synopticView_msVersions" xml:id="Fj_286ms"/><lb/><HIS:hisStage><HIS:stageRole who="IVAR">Ivar</HIS:stageRole>, <HIS:stageRole who="INGEBORG">Ingeborg</HIS:stageRole>, <HIS:stageRole who="SVEND">Svend</HIS:stageRole> og <HIS:stageRole who="GJAESTER">Gjæsterne</HIS:stageRole> kom&typHyp;
+<HIS:synopticViewPtr type="synopticView_msVersions" xml:id="Fj_286ms"/><lb/><HIS:hisStage><HIS:stageRole who="IVAR">Ivar</HIS:stageRole>, <HIS:stageRole who="INGEBORG">Ingeborg</HIS:stageRole>, <HIS:stageRole who="SVEND">Svend</HIS:stageRole> og <HIS:stageRole who="GJAESTER">Gjæsterne</HIS:stageRole> kom‐
 <lb/>mer ind fra Venstre. Alfhild staar noget
 <lb/>afsides tilhøire uden at bemærkes og følger
 <lb/>i høieste Spænding det følgende Optrin
@@ -738,10 +732,10 @@ Begynt etableringen av Fj4935.xml - basis: FjHU-1000. Endret TEI-header, fjernet
 <lb/><l rend="indent1">Kirkestien er snar og let;</l>
 <lb/><l rend="indent1">Imorgen skal høres i høien Kor</l>
 <lb/><l rend="indent2">De hellige Vigselsord!</l>
-<lb/><l rend="indent2">Kom, følg os, &dash; afsted!</l></HIS:hisSp>
+<lb/><l rend="indent2">Kom, følg os, – afsted!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.
 <lb/><HIS:hisStage>(kjæmpende med sig selv.)</HIS:hisStage></HIS:spOpener>
-<lb/><l>Ja jeg følger; men &dash; hun følger med!</l>
+<lb/><l>Ja jeg følger; men – hun følger med!</l>
 <lb/><HIS:hisStage>(han peger paa Alfhild som træder nærmere;
 <lb/>Alle vige sky tilbage.)</HIS:hisStage>
 </HIS:hisSp>
@@ -794,7 +788,7 @@ Begynt etableringen av Fj4935.xml - basis: FjHU-1000. Endret TEI-header, fjernet
 <lb/>begynder igjen saa smaat at aftage.
 <lb/>Hougfolket viser sig oppe i Lierne
 <lb/>i Baggrunden.)</HIS:hisStage>
-<HIS:hisStage rend="braced"><HIS:hisStage rend="bracedLeft">paa en&typHyp;</HIS:hisStage>
+<HIS:hisStage rend="braced"><HIS:hisStage rend="bracedLeft">paa en‐</HIS:hisStage>
 <pb ed="source" type="page-nopagination" n="10" subtype="verso" facs="10v"/>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener>
 <lb/><l rend="indent1">Han er kommen, han er funden,</l>
@@ -829,7 +823,7 @@ Begynt etableringen av Fj4935.xml - basis: FjHU-1000. Endret TEI-header, fjernet
 </HIS:hisStage>
 <pb ed="source" type="page-pagination" n="11" subtype="recto" facs="11r"/>
 <lb/><fw type="leaf" place="top-right" scribe="h3">11</fw>
-<HIS:hisStage rend="braced"><HIS:hisStage rend="bracedLeft">&typHyp;gang.</HIS:hisStage>
+<HIS:hisStage rend="braced"><HIS:hisStage rend="bracedLeft">‐gang.</HIS:hisStage>
 <lb/><HIS:hisSp who="THORGEJR"><HIS:spOpener><speaker>Thorgejr</speaker>.</HIS:spOpener>
 <lb/><l rend="indent1">Nu er Prøvens Dag oprunden!</l>
 <lb/><l rend="indent2">Her du længe</l>
@@ -875,10 +869,10 @@ Begynt etableringen av Fj4935.xml - basis: FjHU-1000. Endret TEI-header, fjernet
 <div type="act" n="2" scribe="HI-2">
 <HIS:synopticViewPtr type="synopticView_msVersions" xml:id="Fj_290ms"/><lb/><head>2<hi rend="raised">den</hi> Akt.</head>
 <div type="scene" n="1">
-<lb/><HIS:hisStage>Tunet ved Ivars Gaard. Stuebygningen sees i Mellem&typHyp;
-<lb/>grunden tilhøjre; Staburet og andre Huse tilven&typHyp;
+<lb/><HIS:hisStage>Tunet ved Ivars Gaard. Stuebygningen sees i Mellem‐
+<lb/>grunden tilhøjre; Staburet og andre Huse tilven‐
 <lb/>stre. I Baggrunden en tyk Li med Fjeldrygge
-<lb/>ovenover. Det er mod Aften. &dash;</HIS:hisStage>
+<lb/>ovenover. Det er mod Aften. –</HIS:hisStage>
 <lb/><HIS:hisStage>Otte Brudepiger kommer fra Staburet med Ingeborg i Brudedragt.</HIS:hisStage>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Pigerne</speaker>.</HIS:spOpener>
 <lb/><l rend="indent1">Nu er hun pyntet med Søljer og Krone,</l></HIS:hisSp>
@@ -893,14 +887,14 @@ Begynt etableringen av Fj4935.xml - basis: FjHU-1000. Endret TEI-header, fjernet
 <pb ed="source" type="page-pagination" n="12" subtype="recto" facs="12r"/>
 <lb/><fw type="leaf" place="top-right" scribe="h3">12</fw>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker rend="deviation">Knut</speaker>.</HIS:spOpener>
-<lb/><l rend="indent1">Sad jeg deroppe bag Skavlens Flak &dash;</l>
+<lb/><l rend="indent1">Sad jeg deroppe bag Skavlens Flak –</l>
 <lb/><l rend="indent2">Langt langt deroppe</l>
-<lb/><l rend="indent2">Bag Granskogens Toppe &dash;</l></HIS:hisSp>
+<lb/><l rend="indent2">Bag Granskogens Toppe –</l></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker rend="deviation">Kor</speaker>.</HIS:spOpener>
-<lb/><l rend="indent1">Idag er <HIS:hisAdd place="inline">d<unclear reason="writing">er</unclear></HIS:hisAdd> Gammen o. s. v &dash;</l></HIS:hisSp>
+<lb/><l rend="indent1">Idag er <HIS:hisAdd place="inline">d<unclear reason="writing">er</unclear></HIS:hisAdd> Gammen o. s. v –</l></HIS:hisSp>
 <lb/><HIS:hisStage>(Ivar og Svend kommer fra Høire.)</HIS:hisStage>
 <lb/><HIS:hisSp who="IVAR"><HIS:spOpener><speaker>Ivar</speaker>.</HIS:spOpener>
-<lb/><l part="I">Er Borddugen bredt &dash;</l></HIS:hisSp>
+<lb/><l part="I">Er Borddugen bredt –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SVEND"><HIS:spOpener><speaker rend="deviation">Svend</speaker></HIS:spOpener>
 <lb/><l part="F">Ja, Husbond, ja!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="IVAR"><HIS:spOpener><speaker rend="deviation">Ivar</speaker>.</HIS:spOpener>
@@ -908,8 +902,8 @@ Begynt etableringen av Fj4935.xml - basis: FjHU-1000. Endret TEI-header, fjernet
 <lb/><HIS:hisSp who="SVEND"><HIS:spOpener><speaker rend="deviation">Svend</speaker>.</HIS:spOpener>
 <lb/><l part="F">Ja, Husbond, ja!</l><note resp="editor">Verslinjen har trolig feil innrykk. Linjen bør oppfattes som et selvstendig kortvers, snarere enn en fortsettelse av foregående verslinje. Et vers satt sammen av denne og foregående replikk blir altfor lang i forhold til versemålet.</note></HIS:hisSp>
 <lb/><HIS:hisSp who="IVAR"><HIS:spOpener><speaker>Ivar</speaker>.</HIS:spOpener>
-<lb/><l>Kirkevejen er lang at ride, &dash;</l>
-<lb/><l>Af<HIS:hisDel rend="overwritten"><unclear>st</unclear></HIS:hisDel>gaarde maa vi ved Nattetide; &dash;</l>
+<lb/><l>Kirkevejen er lang at ride, –</l>
+<lb/><l>Af<HIS:hisDel rend="overwritten"><unclear>st</unclear></HIS:hisDel>gaarde maa vi ved Nattetide; –</l>
 <lb/><l>Færden skal fare med Tyriblus</l>
 <lb/><l>Fra Bryllupsga<unclear reason="writing">ard</unclear> til det hellige Hus.</l></HIS:hisSp>
 </div></div></body></text>

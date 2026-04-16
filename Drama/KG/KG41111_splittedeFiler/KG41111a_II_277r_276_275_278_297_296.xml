@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -13,11 +7,11 @@
 <title level="s" type="main">Henrik Ibsens skrifter</title>
 <title level="s" type="sub">Diplomatarisk tekstarkiv</title>
 <title level="a" type="main">Kejser og Galilæer</title>
-<title level="a" type="sub">NBO Ms.4&deg; 1111a, bl. 277r, 276, 275/78, 297 og 296</title>
-<title level="a" type="origYear">[1871&dash;1873]</title>
+<title level="a" type="sub">NBO Ms.4° 1111a, bl. 277r, 276, 275/78, 297 og 296</title>
+<title level="a" type="origYear">[1871–1873]</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt>
 <resp>Konvertering fra ekstern transkripsjon til prosjektspesifikk TEI XML</resp>
 <name xml:id="HIS-HB">Hilde Bøe</name>
@@ -45,12 +39,12 @@
 <sourceDesc><p>Denne filen bygger på KG41111_NBO.xml (KG41111_NBO-0208).</p></sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography><p>Manuskriptets grafiske oppsett finnes beskrevet i typografibeskrivelsen i KG41111_NBO.xml.</p>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -121,7 +115,7 @@
 <label xml:id="PERSEREN"/><item>En persisk overløber/Perseren</item>
 </list>
 </tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -163,7 +157,7 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/>Julian hoverer. En gammel hofmand gør ham
 <lb/>opmærksom på at æren galdt Konstantius. Julian i
 <lb/>vrede, forordner undersøgelse af embedsmændenes færd;
-<lb/>de skal straffes &dash; ikke fordi de er kristne; han genta&typHyp;
+<lb/>de skal straffes – ikke fordi de er kristne; han genta‐
 <lb/>ger sine forsikringer i så henseende til Cæsarius,
 <lb/>hvem han gør store tilbud, der afslåes, hvorefter de
 <lb/>skilles. Julian beslutter sig til Bacchustoget.</p>
@@ -187,28 +181,28 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><head>(2<hi rend="raised">den</hi> handling.)</head>
 <lb/><p>Et forværelse i kejserens palats i Antiochia.</p>
 <lb/><p>Sofister, talere, digtere og anklagere er tilstede i stor
-<lb/>mængde ventende på kejseren. &dash; Julian kommer;
+<lb/>mængde ventende på kejseren. – Julian kommer;
 <lb/>han vredes over al denne påtrængenhed og sætter dem
-<lb/>i rette på forskellige måder. &dash; Gregor fra Nazianz
+<lb/>i rette på forskellige måder. – Gregor fra Nazianz
 <lb/>kommer for at bede om retfærdighed og sætter Julian
 <lb/>stærkt i rette for hans fremfærd navnlig mod Ursulus.
 <lb/>Samtalen afbrydes idet det meldes kejseren at nogle unge
 <lb/>kristne har plyndret og hånet et tempel; i højeste vrede
-<lb/>befaler Julian at de skyldige skal opspores; derpå be&typHyp;
+<lb/>befaler Julian at de skyldige skal opspores; derpå be‐
 <lb/>reder han sig til Apollo-festen.</p>
 <lb/><p>Et torv i Antiochia.</p>
 <lb/><p>Stort og glimrende optog. Menneskemængde. Kejser
 <lb/>Julian kommer klædt som yppersteprest. Han ho<unclear reason="writing">verer</unclear>
-<lb/>over de sky og frygtsomme kristne. Et tog under sal&typHyp;
-<lb/>mesang kommer dem imøde; det er de fangne krist&typHyp;
+<lb/>over de sky og frygtsomme kristne. Et tog under sal‐
+<lb/>mesang kommer dem imøde; det er de fangne krist‐
 <lb/>ne, der føres til pinebænken. Togene mødes og standser.
 <lb/>Han tiltaler en af de fangne og genkender Agaton
 <lb/>med hans lille broder. Rystende optrin; togene drager
-<lb/>hver sin vej; de kristne jubler imod martyriet. <HIS:hisDel rend="overstrike">Da frem&typHyp;
+<lb/>hver sin vej; de kristne jubler imod martyriet. <HIS:hisDel rend="overstrike">Da frem‐
 <lb/>træder</HIS:hisDel></p>
 <lb/><p>En plads foran Apollo-templet.</p>
-<lb/><p>Optoget kommer. Skrigende kristne; rygtet har ud&typHyp;
-<lb/>bredt sig om martyrernes pinsler; barnet er dræbt; Aga&typHyp;
+<lb/><p>Optoget kommer. Skrigende kristne; rygtet har ud‐
+<lb/>bredt sig om martyrernes pinsler; barnet er dræbt; Aga‐
 <lb/>thon i vanvid. Da træder den gamle Maris frem
 <lb/>og forbander apostaten; forfærdelse; hans ledsagere
 <pb ed="faksBase" n="24"/>
@@ -217,12 +211,12 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><fw type="gathering" place="top-left"><HIS:hisDel rend="overstrike">24</HIS:hisDel>.</fw>
 <lb/>flygter men Gregor fra Nazianz tager ham ved
 <lb/>hånden, Julian truer med at <sic>udryde</sic> alle bibler
-<lb/>og hellige bøger; guderne skal sejre. Da ryster et jord&typHyp;
+<lb/>og hellige bøger; guderne skal sejre. Da ryster et jord‐
 <lb/>skælv templet; søjler og mure styrter sammen;
 <lb/>vild skræk. Julian fatter sig og tilskriver det
 <lb/>gudernes vrede. Gregor råber at Kristus har
 <lb/>lagt det i grus ligesom han lyste forbandelsen
-<lb/>over Jerusalems tempel. Julian sværger at Jeru&typHyp;
+<lb/>over Jerusalems tempel. Julian sværger at Jeru‐
 <lb/>salems tempel skal oprejses og Galilæeren gøres
 <lb/>til løgner. Gregor svarer at kejseren ikke skal lægge
 <lb/>sten på sten.</p>
@@ -245,22 +239,22 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><p>En søjlegang med billedstøtter og vandspring
 <lb/>i Antiokia.</p>
 <lb/><p>En stor skare af hoffolk, lærere og talere, blandt
-<lb/>dem Libanius og Herakleos, er tilstede. Man&typHyp;
+<lb/>dem Libanius og Herakleos, er tilstede. Man‐
 <lb/>ge er klædte i forrevne kapper. Der spottes over
 <lb/>kejserens sære påfund, over de dårlige spiser
-<lb/>og det hårde levesæt. Herakleos gør sig især ly&typHyp;
+<lb/>og det hårde levesæt. Herakleos gør sig især ly‐
 <lb/>stig over denne måde at tjene guderne på.</p>
 <lb/><p>Julian kommer. Også han bærer en kynikers
-<lb/>dragt og roser sig deraf. Han irettesætter sine om&typHyp;
+<lb/>dragt og roser sig deraf. Han irettesætter sine om‐
 <lb/>givelser for deres blødagtighed og viser hen til
-<lb/>galilæerne, hvis dyder i mange måder for&typHyp;
+<lb/>galilæerne, hvis dyder i mange måder for‐
 <lb/>tjener at efterfølges. Han får øje på Herakleos
 <lb/>og udskælder ham for hans usømmelige tale om
 <lb/>guderne. Derefter støder han på Libanius, med
 <lb/>hvem mødet er spændt men påtaget venligt fra
-<lb/>begge sider. Libanius er kommen for at ind&typHyp;
+<lb/>begge sider. Libanius er kommen for at ind‐
 <lb/>lægge et godt ord for staden. Julian udbryder
-<lb/>i vrede og omtaler sit skrift &lquo;Skæghaderen.&rquo;</p>
+<lb/>i vrede og omtaler sit skrift «Skæghaderen.»</p>
 <lb/><p>En gade i Antiokia. Til venstre en liden
 <lb/>kirke; til højre et forfaldent alter med et
 <lb/>halvt omstyrtet gudebillede.</p>
@@ -269,8 +263,8 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <pb n="[275]v"/>
 <lb/>folkeforsamling. Han fortæller dem om Markos
 <lb/>af Arethusa og de øvrige blodvidner. Apollinaris
-<lb/>synger sine vilde sange. Den vanvittige Publia for&typHyp;
-<lb/>kynder hedenskabets fald. Kejser Julian kom&typHyp;
+<lb/>synger sine vilde sange. Den vanvittige Publia for‐
+<lb/>kynder hedenskabets fald. Kejser Julian kom‐
 <lb/>mer med sine ledsagere gennem <sic>gade</sic>. Kristne
 <lb/>borgere beklager sig over at deres ejendom er dem
 <lb/>fratagen; kejseren spotter dem. Gregor spørger ham
@@ -279,13 +273,13 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/>tilbagegives stæderne; om alle bibler og hellige
 <lb/>skrifter skal fratages ejerne. Julian bekræfter
 <lb/>det. Gregor fordømmer ham som Antikrist.
-<lb/>Bevæbnede driver mængden fra hinanden. He&typHyp;
+<lb/>Bevæbnede driver mængden fra hinanden. He‐
 <lb/>kebolios ses ligge foran kirkedøren. Optrin
 <lb/>mellem ham og kejseren.</p>
 <lb/><p>Landevej udenfor staden. Til venstre ved
 <lb/>vejkanten står Kybeles billedstøtte med et
 <lb/>alter foran. Solnedgang.</p>
-<lb/><p>Julian kommer med få ledsagere og træf&typHyp;
+<lb/><p>Julian kommer med få ledsagere og træf‐
 <lb/>fer den gamle prest. Optrin mellem dem. Et tog
 <lb/>af kvinder kommer fra staden under jammerklage,
 <lb/>deres hellige skrifter er dem fratagne. Blodvidnet
@@ -293,24 +287,24 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/>sønderflænger sit bryst med en kniv. Kejseren
 <lb/>er rystet. De hedenske tilskuere forhåner ham
 <lb/>med allehånde skældsord. Han vil gå bort
-<lb/>i vrede, da kommer Jovian og bringer bud&typHyp;
+<lb/>i vrede, da kommer Jovian og bringer bud‐
 <lb/>skabet om at opbyggelsen af Jerusalems tempel
 <lb/>er mislykket.</p>
 <lb/><fw type="leaf" place="top-right" scribe="h1"><HIS:hisDel rend="overstrike">278</HIS:hisDel></fw>
 <pb ed="faksBase" n="27"/>
 <pb n="[278]r"/>
 <lb/><fw type="leaf" place="top-right" scribe="h1">278</fw>
-<lb/><p>(Mellem ruinerne af Apollo-templet. Må&typHyp;
+<lb/><p>(Mellem ruinerne af Apollo-templet. Må‐
 <lb/>neskinsnat.)</p>
-<lb/><p>Julian og Maximus mødes. Julian udbry&typHyp;
+<lb/><p>Julian og Maximus mødes. Julian udbry‐
 <lb/>der i bittre klager over gudernes magtløshed.
-<lb/>Maximus udtaler sig gådefuldt om det &lquo;<sic>trede</sic>
-<lb/>rige&rquo; hvori både kejseren og Galilæeren skal gå
+<lb/>Maximus udtaler sig gådefuldt om det «<sic>trede</sic>
+<lb/>rige» hvori både kejseren og Galilæeren skal gå
 <lb/>under for at opstå i noget nyt. Julian fatter
-<lb/>vinket. Han vil lægge jorden under sig og be&typHyp;
-<lb/>slutter krigen med Perserne. Vilde sværme&typHyp;
+<lb/>vinket. Han vil lægge jorden under sig og be‐
+<lb/>slutter krigen med Perserne. Vilde sværme‐
 <lb/>rier. Maximus kaster sig ned og tilbeder
-<lb/>den vordende Messias i Julian. &dash;</p>
+<lb/>den vordende Messias i Julian. –</p>
 </div>
 <lb/><figure type="bar"/>
 <pb ed="faksBase" n="28"/>
@@ -329,21 +323,21 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/><head>Udkast
 <lb/>til
 <lb/>Fjerde handling.</head>
-<lb/><p>(Ved kejser-rigets østlige grænse. Vildt berg&typHyp;
+<lb/><p>(Ved kejser-rigets østlige grænse. Vildt berg‐
 <lb/>landskab. En dyb <sic>dalkløf</sic> skiller den høje
 <lb/>forgrund fra de bagenfor liggende fjelde.)</p>
 <lb/><p>Kejser Julian omgiven af sine hærførere
 <lb/>visdomsvenner, spåmænd og andre ser sin hær
 <lb/>drage gennem dalen. Nevita og Maximus
 <lb/>er tilstede. Tvivl og håb kæmper i Julian; han
-<lb/>udlægger alle varsler til sin fordel. Krigs&typHyp;
+<lb/>udlægger alle varsler til sin fordel. Krigs‐
 <lb/>øversten Jovian vækker kejserens vrede. Kristne
-<lb/>soldater drager over fjeldhøjden &dash;, blandt dem
-<lb/>Agaton. Foranstaltninger imod de kristne om&typHyp;
+<lb/>soldater drager over fjeldhøjden –, blandt dem
+<lb/>Agaton. Foranstaltninger imod de kristne om‐
 <lb/>tales. Julians hest Babylonios falder. En løve
 <lb/>dræbes. Mystik om Alexanders sjæl i Julian. Han
 <lb/>rykker videre.</p>
-<lb/><p>(Skønt skoglandskab med Basilius's og Makri&typHyp;
+<lb/><p>(Skønt skoglandskab med Basilius's og Makri‐
 <lb/>nas bolig. Solnedgang.)</p>
 <lb/><p>Hærafdelinger drager forbi. Makrina
 <lb/>vederkvæger soldaterne. Kejseren kommer.
@@ -354,10 +348,10 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <pb n="[297]v"/>
 <lb/><p>Hinsides Eufrat i den kejserlige lejr. Julian
 <lb/>befaler at hans brystbillede skal opstilles på et alter
-<lb/>og soldaterne lokkes til at dyrke det som en gud&typHyp;
+<lb/>og soldaterne lokkes til at dyrke det som en gud‐
 <lb/>dom. Den persiske flygtning kommer og råder
 <lb/>til at brænde skibene. Tumult blandt de bedragne
-<lb/>og forfærdede soldater mens flåden brænder. Be&typHyp;
+<lb/>og forfærdede soldater mens flåden brænder. Be‐
 <lb/>falingen kaldes tilbage, men for sent; perseren
 <lb/>er borte.</p>
 <lb/><figure type="bar"/>
@@ -376,8 +370,8 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/>rådvild. Soldaterne har tabt troen på ham.
 <lb/>Han har havt syner. Oraklerne spår ilde.</p>
 <lb/><p>(Sumpig skogegn. Nat.)
-<lb/>Oribases og flere søger ængsteligt efter kej&typHyp;
-<lb/>seren. &dash; Derefter Julian, så Maximus. Vil&typHyp;
+<lb/>Oribases og flere søger ængsteligt efter kej‐
+<lb/>seren. – Derefter Julian, så Maximus. Vil‐
 <lb/>delsen stiger. Synet af tømmermanden som
 <lb/>tømrer kejserens kiste. Oribases og Euterios
 <lb/>kommer til. Kampråb langt borte. Alle ud.</p>
@@ -385,7 +379,7 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/>på sletten. Morgengry.)
 <lb/>Slagtummel. Julian kommer; hans hest
 <lb/>er skudt under ham. Han er fra sig selv;
-<lb/>tror det er <sic>kristus</sic> han kæmper med. Aga&typHyp;
+<lb/>tror det er <sic>kristus</sic> han kæmper med. Aga‐
 <lb/>ton kaster sit spyd og rammer ham.
 <lb/>Han falder og bæres bort. Jovian tager
 <lb/>anførslen og opflammer soldaterne ved sin

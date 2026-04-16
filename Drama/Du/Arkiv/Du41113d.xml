@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.ibsen.uio.no/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
+
 <?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
     <teiHeader xml:lang="nob">
@@ -12,12 +7,12 @@
 <titleStmt>
 <title level="s" type="main">Henrik Ibsens skrifter</title>
 <title level="s" type="sub">Diplomatarisk tekstarkiv</title>
-<title level="a" type="main">&lsqb;Et dukkehjem&rsqb;</title>
-<title level="a" type="sub">NBO Ms.4&deg; 1113d</title>
-<title level="a" type="origYear">&lsqb;1878-79&rsqb;</title>
-<author>&lsqb;Henrik Ibsen&rsqb;</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<title level="a" type="main">[Et dukkehjem]</title>
+<title level="a" type="sub">NBO Ms.4° 1113d</title>
+<title level="a" type="origYear">[1878-79]</title>
+<author>[Henrik Ibsen]</author>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
     <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Margit Sauar, Ingvald Aarstein</name></respStmt>
     <respStmt>
         <resp>Kodet om til TEI-P5, juli 2011</resp>
@@ -40,7 +35,7 @@
         <msIdentifier>
             <settlement>Oslo</settlement>
             <repository>Nasjonalbiblioteket</repository>
-            <idno>NBO Ms.4&deg; 1113a-f</idno>
+            <idno>NBO Ms.4° 1113a-f</idno>
         </msIdentifier>
         <msContents><msItem><author>[Henrik Ibsen]</author>
             <title>Uten tittel</title>
@@ -52,7 +47,7 @@
 </fileDesc>
 
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <list>
@@ -91,8 +86,8 @@
 </item>
 </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
     <namespace name="http://www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -102,7 +97,7 @@
             <label xml:id="RANK">RANK</label><item>Doktor Rank, Doktoren, Dr. R., R.</item>
         </list>
     </tagUsage></namespace>
-    <namespace name="http://www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-tei2;</tagUsage></namespace>
+    <namespace name="http://www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
     <variantEncoding xmlns="" type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -146,22 +141,22 @@ Fila er opprettet med utgangspunkt i Du41113.xml. Typografibeskrivelsen gjelder 
 <lb/><note resp="h2" place="top">d</note><fw type="leaf" place="top-right" hand="h1">27</fw>
 <lb/><HIS:hisSp><p>postejer</p></HIS:hisSp>
 <lb/><HIS:hisSp who="RANK"><HIS:spOpener><speaker><HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="Du_76ms"/>R.</speaker></HIS:spOpener>
-<lb/><p>Ja og til Trøfler &dash;</p></HIS:hisSp>
+<lb/><p>Ja og til Trøfler –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="NORA"><HIS:spOpener><speaker>N.</speaker></HIS:spOpener>
-<lb/><p>Ja trøfler &dash; og så til østers tror jeg &dash;</p></HIS:hisSp>
+<lb/><p>Ja trøfler – og så til østers tror jeg –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="RANK"><HIS:spOpener><speaker>R.</speaker></HIS:spOpener>
-<lb/><p>Ja østers, det forstår sig &dash;</p></HIS:hisSp>
+<lb/><p>Ja østers, det forstår sig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="NORA"><HIS:spOpener><speaker>No.</speaker></HIS:spOpener>
-<lb/><p>Og så al den portvin og champagne til &dash;
+<lb/><p>Og så al den portvin og champagne til –
 <lb/>det er sørgeligt at alle disse gode sag<unclear reason="writing">er</unclear> skal slå sig på
 <lb/>benraden</p></HIS:hisSp>
 <lb/><HIS:hisSp who="RANK"><HIS:spOpener><speaker>R.</speaker></HIS:spOpener>
 <lb/><p>Ja <HIS:hisDel rend="overstrike">isæ</HIS:hisDel> især på en ulykkelig benrad, som ikke har f<unclear reason="writing">å</unclear>t
-<lb/>godt af dem &dash;</p></HIS:hisSp>
+<lb/>godt af dem –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="NORA"><HIS:spOpener><speaker>N.</speaker></HIS:spOpener>
-<lb/><p>Ak ja &dash; det er nok det aller sørgeligste</p></HIS:hisSp>
+<lb/><p>Ak ja – det er nok det aller sørgeligste</p></HIS:hisSp>
 <lb/><HIS:hisSp who="RANK"><HIS:spOpener><speaker>R</speaker></HIS:spOpener>
-<lb/><p>Hm &dash;</p></HIS:hisSp>
+<lb/><p>Hm –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="NORA"><HIS:spOpener><speaker>N.</speaker></HIS:spOpener>
 <lb/><p>Hvorfor smilte De.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="RANK"><HIS:spOpener><speaker>R.</speaker></HIS:spOpener>
@@ -169,7 +164,7 @@ Fila er opprettet med utgangspunkt i Du41113.xml. Typografibeskrivelsen gjelder 
 <lb/><HIS:hisSp who="NORA"><HIS:spOpener><speaker>N.</speaker></HIS:spOpener>
 <lb/><p>Nej, det var Dem, som smilte, dr R.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="RANK"><HIS:spOpener><speaker>R.</speaker> <HIS:hisStage>(rejser sig)</HIS:hisStage></HIS:spOpener>
-<lb/><p>De er nok en større skælm end jeg havde tænkt &dash;</p></HIS:hisSp>
+<lb/><p>De er nok en større skælm end jeg havde tænkt –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="NORA"><HIS:spOpener><speaker>N.</speaker></HIS:spOpener>
 <lb/><p>Jeg er så opsat på galskaber idag.</p></HIS:hisSp>
 <pb n="56"/>

@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -16,8 +10,8 @@
     <title level="a" type="sub">LE_b_privat</title>
 <title level="a" type="origYear">1894</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Nina Marie Evensen</name></respStmt>
 <respStmt>
 <resp>Oppretting/1. kollasjon, mai-juni 2017</resp>
@@ -55,15 +49,15 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <list>
 <item>Det mangler mange prikker over i-er, disse er stilltiende satt inn.</item>
 </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -74,7 +68,7 @@
 </list>
 </tagUsage></namespace>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="pb-ed-HU">Sideskiftene fra Hundreårsutgaven (bd XII) er ikke lagt inn.</tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -128,22 +122,22 @@
                     <pb ed="source" type="folio_nopagination" subtype="verso" n="1" facs="2" gathering="1"/>
                     <lb/><p>Ikke fuldt og helt.</p></HIS:hisSp>
                 <lb/><HIS:hisSp who="RITA"><HIS:spOpener><speaker>Fru Allmers</speaker></HIS:spOpener>
-                    <lb/><p>Jo, jo, &dash; tusend gange &dash; jo! Jeg har holdt af dig
+                    <lb/><p>Jo, jo, – tusend gange – jo! Jeg har holdt af dig
                         <lb/>fra første stund, som jeg holder af dig i denne
                         <lb/>dag.</p></HIS:hisSp>
                 <lb/><HIS:hisSp who="ALLMERS"><HIS:spOpener><speaker>Allmers</speaker></HIS:spOpener>
-                    <lb/><p>Å det tro<HIS:hisDel rend="overwritten">j</HIS:hisDel>r jeg. Det véd jeg. Og derfor så spør&#x2019;
-                        <lb/>jeg mig selv i anger og nag &dash;</p></HIS:hisSp>
+                    <lb/><p>Å det tro<HIS:hisDel rend="overwritten">j</HIS:hisDel>r jeg. Det véd jeg. Og derfor så spør’
+                        <lb/>jeg mig selv i anger og nag –</p></HIS:hisSp>
                 <lb/><HIS:hisSp who="RITA"><HIS:spOpener><speaker>Fru Allmers</speaker></HIS:spOpener>
                     <lb/><p>Alfred! Alfred!</p></HIS:hisSp>
                 <lb/><HIS:hisSp who="ALLMERS"><HIS:spOpener><speaker>Allmers</speaker>.</HIS:spOpener>
-                    <lb/><p>Jeg spør&#x2019; mig om det har været &dash; gensidigt.</p></HIS:hisSp>
+                    <lb/><p>Jeg spør’ mig om det har været – gensidigt.</p></HIS:hisSp>
                 <lb/><HIS:hisSp who="RITA"><HIS:spOpener><speaker>Fru Allmers</speaker></HIS:spOpener>
-                    <lb/><p>Har du altså &dash;! Aldrig holdt af mig &dash;</p></HIS:hisSp>
+                    <lb/><p>Har du altså –! Aldrig holdt af mig –</p></HIS:hisSp>
                 <lb/><HIS:hisSp who="ALLMERS"><HIS:spOpener><speaker>Allmers</speaker></HIS:spOpener>
-                    <lb/><p>Jo, jo, og det gør jeg fremdeles, &dash; men &dash;</p></HIS:hisSp>
+                    <lb/><p>Jo, jo, og det gør jeg fremdeles, – men –</p></HIS:hisSp>
                 <lb/><HIS:hisSp who="RITA"><HIS:spOpener><speaker>Fru Allmers</speaker></HIS:spOpener>
-                    <lb/><p>Men &dash;?</p></HIS:hisSp>
+                    <lb/><p>Men –?</p></HIS:hisSp>
                 <lb/><HIS:hisSp who="ALLMERS"><HIS:spOpener><speaker>Allmers</speaker></HIS:spOpener>
                     <lb/><p>Det var ikke kærlighed alene, som drog mig
                         <lb/>til dig.</p></HIS:hisSp>

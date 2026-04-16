@@ -1,10 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.ibsen.uio.no/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
 <?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
     <teiHeader xml:lang="nob">
@@ -12,11 +6,11 @@
 <titleStmt>
 <title level="a" type="main">[Et dukkehjem]</title>
 <title level="s" type="main">Henrik Ibsens skrifter</title>
-<title level="a" type="sub">NBO Ms.4&deg; 1113h</title>
+<title level="a" type="sub">NBO Ms.4° 1113h</title>
 <title level="s" type="sub">Diplomatarisk tekstarkiv</title>
 <author>[Henrik Ibsen]</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
     <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Hilde Bøe, Mette Witting</name></respStmt>
 <respStmt>
 <resp>Kodeteknisk støtte og utvikling</resp>
@@ -46,7 +40,7 @@
         <msIdentifier>
             <settlement>Oslo</settlement>
             <repository>Nasjonalbiblioteket</repository>
-            <idno>NBO Ms.4&deg; 1113h</idno>
+            <idno>NBO Ms.4° 1113h</idno>
         </msIdentifier>
         <msContents>
             <msItem><author>[Henrik Ibsen]</author>
@@ -57,15 +51,15 @@
     </HIS:hisMsDesc></p></sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography><p>Replikkveksling mellom Nora og fru Linde, skrevet raskt og fortløpende som prosa. Til dels vanskelig leselig.</p></HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="http://www.tei-c.org/ns/1.0"><tagUsage gi="pb-ed-HU">Sideskiftene fra Hundreårsutgaven (bd 8) er kodet med pb ed="HU". Dette tekstvitnet dekker sidene 283-284.</tagUsage></namespace>
-<namespace name="http://www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-tei2;</tagUsage></namespace>
+<namespace name="http://www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
     <variantEncoding xmlns="http://www.tei-c.org/ns/1.0" type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -125,17 +119,17 @@ Opprettet fil og transkriberte og kodet teksten. Transkriberte ikke s. 3 siden d
     <pb/>
 <pb/>
 <lb/><p>De øvre<note resp="editor">'ø' mangler diakritisk tegn.</note> klasser. Skolepenge, fornødenheder.
-<lb/>Det gik ikke længer i en slig afkrog. Må få kontor&typHyp;
-<lb/>arbejde &dash; Fru St. Det anstrængende liv &dash; <pb ed="HU"/>heller
-<lb/>en rejse til syden &dash; Fru L. Har ingen fader
+<lb/>Det gik ikke længer i en slig afkrog. Må få kontor‐
+<lb/>arbejde – Fru St. Det anstrængende liv – <pb ed="HU"/>heller
+<lb/>en rejse til syden – Fru L. Har ingen fader
 <lb/>til at for<unclear reason="writing">ære</unclear> mig rejsepenge. Fr. St. Så skal
 <lb/>min mand hjælpe <HIS:hisDel rend="overwritten">mi</HIS:hisDel>dig Fru L. Det tænkte
 <lb/>jeg på da jeg hørte hans forfremmelse. Det
 <lb/>er ulykken med et liv som mit at vi bl<unclear reason="writing">ir</unclear> eg<unclear reason="writing">en</unclear><note resp="editor">bindestrek mangler</note>
-<lb/>kærlige og bitre &dash; jeg glæded <HIS:hisDel rend="overwritten">d</HIS:hisDel>mig på mine og
+<lb/>kærlige og bitre – jeg glæded <HIS:hisDel rend="overwritten">d</HIS:hisDel>mig på mine og
 <lb/>ikke på dine vegne. Ja, jeg kunde føle bitter<note resp="editor">bindestrek mangler</note>
 <lb/>hed imod dig, Nora. Her har du levet i ly<unclear reason="writing">kken</unclear>
-<lb/>og uden beky<unclear reason="writing">mringer</unclear> &dash; men så føler jeg også
+<lb/>og uden beky<unclear reason="writing">mringer</unclear> – men så føler jeg også
 <lb/>stolthed; thi jeg har dog udrettet noget for mine.</p>
 </div>
 </body>

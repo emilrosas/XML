@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -13,11 +7,11 @@
 <title level="s" type="main">Henrik Ibsens skrifter</title>
 <title level="s" type="sub">Diplomatarisk tekstarkiv</title>
 <title level="a" type="main">Catilina</title>
-<title level="a" type="sub">2. versjon, NBO Ms.8&deg; 1938:2</title>
+<title level="a" type="sub">2. versjon, NBO Ms.8° 1938:2</title>
 <title level="a" type="origYear">[1875]</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Mette Witting, Hallvard Ystad</name></respStmt>
 <respStmt>
 <resp>Koding, kollasjonering og korrekturlesing</resp>
@@ -48,20 +42,20 @@
 <msIdentifier>
 <settlement>Oslo</settlement>
 <repository>Nasjonalbiblioteket</repository>
-<idno>NBO Ms.8&deg; 1938:2</idno>
+<idno>NBO Ms.8° 1938:2</idno>
 </msIdentifier>
 <msContents><msItem>
 <author>[Henrik Ibsen]</author>
 <title>[Catilina]</title>
 <docDate>[1875]</docDate>
 </msItem></msContents>
-<physDesc><objectDesc><p>Ms.8&deg; 1938:2. &lquo;Første akt&rquo;. Påbegynt egenhendig renskrift med rettelser.</p></objectDesc></physDesc>
+<physDesc><objectDesc><p>Ms.8° 1938:2. «Første akt». Påbegynt egenhendig renskrift med rettelser.</p></objectDesc></physDesc>
 </HIS:hisMsDesc>
 </p>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <list>
@@ -94,8 +88,8 @@
 </item>
 </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="app-external">
@@ -112,7 +106,7 @@
 <label xml:id="OLLOVICO">OLLOVICO</label><item>Ollovico</item>
 </list>
 </tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 <variantEncoding type="external" method="parallel-segmentation" location="internal" n="8"/>
@@ -124,7 +118,10 @@
 </handNotes>
 </profileDesc>
 <revisionDesc>
-<change><date>20.09.12</date>
+<change><date>10.04.26</date>
+<name>NME</name><title>noter</title>
+ Fjernet to editor-noter i variantkodingen som opplyste om at teksten i dette vitnet ikke er komplett i forhold til det fulle dramaet.</change>    
+ <change><date>20.09.12</date>
 <name>SBT</name><title>TEI P5</title>
 Fila er kodet om til TEI P5 for HISe.</change>
 <change><date>21.02.08</date>
@@ -189,7 +186,7 @@ Oppdaterte teiheader. Slettet loggen. Fornyet punktene i handlist (gjaldt uteluk
 <pb ed="source" type="folio_nopagination" subtype="recto" n="5" facs="9" gathering="2"/>
 <lb/><fw type="sheet" place="top-left">2.</fw>
 <div type="act" n="1">
-<lb/><head><app type="external" subtype="word" xml:id="varC2-151"><HIS:hisRdg>Første<note resp="editor" type="variant">mangler all foregående tekst</note></HIS:hisRdg></app> akt.</head>
+<lb/><head><app type="external" subtype="word" xml:id="varC2-151"><HIS:hisRdg>Første</HIS:hisRdg></app> akt.</head>
 <lb/><HIS:hisStage>(Ved den flaminiske landevej udenfor
 <lb/>Rom. En træbevokset bakke ved vejen.
 <lb/>I baggrunden fremrager stadens højder
@@ -198,49 +195,49 @@ Oppdaterte teiheader. Slettet loggen. Fornyet punktene i handlist (gjaldt uteluk
 <lb/>buskerne, lænet til en træstamme.)</HIS:hisStage>
 <lb/><HIS:hisSp who="CATILINA"><HIS:spOpener><speaker>Catilina</speaker>.</HIS:spOpener>
 <lb/><l>Jeg må! Jeg må; så byder mig en stemme</l>
-<lb/><l>i sjælens dyb, &dash; og jeg vil følge den.</l>
+<lb/><l>i sjælens dyb, – og jeg vil følge den.</l>
 <lb/><l>Kraft ejer jeg, og mod til noget bedre,</l>
 <lb/><l>til noget højere, end dette liv.</l>
-<lb/><l>En række kun af tøjlesløse glæder &dash;!</l>
+<lb/><l>En række kun af tøjlesløse glæder –!</l>
 <lb/><l>Nej, nej; de fyldestgør ej hjertets trang.</l>
 <lb/><l rend="indent">Jeg sværmer vildt! Kun glemsel er min h<HIS:hisDel rend="overwritten"><unclear>g</unclear></HIS:hisDel>igen.</l>
 <lb/><l>Det er forbi! Mit liv har intet mål.</l>
 <lb/><HIS:hisStage>(efter et ophold.)</HIS:hisStage>
 <lb/><l>Hvad blev der vel af mine ungdomsdrømme?</l>
 <lb/><l>Som lette sommerskyer de forsvandt.</l>
-<lb/><l>Kun nag og skuffelse de lod tilbage; &dash;</l>
+<lb/><l>Kun nag og skuffelse de lod tilbage; –</l>
 <lb/><l>hvert modigt håb har skæbnen røvet mig.</l>
 <lb/><HIS:hisStage>(slår sig for panden.)</HIS:hisStage>
 <pb ed="source" type="folio_nopagination" subtype="verso" n="5" facs="10"/>
 <lb/><l>Foragt dig selv! Foragt dig, Catilina!</l>
-<lb/><l>Du føler ædle kræfter i dit sind; &dash;</l>
+<lb/><l>Du føler ædle kræfter i dit sind; –</l>
 <lb/><l>og hvad er målet for din hele stræben?</l>
 <lb/><l>Kun mættelse for sanseligt begær.</l>
 <lb/><HIS:hisStage>(roligere.)</HIS:hisStage>
 <lb/><l>Dog, stundom end, som nu i denne time,</l>
 <lb/><l>en lønlig længsel ulmer i mit bryst.</l>
 <lb/><l>Ah, når jeg ser mod staden hist, det stolte,</l>
-<lb/><l>det rige Roma, &dash; og den uselhed</l>
+<lb/><l>det rige Roma, – og den uselhed</l>
 <lb/><l>og det fordærv, hvortil det længst er sunket,</l>
-<lb/><l>fremtræder klart som solen for mit syn, &dash;</l>
+<lb/><l>fremtræder klart som solen for mit syn, –</l>
 <lb/><l>da råber højt en stemme i mit indre:</l>
-<lb/><l>vågn, Catilina; &dash; vågn, og vord en mand!</l>
+<lb/><l>vågn, Catilina; – vågn, og vord en mand!</l>
 <lb/><HIS:hisStage>(afbrydende.)</HIS:hisStage>
 <lb/><l>Ak, det er gøgleværk og nattens drømme,</l>
 <lb/><l>og ensomhedens åndefostre kun.</l>
 <lb/><l>Ved mindste lyd fra virklighedens rige</l>
 <lb/><l>de flygter ned i sjælens stumme dyb.</l></HIS:hisSp>
 <lb/><HIS:hisStage>(Allebrogernes udsendinger, Ambiorix og
-<lb/>Ollovico, med sine ledsagere, kommer ned&typHyp;
+<lb/>Ollovico, med sine ledsagere, kommer ned‐
 <lb/>over landevejen uden at bemærke Catilina.)</HIS:hisStage>
 <lb/><HIS:hisSp who="AMBIORIX"><HIS:spOpener><speaker>Ambiorix</speaker>.</HIS:spOpener>
 <lb/><l>Se hist vor rejses mål! Se Romas mure!</l>
 <lb/><l>Mod himlen står det høje Kapitol.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="OLLOVICO"><HIS:spOpener><speaker>Ollovico</speaker>.</HIS:spOpener>
 <lb/><l><emph>Det</emph> Roma er? Italiens herskerinde,</l>
-<lb/><l>og snart Germanniens, &dash; Galliens og <app type="external" subtype="word" xml:id="varC2-100"><HIS:hisRdg>måske</HIS:hisRdg></app>.</l></HIS:hisSp>
+<lb/><l>og snart Germanniens, – Galliens og <app type="external" subtype="word" xml:id="varC2-100"><HIS:hisRdg>måske</HIS:hisRdg></app>.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="AMBIORIX"><HIS:spOpener><speaker>Ambiorix</speaker>.</HIS:spOpener>
-<lb/><l>Desværre, ja; &dash; så tør det engang vorde;</l>
+<lb/><l>Desværre, ja; – så tør det engang vorde;</l>
 <pb ed="source" type="folio_nopagination" subtype="recto" n="6" facs="11"/>
 <lb/><l>og skånselløst er Romas herredom;</l>
 <lb/><l>den undertvungne tynger det til jorden.</l>
@@ -263,10 +260,10 @@ Oppdaterte teiheader. Slettet loggen. Fornyet punktene i handlist (gjaldt uteluk
 <lb/><l>i <HIS:hisDel rend="overstrike">ra</HIS:hisDel> kløgt den ypperste, i strid den største;</l>
 <lb/><l>ham kårer vi til <app type="external" subtype="word" xml:id="varC2-103"><HIS:hisRdg>hersker</HIS:hisRdg></app> for vor stamme,</l>
 <lb/><l>til dommer og til <app type="external" subtype="word" xml:id="varC2-104"><HIS:hisRdg>fører</HIS:hisRdg></app> for vort folk.</l>
-<lb/><l part="I">Men <emph>her</emph> &dash;</l></HIS:hisSp>
+<lb/><l part="I">Men <emph>her</emph> –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="CATILINA"><HIS:spOpener><speaker>Catilina</speaker>
 <lb/><HIS:hisStage>(råber ned til dem.)</HIS:hisStage></HIS:spOpener>
-<lb/><l part="F">&dash; her råder <app type="external" subtype="word" xml:id="varC2-105"><HIS:hisRdg>smuds</HIS:hisRdg></app> og egennytte; &dash;</l>
-<lb/><l>ved list og rænker blir man hersker <app type="external" subtype="word" xml:id="varC2-152"><HIS:hisRdg>her!<note resp="editor" type="variant">mangler resten av teksten</note></HIS:hisRdg></app></l></HIS:hisSp>
+<lb/><l part="F">– her råder <app type="external" subtype="word" xml:id="varC2-105"><HIS:hisRdg>smuds</HIS:hisRdg></app> og egennytte; –</l>
+<lb/><l>ved list og rænker blir man hersker <app type="external" subtype="word" xml:id="varC2-152"><HIS:hisRdg>her!</HIS:hisRdg></app></l></HIS:hisSp>
 </div></body></text>
 </TEI>

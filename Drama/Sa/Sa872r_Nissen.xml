@@ -1,11 +1,5 @@
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
     <teiHeader xml:lang="nob">
         <fileDesc>
@@ -16,8 +10,8 @@
                 <title level="a" type="sub">TarkUiB NT872r (rollehefte, Nissen)</title>
                 <title level="a" type="origYear">1852</title>
                 <author>Henrik Ibsen</author>
-                <funder>&funder;</funder>
-                <editor>&editor;</editor>
+                <funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+                <editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
                 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Hilde Bøe, Karl Johan Sæth</name></respStmt>
                 <respStmt>
                     <resp>Kodeteknisk støtte og utvikling</resp>
@@ -86,7 +80,7 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+            <projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
             <editorialDecl>
                 <HIS:typography>
                     <list>
@@ -159,13 +153,13 @@
                             <list>
                                 <item>blyantskriblerier i Paulsens rollehefte er kommentert i noter, og ikke transkribert.</item>
                                 <item>blyantunderstrekinger i Birks rollehefte er kommentert i noter, og ikke kodet.</item>
-                                <item>Minnevers skrevet med blyant sist i Birks rollehefte (s. 68), navnet "Kornelia" dannes med første bokstav i hver linje: "Kan et Ønske bringe Held,|O, da gid det gaae dig vel!|Roser spire paa din Vei &dash;|Nogen Steen du møde ei!Er ei Skjebnen altid (strøket: mild) huld,|Lad ei saadant Modet binde:|I vor (strøket: Pregers) Frelsers Bog er Guld,|Altid der du Trøst vil finde!". Har ikke noe med teksten å gjøre, og er derfor utelatt.</item>
+                                <item>Minnevers skrevet med blyant sist i Birks rollehefte (s. 68), navnet "Kornelia" dannes med første bokstav i hver linje: "Kan et Ønske bringe Held,|O, da gid det gaae dig vel!|Roser spire paa din Vei –|Nogen Steen du møde ei!Er ei Skjebnen altid (strøket: mild) huld,|Lad ei saadant Modet binde:|I vor (strøket: Pregers) Frelsers Bog er Guld,|Altid der du Trøst vil finde!". Har ikke noe med teksten å gjøre, og er derfor utelatt.</item>
                             </list>
                         </item>
                     </list>
                 </HIS:typography>
-                <stdVals><p>&stdVals;</p></stdVals>
-                <p>&editorialDecl;</p>
+                <stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+                <p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
             </editorialDecl>
             <tagsDecl>
                 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -186,7 +180,7 @@
                     </list>
                 </tagUsage></namespace>
                 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="rolleheftekoding">Rolleheftene er kodet med «føljetongkoding»: hvert rollehefte kodet som TEXT (i GROUP og TEXT). Tittelbladene kodet som vanlige tittelblad. Opplysninger om skuespillere etc. på tittelbladene er kodet i P-er i en PERFORMANCE-tag. «Avvikene» i forhold til rollenavn/replikk-systemet (se typografibeskrivelsen) er ikke tatt hensyn til i kodingen</tagUsage></namespace>
-                <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+                <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
                 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="titlePartOgTypografi">Flere titlePart-elementer er benyttet når tittelen er delt inn i flere biter med forskjellige typografisk markering (understreking, hevet tekst, i noen grad skriftstørrelse, men ikke linjeinndeling.).</tagUsage></namespace>
             </tagsDecl>
             <variantEncoding method="parallel-segmentation" location="internal"/>
@@ -209,7 +203,7 @@
     </teiHeader>
     <text type="drama" rend="handwritten" xml:lang="dan-nob">
         <front>
-            <pb/><lb/><titlePage><HIS:hisDocImprint><measure>1&half; Ark</measure></HIS:hisDocImprint>
+            <pb/><lb/><titlePage><HIS:hisDocImprint><measure>1½ Ark</measure></HIS:hisDocImprint>
                 <lb/><titlePart>Nissens Rolle
                     <lb/>i
                     <lb/>Sancthansnatten</titlePart>
@@ -237,7 +231,7 @@
                     <lb/><HIS:hisSp who="NISSEN"><HIS:spOpener><speaker>Nissen</speaker>
                         <lb/><HIS:hisStage>(sætter sig i Loftslugen)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
                     <lb/><HIS:hisSp who="PAULSEN"><HIS:spOpener><speaker>Paulsen</speaker></HIS:spOpener>
-                        <lb/><p>noget Philosophisk i dem, som &dash;</p></HIS:hisSp>
+                        <lb/><p>noget Philosophisk i dem, som –</p></HIS:hisSp>
                     <lb/><HIS:hisSp who="NISSEN"><HIS:spOpener><speaker>Nissen</speaker></HIS:spOpener>
                         <lb/><HIS:hisStage>(reiser sig)</HIS:hisStage><p>Ho, ho, ho, ho! <HIS:hisStage>(trækker sig tilbage)</HIS:hisStage></p></HIS:hisSp>
                 </div>
@@ -245,7 +239,7 @@
                 <div type="scene" n="9">
                     <lb/><head>Niende Scene</head>
                     <lb/><HIS:hisSp who="ANNA"><HIS:spOpener><speaker>Anne</speaker></HIS:spOpener>
-                        <lb/><p>aldrig været tilmode før &dash; &dash;</p></HIS:hisSp>
+                        <lb/><p>aldrig været tilmode før – –</p></HIS:hisSp>
                     <lb/><HIS:hisSp who="NISSEN"><HIS:spOpener><speaker>Nissen</speaker>
                         <lb/><HIS:hisStage>(viser sig i Loftslugen paa Bjælkehuset)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
                     <lb/><HIS:hisSp who="ANNA"><HIS:spOpener><speaker>Anne</speaker></HIS:spOpener>
@@ -262,27 +256,27 @@
                         <lb/><l>Da er det Fest for Nissen med!</l>
                         <lb/><l>Da skal Enhver i de lysgrønne Sale</l>
                         <pb/><lb/><fw type="page" place="top-left">4</fw>
-                        <lb/><l>More sig lystigt, det bedste han veed. &dash;</l>
+                        <lb/><l>More sig lystigt, det bedste han veed. –</l>
                         <lb/><l>Hængebjærkriset i Bondens Stue</l>
                         <lb/><l>Dufter saa deiligt i Kveldens Stille;</l>
                         <lb/><l>Pyntet staar selv den fattigste Tue</l>
-                        <lb/><l>Med Urter smaae og med Blomster vilde. &dash;</l>
-                        <lb/><l>&dash; &dash; Nissen er <sic>fligttig</sic> det lange Aar;</l>
+                        <lb/><l>Med Urter smaae og med Blomster vilde. –</l>
+                        <lb/><l>– – Nissen er <sic>fligttig</sic> det lange Aar;</l>
                         <lb/><l>Han færdes paa Loft, og han færdes i Kjælder;</l>
-                        <lb/><l>I Stalden er han fra Dagen hælder &dash;</l>
-                        <lb/><l>Han maa jo vogte den gamle Gaard. &dash;</l>
+                        <lb/><l>I Stalden er han fra Dagen hælder –</l>
+                        <lb/><l>Han maa jo vogte den gamle Gaard. –</l>
                         <lb/><l>Men Midsommernat er hans Fest, som sagt;</l>
                         <lb/><l>Da klæder han sig i sin Høitidsdragt,</l>
                         <lb/><l>Saa gjæster han Venner og Slægt og Frænder,</l>
                         <lb/><l>Der boe i Haugen, hvor Baalet brænder.</l>
                         <lb/><l>Deroppe tumle sig Menneskets Børn;</l>
-                        <lb/><l>De synge og dandse i Krat og i Tjørn; &dash;</l>
+                        <lb/><l>De synge og dandse i Krat og i Tjørn; –</l>
                         <lb/><l>Men Faa kun veed at de Vætter smaae</l>
                         <pb/><lb/><fw type="page" place="top-right">5</fw>
                         <lb/><l>I Haugen sidde og see derpaa!</l> <HIS:hisStage>(Han tager
                             <lb/>et stort Lommeuhr frem)</HIS:hisStage>
                         <lb/><l>Nei, nu maa jeg sagtens tage paa Vei!</l>
-                        <lb/><HIS:hisStage>(Han vil gaae, men bemærker Punsch&typHyp;
+                        <lb/><HIS:hisStage>(Han vil gaae, men bemærker Punsch‐
                             <lb/>bollen)</HIS:hisStage>
                         <lb/><l>See der!</l> <HIS:hisStage>(dypper Fingeren i Punschen
                             <lb/>smager og spytter)</HIS:hisStage>
@@ -291,23 +285,23 @@
                         <lb/><l>Da faae De med Et saa klare Blikke,</l>
                         <lb/><l>Da snakke de høit om Venskab og Sligt,</l>
                         <lb/><l>Da tykkes dem Alting herligt og rigt,</l>
-                        <lb/><l>De lee med hinanden og glemme Sorgen, &dash;</l>
-                        <lb/><l>Det vil da sige &dash; til næste Morgen!</l>
+                        <lb/><l>De lee med hinanden og glemme Sorgen, –</l>
+                        <lb/><l>Det vil da sige – til næste Morgen!</l>
                         <lb/><HIS:hisStage>(Han betænker sig og siger derpaa
                             <lb/>fornøiet)</HIS:hisStage>
                         <pb/><lb/><fw type="page" place="top-left">6</fw>
-                        <lb/><l>Men bi! der falder mig Noget ind &dash;</l>
+                        <lb/><l>Men bi! der falder mig Noget ind –</l>
                         <lb/><l>Ikveld jeg kunde dog lidt dem drille!</l>
                         <lb/><l>Nissen har altid et fiffigt Sind,</l>
                         <lb/><l>Saasnart det gjælder et Puds at spille.</l>
                         <lb/><HIS:hisStage>(Han gaaer ind i Haven og kommer strax
                             <lb/>tilbage med en lille Blomst i Haanden)</HIS:hisStage>
                         <lb/><l>Der voxer en Urt paa Hvermands Sti,</l>
-                        <lb/><l>Den eier saa sælsomme Kræfter &dash; &dash;</l>
+                        <lb/><l>Den eier saa sælsomme Kræfter – –</l>
                         <lb/><l>Men Faa er kun de, som søge derefter.</l>
                         <lb/><l>De Fleste gaae den uagtsomt forbi.</l>
                         <lb/><l>Den spirede frem af Suttungs Mjød,</l>
-                        <lb/><l>Som Odin spildte ved Valhals Porte; &dash;</l>
+                        <lb/><l>Som Odin spildte ved Valhals Porte; –</l>
                         <lb/><l>Og hvo, som smager dens Saft saa sød,</l>
                         <lb/><l>Hans Blik for det ydre Skin er borte;</l>
                         <lb/><HIS:hisStage>(Han presser Saften af Planten i
@@ -316,9 +310,9 @@
                         <lb/><l>De Taager, der har sig for Synet lagt,</l>
                         <lb/><l>Vil klares i Drømmens spillende Flammer;</l>
                         <lb/><l>Han skuer med Sandhed den indre Magt,</l>
-                        <lb/><l>Der raader i Sjælens forborgne Kammer. &dash; &dash;</l>
+                        <lb/><l>Der raader i Sjælens forborgne Kammer. – –</l>
                         <lb/><l>Men den, som har Intet at grunde over,</l>
-                        <lb/><l>Han vandrer i Blinde som ellers og &dash; sover!</l></HIS:hisSp>
+                        <lb/><l>Han vandrer i Blinde som ellers og – sover!</l></HIS:hisSp>
                     <lb/><HIS:hisStage>(Han bukker og forsvinder i Jorden)</HIS:hisStage>
                 </div>
                 <div type="scene" n="11">
@@ -334,7 +328,7 @@
                     <lb/><head>Sextende Scene</head>
                     <lb/><HIS:hisStage>Birk. Anne</HIS:hisStage>
                     <lb/><HIS:hisSp who="BIRK"><HIS:spOpener><speaker>Birk</speaker></HIS:spOpener>
-                        <lb/><p>Jeg maa følge<note type="typo">"ø" mangler tødler.</note> hende &dash; jeg maa. &dash;</p></HIS:hisSp>
+                        <lb/><p>Jeg maa følge<note type="typo">"ø" mangler tødler.</note> hende – jeg maa. –</p></HIS:hisSp>
                 </div>
                 <pb/><lb/><fw type="page" place="top-left">8</fw>
                 <div type="scene" n="17">
@@ -347,9 +341,9 @@
                             <lb/>Og Skjaldene ligge og lytte dertil.
                             <lb/>Hist Nøkken reder sit grønne Skjæg
                             <lb/>Ved Elvens Bred under Rogn og Hæg;
-                            <lb/>Og Alferne dandse i Orreholdt &dash;
-                            <lb/>De kan ikke sove &dash; det er dem for koldt.
-                            <lb/>Jo jo! &dash; I vandre i Drømmenes Lande,
+                            <lb/>Og Alferne dandse i Orreholdt –
+                            <lb/>De kan ikke sove – det er dem for koldt.
+                            <lb/>Jo jo! – I vandre i Drømmenes Lande,
                             <lb/>Og gaae I med klar eller taaget Pande,
                             <lb/>Saa har jeg Jer dog i min Snare sæt.
                             <lb/>O, Nissen skal more sig godt inat!</p></HIS:hisSp>
@@ -363,9 +357,9 @@
                     <lb/><head>Første Scene</head>
                     <lb/><HIS:hisSp who="NISSEN"><HIS:spOpener><speaker>Nissen</speaker>
                         <lb/><HIS:hisStage>(træder ind i Baggrunden og lytter)</HIS:hisStage></HIS:spOpener>
-                        <lb/><p>Endt er Dands og Sang og Spil &dash;
+                        <lb/><p>Endt er Dands og Sang og Spil –
                             <lb/>Natten hører os <HIS:hisDel rend="overwritten">a</HIS:hisDel>Andre til!
-                            <lb/>Hver Alf og Vætte jeg byder til Gjæst &dash;
+                            <lb/>Hver Alf og Vætte jeg byder til Gjæst –
                             <lb/>Herfrem! nu begynder vor Midsommerfest!</p></HIS:hisSp>
                     <lb/><HIS:hisStage>(Han forsvinder bag Træerne)</HIS:hisStage>
                 </div>
@@ -389,15 +383,15 @@
                         <lb/><l part="I">Saa brist da Hemmelighed!</l></HIS:hisSp>
                     <lb/><HIS:hisSp who="NISSEN"><HIS:spOpener><speaker>Nissen</speaker>
                         <lb/><HIS:hisStage>(kommer pludselig tilsyne bag dem i
-                            <lb/>en Busk, der aabner sig)</HIS:hisStage></HIS:spOpener><l part="F">Ho, ho, ho, ho!. &dash;</l></HIS:hisSp>
+                            <lb/>en Busk, der aabner sig)</HIS:hisStage></HIS:spOpener><l part="F">Ho, ho, ho, ho!. –</l></HIS:hisSp>
                     <lb/><HIS:hisSp who="BIRK"><HIS:spOpener><speaker>Birk</speaker></HIS:spOpener>
                         <lb/><p>Anne, nu kjender jeg Dig igjen</p></HIS:hisSp>
                     <lb/><HIS:hisStage>(Birk og Juliane gaae)</HIS:hisStage>
                     <lb/><HIS:hisSp who="NISSEN"><HIS:spOpener><speaker>Nissen</speaker> <HIS:hisStage>(i Baggrunden)</HIS:hisStage></HIS:spOpener>
-                        <lb/><p>Solen rinder i Øst bag Li &dash;
+                        <lb/><p>Solen rinder i Øst bag Li –
                             <lb/>Midtsommernattens Spil er forbi!
                             <lb/>O Nissen var dog en lykkelig Mand;
-                            <lb/>Hvis I har Jer moret saa godt som han. &dash;</p></HIS:hisSp>
+                            <lb/>Hvis I har Jer moret saa godt som han. –</p></HIS:hisSp>
                 </div>
             </div>
         </body>

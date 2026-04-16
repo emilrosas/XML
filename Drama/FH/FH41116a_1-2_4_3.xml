@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -13,11 +7,11 @@
 <title level="s" type="main">Henrik Ibsens skrifter</title>
 <title level="s" type="sub">Diplomatarisk tekstarkiv</title>
 <title level="a" type="main">Fruen fra havet</title>
-<title level="a" type="sub">NBO Ms.4&deg; 1116a, bl.1-2, 4, 3</title>
+<title level="a" type="sub">NBO Ms.4° 1116a, bl.1-2, 4, 3</title>
 <title level="a" type="origYear">1888</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Henninge Margrethe Solberg, Mette Witting</name></respStmt>
 <respStmt>
 <resp>Oppretting og 1. kollasjon, juni - november 2006</resp>
@@ -44,12 +38,12 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <p>Manuskriptets grafiske oppsett finnes beskrevet i typografibeskrivelsen i FH41116_NBO.xml.</p></HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -59,7 +53,7 @@
 <label xml:id="LYNGSTRAND"/><item/>
 </list>
 </tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -132,148 +126,148 @@ Gjenstår: kontrollere at delingen i a og b er i tråd med Tone Modalslis manusk
 <lb/><fw type="leaf" place="top-right" scribe="h1">1</fw>
 <div type="relatedToWork"><HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="FH_52ms"/>
 <lb/><head>Udkast.</head>
-<lb/><p>1<hi rend="raised">ste</hi> akt. &dash; Det lille anløbsted for turistdamperne.
-<lb/>Der stoppes kun når rejs<HIS:hisDel rend="overwritten"><unclear>t</unclear></HIS:hisDel>ende skal sættes iland el&typHyp;
+<lb/><p>1<hi rend="raised">ste</hi> akt. – Det lille anløbsted for turistdamperne.
+<lb/>Der stoppes kun når rejs<HIS:hisDel rend="overwritten"><unclear>t</unclear></HIS:hisDel>ende skal sættes iland el‐
 <lb/>ler ombord. Høje, bratte, skyggende fjelde omkring.
 <lb/>Frit, åbent hav ses ikke. Bare den bugtede fjord.
-<lb/>Badehotel. Sanatorium højere oppe. Når styk&typHyp;
-<lb/>ket begynder er det sidste nordgående damp&typHyp;
-<lb/>skibstur for iår. Skibene passerer altid ved mid&typHyp;
+<lb/>Badehotel. Sanatorium højere oppe. Når styk‐
+<lb/>ket begynder er det sidste nordgående damp‐
+<lb/>skibstur for iår. Skibene passerer altid ved mid‐
 <lb/>natstid. Langsomt, lydløst glider de ind på bugten
 <lb/>og ligeså ud igen.</p>
-<lb/><p>Personerne falder i tre grupper. Først er der ejen&typHyp;
-<lb/>dommelige figurer blandt stedets beboere. Sagfører&typHyp;
-<lb/>en, anden gang gift med hende ude fra det fri, åb&typHyp;
-<lb/>ne hav. Har to unge voksne døtre af første ægte&typHyp;
-<lb/>skab. Fin, fornem, bitter. Fortiden plettet ved en ube&typHyp;
+<lb/><p>Personerne falder i tre grupper. Først er der ejen‐
+<lb/>dommelige figurer blandt stedets beboere. Sagfører‐
+<lb/>en, anden gang gift med hende ude fra det fri, åb‐
+<lb/>ne hav. Har to unge voksne døtre af første ægte‐
+<lb/>skab. Fin, fornem, bitter. Fortiden plettet ved en ube‐
 <lb/>sindig affære. Derfor fremtidig karriere stængt.
 <lb/>Den forkomne skiltemaler med kunstnerdrømme
-<lb/>og lykkelig ved indbildninger. Den gamle gifte kon&typHyp;
+<lb/>og lykkelig ved indbildninger. Den gamle gifte kon‐
 <lb/>torist. Har i sin ungdom skrevet et skuespil, som blev
-<lb/>opført én gang. Filer idelig på det og lever i illusio&typHyp;
+<lb/>opført én gang. Filer idelig på det og lever i illusio‐
 <lb/>nen om at få det udgivet og slå igennem. Gør for
-<lb/>øvrigt intet skridt i så henseende. Regner sig al&typHyp;
+<lb/>øvrigt intet skridt i så henseende. Regner sig al‐
 <pb ed="source" type="folio_nopagination" subtype="verso" n="1" facs="2"/>
 <lb/>ligevel til de literære i landet. Hustru og børn tror
-<lb/>blindt på &lquo;stykket&rquo;. (Kanske han er timelærer, ikke
-<lb/>kontorist?) &dash; Skrædder Fresvik, den radikale jorde&typHyp;
-<lb/>mormand, som viser sin &lquo;frigjorthed&rquo; i latterlige til&typHyp;
-<lb/>løb til udskejelser, &dash; forbindelser med andres koner;
+<lb/>blindt på «stykket». (Kanske han er timelærer, ikke
+<lb/>kontorist?) – Skrædder Fresvik, den radikale jorde‐
+<lb/>mormand, som viser sin «frigjorthed» i latterlige til‐
+<lb/>løb til udskejelser, – forbindelser med andres koner;
 <lb/>taler om skilsmisse og lignende.</p>
 <lb/><p>Den anden gruppe danner sommergæsterne
 <lb/>og de svagelige ved sanatoriet. Blandt disse er
-<lb/>den unge syge billedhugger, som skal samle kræf&typHyp;
+<lb/>den unge syge billedhugger, som skal samle kræf‐
 <lb/>ter for at overstå den kommende vinter. T<HIS:hisDel rend="overwritten"><unclear>n</unclear></HIS:hisDel>il næste
-<lb/>sommer er der tilsagt ham stipendium og en bestil&typHyp;
+<lb/>sommer er der tilsagt ham stipendium og en bestil‐
 <lb/>ling og anden understøttelse og da kan han rejse
 <lb/>til Italien. Gruer for muligheden af at måtte
 <lb/>dø uden at få se syden og uden at have skabt noget
-<lb/>godt i kunsten. &dash; Hans &lquo;beskytter&rquo; bor i badehotelet.
-<lb/>Tar formynderskabet over den syge. Er principmen&typHyp;
+<lb/>godt i kunsten. – Hans «beskytter» bor i badehotelet.
+<lb/>Tar formynderskabet over den syge. Er principmen‐
 <lb/>neske. Ingen hjælp, ingen understøttelse iår. Sort
-<lb/>på hvidt for stipendiet, &lquo;så skal vi se til næste år
-<lb/>hvor langt vi kan strække os&rquo;. Hans hustru dum,
+<lb/>på hvidt for stipendiet, «så skal vi se til næste år
+<lb/>hvor langt vi kan strække os». Hans hustru dum,
 <lb/>hovmodig og taktløs. Sårer, snart frivilligt snart
-<lb/>ufrivilligt, den syge. &dash; Flere bipersoner.</p>
-<lb/><p>Den tredje gruppe består af kommende og gå&typHyp;
-<lb/>ende turister, som griber episodisk ind i hand&typHyp;
+<lb/>ufrivilligt, den syge. – Flere bipersoner.</p>
+<lb/><p>Den tredje gruppe består af kommende og gå‐
+<lb/>ende turister, som griber episodisk ind i hand‐
 <lb/>lingen.</p>
 <lb/><p>Livet er tilsyneladende lyst, let og kvikt deroppe
 <lb/>under fjeldskyggen og i afsondringens ensformighed.
 <pb ed="source" type="folio_nopagination" subtype="recto" n="2" facs="3"/>
 <lb/><fw type="leaf" place="top-right" scribe="h1">2</fw>
-<lb/><HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>Da udkastes den tanke at dette slags liv er et skygge&typHyp;
+<lb/><HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>Da udkastes den tanke at dette slags liv er et skygge‐
 <lb/>liv. Ingen handlekraft; ingen kamp for frigørelse.
 <lb/>Bare længsler og ønsker. Således leves der den
-<lb/>korte lyse sommer. Og bagefter &dash; ind i mørket.
+<lb/>korte lyse sommer. Og bagefter – ind i mørket.
 <lb/>Så vågner længselen mod det store verdensliv
 <lb/>derude. Men hvad er der vel vundet ved det? Med
 <lb/>forholdene, med åndsudviklingen vokser kravene
 <lb/>og længslerne og ønskerne. Han eller hun, der står
-<lb/>på højden, begærer fremtidens hemmeligheder og an&typHyp;
+<lb/>på højden, begærer fremtidens hemmeligheder og an‐
 <lb/>del i fremtidens liv og samkvem med de fjerne
 <lb/>kloder. Overalt begrænsning. Deraf tungsindet
-<lb/>som en dæmpet klagende sang over hele men&typHyp;
+<lb/>som en dæmpet klagende sang over hele men‐
 <lb/>sketilværelsen og over menneskenes færd. En
-<lb/>lys sommerdag med det store mørke bagefter, &dash; det
-<lb/>er det hele. &dash; &dash;</p>
+<lb/>lys sommerdag med det store mørke bagefter, – det
+<lb/>er det hele. – –</p>
 <lb/><p>Er menneskets udviklingsvej forfejlet? Hvorfor
 <lb/>er vi kommet til at tilhøre den tørre jord? Hvorfor
 <lb/>ikke luften? Hvorfor ikke havet. Længselen efter
 <lb/>at eje vinger. De ejendommelige drømme at man
 <lb/>kan flyve og at man flyver uden at undres over
-<lb/>det, &dash; hvorledes tydes alt dette? &dash; &dash;</p>
+<lb/>det, – hvorledes tydes alt dette? – –</p>
 <lb/><p>Havet skulle vi bemægtige os. Lægge vore byer
 <lb/>svømmende på havet. Flytte de<HIS:hisDel rend="overwritten">n</HIS:hisDel>m mod syd eller
 <lb/>nord alt efter årstiden. Lære at tøjle stormene
 <lb/>og vejret. Noget sådant lyksaligt vil komme. Og
-<lb/><emph>vi</emph>, &dash; som ikke får være med! Ikke &lquo;opleve&rquo; det! &dash; &dash;</p>
+<lb/><emph>vi</emph>, – som ikke får være med! Ikke «opleve» det! – –</p>
 <pb ed="source" type="folio_nopagination" subtype="verso" n="2" facs="4"/>
 <lb/><p>Havets dragende magt. Længselen efter havet.
 <lb/>Mennesker i slægt med havet. Bundne af havet.
-<lb/>Afhængige af havet. Må tilbage i det. En fiske&typHyp;
+<lb/>Afhængige af havet. Må tilbage i det. En fiske‐
 <lb/>art danner et urled i udviklingsrækken. Sidder
-<lb/>rudimenter deraf endnu i menneskesindet? I en&typHyp;
+<lb/>rudimenter deraf endnu i menneskesindet? I en‐
 <lb/>kelte menneskers sind?</p>
 <lb/><p>Billederne af det boltrende liv i havet og af
-<lb/>&lquo;det evig fortabte&rquo;.</p>
+<lb/>«det evig fortabte».</p>
 <lb/><p>Havet råder over en stemningernes magt, der
-<lb/>virker som en vilje. Havet kan hypnotisere. Natu&typHyp;
+<lb/>virker som en vilje. Havet kan hypnotisere. Natu‐
 <lb/>ren overhovedet kan det. Den store hemmelighed er
-<lb/>menneskeviljens afhængighed af &lquo;det viljeløse&rquo;.</p>
-<lb/><p>Hun er kommen ude fra havet, hvor hendes fa&typHyp;
-<lb/>ders præstegård lå. Vokste op derude &dash; ved det fri,
+<lb/>menneskeviljens afhængighed af «det viljeløse».</p>
+<lb/><p>Hun er kommen ude fra havet, hvor hendes fa‐
+<lb/>ders præstegård lå. Vokste op derude – ved det fri,
 <lb/>åbne hav. Forlovede sig hemmelig med den unge
-<lb/>letsindige styrmand &dash; udvist søkadet &dash;, som lå vin&typHyp;
-<lb/>teren over for havari med skibet i en udhavn. Måt&typHyp;
+<lb/>letsindige styrmand – udvist søkadet –, som lå vin‐
+<lb/>teren over for havari med skibet i en udhavn. Måt‐
 <lb/>te hæve forbindelsen efter faderens ønske. Til dels
-<lb/>også frivilligt. Kunde ikke tilgive, hvad der var kom&typHyp;
+<lb/>også frivilligt. Kunde ikke tilgive, hvad der var kom‐
 <lb/>met op om hans fortid. Så fordomsfuld var hun
 <lb/>dengang gennem opdragelsen i fædrehjemmet. Er
-<lb/>aldrig siden heller kommet helt ud af fordomsfuld&typHyp;
+<lb/>aldrig siden heller kommet helt ud af fordomsfuld‐
 <lb/>heden, skønt hun véd det bedre. Står på grænsen
-<lb/>og vakler og tviler. &dash;</p>
-<lb/><p>Hemmeligheden i hendes ægteskab, &dash; det, som
+<lb/>og vakler og tviler. –</p>
+<lb/><p>Hemmeligheden i hendes ægteskab, – det, som
 <lb/>hun knapt tør vedkende sig; knapt tør tænke på:
 <pb ed="source" type="folio_nopagination" subtype="recto" n="4" facs="5"/>
 <lb/><fw type="gathering" place="top-left"><gap reason="binding"/>.</fw><fw type="leaf" place="top-right" scribe="h1">4</fw><note resp="editor">Feil i folieringen med rød pen: '3' og '4' er byttet rundt</note>
 <lb/>Indbildningskraftens dragende magt imod den
 <lb/>forrige. Imod den bortkomne.</p>
-<lb/><p>I grunden &dash; i den uvilkårlige forestilling &dash; er
+<lb/><p>I grunden – i den uvilkårlige forestilling – er
 <lb/>det <emph>ham</emph>, med hvem hun lever sit ægteskabelige
 <lb/>liv.</p>
-<lb/><p>Men &dash; på den anden side &dash; lever hendes mand
+<lb/><p>Men – på den anden side – lever hendes mand
 <lb/>og stedbørnene helt med hende? Har ikke disse
-<lb/>tre ligesom en hel verden af erindringer sig imel&typHyp;
+<lb/>tre ligesom en hel verden af erindringer sig imel‐
 <lb/>lem? Der er festd<HIS:hisDel rend="overwritten">d</HIS:hisDel>age at fejre, hvis betydning hun
-<lb/>kun kan gætte sig til. Samtaler går istå, &dash; af&typHyp;
-<lb/>brydes når hun kommer ind. Sin forgænger&typHyp;
+<lb/>kun kan gætte sig til. Samtaler går istå, – af‐
+<lb/>brydes når hun kommer ind. Sin forgænger‐
 <lb/>inde har hun ikke kendt og af finfølelse tales
 <lb/>der ikke om hende når <emph>hun</emph> er tilstede. Der er
-<lb/>et frimureri mellem alle de andre i huset. Hus&typHyp;
+<lb/>et frimureri mellem alle de andre i huset. Hus‐
 <lb/>jomfruen og tjenestefolkene også. Hun kommer
-<lb/>aldrig ind i det. De andre véd sit. Hun står u&typHyp;
+<lb/>aldrig ind i det. De andre véd sit. Hun står u‐
 <lb/>denfor.</p>
-<lb/><p>Hun træffer sammen med &lquo;den fremmede
-<lb/>passagér&rquo;. Så kaldes han af de andre badegæs&typHyp;
+<lb/><p>Hun træffer sammen med «den fremmede
+<lb/>passagér». Så kaldes han af de andre badegæs‐
 <lb/>ter. Han har engang næret en dyb tilbøjelighed
 <lb/>for h<HIS:hisDel rend="overwritten"><unclear>am</unclear></HIS:hisDel>ende. Det var dengang hun var forlovet med
 <lb/>den unge sømand. Nu er han overarbejdet og skal
 <lb/>bruge søbad. Livet har ikke bragt ham, hvad han
-<lb/>havde ventet. Han er bitter. Skærende i spøg&typHyp;
+<lb/>havde ventet. Han er bitter. Skærende i spøg‐
 <lb/>form.</p><HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="FH_164ms"/>
 <lb/><p>Billedhuggeren fortæller. Blev sendt tilsjøs 12
 <pb ed="source" type="folio_nopagination" subtype="verso" n="4" facs="6"/>
 <lb/>gammel.<note resp="editor">'år' mangler sannsynligvis foran 'gammel'</note> Forliste med skibet for 5 år siden. Var
-<lb/>da 17 år. Ved den lejlighed fik han sit knæk. Lå læn&typHyp;
-<lb/>ge i den kolde sjø. Lungebetændelse siden. End&typHyp;
+<lb/>da 17 år. Ved den lejlighed fik han sit knæk. Lå læn‐
+<lb/>ge i den kolde sjø. Lungebetændelse siden. End‐
 <lb/>nu ikke rigtig forvundet det. Men en stor lykke var
 <lb/>det alligevel. For derved kunde han komme til at
-<lb/>få blive kunstner. <HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="FH_159ms"/><q type="speech" who="LYNGSTRAND">Tænk, at få modellere i det dej&typHyp;
+<lb/>få blive kunstner. <HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="FH_159ms"/><q type="speech" who="LYNGSTRAND">Tænk, at få modellere i det dej‐
 <lb/>lige lér, som føjer sig så fint mellem fingrene.</q></p>
-<lb/><p>Hvad han så vil modellere? Gudeskikkel&typHyp;
+<lb/><p>Hvad han så vil modellere? Gudeskikkel‐
 <lb/>ser<HIS:hisAdd place="inline">?</HIS:hisAdd> <HIS:hisDel rend="overwritten">e</HIS:hisDel>Eller kanske gamle vikinger?</p>
-<lb/><p>Nej. Ikke sligt noget. Så snart han kan kom&typHyp;
+<lb/><p>Nej. Ikke sligt noget. Så snart han kan kom‐
 <lb/>me til vil han prøve på at gøre en stor gruppe.</p>
 <lb/><p>Og hvad skulde så den forestille?</p>
 <lb/><p>Jo, den skulde forestille noget, som han selv
@@ -288,17 +282,17 @@ Gjenstår: kontrollere at delingen i a og b er i tråd med Tone Modalslis manusk
 <lb/>så er han kommet hjem alligevel. Ved nattens
 <lb/>tider. Og nu står han dér for sengen og ser på
 <lb/>hende.</q></p>
-<lb/><p>Men i guds navn, &dash; han sa&rapo;e jo, det skulde
+<lb/><p>Men i guds navn, – han sa’e jo, det skulde
 <lb/>være noget, han havde oplevet!</p>
 <pb ed="source" type="folio_nopagination" subtype="recto" n="3" facs="7"/>
 <lb/><fw type="leaf" place="top-right" scribe="h1">3</fw><HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="FH_73ms"/>
 <lb/><p>Jaha. Han havde også oplevet dette her. På
 <lb/>en måde da.</p>
-<lb/><p><q type="speech" who="ARNHOLM">Oplevet &dash;?!</q></p>
-<lb/><p>Nå ja, &dash; han mener ikke sådan lige til ople&typHyp;
-<lb/>vet, forstår sig. Men alligevel &dash;</p>
-<lb/><p>Og så kommer fortællingen &dash; henkastet og af&typHyp;
-<lb/>brudt &dash; og kaster forfærdelige anelser og forestil&typHyp;
+<lb/><p><q type="speech" who="ARNHOLM">Oplevet –?!</q></p>
+<lb/><p>Nå ja, – han mener ikke sådan lige til ople‐
+<lb/>vet, forstår sig. Men alligevel –</p>
+<lb/><p>Og så kommer fortællingen – henkastet og af‐
+<lb/>brudt – og kaster forfærdelige anelser og forestil‐
 <lb/>linger ind i hende.</p>
 </div>
 </body>

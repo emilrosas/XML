@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -16,8 +10,8 @@
 <title level="a" type="sub">første hovedversjon, TarkUiB NT344r (rollehefte, Terner)</title>
 <title level="a" type="origYear">1856</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Bjørg Harvey, Helene Grønlien, Ellen Nessheim Wiger</name></respStmt>
 <respStmt>
 <resp>Kodeteknisk støtte og utvikling</resp>
@@ -65,7 +59,7 @@
 <title type="sub">Skuespil i 3 Akter</title>
 <docDate>1856</docDate>
 </msItem>
-<msItem n="Terner2"><locus>4 s</locus><title>Terner hos Fru Kirsten, i &lquo;Olaf Liliekrans.&rquo; Skuespil i 3 Akter, af Henr: Ibsen.</title></msItem>
+<msItem n="Terner2"><locus>4 s</locus><title>Terner hos Fru Kirsten, i «Olaf Liliekrans.» Skuespil i 3 Akter, af Henr: Ibsen.</title></msItem>
 </msContents>
 <physDesc><objectDesc><p>Rollehefte, ikke egenhendig. Se forøvrig Tone Modalslis manuskriptbeskrivelse.</p></objectDesc></physDesc>
 </HIS:hisMsDesc>
@@ -73,7 +67,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <list>
@@ -331,8 +325,8 @@
 </item>
 </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -347,7 +341,7 @@
 <label>THORGJERD</label><item>-/Thorgjerd, Thorgj, Thorg/Thorgjerd<note>Rolleheftene til Thorgjerd og Arne mangler; id-attributt for disse er derfor lagt inn i sp/stageRole ved første forekomst (replikk eller stageRole).</note></item>
 </list>
 </tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -453,7 +447,7 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><titlePart type="main">Terner
 <lb/>hos Fru Kirsten,
 <lb/>i
-<lb/>&lquo;Olaf Liliekrans.&rquo;</titlePart>
+<lb/>«Olaf Liliekrans.»</titlePart>
 <lb/><titlePart type="desc">Skuespil i 3 Akter,</titlePart>
 </docTitle>
 <byline><lb/>af
@@ -472,18 +466,18 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><HIS:hisStage>Fru Kirsten. Karle. Piger.</HIS:hisStage>
 <lb/><HIS:hisSp><HIS:spOpener><speaker/> <HIS:hisStage>(beskjæftigede med Tilberedelserne
 <lb/>til Gildet.)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
-<lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fruen</speaker>.</HIS:spOpener><p>&dash; fat Jer til, hver især!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fruen</speaker>.</HIS:spOpener><p>– fat Jer til, hver især!</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker/> <HIS:hisStage>(gaa til forskjellige Sider.)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
 </div>
 <div type="scene" n="8">
 <lb/><head>8<hi rend="raised">de</hi> Scene.</head>
 <lb/><HIS:hisStage>Hemming. Arne.</HIS:hisStage>
-<lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener><p>&dash; Gjerning at gifte sig!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="ARNE"><HIS:spOpener><speaker>Arne</speaker>.</HIS:spOpener><p>– Gjerning at gifte sig!</p></HIS:hisSp>
 </div>
 <div type="scene" n="9">
 <lb/><head>9<hi rend="raised">de</hi> Scene.</head>
-<lb/><HIS:hisSp><HIS:spOpener><speaker/> <HIS:hisStage>(komme efterhaanden ind fra forskjel&typHyp;
-<lb/>lige Sider med Fruen, Olaf, Inge&typHyp;
+<lb/><HIS:hisSp><HIS:spOpener><speaker/> <HIS:hisStage>(komme efterhaanden ind fra forskjel‐
+<lb/>lige Sider med Fruen, Olaf, Inge‐
 <lb/>borg og Flere.)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>.</HIS:spOpener><p>Vee, nu forstaar jeg!</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker/></HIS:spOpener><p>Hemming og Alfhild! Fjeldjenten!</p></HIS:hisSp>
@@ -496,7 +490,7 @@ Konvertert fra Word-dokument til TEI/XML-fil. Fila er validert. Transkripsjonste
 <lb/><head>10<hi rend="raised">d</hi> Scene.</head>
 <lb/><HIS:hisStage>De Forrige. Alfhild.</HIS:hisStage>
 <lb/><HIS:hisSp who="ALFHILD"><HIS:spOpener><speaker>Alfhild</speaker>.</HIS:spOpener><p>Her er jeg!</p></HIS:hisSp>
-<lb/><HIS:hisSp><HIS:spOpener><speaker/></HIS:spOpener><p>Hvordan &dash; hun tager Olaf!</p></HIS:hisSp>
+<lb/><HIS:hisSp><HIS:spOpener><speaker/></HIS:spOpener><p>Hvordan – hun tager Olaf!</p></HIS:hisSp>
 <lb/><HIS:hisStage>(Almindelig Forbauselse.)</HIS:hisStage>
 <lb/><HIS:hisSp who="FRUKIRSTEN"><HIS:spOpener><speaker>Fruen</speaker>.</HIS:spOpener><p>Siig hende det selv, min Søn!</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker/> <HIS:hisStage>(see forlegne paa hinanden.)</HIS:hisStage></HIS:spOpener></HIS:hisSp>

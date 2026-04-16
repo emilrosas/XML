@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -16,8 +10,8 @@
 <title level="a" type="sub">NBO Ms.fol.3213</title>
 <title level="a" type="origYear">1894</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Henninge Margrethe Solberg, Mette Witting</name></respStmt>
 <respStmt>
 <resp>Oppretting og 1. kollasjon, mars 2009</resp>
@@ -53,21 +47,21 @@
 <title type="main">uten tittel</title>
 <docDate>uten datering</docDate>
 </msItem></msContents>
-<physDesc><objectDesc><p>Bl. 23 av den midlertidige renskriften NBO 4&deg; 1117b.</p></objectDesc></physDesc>
+<physDesc><objectDesc><p>Bl. 23 av den midlertidige renskriften NBO 4° 1117b.</p></objectDesc></physDesc>
 </HIS:hisMsDesc>
 </p>
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <list>
 <item>Blyantnotater av fremmed penn (øverst), bibliotekstempel og signaturpåskrift s. 1. Ikke transkribert.</item>
 </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -77,7 +71,7 @@
 <label xml:id="RITA">RITA</label><item>Fru Allmers</item>
 </list>
 </tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 </encodingDesc>
 <profileDesc>
@@ -121,9 +115,9 @@ Opprettet fila, transkriberte teksten fra faksimile. Kollasjonerte mot faksimile
 <lb/><HIS:hisSp who="ALLMERS"><HIS:spOpener><speaker>Allmers</speaker></HIS:spOpener>
 <lb/><p>Hvem véd, Rita.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="RITA"><HIS:spOpener><speaker>Fru Allmers</speaker>.</HIS:spOpener>
-<lb/><p>Nej, nej, nej, &dash; vi blir da ved at være menne&typHyp;
-<lb/>sker, vi også. Vil leve vort eget liv<HIS:hisAdd place="inline">.</HIS:hisAdd> &dash; <HIS:hisDel rend="overwritten">o</HIS:hisDel>Om vi end
-<lb/>får et barn, så &dash;</p></HIS:hisSp>
+<lb/><p>Nej, nej, nej, – vi blir da ved at være menne‐
+<lb/>sker, vi også. Vil leve vort eget liv<HIS:hisAdd place="inline">.</HIS:hisAdd> – <HIS:hisDel rend="overwritten">o</HIS:hisDel>Om vi end
+<lb/>får et barn, så –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ALLMERS"><HIS:spOpener><speaker>Allmers</speaker></HIS:spOpener>
 <lb/><p>Vort eget liv, ja. Men vort eget liv <HIS:hisDel rend="overstrike">h</HIS:hisDel><gap/> skulde
 <lb/>just være barnet. Bare barnet.</p></HIS:hisSp>
@@ -139,11 +133,11 @@ Opprettet fila, transkriberte teksten fra faksimile. Kollasjonerte mot faksimile
 <lb/><p>Jeg kræver jo ingenting. Jeg vil bare at vi skal
 <lb/>se os selv tilbunds. Det er samvittigheden, som
 <pb ed="source" type="folio_nopagination" subtype="verso" n="1" facs="2"/>
-<lb/>nager os mere end sorgen og savnet. An&typHyp;
+<lb/>nager os mere end sorgen og savnet. An‐
 <lb/>geren over det som vi aldrig kan komme til at
 <lb/>gøre godt igen.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="RITA"><HIS:spOpener><speaker>Fru Allmers</speaker></HIS:spOpener>
-<lb/><p>Å, om jeg havde ham her! Kunde ta&rapo; ham i
+<lb/><p>Å, om jeg havde ham her! Kunde ta’ ham i
 <lb/>armene. Kysse ham og klappe ham og trykke
 <lb/>ham!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ALLMERS"><HIS:spOpener><speaker>Allmers</speaker></HIS:spOpener>

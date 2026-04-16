@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -13,11 +7,11 @@
 <title level="s" type="main">Henrik Ibsens skrifter</title>
 <title level="s" type="sub">Diplomatarisk tekstarkiv</title>
 <title level="a" type="main">Kejser og Galilæer</title>
-<title level="a" type="sub">NBO Ms.4&deg; 1111a, bl. 292</title>
-<title level="a" type="origYear">[1871&dash;1873]</title>
+<title level="a" type="sub">NBO Ms.4° 1111a, bl. 292</title>
+<title level="a" type="origYear">[1871–1873]</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt>
 <resp>Konvertering fra ekstern transkripsjon til prosjektspesifikk TEI XML</resp>
 <name xml:id="HIS-HB">Hilde Bøe</name>
@@ -45,12 +39,12 @@
 <sourceDesc><p>Denne filen bygger på KG41111_NBO.xml (KG41111_NBO-0208).</p></sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography><p>Manuskriptets grafiske oppsett finnes beskrevet i typografibeskrivelsen i KG41111_NBO.xml.</p>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -121,7 +115,7 @@
 <label xml:id="PERSEREN"/><item>En persisk overløber/Perseren</item>
 </list>
 </tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -154,8 +148,8 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <div type="act" n="2-1">
 <xptr type="synopticView_msVersions" xml:id="KG_167ms"/>
 <lb/><head>1<hi rend="raised">ste</hi> handling.</head>
-<lb/><p>Kejser Konstantius's jordefærd. De fremmede ge&typHyp;
-<lb/>sandters modtagelse. Julians bacchus-tog. Ju&typHyp;
+<lb/><p>Kejser Konstantius's jordefærd. De fremmede ge‐
+<lb/>sandters modtagelse. Julians bacchus-tog. Ju‐
 <lb/>lian ensom i palatset; han beslutter at drage til
 <lb/>Antiochia.</p>
 </div>
@@ -163,17 +157,17 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <xptr type="synopticView_msVersions" xml:id="KG_202ms"/>
 <lb/><head>2<hi rend="raised">den</hi> handling.</head>
 <lb/><p>Kejser Julian i Antiochia. Hans optog som
-<lb/>pontifex maximus; mødet med de krist&typHyp;
+<lb/>pontifex maximus; mødet med de krist‐
 <lb/>ne martyrer; den gamle blinde biskop
 <lb/>forbander apostaten; <HIS:hisDel rend="overwritten">a</HIS:hisDel>Apollotemplets brand;
-<lb/>Julian beslutter at opbygge templet i Jerusa&typHyp;
+<lb/>Julian beslutter at opbygge templet i Jerusa‐
 <lb/>lem; Gregor forudsiger ham at ikke en sten
 <lb/>skal lægges på den anden.</p>
 </div>
 <div type="act" n="2-3">
 <xptr type="synopticView_msVersions" xml:id="KG_230ms"/>
 <lb/><head>3<hi rend="raised">die</hi> handling.</head>
-<lb/><p>Alle planer mislykkes; efterretninger fra Jeru&typHyp;
+<lb/><p>Alle planer mislykkes; efterretninger fra Jeru‐
 <lb/>salem og Alexandria, hvor Athanasius er vendt
 <lb/>tilbage. Julian ensom ved ofringerne. <HIS:hisAdd place="offline">Den gamle Publia.</HIS:hisAdd> Han
 <lb/>beslutter at angribe Perserne; han ser sig selv
@@ -183,7 +177,7 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <xptr type="synopticView_msVersions" xml:id="KG_268ms"/>
 <lb/><head><HIS:hisDel rend="overwritten">3</HIS:hisDel>4<hi rend="raised">die</hi> handling.</head>
 <lb/><p>Kejserhæren på marsch mod Perserne. Sammentræf
-<lb/>med Basilius og Makrina. &dash; Den gådefulde
+<lb/>med Basilius og Makrina. – Den gådefulde
 <lb/>persiske overløber kommer til lejren; han
 <lb/>råder til at brænde skibene; det sker; murren
 <lb/>blandt soldaterne <HIS:hisAdd place="infralinear">det religiøse bedrag</HIS:hisAdd>; befalingen tilbagekaldes;
@@ -199,11 +193,11 @@ Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med
 <lb/>Golgata på en fjern klode; kampen står mellem
 <lb/>kejseren og galilæeren. Krigsråd; Julian mere og
 <lb/>mere forvildet; tænker på selvmord; sværmer
-<lb/>i natten; mødet med tømmermanden, som tøm&typHyp;
+<lb/>i natten; mødet med tømmermanden, som tøm‐
 <lb/>rer kejserens kiste. Kamp; Julian falder.
 <lb/>I kejserens telt; Julian dør; Makrina og
-<lb/>Basilius ved liget &dash;; Jovian udråbes
-<lb/>til kejser; Makrinas syner. &dash;</p>
+<lb/>Basilius ved liget –; Jovian udråbes
+<lb/>til kejser; Makrinas syner. –</p>
 </div>
 </div>
 </body>

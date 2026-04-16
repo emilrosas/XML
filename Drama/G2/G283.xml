@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader>
 <fileDesc>
@@ -16,8 +10,8 @@
 <title level="a" type="sub">2. versjon, grunntekst</title>
 <title level="a" type="origYear">1883</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Stine Brenna Taugbøl, Hallvard Ystad, Mette Witting</name></respStmt><respStmt>
 <resp>Konvertering, koding, kollasjonering og korrektur</resp>
 <name xml:id="HIS-HY">Hallvard Ystad</name>
@@ -89,7 +83,7 @@
 <msIdentifier>
 <settlement>Oslo</settlement>
 <repository>Nasjonalbiblioteket</repository>
-<idno>Ms.8&deg; 951</idno>
+<idno>Ms.8° 951</idno>
 </msIdentifier>
 <msContents><msItem>
 <author>Henrik Ibsen</author>
@@ -127,7 +121,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-grt-trykk;</p></projectDesc>
+<projectDesc><p>GRUNNTEKST BASERT PÅ TRYKT FORELEGG. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av to medarbeidere. I tillegg er tre eksemplarer av det trykte forelegget kollasjonert mot hverandre (internkollasjon). Teksten er kollasjonert en tredje gang i forbindelse med det avsluttende arbeidet med verket.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <list>
@@ -270,8 +264,8 @@
 </item>
 </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -287,9 +281,9 @@
 <label>GAMMELMAND</label><item>En gammel mand/En gammel mand/-</item>
 </list>
 </tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
-<metDecl><p>&metDecl;</p></metDecl>
+<metDecl><p>Den metriske notasjonen er beskrevet i Kodepraksis for HIS og bygger på Jørgen Fafners verslære (Fafner 1989).</p></metDecl>
 <variantEncoding type="external" method="parallel-segmentation" location="internal" n="170"/>
 </encodingDesc>
 <profileDesc>
@@ -617,104 +611,104 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><head>FORTALE
 <lb/>til anden udgave.</head>
 <lb/><figure type="bar"/>
-<lb/><p>&lquo;<hi rend="initial">G</hi>ildet på Solhaug&rquo; skrev jeg i Bergen i
+<lb/><p>«<hi rend="initial">G</hi>ildet på Solhaug» skrev jeg i Bergen i
 <lb/>sommeren 1855, altså for omtrent 28 år siden.</p>
 <lb/><p>Stykket opførtes samme steds for første gang
 <lb/>den 2. Januar 1856 som festforestilling til erindring
 <lb/>om den norske scenes stiftelsesdag.</p>
 <lb/><p>Jeg var dengang ansat som instruktør ved
-<lb/>det bergenske teater og ledede altså selv <app type="external" subtype="word" xml:id="varG2-1"><HIS:hisRdg wit="G283" var="N"><sic>instu&typHyp;
+<lb/>det bergenske teater og ledede altså selv <app type="external" subtype="word" xml:id="varG2-1"><HIS:hisRdg wit="G283" var="N"><sic>instu‐
 <lb/>deringen</sic></HIS:hisRdg><HIS:hisRdg wit="G28951 G2FU" var="Y">indstuderingen</HIS:hisRdg></app> af mit stykke. Det fik en fortrinlig,
 <lb/>en sjelden stemningsfuld udførelse. Med lyst og
 <lb/>hengivelse blev det givet, og således blev det
-<lb/>også modtaget. &lquo;Den bergenske lyrik&rquo;, der
+<lb/>også modtaget. «Den bergenske lyrik», der
 <lb/>efter sigende skal have afgjort de seneste politiske
 <lb/>valg deroppe, svulmede på hin teateraften højt i
 <lb/>det fuldt besatte hus. Forestillingen endte med
-<lb/>talrige fremkaldelser af forfatteren og af de spil&typHyp;
+<lb/>talrige fremkaldelser af forfatteren og af de spil‐
 <lb/>lende. Senere på aftenen gav orkestret, ledsaget
-<lb/>af en stor del af publikum, mig en serenade uden&typHyp;
+<lb/>af en stor del af publikum, mig en serenade uden‐
 <lb/>for mine vinduer. Jeg tror næsten, jeg lod mig
 <pb/>
 <lb/><fw type="page" place="top">IV</fw>
 <lb/>henrive til at holde et slags tale til de forsamlede;
 <lb/>jeg <app type="external" subtype="word" xml:id="varG2-130"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app> i al <app type="external" subtype="interpunction" xml:id="varG2-2"><HIS:hisRdg wit="G283 G2FU" var="N">fald,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">fald</HIS:hisRdg></app> at jeg følte mig såre lykkelig.</p>
-<lb/><p>Et par måneder senere opførtes &lquo;Gildet på
-<lb/>Solhaug&rquo; i Kristiania. Også dersteds blev det
+<lb/><p>Et par måneder senere opførtes «Gildet på
+<lb/>Solhaug» i Kristiania. Også dersteds blev det
 <lb/>af almenheden modtaget med meget bifald, og
 <lb/>dagen efter den første opførelse skrev Bjørnson
-<lb/>i &lquo;Morgenbladet&rquo; en varm, elskværdig, ung&typHyp;
+<lb/>i «Morgenbladet» en varm, elskværdig, ung‐
 <lb/>dommelig opsats derom. Egentlig var det ikke
 <lb/>nogen anmeldelse eller kritik; det var snarere en
 <lb/>stemningsrig fri fantasi, digterisk improviseret over
 <lb/>stykket og over forestillingen.</p>
 <lb/><p>Men så kom den rigtige kritik, forfattet af
 <lb/>de rigtige kritikere.</p>
-<lb/><p>Hvorledes blev man i hin tid, &dash; jeg mener
-<lb/>i årene <app type="external" subtype="word" xml:id="varG2-3"><HIS:hisRdg wit="G283 G2FU" var="N">fra</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">frå</HIS:hisRdg></app> 1850 til omkring 1860, &dash; en rigtig
+<lb/><p>Hvorledes blev man i hin tid, – jeg mener
+<lb/>i årene <app type="external" subtype="word" xml:id="varG2-3"><HIS:hisRdg wit="G283 G2FU" var="N">fra</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">frå</HIS:hisRdg></app> 1850 til omkring 1860, – en rigtig
 <lb/>literatur-kritiker, og navnlig dramatisk kritiker i
 <lb/>Kristiania?</p>
 <lb/><p>Jo, det gik i regelen således til: Efter nogen
-<lb/>tids forberedende øvelser i &lquo;Samfundsbladet&rquo; og
+<lb/>tids forberedende øvelser i «Samfundsbladet» og
 <lb/>efter oftere at have påhørt de diskussioner, som
 <lb/>om aftenerne efter teatertid førtes på Treschows
-<lb/>kafé eller &lquo;hos Ingebret&rquo;, begav den vordende
+<lb/>kafé eller «hos Ingebret», begav den vordende
 <lb/>kritiker sig hen i Johan Dahls boglade og lod
 <lb/>sig forskrive fra København et exemplar af J. L.
-<lb/>Heibergs &lquo;Prosaiske Skrifter&rquo;, om hvilke han
-<lb/>havde hørt sige, at de skulde indeholde en af&typHyp;
+<lb/>Heibergs «Prosaiske Skrifter», om hvilke han
+<lb/>havde hørt sige, at de skulde indeholde en af‐
 <pb/>
 <lb/><fw type="page" place="top">V</fw>
-<lb/>handling betitlet &lquo;Om Vaudevillen&rquo;. Denne af&typHyp;
+<lb/>handling betitlet «Om Vaudevillen». Denne af‐
 <lb/>handling blev da læst, grublet over og kanske
 <lb/>tildels også forstået. Gennem disse skrifter blev
 <lb/>man <app type="external" subtype="word" xml:id="varG2-4"><HIS:hisRdg wit="G283 G2FU" var="N">endvidere</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">end videre</HIS:hisRdg></app> bekendt med en polemik, som
-<lb/>Heiberg i sin tid havde ført imod professor Øhlen&typHyp;
-<lb/>schlæger og imod digteren Hauch i Sorø. Lej&typHyp;
-<lb/>lighedsvis erfarede man deraf <app type="external" subtype="interpunction" xml:id="varG2-5"><HIS:hisRdg wit="G283 G2FU" var="N">også,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">også</HIS:hisRdg></app> at J. <app type="external" subtype="word" xml:id="varG2-6"><HIS:hisRdg wit="G283 G2FU" var="N">I.</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">E.</HIS:hisRdg></app> Bag&typHyp;
-<lb/>gesen (forfatter af &lquo;Gjengangerbrevene&rquo;) allerede
+<lb/>Heiberg i sin tid havde ført imod professor Øhlen‐
+<lb/>schlæger og imod digteren Hauch i Sorø. Lej‐
+<lb/>lighedsvis erfarede man deraf <app type="external" subtype="interpunction" xml:id="varG2-5"><HIS:hisRdg wit="G283 G2FU" var="N">også,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">også</HIS:hisRdg></app> at J. <app type="external" subtype="word" xml:id="varG2-6"><HIS:hisRdg wit="G283 G2FU" var="N">I.</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">E.</HIS:hisRdg></app> Bag‐
+<lb/>gesen (forfatter af «Gjengangerbrevene») allerede
 <lb/>tidligere havde åbnet et lignende felttog imod
-<lb/>den store digter, som havde skrevet både &lquo;Axel
-<lb/>og Valborg&rquo; og &lquo;Hakon Jarl&rquo;.</p>
+<lb/>den store digter, som havde skrevet både «Axel
+<lb/>og Valborg» og «Hakon Jarl».</p>
 <lb/><p>Megen anden for en kritiker nyttig viden
 <lb/>lod sig også uddrage af disse skrifter. Af dem
 <lb/>lærte man <app type="external" subtype="interpunction" xml:id="varG2-7"><HIS:hisRdg wit="G283 G2FU" var="N">f. ex.,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">f. ex.</HIS:hisRdg></app> at en ret kritiker var på smagens
 <lb/>vegne forpligtet til at føle sig forarget over hiater.
 <lb/>Blev i et eller andet vers et sådant uhyre påtruffet,
-<lb/>kunde man være sikker <app type="external" subtype="interpunction" xml:id="varG2-8"><HIS:hisRdg wit="G283 G2FU" var="N">på,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">på</HIS:hisRdg></app> at de unge kristiani&typHyp;
+<lb/>kunde man være sikker <app type="external" subtype="interpunction" xml:id="varG2-8"><HIS:hisRdg wit="G283 G2FU" var="N">på,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">på</HIS:hisRdg></app> at de unge kristiani‐
 <lb/>ensiske kritiserende Jeronimusser, ligervis som
 <lb/>Holbergs egen, udråbte deres: Hillemænd, verden
 <lb/>står ikke til påske!</p>
 <lb/><p>Og så havde den datidige norske hovedstads-
 <lb/>kritik en særegen ejendommelighed, hvis udspring
-<lb/>jeg længe ikke kunde blive klog på. Vore kri&typHyp;
+<lb/>jeg længe ikke kunde blive klog på. Vore kri‐
 <lb/>tikere plejede nemlig, hver gang en begyndende
-<lb/>forfatter udgav en bog eller fik et lidet teater&typHyp;
+<lb/>forfatter udgav en bog eller fik et lidet teater‐
 <lb/>stykke opført, at geråde i en ustyrlig vrede og
 <pb/>
 <lb/><fw type="page" place="top">VI</fw>
-<lb/>at gebærde sig som om der gennem bogens ud&typHyp;
+<lb/>at gebærde sig som om der gennem bogens ud‐
 <lb/>givelse eller stykkets opførelse var tilføjet dem
-<lb/>selv og de aviser, de skrev i, en blodig fornær&typHyp;
+<lb/>selv og de aviser, de skrev i, en blodig fornær‐
 <lb/>melse. Som sagt, jeg grublede længe over denne
 <lb/>besynderlighed. Endelig fik jeg rede i sagen.
-<lb/>Ved nemlig at læse det danske &lquo;Månedskrift
-<lb/>for Literatur&rquo; blev jeg opmærksom <app type="external" subtype="interpunction" xml:id="varG2-9"><HIS:hisRdg wit="G283 G2FU" var="N">på,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">på</HIS:hisRdg></app> at gamle
+<lb/>Ved nemlig at læse det danske «Månedskrift
+<lb/>for Literatur» blev jeg opmærksom <app type="external" subtype="interpunction" xml:id="varG2-9"><HIS:hisRdg wit="G283 G2FU" var="N">på,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">på</HIS:hisRdg></app> at gamle
 <lb/>etatsråd Molbech i sin tid havde plejet at betages
 <lb/>af en svær <app type="external" subtype="interpunction" xml:id="varG2-10"><HIS:hisRdg wit="G283 G2FU" var="N">vrede,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">vrede</HIS:hisRdg></app> når en ung digter udgav en
 <lb/>bog eller fik et skuespil opført i København.</p>
-<lb/><p>Således, eller omtrent således, var den dom&typHyp;
+<lb/><p>Således, eller omtrent således, var den dom‐
 <lb/>stol beskaffen, der nu i dagspressen tog sig for
-<lb/>at stille &lquo;Gildet på Solhaug&rquo; for kritikens skranke
+<lb/>at stille «Gildet på Solhaug» for kritikens skranke
 <lb/>i Kristiania. Den var for størstedelen sammensat
 <lb/>af unge mænd, der i kritisk henseende levede på
 <lb/>lån fra diverse kanter. Deres kritiske tanker var
 <lb/>for længe siden tænkte og udtalte af andre; deres
-<lb/>meninger var for lang tid siden formuleret andet&typHyp;
+<lb/>meninger var for lang tid siden formuleret andet‐
 <lb/>steds. Lånegods var hele deres æstetiske teori;
 <lb/>lånegods var hele deres kritiske metode; lånegods
 <lb/>var i et og alt, i stort og i småt, den polemiske
-<lb/>taktik, de gjorde brug af. Ja, lige til sindsstem&typHyp;
+<lb/>taktik, de gjorde brug af. Ja, lige til sindsstem‐
 <lb/>ningen, så var den lånt. Lånt, lånt var det
 <lb/>alt sammen. Det eneste originale ved dem var,
 <lb/>at de evig og altid benyttede lånegodset forkert
@@ -727,14 +721,14 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/>kan ikke forundre nogen. Et par aviser <app type="external" subtype="word" xml:id="varG2-11"><HIS:hisRdg wit="G283 G2FU" var="N">der oppe</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">deroppe</HIS:hisRdg></app>,
 <lb/>og muligens flere, fandt da også ganske rigtig
 <lb/><app type="external" subtype="interpunction" xml:id="varG2-12"><HIS:hisRdg wit="G283 G2FU" var="N">ud,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">ud</HIS:hisRdg></app> at jeg havde lånt dette eller hint fra Henrik
-<lb/>Hertz&rapo;s skuespil &lquo;Svend Dyrings hus&rquo;.</p>
-<lb/><p>Denne kritiske påstand er grundløs og uefter&typHyp;
-<lb/>rettelig. Det er åbenbart benyttelsen af kæmpe&typHyp;
-<lb/>visernes versemål i begge stykkerne, som har for&typHyp;
+<lb/>Hertz’s skuespil «Svend Dyrings hus».</p>
+<lb/><p>Denne kritiske påstand er grundløs og uefter‐
+<lb/>rettelig. Det er åbenbart benyttelsen af kæmpe‐
+<lb/>visernes versemål i begge stykkerne, som har for‐
 <lb/>anlediget den. Men hos mig er sprogtonen en
 <lb/>ganske anden end hos Hertz; diktionen i mit stykke
 <lb/>har et ganske andet klangpræg end i hans; over
-<lb/>det rytmiske i mit stykke vifter en let sommer&typHyp;
+<lb/>det rytmiske i mit stykke vifter en let sommer‐
 <lb/>luft; over det rytmiske hos Hertz ruger der høstvejr.</p>
 <lb/><p>Heller ikke, hvad karakterer, handling, eller
 <lb/>overhovedet hvad det faktiske indhold angår,
@@ -743,14 +737,14 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/>følge <app type="external" subtype="interpunction" xml:id="varG2-13"><HIS:hisRdg wit="G283 G2FU" var="N">af,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">af</HIS:hisRdg></app> at stoffet til dem begge er hentet ud
 <lb/>fra kæmpevisernes trange forestillingskreds.</p>
 <lb/><p>Med fuldt så stor eller vel endnu større føje
-<lb/>kunde man <app type="external" subtype="interpunction" xml:id="varG2-14"><HIS:hisRdg wit="G283 G2FU" var="N">påstå,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">påstå</HIS:hisRdg></app> at Hertz i sit &lquo;Svend Dyrings
-<lb/>hus&rquo; havde lånt et og andet, og det ikke så lidt
-<lb/>endda, fra Heinrich v. Kleist&rapo;s &lquo;Käthchen von
-<lb/>Heilbronn&rquo;, der er skrevet i begyndelsen af dette
+<lb/>kunde man <app type="external" subtype="interpunction" xml:id="varG2-14"><HIS:hisRdg wit="G283 G2FU" var="N">påstå,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">påstå</HIS:hisRdg></app> at Hertz i sit «Svend Dyrings
+<lb/>hus» havde lånt et og andet, og det ikke så lidt
+<lb/>endda, fra Heinrich v. Kleist’s «Käthchen von
+<lb/>Heilbronn», der er skrevet i begyndelsen af dette
 <pb/>
 <lb/><fw type="page" place="top">VIII</fw>
 <lb/>århundrede. Käthchens forhold til grev Wetter-
-<lb/>Strahl er i alt væsentligt det samme, som Ragn&typHyp;
+<lb/>Strahl er i alt væsentligt det samme, som Ragn‐
 <lb/>hilds til ridder Stig Hvide. Ligesom Ragnhild
 <lb/>drives også Käthchen af en gådefuld, uforklarlig
 <lb/>magt til at følge den mand, hun elsker, på alle
@@ -764,27 +758,27 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/>den endnu ældre dramatiske literatur, med en
 <lb/>smule god eller ond vilje, måtte kunne opdrive
 <lb/>et skuespil, om hvilket det kunde <app type="external" subtype="interpunction" xml:id="varG2-16"><HIS:hisRdg wit="G283 G2FU" var="N">påståes,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">påståes</HIS:hisRdg></app> at Kleist
-<lb/>derfra havde lånt et eller andet til sit &lquo;Käthchen
-<lb/>von <app type="external" subtype="word" xml:id="varG2-17"><HIS:hisRdg wit="G283 G2FU" var="N">Heilbronn</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">Heilbron</HIS:hisRdg></app>&rquo;? <emph>Jeg</emph> tviler i al fald ikke derpå.
+<lb/>derfra havde lånt et eller andet til sit «Käthchen
+<lb/>von <app type="external" subtype="word" xml:id="varG2-17"><HIS:hisRdg wit="G283 G2FU" var="N">Heilbronn</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">Heilbron</HIS:hisRdg></app>»? <emph>Jeg</emph> tviler i al fald ikke derpå.
 <lb/>Men deslige påvisninger vilde være ørkesløse.
 <lb/>Det, der gør et kunstværk til sin ophavsmands
 <lb/>åndelige ejendom, det <app type="external" subtype="interpunction" xml:id="varG2-18"><HIS:hisRdg wit="G283 G2FU" var="N">er,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">er</HIS:hisRdg></app> at han har påtrykt
 <lb/>værket sin egen personligheds stempel. Jeg mener
 <lb/><app type="external" subtype="interpunction" xml:id="varG2-19"><HIS:hisRdg wit="G283 G2FU" var="N">derfor,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">derfor</HIS:hisRdg></app> at til trods for de antydede lighedspunkter
-<lb/>er &lquo;Svend Dyrings hus&rquo; lige så ubestridelig og
+<lb/>er «Svend Dyrings hus» lige så ubestridelig og
 <lb/>udelukkende et originalværk af Henrik Hertz,
-<lb/>som &lquo;Käthchen von Heilbronn&rquo; er et originalværk
+<lb/>som «Käthchen von Heilbronn» er et originalværk
 <lb/>af Heinrich v. Kleist.</p>
 <pb/>
 <lb/><fw type="page" place="top">IX</fw>
-<lb/><p>Den samme ret gør jeg for mit eget ved&typHyp;
-<lb/>kommende gældende med hensyn til &lquo;Gildet på
-<lb/>Solhaug&rquo;. Jeg håber <app type="external" subtype="interpunction" xml:id="varG2-20"><HIS:hisRdg wit="G283 G2FU" var="N">også,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">også</HIS:hisRdg></app> at man for fremtiden
+<lb/><p>Den samme ret gør jeg for mit eget ved‐
+<lb/>kommende gældende med hensyn til «Gildet på
+<lb/>Solhaug». Jeg håber <app type="external" subtype="interpunction" xml:id="varG2-20"><HIS:hisRdg wit="G283 G2FU" var="N">også,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">også</HIS:hisRdg></app> at man for fremtiden
 <lb/>vil lade enhver af de tre navnefættere få beholde
 <lb/>ubeskåret, hvad der med rette tilhører ham.</p>
-<lb/><p>Georg Brandes har ved given anledning be&typHyp;
-<lb/>tegnet &lquo;Gildet på Solhaug&rquo; i dets forhold til
-<lb/>&lquo;Svend Dyrings hus&rquo;, ikke som bygget på noget
+<lb/><p>Georg Brandes har ved given anledning be‐
+<lb/>tegnet «Gildet på Solhaug» i dets forhold til
+<lb/>«Svend Dyrings hus», ikke som bygget på noget
 <lb/>lån, men som tilblevet under en påvirkning, en
 <lb/>indflydelse, udøvet af <app type="external" subtype="word" xml:id="varG2-21"><HIS:hisRdg wit="G283 G28951" var="N">den</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">en</HIS:hisRdg></app> ældre digter på den
 <lb/>yngre. Hans udtalelser om mit arbejde er for
@@ -795,32 +789,32 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/>således, som Brandes har opfattet den. Henrik
 <lb/>Hertz har aldrig i nogen særlig grad tiltalt mig
 <lb/>som dramatisk digter. Jeg kan derfor ikke få i
-<lb/>mit hoved, at han nogensinde skulde, mig uaf&typHyp;
+<lb/>mit hoved, at han nogensinde skulde, mig uaf‐
 <lb/>vidende, have kunnet øve nogen indflydelse på
 <lb/>min egen dramatiske produktion.</p>
 <lb/><p>På dette punkt og i denne forbindelse kunde
 <lb/>jeg indskrænke mig til at henvise til dr. Valfrid
 <lb/>Vasenius, docent i <app type="external" subtype="word" xml:id="varG2-23"><HIS:hisRdg wit="G283 G2FU" var="N">æsthetik</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">æstetik</HIS:hisRdg></app> ved universitetet i
 <lb/>Helsingfors. I sin afhandling for den filosofiske
-<lb/>doktorgrad: &lquo;Henrik Ibsens dramatiska diktning
+<lb/>doktorgrad: «Henrik Ibsens dramatiska diktning
 <pb/>
 <lb/><fw type="page" place="top">X</fw>
-<lb/>i dess førsta skede&rquo; (1879) så vel som i sit værk
-<lb/>&lquo;Henrik Ibsen, ett skaldeporträtt&rquo; (343 sider.
+<lb/>i dess førsta skede» (1879) så vel som i sit værk
+<lb/>«Henrik Ibsen, ett skaldeporträtt» (343 sider.
 <lb/><app type="external" subtype="interpunction" xml:id="varG2-24"><HIS:hisRdg wit="G283 G2FU" var="N">Jos.</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">Jos:</HIS:hisRdg></app> Seligmann &amp; comp. Stockholm. 1882.) har
-<lb/>han gjort rede for sit grundsyn på mit her om&typHyp;
-<lb/>handlede skuespil, &dash; i sidstnævnte skrift suppleret
+<lb/>han gjort rede for sit grundsyn på mit her om‐
+<lb/>handlede skuespil, – i sidstnævnte skrift suppleret
 <lb/><app type="external" subtype="interpunction" xml:id="varG2-25"><HIS:hisRdg wit="G283 G2FU" var="N">med,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">med</HIS:hisRdg></app> hvad jeg under et samvær i München for
 <lb/>tre år siden i al korthed meddelte ham. Hertil
 <lb/>kunde jeg, som sagt, henvise.</p>
 <lb/><p>Men for god ordens skyld vil jeg dog selv
-<lb/>på de følgende blade i omrids fortælle &lquo;Gildet
-<lb/>på Solhaug&rquo;s tilblivelseshistorie.</p>
+<lb/>på de følgende blade i omrids fortælle «Gildet
+<lb/>på Solhaug»s tilblivelseshistorie.</p>
 <lb/><p>Her er den:</p>
-<lb/><p>Jeg indledede denne fortale med en oplys&typHyp;
+<lb/><p>Jeg indledede denne fortale med en oplys‐
 <lb/>ning <app type="external" subtype="interpunction" xml:id="varG2-26"><HIS:hisRdg wit="G283 G2FU" var="N">om,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">om</HIS:hisRdg></app> at stykket er skrevet i sommeren 1855.</p>
-<lb/><p>Året i forvejen havde jeg skrevet &lquo;Fru Inger
-<lb/>til Østråt&rquo;. Beskæftigelsen med dette drama
+<lb/><p>Året i forvejen havde jeg skrevet «Fru Inger
+<lb/>til Østråt». Beskæftigelsen med dette drama
 <lb/>havde nødsaget mig til literært og historisk at
 <lb/>fordybe mig i Norges middelalder, navnlig da i
 <lb/>den senere del af samme. Jeg forsøgte, så godt
@@ -829,7 +823,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/>deres tænkesæt og udtryksmåde.</p>
 <lb/><p>Denne periode er imidlertid ikke særdeles
 <lb/>tiltalende at dvæle ved i længden; den frembyder
-<lb/>heller ikke synderlig stof, der egner sig for dra&typHyp;
+<lb/>heller ikke synderlig stof, der egner sig for dra‐
 <lb/>matisk behandling.</p>
 <pb/>
 <lb/><fw type="page" place="top">XI</fw>
@@ -845,32 +839,32 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/>ætte-sagaer, hvad jeg behøvede som menneskelig
 <lb/>iklædning for de stemninger, forestillinger og
 <lb/>tanker, der dengang opfyldte, eller i al fald mere
-<lb/>eller mindre klart foresvævede mig. Disse gammel&typHyp;
-<lb/>nordiske literære bidrag til vor sagatids personal&typHyp;
+<lb/>eller mindre klart foresvævede mig. Disse gammel‐
+<lb/>nordiske literære bidrag til vor sagatids personal‐
 <lb/>historie havde jeg hidtil ikke kendt, knapt nok
 <lb/>hørt dem nævne. Da faldt mig ved et tilfælde
-<lb/>N. M. Petersens, i al fald for sprogtonens ved&typHyp;
+<lb/>N. M. Petersens, i al fald for sprogtonens ved‐
 <lb/>kommende, fortræffelige oversættelse i hænde.
 <lb/>Ud fra disse ætte-krøniker med deres vekslende
 <lb/>forhold og optrin mellem mand og mand, mellem
 <lb/>kvinde og kvinde, over hovedet mellem menneske
 <lb/>og menneske, slog mig et personligt, fyldigt, levende
 <lb/>livsindhold imøde; og ud af denne min leven
-<lb/>sammen med alle disse afsluttede, enkelte, person&typHyp;
+<lb/>sammen med alle disse afsluttede, enkelte, person‐
 <lb/>lige kvinder og mænd fremstod i min tanke det første
-<lb/>rå, tågede udkast til &lquo;Hærmændene på Helgeland&rquo;.</p>
+<lb/>rå, tågede udkast til «Hærmændene på Helgeland».</p>
 <pb/>
 <lb/><fw type="page" place="top">XII</fw>
 <lb/><p>Hvor meget der af enkelthederne udformede
 <lb/>sig i mig, <app type="external" subtype="word" xml:id="varG2-131"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app> jeg ikke længer at opgive. Men
 <lb/>jeg husker <app type="external" subtype="interpunction" xml:id="varG2-27"><HIS:hisRdg wit="G283 G2FU" var="N">godt,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">godt</HIS:hisRdg></app> at de to skikkelser, jeg først
 <lb/>fik øje på, var de to kvinder, som senere blev
-<lb/>til Hjørdis og Dagny. Et stort gilde med æg&typHyp;
+<lb/>til Hjørdis og Dagny. Et stort gilde med æg‐
 <lb/>gende og skæbnesvangre sammenstød skulde der
-<lb/>være i stykket. For øvrigt vilde jeg af karak&typHyp;
+<lb/>være i stykket. For øvrigt vilde jeg af karak‐
 <lb/>terer, lidenskaber og indbyrdes forhold optage
 <lb/>alt det, der forekom mig at være mest typisk
-<lb/>for sagalivet. Med <emph>et</emph> ord, &dash; hvad der i Vøl&typHyp;
+<lb/>for sagalivet. Med <emph>et</emph> ord, – hvad der i Vøl‐
 <lb/>sungasagaen var blevet episk omdigtet, vilde jeg,
 <lb/>dramatisk, ligefrem gengive.</p>
 <lb/><p>Nogen hel, sammenhængende plan udkastede
@@ -878,12 +872,12 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/>mig, at et sådant skuespil var det første, som nu
 <lb/>skulde skrives.</p>
 <lb/><p>Men så kom der adskilligt imellem. Det
-<lb/>meste deraf var vel af personlig natur og for&typHyp;
+<lb/>meste deraf var vel af personlig natur og for‐
 <lb/>modentlig det stærkest og nærmest afgørende;
 <lb/>men jeg tror nok, det heller ikke var ganske
-<lb/>uden <app type="external" subtype="interpunction" xml:id="varG2-28"><HIS:hisRdg wit="G283 G2FU" var="N">betydning,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">betydning</HIS:hisRdg></app> at jeg just på den tid beskæf&typHyp;
+<lb/>uden <app type="external" subtype="interpunction" xml:id="varG2-28"><HIS:hisRdg wit="G283 G2FU" var="N">betydning,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">betydning</HIS:hisRdg></app> at jeg just på den tid beskæf‐
 <lb/>tigede mig med indgående at studere Landstads
-<lb/>samling af &lquo;Norske folkeviser&rquo;, der var udkommet
+<lb/>samling af «Norske folkeviser», der var udkommet
 <lb/>et par år i forvejen. De stemninger, jeg dengang
 <lb/>befandt mig i, forligedes bedre med middelalderens
 <lb/>literære romantik end med sagaens kendsgerninger,
@@ -893,28 +887,28 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/>med det sprogmusikalske element i kæmpevisen,
 <lb/>end med det karakteriserende i sagaen.</p>
 <lb/><p>Således skede det, at det formløst gærende
-<lb/>udkast til tragedien &lquo;Hærmændene på Helgeland&rquo;
+<lb/>udkast til tragedien «Hærmændene på Helgeland»
 <lb/>foreløbig forvandlede sig til det lyriske drama
-<lb/>&lquo;Gildet på Solhaug&rquo;.</p>
+<lb/>«Gildet på Solhaug».</p>
 <lb/><p>De to kvindeskikkelser, plejesøstrene Hjørdis
 <lb/>og Dagny i den påtænkte tragedie blev til søstrene
 <lb/>Margit og Signe i det fuldførte lyriske drama.
-<lb/>Disse to sidstnævntes <app type="external" subtype="word" xml:id="varG2-29"><HIS:hisRdg wit="G283" var="N"><sic>afstemning</sic></HIS:hisRdg><HIS:hisRdg wit="G28951 G2FU" var="Y">afstamning</HIS:hisRdg></app> fra de to saga&typHyp;
+<lb/>Disse to sidstnævntes <app type="external" subtype="word" xml:id="varG2-29"><HIS:hisRdg wit="G283" var="N"><sic>afstemning</sic></HIS:hisRdg><HIS:hisRdg wit="G28951 G2FU" var="Y">afstamning</HIS:hisRdg></app> fra de to saga‐
 <lb/>kvinder, vil let falde i øjnene, når der først gøres
-<lb/>opmærksom derpå. Slægtsligheden er <app type="external" subtype="interpunction" xml:id="varG2-30"><HIS:hisRdg wit="G283 G2FU" var="N">umisken&typHyp;
+<lb/>opmærksom derpå. Slægtsligheden er <app type="external" subtype="interpunction" xml:id="varG2-30"><HIS:hisRdg wit="G283 G2FU" var="N">umisken‐
 <lb/>delig.</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">umiskendelig</HIS:hisRdg></app> Tragediens den gang kun løst planlagte
-<lb/>helt, den vidt berejste og ved fremmede konge&typHyp;
+<lb/>helt, den vidt berejste og ved fremmede konge‐
 <lb/>hoffer vel modtagne høvding, vikingen Sigurd,
 <lb/>omformede sig til riddersmanden og sangeren
 <lb/>Gudmund Alfsøn, der også har færdedes længe i
 <lb/>fremmede lande og levet i kongens gård. Hans
-<lb/>stilling mellem de to søstre blev ændret i over&typHyp;
-<lb/>ensstemmelse med de forandrede tidsomstændig&typHyp;
+<lb/>stilling mellem de to søstre blev ændret i over‐
+<lb/>ensstemmelse med de forandrede tidsomstændig‐
 <lb/>heder og forholde; men begge søstrenes stilling
 <lb/>lige over for ham forblev væsentlig den samme,
 <lb/>som i den oprindelig påtænkte og senere fuldførte
 <lb/>tragedie. Det skæbnesvangre gilde, som det i
-<lb/>mit første udkast havde været mig så magt&typHyp;
+<lb/>mit første udkast havde været mig så magt‐
 <pb/>
 <lb/><fw type="page" place="top">XIV</fw>
 <lb/>påliggende at male, blev i dramaet den skueplads,
@@ -933,11 +927,11 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/>mig. Jeg har kun villet hævde og <app type="external" subtype="interpunction" xml:id="varG2-32"><HIS:hisRdg wit="G283 G2FU" var="N">fastslå,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">fastslå</HIS:hisRdg></app> at
 <lb/>det foreliggende skuespil, lige så fuldt som
 <lb/>alle mine øvrige dramatiske arbejder, er et
-<lb/>naturnødvendigt udslag af min livsgang på et be&typHyp;
+<lb/>naturnødvendigt udslag af min livsgang på et be‐
 <lb/>stemt punkt. Det er opstået indenfra og ikke
 <lb/>formedelst nogen ydre påvirkning eller indflydelse.</p>
 <lb/><p>Således og ikke anderledes hænger det
-<lb/>sammen med tilblivelsen af &lquo;Gildet på Solhaug&rquo;.</p>
+<lb/>sammen med tilblivelsen af «Gildet på Solhaug».</p>
 <lb/><closer><dateline>Rom, i <date>April 1883</date>.</dateline>
 <lb/><signed>Henrik Ibsen.</signed></closer>
 <lb/><figure type="bar"/>
@@ -974,7 +968,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <div type="act" n="1"><HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_39main"/>
 <lb/><head>FØRSTE AKT.</head>
 <lb/><figure type="bar"/>
-<lb/><HIS:hisStage>(En stadselig stue med dør i baggrunden og på begge sidevæg&typHyp;
+<lb/><HIS:hisStage>(En stadselig stue med dør i baggrunden og på begge sidevæg‐
 <lb/>gene. Foran <app type="external" subtype="word" xml:id="varG2-33"><HIS:hisRdg wit="G283 G28951" var="N">tilhøjre</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">til højre</HIS:hisRdg></app> et karnap-vindu med små, runde, blyindfattede
 <lb/>ruder, og ved vinduet et bord med en mængde kvindesmykker.
 <lb/>Langs væggen <app type="external" subtype="word" xml:id="varG2-34"><HIS:hisRdg wit="G283 G28951" var="N">tilvenstre</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">til venstre</HIS:hisRdg></app> et større bord med sølvkruse, bægre og
@@ -991,11 +985,11 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/>bejlermand?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>
 <lb/><HIS:hisStage>(skotter urolig til sin hustru)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Ja, jeg &dash; jeg tænker nu &dash; <HIS:hisStage>(da hun tier.)</HIS:hisStage> Hm,
+<lb/><p>Ja, jeg – jeg tænker nu – <HIS:hisStage>(da hun tier.)</HIS:hisStage> Hm,
 <lb/>Margit, lad os først høre, hvad <emph>du</emph> mener.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(står op)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Herr Knut Gæsling, &dash; det var mig længe
+<lb/><p>Herr Knut Gæsling, – det var mig længe
 <lb/>vitterligt, hvad Erik fra Hægge nys fremsatte
 <lb/><fw type="sheet" place="bottom-left"><hi rend="spaced">Henrik Ibsen</hi>: Gildet på Solhaug.</fw><fw type="sheet" place="bottom-right">2</fw>
 <pb/>
@@ -1005,22 +999,22 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/>vor kongelige herre er eder synderlig bevågen.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>
 <lb/><HIS:hisStage>(til <HIS:stageRole who="KNUT">Knut</HIS:stageRole>)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Synderlig bevågen, &dash; det siger jeg også.</p></HIS:hisSp>
+<lb/><p>Synderlig bevågen, – det siger jeg også.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><p>Og visseligen kunde ikke min søster kåre
-<lb/>sig nogen gævere husbond &dash;</p></HIS:hisSp>
+<lb/>sig nogen gævere husbond –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
 <lb/><p>Ingen gævere; det er lige det samme, som
 <lb/><emph>jeg</emph> tænker.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
-<lb/><p>&dash; dersom I ellers kan formå hende til at
+<lb/><p>– dersom I ellers kan formå hende til at
 <lb/>fatte godhed for jer.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>
 <lb/><HIS:hisStage>(ængstelig og halv sagte)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Men, &dash; men, min kære hustru &dash;</p></HIS:hisSp><HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_40main"/>
+<lb/><p>Men, – men, min kære hustru –</p></HIS:hisSp><HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_40main"/>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>
 <lb/><HIS:hisStage>(springer op)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Ja så, fru Margit! I <app type="external" subtype="interpunction" xml:id="varG2-39"><HIS:hisRdg wit="G283 G2FU" var="N">mener,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">mener</HIS:hisRdg></app> at eders søster &dash;?</p></HIS:hisSp>
+<lb/><p>Ja så, fru Margit! I <app type="external" subtype="interpunction" xml:id="varG2-39"><HIS:hisRdg wit="G283 G2FU" var="N">mener,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">mener</HIS:hisRdg></app> at eders søster –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>
 <lb/><HIS:hisStage>(søger at berolige ham)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Nej vent, Knut Gæsling! Vent nu. I må
@@ -1030,30 +1024,30 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><p>Så lidet kan mine ord krænke jer. Min
 <lb/>søster kender eder jo kun af de viser, som er
-<lb/>gjort om eder, &dash; og de viser klinger ilde for
+<lb/>gjort om eder, – og de viser klinger ilde for
 <lb/>høviske øren.</p>
 <lb/><l rend="indent1 line">Eders fædres gård er et utrygt hjem</l>
 <lb/><l rend="indent1">mellem alle de vilde gæster.</l>
 <lb/><l rend="indent1">Både nat og dag har I gilde med dem.</l>
 <lb/><l rend="indent1">Krist hjælpe den ungmø, I fæster!</l>
 <lb/><l rend="indent1">Krist hjælpe den ungmø, I lokker med <app type="external" subtype="interpunction" xml:id="varG2-40"><HIS:hisRdg wit="G283 G28951" var="N">guld</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">guld,</HIS:hisRdg></app></l>
-<lb/><l rend="indent1">med gods eller grønne skove; &dash;</l>
+<lb/><l rend="indent1">med gods eller grønne skove; –</l>
 <lb/><l rend="indent1">snart vil I se hende sorrigfuld</l>
 <lb/><l rend="indent1">at længes, under muldet at sove.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ERIK"><HIS:spOpener><speaker>Erik</speaker>.</HIS:spOpener>
-<lb/><p>Nu ja &dash; sandt nok &dash; Knut Gæsling lever
+<lb/><p>Nu ja – sandt nok – Knut Gæsling lever
 <lb/>noget vildt og ustyrligt. Men sligt ændrer sig
 <lb/>let, når han får sig en hustru i gården.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
 <lb/><p>Og vel skal I mærke jer dette, fru Margit.
-<lb/>Det kan være en uge <app type="external" subtype="interpunction" xml:id="varG2-41"><HIS:hisRdg wit="G283 G2FU" var="N">siden,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">siden</HIS:hisRdg></app> at jeg var til drikke&typHyp;
+<lb/>Det kan være en uge <app type="external" subtype="interpunction" xml:id="varG2-41"><HIS:hisRdg wit="G283 G2FU" var="N">siden,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">siden</HIS:hisRdg></app> at jeg var til drikke‐
 <lb/>gilde på Hægge hos Erik, som her står. Øllet
 <lb/>var stærkt; og da det led ud på kvelden gjorde
 <lb/>jeg det løfte, at Signe, eders fagre søster, skulde
 <lb/>vorde min <app type="external" subtype="interpunction" xml:id="varG2-42"><HIS:hisRdg wit="G283 G2FU" var="N">viv,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">viv</HIS:hisRdg></app> før året var omme. Aldrig skal
 <lb/>det siges Knut Gæsling på, at han har brudt
 <lb/>noget løfte. Derfor ser I <app type="external" subtype="interpunction" xml:id="varG2-43"><HIS:hisRdg wit="G283 G2FU" var="N">selv,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">selv</HIS:hisRdg></app> at I må kåre mig
-<lb/>til eders søsters husbond, &dash; enten med det gode
+<lb/>til eders søsters husbond, – enten med det gode
 <lb/>eller med det onde.</p></HIS:hisSp>
 <lb/><fw type="sheet" place="bottom-right">2*</fw>
 <pb/>
@@ -1066,7 +1060,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l>I må døve den gru, som langvejs står</l>
 <lb/><l>af Knut Gæslings komme til bryllupsgård.</l>
 <lb/><l>Høvisk må I te jer, når I rider til gilde;<HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_41main"/></l>
-<lb/><l>øksen skal I hjemme bag stuedøren stille; &dash;</l>
+<lb/><l>øksen skal I hjemme bag stuedøren stille; –</l>
 <lb/><l>I <app type="external" subtype="word" xml:id="varG2-133"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app>, den sidder løs i jer hånd, når mjød</l>
 <lb/><l>og øl har gjort jer panden fortumlet og rød.</l>
 <lb/><l>Ærbare kvinder skal I lade med fred;</l>
@@ -1079,20 +1073,20 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>
 <lb/><HIS:hisStage>(med indædt harme)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>I <app type="external" subtype="word" xml:id="varG2-134"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app> snildt at belægge eders ord, fru Margit.
-<lb/>For sandt &dash; I burde være <app type="external" subtype="word" xml:id="varG2-45"><HIS:hisRdg wit="G283 G28951" var="N">præst</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">prest</HIS:hisRdg></app> og ikke eders
+<lb/>For sandt – I burde være <app type="external" subtype="word" xml:id="varG2-45"><HIS:hisRdg wit="G283 G28951" var="N">præst</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">prest</HIS:hisRdg></app> og ikke eders
 <lb/>husbonds frue.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
 <lb/><p>Å, for den sags skyld, så kunde nok jeg
-<lb/>også &dash;</p></HIS:hisSp>
+<lb/>også –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>
 <lb/><HIS:hisStage>(uden at agte på ham)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Men vel skal I mærke jer, at havde en
 <pb/>
 <lb/><fw type="page" place="top">5</fw>
 <lb/>våbenfør mand talt mig til på slig vis som
-<lb/>I, så &dash;</p></HIS:hisSp>
+<lb/>I, så –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
-<lb/><p>Nej men hør nu, Knut Gæsling, &dash; I må
+<lb/><p>Nej men hør nu, Knut Gæsling, – I må
 <lb/>forstå os!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>
 <lb/><HIS:hisStage>(som før)</HIS:hisStage>.</HIS:spOpener>
@@ -1110,7 +1104,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
 <lb/><p>Vel, vel; jeg vil heller ikke regne det så
 <lb/>nøje med jer, fru Margit. I har mere kløgt,
-<lb/>end alle vi andre tilhobe. Der er min hånd; &dash;
+<lb/>end alle vi andre tilhobe. Der er min hånd; –
 <lb/>kan hænde der er skælig grund for alle de
 <lb/>hvasse ord, I sagde mig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
@@ -1168,7 +1162,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/>såfremt min hustru havde villet.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ERIK"><HIS:spOpener><speaker>Erik</speaker>
 <lb/><HIS:hisStage>(sagte til <HIS:stageRole who="KNUT">Knut</HIS:stageRole>)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Fru Margit <app type="external" subtype="word" xml:id="varG2-135"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app> da <app type="external" subtype="interpunction" xml:id="varG2-47"><HIS:hisRdg wit="G283 G2FU" var="N">ikke,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">ikke</HIS:hisRdg></app> at &dash;?</p></HIS:hisSp>
+<lb/><p>Fru Margit <app type="external" subtype="word" xml:id="varG2-135"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app> da <app type="external" subtype="interpunction" xml:id="varG2-47"><HIS:hisRdg wit="G283 G2FU" var="N">ikke,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">ikke</HIS:hisRdg></app> at –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>
 <lb/><HIS:hisStage>(sagte)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Det synes så; men lad dig ikke mærke med
@@ -1205,7 +1199,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><p>Det kan jeg lide, herr Bengt Gautesøn. Jeg
 <lb/>har det på samme sæt; og jeg har nu engang
 <lb/>drukket på svogerskab mellem os. I får se til,
-<lb/>om ikke jeg også holder fast ved mit ord. &dash;
+<lb/>om ikke jeg også holder fast ved mit ord. –
 <lb/>Guds fred til ikveld!</p></HIS:hisSp>
 <lb/><HIS:hisStage>(Han og <HIS:stageRole who="ERIK">Erik</HIS:stageRole> går med mændene ud i baggrunden. <HIS:stageRole who="BENGT">Bengt</HIS:stageRole> følger
 <lb/>dem til døren. Klokkeringningen er imidlertid ophørt.)</HIS:hisStage>
@@ -1247,7 +1241,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><p>Slig tale tykkes jeg vel om. Lad mig se,
 <lb/>du klæder dig i din bedste stads, så vore gæster
 <lb/>kan sige: lyksalig hun, som fik Bengt Gautesøn
-<lb/>til husbond. &dash; Men nu må jeg ud i madburet;
+<lb/>til husbond. – Men nu må jeg ud i madburet;
 <lb/>der er fuldt op at tage vare på idag.</p>
 <lb/><HIS:hisStage>(han går ud til venstre.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
@@ -1261,8 +1255,8 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l>Hvorlænge varer et menneskes liv?</l>
 <pb/>
 <lb/><fw type="page" place="top">11</fw>
-<lb/><l>Gud fri mig, &dash; kanhænde halvhundrede år; &dash;</l>
-<lb/><l>og jeg &dash; i det tre og tyvende går!</l>
+<lb/><l>Gud fri mig, – kanhænde halvhundrede år; –</l>
+<lb/><l>og jeg – i det tre og tyvende går!</l>
 <lb/><HIS:hisStage>(roligere, efter en kort taushed.)</HIS:hisStage>
 <lb/><l>Det er tungt at sukke bag gylden mur;</l>
 <lb/><l>det er tungt at sidde så længe i bur.</l>
@@ -1276,53 +1270,53 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l>jeg kender en vise, som kan sorgen forslå.</l>
 <lb/><HIS:hisStage>(hun synger.)</HIS:hisStage>
 <lb/><l rend="indent1 line">Bergkongen red sig under ø;</l>
-<lb/><l rend="indent1">&dash; så klageligt rinde mine dage &dash;</l>
+<lb/><l rend="indent1">– så klageligt rinde mine dage –</l>
 <lb/><l rend="indent1">vilde han fæste den væne mø.</l>
-<lb/><l rend="indent1">&dash; ret aldrig du kommer tilbage &dash;</l>
+<lb/><l rend="indent1">– ret aldrig du kommer tilbage –</l>
 <lb/><l rend="indent1 line">Bergkongen red til herr Håkons gård;</l>
-<lb/><l rend="indent1">&dash; så klageligt rinde mine dage &dash;</l>
+<lb/><l rend="indent1">– så klageligt rinde mine dage –</l>
 <lb/><l rend="indent1">liden Kirsten stod ude, slog ud sit hår.</l>
-<lb/><l rend="indent1">&dash; ret aldrig du kommer tilbage &dash;<HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_45main"/></l>
+<lb/><l rend="indent1">– ret aldrig du kommer tilbage –<HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_45main"/></l>
 <lb/><l rend="indent1 line">Bergkongen fæsted den væne viv;</l>
-<lb/><l rend="indent1">&dash; så klageligt rinde mine dage &dash;</l>
+<lb/><l rend="indent1">– så klageligt rinde mine dage –</l>
 <lb/><l rend="indent1">han spændte en sølvgjord omkring hendes liv.</l>
-<lb/><l rend="indent1">&dash; ret aldrig du kommer tilbage &dash;</l>
+<lb/><l rend="indent1">– ret aldrig du kommer tilbage –</l>
 <lb/><l rend="indent1 line">Bergkongen fæsted den liljevånd</l>
-<lb/><l rend="indent1">&dash; så klageligt rinde mine dage &dash;</l>
+<lb/><l rend="indent1">– så klageligt rinde mine dage –</l>
 <lb/><l rend="indent1">med femten guldringe til hver hendes hånd.</l>
-<lb/><l rend="indent1">&dash; ret aldrig du kommer tilbage &dash;</l>
+<lb/><l rend="indent1">– ret aldrig du kommer tilbage –</l>
 <pb/>
 <lb/><fw type="page" place="top">12</fw>
 <lb/><l rend="indent1 line">Tre sommere gik, og der gik vel fem;</l>
-<lb/><l rend="indent1">&dash; så klageligt rinde mine dage &dash;</l>
+<lb/><l rend="indent1">– så klageligt rinde mine dage –</l>
 <lb/><l rend="indent1">Kirsten sad i berget i alle dem.</l>
-<lb/><l rend="indent1">&dash; ret aldrig du kommer tilbage &dash;</l>
+<lb/><l rend="indent1">– ret aldrig du kommer tilbage –</l>
 <lb/><l rend="indent1 line">Fem sommere gik, og der gik vel ni;</l>
-<lb/><l rend="indent1">&dash; så klageligt rinde mine dage &dash;</l>
+<lb/><l rend="indent1">– så klageligt rinde mine dage –</l>
 <lb/><l rend="indent1">liden Kirsten så ikke solen i li.</l>
-<lb/><l rend="indent1">&dash; ret aldrig du kommer <app type="external" subtype="interpunction" xml:id="varG2-56"><HIS:hisRdg wit="G283 G2FU" var="N">tilbage &dash;</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">tilbage.</HIS:hisRdg></app></l>
+<lb/><l rend="indent1">– ret aldrig du kommer <app type="external" subtype="interpunction" xml:id="varG2-56"><HIS:hisRdg wit="G283 G2FU" var="N">tilbage –</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">tilbage.</HIS:hisRdg></app></l>
 <lb/><l rend="indent1 line">Dalen har blomster og fuglesang;</l>
-<lb/><l rend="indent1">&dash; så klageligt rinde mine dage &dash;</l>
+<lb/><l rend="indent1">– så klageligt rinde mine dage –</l>
 <lb/><l rend="indent1">i berget er der guld og en nat <app type="external" subtype="word" xml:id="varG2-57"><HIS:hisRdg wit="G283 G28951" var="N">så</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">saa</HIS:hisRdg></app> lang.</l>
-<lb/><l rend="indent1"><app type="external" subtype="interpunction" xml:id="varG2-58"><HIS:hisRdg wit="G283 G2FU" var="N">&dash; ret</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">ret</HIS:hisRdg></app> aldrig du kommer tilbage &dash;</l>
+<lb/><l rend="indent1"><app type="external" subtype="interpunction" xml:id="varG2-58"><HIS:hisRdg wit="G283 G2FU" var="N">– ret</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">ret</HIS:hisRdg></app> aldrig du kommer tilbage –</l>
 <lb/><HIS:hisStage>(hun rejser sig og går henover gulvet.)</HIS:hisStage>
 <lb/><l>Den vise sang Gudmund så mangen kveld,</l>
 <lb/><l>da han var hos min fader hjemme.</l>
-<lb/><l>Der er noget deri, &dash; jeg <app type="external" subtype="word" xml:id="varG2-137"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app> ikke selv, &dash;</l>
+<lb/><l>Der er noget deri, – jeg <app type="external" subtype="word" xml:id="varG2-137"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app> ikke selv, –</l>
 <lb/><l>der er noget, som jeg aldrig kunde glemme;</l>
-<lb/><l>der er noget, som mægtigt fyldte min hu, &dash;</l>
-<lb/><l>som jeg aldrig forstod, &dash; som jeg grubler på
+<lb/><l>der er noget, som mægtigt fyldte min hu, –</l>
+<lb/><l>som jeg aldrig forstod, – som jeg grubler på
 <lb/>endnu.</l>
 <lb/><HIS:hisStage>(forfærdet, standser.)</HIS:hisStage>
-<lb/><l>Røde guldringe! Beltet om mit liv &dash;!</l>
+<lb/><l>Røde guldringe! Beltet om mit liv –!</l>
 <lb/><l>Med guld var det bergkongen fæsted sin viv!</l>
 <lb/><HIS:hisStage>(fortvilet; synker ned på en bænk ved bordet til venstre.)</HIS:hisStage>
 <lb/><l>Ve mig! Selv er jeg bergkongens brud!</l>
-<lb/><l>Og ingen &dash; ingen kommer for at løse mig ud.</l></HIS:hisSp>
+<lb/><l>Og ingen – ingen kommer for at løse mig ud.</l></HIS:hisSp>
 <lb/><HIS:hisStage>(<HIS:stageRole who="SIGNE">Signe</HIS:stageRole>, glædestrålende, kommer løbende ind fra baggrunden.)</HIS:hisStage>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>
 <lb/><HIS:hisStage>(råber)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Margit, Margit, &dash; han kommer!</p></HIS:hisSp>
+<lb/><p>Margit, Margit, – han kommer!</p></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top">13</fw>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
@@ -1332,7 +1326,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><p>Gudmund, vor frænde!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><p>Gudmund Alfsøn! Her! Hvor kan du
-<lb/>tro &dash;?</p></HIS:hisSp>
+<lb/>tro –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
 <lb/><p>Å, jeg er viss på det.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
@@ -1345,9 +1339,9 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><p>Har du da set <app type="external" subtype="interpunction" xml:id="varG2-59"><HIS:hisRdg wit="G283 G28951" var="N">ham.</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">ham?</HIS:hisRdg></app></p></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
-<lb/><p>Å nej, nej; men nu skal du høre &dash;</p></HIS:hisSp>
+<lb/><p>Å nej, nej; men nu skal du høre –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
-<lb/><p>Ja, skynd dig, &dash; fortæl!</p></HIS:hisSp>
+<lb/><p>Ja, skynd dig, – fortæl!</p></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top">14</fw>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
@@ -1367,7 +1361,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l>mig <app type="external" subtype="interpunction" xml:id="varG2-61"><HIS:hisRdg wit="G283 G2FU" var="N">tyktes,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">tyktes</HIS:hisRdg></app> at alle de billeder små</l>
 <lb/><l>vendte sig om for at lytte derpå.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
-<lb/><l>Hvad mere? Signe, &dash; tal ud, tal ud!</l></HIS:hisSp>
+<lb/><l>Hvad mere? Signe, – tal ud, tal ud!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
 <lb/><l>Det var som et dybt, et ufatteligt bud</l>
 <lb/><l>maned mig udenfor kirkens mur</l>
@@ -1391,18 +1385,18 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l>men sælsomme tanker steg op herinde.</l>
 <lb/><l>Fuldt vel jeg kendte den dejlige sang;</l>
 <lb/><l>Gudmund har sunget den mangen gang;</l>
-<lb/><l>Gudmund har sunget den mangen kveld, &dash;</l>
+<lb/><l>Gudmund har sunget den mangen kveld, –</l>
 <lb/><l>og alt, hvad han har sunget, det mindes jeg vel.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
-<lb/><l part="I">Og du tror, det skulde være &dash;?</l></HIS:hisSp>
+<lb/><l part="I">Og du tror, det skulde være –?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
 <lb/><l part="F">Jeg <app type="external" subtype="word" xml:id="varG2-139"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app> det så visst!</l>
 <lb/><l>Tro mig, mit ord skal du sande.</l>
 <lb/><HIS:hisStage>(leende.)</HIS:hisStage>
 <lb/><l>Kommer ikke hver en liden sangfugl tilsidst</l>
 <lb/><l>igen fra de fremmede lande?</l>
-<lb/><l>Jeg <app type="external" subtype="word" xml:id="varG2-140"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app> ikke selv, &dash; men jeg er så glad &dash;!</l>
-<lb/><l>Der falder mig ind &dash;. Margit, <app type="external" subtype="word" xml:id="varG2-141"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app> du hvad?</l>
+<lb/><l>Jeg <app type="external" subtype="word" xml:id="varG2-140"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app> ikke selv, – men jeg er så glad –!</l>
+<lb/><l>Der falder mig ind –. Margit, <app type="external" subtype="word" xml:id="varG2-141"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app> du hvad?</l>
 <lb/><l>Hans harpe har hængt så længe</l>
 <lb/><l>på væggen derinde. Jeg vil tage den ned;</l>
 <lb/><l>jeg vil pudse den blank og stille den beredt</l>
@@ -1411,7 +1405,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><fw type="page" place="top">16</fw>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(åndsfraværende)</HIS:hisStage>.</HIS:spOpener>
-<lb/><l part="I">Gør, som dig lyster &dash;</l></HIS:hisSp>
+<lb/><l part="I">Gør, som dig lyster –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>
 <lb/><HIS:hisStage>(bebrejdende)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l part="F">Det er ikke ret.</l>
@@ -1420,7 +1414,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l>tilsinds, som da Signe var liden.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(hen for sig)</HIS:hisStage>.</HIS:spOpener>
-<lb/><l>Så mangt har forandret sig <app type="external" subtype="interpunction" xml:id="varG2-64"><HIS:hisRdg wit="G283 G2FU" var="N">siden &dash; &dash;</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">siden &dash;</HIS:hisRdg></app></l></HIS:hisSp>
+<lb/><l>Så mangt har forandret sig <app type="external" subtype="interpunction" xml:id="varG2-64"><HIS:hisRdg wit="G283 G2FU" var="N">siden – –</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">siden –</HIS:hisRdg></app></l></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
 <lb/><l>Margit, du <emph>skal</emph> være fro og glad!</l>
 <lb/><l>Har du ikke terner og svende?</l>
@@ -1439,15 +1433,15 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><fw type="page" place="top">17</fw>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(vender sig)</HIS:hisStage>.</HIS:spOpener>
-<lb/><l part="F">Intet. &dash; Gå; smyk dig som bedst.</l>
+<lb/><l part="F">Intet. – Gå; smyk dig som bedst.</l>
 <lb/><l>Min lykke, den, du så lydt monne prise,</l>
 <lb/><l part="I">kunde times dig selv.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
 <lb/><l part="F">Hvad mener du vel?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(stryger hendes hår)</HIS:hisStage>.</HIS:spOpener>
-<lb/><l>Jeg mener &dash;; nu ja, det vil sig jo vise &dash;;</l>
-<lb/><l>jeg mener, &dash; hvis en bejler red sig hid <app type="external" subtype="interpunction" xml:id="varG2-65"><HIS:hisRdg wit="G283 G28951" var="N">ikveld &dash;?</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">ikveld &dash;;</HIS:hisRdg></app></l></HIS:hisSp>
+<lb/><l>Jeg mener –; nu ja, det vil sig jo vise –;</l>
+<lb/><l>jeg mener, – hvis en bejler red sig hid <app type="external" subtype="interpunction" xml:id="varG2-65"><HIS:hisRdg wit="G283 G28951" var="N">ikveld –?</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">ikveld –;</HIS:hisRdg></app></l></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
 <lb/><l part="I">En bejler? Til hvem?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
@@ -1474,20 +1468,20 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l>Nu bæres det mig for, jeg er rig nok med mig selv,</l>
 <lb/><l>med sommer og sol og den susende elv,</l>
 <lb/><l>med dig og de fugle på kviste.</l>
-<lb/><l>Kære søster min, &dash; her vil jeg bygge og bo;</l>
+<lb/><l>Kære søster min, – her vil jeg bygge og bo;</l>
 <lb/><l>og at skænke nogen bejler min hånd og min tro,</l>
 <lb/><l>dertil har jeg ikke tid; dertil er jeg for fro!</l>
 <lb/><HIS:hisStage>(hun iler syngende ud til venstre.)</HIS:hisStage></HIS:hisSp><HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_49main"/>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(efter et ophold)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Gudmund Alfsøn skulde komme hid? Hid &dash;
-<lb/>til Solhaug? Nej, nej, det kan ikke være. &dash;
+<lb/><p>Gudmund Alfsøn skulde komme hid? Hid –
+<lb/>til Solhaug? Nej, nej, det kan ikke være. –
 <lb/>Signe havde hørt ham synge, sagde hun. Når
 <lb/>jeg hørte granerne suse dybt derinde i skoven,
-<lb/>når jeg hørte fossen rulle og fuglene lokke i træ&typHyp;
+<lb/>når jeg hørte fossen rulle og fuglene lokke i træ‐
 <lb/>toppene, da bares det mig tidt nok for, som om
 <lb/>Gudmunds kvæder blanded sig alt imellem. Og
-<lb/>dog var han langvejs herfra. &dash; Signe har skuffet
+<lb/>dog var han langvejs herfra. – Signe har skuffet
 <lb/>sig selv. Gudmund kommer ikke.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>
 <lb/><HIS:hisStage>(i hastværk, fra baggrunden, råber)</HIS:hisStage>:</HIS:spOpener>
@@ -1499,21 +1493,21 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
 <lb/><p>Gudmund Alfsøn, din frænde! <HIS:hisStage>(råber ud gennem
 <lb/>døren til højre.)</HIS:hisStage> Det bedste gæstekammer må holdes
-<lb/>rede &dash; og det på stand!</p></HIS:hisSp>
+<lb/>rede – og det på stand!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><p>Han er da alt på gården?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>
 <lb/><HIS:hisStage>(ser ud gennem svalegangen)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Ikke så lige endnu; men længe vil det ikke
 <lb/>vare. <HIS:hisStage>(råber ud til højre igen.)</HIS:hisStage> Den snittede egeseng
-<lb/>med dragehovederne! <HIS:hisStage>(går hen til Margit.)</HIS:hisStage> Hans våben&typHyp;
+<lb/>med dragehovederne! <HIS:hisStage>(går hen til Margit.)</HIS:hisStage> Hans våben‐
 <lb/>drager bragte bud og hilsen fra ham; selv følger
 <lb/>han efter.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><p>Hans våbendrager? Kommer han hid med
 <lb/>våbendrager?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
-<lb/><p>Ja, det skulde jeg vel mene. En våben&typHyp;
+<lb/><p>Ja, det skulde jeg vel mene. En våben‐
 <lb/>drager og sex rustede mænd er hos ham. Nå
 <lb/>ja, Gudmund Alfsøn er jo også en hel anden
 <lb/>mand nu, end dengang han drog ud på langfærd.
@@ -1524,8 +1518,8 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><fw type="page" place="top">20</fw>
 <lb/>ikke bidslet med ormehovederne! <HIS:hisStage>(ser ud i baggrunden.)</HIS:hisStage>
 <lb/>Au, der er han alt ved ledet! Nå, så min stav
-<lb/>da; min sølvknappede stav! Slig en herre, &dash;
-<lb/>Krist fri mig &dash; ham må vi tage imod med <app type="external" subtype="interpunction" xml:id="varG2-66"><HIS:hisRdg wit="G283 G2FU" var="N">ære,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">ære, &dash;</HIS:hisRdg></app>
+<lb/>da; min sølvknappede stav! Slig en herre, –
+<lb/>Krist fri mig – ham må vi tage imod med <app type="external" subtype="interpunction" xml:id="varG2-66"><HIS:hisRdg wit="G283 G2FU" var="N">ære,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">ære, –</HIS:hisRdg></app>
 <lb/>med stor ære!</p>
 <lb/><HIS:hisStage>(han går skyndsomt ud i baggrunden.)</HIS:hisStage></HIS:hisSp><HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_50main"/>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
@@ -1536,7 +1530,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l>om bittert jeg nages af kummer og ve?</l>
 <lb/><l>Lyster det ham at prøve og friste,</l>
 <lb/><l>hvad jeg mægter at <app type="external" subtype="interpunction" xml:id="varG2-67"><HIS:hisRdg wit="G283 G2FU" var="N">bære,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">bære</HIS:hisRdg></app> før hjertet må briste?</l>
-<lb/><l>Mener <app type="external" subtype="interpunction" xml:id="varG2-68"><HIS:hisRdg wit="G283 G2FU" var="N">han,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">han</HIS:hisRdg></app> at &dash;? Ah, prøv kun derpå;</l>
+<lb/><l>Mener <app type="external" subtype="interpunction" xml:id="varG2-68"><HIS:hisRdg wit="G283 G2FU" var="N">han,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">han</HIS:hisRdg></app> at –? Ah, prøv kun derpå;</l>
 <lb/><l>så ringe en fryd skal du deraf få!</l>
 <lb/><HIS:hisStage>(hun vinker ud gennem døren til højre.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisStage>(<HIS:stageRole>Tre piger</HIS:stageRole> kommer ind i stuen.)</HIS:hisStage>
@@ -1555,10 +1549,10 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l>Så vil jeg! Margit er jo bergkongens brud.</l>
 <lb/><l>Vel! Jeg får at bære mit kongelige skrud.</l>
 <lb/><HIS:hisStage>(hun går ud til venstre.)</HIS:hisStage></HIS:hisSp>
-<lb/><HIS:hisStage>(<HIS:stageRole who="BENGT">Bengt</HIS:stageRole> fører <HIS:stageRole who="GUDMUND">Gudmund Alfsøn</HIS:stageRole> ind gennem svalegangen i bag&typHyp;
+<lb/><HIS:hisStage>(<HIS:stageRole who="BENGT">Bengt</HIS:stageRole> fører <HIS:stageRole who="GUDMUND">Gudmund Alfsøn</HIS:stageRole> ind gennem svalegangen i bag‐
 <lb/>grunden.)</HIS:hisStage>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
-<lb/><p>Og endnu en gang, &dash; hil eder under Sol&typHyp;
+<lb/><p>Og endnu en gang, – hil eder under Sol‐
 <lb/>haugs tag, min hustrus frænde!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><p>Jeg takker jer. Og hvordan går det hende?
@@ -1571,10 +1565,10 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/>sagt, så har hun alt, hvad en høvisk kvinde kan
 <lb/>begære for at være fornøjet i sine kår.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><p>Og Margit, &dash; hun er da vel fornøjet?</p></HIS:hisSp><HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_51main"/>
+<lb/><p>Og Margit, – hun er da vel fornøjet?</p></HIS:hisSp><HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_51main"/>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
 <lb/><p>Gud og hver mand skulde tro, hun måtte
-<lb/>være det; men, sælsomt nok &dash;</p></HIS:hisSp>
+<lb/>være det; men, sælsomt nok –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><p>Hvad mener I?</p></HIS:hisSp>
 <pb/>
@@ -1590,7 +1584,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
 <lb/><p>Hvad siger I, frænde?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><p>Jeg siger, højligen undrer mig, hvad I for&typHyp;
+<lb/><p>Jeg siger, højligen undrer mig, hvad I for‐
 <lb/>tæller om eders hustru.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
 <lb/><p>Ja, mener I ikke, det går mig lige så? Jeg
@@ -1599,19 +1593,19 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/>ønske sig. Jeg er om hende så lang dagen er;
 <lb/>og ingen skal kunne sige mig på, at jeg holder
 <lb/>hende strængt; alt tilsyn med hus og gård har
-<lb/>jeg taget på mig; og ikke desmindre &dash;. Nå,
+<lb/>jeg taget på mig; og ikke desmindre –. Nå,
 <lb/>I var jo altid en lystig svend; jeg tænker nok,
 <lb/>I bringer solskin med jer. Hys; der kommer
-<lb/>fru Margit! Lad jer ikke mærke med, at jeg &dash;</p></HIS:hisSp>
+<lb/>fru Margit! Lad jer ikke mærke med, at jeg –</p></HIS:hisSp>
 <lb/><HIS:hisStage>(<HIS:stageRole who="MARGIT">Margit</HIS:stageRole> kommer i rig dragt fra venstre.)</HIS:hisStage>
 <pb/>
 <lb/><fw type="page" place="top">23</fw>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(går hende imøde)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Margit, &dash; kære Margit!</p></HIS:hisSp>
+<lb/><p>Margit, – kære Margit!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(standser, ser fremmed på ham)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Forlad mig, herr ridder; men &dash;? <HIS:hisStage>(som om hun
+<lb/><p>Forlad mig, herr ridder; men –? <HIS:hisStage>(som om hun
 <lb/>først nu genkendte ham.)</HIS:hisStage> For sandt, hvis jeg ikke
 <lb/>fejler, så er det Gudmund Alfsøn.</p>
 <lb/><HIS:hisStage>(rækker hånden frem.)</HIS:hisStage></HIS:hisSp>
@@ -1621,11 +1615,11 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>
 <lb/><HIS:hisStage>(leende)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Nej men, Margit, hvad tænker du dog på?
-<lb/>Jeg meldte dig jo nylig, at din frænde &dash;</p></HIS:hisSp>
+<lb/>Jeg meldte dig jo nylig, at din frænde –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(går over mod bordet til højre)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Tolv år er en lang tid, Gudmund. Den
-<lb/>friskeste urt kan dø i tiende led imens &dash;</p></HIS:hisSp>
+<lb/>friskeste urt kan dø i tiende led imens –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><p>Det er syv år siden vi sidst sås.</p></HIS:hisSp><HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_52main"/>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
@@ -1641,21 +1635,21 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/>dengang; og det tykkes mig en evig lang tid
 <lb/>siden jeg var barn. <HIS:hisStage>(kaster sig ned i en stol.)</HIS:hisStage> Nå, sæt
 <lb/>eder, min frænde! Hvil eder ud; ikveld skal I
-<lb/><app type="external" subtype="word" xml:id="varG2-70"><HIS:hisRdg wit="G283 G28951" var="N">danse og forlyste</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">forlyste</HIS:hisRdg></app> os med eders sang. <HIS:hisStage>(med et tvun&typHyp;
+<lb/><app type="external" subtype="word" xml:id="varG2-70"><HIS:hisRdg wit="G283 G28951" var="N">danse og forlyste</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">forlyste</HIS:hisRdg></app> os med eders sang. <HIS:hisStage>(med et tvun‐
 <lb/>gent smil.)</HIS:hisStage> Ja, I <app type="external" subtype="word" xml:id="varG2-142"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app> vel, vi er glade her på
-<lb/>gården idag, &dash; vi holder gilde.</p></HIS:hisSp>
+<lb/>gården idag, – vi holder gilde.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><p>Det blev mig sagt, ret som jeg gik ind på
 <lb/>tunet.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
-<lb/><p>Ja, idag for tre år siden blev jeg &dash;</p></HIS:hisSp>
+<lb/><p>Ja, idag for tre år siden blev jeg –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(afbrydende)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Min frænde har alt hørt det. <HIS:hisStage>(til Gudmund.)</HIS:hisStage>
 <lb/>Vil I ikke lægge eders kappe bort?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><p>Jeg takker eder, fru Margit; men det bæres
-<lb/>mig for, som her er koldt, &dash; koldere, end jeg
+<lb/>mig for, som her er koldt, – koldere, end jeg
 <lb/>havde ventet.</p></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top">25</fw>
@@ -1668,7 +1662,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><HIS:hisStage>(vil gå.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(tvilrådig)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Går du? Vil du ikke heller &dash;?</p></HIS:hisSp>
+<lb/><p>Går du? Vil du ikke heller –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>
 <lb/><HIS:hisStage>(leende, til <HIS:stageRole who="GUDMUND">Gudmund</HIS:stageRole>, idet han kommer tilbage)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Ser I vel; herr Bengt til Solhaug er manden,
@@ -1691,7 +1685,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l part="F">Det blev sagt, hun <app type="external" subtype="word" xml:id="varG2-129"><HIS:hisRdg wit="G283 G2FU" var="N">skulde
 <lb rend="solidus"/>være</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">skulde være</HIS:hisRdg><note resp="editor" type="variant">i 1. utg. og FU er rimordet feilaktig plassert innenfor neste verslinje</note></app></l> <l part="I">hos eder.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
-<lb/><l part="F">Her har hun været siden jeg &dash;</l>
+<lb/><l part="F">Her har hun været siden jeg –</l>
 <lb/><HIS:hisStage>(slår om.)</HIS:hisStage>
 <lb/><l>For tre år siden kom hun til Solhaug med mig.</l>
 <lb/><HIS:hisStage>(lidt efter.)</HIS:hisStage>
@@ -1702,13 +1696,13 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l>når jeg kommer ihu hendes øjne blå,</l>
 <lb/><l>jeg må på guds engle tænke.</l>
 <lb/><l>Dog, mangt kan i syv års tid forgå.</l>
-<lb/><l>Sig mig, &dash; mens fjernt fra bygden jeg vandred,</l>
+<lb/><l>Sig mig, – mens fjernt fra bygden jeg vandred,</l>
 <lb/><l>har også hun sig så stærkt forandret?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(tvungent spøgende)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l>Hun også? Er det i kongens gård</l>
 <lb/><l>slig høvisk tale man lærer?</l>
-<lb/><l>I minder mig om, hvordan tiden <app type="external" subtype="word" xml:id="varG2-74"><HIS:hisRdg wit="G283 G2FU" var="N"><sic>lærer</sic></HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">tærer</HIS:hisRdg></app> &dash;</l></HIS:hisSp>
+<lb/><l>I minder mig om, hvordan tiden <app type="external" subtype="word" xml:id="varG2-74"><HIS:hisRdg wit="G283 G2FU" var="N"><sic>lærer</sic></HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">tærer</HIS:hisRdg></app> –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><l>Margit, hel vel mine ord I forstår.</l>
 <lb/><l>Engang var I mig begge så blide;</l>
@@ -1718,14 +1712,14 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l>vi loved at holde som søskende sammen</l>
 <lb/><l>i fryd og i ve, i nød og i gammen.</l>
 <lb/><l>I lyste som en sol mellem jomfruer små;</l>
-<lb/><l>så viden om land eders ry monne gå; &dash;</l>
+<lb/><l>så viden om land eders ry monne gå; –</l>
 <lb/><l>fuldt vel er I endnu så fager en kvinde.</l>
 <lb/><l>Men Solhaugs frue, kan jeg mærke, har glemt</l>
 <lb/><l>den fattige frænde. Så umildt er I stemt,</l>
 <lb/><l>I, der engang var så vennesæl til sinde.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(næsten tårekvalt)</HIS:hisStage>.</HIS:spOpener>
-<lb/><l part="I">Ja engang &dash;!</l></HIS:hisSp>
+<lb/><l part="I">Ja engang –!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(ser deltagende på hende, tier lidt og siger med dæmpet stemme)</HIS:hisStage>:</HIS:spOpener>
 <lb/><l part="F">Eders husbond bød os at korte</l>
@@ -1736,10 +1730,10 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><HIS:hisStage>(roligere.)<HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_54main"/></HIS:hisStage>
 <lb/><l part="F">Det falder mig så svært</l>
 <lb/><l>at mindes; den ting har jeg aldrig lært.</l>
-<lb/><l>Meld heller om de år, I var borte; &dash;</l>
+<lb/><l>Meld heller om de år, I var borte; –</l>
 <lb/><l>den tid er vel ej på bedrift så arm;</l>
 <lb/><l>meget må I kunne mig berette;</l>
-<lb/><l>derude er jo verden både vid og varm, &dash;</l>
+<lb/><l>derude er jo verden både vid og varm, –</l>
 <lb/><l>der er sindet og tankerne lette.</l></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top">28</fw>
@@ -1748,10 +1742,10 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l>som dengang jeg var smådreng i den fattige bo.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(uden at se på ham)</HIS:hisStage>.</HIS:spOpener>
-<lb/><l>Og jeg &dash; hver dag, jeg på Solhaug bode,</l>
+<lb/><l>Og jeg – hver dag, jeg på Solhaug bode,</l>
 <lb/><l>takked himlen, at den gjorde mine kår så gode.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><l>Vel eder, dersom I kan takke fordi &dash;</l></HIS:hisSp>
+<lb/><l>Vel eder, dersom I kan takke fordi –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(<app type="external" subtype="word" xml:id="varG2-77"><HIS:hisRdg wit="G283 G28951" var="N">hæftigt</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">heftigt</HIS:hisRdg></app>)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l>Og er jeg da ikke hædret og fri?</l>
@@ -1785,15 +1779,15 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l>Eders nød? Nu, højt må I hige, frænde;</l>
 <lb/><l>jeg gad vide, hvor I tænker at ende!<HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_55main"/></l>
 <lb/><l>I kan eder klæde i fløjel rød,</l>
-<lb/><l>er kongens mand, ejer gods og guld &dash;</l></HIS:hisSp>
+<lb/><l>er kongens mand, ejer gods og guld –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><l>Bedst må I vide, om lykken er mig huld.</l>
 <lb/><l>I sagde fornylig, fuldt vel I vidste</l>
-<lb/><l part="I">mit ærend på Solhaug &dash;</l></HIS:hisSp>
+<lb/><l part="I">mit ærend på Solhaug –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><l part="F">Det <app type="external" subtype="word" xml:id="varG2-146"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app> jeg forsand!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><l>Da kender I og, hvad jeg nys måtte friste; &dash;</l>
+<lb/><l>Da kender I og, hvad jeg nys måtte friste; –</l>
 <lb/><l>da <app type="external" subtype="word" xml:id="varG2-147"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app> I, jeg er en fredløs mand.</l></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top">30</fw>
@@ -1808,7 +1802,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l>Jeg mente, I endnu var mild og god,</l>
 <lb/><l>alt som dengang jeg eder forlod;</l>
 <lb/><l>men jeg vil ikke trygle; skoven er stor,</l>
-<lb/><l>og sikker er min hånd og min bue; &dash;</l>
+<lb/><l>og sikker er min hånd og min bue; –</l>
 <lb/><l>langt heller være hejens sten mit bord</l>
 <lb/><l>og bjørnehiet min stue.</l>
 <lb/><HIS:hisStage>(vil gå.)</HIS:hisStage></HIS:hisSp>
@@ -1829,10 +1823,10 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l>min tro var jo frejdig; mit håb var ungt;</l>
 <lb/><l>jeg tænkte: når du til Solhaug kommer,</l>
 <lb/><l>da er du frelst fra al din kvide;</l>
-<lb/><l>der finder du venner; på dem kan du lide. &dash;<HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_56main"/></l>
+<lb/><l>der finder du venner; på dem kan du lide. –<HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_56main"/></l>
 <lb/><l>Men håbet er skørt som markens blommer.</l>
 <lb/><l>Eders husbond mødte mig med horn og krus;</l>
-<lb/><l>han åbned for mig både dør og porte; &dash;</l>
+<lb/><l>han åbned for mig både dør og porte; –</l>
 <lb/><l>men øde tykkes mig eders hus;</l>
 <lb/><l>hallen er mørk; mine venner er borte.</l>
 <lb/><l>Nu godt; jeg stiger på ny til fjelds.</l></HIS:hisSp>
@@ -1848,7 +1842,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l part="I">Farvel da, fru Margit!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><l part="F">Nej, Gudmund, hør!</l>
-<lb/><l part="I">Ved gud og mænd &dash;!</l></HIS:hisSp>
+<lb/><l part="I">Ved gud og mænd –!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><l part="F">Forlyst dig som før;</l>
 <lb/><l>lev du i gammen og ære;</l>
@@ -1860,18 +1854,18 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l>Nu er det nok. Dine bittre ord</l>
 <lb/><l>vil volde dig anger og kvide.</l>
 <lb/><l>Havde jeg vidst, at du fredløs <app type="external" subtype="word" xml:id="varG2-168"><HIS:hisRdg wit="G283 G28951" var="N">fór</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">foer</HIS:hisRdg></app></l>
-<lb/><l>alt over strande så vide, &dash;</l>
+<lb/><l>alt over strande så vide, –</l>
 <lb/><l>tro mig, da var det min kæreste <app type="external" subtype="interpunction" xml:id="varG2-78"><HIS:hisRdg wit="G283 G2FU" var="N">dag,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">dag</HIS:hisRdg></app></l>
 <lb/><l>da du tyed ind under Solhaugs tag;</l>
 <lb/><l>da var det for visst min gladeste fest,</l>
 <lb/><l>når den fredløse meldte sig her som gæst.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><l>Du siger &dash;! Hvad skal jeg tænke og tro?</l></HIS:hisSp>
+<lb/><l>Du siger –! Hvad skal jeg tænke og tro?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(rækker ham hånden)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l>At frænder og venner på Solhaug bo.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><l part="I">Men det, som du nys &dash;?</l></HIS:hisSp>
+<lb/><l part="I">Men det, som du nys –?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><l part="F">Agt ikke derpå.</l>
 <lb/><l>Hør mig, så vil du det hele forstå.</l>
@@ -1885,7 +1879,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l>rigdom, når barmen er sorrigfuld.</l>
 <pb/>
 <lb/><fw type="page" place="top">33</fw>
-<lb/><l>Dengang vi var børn, &dash; hvor var jeg da fro!</l>
+<lb/><l>Dengang vi var børn, – hvor var jeg da fro!</l>
 <lb/><l>Vore kår var ringe, fattigt vort bo;</l>
 <lb/><l>men rigt var håbet i mit bryst herinde.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>,
@@ -1903,7 +1897,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l>du havde sunget om det frejdige liv</l>
 <lb/><l>blandt herrer og fruer. Alt som bedst</l>
 <lb/><l>kom bejlere fra øst og bejlere fra vest;</l>
-<lb/><l>og så &dash; så blev jeg min husbonds viv.</l></HIS:hisSp>
+<lb/><l>og så – så blev jeg min husbonds viv.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><l part="I">Å, Margit!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
@@ -1919,11 +1913,11 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l>Her gæsted os riddere, <app type="external" subtype="word" xml:id="varG2-80"><HIS:hisRdg wit="G283 G2FU" var="N">herrer</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">herser</HIS:hisRdg></app> og fruer;</l>
 <lb/><l>her sang mig til ære så mangen skald;</l>
 <lb/><l>men der var ikke én, som ret mig forstod,<HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_58main"/></l>
-<lb/><l>ikke én, som fatted min jammer; &dash;</l>
+<lb/><l>ikke én, som fatted min jammer; –</l>
 <lb/><l>jeg frøs, som sad jeg i bergets kammer;</l>
 <lb/><l>dog værked mit hoved, dog brændte mit blod.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><l part="I">Men din husbond &dash;?</l></HIS:hisSp>
+<lb/><l part="I">Men din husbond –?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><l part="F">Han var mig aldrig <app type="external" subtype="interpunction" xml:id="varG2-81"><HIS:hisRdg wit="G283 G28951" var="N">kær;</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">kær!</HIS:hisRdg></app></l>
 <lb/><l>hans guld var alt, hvad mig hilded;</l>
@@ -1938,14 +1932,14 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l>thi du måtte mindst af alle den vide.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(bevæget)</HIS:hisStage>.</HIS:spOpener>
-<lb/><l>Og derfor var det, du vendte dig bort &dash;.</l></HIS:hisSp>
+<lb/><l>Og derfor var det, du vendte dig bort –.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(uden at se på ham)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l>Jeg tænkte, du kom for at spotte min vånde.</l></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top">35</fw>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><l part="I">Margit, kunde du tro &dash;?</l></HIS:hisSp>
+<lb/><l part="I">Margit, kunde du tro –?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><l part="F">Nu, kort</l>
 <lb/><l>og godt, der var grund nok for hånde.</l>
@@ -1955,16 +1949,16 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l>som et barn under abildgrene.</l>
 <lb/><HIS:hisStage>(farer sammen i skræk.)</HIS:hisStage>
 <lb/><l>Ah, hvad falder mig ind! Hvor kunde jeg
-<lb/>glemme &dash;!</l>
+<lb/>glemme –!</l>
 <lb/><l>Alle helgene se til mig nådigt ned!</l>
-<lb/><l part="I">Fredløs, sagde du &dash;?</l></HIS:hisSp>
+<lb/><l part="I">Fredløs, sagde du –?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(smiler)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l part="F">Nu er jeg hjemme;</l>
 <lb/><l>her lader mig kongens mænd med fred.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
-<lb/><l>Men du, som nylig stod højt i <app type="external" subtype="interpunction" xml:id="varG2-82"><HIS:hisRdg wit="G283 G2FU" var="N">agt,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">agt;</HIS:hisRdg></app> &dash;</l>
-<lb/><l part="I">sig mig hvorlunde &dash;?</l></HIS:hisSp><HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_59main"/>
+<lb/><l>Men du, som nylig stod højt i <app type="external" subtype="interpunction" xml:id="varG2-82"><HIS:hisRdg wit="G283 G2FU" var="N">agt,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">agt;</HIS:hisRdg></app> –</l>
+<lb/><l part="I">sig mig hvorlunde –?</l></HIS:hisSp><HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_59main"/>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><l part="F">Snart er det sagt.</l>
 <lb/><l>Du <app type="external" subtype="word" xml:id="varG2-148"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app>, jeg var i de franske <app type="external" subtype="interpunction" xml:id="varG2-83"><HIS:hisRdg wit="G283 G2FU" var="N">riger,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">riger</HIS:hisRdg></app></l>
@@ -1977,15 +1971,15 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l>og skatte til Norge som kongens brud.</l>
 <lb/><l>Herr Audun var så fager og prud;</l>
 <lb/><l>prinsessen var den livsaligste kvinde.</l>
-<lb/><l>Hendes øjne kunde bede den varmeste bøn; &dash;</l>
+<lb/><l>Hendes øjne kunde bede den varmeste bøn; –</l>
 <lb/><l>de talte tilhobe, de hvisked i løn.</l>
-<lb/><l>Hvorom? Det var svært at finde. &dash;</l>
+<lb/><l>Hvorom? Det var svært at finde. –</l>
 <lb/><l>Det var sig en nat; jeg læned mig tyst</l>
 <lb/><l>op imod snekkens side;</l>
 <lb/><l>mine tanker stævned mod Norges kyst</l>
 <lb/><l>alt med de måger hvide.</l>
-<lb/><l>Da hvisked to røster bag ved min ryg; &dash;</l>
-<lb/><l>jeg vendte mig om; &dash; det var ham og hende;</l>
+<lb/><l>Da hvisked to røster bag ved min ryg; –</l>
+<lb/><l>jeg vendte mig om; – det var ham og hende;</l>
 <lb/><l>de så mig ikke; jeg sad så tryg;</l>
 <lb/><l>dog kunde jeg begge kende.</l>
 <lb/><l>Hun så på ham med et klageligt blik</l>
@@ -1997,28 +1991,28 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l>Genmæled herr Audun; hun svared <app type="external" subtype="word" xml:id="varG2-84"><HIS:hisRdg wit="G283 G2FU" var="N">ham</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">han</HIS:hisRdg></app> kæk,</l>
 <lb/><l>svared med ord så hede, så vilde;</l>
 <lb/><l>jeg så hendes øjne som stjerner spille;</l>
-<lb/><l part="I">hun bad ham &dash;</l>
+<lb/><l part="I">hun bad ham –</l>
 <lb/><HIS:hisStage>(afbrydende.)</HIS:hisStage>
 <lb/><l part="F">Det greb mig med rædsel og skræk.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
-<lb/><l part="I">Hun bad &dash;?</l></HIS:hisSp>
+<lb/><l part="I">Hun bad –?</l></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top">37</fw>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><l part="F">Jeg <app type="external" subtype="word" xml:id="varG2-169"><HIS:hisRdg wit="G283 G28951" var="N">fór</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">foer</HIS:hisRdg></app> op; i hast de forsvandt;</l>
-<lb/><l>alene stod jeg på skibets dæk; &dash;<HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_60main"/></l>
+<lb/><l>alene stod jeg på skibets dæk; –<HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_60main"/></l>
 <lb/><HIS:hisStage>(tager en liden flaske frem.)</HIS:hisStage>
 <lb/><l>men hvor de havde siddet, denne jeg fandt.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
-<lb/><l part="I">Og den &dash;?</l></HIS:hisSp>
+<lb/><l part="I">Og den –?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(med dæmpet stemme)</HIS:hisStage>.</HIS:spOpener>
-<lb/><l part="F">Den rummer en gådefuld saft; &dash;</l>
-<lb/><l>en dråbe deraf i din uvens bæger, &dash;</l>
+<lb/><l part="F">Den rummer en gådefuld saft; –</l>
+<lb/><l>en dråbe deraf i din uvens bæger, –</l>
 <lb/><l>så sagtelig sygner hans livsenskraft,</l>
 <lb/><l>og intet i verden ham hjælper og læger.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
-<lb/><l part="I">Men sig mig &dash;?</l></HIS:hisSp>
+<lb/><l part="I">Men sig mig –?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(hviskende)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l part="F">Den var for kongen bestemt.</l></HIS:hisSp>
@@ -2026,26 +2020,26 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l part="I">Alle helgener!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(idet han atter forvarer flasken)</HIS:hisStage>.</HIS:spOpener>
-<lb/><l part="F">Vel, at jeg fik den gemt. &dash;</l>
+<lb/><l part="F">Vel, at jeg fik den gemt. –</l>
 <lb/><l>Tre dage efter var farten tilende.</l>
 <lb/><l>Så lønligt flygted jeg med mine svende;</l>
 <pb/>
 <lb/><fw type="page" place="top">38</fw>
 <lb/><l>jeg vidste jo nok, i kongens hal</l>
-<lb/><l>vilde Audun listelig volde mit fald, &dash;</l>
-<lb/><l part="I">vilde forklage mig &dash;</l></HIS:hisSp>
+<lb/><l>vilde Audun listelig volde mit fald, –</l>
+<lb/><l part="I">vilde forklage mig –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><l part="F">Nu er forbi</l>
 <lb/><l>din værste nød; snart er alt ved det gamle.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><l>Alt? Nej, Margit, &dash; dengang var du fri.</l></HIS:hisSp>
+<lb/><l>Alt? Nej, Margit, – dengang var du fri.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
-<lb/><l part="I">Du mener &dash;?</l></HIS:hisSp>
+<lb/><l part="I">Du mener –?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><l part="F">Jeg? Intet. Å, lad mig samle</l>
 <lb/><l>mine tanker; jeg er så frejdig og fro</l>
 <lb/><l>fordi jeg, som fordum, er hos eder to.</l>
-<lb/><l part="I">Men, sig mig, &dash; Signe &dash;?</l></HIS:hisSp>
+<lb/><l part="I">Men, sig mig, – Signe –?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(peger smilende mod døren til venstre)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l part="F">Hun kommer snart.</l>
@@ -2059,19 +2053,19 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(ser efter ham)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Hvor han er fager og mandig. <HIS:hisStage>(med et suk.)</HIS:hisStage>
-<lb/>Der er ikke megen lighed mellem ham og &dash;
+<lb/>Der er ikke megen lighed mellem ham og –
 <lb/><HIS:hisStage>(rydder lidt op ved drikkebordet, men standser igen dermed.)</HIS:hisStage>
 <lb/>Dengang var <HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_61main"/>du fri, sagde han. Ja, dengang!
 <lb/><HIS:hisStage>(kort taushed.)</HIS:hisStage> Det var en sælsom fortælling, den
-<lb/>om <app type="external" subtype="interpunction" xml:id="varG2-85"><HIS:hisRdg wit="G283 G2FU" var="N">prinsessen,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">prinsessen;</HIS:hisRdg></app> som &dash;. Hun havde en anden
-<lb/>kær, og så &dash;. Ja, disse kvinder i de fremmede
-<lb/>lande, &dash; jeg har hørt det før, &dash; de er ikke
+<lb/>om <app type="external" subtype="interpunction" xml:id="varG2-85"><HIS:hisRdg wit="G283 G2FU" var="N">prinsessen,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">prinsessen;</HIS:hisRdg></app> som –. Hun havde en anden
+<lb/>kær, og så –. Ja, disse kvinder i de fremmede
+<lb/>lande, – jeg har hørt det før, – de er ikke
 <lb/>veke som vi; de ræddes ikke for at gøre en
 <lb/>tanke til dåd. <HIS:hisStage>(tager et bæger, som står på bordet.)</HIS:hisStage> Af
 <lb/>dette bæger drak Gudmund og jeg på et
 <lb/>frydeligt <app type="external" subtype="interpunction" xml:id="varG2-86"><HIS:hisRdg wit="G283 G2FU" var="N">gensyn,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">gensyn</HIS:hisRdg></app> da han rejste. Det er fast det
 <lb/>eneste arvestykke, jeg bragte med til Solhaug.
-<lb/><HIS:hisStage>(sætter bægeret ind i et vægskab.)</HIS:hisStage> Hvor blid denne som&typHyp;
+<lb/><HIS:hisStage>(sætter bægeret ind i et vægskab.)</HIS:hisStage> Hvor blid denne som‐
 <lb/>merdag er. Her er så lyst herinde. Så lifligt
 <lb/>har ikke solen skinnet i tre år.</p></HIS:hisSp>
 <lb/><HIS:hisStage>(<HIS:stageRole who="SIGNE">Signe</HIS:stageRole>, og efter hende <HIS:stageRole who="GUDMUND">Gudmund</HIS:stageRole> kommer ind fra venstre.)</HIS:hisStage>
@@ -2083,13 +2077,13 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l>Ser du; mens fjernt fra bygden du vandred,</l>
 <lb/><l>har også <emph>hun</emph> sig så stærkt forandret.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><l>Tilvisse! Men at hun skulde &dash;! Nej, nej,</l>
+<lb/><l>Tilvisse! Men at hun skulde –! Nej, nej,</l>
 <pb/>
 <lb/><fw type="page" place="top">40</fw>
 <lb/><l>det var dog aldrig faldet mig ind.</l>
 <lb/><HIS:hisStage>(griber Signes hænder og ser på hende.)</HIS:hisStage>
 <lb/><l>Og dog, dit uskyldige barnesind</l>
-<lb/><l>læser jeg endnu i øjnene blå; &dash;</l>
+<lb/><l>læser jeg endnu i øjnene blå; –</l>
 <lb/><l>hvor kan jeg da længer tvile derpå!</l>
 <lb/><l>Jeg må le, når jeg mindes, hvor tidt jeg har</l>
 <lb/><l>tænkt dig sålunde, som dengang jeg bar</l>
@@ -2097,8 +2091,8 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l>nu er du en huldre, som kogler og gækker.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>
 <lb/><HIS:hisStage>(truer med fingeren)</HIS:hisStage>.</HIS:spOpener>
-<lb/><l>Ja, vogt dig! Hvis hulderens harme du vækker, &dash;</l>
-<lb/><l>pas på, &dash; hun hilder dig i sit garn!</l></HIS:hisSp>
+<lb/><l>Ja, vogt dig! Hvis hulderens harme du vækker, –</l>
+<lb/><l>pas på, – hun hilder dig i sit garn!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(hen for sig)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l>Næsten bæres mig for, som det alt var sket.</l></HIS:hisSp>
@@ -2120,14 +2114,14 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><HIS:hisStage>(griber den)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l part="F">Min harpe! Så blank som før!</l>
 <lb/><HIS:hisStage>(slår nogle toner.)</HIS:hisStage>
-<lb/><l>Der er endnu klang i de gamle strenge; &dash;</l>
-<lb/><l>nu skal du ikke længer på væggen hænge &dash;</l></HIS:hisSp>
+<lb/><l>Der er endnu klang i de gamle strenge; –</l>
+<lb/><l>nu skal du ikke længer på væggen hænge –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(ser ud i baggrunden)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l part="I">Hist kommer vore gæster.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>
 <lb/><HIS:hisStage>(mens Gudmund indleder sin sang)</HIS:hisStage>.</HIS:spOpener>
-<lb/><l part="F">Hys, &dash; stille! Å hør!</l></HIS:hisSp>
+<lb/><l part="F">Hys, – stille! Å hør!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(synger)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l rend="indent1">Jeg vandred i lien så tung og så ene;</l>
@@ -2148,9 +2142,9 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l rend="indent1">fæster den rødder i hjertets grund.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(adspredt)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Talte du til mig? &dash; Jeg hørte ikke ret &dash;?</p></HIS:hisSp>
+<lb/><p>Talte du til mig? – Jeg hørte ikke ret –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
-<lb/><p>Jeg? Nej visst ikke. Jeg mente kun &dash;</p>
+<lb/><p>Jeg? Nej visst ikke. Jeg mente kun –</p>
 <lb/><HIS:hisStage>(synker atter hen som i drømme.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(halv højt; ser frem for sig)</HIS:hisStage>.</HIS:spOpener>
@@ -2158,7 +2152,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l rend="indent1">den næres ved tanker og sorger og sange.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>
 <lb/><HIS:hisStage>(opvågnende)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Du <app type="external" subtype="interpunction" xml:id="varG2-88"><HIS:hisRdg wit="G283 G2FU" var="N">siger,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">siger</HIS:hisRdg></app> at &dash;?</p></HIS:hisSp><HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_63main"/>
+<lb/><p>Du <app type="external" subtype="interpunction" xml:id="varG2-88"><HIS:hisRdg wit="G283 G2FU" var="N">siger,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">siger</HIS:hisRdg></app> at –?</p></HIS:hisSp><HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_63main"/>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(farer med hånden over panden)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Å, det var intet. Kom; vi må gå vore
@@ -2216,18 +2210,18 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><p>Jeg <app type="external" subtype="word" xml:id="varG2-149"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app>, hvad jeg gør. I hans egen stue
 <lb/>har jeg søgt ham, og der var han ikke at finde.
 <lb/>Og dersom jeg nu forsøgte på at gribe ham
-<lb/><emph>her</emph>, &dash; mener du <app type="external" subtype="interpunction" xml:id="varG2-89"><HIS:hisRdg wit="G283 G2FU" var="N">da,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">da</HIS:hisRdg></app> at fru Margit var tilsinds
+<lb/><emph>her</emph>, – mener du <app type="external" subtype="interpunction" xml:id="varG2-89"><HIS:hisRdg wit="G283 G2FU" var="N">da,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">da</HIS:hisRdg></app> at fru Margit var tilsinds
 <lb/>at give mig Signe til hustru?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ERIK"><HIS:spOpener><speaker>Erik</speaker>
 <lb/><HIS:hisStage>(langtrukket)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Nej, med det gode blev det vel ikke, men &dash;</p></HIS:hisSp>
+<lb/><p>Nej, med det gode blev det vel ikke, men –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
 <lb/><p>Og med det onde gad jeg nødig gå frem.
 <lb/>Gudmund er jo også min ven fra gamle tider;
 <lb/>og han kan <HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_65main"/>gøre mig nytte. <HIS:hisStage>(bestemt.)</HIS:hisStage> Derfor
 <lb/>bliver det, som jeg har sagt. Ikveld skal ingen
-<lb/>her på gården vide, at Gudmund Alfsøn er fred&typHyp;
-<lb/>løs; &dash; imorgen får han se at hjælpe sig selv.</p></HIS:hisSp>
+<lb/>her på gården vide, at Gudmund Alfsøn er fred‐
+<lb/>løs; – imorgen får han se at hjælpe sig selv.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ERIK"><HIS:spOpener><speaker>Erik</speaker>.</HIS:spOpener>
 <lb/><p>Ja, men kongens lov?</p></HIS:hisSp>
 <pb/>
@@ -2236,9 +2230,9 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><p>Å, kongens lov! Du <app type="external" subtype="word" xml:id="varG2-150"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app> lige så godt som
 <lb/>jeg, kongens lov agtes ikke stort her inde i
 <lb/>bygderne. Skulde kongens lov gælde, så måtte
-<lb/>mangen staut karl iblandt os bøde både for brude&typHyp;
-<lb/>rov og manddrab. &dash; Kom nu her! Jeg gad
-<lb/>vide, hvor Signe &dash;?</p>
+<lb/>mangen staut karl iblandt os bøde både for brude‐
+<lb/>rov og manddrab. – Kom nu her! Jeg gad
+<lb/>vide, hvor Signe –?</p>
 <lb/><HIS:hisStage>(de går ud til højre.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisStage>(<HIS:stageRole who="GUDMUND">Gudmund</HIS:stageRole> og <HIS:stageRole who="SIGNE">Signe</HIS:stageRole> kommer nedover fodstien i baggrunden.)</HIS:hisStage>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
@@ -2248,7 +2242,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l>Signe, min fagre, min yndelige lilje!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>
 <lb/><HIS:hisStage>(med glad og stille forundring)</HIS:hisStage>.</HIS:spOpener>
-<lb/><l part="I">Jeg &dash; jeg er ham kær!</l></HIS:hisSp>
+<lb/><l part="I">Jeg – jeg er ham kær!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><l part="F">Det er ingen som du.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
@@ -2262,18 +2256,18 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><fw type="page" place="top">47</fw>
 <lb/><l>tænkte jeg trofast både vinter og sommer</l>
 <lb/><l>på eder to, mine fagreste blommer.</l>
-<lb/><l>Men jeg kunde ikke fuldt mine tanker forstå; &dash;</l>
-<lb/><l>da jeg rejste, var du som alferne små, &dash;</l>
+<lb/><l>Men jeg kunde ikke fuldt mine tanker forstå; –</l>
+<lb/><l>da jeg rejste, var du som alferne små, –</l>
 <lb/><l>som alferne små, der færdes i skove</l>
 <lb/><l>og lege som <app type="external" subtype="interpunction" xml:id="varG2-91"><HIS:hisRdg wit="G283 G2FU" var="N">bedst,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">bedst</HIS:hisRdg></app> når vi drømme og sove.</l>
 <lb/><l>Men idag, da jeg stod i Solhaugs stue,</l>
-<lb/><l>da forstod jeg mig selv tilfulde, &dash;</l>
+<lb/><l>da forstod jeg mig selv tilfulde, –</l>
 <lb/><l>forstod, at Margit var så stolt en frue,</l>
 <lb/><l>men du den allerdejligste blandt ungmøer hulde.</l></HIS:hisSp><HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_66main"/>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>,
 <lb/><HIS:hisStage>(der kun halvt har lyttet til hans ord)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l>Jeg mindes, vi sad ved arnens glød</l>
-<lb/><l>en vinterkveld, &dash; nu er det længe siden; &dash;</l>
+<lb/><l>en vinterkveld, – nu er det længe siden; –</l>
 <lb/><l>du sang for mig om den jomfru liden,</l>
 <lb/><l>som nøkken havde lokket ned i sit skød.</l>
 <lb/><l>Der glemte hun bort både fader og moder;</l>
@@ -2287,7 +2281,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l>Den jomfru liden på tjernets bund</l>
 <lb/><l>vågned derved af sin tunge blund;</l>
 <lb/><l>nøkken måtte slippe hende ud af sit skød;</l>
-<lb/><l>mellem liljerne hen over vandet hun flød; &dash;</l>
+<lb/><l>mellem liljerne hen over vandet hun flød; –</l>
 <pb/>
 <lb/><fw type="page" place="top">48</fw>
 <lb/><l>da kendte hun igen både himmel og jord,</l>
@@ -2304,17 +2298,17 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l>mig tykkes, jeg kan fuglenes røst forstå,</l>
 <lb/><l>når jeg vandrer med dig under lide.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><l>Så mægtig er elskov; &dash; i menneskets bryst</l>
-<lb/><l>vækker den tanker og længsel og lyst. &dash;</l>
+<lb/><l>Så mægtig er elskov; – i menneskets bryst</l>
+<lb/><l>vækker den tanker og længsel og lyst. –</l>
 <lb/><l>Men kom, lad os begge til din søster gå ind.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>
 <lb/><HIS:hisStage>(undsélig)</HIS:hisStage>.</HIS:spOpener>
-<lb/><l part="I">Vil du sige hende &dash;?</l></HIS:hisSp>
+<lb/><l part="I">Vil du sige hende –?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><l part="F">Alt bør hun kende.</l></HIS:hisSp><HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_67main"/>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>
 <lb/><HIS:hisStage>(som før)</HIS:hisStage>.</HIS:spOpener>
-<lb/><l>Ak, gå da alene; &dash; jeg <app type="external" subtype="word" xml:id="varG2-151"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app> det, min kind</l>
+<lb/><l>Ak, gå da alene; – jeg <app type="external" subtype="word" xml:id="varG2-151"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app> det, min kind</l>
 <lb/><l>vil derinde af blusel brænde.</l></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top">49</fw>
@@ -2323,7 +2317,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
 <lb/><l part="F">Og jeg venter dig her;</l>
 <lb/><HIS:hisStage>(lytter mod højre.)</HIS:hisStage>
-<lb/><l>eller bedre, &dash; nede ved elven, der</l>
+<lb/><l>eller bedre, – nede ved elven, der</l>
 <lb/><l>hører jeg Knut Gæsling; der er piger og svende.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><l part="I">Der bier du?</l></HIS:hisSp>
@@ -2340,18 +2334,18 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l>Herude er det godt; her er det tyst,</l>
 <lb/><l>her svaler mig nattens vinde.</l>
 <lb/><HIS:hisStage>(grublende taushed.)</HIS:hisStage>
-<lb/><l>Denne hæslige tanke &dash;; jeg kan ej forstå &dash;;</l>
+<lb/><l>Denne hæslige tanke –; jeg kan ej forstå –;</l>
 <lb/><l>den følger mig, hvor jeg end monne gå.</l>
-<lb/><l>Flasken, &dash; der rummer en gådefuld saft &dash;?</l>
-<lb/><l>En dråbe deraf i min &dash; uvens bæger, &dash;</l>
+<lb/><l>Flasken, – der rummer en gådefuld saft –?</l>
+<lb/><l>En dråbe deraf i min – uvens bæger, –</l>
 <lb/><l>så sagtelig sygner hans livsenskraft,</l>
 <lb/><l>og intet i verden ham hjælper og læger.</l>
 <lb/><HIS:hisStage>(atter taushed.)</HIS:hisStage>
 <lb/><fw type="sheet" place="bottom-left"><hi rend="spaced">Henrik Ibsen</hi>: Gildet på Solhaug.</fw><fw type="sheet" place="bottom-right">5</fw>
 <pb/>
 <lb/><fw type="page" place="top">50</fw>
-<lb/><l>Vidste <app type="external" subtype="interpunction" xml:id="varG2-92"><HIS:hisRdg wit="G283 G2FU" var="N">jeg,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">jeg</HIS:hisRdg></app> at Gudmund &dash;; havde han mig kær, &dash;</l>
-<lb/><l part="I">da agted jeg lidet &dash;</l></HIS:hisSp>
+<lb/><l>Vidste <app type="external" subtype="interpunction" xml:id="varG2-92"><HIS:hisRdg wit="G283 G2FU" var="N">jeg,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">jeg</HIS:hisRdg></app> at Gudmund –; havde han mig kær, –</l>
+<lb/><l part="I">da agted jeg lidet –</l></HIS:hisSp>
 <lb/><HIS:hisStage>(<HIS:stageRole who="GUDMUND">Gudmund</HIS:stageRole> kommer ud gennem husdøren.)</HIS:hisStage>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><l part="F">Margit, er du der?</l>
@@ -2361,11 +2355,11 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l>Ser du, hvorlunde de tåger hvide</l>
 <lb/><l>sagtelig hen over myren glide?<HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_68main"/></l>
 <lb/><l>Her er ikke hverken mørkt eller lyst;</l>
-<lb/><l part="I">det er midt imellem begge &dash;</l>
+<lb/><l part="I">det er midt imellem begge –</l>
 <lb/><HIS:hisStage>(hen for sig.)</HIS:hisStage>
 <lb/><l part="F">ret som i mit bryst.</l>
 <lb/><HIS:hisStage>(ser på ham.)</HIS:hisStage>
-<lb/><l>Ej sandt, &dash; når du færdes i slig en nat,</l>
+<lb/><l>Ej sandt, – når du færdes i slig en nat,</l>
 <lb/><l>du <app type="external" subtype="word" xml:id="varG2-152"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app> ikke selv hvordan det er fat;</l>
 <lb/><l>men du føler, der rører sig et lønligt liv</l>
 <lb/><l>i busk og i blad, i blomster og siv!</l>
@@ -2377,7 +2371,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l part="F">At jeg var</l>
 <lb/><l>huldren, som sidder i lien derinde.</l>
 <lb/><l>Hvor skulde jeg listigt min trolddom spinde!</l>
-<lb/><l part="I">Tro mig &dash;!</l></HIS:hisSp>
+<lb/><l part="I">Tro mig –!</l></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top">51</fw>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
@@ -2388,7 +2382,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l>Klage og kvæde både nætter og dage!</l>
 <lb/><HIS:hisStage>(med stigende heftighed.)</HIS:hisStage>
 <lb/><l>Hvor skulde jeg lokke den frejdige svend</l>
-<lb/><l>gennem lierne grønne til bergets kammer; &dash;</l>
+<lb/><l>gennem lierne grønne til bergets kammer; –</l>
 <lb/><l>der kunde jeg glemme al verdens jammer;</l>
 <lb/><l>der kunde jeg brænde og leve med min ven!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
@@ -2396,9 +2390,9 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(stedse voldsommere)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l part="F">Ved midnatsstund</l>
-<lb/><l>sov vi i lien den sødeste blund; &dash;</l>
-<lb/><l>og rammed mig <app type="external" subtype="interpunction" xml:id="varG2-93"><HIS:hisRdg wit="G283 G2FU" var="N">døden,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">døden</HIS:hisRdg></app> når solen randt, &dash;</l>
-<lb/><l>hvor lystigt at dø på slig vis; &dash; ej sandt?</l></HIS:hisSp>
+<lb/><l>sov vi i lien den sødeste blund; –</l>
+<lb/><l>og rammed mig <app type="external" subtype="interpunction" xml:id="varG2-93"><HIS:hisRdg wit="G283 G2FU" var="N">døden,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">døden</HIS:hisRdg></app> når solen randt, –</l>
+<lb/><l>hvor lystigt at dø på slig vis; – ej sandt?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><l part="I">Du er syg!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
@@ -2411,25 +2405,25 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <pb/>
 <lb/><fw type="page" place="top">52</fw>
 <lb/><l><app type="external" subtype="word" xml:id="varG2-95"><HIS:hisRdg wit="G283 G28951" var="N">Du</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">du</HIS:hisRdg></app> har endnu det samme ustyrlige sind,</l>
-<lb/><l part="I">som fordum &dash;</l></HIS:hisSp>
+<lb/><l part="I">som fordum –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(pludselig alvorlig)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l part="F">Du må ikke undres derover;</l>
 <lb/><l>det er kun ved midnat, når menneskene sover;</l>
 <lb/><l>om dagen er jeg så ræd som en hind.</l>
 <lb/><l>Og hvad er det vel mere? Mindes dig kun</l>
-<lb/><l>hine kvinder i fremmede lande, &dash; hun,</l>
-<lb/><l>den fagre prinsesse; &dash; se, <emph>hun</emph> var vild;</l>
+<lb/><l>hine kvinder i fremmede lande, – hun,</l>
+<lb/><l>den fagre prinsesse; – se, <emph>hun</emph> var vild;</l>
 <lb/><l>mod hende er jeg som lammet mild.</l>
 <lb/><l>At længes og hige hun voved ej blot;</l>
-<lb/><l part="I">hun pønsed på dåd; og se <emph>det</emph> &dash;</l></HIS:hisSp>
+<lb/><l part="I">hun pønsed på dåd; og se <emph>det</emph> –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><l part="F">Det er godt,</l>
 <lb/><l>du minder mig derom; jeg vil ikke længer</l>
 <lb/><l>gemme på det, jeg så lidet trænger.</l>
 <lb/><HIS:hisStage>(tager flasken frem.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
-<lb/><l part="I">Flasken! Du mener &dash;?</l></HIS:hisSp>
+<lb/><l part="I">Flasken! Du mener –?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><l part="F">Jeg gemte den, fordi</l>
 <lb/><l>jeg tænkte, med den at løse mig fri,</l>
@@ -2444,9 +2438,9 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(griber hans arm)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l part="I">Nej vent! Lad mig få den.</l>
-<lb/><l part="M"><app type="external" subtype="word" xml:id="varG2-174"><HIS:hisRdg wit="G283 G2FU" var="N">Se så!</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y"><note resp="editor" type="variant">Linjen er i NBO Ms.8&deg; 951 plassert til slutt i Gudmunds foregående replikk rett etter <q>og livet at friste</q></note></HIS:hisRdg></app></l><note resp="editor">Linja mangler innrykk (er midterste del av en verslinje).</note></HIS:hisSp>
+<lb/><l part="M"><app type="external" subtype="word" xml:id="varG2-174"><HIS:hisRdg wit="G283 G2FU" var="N">Se så!</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y"><note resp="editor" type="variant">Linjen er i NBO Ms.8° 951 plassert til slutt i Gudmunds foregående replikk rett etter <q>og livet at friste</q></note></HIS:hisRdg></app></l><note resp="editor">Linja mangler innrykk (er midterste del av en verslinje).</note></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><l part="F">Du vil &dash;?</l></HIS:hisSp>
+<lb/><l part="F">Du vil –?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><l>Skænke den til nøkken dernede.</l>
 <lb/><l>Han har mig så tidt forlystet med sit spil</l>
@@ -2460,7 +2454,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l part="F">Kasted du den ud?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(idet hun skjuler flasken)</HIS:hisStage>.</HIS:spOpener>
-<lb/><l part="I">Ja visst; du så jo &dash;</l>
+<lb/><l part="I">Ja visst; du så jo –</l>
 <lb/><HIS:hisStage>(hvisker, går hen imod huset.)</HIS:hisStage>
 <lb/><l part="F">Nu hjælpe mig gud!</l>
 <lb/><l>Nu må det briste eller bære!</l>
@@ -2480,9 +2474,9 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l>Den dag de bar hende til jorden hen,</l>
 <lb/><l>han blødede ved sit sværd.</l>
 <lb/><l>Hun jordedes syd under kirkevæg,</l>
-<lb/><l>han stædtes til mulde i nord; &dash;</l>
+<lb/><l>han stædtes til mulde i nord; –</l>
 <lb/><l>der trivedes fordum hverken siljer eller hæg</l>
-<lb/><l>alt i den viede jord; &dash;</l>
+<lb/><l>alt i den viede jord; –</l>
 <lb/><l>men næste vår på de grave to</l>
 <lb/><l>der vokste de fagreste liljeblommer;</l>
 <lb/><l>over kirketaget så monne de gro</l>
@@ -2490,7 +2484,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l part="I">Kan du tyde mig det kvæde?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(ser forskende på hende)</HIS:hisStage>.</HIS:spOpener>
-<lb/><l part="F">Jeg <app type="external" subtype="word" xml:id="varG2-154"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app> ikke ret &dash;</l></HIS:hisSp>
+<lb/><l part="F">Jeg <app type="external" subtype="word" xml:id="varG2-154"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app> ikke ret –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><l>Vel sandt, det kan tydes på mange sæt;</l>
 <lb/><l>men jeg tror nu den retteste mening er:</l>
@@ -2499,25 +2493,25 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><fw type="page" place="top">55</fw>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(sagte)</HIS:hisStage>.</HIS:spOpener>
-<lb/><l>Alle helgener, dersom &dash;! Da er det på <app type="external" subtype="interpunction" xml:id="varG2-97"><HIS:hisRdg wit="G283 G2FU" var="N">tide,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">tide</HIS:hisRdg></app></l>
+<lb/><l>Alle helgener, dersom –! Da er det på <app type="external" subtype="interpunction" xml:id="varG2-97"><HIS:hisRdg wit="G283 G2FU" var="N">tide,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">tide</HIS:hisRdg></app></l>
 <lb/><l>at hun får det hele at vide.</l>
 <lb/><HIS:hisStage>(højt.)</HIS:hisStage>
-<lb/><l>Svar mig, Margit, &dash; vil du mit held?</l></HIS:hisSp><HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_71main"/>
+<lb/><l>Svar mig, Margit, – vil du mit held?</l></HIS:hisSp><HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_71main"/>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(glad, bevæget)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l part="I">Om jeg vil!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><l n="1" part="M">Ja, jeg mener &dash;</l></HIS:hisSp>
+<lb/><l n="1" part="M">Ja, jeg mener –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><l n="2" part="M">Sig frem!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><l part="F">Nu vel.</l>
-<lb/><l>Du kunde gøre mig så rig og så fro &dash;</l></HIS:hisSp>
+<lb/><l>Du kunde gøre mig så rig og så fro –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(frembrydende)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l part="I">Gudmund!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><l part="F">Hør mig; jeg vil dig fortro &dash;</l></HIS:hisSp>
+<lb/><l part="F">Hør mig; jeg vil dig fortro –</l></HIS:hisSp>
 <lb/><HIS:hisStage>(Han standser pludselig. Stemmer og latter høres henne ved
 <lb/>elvebredden.)</HIS:hisStage>
 <lb/><HIS:hisStage>(<HIS:stageRole who="SIGNE">Signe</HIS:stageRole> og nogle <HIS:stageRole>unge piger</HIS:stageRole> kommer fra højre. <HIS:stageRole who="KNUT">Knut</HIS:stageRole>, <HIS:stageRole who="ERIK">Erik</HIS:stageRole> og
@@ -2532,8 +2526,8 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/>imidlertid ind i huset.)</HIS:hisStage>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(for sig selv)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Gøre ham så rig og fro &dash;! Hvad kan han
-<lb/>andet mene, end &dash;! <HIS:hisStage>(halvhøjt.)</HIS:hisStage> Signe, &dash; kære,
+<lb/><p>Gøre ham så rig og fro –! Hvad kan han
+<lb/>andet mene, end –! <HIS:hisStage>(halvhøjt.)</HIS:hisStage> Signe, – kære,
 <lb/>kære søster!</p></HIS:hisSp>
 <lb/><HIS:hisStage>(Hun griber <HIS:stageRole who="SIGNE">Signe</HIS:stageRole> om livet og går samtalende med hende op mod
 <lb/>baggrunden.)</HIS:hisStage>
@@ -2551,7 +2545,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><HIS:hisStage>(han går ind i huset.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>
 <lb/><HIS:hisStage>(kommer nærmere.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Hør, Gudmund &dash;</p></HIS:hisSp>
+<lb/><p>Hør, Gudmund –</p></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top">57</fw>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
@@ -2561,13 +2555,13 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
 <lb/><p>Tør? Vær du rolig for det; Knut Gæsling
 <lb/>tør alt, hvad han vil. Nej, det er noget andet.
-<lb/>&dash; Du <HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_72main"/><app type="external" subtype="word" xml:id="varG2-155"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app> jo, jeg gælder her i bygden for en
-<lb/>vild, ustyrlig karl &dash;</p></HIS:hisSp>
+<lb/>– Du <HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_72main"/><app type="external" subtype="word" xml:id="varG2-155"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app> jo, jeg gælder her i bygden for en
+<lb/>vild, ustyrlig karl –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><p>Ja, og hvis ikke rygtet lyver, så &dash;</p></HIS:hisSp>
+<lb/><p>Ja, og hvis ikke rygtet lyver, så –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
 <lb/><p>Å nej, mangt og meget kan jo være sandt
-<lb/>nok. Men nu skal du høre &dash;</p>
+<lb/>nok. Men nu skal du høre –</p>
 <lb/><HIS:hisStage>(de går i samtale opover mod baggrunden.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>
 <lb/><HIS:hisStage>(til <HIS:stageRole who="MARGIT">Margit</HIS:stageRole>, idet de kommer nedover ved huset)</HIS:hisStage>.</HIS:spOpener>
@@ -2575,21 +2569,21 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/>uventet lykke var bleven dig til del. Hvad er
 <lb/>det vel, du mener?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
-<lb/><p>Signe, &dash; du er et barn endnu; du <app type="external" subtype="word" xml:id="varG2-156"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app>
+<lb/><p>Signe, – du er et barn endnu; du <app type="external" subtype="word" xml:id="varG2-156"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app>
 <lb/><app type="external" subtype="interpunction" xml:id="varG2-98"><HIS:hisRdg wit="G283 G2FU" var="N">ikke</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">ikke,</HIS:hisRdg></app> hvad det vil sige at færdes i en evig rædsel
-<lb/>for at &dash;. <HIS:hisStage>(pludselig afbrydende.)</HIS:hisStage> Tænk dig, Signe,
+<lb/>for at –. <HIS:hisStage>(pludselig afbrydende.)</HIS:hisStage> Tænk dig, Signe,
 <lb/>at måtte visne og dø uden at have levet!</p></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top">58</fw>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>
 <lb/><HIS:hisStage>(ser forundret og hovedrystende på hende)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Nej <app type="external" subtype="interpunction" xml:id="varG2-99"><HIS:hisRdg wit="G283 G2FU" var="N">men,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">men;</HIS:hisRdg></app> Margit &dash;?</p></HIS:hisSp>
+<lb/><p>Nej <app type="external" subtype="interpunction" xml:id="varG2-99"><HIS:hisRdg wit="G283 G2FU" var="N">men,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">men;</HIS:hisRdg></app> Margit –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
-<lb/><p>Ja, ja, du fatter det ikke; lige godt &dash;</p>
+<lb/><p>Ja, ja, du fatter det ikke; lige godt –</p>
 <lb/><HIS:hisStage>(de går samtalende opover igen.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisStage>(<HIS:stageRole who="GUDMUND">Gudmund</HIS:stageRole> og <HIS:stageRole who="KNUT">Knut</HIS:stageRole> kommer nedover på den anden side.)</HIS:hisStage>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><p>Nu, hvis det er sådan fat, &dash; dersom dette
+<lb/><p>Nu, hvis det er sådan fat, – dersom dette
 <lb/>vilde liv ikke huer dig længer, så vil jeg skænke
 <lb/>dig det bedste råd, som nogen ven har i eje:
 <lb/>fæst dig en ærbar ungmø til hustru.</p></HIS:hisSp>
@@ -2598,38 +2592,38 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/>er lige det samme, jeg har tænkt på?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><p>Held og lykke da, Knut Gæsling! Og nu
-<lb/>må du vide, at også jeg &dash;</p></HIS:hisSp>
+<lb/>må du vide, at også jeg –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
 <lb/><p>Du? Går du også med slige tanker?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><p>Ja vel gør jeg; &dash; men kongens vrede &dash;;
-<lb/>jeg er jo en fredløs mand &dash;</p></HIS:hisSp>
+<lb/><p>Ja vel gør jeg; – men kongens vrede –;
+<lb/>jeg er jo en fredløs mand –</p></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top">59</fw>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
 <lb/><p>Ej, det skal du lidet agte. Der er jo ingen
 <lb/>her, uden fru Margit, som <app type="external" subtype="word" xml:id="varG2-157"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app> besked om det
 <lb/>endnu; og så længe jeg er din ven, så har du
-<lb/>en, du fuldt kan lide på. Hør nu bare &dash;</p>
+<lb/>en, du fuldt kan lide på. Hør nu bare –</p>
 <lb/><HIS:hisStage>(han fortsætter hviskende, idet de igen går opover.)</HIS:hisStage></HIS:hisSp><HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_73main"/>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>,
 <lb/><HIS:hisStage>(idet hun og <HIS:stageRole who="MARGIT">Margit</HIS:stageRole> atter kommer tilbage)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Men så sig mig da, Margit &dash;!</p></HIS:hisSp>
+<lb/><p>Men så sig mig da, Margit –!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><p>Mere tør jeg ikke sige dig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
 <lb/><p>Da vil jeg være ærligere mod dig. Men
-<lb/>svar mig først på et. <HIS:hisStage>(undsélig, nølende.)</HIS:hisStage> Er der &dash;
+<lb/>svar mig først på et. <HIS:hisStage>(undsélig, nølende.)</HIS:hisStage> Er der –
 <lb/>er der ingen, som har sagt dig noget om mig?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><p>Om dig? Nej; hvad skulde det være?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>,
 <lb/><HIS:hisStage>(som før; ser ned for sig)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Du spurgte mig imorges: hvis en bejler
-<lb/>red sig hid &dash;?</p></HIS:hisSp>
+<lb/>red sig hid –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
-<lb/><p>Det er sandt. <HIS:hisStage>(sagte.)</HIS:hisStage> Knut Gæsling &dash;;
-<lb/>skulde han allerede &dash;? <HIS:hisStage>(spændt, til <HIS:stageRole who="SIGNE">Signe</HIS:stageRole>.)</HIS:hisStage> Nu?
+<lb/><p>Det er sandt. <HIS:hisStage>(sagte.)</HIS:hisStage> Knut Gæsling –;
+<lb/>skulde han allerede –? <HIS:hisStage>(spændt, til <HIS:stageRole who="SIGNE">Signe</HIS:stageRole>.)</HIS:hisStage> Nu?
 <lb/>Og så?</p></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top">60</fw>
@@ -2637,7 +2631,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><HIS:hisStage>(sagte, jublende)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Bejleren er kommen! Han er kommen,
 <lb/>Margit! Dengang vidste jeg ikke, hvem du
-<lb/>mente; men nu &dash;!</p></HIS:hisSp>
+<lb/>mente; men nu –!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><p>Og hvad har du svaret ham?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
@@ -2646,17 +2640,17 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/>stund, han sagde mig, at han havde mig kær.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><p>Men, Signe, Signe; jeg fatter <app type="external" subtype="interpunction" xml:id="varG2-100"><HIS:hisRdg wit="G283 G2FU" var="N">ikke,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">ikke</HIS:hisRdg></app> at du
-<lb/>så snart &dash;! Du har jo neppe kendt ham
+<lb/>så snart –! Du har jo neppe kendt ham
 <lb/>før idag.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
-<lb/><p>Å, jeg forstår mig endnu så lidet på kær&typHyp;
+<lb/><p>Å, jeg forstår mig endnu så lidet på kær‐
 <lb/>lighed; men det <app type="external" subtype="word" xml:id="varG2-159"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app> jeg, sandt er det, som der
 <lb/>står i visen:</p>
 <lb/><l rend="indent1 line">den spirer så let; i den flygtigste stund</l>
-<lb/><l rend="indent1">fæster den rødder i hjertets grund &dash;</l></HIS:hisSp>
+<lb/><l rend="indent1">fæster den rødder i hjertets grund –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><p>Lad så være. Og når så er, da har jeg
-<lb/>ikke længer nødig at dølge noget for dig. Ah &dash;</p></HIS:hisSp>
+<lb/>ikke længer nødig at dølge noget for dig. Ah –</p></HIS:hisSp>
 <lb/><HIS:hisStage>(Hun standser <app type="external" subtype="interpunction" xml:id="varG2-101"><HIS:hisRdg wit="G283 G2FU" var="N">pludselig,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">pludselig</HIS:hisRdg></app> da hun ser <HIS:stageRole who="KNUT">Knut</HIS:stageRole> og <HIS:stageRole who="GUDMUND">Gudmund</HIS:stageRole> komme
 <lb/>nærmere.)</HIS:hisStage>
 <pb/>
@@ -2674,10 +2668,10 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><HIS:hisStage>(de ryster hinandens hænder.)</HIS:hisStage></HIS:hisSp><HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_74main"/>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
 <lb/><p>Men nu vil vi også nævne, begge to, hvem
-<lb/>det er &dash;</p></HIS:hisSp>
+<lb/>det er –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><p>Godt. Her på Solhaug, mellem alle de
-<lb/>fagre kvinder, har jeg fundet den, som &dash;</p></HIS:hisSp>
+<lb/>fagre kvinder, har jeg fundet den, som –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
 <lb/><p>Jeg lige så. Og jeg fører hende herfra
 <lb/>endnu inat, hvis det gøres behov.</p></HIS:hisSp>
@@ -2708,14 +2702,14 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><HIS:hisStage>(som før, til <HIS:stageRole who="KNUT">Knut</HIS:stageRole>)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Hvad mener du med det?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
-<lb/><p>Det er jo Signe, som jeg vil &dash;</p></HIS:hisSp>
+<lb/><p>Det er jo Signe, som jeg vil –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><p>Signe! Signe er min fæstemø for gud.</p></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top">63</fw>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(med et skrig)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Hende var det! Nej, &dash; nej!</p></HIS:hisSp>
+<lb/><p>Hende var det! Nej, – nej!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(sagte, idet han ser hende)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Margit! Hun har hørt alt.</p></HIS:hisSp>
@@ -2725,7 +2719,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/>nu det hele.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(til <HIS:stageRole who="SIGNE">Signe</HIS:stageRole>)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Men du sagde jo nys &dash;? <HIS:hisStage>(fatter pludselig sammen&typHyp;
+<lb/><p>Men du sagde jo nys –? <HIS:hisStage>(fatter pludselig sammen‐
 <lb/>hængen.)</HIS:hisStage> Gudmund var det, du mente!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>
 <lb/><HIS:hisStage>(forundret)</HIS:hisStage>.</HIS:spOpener>
@@ -2737,7 +2731,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>
 <lb/><HIS:hisStage>(til <HIS:stageRole who="MARGIT">Margit</HIS:stageRole>)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Og imorges, da I fik mit ord <app type="external" subtype="interpunction" xml:id="varG2-104"><HIS:hisRdg wit="G283 G2FU" var="N">på,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">på</HIS:hisRdg></app> at jeg
-<lb/>ingen ufred skulde yppe her ikveld, &dash; I har da
+<lb/>ingen ufred skulde yppe her ikveld, – I har da
 <lb/>vidst, at Gudmund Alfsøn var ivente. Ha, ha,
 <lb/>bild jer aldrig <app type="external" subtype="interpunction" xml:id="varG2-105"><HIS:hisRdg wit="G283 G2FU" var="N">ind,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">ind</HIS:hisRdg></app> at I kan drive gæk med Knut
 <lb/>Gæsling! Signe er bleven mig kær. Endnu
@@ -2745,7 +2739,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><fw type="page" place="top">64</fw>
 <lb/>før middag var det bare mit ubesindige løfte,
 <lb/>som drev mig til at bejle efter hende; men
-<lb/><emph>nu</emph> &dash;</p></HIS:hisSp>
+<lb/><emph>nu</emph> –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>
 <lb/><HIS:hisStage>(til <HIS:stageRole who="MARGIT">Margit</HIS:stageRole>)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Han? <emph>Det</emph> var bejleren, du tænkte på?</p></HIS:hisSp><HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_75main"/>
@@ -2753,16 +2747,16 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><p>Stille, stille!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>
 <lb/><HIS:hisStage>(hårdt og bestemt)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Fru Margit, &dash; I er hendes ældre søster; et
+<lb/><p>Fru Margit, – I er hendes ældre søster; et
 <lb/>svar skal I give mig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(kæmpende med sig selv)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Signe har alt kåret sin brudgom; &dash; jeg kan
+<lb/><p>Signe har alt kåret sin brudgom; – jeg kan
 <lb/>intet svare.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
 <lb/><p>Det er godt; så har jeg ikke mere at gøre
-<lb/>på Solhaug. Men efter midnat, &dash; mærk jer
-<lb/>det, &dash; da er dagen til ende; da tør I nok få
+<lb/>på Solhaug. Men efter midnat, – mærk jer
+<lb/>det, – da er dagen til ende; da tør I nok få
 <lb/>se mig igen, og så får lykken råde for, hvem
 <lb/>der skal føre Signe fra gården, Gudmund eller jeg.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
@@ -2770,13 +2764,13 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/>blodig en pande!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>
 <lb/><HIS:hisStage>(angst)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Gudmund! For alle helgener &dash;!</p></HIS:hisSp>
+<lb/><p>Gudmund! For alle helgener –!</p></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top">65</fw>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
 <lb/><p>Vær spag; vær bare spag, Gudmund Alfsøn!
 <lb/>Før solen rinder skal du være i min magt. Og
-<lb/>hun, &dash; din fæstemø &dash;. <HIS:hisStage>(går hen til døren, vinker og
+<lb/>hun, – din fæstemø –. <HIS:hisStage>(går hen til døren, vinker og
 <lb/>råber dæmpet.)</HIS:hisStage> Erik! Erik, kom her! Afsted til
 <lb/>vore frænder! <HIS:hisStage>(truende, mens Erik viser sig i døren.)</HIS:hisStage> Ja,
 <lb/>ve jer <app type="external" subtype="interpunction" xml:id="varG2-106"><HIS:hisRdg wit="G283 G2FU" var="N">alle,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">alle</HIS:hisRdg></app> når jeg kommer igen!</p></HIS:hisSp>
@@ -2789,15 +2783,15 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><HIS:hisStage>(hviskende)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Vi må begge rejse fra Solhaug endnu inat.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
-<lb/><p>Gud stå mig bi, &dash; du vil &dash;!</p></HIS:hisSp>
+<lb/><p>Gud stå mig bi, – du vil –!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><p>Tal ikke om det! Ikke et ord til noget
 <lb/>menneske; ikke engang til din søster.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(hen for sig)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Hende, &dash; hende er det! Hende, som han
+<lb/><p>Hende, – hende er det! Hende, som han
 <lb/>knapt har tænkt på før ikveld. Havde jeg været
-<lb/>fri, så <app type="external" subtype="word" xml:id="varG2-160"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app> jeg nok hvem han havde kåret. &dash;
+<lb/>fri, så <app type="external" subtype="word" xml:id="varG2-160"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app> jeg nok hvem han havde kåret. –
 <lb/>Ja, fri!</p></HIS:hisSp>
 <lb/><HIS:hisStage>(<HIS:stageRole who="BENGT">Bengt</HIS:stageRole> og <HIS:stageRole>gæsterne</HIS:stageRole>, <HIS:stageRole>mænd</HIS:stageRole> og <HIS:stageRole>kvinder</HIS:stageRole>, kommer ud fra huset.)</HIS:hisStage>
 <lb/><fw type="sheet" place="bottom-left"><hi rend="spaced">Henrik Ibsen</hi>: Gildet på Solhaug.</fw><fw type="sheet" place="bottom-right">6</fw>
@@ -2828,12 +2822,12 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><app type="external" subtype="interpunction" xml:id="varG2-110"><HIS:hisRdg wit="G283 G2FU" var="N">minde,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">minde</HIS:hisRdg></app> at Knut Gæsling er på gården ikveld.</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Flere</speaker>
 <lb/><HIS:hisStage>(hviskende mellem hverandre)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Ja, ja, det er sandt. I mindes <app type="external" subtype="interpunction" xml:id="varG2-111"><HIS:hisRdg wit="G283 G2FU" var="N">sidst,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">sidst</HIS:hisRdg></app> da han &dash;.
+<lb/><p>Ja, ja, det er sandt. I mindes <app type="external" subtype="interpunction" xml:id="varG2-111"><HIS:hisRdg wit="G283 G2FU" var="N">sidst,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">sidst</HIS:hisRdg></app> da han –.
 <lb/>Det er bedst at vogte sig.</p></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top">67</fw>
 <lb/><HIS:hisSp who="GAMMELMAND"><HIS:spOpener><speaker>En gammel mand</speaker>.</HIS:spOpener>
-<lb/><p>Men I, fru Margit &dash;;<note resp="editor">Semikolonet har dårlig trykk og kan forveksles med kolon.</note> jeg <app type="external" subtype="word" xml:id="varG2-161"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app>, eders slægt
+<lb/><p>Men I, fru Margit –;<note resp="editor">Semikolonet har dårlig trykk og kan forveksles med kolon.</note> jeg <app type="external" subtype="word" xml:id="varG2-161"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app>, eders slægt
 <lb/>var altid sagnkyndig, og I selv kunde mange
 <lb/>vakkre eventyr, alt imens I var barn.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
@@ -2842,18 +2836,18 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/>et eventyr, som er lystigt nok.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(dæmpet, bedende)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Margit &dash;!</p></HIS:hisSp>
+<lb/><p>Margit –!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><p>Ej, hvilket klageligt ansigt du sætter op!
 <lb/>Vær lystig, Gudmund! Vær lystig! Ja, ja, det
-<lb/>falder dig ikke så let, kan jeg tro. <HIS:hisStage>(leende, til gæ&typHyp;
+<lb/>falder dig ikke så let, kan jeg tro. <HIS:hisStage>(leende, til gæ‐
 <lb/>sterne.)</HIS:hisStage> Han har set huldren ikveld. Hun vilde
 <lb/>forlokke ham; men Gudmund er en trofast svend.
 <lb/><HIS:hisStage>(vender sig atter til Gudmund.)</HIS:hisStage> Nu ja, eventyret er ikke
 <lb/>endt endnu. Når du fører din hjertenskær over
 <lb/>hej og gennem skove, så vend dig aldrig om;
-<lb/>se dig aldrig tilbage; &dash; huldren sidder bag hver
-<lb/>en busk og ler; og til slut &dash; <HIS:hisStage>(med dæmpet stemme,
+<lb/>se dig aldrig tilbage; – huldren sidder bag hver
+<lb/>en busk og ler; og til slut – <HIS:hisStage>(med dæmpet stemme,
 <lb/>idet hun <HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_77main"/>træder tæt hen til ham:)</HIS:hisStage> kommer du dog ikke
 <lb/>længer end hun vil.</p>
 <lb/><HIS:hisStage>(hun går over mod højre.)</HIS:hisStage></HIS:hisSp>
@@ -2873,7 +2867,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><p>Hun truer; jeg må rive det sidste håb fra
 <lb/>hende; før bliver hun ikke rolig tilsinds. <HIS:hisStage>(vender
 <lb/>sig til de fremmede.)</HIS:hisStage> Jeg kender et lidet kvæde. Hvis
-<lb/>det lyster eder at høre, så &dash;</p></HIS:hisSp>
+<lb/>det lyster eder at høre, så –</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Flere af gæsterne</speaker>.</HIS:spOpener>
 <lb/><p>Tak, tak, Gudmund Alfsøn!</p></HIS:hisSp>
 <lb/><HIS:hisStage>(Man slutter sig om ham, nogle siddende, andre stående. <HIS:stageRole who="MARGIT">Margit</HIS:stageRole>
@@ -2925,31 +2919,31 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/>jer; men det får nu være.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(sagte)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Alle helgener, hun vil da vel ikke &dash;!</p></HIS:hisSp>
+<lb/><p>Alle helgener, hun vil da vel ikke –!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><l>Det var sig en ungmø fager og fin,</l>
 <lb/><l>hun sad i sin faders gård;</l>
-<lb/><l>hun sømmed i silke, hun sømmed i lin; &dash;</l>
+<lb/><l>hun sømmed i silke, hun sømmed i lin; –</l>
 <lb/><l>så lidet den gammen forslår.</l>
 <lb/><l>Hun sad så ene med sorrig og gru;</l>
 <lb/><l>der var tomt i hal og i stue;</l>
 <lb/><l>den jomfru liden var stolt i hu,</l>
-<lb/><l>hende lysted at vorde en adelsfrue. &dash;</l>
+<lb/><l>hende lysted at vorde en adelsfrue. –</l>
 <lb/><l>Det var sig bergkongen, red han fra nord,</l>
 <lb/><l>kom han til gårde med guld og med svende;</l>
 <lb/><l>tredje dags natten hjemad han <app type="external" subtype="word" xml:id="varG2-170"><HIS:hisRdg wit="G283 G28951" var="N">fór</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">foer</HIS:hisRdg></app></l>
-<lb/><l>alt med sin brud, &dash; med hende.</l>
+<lb/><l>alt med sin brud, – med hende.</l>
 <lb/><l>I berget sad hun hel mangen sommer,</l>
 <lb/><l>af guldhorn kunde hun mjøden tømme,</l>
-<lb/><l>i dalen trives de yndigste blommer, &dash;</l>
-<lb/><l>hun sanked dem kun i drømme. &dash;</l>
+<lb/><l>i dalen trives de yndigste blommer, –</l>
+<lb/><l>hun sanked dem kun i drømme. –</l>
 <lb/><l>Det var sig den ungersvend bold og god;</l>
 <lb/><l>vel kunde han lege på gyldne strenge;</l>
 <lb/><l>det klang til bergets inderste rod,</l>
 <pb/>
 <lb/><fw type="page" place="top">71</fw>
 <lb/><l>hvor hun havde siddet så længe.</l>
-<lb/><l>Så underligt blev hun tilsinde derved; &dash;</l>
+<lb/><l>Så underligt blev hun tilsinde derved; –</l>
 <lb/><l>op sprang fjeldets port som en bue;</l>
 <lb/><l>over dalene lå gud faders fred,</l>
 <lb/><l>og al den herlighed kunde hun skue.</l>
@@ -2960,7 +2954,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l>Og vel må I vide, hver og en,</l>
 <lb/><l>at den, som er fængslet til fjeldets sten,</l>
 <lb/><l>kan løses så let ved harpeleg!</l>
-<lb/><l>Han så hende bunden, hørte hun skreg, &dash;</l>
+<lb/><l>Han så hende bunden, hørte hun skreg, –</l>
 <lb/><l>men han slængte sin harpe bort i en vrå,</l>
 <lb/><l>hejsede silkesejlet i rå,</l>
 <lb/><l>stævnede over den salte sø</l>
@@ -3000,9 +2994,9 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/>går <HIS:stageRole>en pige</HIS:stageRole> og rydder op.)</HIS:hisStage>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>
 <lb/><HIS:hisStage>(råber til de bortdragende)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Guds fred da, og vel mødt igen på Sol&typHyp;
+<lb/><p>Guds fred da, og vel mødt igen på Sol‐
 <lb/>haug! I kunde ellers gerne blevet her og sovet
-<lb/>ud, I, lige så vel som de andre. Nå ja, ja &dash;;
+<lb/>ud, I, lige så vel som de andre. Nå ja, ja –;
 <lb/>nej vent; jeg følger med til ledet; jeg må drikke
 <lb/>jer til endnu en gang.</p>
 <lb/><HIS:hisStage><app type="external" subtype="word" xml:id="varG2-173"><HIS:hisRdg wit="G283 G28951" var="N">(han går ud.)</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y"><note resp="editor" type="variant">tekst mangler i FU</note></HIS:hisRdg></app></HIS:hisStage></HIS:hisSp>
@@ -3010,7 +3004,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><HIS:hisStage>(synger i frastand)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l rend="indent1 line">Guds fred og farvel til hver og en,</l>
 <lb/><l rend="indent1">som har på gården hjemme!</l>
-<lb/><l rend="indent1">Nu går vor sti over stok og sten; &dash;</l>
+<lb/><l rend="indent1">Nu går vor sti over stok og sten; –</l>
 <pb/>
 <lb/><fw type="page" place="top">74</fw>
 <lb/><l rend="indent1">frisk op; du må fedlen stemme!</l>
@@ -3028,7 +3022,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><p>Nej, ikke alle; en del bliver til udover dagen;
 <lb/>de sover visst allerede.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
-<lb/><p>Og Gudmund Alfsøn &dash;?</p></HIS:hisSp>
+<lb/><p>Og Gudmund Alfsøn –?</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Pigen</speaker>.</HIS:spOpener>
 <lb/><p>Han sover nok også. <HIS:hisStage>(peger mod højre.)</HIS:hisStage> For
 <lb/>lidt siden gik han ind i sit kammer, der, lige
@@ -3043,9 +3037,9 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><l>Imorgen så drager vel Gudmund herfra,</l>
 <lb/><l>han drager vel ud i den verden vide;</l>
-<lb/><l>jeg sidder igen med min husbond, og <emph>da</emph> &dash;;</l>
+<lb/><l>jeg sidder igen med min husbond, og <emph>da</emph> –;</l>
 <lb/><l>mig vil det gå som blomsterne små,</l>
-<lb/><l>som den fattige urt, som det knækkede strå, &dash;</l>
+<lb/><l>som den fattige urt, som det knækkede strå, –</l>
 <lb/><l>jeg har kun at visne og lide.</l>
 <lb/><HIS:hisStage>(kort ophold; hun læner sig i stolen.)</HIS:hisStage>
 <lb/><l>Jeg hørte en gang om et blindfødt barn,</l>
@@ -3059,11 +3053,11 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l>det var forbi med gammen og lege;</l>
 <lb/><l>af savn og længsel blev kinderne blege;</l>
 <lb/><l>det sygnede hen og leved alle dage</l>
-<lb/><l>i en evig, en unævnelig klage. &dash;</l>
+<lb/><l>i en evig, en unævnelig klage. –</l>
 <lb/><l>Ak, også mine øjne var blinde</l>
-<lb/><l>for sommerens liv og for lysets skær &dash;</l>
+<lb/><l>for sommerens liv og for lysets skær –</l>
 <lb/><HIS:hisStage>(hun springer op.)</HIS:hisStage>
-<lb/><l>Men <emph>nu</emph> &dash;! Og så stænges i buret inde!</l>
+<lb/><l>Men <emph>nu</emph> –! Og så stænges i buret inde!</l>
 <lb/><l>Nej, nej, min ungdom er mere værd.</l>
 <lb/><l>Tre år af mit liv har jeg offret ham,</l>
 <lb/><l>min husbond; men nu må det briste.</l>
@@ -3072,30 +3066,30 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l>Her kedes jeg tildøde af smålig kiv;</l>
 <pb/>
 <lb/><fw type="page" place="top">76</fw>
-<lb/><l>gennem verden går der et bølgende liv; &dash;<HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_82main"/></l>
+<lb/><l>gennem verden går der et bølgende liv; –<HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_82main"/></l>
 <lb/><l>Gudmund vil jeg følge med skjold og med bue,</l>
 <lb/><l>dele hans fryd og mildne hans kummer,</l>
 <lb/><l>vogte hans fjed og værge hans slummer;</l>
 <lb/><l>alt folket skal undrende stå, når de skue</l>
-<lb/><l>den bolde ridder og Margit, hans viv. &dash;</l>
+<lb/><l>den bolde ridder og Margit, hans viv. –</l>
 <lb/><l part="I">Hans viv!</l>
 <lb/><HIS:hisStage>(slår hænderne sammen.)</HIS:hisStage>
 <lb/><l part="F">Å herre, tilgiv, tilgiv;</l>
 <lb/><l>jeg <app type="external" subtype="word" xml:id="varG2-164"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app> ikke selv, hvad jeg taler.</l>
 <lb/><l>Send mig din fred, som læger og svaler.</l>
 <lb/><HIS:hisStage>(går en stund i grublende taushed.)</HIS:hisStage>
-<lb/><l>Signe, min søster &dash;? Hende jeg skulde</l>
+<lb/><l>Signe, min søster –? Hende jeg skulde</l>
 <lb/><l>lægge før tiden i mulde?</l>
-<lb/><l>Og dog &dash;? Hvem <app type="external" subtype="word" xml:id="varG2-165"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app>? Hun er ung endnu;</l>
+<lb/><l>Og dog –? Hvem <app type="external" subtype="word" xml:id="varG2-165"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app>? Hun er ung endnu;</l>
 <lb/><l>hun bærer ham vel ikke så dybt i sin hu.</l>
 <lb/><HIS:hisStage>(atter taushed; hun tager den lille flaske frem, ser længe på den
 <lb/>og siger sagte:)</HIS:hisStage>
-<lb/><l>I denne flaske &dash;; med den jeg kunde &dash;;</l>
+<lb/><l>I denne flaske –; med den jeg kunde –;</l>
 <lb/><l>så måtte min husbond for evig blunde.</l>
 <lb/><HIS:hisStage>(i skræk.)</HIS:hisStage>
 <lb/><l>Nej, nej, den skal kastes på elvens bund!</l>
 <lb/><HIS:hisStage>(vil kaste den ud af vinduet, men standser.)</HIS:hisStage>
-<lb/><l>Og dog, &dash; jeg kunde i denne stund &dash;.</l>
+<lb/><l>Og dog, – jeg kunde i denne stund –.</l>
 <lb/><HIS:hisStage>(hvisker med et blandet udtryk af gysen og henrykkelse.)</HIS:hisStage>
 <lb/><l>Hvad for en fristende, koglende magt</l>
 <lb/><l>er der dog ikke i synden lagt!</l>
@@ -3117,7 +3111,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><HIS:hisStage>(sætter sig ved bordet til venstre)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Jeg har sørget for al ting. Jeg fulgte de
 <lb/>sidste gæster ned til ledet. Men hvor blev Knut
-<lb/>Gæsling af ikveld? &dash; Lad mig få mjød, Margit!
+<lb/>Gæsling af ikveld? – Lad mig få mjød, Margit!
 <lb/>Jeg er tørstig. Fyld mig bægeret der.</p></HIS:hisSp>
 <lb/><HIS:hisStage>(<HIS:stageRole who="MARGIT">Margit</HIS:stageRole> henter en mjødkande fra et skab og skænker i bægeret,
 <lb/>der står foran ham på bordet.)</HIS:hisStage>
@@ -3125,7 +3119,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><HIS:hisStage>(går med kanden over til højre)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Du spurgte om Knut Gæsling.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
-<lb/><p>Ja visst gjorde jeg. Den praler, &dash; den
+<lb/><p>Ja visst gjorde jeg. Den praler, – den
 <lb/>storskryder! Jeg mindes <app type="external" subtype="interpunction" xml:id="varG2-112"><HIS:hisRdg wit="G283 G2FU" var="N">nok,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">nok</HIS:hisRdg></app> at han trued mig
 <lb/>igår morges.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>,
@@ -3138,13 +3132,13 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/>ihjæl.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(smiler foragteligt)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Hm &dash;</p></HIS:hisSp>
+<lb/><p>Hm –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
 <lb/><p>Jeg vil slå ham ihjæl, siger jeg! Jeg er
 <lb/>ikke ræd for at møde ti slige karle som han.
 <lb/>Ude på stabburet hænger min farfaders økse;
 <lb/>skaftet er indlagt med sølv, og når jeg kommer
-<lb/>med <emph>den</emph>, så &dash;! <HIS:hisStage>(slår i bordet og drikker).</HIS:hisStage> Imorgen
+<lb/>med <emph>den</emph>, så –! <HIS:hisStage>(slår i bordet og drikker).</HIS:hisStage> Imorgen
 <lb/>ruster jeg mig; jeg drager ud med alle mine
 <lb/>mænd og slår Knut Gæsling ihjæl.</p>
 <lb/><HIS:hisStage>(han drikker tilbunds.)</HIS:hisStage></HIS:hisSp>
@@ -3187,19 +3181,19 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><HIS:hisStage>(kommer <app type="external" subtype="interpunction" xml:id="varG2-115"><HIS:hisRdg wit="G283 G28951" var="N">nærmere,</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">nærmere;</HIS:hisRdg></app> skotter til bægeret)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Tror du?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
-<lb/><p>Jeg tør sværge på det, Margit. Bengt Gaute&typHyp;
+<lb/><p>Jeg tør sværge på det, Margit. Bengt Gaute‐
 <lb/>søn har to kloge øjne i panden. Men nu kan
 <lb/>han jo tage Signe.</p></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top">80</fw>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
-<lb/><p>Og du tænker, han vil &dash;?</p></HIS:hisSp>
+<lb/><p>Og du tænker, han vil –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
 <lb/><p>Tage hende? Å ja, siden han ikke kan få
-<lb/>dig. Men havde du været fri, så &dash;. Ha-ha-ha,
+<lb/>dig. Men havde du været fri, så –. Ha-ha-ha,
 <lb/>Gudmund er ligesom de andre; han misunder
 <lb/><app type="external" subtype="interpunction" xml:id="varG2-116"><HIS:hisRdg wit="G283 G2FU" var="N">mig,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">mig</HIS:hisRdg></app> at jeg er din husbond. Det er derfor, jeg
-<lb/>kan så godt lide dig, Margit. &dash; Hid med bæ&typHyp;
+<lb/>kan så godt lide dig, Margit. – Hid med bæ‐
 <lb/>geret! Fuldt til randen!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(går modstræbende over til højre)</HIS:hisStage>.</HIS:spOpener>
@@ -3218,7 +3212,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/>flasken frem, medens hun siger:)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Ja vel; ja vel.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
-<lb/><p>Ha-ha-ha; i førstningen, tænker jeg, Gud&typHyp;
+<lb/><p>Ha-ha-ha; i førstningen, tænker jeg, Gud‐
 <pb/>
 <lb/><fw type="page" place="top">81</fw>
 <lb/>mund vil se lidt umildt til <app type="external" subtype="interpunction" xml:id="varG2-117"><HIS:hisRdg wit="G283 G2FU" var="N">mig,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">mig</HIS:hisRdg></app> når jeg favner
@@ -3265,7 +3259,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/>vejen, og så løb de ilsomt tilbage for at vare
 <lb/>jer ad.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BENGT"><HIS:spOpener><speaker>Bengt</speaker>.</HIS:spOpener>
-<lb/><p>Godt; så skal jeg da også &dash;! Hent mig
+<lb/><p>Godt; så skal jeg da også –! Hent mig
 <lb/>min farfaders økse!</p>
 <lb/><HIS:hisStage>(han og huskarlen går ud i baggrunden.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisStage>(Lidt efter kommer <HIS:stageRole who="GUDMUND">Gudmund</HIS:stageRole> og <HIS:stageRole who="SIGNE">Signe</HIS:stageRole> sagte og varsomt ind
@@ -3281,7 +3275,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l part="I">tvinger os.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
 <lb/><l part="F">Ak, at drage</l>
-<lb/><l>som flygtning fra bygden, hvor jeg er født &dash;!</l>
+<lb/><l>som flygtning fra bygden, hvor jeg er født –!</l>
 <lb/><HIS:hisStage>(tørrer øjnene.)<HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_86main"/></HIS:hisStage>
 <lb/><l>Og dog, jeg vil ikke klage;</l>
 <lb/><l>det er jo for din skyld, jeg drager afsted.</l>
@@ -3307,11 +3301,11 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><fw type="page" place="top">84</fw>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>
 <lb/><HIS:hisStage>(brister i gråd)</HIS:hisStage>.</HIS:spOpener>
-<lb/><l>Min arme søster, &dash; far vel, far vel!</l>
+<lb/><l>Min arme søster, – far vel, far vel!</l>
 <lb/><l>Som en moder har du mig vogtet og fredet,</l>
 <lb/><l>har ledet min fod, har til himlen bedet</l>
-<lb/><l>den frommeste bøn for mit held. &dash;</l>
-<lb/><l>Se, Gudmund, &dash; lad os i dette bæger</l>
+<lb/><l>den frommeste bøn for mit held. –</l>
+<lb/><l>Se, Gudmund, – lad os i dette bæger</l>
 <lb/><l>drikke hende til; lad os <app type="external" subtype="interpunction" xml:id="varG2-121"><HIS:hisRdg wit="G283 G2FU" var="N">ønske,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">ønske</HIS:hisRdg></app> at snart</l>
 <lb/><l>hendes sind må igen vorde frejdigt og klart,</l>
 <lb/><l>og at gud hendes kvide læger.</l>
@@ -3326,8 +3320,8 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l part="I">Det er Margits bæger.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(ser nøje på det)</HIS:hisStage>.</HIS:spOpener>
-<lb/><l part="F">Ved himlen, &dash; ja,</l>
-<lb/><l>nu mindes jeg &dash;. Dengang jeg drog herfra<HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_87main"/></l>
+<lb/><l part="F">Ved himlen, – ja,</l>
+<lb/><l>nu mindes jeg –. Dengang jeg drog herfra<HIS:synopticViewPtr type="synopticView_mainVersions" target="G156.xml" xml:id="G1_87main"/></l>
 <lb/><l>monne mosten i bægeret gløde;</l>
 <lb/><l>hun drak mig til på et frydeligt møde;</l>
 <lb/><l>men det blev hende selv til sorg og nød.</l>
@@ -3339,7 +3333,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l part="F">Vi må afsted.</l></HIS:hisSp>
 <lb/><HIS:hisStage>(Larm og råb udenfor i baggrunden.)</HIS:hisStage>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
-<lb/><l>Hys! &dash; Gudmund, jeg hører stemmer og fjed!</l></HIS:hisSp>
+<lb/><l>Hys! – Gudmund, jeg hører stemmer og fjed!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(lyttende)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l part="I">Knut Gæslings røst!</l></HIS:hisSp>
@@ -3351,7 +3345,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><HIS:hisStage>(<HIS:stageRole who="MARGIT">Margit</HIS:stageRole> kommer ilsomt fra venstre.)</HIS:hisStage>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(lyttende til larmen)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Hvad gælder det? Er min husbond &dash;?</p></HIS:hisSp>
+<lb/><p>Hvad gælder det? Er min husbond –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND SIGNE"><HIS:spOpener><speaker>Gudmund</speaker> og <speaker>Signe</speaker>.</HIS:spOpener>
 <lb/><p>Margit!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
@@ -3361,20 +3355,20 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><fw type="page" place="top">86</fw>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>
 <lb/><HIS:hisStage>(imod hende)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Margit, &dash; kære søster!</p></HIS:hisSp>
+<lb/><p>Margit, – kære søster!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(forfærdet, idet hun bemærker bægeret, som Gudmund har beholdt
 <lb/>i hånden)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Bægeret! Hvem har tømt det?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(forvirret)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Tømt &dash;? Jeg og Signe, vi vilde &dash;</p></HIS:hisSp>
+<lb/><p>Tømt –? Jeg og Signe, vi vilde –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(skriger)</HIS:hisStage>.</HIS:spOpener>
 <lb/><p>Nåde, nåde! Hjælp! De dør!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(sætter bægeret fra sig)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Margit &dash;!</p></HIS:hisSp>
+<lb/><p>Margit –!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker></HIS:spOpener>
 <lb/><p>Å gud, hvad fejler <app type="external" subtype="interpunction" xml:id="varG2-122"><HIS:hisRdg wit="G283 G28951" var="N">dig?</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">dig!</HIS:hisRdg></app></p></HIS:hisSp>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
@@ -3383,14 +3377,14 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><HIS:hisStage>(<HIS:stageRole>En huskarl</HIS:stageRole> kommer skyndsomt fra svalegangen.)</HIS:hisStage>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Huskarlen</speaker>
 <lb/><HIS:hisStage>(råber forskrækket)</HIS:hisStage>:</HIS:spOpener>
-<lb/><p>Fru Margit! Eders husbond &dash;!</p></HIS:hisSp>
+<lb/><p>Fru Margit! Eders husbond –!</p></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top">87</fw>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker></HIS:spOpener>
-<lb/><p>Han! Har også han drukket &dash;?</p></HIS:hisSp>
+<lb/><p>Han! Har også han drukket –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>
 <lb/><HIS:hisStage>(sagte)</HIS:hisStage>.</HIS:spOpener>
-<lb/><p>Ah, nu fatter jeg &dash;</p></HIS:hisSp>
+<lb/><p>Ah, nu fatter jeg –</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Huskarlen</speaker>.</HIS:spOpener>
 <lb/><p>Knut Gæsling har fældet ham!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
@@ -3428,7 +3422,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/>sværge på.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
 <lb/><p>Han løb imod mig med løftet økse; jeg
-<lb/>vilde værge for mig, og så hug jeg ufor&typHyp;
+<lb/>vilde værge for mig, og så hug jeg ufor‐
 <lb/>varende til.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ERIK"><HIS:spOpener><speaker>Erik</speaker>.</HIS:spOpener>
 <lb/><p>Her er mange, som så på det.</p></HIS:hisSp>
@@ -3439,7 +3433,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><fw type="page" place="top">89</fw>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>.</HIS:spOpener>
 <lb/><p>Jeg kræver intet. Gud må dømme os alle.
-<lb/>Dog jo, &dash; et kræver jeg; lad fare eders onde
+<lb/>Dog jo, – et kræver jeg; lad fare eders onde
 <lb/>anslag imod min søster.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
 <lb/><p>Aldrig skal jeg mere prøve på at løse mit
@@ -3451,7 +3445,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><p>Jeg? Endnu før dagen er omme, må jeg
 <lb/>ud af landet.</p></HIS:hisSp>
-<lb/><HIS:hisStage>(Studsen blandt gæsterne; <HIS:stageRole who="ERIK">Erik</HIS:stageRole> forklarer dem hviskende sammen&typHyp;
+<lb/><HIS:hisStage>(Studsen blandt gæsterne; <HIS:stageRole who="ERIK">Erik</HIS:stageRole> forklarer dem hviskende sammen‐
 <lb/>hængen.)</HIS:hisStage>
 <lb/><HIS:hisSp who="MARGIT"><HIS:spOpener><speaker>Margit</speaker>
 <lb/><HIS:hisStage>(til <HIS:stageRole who="GUDMUND">Gudmund</HIS:stageRole>)</HIS:hisStage>.</HIS:spOpener>
@@ -3483,7 +3477,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><p>Kongens mænd!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><p>Så er alt forbi! Å, Signe, at miste dig nu,
-<lb/>&dash; det var det tungeste, jeg kunde friste.</p></HIS:hisSp>
+<lb/>– det var det tungeste, jeg kunde friste.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KNUT"><HIS:spOpener><speaker>Knut</speaker>.</HIS:spOpener>
 <lb/><p>Nej, Gudmund, dyrt skal du sælge livet;
 <lb/>løs os; vi er alle rede til at slå for dig.</p></HIS:hisSp>
@@ -3493,7 +3487,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <pb/>
 <lb/><fw type="page" place="top">91</fw>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
-<lb/><p>De kommer her ind! <app type="external" subtype="interpunction" xml:id="varG2-125"><HIS:hisRdg wit="G283 G2FU" var="N">Å</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">Å,</HIS:hisRdg></app> Gudmund, Gud&typHyp;
+<lb/><p>De kommer her ind! <app type="external" subtype="interpunction" xml:id="varG2-125"><HIS:hisRdg wit="G283 G2FU" var="N">Å</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">Å,</HIS:hisRdg></app> Gudmund, Gud‐
 <lb/>mund!</p></HIS:hisSp>
 <lb/><HIS:hisStage>(<HIS:stageRole who="SENDEBUDET">Kongens sendebud</HIS:stageRole> med <HIS:stageRole>følge</HIS:stageRole> kommer ind fra baggrunden.)</HIS:hisStage>
 <lb/><HIS:hisSp who="SENDEBUDET"><HIS:spOpener><speaker>Sendebudet</speaker>.</HIS:spOpener>
@@ -3516,11 +3510,11 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
 <lb/><p>Gudmund!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><p>Men så sig mig da &dash;?</p></HIS:hisSp>
+<lb/><p>Men så sig mig da –?</p></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top">92</fw>
 <lb/><HIS:hisSp who="SENDEBUDET"><HIS:spOpener><speaker>Sendebudet</speaker>.</HIS:spOpener>
-<lb/><p>Eders avindsmand, kansleren Audun Hug&typHyp;
+<lb/><p>Eders avindsmand, kansleren Audun Hug‐
 <lb/>leiksøn er falden.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
 <lb/><p>Kansleren!</p></HIS:hisSp>
@@ -3540,26 +3534,26 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><l>Nu <app type="external" subtype="word" xml:id="varG2-167"><HIS:hisRdg wit="G283 G28951" var="N">ved</HIS:hisRdg><HIS:hisRdg wit="G2FU" var="Y">véd</HIS:hisRdg></app> jeg, at livet vil mere sige</l>
 <lb/><l>end jordens gammen, end verdens rige.</l>
 <lb/><l>Jeg har følt den anger, den rædsel vild,</l>
-<lb/><l>som <app type="external" subtype="interpunction" xml:id="varG2-128"><HIS:hisRdg wit="G283 G2FU" var="N">kommer,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">kommer</HIS:hisRdg></app> når sjælen er sat på spil. &dash;</l>
-<lb/><l>Til den hellige Sunnives kloster jeg går &dash;.</l>
+<lb/><l>som <app type="external" subtype="interpunction" xml:id="varG2-128"><HIS:hisRdg wit="G283 G2FU" var="N">kommer,</HIS:hisRdg><HIS:hisRdg wit="G28951" var="Y">kommer</HIS:hisRdg></app> når sjælen er sat på spil. –</l>
+<lb/><l>Til den hellige Sunnives kloster jeg går –.</l>
 <lb/><HIS:hisStage>(da <HIS:stageRole who="GUDMUND">Gudmund</HIS:stageRole> og <HIS:stageRole who="SIGNE">Signe</HIS:stageRole> vil tale.)</HIS:hisStage>
 <lb/><l>Stille! At rokke mig intet formår.</l>
 <lb/><HIS:hisStage>(lægger deres hænder sammen.)</HIS:hisStage>
 <pb/>
 <lb/><fw type="page" place="top">93</fw>
-<lb/><l>Gudmund, &dash; før hende hjem som brud.</l>
+<lb/><l>Gudmund, – før hende hjem som brud.</l>
 <lb/><l>Eders pagt er from; den skærmes af gud!</l></HIS:hisSp>
 <lb/><HIS:hisStage>(Hun vinker til afsked og går mod venstre. <HIS:stageRole who="GUDMUND">Gudmund</HIS:stageRole> og <HIS:stageRole who="SIGNE">Signe</HIS:stageRole>
 <lb/>vil følge hende. <HIS:stageRole who="MARGIT">Margit</HIS:stageRole> standser dem med en afværgende bevægelse,
 <lb/>går ud og lukker døren efter sig. I samme øjeblik står solen op
 <lb/>og kaster sit skær ind i stuen.)</HIS:hisStage>
 <lb/><HIS:hisSp who="GUDMUND"><HIS:spOpener><speaker>Gudmund</speaker>.</HIS:spOpener>
-<lb/><l>Signe, &dash; min viv! &dash; Se, dagen rinder;</l>
+<lb/><l>Signe, – min viv! – Se, dagen rinder;</l>
 <lb/><l>det er vor unge kærligheds dag!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="SIGNE"><HIS:spOpener><speaker>Signe</speaker>.</HIS:spOpener>
 <lb/><l>Mine bedste drømme, mine fagreste minder</l>
 <lb/><l>skylder jeg dig og din harpes slag.</l>
-<lb/><l>Min ædle sanger, &dash; i sorrig og lyst</l>
+<lb/><l>Min ædle sanger, – i sorrig og lyst</l>
 <lb/><l>slå kun din harpe, som bedst du lærte;</l>
 <lb/><l>tro mig, der er strenge dybt i mit bryst,</l>
 <lb/><l>som skal svare dig i fryd og i smerte.</l></HIS:hisSp>
@@ -3567,7 +3561,7 @@ Kjørte kodekontroll: oppdaterte teiheader (typografi- og bibl-opplysninger om a
 <lb/><HIS:hisStage>(af mænd og kvinder)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l rend="indent1 line">Over jorden vogter lysets øje,</l>
 <lb/><l rend="indent1">værner kærligt om den frommes fjed,</l>
-<lb/><l rend="indent1">sender trøstens milde stråler ned; &dash;</l>
+<lb/><l rend="indent1">sender trøstens milde stråler ned; –</l>
 <lb/><l rend="indent1">lovet være herren i det høje!</l></HIS:hisSp>
 </div>
 <lb/><figure type="bar"/>

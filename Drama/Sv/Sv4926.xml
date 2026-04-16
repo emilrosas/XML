@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -13,11 +7,11 @@
 <title level="s" type="main">Henrik Ibsens skrifter</title>
 <title level="s" type="sub">Diplomatarisk tekstarkiv</title>
 <title level="a" type="main" xml:id="Sv">Svanhild</title>
-<title level="a" type="sub">Grunntekst, NBO Ms.4&deg; 926</title>
+<title level="a" type="sub">Grunntekst, NBO Ms.4° 926</title>
 <title level="a" type="origYear">1860</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Ingrid Falkenberg, Mette Witting, Ingvald Aarstein</name></respStmt>
 <respStmt>
 <resp>Transkripsjon</resp>
@@ -46,7 +40,7 @@
 <msIdentifier>
 <settlement>Oslo</settlement>
 <repository>Nasjonalbiblioteket</repository>
-<idno>NBO Ms.4&deg; 926</idno>
+<idno>NBO Ms.4° 926</idno>
 </msIdentifier>
 <msContents><msItem>
 <author>Henrik Ibsen</author>
@@ -59,11 +53,11 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-grt-ms;</p></projectDesc>
+<projectDesc><p>GRUNNTEKST BASERT PÅ MANUSKRIPT. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av to medarbeidere. Teksten er kollasjonert en tredje gang i forbindelse med det avsluttende arbeidet med verket.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <list>
-<head>Sv (NBO Ms.4&deg; 926)</head>
+<head>Sv (NBO Ms.4° 926)</head>
 <item>skriftgruppe: latinsk håndskrift, høyrehellende, majuskler og minuskler</item>
 <item>tittelblad: midtstilt</item>
 <item>deltittelblad (påbegynt rolleliste): midtstilt</item>
@@ -114,8 +108,8 @@
 </item>
 </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -136,10 +130,10 @@
 </tagUsage></namespace>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="pb-ed-HU-n">For synkroniseringsformål er sideskiftene fra Hundreårsutgaven (bd IV) kodet
 med pb ed="HU" n="". Dette tekstvitnet dekker sidene 251-267. Alle sidetallene er oppgitt i n-attributt.</tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <metDecl>
-<p>&metDecl;</p>
+<p>Den metriske notasjonen er beskrevet i Kodepraksis for HIS og bygger på Jørgen Fafners verslære (Fafner 1989).</p>
 </metDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -245,27 +239,27 @@ Sjekket (og ev. oppdaterte) følgende: title i titleStmt, title og edition i sou
 <lb/><castItem xml:id="LAERKE">Frøken Lærke, hans Kjæreste.</castItem>
 <lb/><castItem type="list">Gjæster og Familier, som gratulerer.</castItem></HIS:hisCastList>
 <lb/><set><p>Handlingen foregaar paa Fru Halms Landsted
-<lb/>ved Drammensveien. Tiden er en Sommer&typHyp;
-<lb/>dag iaar. &dash;</p></set><pb ed="HU" n="254"/>
+<lb/>ved Drammensveien. Tiden er en Sommer‐
+<lb/>dag iaar. –</p></set><pb ed="HU" n="254"/>
 </front>
 <body>
 <pb/><pb ed="HU" n="255"/>
 <lb/><fw type="leaf" place="top-right" scribe="h3"><HIS:clarification place="inline" hand="h4">3</HIS:clarification></fw>
 <div type="act" n="1">
 <lb/><head>Første Akt.</head>
-<lb/><HIS:hisStage>Scenen forestiller en smuk Have med uregel&typHyp;
+<lb/><HIS:hisStage>Scenen forestiller en smuk Have med uregel‐
 <lb/>mæssige men smagfulde Anlæg; i Baggrunden
 <lb/>skraaner den ned mod Søen, som skimtes
 <lb/>tilligemed Øerne. Tilvenstre for Tilskuerne og
-<lb/>noget tilbage paa Scenen sees lidt af Hovedbyg&typHyp;
-<lb/>ningen med en Veranda; tilhøire i Forgrun&typHyp;
+<lb/>noget tilbage paa Scenen sees lidt af Hovedbyg‐
+<lb/>ningen med en Veranda; tilhøire i Forgrun‐
 <lb/>den et aabent Lysthus med Bord og Havestole.</HIS:hisStage>
 <div type="scene" n="1">
 <lb/><head>1<hi rend="raised">ste</hi> Scene.</head>
 <lb/><HIS:hisStage>Naar Tæppet gaar op sidder Fru Halm, Sofie
 <lb/>og Frøken Lærke paa Verandaen, de to Første med
 <lb/>Haandarbeide, den sidste med en Bog. I
-<lb/>Lysthuset sees Falk, Johan, Fladland, Guld&typHyp;
+<lb/>Lysthuset sees Falk, Johan, Fladland, Guld‐
 <lb/>stad og Pasop om Bordet hvorpaa Punsch<HIS:hisDel rend="overwritten"> o<gap/></HIS:hisDel><unclear>b</unclear>olle
 <lb/>og Glasse. Svanhild sidder i Baggrunden ved Vandet.</HIS:hisStage>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker> <HIS:hisStage>(reiser sig med hævet Glas
@@ -306,10 +300,10 @@ Sjekket (og ev. oppdaterte) følgende: title i titleStmt, title og edition i sou
 <lb/><l rend="indent">Din Forhaabning en for en.</l>
 <lb/><l rend="indent">Tro mig, <emph>Du</emph> ved Byttet vinder,</l>
 <lb/><l rend="indent">Tusker Sang m<HIS:hisDel rend="overwritten">e</HIS:hisDel>od sildig Frugt;</l>
-<lb/><l rend="indent">Husk Moralen: &lquo;Tiden rinder&rquo;;</l>
+<lb/><l rend="indent">Husk Moralen: «Tiden rinder»;</l>
 <lb/><l rend="indent">Snart din Friluftslund er lukt!</l></HIS:hisLg></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Chor af Herrerne</speaker>.</HIS:spOpener>
-<lb/><l rend="indent">Husk Moralen: &lquo;Tiden rinder&rquo;</l>
+<lb/><l rend="indent">Husk Moralen: «Tiden rinder»</l>
 <lb/><l rend="indent">o. s. v. o. s. v.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
 <lb/><HIS:hisLg><head>4.</head>
@@ -329,7 +323,7 @@ Sjekket (og ev. oppdaterte) følgende: title i titleStmt, title og edition i sou
 <lb/><HIS:hisStage>(til Fruen.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>See, det var Havevisen, som De bad om igaar.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="LAERKE"><HIS:spOpener><speaker>Frøken Lærke</speaker></HIS:spOpener>
-<lb/><p>Men, undskyld, Hr. Falk, &dash; jeg synes ikke De har lagt
+<lb/><p>Men, undskyld, Hr. Falk, – jeg synes ikke De har lagt
 <lb/>Poesi nok ind i det sidste Vers.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="PASOP"><HIS:spOpener><speaker>Pasop</speaker>.</HIS:spOpener>
 <lb/><p>Ja, og du havde dog havt saa let for at faa
@@ -339,7 +333,7 @@ Sjekket (og ev. oppdaterte) følgende: title i titleStmt, title og edition i sou
 <lb/>gaar en slet Moral gjennem det Hele. Hvad
 <lb/>er nu det for Økonomi at lade Spurven æde
 <lb/>Karterne af før de blir til Noget? Og saa
-<lb/>slippe Kreaturerne ind paa Bejte i Blomster&typHyp;
+<lb/>slippe Kreaturerne ind paa Bejte i Blomster‐
 <lb/>kvartererne! Jo, da vilde her see deiligt
 <lb/>ud til næste Vaar!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.
@@ -359,7 +353,7 @@ Sjekket (og ev. oppdaterte) følgende: title i titleStmt, title og edition i sou
 <lb/><HIS:hisSp who="PASOP"><HIS:spOpener><speaker>Pasop</speaker>.
 <lb/><HIS:hisStage>(forklarende til Guldstad.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Jo, naar man lægger en allegorisk Mening
-<lb/>i det, saa er det ganske rigtigt. Seer du &dash;</p>
+<lb/>i det, saa er det ganske rigtigt. Seer du –</p>
 <lb/><HIS:hisStage>(han fortsætter hviskende med Forklaringen.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="LAERKE"><HIS:spOpener><speaker>Frøken Lærke</speaker>.
 <lb/><HIS:hisStage>(til Falk.)</HIS:hisStage></HIS:spOpener>
@@ -378,7 +372,7 @@ Sjekket (og ev. oppdaterte) følgende: title i titleStmt, title og edition i sou
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
 <lb/><p>Lad mig miste Synet saa skal jeg digte om
 <lb/>den blaa Himmel. Jeg <HIS:hisDel rend="overstrike">skulde</HIS:hisDel> kunde fristes
-<lb/>til at bede Vorherre om en stor Sorg, &dash; havde jeg
+<lb/>til at bede Vorherre om en stor Sorg, – havde jeg
 <lb/>den saa skulde jeg ikke længere døse Tiden
 <lb/>bort</p></HIS:hisSp><pb ed="HU" n="258"/>
 <lb/><HIS:hisSp who="FRUHALM"><HIS:spOpener><speaker>Fru Halm</speaker>.</HIS:spOpener>
@@ -396,9 +390,9 @@ Sjekket (og ev. oppdaterte) følgende: title i titleStmt, title og edition i sou
 <lb/><fw type="leaf" place="top-right" scribe="h3"><HIS:clarification place="inline" hand="h4">6</HIS:clarification></fw>
 <lb/>Ledere, end naar jeg har Noget at ærgre
 <lb/>mig over. <HIS:hisStage>(til Guldstad)</HIS:hisStage> Jeg skal forklare
-<lb/>dig det &dash; <HIS:hisStage>(fort<HIS:clarification place="inline">s</HIS:clarification>ætter hviskende.)</HIS:hisStage></p></HIS:hisSp>
+<lb/>dig det – <HIS:hisStage>(fort<HIS:clarification place="inline">s</HIS:clarification>ætter hviskende.)</HIS:hisStage></p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLADLAND"><HIS:spOpener><speaker>Fladland</speaker>.</HIS:spOpener>
-<lb/><p>Falk spøger bare. Nei, leve Lykken &dash; Hjerteglæden!</p></HIS:hisSp>
+<lb/><p>Falk spøger bare. Nei, leve Lykken – Hjerteglæden!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.
 <lb/><HIS:hisStage>(tager Glasset.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Eller Sorgen! <HIS:hisStage>(sagte)</HIS:hisStage> Jeg ved Fanden ikke hvad
@@ -416,17 +410,17 @@ Sjekket (og ev. oppdaterte) følgende: title i titleStmt, title og edition i sou
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
 <pb/>
 <lb/><p>Vikingerne naturligvis. De gamle Vølsunger.
-<lb/>Sigurds og Gudruns Datter hed ogsaa Svan&typHyp;
+<lb/>Sigurds og Gudruns Datter hed ogsaa Svan‐
 <lb/>hild; det er jo hende De er opkaldt efter.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker>Svanhild</speaker>.</HIS:spOpener>
-<lb/><p>Aa, altid gjør De Nar &dash; <HIS:hisStage>(hun fjerner sig.)</HIS:hisStage></p></HIS:hisSp>
+<lb/><p>Aa, altid gjør De Nar – <HIS:hisStage>(hun fjerner sig.)</HIS:hisStage></p></HIS:hisSp>
 <lb/><HIS:hisSp who="FRUHALM"><HIS:spOpener><speaker>Fru Halm</speaker>.</HIS:spOpener>
 <lb/><p>Aldrig kan han lade det stakkels Barn være
 <lb/>i Fred.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SOFIE"><HIS:spOpener><speaker>Sofie</speaker>.</HIS:spOpener>
 <lb/><p>Og hun gjør ham dog aldrig noget Ondt.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
-<lb/><p>Jeg har rigtignok hørt sige at De havde en Bed&typHyp;
+<lb/><p>Jeg har rigtignok hørt sige at De havde en Bed‐
 <lb/>stefader som hed Svend og en Bedstemoder
 <lb/>som hed Helle, og at det er derfor De blev kaldt
 <lb/>Svanhild, <HIS:hisDel rend="overstrike"><gap/></HIS:hisDel> men det kan jeg ikke tro.</p></HIS:hisSp>
@@ -447,13 +441,13 @@ Sjekket (og ev. oppdaterte) følgende: title i titleStmt, title og edition i sou
 <lb/>og hans Kone kommer med Dampskibet;</p></HIS:hisSp>
 <lb/><HIS:hisSp who="PASOP"><HIS:hisAdd hand="HI-h2" place="inline"><HIS:spOpener><speaker>Pasop</speaker></HIS:spOpener></HIS:hisAdd><p>du husker han er valgt paa Storthinget og
 <lb/>saa kommer de nogle Maaneder iforveien
-<lb/>for at more sig lidt.</p></HIS:hisSp><HIS:hisSp who="FRUHALM"><HIS:hisAdd hand="HI-h2" place="offline"><HIS:spOpener><speaker>Fruen</speaker></HIS:spOpener></HIS:hisAdd><p>Det er hos ham Svan&typHyp;
+<lb/>for at more sig lidt.</p></HIS:hisSp><HIS:hisSp who="FRUHALM"><HIS:hisAdd hand="HI-h2" place="offline"><HIS:spOpener><speaker>Fruen</speaker></HIS:spOpener></HIS:hisAdd><p>Det er hos ham Svan‐
 <lb/>hild har været et Par Aar, og derfor tager
 <lb/>han ind her.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
 <lb/><p>Det er jo herligt! Han maa være en rigt begavet
 <lb/>Mand; jeg husker han skrev nogle ypperlige
-<lb/>Noveller for en 14&dash;16 Aar siden.</p></HIS:hisSp>
+<lb/>Noveller for en 14–16 Aar siden.</p></HIS:hisSp>
 <pb/>
 <lb/><HIS:hisSp who="PASOP"><HIS:spOpener><speaker>Pasop</speaker>.</HIS:spOpener>
 <lb/><p>Ja, og jeg anmeldte dem i Bladet. Det var
@@ -469,11 +463,11 @@ Sjekket (og ev. oppdaterte) følgende: title i titleStmt, title og edition i sou
 <lb/>godt, det var dengang jeg begyndte at blive
 <lb/>forelsket i min nuværende Kjæreste.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
-<lb/><p>Nuværende? Har du da før &dash;?</p></HIS:hisSp>
+<lb/><p>Nuværende? Har du da før –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="PASOP"><HIS:spOpener><speaker>Pasop</speaker>.</HIS:spOpener>
 <lb/><p>Aa nei, Snak; jeg mener hun, som nu er
 <lb/>bleven min Kjæreste. Nei, det kan jeg sige
-<lb/>mig fri for; jeg har aldrig været hverken for&typHyp;
+<lb/>mig fri for; jeg har aldrig været hverken for‐
 <lb/>elsket eller forlovet mere end den ene Gang.</p></HIS:hisSp>
 <pb/>
 <lb/><fw type="leaf" place="top-right" scribe="h3"><HIS:clarification place="inline" hand="h4">8</HIS:clarification></fw>
@@ -481,15 +475,15 @@ Sjekket (og ev. oppdaterte) følgende: title i titleStmt, title og edition i sou
 <lb/><p>Straamand havde ogsaa en Historie herinde.
 <lb/>Ja, dengang var han nu bare Kandidat.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="PASOP"><HIS:spOpener><speaker>Pasop</speaker>.</HIS:spOpener>
-<lb/><p>Ja, det er saagud sandt. Hans Kone &dash;</p></HIS:hisSp>
+<lb/><p>Ja, det er saagud sandt. Hans Kone –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GULDSTAD"><HIS:spOpener><speaker>Guldstad</speaker>.</HIS:spOpener>
 <lb/><p>Hun er Datter af et rigt Trælasthus, som ikke
 <lb/>vilde vide noget af Forlovelsen; men de To
 <lb/>holdt fast skjønt der ingen Udsigter var.
-<lb/>Saa gik Huset fallit og saa fik han hen&typHyp;
+<lb/>Saa gik Huset fallit og saa fik han hen‐
 <lb/>de.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLADLAND"><HIS:spOpener><speaker>Fladland</speaker>.</HIS:spOpener>
-<lb/><p>Det er nu noget plat fremstillet. Der var virke&typHyp;
+<lb/><p>Det er nu noget plat fremstillet. Der var virke‐
 <lb/>lig et smukt og dybt Forhold mellem dem,
 <lb/>det kan man ogsaa see <sic>at</sic> hans Arbeider fra
 <lb/>den Tid. Det er underligt at han ikke skriver
@@ -498,14 +492,14 @@ Sjekket (og ev. oppdaterte) følgende: title i titleStmt, title og edition i sou
 <lb/><p>Ja, en af vore erfarne Poeter siger rigtignok
 <pb/>
 <lb/>at:</p>
-<lb/><l rend="indent">&lquo;Kjærligheden gjør Petrarker,</l>
-<lb/><l rend="indent">Som Fæ og Ladhed Patriarker;&rquo;</l>
+<lb/><l rend="indent">«Kjærligheden gjør Petrarker,</l>
+<lb/><l rend="indent">Som Fæ og Ladhed Patriarker;»</l>
 <lb/><p>men jeg tror der er en dybere Grund hos Straamand,
 <lb/>og hans Kone skal være en fortræffelig Dame, som
 <lb/>nok vil holde ham oppe.</p></HIS:hisSp>
 <lb/><HIS:hisStage>(Damerne har imidlertid taget Hatte og Mantiller.)</HIS:hisStage>
 <lb/><HIS:hisSp who="FRUHALM"><HIS:spOpener><speaker>Fru Halm</speaker>.</HIS:spOpener>
-<lb/><p>See saa, hvis Herrerne nu er færdige &dash;</p></HIS:hisSp>
+<lb/><p>See saa, hvis Herrerne nu er færdige –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLADLAND"><HIS:spOpener><speaker>Fladland</speaker>.
 <lb/><HIS:hisStage>(sagte til Sofie.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Jeg kommer strax.</p></HIS:hisSp>
@@ -529,13 +523,13 @@ Sjekket (og ev. oppdaterte) følgende: title i titleStmt, title og edition i sou
 <lb/><HIS:hisStage>(smilende.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Synes du da jeg er saa forandret?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
-<lb/><p>Ja, i de sidste Dage; jeg kjender dig knapt i&typHyp;
+<lb/><p>Ja, i de sidste Dage; jeg kjender dig knapt i‐
 <lb/>gjen. Du er glad og lystig <sic>for</sic> Morgen til Kveld;
 <lb/>har Du brudt med Theologien.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLADLAND"><HIS:spOpener><speaker>Fladland</speaker>.</HIS:spOpener>
-<lb/><p>Nei, tvertimod. Jeg har aldrig været bedre Theo&typHyp;
+<lb/><p>Nei, tvertimod. Jeg har aldrig været bedre Theo‐
 <lb/>log end nu, men det er ikke af Bøgerne
-<lb/>jeg henter det; &dash; Aa, Falk, Falk, min Ven jeg
+<lb/>jeg henter det; – Aa, Falk, Falk, min Ven jeg
 <lb/>er saa glad, saa lykkelig! Jeg er forlovet!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
 <lb/><p>Med Sofie?</p></HIS:hisSp>
@@ -543,7 +537,7 @@ Sjekket (og ev. oppdaterte) følgende: title i titleStmt, title og edition i sou
 <lb/><p>Ja, naturligvis! Det er nu tre Dage siden,
 <pb/>
 <lb/>men Ingen veed det. O, dersom Du kunde tænke
-<lb/>Dig hvilken Lykke &dash;! Jeg er ganske som et nyt
+<lb/>Dig hvilken Lykke –! Jeg er ganske som et nyt
 <lb/>Menneske; jeg har faaet Tanker og Ideer, som
 <lb/>jeg aldrig før vidste af. Jeg er bleven bedre,
 <lb/>jeg holder inderligere af Gud<pb ed="HU" n="261"/> og Verden; seer
@@ -574,11 +568,11 @@ Sjekket (og ev. oppdaterte) følgende: title i titleStmt, title og edition i sou
 <lb/>Huset.)</HIS:hisStage>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>
 <lb/><HIS:hisStage>(seer efter ham.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Han behøver ikke nogen Sorg for at fylde Li&typHyp;
+<lb/><p>Han behøver ikke nogen Sorg for at fylde Li‐
 <lb/>vet ud, han hjælper sig med en Forlovelse.
 <lb/>Han var bleven saa varm og saa glad, saa
-<lb/>frisk og sund; &dash; og jeg! Aa jeg er en Nar! Jeg
-<lb/>er en forskruet, <HIS:hisDel rend="overstrike">syglig</HIS:hisDel> sygelig, overspændt affek&typHyp;
+<lb/>frisk og sund; – og jeg! Aa jeg er en Nar! Jeg
+<lb/>er en forskruet, <HIS:hisDel rend="overstrike">syglig</HIS:hisDel> sygelig, overspændt affek‐
 <lb/>teret Karl! Hei, din Pedant, hvad bilder du
 <lb/>dig ind; hvad er det for et stort Indhold i
 <lb/>dig som skal fyldes ud, hvad er det da for
@@ -589,7 +583,7 @@ Sjekket (og ev. oppdaterte) følgende: title i titleStmt, title og edition i sou
 <lb/><p>Hvad er det De taler om?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>
 <lb/><HIS:hisStage>(tænder en Cigar.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Aa jeg siger mig selv nogle smaa Kompli&typHyp;
+<lb/><p>Aa jeg siger mig selv nogle smaa Kompli‐
 <pb/>
 <lb/>menter.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker>Svanhild</speaker>.</HIS:spOpener>
@@ -598,13 +592,13 @@ Sjekket (og ev. oppdaterte) følgende: title i titleStmt, title og edition i sou
 <lb/><p>Nei, men De fortjener det heller ikke saa godt
 <lb/>som jeg.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker>Svanhild</speaker>.</HIS:spOpener>
-<lb/><p>Det kan vel saa være, men &dash;</p></HIS:hisSp><pb ed="HU" n="262"/>
+<lb/><p>Det kan vel saa være, men –</p></HIS:hisSp><pb ed="HU" n="262"/>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
 <lb/><p>Jo jo, De fortjener det; eller rettere, De fortjener
 <lb/>Noget som er tusinde Gange bedre.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker>Svanhild</speaker>.</HIS:spOpener>
 <lb/><p>Sig mig, hvorfor er De altid anderledes mod
-<lb/>mig naar vi er alene, end naar vi er sam&typHyp;
+<lb/>mig naar vi er alene, end naar vi er sam‐
 <lb/>men med Andre?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
 <lb/><p>Er jeg det?</p></HIS:hisSp>
@@ -626,22 +620,22 @@ Sjekket (og ev. oppdaterte) følgende: title i titleStmt, title og edition i sou
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
 <lb/><p>Og det saa De?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker>Svanhild</speaker>.</HIS:spOpener>
-<lb/><p>Ja oppe fra Vinduet. Den sad og sang der&typHyp;
+<lb/><p>Ja oppe fra Vinduet. Den sad og sang der‐
 <lb/>nede<HIS:hisDel rend="overwritten">,</HIS:hisDel>. <HIS:hisDel rend="overwritten">d</HIS:hisDel>De laa og hørte paa, og da den holdt op
-<lb/>ventede De en Stund, saa tog De en Sten og &dash;</p></HIS:hisSp>
+<lb/>ventede De en Stund, saa tog De en Sten og –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
 <lb/><p>Det er ganske sandt. Gud ved hvor den Stær
 <lb/>er kommen fra saa tidligt paa Aaret; den
-<lb/>kom hver Dag, for det var altid den sam&typHyp;
+<lb/>kom hver Dag, for det var altid den sam‐
 <lb/>me, jeg kjendte den igjen paa en hvid
 <lb/>Fjær i Halen.</p></HIS:hisSp>
 <pb/><lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker>Svanhild</speaker>.</HIS:spOpener>
-<lb/><p>Og saa kunde De være saa umenneskelig &dash;!</p></HIS:hisSp>
+<lb/><p>Og saa kunde De være saa umenneskelig –!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
-<lb/><p>Aa hvad. Den havde sunget alt hvad den vid&typHyp;
+<lb/><p>Aa hvad. Den havde sunget alt hvad den vid‐
 <lb/>ste, og hvad den sang, det formede sig i mig
 <lb/>til et Digt; Digtet skal jeg skrive iaften,
-<lb/>det skal komme ud blandt Mængden; tør&typHyp;
+<lb/>det skal komme ud blandt Mængden; tør‐
 <lb/>hænde det kan gjøre et Hjerte glad og frit
 <lb/>for en Stu<HIS:clarification place="inline">n</HIS:clarification>d; <HIS:hisDel rend="overwritten">s<gap/></HIS:hisDel>og skeer det, hvad har da
 <lb/>slig en ganske almindelig Stær at leve for
@@ -663,13 +657,13 @@ Sjekket (og ev. oppdaterte) følgende: title i titleStmt, title og edition i sou
 <lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker>Svanhild</speaker>.</HIS:spOpener>
 <lb/><p>En Bog!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
-<lb/><p>Deres Familiekrønike. &dash; Nei nei da &dash; det er Vøl&typHyp;
+<lb/><p>Deres Familiekrønike. – Nei nei da – det er Vøl‐
 <lb/>sungasaga. Der kan De læse om den rette
 <lb/>Svanhild; det har De jo saa stor Lyst til sagde
 <lb/>De igaar. Hun var en Kongedatter og en herlig
-<lb/>Kvinde; men der var noget raaddent ved de so&typHyp;
+<lb/>Kvinde; men der var noget raaddent ved de so‐
 <lb/>ciale Forholde der i Landet; naa ja, det er der
-<lb/>andetsteds med; man indretter sig saa fortviv&typHyp;
+<lb/>andetsteds med; man indretter sig saa fortviv‐
 <lb/>let gjennem Slægt til Slægt at Nemesis fra og
 <lb/>til maa ud og skaffe lidt Ligevægt tilveie.
 <lb/>Forstaar De mig?</p></HIS:hisSp>
@@ -680,7 +674,7 @@ Sjekket (og ev. oppdaterte) følgende: title i titleStmt, title og edition i sou
 <lb/>gjort Brud paa den menneskelige Orden, naar
 <lb/>det saaledes følger <sic>at</sic> Forholdene at der stiftes
 <lb/>Ægteskaber uden Kjærlighed, og Kjærligheden
-<lb/>ikke kan nære sig uden gjennem Forbrydel&typHyp;
+<lb/>ikke kan nære sig uden gjennem Forbrydel‐
 <lb/>ser, saa maa nu og da et Offer falde for
 <lb/>at forsone de vrede Guddomme. Og til Offer
 <lb/>maa Slægten give det Bedste den har. Saaledes
@@ -691,23 +685,23 @@ Sjekket (og ev. oppdaterte) følgende: title i titleStmt, title og edition i sou
 <lb/>af fire Heste. Det er omtrent hvad man kalder
 <lb/>Fatum.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker>Svanhild</speaker>.</HIS:spOpener>
-<lb/><p>Revet sønder &dash;</p></HIS:hisSp>
+<lb/><p>Revet sønder –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
 <lb/><p>Kan De nu forstaa hvorfor jeg finder det
 <lb/>saa latterligt at De har faaet dette Navn
 <lb/>som rummer i sig <HIS:hisDel rend="overwritten">et</HIS:hisDel>Begrebet af Offring for
-<lb/>Tidens Brøde. &dash; Og dog, og det er det værste, &dash;
+<lb/>Tidens Brøde. – Og dog, og det er det værste, –
 <lb/>De tør komme til at bære Deres Navn med Rette.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker>Svanhild</speaker>.</HIS:spOpener>
 <lb/><p>Jeg forstaar ikke hvad De mener.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
-<lb/><p>Hvor meget er der ikke i Dem som maa ryk&typHyp;
+<lb/><p>Hvor meget er der ikke i Dem som maa ryk‐
 <lb/>kes op med Rod før Verden kan bruge Dem.
-<lb/>De fire Heste maa sent eller tidligt ud for at gjø&typHyp;
+<lb/>De fire Heste maa sent eller tidligt ud for at gjø‐
 <lb/>re Tjeneste; Svanhild,<pb ed="HU" n="264"/> som hun nu er, m<HIS:clarification place="inline">a</HIS:clarification>a
 <lb/>trædes under Fødder, stampes paa, knuses under
 <lb/>Hovene, og naar saa Verden har hende som
-<lb/>en formløs Lerklump, saa kan den agere Kunst&typHyp;
+<lb/>en formløs Lerklump, saa kan den agere Kunst‐
 <lb/>ner; Hei, saa skal den ud med Modellerkniven,
 <lb/>saa skaber den hende om i sit Billede ligesom
 <lb/>Vorherre gjorde, sætter e<HIS:hisDel rend="overwritten">n</HIS:hisDel>t smukt Fodstykke under,
@@ -720,24 +714,24 @@ Sjekket (og ev. oppdaterte) følgende: title i titleStmt, title og edition i sou
 <lb/><p>Falk, Falk! Hvad er det! De gjør mig bange!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
 <lb/><p>O, havde jeg kun een stærk Evne i min
-<lb/>Sjæl; en eneste Evne, som jeg ved jeg mang&typHyp;
-<lb/>ler, da skulde <HIS:hisDel rend="overwritten">d</HIS:hisDel>De ved den levende Gud &dash;
-<lb/>ikke gaa tilgrunde. Sig mig, Svanhild, hav&typHyp;
+<lb/>Sjæl; en eneste Evne, som jeg ved jeg mang‐
+<lb/>ler, da skulde <HIS:hisDel rend="overwritten">d</HIS:hisDel>De ved den levende Gud –
+<lb/>ikke gaa tilgrunde. Sig mig, Svanhild, hav‐
 <lb/>de De Mod til at opoffre Dem ganske for mig
-<lb/>istedetfor for Verden &dash; tør De &dash; aa, jeg er gal, at
-<lb/>jeg siger alt dette &dash;</p></HIS:hisSp>
+<lb/>istedetfor for Verden – tør De – aa, jeg er gal, at
+<lb/>jeg siger alt dette –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker>Svanhild</speaker>.</HIS:spOpener>
 <lb/><p>Opoffre mig, o Gud, hvad skulde De kunne bruge
 <lb/><sic>big</sic> til?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
 <lb/><p>Dem!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker>Svanhild</speaker>.</HIS:spOpener>
-<lb/><p>Ja, &dash; <HIS:hisAdd place="offline">De</HIS:hisAdd> som staar saa høit over mig.</p></HIS:hisSp>
+<lb/><p>Ja, – <HIS:hisAdd place="offline">De</HIS:hisAdd> som staar saa høit over mig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
 <lb/><p>Lad os ikke tænke mere paa den Sag. Tag
-<lb/>nu deres Saga og læs. Commune naufra&typHyp;
+<lb/>nu deres Saga og læs. Commune naufra‐
 <pb/>
-<lb/>gium &dash; naa &dash;! Den er fuldgod med den bedste Ro&typHyp;
+<lb/>gium – naa –! Den er fuldgod med den bedste Ro‐
 <lb/>man; ja det vil De rigtignok ikke synes om
 <lb/>nogle Aar.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker>Svanhild</speaker>.</HIS:spOpener>
@@ -756,21 +750,21 @@ Sjekket (og ev. oppdaterte) følgende: title i titleStmt, title og edition i sou
 <lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker>Svanhild</speaker>.</HIS:spOpener>
 <lb/><p>Ikke hos mig. Falk, der er noget som feiler
 <lb/>Dem; kan ikke jeg hjælpe? Dersom De bare
-<lb/>vilde sige mig &dash;</p></HIS:hisSp>
+<lb/>vilde sige mig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
 <pb/>
 <lb/><fw type="leaf" place="top-right" scribe="h3"><HIS:clarification place="inline" hand="h4">14</HIS:clarification></fw>
-<lb/><p>Jeg har jo sagt Dem, &dash; det slap mig <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>jo ud af
+<lb/><p>Jeg har jo sagt Dem, – det slap mig <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>jo ud af
 <lb/>Munden.</p></HIS:hisSp><pb ed="HU" n="265"/>
 <lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker>Svanhild</speaker>.</HIS:spOpener>
 <lb/><p>Men jeg forstod Dem ikke.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
-<lb/><p>De kunde tage Stærens Rolle; synge for mig, &dash; ikke
+<lb/><p>De kunde tage Stærens Rolle; synge for mig, – ikke
 <lb/>inde, ikke ved Pianofortet; nei, hvor De gik og
-<lb/>stod, &dash; <HIS:hisDel rend="overstrike">ikke</HIS:hisDel> hørligt for mig alene; ikke i Toner,
-<lb/>men i Ord, i Tanke, i Gjerning, i Taushed, &dash;
+<lb/>stod, – <HIS:hisDel rend="overstrike">ikke</HIS:hisDel> hørligt for mig alene; ikke i Toner,
+<lb/>men i Ord, i Tanke, i Gjerning, i Taushed, –
 <lb/>jeg skulde give Digt for Digt igjen naar vi
-<lb/>to holdt sammen &dash;</p></HIS:hisSp>
+<lb/>to holdt sammen –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker>Svanhild</speaker>.</HIS:spOpener>
 <lb/><p>Og naar <HIS:hisDel rend="overwritten">d</HIS:hisDel>De saa kunde mig udenad?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.
@@ -780,7 +774,7 @@ Sjekket (og ev. oppdaterte) følgende: title i titleStmt, title og edition i sou
 <lb/><HIS:hisStage>(tier og græder stille ved Lysthuset.)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
 <lb/><p>De græder, Svanhild! O, gjør ikke det, <HIS:hisStage>(tager hendes
-<lb/>Tørklæde og tørrer Taarerne af)</HIS:hisStage> Saa, saa, &dash; vær nu ikke
+<lb/>Tørklæde og tørrer Taarerne af)</HIS:hisStage> Saa, saa, – vær nu ikke
 <lb/>bedrøvet; Gud ved, jeg vil ikke gjøre Dem ondt.
 <pb/>
 <lb/>Der kommer d<HIS:clarification place="inline">e</HIS:clarification> Andre. Svar mig havde De Mod
@@ -797,10 +791,10 @@ Sjekket (og ev. oppdaterte) følgende: title i titleStmt, title og edition i sou
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
 <lb/><p>Hvad der spørges om, er om et Offer for mig,
 <lb/>et Offer, fuldstændigt fra Deres Side; <HIS:hisDel rend="overstrike">a<unclear>t</unclear></HIS:hisDel> <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>som Stæren
-<lb/>at synge <sic>dem</sic> tom og fylde mig med Ind&typHyp;
-<lb/>holdet, og naar jeg er færdig med Dem <HIS:hisAdd hand="HI-h2" place="offline">naar jeg kan <HIS:hisDel rend="overwritten">d</HIS:hisDel>Dem</HIS:hisAdd><note resp="editor">Tilføyelsen mangler innføyningstegn, plassert etter skjønn og i overenstemmelse med HU.</note> &dash; Alt
-<lb/>forbi, &dash; ingen Vinter bagefter &dash; saa skilles vi &dash;
-<lb/>Svanhild &dash; svar mig for Gud, har De Mod?</p></HIS:hisSp>
+<lb/>at synge <sic>dem</sic> tom og fylde mig med Ind‐
+<lb/>holdet, og naar jeg er færdig med Dem <HIS:hisAdd hand="HI-h2" place="offline">naar jeg kan <HIS:hisDel rend="overwritten">d</HIS:hisDel>Dem</HIS:hisAdd><note resp="editor">Tilføyelsen mangler innføyningstegn, plassert etter skjønn og i overenstemmelse med HU.</note> – Alt
+<lb/>forbi, – ingen Vinter bagefter – saa skilles vi –
+<lb/>Svanhild – svar mig for Gud, har De Mod?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SVANHILD"><HIS:spOpener><speaker>Svanhild</speaker>
 <lb/><HIS:hisStage>(efter et Øiebliks Pause)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Nei!</p></HIS:hisSp>
@@ -813,7 +807,7 @@ Sjekket (og ev. oppdaterte) følgende: title i titleStmt, title og edition i sou
 <div type="scene" n="4">
 <lb/><head>4<hi rend="raised">de</hi> Scene.</head>
 <lb/><HIS:hisStage>De Forrige. Fru Halm, Guldstad, Pasop,
-<lb/>Frøken Lærke, Johan, Fladland og Sofie &dash;
+<lb/>Frøken Lærke, Johan, Fladland og Sofie –
 <lb/>kommer fra Baggrunden.</HIS:hisStage>
 <lb/><HIS:hisSp who="FRUHALM"><HIS:spOpener><speaker>Fru Halm</speaker>.</HIS:spOpener>
 <lb/><p>Dampskibet er alt inde paa Havnen; nu kan vi
@@ -829,26 +823,26 @@ Sjekket (og ev. oppdaterte) følgende: title i titleStmt, title og edition i sou
 <lb/><p>Ja <emph>isaafald</emph> kan han jo <emph>hellerikke</emph> høre til Oppositionen.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="LAERKE"><HIS:spOpener><speaker>Frøken Lærke</speaker>
 <lb/><HIS:hisStage>(sagte til Pasop, som gaar tilbage)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Nu, er han &dash;?</p></HIS:hisSp>
+<lb/><p>Nu, er han –?</p></HIS:hisSp>
 <pb/>
 <lb/><HIS:hisSp who="PASOP"><HIS:spOpener><speaker>Pasop</speaker>.</HIS:spOpener>
 <lb/><p>Jeg ved ikke; men han skal nu abonnere aligevel.</p>
 <lb/><HIS:hisStage>(de gaar mod Huset.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="FLADLAND"><HIS:spOpener><speaker>Fladland</speaker>
 <lb/><HIS:hisStage>(sagte til Falk, idet han nærmer sig med Sofie.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Maa jeg forestille dig &dash;</p></HIS:hisSp>
+<lb/><p>Maa jeg forestille dig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
 <lb/><p>Jeg ved ikke hvad du mener.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLADLAND"><HIS:spOpener><speaker>Fladland</speaker>.</HIS:spOpener>
 <lb/><p>Aa du behøver ikke at forstille dig; det er med
-<lb/>Sofies Tilladelse at jeg &dash; &dash;</p></HIS:hisSp>
+<lb/>Sofies Tilladelse at jeg – –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
-<lb/><p>Og det kan du gjøre uden al Nødvendig&typHyp;
+<lb/><p>Og det kan du gjøre uden al Nødvendig‐
 <lb/>hed?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLADLAND"><HIS:spOpener><speaker>Fladland</speaker>.</HIS:spOpener>
 <lb/><p>Hvilket.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
-<lb/><p>Trække Trediemand ind i det som I to skul&typHyp;
+<lb/><p>Trække Trediemand ind i det som I to skul‐
 <lb/>de eie helt og holdent alene.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLADLAND"><HIS:spOpener><speaker>Fladland</speaker>.</HIS:spOpener>
 <lb/><p>Du er jo min Ven, og jeg kan ikke rumme
@@ -860,41 +854,41 @@ Sjekket (og ev. oppdaterte) følgende: title i titleStmt, title og edition i sou
 <lb/><p>Nei, nei; gjør ikke det! Det vil I angre. Er det
 <lb/>da ikke velsignet godt saaledes som det er?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SOFIE"><HIS:spOpener><speaker>Sofie</speaker>.</HIS:spOpener>
-<lb/><p>Jo det er det jeg ogsaa siger; men Fladland &dash;</p></HIS:hisSp>
+<lb/><p>Jo det er det jeg ogsaa siger; men Fladland –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLADLAND"><HIS:spOpener><speaker>Fladland</speaker>.</HIS:spOpener>
-<lb/><p>Ja jeg kan ikke holde ud alle disse Vanske&typHyp;
+<lb/><p>Ja jeg kan ikke holde ud alle disse Vanske‐
 <lb/>ligheder som er forbundne med at faa Sofie
-<lb/>itale, ja blot for at faa see hende &dash;</p></HIS:hisSp>
+<lb/>itale, ja blot for at faa see hende –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Fal<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>k</speaker>.</HIS:spOpener>
-<lb/><p>Aa, min Ven &dash; du skjønner ikke paa &dash; &dash;</p></HIS:hisSp><pb ed="HU" n="267"/>
+<lb/><p>Aa, min Ven – du skjønner ikke paa – –</p></HIS:hisSp><pb ed="HU" n="267"/>
 <lb/><HIS:hisSp who="FLADLAND"><HIS:spOpener><speaker>Fladland</speaker>.</HIS:spOpener>
 <lb/><p>Desuden kan jeg ikke fordrage at denne
-<lb/>Grosserer idelig er om hende &dash; &dash; Gud ved
-<lb/>hvad Hensigter han egentlig kan have &dash;</p></HIS:hisSp>
+<lb/>Grosserer idelig er om hende – – Gud ved
+<lb/>hvad Hensigter han egentlig kan have –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
-<lb/><p>Guldstad? Tror du at han &dash; &dash;?</p></HIS:hisSp>
+<lb/><p>Guldstad? Tror du at han – –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SOFIE"><HIS:spOpener><speaker>Sofie</speaker>.</HIS:spOpener>
-<lb/><p>Aa, det er bare Indbildning &dash;</p></HIS:hisSp>
+<lb/><p>Aa, det er bare Indbildning –</p></HIS:hisSp>
 <pb/>
 <lb/><HIS:hisSp who="FLADLAND"><HIS:spOpener><speaker>Fladland</speaker>.</HIS:spOpener>
 <lb/><p>Nei, det er paa ingen Maade Indbildning. Det er
 <lb/>jo ikke længere siden end nu nylig nede i Haven!
-<lb/>Da jeg kom derned var han om dig med alle&typHyp;
-<lb/>slags Komplimenter. Og din Moder har han og&typHyp;
-<lb/>saa været særdeles opmærksom mod i den sid&typHyp;
+<lb/>Da jeg kom derned var han om dig med alle‐
+<lb/>slags Komplimenter. Og din Moder har han og‐
+<lb/>saa været særdeles opmærksom mod i den sid‐
 <lb/>ste Tid.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
 <lb/><p>Ja, ja; lad det være som det vil; men lov mig Begge
-<lb/>to, for eders egen Skyld, &dash; at vente indtil vidre &dash;
-<lb/>I maa ikke nu strax &dash;</p></HIS:hisSp>
+<lb/>to, for eders egen Skyld, – at vente indtil vidre –
+<lb/>I maa ikke nu strax –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLADLAND"><HIS:spOpener><speaker>Fladland</speaker>.</HIS:spOpener>
-<lb/><p>Naa ja da, indtil videre, men ikke længe &dash;
-<lb/>min gode velsignede Sofie &dash; hm &dash; Frøken Lærke
-<lb/>seer paa os &dash; <HIS:hisStage>(de fjerner sig hver for sig.)</HIS:hisStage></p></HIS:hisSp>
+<lb/><p>Naa ja da, indtil videre, men ikke længe –
+<lb/>min gode velsignede Sofie – hm – Frøken Lærke
+<lb/>seer paa os – <HIS:hisStage>(de fjerner sig hver for sig.)</HIS:hisStage></p></HIS:hisSp>
 <lb/><HIS:hisSp who="FALK"><HIS:spOpener><speaker>Falk</speaker>.</HIS:spOpener>
-<lb/><p>Færdig med første Akt i tre Dage, &dash;! Det er en
-<lb/>produktiv Forfatter &dash; eller, det er nok snarere fordi
-<lb/>Stoffet alt er forbrugt &dash; hvorledes vil de To <HIS:hisAdd place="inline">ud</HIS:hisAdd>fylde Re&typHyp;
+<lb/><p>Færdig med første Akt i tre Dage, –! Det er en
+<lb/>produktiv Forfatter – eller, det er nok snarere fordi
+<lb/>Stoffet alt er forbrugt – hvorledes vil de To <HIS:hisAdd place="inline">ud</HIS:hisAdd>fylde Re‐
 <lb/>sten af det lange lange Stykke?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="GULDSTAD"><HIS:spOpener><speaker>Guldstad</speaker>
 <lb/><HIS:hisStage>(slaar ham paa Skuldren)</HIS:hisStage></HIS:spOpener>

@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -16,8 +10,8 @@
 <title level="a" type="sub">annen hovedversjon, FU</title>
 <title level="a" type="origYear">1902</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Ingrid Falkenberg, Mette Witting</name></respStmt>
 <respStmt>
 <resp>Konvertering fra Bergensmaterialet til TEI SGML, mars 1999:</resp>
@@ -73,7 +67,7 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc><editorialDecl>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc><editorialDecl>
 <HIS:typography>
 <list>
 <head>SAMLEDE VÆRKER (1898-1902) - K2:</head>
@@ -133,8 +127,8 @@
 </item>
 </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -150,7 +144,7 @@
 </list>
 </tagUsage></namespace>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="pb-ed-HU">Sideskiftene fra Hundreårsutgaven (bd I) er kodet med pb ed="HU". Dette tekstvitnet dekker sidene 279-309. Det første sidetallet er oppgitt i et n-attributt.</tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 </encodingDesc>
 <profileDesc>
@@ -211,7 +205,7 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <change><date>6.05.99</date>
 <name>MW</name><title>Korrekturlæsning</title>Jeg læste korrektur på IFs oprettelse f.o.m. s. 26, på skillestregerne på de første sider og på lb incl. part=I/M/F.</change>
 <change><date>30.04.-05.05.99</date>
-<name>IF</name><title>Opprettelse av 98</title>fortsatte å opprette 98-teksten f.o.m. s 26. Korrektur t.o.m. s. 25. Endret anførselstegn i tekst og header til &lquo; og &rquo; (er usikker på om det er ført riktig i headeren), det som er beskrevet i e-post 28.4.99, og endret skillestreken til ss, la til skillestreker på de første sidene; de syntes ikke på fotostatkopien. Flyttet notene om HU til et dokument som jeg kan gi kommentatorene siden. Er usikker på om tomme sider i 98 skal kodes (tok vekk note som jeg hadde tidligere)</change>
+<name>IF</name><title>Opprettelse av 98</title>fortsatte å opprette 98-teksten f.o.m. s 26. Korrektur t.o.m. s. 25. Endret anførselstegn i tekst og header til « og » (er usikker på om det er ført riktig i headeren), det som er beskrevet i e-post 28.4.99, og endret skillestreken til ss, la til skillestreker på de første sidene; de syntes ikke på fotostatkopien. Flyttet notene om HU til et dokument som jeg kan gi kommentatorene siden. Er usikker på om tomme sider i 98 skal kodes (tok vekk note som jeg hadde tidligere)</change>
 <change><date>27.04.99</date>
 <name>MW</name><title>Oprettelse af 98</title>Jeg fortsatte med oprettelsen af 98 fra tredje scene t.o.m. s.25 i 98. Jeg har ikke set på lb og part=I/F/M. Kan vi mon ikke fjerne noterne om HU?</change>
 <change><date>23.04.99</date><name>IF</name><title>Sideskift i 98</title>Lest korrektur av pb-koder.</change>
@@ -248,7 +242,7 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><castItem xml:id="HEMMING"><role>Hemming</role>, <roleDesc>en ung skald i <hi>Gandalfs</hi> tjeneste</roleDesc>.</castItem>
 </HIS:hisCastList>
 <lb/><figure type="bar"/>
-<lb/><set><p>(Handlingen foregår på en liden ø ved Sicilien, kort før kristen&typHyp;
+<lb/><set><p>(Handlingen foregår på en liden ø ved Sicilien, kort før kristen‐
 <lb/>dommens indførelse i Norge.)</p></set>
 <lb/><figure type="bar"/>
 <lb/><fw type="sheet" place="bottom-right">1</fw>
@@ -269,7 +263,7 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/>liggende stilling.</HIS:hisStage>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l>Aftenrødens sidste luer</l>
-<lb/><l>bølger som et hav ibrand, &dash;</l>
+<lb/><l>bølger som et hav ibrand, –</l>
 <lb/><l>der er tempeltyst ved strand,</l>
 <lb/><l>tyst som under løvets buer.</l>
 <lb/><l>Sommeraftnens milde fred</l>
@@ -292,7 +286,7 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><l>hvor et frodigt liv sig dølger,</l>
 <lb/><l>ej et mejslet eller malt!</l><pb ed="HU"/>
 <lb/><l>Her er guddomslivet veget,</l>
-<lb/><l>spores kun i stenens træk, &dash;</l>
+<lb/><l>spores kun i stenens træk, –</l>
 <lb/><l>der det ånder, kraftigt præget,</l>
 <lb/><l>som en kæmpe stærk og kæk!</l>
 <lb/><l>Og når aftnens lumre stilhed</l>
@@ -300,20 +294,20 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><l>se, da stiger Nordens billed</l>
 <lb/><l>for mit øje snebelyst!</l>
 <lb/><l>Her er smuldrende ruiner,</l>
-<lb/><l>døsig dvale, tung og blød, &dash;</l>
+<lb/><l>døsig dvale, tung og blød, –</l>
 <lb/><l>der er styrtende laviner,</l>
 <lb/><l>forårsliv og vinterdød!</l>
 <lb/><l rend="line">Hvis jeg havde svanehammen</l>
-<lb/><l type="dashes">&dash; &dash; &dash; &dash;</l></HIS:hisSp>
+<lb/><l type="dashes">– – – –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker>
 <lb/><HIS:hisStage>(efter en pause, skrivende)</HIS:hisStage>.</HIS:spOpener>
-<lb/><l>&lquo; Da, heder det, har Ragnarok forsonet</l>
+<lb/><l>« Da, heder det, har Ragnarok forsonet</l>
 <lb/><l>de vilde kræfter, vakt et luttret liv;</l>
 <lb/><l>Alfader, Balder og den milde Freja</l>
-<lb/><l>skal styre Askurs æt i fred påny!&rquo; &dash;</l>
+<lb/><l>skal styre Askurs æt i fred påny!» –</l>
 <lb/><HIS:hisStage>(efter et øjeblik at have betragtet hende.)</HIS:hisStage>
 <lb/><l>Men Blanka, se, nu drømmer du igen,</l>
-<lb/><l>du stirrer tankefuld igennem luften, &dash;</l>
+<lb/><l>du stirrer tankefuld igennem luften, –</l>
 <lb/><l part="I">hvad søger du?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>
 <lb/><HIS:hisStage>(nærmer sig)</HIS:hisStage>.</HIS:spOpener>
@@ -359,13 +353,13 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><l>og leger, overgivent som delfiner,</l>
 <lb/><l>i fantasiens dybe, svale bølger!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker>.</HIS:spOpener>
-<lb/><l>Du er en sværmerske, mit gode barn, &dash;</l>
+<lb/><l>Du er en sværmerske, mit gode barn, –</l>
 <lb/><l>jeg frygter næsten, at din tanke dvæler</l>
 <lb/><l>for tidt hos folket i det høje Norden.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l>Og hvis er skylden, fader, om så var?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker>.</HIS:spOpener>
-<lb/><l part="I">Du mener, at jeg selv &dash;?</l></HIS:hisSp>
+<lb/><l part="I">Du mener, at jeg selv –?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l part="F">O ja, hvad andet,</l>
 <lb/><l>du lever selv jo kun i mindet om</l>
@@ -381,7 +375,7 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><l>det er jo blade fra min egen saga.</l>
 <lb/><l>Du derimod, som fostredes i Syden,</l>
 <lb/><l>som aldrig så de sølvblå vinterfjelde,</l>
-<lb/><l>som aldrig hørte ludurhornets klang, &dash;</l>
+<lb/><l>som aldrig hørte ludurhornets klang, –</l>
 <lb/><l>hvor kan det fængsle dig, hvad jeg fortæller?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l>O sig, behøver mennesket at se</l>
@@ -413,21 +407,21 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><l>som om din barm blev hjem for tunge minder.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker>
 <lb/><HIS:hisStage>(rejser sig)</HIS:hisStage>.</HIS:spOpener>
-<lb/><l>Nævn ikke mere derom, gode barn, &dash;</l><pb ed="HU"/>
+<lb/><l>Nævn ikke mere derom, gode barn, –</l><pb ed="HU"/>
 <lb/><l>hvo er vel den, hvis ungdomsminder ej</l>
-<lb/><l>er blandede med mangt et bittert nag; &dash;</l>
-<lb/><l>du véd, Normannerne er vilde kæmper. &dash;</l></HIS:hisSp>
+<lb/><l>er blandede med mangt et bittert nag; –</l>
+<lb/><l>du véd, Normannerne er vilde kæmper. –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l>Men er da Sydens kriger mindre grum?</l>
 <lb/><l>Har du forglemt hin nat for ti år siden,</l>
 <pb/>
 <lb/><fw type="page" place="top">10</fw>
 <lb/><l>dengang de fremmede på kysten landed,</l>
-<lb/><l part="I">og plyndrede &dash;?</l></HIS:hisSp>
+<lb/><l part="I">og plyndrede –?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker>
 <lb/><HIS:hisStage>(med synlig uro)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l part="F">Nok derom, lad os gå;</l>
-<lb/><l>det lakker alt mod solnedgang, &dash; kom, kom!</l></HIS:hisSp>
+<lb/><l>det lakker alt mod solnedgang, – kom, kom!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>
 <lb/><HIS:hisStage>(idet de går)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l part="I">Giv mig din hånd!</l>
@@ -436,18 +430,18 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker>.</HIS:spOpener>
 <lb/><l part="F">Hvad fattes dig?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
-<lb/><l>For første gang har jeg idag forglemt &dash;</l></HIS:hisSp>
+<lb/><l>For første gang har jeg idag forglemt –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker>.</HIS:spOpener>
 <lb/><l part="I">Hvad har du glemt?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>
 <lb/><HIS:hisStage>(pegende mod højen)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l part="F">Se stenen der og kransen!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker>.</HIS:spOpener>
-<lb/><l part="I">Det er &dash;</l></HIS:hisSp>
+<lb/><l part="I">Det er –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l part="F">Den gamle, visne fra igår;</l>
 <lb/><l>jeg har forglemt at bytte den i aften;</l>
-<lb/><l>dog &dash; lad mig følge dig til hytten først,</l>
+<lb/><l>dog – lad mig følge dig til hytten først,</l>
 <lb/><l>så går jeg siden ud på blomsterfangst:</l>
 <lb/><l>violen dufter bedst, når aftnens dugg</l>
 <pb/>
@@ -467,13 +461,13 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><HIS:hisSp who="ASGAUT"><HIS:spOpener><speaker>Asgaut</speaker>.</HIS:spOpener>
 <lb/><l>Nej, vent kun lidt til vi er bagved skoven.</l><pb ed="HU"/>
 <lb/><l>På klippeskråningen mod havet stod</l>
-<lb/><l>en rest af muren, da vi drog afsted, &dash;</l>
+<lb/><l>en rest af muren, da vi drog afsted, –</l>
 <lb/><l>den står der sagtens endnu, tænker jeg.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="JOSTEIN"><HIS:spOpener><speaker>Jostejn</speaker>.</HIS:spOpener>
 <lb/><l>Hør, sig os drot, hvad kan det både os</l>
 <lb/><l>at traske om som narre her på holmen?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="HROLLOUG"><HIS:spOpener><speaker>Hrolloug</speaker>.</HIS:spOpener>
-<lb/><l part="I">Ja sig, hvad skal vi &dash;</l></HIS:hisSp>
+<lb/><l part="I">Ja sig, hvad skal vi –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="F">Tie skal I, tie!</l>
 <lb/><l>Og lystre blindt, hvad eders konning byder!</l>
@@ -503,7 +497,7 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Nogle</speaker>.</HIS:spOpener>
 <lb/><l part="F">Ja, sådan er det!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
-<lb/><l>Så værer rede da med sværd og skjold, &dash;</l>
+<lb/><l>Så værer rede da med sværd og skjold, –</l>
 <lb/><l>I har en drot at hævne, jeg en fader!</l>
 <lb/><HIS:hisStage>(Bevægelse blandt <HIS:stageRole>vikingerne</HIS:stageRole>.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="JOSTEIN"><HIS:spOpener><speaker>Jostejn</speaker>.</HIS:spOpener>
@@ -532,7 +526,7 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><l>hvordan hans kæmper segned rundt omkring ham;</l>
 <lb/><l>og da det første daggry randt i øst,</l>
 <lb/><l>lå hele borgen rygende i grus.</l>
-<lb/><l>Kun Asgaut stod igen med nogle få, &dash;</l>
+<lb/><l>Kun Asgaut stod igen med nogle få, –</l>
 <lb/><l>min fader og vel hundrede med ham</l>
 <lb/><l>var redet gennem flammerne til Valhal.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ASGAUT"><HIS:spOpener><speaker>Asgaut</speaker>.</HIS:spOpener>
@@ -541,7 +535,7 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><l>der søgte jeg forgæves efter Gandalf,</l>
 <lb/><l>den unge ørn var fløjen over havet</l>
 <lb/><l>til Island eller Færø, blev mig sagt.</l>
-<lb/><l>Jeg stævned efter ham, men fandt ham ej, &dash;</l>
+<lb/><l>Jeg stævned efter ham, men fandt ham ej, –</l>
 <lb/><l>dog navnet kendte de, såvidt jeg fór;</l>
 <lb/><l>ti skøndt hans drage fløj som sky for stormen,</l>
 <lb/><l>så fløj hans rygte dog på bedre vinger.</l>
@@ -555,7 +549,7 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><HIS:hisSp who="JOSTEIN"><HIS:spOpener><speaker>Jostejn</speaker>.</HIS:spOpener>
 <lb/><l>Det er en gammel skik, og den bør agtes!</l><pb ed="HU"/>
 <lb/><l>Men hvis jeg havde været konning Gandalf,</l>
-<lb/><l>så var jeg bleven liggende i Velskland, &dash;</l>
+<lb/><l>så var jeg bleven liggende i Velskland, –</l>
 <lb/><l part="I">for der var guld at vinde.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="HROLLOUG"><HIS:spOpener><speaker>Hrolloug</speaker>.</HIS:spOpener>
 <lb/><l part="F">Hæder med.</l></HIS:hisSp>
@@ -568,7 +562,7 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><HIS:hisStage>(med undertrykt forbitrelse)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l part="F">Usle slægt!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="JOSTEIN"><HIS:spOpener><speaker>Jostejn</speaker>.</HIS:spOpener>
-<lb/><l part="I">Men siden vi nu engang er her &dash;</l></HIS:hisSp>
+<lb/><l part="I">Men siden vi nu engang er her –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="HROLLOUG"><HIS:spOpener><speaker>Hrolloug</speaker>.</HIS:spOpener>
 <lb/><l part="F">Ja,</l>
 <lb/><l>så lad os rejse ham et værdigt minde!</l></HIS:hisSp>
@@ -588,7 +582,7 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><l part="F">Det svor han.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l>Det svor jeg dyrt ved alle Valhals guder!</l>
-<lb/><l part="I">Og end engang jeg sværger &dash;</l></HIS:hisSp>
+<lb/><l part="I">Og end engang jeg sværger –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="HEMMING"><HIS:spOpener><speaker>Hemming</speaker>
 <lb/><HIS:hisStage>(med en harpe over skulderen, har under det foregående nærmet sig
 <lb/>mellem <HIS:stageRole>kæmperne</HIS:stageRole> og udbryder bønligt)</HIS:hisStage>:</HIS:spOpener>
@@ -640,16 +634,16 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><l>Han har ej nogen frejdig lid til mig.</l>
 <lb/><l>Vel at han gik! Der ligger som en tyngsel</l>
 <lb/><l>på mine skuldre, når han er mig nær.</l>
-<lb/><l>Den gamle stenmand med de barske træk, &dash;</l>
+<lb/><l>Den gamle stenmand med de barske træk, –</l>
 <pb/>
 <lb/><fw type="page" place="top">17</fw>
 <lb/><l>han ligner Asathor, som stod med Mjølnir</l>
 <lb/><l>og styrkebeltet hugget ud i gråsten</l>
 <lb/><l>i offerlunden ved min faders gård.</l>
-<lb/><l>Min faders gård! &dash; Hvo véd, hvordan det nu</l>
-<lb/><l>ser ud derhjemme på de gamle tomter! &dash;</l>
+<lb/><l>Min faders gård! – Hvo véd, hvordan det nu</l>
+<lb/><l>ser ud derhjemme på de gamle tomter! –</l>
 <lb/><l>Ja fjeld og skov er sagtens end de samme;</l><pb ed="HU"/>
-<lb/><l>men folkets bryst &dash;? Har det de gamle strænge?</l>
+<lb/><l>men folkets bryst –? Har det de gamle strænge?</l>
 <lb/><l>Nej, der er falden meldug over tiden,</l>
 <lb/><l>og det er den, som suger Nordens saft</l>
 <lb/><l>og tærer giftigt på dets bedste blomster.</l>
@@ -661,7 +655,7 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><HIS:hisStage>(han bemærker højen.)</HIS:hisStage>
 <lb/><l>Hvad nu? En kæmpegrav? Den gemmer nok</l>
 <lb/><l>en landsmand fra de gamle, friske dage.</l>
-<lb/><l>En kæmpegrav i Syden! &dash; Det er billigt;</l>
+<lb/><l>En kæmpegrav i Syden! – Det er billigt;</l>
 <lb/><l>thi Syden gav os jo vort ulivssår.</l>
 <lb/><l>Hvor her er vakkert! Jeg må tænke på</l>
 <lb/><l>en vinterkvæld, da jeg som liden gut</l>
@@ -669,13 +663,13 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><l>mens han fortalte mig om vore guder,</l>
 <lb/><l>om Odin, Balder og den stærke Thor;</l>
 <lb/><l>og da jeg nævnte for ham Frejas lund,</l>
-<lb/><l>så skildred han mig den som lunden her, &dash;</l>
+<lb/><l>så skildred han mig den som lunden her, –</l>
 <lb/><l>men da jeg vilde vide lidt om Freja,</l>
 <lb/><l>hvordan hun selv så ud, da smålo gubben,</l>
 <lb/><l>og satte mig på gulvet ned og svared:</l>
-<lb/><l>&lquo;Det vil en kvinde nok fortælle dig!&rquo;</l>
+<lb/><l>«Det vil en kvinde nok fortælle dig!»</l>
 <lb/><HIS:hisStage>(lyttende.)</HIS:hisStage>
-<lb/><l>Tys! Fodtrin gennem skoven! Rolig Gandalf, &dash;</l>
+<lb/><l>Tys! Fodtrin gennem skoven! Rolig Gandalf, –</l>
 <lb/><l>de bringer førstegrøden af din hævn!</l>
 <lb/><HIS:hisStage>(Træder tilside, således at han er halv skjult mellem buskene til højre.)</HIS:hisStage></HIS:hisSp>
 <lb/><fw type="sheet" place="bottom-left">Henrik Ibsens samlede værker. X.</fw><fw type="sheet" place="bottom-right">2</fw>
@@ -694,14 +688,14 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><l>har ej så stærk en magt som hine blomster,</l>
 <lb/><l>der favnes søsterligen bryst ved bryst</l>
 <lb/><l>i tætte klynger rundt om højens side;</l>
-<lb/><l>de maner mig ved dag og nat herhen, &dash;</l>
+<lb/><l>de maner mig ved dag og nat herhen, –</l>
 <lb/><l>her er det godt at længes og at drømme.</l>
 <lb/><l>Se nu er kransen færdig. Heltens bauta,</l>
 <lb/><l>så hård og kold, skal dølges under den.</l>
 <lb/><l part="I">Ja, det er smukt!</l>
 <lb/><HIS:hisStage>(visende mod højen.)</HIS:hisStage>
 <lb/><l part="F">Et undergået liv,</l>
-<lb/><l>med kæmpekræfter, dybt i muld begravet, &dash;</l>
+<lb/><l>med kæmpekræfter, dybt i muld begravet, –</l>
 <lb/><l>og mindet, som til efterslægten taler,</l>
 <lb/><l>en iskold kampesten, som hin på højen!</l>
 <lb/><l>Da kommer kunsten, og med venlig hånd</l>
@@ -719,14 +713,14 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><l>og spejder som en ørn fra fjeldets tinde.</l><pb ed="HU"/>
 <pb/>
 <lb/><fw type="page" place="top">19</fw>
-<lb/><l>Bag blanke bølger dukker snekken frem. &dash;</l>
+<lb/><l>Bag blanke bølger dukker snekken frem. –</l>
 <lb/><l>O fly som mågen mod din fædrestrand!</l>
-<lb/><l>Jeg er et Sydens barn, jeg kan ej vente; &dash;</l>
-<lb/><l>jeg river egekransen af mit hår, &dash;</l>
+<lb/><l>Jeg er et Sydens barn, jeg kan ej vente; –</l>
+<lb/><l>jeg river egekransen af mit hår, –</l>
 <lb/><l>tag den, min helt! Den er det andet bud,</l>
-<lb/><l>der hilser dig, &dash; min længsel var det første.</l>
+<lb/><l>der hilser dig, – min længsel var det første.</l>
 <lb/><HIS:hisStage>(hun kaster kransen. <HIS:stageRole who="GANDALF">Gandalf</HIS:stageRole> træder frem og griber den.)</HIS:hisStage>
-<lb/><l part="I">Hvad nu? Der står &dash;</l>
+<lb/><l part="I">Hvad nu? Der står –</l>
 <lb/><HIS:hisStage>(hun gnider øjnene og stirrer forundret på ham.)</HIS:hisStage>
 <lb/><l part="F">Nej, det er ingen drøm.</l>
 <lb/><l>Hvo er du, fremmede? Hvad søger du</l>
@@ -738,7 +732,7 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><HIS:hisStage>(stiger ned)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l part="F">Se så, her er jeg!</l>
 <lb/><HIS:hisStage>(afsides, idet hun betragter ham.)</HIS:hisStage>
-<lb/><l>Ringbrynjen over brystet, kobberhjelmen, &dash;</l>
+<lb/><l>Ringbrynjen over brystet, kobberhjelmen, –</l>
 <lb/><l>aldeles som min fader har fortalt.</l>
 <lb/><HIS:hisStage>(højt.)</HIS:hisStage>
 <lb/><l part="I">Tag hjelmen af!</l></HIS:hisSp>
@@ -747,7 +741,7 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l part="F">Så gør det dog!</l>
 <lb/><HIS:hisStage>(afsides.)</HIS:hisStage>
-<lb/><l>To klare øjne, lokker som en kornmark, &dash;</l>
+<lb/><l>To klare øjne, lokker som en kornmark, –</l>
 <lb/><l>aldeles som jeg så ham i min drøm.</l></HIS:hisSp>
 <lb/><fw type="sheet" place="bottom-right">2*</fw>
 <pb/>
@@ -765,7 +759,7 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="F">Ingen anden?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
-<lb/><l>Med mindre, at min faer, &dash; men han er gammel</l>
+<lb/><l>Med mindre, at min faer, – men han er gammel</l>
 <lb/><l>og har et sølvgråt skæg, så langt som så,</l>
 <lb/><l>o nej, så tror jeg dog, <emph>jeg</emph> vinder prisen.</l></HIS:hisSp><pb ed="HU"/>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
@@ -779,14 +773,14 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><l>at øen skulde være rigt bebygget?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l>Det var den engang, for en tre års tid;</l>
-<lb/><l>men &dash; ja, det er en sørgelig fortælling &dash;</l>
+<lb/><l>men – ja, det er en sørgelig fortælling –</l>
 <lb/><l>dog, du skal høre den, ifald du vil.</l></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top">21</fw>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="I">Javisst, jeg vil!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
-<lb/><l part="F">Ser du, for tre år siden &dash;</l>
+<lb/><l part="F">Ser du, for tre år siden –</l>
 <lb/><HIS:hisStage>(sætter sig.)</HIS:hisStage>
 <lb/><l part="I">Kom, sæt dig ned!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>
@@ -803,17 +797,17 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="I">Din faders, siger du?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
-<lb/><l part="F">Javisst, min faders.&dash;</l>
+<lb/><l part="F">Javisst, min faders.–</l>
 <lb/><l>Det var en skyfuld aften, da de stormed</l>
 <lb/><l>mod borgeporten, trængte gennem muren,</l>
 <lb/><l>brød ind i gården, myrdede for fode.</l>
 <lb/><l>Jeg flygted angstfuld ud i nattens mulm,</l>
 <lb/><l>og søgte mig et skjulested i skoven.</l>
 <lb/><l>Jeg så vort hjem at hvirvles op i flammer,</l>
-<lb/><l>Jeg hørte skjoldebrag og bange dødsskrig. &dash;</l>
-<lb/><l>Tilsidst blev alting tyst; thi alt var myrdet. &dash;</l>
+<lb/><l>Jeg hørte skjoldebrag og bange dødsskrig. –</l>
+<lb/><l>Tilsidst blev alting tyst; thi alt var myrdet. –</l>
 <lb/><l>Den vilde skare drog mod stranden ned</l>
-<lb/><l>og sejled bort. &dash; Den næste morgen sad jeg</l><pb ed="HU"/>
+<lb/><l>og sejled bort. – Den næste morgen sad jeg</l><pb ed="HU"/>
 <pb/>
 <lb/><fw type="page" place="top">22</fw>
 <lb/><l>på klippen ved de rygende ruiner.</l>
@@ -829,14 +823,14 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><l>jeg lytted bange, steg tilsidst derned</l>
 <lb/><l>og fandt en fremmed, blødende og bleg.</l>
 <lb/><l>Jeg nærmed mig, så bange som jeg var,</l>
-<lb/><l part="I">forbandt hans sår og plejed ham, &dash;</l></HIS:hisSp>
+<lb/><l part="I">forbandt hans sår og plejed ham, –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="F">Og han?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l>Fortalte, da han efterhånden kom sig,</l>
 <lb/><l>at han var dragen med et købmandsskib</l>
 <lb/><l>herhid til øen endnu samme dag,</l>
-<lb/><l>da borgen plyndredes, &dash; var flygtet did</l>
+<lb/><l>da borgen plyndredes, – var flygtet did</l>
 <lb/><l>og havde kæmpet kækt mod røverflokken</l>
 <lb/><l>indtil han, blødende af mathed, styrted</l>
 <lb/><l>i klippekløften, hvor jeg siden fandt ham.</l>
@@ -845,7 +839,7 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><l>og blev mig kær, o kær som ingen anden.</l>
 <lb/><l part="I">Men kom, du må dog se ham.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
-<lb/><l part="F">Nej &dash; nej, vent!</l>
+<lb/><l part="F">Nej – nej, vent!</l>
 <lb/><l>Vi træffer tidsnok sammen, tænker jeg.</l></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top">23</fw>
@@ -856,25 +850,25 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><l part="I">ej blot i Norden hjemme.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="F">Norden? Så</l>
-<lb/><l part="I">du véd da &dash;</l></HIS:hisSp>
+<lb/><l part="I">du véd da –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l part="F">Hvor du kommer fra? O ja!</l><pb ed="HU"/>
 <lb/><l>Min fader har fortalt om jer så tidt,</l>
-<lb/><l part="I">at jeg ved første øjekast &dash;</l></HIS:hisSp>
+<lb/><l part="I">at jeg ved første øjekast –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="F">Og dog</l>
 <lb/><l part="I">du blev ej bange!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l part="F">Bange? Hvorfor bange?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
-<lb/><l>Nu, har han ikke sagt, &dash; ja har han ej &dash;</l></HIS:hisSp>
+<lb/><l>Nu, har han ikke sagt, – ja har han ej –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l>Fortalt, at I er djærve helte? Jo!</l>
 <lb/><l>Men hvorfor skulde det forskrække mig?</l>
 <lb/><l>Jeg véd, I søger ry på fjerne strande,</l>
 <lb/><l>i mandig dyst med drabelige kæmper;</l>
 <lb/><l>men jeg har hverken pantser eller sværd,</l>
-<lb/><l part="I">hvi skulde jeg vel da &dash;</l></HIS:hisSp>
+<lb/><l part="I">hvi skulde jeg vel da –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="F">Nej visst, nej visst!</l>
 <lb/><l>Men hine fremmede, som brændte borgen?</l></HIS:hisSp>
@@ -898,7 +892,7 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><l>og tage blodhævn, som I kalder det.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l>Ha, blodhævn! Tak! Du minder mig om ordet;</l>
-<lb/><l part="I">fast havde jeg forglemt &dash;</l></HIS:hisSp>
+<lb/><l part="I">fast havde jeg forglemt –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l part="F">Men véd du vel,</l>
 <lb/><l part="I">det er en hæslig skik.</l></HIS:hisSp>
@@ -949,7 +943,7 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l part="F">Men ifald</l>
 <lb/><l>min fejge tro, som nu du kalder den,</l>
-<lb/><l>blev plantet om i eders friske jordbund, &dash;</l>
+<lb/><l>blev plantet om i eders friske jordbund, –</l>
 <lb/><l>da véd jeg vist, der spired frem af den</l>
 <lb/><l>en blomsterfylde, rig nok til at dække</l>
 <lb/><l part="I">den nøgne fjeldvæg.</l></HIS:hisSp>
@@ -960,7 +954,7 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><l part="I">Hør! tag mig med derop!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="F">Hvad mener du?</l>
-<lb/><l part="I">Jeg styrer hjemad &dash;</l></HIS:hisSp><pb ed="HU"/>
+<lb/><l part="I">Jeg styrer hjemad –</l></HIS:hisSp><pb ed="HU"/>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l part="F">Ja, jeg sejler med dig;</l>
 <lb/><l>jeg har jo længst i tankerne gjort farten</l>
@@ -968,18 +962,18 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><l>og sne og store sorte graneskove.</l>
 <lb/><l>Der skulde komme lystighed i hallen,</l>
 <lb/><l>ifald jeg måtte råde, kan du tro;</l>
-<lb/><l>thi jeg er munter; &dash; har du nogen skald?</l></HIS:hisSp>
+<lb/><l>thi jeg er munter; – har du nogen skald?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l>Jeg havde en, men her i Syden har</l>
 <pb/>
 <lb/><fw type="page" place="top">27</fw>
 <lb/><l>den lumre luftning slappet harpens strænge,</l>
-<lb/><l part="I">de vil ej klinge &dash;</l></HIS:hisSp>
+<lb/><l part="I">de vil ej klinge –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l part="F">Godt! så skal jeg være</l>
 <lb/><l part="I">din skald.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
-<lb/><l part="F">Og du? &dash; Du kunde følge med os,</l>
+<lb/><l part="F">Og du? – Du kunde følge med os,</l>
 <lb/><l part="I">forlade hjem og fader?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>
 <lb/><HIS:hisStage>(leende)</HIS:hisStage>.</HIS:spOpener>
@@ -990,9 +984,9 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><l part="I">da kun dit skemt?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l part="F">Ak ja! en tosset drøm,</l>
-<lb/><l>som tidt jeg drømte, før vi så hinanden, &dash;</l>
+<lb/><l>som tidt jeg drømte, før vi så hinanden, –</l>
 <lb/><l>og som jeg visst vil drømme mangen gang,</l>
-<lb/><l part="I">når du &dash;</l>
+<lb/><l part="I">når du –</l>
 <lb/><HIS:hisStage>(pludselig afbrydende.)</HIS:hisStage>
 <lb/><l part="M">Du ser så stivt på mig.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
@@ -1007,7 +1001,7 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><fw type="page" place="top">28</fw>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="F">Ja, jeg véd ej selv på hvad;</l>
-<lb/><l>dog jo, jeg véd &dash; og du skal høre det:</l>
+<lb/><l>dog jo, jeg véd – og du skal høre det:</l>
 <lb/><l>jeg tænker på, hvordan du plante vil</l>
 <lb/><l>i Norden dine blomster, og imens</l>
 <lb/><l>så falder mig min egen tro isinde.</l><pb ed="HU"/>
@@ -1020,18 +1014,18 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><l>får kun en halvdel af de slagne kæmper;</l>
 <lb/><l>den anden halvdel hører Freja til.</l>
 <lb/><l>Det har jeg aldrig kunnet ret begribe;</l>
-<lb/><l>men nu &dash; nu fatter jeg, &dash; jeg er jo selv</l>
+<lb/><l>men nu – nu fatter jeg, – jeg er jo selv</l>
 <lb/><l>en slagen kæmpe og min bedste halvdel</l>
 <lb/><l part="I">blev Frejas ejendom.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>
 <lb/><HIS:hisStage>(studsende)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l part="F">Hvad skal det sige?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
-<lb/><l part="I">Nu kort og godt, så vid &dash;</l></HIS:hisSp>
+<lb/><l part="I">Nu kort og godt, så vid –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>
 <lb/><HIS:hisStage>(hurtigt)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l part="F">Nej, lad kun være!</l>
-<lb/><l>Jeg tør ej dvæle længer her i aften, &dash;</l>
+<lb/><l>Jeg tør ej dvæle længer her i aften, –</l>
 <lb/><l>min fader venter, jeg må gå; farvel!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="I">Du går?</l></HIS:hisSp>
@@ -1091,7 +1085,7 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l>Jeg vilde dulgt det for dig, derfor gik jeg</l>
 <lb/><l>at kalde folket ned igen til snekken</l>
-<lb/><l>og sejle bort; du skulde aldrig vidst &dash;</l>
+<lb/><l>og sejle bort; du skulde aldrig vidst –</l>
 <lb/><l>dog hornet varsler, at det er forsilde;</l>
 <lb/><l part="I">de kommer hid.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
@@ -1106,7 +1100,7 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><l part="M">Fra Norden?</l></HIS:hisSp><pb ed="HU"/>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="F">Ja.</l>
-<lb/><l>Min fader faldt, og han var deres drot, &dash;</l>
+<lb/><l>Min fader faldt, og han var deres drot, –</l>
 <lb/><l part="I">thi må han hævnes.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l part="M">Hævnes?</l></HIS:hisSp>
@@ -1138,7 +1132,7 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><HIS:hisSp who="ASGAUT"><HIS:spOpener><speaker>Asgaut</speaker>.</HIS:spOpener>
 <lb/><l part="F">Ja, til Hel!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
-<lb/><l>O fader, hvorfor har du aldrig sagt mig &dash;</l></HIS:hisSp>
+<lb/><l>O fader, hvorfor har du aldrig sagt mig –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker>.</HIS:spOpener>
 <lb/><l part="I">Tys! tys! min datter!</l>
 <lb/><HIS:hisStage>(pegende på <HIS:stageRole who="GANDALF">Gandalf</HIS:stageRole>.)</HIS:hisStage>
@@ -1166,13 +1160,13 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><l part="F">Er vor høvding fejg?</l>
 <lb/><l>Har kvindens glatte tunge dåret ham?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
-<lb/><l part="I">Nu ligemeget, jeg har sagt &dash;</l></HIS:hisSp>
+<lb/><l part="I">Nu ligemeget, jeg har sagt –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ASGAUT"><HIS:spOpener><speaker>Asgaut</speaker>.</HIS:spOpener>
 <lb/><l part="F">Betænk,</l>
 <lb/><l>det gælder al din agt blandt dine kæmper.</l>
 <lb/><l>Dit løfte gav du Valhals høje guder,</l>
 <lb/><l>og brydes det, så er du hvermands niding.</l>
-<lb/><l>Glem ej, vor gamle tro er svagt befæstet, &dash;</l>
+<lb/><l>Glem ej, vor gamle tro er svagt befæstet, –</l>
 <lb/><l>den vakler alt; et stød kan rokke den,</l>
 <lb/><l>og kommer stødet ovenfra, fra drotten,</l>
 <lb/><l part="I">da har den fået banesåret.</l></HIS:hisSp>
@@ -1224,7 +1218,7 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="M">O ve!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
-<lb/><l part="F">Nej, nej, du skal ej &dash;</l></HIS:hisSp>
+<lb/><l part="F">Nej, nej, du skal ej –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker>.</HIS:spOpener>
 <lb/><l>For denne hånd fandt vikingen sin bane,</l>
 <lb/><l>nu hviler han i kæmpehøjen der!</l></HIS:hisSp>
@@ -1234,17 +1228,17 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><l part="F">Han var stærk og djærv;</l>
 <lb/><l>thi jorded jeg ham på hans fædres vís.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
-<lb/><l part="I">Da han er højlagt, så &dash;</l></HIS:hisSp>
+<lb/><l part="I">Da han er højlagt, så –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ASGAUT"><HIS:spOpener><speaker>Asgaut</speaker>.</HIS:spOpener>
 <lb/><l part="F">Nej, ligefuldt</l>
-<lb/><l>den faldne konning kræver blod, &dash; slå til!</l></HIS:hisSp>
+<lb/><l>den faldne konning kræver blod, – slå til!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l part="I">Han skuffer eder!</l>
 <lb/><HIS:hisStage>(til <HIS:stageRole who="GANDALF">Gandalf</HIS:stageRole>.)</HIS:hisStage>
 <lb/><l part="F">Har du ej begrebet,</l>
 <lb/><l>det er kun mig, sin datter, han vil frelse?</l>
 <lb/><l>Dog, hvad forstår vel du et kærligt sind,</l>
-<lb/><l part="I">der offrer alt for den, som &dash;</l></HIS:hisSp>
+<lb/><l part="I">der offrer alt for den, som –</l></HIS:hisSp>
 <lb/><fw type="sheet" place="bottom-right">3*</fw>
 <pb/>
 <lb/><fw type="page" place="top">36</fw>
@@ -1268,19 +1262,19 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="F">Jeg har jo svoret</l>
 <lb/><l>at hævne drotten eller falde selv.</l>
-<lb/><l>Nu vel, han der er fri, &dash; jeg går til Valhal.</l></HIS:hisSp>
+<lb/><l>Nu vel, han der er fri, – jeg går til Valhal.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>
 <lb/><HIS:hisStage>(til <HIS:stageRole who="RODERIK">Roderik</HIS:stageRole>)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l part="I">Hvad mener han?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ASGAUT"><HIS:spOpener><speaker>Asgaut</speaker>.</HIS:spOpener>
-<lb/><l part="F">Det er din agt, du vil? &dash;</l></HIS:hisSp>
+<lb/><l part="F">Det er din agt, du vil? –</l></HIS:hisSp>
 <pb/>
 <lb/><fw type="page" place="top">37</fw>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l>I holde en af mine snekker rede,</l>
 <lb/><l>med spændte sejl og bålet tændt i stavnen;</l>
 <lb/><l>på fortids vis jeg vil bestige den!</l><pb ed="HU"/>
-<lb/><l>Se aftenvinden blæser ud fra stranden, &dash;</l>
+<lb/><l>Se aftenvinden blæser ud fra stranden, –</l>
 <lb/><l>på røde vinger farer jeg til Valhal!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="JOSTEIN"><HIS:spOpener><speaker>Jostejn</speaker>
 <lb/><HIS:hisStage>(går ud til højre)</HIS:hisStage>.</HIS:spOpener></HIS:hisSp>
@@ -1299,7 +1293,7 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><l>For dig han lever; thi dit sind er mildt.</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l>Ja, til min undergang! Det blev mit kald</l>
-<lb/><l>som drot at værne om vort kæmpeliv, &dash;</l>
+<lb/><l>som drot at værne om vort kæmpeliv, –</l>
 <lb/><l>men kraften svigter mig! Kom, Asgaut, du</l>
 <lb/><l>skal tage kongespiret af min hånd;</l>
 <lb/><l>du er en kæmper af det ægte malm;</l>
@@ -1322,12 +1316,12 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><l part="F">Mit liv var ligt</l>
 <lb/><l>en blomsterknop, i fremmed jordbund plantet,</l>
 <lb/><l>og derfor blunded den i svøbet fængslet:</l>
-<lb/><l>da kom en stråle fra det fjerne hjem, &dash;</l>
+<lb/><l>da kom en stråle fra det fjerne hjem, –</l>
 <lb/><l>o, det var dig, min Gandalf! Blomsten åbned</l>
 <lb/><l>sit bæger. Ak, et flygtigt øjeblik,</l>
-<lb/><l>så blegned strålen, &dash; blomsten måtte dø!</l></HIS:hisSp>
+<lb/><l>så blegned strålen, – blomsten måtte dø!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
-<lb/><l>O, har jeg fattet dig? Du kunde? &dash; ha!</l>
+<lb/><l>O, har jeg fattet dig? Du kunde? – ha!</l>
 <lb/><l>så er mit løfte tifold ulyksaligt!</l></HIS:hisSp><pb ed="HU"/>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l part="I">Vi mødes atter!</l></HIS:hisSp>
@@ -1402,7 +1396,7 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><l part="I">O, tag min tak!</l></HIS:hisSp>
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker>
 <lb/><HIS:hisStage>(nedslået; til <HIS:stageRole who="BLANKA">Blanka</HIS:stageRole>)</HIS:hisStage>.</HIS:spOpener>
-<lb/><l part="F">Og du &dash; hvad skænker du</l>
+<lb/><l part="F">Og du – hvad skænker du</l>
 <lb/><l part="I">den gamle røver?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="BLANKA"><HIS:spOpener><speaker>Blanka</speaker>.</HIS:spOpener>
 <lb/><l part="F">Kærlighed, som før!</l>
@@ -1419,7 +1413,7 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><l>om troen hos de stille folk i Syden,</l>
 <lb/><l>at selv mit hårde bryst blev blødt derved.</l>
 <lb/><l>Og dag for dag jeg dulgte, hvem jeg var;</l>
-<lb/><l part="I">jeg voved ej &dash;</l></HIS:hisSp>
+<lb/><l part="I">jeg voved ej –</l></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l part="F">Men kæmpehøjen der?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="RODERIK"><HIS:spOpener><speaker>Roderik</speaker>.</HIS:spOpener>
@@ -1435,13 +1429,13 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><l part="M">Hvor går du?</l></HIS:hisSp>
 <lb/><HIS:hisSp who="ASGAUT"><HIS:spOpener><speaker>Asgaut</speaker>.</HIS:spOpener>
 <lb/><l part="F">Nordpå med min snekke!</l>
-<lb/><l>Nu ser jeg klarlig, min tid er forbi &dash;</l>
+<lb/><l>Nu ser jeg klarlig, min tid er forbi –</l>
 <lb/><l>og vikinglivet også. Jeg vil gå</l>
 <lb/><l>til Island; did er end ej sotten trængt.</l>
 <lb/><HIS:hisStage>(til <HIS:stageRole who="BLANKA">Blanka</HIS:stageRole>.)</HIS:hisStage><pb ed="HU"/>
 <lb/><l>Du, unge kvinde, tag min plads hos drotten!</l>
-<lb/><l>Thor kan ej mere &dash; Mjølnir er af lave;</l>
-<lb/><l>nu råde Balder gennem dig. &dash; Farvel!</l>
+<lb/><l>Thor kan ej mere – Mjølnir er af lave;</l>
+<lb/><l>nu råde Balder gennem dig. – Farvel!</l>
 <lb/><HIS:hisStage>(han går.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>.</HIS:spOpener>
 <lb/><l>Ja, Balder råder gennem dig, min Blanka!</l>
@@ -1493,12 +1487,12 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <pb/>
 <lb/><fw type="page" place="top">44</fw>
 <lb/><HIS:hisStage>(lægger deres hænder sammen.)</HIS:hisStage>
-<lb/><l>I er den unge morgenrødes børn, &dash;</l>
+<lb/><l>I er den unge morgenrødes børn, –</l>
 <lb/><l>drag did hvor kongestolen eder venter;</l>
 <lb/><l>jeg er den sidste fra de sjunkne tider,</l>
-<lb/><l>min kongestol er graven &dash; und mig den!</l></HIS:hisSp>
+<lb/><l>min kongestol er graven – und mig den!</l></HIS:hisSp>
 <lb/><HIS:hisStage>(<HIS:stageRole who="GANDALF">Gandalf</HIS:stageRole> og <HIS:stageRole who="BLANKA">Blanka</HIS:stageRole> styrter sig tause i hans arme. <HIS:stageRole who="RODERIK">Roderik</HIS:stageRole> stiger op på
-<lb/>højen. &dash; <HIS:stageRole who="HEMMING">Hemming</HIS:stageRole> sætter sig med harpen ved hans fødder.)</HIS:hisStage>
+<lb/>højen. – <HIS:stageRole who="HEMMING">Hemming</HIS:stageRole> sætter sig med harpen ved hans fødder.)</HIS:hisStage>
 <lb/><HIS:hisSp who="GANDALF"><HIS:spOpener><speaker>Gandalf</speaker>
 <lb/><HIS:hisStage>(med fatning)</HIS:hisStage>.</HIS:spOpener>
 <lb/><l part="I">Og nu til Norge!</l></HIS:hisSp>
@@ -1519,7 +1513,7 @@ Konvertert filen fra SGML til XML og arkivert SGML-versjonen. Fjernet witStart o
 <lb/><l>og Norden vorder selv en kæmpegrav.</l>
 <lb/><l>Men glem ej løftet, som Alfader gav:</l>
 <lb/><l>Når mos og blommer dækker højens side,</l>
-<lb/><l>skal heltens ånd på Idavold jo stride, &dash;</l>
+<lb/><l>skal heltens ånd på Idavold jo stride, –</l>
 <lb/><l>så stiger også Norden fra sin grav</l>
 <lb/><l>til luttret åndsbedrift på tankens hav!</l></HIS:hisSp>
 <lb/><figure type="bar"/>

@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -13,11 +7,11 @@
 <title level="s" type="main">Henrik Ibsens skrifter</title>
 <title level="s" type="sub">Diplomatarisk tekstarkiv</title>
 <title level="a" type="main">Fruen fra havet</title>
-<title level="a" type="sub">NBO Ms.4&deg; 1116a, bl. 5r og 6v</title>
+<title level="a" type="sub">NBO Ms.4° 1116a, bl. 5r og 6v</title>
 <title level="a" type="origYear">1888</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Henninge Margrethe Solberg, Mette Witting</name></respStmt>
 <respStmt>
 <resp>Oppretting og 1. kollasjon, juni - november 2006</resp>
@@ -44,12 +38,12 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <p>Manuskriptets grafiske oppsett finnes beskrevet i typografibeskrivelsen i FH41116_NBO.xml.</p></HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -60,7 +54,7 @@
 <label xml:id="DENFREMMEDE"/><item/>
 </list>
 </tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -126,9 +120,9 @@ Gjenstår: kontrollere at delingen i a og b er i tråd med Tone Modalslis manusk
 <lb/><head>1<hi rend="raised">ste</hi> akt.</head>
 <lb/><p>Sommerstemning, liv, glæde over menneskene.
 <lb/>Dagene går som en fest. Thora betror sig <HIS:hisDel rend="overstrike">til Hesler.</HIS:hisDel>
-<lb/>til sin mand efter samtalen med Hesler. Wan&typHyp;
+<lb/>til sin mand efter samtalen med Hesler. Wan‐
 <lb/>gel oprørt ved at erfare hendes tidligere fortiede
-<lb/>forlovelse. Tilgivelse og forglemmelse. Nu i al&typHyp;
+<lb/>forlovelse. Tilgivelse og forglemmelse. Nu i al‐
 <lb/>le fald tilhører hun jo ham alene. Herefter skal
 <lb/>der være fuld fortrolighed mellem ham og hende
 <lb/>og børnene. De vil gensidig dele hinandens
@@ -140,18 +134,18 @@ Gjenstår: kontrollere at delingen i a og b er i tråd med Tone Modalslis manusk
 <HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="FH_78ms"/>
 <div type="act" n="2">
 <lb/><head>2<hi rend="raised">den</hi> akt.</head>
-<lb/><p>Wangel søger at komme til klarhed over hen&typHyp;
-<lb/>des besynderlige væsen ved antydninger og gen&typHyp;
+<lb/><p>Wangel søger at komme til klarhed over hen‐
+<lb/>des besynderlige væsen ved antydninger og gen‐
 <lb/>nem omveje i en samtale med Hesler. Det
-<lb/>er havet som drager hende med hemmelig&typHyp;
+<lb/>er havet som drager hende med hemmelig‐
 <lb/>hedsfuld magt. Wangel taler til hende derom.
 <lb/>Vil hun til havet? Ja, ja, hun vil til havet! Så
 <lb/>er han villig til at flytte did ud! <q type="speech" who="ELLIDA">Nej, nej, ikke
 <lb/>dette offer!</q> Ikke rykkes op herfra, hvor han har
 <lb/>sit naturlige hjem. Han holder sit forsæt fast.
-<lb/>Hun: <q type="speech" who="ELLIDA">giv mig fri! lad mig rejse alene!</q> <q type="speech" who="WANGEL">Hvor læn&typHyp;
-<lb/>ge?</q> <q type="speech" who="ELLIDA">For stedse! Jeg kan ikke leve længer sam&typHyp;
-<lb/>men med dig.</q> Så følger forklaringen. Det er eg&typHyp;
+<lb/>Hun: <q type="speech" who="ELLIDA">giv mig fri! lad mig rejse alene!</q> <q type="speech" who="WANGEL">Hvor læn‐
+<lb/>ge?</q> <q type="speech" who="ELLIDA">For stedse! Jeg kan ikke leve længer sam‐
+<lb/>men med dig.</q> Så følger forklaringen. Det er eg‐
 <lb/>entlig ikke med ham hun lever i ægteskab!</p>
 </div>
 <pb ed="source" type="folio_nopagination" subtype="verso" n="6" facs="12"/>
@@ -159,13 +153,13 @@ Gjenstår: kontrollere at delingen i a og b er i tråd med Tone Modalslis manusk
 <HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="FH_96ms"/>
 <div type="act" n="3 4">
 <lb/><head>3<hi rend="raised">dje</hi> akt.</head>
-<lb/><p>Denne akt foregår i den afsides liggende del af ha&typHyp;
+<lb/><p>Denne akt foregår i den afsides liggende del af ha‐
 <lb/>ven<HIS:hisDel rend="overwritten">.</HIS:hisDel>med brygge og badehus. Thora opholder sig der.
-<lb/>Wangel kommer til hende. Derefter Hesler. Så en&typHyp;
+<lb/>Wangel kommer til hende. Derefter Hesler. Så en‐
 <lb/>delig Lyngstrand. Stor nyhed! Amerikaneren er
-<lb/>her! Han har set ham! &dash; Optrin mellem Thora og John&typHyp;
-<lb/>son. Hvad havet har sammenføjet skal ikke menne&typHyp;
-<lb/>sker adskille. Wangel kommer. Genkender Ameri&typHyp;
+<lb/>her! Han har set ham! – Optrin mellem Thora og John‐
+<lb/>son. Hvad havet har sammenføjet skal ikke menne‐
+<lb/>sker adskille. Wangel kommer. Genkender Ameri‐
 <lb/>kaneren som styrmanden, der slog kaptejnen
 <lb/>ihjæl. Beråber sig på Thoras <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>udsagn. Hun. <q type="speech" who="ELLIDA">Nej
 <lb/>nej.</q> Nægter alt. Johnson går: <q type="speech" who="DENFREMMEDE">Ja, så får du gøre
@@ -175,8 +169,8 @@ Gjenstår: kontrollere at delingen i a og b er i tråd med Tone Modalslis manusk
 <div type="act" n="5">
 <lb/><head>4<hi rend="raised">de</hi> akt.</head>
 <lb/><p>Samme sted. Nu kommer opgø<unclear reason="writing">e</unclear>t mellem
-<lb/>Wangel og Thora. Hesler kommer tilstede. Wan&typHyp;
-<lb/>gel indvilger i Thoras rejse. Gir afkald på hen&typHyp;
+<lb/>Wangel og Thora. Hesler kommer tilstede. Wan‐
+<lb/>gel indvilger i Thoras rejse. Gir afkald på hen‐
 <lb/>de.</p>
 </div>
 </body>

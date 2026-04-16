@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.ibsen.uio.no/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
+ 
 <?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS"> 
 <teiHeader xml:lang="nob">
@@ -13,11 +8,11 @@
 <title level="s" type="main">Henrik Ibsens skrifter</title>
 <title level="s" type="sub">Diplomatarisk tekstarkiv</title>
 <title level="a" type="main">Hvide heste</title>
-<title level="a" type="sub">NBO Ms.4&deg; 1291c</title>
+<title level="a" type="sub">NBO Ms.4° 1291c</title>
 <title level="a" type="origYear">1886</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Åshild Haugsland, Inger Marie Kjølstadmyr, Henninge Solberg, Mette Witting</name></respStmt>
 <respStmt>
 <resp>Oppretting og første kollasjon, juni-november 2006</resp>
@@ -42,7 +37,7 @@
 <msIdentifier>
 <settlement>Oslo</settlement>
 <repository>Nasjonalbiblioteket</repository>
-<idno>NBO Ms.4&deg; 1291c</idno>
+<idno>NBO Ms.4° 1291c</idno>
 </msIdentifier>
 <msContents><msItem>
 <author>Uten forfatternavn</author>
@@ -54,15 +49,15 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <list><item>For hovedpunkter: se typografibeskrivelsen i arkivert Ro41291_pre_splitt.xml.</item>
 <item>Foliering: ukjent, egenhendig folieringstype side 15, se note ved tekststedet. Fra side 17: egenhendig leggfoliering øverst til venstre, tallet og punktumet er understreket og skråstilt.</item>
 <item>Annet: faksimileside 44: Foran fru Rosmers siste replikk er det en påbegynt bokstav som er strøket. Er ikke transkribert.</item></list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="fw-type-gathering">De åtte første sidene i dette mset består av to dobbeltblad som er lagt inni hverandre (deretter ligger dobbeltbladene etter hverandre). Det er mulig at denne 'doble' folieringen viser til at dobbeltbladet det står på, inneholder både legg 1 og legg 2. Har derfor kodet både denne folieringen samt de neste med 'gathering' (etter prat med HB).</tagUsage></namespace>
@@ -77,7 +72,7 @@
 <label xml:id="MADAMHELSETH"/><item>Madam Helset</item>
 </list>
 </tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-tei2;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -136,42 +131,42 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><fw type="gathering" place="top-left">1.</fw><note resp="author" place="top-right">25.5.86.</note>
 <div type="act" n="1"><HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="Ro_345ms"/><HIS:synopticViewPtr type="synopticView_mainVersions" target="Ro86.xml" xml:id="Ro_345main"/>
 <lb/><head>Første akt.</head>
-<lb/><HIS:hisStage>(Gammeldags men stor og hyggelig daglig&typHyp;
+<lb/><HIS:hisStage>(Gammeldags men stor og hyggelig daglig‐
 <lb/>stue hos Rosmers. På væggen til højre en
-<lb/>kakkelovn; længere tilbage en dør. På bagvæg&typHyp;
+<lb/>kakkelovn; længere tilbage en dør. På bagvæg‐
 <lb/>gen fløjdør til forstuen. På væggen til venstre
 <lb/>to vinduer med potteblomster i opsatser. Ved
 <lb/>kakkelovnen sofa med bord og lænestole. På
-<lb/>væggene hænger gamle familjeportrætter fore&typHyp;
-<lb/>stillende officerer og prester. Det er sen efter&typHyp;
-<lb/>middagstid. Vintersolen skinner ind på gulv&typHyp;
+<lb/>væggene hænger gamle familjeportrætter fore‐
+<lb/>stillende officerer og prester. Det er sen efter‐
+<lb/>middagstid. Vintersolen skinner ind på gulv‐
 <lb/>tæppet.)</HIS:hisStage>
 <lb/><HIS:hisStage>(Fru Rosmer står ved det forreste vindu og
 <lb/>steller med blomsterne. Madam Helset kommer
 <lb/>ind fra højre med en dækketøjskurv.)</HIS:hisStage>
 <lb/><HIS:hisSp who="MADAMHELSETH"><HIS:spOpener><speaker>Madam Helset</speaker>.</HIS:spOpener>
-<lb/><p>Det er vel bedst jeg begynder så småt at dæk&typHyp;
+<lb/><p>Det er vel bedst jeg begynder så småt at dæk‐
 <lb/>ke tébordet, frue?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Ja, gør De det. Nu må han vel snart komme.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MADAMHELSETH"><HIS:spOpener><speaker>Madam Helset</speaker>
 <lb/><HIS:hisStage>(lægger dugen på.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Nej, han kommer nok ikke så snart endnu;
-<lb/>for jeg så ham fra køkkenet &dash;</p></HIS:hisSp>
+<lb/>for jeg så ham fra køkkenet –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Ja, ja &dash;</p></HIS:hisSp>
+<lb/><p>Ja, ja –</p></HIS:hisSp>
 
 <pb ed="source" type="folio_nopagination" subtype="verso"  n="1" facs="18" gathering="1"/>
 <lb/><HIS:hisSp who="MADAMHELSETH"><HIS:spOpener><speaker>Madam Helset</speaker>.</HIS:spOpener>
-<lb/><p><HIS:hisDel rend="overstrike"><gap/></HIS:hisDel> &dash; på den andre siden af mølledammen.
+<lb/><p><HIS:hisDel rend="overstrike"><gap/></HIS:hisDel> – på den andre siden af mølledammen.
 <lb/>Først vilde han gå bent over kloppen; men
-<lb/>så rygged han tilbage &dash;</p></HIS:hisSp>
+<lb/>så rygged han tilbage –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Gjorde han det?</p></HIS:hisSp><HIS:synopticViewPtr type="synopticView_mainVersions" target="Ro86.xml" xml:id="Ro_346main"/>
 <lb/><HIS:hisSp who="MADAMHELSETH"><HIS:spOpener><speaker>Madam Helset</speaker>.</HIS:spOpener>
 <lb/><p>Ja, og så gik han helt ovenom. Å ja, det er
-<lb/>underligt med slige steder. Der, hvor sligt no&typHyp;
-<lb/>get er hendt, &dash; der &dash;. Det sidder i; det glemmes
+<lb/>underligt med slige steder. Der, hvor sligt no‐
+<lb/>get er hendt, – der –. Det sidder i; det glemmes
 <lb/>ikke så fort.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Nej, det glemmes ikke.</p></HIS:hisSp>
@@ -215,71 +210,71 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/>mand henne?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Han er bare gåt en liden tur. Jeg tænker
-<lb/>han kommer på øjeblikket. Vær så god at ta&rapo;
+<lb/>han kommer på øjeblikket. Vær så god at ta’
 <lb/>plads så længe.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>
 <lb/><HIS:hisStage>(sætter sig ved ovnen.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Mange tak. Der er noget, som jeg gerne vil&typHyp;
+<lb/><p>Mange tak. Der er noget, som jeg gerne vil‐
 <lb/>de tale med ham om.</p></HIS:hisSp>
 <HIS:synopticViewPtr type="synopticView_mainVersions" target="Ro86.xml" xml:id="Ro_348main"/>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>
 <lb/><HIS:hisStage>(sætter sig ved bordet.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Det var jo heldigt; for så fik vi da endelig se
-<lb/>Dem hos os en gang. Hvorfor er De ikke kom&typHyp;
+<lb/>Dem hos os en gang. Hvorfor er De ikke kom‐
 <lb/>met ud til os før?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Nå, unge nygifte folk bør man da ikke så&typHyp;
+<lb/><p>Nå, unge nygifte folk bør man da ikke så‐
 
 <pb ed="source" type="folio_nopagination" subtype="verso"  n="2" facs="20" gathering="1"/>
 <lb/>dan rende på dørene.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>
 <lb/><HIS:hisStage>(smiler.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Hm, &dash; så pur unge er vi nu egentlig ikke.</p></HIS:hisSp>
+<lb/><p>Hm, – så pur unge er vi nu egentlig ikke.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Ja, nygifte i alt fald. Men desuden har jeg, som
 <lb/>De ved. Været borte et par ugers tid.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Ja, De har jo været omkring på folkemøde<HIS:hisDel rend="overwritten">t</HIS:hisDel>r.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p><HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>Er ble&rapo;t politisk agitator, som de radikale bla&typHyp;
-<lb/>de kalder det &dash; når det gælder <emph>os</emph>. Eller læser De
+<lb/><p><HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>Er ble’t politisk agitator, som de radikale bla‐
+<lb/>de kalder det – når det gælder <emph>os</emph>. Eller læser De
 <lb/>kanske ikke de blade.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>
 <lb/><HIS:hisStage>(hurtigt.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Å jo, vi læser dem nok en gang imellem.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker></HIS:spOpener>
-<lb/><p>Nå, så har De vel set hvorledes jeg er blet over&typHyp;
+<lb/><p>Nå, så har De vel set hvorledes jeg er blet over‐
 <lb/>f<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>uset og tilrakket? Hvilke grovheder jeg har
 <lb/>måttet døje?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Ja, men jeg synes, De har bidt ganske godt fra
 <lb/>Dem.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Det har jeg; det tør jeg selv sige. Skal jeg ende&typHyp;
+<lb/><p>Det har jeg; det tør jeg selv sige. Skal jeg ende‐
 <lb/>lig træde offentlig op, så er jeg sandelig ikke til
-<lb/>sinds godvillig at lægge ryggen tilrette. &dash; Men
+<lb/>sinds godvillig at lægge ryggen tilrette. – Men
 <lb/>lad os ikke komme ind på alt dette sørgelige og
-<lb/>opri<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel><unclear>v</unclear>ende kævl.<HIS:synopticViewPtr type="synopticView_mainVersions" target="Ro86.xml" xml:id="Ro_349main"/> Sig mig heller &dash; hvorledes sy&typHyp;
-<lb/>nes De nu om det at være ble&rapo;t fruen i huset?</p></HIS:hisSp>
+<lb/>opri<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel><unclear>v</unclear>ende kævl.<HIS:synopticViewPtr type="synopticView_mainVersions" target="Ro86.xml" xml:id="Ro_349main"/> Sig mig heller – hvorledes sy‐
+<lb/>nes De nu om det at være ble’t fruen i huset?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.
 <pb ed="source" type="folio_nopagination" subtype="recto"  n="2" facs="21" gathering="1 &amp; 2"/>
 <lb/><fw type="gathering" place="top-left">2.</fw>
 <lb/><HIS:hisStage>(halvt sagte.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Jeg føler mig i alle måder så usigelig lykke&typHyp;
+<lb/><p>Jeg føler mig i alle måder så usigelig lykke‐
 <lb/>lig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Nå, det glæder mig af hjertet. Anderledes kan det
-<lb/>jo heller ikke være. En mand som Eilert Ros&typHyp;
+<lb/>jo heller ikke være. En mand som Eilert Ros‐
 <lb/>mer! Og så <emph>det</emph>, at De her slet ikke er kommet
-<lb/>ind i fremmede og uvante forhold, som De be&typHyp;
+<lb/>ind i fremmede og uvante forhold, som De be‐
 <lb/>høver at leve Dem sammen med. Huset her og
-<lb/>alt sammen var jo ble&rapo;t Dem som et hjem for læn&typHyp;
+<lb/>alt sammen var jo ble’t Dem som et hjem for læn‐
 <lb/>ge siden. Der er bare den forskel at nu er det hele
 <lb/>Deres eget.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>
 <lb/><HIS:hisStage>(flytter sig lidt nærmere.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Kære rektor, De siger dette<HIS:synopticViewPtr type="synopticView_mainVersions" target="Ro86.xml" xml:id="Ro_350main"/> så trohjertig, så
-<lb/>jeg er viss på der ikke ligger nogen misstem&typHyp;
+<lb/>jeg er viss på der ikke ligger nogen misstem‐
 <lb/>ning under.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Misstemning? Hvad mener De med det?</p></HIS:hisSp>
@@ -287,27 +282,27 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><p>Det vilde jo ikke være så underlig, om De følte
 <lb/>dem lidt ilde berørt ved at se en anden råde her,
 <lb/>hvor De var vant til at se Deres <HIS:hisAdd place="offline">egen</HIS:hisAdd> søster styre og
-<lb/>råde lige til for et par år siden. Men det gør <lb/>De altså ikke? <HIS:hisStage>(rækker ham hånden.)</HIS:hisStage> Tak, kæ&typHyp;
+<lb/>råde lige til for et par år siden. Men det gør <lb/>De altså ikke? <HIS:hisStage>(rækker ham hånden.)</HIS:hisStage> Tak, kæ‐
 <lb/>re rektor! Tak, tak for det!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Men sig mig, hvor i al verden har De kunnet
-<lb/>falde på en sådan tanke! Jeg skulde ha&rapo; noget
-<lb/>imod &dash; nu, da min stakkers søster er borte, &dash; nu
-<lb/>skulde jeg ha&rapo; noget imod at De tog den tomme
+<lb/>falde på en sådan tanke! Jeg skulde ha’ noget
+<lb/>imod – nu, da min stakkers søster er borte, – nu
+<lb/>skulde jeg ha’ noget imod at De tog den tomme
 <pb ed="source" type="folio_nopagination" subtype="verso"  n="2" facs="22" gathering="1 &amp; 2"/>
-<lb/>plads efter hende, &dash; at De gjorde Rosmer til en
-<lb/>lykkelig mand &dash; efter alle de grufulde oplevel&typHyp;
-<lb/>ser, &dash; og at De <HIS:hisDel rend="overwritten">s</HIS:hisDel>endelig selv blev lykkelig efter al
-<lb/>Deres utrættelige omhu for hende &dash; for hende,
-<lb/>den stakkers utilregnelige skabning, som valg&typHyp;
-<lb/>te at, &dash; som endte med at &dash; gå bort fra det hele.</p></HIS:hisSp>
+<lb/>plads efter hende, – at De gjorde Rosmer til en
+<lb/>lykkelig mand – efter alle de grufulde oplevel‐
+<lb/>ser, – og at De <HIS:hisDel rend="overwritten">s</HIS:hisDel>endelig selv blev lykkelig efter al
+<lb/>Deres utrættelige omhu for hende – for hende,
+<lb/>den stakkers utilregnelige skabning, som valg‐
+<lb/>te at, – som endte med at – gå bort fra det hele.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Å, lad os ikke tale om disse tunge ting. Lad os
 <lb/>ikke tænke på dem.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Nej, lad os ikke det. Lad os holde os til det, som
-<lb/>er lys i. Sig mig nu, fru Rosmer &dash;. Men en ting
-<lb/>først &dash;; lad mig få lov til at kalde Dem Agate
+<lb/>er lys i. Sig mig nu, fru Rosmer –. Men en ting
+<lb/>først –; lad mig få lov til at kalde Dem Agate
 <lb/>ligesom hun gjorde.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.
 <lb/><HIS:hisStage>(glad.)</HIS:hisStage></HIS:spOpener>
@@ -318,7 +313,7 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><p>Rosmer, ser du hvem her er!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Madam Helset fortalte det. <HIS:hisStage>(trykker rektorens
-<lb/>hænder.)</HIS:hisStage> Velkommen til huset igen, kære gam&typHyp;
+<lb/>hænder.)</HIS:hisStage> Velkommen til huset igen, kære gam‐
 <lb/>le ven. Det var nok det jeg vidste, at engang
 <lb/>måtte det bli som før imellem os.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
@@ -329,31 +324,31 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 
 <pb ed="source" type="folio_nopagination" subtype="recto"  n="1" facs="23" gathering="3"/>
 <lb/><fw type="gathering" place="top-left"><unclear reason="binding">3</unclear>.</fw>
-<lb/><p><HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>Ja tænk, hvor lykkeligt at det bare var en ind&typHyp;
+<lb/><p><HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>Ja tænk, hvor lykkeligt at det bare var en ind‐
 <lb/>bildning.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Var det virkelig det, Gylling? Men hvorfor <lb/>trak du dig da så rent tilbage fra os?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Fordi jeg ikke vilde gå her <HIS:hisDel rend="overstrike">og</HIS:hisDel> som et levende
-<lb/>minde om dine ulykkelige år &dash; og om hende &dash;
+<lb/>minde om dine ulykkelige år – og om hende –
 <lb/>som endte i mølledammen.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Ja, det var jo vakkert og hensynsfuldt tænkt
 <lb/>af dig, kære Gylling. Men det vil jeg sige, at det
-<lb/>var aldeles unødvendigt. Hverken Agnete el&typHyp;
+<lb/>var aldeles unødvendigt. Hverken Agnete el‐
 <lb/>ler lille Alfred står for os som noget, vi kvider
 <lb/>os for at dvæle ved. Tvert imod. Vi taler ofte
-<lb/>om dem. De hører endnu ligesom huset til, sy&typHyp;
+<lb/>om dem. De hører endnu ligesom huset til, sy‐
 <lb/>nes vi.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>G<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>y<HIS:clarification place="inline">l</HIS:clarification>ling</speaker>.</HIS:spOpener>
 <lb/><p>Gør I virkelig det? Kan I det?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Ja, hvorfor ikke &dash;?</p></HIS:hisSp>
+<lb/><p>Ja, hvorfor ikke –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Det er jo så ganske naturligt. Både Agate
 <lb/>og jeg holdt jo så inderlig af de bortgangne. Å,
-<lb/>det er en stor velsignet lykke, det, ikke at ha&rapo; no&typHyp;
-<lb/>get at bebrejde sig &dash;</p></HIS:hisSp>
+<lb/>det er en stor velsignet lykke, det, ikke at ha’ no‐
+<lb/>get at bebrejde sig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Fra nu af kommer jeg ud til jer hver dag.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
@@ -362,33 +357,33 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 
 <pb ed="source" type="folio_nopagination" subtype="verso"  n="1" facs="24" gathering="3"/>
 <lb/><p>Jeg skulde højlig ønsket at omgangen mellem
-<lb/>os aldrig var ble&rapo;t afbrud<HIS:hisDel rend="overwritten">e</HIS:hisDel>t. Der er mangt og me&typHyp;
+<lb/>os aldrig var ble’t afbrud<HIS:hisDel rend="overwritten">e</HIS:hisDel>t. Der er mangt og me‐
 <lb/>get, som jeg så gerne vilde tale uforbeholdent
-<lb/>med dig om, &dash; sådan lige ud af hjertet.</p></HIS:hisSp><HIS:synopticViewPtr type="synopticView_mainVersions" target="Ro86.xml" xml:id="Ro_353main"/>
+<lb/>med dig om, – sådan lige ud af hjertet.</p></HIS:hisSp><HIS:synopticViewPtr type="synopticView_mainVersions" target="Ro86.xml" xml:id="Ro_353main"/>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Ja ikke sandt, Rosmer! Lad det nu ske.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Nå, du kan såmænd tro, jeg har ikke mindre
-<lb/>at tale med dig om. For nu er jeg ble&rapo;t agitator,
+<lb/>at tale med dig om. For nu er jeg ble’t agitator,
 <lb/>som du vel ved.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Ja du er jo det.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Ja n<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>u går det sandelig ikke an for nogen tæn&typHyp;
-<lb/>kende og retsindig <HIS:hisDel rend="overwritten">at</HIS:hisDel>mand at stå som ørkes&typHyp;
-<lb/>løs tilskuer længer. Nu, da de radikale virke&typHyp;
+<lb/><p>Ja n<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>u går det sandelig ikke an for nogen tæn‐
+<lb/>kende og retsindig <HIS:hisDel rend="overwritten">at</HIS:hisDel>mand at stå som ørkes‐
+<lb/>løs tilskuer længer. Nu, da de radikale virke‐
 <lb/>lig er kommet <HIS:hisDel rend="overwritten">f</HIS:hisDel>til magten her i landet, nu er
 <lb/>det på tide at alle velsindede borgere rejser sig
-<lb/>i endrægtighed &dash; det er på høj tid, siger jeg &dash;</p></HIS:hisSp>
+<lb/>i endrægtighed – det er på høj tid, siger jeg –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>
 <lb/><HIS:hisStage>(med et undertrykt smil.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Ja er det i<HIS:hisDel rend="overwritten">l<gap/></HIS:hisDel>kke egentlig nu temmelig sent?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Unægtelig havde det været heldig<HIS:hisDel rend="overwritten"><unclear>t</unclear></HIS:hisDel>st om vi hav&typHyp;
-<lb/>de standset strømmen på et ti<HIS:hisDel rend="overwritten">l</HIS:hisDel>dligere tids&typHyp;
+<lb/><p>Unægtelig havde det været heldig<HIS:hisDel rend="overwritten"><unclear>t</unclear></HIS:hisDel>st om vi hav‐
+<lb/>de standset strømmen på et ti<HIS:hisDel rend="overwritten">l</HIS:hisDel>dligere tids‐
 <lb/>punkt. Men hvem kunde også forudsé, hvad
 <lb/>der vilde komme? Jeg i alle fald ikke. Jo, nu
-<lb/>har jeg rigtignok fåt øjnene op; for nu er så&typHyp;
+<lb/>har jeg rigtignok fåt øjnene op; for nu er så‐
 <lb/>mænd oprørsånden trængt ind i selve skolen.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>I skolen? I din skole?</p></HIS:hisSp>
@@ -397,21 +392,21 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Ja så sandelig er den det. I min egen skole.
 <lb/>Hvad synes du. Jeg er kommen under vejr med
-<lb/>at gutterne i øverste klasse &dash; det vil da sige en
+<lb/>at gutterne i øverste klasse – det vil da sige en
 <lb/>del af gutterne, har stiftet en forening og <emph>der</emph>
 <lb/><HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>holder de Mortensgårds avis.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Hm &dash;.</p></HIS:hisSp>
+<lb/><p>Hm –.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Jeg har ellers lagt mærke til at unge menne&typHyp;
+<lb/><p>Jeg har ellers lagt mærke til at unge menne‐
 <lb/>sker ikke plejer være egentlig radikale.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>De fleste plejer ikke være det. Det er ganske
-<lb/>sandt. De fleste står da, gud ske lov, i den al&typHyp;
+<lb/>sandt. De fleste står da, gud ske lov, i den al‐
 <lb/>der endnu så vidt under autoritetens respekt
 <lb/>både i hjemmet og i skolen at de ikke lar nogen
-<lb/>umoden kritik over det bestående og det aner&typHyp;
-<lb/>kendte komme til orde. Men der gives desvær&typHyp;
+<lb/>umoden kritik over det bestående og det aner‐
+<lb/>kendte komme til orde. Men der gives desvær‐
 <lb/>re und<HIS:hisDel rend="overwritten">er</HIS:hisDel>tagelser f<HIS:hisDel rend="overwritten">or</HIS:hisDel>ra regelen. Og det er for os
 <lb/>skolemænd en sørgelig, sørgelig kendsgerning
 <lb/>at det netop er de fra åndsevnernes side bedst
@@ -419,12 +414,12 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Ja, det har jeg også lagt mærke til.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Men desto farligere er de, disse enkelte skab&typHyp;
-<lb/>bede får. De er i stand til at smitte hele flok&typHyp;
+<lb/><p>Men desto farligere er de, disse enkelte skab‐
+<lb/>bede får. De er i stand til at smitte hele flok‐
 <lb/>ken for mig. Hele klassen. Hele skolen. Se,
 <lb/>derfor er det at jeg ikke har betænkt mig på at
-<lb/>ta&rapo; virksom del i disse folkemøder og advare
-<lb/>imod den fordærvelige tidsånd som er kom&typHyp;
+<lb/>ta’ virksom del i disse folkemøder og advare
+<lb/>imod den fordærvelige tidsånd som er kom‐
 
 <pb ed="source" type="folio_nopagination" subtype="verso"  n="2" facs="26" gathering="3"/>
 <lb/>met op hos os for øjeblikket.</p></HIS:hisSp>
@@ -433,17 +428,17 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/>udrettes noget på den måde.</p></HIS:hisSp>
 <HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="Ro_454ms"/><HIS:synopticViewPtr type="synopticView_mainVersions" target="Ro86.xml" xml:id="Ro_454main"/><lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Jeg vil i alt fald aftjene min statsborgerlige
-<lb/>værnepligt. Og jeg mener, det er enhver fædre&typHyp;
+<lb/>værnepligt. Og jeg mener, det er enhver fædre‐
 <lb/>landssindet og for den gode sag bekymret mands
 <lb/>skyldighed at gøre det samme. Se, derfor er
 <lb/>det nærmest at jeg er kommet her ud til dig i
-<lb/>dag &dash;</p></HIS:hisSp>
+<lb/>dag –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Hvad? Mener du at jeg skulde &dash;?</p></HIS:hisSp>
+<lb/><p>Hvad? Mener du at jeg skulde –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Men, kære rektor, De kender jo hans ulyst &dash;</p></HIS:hisSp>
+<lb/><p>Men, kære rektor, De kender jo hans ulyst –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Den må han overvinde. <HIS:hisStage>(til Rosmer.)</HIS:hisStage> Du føl&typHyp;
+<lb/><p>Den må han overvinde. <HIS:hisStage>(til Rosmer.)</HIS:hisStage> Du føl‐
 <lb/>ger ikke med. Du gør dig ingen forestilling om
 <lb/>hvorledes tilstanden er ude omkring i landet.
 <lb/>Der er vendt op og ned på <app type="alteration"><lem><HIS:hisAdd place="offline">hvert eneste</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">alle</HIS:hisDel></HIS:hisRdg></app> begreb<HIS:hisDel rend="overstrike">er</HIS:hisDel>. Det vil
@@ -457,48 +452,48 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="Ro_453ms"/><HIS:synopticViewPtr type="synopticView_mainVersions" target="Ro86.xml" xml:id="Ro_453main"/><lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Du er for sky, Rosmer. Du holder dig på alt for
 <lb/>fjern afstand fra livet. Dit presteembede
-<lb/>la&rapo;e du ned &dash;</p></HIS:hisSp>
+<lb/>la’e du ned –</p></HIS:hisSp>
 
 <pb ed="source" type="folio_nopagination" subtype="recto"  n="1" facs="27" gathering="4"/>
 <lb/><fw type="gathering" place="top-left">4.</fw>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Ja nu vil jeg tale. Hvorfor tror du jeg la&rapo;e
+<lb/><p>Ja nu vil jeg tale. Hvorfor tror du jeg la’e
 <lb/>mit presteembede ned?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Nå, det ved jeg jo nok. Jeg finder det så gan&typHyp;
+<lb/><p>Nå, det ved jeg jo nok. Jeg finder det så gan‐
 <lb/>ske rimeligt at du følte dig ubehagelig berørt
-<lb/>af og ikke kunde gå med på &dash; de mørke pieti&typHyp;
+<lb/>af og ikke kunde gå med på – de mørke pieti‐
 <lb/>stiske retninger, som dengang havde vundet
 <lb/>indgang i så mange kredse her.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Jeg skulde aldrig ta&rapo;t imod noget k<HIS:hisDel rend="overwritten">r</HIS:hisDel>irkeligt
-<lb/>embede, aldrig git mig ind på de slags studi&typHyp;
+<lb/><p>Jeg skulde aldrig ta’t imod noget k<HIS:hisDel rend="overwritten">r</HIS:hisDel>irkeligt
+<lb/>embede, aldrig git mig ind på de slags studi‐
 <lb/>er; det er hovedsagen.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Men, kære, så havde du jo brudt med en af
 <lb/>din familjes smukkeste og ufravigeligste
-<lb/>traditioner. Eilert Hanibal Rosmer var mi&typHyp;
+<lb/>traditioner. Eilert Hanibal Rosmer var mi‐
 <lb/>litær. Følgelig måtte sønnen Eilert Alfred
 <lb/>Rosmer bli prest. Således har det vekslet i
 <lb/>mere end to hundrede år. De ting har jeg
-<lb/>god rede på, jeg, som samler til slægtens stam&typHyp;
+<lb/>god rede på, jeg, som samler til slægtens stam‐
 <lb/>tavle.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Ja det var vel også det, som var det bestem&typHyp;
+<lb/><p>Ja det var vel også det, som var det bestem‐
 <lb/>mende for mig dengang. Eller, rettere sagt,
-<lb/>de<HIS:hisDel rend="overwritten">t</HIS:hisDel>r var slet ikke tale om nogen bestemmel&typHyp;
-<lb/>se fra min side. Far, &dash; hm, du ved han var
-<lb/><HIS:hisDel rend="overstrike">obe</HIS:hisDel> major i sin huslige kreds også &dash; han vilde
-<lb/>ha&rapo; det så, og dermed var sagen altså afgjort.</p></HIS:hisSp>
+<lb/>de<HIS:hisDel rend="overwritten">t</HIS:hisDel>r var slet ikke tale om nogen bestemmel‐
+<lb/>se fra min side. Far, – hm, du ved han var
+<lb/><HIS:hisDel rend="overstrike">obe</HIS:hisDel> major i sin huslige kreds også – han vilde
+<lb/>ha’ det så, og dermed var sagen altså afgjort.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>
 <lb/><HIS:hisStage>(med et suk.)</HIS:hisStage></HIS:spOpener>
 
 <pb ed="source" type="folio_nopagination" subtype="verso"  n="1" facs="28" gathering="4"/>
-<lb/><p>Ja, det var i de velordnede samfundsfor&typHyp;
+<lb/><p>Ja, det var i de velordnede samfundsfor‐
 <lb/>holdes tider!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Og jeg, desværre, jeg hørte vel til den slags
-<lb/>unge mennesker, som du før talte om, &dash; de med
+<lb/>unge mennesker, som du før talte om, – de med
 <lb/>de tarvelige åndsevner.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Du! Hvor i al verden kan du falde på <emph>det</emph>?</p></HIS:hisSp>
@@ -512,40 +507,40 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><p>Jeg er dog kommen til at se på tingene i livet
 <lb/>med åbnere øjne end før.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Hør nu, Rosmer, &dash; du kunde dog vel aldrig være
-<lb/>så svag at la&rapo; dig dåre af den tilfældighed at
+<lb/><p>Hør nu, Rosmer, – du kunde dog vel aldrig være
+<lb/>så svag at la’ dig dåre af den tilfældighed at
 <lb/>massehøvdingerne har vundet en midlertidig
 <lb/>sejr!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>De ting ligger ikke nærmest for mig; men jeg
 <lb/>synes dog at der i de senere år er kommet ligesom
-<lb/>lidt mere selvstændighed ind i de enkeltes tænk&typHyp;
+<lb/>lidt mere selvstændighed ind i de enkeltes tænk‐
 <lb/>ning.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Og hvis så var? Vilde du virkelig regne det for
-<lb/>noget godt hos så ubefæstede og ufærdige men&typHyp;
+<lb/>noget godt hos så ubefæstede og ufærdige men‐
 <lb/>nesker? For resten tar du nok betydelig fejl.
 
 <pb ed="source" type="folio_nopagination" subtype="recto"  n="2" facs="29" gathering="4"/>
 <lb/>Eller hvad er det for tanker og meninger, som
-<lb/>dominerer blandt de opviglede her ude på lands&typHyp;
+<lb/>dominerer blandt de opviglede her ude på lands‐
 <lb/>bygden hos dig? Er det ikke de samme tanker og
 <lb/>meninger som hidser de ildesindede inde i byen?
 <lb/>Jo netop. Og tror du mobben suger de tanker
 <lb/><HIS:hisDel rend="overwritten"><unclear>af</unclear></HIS:hisDel>og meninger af sit eget bryst? Nej, simpelt hen
-<lb/>&dash; de læser sig dem til i Peder Mortensgårds a&typHyp;
+<lb/>– de læser sig dem til i Peder Mortensgårds a‐
 <lb/>vis. Jo, det er en appetitlig kilde at øse af!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Mortensgård skriver dog unægtelig godt for
 <lb/>sig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Ja men herre gud, &dash; en mand med en så til&typHyp;
-<lb/>smudset fortid! Nå, de radikale er jo ikke kræs&typHyp;
+<lb/><p>Ja men herre gud, – en mand med en så til‐
+<lb/>smudset fortid! Nå, de radikale er jo ikke kræs‐
 <lb/>ne, hvad det moralske grundlag angår. Derfor
 <lb/>er han en farlig mand, denne Mortensgård. Han
-<lb/>er en af de farligste, vi har her. Og han tør bli&rapo;
-<lb/>endnu besværligere at trækkes med for frem&typHyp;
-<lb/>tiden. For nu tænker han på at udvide sin a&typHyp;
+<lb/>er en af de farligste, vi har her. Og han tør bli’
+<lb/>endnu besværligere at trækkes med for frem‐
+<lb/>tiden. For nu tænker han på at udvide sin a‐
 <lb/>vis; den skal komme ud hver dag; jeg ved fra
 <lb/>sikker kilde at han ser sig om efter en habil
 <lb/>medarbejder.</p></HIS:hisSp>
@@ -553,27 +548,27 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><p>Men hvorfor tænker ikke du og de andre
 <lb/>på at stifte et blad imod ham? Dine venner
 <lb/>i byen sidder jo inde med kapitalen. Det vilde
-<lb/>visst ikke falde <HIS:hisDel rend="overwritten">&dash;</HIS:hisDel>vanskeligt &dash;</p></HIS:hisSp>
+<lb/>visst ikke falde <HIS:hisDel rend="overwritten">–</HIS:hisDel>vanskeligt –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Nå, der leder du mig lige ind på mit æren&typHyp;
+<lb/><p>Nå, der leder du mig lige ind på mit æren‐
 <lb/>de. Det er netop det, vi har tænkt på. Hvad
 <lb/>pengespørsmålet angår, så er foretagendet
 
 <pb ed="source" type="folio_nopagination" subtype="verso"  n="2" facs="30" gathering="4"/>
-<lb/>sikret. Men ledelsen,<HIS:synopticViewPtr type="synopticView_mainVersions" target="Ro86.xml" xml:id="Ro_357main"/> &dash; den journalistiske ledelse,
-<lb/>Rosmer. Sig mig, &dash; skulde ikke du for den go&typHyp;
-<lb/>de sags skyld føle dig opfordret til at overta&rapo;
+<lb/>sikret. Men ledelsen,<HIS:synopticViewPtr type="synopticView_mainVersions" target="Ro86.xml" xml:id="Ro_357main"/> – den journalistiske ledelse,
+<lb/>Rosmer. Sig mig, – skulde ikke du for den go‐
+<lb/>de sags skyld føle dig opfordret til at overta’
 <lb/>den?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Jeg!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Nej men hvor kan De ville &dash;!</p></HIS:hisSp>
+<lb/><p>Nej men hvor kan De ville –!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Jeg selv skulde så inderlig gerne forsøge mig i
 <lb/>den retning også. Men det er aldeles umuligt.
-<lb/>Jeg er allerede i forvejen så bebyrdet med en u&typHyp;
-<lb/>tallighed af gøremål &dash;. Men du, som ikke læn&typHyp;
-<lb/>ger er trykket af nogen embedsgerning &dash;</p></HIS:hisSp>
+<lb/>Jeg er allerede i forvejen så bebyrdet med en u‐
+<lb/>tallighed af gøremål –. Men du, som ikke læn‐
+<lb/>ger er trykket af nogen embedsgerning –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Jeg har da i alle fald gårsdriften.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
@@ -581,47 +576,47 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/>stort af din tid.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Men alligevel; det er rent umuligt. Jeg føler
-<lb/>mig så aldeles uskikket &dash;; jeg duer ikke &dash;</p></HIS:hisSp>
+<lb/>mig så aldeles uskikket –; jeg duer ikke –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Det kan du aldrig vide, før du har probert det.
 <lb/>Vi <HIS:hisDel rend="overstrike">andre</HIS:hisDel> skulde desuden hjælpe dig så godt
 <lb/>vi kunde. Og så har du desuden straks fra
-<lb/>først af en umådelig fordel i den uindskræn&typHyp;
+<lb/>først af en umådelig fordel i den uindskræn‐
 <lb/>kel<HIS:hisDel rend="overwritten"><unclear>e</unclear></HIS:hisDel>de agtelse, du nyder i hele <HIS:hisDel rend="overstrike">egnen</HIS:hisDel> amtet.
 <lb/>Ingen anden mand kan hamle op med dig
-<lb/>i så henseende. <HIS:synopticViewPtr type="synopticView_mainVersions" target="Ro86.xml" xml:id="Ro_358main"/>Navnet Rosmer, &dash; gud bevar&rapo;
-<lb/>os vel, &dash; familjen Rosmer, den har <HIS:hisDel rend="overwritten">g</HIS:hisDel>da gennem
+<lb/>i så henseende. <HIS:synopticViewPtr type="synopticView_mainVersions" target="Ro86.xml" xml:id="Ro_358main"/>Navnet Rosmer, – gud bevar’
+<lb/>os vel, – familjen Rosmer, den har <HIS:hisDel rend="overwritten">g</HIS:hisDel>da gennem
 
 <pb ed="source" type="folio_nopagination" subtype="recto"  n="1" facs="31" gathering="5"/>
 <lb/><fw type="gathering" place="top-left"><unclear reason="binding">5</unclear>.</fw>
 <lb/>umindelige tider gældt som et symbol på alt
 <lb/>det, som gammelt og godt og ret og rigtigt er.
 <lb/>Derved, ser du, vilde netop du kunne trede op
-<lb/>med tidobbelt vægt. &dash; Ja, hvad siger De, fru
+<lb/>med tidobbelt vægt. – Ja, hvad siger De, fru
 <lb/>Rosmer?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>
 <lb/><HIS:hisStage>(ler.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Kære rektor, for mig er dette her så usige&typHyp;
+<lb/><p>Kære rektor, for mig er dette her så usige‐
 <lb/>lig latterligt at høre på.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Hvad for noget! Latterligt?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Ja for nu skal jeg sige Dem rent ud &dash;</p></HIS:hisSp>
+<lb/><p>Ja for nu skal jeg sige Dem rent ud –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Nej, lad mig sige det selv &dash;</p></HIS:hisSp>
+<lb/><p>Nej, lad mig sige det selv –</p></HIS:hisSp>
 <lb/><HIS:hisStage>(Madam Helset kommer i døren til højre.)</HIS:hisStage>
 <lb/><HIS:hisSp who="MADAMHELSETH"><HIS:spOpener><speaker>Madam Helset</speaker>.</HIS:spOpener>
-<lb/><p>Der er en mand ude i køkkengangen. Han si&rapo;er
+<lb/><p>Der er en mand ude i køkkengangen. Han si’er
 <lb/>han vil hilse på pastor Rosmer.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Så? Ja bed ham værs&rapo;god komme<HIS:hisDel rend="overstrike">n</HIS:hisDel> ind.</p></HIS:hisSp>
+<lb/><p>Så? Ja bed ham værs’god komme<HIS:hisDel rend="overstrike">n</HIS:hisDel> ind.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MADAMHELSETH"><HIS:spOpener><speaker>Madam Helset</speaker>.</HIS:spOpener>
 <lb/><p>Her ind i stuen?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Ja vel.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MADAMHELSETH"><HIS:spOpener><speaker>Madam Helset</speaker>.</HIS:spOpener>
-<lb/><p>Men han ser nok ikke slig ud at <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>en kan slip&typHyp;
-<lb/>pe &rapo;en i stuen.</p></HIS:hisSp>
+<lb/><p>Men han ser nok ikke slig ud at <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>en kan slip‐
+<lb/>pe ’en i stuen.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Hvorledes ser han da ud, Madam Helset?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MADAMHELSETH"><HIS:spOpener><speaker>Madam Helset</speaker>.</HIS:spOpener>
@@ -629,19 +624,19 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <pb ed="source" type="folio_nopagination" subtype="verso"  n="1" facs="32" gathering="5"/>
 <lb/><p>Å, det er ikke videre, det, frue.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Sa&rapo; han ikke, hvad han heder?</p></HIS:hisSp><HIS:synopticViewPtr type="synopticView_mainVersions" target="Ro86.xml" xml:id="Ro_359main"/>
+<lb/><p>Sa’ han ikke, hvad han heder?</p></HIS:hisSp><HIS:synopticViewPtr type="synopticView_mainVersions" target="Ro86.xml" xml:id="Ro_359main"/>
 <lb/><HIS:hisSp who="MADAMHELSETH"><HIS:spOpener><speaker>Madam Helset</speaker>.</HIS:spOpener>
-<lb/><p>Jo han sa&rapo; han heder Uldrik.</p></HIS:hisSp>
+<lb/><p>Jo han sa’ han heder Uldrik.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Ulrik?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MADAMHELSETH"><HIS:spOpener><speaker>Madam Helset</speaker>.</HIS:spOpener>
 <lb/><p>Ja, og så nævnte han et navn til. Jeg synes det
-<lb/>hørtes som Rosen &dash; holm, eller noget sligt.</p></HIS:hisSp>
+<lb/>hørtes som Rosen – holm, eller noget sligt.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Ulrik Rosen&dash;? Det skulde da vel aldrig være
+<lb/><p>Ulrik Rosen–? Det skulde da vel aldrig være
 <lb/>Ulrik Rosenhjem?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MADAMHELSETH"><HIS:spOpener><speaker>Madam Helset</speaker>.</HIS:spOpener>
-<lb/><p>Jo, så var det han sa&rapo;.</p></HIS:hisSp>
+<lb/><p>Jo, så var det han sa’.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Den ulykkelige Ulrik Rosenhjelm.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
@@ -653,7 +648,7 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><p>Ja-ja.</p></HIS:hisSp>
 <lb/><HIS:hisStage>(går.)</HIS:hisStage>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Vil du virkelig ha&rapo; det subjekt ind i din stue?</p></HIS:hisSp>
+<lb/><p>Vil du virkelig ha’ det subjekt ind i din stue?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Jeg har kendt lidt til ham i hans velmagts dage.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
@@ -661,24 +656,24 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 
 <pb ed="source" type="folio_nopagination" subtype="recto"  n="2" facs="33" gathering="5"/>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Aldrig sådan personlig. Hm &dash;.</p></HIS:hisSp>
+<lb/><p>Aldrig sådan personlig. Hm –.</p></HIS:hisSp>
 <lb/><HIS:hisStage>(Madam Helset åbner døren til højre for
 <lb/>Ulrik Rosenhjelm, går igen og lukker efter <HIS:hisDel rend="overwritten"><unclear>me</unclear><gap/></HIS:hisDel>ham.
-<lb/>Han har uredt hår og skæg, og er klædt som en al&typHyp;
+<lb/>Han har uredt hår og skæg, og er klædt som en al‐
 <lb/>mindelig landstryger. Ingen overfrakke; dårligt
 <lb/>skotøj; skjorte ses ikke. Gamle sor<unclear reason="writing">t</unclear>e hansker
-<lb/>påtrukne; en bulehat sammenklappet under ar&typHyp;
+<lb/>påtrukne; en bulehat sammenklappet under ar‐
 <lb/>men og en stok i hånden.)</HIS:hisStage>
 <lb/><HIS:hisSp who="BRENDEL"><HIS:spOpener><speaker>Rosenhjelm</speaker>.
 <lb/><HIS:hisStage>(først usikker, går så raskt hen <HIS:hisDel rend="overstrike">imod</HIS:hisDel> til rektoren
 <lb/>og rækker hånden frem.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>God dag, Rosmer!</p></HIS:hisSp><HIS:synopticViewPtr type="synopticView_mainVersions" target="Ro86.xml" xml:id="Ro_360main"/>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Undskyld; <HIS:hisStage>(peger.)</HIS:hisStage> <emph>der</emph> &dash;</p></HIS:hisSp>
+<lb/><p>Undskyld; <HIS:hisStage>(peger.)</HIS:hisStage> <emph>der</emph> –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BRENDEL"><HIS:spOpener><speaker>Rosenhjelm</speaker>
 <lb/><HIS:hisStage>(vender sig.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Rigtig, ja; der har vi ham. Goddag, Rosmer.
-<lb/>Jeg vilde ikke passere gården forbi uden at aflæg&typHyp;
+<lb/>Jeg vilde ikke passere gården forbi uden at aflæg‐
 <lb/>ge en visit.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Rejsende er altid velkomne her.</p></HIS:hisSp>
@@ -686,7 +681,7 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><p><HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>Jeg havde ikke noget <HIS:hisDel rend="overwritten">v<gap/>s</HIS:hisDel>kort hos mig; men jeg
 <lb/>håber, at den ældre dame, som jeg traf udenfor
 <lb/>har anmeldt mig? Nå; så er det jo godt. <HIS:hisStage>(<HIS:hisDel rend="overwritten">k</HIS:hisDel>bukker)</HIS:hisStage>
-<lb/>Ah, fru provstinden, naturligvis. Og <emph>der</emph>? En em&typHyp;
+<lb/>Ah, fru provstinden, naturligvis. Og <emph>der</emph>? En em‐
 <lb/>bedsbroder kan jeg se.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Byens rektor. Rektor Gylling.</p></HIS:hisSp>
@@ -698,21 +693,21 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Jo, selvfølgelig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BRENDEL"><HIS:spOpener><speaker>Rosenhjelm</speaker>.</HIS:spOpener>
-<lb/><p>Nå, men for fan&rapo;, så har jeg jo kendt dig &dash;</p></HIS:hisSp>
+<lb/><p>Nå, men for fan’, så har jeg jo kendt dig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Undskyld &dash;</p></HIS:hisSp>
+<lb/><p>Undskyld –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BRENDEL"><HIS:spOpener><speaker>Rosenhjelm</speaker>.</HIS:spOpener>
-<lb/><p>Var ikke du &dash;</p></HIS:hisSp>
+<lb/><p>Var ikke du –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Undskyld &dash;</p></HIS:hisSp>
+<lb/><p>Undskyld –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BRENDEL"><HIS:spOpener><speaker>Rosenhjelm</speaker>.</HIS:spOpener>
-<lb/><p>&dash; en af dem, som fik mig exkluderet af studen&typHyp;
+<lb/><p>– en af dem, som fik mig exkluderet af studen‐
 <lb/>tersamfundet?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Ganske visst; men jeg protesterer imod ethvert nær&typHyp;
+<lb/><p>Ganske visst; men jeg protesterer imod ethvert nær‐
 <lb/>mere bekendtskab.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BRENDEL"><HIS:spOpener><speaker>Rosenhjelm</speaker>.</HIS:spOpener>
-<lb/><p>Nå, nå; nach Belieben, herr rektor. Det kan kom&typHyp;
+<lb/><p>Nå, nå; nach Belieben, herr rektor. Det kan kom‐
 <lb/>me mig ud på et. Jeg blir den jeg er for det.</p></HIS:hisSp>
 <HIS:synopticViewPtr type="synopticView_mainVersions" target="Ro86.xml" xml:id="Ro_361main"/><lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>De agter Dem vel indover til byen, her Rosenhjelm?</p></HIS:hisSp>
@@ -720,7 +715,7 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><p>Ja, fru provstinde, jeg gør så. Jeg synes det er
 <lb/>næsten en skam for mig at jeg endnu ikke kender
 <lb/>denne del af landet. Hvorledes er stemningen
-<lb/>her i byen? Jeg tænker nemlig på at få en af&typHyp;
+<lb/>her i byen? Jeg tænker nemlig på at få en af‐
 <lb/>tenunderholdning istand.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Hvad skulde den bestå i?</p></HIS:hisSp>
@@ -729,19 +724,19 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><fw type="gathering" place="top-left"><unclear reason="binding">6</unclear>.</fw>
 <lb/><HIS:hisSp who="BRENDEL"><HIS:spOpener><speaker>Rosenhjelm</speaker>.</HIS:spOpener>
 <lb/><p>Hvad som bedst falder i smagen. Kunde ikke
-<lb/>rektoren gi&rapo; mig et godt råd? Jeg vil tillade mig
+<lb/>rektoren gi’ mig et godt råd? Jeg vil tillade mig
 <lb/>at komme indom og gøre Dem en visit.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Tak; men De gør visst bedst i at henvende Dem di&typHyp;
+<lb/><p>Tak; men De gør visst bedst i at henvende Dem di‐
 <lb/>rekte til Peder Mortensgård.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BRENDEL"><HIS:spOpener><speaker>Rosenhjelm</speaker>.</HIS:spOpener>
 <lb/><p>Mortensgård? Kender ikke nogen Mortensgård.
 <lb/>Hvad er det for en idiot?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker><HIS:hisDel rend="overstrike"><unclear>F</unclear><gap/></HIS:hisDel> Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Hvorfor kalder de manden en idiot, når De ik&typHyp;
+<lb/><p>Hvorfor kalder de manden en idiot, når De ik‐
 <lb/>ke kender ham.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BRENDEL"><HIS:spOpener><speaker>Rosenhjelm</speaker>.</HIS:spOpener>
-<lb/><p>Hører jeg ikke straks på navnet at det er en ple&typHyp;
+<lb/><p>Hører jeg ikke straks på navnet at det er en ple‐
 <lb/>bejer?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Så? Det svar havde jeg ikke ventet.</p></HIS:hisSp>
@@ -749,33 +744,33 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><p>Tror De kanske at Ulrik Rosenhjelm gør sig
 <lb/>til bon kammerat med kreti og pleti?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Så vidt jeg ved, har De dog før næret en sær&typHyp;
+<lb/><p>Så vidt jeg ved, har De dog før næret en sær‐
 <lb/>lig interesse for samfundets lavere lag.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BRENDEL"><HIS:spOpener><speaker>Rosenhjelm</speaker>.</HIS:spOpener>
 <lb/><p>Ja, det har jeg; og det har jeg fåt svie for.
 <lb/>Forfølgelser fra de styrendes side; latter og hån
 <lb/>og spot, hos de tusender af ligegyldige, som ingen
-<lb/>ting vil forstå, &dash; og så utak fra forkuede, som
-<lb/>jeg vilde hjælpe. Ja, se på mig. Her ser I Ul&typHyp;
+<lb/>ting vil forstå, – og så utak fra forkuede, som
+<lb/>jeg vilde hjælpe. Ja, se på mig. Her ser I Ul‐
 <lb/>rik Rosenhjelm, som hørte til det gode selskab,
 
 <pb ed="source" type="folio_nopagination" subtype="verso"  n="1" facs="36" gathering="6"/>
-<lb/>til det bedste selskab, &dash; og som var den første i det
+<lb/>til det bedste selskab, – og som var den første i det
 <lb/>gode selskab. Mig stødte de ud fordi jeg havde
-<lb/>evner og mod til at sige og skrive, hvad de fi&typHyp;
-<lb/>ne helst vilde ha&rapo; dækket over. Nu er jeg al<HIS:hisDel rend="overwritten">l</HIS:hisDel>drig
-<lb/>i godt selskab mere, &dash; undtagen når jeg er alene
+<lb/>evner og mod til at sige og skrive, hvad de fi‐
+<lb/>ne helst vilde ha’ dækket over. Nu er jeg al<HIS:hisDel rend="overwritten">l</HIS:hisDel>drig
+<lb/>i godt selskab mere, – undtagen når jeg er alene
 <lb/>med mig selv.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Det er vel ikke blot og bart evnerne eller modstan&typHyp;
+<lb/><p>Det er vel ikke blot og bart evnerne eller modstan‐
 <lb/>den som bestemmer ens skæbne. Det er vel også
-<lb/>livsførelsen &dash;</p></HIS:hisSp>
+<lb/>livsførelsen –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BRENDEL"><HIS:spOpener><speaker>Rosenhjelm</speaker>.</HIS:spOpener>
 <lb/><p>Jeg forstår. Vi har en statsmoral, og den har jeg
 <lb/>ikke levet i samklang med. For resten er jeg ked
 <lb/>af <emph>det</emph> også. Jeg vil iføre mig et nyt menneske, som der
 <lb/>står skrevet et steds.<HIS:synopticViewPtr type="synopticView_mainVersions" target="Ro86.xml" xml:id="Ro_455ms"/> Findes der en afholdsforening
-<lb/>i byen? En total&typHyp;afholdsforening? Det gør der natur&typHyp;
+<lb/>i byen? En total‐afholdsforening? Det gør der natur‐
 <lb/>ligvis.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Ja; jeg er selv formand.</p></HIS:hisSp>
@@ -784,12 +779,12 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/>umuligt at jeg kommer h<HIS:hisAdd place="inline">j</HIS:hisAdd><HIS:clarification>e</HIS:clarification><HIS:hisDel rend="overwritten">n</HIS:hisDel>m til <HIS:hisDel rend="overwritten">d</HIS:hisDel>Dem og skriver mig
 <lb/>ind.</p></HIS:hisSp><HIS:synopticViewPtr type="synopticView_mainVersions" target="Ro86.xml" xml:id="Ro_364main"/>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Ja jeg må sige Dem at vi ikke sådan uden vide&typHyp;
+<lb/><p>Ja jeg må sige Dem at vi ikke sådan uden vide‐
 <lb/>re optar alle og enhver.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BRENDEL"><HIS:spOpener><speaker>Rosenhjelm</speaker>.</HIS:spOpener>
 <lb/><p>A la bonheur! Ulrik Rosenhjelm har aldrig
 <lb/>rendt den slags foreninger på dørene. Men jeg
-<lb/>tør ikke forlænge min visit. Jeg må se at kom&typHyp;
+<lb/>tør ikke forlænge min visit. Jeg må se at kom‐
 <lb/>me mig indover til byen og få logis. Der findes
 
 <pb ed="source" type="folio_nopagination" subtype="recto"  n="2" facs="37" gathering="6"/>
@@ -799,11 +794,11 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><HIS:hisSp who="BRENDEL"><HIS:spOpener><speaker>Rosenhjelm</speaker>.</HIS:spOpener>
 <lb/><p>Hvad slags varmt?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>En kop té eller &dash;</p></HIS:hisSp>
+<lb/><p>En kop té eller –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BRENDEL"><HIS:spOpener><speaker>Rosenhjelm</speaker>.</HIS:spOpener>
 <lb/><p>Nej nej tak. Jeg lægger ikke gerne beslag på den
 <lb/>private gæstfrihed. Far vel. Å det er sandt,
-<lb/>Rosmer; vil du gøre mig en tjeneste for gam&typHyp;
+<lb/>Rosmer; vil du gøre mig en tjeneste for gam‐
 <lb/>melt venskabs skyld.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Ja gerne. Hvad er det?</p></HIS:hisSp>
@@ -818,15 +813,15 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Å ja, <HIS:hisDel rend="overstrike">jeg</HIS:hisDel> det kan jeg visst.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BRENDEL"><HIS:spOpener><speaker>Rosenhjelm</speaker>.</HIS:spOpener>
-<lb/><p>Og så kanske et p<HIS:hisDel rend="overwritten">å</HIS:hisDel>ar <HIS:hisDel rend="overstrike">st<gap/></HIS:hisDel> vinterstøvler &dash; jeg har
+<lb/><p>Og så kanske et p<HIS:hisDel rend="overwritten">å</HIS:hisDel>ar <HIS:hisDel rend="overstrike">st<gap/></HIS:hisDel> vinterstøvler – jeg har
 <lb/>bare forårskotøj med.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Det skal der nok bli&rapo; råd for. Så snart jeg får
+<lb/><p>Det skal der nok bli’ råd for. Så snart jeg får
 <lb/>vide adressen, skal jeg sende sagerne ind.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BRENDEL"><HIS:spOpener><speaker>Rosenhjelm</speaker>.</HIS:spOpener>
 
 <pb ed="source" type="folio_nopagination" subtype="verso"  n="2" facs="38" gathering="6"/>
-<lb/><p>På ingen måde. Slig ulejlighed. Jeg tar de små&typHyp;
+<lb/><p>På ingen måde. Slig ulejlighed. Jeg tar de små‐
 <lb/>ting med.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Godt, godt; så følg med her ud.</p></HIS:hisSp><HIS:synopticViewPtr type="synopticView_mainVersions" target="Ro86.xml" xml:id="Ro_365main"/>
@@ -837,13 +832,13 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Er der ikke noget andet, jeg kan tjene med?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BRENDEL"><HIS:spOpener><speaker>Rosenhjelm</speaker>.</HIS:spOpener>
-<lb/><p>Nej tak. Jo død og plage, det er sandt, &dash; har du til&typHyp;
+<lb/><p>Nej tak. Jo død og plage, det er sandt, – har du til‐
 <lb/>fældigvis ti kroner på dig?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Det tænker jeg nok. <HIS:hisStage>(åbner portemonæen)</HIS:hisStage> Her <lb/>har jeg femten.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="BRENDEL"><HIS:spOpener><speaker>Rosenhjelm</speaker>.</HIS:spOpener>
 <lb/><p>Ja ja tak; det <HIS:hisDel rend="overwritten">v</HIS:hisDel>kan være det samme. Tak så
-<lb/>længe. Husk på at jeg fik femten. Farvel, mi&typHyp;
+<lb/>længe. Husk på at jeg fik femten. Farvel, mi‐
 <lb/>ne herrer.</p></HIS:hisSp>
 <lb/><HIS:hisStage>(han går mod højre, hvor Rosmer tar afsked
 <lb/>og lukker døren efter ham.)</HIS:hisStage>
@@ -854,8 +849,8 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><p>Desværre; det har jeg længe vid<HIS:hisDel rend="overwritten">t</HIS:hisDel>st.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Ja, det var jo noksom bekendt. Men at se det
-<lb/>for sine øjne! Så megen begavelse gjort ubruge&typHyp;
-<lb/>lig af moralsk smuds &dash;</p></HIS:hisSp>
+<lb/>for sine øjne! Så megen begavelse gjort ubruge‐
+<lb/>lig af moralsk smuds –</p></HIS:hisSp>
 
 <pb ed="source" type="folio_nopagination" subtype="recto"  n="1" facs="39" gathering="7"/>
 <lb/><fw type="gathering" place="top-left">7.</fw>
@@ -866,61 +861,61 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Å kære, hvorledes skulde vel det gå til?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Jeg mener, ved at ta&rapo; sig skånsomt &dash; kærligt af
-<lb/>ham, vise ham tillid, bygge på hans gode for&typHyp;
-<lb/>sætter &dash; <HIS:hisAdd place="inline">et slags selverkendelse &dash;</HIS:hisAdd></p></HIS:hisSp>
+<lb/><p>Jeg mener, ved at ta’ sig skånsomt – kærligt af
+<lb/>ham, vise ham tillid, bygge på hans gode for‐
+<lb/>sætter – <HIS:hisAdd place="inline">et slags selverkendelse –</HIS:hisAdd></p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Bygger du da også på de forsætter?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Jeg vilde så gerne.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>I så fald kunde han kanske bli&rapo; en nyttig mand
-<lb/>for os. Den glimrende stil, han engang førte &dash;; hans
-<lb/>flængen<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>de ubarmhjertige pen &dash;; og han lod just
-<lb/>ikke til at ha&rapo; noget godt øje til radikalerne &dash;</p></HIS:hisSp>
+<lb/><p>I så fald kunde han kanske bli’ en nyttig mand
+<lb/>for os. Den glimrende stil, han engang førte –; hans
+<lb/>flængen<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>de ubarmhjertige pen –; og han lod just
+<lb/>ikke til at ha’ noget godt øje til radikalerne –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Mener du at han kunde sættes i spidsen for 
 <lb/>det nye blad?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>I spidsen! Gud bevar&rapo; os, hvor kan du tænke
+<lb/><p>I spidsen! Gud bevar’ os, hvor kan du tænke
 <lb/>det? Nej, han måtte naturligvis tvert imod
 <lb/>holdes i baggrunden så længe til han havde
 <lb/>rehabiliteret sig. Han måtte beflitte sig på
-<lb/>et ordentligt levnet, &dash; i al fald være forsigtig og
-<lb/>ikke offentlig gi&rapo; anledning til forargelse. Og
+<lb/>et ordentligt levnet, – i al fald være forsigtig og
+<lb/>ikke offentlig gi’ anledning til forargelse. Og
 <lb/>hvis han kunde overvinde sig så vidt, og hvis
 <lb/>han kunde i nogen tid bringes til at yde den
 
 <pb ed="source" type="folio_nopagination" subtype="verso"  n="1" facs="40" gathering="7"/>
-<lb/>gode sag sine bona officia &dash;; under iagttagelse
-<lb/>af den aller strængeste anonymitet naturlig&typHyp;
-<lb/>vis &dash;.</p></HIS:hisSp>
-<lb/><HIS:hisStage>(Fru Rosmer er imidlertid kommet ind i&typHyp;
+<lb/>gode sag sine bona officia –; under iagttagelse
+<lb/>af den aller strængeste anonymitet naturlig‐
+<lb/>vis –.</p></HIS:hisSp>
+<lb/><HIS:hisStage>(Fru Rosmer er imidlertid kommet ind i‐
 <lb/>gen.)</HIS:hisStage>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Gik han?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Ja.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Ja nu får nok jeg også tænke på at komme af&typHyp;
-<lb/>sted. Det begynder alt at bli&rapo; mørkt.</p></HIS:hisSp>
+<lb/><p>Ja nu får nok jeg også tænke på at komme af‐
+<lb/>sted. Det begynder alt at bli’ mørkt.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Vil De ikke drikke té med os?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Nej, nej tak; det er umuligt. &dash; Ja kære ven, jeg
+<lb/><p>Nej, nej tak; det er umuligt. – Ja kære ven, jeg
 <lb/>vil ikke trænge nærmere ind på dig idag. Nu
-<lb/>skal du overlægge med dig s<HIS:hisDel rend="overwritten">l</HIS:hisDel>elv &dash;</p></HIS:hisSp>
+<lb/>skal du overlægge med dig s<HIS:hisDel rend="overwritten">l</HIS:hisDel>elv –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Er du hjemme imorgen formiddag &dash;?</p></HIS:hisSp>
+<lb/><p>Er du hjemme imorgen formiddag –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Imorgen? Det kan jeg desværre ikke så nøje
-<lb/>sige &dash; for &dash;</p></HIS:hisSp>
+<lb/>sige – for –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Godt, godt, jeg forhører mig i alle fald. Jeg
-<lb/>vil tale med dig, jeg vil tale længe med dig, kæ&typHyp;
-<lb/>re <HIS:hisDel rend="overwritten">g</HIS:hisDel>Gylling &dash;</p></HIS:hisSp>
+<lb/>vil tale med dig, jeg vil tale længe med dig, kæ‐
+<lb/>re <HIS:hisDel rend="overwritten">g</HIS:hisDel>Gylling –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Du mener, om det med &lquo;Amtstidenden?</p></HIS:hisSp>
+<lb/><p>Du mener, om det med «Amtstidenden?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Både om det og om andre ting.</p></HIS:hisSp>
 
@@ -928,16 +923,16 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.
 <lb/><HIS:hisStage>(ryster hans hånd.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Velkommen skal du være, min kære ven. Og jeg
-<lb/><HIS:hisAdd place="offline">tænker</HIS:hisAdd> nok vi to snart skal bli&rapo; enige om, hvad der
-<lb/>er en brav og velsindet borgers pligt i disse træng&typHyp;
+<lb/><HIS:hisAdd place="offline">tænker</HIS:hisAdd> nok vi to snart skal bli’ enige om, hvad der
+<lb/>er en brav og velsindet borgers pligt i disse træng‐
 <lb/>selens tider. Farvel frue! Farvel, kære venner.</p></HIS:hisSp>
 <lb/><HIS:hisStage>(Rosmer og frue føl<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>ger han ud i forstuen. Der <HIS:hisAdd place="offline">tales</HIS:hisAdd>
-<lb/>højt men uforståeligt mens han trækker yder&typHyp;
-<lb/>frakken på. Tilsidst &lquo;Farvel, farvel, farvel&rquo; <HIS:hisDel rend="overstrike">Ro</HIS:hisDel><gap/>
-<lb/>i det rektoren går. Rosmer og hans hustru kom&typHyp;
+<lb/>højt men uforståeligt mens han trækker yder‐
+<lb/>frakken på. Tilsidst «Farvel, farvel, farvel» <HIS:hisDel rend="overstrike">Ro</HIS:hisDel><gap/>
+<lb/>i det rektoren går. Rosmer og hans hustru kom‐
 <lb/>mer ind i stuen igen.)</HIS:hisStage>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Hvad var det, ha sa&rapo;e da jeg kom ind. Jeg for&typHyp;
+<lb/><p>Hvad var det, ha sa’e da jeg kom ind. Jeg for‐
 <lb/>stod ham, som han vilde prøve Rosenhjelm i det
 <lb/>nye blad.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
@@ -949,7 +944,7 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Du, kære? Hvad har du da gjort.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Ros<HIS:hisDel rend="overwritten">enhj<gap/></HIS:hisDel>mer</speaker></HIS:spOpener>
-<lb/><p>Nu skal du ikke ta&rapo; det fortrydeligt at jeg hand&typHyp;
+<lb/><p>Nu skal du ikke ta’ det fortrydeligt at jeg hand‐
 <lb/>led lidt på egen hånd. Hvad? Vi to gode venner?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>J<unclear><HIS:hisDel rend="overwritten">eg</HIS:hisDel>o</unclear> visst; du må gøre alt, hvad du vil. Men
@@ -961,24 +956,24 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Gjorde du? Til Mortensgård!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Ja jeg rabbled ned et par ord i al hast &dash;</p></HIS:hisSp>
+<lb/><p>Ja jeg rabbled ned et par ord i al hast –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Men du hørte jo han kaldte Mortensgård en idi&typHyp;
+<lb/><p>Men du hørte jo han kaldte Mortensgård en idi‐
 <lb/>ot og en plebejer.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Det er jo ikke noget at agte på. Når e<HIS:hisDel rend="overwritten">t</HIS:hisDel>n mand
 <lb/>er dalet således nedover som Rosenhjelm, så
 <lb/>agerer han fornem. Han takked også og loved
-<lb/>at gi&rapo; kortet af.</p></HIS:hisSp>
+<lb/>at gi’ kortet af.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Så det gjorde han? Men imorgen kommer kan&typHyp;
+<lb/><p>Så det gjorde han? Men imorgen kommer kan‐
 <lb/>ske Gylling og <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>tar ham.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Hvis han først har kompromitteret sig med Mor&typHyp;
-<lb/>tensgårds avis så kan ikke &lquo;Amtstidenden&rquo; bruge
+<lb/><p>Hvis han først har kompromitteret sig med Mor‐
+<lb/>tensgårds avis så kan ikke «Amtstidenden» bruge
 <lb/>ham.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Og så kommer det ud at det er os som har anbe&typHyp;
+<lb/><p>Og så kommer det ud at det er os som har anbe‐
 <lb/>falet ham.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Hvad kan det skade. Er du ikke fast bestemt
@@ -986,13 +981,13 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Jo, det er afgjort. I m<HIS:hisDel rend="overwritten">å</HIS:hisDel>orgen skal og må det ske.
 <lb/>Men herre gud, hvor tungt det alligevel er at skulle
-<lb/>bedrøve sine trofaste venner, &dash; volde dem en
+<lb/>bedrøve sine trofaste venner, – volde dem en
 <lb/>virkelig hjertesorg.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
 
 <pb ed="source" type="folio_nopagination" subtype="recto"  n="1" facs="43" gathering="8"/>
 <lb/><fw type="gathering" place="top-left"><unclear reason="binding">8</unclear>.</fw>
-<lb/><p>Er det bare det alene, Rosmer? Er det ikke no&typHyp;
+<lb/><p>Er det bare det alene, Rosmer? Er det ikke no‐
 <lb/>get, som er blet tilbage i dig uden at du selv
 <lb/>ved af det?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
@@ -1009,25 +1004,25 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><p>Ja. Men just da kommer disse hvide heste.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Hvide heste? Hvilke hvide heste?</p></HIS:hisSp>
-<lb/><HIS:hisStage>(Madam Helset kommer ind med téma&typHyp;
+<lb/><HIS:hisStage>(Madam Helset kommer ind med téma‐
 <lb/>skinen og sætter den på bordet.)</HIS:hisStage>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Hvorledes var det, De fortalte mig en gang,
-<lb/>madam Helset. De sa&rapo; at fra umindelige ti&typHyp;
+<lb/>madam Helset. De sa’ at fra umindelige ti‐
 <lb/>der hændte der noget underligt her på gården
 <lb/>hver gang en af slægten var død.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MADAMHELSETH"><HIS:spOpener><speaker>Madam Helset</speaker>.</HIS:spOpener>
-<lb/><p>Ja det er så sandt som jeg står her. Da kom&typHyp;
+<lb/><p>Ja det er så sandt som jeg står her. Da kom‐
 <lb/>mer den hvide hesten.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Å det gamle familjesagn.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>I<HIS:hisDel rend="overwritten">m<gap/></HIS:hisDel>nd kommer den når det lider ud over nat&typHyp;
+<lb/><p>I<HIS:hisDel rend="overwritten">m<gap/></HIS:hisDel>nd kommer den når det lider ud over nat‐
 
 <pb ed="source" type="folio_nopagination" subtype="verso"  n="1" facs="44" gathering="8"/>
 <lb/>ten. Ind på gårdspladsen. Gennem lukket port.
-<lb/>Skriger højt. <HIS:hisDel rend="overstrike">G</HIS:hisDel> Slår op med bagbenene galop&typHyp;
-<lb/>perer en gang rudt og <HIS:hisDel rend="overwritten">u</HIS:hisDel>så ud igen og væk i fy&typHyp;
+<lb/>Skriger højt. <HIS:hisDel rend="overstrike">G</HIS:hisDel> Slår op med bagbenene galop‐
+<lb/>perer en gang rudt og <HIS:hisDel rend="overwritten">u</HIS:hisDel>så ud igen og væk i fy‐
 <lb/>gende fart.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MADAMHELSETH"><HIS:spOpener><speaker>Madam Helset</speaker>.</HIS:spOpener>
 <lb/><p>Ja, slig går det til. Det har både min mor og
@@ -1037,22 +1032,22 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><HIS:hisSp who="MADAMHELSETH"><HIS:spOpener><speaker>Madam Helset</speaker>.</HIS:spOpener>
 <lb/><p>Å jeg ved ikke så rigtig om jeg selv har set
 <lb/>noget. Jeg tror ikke på slige ting ellers. Men
-<lb/>dette her med den hvide hesten, &dash; ja, det tror
+<lb/>dette her med den hvide hesten, – ja, det tror
 <lb/>jeg på. Og det blir jeg ved at tro på til min
-<lb/>dødsdag. Ja nu skal jeg straks &dash;
+<lb/>dødsdag. Ja nu skal jeg straks –
 <lb/><HIS:hisStage>(går ud til højre.)</HIS:hisStage></p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>..
 <lb/><HIS:hisDel rend="overstrike"><p>Me</p></HIS:hisDel><HIS:hisStage>(efter en kort taushed.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Mener du, at dette kan anvendes på mig?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Alle de frigjorte mennesker, jeg har kendt, &dash;
-<lb/>alle de, som tror sig frigjorte, &dash; alle sammen
+<lb/><p>Alle de frigjorte mennesker, jeg har kendt, –
+<lb/>alle de, som tror sig frigjorte, – alle sammen
 <lb/><HIS:hisDel rend="overstrike">havt</HIS:hisDel> har de et eller andet steds havt en slig
 <lb/>hvid hest, som de aldrig slipper troen på.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Og den fulde frigørelse, mener du, det er at &dash;</p></HIS:hisSp>
+<lb/><p>Og den fulde frigørelse, mener du, det er at –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Det er at bli kvit sine hvide heste. <HIS:hisAdd place="inline">Vi vil ha&rapo; lys, Rosmer.</HIS:hisAdd></p></HIS:hisSp>
+<lb/><p>Det er at bli kvit sine hvide heste. <HIS:hisAdd place="inline">Vi vil ha’ lys, Rosmer.</HIS:hisAdd></p></HIS:hisSp>
 <lb/><HIS:hisSp who="MADAMHELSETH"><HIS:spOpener><speaker>Madam Helset</speaker>. <HIS:hisAdd place="inline"><HIS:hisStage>(i døren til højre.)</HIS:hisStage></HIS:hisAdd></HIS:spOpener>
 <lb/><p>Her er lampen, frue.</p></HIS:hisSp>
 <lb/><figure type="bar"/>
@@ -1065,7 +1060,7 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><head>Anden akt.</head>
 <lb/><HIS:hisStage>(Dagligstuen hos Johannes Rosmer. Det
 <lb/>er formiddag.</HIS:hisStage>
-<lb/><HIS:hisStage>(Rosmer går om i stuen og trækker sin over&typHyp;
+<lb/><HIS:hisStage>(Rosmer går om i stuen og trækker sin over‐
 <lb/>frakke. Fru Rosmer børster hans hat, som hun
 <lb/>derefter rækker.)</HIS:hisStage>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
@@ -1079,12 +1074,12 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><p>Men nu er det jo over. Se så. Gå nu lige ind
 <lb/>til rek<HIS:hisDel rend="overwritten">k</HIS:hisDel>toren.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Jeg går lige ind &dash;</p></HIS:hisSp>
+<lb/><p>Jeg går lige ind –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Og kom så hjem igen så snart du kan. Jeg er
 <lb/>spændt på at høre, hvad han vil sige.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Bliv bare ikke utålmodig. Farvel så længe. Far&typHyp;
+<lb/><p>Bliv bare ikke utålmodig. Farvel så længe. Far‐
 <lb/>vel!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
 
@@ -1101,7 +1096,7 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><p>Og nu stod jeg netop på vejen ind til dig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Jeg vilde ikke vente; og jeg var jo ikke så viss på
-<lb/>at du kom &dash;</p></HIS:hisSp>
+<lb/>at du kom –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Nå tag af dig.</p></HIS:hisSp>
 <HIS:synopticViewPtr type="synopticView_mainVersions" target="Ro86.xml" xml:id="Ro_375main"/><lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
@@ -1109,13 +1104,13 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><HIS:hisStage>(Han trækker y<HIS:hisDel rend="overwritten">g</HIS:hisDel>derfrakken af og lægger den på
 <lb/>en stol. Rosmer g<HIS:clarification>ø</HIS:clarification>r det samme.)</HIS:hisStage></p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Er der noget i vejen med dig? Du ser så alvor&typHyp;
+<lb/><p>Er der noget i vejen med dig? Du ser så alvor‐
 <lb/>lig ud.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Jeg vilde gerne tale med dig under fire øjne. Kun&typHyp;
+<lb/><p>Jeg vilde gerne tale med dig under fire øjne. Kun‐
 <lb/>de vi kanske gå ind på kontoret?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Fru Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Der er ikke i orden endnu. Bliv De her. Jeg har for&typHyp;
+<lb/><p>Der er ikke i orden endnu. Bliv De her. Jeg har for‐
 <lb/>retninger ude.
 <lb/><HIS:hisStage>(går ud til højre.)</HIS:hisStage></p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
@@ -1126,27 +1121,27 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/>hos dig?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Nej; og han kommer visst ikke heller. Men
-<lb/>der går allerede ry a<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>f ham. Det var en vakker må&typHyp;
+<lb/>der går allerede ry a<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>f ham. Det var en vakker må‐
 <lb/>de han introducerte sig på.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Nå?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Han tog ind i et sjofelt hus, slog sig ned i en
-<lb/>sjofel kippe &dash; i det sjofleste selskab naturligvis
-<lb/>&dash; drak og trakterte så længe han havde noget; si&typHyp;
+<lb/>sjofel kippe – i det sjofleste selskab naturligvis
+<lb/>– drak og trakterte så længe han havde noget; si‐
 <lb/>den skældte han hele kompaniet ud for pak og
-<lb/>pøbel &dash; det havde han nu for resten ret i; &dash;; så
+<lb/>pøbel – det havde han nu for resten ret i; –; så
 <lb/>fik han prygl og blev kastet <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>på døren.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Så er han vel uforbederlig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Yderfrakken havde han også sat i pant; men
-<lb/>jeg hører, den skal være ble&rapo;t indløst for ham.
+<lb/>jeg hører, den skal være ble’t indløst for ham.
 <lb/>Og kan du gætte af hvem?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Af hvem da?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Af herr Mortensgård. Sejerhjelms første vi&typHyp;
+<lb/><p>Af herr Mortensgård. Sejerhjelms første vi‐
 <lb/>sit galdt idioten og plebejeren.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Det spåde Rebekka allerede igår.</p></HIS:hisSp>
@@ -1166,18 +1161,18 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Det gør din kone. Jeg kan jo så godt forstå det.
 <lb/>Lige fra Beates sidste sørgelige leveår har hun
-<lb/>jo været vant til at føre styret her; men alligevel &dash;</p></HIS:hisSp>
+<lb/>jo været vant til at føre styret her; men alligevel –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Kære, du tar aldeles fejl. Rebekka skjuler ingen
 <lb/>ting for mig. Hun fortæller mig alt.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Har hun også fortalt dig at hun igår gav Sejer&typHyp;
-<lb/>hjelm et anbefalingskort med til redaktør Mortens&typHyp;
+<lb/><p>Har hun også fortalt dig at hun igår gav Sejer‐
+<lb/>hjelm et anbefalingskort med til redaktør Mortens‐
 <lb/>gård?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Ja <HIS:hisDel rend="overstrike">d</HIS:hisDel> naturligvis.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Har hun &dash;! Og hvad siger du til det.</p></HIS:hisSp>
+<lb/><p>Har hun –! Og hvad siger du til det.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Jeg billiger fuldkommen hvad Rebekka har
 <lb/>gjort.</p></HIS:hisSp>
@@ -1190,7 +1185,7 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 
 <pb ed="source" type="folio_nopagination" subtype="recto"  n="2" facs="49" gathering="9"/>
 <lb/>virker ved mange anledninger frastødende på
-<lb/>dig. Men jeg kan ikke længere gå med dig og vo&typHyp;
+<lb/>dig. Men jeg kan ikke længere gå med dig og vo‐
 <lb/>re venner i de offentlige spørsmål. I de sager
 <lb/>og i mangfoldige andre må jeg helt skille mig
 <lb/>ud fra jer.</p></HIS:hisSp>
@@ -1200,26 +1195,26 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/>fra dine venner! Gå over i fiendens lejr! Det er
 <lb/>dog umuligt!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Jeg tænker ikke på at ta&rapo; nogen del i dagens
+<lb/><p>Jeg tænker ikke på at ta’ nogen del i dagens
 <lb/>strid. Jeg har en skræk for at gribe ind i alt
 <lb/>dette virvar, som jeg ikke forstår mig på.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Men hvad er det så du vil.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Jeg vil prøve på at forædle frigørelsesarbejdet.
-<lb/>Tror du ikke jeg ser al den uhumskhed, som ud&typHyp;
+<lb/>Tror du ikke jeg ser al den uhumskhed, som ud‐
 <lb/>viklingen fører med sig og afføder undervejs.
 <lb/>Dette er det jeg vil træde op imod, advare imod,
 <lb/>afdæmme, bundslå, så strømmen kan flyde ren
-<lb/>og klar &dash;</p></HIS:hisSp>
+<lb/>og klar –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Å, Rosmer, hvor du er troskyldig! Du ved ik&typHyp;
+<lb/><p>Å, Rosmer, hvor du er troskyldig! Du ved ik‐
 <lb/>hvad elementer du får at gøre med. Men hvad
 <lb/>tid kom du ind på disse forvildelsens veje?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Jeg kalder de<HIS:hisDel rend="overwritten">n</HIS:hisDel>m erkendelsens.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Kald dem hvad du vil. Men hvad tid, spør&rapo; jeg?</p></HIS:hisSp>
+<lb/><p>Kald dem hvad du vil. Men hvad tid, spør’ jeg?</p></HIS:hisSp>
 
 <pb ed="source" type="folio_nopagination" subtype="verso"  n="2" facs="50" gathering="9"/>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
@@ -1234,18 +1229,18 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><p>Den egenskap lader til at være uddøende i
 <lb/>slægten.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Sligt tænker jeg dør altid ud &dash; senere eller tidligere &dash;
+<lb/><p>Sligt tænker jeg dør altid ud – senere eller tidligere –
 <lb/>og så slår det over i sin modsætning.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Men <HIS:hisDel rend="overwritten">er</HIS:hisDel>at dette skulde ske gennem dig! Og at du
-<lb/>med det sindelag kunde stå som kirkens prest &dash;</p></HIS:hisSp>
+<lb/>med det sindelag kunde stå som kirkens prest –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Da jeg hav<HIS:clarification>d</HIS:clarification>e fåt fuld klarhed trak jeg mig jo til&typHyp;
+<lb/><p>Da jeg hav<HIS:clarification>d</HIS:clarification>e fåt fuld klarhed trak jeg mig jo til‐
 <lb/>bage.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Fuld klarhed. Over hvad?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Jeg kan ikke længere være med på dette mysteri&typHyp;
+<lb/><p>Jeg kan ikke længere være med på dette mysteri‐
 <lb/>øse. Jeg må forkaste hele den gamle lære.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Frafalden altså! Fritænker! Frafalden fra
@@ -1262,20 +1257,20 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Jeg vil fortsætte, utrættelig, med at forske og
 <lb/>tænke. Jeg vil søge, så vidt muligt, at komme
-<lb/>til bunds i tingene. Og så vil jeg leve. Være lyk&typHyp;
+<lb/>til bunds i tingene. Og så vil jeg leve. Være lyk‐
 <lb/>kelig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Ved du vel at dette åbner en afgrund af tan&typHyp;
+<lb/><p>Ved du vel at dette åbner en afgrund af tan‐
 <lb/>ker for mig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Jeg forstår dig ikke.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Nu vil jeg til bunds i det alt sammen. Vil
 <lb/>du være åben? Vil du svare ærligt på, hvad
-<lb/>jeg spør&rapo; dig?</p></HIS:hisSp>
+<lb/>jeg spør’ dig?</p></HIS:hisSp>
 <HIS:synopticViewPtr type="synopticView_mainVersions" target="Ro86.xml" xml:id="Ro_377main"/>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Kære, tal, spør&rapo; alt hvad du vil. Jeg har ingen
+<lb/><p>Kære, tal, spør’ alt hvad du vil. Jeg har ingen
 <lb/>ting at skjule.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Hvad var den dybeste grund til at Beate
@@ -1283,41 +1278,41 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Jeg forstår dig ikke. Kan du være i uvisshed
 <lb/>om det. Og kan der overhovedet spørges om
-<lb/>grundene til hvad en ulykkelig, syg, utilreg&typHyp;
+<lb/>grundene til hvad en ulykkelig, syg, utilreg‐
 <lb/>nelig foretar sig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Er du viss på at Beate var så aldeles u&typHyp;
+<lb/><p>Er du viss på at Beate var så aldeles u‐
 <lb/>tilregnelig? Lægerne mente i alt fald at det
 
 <pb ed="source" type="folio_nopagination" subtype="verso"  n="1" facs="52" gathering="10"/>
 <lb/>ikke var så aldeles afgjort.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Hvis lægerne nogensinde havde set hende så&typHyp;
+<lb/><p>Hvis lægerne nogensinde havde set hende så‐
 <lb/>ledes, som jeg så mangen gang så hende, da
-<lb/>vilde de ikke ha&rapo; tvilet.</p></HIS:hisSp>
+<lb/>vilde de ikke ha’ tvilet.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Jeg tvilte heller ikke dengang.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Det var desværre umuligt at tvile. Jeg har jo
-<lb/>fortalt dig om hendes ulykkelige, vilde liden&typHyp;
-<lb/>skabelighed, som hun forlangte jeg skulde gen&typHyp;
+<lb/>fortalt dig om hendes ulykkelige, vilde liden‐
+<lb/>skabelighed, som hun forlangte jeg skulde gen‐
 <lb/>gælde. Å den skræk hun indgød mig. Og så disse
 <lb/>pludselige omslag hos hende; dette stumme <HIS:hisDel rend="overstrike">tænde<unclear>r</unclear></HIS:hisDel>
-<lb/>fortærende ha<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>d &dash;</p></HIS:hisSp>
+<lb/>fortærende ha<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>d –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Had? Til hvem?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Til os, som var om hende. <HIS:hisDel rend="overwritten">s</HIS:hisDel>Til mig først og fremst &dash;</p></HIS:hisSp>
+<lb/><p>Til os, som var om hende. <HIS:hisDel rend="overwritten">s</HIS:hisDel>Til mig først og fremst –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Og jeg vil sige dig at den stakkers ulykkelige <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>Beate
 <lb/>døde for sin kærlighed til dig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Hvad vil du sige med det?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p><HIS:hisDel rend="overstrike"><HIS:hisDel rend="overwritten">N</HIS:hisDel>I</HIS:hisDel> I det sidste år, &dash; når hun ikke syntes hun kun&typHyp;
-<lb/>de bære sit liv længer, så tyed hun til mig og kla&typHyp;
-<lb/>ged sin angst &dash; først fordi hun påstod at du var
-<lb/>på frafaldets vej &dash;</p></HIS:hisSp>
+<lb/><p><HIS:hisDel rend="overstrike"><HIS:hisDel rend="overwritten">N</HIS:hisDel>I</HIS:hisDel> I det sidste år, – når hun ikke syntes hun kun‐
+<lb/>de bære sit liv længer, så tyed hun til mig og kla‐
+<lb/>ged sin angst – først fordi hun påstod at du var
+<lb/>på frafaldets vej –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Det tror jeg dog ikke jeg var den gang. I alt fald
 <lb/>indvied jeg hende aldrig i mine tvil eller i mine
@@ -1334,10 +1329,10 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/>ved at røbe disse anklager, som jeg dengang
 <lb/>selv trode på.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Men nu &dash;?</p></HIS:hisSp>
+<lb/><p>Men nu –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Ja nu har jeg fåt øjnene op for det utrolige &dash;
-<lb/>for din store brøde &dash;</p></HIS:hisSp>
+<lb/><p>Ja nu har jeg fåt øjnene op for det utrolige –
+<lb/>for din store brøde –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Brøde!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
@@ -1346,9 +1341,9 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Ikke et ord forstår jeg af dette.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<HIS:synopticViewPtr type="synopticView_mainVersions" target="Ro86.xml" xml:id="Ro_379main"/><lb/><p>Somme tider kom Beate til mig, græd og jam&typHyp;
-<lb/>red. &lquo;Rosmer elsker mig ikke mere, sa&rapo; hun.
-<lb/>Han elsker Rebekka; og hun elsker ham&rquo;.</p></HIS:hisSp>
+<HIS:synopticViewPtr type="synopticView_mainVersions" target="Ro86.xml" xml:id="Ro_379main"/><lb/><p>Somme tider kom Beate til mig, græd og jam‐
+<lb/>red. «Rosmer elsker mig ikke mere, sa’ hun.
+<lb/>Han elsker Rebekka; og hun elsker ham».</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Det har hun sagt!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
@@ -1359,13 +1354,13 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Ja vel måtte du tro det.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Sidste gang hun var inde hos mig, sa&rapo; hun: Nu
+<lb/><p>Sidste gang hun var inde hos mig, sa’ hun: Nu
 <lb/>må ingen stå i vejen for Johannes og hans lykke.
-<lb/>Nu må snart den vide hesten kom ind på går&typHyp;
+<lb/>Nu må snart den vide hesten kom ind på går‐
 <lb/>den. Jeg forstod hende ikke.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Aldrig er det faldt mig ind at hendes syge tan&typHyp;
-<lb/>ker kunde forvilde sig på de veje. Min stak&typHyp;
+<lb/><p>Aldrig er det faldt mig ind at hendes syge tan‐
+<lb/>ker kunde forvilde sig på de veje. Min stak‐
 <lb/>kers ulykkelige Beate!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Hykler!</p></HIS:hisSp>
@@ -1374,28 +1369,28 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><p>Hvad siger du!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Kan jeg nu, efter alle afsløringer, tvile <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>på at her
-<lb/>har været ført et brødefuldt liv &dash; allerede den gang.</p></HIS:hisSp>
+<lb/>har været ført et brødefuldt liv – allerede den gang.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Var det så sandt nogen anden end dig, som voved &dash;</p></HIS:hisSp>
+<lb/><p>Var det så sandt nogen anden end dig, som voved –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Var det nogen anden en dig, så havde det ikke sådan
-<lb/>skåret mit hjerte isønder. Men du, Johannes Rosmer &dash;
+<lb/>skåret mit hjerte isønder. Men du, Johannes Rosmer –
 <lb/>at skulle med et eneste ryk rive <HIS:hisDel rend="overwritten"><unclear>m</unclear></HIS:hisDel>dig ud af sindet.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Sig mig nu; disse anklager fra Beate trode du
 <lb/>jo ikke et ord <HIS:hisDel rend="overstrike">på</HIS:hisDel> af dengang.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Hvor kunde jeg tro sligt om en mand som du &dash; en
+<lb/><p>Hvor kunde jeg tro sligt om en mand som du – en
 <lb/>hædersmand, for det har du dog engang været.</p></HIS:hisSp>
 
 <pb ed="source" type="folio_nopagination" subtype="recto"  n="1" facs="55" gathering="11"/>
 <lb/><fw type="gathering" place="top-left"><unclear reason="binding">11</unclear>.</fw>
 <HIS:hisAdd place="margin"><note resp="editor">Tilføyelsen er gjort øverst på siden, i overkant av teksten.</note>
-<lb/><HIS:synopticViewPtr type="synopticView_mainVersions" target="Ro86.xml" xml:id="Ro_380main"/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>: Men nu &dash;?</HIS:spOpener></HIS:hisSp>
+<lb/><HIS:synopticViewPtr type="synopticView_mainVersions" target="Ro86.xml" xml:id="Ro_380main"/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>: Men nu –?</HIS:spOpener></HIS:hisSp>
 </HIS:hisAdd>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker><HIS:hisDel rend="overstrike">Rosmer</HIS:hisDel> Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Har du ikke nu bekendt at du allerede længe
-<lb/>i løndom har været en frafalden fra din fæ&typHyp;
+<lb/>i løndom har været en frafalden fra din fæ‐
 <lb/>dres tro?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Jeg har længe været en tvilende og kæmpende
@@ -1404,23 +1399,23 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p><HIS:hisDel rend="overwritten"><unclear>B</unclear></HIS:hisDel>Resten kan du visst sige dig selv.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Nej, siger jeg; nej; jeg kan ikke. Du pligter at kom<HIS:hisDel rend="overwritten">&typHyp;</HIS:hisDel>me
+<lb/><p>Nej, siger jeg; nej; jeg kan ikke. Du pligter at kom<HIS:hisDel rend="overwritten">‐</HIS:hisDel>me
 <lb/>helt og uforbeholdent frem med hvad du mener.</p></HIS:hisSp>
 <HIS:synopticViewPtr type="synopticView_mainVersions" target="Ro86.xml" xml:id="Ro_381main"/>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Jeg mener at der er vel ikke noget svælgende dyb,
-<lb/>nogen uoverstigelig afgrund mellem den fri tan&typHyp;
-<lb/>ke og &dash;</p></HIS:hisSp>
+<lb/>nogen uoverstigelig afgrund mellem den fri tan‐
+<lb/>ke og –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Og hvad &dash;?</p></HIS:hisSp>
+<lb/><p>Og hvad –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>&dash; og den fri kærlighed.</p></HIS:hisSp>
+<lb/><p>– og den fri kærlighed.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Og det vover du at sige til mig! Det skammer
 <lb/>du dig ikke ved at tænke og tro!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Jeg ved ikke hvad der skulde hindre en mand
-<lb/>fra den stund han har sagt sig løs fra mor&typHyp;
+<lb/>fra den stund han har sagt sig løs fra mor‐
 <lb/>albudene.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Har <emph>jeg</emph> gjort <emph>det</emph>!</p></HIS:hisSp>
@@ -1433,26 +1428,26 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><p>Og jeg kender ingen <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>kristen moral; <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>jeg kender
 <lb/>ingen anden moral, end den, som jeg har i blodet.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Den private, menneskelige moral er nok et skrø&typHyp;
+<lb/><p>Den private, menneskelige moral er nok et skrø‐
 <lb/>beligt værn.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Å denne grænseløse fanatisme, som er kommet
 <lb/>op i dig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Ja du kan kalde mig fanatisk i dette stykke. Til
-<lb/>min sidste stund skal jeg hade og forfølge dis&typHyp;
+<lb/>min sidste stund skal jeg hade og forfølge dis‐
 <lb/>se uheldsvangre strømninger i tiden. De har
-<lb/>bragt ufred og opløsning ind i mit hjem &dash; og i
+<lb/>bragt ufred og opløsning ind i mit hjem – og i
 <lb/>hundrede andre også. De har forbittret mig min
-<lb/>livsgerning &dash;</p></HIS:hisSp>
+<lb/>livsgerning –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>De politiske stridigheder, ja. Men dem blander
 <lb/>jeg mig ikke op i.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Det ene kan ikke skilles fra det andet. Og at fra&typHyp;
-<lb/>faldet skulde gribe også dig. Skille os så uigenkal&typHyp;
-<lb/>delig fra hin<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>anden. Men jeg ser det, jeg ser det; &dash;
-<lb/>dette med dig &dash; det er en listig og hensynsløs kvin&typHyp;
+<lb/><p>Det ene kan ikke skilles fra det andet. Og at fra‐
+<lb/>faldet skulde gribe også dig. Skille os så uigenkal‐
+<lb/>delig fra hin<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>anden. Men jeg ser det, jeg ser det; –
+<lb/>dette med dig – det er en listig og hensynsløs kvin‐
 <lb/>des værk.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Ikke et ord mere om hende.</p></HIS:hisSp>
@@ -1491,7 +1486,7 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Frøken Dankert</speaker>.</HIS:spOpener>
 <lb/><p>Og så?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Fuldt brud. Ulægeligt &dash;</p></HIS:hisSp>
+<lb/><p>Fuldt brud. Ulægeligt –</p></HIS:hisSp>
 
 <pb ed="source" type="folio_nopagination" subtype="verso"  n="2" facs="58" gathering="11"/>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Frøken Dankert</speaker>.</HIS:spOpener>
@@ -1503,18 +1498,18 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Ja jeg ved nok De mener det. Men sligt gammelt<lb/>tilvant sidder så fast hos mig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Frøken Dankert</speaker>.</HIS:spOpener>
-<lb/><p>Altfor fast. De var aldrig blet en fri mand, hav&typHyp;
-<lb/>denne kreds fåt bli&rapo; ved at øve sin indflydelse på
+<lb/><p>Altfor fast. De var aldrig blet en fri mand, hav‐
+<lb/>denne kreds fåt bli’ ved at øve sin indflydelse på
 <lb/>Dem.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Jeg pligter at sige Dem det. Efter at jeg åbenlyst
 <lb/>er trådt ud, vil man ikke længere se vort forhold
 <lb/>således, som det er.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Frøken Dankert</speaker>.</HIS:spOpener>
-<lb/><p>Ikke se vort forhold &dash;!</p></HIS:hisSp>
+<lb/><p>Ikke se vort forhold –!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Af frafaldne mennesker kan der ikke ventes
-<lb/>nogen ren livsvandel, sa&rapo; han.</p></HIS:hisSp>
+<lb/>nogen ren livsvandel, sa’ han.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Frøken Dankert</speaker>.</HIS:spOpener>
 <lb/><p>Å, disse rasende!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
@@ -1534,15 +1529,15 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Frøken Dankert</speaker>.</HIS:spOpener>
 <lb/><p>Ja det har jeg. Hvorfor skal vi vige for nogle
 <lb/>menneskers lave og gemene tænkesæt. Gøre os selv
-<lb/>ulykkelige. For det vilde vi bli&rapo; &dash;</p></HIS:hisSp>
+<lb/>ulykkelige. For det vilde vi bli’ –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Ja ja</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Frøken Dankert</speaker>.</HIS:spOpener>
 <lb/><p>Nej vi holder sammen i godt venskab og hjælper
-<lb/>og støtter hinanden så godt vi kan. Men se der &dash;!</p></HIS:hisSp>
+<lb/>og støtter hinanden så godt vi kan. Men se der –!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>
 <lb/><HIS:hisStage>(med et udråb.)</HIS:hisStage></HIS:spOpener></HIS:hisSp>
-<lb/><HIS:hisStage>(Rektor Gylling har åbnet døren i baggrun&typHyp;
+<lb/><HIS:hisStage>(Rektor Gylling har åbnet døren i baggrun‐
 <lb/>den.)</HIS:hisStage>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Ja jeg ved jo ikke om jeg tør komme en gang
@@ -1552,9 +1547,9 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><HIS:hisStage>(Rektoren kommer ind og beholder overtøjet på.)</HIS:hisStage>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Hvad sket er kan jo ikke ændres; men hør nu
-<lb/>Rosmer &dash;</p></HIS:hisSp>
+<lb/>Rosmer –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Jeg hører, jeg hører &dash;</p></HIS:hisSp>
+<lb/><p>Jeg hører, jeg hører –</p></HIS:hisSp>
 <HIS:synopticViewPtr type="synopticView_mainVersions" target="Ro86.xml" xml:id="Ro_382main"/>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Er det nogen nødvendighed for at dette dit
@@ -1565,13 +1560,13 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><p>Jeg vil og jeg må ud af den falske stilling, jeg så
 <lb/>længe har ståt i. Min bog ligger færdig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Og betænker du ikke hvad følger det vil ha&rapo; for
+<lb/><p>Og betænker du ikke hvad følger det vil ha’ for
 <lb/>dig. Hele den konservative presse vil kaste sig over
-<lb/>dig og bogen &dash;</p></HIS:hisSp>
+<lb/>dig og bogen –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Frøken Dankert</speaker>.</HIS:spOpener>
 <lb/><p>Men hvor kan De nu vide det, herr rektor? De <lb/>kender jo ikke bogen?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Hm, De vil vel sigte os for fanatisme og forføl&typHyp;
+<lb/><p>Hm, De vil vel sigte os for fanatisme og forføl‐
 <lb/>gelse af anderledes tænkende. Men det kan ikke
 <lb/>undgåes i en opagiteret ti<HIS:hisDel rend="overwritten">l</HIS:hisDel>d som vor. Det blir en
 <lb/>ligefrem pligt for enhver god borger, som har
@@ -1583,8 +1578,8 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Nej du ved det ikke. Det vil komme ganske
 <lb/>anderledes overhændigt end du tænker dig det.
-<lb/>Derfor ber jeg dig, Rosmer &dash; hold inde, gør det &dash;
-<lb/>du, den stille tilbagetrukne forsker; &dash; dette er
+<lb/>Derfor ber jeg dig, Rosmer – hold inde, gør det –
+<lb/>du, den stille tilbagetrukne forsker; – dette er
 <lb/>ikke noget for dig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Men kan du da ville at jeg skulde vise mig så fejg?</p></HIS:hisSp>
@@ -1594,7 +1589,7 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 
 <pb ed="source" type="folio_nopagination" subtype="recto"  n="2" facs="61" gathering="12"/>
 <lb/>tid har indtaget. Den agtelse du selv nyder.
-<lb/>Mange ubefæstede vil du gøre vaklende, tvil&typHyp;
+<lb/>Mange ubefæstede vil du gøre vaklende, tvil‐
 <lb/>rådige, ulykkelige.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Tror du det?</p></HIS:hisSp>
@@ -1602,17 +1597,17 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><p>Du tviler da vel ikke selv på det?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Men jeg kan da ikke bli stående udenfor evig
-<lb/>og altid. Ude omkring rører der sig et rigt spi&typHyp;
-<lb/>rende liv på alle områder. Jeg må dog begyn&typHyp;
+<lb/>og altid. Ude omkring rører der sig et rigt spi‐
+<lb/>rende liv på alle områder. Jeg må dog begyn‐
 <lb/>de at leve engang, jeg også. Jeg vil om må
 <lb/>bli lykkelig her i verden.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
-<lb/><p>Jeg skønner godt, hv<HIS:hisDel rend="overwritten">ad</HIS:hisDel>or denne jagt efter lyk&typHyp;
-<lb/>ken skriver sig fra. Gør ikke De også <HIS:hisDel rend="overwritten">f</HIS:hisDel>det, frø&typHyp;
+<lb/><p>Jeg skønner godt, hv<HIS:hisDel rend="overwritten">ad</HIS:hisDel>or denne jagt efter lyk‐
+<lb/>ken skriver sig fra. Gør ikke De også <HIS:hisDel rend="overwritten">f</HIS:hisDel>det, frø‐
 <lb/>ken.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Frøken Dankert</speaker>.</HIS:spOpener>
 <lb/><p>Den ligger i tiden. Det er noget af det største ved
-<lb/>den unge tid at vi vover åbenlyst at proklame&typHyp;
+<lb/>den unge tid at vi vover åbenlyst at proklame‐
 <lb/>re lykken som livsmål.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Gør De det.</p></HIS:hisSp>
@@ -1626,8 +1621,8 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 
 <pb ed="source" type="folio_nopagination" subtype="verso"  n="2" facs="62" gathering="12"/>
-<lb/><p>Du arme menneske, &dash; du, med din skyldbetyngede
-<lb/>samvittighed, &dash; du tror at kunne finde lykken
+<lb/><p>Du arme menneske, – du, med din skyldbetyngede
+<lb/>samvittighed, – du tror at kunne finde lykken
 <lb/>på de veje.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Frøken Dankert</speaker>.</HIS:spOpener>
 <lb/><p>Skyldbetynget! Hvad er dette.</p></HIS:hisSp>
@@ -1636,7 +1631,7 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><HIS:hisSp who="KROLL"><HIS:spOpener><speaker>Gylling</speaker>.</HIS:spOpener>
 <lb/><p>Det tror du kanske. Men du fejler. Du har forrådt
 <lb/>dig. Og så bragte den ulykkelige dig sit liv til
-<lb/>offer. &dash; Du bygger din lykke på vand. Husk på
+<lb/>offer. – Du bygger din lykke på vand. Husk på
 <lb/>mølledammen.
 <lb/><HIS:hisStage>(han går.)</HIS:hisStage></p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
@@ -1644,7 +1639,7 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Frøken Dankert</speaker>.</HIS:spOpener>
 <lb/><p>Det ved jeg jo.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Men alligevel &dash; ja engang må dette jo siges. Elsked jeg
+<lb/><p>Men alligevel – ja engang må dette jo siges. Elsked jeg
 <lb/><HIS:hisDel rend="overwritten">d</HIS:hisDel>Dem virkelig allerede da?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Frøken Dankert</speaker>.</HIS:spOpener>
 <lb/><p>Elsked! De, Rosmer!</p></HIS:hisSp>
@@ -1666,7 +1661,7 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><HIS:hisStage>(Johannes Rosmers kontor. Dør i baggrunden;
 <lb/>ligeså til <HIS:hisDel rend="overstrike">højr</HIS:hisDel> venstre. Bogskabe og hylder ved
 <lb/>væggene. Et vindu til højre og foran samme
-<lb/>skrivebordet bedækket med bøger og papirer. &dash;
+<lb/>skrivebordet bedækket med bøger og papirer. –
 <lb/>Gammeldagse møbler; et bord med tæppe midt
 <lb/>i værelset.)</HIS:hisStage>
 <lb/><HIS:hisStage>(Johannes Rosmer sidder i en højrygget
@@ -1685,7 +1680,7 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><p>God morgen, kære. Er det noget De vil?</p></HIS:hisSp>
 <HIS:synopticViewPtr type="synopticView_mainVersions" target="Ro86.xml" xml:id="Ro_403main"/>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Frøken West</speaker>.</HIS:spOpener>
-<lb/><p>Her er &lquo;Amtstidenden&rquo; for idag.</p></HIS:hisSp>
+<lb/><p>Her er «Amtstidenden» for idag.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.
 <lb/><HIS:hisStage>(vender sig.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Står der noget?</p></HIS:hisSp>
@@ -1698,26 +1693,26 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><p>Allerede. <HIS:hisStage>(læser.)</HIS:hisStage> Nu skal vi se.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Frøken West</speaker>
 <lb/><HIS:hisStage>(bag ham, lænet over stolryggen, læser også.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>De har villet være de første &dash;</p></HIS:hisSp>
+<lb/><p>De har villet være de første –</p></HIS:hisSp>
 <HIS:synopticViewPtr type="synopticView_mainVersions" target="Ro86.xml" xml:id="Ro_404main"/>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>&dash; for at afsvække virkningen, ja. &lquo;&dash; ikke noksom
-<lb/>udtale vor foragt &dash;&rquo; Foragt? &lquo;&dash; for overløbere, som
+<lb/><p>– for at afsvække virkningen, ja. «– ikke noksom
+<lb/>udtale vor foragt –» Foragt? «– for overløbere, som
 <lb/>har krøbet i skjul, så længe stillingen var usikker
-<lb/>&dash; Dette har ikke Gylling skrevet &dash;</p></HIS:hisSp>
+<lb/>– Dette har ikke Gylling skrevet –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Frøken West</speaker>.</HIS:spOpener>
 <lb/><p>Hvem ved.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Nej, nej. &lquo;overløbere &dash; &dash; &dash; men som går over med
-<lb/>fuld musik så snart sejren synes sikkret&rquo;. At de
+<lb/><p>Nej, nej. «overløbere – – – men som går over med
+<lb/>fuld musik så snart sejren synes sikkret». At de
 <lb/>kan skrive sådant noget, som de ikke selv tror
-<lb/>på. &lquo;Når uklare viljeløse fantaster falder i hæn&typHyp;
-<lb/>derne på intrigante beregnende personer &dash;&rquo; jeg vil
+<lb/>på. «Når uklare viljeløse fantaster falder i hæn‐
+<lb/>derne på intrigante beregnende personer –» jeg vil
 <lb/>ikke læse mere. <HIS:hisStage>(rejser sig)</HIS:hisStage> i al fald ikke nu.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Frøken West</speaker>.</HIS:spOpener>
 <lb/><p>Vil De svare?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Å hvad kan det nytte? Jeg er jo heller ikke lige&typHyp;
+<lb/><p>Å hvad kan det nytte? Jeg er jo heller ikke lige‐
 <lb/>frem nævnt.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Frøken West</speaker>.</HIS:spOpener>
 <lb/><p>Det vil dog snart rygtes, hvem dette sigter til. Den
@@ -1727,14 +1722,14 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 
 <pb ed="source" type="folio_nopagination" subtype="recto"  n="2" facs="65" gathering="13"/>
 <lb/><HIS:hisStage>(går nervøs om på gulvet.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Denne forkættringens tid, &dash; ja, det er <HIS:hisDel rend="overstrike">j</HIS:hisDel> rigtignok
+<lb/><p>Denne forkættringens tid, – ja, det er <HIS:hisDel rend="overstrike">j</HIS:hisDel> rigtignok
 <lb/>en stor opgave at få gjort ende på den.</p></HIS:hisSp>
 <lb/><HIS:hisStage>(Madam Helset åbner døren til venstre.)</HIS:hisStage>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Frøken West</speaker>.</HIS:spOpener>
 <lb/><p>Hvad er det, madam Helset?</p></HIS:hisSp>
 <HIS:synopticViewPtr type="synopticView_textWitnesses" xml:id="Ro_383ms"/>
 <lb/><HIS:hisSp who="MADAMHELSETH"><HIS:spOpener><speaker>Madam Helset</speaker>.</HIS:spOpener>
-<lb/><p>Det er denne Mortensgård som gerne vilde snak&typHyp;
+<lb/><p>Det er denne Mortensgård som gerne vilde snak‐
 <lb/>ke med herr Rosmer.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Mortensgård? Hvad kan han vilde?</p></HIS:hisSp>
@@ -1749,7 +1744,7 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><p>Det er længe siden jeg stod for Dem, herr pastor.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Ja, der ligger år imellem. Jeg har tidt spurt
-<lb/>mig selv om jeg ikke dengang <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>greb ind med alt&typHyp;
+<lb/>mig selv om jeg ikke dengang <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>greb ind med alt‐
 <lb/>for hårde hænder.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MORTENSGAARD"><HIS:spOpener><speaker>Mortensgård</speaker>.</HIS:spOpener>
 <lb/><p>Siger De det, her pastor?</p></HIS:hisSp>
@@ -1777,19 +1772,19 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Tror De det?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MORTENSGAARD"><HIS:spOpener><speaker>Mortensgård</speaker>.</HIS:spOpener>
-<lb/><p>Han er ikke med i tiden; står så underlig uden&typHyp;
+<lb/><p>Han er ikke med i tiden; står så underlig uden‐
 <lb/>for det som rører sig. Ser på tingene med øjne
-<lb/>som kan ha&rapo; været radikale nok for tyve år siden &dash;</p></HIS:hisSp>
+<lb/>som kan ha’ været radikale nok for tyve år siden –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Ja det var de. &dash; Sig mig, har De læst &lquo;Amtsti&typHyp;
-<lb/>denden&rquo; <HIS:clarification>f</HIS:clarification>or idag?</p></HIS:hisSp>
+<lb/><p>Ja det var de. – Sig mig, har De læst «Amtsti‐
+<lb/>denden» <HIS:clarification>f</HIS:clarification>or idag?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MORTENSGAARD"><HIS:spOpener><speaker>Mortensgård</speaker>.</HIS:spOpener>
 <lb/><p>Nej, ikke endnu.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Frøken West</speaker>.</HIS:spOpener>
 <lb/><p>Sig nu ikke det, herr Mortensgård. Jeg er viss
 <lb/>på, De har læst den.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MORTENSGAARD"><HIS:spOpener><speaker>Mortensgård</speaker>.</HIS:spOpener>
-<lb/><p>Nå ja, så løselig, &dash; lidt hist og her.</p></HIS:hisSp>
+<lb/><p>Nå ja, så løselig, – lidt hist og her.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 
 <pb ed="source" type="folio_nopagination" subtype="recto"  n="1" facs="67" gathering="14"/>
@@ -1809,13 +1804,13 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><p>Der er altså kommet noget ivejen mellem
 <lb/>Dem og de andre herrerne?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
-<lb/><p>Jeg er trådt ud af den kreds. Jeg vil se at ta&rapo;
+<lb/><p>Jeg er trådt ud af den kreds. Jeg vil se at ta’
 <lb/>en stilling for mig selv.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MORTENSGAARD"><HIS:spOpener><speaker>Mortensgård</speaker>.</HIS:spOpener>
 <lb/><p>Så pastoren er trådt ud? Ja så. Det havde
 <lb/>jeg ikke ventet.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Frøken West</speaker>.</HIS:spOpener>
-<lb/><p>Det er et længe forberedt skridt, herr Mortens&typHyp;
+<lb/><p>Det er et længe forberedt skridt, herr Mortens‐
 <lb/>gård.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MORTENSGAARD"><HIS:spOpener><speaker>Mortensgård</speaker>.</HIS:spOpener>
 <lb/><p>Er det det. <HIS:hisDel rend="overstrike">S</HIS:hisDel><gap/> Må sige, havde ikke ventet det.
@@ -1824,15 +1819,15 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><p>Det tror jeg neppe. Disse kævlerier mand og
 <lb/>mand imellem er mig så hjertelig imod.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MORTENSGAARD"><HIS:spOpener><speaker>Mortensgård</speaker>.</HIS:spOpener>
-<lb/><p>Men hvis det skulde bli nødvendigt, &dash; for der
-<lb/>kunde kanske komme mere &dash;</p></HIS:hisSp>
+<lb/><p>Men hvis det skulde bli nødvendigt, – for der
+<lb/>kunde kanske komme mere –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Tror De det?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MORTENSGAARD"><HIS:spOpener><speaker>Mortensgård</speaker>.</HIS:spOpener>
 
 <pb ed="source" type="folio_nopagination" subtype="verso"  n="1" facs="68" gathering="14"/>
-<lb/><p>De plejer bruge det så. Og hvis De skulde ha&rapo;
-<lb/>vanskeligt for at få noget ind i &lquo;Amtstidenden&rquo;
+<lb/><p>De plejer bruge det så. Og hvis De skulde ha’
+<lb/>vanskeligt for at få noget ind i «Amtstidenden»
 <lb/>så står mit blad åbent<HIS:hisAdd place="inline">.</HIS:hisAdd> <HIS:hisDel rend="overstrike">for</HIS:hisDel> De<HIS:hisAdd place="inline">t</HIS:hisAdd> <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>vilde være en
 <lb/>stor ære for os.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
@@ -1843,19 +1838,19 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><HIS:hisSp who="MORTENSGAARD"><HIS:spOpener><speaker>Mortensgård</speaker>.</HIS:spOpener>
 <lb/><p>Hvad De vil, herr pastor. Jo mere, jo bedre.
 <lb/>Det vil være til uberegnelig gagn for fremskridtets
-<lb/>sag ud over landet om en mand, som De, en kir&typHyp;
+<lb/>sag ud over landet om en mand, som De, en kir‐
 <lb/>kens mand stiller Dem på vor side.</p></HIS:hisSp>
 <HIS:synopticViewPtr type="synopticView_mainVersions" target="Ro86.xml" xml:id="Ro_385main"/><lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Ja hør nu; først må jeg sige Dem at jeg ikke
 <lb/>længer er nogen kirkens mand.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MORTENSGAARD"><HIS:spOpener><speaker>Mortensgård</speaker>.</HIS:spOpener>
-<lb/><p>Bevar&rapo;s, det ved jeg nok; men det gør jo ikke
+<lb/><p>Bevar’s, det ved jeg nok; men det gør jo ikke
 <lb/>fra eller til om De er trådt ud af embedet.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Det mener jeg heller ikke. Men sagen er at jeg
 <lb/>deler ikke længer kirkens tro.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MORTENSGAARD"><HIS:spOpener><speaker>Mortensgård</speaker>.</HIS:spOpener>
-<lb/><p>Deler De ikke &dash;? De!</p></HIS:hisSp>
+<lb/><p>Deler De ikke –? De!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Nej. Alt sligt er jeg kommet helt bort fra.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MORTENSGAARD"><HIS:spOpener><speaker>Mortensgård</speaker>.</HIS:spOpener>
@@ -1867,8 +1862,8 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><HIS:hisSp who="REBEKKA"><HIS:spOpener><speaker>Frøken West</speaker>.</HIS:spOpener>
 <lb/><p>De selv lægger jo ikke skjul på Deres meninger.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MORTENSGAARD"><HIS:spOpener><speaker>Mortensgård</speaker>.</HIS:spOpener>
-<lb/><p>Det vilde lidet ny<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>tte. Den, der engang har væ&typHyp;
-<lb/>ret så uforsigtig &dash; så uheldig som jeg &dash;.</p></HIS:hisSp>
+<lb/><p>Det vilde lidet ny<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>tte. Den, der engang har væ‐
+<lb/>ret så uforsigtig – så uheldig som jeg –.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Sætter De da ikke sandheden over alt?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MORTENSGAARD"><HIS:spOpener><speaker>Mortensgård</speaker>.</HIS:spOpener>
@@ -1881,7 +1876,7 @@ Splittet Ro41291_pre_splitt i Hv41291a, Hv41291b og Hv41291c samt Ro41291d og e.
 <lb/><HIS:hisSp who="ROSMER"><HIS:spOpener><speaker>Rosmer</speaker>.</HIS:spOpener>
 <lb/><p>Ja, der er vi ganske enige.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="MORTENSGAARD"><HIS:spOpener><speaker>Mortensgård</speaker>.</HIS:spOpener>
-<lb/><p>På den vis gør jeg min forgåelse mod samfun&typHyp;
+<lb/><p>På den vis gør jeg min forgåelse mod samfun‐
 <lb/>det god igen. For mig selv kan jeg ikke håbe at
 <lb/>vinde noget. Jeg er jo borgerlig død, som De ved.</p></HIS:hisSp>
 </div>

@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -13,11 +7,11 @@
 <title level="s" type="main">Henrik Ibsens skrifter</title>
 <title level="s" type="sub">Diplomatarisk tekstarkiv</title>
 <title level="a" type="main">Kejser og Galilæer</title>
-<title level="a" type="sub">NBO Ms.4&deg; 1111, notater</title>
-<title level="a" type="origYear">[1871&dash;1873]</title>
+<title level="a" type="sub">NBO Ms.4° 1111, notater</title>
+<title level="a" type="origYear">[1871–1873]</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt>
 <resp>Konvertering fra ekstern transkripsjon til prosjektspesifikk TEI XML</resp>
 <name xml:id="HIS-HB">Hilde Bøe</name>
@@ -45,12 +39,12 @@
 <sourceDesc><p>Denne filen bygger på KG41111_NBO.xml (KG41111_NBO-0208).</p></sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography><p>Manuskriptets grafiske oppsett finnes beskrevet i typografibeskrivelsen i KG41111_NBO.xml.</p>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -121,7 +115,7 @@
 <label xml:id="PERSEREN"/><item>En persisk overløber/Perseren</item>
 </list>
 </tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -162,17 +156,17 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><head>Optegnelser
 <lb/>efter
 <lb/>M: Albert de Broglie.</head>
-<lb/><p>Konstantius var børnløs; den Flaviske fa&typHyp;
+<lb/><p>Konstantius var børnløs; den Flaviske fa‐
 <lb/>milie var decimeret ved mange blodbad; kun
 <lb/>Julius Konstantius's to sønner var, som ved et
 <lb/>mirakel frelste fra blodbadet i Konstantinopel,
 <lb/>ved hjælp af biskop Markus af Arethusa, der
 <lb/>havde skjult dem i rædselsdagene. Begge unge
 <lb/>prinser var halvbrødre. De opdroges på et
-<lb/>slot i Kappadokia, som fanger men med fyrste&typHyp;
-<lb/>lige æresbevisninger. <hi rend="underlined">Gallus</hi> var stor, velbyg&typHyp;
+<lb/>slot i Kappadokia, som fanger men med fyrste‐
+<lb/>lige æresbevisninger. <hi rend="underlined">Gallus</hi> var stor, velbyg‐
 <lb/>get, med blondt hår (som de fleste af familjen)
-<lb/>faldende ned over skuldrene; hans regelmæs&typHyp;
+<lb/>faldende ned over skuldrene; hans regelmæs‐
 <lb/>sig smukke ansigt var belivet af et udtryk
 <lb/>af brændende følelse og sandselighed; hans natur
 <lb/>var hæftig og tilbøjelig til vrede. Han havde
@@ -181,36 +175,36 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/>personlighed var påfaldende og ualmindelig
 <lb/>Hans næse var lige, men munden altfor
 <lb/>stor; underlæben fortrak sig i en grimase; de brede
-<lb/>skuldre stod i modsætning til det lille liv. Li&typHyp;
-<lb/>gesom modgangen <HIS:hisDel rend="overstrike"><gap/></HIS:hisDel> mere havde opirret end yd&typHyp;
+<lb/>skuldre stod i modsætning til det lille liv. Li‐
+<lb/>gesom modgangen <HIS:hisDel rend="overstrike"><gap/></HIS:hisDel> mere havde opirret end yd‐
 <lb/>myget Gallus's urolige sind, havde den givet
 <lb/>Julian en tilbageholden forbeholdenhed og
-<lb/>et skin af forstillelse. Hans gamle barndoms&typHyp;
+<lb/>et skin af forstillelse. Hans gamle barndoms‐
 <lb/>lærer havde indprentet ham at bevare i hele
 <pb ed="faksBase" n="20"/>
 <pb n="[274]v"/>
-<lb/><sic>i hele</sic> sin ydre optræden et præg af værdig&typHyp;
+<lb/><sic>i hele</sic> sin ydre optræden et præg af værdig‐
 <lb/>hed og beskedenhed og at anvende al sin kraft
 <lb/>på e<HIS:hisDel rend="overwritten">t</HIS:hisDel>n fuldstændig selvbeherskelse. Han havde
 <lb/>et par glimrende øjne og et originalt fysignomi
 <lb/>der forrådte en tilbageholdt ild. Der var en
 <lb/>vis uro over hele hans person; konvulsiviske
 <lb/>bevægelser forstyrrede undertiden værdigheden
-<lb/>i hans optræden. Hans kejtede bevægelser åben&typHyp;
+<lb/>i hans optræden. Hans kejtede bevægelser åben‐
 <lb/>bared en slet skjult ild under den tilsyneladende
-<lb/>indre ro &dash; &dash; I Kappadokia vilde de bygge
+<lb/>indre ro – – I Kappadokia vilde de bygge
 <lb/>i fællesskab en kirke over martyren den
 <lb/>hellige <HIS:hisDel rend="overwritten">m</HIS:hisDel>Mamass grav; men den fløj af bygn<gap reason="binding"/>
 <lb/>gen, som Julian overtog, blev aldrig endt.
-<lb/>I deres disputerøvelser overtog Julian at for&typHyp;
+<lb/>I deres disputerøvelser overtog Julian at for‐
 <lb/>svare hedenskabet. Han havde tilbøjelighed
 <lb/>til at iagttage stjernerne; solen, stjernenatten
-<lb/>satte ham i henrykkelse &dash; &dash; Til trods for
-<lb/>sin større tilbøjelighed for Julian ud&typHyp;
+<lb/>satte ham i henrykkelse – – Til trods for
+<lb/>sin større tilbøjelighed for Julian ud‐
 <lb/>nævnte dog Konstantius sin fætter Gallus
-<lb/>til Cæsar i Orienten. Gallus gik i for&typHyp;
+<lb/>til Cæsar i Orienten. Gallus gik i for‐
 <lb/>bøn for Julian som fik tilladelse
-<lb/>til at gå til Athen for at høre filo&typHyp;
+<lb/>til at gå til Athen for at høre filo‐
 <lb/>soferne.</p>
 </div>
 <lb/><figure type="bar"/>
@@ -229,7 +223,7 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/>ved havnen og hverved de nye for sine <sic>proffe<unclear reason="writing">s</unclear>orer</sic>.
 <lb/>De tog alt i besiddelse. Har man fanget nogle
 <lb/>nye så drager man med dem over torvet til
-<lb/>et badehus. Slag på dør<unclear reason="writing">en</unclear>, <HIS:hisDel rend="overstrike">ægn</HIS:hisDel> ængstelse &dash; derpå
+<lb/>et badehus. Slag på dør<unclear reason="writing">en</unclear>, <HIS:hisDel rend="overstrike">ægn</HIS:hisDel> ængstelse – derpå
 <lb/>er han optagen. Med optagelse var myst<unclear reason="writing">erier</unclear>
 <lb/>forbund<unclear reason="writing">ne</unclear> som de eleusinske.</p>
 </div>
@@ -252,7 +246,7 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/>Julian</cell><cell role="data">halvbrødre og Constantius's fættere.</cell></row>
 <lb/><row><cell role="data">Nikokles,</cell><cell role="data">nyplatoniker, Julians lærer.</cell></row>
 <lb/><row><cell role="data"><HIS:hisAdd place="offline">Mardonius</HIS:hisAdd></cell><cell role="data">NB: <HIS:hisDel rend="overwritten">20</HIS:hisDel>16 år gammel kaldes Julian f<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>ra Macellum,
-<lb/>landgodset i Kappadokien, til Konstan&typHyp;
+<lb/>landgodset i Kappadokien, til Konstan‐
 <lb/>tinopel, for at fortsætte sine studeringer.</cell></row>
 <lb/><row><cell role="data">Libanius,</cell><cell role="data">hedensk filosof, turde ikke omgåes
 <lb/>med Julian.</cell></row>
@@ -261,13 +255,13 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><row><cell role="data">Maximus,</cell><cell role="data">platoniker, berømt gøgler og åndemaner.
 <lb/>NB: 4 år senere (350) drog Julian til Athen.
 <lb/>Gallus var imidlertid bleven myrdet.
-<lb/><HIS:hisDel rend="overstrike">NB: Julian beklædes med en cæsars værdig</HIS:hisDel>&typHyp;
+<lb/><HIS:hisDel rend="overstrike">NB: Julian beklædes med en cæsars værdig</HIS:hisDel>‐
 <lb/><HIS:hisDel rend="overstrike">hed og overtager krigsanførslen i Gallien</HIS:hisDel>,
 <lb/><HIS:hisDel rend="overstrike">355</HIS:hisDel>.</cell></row>
 <lb/><row><cell role="data">Gregor af Nazianz</cell><cell role="data">studerer på samme tid i <sic>Atheen</sic>.
-<lb/>NB: 355 beklædes Julian med Cæsar-værdig&typHyp;
+<lb/>NB: 355 beklædes Julian med Cæsar-værdig‐
 <lb/>heden og overtager krigen i Gallien.</cell></row>
-<lb/><row><cell role="data">Oribasius</cell><cell role="data"><HIS:hisDel rend="overstrike">han</HIS:hisDel>s <HIS:hisDel rend="overstrike">bibliothekar</HIS:hisDel>, magiker, hans liv&typHyp;
+<lb/><row><cell role="data">Oribasius</cell><cell role="data"><HIS:hisDel rend="overstrike">han</HIS:hisDel>s <HIS:hisDel rend="overstrike">bibliothekar</HIS:hisDel>, magiker, hans liv‐
 <lb/>læge og spåmand.</cell></row>
 <lb/><row><cell role="data">Sallust</cell><cell role="data">statsmand, Konstantius spion men
 <lb/>Julians ven.</cell></row>
@@ -288,28 +282,28 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><head>Optegnelser
 <lb/>til
 <lb/>Julians frafald.
-<lb/>(År 357&dash;360.)</head>
+<lb/>(År 357–360.)</head>
 <lb/><p>Julians kampe med Alemanerne indtil slaget
-<lb/>ved Strasburg. &dash; Am: Marcell: 16<hi rend="raised">de</hi> bog.</p>
+<lb/>ved Strasburg. – Am: Marcell: 16<hi rend="raised">de</hi> bog.</p>
 <lb/><p>Kejser Konstantius triumferer i Rom i anledning
-<lb/>af Julians sejr. Julian bagvaskes ved hoffet og ud&typHyp;
-<lb/>skældes for fejghed og uvirksomhed. &dash; Am: M: 17<hi rend="raised">de</hi> bog.</p>
+<lb/>af Julians sejr. Julian bagvaskes ved hoffet og ud‐
+<lb/>skældes for fejghed og uvirksomhed. – Am: M: 17<hi rend="raised">de</hi> bog.</p>
 <lb/><p>Julian bliver i Paris, hvor han overvintrer, af
 <lb/>de bortkommanderte legioner med magt udråbt
-<lb/>til kejser. &dash; Am: M: 20<hi rend="raised">de</hi> bog.</p>
+<lb/>til kejser. – Am: M: 20<hi rend="raised">de</hi> bog.</p>
 <lb/><p>Julian festligholder i Vienna quinquenalierne
 <lb/>og lader sig hylde som kejser; erholder underretning
-<lb/>om Konstantius's dø<HIS:hisDel rend="overwritten">g</HIS:hisDel>d. &dash; Am: M: 21<hi rend="raised">de</hi> bog.</p>
+<lb/>om Konstantius's dø<HIS:hisDel rend="overwritten">g</HIS:hisDel>d. – Am: M: 21<hi rend="raised">de</hi> bog.</p>
 <lb/><p>Argentoratum (Strasburg) Colonia Agrippina (Kølln)
-<lb/>Ur<HIS:clarification place="inline">s</HIS:clarification>icinus <HIS:hisAdd place="offline"><HIS:hisDel rend="overstrike">rytter</HIS:hisDel></HIS:hisAdd>, anfører &dash; Skjoldbærere. Hustropper.
-<lb/>Marcellus &dash; anfører. Drabanter.
+<lb/>Ur<HIS:clarification place="inline">s</HIS:clarification>icinus <HIS:hisAdd place="offline"><HIS:hisDel rend="overstrike">rytter</HIS:hisDel></HIS:hisAdd>, anfører – Skjoldbærere. Hustropper.
+<lb/>Marcellus – anfører. Drabanter.
 <lb/>for rytteriet viste sig forsømmelig i at undsætte Senones hvor
 <lb/>Cæsar lå i vinterkvarter.<note resp="editor">Uklar sammenheng; strek i venstre marg synes å koble opplysningen om rytteriet til punktet om Ursicinus.</note></p>
 <lb/><p><hi rend="underlined">NB</hi> Kejseren havde udfærdiget en rigelig spiseseddel for Julian.
-<lb/>Denne lod fasaner, fyldt svinebug o s. v udstryge &dash;
-<lb/><app type="alteration"><lem><HIS:hisAdd place="offline">Ryttergeneralen</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Prokonsulen</HIS:hisDel></HIS:hisRdg></app> Arbetio var fra simpel soldat bleven anfører &dash;
+<lb/>Denne lod fasaner, fyldt svinebug o s. v udstryge –
+<lb/><app type="alteration"><lem><HIS:hisAdd place="offline">Ryttergeneralen</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Prokonsulen</HIS:hisDel></HIS:hisRdg></app> Arbetio var fra simpel soldat bleven anfører –
 <lb/>og mistænk<HIS:clarification place="inline">t</HIS:clarification>es for at eftertragte mere af:
-<lb/>Statholder Verissimus, en skriger &dash;
+<lb/>Statholder Verissimus, en skriger –
 <lb/>Lægen ved skjold<unclear reason="writing">borgen</unclear>, Dorus, forfulgte ham også;
 <lb/>denne havde været anfører for vagten over kunstv<HIS:hisDel rend="overstrike"><unclear>ærker</unclear></HIS:hisDel>
 <lb/>i Rom.</p>
@@ -339,10 +333,10 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><item>Bataverne understøttede af de kejserl: hustropper rykker frem. 175.</item>
 <lb/><item>De såredes skrig skræmte mange tilbage. 176.</item>
 <lb/><item>Betegnende enkeltheder. 177 og 178.</item>
-<lb/><item>Om Chnodomars sidste skæbne. 178&dash;181.</item>
+<lb/><item>Om Chnodomars sidste skæbne. 178–181.</item>
 <lb/><item>De faldnes antal og navne 180.</item>
 <lb/><item>Julian hilses som kejser, tilbageviser dette. 181.</item>
-<lb/><item>Om kejserens praleri &dash; 182&dash;183. &dash;</item>
+<lb/><item>Om kejserens praleri – 182–183. –</item>
 <HIS:hisAdd place="margin"><note resp="editor">Tilføyelsen er skrevet i høyre marg.</note>
 <lb/><item>Mederichs søn og
 <lb/>Chnodomars brodersøn,
@@ -351,7 +345,7 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/>Se side 169.</item>
 <lb/><item>Alemanernes hær udgjorde
 <lb/>35,000 bevæbnede. side 169.</item>
-<lb/><item>Fem konger &dash; ibid:
+<lb/><item>Fem konger – ibid:
 <lb/>Julians drage-fane
 <lb/>side 173.</item>
 <lb/><item>Julians opråb til de flygten<gap reason="endline"/>
@@ -363,10 +357,10 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><item>3<hi rend="raised">die</hi> handling ved Vienna.</item>
 </list>
 <list>
-<lb/><item>Handlingen foregår i Gallien. Tiden 3<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>57&dash;360.</item>
+<lb/><item>Handlingen foregår i Gallien. Tiden 3<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>57–360.</item>
 <lb/><item>Prætorian-præfekten Florentius mente at slaget burde forsøges
 <lb/>Side 165.</item>
-<lb/><item>Severus kommanderede på venstre fløj &dash; 170.</item>
+<lb/><item>Severus kommanderede på venstre fløj – 170.</item>
 </list>
 </div>
 </body>
@@ -380,23 +374,23 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><head>Optegnelser til 2<hi rend="raised">den</hi> handling.</head>
 <p><table>
 <lb/><row><cell role="data">Længsel efter visdomsvennerne</cell><cell role="filler"/><cell role="data">Brogl:</cell><cell role="data">699. f.f.</cell></row>
-<lb/><row><cell role="data">Julian hengiver sig kynismen</cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">704.</cell></row>
+<lb/><row><cell role="data">Julian hengiver sig kynismen</cell><cell role="filler"/><cell role="data">"</cell><cell role="data">704.</cell></row>
 <lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike" hand="HI-2">Julian og angiverne (purpurkåben</HIS:hisDel></cell><cell role="filler"/><cell role="data">Amm:</cell><cell role="data">450.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike" hand="HI-2">Thalassios og angiveren af sine og <app type="alteration"><lem>kejseren<HIS:hisAdd place="inline"><unclear>s</unclear></HIS:hisAdd></lem><HIS:hisRdg>kejseren<HIS:hisDel rend="overwritten"><unclear>f</unclear></HIS:hisDel></HIS:hisRdg></app> fiender</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">452.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike" hand="HI-2">Kvinden og den opkiltrede hofbetjent</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">454.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike" hand="HI-2">Flere dødsdømte nævnes</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">455.</cell></row>
-<lb/><row><cell role="data">Overdrevne ofringer</cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">459.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike" hand="HI-2">Apollotemplets brand</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">461.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike" hand="HI-2">Thalassios og angiveren af sine og <app type="alteration"><lem>kejseren<HIS:hisAdd place="inline"><unclear>s</unclear></HIS:hisAdd></lem><HIS:hisRdg>kejseren<HIS:hisDel rend="overwritten"><unclear>f</unclear></HIS:hisDel></HIS:hisRdg></app> fiender</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">452.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike" hand="HI-2">Kvinden og den opkiltrede hofbetjent</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">454.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike" hand="HI-2">Flere dødsdømte nævnes</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">455.</cell></row>
+<lb/><row><cell role="data">Overdrevne ofringer</cell><cell role="filler"/><cell role="data">"</cell><cell role="data">459.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike" hand="HI-2">Apollotemplets brand</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">461.</cell></row>
 <lb/><row><cell role="data">Herakleos latterliggør guderne</cell><cell role="filler"/><cell role="data">Brogl:</cell><cell role="data">708.</cell></row>
-<lb/><row><cell role="data">Julians mythe om sig selv</cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">711.</cell></row>
-<lb/><row><cell role="data">Den ældste dødsdømte vil dø først</cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">717.</cell></row>
-<lb/><row><cell role="data">Jovian forvises, Br: 717. Markus af Areth:</cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">719.</cell></row>
-<lb/><row><cell role="data">Kristenforfølgelser</cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">721.22</cell></row>
-<lb/><row><cell role="data">Julian spotter de klagende kristne</cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">727.</cell></row>
-<lb/><row><cell role="data">En yngling hudflettes m. m.</cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">728.29</cell></row>
-<lb/><row><cell role="data">Forfølgelser</cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">730.</cell></row>
-<lb/><row><HIS:hisDel type="checkList" rend="overstrike" hand="HI-2"><cell role="data">Den blinde Maris forbander apostaten</cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">730.</cell></HIS:hisDel></row>
-<lb/><row><cell role="data">Om Gregor og Basilius</cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">732. ff</cell></row>
+<lb/><row><cell role="data">Julians mythe om sig selv</cell><cell role="filler"/><cell role="data">"</cell><cell role="data">711.</cell></row>
+<lb/><row><cell role="data">Den ældste dødsdømte vil dø først</cell><cell role="filler"/><cell role="data">"</cell><cell role="data">717.</cell></row>
+<lb/><row><cell role="data">Jovian forvises, Br: 717. Markus af Areth:</cell><cell role="filler"/><cell role="data">"</cell><cell role="data">719.</cell></row>
+<lb/><row><cell role="data">Kristenforfølgelser</cell><cell role="filler"/><cell role="data">"</cell><cell role="data">721.22</cell></row>
+<lb/><row><cell role="data">Julian spotter de klagende kristne</cell><cell role="filler"/><cell role="data">"</cell><cell role="data">727.</cell></row>
+<lb/><row><cell role="data">En yngling hudflettes m. m.</cell><cell role="filler"/><cell role="data">"</cell><cell role="data">728.29</cell></row>
+<lb/><row><cell role="data">Forfølgelser</cell><cell role="filler"/><cell role="data">"</cell><cell role="data">730.</cell></row>
+<lb/><row><HIS:hisDel type="checkList" rend="overstrike" hand="HI-2"><cell role="data">Den blinde Maris forbander apostaten</cell><cell role="filler"/><cell role="data">"</cell><cell role="data">730.</cell></HIS:hisDel></row>
+<lb/><row><cell role="data">Om Gregor og Basilius</cell><cell role="filler"/><cell role="data">"</cell><cell role="data">732. ff</cell></row>
 </table></p>
 </div>
 </body>
@@ -413,42 +407,42 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/>Tredje handling.</head>
 <p><table>
 <lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Længsel efter visdomsvennerne</HIS:hisDel></cell><cell role="filler"/><cell role="data"><hi rend="underlined">Brogl</hi>:</cell><cell role="data">699.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Julian hengiver sig til kynismen</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">704.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Julian hengiver sig til kynismen</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">704.</cell></row>
 <lb/><row><cell role="data">Overdrevne ofringer</cell><cell role="filler"/><cell role="data"><hi rend="underlined">Amm</hi>:</cell><cell role="data">459.</cell></row>
 <lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Herakleos latterliggør gudern</HIS:hisDel>e</cell><cell role="filler"/><cell role="data"><hi rend="underlined">Brogl:</hi></cell><cell role="data">708.</cell></row>
-<lb/><row><cell role="data">Julians mythe om sig selv</cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">711.</cell></row>
-<lb/><row><cell role="data">Den ældste dødsdømte vil dø selv først</cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">717.</cell></row>
-<lb/><row><cell role="data">Jovian forvises</cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">717.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Markos af Arethusa</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">719.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Kristenforfølgelser</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">721.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Julian spotter de klagende kristne</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">727.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">En yngling hudflettes o. s</HIS:hisDel>. v.</cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">728.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Forfølgelser</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">730.</cell></row>
-<lb/><row><cell role="data">Om Gregor og Basilius</cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">732.</cell></row>
-<lb/><row><cell role="data">Presterne indordnes under verdslig ret</cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">696.</cell></row>
-<lb/><row><cell role="data">Kirkegodset tilbagegives stæderne</cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">697.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Julians første stridsskrift</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">705.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Julians vrede over borgerne i Cæsaræa</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">731.</cell></row>
-<lb/><row><cell role="data">De kristne lærere forbydes at undervise i klassikerne</cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">750.</cell></row>
-<lb/><row><cell role="data">Gregors ytringer herom</cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">757.</cell></row>
+<lb/><row><cell role="data">Julians mythe om sig selv</cell><cell role="filler"/><cell role="data">"</cell><cell role="data">711.</cell></row>
+<lb/><row><cell role="data">Den ældste dødsdømte vil dø selv først</cell><cell role="filler"/><cell role="data">"</cell><cell role="data">717.</cell></row>
+<lb/><row><cell role="data">Jovian forvises</cell><cell role="filler"/><cell role="data">"</cell><cell role="data">717.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Markos af Arethusa</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">719.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Kristenforfølgelser</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">721.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Julian spotter de klagende kristne</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">727.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">En yngling hudflettes o. s</HIS:hisDel>. v.</cell><cell role="filler"/><cell role="data">"</cell><cell role="data">728.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Forfølgelser</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">730.</cell></row>
+<lb/><row><cell role="data">Om Gregor og Basilius</cell><cell role="filler"/><cell role="data">"</cell><cell role="data">732.</cell></row>
+<lb/><row><cell role="data">Presterne indordnes under verdslig ret</cell><cell role="filler"/><cell role="data">"</cell><cell role="data">696.</cell></row>
+<lb/><row><cell role="data">Kirkegodset tilbagegives stæderne</cell><cell role="filler"/><cell role="data">"</cell><cell role="data">697.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Julians første stridsskrift</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">705.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Julians vrede over borgerne i Cæsaræa</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">731.</cell></row>
+<lb/><row><cell role="data">De kristne lærere forbydes at undervise i klassikerne</cell><cell role="filler"/><cell role="data">"</cell><cell role="data">750.</cell></row>
+<lb/><row><cell role="data">Gregors ytringer herom</cell><cell role="filler"/><cell role="data">"</cell><cell role="data">757.</cell></row>
 <lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Om Kyrillos (Basil) martyr m m</HIS:hisDel></cell><cell role="filler"/><cell role="data"><hi rend="underlined">Brogl.</hi></cell><cell role="data">9.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Gregors udfald imod Julian</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">13.</cell></row>
-<lb/><row><cell role="data">Folket i Cæsaræa vælger den udøbte Eusebios til biskop</cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">14.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Julians harme over hans tilhængeres lunkenhed</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">16.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Libanius og kejseren</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">18.</cell></row>
-<lb/><row><cell role="data">Om Athanasius af Alexandria</cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">22.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Gregors udfald imod Julian</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">13.</cell></row>
+<lb/><row><cell role="data">Folket i Cæsaræa vælger den udøbte Eusebios til biskop</cell><cell role="filler"/><cell role="data">"</cell><cell role="data">14.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Julians harme over hans tilhængeres lunkenhed</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">16.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Libanius og kejseren</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">18.</cell></row>
+<lb/><row><cell role="data">Om Athanasius af Alexandria</cell><cell role="filler"/><cell role="data">"</cell><cell role="data">22.</cell></row>
 <pb ed="faksBase" n="18"/>
 <pb n="[273]v"/>
 <lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Fanatikerne i Antiokia, Publia, Apollinaris</HIS:hisDel></cell><cell role="filler"/><cell role="data">Brogl.</cell><cell role="data"><app type="alteration"><lem>3<HIS:hisAdd place="offline">9</HIS:hisAdd></lem><HIS:hisRdg>3<HIS:hisDel rend="overstrike">8</HIS:hisDel></HIS:hisRdg></app>.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Julians udfald imod sine tilhængere</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">41.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Befolkningen håner Julian</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">50.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Skriftet &lquo;Skæghaderen&rquo;</HIS:hisDel>.</cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">50.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Chi og Kappa</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">52.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Påtænkt skrift imod kristendommen</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">53.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Om Jerusalems tempel</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">62.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Julian forkaster Persernes fredstilbud</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">64.</cell></row>
-<lb/><row><cell role="data">Folkerygter om kejserens planer</cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">65.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Libanius udtaler sig</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">71.</cell></row></table></p>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Julians udfald imod sine tilhængere</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">41.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Befolkningen håner Julian</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">50.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Skriftet «Skæghaderen»</HIS:hisDel>.</cell><cell role="filler"/><cell role="data">"</cell><cell role="data">50.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Chi og Kappa</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">52.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Påtænkt skrift imod kristendommen</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">53.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Om Jerusalems tempel</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">62.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Julian forkaster Persernes fredstilbud</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">64.</cell></row>
+<lb/><row><cell role="data">Folkerygter om kejserens planer</cell><cell role="filler"/><cell role="data">"</cell><cell role="data">65.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Libanius udtaler sig</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">71.</cell></row></table></p>
 </div>
 <pb ed="faksBase" n="31"/>
 <pb n="[280]r"/>
@@ -469,12 +463,12 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/>Femte handling.</head>
 <p><table>
 <lb/><row><cell role="data">Den ældste dødsdømte vil dø først</cell><cell role="filler"/><cell role="data">Brogl</cell><cell role="data">717.</cell></row>
-<lb/><row><cell role="data">Folkerygter om kejserens hensigter</cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">65</cell></row>
-<lb/><row><cell role="data">Om krigen efter flådens brand</cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">79<HIS:hisDel rend="overstrike">81</HIS:hisDel>.</cell></row>
-<lb/><row><cell role="data">Livvagtsføreren Anatolos falder</cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">83.</cell></row>
+<lb/><row><cell role="data">Folkerygter om kejserens hensigter</cell><cell role="filler"/><cell role="data">"</cell><cell role="data">65</cell></row>
+<lb/><row><cell role="data">Om krigen efter flådens brand</cell><cell role="filler"/><cell role="data">"</cell><cell role="data">79<HIS:hisDel rend="overstrike">81</HIS:hisDel>.</cell></row>
+<lb/><row><cell role="data">Livvagtsføreren Anatolos falder</cell><cell role="filler"/><cell role="data">"</cell><cell role="data">83.</cell></row>
 <lb/><row><cell role="data">Om krigen</cell><cell role="filler"/><cell role="data">Amm:</cell><cell role="data">555.</cell></row>
 <lb/><row><cell role="data">Videre om krigen 577, 578, 579.</cell></row>
-<lb/><row><cell role="data">Slutningen 581&dash;596.</cell></row>
+<lb/><row><cell role="data">Slutningen 581–596.</cell></row>
 </table></p>
 </div>
 <pb ed="faksBase" n="58"/>
@@ -489,30 +483,30 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <p><table>
 <lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Overdrevne ofringe</HIS:hisDel>r</cell><cell role="filler"/><cell role="data">Amm:</cell><cell role="data">459.</cell></row>
 <lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Julians mythe om sig selv</HIS:hisDel></cell><cell role="filler"/><cell role="data">Brogl:</cell><cell role="data">711.</cell></row>
-<lb/><row><cell role="data">Den ældste dødsdømte vil dø først</cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">717.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Jovian forvises</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">717.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Om Gregor og Basilius</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">732.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Presterne under verdslig ret</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">696.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Kirkegodset tilbagegives stæderne</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">697.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Kristnes undervisnings-ret indskrænkes</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">750.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Gregors ytringer herom</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">757.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">I Cæsaræa vælges den udøbte Eusebios til biskop</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">1<HIS:hisDel rend="overwritten"><unclear>9</unclear></HIS:hisDel>4.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Om Athanasios fra Alexandria</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">22.</cell></row>
-<lb/><row><cell role="data">Folkerygter om kejserens hensigter</cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">65.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Om afmarschen til Persien</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">69.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Libanius følger Julian et stykke</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">71.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Maximus om Alexanders sjæl i Julians legeme</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">76.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Den persiske overløber</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">76.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Flåden brændes på Tigris</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">78.</cell></row>
+<lb/><row><cell role="data">Den ældste dødsdømte vil dø først</cell><cell role="filler"/><cell role="data">"</cell><cell role="data">717.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Jovian forvises</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">717.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Om Gregor og Basilius</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">732.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Presterne under verdslig ret</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">696.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Kirkegodset tilbagegives stæderne</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">697.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Kristnes undervisnings-ret indskrænkes</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">750.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Gregors ytringer herom</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">757.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">I Cæsaræa vælges den udøbte Eusebios til biskop</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">1<HIS:hisDel rend="overwritten"><unclear>9</unclear></HIS:hisDel>4.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Om Athanasios fra Alexandria</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">22.</cell></row>
+<lb/><row><cell role="data">Folkerygter om kejserens hensigter</cell><cell role="filler"/><cell role="data">"</cell><cell role="data">65.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Om afmarschen til Persien</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">69.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Libanius følger Julian et stykke</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">71.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Maximus om Alexanders sjæl i Julians legeme</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">76.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Den persiske overløber</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">76.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Flåden brændes på Tigris</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">78.</cell></row>
 <lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Varsler imod krigen</HIS:hisDel></cell><cell role="filler"/><cell role="data">Amm:</cell><cell role="data">491.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Hjælpetropper tilbagevises</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">492.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Søjlegangens sammenstyrten i Hierapolis</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">494.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Julians hest falder</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">496.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Barbarer hilser ham som verdenshersker</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">497.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Julian har <emph>ikke</emph> anråbt om gudernes beskyttelse</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">503.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">En løve dræbes</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">504.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Julian holder tale</HIS:hisDel></cell><cell role="filler"/><cell role="data">&rep;</cell><cell role="data">507.</cell></row>
-<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Om krigen indtil flådens brand 541</HIS:hisDel> &dash; &dash; &dash; &dash;</cell><cell role="filler"/></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Hjælpetropper tilbagevises</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">492.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Søjlegangens sammenstyrten i Hierapolis</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">494.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Julians hest falder</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">496.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Barbarer hilser ham som verdenshersker</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">497.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Julian har <emph>ikke</emph> anråbt om gudernes beskyttelse</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">503.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">En løve dræbes</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">504.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Julian holder tale</HIS:hisDel></cell><cell role="filler"/><cell role="data">"</cell><cell role="data">507.</cell></row>
+<lb/><row><cell role="data"><HIS:hisDel type="checkList" rend="overstrike">Om krigen indtil flådens brand 541</HIS:hisDel> – – – –</cell><cell role="filler"/></row>
 </table></p>
 </div>
 <pb ed="faksBase" n="60"/>

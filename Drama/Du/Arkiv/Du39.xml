@@ -1,10 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.ibsen.uio.no/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
 <?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
     <teiHeader xml:lang="nob">
@@ -16,8 +10,8 @@
 <title level="a" type="sub">NBO Brevs. 39 (i brev)</title>
 <title level="a" type="origYear">1880</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Ingrid Falkenberg, Mette Witting</name></respStmt>
 <respStmt>
 <resp>Kodet om til TEI-P5, juli 2011</resp>
@@ -55,20 +49,20 @@
                 <title>Uten tittel</title>
                 <docDate>1880</docDate>
             </msItem></msContents>
-        <physDesc><objectDesc><p>Ibsens egenhendige avskrift på tysk av den endrede slutten til &lquo;Et Dukkehjem&rquo; som vedlegg til brev til Heinrich Laube.</p></objectDesc></physDesc>
+        <physDesc><objectDesc><p>Ibsens egenhendige avskrift på tysk av den endrede slutten til «Et Dukkehjem» som vedlegg til brev til Heinrich Laube.</p></objectDesc></physDesc>
     </HIS:hisMsDesc></p></sourceDesc>
 </fileDesc>
 
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
     <list>
         <item>overskrift: dobbelt understreket</item>
     </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="http://www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -78,7 +72,7 @@
 <label xml:id="HELMER"/><item>Helmer</item>
 </list>
 </tagUsage></namespace>
-<namespace name="http://www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-tei2;</tagUsage></namespace>
+<namespace name="http://www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 </encodingDesc>
 
@@ -130,7 +124,7 @@ Opprettet fil på grunnlag av brevtekst. 3 feilmeldinger: HIS_standardtexts.xml,
 <lb/>uns beiden eine Ehe werden könnte.
 <lb/>Lebe wohl! <HIS:hisStage>(will gehen.)</HIS:hisStage></p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELMER"><HIS:spOpener><speaker>Helmer</speaker>.</HIS:spOpener>
-<lb/><p>Nun denn, &dash; gehe! <HIS:hisStage>(fasst sie am Arm)</HIS:hisStage>
+<lb/><p>Nun denn, – gehe! <HIS:hisStage>(fasst sie am Arm)</HIS:hisStage>
 <lb/>Aber erst sollst du deine Kinder zum
 <lb/>letztenmale sehen!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="NORA"><HIS:spOpener><speaker>Nora</speaker>.</HIS:spOpener>
@@ -141,27 +135,27 @@ Opprettet fil på grunnlag av brevtekst. 3 feilmeldinger: HIS_standardtexts.xml,
 <lb/><p>Du <emph>sollst</emph> sie sehen! <HIS:hisStage>(öffnet die
 <lb/>Thüre und sagt leise)</HIS:hisStage> Siehst du<HIS:hisDel rend="overwritten">.</HIS:hisDel>;
 <lb/>Dort schlafen sie so sorglos und ruhig.
-<lb/>Morgen, wenn sie erwachen und ru&typHyp;
+<lb/>Morgen, wenn sie erwachen und ru‐
 <lb/>fen nach ihre Mutter, dann sind
-<lb/>sie &dash; mutterlos.</p></HIS:hisSp>
+<lb/>sie – mutterlos.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="NORA"><HIS:spOpener><speaker>Nora</speaker>.
 <lb/><HIS:hisStage>(bebend)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Mutterlos &dash;!</p></HIS:hisSp>
+<lb/><p>Mutterlos –!</p></HIS:hisSp>
 
 <pb/>
 <lb/><HIS:hisSp who="HELMER"><HIS:spOpener><speaker>Helmer</speaker>.</HIS:spOpener>
 <lb/><p>Wie du es gewesen bist.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="NORA"><HIS:spOpener><speaker>Nora</speaker>.</HIS:spOpener>
-<lb/><p>Mutterlos! <HIS:hisStage>(k<HIS:clarification place="inline">&auml;</HIS:clarification>mpft innerlich,
-<lb/>l&auml;sst die Reisetasche fallen und sagt)</HIS:hisStage>
+<lb/><p>Mutterlos! <HIS:hisStage>(k<HIS:clarification place="inline">ä</HIS:clarification>mpft innerlich,
+<lb/>lässt die Reisetasche fallen und sagt)</HIS:hisStage>
 <lb/>O, ich versündige mich gegen mich
-<lb/>selbst; aber ich <emph>kann</emph> sie nicht ver&typHyp;
+<lb/>selbst; aber ich <emph>kann</emph> sie nicht ver‐
 <lb/>lassen.</p> <HIS:hisStage>(sinkt halb nieder vor die
 <lb/>Thüre.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="HELMER"><HIS:spOpener><speaker>Helmer</speaker>
 <lb/><HIS:hisStage>(freudig aber leise)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Nora!</p></HIS:hisSp>
-<lb/><HIS:hisStage>(Der Vorhang f&auml;llt.)</HIS:hisStage>
+<lb/><HIS:hisStage>(Der Vorhang fällt.)</HIS:hisStage>
 <lb/><figure type="bar"></figure>
 </body>
 </text>

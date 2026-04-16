@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -13,11 +7,11 @@
 <title level="s" type="main">Henrik Ibsens skrifter</title>
 <title level="s" type="sub">Diplomatarisk tekstarkiv</title>
 <title level="a" type="main">Kejser og Galilæer</title>
-<title level="a" type="sub">NBO Ms.4&deg; 1111d, bl. 120v&dash;34r</title>
-<title level="a" type="origYear">[1871&dash;1873]</title>
+<title level="a" type="sub">NBO Ms.4° 1111d, bl. 120v–34r</title>
+<title level="a" type="origYear">[1871–1873]</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt>
 <resp>Konvertering fra ekstern transkripsjon til prosjektspesifikk TEI XML</resp>
 <name xml:id="HIS-HB">Hilde Bøe</name>
@@ -45,12 +39,12 @@
 <sourceDesc><p>Denne filen bygger på KG41111_NBO.xml (KG41111_NBO-0208).</p></sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography><p>Manuskriptets grafiske oppsett finnes beskrevet i typografibeskrivelsen i KG41111_NBO.xml.</p>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -121,7 +115,7 @@
 <label xml:id="PERSEREN"/><item>En persisk overløber/Perseren</item>
 </list>
 </tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 <variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
 </encodingDesc>
@@ -153,8 +147,8 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><HIS:hisStage>(Høstligt skoglandskab med en trang kløft,
 <lb/>som bærer opover mellem bratte bergvægge.
 <lb/>Eftermiddag.)</HIS:hisStage>
-<lb/><HIS:hisStage>(Store skarer af skjoldbærere og kejserlige hus&typHyp;
-<lb/>tropper søger at trænge ind i kløften. Ala&typHyp;
+<lb/><HIS:hisStage>(Store skarer af skjoldbærere og kejserlige hus‐
+<lb/>tropper søger at trænge ind i kløften. Ala‐
 <lb/>manske krigere skimtes oppe mellem træerne.
 <lb/>Kamp, våbenlarm og skrig.)</HIS:hisStage>
 <lb/><HIS:hisSp who="LAIPSO"><HIS:spOpener><speaker>Tribunen Laipso</speaker>.
@@ -187,15 +181,15 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><HIS:hisStage>(med en blødende arm.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Er her ikke nogen, som kan forbinde mig?</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>En anden soldat</speaker>.</HIS:spOpener>
-<lb/><p>Kristus, &dash; hvad slags våben har slåt dig det sår.</p></HIS:hisSp>
+<lb/><p>Kristus, – hvad slags våben har slåt dig det sår.</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Den sårede</speaker>.</HIS:spOpener>
 <lb/><p>Barbartænder. Vand, vand!</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>En tredje soldat</speaker>.</HIS:spOpener>
-<lb/><p>Bidt &dash;?</p></HIS:hisSp>
+<lb/><p>Bidt –?</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Den sårede</speaker>.</HIS:spOpener>
 <lb/><p>I krampe; han var stukken i maven så
 <lb/>indvoldene hang ud. Giv mig vand!</p></HIS:hisSp>
-<lb/><HIS:hisStage>(Hærføreren Severus kommer med be&typHyp;
+<lb/><HIS:hisStage>(Hærføreren Severus kommer med be‐
 <lb/>falingsmænd og friske tropper.)</HIS:hisStage>
 <lb/><HIS:hisSp who="SEVERUS"><HIS:spOpener><speaker>Hærføreren Severus</speaker>
 <lb/><HIS:hisStage>(til tribunen Laipso.)</HIS:hisStage></HIS:spOpener>
@@ -227,9 +221,9 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/>fløj og trænger os ud i sumpene mod
 <lb/>floden.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SEVERUS"><HIS:spOpener><speaker>Hærføreren Severus</speaker>.</HIS:spOpener>
-<lb/><p>Endnu kunde tilbagetoget &dash;</p></HIS:hisSp>
+<lb/><p>Endnu kunde tilbagetoget –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>Tilbagetog? Du råder godt. Har vi ikke de vær&typHyp;
+<lb/><p>Tilbagetog? Du råder godt. Har vi ikke de vær‐
 <lb/>ste i ryggen? Misunderne og bagvaskerne i
 <lb/>kejserlejren. Trænger de sig ikke sammen til
 <lb/>en mur for at tage imod den flygtende
@@ -275,13 +269,13 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><HIS:hisStage>(slår sig for panden:)</HIS:hisStage></HIS:spOpener>
 <pb ed="faksBase" n="416"/>
 <pb n="[122]v"/>
-<lb/><p>Sejr på sejr i tre år, &dash; og så miste det
-<lb/>alt i et eneste slag! &dash; Hvad blinker så
+<lb/><p>Sejr på sejr i tre år, – og så miste det
+<lb/>alt i et eneste slag! – Hvad blinker så
 <lb/>hvast derinde?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SEVERUS"><HIS:spOpener><speaker>Hærføreren Severus</speaker>.</HIS:spOpener>
 <lb/><p>Barbarernes økser.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>Og disse dumpe klangløse slag &dash;?</p></HIS:hisSp>
+<lb/><p>Og disse dumpe klangløse slag –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SEVERUS"><HIS:spOpener><speaker>Hærføreren Severus</speaker>.</HIS:spOpener>
 <lb/><p>Det er huggene i Romernes rygge.</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker><xptr type="synopticView_msVersions" xml:id="KG_1084ms"/>Soldaterne</speaker>
@@ -296,7 +290,7 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/>sit eget bytte for at komme des fortere
 <lb/>afsted.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FESTUS"><HIS:spOpener><speaker>Centurionen Festus</speaker>.</HIS:spOpener>
-<lb/><p>Cæsars øje hvilte ikke på Barbatio; der&typHyp;
+<lb/><p>Cæsars øje hvilte ikke på Barbatio; der‐
 <lb/>for veg han.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Kast centurion-mærket væk; du er tribun!</p></HIS:hisSp>
@@ -312,9 +306,9 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Min lykke er forrådt! Ikke af eder, I
 <lb/>venner, men af hadefulde magter. Hvad
-<lb/>mægter I? Den lange møjsomme van&typHyp;
+<lb/>mægter I? Den lange møjsomme van‐
 <lb/>dring har mattet og slappet eders vanlige
-<lb/><HIS:hisDel rend="overstrike">mod &dash;</HIS:hisDel> stridslyst &dash;</p></HIS:hisSp>
+<lb/><HIS:hisDel rend="overstrike">mod –</HIS:hisDel> stridslyst –</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Soldater</speaker>.</HIS:spOpener>
 <lb/><p>Nej, nej, herre!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
@@ -322,18 +316,18 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/>kunde græde blodtårer over det som
 <lb/>forestår jer. En hård, en håbløs
 <lb/>kampdag, og en lang stjerneløs nat
-<lb/>efter &dash;</p></HIS:hisSp>
+<lb/>efter –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SEVERUS"><HIS:spOpener><speaker><xptr type="synopticView_msVersions" xml:id="KG_1085ms"/>Hærføreren Severus</speaker>
 <lb/><HIS:hisStage>(sagte, trækker ham i kappen)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Cæsar, cæsar!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>Vort forråd er sluppet op; ingen føde, in&typHyp;
-<lb/>gen kilder i denne fortørrede egn &dash;</p></HIS:hisSp>
+<lb/><p>Vort forråd er sluppet op; ingen føde, in‐
+<lb/>gen kilder i denne fortørrede egn –</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Soldater</speaker>.</HIS:spOpener>
 <lb/><p>Undergang til alle sider!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>Vist nok er der forråd i barbarernes lejr, &dash;
-<lb/>forråd<note resp="editor"><q>å</q> mangler diakritisk tegn.</note> i overflod, &dash; korn, kvæg, honning &dash;;
+<lb/><p>Vist nok er der forråd i barbarernes lejr, –
+<lb/>forråd<note resp="editor"><q>å</q> mangler diakritisk tegn.</note> i overflod, – korn, kvæg, honning –;
 <lb/>men hvorledes nå did?</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Soldater</speaker>.</HIS:spOpener>
 <lb/><p>Med sværdet!
@@ -344,7 +338,7 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/>Med sværdet? Når; når? Imorgen kanske,
 <lb/>udhungrede, efter en hvileløs nat, mens
 <lb/>fienden møder jer styrket af spise og
-<lb/>drikke? O, jeg beder eder, styr dette vil&typHyp;
+<lb/>drikke? O, jeg beder eder, styr dette vil‐
 <lb/>de mod!</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Soldater</speaker>.</HIS:spOpener>
 <lb/><p>Frem, frem!</p></HIS:hisSp>
@@ -352,19 +346,19 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><p>I barbarernes lejr er sølv, kvinder, slaver,
 <lb/>gode våben, en uoverskuelig vognborg.
 <lb/>O, at tænke den tanke at I må gå glip
-<lb/>af dette rige bytte &dash;!</p></HIS:hisSp>
+<lb/>af dette rige bytte –!</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Soldater</speaker>.</HIS:spOpener>
 <lb/><p>Før os, cæsar!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>Mænd, helte, brødre, I er uovervin&typHyp;
+<lb/><p>Mænd, helte, brødre, I er uovervin‐
 <lb/>delige, og ved det ikke selv! Nu kunde
-<lb/>vi sejre &dash; hvis I så synes. Ikke gennem
-<lb/>hulvejen! Det er højderne på begge si&typHyp;
-<lb/>der, som skal tages. Storm i sluttet ræk&typHyp;
-<lb/>ke! Jeg ser de guddommelige hærska&typHyp;
+<lb/>vi sejre – hvis I så synes. Ikke gennem
+<lb/>hulvejen! Det er højderne på begge si‐
+<lb/>der, som skal tages. Storm i sluttet ræk‐
+<lb/>ke! Jeg ser de guddommelige hærska‐
 <lb/>rer over os! Legioner, dersom det
-<lb/>vandt eders bifald, &dash; dersom I nu var
-<lb/>tilsinds &dash;</p></HIS:hisSp>
+<lb/>vandt eders bifald, – dersom I nu var
+<lb/>tilsinds –</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker><xptr type="synopticView_msVersions" xml:id="KG_1086ms"/>Soldater</speaker>.</HIS:spOpener>
 <lb/><p>Vi følger cæsar!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
@@ -372,23 +366,23 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <pb ed="faksBase" n="419"/>
 <pb n="[124]r"/>
 <lb/><fw type="leaf" place="top-right" scribe="h1">124</fw>
-<lb/>han melde til Rom at cæsar blev på val&typHyp;
+<lb/>han melde til Rom at cæsar blev på val‐
 <lb/>pladsen.</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Soldaterne</speaker>.</HIS:spOpener>
 <lb/><p>Med <HIS:hisDel rend="overwritten">g</HIS:hisDel>Gud for cæsar Julian!</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Hæren har villet det, Severus! Hug ind,
 <lb/>hug ind! Hvis nogen vender sig til flugt,
-<lb/>skal de efterfølgende spidde ham i bry&typHyp;
+<lb/>skal de efterfølgende spidde ham i bry‐
 <lb/>stet.</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Cæsars fanebærer</speaker>.</HIS:spOpener>
-<lb/><p>Frem, frem, du lykkeligste blandt her&typHyp;
+<lb/><p>Frem, frem, du lykkeligste blandt her‐
 <lb/>skerne!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Se den gyldne drage på fanestangen!
 <lb/>Se purpurdugen, forreven i hundrede
 <lb/>slag, lig en drageham, afstrejfet, og
-<lb/>endnu hængende efter kroppen &dash;</p></HIS:hisSp>
+<lb/>endnu hængende efter kroppen –</p></HIS:hisSp>
 <lb/><HIS:hisSp><HIS:spOpener><speaker>Soldaterne</speaker>
 <lb/><HIS:hisStage>(stormer.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Slå, hug; cæsar er iblandt os!</p></HIS:hisSp>
@@ -424,20 +418,20 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><p>Ikke nærmere, høje cæsar!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Se, se, Sallust! Kampen strækker sig langs
-<lb/>hele linjen. &dash; Hvor hornets klang bæres vidt
-<lb/>for vinden! Hvilke skrig; hvilke skjolde&typHyp;
+<lb/>hele linjen. – Hvor hornets klang bæres vidt
+<lb/>for vinden! Hvilke skrig; hvilke skjolde‐
 <lb/>brag!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLORENTIUS"><HIS:spOpener><speaker>Prætorianhøvdingen Florentius</speaker>.</HIS:spOpener>
 <lb/><p>Ikke nærmere; jeg beder!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>I kampen er det, jeg søgte i bøger og i drøm&typHyp;
+<lb/><p>I kampen er det, jeg søgte i bøger og i drøm‐
 <pb ed="faksBase" n="421"/>
 <pb n="[125]r"/>
 <lb/><fw type="leaf" place="top-right" scribe="h1">125</fw>
 <lb/>me. I kampen er det sande samliv med
-<lb/>ånderne; det store, det isnende og ild&typHyp;
+<lb/>ånderne; det store, det isnende og ild‐
 <lb/>nende. Mennesket vokser ud over sig
-<lb/>selv &dash;</p></HIS:hisSp>
+<lb/>selv –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLORENTIUS"><HIS:spOpener><speaker>Prætorianhøvdingen Florentius</speaker>.</HIS:spOpener>
 <lb/><p>Tilbage, herre! Barbarernes pile slår ned
 <lb/>i bakken!</p></HIS:hisSp>
@@ -445,19 +439,19 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><p>Den er skudfri, som skal grundfæste riget.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Præfekten Sallust</speaker>
 <lb/><HIS:hisStage>(peger udover.)</HIS:hisStage></HIS:spOpener>
-<lb/><p><xptr type="synopticView_msVersions" xml:id="KG_1088ms"/>Hvad nu? Der sker et ophold i rækkerne &dash;</p></HIS:hisSp>
+<lb/><p><xptr type="synopticView_msVersions" xml:id="KG_1088ms"/>Hvad nu? Der sker et ophold i rækkerne –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLORENTIUS"><HIS:spOpener><speaker>Prætorianhøvdingen Florentius</speaker>.</HIS:spOpener>
 <lb/><p>Silvanus nøler. Hvi rykker han ikke frem?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Legionerne drager ånde. Nu går det samlet
 <lb/>fremad. Vor venstre fløj breder sig mod nord.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLORENTIUS"><HIS:spOpener><speaker>Prætorianhøvdingen Florentius</speaker>.</HIS:spOpener>
-<lb/><p>Se, hin forvovne <HIS:hisDel rend="overstrike">yngling &dash;</HIS:hisDel> høvding &dash;</p></HIS:hisSp>
+<lb/><p>Se, hin forvovne <HIS:hisDel rend="overstrike">yngling –</HIS:hisDel> høvding –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>Alamanen, &dash; ja ja, uden sadel &dash;</p></HIS:hisSp>
+<lb/><p>Alamanen, – ja ja, uden sadel –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLORENTIUS"><HIS:spOpener><speaker>Prætorianhøvdingen Florentius</speaker>.</HIS:spOpener>
-<lb/><p>Det er hverken Hortar eller Suomar; det tyk&typHyp;
-<lb/>kes en yngling &dash;</p></HIS:hisSp>
+<lb/><p>Det er hverken Hortar eller Suomar; det tyk‐
+<lb/>kes en yngling –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Det er Serapion.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Præfekten Sallust</speaker>.</HIS:spOpener>
@@ -471,7 +465,7 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><p>Aha, en søn af hin rænkefulde Mederik,
 <lb/>der holdtes længe som gidsel i Massilia?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>Rigtig; der lærte han græske mysterier at ken&typHyp;
+<lb/><p>Rigtig; der lærte han græske mysterier at ken‐
 <lb/>de og kaldte sønnen Serapion. En helt,
 <lb/>ved de himmelske magter! Næsten skægløs
 <lb/>endnu. Hvor han tumler sin skimmel; hvor
@@ -492,14 +486,14 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Der rider Chnodomar selv frem i spidsen.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Præfekten Sallust</speaker>.</HIS:spOpener>
-<lb/><p>Hin svære mand med talrigt rytterfølge &dash;?</p></HIS:hisSp>
+<lb/><p>Hin svære mand med talrigt rytterfølge –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Ja, han med det ildfarvede bind om hovedet.
 <pb ed="faksBase" n="423"/>
 <pb n="[126]r"/>
 <lb/><fw type="leaf" place="top-right" scribe="h1">126</fw>
 <lb/>Fem konger og ti ringere fyrster følger ham
-<lb/>altid i slaget. &dash; Hvad er det, Florentius? Hvad
+<lb/>altid i slaget. – Hvad er det, Florentius? Hvad
 <lb/>ængster dig?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLORENTIUS"><HIS:spOpener><speaker>Prætorianhøvdingen Florentius</speaker>.</HIS:spOpener>
 <lb/><p>Rytteriet på vor højre fløj er i forvirring,
@@ -508,11 +502,11 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><p>De uforsigtige! Har man ikke advaret dem?
 <lb/>Barbarerne bruger sin gamle list, kaster
 <lb/>sig ned som sårede og stikker hestene
-<lb/>i bugen &dash;</p></HIS:hisSp>
+<lb/>i bugen –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLORENTIUS"><HIS:spOpener><speaker>Prætorianhøvdingen Florentius</speaker>.</HIS:spOpener>
-<lb/><p>Vore flygter i alle retninger &dash;</p></HIS:hisSp>
+<lb/><p>Vore flygter i alle retninger –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>Prætorianerne skal rykke frem. Gå, gå, Flo&typHyp;
+<lb/><p>Prætorianerne skal rykke frem. Gå, gå, Flo‐
 <lb/>rentius; alt hviler på dig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLORENTIUS"><HIS:spOpener><speaker>Prætorianhøvdingen Florentius</speaker>.</HIS:spOpener>
 <lb/><p><xptr type="synopticView_msVersions" xml:id="KG_1080ms"/>Jeg skal gøre min pligt, høje cæsar.</p></HIS:hisSp>
@@ -526,35 +520,35 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Hvor tykkes dig faren størst, Sallust?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Præfekten Sallust</speaker>.</HIS:spOpener>
-<lb/><p>Herre, jeg er ikke krigskyndig &dash;</p></HIS:hisSp>
+<lb/><p>Herre, jeg er ikke krigskyndig –</p></HIS:hisSp>
 <pb ed="faksBase" n="424"/>
 <pb n="[126]v"/>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Min ro, siger du. I vor egen lejr er fienden.
-<lb/>Ikke <emph>en</emph> kan jeg stole på &dash;</p></HIS:hisSp>
+<lb/>Ikke <emph>en</emph> kan jeg stole på –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Præfekten Sallust</speaker>.</HIS:spOpener>
 <lb/><p>O, cæsar!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p><xptr type="synopticView_msVersions" xml:id="KG_10800ms"/>Ikke <emph>en</emph> uden dig. Velsignet være dit komme<gap reason="binding"/>
 <lb/>Hvormed har jeg fortjent det af dig, at du kunde
 <lb/>opgive dit lykkelige landliv for at følge
-<lb/>mig i disse barske egne? I Mailand, i bryl&typHyp;
-<lb/>lupsdagene måtte jeg afslå dig en bøn &dash;</p></HIS:hisSp>
+<lb/>mig i disse barske egne? I Mailand, i bryl‐
+<lb/>lupsdagene måtte jeg afslå dig en bøn –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Præfekten Sallust</speaker>.</HIS:spOpener>
-<lb/><p>Ikke mere; ikke mere; &dash; det er glemt for
+<lb/><p>Ikke mere; ikke mere; – det er glemt for
 <lb/>længe siden.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>Sandelig, du er en ædel mand, Sallust. Pri&typHyp;
+<lb/><p>Sandelig, du er en ædel mand, Sallust. Pri‐
 <lb/>set være lykkens styrer at jeg har dig. J<HIS:clarification place="inline">e</HIS:clarification>g
 <lb/>har ingen anden. Eller hvem? Går de ikke
 <lb/>hver efter sit? Holdt ikke Marcellus sin hær
-<lb/>tilbage da jeg i vinter lå indesluttet i Sen&typHyp;
+<lb/>tilbage da jeg i vinter lå indesluttet i Sen‐
 <lb/>nones? Og har han ikke siden bagvasket mig
 <lb/>i kejserens hoflejr?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Præfekten Sallust</speaker>.</HIS:spOpener>
-<lb/><p>Men Silvanus, herre? Silvanus har dog in&typHyp;
+<lb/><p>Men Silvanus, herre? Silvanus har dog in‐
 <lb/>tet at håbe for sig selv. Og den gamle
-<lb/>Severus &dash;?</p></HIS:hisSp>
+<lb/>Severus –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Silvanus <app type="alteration"><lem><HIS:hisAdd place="offline">fortæres af sin egen middelmådighed; han er med på alt og intet.</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">er <gap/> ærlig, det tror jeg; men</HIS:hisDel></HIS:hisRdg></app> han er
 <lb/><app type="alteration"><lem><HIS:hisAdd place="offline">ikke nogen</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">ingen</HIS:hisDel></HIS:hisRdg></app> dygtig hærfører. Severus holder på det
@@ -572,52 +566,52 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Præfekten Sallust</speaker>.</HIS:spOpener>
 <lb/><p>Kejserens visdom er urandsagelig.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>Du tog mig ordet af munden. Ja, jeg er en&typHyp;
+<lb/><p>Du tog mig ordet af munden. Ja, jeg er en‐
 <lb/>som mellem disse mænd. Eller er jeg det
 <lb/>kanske ikke? Se kun til Arbetio, hin rå
 <lb/>soldat, som har svunget sig op til de højeste
-<lb/>værdigheder. Jeg siger dig, han eftertrag&typHyp;
+<lb/>værdigheder. Jeg siger dig, han eftertrag‐
 <lb/>ter mere. Kunde han skrive, vilde jeg tro
-<lb/>det er ham, der sender kejseren disse hem&typHyp;
-<lb/>melige breve fulde af løgn og bagvaskelse &dash;</p></HIS:hisSp>
+<lb/>det er ham, der sender kejseren disse hem‐
+<lb/>melige breve fulde af løgn og bagvaskelse –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Præfekten Sallust</speaker>.</HIS:spOpener>
-<lb/><p>Herre cæsar &dash;!</p></HIS:hisSp>
+<lb/><p>Herre cæsar –!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Hvad er det? Hvi blegner du?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Præfekten Sallust</speaker>.</HIS:spOpener>
 <lb/><p>Jeg, nådigste herre? Nej, nej, ingenlunde. Se,
-<lb/>prætorianerne rykker frem &dash;</p></HIS:hisSp>
+<lb/>prætorianerne rykker frem –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p><xptr type="synopticView_msVersions" xml:id="KG_10801ms"/>Rytteriet har samlet sig til nyt angreb.
 <lb/>Ved du vel at jeg ræddes for sejren?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Præfekten Sallust</speaker>.</HIS:spOpener>
-<lb/><p>Ræddes &dash;?
+<lb/><p>Ræddes –?
 <pb ed="faksBase" n="426"/></p></HIS:hisSp>
 <pb n="[127]v"/>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>Det blev mig spået i Efesus at jeg skal grund&typHyp;
+<lb/><p>Det blev mig spået i Efesus at jeg skal grund‐
 <lb/>fæste riget.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Præfekten Sallust</speaker>.</HIS:spOpener>
 <lb/><p>Det vil ske idag, herre!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Og hvad er så jeg imorgen? Ikke mere om dette.
-<lb/>Se, se; Florentius hugger ind. Ha-ha; godt hug&typHyp;
-<lb/>get! Jeg hader ham, Sallust! Jeg ser hans øn&typHyp;
-<lb/>sker i denne stund, &dash; nederlag for hæren; en lysende
+<lb/>Se, se; Florentius hugger ind. Ha-ha; godt hug‐
+<lb/>get! Jeg hader ham, Sallust! Jeg ser hans øn‐
+<lb/>sker i denne stund, – nederlag for hæren; en lysende
 <lb/>våbendåd for ham selv. Han pønser på min
-<lb/>undergang &dash;</p></HIS:hisSp>
+<lb/>undergang –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Præfekten Sallust</speaker>.</HIS:spOpener>
-<lb/><p>O, tro dog ikke &dash;</p></HIS:hisSp>
+<lb/><p>O, tro dog ikke –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Det var ham, som råded til angreb idag.
 <lb/>Havde jeg vægret mig, skulde han have
-<lb/>beskyldt mig for fejghed &dash;</p></HIS:hisSp>
+<lb/>beskyldt mig for fejghed –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Præfekten Sallust</speaker>.</HIS:spOpener>
 <lb/><p>Og dog må han sejre for cæsar.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Ved sejrens styrer, han sigter ud over sejren!
-<lb/>Hvad vil han? Han ser syner; &dash; kejserkronen
-<lb/>på spidsen af sit sværd &dash;</p></HIS:hisSp>
+<lb/>Hvad vil han? Han ser syner; – kejserkronen
+<lb/>på spidsen af sit sværd –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Præfekten Sallust</speaker>.</HIS:spOpener>
 <lb/><p>Herre, herre, barbarerne er bag i vore rækker!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
@@ -634,9 +628,9 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Præfekten Sallust</speaker>.</HIS:spOpener>
 <lb/><p>Hvor, høje cæsar?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>Hører du ikke de<HIS:hisAdd place="inline">res</HIS:hisAdd> vrede hvinende skrig &dash;?</p></HIS:hisSp>
+<lb/><p>Hører du ikke de<HIS:hisAdd place="inline">res</HIS:hisAdd> vrede hvinende skrig –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Præfekten Sallust</speaker>.</HIS:spOpener>
-<lb/><p>Jo, jo; &dash; de <app type="alteration"><lem><HIS:hisAdd place="offline">flokker</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">samler</HIS:hisDel></HIS:hisRdg></app> sig tæt om Chnodomar
+<lb/><p>Jo, jo; – de <app type="alteration"><lem><HIS:hisAdd place="offline">flokker</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">samler</HIS:hisDel></HIS:hisRdg></app> sig tæt om Chnodomar
 <lb/>og hans følge.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>De truer fyrsterne til at stige af hestene<HIS:hisDel rend="overstrike">.
@@ -645,43 +639,43 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/>ikke høvdingerne skal lade dem i
 <lb/>stikken.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Præfekten Sallust</speaker>.</HIS:spOpener>
-<lb/><p>De <HIS:hisDel rend="overstrike">trænges</HIS:hisDel> drives dybere og dybere ud i sum&typHyp;
-<lb/>pene &dash;</p></HIS:hisSp>
+<lb/><p>De <HIS:hisDel rend="overstrike">trænges</HIS:hisDel> drives dybere og dybere ud i sum‐
+<lb/>pene –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.
 <lb/><HIS:hisStage>(råber.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Cornuterne, spydkasterne og de letbevæbnede
-<lb/>skal rykke frem! &dash; Se, Sallust, hist stor&typHyp;
-<lb/>mer Brakkaterne løs på de vigende. Alle&typHyp;
+<lb/>skal rykke frem! – Se, Sallust, hist stor‐
+<lb/>mer Brakkaterne løs på de vigende. Alle‐
 <lb/>rede deres holdning indjager skræk. Har
 <lb/>du hørt Brakkaternes hærskrig før?
 <lb/>Først sagte mumlen, så stigende og stigende
-<lb/>til det ligner et væltende hav imod strand&typHyp;
+<lb/>til det ligner et væltende hav imod strand‐
 <lb/>bredden.</p></HIS:hisSp>
 <pb ed="faksBase" n="428"/>
 <pb n="[128]v"/>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Præfekten Sallust</speaker>.</HIS:spOpener>
 <lb/><p>Pilene falder tykt, som fra en hagelsky. Våben imod
-<lb/>våben; legeme imod legeme; &dash; tilgiv, herre, det
-<lb/>svimler for mig, &dash; jeg tåler ikke at høre disse
-<lb/>dødsskrig &dash;</p></HIS:hisSp>
+<lb/>våben; legeme imod legeme; – tilgiv, herre, det
+<lb/>svimler for mig, – jeg tåler ikke at høre disse
+<lb/>dødsskrig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Du bløde Romer!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Præfekten Sallust</speaker>
 <lb/><HIS:hisStage>(holder for ørene)</HIS:hisStage></HIS:spOpener>
-<lb/><p>O, var jeg døv; &dash; aldrig har jeg tænkt mig kampen
+<lb/><p>O, var jeg døv; – aldrig har jeg tænkt mig kampen
 <lb/>så vild.</p></HIS:hisSp>
-<lb/><HIS:hisStage><xptr type="synopticView_msVersions" xml:id="KG_10803ms"/>(Cornuterne drager forbi til slagmarken og hil&typHyp;
+<lb/><HIS:hisStage><xptr type="synopticView_msVersions" xml:id="KG_10803ms"/>(Cornuterne drager forbi til slagmarken og hil‐
 <lb/>ser cæsar med høje råb.)</HIS:hisStage>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>Frem, frem, I kække mænd! Lad eders tapper&typHyp;
-<lb/>hed aftvætte den skændsel, som hæren andet&typHyp;
+<lb/><p>Frem, frem, I kække mænd! Lad eders tapper‐
+<lb/>hed aftvætte den skændsel, som hæren andet‐
 <lb/>steds har draget over sig. Sejrer vi ikke
 <lb/>idag, da ve mig at jeg efter lang vægring
 <lb/>modtog en cæsars værdighed.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Præfekten Sallust</speaker>.</HIS:spOpener>
 <lb/><p>Alamanerne viger mere og mere. De er stærkere
 <lb/>og større end vore, og dog må de give tabt
-<lb/>for dig &dash;</p></HIS:hisSp>
+<lb/>for dig –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Rytteriet afskærer dem fra bådene. Frem,
 <lb/>frem; hug ind! Floden er i forbund med
@@ -695,7 +689,7 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><HIS:hisStage><xptr type="synopticView_msVersions" xml:id="KG_10804ms"/>(Sumpig egn ved flodbredden. Aften.)</HIS:hisStage>
 <lb/><HIS:hisStage>(Alamanerne flygter. Enkeltvis og i flokke
 <lb/>løber de henover sletten og kaster sig i vandet;
-<lb/>nogle svømmer over, andre rives bort af strøm&typHyp;
+<lb/>nogle svømmer over, andre rives bort af strøm‐
 <lb/>men. Skrig og forvirring. Romerhæren forfølger
 <lb/>dem under ledelse af Severus.)</HIS:hisStage>
 <lb/><HIS:hisSp who="SEVERUS"><HIS:spOpener><speaker>Hærføreren Severus</speaker>.</HIS:spOpener>
@@ -704,10 +698,10 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>
 <lb/><HIS:hisStage>(kommer med sit følge.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Sejr uden grænse, Severus! Vognborg, lejr,
-<lb/>alt i vore hænder &dash;</p></HIS:hisSp>
+<lb/>alt i vore hænder –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SEVERUS"><HIS:spOpener><speaker>Hærføreren Severus</speaker>.</HIS:spOpener>
 <lb/><p>Mere end sex tusend fiender ligger på
-<lb/>slagmarken &dash;</p></HIS:hisSp>
+<lb/>slagmarken –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Men af vore?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SEVERUS"><HIS:spOpener><speaker>Hærføreren Severus</speaker>.</HIS:spOpener>
@@ -716,9 +710,9 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Falden? Den trofaste Bainabaudes?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SEVERUS"><HIS:spOpener><speaker>Hærføreren Severus</speaker>.</HIS:spOpener>
-<lb/><p>Ja; og tribunen Laipso; og ligeså Inno&typHyp;
+<lb/><p>Ja; og tribunen Laipso; og ligeså Inno‐
 <lb/>centius, anføreren for de harniskklædte
-<lb/>ryttere, og endnu en tribun uden kom&typHyp;
+<lb/>ryttere, og endnu en tribun uden kom‐
 <lb/>mando, hvis navn jeg ikke kender.</p></HIS:hisSp>
 <pb ed="faksBase" n="430"/>
 <pb n="[129]v"/>
@@ -745,7 +739,7 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><HIS:hisStage>(udenfor.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Fangen; fangen! Han er fangen!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>Hvem, hvem &dash;?</p></HIS:hisSp>
+<lb/><p>Hvem, hvem –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLORENTIUS"><HIS:spOpener><speaker>Prætorianhøvdingen Florentius</speaker>
 <lb/><HIS:hisStage>(kommer.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Høje cæsar, Chnodomar er fangen!</p></HIS:hisSp>
@@ -756,10 +750,10 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><fw type="leaf" place="top-right" scribe="h1">130</fw>
 <lb/><HIS:hisSp who="FESTUS"><HIS:spOpener><speaker>Tribunen Festus</speaker>.
 <lb/><HIS:hisStage>(kommer.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Hvor er cæsar? Tilside der; &dash; lad mig være den
-<lb/>første &dash;</p></HIS:hisSp>
+<lb/><p>Hvor er cæsar? Tilside der; – lad mig være den
+<lb/>første –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>Chnodomar &dash;? Er det sandt &dash;?</p></HIS:hisSp>
+<lb/><p>Chnodomar –? Er det sandt –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FESTUS"><HIS:spOpener><speaker>Tribunen Festus</speaker>.</HIS:spOpener>
 <lb/><p>Ja, ja; fangen, herre!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Prinsesse Helena</speaker>.</HIS:spOpener>
@@ -770,15 +764,15 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><p>Fortæl, fortæl, tribun!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FESTUS"><HIS:spOpener><speaker>Tribunen Festus</speaker>.</HIS:spOpener>
 <lb/><p><xptr type="synopticView_msVersions" xml:id="KG_10806ms"/>Chnodomar havde fundet lejlighed til at
-<lb/>slippe ud af slagtummelen &dash;; han kæmpe&typHyp;
-<lb/>de tilfods, herre &dash;</p></HIS:hisSp>
+<lb/>slippe ud af slagtummelen –; han kæmpe‐
+<lb/>de tilfods, herre –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>Jeg ved det; tvungen; jeg så det selv; &dash;
+<lb/><p>Jeg ved det; tvungen; jeg så det selv; –
 <lb/>videre!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FESTUS"><HIS:spOpener><speaker>Tribunen Festus</speaker>.</HIS:spOpener>
 <lb/><p>Han blev set med få drabanter at bane sig vej
 <lb/>over ligdyngerne henimod lejren, som han
-<lb/>havde slåt nær Tribunci og Concordia &dash;</p></HIS:hisSp>
+<lb/>havde slåt nær Tribunci og Concordia –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLORENTIUS"><HIS:spOpener><speaker>Prætorianhøvdingen Florentius</speaker>.</HIS:spOpener>
 <lb/><p>Der var ufremkommeligt; jeg havde sørget
 <lb/>for det.</p></HIS:hisSp>
@@ -789,15 +783,15 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><HIS:hisSp who="FESTUS"><HIS:spOpener><speaker>Tribunen Festus</speaker>.</HIS:spOpener>
 <lb/><p>Han må have frygtet for et nederlag; han havde
 <lb/>skjulte både i beredskab. Med tilhyllet ansigt
-<lb/>løb han os forbi; men en soldat i min kohor&typHyp;
-<lb/>te kendte ham og råbte: der flygter over&typHyp;
+<lb/>løb han os forbi; men en soldat i min kohor‐
+<lb/>te kendte ham og råbte: der flygter over‐
 <lb/>kongen! Det blev en jagt, herre cæsar! Alt var
 <lb/>han bredden nær, da standsed en sump hans
-<lb/>flugt. Til trods for sit svære legems vægt ar&typHyp;
-<lb/>bejded han sig over og ind i et lidet rør&typHyp;
+<lb/>flugt. Til trods for sit svære legems vægt ar‐
+<lb/>bejded han sig over og ind i et lidet rør‐
 <lb/>krat. Der ringed vi ham ind, som <HIS:hisDel rend="overstrike">der</HIS:hisDel>
 <lb/><app type="alteration"><lem><HIS:hisAdd place="offline">man gør med</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">fortælles om</HIS:hisDel></HIS:hisRdg></app> løven i de Lybiske lande,
-<lb/>sendte en pileregn ind over den skjulte &dash;</p></HIS:hisSp>
+<lb/>sendte en pileregn ind over den skjulte –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Nu? Er han såret?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FESTUS"><HIS:spOpener><speaker>Tribunen Festus</speaker>.</HIS:spOpener>
@@ -812,7 +806,7 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/>end Chnodomar, I venner; det er krigen
 <lb/>selv med bundne hænder. <HIS:hisStage>(Prætorianerne
 <lb/>trænger sig med høje bifaldsråb sammen om
-<lb/>cæsar.)</HIS:hisStage> Ikke mig, I uforlignelige; <HIS:hisStage>(om&typHyp;
+<lb/>cæsar.)</HIS:hisStage> Ikke mig, I uforlignelige; <HIS:hisStage>(om‐
 <lb/>favner Florentius.)</HIS:hisStage> pris denne mand, min ven
 <lb/>og broder i alle farer. <HIS:hisStage>(sagte til Festus.)</HIS:hisStage>
 <pb ed="faksBase" n="433"/>
@@ -830,7 +824,7 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><p>Nej, nej, ikke for kraftfuld.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.
 <lb/><HIS:hisStage>(til Chnodomar.)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Så mødes vi, du overmodige &dash;</p></HIS:hisSp>
+<lb/><p>Så mødes vi, du overmodige –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="CHNODOMAR"><HIS:spOpener><speaker>Chnodomar</speaker>
 <lb/><HIS:hisStage>(kaster sig ned.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Lad mig kysse dine fødders støv!</p></HIS:hisSp>
@@ -842,7 +836,7 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Hvad begærer du?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="CHNODOMAR"><HIS:spOpener><speaker>Chnodomar</speaker>.</HIS:spOpener>
-<lb/><p>At det sker hurtigt. Ikke pinsler; &dash; o, ikke bå&typHyp;
+<lb/><p>At det sker hurtigt. Ikke pinsler; – o, ikke bå‐
 <lb/>let<HIS:hisAdd place="inline">,</HIS:hisAdd> <HIS:hisAdd place="offline">herre</HIS:hisAdd>; ikke levende på bålet; jeg kan det ikke!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Prinsesse Helena</speaker>
 <lb/><HIS:hisStage>(sagte til Myrrha.)</HIS:hisStage></HIS:spOpener>
@@ -854,7 +848,7 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/>under værre pinsler?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="CHNODOMAR"><HIS:spOpener><speaker>Chnodomar</speaker>.</HIS:spOpener>
 <lb/><p>Tvungen, du mægtige; det var folket og
-<lb/>fyrsterne som &dash;; o, hør mig, hør mig!</p></HIS:hisSp>
+<lb/>fyrsterne som –; o, hør mig, hør mig!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Prinsesse Helena</speaker>
 <lb/><HIS:hisStage>(sagte til Julian.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Ængst ham mere, min elskede!</p></HIS:hisSp>
@@ -889,11 +883,11 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><HIS:hisSp who="FLORENTIUS"><HIS:spOpener><speaker>Prætorianhøvdingen Florentius</speaker>.</HIS:spOpener>
 <lb/><p>Herre cæsar!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="CHNODOMAR"><HIS:spOpener><speaker>Chnodomar</speaker>.</HIS:spOpener>
-<lb/><p>Livet &dash;! Livet?</p></HIS:hisSp>
+<lb/><p>Livet –! Livet?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SEVERUS"><HIS:spOpener><speaker>Hærføreren Severus</speaker>.</HIS:spOpener>
 <lb/><p><xptr type="synopticView_msVersions" xml:id="KG_10809ms"/>Vogt dig, cæsar!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>Jeg byder her &dash;; i hærens navn. Eller er
+<lb/><p>Jeg byder her –; i hærens navn. Eller er
 <lb/>det ikke i hærens navn jeg taler, når jeg siger
 <lb/>at eders mådehold, I uovervindelige, er lige
 <lb/>så stort, som eders tapperhed. Fangen sendes
@@ -929,7 +923,7 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/>stormende jubel: Leve kejseren! Leve kejseren!)</HIS:hisStage>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.
 <lb/><HIS:hisStage>(råber)</HIS:hisStage></HIS:spOpener>
-<lb/><p>Florentius, Severus, &dash; jeg kræver eder til vidne
+<lb/><p>Florentius, Severus, – jeg kræver eder til vidne
 <lb/>på min uskyld!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Præfekten Sallust</speaker>
 <lb/><HIS:hisStage>(baner sig vej i trængselen.)</HIS:hisStage></HIS:spOpener>
@@ -939,7 +933,7 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/>kejser.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Præfekten Sallust</speaker>.</HIS:spOpener>
 <lb/><p>Umuligt! Forræderi? Nej, nej! <HIS:hisStage>(til Florentius.)</HIS:hisStage>
-<lb/>Jeg besværger dig, herre, &dash; hvad sandt er der i
+<lb/>Jeg besværger dig, herre, – hvad sandt er der i
 <lb/>dette?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLORENTIUS"><HIS:spOpener><speaker>Prætorianhøvdingen Florentius</speaker>.</HIS:spOpener>
 <lb/><p>Barbarkongen har hyldet cæsar som kejser.</p></HIS:hisSp>
@@ -947,9 +941,9 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <pb n="[133]r"/>
 <lb/><fw type="leaf" place="top-right" scribe="h1">133</fw>
 <lb/><HIS:hisSp who="SALLUST"><HIS:spOpener><speaker>Præfekten Sallust</speaker>.</HIS:spOpener>
-<lb/><p>Barbarkongen? Men cæsar &dash;?</p></HIS:hisSp>
+<lb/><p>Barbarkongen? Men cæsar –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLORENTIUS"><HIS:spOpener><speaker>Prætorianhøvdingen Florentius</speaker>.</HIS:spOpener>
-<lb/><p>Skænkte sin fange livet til gengæld &dash; und&typHyp;
+<lb/><p>Skænkte sin fange livet til gengæld – und‐
 <lb/>skyld; jeg ved ikke mere.</p>
 <lb/><HIS:hisStage>(fjerner sig.)</HIS:hisStage></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
@@ -965,31 +959,31 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/>nu til hvile, I mødige helte; til hvile under
 <lb/>de magters beskyttelse, som har stridt med
 <lb/>os idag. Oprøret er slukket; i Paris vil vi
-<lb/>holde vort festlige indtog; &dash; og derefter, Flo&typHyp;
+<lb/>holde vort festlige indtog; – og derefter, Flo‐
 <lb/>rentius, Severus, foren eders bønner med
 <lb/>mine, så det må tækkes kejseren at lade mig
-<lb/>træde tilbage i ensomheden &dash;</p></HIS:hisSp>
+<lb/>træde tilbage i ensomheden –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="FLORENTIUS"><HIS:spOpener><speaker>Prætorianhøvdingen Florentius</speaker>.</HIS:spOpener>
 <lb/><p>Herre, hvad tænker du!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>&dash; tilbage i Ensomheden, siger jeg, &dash; til de
+<lb/><p>– tilbage i Ensomheden, siger jeg, – til de
 <lb/>forskninger, som før optog mit sind og som
 <lb/>jeg tror at jeg ikke uden held har drevet.
 <pb ed="faksBase" n="438"/>
 <pb n="[133]v"/>
 <lb/>Purpurkåben er ikke for den stille visdomsven.
-<lb/>Feltherrestaven må lægges i en værdigeres hæn&typHyp;
+<lb/>Feltherrestaven må lægges i en værdigeres hæn‐
 <lb/>der, Florentius!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="SEVERUS"><HIS:spOpener><speaker>Hærføreren Severus</speaker>.</HIS:spOpener>
 <lb/><p>Cæsar, det vil ikke hæren tåle.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Hæren vil intet. Skrig, skrig uden mening. Jeg
-<lb/>vil skrive til kejserinden &dash;</p></HIS:hisSp>
+<lb/>vil skrive til kejserinden –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="EUTHERIOS"><HIS:spOpener><speaker>Husmesteren Eutherius</speaker>
 <lb/><HIS:hisStage>(kommer ilsomt.)</HIS:hisStage></HIS:spOpener>
 <lb/><p>Ulykkeligt nyt fra Rom, herre!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>Hvad er sket? Du er dødsbleg &dash;</p></HIS:hisSp>
+<lb/><p>Hvad er sket? Du er dødsbleg –</p></HIS:hisSp>
 <lb/><HIS:hisSp who="EUTHERIOS"><HIS:spOpener><speaker>Husmesteren Eutherius</speaker>.</HIS:spOpener>
 <lb/><p>Kejserinden er død.</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Prinsesse Helena</speaker>.</HIS:spOpener>
@@ -997,11 +991,11 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Kejserinden død!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Prinsesse Helena</speaker>.</HIS:spOpener>
-<lb/><p>Død! Død; &dash; og børnløs, Julian!</p></HIS:hisSp>
+<lb/><p>Død! Død; – og børnløs, Julian!</p></HIS:hisSp>
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
-<lb/><p>Og kejseren &dash;?</p></HIS:hisSp>
+<lb/><p>Og kejseren –?</p></HIS:hisSp>
 <lb/><HIS:hisSp who="EUTHERIOS"><HIS:spOpener><speaker>Husmesteren Eutherius</speaker>.</HIS:spOpener>
-<lb/><p>Som slåt til jorden af smerte og sorg &dash;</p></HIS:hisSp>
+<lb/><p>Som slåt til jorden af smerte og sorg –</p></HIS:hisSp>
 <HIS:hisAdd place="margin"><note resp="editor">Tilføyelsen er skrevet i høyre marg.</note>
 <lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Helena</speaker>.</HIS:spOpener>
 <lb/><p>Han overlever det ikke!</p></HIS:hisSp>
@@ -1009,12 +1003,12 @@ Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-b
 <lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Cæsar Julian</speaker>.</HIS:spOpener>
 <lb/><p>Lad ikke dette komme videre. Ikke et ord, hører
 <lb/>du. Alle vagter om mit telt skal fordobles inat.
-<lb/><HIS:hisStage>(bydende)</HIS:hisStage> Florentius, hid! Der skal udfær&typHyp;
+<lb/><HIS:hisStage>(bydende)</HIS:hisStage> Florentius, hid! Der skal udfær‐
 <pb ed="faksBase" n="439"/>
 <pb n="[134]r"/>
 <lb/><fw type="leaf" place="top-right" scribe="h1">134</fw>
 <lb/>diges en <sic>dagsbetaling</sic> til soldaterne. Det skal
-<lb/>siges at cæsar er fornøjet med dem. Hæren &dash;
+<lb/>siges at cæsar er fornøjet med dem. Hæren –
 <lb/>har gjort sin pligt. Den har grundfæstet
 <lb/>riget.</p></HIS:hisSp></div>
 <lb/><figure type="bar"/>

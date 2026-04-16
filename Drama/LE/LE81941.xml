@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE TEI
-[
-<!ENTITY % HIS_entiteter SYSTEM
-'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
-%HIS_entiteter;
-]>
-<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
 <teiHeader xml:lang="nob">
 <fileDesc>
@@ -13,11 +7,11 @@
 <title level="s" type="main">Henrik Ibsens skrifter</title>
 <title level="s" type="sub">Diplomatarisk tekstarkiv</title>
 <title level="a" type="main">Lille Eyolf</title>
-<title level="a" type="sub">Ms.8&deg; 1941</title>
+<title level="a" type="sub">Ms.8° 1941</title>
 <title level="a" type="origYear">1894</title>
 <author>Henrik Ibsen</author>
-<funder>&funder;</funder>
-<editor>&editor;</editor>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
 <respStmt type="encoding"><resp>Kollasjonering og koding</resp><name>Henninge Margrethe Solberg, Mette Witting</name></respStmt>
 <respStmt>
 <resp>Oppretting og 1. kollasjon, mars 2009</resp>
@@ -46,7 +40,7 @@
 <msIdentifier>
 <settlement>Oslo</settlement>
 <repository>Nasjonalbiblioteket</repository>
-<idno>NBO Ms.8&deg; 1941</idno>
+<idno>NBO Ms.8° 1941</idno>
 </msIdentifier>
 <msContents><msItem>
 <author>Henrik Ibsen</author>
@@ -59,15 +53,15 @@
 </sourceDesc>
 </fileDesc>
 <encodingDesc>
-<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<projectDesc><p>TEKSTKILDE. Denne filen er laget for Henrik Ibsens skrifter. Den publiseres i elektronisk form. Filens tekst er transkribert og kodet. Kodingen er kontrollert systematisk i en intern kodekontroll. Teksten er kollasjonert to ganger av minst to medarbeidere.</p></projectDesc>
 <editorialDecl>
 <HIS:typography>
 <list>
 <item>Bibliotekstempel og -signatur i penn nederst til høyre.</item>
 </list>
 </HIS:typography>
-<stdVals><p>&stdVals;</p></stdVals>
-<p>&editorialDecl;</p>
+<stdVals><p>Datoer kodet som attributtverdier er angitt etter ISO-standard: yyyy-mm-dd.</p></stdVals>
+<p>Prinsipper for behandling av originale linjeskift, myke og harde bindestreker samt anførselstegn, praksis for filologiske rettelser og for standardisering av tegnsetting og grafisk oppsett i Henrik Ibsens skrifter varierer i forhold til teksttype. Dette er det redegjort for i Tekstkritiske retningslinjer for HIS.</p>
 </editorialDecl>
 <tagsDecl>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
@@ -78,7 +72,7 @@
 </list>
 </tagUsage></namespace>
 <namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="pb-ed-HU-n">For synkroniseringsformål er sideskiftene fra Hundreårsutgaven (bd XII) kodet med pb ed="HU" n="". Dette tekstvitnet dekker sidene 227-228. Alle sidetall er oppgitt i n-attributter.</tagUsage></namespace>
-<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">XML-kodingen følger Henrik Ibsens skrifters retningslinjer for koding (Kodepraksis) samt TEI P5 Guidelines for Electronic Text Encoding and Interchange.</tagUsage></namespace>
 </tagsDecl>
 </encodingDesc>
 <profileDesc>
@@ -117,12 +111,12 @@ Opprettet fila og tok 1. kollasjon mot faksimile. Validert og laget visning. Kla
 <lb/>stranden. Høje gamle træer til vens<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>tre
 <lb/>lud<unclear reason="writing">er</unclear></HIS:hisStage>
 <lb/><HIS:hisStage>Nedover bakkedraget i bbg <HIS:hisDel rend="overstrike">slyn</HIS:hisDel> fosser en
-<lb/><HIS:hisRef type="refMark" target="n1" xml:id="nb1">&referenceMark;</HIS:hisRef> bæk<HIS:hisDel rend="overwritten">,</HIS:hisDel>. En sti slynger sig langs bækken.
+<lb/><HIS:hisRef type="refMark" target="n1" xml:id="nb1">※</HIS:hisRef> bæk<HIS:hisDel rend="overwritten">,</HIS:hisDel>. En sti slynger sig langs bækken.
 <lb/>Til højre står kun enkelte træer, mellem
 <lb/>hvilke fjorden skimtes. Foran ses <HIS:hisDel rend="overstrike">et b<gap/></HIS:hisDel>
 <lb/>hjørnet af et bådskur med en optrukk<unclear reason="writing">en</unclear>
 <lb/>båd.
-<lb/><HIS:hisAdd place="margin"><note resp="editor">Tilføyelsen er plassert under de to avsnittene over.</note><HIS:hisRef type="refMark" target="nb1" xml:id="n1">&referenceMark;</HIS:hisRef> som taber sig mellem stene og træerne til
+<lb/><HIS:hisAdd place="margin"><note resp="editor">Tilføyelsen er plassert under de to avsnittene over.</note><HIS:hisRef type="refMark" target="nb1" xml:id="n1">※</HIS:hisRef> som taber sig mellem stene og træerne til
 <lb/>venstre</HIS:hisAdd></HIS:hisStage>
 <pb ed="HU" n="232"/>
 <lb/><HIS:hisSp who="ASTA"><p>1) tænk, at du kunde være så barnagtig

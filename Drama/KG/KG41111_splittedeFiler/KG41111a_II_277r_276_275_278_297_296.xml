@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI
+[
+<!ENTITY % HIS_entiteter SYSTEM
+'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
+%HIS_entiteter;
+]>
+<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+<teiHeader xml:lang="nob">
+<fileDesc>
+<titleStmt>
+<title level="s" type="main">Henrik Ibsens skrifter</title>
+<title level="s" type="sub">Diplomatarisk tekstarkiv</title>
+<title level="a" type="main">Kejser og Galilæer</title>
+<title level="a" type="sub">NBO Ms.4&deg; 1111a, bl. 277r, 276, 275/78, 297 og 296</title>
+<title level="a" type="origYear">[1871&dash;1873]</title>
+<author>Henrik Ibsen</author>
+<funder>&funder;</funder>
+<editor>&editor;</editor>
+<respStmt>
+<resp>Konvertering fra ekstern transkripsjon til prosjektspesifikk TEI XML</resp>
+<name xml:id="HIS-HB">Hilde Bøe</name>
+</respStmt>
+<respStmt>
+<resp>Kollasjonering og koding</resp>
+<name>Hilde Bøe</name>
+<name xml:id="HIS-IAA">Ingvald Aarstein</name>
+<name xml:id="HIS-MW">Mette Witting</name>
+<name xml:id="HIS-HG">Helene Grønlien</name>
+<name>Ingvald Aarstein</name>
+</respStmt>
+<respStmt>
+<resp>Kodekontroll</resp>
+<name xml:id="HIS-ENW">Ellen Nessheim Wiger</name>
+</respStmt>
+</titleStmt>
+<editionStmt><edition xml:id="KG41111a_II_277r_276_275_278_297_296-0308"/></editionStmt>
+<publicationStmt>
+<publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+<distributor xml:id="HISe">Universitetet i Oslo</distributor>
+<date when="2007" xml:id="HISe-date">2007</date>
+<pubPlace>Oslo</pubPlace>
+</publicationStmt>
+<sourceDesc><p>Denne filen bygger på KG41111_NBO.xml (KG41111_NBO-0208).</p></sourceDesc>
+</fileDesc>
+<encodingDesc>
+<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<editorialDecl>
+<HIS:typography><p>Manuskriptets grafiske oppsett finnes beskrevet i typografibeskrivelsen i KG41111_NBO.xml.</p>
+</HIS:typography>
+<stdVals><p>&stdVals;</p></stdVals>
+<p>&editorialDecl;</p>
+</editorialDecl>
+<tagsDecl>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
+<list>
+<headLabel>id=""</headLabel><headItem>castList/speaker</headItem>
+<label xml:id="KONSTANZIOS"/><item>Kejser Konstantius/Kejser Konstantius, Kejseren Konstantius, Kejser K., K.</item>
+<label xml:id="EUSEBIA"/><item>Kejserinde Eusebia</item>
+<label xml:id="HELENA"/><item>Prinsesse Helena/Fyrstinde Helena, Prinsesse Helena, Helena, Pr. Helena, H.</item>
+<label xml:id="GALLOS"/><item>Prins Gallus/Prins Gallus, Gallus, Pr. G., G.</item>
+<label xml:id="JULIAN"/><item>Prins Julian, Kejser Julian/Prins Julian, Prins Julians stemme, Cæsar Julian, Cæsar, Kejser Julian, C. Julian, Pr. Julian, Julian, J., Jul., C. J., P. J., Pr J., C. Jn, C. Ju. C. Jul.</item>
+<label xml:id="MEMNON"/><item>Memnon/Memnon, Slaven Memnon</item>
+<label xml:id="POTAMON"/><item>Guldsmeden Potamon/En anden kirkegænger, Den anden, Guldsmeden Potamon</item>
+<label xml:id="EUNAPIOS"/><item>Hårskæreren Eunapius, Hårskæreren Eunapios/En kirkegænger, Den første, Hårskæreren Eunapius, Hårskæreren Eunapios, Hårskæreren Eunapeos</item>
+<label xml:id="FRUGTHANDLEREN"/><item>En frugthandler/Frugthandleren</item>
+<label xml:id="SOLDATEN"/><item>-/Soldaten</item>
+<label xml:id="SMINKETKVINDE"/><item>En sminket kvinde/En skøge</item>
+<label xml:id="VAERKBRUDEN"/><item>En værkbruden mand/En værkbruden</item>
+<label xml:id="ENBLIND"/><item>En blind betler/En blind, Den blinde</item>
+<label xml:id="AGATHON"/><item>Agathon, Agathon fra Kappadokia, Kappadokieren Agathon/En stemme, Theodorus, Th., Agathon, Agaton, Fangen, Soldaten, Soldaten Agaton</item>
+<label xml:id="LIBANIOS"/><item>Visdomslæreren Libanius, Taleren Libanios, stadsforstander i Antiokia/Den fremmede, Herren, H., Libanius, Taleren Libanius, L.</item>
+<label xml:id="BASILIOS"/><item>Basilios fra Cæsaræa, Basilius fra Cæsaræa/Basilius fra Cæsaræa, Basilius, Basil. f. Cæsaræa, Basil., B.</item>
+<label xml:id="SALLUST"/><item>Sallust/Præfekten Sallust, Ridderen Sallust, Sallust, Sall., Pf. Sall., Pr. Sall.Præfekten Sallustius</item>
+<label xml:id="MAXIMOS"/><item>Mystikeren Maximos, Magikeren Maximus/Mystikeren Maximus, Magikeren Maximus, Maximus, Magikeren, Max., Mx., M., M. Maximus, M. Max., En stemme, Stemmen</item>
+<label xml:id="EUTHERIOS"/><item>Husmesteren Eutherius/Husmesteren Eutherius, Husmesteren Eutherios, Hovmesteren Eutherius, Husmesteren Euth., Eutherius, Euther., Euth., Hushovm.</item>
+<label xml:id="LEONTES"/><item>Quæstoren Leontius</item>
+<label xml:id="MYRRHA"/><item>Slavinden Myrrha/Slavinden Myrrha, Myrrha</item>
+<label xml:id="DECENTIUS"/><item>Tribunen Decentius/Tribunen Decentius, Præfekten Decentius, Decentius, Decent.</item>
+<label xml:id="SINTULA"/><item>Staldmesteren Sintula/Staldmesteren Sintula, Staldmesteren Scintula, Sintula, Scintula, Sc.</item>
+<label xml:id="FLORENTIUS"/><item>Hærføreren Florentius/Prætorianhøvdingen Florentius, Florentius, Florent., Flor.</item>
+<label xml:id="SEVERUS"/><item>Hærføreren Severus/Hærføreren Severus, Severus</item>
+<label xml:id="FESTUS"/><item>Soldaten Festus (strøket, erstattet med Underføreren Varro)/Centurionen Festus, Tribunen Festus, Tribunen Faustus, Trib. Faustus, Trib. Faust.<note>Festus og Faustus regnes som samme person med id="FESTUS"; rollene har stort sett samme funksjon i ulike utkast til samme parti.</note></item>
+<label xml:id="CHNODOMAR"/><item>-/Chnodomar, Chnod., Chnm</item>
+<label xml:id="ORIBASES"/><item>Lægen Oribases, Livlægen Oribases/Lægen Oribases, Livlægen Oribases, L. Oribases, L. Orib., Orib.</item>
+<label xml:id="LAIPSO"/><item>Underføreren Laipso/Laipso, Tribunen Laipso</item>
+<label xml:id="MAUROS"/><item>Fanebæreren Mauros/Fanebæreren Mauros, Hastaten Maurus, Mauros, Maurus</item>
+<label xml:id="NEVITA"/><item>Krigsøversten Nevita/Hærføreren Nevita, Generalen Nevita, Høvedsmanden Nevita</item>
+<label xml:id="CAESARIOS"/><item>Livlægen Cæsarios/Livlægen Cæsarius</item>
+<label xml:id="THEMISTEOS"/><item>Taleren Themisteos/Taleren Themisteos, Taleren Themisteus, Th.</item>
+<label xml:id="MAMERTINOS"/><item>Taleren Mamertinos/Taleren Mamertinus, Konsulen Mamertinus</item>
+<label xml:id="URSULOS"/><item>Skatmesteren Ursulos/Skatmesteren Ursulus</item>
+<label xml:id="BARBARA"/><item>Kvinden Barbara/En kvinde, Kvinden i vinduet</item>
+<label xml:id="HEKEBOLIOS"/><item>Skriftlæreren Hekebolios/Læreren Hekebolios, Ekebolios, Manden, Ek., Hek., H.</item>
+<label xml:id="DANSERNE"/><item>dansere/Danserne</item>
+<label xml:id="KVINDERNE"/><item>kvinder/Kvinderne</item>
+<label xml:id="MEDON"/><item>Kornhandleren Medon/En borger, Borgeren, Medon</item>
+<label xml:id="MALKOS"/><item>Skatteopkræveren Malkos/En anden borger, Borgeren, Malchus</item>
+<label xml:id="GREGOR"/><item>Gregor fra Nazianz/Gregor fra Nazianz, Presten ved døren, Presten, Gregor, Gr., G.</item>
+<label xml:id="FOKION"/><item>Farveren Fokion, Farveren Faustus/Den tredje kirkegænger, Den tredje, Farveren Faustus<note>'Farveren Faustus' regnes som identisk med 'Farveren Fokion'. I to rollelister står han oppført med navnet Fokion, men i teksten kalles han konsekvent Faustus.</note></item>
+<label xml:id="PUBLIA"/><item>Kvinden Publia/Publia, Den gamle kvinde, Den gamle Publia</item>
+<label xml:id="HILARION"/><item>Hilarion</item>
+<label xml:id="MARIS"/><item>Biskop Maris af Kalkedon/En stemme, Den samme stemme, Den gamle mand, Biskop Maris</item>
+<label xml:id="APOLLONTOGET"/><item>Deltagere i Apollon-toget/Apollotoget</item>
+<label xml:id="FANGETOGET"/><item>De kristne fangers tog/Fangetoget, Fangerne, Fangernes sang, Sang</item>
+<label xml:id="HERAKLEOS"/><item>Digteren Herakleos/Læreren Herakleos</item>
+<label xml:id="APOLLINARIS"/><item>Salmedigteren Apollinaris</item>
+<label xml:id="KYRILLOS"/><item>Læreren Kyrillos</item>
+<label xml:id="GAMMELPREST"/><item>En gammel prest/Den gamle prest</item>
+<label xml:id="SALMESYNGERSKERNE"/><item>-/Kvinderne, Kvindernes kor, Salmesyngerskernes kor</item>
+<label xml:id="FROMENTINOS"/><item>Høvedsmanden Fromentinos/Høvedsmanden Fromentinus</item>
+<label xml:id="JOVIAN"/><item>Krigsøversten Jovian/Krigsøversten Jovian, Hærføreren Jovian</item>
+<label xml:id="NUMA"/><item>Spåmanden Numa</item>
+<label xml:id="HORMISDAS"/><item>Fyrst Hormisdas</item>
+<label xml:id="ANATOLOS"/><item>Livvagtsføreren Anatolos/Livvagtsføreren Anatolos, Livvagtsføreren Antatolos</item>
+<label xml:id="PRISKOS"/><item>Visdomslæreren Priskos/Visdomslæreren Priskos, Visdomslærerne (sammen med Kytron)</item>
+<label xml:id="KYTRON"/><item>Visdomslæreren Kytron/Visdomslæreren Kytron, Visdomslærerne (sammen med Priskos)</item>
+<label xml:id="AMMIAN"/><item>Høvedsmanden Ammian</item>
+<label xml:id="MAKRINA"/><item>Makrina</item>
+<label xml:id="PERSEREN"/><item>En persisk overløber/Perseren</item>
+</list>
+</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+</tagsDecl>
+<variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
+</encodingDesc>
+<profileDesc>
+<langUsage><language ident="nob"/><language ident="dan-nob"/></langUsage>
+<handNotes>
+<handNote scribe="HI-1" xml:id="HI-1" medium="pen" scope="major"><p>Ibsens hånd, sort blekk, med sterkt varierende grad av omhu og skjødesløshet. Hovedhånd.</p></handNote>
+<handNote scribe="HI-2" xml:id="HI-2" medium="pencil"><p>Ibsens hånd, grå blyant. En del rettelser.</p></handNote>
+<handNote scribe="peJE" xml:id="peJE" medium="pencil"><p>Julius Elias har satt til hakeparenteser o.a. med grå blyant.</p></handNote>
+<handNote scribe="peKL" xml:id="peKL" medium="pencil"><p>Karl Larsen har skrevet noen signerte blyantnotater på bl. 300r, 310r, 322r ed grå blyant.</p></handNote>
+<handNote scribe="h1" xml:id="h1" medium="pencil-red"><p>Ukjent hånd (muligens bibliotekar), rød blyant. Foliering.</p></handNote>
+</handNotes>
+</profileDesc>
+<revisionDesc>
+<change><date>05.03.08</date>
+<name>HB</name><title>Koding og splitting</title>
+Opprettet versjonsfil. Kodet inn synkroniseringskoblinger.</change>
+<change><date>19.-28.02.08</date>
+<name>HB</name><title>Oppdatering, samt forberedelser til splitting</title>
+Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med workingManuscript flere steder. Erstattet foreldede type-verdier i div/type med gjeldende verdier. Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-basens mal (inkl. pe foran initialene). Byttet ut desc med sub i title/type. Sjekket og evt. oppdatert tallspenn. Byttet ut fw/type/sheet med gathering og rettet sheet til leaf der det var feilkodet. Laget pb-er som korresponderer med TMs bladref. i ms.beskr. Gjennomgått alle noter også mot TMs beskrivelse, gitt oversikt over varia-materiale videre til Nina. Lagt til noter om opprinnelige dobbeltblad og brutte sammenhenger. Ryddet rekkefølgen tilbake til NBOs, slik at den er diplomatarisk. Transkribert legg- og sidetall som TM har lest. * Arkiverte pre-splittversjon (KG41111_pre_splitt.xml).</change>
+</revisionDesc>
+</teiHeader>
+<text xml:id="" type="workingManuscript">
+<group>
+<text>
+<body>
+<pb ed="faksBase" n="25"/>
+<pb n="[277]r"/>
+<lb/><fw type="leaf" place="top-right" scribe="h1">277</fw>
+<div type="act" n="2-1">
+<lb/><head>Optegnelser:</head>
+<xptr type="synopticView_msVersions" xml:id="KG_167ms"/>
+<lb/><p>1<hi rend="raised">ste</hi> handling: a. Ved havnen. Frasigelsen o. s. v
+<lb/><hi rend="underlined">b: I tronsalen.</hi>
+<lb/>Julian i glæde over forsættet at føre et Diogenes og de
+<lb/>andre vismænd værdigt liv; han lader hofbarbereren
+<lb/>komme; optrin mellem dem, endende med barberens
+<lb/>bortjagelse. De indiske sendebud bringer gaver.
+<lb/>Julian hoverer. En gammel hofmand gør ham
+<lb/>opmærksom på at æren galdt Konstantius. Julian i
+<lb/>vrede, forordner undersøgelse af embedsmændenes færd;
+<lb/>de skal straffes &dash; ikke fordi de er kristne; han genta&typHyp;
+<lb/>ger sine forsikringer i så henseende til Cæsarius,
+<lb/>hvem han gør store tilbud, der afslåes, hvorefter de
+<lb/>skilles. Julian beslutter sig til Bacchustoget.</p>
+<lb/><p>c: Bacchustoget.
+<lb/>Julian omringet af skøger og gøglere; dårlige
+<lb/>kristne går over til ham.</p>
+<lb/><p>d: I palatset, kejserens bogsal.
+<lb/>Julian i forbittrelse; han beslutter at sætte møde
+<lb/>med Libanius og andre visdomsvenner i Antiochia.</p>
+</div>
+</body>
+</text>
+<text>
+<body>
+<pb ed="faksBase" n="23"/>
+<pb n="[276]r"/>
+<lb/><fw type="leaf" place="top-right" scribe="h1">276</fw>
+<div type="act" n="2-2">
+<lb/><head>Indhold</head>
+<xptr type="synopticView_msVersions" xml:id="KG_202ms"/>
+<lb/><head>(2<hi rend="raised">den</hi> handling.)</head>
+<lb/><p>Et forværelse i kejserens palats i Antiochia.</p>
+<lb/><p>Sofister, talere, digtere og anklagere er tilstede i stor
+<lb/>mængde ventende på kejseren. &dash; Julian kommer;
+<lb/>han vredes over al denne påtrængenhed og sætter dem
+<lb/>i rette på forskellige måder. &dash; Gregor fra Nazianz
+<lb/>kommer for at bede om retfærdighed og sætter Julian
+<lb/>stærkt i rette for hans fremfærd navnlig mod Ursulus.
+<lb/>Samtalen afbrydes idet det meldes kejseren at nogle unge
+<lb/>kristne har plyndret og hånet et tempel; i højeste vrede
+<lb/>befaler Julian at de skyldige skal opspores; derpå be&typHyp;
+<lb/>reder han sig til Apollo-festen.</p>
+<lb/><p>Et torv i Antiochia.</p>
+<lb/><p>Stort og glimrende optog. Menneskemængde. Kejser
+<lb/>Julian kommer klædt som yppersteprest. Han ho<unclear reason="writing">verer</unclear>
+<lb/>over de sky og frygtsomme kristne. Et tog under sal&typHyp;
+<lb/>mesang kommer dem imøde; det er de fangne krist&typHyp;
+<lb/>ne, der føres til pinebænken. Togene mødes og standser.
+<lb/>Han tiltaler en af de fangne og genkender Agaton
+<lb/>med hans lille broder. Rystende optrin; togene drager
+<lb/>hver sin vej; de kristne jubler imod martyriet. <HIS:hisDel rend="overstrike">Da frem&typHyp;
+<lb/>træder</HIS:hisDel></p>
+<lb/><p>En plads foran Apollo-templet.</p>
+<lb/><p>Optoget kommer. Skrigende kristne; rygtet har ud&typHyp;
+<lb/>bredt sig om martyrernes pinsler; barnet er dræbt; Aga&typHyp;
+<lb/>thon i vanvid. Da træder den gamle Maris frem
+<lb/>og forbander apostaten; forfærdelse; hans ledsagere
+<pb ed="faksBase" n="24"/>
+<pb n="[276]v"/>
+<note resp="editor">Bl. 276v har liste over matretter.</note>
+<lb/><fw type="gathering" place="top-left"><HIS:hisDel rend="overstrike">24</HIS:hisDel>.</fw>
+<lb/>flygter men Gregor fra Nazianz tager ham ved
+<lb/>hånden, Julian truer med at <sic>udryde</sic> alle bibler
+<lb/>og hellige bøger; guderne skal sejre. Da ryster et jord&typHyp;
+<lb/>skælv templet; søjler og mure styrter sammen;
+<lb/>vild skræk. Julian fatter sig og tilskriver det
+<lb/>gudernes vrede. Gregor råber at Kristus har
+<lb/>lagt det i grus ligesom han lyste forbandelsen
+<lb/>over Jerusalems tempel. Julian sværger at Jeru&typHyp;
+<lb/>salems tempel skal oprejses og Galilæeren gøres
+<lb/>til løgner. Gregor svarer at kejseren ikke skal lægge
+<lb/>sten på sten.</p>
+<lb/><figure type="bar"/>
+</div>
+<lb/><fw type="leaf" place="top-right" scribe="h1"><HIS:hisDel rend="overstrike">277</HIS:hisDel></fw>
+</body>
+</text>
+<text>
+<body>
+<pb ed="faksBase" n="21"/>
+<pb n="[275]r"/>
+<lb/><fw type="leaf" place="top-right" scribe="h1">275</fw>
+<note resp="editor">Bl. 275/278 var opprinnelig et dobbeltblad.</note>
+<div type="act" n="2-3">
+<xptr type="synopticView_msVersions" xml:id="KG_230ms"/>
+<lb/><head>Udkast
+<lb/>til
+<lb/>Tredje handling.</head>
+<lb/><p>En søjlegang med billedstøtter og vandspring
+<lb/>i Antiokia.</p>
+<lb/><p>En stor skare af hoffolk, lærere og talere, blandt
+<lb/>dem Libanius og Herakleos, er tilstede. Man&typHyp;
+<lb/>ge er klædte i forrevne kapper. Der spottes over
+<lb/>kejserens sære påfund, over de dårlige spiser
+<lb/>og det hårde levesæt. Herakleos gør sig især ly&typHyp;
+<lb/>stig over denne måde at tjene guderne på.</p>
+<lb/><p>Julian kommer. Også han bærer en kynikers
+<lb/>dragt og roser sig deraf. Han irettesætter sine om&typHyp;
+<lb/>givelser for deres blødagtighed og viser hen til
+<lb/>galilæerne, hvis dyder i mange måder for&typHyp;
+<lb/>tjener at efterfølges. Han får øje på Herakleos
+<lb/>og udskælder ham for hans usømmelige tale om
+<lb/>guderne. Derefter støder han på Libanius, med
+<lb/>hvem mødet er spændt men påtaget venligt fra
+<lb/>begge sider. Libanius er kommen for at ind&typHyp;
+<lb/>lægge et godt ord for staden. Julian udbryder
+<lb/>i vrede og omtaler sit skrift &lquo;Skæghaderen.&rquo;</p>
+<lb/><p>En gade i Antiokia. Til venstre en liden
+<lb/>kirke; til højre et forfaldent alter med et
+<lb/>halvt omstyrtet gudebillede.</p>
+<lb/><p>Gregor fra Nazianz taler til en stor ophidset
+<pb ed="faksBase" n="22"/>
+<pb n="[275]v"/>
+<lb/>folkeforsamling. Han fortæller dem om Markos
+<lb/>af Arethusa og de øvrige blodvidner. Apollinaris
+<lb/>synger sine vilde sange. Den vanvittige Publia for&typHyp;
+<lb/>kynder hedenskabets fald. Kejser Julian kom&typHyp;
+<lb/>mer med sine ledsagere gennem <sic>gade</sic>. Kristne
+<lb/>borgere beklager sig over at deres ejendom er dem
+<lb/>fratagen; kejseren spotter dem. Gregor spørger ham
+<lb/>om det er sandt at han har givet presterne ind
+<lb/>under den verdslige ret; om kirkegodset skal
+<lb/>tilbagegives stæderne; om alle bibler og hellige
+<lb/>skrifter skal fratages ejerne. Julian bekræfter
+<lb/>det. Gregor fordømmer ham som Antikrist.
+<lb/>Bevæbnede driver mængden fra hinanden. He&typHyp;
+<lb/>kebolios ses ligge foran kirkedøren. Optrin
+<lb/>mellem ham og kejseren.</p>
+<lb/><p>Landevej udenfor staden. Til venstre ved
+<lb/>vejkanten står Kybeles billedstøtte med et
+<lb/>alter foran. Solnedgang.</p>
+<lb/><p>Julian kommer med få ledsagere og træf&typHyp;
+<lb/>fer den gamle prest. Optrin mellem dem. Et tog
+<lb/>af kvinder kommer fra staden under jammerklage,
+<lb/>deres hellige skrifter er dem fratagne. Blodvidnet
+<lb/>Kyrillos tilkaster kejseren sit kød; en kvinde
+<lb/>sønderflænger sit bryst med en kniv. Kejseren
+<lb/>er rystet. De hedenske tilskuere forhåner ham
+<lb/>med allehånde skældsord. Han vil gå bort
+<lb/>i vrede, da kommer Jovian og bringer bud&typHyp;
+<lb/>skabet om at opbyggelsen af Jerusalems tempel
+<lb/>er mislykket.</p>
+<lb/><fw type="leaf" place="top-right" scribe="h1"><HIS:hisDel rend="overstrike">278</HIS:hisDel></fw>
+<pb ed="faksBase" n="27"/>
+<pb n="[278]r"/>
+<lb/><fw type="leaf" place="top-right" scribe="h1">278</fw>
+<lb/><p>(Mellem ruinerne af Apollo-templet. Må&typHyp;
+<lb/>neskinsnat.)</p>
+<lb/><p>Julian og Maximus mødes. Julian udbry&typHyp;
+<lb/>der i bittre klager over gudernes magtløshed.
+<lb/>Maximus udtaler sig gådefuldt om det &lquo;<sic>trede</sic>
+<lb/>rige&rquo; hvori både kejseren og Galilæeren skal gå
+<lb/>under for at opstå i noget nyt. Julian fatter
+<lb/>vinket. Han vil lægge jorden under sig og be&typHyp;
+<lb/>slutter krigen med Perserne. Vilde sværme&typHyp;
+<lb/>rier. Maximus kaster sig ned og tilbeder
+<lb/>den vordende Messias i Julian. &dash;</p>
+</div>
+<lb/><figure type="bar"/>
+<pb ed="faksBase" n="28"/>
+<pb n="[278]v"/>
+<lb/><fw type="leaf" place="top-right" scribe="h1"><HIS:hisDel rend="overstrike">275</HIS:hisDel></fw>
+</body>
+</text>
+<text>
+<body>
+<pb ed="faksBase" n="63"/>
+<pb n="[297]r"/>
+<lb/><fw type="leaf" place="top-right" scribe="h1">297</fw>
+<note resp="editor">Bl. 296/297 var opprinnelig et dobbeltblad.</note>
+<div type="act" n="2-4">
+<xptr type="synopticView_msVersions" xml:id="KG_268ms"/>
+<lb/><head>Udkast
+<lb/>til
+<lb/>Fjerde handling.</head>
+<lb/><p>(Ved kejser-rigets østlige grænse. Vildt berg&typHyp;
+<lb/>landskab. En dyb <sic>dalkløf</sic> skiller den høje
+<lb/>forgrund fra de bagenfor liggende fjelde.)</p>
+<lb/><p>Kejser Julian omgiven af sine hærførere
+<lb/>visdomsvenner, spåmænd og andre ser sin hær
+<lb/>drage gennem dalen. Nevita og Maximus
+<lb/>er tilstede. Tvivl og håb kæmper i Julian; han
+<lb/>udlægger alle varsler til sin fordel. Krigs&typHyp;
+<lb/>øversten Jovian vækker kejserens vrede. Kristne
+<lb/>soldater drager over fjeldhøjden &dash;, blandt dem
+<lb/>Agaton. Foranstaltninger imod de kristne om&typHyp;
+<lb/>tales. Julians hest Babylonios falder. En løve
+<lb/>dræbes. Mystik om Alexanders sjæl i Julian. Han
+<lb/>rykker videre.</p>
+<lb/><p>(Skønt skoglandskab med Basilius's og Makri&typHyp;
+<lb/>nas bolig. Solnedgang.)</p>
+<lb/><p>Hærafdelinger drager forbi. Makrina
+<lb/>vederkvæger soldaterne. Kejseren kommer.
+<lb/>Optrin mellem ham og Makrina. Hun tror
+<lb/>på Julian som et Guds redskab. De skilles. Hæren
+<lb/>drager videre mod øst.</p>
+<pb ed="faksBase" n="64"/>
+<pb n="[297]v"/>
+<lb/><p>Hinsides Eufrat i den kejserlige lejr. Julian
+<lb/>befaler at hans brystbillede skal opstilles på et alter
+<lb/>og soldaterne lokkes til at dyrke det som en gud&typHyp;
+<lb/>dom. Den persiske flygtning kommer og råder
+<lb/>til at brænde skibene. Tumult blandt de bedragne
+<lb/>og forfærdede soldater mens flåden brænder. Be&typHyp;
+<lb/>falingen kaldes tilbage, men for sent; perseren
+<lb/>er borte.</p>
+<lb/><figure type="bar"/>
+</div>
+<pb ed="faksBase" n="61"/>
+<pb n="[296]r"/>
+<lb/><fw type="leaf" place="top-right" scribe="h1">296</fw>
+<div type="act" n="2-5">
+<xptr type="synopticView_msVersions" xml:id="KG_306ms"/>
+<lb/><head>Udkast
+<lb/>til
+<lb/>Femte handling.</head>
+<lb/><p>(Øde afbrændt slette. Kejserens telt til højre.
+<lb/>Eftermiddag.)
+<lb/>Hærførere og visdomslærere i stor uro. Kejseren
+<lb/>rådvild. Soldaterne har tabt troen på ham.
+<lb/>Han har havt syner. Oraklerne spår ilde.</p>
+<lb/><p>(Sumpig skogegn. Nat.)
+<lb/>Oribases og flere søger ængsteligt efter kej&typHyp;
+<lb/>seren. &dash; Derefter Julian, så Maximus. Vil&typHyp;
+<lb/>delsen stiger. Synet af tømmermanden som
+<lb/>tømrer kejserens kiste. Oribases og Euterios
+<lb/>kommer til. Kampråb langt borte. Alle ud.</p>
+<lb/><p>(Åbent landskab med en landsby langt borte
+<lb/>på sletten. Morgengry.)
+<lb/>Slagtummel. Julian kommer; hans hest
+<lb/>er skudt under ham. Han er fra sig selv;
+<lb/>tror det er <sic>kristus</sic> han kæmper med. Aga&typHyp;
+<lb/>ton kaster sit spyd og rammer ham.
+<lb/>Han falder og bæres bort. Jovian tager
+<lb/>anførslen og opflammer soldaterne ved sin
+<lb/>tale.</p>
+<lb/><p>(Julians telt. Dag.)
+<lb/>Kejseren bedøvet på lejet. Oribases, Eutherios,
+<pb ed="faksBase" n="62"/>
+<pb n="[296]v"/>
+<lb/>Maximus, Priskos, Basilios og Makrina
+<lb/>er om ham. Han kommer til besindelse,
+<lb/>griber skjoldet, falder tilbage. Mere og mere
+<lb/>taler han uden samling. Dør. De fleste
+<lb/>bort. Maximus bort. Jovian udråbes
+<lb/>udenfor. Basilios og Makrina ved liget.</p>
+<lb/><figure type="bar"/>
+</div>
+</body>
+</text>
+</group>
+</text>
+</TEI>

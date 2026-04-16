@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fo:root xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS"
+         xmlns:fo="http://www.w3.org/1999/XSL/Format"
+         xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl">
+   <fo:layout-master-set>
+      <fo:simple-page-master page-height="297mm" page-width="210mm" margin="5mm 5mm 0mm 5mm"
+                             master-name="preview">
+         <fo:region-body margin="7.5mm 10mm 7.5mm 10mm" border-before-width="0" border-after-width="0"
+                         border-before-style="solid"
+                         border-after-style="solid"
+                         border-before-color="#000000"
+                         border-after-color="#000000"/>
+         <fo:region-before extent="12.5mm"/>
+         <fo:region-after extent="10mm"/>
+      </fo:simple-page-master>
+   </fo:layout-master-set>
+   <fo:page-sequence master-reference="preview">
+      <fo:static-content flow-name="xsl-region-before">
+         <fo:table table-layout="fixed" width="100%">
+            <fo:table-column column-width="10mm" column-number="1"/>
+            <fo:table-column column-width="120mm" column-number="2"/>
+            <fo:table-column column-width="60mm" column-number="3"/>
+            <fo:table-column column-width="10mm" column-number="4"/>
+            <fo:table-body>
+               <fo:table-row font-family="Times" font-size="10pt">
+                  <fo:table-cell>
+                     <fo:block/>
+                  </fo:table-cell>
+                  <fo:table-cell text-align="start" border-bottom="1px solid gray">
+                     <fo:block text-align="start" font-style="italic" font-size="10pt">Fruen fra havet</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell text-align="end" border-bottom="1px solid gray">
+                     <fo:block text-align="end" font-style="italic" font-size="10pt">NBO Ms.4° 1116a, bl. 11r</fo:block>
+                  </fo:table-cell>
+                  <fo:table-cell>
+                     <fo:block/>
+                  </fo:table-cell>
+               </fo:table-row>
+            </fo:table-body>
+         </fo:table>
+      </fo:static-content>
+      <fo:static-content flow-name="xsl-region-after">
+         <fo:block text-align="center" font-family="Times New Roman, Times, serif" font-size="1em">
+            <fo:page-number/>
+         </fo:block>
+      </fo:static-content>
+      <fo:flow flow-name="xsl-region-body" padding="0" border-width="0">
+         <fo:block font-family="Times" font-size="12pt" font-weight="normal" font-style="normal"
+                   padding-before="2mm"
+                   padding-after="2mm"
+                   line-height="1.3em">
+            <fo:block margin-top="30mm" margin-bottom="10mm" text-align="center" font-size="20pt"> </fo:block>
+            <fo:block margin-bottom="10mm" text-align="center" font-size="20pt">Fruen fra havet</fo:block>
+            <fo:block margin-bottom="10mm" text-align="center" font-size="20pt">NBO Ms.4° 1116a, bl. 11r</fo:block>
+            <fo:block margin-bottom="10mm" text-align="center" font-size="20pt">1888</fo:block>
+            <fo:block margin-top="10mm">
+               <fo:block margin-bottom="10mm" text-align="center" font-size="16pt">Henrik Ibsens skrifter</fo:block>
+               <fo:block margin-bottom="10mm" text-align="center" font-size="16pt">Diplomatarisk tekstarkiv</fo:block>
+            </fo:block>
+            <fo:block margin-bottom="5mm">
+               <fo:block text-decoration="underline">Kollasjonering og koding</fo:block>Henninge Margrethe Solberg, Mette Witting</fo:block>
+            <fo:block break-before="page"/>
+
+
+
+            <fo:block width="100%" text-align="right" padding-right="20mm">11</fo:block>
+
+
+            <fo:list-block>
+               <fo:list-item>
+                  <fo:list-item-label>
+                     <fo:block>*</fo:block>
+                  </fo:list-item-label>
+                  <fo:list-item-body>
+                     <fo:block margin-left="5mm">H vil ...</fo:block>
+                  </fo:list-item-body>
+               </fo:list-item>
+               <fo:list-item>
+                  <fo:list-item-label>
+                     <fo:block>*</fo:block>
+                  </fo:list-item-label>
+                  <fo:list-item-body>
+                     <fo:block margin-left="5mm">Hun vil flytte fra ham.</fo:block>
+                  </fo:list-item-body>
+               </fo:list-item>
+               <fo:list-item>
+                  <fo:list-item-label>
+                     <fo:block>*</fo:block>
+                  </fo:list-item-label>
+                  <fo:list-item-body>
+                     <fo:block margin-left="5mm">Skilsmisse.</fo:block>
+                  </fo:list-item-body>
+               </fo:list-item>
+               <fo:list-item>
+                  <fo:list-item-label>
+                     <fo:block>*</fo:block>
+                  </fo:list-item-label>
+                  <fo:list-item-body>
+                     <fo:block margin-left="5mm">Han har købt hende.</fo:block>
+                  </fo:list-item-body>
+               </fo:list-item>
+               <fo:list-item>
+                  <fo:list-item-label>
+                     <fo:block>*</fo:block>
+                  </fo:list-item-label>
+                  <fo:list-item-body>
+                     <fo:block margin-left="5mm">Hun har solgt sig.</fo:block>
+                  </fo:list-item-body>
+               </fo:list-item>
+               <fo:list-item>
+                  <fo:list-item-label>
+                     <fo:block>*</fo:block>
+                  </fo:list-item-label>
+                  <fo:list-item-body>
+                     <fo:block margin-left="5mm">Skamfølelsen derover.</fo:block>
+                  </fo:list-item-body>
+               </fo:list-item>
+               <fo:list-item>
+                  <fo:list-item-label>
+                     <fo:block>*</fo:block>
+                  </fo:list-item-label>
+                  <fo:list-item-body>
+                     <fo:block margin-left="5mm">Dette er ikke rent ægteskab.</fo:block>
+                  </fo:list-item-body>
+               </fo:list-item>
+               <fo:list-item>
+                  <fo:list-item-label>
+                     <fo:block>*</fo:block>
+                  </fo:list-item-label>
+                  <fo:list-item-body>
+                     <fo:block margin-left="5mm">Det første var det.</fo:block>
+                  </fo:list-item-body>
+               </fo:list-item>
+               <fo:list-item>
+                  <fo:list-item-label>
+                     <fo:block>*</fo:block>
+                  </fo:list-item-label>
+                  <fo:list-item-body>
+                     <fo:block margin-left="5mm">Det var stiftet i frihed. I frivillighed fra begge sider.</fo:block>
+                  </fo:list-item-body>
+               </fo:list-item>
+               <fo:list-item>
+                  <fo:list-item-label>
+                     <fo:block>*</fo:block>
+                  </fo:list-item-label>
+                  <fo:list-item-body>
+                     <fo:block margin-left="5mm">Dette står ivejen. Å om hun kunde komme til at
+elske ham, således, som han fortjener.</fo:block>
+                  </fo:list-item-body>
+               </fo:list-item>
+               <fo:list-item>
+                  <fo:list-item-label>
+                     <fo:block>*</fo:block>
+                  </fo:list-item-label>
+                  <fo:list-item-body>
+                     <fo:block margin-left="5mm">Det dæmonisk dragende ved det ganske ukendte.</fo:block>
+                  </fo:list-item-body>
+               </fo:list-item>
+               <fo:list-item>
+                  <fo:list-item-label>
+                     <fo:block>*</fo:block>
+                  </fo:list-item-label>
+                  <fo:list-item-body>
+                     <fo:block margin-left="5mm">Hun kender ham jo ikke!</fo:block>
+                  </fo:list-item-body>
+               </fo:list-item>
+               <fo:list-item>
+                  <fo:list-item-label>
+                     <fo:block>*</fo:block>
+                  </fo:list-item-label>
+                  <fo:list-item-body>
+                     <fo:block margin-left="5mm">Just derfor.</fo:block>
+                  </fo:list-item-body>
+               </fo:list-item>
+               <fo:list-item>
+                  <fo:list-item-label>
+                     <fo:block>*</fo:block>
+                  </fo:list-item-label>
+                  <fo:list-item-body>
+                     <fo:block margin-left="5mm">Hun kendte jo ikke W. heller.</fo:block>
+                  </fo:list-item-body>
+               </fo:list-item>
+               <fo:list-item>
+                  <fo:list-item-label>
+                     <fo:block>*</fo:block>
+                  </fo:list-item-label>
+                  <fo:list-item-body>
+                     <fo:block margin-left="5mm">Og så ikveld afgørelsen!</fo:block>
+                  </fo:list-item-body>
+               </fo:list-item>
+               <fo:list-item>
+                  <fo:list-item-label>
+                     <fo:block>*</fo:block>
+                  </fo:list-item-label>
+                  <fo:list-item-body>
+                     <fo:block margin-left="5mm">For hele livet.</fo:block>
+                  </fo:list-item-body>
+               </fo:list-item>
+               <fo:list-item>
+                  <fo:list-item-label>
+                     <fo:block>*</fo:block>
+                  </fo:list-item-label>
+                  <fo:list-item-body>
+                     <fo:block margin-left="5mm">Kanske den rette fremtid forspildt!</fo:block>
+                  </fo:list-item-body>
+               </fo:list-item>
+               <fo:list-item>
+                  <fo:list-item-label>
+                     <fo:block>*</fo:block>
+                  </fo:list-item-label>
+                  <fo:list-item-body>
+                     <fo:block margin-left="5mm">Liv i frihed forspildt.</fo:block>
+                  </fo:list-item-body>
+               </fo:list-item>
+               <fo:list-item>
+                  <fo:list-item-label>
+                     <fo:block>*</fo:block>
+                  </fo:list-item-label>
+                  <fo:list-item-body>
+                     <fo:block margin-left="5mm">Tora, du elsker ham!</fo:block>
+                  </fo:list-item-body>
+               </fo:list-item>
+               <fo:list-item>
+                  <fo:list-item-label>
+                     <fo:block>*</fo:block>
+                  </fo:list-item-label>
+                  <fo:list-item-body>
+                     <fo:block margin-left="5mm">Det er hos ham jeg synes jeg hører til.</fo:block>
+                  </fo:list-item-body>
+               </fo:list-item>
+               <fo:list-item>
+                  <fo:list-item-label>
+                     <fo:block>*</fo:block>
+                  </fo:list-item-label>
+                  <fo:list-item-body>
+                     <fo:block margin-left="5mm">Du skal se ham. Tale med ham.</fo:block>
+                  </fo:list-item-body>
+               </fo:list-item>
+
+               <fo:list-item>
+                  <fo:list-item-label>
+                     <fo:block>*</fo:block>
+                  </fo:list-item-label>
+                  <fo:list-item-body>
+                     <fo:block margin-left="5mm">Hvorledes så du ham?</fo:block>
+                  </fo:list-item-body>
+               </fo:list-item>
+               <fo:list-item>
+                  <fo:list-item-label>
+                     <fo:block>*</fo:block>
+                  </fo:list-item-label>
+                  <fo:list-item-body>
+                     <fo:block margin-left="5mm">Ganske som han var i virkeligheden</fo:block>
+                  </fo:list-item-body>
+               </fo:list-item>
+               <fo:list-item>
+                  <fo:list-item-label>
+                     <fo:block>*</fo:block>
+                  </fo:list-item-label>
+                  <fo:list-item-body>
+                     <fo:block margin-left="5mm">Men igår sa’ du at du så ham som
+han var da I <fo:inline text-decoration="line-through">...</fo:inline> skiltes.</fo:block>
+                  </fo:list-item-body>
+               </fo:list-item>
+               <fo:list-item>
+                  <fo:list-item-label>
+                     <fo:block>*</fo:block>
+                  </fo:list-item-label>
+                  <fo:list-item-body>
+                     <fo:block margin-left="5mm">Sa’ jeg det – Det tar du fejl i.</fo:block>
+                  </fo:list-item-body>
+               </fo:list-item>
+               <fo:list-item>
+                  <fo:list-item-label>
+                     <fo:block>*</fo:block>
+                  </fo:list-item-label>
+                  <fo:list-item-body>
+                     <fo:block margin-left="5mm">Nej. Du sa’ igår at du i første
+øjeblik ikke kendte ham.</fo:block>
+                  </fo:list-item-body>
+               </fo:list-item>
+               <fo:list-item>
+                  <fo:list-item-label>
+                     <fo:block>*</fo:block>
+                  </fo:list-item-label>
+                  <fo:list-item-body>
+                     <fo:block margin-left="5mm">Øjnene.</fo:block>
+                  </fo:list-item-body>
+               </fo:list-item>
+               <fo:inline font-weight="normal" font-size="85%" color="#CC9966">[HIS: Flere linjer imellom foregående punkt på listen og dette punktet pga. manglende plass i kolonnen.]</fo:inline>
+               <fo:list-item>
+                  <fo:list-item-label>
+                     <fo:block>*</fo:block>
+                  </fo:list-item-label>
+                  <fo:list-item-body>
+                     <fo:block margin-left="5mm">Slutning:
+Tora: Nu kommer jeg
+i frivillighed til dig.</fo:block>
+                  </fo:list-item-body>
+               </fo:list-item>
+            </fo:list-block>
+
+
+
+         </fo:block>
+      </fo:flow>
+   </fo:page-sequence>
+</fo:root>

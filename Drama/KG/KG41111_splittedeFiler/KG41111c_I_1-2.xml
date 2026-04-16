@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI
+[
+<!ENTITY % HIS_entiteter SYSTEM
+'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
+%HIS_entiteter;
+]>
+<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+<teiHeader xml:lang="nob">
+<fileDesc>
+<titleStmt>
+<title level="s" type="main">Henrik Ibsens skrifter</title>
+<title level="s" type="sub">Diplomatarisk tekstarkiv</title>
+<title level="a" type="main">Kejser og Galilæer</title>
+<title level="a" type="sub">NBO Ms.4&deg; 1111c, bl. 1&dash;2</title>
+<title level="a" type="origYear">[1871&dash;1873]</title>
+<author>Henrik Ibsen</author>
+<funder>&funder;</funder>
+<editor>&editor;</editor>
+<respStmt>
+<resp>Konvertering fra ekstern transkripsjon til prosjektspesifikk TEI XML</resp>
+<name xml:id="HIS-HB">Hilde Bøe</name>
+</respStmt>
+<respStmt>
+<resp>Kollasjonering og koding</resp>
+<name>Hilde Bøe</name>
+<name xml:id="HIS-IAA">Ingvald Aarstein</name>
+<name xml:id="HIS-MW">Mette Witting</name>
+<name xml:id="HIS-HG">Helene Grønlien</name>
+<name>Ingvald Aarstein</name>
+</respStmt>
+<respStmt>
+<resp>Kodekontroll</resp>
+<name xml:id="HIS-ENW">Ellen Nessheim Wiger</name>
+</respStmt>
+</titleStmt>
+<editionStmt><edition xml:id="KG41111c-0308"/></editionStmt>
+<publicationStmt>
+<publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+<distributor xml:id="HISe">Universitetet i Oslo</distributor>
+<date when="2007" xml:id="HISe-date">2007</date>
+<pubPlace>Oslo</pubPlace>
+</publicationStmt>
+<sourceDesc><p>Denne filen bygger på KG41111_NBO.xml (KG41111_NBO-0208).</p></sourceDesc>
+</fileDesc>
+<encodingDesc>
+<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<editorialDecl>
+<HIS:typography><p>Manuskriptets grafiske oppsett finnes beskrevet i typografibeskrivelsen i KG41111_NBO.xml.</p>
+</HIS:typography>
+<stdVals><p>&stdVals;</p></stdVals>
+<p>&editorialDecl;</p>
+</editorialDecl>
+<tagsDecl>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
+<list>
+<headLabel>id=""</headLabel><headItem>castList/speaker</headItem>
+<label xml:id="KONSTANZIOS"/><item>Kejser Konstantius/Kejser Konstantius, Kejseren Konstantius, Kejser K., K.</item>
+<label xml:id="EUSEBIA"/><item>Kejserinde Eusebia</item>
+<label xml:id="HELENA"/><item>Prinsesse Helena/Fyrstinde Helena, Prinsesse Helena, Helena, Pr. Helena, H.</item>
+<label xml:id="GALLOS"/><item>Prins Gallus/Prins Gallus, Gallus, Pr. G., G.</item>
+<label xml:id="JULIAN"/><item>Prins Julian, Kejser Julian/Prins Julian, Prins Julians stemme, Cæsar Julian, Cæsar, Kejser Julian, C. Julian, Pr. Julian, Julian, J., Jul., C. J., P. J., Pr J., C. Jn, C. Ju. C. Jul.</item>
+<label xml:id="MEMNON"/><item>Memnon/Memnon, Slaven Memnon</item>
+<label xml:id="POTAMON"/><item>Guldsmeden Potamon/En anden kirkegænger, Den anden, Guldsmeden Potamon</item>
+<label xml:id="EUNAPIOS"/><item>Hårskæreren Eunapius, Hårskæreren Eunapios/En kirkegænger, Den første, Hårskæreren Eunapius, Hårskæreren Eunapios, Hårskæreren Eunapeos</item>
+<label xml:id="FRUGTHANDLEREN"/><item>En frugthandler/Frugthandleren</item>
+<label xml:id="SOLDATEN"/><item>-/Soldaten</item>
+<label xml:id="SMINKETKVINDE"/><item>En sminket kvinde/En skøge</item>
+<label xml:id="VAERKBRUDEN"/><item>En værkbruden mand/En værkbruden</item>
+<label xml:id="ENBLIND"/><item>En blind betler/En blind, Den blinde</item>
+<label xml:id="AGATHON"/><item>Agathon, Agathon fra Kappadokia, Kappadokieren Agathon/En stemme, Theodorus, Th., Agathon, Agaton, Fangen, Soldaten, Soldaten Agaton</item>
+<label xml:id="LIBANIOS"/><item>Visdomslæreren Libanius, Taleren Libanios, stadsforstander i Antiokia/Den fremmede, Herren, H., Libanius, Taleren Libanius, L.</item>
+<label xml:id="BASILIOS"/><item>Basilios fra Cæsaræa, Basilius fra Cæsaræa/Basilius fra Cæsaræa, Basilius, Basil. f. Cæsaræa, Basil., B.</item>
+<label xml:id="SALLUST"/><item>Sallust/Præfekten Sallust, Ridderen Sallust, Sallust, Sall., Pf. Sall., Pr. Sall.Præfekten Sallustius</item>
+<label xml:id="MAXIMOS"/><item>Mystikeren Maximos, Magikeren Maximus/Mystikeren Maximus, Magikeren Maximus, Maximus, Magikeren, Max., Mx., M., M. Maximus, M. Max., En stemme, Stemmen</item>
+<label xml:id="EUTHERIOS"/><item>Husmesteren Eutherius/Husmesteren Eutherius, Husmesteren Eutherios, Hovmesteren Eutherius, Husmesteren Euth., Eutherius, Euther., Euth., Hushovm.</item>
+<label xml:id="LEONTES"/><item>Quæstoren Leontius</item>
+<label xml:id="MYRRHA"/><item>Slavinden Myrrha/Slavinden Myrrha, Myrrha</item>
+<label xml:id="DECENTIUS"/><item>Tribunen Decentius/Tribunen Decentius, Præfekten Decentius, Decentius, Decent.</item>
+<label xml:id="SINTULA"/><item>Staldmesteren Sintula/Staldmesteren Sintula, Staldmesteren Scintula, Sintula, Scintula, Sc.</item>
+<label xml:id="FLORENTIUS"/><item>Hærføreren Florentius/Prætorianhøvdingen Florentius, Florentius, Florent., Flor.</item>
+<label xml:id="SEVERUS"/><item>Hærføreren Severus/Hærføreren Severus, Severus</item>
+<label xml:id="FESTUS"/><item>Soldaten Festus (strøket, erstattet med Underføreren Varro)/Centurionen Festus, Tribunen Festus, Tribunen Faustus, Trib. Faustus, Trib. Faust.<note>Festus og Faustus regnes som samme person med id="FESTUS"; rollene har stort sett samme funksjon i ulike utkast til samme parti.</note></item>
+<label xml:id="CHNODOMAR"/><item>-/Chnodomar, Chnod., Chnm</item>
+<label xml:id="ORIBASES"/><item>Lægen Oribases, Livlægen Oribases/Lægen Oribases, Livlægen Oribases, L. Oribases, L. Orib., Orib.</item>
+<label xml:id="LAIPSO"/><item>Underføreren Laipso/Laipso, Tribunen Laipso</item>
+<label xml:id="MAUROS"/><item>Fanebæreren Mauros/Fanebæreren Mauros, Hastaten Maurus, Mauros, Maurus</item>
+<label xml:id="NEVITA"/><item>Krigsøversten Nevita/Hærføreren Nevita, Generalen Nevita, Høvedsmanden Nevita</item>
+<label xml:id="CAESARIOS"/><item>Livlægen Cæsarios/Livlægen Cæsarius</item>
+<label xml:id="THEMISTEOS"/><item>Taleren Themisteos/Taleren Themisteos, Taleren Themisteus, Th.</item>
+<label xml:id="MAMERTINOS"/><item>Taleren Mamertinos/Taleren Mamertinus, Konsulen Mamertinus</item>
+<label xml:id="URSULOS"/><item>Skatmesteren Ursulos/Skatmesteren Ursulus</item>
+<label xml:id="BARBARA"/><item>Kvinden Barbara/En kvinde, Kvinden i vinduet</item>
+<label xml:id="HEKEBOLIOS"/><item>Skriftlæreren Hekebolios/Læreren Hekebolios, Ekebolios, Manden, Ek., Hek., H.</item>
+<label xml:id="DANSERNE"/><item>dansere/Danserne</item>
+<label xml:id="KVINDERNE"/><item>kvinder/Kvinderne</item>
+<label xml:id="MEDON"/><item>Kornhandleren Medon/En borger, Borgeren, Medon</item>
+<label xml:id="MALKOS"/><item>Skatteopkræveren Malkos/En anden borger, Borgeren, Malchus</item>
+<label xml:id="GREGOR"/><item>Gregor fra Nazianz/Gregor fra Nazianz, Presten ved døren, Presten, Gregor, Gr., G.</item>
+<label xml:id="FOKION"/><item>Farveren Fokion, Farveren Faustus/Den tredje kirkegænger, Den tredje, Farveren Faustus<note>'Farveren Faustus' regnes som identisk med 'Farveren Fokion'. I to rollelister står han oppført med navnet Fokion, men i teksten kalles han konsekvent Faustus.</note></item>
+<label xml:id="PUBLIA"/><item>Kvinden Publia/Publia, Den gamle kvinde, Den gamle Publia</item>
+<label xml:id="HILARION"/><item>Hilarion</item>
+<label xml:id="MARIS"/><item>Biskop Maris af Kalkedon/En stemme, Den samme stemme, Den gamle mand, Biskop Maris</item>
+<label xml:id="APOLLONTOGET"/><item>Deltagere i Apollon-toget/Apollotoget</item>
+<label xml:id="FANGETOGET"/><item>De kristne fangers tog/Fangetoget, Fangerne, Fangernes sang, Sang</item>
+<label xml:id="HERAKLEOS"/><item>Digteren Herakleos/Læreren Herakleos</item>
+<label xml:id="APOLLINARIS"/><item>Salmedigteren Apollinaris</item>
+<label xml:id="KYRILLOS"/><item>Læreren Kyrillos</item>
+<label xml:id="GAMMELPREST"/><item>En gammel prest/Den gamle prest</item>
+<label xml:id="SALMESYNGERSKERNE"/><item>-/Kvinderne, Kvindernes kor, Salmesyngerskernes kor</item>
+<label xml:id="FROMENTINOS"/><item>Høvedsmanden Fromentinos/Høvedsmanden Fromentinus</item>
+<label xml:id="JOVIAN"/><item>Krigsøversten Jovian/Krigsøversten Jovian, Hærføreren Jovian</item>
+<label xml:id="NUMA"/><item>Spåmanden Numa</item>
+<label xml:id="HORMISDAS"/><item>Fyrst Hormisdas</item>
+<label xml:id="ANATOLOS"/><item>Livvagtsføreren Anatolos/Livvagtsføreren Anatolos, Livvagtsføreren Antatolos</item>
+<label xml:id="PRISKOS"/><item>Visdomslæreren Priskos/Visdomslæreren Priskos, Visdomslærerne (sammen med Kytron)</item>
+<label xml:id="KYTRON"/><item>Visdomslæreren Kytron/Visdomslæreren Kytron, Visdomslærerne (sammen med Priskos)</item>
+<label xml:id="AMMIAN"/><item>Høvedsmanden Ammian</item>
+<label xml:id="MAKRINA"/><item>Makrina</item>
+<label xml:id="PERSEREN"/><item>En persisk overløber/Perseren</item>
+</list>
+</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+</tagsDecl>
+<variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
+</encodingDesc>
+<profileDesc>
+<langUsage><language ident="nob"/><language ident="dan-nob"/></langUsage>
+<handNotes>
+<handNote scribe="HI-1" xml:id="HI-1" medium="pen" scope="major"><p>Ibsens hånd, sort blekk, med sterkt varierende grad av omhu og skjødesløshet. Hovedhånd.</p></handNote>
+<handNote scribe="HI-2" xml:id="HI-2" medium="pencil"><p>Ibsens hånd, grå blyant. En del rettelser.</p></handNote>
+<handNote scribe="peJE" xml:id="peJE" medium="pencil"><p>Julius Elias har satt til hakeparenteser o.a. med grå blyant.</p></handNote>
+<handNote scribe="peKL" xml:id="peKL" medium="pencil"><p>Karl Larsen har skrevet noen signerte blyantnotater på bl. 300r, 310r, 322r ed grå blyant.</p></handNote>
+<handNote scribe="h1" xml:id="h1" medium="pencil-red"><p>Ukjent hånd (muligens bibliotekar), rød blyant. Foliering.</p></handNote>
+</handNotes>
+</profileDesc>
+<revisionDesc>
+<change><date>05.03.08</date>
+<name>HB</name><title>Koding og splitting</title>
+Opprettet versjonsfil. Kodet inn synkroniseringskoblinger.</change>
+<change><date>19.-28.02.08</date>
+<name>HB</name><title>Oppdatering, samt forberedelser til splitting</title>
+Fullført ms-omkoding. * Gjennomgått ms-typologiseringen og byttet ut notes med workingManuscript flere steder. Erstattet foreldede type-verdier i div/type med gjeldende verdier. Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-basens mal (inkl. pe foran initialene). Byttet ut desc med sub i title/type. Sjekket og evt. oppdatert tallspenn. Byttet ut fw/type/sheet med gathering og rettet sheet til leaf der det var feilkodet. Laget pb-er som korresponderer med TMs bladref. i ms.beskr. Gjennomgått alle noter også mot TMs beskrivelse, gitt oversikt over varia-materiale videre til Nina. Lagt til noter om opprinnelige dobbeltblad og brutte sammenhenger. Ryddet rekkefølgen tilbake til NBOs, slik at den er diplomatarisk. Transkribert legg- og sidetall som TM har lest. * Arkiverte pre-splittversjon (KG41111_pre_splitt.xml).</change>
+</revisionDesc>
+</teiHeader>
+<text xml:id="" type="workingManuscript">
+<pb ed="faksBase" n="221"/>
+<pb ed="faksBase" n="222"/>
+<front>
+<pb ed="faksBase" n="223"/>
+<pb n="[1]r"/>
+<lb/><fw type="leaf" place="top-right" scribe="h1">1</fw>
+<titlePage type="main">
+<docTitle>
+<lb/><titlePart type="main"><xptr type="synopticView_msVersions" xml:id="KG1_1ms"/>Kejser og Galilæer.</titlePart>
+</docTitle>
+</titlePage>
+<pb ed="faksBase" n="224"/>
+<pb n="[1]v"/>
+<pb ed="faksBase" n="225"/>
+<pb n="[2]r"/>
+<lb/><fw type="leaf" place="top-right" scribe="h1">2</fw>
+<div type="contents">
+<list>
+<lb/><head>Indhold:</head>
+<item><list>
+<lb/><item><HIS:hisDel rend="overstrike">I</HIS:hisDel></item>
+<lb/><item><HIS:hisDel rend="overstrike">Julian og visdoms-vennerne</HIS:hisDel>.</item>
+</list></item>
+<item><list>
+<lb/><item><HIS:hisDel rend="erased">I</HIS:hisDel>I</item>
+<lb/><item>Julians frafald.</item>
+</list></item>
+<item><list>
+<lb/><item><HIS:hisDel rend="erased">I</HIS:hisDel>II</item>
+<lb/><item>Julian på kejser-stolen.</item>
+</list></item>
+</list>
+<lb/><figure type="bar"/>
+</div>
+</front>
+<pb ed="faksBase" n="226"/>
+<pb n="[2]v"/>
+<body><p/></body>
+</text>
+</TEI>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI
+[
+<!ENTITY % HIS_entiteter SYSTEM
+'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
+%HIS_entiteter;
+]>
+<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+<teiHeader xml:lang="nob">
+<fileDesc>
+<titleStmt>
+<title level="s" type="main">Henrik Ibsens skrifter</title>
+<title level="s" type="desc">Diplomatarisk tekstarkiv</title>
+<title level="a" type="main">[Episk Brand]</title>
+<title level="a" type="desc">Grunntekst, KBK NKS 2869, 4&deg;, 1, III. bl. 31-32</title>
+<author>Henrik Ibsen</author>
+<funder>&funder;</funder>
+<editor>&editor;</editor>
+<respStmt>
+<resp>Kollasjonering, transkripsjon, koding og korrekturlesing</resp>
+<name xml:id="HIS-HB">Hilde Bøe</name>
+<name xml:id="HIS-ENW">Ellen Nessheim (Wiger)</name>
+</respStmt>
+<respStmt>
+<resp>Kodeoppdatering</resp>
+<name xml:id="HIS-IF">Ingrid Falkenberg</name>
+</respStmt>
+</titleStmt>
+<editionStmt><edition xml:id="BE428691_III_31-32-1108"/></editionStmt>
+<publicationStmt>
+<publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+<distributor xml:id="HISe">Universitetet i Oslo</distributor>
+<date when="2007" xml:id="HISe-date"/>
+<pubPlace>Oslo</pubPlace>
+</publicationStmt>
+<sourceDesc><p>Denne filen bygger på BE428691.xml (BE428691-0106).</p></sourceDesc>
+</fileDesc>
+<encodingDesc>
+<projectDesc><p>&projectDesc-grt-ms;</p></projectDesc>
+<editorialDecl>
+<stdVals><p>&stdVals;</p></stdVals>
+<p>&editorialDecl;</p>
+</editorialDecl>
+<tagsDecl>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+</tagsDecl>
+<variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
+</encodingDesc>
+<profileDesc>
+<langUsage><language ident="nob"/><language ident="dan-nob"/></langUsage>
+<handNotes>
+<handNote scribe="HI-1" xml:id="HI-1" medium="pen1"><p>Henrik Ibsen. Sort penn. Bl. 1-3.</p></handNote>
+<handNote scribe="HI-2" xml:id="HI-2" medium="pen2" scope="major"><p>Henrik Ibsen. Brun penn. Bl. 31-32.</p></handNote>
+<handNote scribe="h4" xml:id="h4" medium="pencil"><p>Ukjent hånd. Blyantfoliering i øvre, høyre hjørne.</p></handNote>
+</handNotes>
+</profileDesc>
+<revisionDesc>
+<change><date>11.11.2008</date>
+<name>HB</name><title>Splittet fil i  versjoner for HISe</title>
+Arkiverte pre-splitting-kopi + lagret kopi som inneholder KBKs ordning av mset (=arkivert kopi). Slettet all logg fra tidligere år, bevart i arkivert kopi.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:id="">
+<body>
+<pb n="[31]r"/><lb/><fw type="leaf" place="top-right" scribe="h4">31</fw>
+<div type="poem" n="2b"><note resp="editor">Bl. 31-32 er kladd til «Fra Modningstiden», jf. bl. 40v-41. Renskriften til «Fra Modningstiden» ender før de tre strofene på 32v, som dermed bare finnes i denne versjonen. </note>
+<lb/><figure type="num"><figDesc><handShift new="HI-2" old="HI-1"/></figDesc></figure>
+<xptr type="synopticView_msVersions" xml:id="BE_375ms"/><lb/><l rend="indent">Han listed <HIS:hisAdd place="offline" hand="HI-1">sig</HIS:hisAdd> <HIS:hisAdd place="offline">ind &dash;</HIS:hisAdd> langs<HIS:hisDel rend="overstrike">med</HIS:hisDel> Væggen <HIS:hisAdd place="inline">&dash;</HIS:hisAdd> til en Krog<HIS:hisDel rend="overstrike">,</HIS:hisDel> &dash;.</l>
+<lb/><l><HIS:hisDel rend="overstrike">Der stod</HIS:hisDel> <HIS:hisDel rend="overwritten">t</HIS:hisDel>To tændte Lys <HIS:hisAdd place="offline"><HIS:hisDel rend="overstrike" hand="HI-1">var satt</HIS:hisDel></HIS:hisAdd> <HIS:hisAdd place="offline" hand="HI-1">stod og brandt</HIS:hisAdd> ved Sengens Ender,</l>
+<lb/><l>hans Faer laa rak paa Ryggen<HIS:hisDel rend="overstrike" hand="HI-1">,</HIS:hisDel> <app type="alteration"><lem><HIS:hisAdd place="offline" hand="HI-1">og holdt</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="HI-1">med</HIS:hisDel></HIS:hisRdg></app> en Bog</l>
+<lb/><l>mod Brystet klemt <HIS:hisDel rend="overstrike" hand="HI-1">i</HIS:hisDel>mellem begge Hænder.</l>
+<lb/><l>Hans Ansigt <app type="alteration"><lem><HIS:hisAdd place="offline" hand="HI-1">var</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="HI-1">tyktes</HIS:hisDel></HIS:hisRdg></app> mere gult end blegt,</l>
+<lb/><l>hans Hud var <HIS:hisAdd place="offline">stramm</HIS:hisAdd> <app type="alteration"><lem><HIS:hisAdd place="offline"><HIS:hisDel rend="overstrike"><unclear>spæn</unclear>dt</HIS:hisDel></HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">blank</HIS:hisDel></HIS:hisRdg></app>, hans Haandled var <HIS:hisDel rend="overstrike" hand="HI-1">saa</HIS:hisDel> <HIS:hisAdd place="offline" hand="HI-1">gan<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>dske</HIS:hisAdd> smale,</l>
+<lb/><l>hans Ben laa strakt i Længden, <app type="alteration"><lem><HIS:hisAdd place="offline">skarpe</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">tynde</HIS:hisDel></HIS:hisRdg></app>, skrale,</l>
+<lb/><l>og over dem faldt Lagnets Folder vegt<unclear reason="writing">.</unclear></l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Der var saa stillt og <app type="alteration"><lem><HIS:hisAdd place="offline">koldt</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">stort</HIS:hisDel></HIS:hisRdg></app> som i en Kirke<HIS:hisAdd place="inline">.</HIS:hisAdd><HIS:hisDel rend="overstrike">,</HIS:hisDel></l>
+<lb/><l><HIS:hisDel rend="overwritten">h</HIS:hisDel>Han kjendte Lugten af det klamme Lin<HIS:hisAdd place="inline">.</HIS:hisAdd><HIS:hisDel rend="overstrike">,</HIS:hisDel></l>
+<lb/><l><HIS:hisDel rend="overwritten">s</HIS:hisDel>Saa mærked han paa Svalen <app type="alteration"><lem><HIS:hisAdd place="offline">sagte</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">lætte</HIS:hisDel></HIS:hisRdg></app> Trin,</l>
+<lb/><l>saa hørtes En ved Stuedøren lirke.</l>
+<lb/><l>Det foer i ham; han saa sig vidskræmt om</l>
+<lb/><l>og rykked inderst i sin Krog tilbage, &dash;</l>
+<lb/><l>og i det samme syntes han der kom</l>
+<lb/><l>e<HIS:hisDel rend="overwritten">t</HIS:hisDel>n nattklædt Kvind<HIS:hisAdd place="inline">e</HIS:hisAdd><HIS:hisDel rend="overstrike">folk</HIS:hisDel> med et Lys i Stage.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Hun gikk <HIS:hisAdd place="offline" hand="HI-1">frem</HIS:hisAdd> til Sengen. Hendes Gang var slingrende;</l>
+<lb/><l>han saa hun <app type="alteration"><lem><HIS:hisAdd place="offline">segned</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">raved</HIS:hisDel></HIS:hisRdg></app> for hvert Steg hun tog;</l>
+<xptr type="synopticView_msVersions" xml:id="BE_376ms"/><lb/><l>hun holdt for Lyset skyggende med Fingrene,</l>
+<lb/><l>han kunde høre hvor hun Vejret drog.</l>
+<lb/><l><HIS:hisAdd place="offline">Med et</HIS:hisAdd> <HIS:hisDel rend="overwritten">H</HIS:hisDel>hun løfted Armen <app type="alteration"><lem><HIS:hisAdd place="offline">strak</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">stærk</HIS:hisDel></HIS:hisRdg></app> og stiv, &dash;</l>
+<lb/><l>og raabte med en Røst, der lød som snøret,</l>
+<HIS:blockSeg type="transposition_lines" xml:id="tp_no2"><note type="transposition_lines" resp="author">2</note><lb/><l><app type="alteration"><lem><HIS:hisAdd place="offline">og dempet</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">idet hun</HIS:hisDel></HIS:hisRdg></app> slog <HIS:hisAdd place="offline">hun</HIS:hisAdd> <HIS:hisDel rend="overstrike">den Døde</HIS:hisDel> <HIS:hisAdd place="offline">Liget</HIS:hisAdd> under Øret:</l></HIS:blockSeg>
+<HIS:blockSeg type="transposition_lines" corresp="tp_no2"><note type="transposition_lines" resp="author">1</note><lb/><l>&lquo;<emph rend="underlined">Det</emph> er fordi du har forspildt mit Liv!&rquo; &dash; &dash;</l></HIS:blockSeg>
+<pb n="[31]v"/>
+<lb/><figure type="num"/>
+<HIS:blockSeg type="transposition_lines_braced" xml:id="tp_no3"><note type="transposition_lines_braced" resp="author">2</note><app type="alteration"><lem><lb/><l><HIS:hisAdd place="offline">Hun vendte sig og gikk, og Lysets Skinn</HIS:hisAdd></l></lem><HIS:hisRdg><l rend="indent1"><HIS:hisDel rend="overstrike">Og i et Sukk hun lettede sit Sind</HIS:hisDel></l></HIS:hisRdg></app>
+<app type="alteration"><lem><lb/><HIS:hisAdd place="offline"><l>faldt paa et Ansigt, som han skulde kjende.</l></HIS:hisAdd></lem><HIS:hisRdg><l><HIS:hisDel rend="overstrike">og var <unclear>fra samme</unclear> Stund fast ej at kjende</HIS:hisDel>;</l></HIS:hisRdg></app></HIS:blockSeg>
+<HIS:blockSeg type="transposition_lines_braced" corresp="tp_no3"><note type="transposition_lines_braced" resp="author">1</note><lb/><l><HIS:hisDel rend="overwritten">d</HIS:hisDel>Det var som om et Dagværk var tilende</l>
+<lb/><l>med Næveslaget paa den Dødes Kind,</l></HIS:blockSeg>
+<lb/><l>hun ligned <emph>To</emph>, som havde skræmt ham førend</l>
+<lb/><l>han mægted male Skrækkens Magt i Ord, &dash;</l>
+<lb/><l>Hun ligned Ørnen <HIS:hisAdd place="offline" hand="HI-1">som hang</HIS:hisAdd> over Stabbursdøren,</l>
+<lb/><l>men endda ligere <seg type="transposition" subtype="words_numbered"><seg rend="supralinear" subtype="no" scribe="HI-1">2</seg><seg subtype="word">hun</seg> <seg rend="supralinear" subtype="no" scribe="HI-1">1</seg><seg subtype="word">var</seg></seg> hans Moer. &dash; &dash;</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Han vaagned stærk som Staal den <app type="alteration"><lem><HIS:hisAdd place="offline">tredje</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">næste</HIS:hisDel></HIS:hisRdg></app> Morgen.</l>
+<lb/><l>Hans Faer var død skjønt Resten var en Drøm<HIS:hisDel rend="overstrike">,</HIS:hisDel><HIS:hisAdd place="inline">.</HIS:hisAdd></l>
+<lb/><l><HIS:hisDel rend="overwritten">h</HIS:hisDel>Han taug med den<HIS:hisAdd place="inline">.</HIS:hisAdd><HIS:hisDel rend="overstrike">,</HIS:hisDel> <HIS:hisDel rend="overwritten">i</HIS:hisDel>I <app type="alteration"><lem><HIS:hisAdd place="offline">sorte Kjolers</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Sørgeklæders</HIS:hisDel></HIS:hisRdg></app> Søm</l>
+<lb/><l>sad alle Piger; de<HIS:hisDel rend="overstrike">t</HIS:hisDel> <app type="alteration"><lem><HIS:hisAdd place="offline">fikk</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">var</HIS:hisDel></HIS:hisRdg></app> <app type="alteration"><lem><HIS:hisAdd place="offline">Pynt i</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Tegn paa</HIS:hisDel></HIS:hisRdg></app> Sorgen.</l>
+<lb/><l>Og Bygdens Skrædder kom tilgaards før Middag;</l>
+<lb/><l>han skulde sy til Gutten; tænk hvor gildt;</l>
+<lb/><l>saa foer der Skyds til Byen; alt gikk stillt; &dash;</l>
+<lb/><l><app type="alteration"><lem><HIS:hisAdd place="offline">stillt drakk de Kaffe, sørged og holdt</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">og der var Travelhed og Sorg og</HIS:hisDel></HIS:hisRdg></app> Fridag.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">En Kveld kom Kisten. Den var dyr og fin;</l>
+<lb/><l>den havde Sølv paa Laaget, kan jeg sandse;</l>
+<lb/><l>saa kom fra Byen nysydd kruset Lin,</l>
+<lb/><l>og rundt i Bygden kjøbtes Grønt til Kranse.</l>
+<lb/><l>Saa kom der Granbar. Da det led mod Slutten</l>
+<lb/><l>stank <app type="alteration"><lem><HIS:hisAdd place="offline">Enkegaarden</HIS:hisAdd></lem><HIS:hisRdg><unclear><HIS:hisDel rend="overstrike">Ligfærdsgaarden</HIS:hisDel></unclear></HIS:hisRdg></app> af en Duft saa rig</l>
+<lb/><l>fra Blomster, Bar og <HIS:hisAdd place="offline"><HIS:hisDel rend="overstrike">Løv og</HIS:hisDel></HIS:hisAdd> <HIS:hisAdd place="infralinear">alskens</HIS:hisAdd> Grønt, at <app type="alteration"><lem><HIS:hisAdd place="offline"><HIS:hisDel rend="overstrike">endnu</HIS:hisDel></HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">altid</HIS:hisDel></HIS:hisRdg></app> Gutten</l>
+<lb/><l>fra den Tid tyk<HIS:hisDel rend="overwritten">t</HIS:hisDel>kes Somren lugte<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel><HIS:hisDel rend="overwritten">t</HIS:hisDel>d Lig.</l>
+<pb n="[32]r"/>
+<lb/><fw type="leaf" place="top-right" scribe="h4">32</fw>
+<lb/><figure type="num"/>
+<xptr type="synopticView_msVersions" xml:id="BE_377ms"/><lb/><l rend="indent">Tilslutt kom Ligfærdsdagen. Baad paa Baad</l>
+<lb/><l>kom roende med <HIS:hisDel rend="erased overwritten"><gap/></HIS:hisDel>So<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>gnets Mænd tilgaarde;</l>
+<lb/><l>i Sørgehuset hørtes halvkvalt Graad,</l>
+<lb/><l>i Gildestuen stod den sorte Baare.</l>
+<lb/><l>Der samled Følget sig og Præsten talte<HIS:hisDel rend="overstrike">.</HIS:hisDel></l>
+<lb/><l>om <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>Lidelser, <HIS:hisAdd place="offline">om</HIS:hisAdd><HIS:hisDel rend="overstrike">o<HIS:hisDel rend="overwritten">m</HIS:hisDel>g</HIS:hisDel> Død<HIS:hisAdd place="inline">,</HIS:hisAdd> <HIS:hisDel rend="overstrike">og</HIS:hisDel> <HIS:hisAdd place="offline">om</HIS:hisAdd> Gravens Ro;</l>
+<lb/><l>men fremfor Alt han Enkesorgen malte</l>
+<lb/><l>saa Gaardens Kvinder græd, <app type="alteration"><lem><HIS:hisAdd place="offline">&dash;</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">og</HIS:hisDel></HIS:hisRdg></app> men Gutten lo.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Han lo i mange Dage; men i Sm<HIS:clarification place="inline">u</HIS:clarification>g.</l>
+<lb/><l>Dog engang lo han saa det skreg i Skyen;</l>
+<lb/><l><HIS:hisDel rend="overwritten">e<gap/></HIS:hisDel>Det var en dag, <app type="alteration"><lem><HIS:hisAdd place="offline">da</HIS:hisAdd></lem><HIS:hisRdg><unclear><HIS:hisDel rend="overstrike">han</HIS:hisDel></unclear></HIS:hisRdg></app> efter vanlig Brug</l>
+<lb/><l>han greb Aviserne, som kom fra Byen.</l>
+<lb/><l>Der stod paa Prent med Kors og Sørgerand</l>
+<lb/><l>i Nummeret for Januar den syvende:</l>
+<lb/><l>&lquo;I forrige Maan<HIS:hisDel rend="overwritten"><unclear>d</unclear></HIS:hisDel>ed har min elskte Mand</l>
+<lb/><l>ved Døden mig forl<HIS:clarification place="inline">a</HIS:clarification>dt den firogtyvende.&rquo; &dash;</l>
+<lb/><figure type="num"/>
+<HIS:hisDel rend="diagonalOverstrike" hand="HI-1">
+<lb/><l rend="indent">Hvor hun var <app type="alteration"><lem><HIS:hisAdd place="offline">virksom</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">driftig</HIS:hisDel></HIS:hisRdg></app> da hun kom paafode!</l>
+<lb/><l>Fra tidligst M<HIS:clarification place="inline">o</HIS:clarification>rgen og til sent paa Kveld</l>
+<lb/><l>hun gikk og syslede med <HIS:hisDel rend="overwritten"><unclear>h</unclear></HIS:hisDel>Husets Stell;</l>
+<lb/><l>selv tog hun Haand i Alt; hun Ingen trode.</l>
+<lb/><l>Og Alt blev gjort i Stillhed og med Ilen,</l>
+<lb/><l>som af en Syg, der nages af en Pligt;</l>
+<lb/><l>det var som om hun ræddedes for Hvilen,</l>
+<lb/><l>for <HIS:hisDel rend="overstrike">Still</HIS:hisDel> Mørket og for Tanker og for sligt.</l></HIS:hisDel>
+<pb n="[32]v"/>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Der var en liden spettet Hund paa Gaarden;</l>
+<lb/><l>den havde Gutten kjær af Hjertens Grund.</l>
+<lb/><l>Saa hændte det en Dag udover Vaaren</l>
+<lb/><l>at Gutten legte med den lille Hund.</l>
+<lb/><l>De laa i<HIS:hisDel rend="overstrike"><gap/></HIS:hisDel> Sandet udenfor ved Væggen,</l>
+<lb/><l>og Hunden loggred, Gutten strøg dens Skind; &dash;</l>
+<xptr type="synopticView_msVersions" xml:id="BE_378ms"/><lb/><l>da foer der som en Trollmagt i hans Sind;</l>
+<lb/><l>han rejste sig, gikk bort og hented Slæggen.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Han svang den; Hunden peb og Gutten slog den;</l>
+<lb/><l>den faldt og skreg, den rejste sig og faldt,</l>
+<lb/><l>det var som om den bad for sig; saa drog den</l>
+<lb/><l>sig unde<HIS:hisDel rend="overwritten"><unclear>n</unclear></HIS:hisDel>r Trappen hylende og halt.</l>
+<lb/><l>Men i den samme Stund, ja endnu førend</l>
+<lb/><l>han saa sin vilde Gjerning fuld og klar,</l>
+<lb/><l>stod Modren tætt ved ham i Stabbursdøren,</l>
+<lb/><l>høj, mager, graa, og spurgte hvad det var.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">&lquo;Sig, hvorfor sl<HIS:hisDel rend="overwritten">og</HIS:hisDel>aar du den?&rquo; hun <app type="alteration"><lem><HIS:hisAdd place="offline">raabte</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">spurgte</HIS:hisDel></HIS:hisRdg></app> vred;</l>
+<lb/><l><app type="alteration"><lem><HIS:hisAdd place="offline">han skalv, &dash; det jog ham</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">saa det jog Gutten</HIS:hisDel></HIS:hisRdg></app> iskoldt gjennem Blodet;</l>
+<lb/><l>ens Moder staar der Skrækk af, som en ved, &dash;</l>
+<lb/><l>men endda tvang han sig og løfted Hodet;</l>
+<lb/><l>han stod endnu med Slæggen bagud bøjet,</l>
+<lb/><l>med Haanden klemt om Skaftet, strak og stiv,<HIS:hisDel rend="overstrike">,</HIS:hisDel></l>
+<lb/><l>og svar<HIS:hisDel rend="overwritten">ed</HIS:hisDel>te med et trodsigt Blink i Øjet:</l>
+<lb/><l>&lquo;Det er fordi den har forspildt mit Liv!&rquo;</l>
+</div>
+</body>
+</text>
+</TEI>

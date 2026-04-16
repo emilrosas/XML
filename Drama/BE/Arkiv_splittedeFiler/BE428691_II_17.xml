@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI
+[
+<!ENTITY % HIS_entiteter SYSTEM
+'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
+%HIS_entiteter;
+]>
+<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+<teiHeader xml:lang="nob">
+<fileDesc>
+<titleStmt>
+<title level="s" type="main">Henrik Ibsens skrifter</title>
+<title level="s" type="desc">Diplomatarisk tekstarkiv</title>
+<title level="a" type="main">[Episk Brand]</title>
+<title level="a" type="desc">Grunntekst, KBK NKS 2869, 4&deg;, 1, II. bl. 17</title>
+<author>Henrik Ibsen</author>
+<funder>&funder;</funder>
+<editor>&editor;</editor>
+<respStmt>
+<resp>Kollasjonering, transkripsjon, koding og korrekturlesing</resp>
+<name xml:id="HIS-HB">Hilde Bøe</name>
+<name xml:id="HIS-ENW">Ellen Nessheim (Wiger)</name>
+</respStmt>
+<respStmt>
+<resp>Kodeoppdatering</resp>
+<name xml:id="HIS-IF">Ingrid Falkenberg</name>
+</respStmt>
+</titleStmt>
+<editionStmt><edition xml:id="BE428691_II_17-1108"/></editionStmt>
+<publicationStmt>
+<publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+<distributor xml:id="HISe">Universitetet i Oslo</distributor>
+<date when="2007" xml:id="HISe-date"/>
+<pubPlace>Oslo</pubPlace>
+</publicationStmt>
+<sourceDesc><p>Denne filen bygger på BE428691.xml (BE428691-0106).</p></sourceDesc>
+</fileDesc>
+<encodingDesc>
+<projectDesc><p>&projectDesc-grt-ms;</p></projectDesc>
+<editorialDecl>
+<stdVals><p>&stdVals;</p></stdVals>
+<p>&editorialDecl;</p>
+</editorialDecl>
+<tagsDecl>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+</tagsDecl>
+<variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
+</encodingDesc>
+<profileDesc>
+<langUsage><language ident="nob"/><language ident="dan-nob"/></langUsage>
+<handNotes>
+<handNote scribe="HI-1" xml:id="HI-1" medium="pen1"><p>Henrik Ibsen. Sort penn. Bl. 1-3.</p></handNote>
+<handNote scribe="HI-2" xml:id="HI-2" medium="pen2" scope="major"><p>Henrik Ibsen. Brun penn. Bl. 4-17, 31-32.</p></handNote>
+<handNote scribe="h4" xml:id="h4" medium="pencil"><p>Ukjent hånd. Blyantfoliering i øvre, høyre hjørne.</p></handNote>
+</handNotes>
+</profileDesc>
+<revisionDesc>
+<change><date>11.11.2008</date>
+<name>HB</name><title>Splittet fil i  versjoner for HISe</title>
+Arkiverte pre-splitting-kopi + lagret kopi som inneholder KBKs ordning av mset (=arkivert kopi). Slettet all logg fra tidligere år, bevart i arkivert kopi.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:id="">
+<body>
+<pb n="[17]r"/><lb/><fw type="leaf" place="top-right" scribe="h4">17</fw>
+<div type="poem" n="4a">
+<xptr type="synopticView_msVersions" xml:id="BE_400ms"/><lb/><head>To paa Kirkevejen.
+<lb/><HIS:hisDel rend="overstrike">4</HIS:hisDel>.</head>
+<lb/><l rend="indent">Der <app type="alteration"><lem><HIS:hisAdd place="offline">er et Sagn om Trollet</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">tales om en Jutul</HIS:hisDel></HIS:hisRdg></app>, som kom gaaende</l>
+<lb/><l><app type="alteration"><lem><HIS:hisAdd place="offline">og skulde over ved</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike"><unclear>ned</unclear>over Fjellet langs</HIS:hisDel></HIS:hisRdg></app> <app type="alteration"><lem><HIS:hisAdd place="offline">en Fjord etsteds</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">med T<unclear>otak</unclear>vand</HIS:hisDel></HIS:hisRdg></app></l>
+<lb/><l><HIS:hisDel rend="overstrike">han</HIS:hisDel> <HIS:hisAdd place="offline">men</HIS:hisAdd> skræved ikke vidt nok og blev staaende</l>
+<lb/><l>paa hundred Favne Vand. Det rakk tilknæs.</l>
+<lb/><l>For slige Karle synes <app type="alteration"><lem><HIS:hisAdd place="offline">Stien</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Sluget</HIS:hisDel></HIS:hisRdg></app> dannet,</l>
+<lb/><l>som bær fra Tinderne til Fjorden ned;</l>
+<lb/><l>to Dale deler den i trende Led, &dash;</l>
+<lb/><l>en tre Trins Trapp fra Vidden ned til Vandet.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Gaa timevis og vend saa oppad Øjet,</l>
+<lb/><l>og du vil tro du staar ved Bergets Fod;</l>
+<lb/><l>men nedenfor, hvor Dalens Løb er bøjet,</l>
+<lb/><l>du har det andet Braadyb for din Fod.</l>
+<lb/><l>Den øvre Dal er trang og sort, skjønt sneløs,</l>
+<lb/><l><emph>der</emph> haster <sic>Isvansbækkene</sic> forbi,</l>
+<lb/><l>den nedre Dal er trang og graa og træløs, &dash;</l>
+<lb/><l>der dør og fødes Mennesker, som vi.</l>
+<pb n="[17]v"/>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Men tro kun ej du er ved Fjorden fremme</l>
+<lb/><l>hvor spredte Sjæle <HIS:hisAdd place="offline">bor</HIS:hisAdd><HIS:hisDel rend="overstrike">bor</HIS:hisDel> <HIS:hisAdd place="offline"><HIS:hisDel rend="overstrike">gaar</HIS:hisDel></HIS:hisAdd> som Grænseskjæll</l>
+<lb/><l>imellem Liv paa Vang og Død paa Fjell,</l>
+<lb/><l>hvor Sol er kold, <HIS:hisDel rend="overstrike">og</HIS:hisDel> <HIS:hisAdd place="offline">hvor</HIS:hisAdd> Armodsdom har hjemme.</l>
+<lb/><l>De <emph>nedre</emph> Galler maa du nedad stige;</l>
+<lb/><l>der ser du Bygder af et andet Slags;</l>
+<lb/><l><app type="alteration"><lem><HIS:hisAdd place="offline">paa</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">de</HIS:hisDel></HIS:hisRdg></app> favnestore Akre gulner Ax,</l>
+<lb/><l>der <app type="alteration"><lem><HIS:hisAdd place="offline" hand="HI-1">modner Frugt</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="HI-1">voxer Gr<unclear>øde</unclear></HIS:hisDel></HIS:hisRdg></app>; der<HIS:hisAdd place="offline">nede bor</HIS:hisAdd> <HIS:hisDel rend="overstrike">er du blandt</HIS:hisDel> de Rige.</l>
+<lb/><figure type="num"/>
+<xptr type="synopticView_msVersions" xml:id="BE_401ms"/><lb/><l rend="indent">Det var i øvre Dalen at de mødtes.</l>
+<lb/><l>De <app type="alteration"><lem><HIS:hisAdd place="offline">kom<HIS:hisDel rend="overstrike"><gap/></HIS:hisDel></HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">var</HIS:hisDel></HIS:hisRdg></app> som Lynskyer <HIS:hisDel rend="overwritten">;</HIS:hisDel>sejlende til Slag;</l>
+<lb/><l>de st<HIS:hisDel rend="overwritten">ødte</HIS:hisDel>yred sammen; der gikk Glimt og Brag</l>
+<lb/><l>af Uvejrstævnet, derpaa bort de stødtes.</l>
+<lb/><l>De to tog Vejen ende nedad Bakken,</l>
+<lb/><l>men Brand gikk langsmed Stupet; han var kjendt; &dash;</l>
+<lb/><l>han spændte Skræppen højere paa Nakken,</l>
+<lb/><l>skred <HIS:hisDel rend="overwritten">f</HIS:hisDel>Fod for Fod med Øjet indadvendt.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Korsdragerlykken lyste paa hans Pande.</l>
+<lb/><l><app type="alteration"><lem><HIS:hisAdd place="offline">Han svælged i</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Ja, har du kjendt</HIS:hisDel></HIS:hisRdg></app> den <app type="alteration"><lem><HIS:hisAdd place="offline" hand="HI-1">pinefulde</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="HI-1">smertelige</HIS:hisDel></HIS:hisRdg></app> Fryd</l>
+<lb/><l>en Sjæl kan suge af det Ord &lquo;Fortryd&rquo; &dash;</l>
+<lb/><l><app type="alteration"><lem><HIS:hisAdd place="offline">paa Sprang</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">i S<unclear>vi</unclear>ngning</HIS:hisDel></HIS:hisRdg></app> <HIS:hisAdd place="inline">i</HIS:hisAdd>mellem <HIS:hisDel rend="overstrike" hand="HI-1"><HIS:hisDel rend="overwritten"><gap/></HIS:hisDel><gap/></HIS:hisDel> <HIS:hisAdd place="offline" hand="HI-1">favne</HIS:hisAdd> og forbande?</l>
+<lb/><l>Han havde mødt den sommerglade Sanger</l>
+<lb/><l>han havde døvet Sangen med sit Ord,</l>
+<lb/><l>han havde vendt hans Syn fra Sol til Jord<HIS:hisDel rend="overwritten">,</HIS:hisDel><HIS:hisAdd place="inline" hand="HI-1">; &dash;</HIS:hisAdd></l>
+<lb/><l><HIS:hisAdd place="infralinear" hand="HI-1">han saa sit Værk</HIS:hisAdd> <app type="alteration"><lem><HIS:hisAdd place="offline" hand="HI-1"><HIS:hisDel rend="overstrike" hand="HI-1">nu saa han det</HIS:hisDel> og vred sig i</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="HI-1">han havde øved Ondt og</HIS:hisDel></HIS:hisRdg></app> <app type="alteration"><lem><HIS:hisDel rend="overstrike" hand="HI-1"><HIS:hisAdd place="offline">nød</HIS:hisAdd></HIS:hisDel></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="HI-1"><gap/></HIS:hisDel></HIS:hisRdg></app> sin Anger.</l>
+</div>
+</body>
+</text>
+</TEI>

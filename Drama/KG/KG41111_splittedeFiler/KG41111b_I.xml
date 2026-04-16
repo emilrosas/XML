@@ -1,0 +1,1647 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI
+[
+<!ENTITY % HIS_entiteter SYSTEM
+'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
+%HIS_entiteter;
+]>
+<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+<teiHeader xml:lang="nob">
+<fileDesc>
+<titleStmt>
+<title level="s" type="main">Henrik Ibsens skrifter</title>
+<title level="s" type="sub">Diplomatarisk tekstarkiv</title>
+<title level="a" type="main">Kejser og Galilæer</title>
+<title level="a" type="sub">NBO Ms.4&deg; 1111b, bl. 7&dash;32</title>
+<title level="a" type="origYear">[1871&dash;1873]</title>
+<author>Henrik Ibsen</author>
+<funder>&funder;</funder>
+<editor>&editor;</editor>
+<respStmt>
+<resp>Konvertering fra ekstern transkripsjon til prosjektspesifikk TEI XML</resp>
+<name xml:id="HIS-HB">Hilde Bøe</name>
+</respStmt>
+<respStmt>
+<resp>Kollasjonering og koding</resp>
+<name>Hilde Bøe</name>
+<name xml:id="HIS-IAA">Ingvald Aarstein</name>
+<name xml:id="HIS-MW">Mette Witting</name>
+<name xml:id="HIS-HG">Helene Grønlien</name>
+<name>Ingvald Aarstein</name>
+</respStmt>
+<respStmt>
+<resp>Kodekontroll</resp>
+<name xml:id="HIS-ENW">Ellen Nessheim Wiger</name>
+</respStmt>
+</titleStmt>
+<editionStmt><edition xml:id="KG41111b-0308"/></editionStmt>
+<publicationStmt>
+<publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+<distributor xml:id="HISe">Universitetet i Oslo</distributor>
+<date when="2007" xml:id="HISe-date">2007</date>
+<pubPlace>Oslo</pubPlace>
+</publicationStmt>
+<sourceDesc><p>Denne filen bygger på KG41111_NBO.xml (KG41111_NBO-0208).</p></sourceDesc>
+</fileDesc>
+<encodingDesc>
+<projectDesc><p>&projectDesc-tekstkilde;</p></projectDesc>
+<editorialDecl>
+<HIS:typography><p>Manuskriptets grafiske oppsett finnes beskrevet i typografibeskrivelsen i KG41111_NBO.xml.</p>
+</HIS:typography>
+<stdVals><p>&stdVals;</p></stdVals>
+<p>&editorialDecl;</p>
+</editorialDecl>
+<tagsDecl>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
+<list>
+<headLabel>id=""</headLabel><headItem>castList/speaker</headItem>
+<label xml:id="KONSTANZIOS"/><item>Kejser Konstantius/Kejser Konstantius, Kejseren Konstantius, Kejser K., K.</item>
+<label xml:id="EUSEBIA"/><item>Kejserinde Eusebia</item>
+<label xml:id="HELENA"/><item>Prinsesse Helena/Fyrstinde Helena, Prinsesse Helena, Helena, Pr. Helena, H.</item>
+<label xml:id="GALLOS"/><item>Prins Gallus/Prins Gallus, Gallus, Pr. G., G.</item>
+<label xml:id="JULIAN"/><item>Prins Julian, Kejser Julian/Prins Julian, Prins Julians stemme, Cæsar Julian, Cæsar, Kejser Julian, C. Julian, Pr. Julian, Julian, J., Jul., C. J., P. J., Pr J., C. Jn, C. Ju. C. Jul.</item>
+<label xml:id="MEMNON"/><item>Memnon/Memnon, Slaven Memnon</item>
+<label xml:id="POTAMON"/><item>Guldsmeden Potamon/En anden kirkegænger, Den anden, Guldsmeden Potamon</item>
+<label xml:id="EUNAPIOS"/><item>Hårskæreren Eunapius, Hårskæreren Eunapios/En kirkegænger, Den første, Hårskæreren Eunapius, Hårskæreren Eunapios, Hårskæreren Eunapeos</item>
+<label xml:id="FRUGTHANDLEREN"/><item>En frugthandler/Frugthandleren</item>
+<label xml:id="SOLDATEN"/><item>-/Soldaten</item>
+<label xml:id="SMINKETKVINDE"/><item>En sminket kvinde/En skøge</item>
+<label xml:id="VAERKBRUDEN"/><item>En værkbruden mand/En værkbruden</item>
+<label xml:id="ENBLIND"/><item>En blind betler/En blind, Den blinde</item>
+<label xml:id="AGATHON"/><item>Agathon, Agathon fra Kappadokia, Kappadokieren Agathon/En stemme, Theodorus, Th., Agathon, Agaton, Fangen, Soldaten, Soldaten Agaton</item>
+<label xml:id="LIBANIOS"/><item>Visdomslæreren Libanius, Taleren Libanios, stadsforstander i Antiokia/Den fremmede, Herren, H., Libanius, Taleren Libanius, L.</item>
+<label xml:id="BASILIOS"/><item>Basilios fra Cæsaræa, Basilius fra Cæsaræa/Basilius fra Cæsaræa, Basilius, Basil. f. Cæsaræa, Basil., B.</item>
+<label xml:id="SALLUST"/><item>Sallust/Præfekten Sallust, Ridderen Sallust, Sallust, Sall., Pf. Sall., Pr. Sall.Præfekten Sallustius</item>
+<label xml:id="MAXIMOS"/><item>Mystikeren Maximos, Magikeren Maximus/Mystikeren Maximus, Magikeren Maximus, Maximus, Magikeren, Max., Mx., M., M. Maximus, M. Max., En stemme, Stemmen</item>
+<label xml:id="EUTHERIOS"/><item>Husmesteren Eutherius/Husmesteren Eutherius, Husmesteren Eutherios, Hovmesteren Eutherius, Husmesteren Euth., Eutherius, Euther., Euth., Hushovm.</item>
+<label xml:id="LEONTES"/><item>Quæstoren Leontius</item>
+<label xml:id="MYRRHA"/><item>Slavinden Myrrha/Slavinden Myrrha, Myrrha</item>
+<label xml:id="DECENTIUS"/><item>Tribunen Decentius/Tribunen Decentius, Præfekten Decentius, Decentius, Decent.</item>
+<label xml:id="SINTULA"/><item>Staldmesteren Sintula/Staldmesteren Sintula, Staldmesteren Scintula, Sintula, Scintula, Sc.</item>
+<label xml:id="FLORENTIUS"/><item>Hærføreren Florentius/Prætorianhøvdingen Florentius, Florentius, Florent., Flor.</item>
+<label xml:id="SEVERUS"/><item>Hærføreren Severus/Hærføreren Severus, Severus</item>
+<label xml:id="FESTUS"/><item>Soldaten Festus (strøket, erstattet med Underføreren Varro)/Centurionen Festus, Tribunen Festus, Tribunen Faustus, Trib. Faustus, Trib. Faust.<note resp="editor">Festus og Faustus regnes som samme person med id="FESTUS"; rollene har stort sett samme funksjon i ulike utkast til samme parti.</note></item>
+<label xml:id="CHNODOMAR"/><item>-/Chnodomar, Chnod., Chnm</item>
+<label xml:id="ORIBASES"/><item>Lægen Oribases, Livlægen Oribases/Lægen Oribases, Livlægen Oribases, L. Oribases, L. Orib., Orib.</item>
+<label xml:id="LAIPSO"/><item>Underføreren Laipso/Laipso, Tribunen Laipso</item>
+<label xml:id="MAUROS"/><item>Fanebæreren Mauros/Fanebæreren Mauros, Hastaten Maurus, Mauros, Maurus</item>
+<label xml:id="NEVITA"/><item>Krigsøversten Nevita/Hærføreren Nevita, Generalen Nevita, Høvedsmanden Nevita</item>
+<label xml:id="CAESARIOS"/><item>Livlægen Cæsarios/Livlægen Cæsarius</item>
+<label xml:id="THEMISTEOS"/><item>Taleren Themisteos/Taleren Themisteos, Taleren Themisteus, Th.</item>
+<label xml:id="MAMERTINOS"/><item>Taleren Mamertinos/Taleren Mamertinus, Konsulen Mamertinus</item>
+<label xml:id="URSULOS"/><item>Skatmesteren Ursulos/Skatmesteren Ursulus</item>
+<label xml:id="BARBARA"/><item>Kvinden Barbara/En kvinde, Kvinden i vinduet</item>
+<label xml:id="HEKEBOLIOS"/><item>Skriftlæreren Hekebolios/Læreren Hekebolios, Ekebolios, Manden, Ek., Hek., H.</item>
+<label xml:id="DANSERNE"/><item>dansere/Danserne</item>
+<label xml:id="KVINDERNE"/><item>kvinder/Kvinderne</item>
+<label xml:id="MEDON"/><item>Kornhandleren Medon/En borger, Borgeren, Medon</item>
+<label xml:id="MALKOS"/><item>Skatteopkræveren Malkos/En anden borger, Borgeren, Malchus</item>
+<label xml:id="GREGOR"/><item>Gregor fra Nazianz/Gregor fra Nazianz, Presten ved døren, Presten, Gregor, Gr., G.</item>
+<label xml:id="FOKION"/><item>Farveren Fokion, Farveren Faustus/Den tredje kirkegænger, Den tredje, Farveren Faustus<note resp="editor">'Farveren Faustus' regnes som identisk med 'Farveren Fokion'. I to rollelister står han oppført med navnet Fokion, men i teksten kalles han konsekvent Faustus.</note></item>
+<label xml:id="PUBLIA"/><item>Kvinden Publia/Publia, Den gamle kvinde, Den gamle Publia</item>
+<label xml:id="HILARION"/><item>Hilarion</item>
+<label xml:id="MARIS"/><item>Biskop Maris af Kalkedon/En stemme, Den samme stemme, Den gamle mand, Biskop Maris</item>
+<label xml:id="APOLLONTOGET"/><item>Deltagere i Apollon-toget/Apollotoget</item>
+<label xml:id="FANGETOGET"/><item>De kristne fangers tog/Fangetoget, Fangerne, Fangernes sang, Sang</item>
+<label xml:id="HERAKLEOS"/><item>Digteren Herakleos/Læreren Herakleos</item>
+<label xml:id="APOLLINARIS"/><item>Salmedigteren Apollinaris</item>
+<label xml:id="KYRILLOS"/><item>Læreren Kyrillos</item>
+<label xml:id="GAMMELPREST"/><item>En gammel prest/Den gamle prest</item>
+<label xml:id="SALMESYNGERSKERNE"/><item>-/Kvinderne, Kvindernes kor, Salmesyngerskernes kor</item>
+<label xml:id="FROMENTINOS"/><item>Høvedsmanden Fromentinos/Høvedsmanden Fromentinus</item>
+<label xml:id="JOVIAN"/><item>Krigsøversten Jovian/Krigsøversten Jovian, Hærføreren Jovian</item>
+<label xml:id="NUMA"/><item>Spåmanden Numa</item>
+<label xml:id="HORMISDAS"/><item>Fyrst Hormisdas</item>
+<label xml:id="ANATOLOS"/><item>Livvagtsføreren Anatolos/Livvagtsføreren Anatolos, Livvagtsføreren Antatolos</item>
+<label xml:id="PRISKOS"/><item>Visdomslæreren Priskos/Visdomslæreren Priskos, Visdomslærerne (sammen med Kytron)</item>
+<label xml:id="KYTRON"/><item>Visdomslæreren Kytron/Visdomslæreren Kytron, Visdomslærerne (sammen med Priskos)</item>
+<label xml:id="AMMIAN"/><item>Høvedsmanden Ammian</item>
+<label xml:id="MAKRINA"/><item>Makrina</item>
+<label xml:id="PERSEREN"/><item>En persisk overløber/Perseren</item>
+</list>
+</tagUsage></namespace>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace>
+</tagsDecl>
+<variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
+</encodingDesc>
+<profileDesc>
+<langUsage><language ident="nob"/><language ident="dan-nob"/></langUsage>
+<handNotes>
+<handNote scribe="HI-1" xml:id="HI-1" medium="pen" scope="major"><p>Ibsens hånd, sort blekk, med sterkt varierende grad av omhu og skjødesløshet. Hovedhånd.</p></handNote>
+<handNote scribe="HI-2" xml:id="HI-2" medium="pencil"><p>Ibsens hånd, grå blyant. En del rettelser.</p></handNote>
+<handNote scribe="peJE" xml:id="peJE" medium="pencil"><p>Julius Elias har satt til hakeparenteser o.a. med grå blyant.</p></handNote>
+<handNote scribe="peKL" xml:id="peKL" medium="pencil"><p>Karl Larsen har skrevet noen signerte blyantnotater på bl. 300r, 310r, 322r ed grå blyant.</p></handNote>
+<handNote scribe="h1" xml:id="h1" medium="pencil-red"><p>Ukjent hånd (muligens bibliotekar), rød blyant. Foliering.</p></handNote>
+</handNotes>
+</profileDesc>
+<revisionDesc>
+<change><date>12.01.09</date>
+<name>HMS</name><title>Endret koding</title>
+Fjernet resp="editor" i filas eneste ptr-kode, da vi har vedtatt at dette resp-attributtet er overflødig.</change>
+<change><date>19.02.08</date>
+<name>HB</name><title>Oppdatering, samt forberedelser til splitting</title>
+Sjekket SGREP-søk. Gjennomgått og kodet om del/rend/overwritten, alle øvrige app, frittstående add, expan, clarification, rekkefølge på add og del/rend/overstrike + unclear og del/rend/overstrike utenfor app, sjekket restore. * Fjernet logg, msDescription, typography (finnes i KG41111_NBO.xml).</change>
+<change><date>19.02.08</date>
+<name>HB</name><title>Oppdatering, samt forberedelser til splitting</title>
+Samkjørte handList med TMs ms-beskr., laget identifiserte hand-verdier på id-basens mal (inkl. pe foran initialene). Byttet ut desc med sub i title/type. Sjekket og evt. oppdatert tallspenn. Byttet ut fw/type/sheet med gathering. Laget pb-er som korresponderer med TMs bladref. i ms.beskr. * Arkiverte pre-splittversjon (KG41111_pre_splitt.xml).</change>
+</revisionDesc>
+</teiHeader>
+<text xml:id="" type="workingManuscript">
+<body>
+<pb ed="faksBase" n="169"/>
+<pb n="[7]r"/>
+<lb/><fw type="gathering" place="top-left">1.</fw><note resp="author" scribe="HI-1" place="top-right">24/7. 71. &dash;</note>
+<lb/><fw type="leaf" place="top-right" scribe="h1">7</fw>
+<div type="act" n="1-1">
+<xptr type="synopticView_msVersions" xml:id="KG_31ms"/>
+<lb/><head>Første handling.</head>
+<lb/><HIS:hisStage>(Påskenat i Byzantz. Skuepladsen forestil&typHyp;
+<lb/>ler en lystgård ved det kejserlige palats. Slottets
+<lb/>portal med høj marmortrappe til venstre; <app type="alteration"><lem><HIS:hisAdd place="offline">i bag&typHyp;</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">til&typHyp;</HIS:hisDel></HIS:hisRdg></app>
+<lb/><app type="alteration"><lem><HIS:hisAdd place="offline">grunden</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">højre</HIS:hisDel></HIS:hisRdg></app> en balustrade med udsigt over Bospo&typHyp;
+<lb/>rus og den asiatiske kyst; til højre en op&typHyp;
+<lb/>lyst kirke.)</HIS:hisStage>
+<lb/><HIS:hisStage>(Gudstjeneste. <HIS:stageRole>Store skarer af andægtige</HIS:stageRole>
+<lb/>strømmer ind i kirken. <HIS:stageRole>Betlere</HIS:stageRole>, <HIS:stageRole>krøblinge</HIS:stageRole>
+<lb/>og <HIS:stageRole>blinde</HIS:stageRole> udenfor. <HIS:stageRole>Hedenske tilskuere</HIS:stageRole> holder
+<lb/>sig ængsteligt tilbage.)</HIS:hisStage>
+<lb/><HIS:hisSp><HIS:spOpener><speaker>Hymne fra kirken</speaker>.</HIS:spOpener>
+<lb/><l>Evindelig være</l>
+<lb/><l>korset pris og ære!</l>
+<lb/><l>Slangen er henvejret</l>
+<lb/><l>i afgrundens svælg;</l>
+<lb/><l>lammet har sejret;</l>
+<lb/><l>på jorden er helg!</l></HIS:hisSp>
+<lb/><HIS:hisSp who="EUNAPIOS"><HIS:spOpener><speaker>En kirkegænger</speaker><HIS:hisAdd place="inline">Barbereren Eunapius</HIS:hisAdd>
+<lb/><HIS:hisStage>(støder en tilskuer tilside.)</HIS:hisStage></HIS:spOpener>
+<lb/><p>Af vejen, hedning!</p></HIS:hisSp>
+<pb ed="faksBase" n="170"/>
+<pb n="[7]v"/>
+<lb/><HIS:hisSp><HIS:spOpener><speaker>Tilskueren</speaker>.</HIS:spOpener>
+<lb/><p>Sagte, herre!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="POTAMON"><HIS:spOpener><speaker>En anden kirkegænger</speaker>.<HIS:hisAdd place="inline">Guldsmeden Potamon.</HIS:hisAdd></HIS:spOpener>
+<lb/><p>Han mukker!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="EUNAPIOS"><HIS:spOpener><speaker>Den første</speaker>.</HIS:spOpener>
+<lb/><p>Hund! Hund!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="FOKION"><HIS:spOpener><speaker>En tredje kirkegænger</speaker>.<HIS:hisAdd place="offline">Farveren Faustus.</HIS:hisAdd></HIS:spOpener>
+<lb/><p>Mukke imod os! Imod kristne! Imod mænd
+<lb/>af kejserens egen tro!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="EUNAPIOS"><HIS:spOpener><speaker>Den første</speaker>.
+<lb/><HIS:hisStage>(kaster ham omkuld.)</HIS:hisStage></HIS:spOpener>
+<lb/><p>I smudset med dig!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="POTAMON"><HIS:spOpener><speaker>Den anden</speaker>.</HIS:spOpener>
+<lb/><p>Ret så! Lig der, ligesom dine guder!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="FOKION"><HIS:spOpener><speaker>Den tredje</speaker>
+<lb/><HIS:hisStage>(slår ham med sin stok.)</HIS:hisStage></HIS:spOpener>
+<lb/><p>Tag det; og det; og det!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="EUNAPIOS"><HIS:spOpener><speaker>Den første</speaker>.
+<lb/><HIS:hisStage>(sparker ham.)</HIS:hisStage></HIS:spOpener>
+<lb/><p>Og der; og der! Jeg skal mygne dit hedning-skind!</p></HIS:hisSp>
+<lb/><HIS:hisStage>(Tilskueren skynder sig ud.)</HIS:hisStage>
+<lb/><HIS:hisSp who="FOKION"><HIS:spOpener><speaker>Den <app type="alteration"><lem><HIS:hisAdd place="offline">tredje</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">anden</HIS:hisDel></HIS:hisRdg></app> kirkegænger</speaker>.</HIS:spOpener>
+<lb/><p>Ufatteligt, o I brødre! Her vover de sig frem
+<lb/>en hellig nat. &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="POTAMON"><HIS:spOpener><speaker>Den anden</speaker>.</HIS:spOpener>
+<lb/><p>Lige for slottets trappe &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="EUNAPIOS"><HIS:spOpener><speaker>Den første</speaker>.</HIS:spOpener>
+<lb/><p>Spærrer vejen for kirkens rene lemmer!</p></HIS:hisSp>
+<pb ed="faksBase" n="171"/>
+<pb n="[8]r"/>
+<lb/><fw type="leaf" place="top-right" scribe="h1">8</fw>
+<lb/><HIS:hisSp><HIS:spOpener><speaker>En fjerde kirkegænger</speaker>
+<lb/><HIS:hisStage>(i trængselen.)</HIS:hisStage></HIS:spOpener>
+<lb/><p>Er Donatister rene?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="FOKION"><HIS:spOpener><speaker>Den tredje</speaker>.</HIS:spOpener>
+<lb/><p>Hvad? Donatist? Er du en Donatist?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="EUNAPIOS"><HIS:spOpener><speaker>Den første</speaker>.</HIS:spOpener>
+<lb/><p>Hvad nu? Er ikke du det samme?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="FOKION"><HIS:spOpener><speaker>Den tredje</speaker>.</HIS:spOpener>
+<lb/><p>Jeg? Jeg! Gid lynet slå din tunge!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="POTAMON"><HIS:spOpener><speaker>Den anden</speaker>
+<lb/><HIS:hisStage>(gør korsets tegn.)</HIS:hisStage></HIS:spOpener>
+<lb/><p>Gid pest og bylder &dash;!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="FOKION"><HIS:spOpener><speaker>Den tredje</speaker>.</HIS:spOpener>
+<lb/><p>En Donatist! Du ådsel; du rådne træ!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="POTAMON"><HIS:spOpener><speaker>Den anden</speaker>.</HIS:spOpener>
+<lb/><p>Ret så; ret så!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="FOKION"><HIS:spOpener><speaker>Den tredje</speaker>.</HIS:spOpener>
+<lb/><p>Spån på Satans ildsted!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="POTAMON"><HIS:spOpener><speaker>Den anden</speaker>.</HIS:spOpener>
+<lb/><p>Ret så! Skæld ham; skæld ham, kære broder!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="FOKION"><HIS:spOpener><speaker>Den tredje</speaker>
+<lb/><HIS:hisStage>(støder den anden bort.)</HIS:hisStage></HIS:spOpener>
+<lb/><p>Hold mund; vig langt ifra mig! Nu kender
+<lb/>jeg dig; du er Manikæeren Thoas!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="EUNAPIOS"><HIS:spOpener><speaker>Den første</speaker>.</HIS:spOpener>
+<lb/><p>En Manikæer! En stinkende kætter! Tvi, tvi!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="POTAMON"><HIS:spOpener><speaker>Den anden</speaker>.
+<lb/><HIS:hisStage>(til den tredje.)</HIS:hisStage></HIS:spOpener>
+<lb/><p>Eja! Det er jo Faustus fra Antiokia! Kainiten!</p></HIS:hisSp>
+<pb ed="faksBase" n="172"/>
+<pb n="[8]v"/>
+<lb/><HIS:hisSp who="EUNAPIOS"><HIS:spOpener><speaker>Den første</speaker>.</HIS:spOpener>
+<lb/><p>Ve mig, som er kommen i løgnens samkvem!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="FOKION"><HIS:spOpener><speaker>Den tredje</speaker>.</HIS:spOpener>
+<lb/><p>Ve mig, som hjalp en djævelens søn!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="EUNAPIOS"><HIS:spOpener><speaker>Den første</speaker>
+<lb/><HIS:hisStage>(slår ham på øret.)</HIS:hisStage></HIS:spOpener>
+<lb/><p>Tag det som løn for hjælpen!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="FOKION"><HIS:spOpener><speaker>Den <HIS:hisDel rend="overstrike">første</HIS:hisDel> tredje</speaker>
+<lb/><HIS:hisStage>(slår igen.)</HIS:hisStage></HIS:spOpener>
+<lb/><p>Anathema!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="POTAMON"><HIS:spOpener><speaker>Den anden</speaker>.</HIS:spOpener>
+<lb/><p>Forbandet, forbandet være I begge!</p></HIS:hisSp>
+<lb/><HIS:hisStage>(almindeligt slagsmål. Der høres musik
+<lb/>fra venstre.)</HIS:hisStage>
+<lb/><HIS:hisSp><HIS:spOpener><speaker>Råb blandt soldaterne</speaker>.</HIS:spOpener>
+<lb/><p>Kejseren kommer!</p></HIS:hisSp>
+<lb/><HIS:hisStage>(De stridende skilles ad; mængden strømmer
+<lb/>ind i kirken.)</HIS:hisStage>
+<lb/><HIS:hisSp><HIS:spOpener><speaker>Hymne fra højalteret</speaker>.</HIS:spOpener>
+<lb/><l>Slangen er henvejret</l>
+<lb/><l>i afgrundens svælg;</l>
+<lb/><l>lammet har sejret; &dash;</l>
+<lb/><l>på jorden er helg!</l></HIS:hisSp>
+<lb/><HIS:hisStage>(Hoffet kommer i optog. Prester med røgelsekar
+<lb/>går foran. I midten Kejser Konstantius, en smuk
+<lb/>mand på 34 år; han er i kejserlig dragt, men bleg
+<lb/>og med et mørkt ængsteligt blik. Kejserinde Eu&typHyp;
+<lb/>sebia går ved hans venstre hånd. Bag
+<lb/>efter dem går prins Julian. Han er i hofdragt
+<pb ed="faksBase" n="173"/>
+<pb n="[9]r"/>
+<lb/><fw type="leaf" place="top-right" scribe="h1">9</fw>
+<lb/>bredskuldret, med urolige øjne og påfaldende lader.
+<lb/>Kejserens unge søster, prinsesse Helena følger
+<lb/>efter, omringet af damer. Hoffolk slutter laget.
+<lb/>Kejserens livslave, Memnon er iblandt følget.)</HIS:hisStage>
+<lb/><HIS:hisSp who="KONSTANZIOS"><HIS:spOpener><speaker>Kejser Konstantius</speaker>
+<lb/><HIS:hisStage>(standser pludselig, vender sig om til Julian og
+<lb/>spørger hvast:)</HIS:hisStage></HIS:spOpener>
+<lb/><p>Hvor er Gallus?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>
+<lb/><HIS:hisStage>(viger forfærdet.)</HIS:hisStage></HIS:spOpener>
+<lb/><p>Gallus? Hvad vil du ham? Hvad skal <HIS:hisDel rend="overwritten">g</HIS:hisDel>Gallus?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KONSTANZIOS"><HIS:spOpener><speaker>Kejser Konstantius</speaker>.</HIS:spOpener>
+<lb/><p>Der greb jeg dig!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Herre!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="EUSEBIA"><HIS:spOpener><speaker>Kejserinde Eusebia</speaker>.</HIS:spOpener>
+<lb/><p>Kom; kom!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KONSTANZIOS"><HIS:spOpener><speaker>Kejser Konstantius</speaker>.</HIS:spOpener>
+<lb/><p>Samvittigheden skreg. Hvad pønser I to
+<lb/>på?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Vi?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KONSTANZIOS"><HIS:spOpener><speaker>Kejser Konstantius</speaker>.</HIS:spOpener>
+<lb/><p>Du og han!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="EUSEBIA"><HIS:spOpener><speaker>Kejserinde Eusebia</speaker>.</HIS:spOpener>
+<lb/><p>O, kom, kom, Konstantius!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KONSTANZIOS"><HIS:spOpener><speaker>Kejser Konstantius</speaker>.</HIS:spOpener>
+<lb/><p>Så sort en dåd. Tusende gange nej! Lyver
+<lb/>nogen jer på, skal han falde for øksen.
+<pb ed="faksBase" n="174"/>
+<pb n="[9]v"/>
+<lb/><HIS:hisStage>(drager ham tilside.)</HIS:hisStage> O, lad os holde sammen, Julian.
+<lb/>Dyre frænde lad os det.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Alt ligger i dine hænder, herre! O, stræk dem
+<lb/>i nåde over os.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KONSTANZIOS"><HIS:spOpener><speaker>Kejser Konstantius</speaker>.</HIS:spOpener>
+<lb/><p>Mine hænder? Hvad tænkte du om mine hænder?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.
+<lb/><HIS:hisStage>(griber hans hænder og kysser dem.)</HIS:hisStage></HIS:spOpener>
+<lb/><p>Kejserens hænder er hvide og kølige.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KONSTANZIOS"><HIS:spOpener><speaker>Kejser Konstantius</speaker>.</HIS:spOpener>
+<lb/><p>Intet mærke ætset ind. Se, se!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>De er som rosenbladene her i måneskinsnatten.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="EUSEBIA"><HIS:spOpener><speaker>Kejserinde Eusebia</speaker>.</HIS:spOpener>
+<lb/><p>Fremad, det er på tiden.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KONSTANZIOS"><HIS:spOpener><speaker>Kejser Konstantius</speaker>.</HIS:spOpener>
+<lb/><p>At skulle i kirken! Jeg, jeg! O, bed for mig, Julian!
+<lb/>De vil byde mig den hellige vin! Jeg ser den! Den
+<lb/>funkler som ildsluer i guldkalken! <HIS:hisStage>(skriger)</HIS:hisStage>
+<lb/>Bølger i et blodhav! O, bed, bed for mig!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="EUSEBIA"><HIS:spOpener><speaker>Kejserinde Eusebia</speaker></HIS:spOpener>
+<lb/><p>Kejseren er syg.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Prinsesse Helena</speaker>.</HIS:spOpener>
+<lb/><p>Hvor er Cæsarius? Livlægen, livlægen, &dash; hent ham!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="EUSEBIA"><HIS:spOpener><speaker>Kejserinde Eusebia</speaker>
+<lb/><HIS:hisStage>(vinker.)</HIS:hisStage></HIS:spOpener>
+<lb/><p>Memnon, gode Memnon, &dash; kom, kom!</p>
+<lb/><HIS:hisStage>(taler dæmpet med slaven.)</HIS:hisStage></HIS:hisSp>
+<pb ed="faksBase" n="175"/>
+<pb n="[10]r"/>
+<lb/><fw type="leaf" place="top-right" scribe="h1">10</fw>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Herre, har du barmhjertighed, så skik mig
+<lb/>langt herfra.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KONSTANZIOS"><HIS:spOpener><speaker>Kejser Konstantius</speaker>.</HIS:spOpener>
+<lb/><p>Hvor vil du hen?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Til Egypten; til den store ensomhed. Her
+<lb/>flokkes onde tanker om mig; jeg kan ikke
+<lb/>værge mig længer.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KONSTANZIOS"><HIS:spOpener><speaker>Kejser Konstantius</speaker>.</HIS:spOpener>
+<lb/><p>Til ensomheden? Hvad vil du der? Forræder,
+<lb/>du vil gruble. Jeg forbyder dig at gruble.
+<xptr type="synopticView_msVersions" xml:id="KG_3100ms"/><lb/>Kræv noget bedre &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="MEMNON"><HIS:spOpener><speaker>Memnon</speaker>.
+<lb/><HIS:hisStage>(til kejseren.)</HIS:hisStage></HIS:spOpener>
+<lb/><p>Det er på tiden &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KONSTANZIOS"><HIS:spOpener><speaker>Kejser Konstantius</speaker>.</HIS:spOpener>
+<lb/><p>Nei, nej; jeg vil ikke &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="MEMNON"><HIS:spOpener><speaker>Memnon</speaker>.
+<lb/><HIS:hisStage>(griber ham om håndledet.)</HIS:hisStage></HIS:spOpener>
+<lb/><p>Kom, kom, siger jeg &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KONSTANZIOS"><HIS:spOpener><speaker>Kejser Konstantius</speaker>.</HIS:spOpener>
+<lb/><p>Ind i Herrens hus.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="MEMNON"><HIS:spOpener><speaker>Memnon</speaker>.</HIS:spOpener>
+<lb/><p>Og glem så ikke &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KONSTANZIOS"><HIS:spOpener><speaker>Kejser Konstantius</speaker>.
+<lb/><HIS:hisStage>(til Julian.)</HIS:hisStage></HIS:spOpener>
+<lb/><p>Gallus skal vente mig her.</p></HIS:hisSp>
+<lb/><HIS:hisStage>(<HIS:hisDel rend="overwritten">t</HIS:hisDel>Toget går mod kirken. Betlere krøblinge
+<pb ed="faksBase" n="176"/>
+<pb n="[10]v"/>
+<lb/>og blinde flokkes om kejseren.)</HIS:hisStage>
+<lb/><HIS:hisSp who="VAERKBRUDEN"><HIS:spOpener><speaker>En værkbruden</speaker>.</HIS:spOpener>
+<lb/><p>O, herre, lad mig røre ved din kjortelflig,
+<lb/>at jeg kan vorde helbredet.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="ENBLIND"><HIS:spOpener><speaker>En blind</speaker>.</HIS:spOpener>
+<lb/><p>Bed for mig, du landenes hersker, at jeg får
+<lb/>mit syn igen!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KONSTANZIOS"><HIS:spOpener><speaker>Kejser Konstantius</speaker>.</HIS:spOpener>
+<lb/><p>Vær trøstig, søn! Memnon, strø sølvpenge for
+<lb/>dem. Ind, ind!</p></HIS:hisSp>
+<lb/><HIS:hisStage>(Hoffet bevæger sig ind i kirken; kun Julian
+<lb/>bliver tilbage udenfor.)</HIS:hisStage>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>
+<lb/><HIS:hisStage>(efter en kort stilhed.)</HIS:hisStage></HIS:spOpener>
+<lb/><p>O, min broder; min Gallus! Men nu, her, i den
+<lb/>hellige påskenat &dash;! Nej, nej, det er utænkeligt.
+<lb/><HIS:hisStage>(lytter mod kirken)</HIS:hisStage> Kejseren i bøn og tilbedelse.
+<lb/>Hvor sangen bruser stærkt. Det er som vingeslag
+<lb/>af store fugle. Bønnens fugle. Hvor højt kan
+<lb/>de fugle stige? O, den som vidste &dash; <HIS:hisStage>(vender
+<lb/>sig og støder imod den blinde.)</HIS:hisStage> Se dig for, ven!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="ENBLIND"><HIS:spOpener><speaker>Den blinde</speaker>.</HIS:spOpener>
+<lb/><p>Jeg er blind, herre.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Giv tål; det dages snart; hør, hør hvor kejseren
+<lb/>beder for dit syn.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="ENBLIND"><HIS:spOpener><speaker>Den blinde</speaker>.</HIS:spOpener>
+<lb/><p>Hvem er du, som spotter den blinde.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>En broder i blindhed. <HIS:hisStage>(han går over mod
+<pb ed="faksBase" n="177"/>
+<pb n="[11]r"/>
+<lb/><fw type="gathering" place="top-left">2.</fw><fw type="leaf" place="top-right" scribe="h1">11</fw>
+<lb/>den anden side, hvor han synes at se noget, der
+<lb/>foruroliger ham.)</HIS:hisStage> Hvad gør <emph>han</emph>? Vil ikke være
+<lb/>set; &dash; spejder op mod vinduerne; mod bue&typHyp;
+<lb/>gangen; tør ikke nærme sig &dash;. O, om det var
+<lb/>en &dash; <HIS:hisStage>(råber ud.)</HIS:hisStage> Stå; stå! Hvem søger du?
+<lb/>Er det Gallus &dash;?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>En stemme</speaker>
+<lb/><HIS:hisStage>(med et glædesskrig udenfor:)</HIS:hisStage></HIS:spOpener>
+<lb/><p>Julian!</p></HIS:hisSp>
+<lb/><HIS:hisStage>(En ung mand, i simple klæder og med van&typHyp;
+<lb/>dringsstav kommer til syne mellem træerne.)</HIS:hisStage>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Ha, er det &dash;! Nej &dash;; jo, jo &dash; Theodorus!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>
+<lb/><HIS:hisStage>(omfavner ham.)</HIS:hisStage></HIS:spOpener>
+<lb/><p>Julian &dash; o, hvor stor en lykke!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Theodorus! Ven og broder &dash;! Og du her!
+<lb/>Den lange vej fra Kappadocien &dash;</p></HIS:hisSp>
+<lb/><note resp="author" scribe="HI-1" place="margin-right">Kan der komme noget godt
+<lb/>fra Kappadocien.</note>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker></HIS:spOpener>
+<lb/><p>Jeg kom imorges &dash;; jeg søgte dig; men alle
+<lb/>vagter viste mig bort &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Forstår sig. Men lad mig se på dig. Du
+<lb/>er vokset, Theodorus; du ser stærk ud &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>Og du er blegere.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Stadens luft, Theodorus; &dash; det er ikke som
+<pb ed="faksBase" n="178"/>
+<pb n="[11]v"/>
+<lb/>i Macellum. &dash; <HIS:hisDel rend="overstrike">Ja, Macellum &dash;; Macellum;
+<lb/>tidt nævner jeg det navn, så mange gange i
+<lb/>rad, at det får en fremmed klang</HIS:hisDel> &dash;; er
+<lb/>du træt, Theodorus?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>Slet ikke; der var hvile nok på skibet.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker></HIS:spOpener>
+<lb/><p>O, men lad os dog sætte os; tæt sammen; se så &dash;
+<lb/><HIS:hisStage>(drager ham ned på nogle omkastede søjlerester)</HIS:hisStage>
+<lb/>er det ikke, som i børneårene &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>Jeg for dine fødder ligesom da.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Nej, nej &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>O, lad mig ligge så.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Hvor fyldigt dit hår er blevet &dash; og hvor lokket.
+<lb/>Men Mardonius &dash; hvorledes går det ham &dash;? Nu
+<lb/>er han vel næsten hvidhåret &dash;?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>Han er ganske hvidhåret.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Og mindes han mig?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>Kan du tro andet? <HIS:hisAdd place="inline">Hvem mindes dig ikke der?
+<lb/>Er du ikke som en mythe, o. s. v<gap reason="binding"/></HIS:hisAdd></p></HIS:hisSp>
+<join target="sp_1a sp_1b"/>
+<lb/><HIS:hisSp who="JULIAN" xml:id="sp_1a"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Nej, nej, jeg ved det nok. Ja, det var lykkelige
+<lb/>år for os og for Gallus. Ja, Gallus var nu så meget
+<lb/>ældre; men vi to &dash;. <HIS:hisDel rend="overstrike">Kan du mindes da vi kom</HIS:hisDel></p></HIS:hisSp>
+<pb ed="faksBase" n="179"/>
+<pb n="[12]r"/>
+<lb/><fw type="leaf" place="top-right" scribe="h1">12</fw>
+<HIS:hisDel rend="diagonalOverstrike" hand="HI-2">
+<lb/><HIS:hisSp who="JULIAN" xml:id="sp_1b"><p>den første dag? Vi kom fra Arethusa med
+<lb/>Markus? Husker du Markus &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>Jeg tror ikke jeg så ham.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Nu er han biskop.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>Det siges i Kappadocien at hans
+<lb/>tro ikke er ren.</p></HIS:hisSp>
+</HIS:hisDel>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener><p>
+<HIS:hisAdd place="margin"><note resp="editor">Tilføyelsen er skrevet i høyre marg.</note>
+<lb/>Han <HIS:hisDel rend="overstrike" hand="HI-2">trak om med os</HIS:hisDel> som med to
+<lb/>rædde fugle.
+</HIS:hisAdd>
+<lb/><HIS:hisDel rend="overstrike" hand="HI-2">Hans sind var rent, det ved je</HIS:hisDel>g visst.O,
+<lb/>men et må du dog sige mig; kirken &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>Kirken? Over den hellige Mamas's grav?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Som Gallus og jeg byggede. Gallus fik
+<lb/>sin fløj færdig; men jeg; det vilde aldrig
+<lb/>ret lykkes &dash; hvorledes er det gåt siden &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>Det gik ikke. Bygfolkene sagde at det ikke
+<lb/>var gørligt på den måde.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener><p>
+<lb/><note resp="author" scribe="HI-1" place="inBetweenLines">martyren var falsk &dash;</note>
+<lb/>Ikke det? &dash; Nej, nej &dash; Gud vilde ikke vide af
+<lb/>mig, Theodorus.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>O, tal ikke så. Var ikke Gud stærk i dig
+<lb/>da du drog mig ud af hedenskabets mørke,
+<lb/>og gav mig lys for alle tider, &dash; du, et barn,
+<lb/>som du dengang var!</p></HIS:hisSp>
+<pb ed="faksBase" n="180"/>
+<pb n="[12]v"/>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Ja, den sag er mig som en drøm.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>Og dog så livsalig en sandhed.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>
+<lb/><HIS:hisStage>(bittert.)</HIS:hisStage></HIS:spOpener>
+<lb/><p>Det skulde været <emph>nu</emph>? Hvor tog jeg ild og ord fra &dash;?
+<lb/><HIS:hisStage>(stirrer ud.)</HIS:hisStage> Så du den?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>Hvilken?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Stjernen, som faldt &dash; der &dash; bag de to cypresser.
+<lb/>Har jeg fortalt dig, hvad min moder drømte
+<lb/>natten før jeg blev født?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>Det mindes jeg ikke.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Hun drømte at hun fødte Achilles.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>Og tror du endnu så stærkt på drømme som
+<lb/>før<unclear reason="writing">?</unclear></p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Hvorfor spørger du.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>Du skal få høre. Men der er så meget, jeg
+<lb/>gad vide. Fortæl mig om livet i staden;
+<lb/>om dig selv; om kejseren &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>
+<lb/><HIS:hisStage>(ser visst på ham.)</HIS:hisStage></HIS:spOpener>
+<pb ed="faksBase" n="181"/>
+<pb n="[13]r"/>
+<lb/><fw type="leaf" place="top-right" scribe="h1">13</fw>
+<lb/><p>Hvorfor vil du vide om alt det?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>Kan det undre dig?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Hvem har du talt med her, før du traf mig.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>Ikke med nogen.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Hvad tid kom du?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>Imorges.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Og straks vil du vide &dash;. Tror du kanske ik&typHyp;
+<lb/>ke jeg er lykkelig her? Er der nogen, som
+<lb/>har sagt det?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>Nej, ingen, men &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>O, tilgiv mig, Theodorus, ven &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>Hvad? Hvilket?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>
+<lb/><HIS:hisStage>(lytter angst)</HIS:hisStage></HIS:spOpener>
+<lb/><p>Hys! <HIS:hisStage>(beroligende)</HIS:hisStage> Der var ingen. &dash; Skulde
+<lb/>jeg ikke være lykkelig? Her? Her er jo al
+<lb/>min slægt samlet. Ja, alle dem, som lever.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>Og kejseren er dig jo som i faders sted.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Ja, den plads var ledig. Kejseren fylder den.
+<pb ed="faksBase" n="182"/>
+<pb n="[13]v"/>
+<lb/>Kejseren er stor. <HIS:hisDel rend="overstrike">Da han red gennem Konstan</HIS:hisDel>&typHyp;
+<lb/><HIS:hisDel rend="overstrike">tins-buen i Rom, bøjde han hovedet, for
+<lb/>ikke at støde mod, &dash; således &dash; mindes du ikke
+<lb/>den gule gårdshane i Macellum &dash; han duk</HIS:hisDel>&typHyp;
+<lb/><HIS:hisDel rend="overstrike">ked også med nakken &dash; når &dash;</HIS:hisDel></p></HIS:hisSp>
+<HIS:hisDel rend="overstrike"><lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>O, men &dash;</p></HIS:hisSp></HIS:hisDel>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><HIS:hisDel rend="overstrike"><speaker>Julian</speaker></HIS:hisDel>.</HIS:spOpener>
+<lb/><p><HIS:hisDel rend="overstrike">Le ikke; det kan koste dig livet!</HIS:hisDel> Hvor&typHyp;
+<lb/>for fritter du mig så meget? Ikke et ord
+<lb/>mere får du ud, før du siger mig hvad
+<lb/>du vil i Konstantinopel.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>Jeg kommer i Guds ærind.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Ja, her er jo hans rette stad; det ny, det kejser&typHyp;
+<lb/>lige Jerusalem. <HIS:hisDel rend="overstrike">Du skal se det selv. Du vil
+<lb/>snuble over troen. Du må bruge albuerne</HIS:hisDel>,
+<lb/><HIS:hisDel rend="overstrike">skal du komme frem for kristendom i de
+<lb/>trange stræder. Hofmænd og gildinger tvister
+<lb/>om frelserens væsenslighed med faderen. Hen&typHyp;
+<lb/>ter du en barber for at få dit hår krøllet,
+<lb/>vil han spørge dig om Guds søn er skabt
+<lb/>af intet. Forrige uge var her slagsmål
+<lb/>mellem borgerne; der måtte soldater til
+<lb/>at drive dem fra hverandre &dash; Ved du hvad
+<lb/>tvisten gjaldt? Om guddommen udgør tre
+<lb/>substanser eller tre hypostaser. Hvad er
+<lb/>din mening?</HIS:hisDel></p></HIS:hisSp>
+<pb ed="faksBase" n="183"/>
+<pb n="[14]r"/>
+<lb/><fw type="leaf" place="top-right" scribe="h1">14</fw>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><HIS:hisDel rend="overstrike"><speaker>Julian</speaker></HIS:hisDel>.</HIS:spOpener>
+<lb/><HIS:hisDel rend="overstrike"><p>Sa<unclear>ndt</unclear></p></HIS:hisDel></HIS:hisSp> <HIS:hisSp who="AGATHON"><HIS:spOpener><HIS:hisDel rend="overstrike"><speaker>Theodorus</speaker></HIS:hisDel>.</HIS:spOpener>
+<lb/><p><HIS:hisDel rend="overstrike">O, hvad ved jeg</HIS:hisDel> &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><HIS:hisDel rend="overstrike"><speaker>Julian</speaker></HIS:hisDel>.</HIS:spOpener>
+<lb/><p><HIS:hisDel rend="overstrike">Sandt; sandt. Jeg vidste heller intet da
+<lb/>jeg kom fra Macellum. Her er meget</HIS:hisDel>,
+<lb/><HIS:hisDel rend="overstrike">meget at lære</HIS:hisDel>. Men vogt dig for en &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>Hvem?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>For ham, &dash; den forfærdelige &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>For hvem? For hvem?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>For Libanius &dash; for taleren &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>Ja, ja &dash; den store Libanius &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Har du hørt om ham.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>Kan du spørge? Går ikke hans ry over
+<lb/>hele Asien?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>I et år har han lært her.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p><HIS:hisDel rend="overstrike">Gud beskærme mig for det!</HIS:hisDel> Og du ken&typHyp;
+<lb/>der ham?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>
+<lb/><HIS:hisStage>(slår kors for sig.)</HIS:hisStage></HIS:spOpener>
+<lb/><p>Gud beskærme mig for det. Havde jeg
+<pb ed="faksBase" n="184"/>
+<pb n="[14]v"/>
+<lb/>en kvindes mod, vilde jeg bede kejseren om
+<lb/>Libanius's hoved på et sølvfad. <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>Ja, han
+<lb/>er forfærdelig. Fornægtelsen flyder dårende
+<lb/>fra hans læber som digt og sang om Troer
+<lb/>og Achæer. Han binder de unges øjne
+<lb/>og sjæle, så de følger ham hvor han går.
+<lb/>Theodorus! <HIS:hisStage>(rejser sig hæftigt.)</HIS:hisStage></p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.
+<lb/><HIS:hisStage>(rejser sig ligeså.)</HIS:hisStage></HIS:spOpener>
+<lb/><p>Ja.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Ved du hvad jeg tror. Han er ånden, som
+<lb/>lå under de syv segl. Nu er han løs &dash; Tror
+<lb/>du det ikke? Jeg har set det.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>Hvad har du set.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Det var ifjor; en nat i September da pe&typHyp;
+<lb/>sten myrded og myrded i Konstantinopel.
+<lb/>Rædselen gjorde mig syg, jeg sad en nat
+<lb/>på terassen. Da begyndte det at falde,
+<lb/>stjerne på stjerne &dash; højt oppefra faldt
+<lb/>de i lange buer og sluk<unclear reason="writing">nede</unclear> før de nåde jord<gap reason="binding"/>
+<lb/>Sligt syn har jeg aldrig set. Det svimled for
+<lb/>mig og det var ligesom egnen skifted; jeg
+<lb/>sad ikke længer ved Bosporus &dash; men
+<lb/>ude ved det svælgende dybs befæstning &dash;
+<lb/>Da hørte jeg hærskare<unclear reason="writing">rne</unclear>s sang &dash; men det
+<lb/>var ingen jubel, det var en himlens j<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>am&typHyp;
+<pb ed="faksBase" n="185"/>
+<pb n="[15]r"/>
+<lb/><fw type="gathering" place="top-left">3.</fw><fw type="leaf" place="top-right" scribe="h1">15</fw>
+<lb/>mer; &lquo;de når os ikke; ve, ve, ingen når
+<lb/>helt op &dash; sang de &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>Hvem nåede ikke op.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Det så jeg da; det var ikke stjerner, der
+<lb/>faldt; det var menneskesjæle, sjælene af
+<lb/>dem, som pesten myrded &dash; en højere, en
+<lb/>lavere, alle måtte de til jorden igen &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>O, hvad sælsomt syn.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Jeg så mere; jeg så en stor slette; den var
+<lb/>fuld af drenge <HIS:hisAdd place="offline">fauner</HIS:hisAdd> som legede; de havde bundet fi<unclear reason="writing">ne</unclear>
+<lb/>fine tråde om benene på fuglene, der
+<lb/>steg &dash; ja &dash; de var som fugle &dash;, og de steg
+<lb/>og steg til tråden stod stram, da dalte
+<lb/>de og dalte dybere, dybere, helt til
+<lb/>jorden og ned gennem jorden, ned i af&typHyp;
+<lb/>grunden &dash; og der var jubel &dash; vi får
+<lb/>dem, vi får dem alle alle &dash; sang
+<lb/>det &dash; og jeg hører den endnu, den sang
+<lb/>fra himlen og fra afgrunden og fra
+<lb/>menigheden i alle kirke<unclear reason="writing">r</unclear> &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>O, Kristus!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Ved du, hvem de var, der så ud som
+<lb/>drenge &dash; det var alle de hedenske lærere
+<pb ed="faksBase" n="186"/>
+<pb n="[15]v"/>
+<lb/>jeg kendte dem på de korte kapper.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>Hvad sælsom åndens gave, at du kan se
+<lb/>alt dette.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Du ved jeg kunde det alt som barn &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>Ja visst, jeg ved nok &dash; helst ved fuldmåne</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker></HIS:spOpener>
+<lb/><p><sic>Hels</sic> da &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>Er det en nåde, så har du meddelt den til
+<lb/>mig &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker></HIS:spOpener>
+<lb/><p>Hvad mener du &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker></HIS:spOpener>
+<lb/><p>Ja, det er gennem samlivet med dig &dash;
+<lb/>ved du hvad der drev mig til Konstanti&typHyp;
+<lb/>nopel &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker></HIS:spOpener>
+<lb/><p>Nu &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Th.</speaker></HIS:spOpener>
+<lb/><p>Et syn &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker></HIS:spOpener>
+<lb/><p>Et syn siger du &dash;! O, tal, tal!
+<lb/>Nej, stille; vent; &dash; der kommer nogen.</p></HIS:hisSp>
+<lb/><HIS:hisStage>(En høj smuk mand i en kort kappe kommer
+<lb/>fra venstre, fulgt af to slaver der bærer bøger og
+<lb/>pergamentruller; de går alle tre hen mod skibstrappen)</HIS:hisStage>
+<pb ed="faksBase" n="187"/>
+<pb n="[16]r"/>
+<lb/><fw type="leaf" place="top-right" scribe="h1">16</fw>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>Herren</speaker>.</HIS:spOpener>
+<lb/><p>Tab intet i vandet. Husk på, det er mere end
+<lb/>guld, I bærer.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Med tilladelse, gives der noget, som er mere
+<lb/>værd end guld?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>Herren</speaker>.</HIS:spOpener>
+<lb/><p>Kan du købe visdom for guld?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Sandt, sandt. Men hvor hen går du med dine
+<lb/>skatte?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>Herren</speaker>.</HIS:spOpener>
+<lb/><p>Til Athen:</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Til Athen? O, rige herre, så ejer du jo ikke
+<lb/>din egen rigdom.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>Herren</speaker>.</HIS:spOpener>
+<lb/><p>Hvi så?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Er det vismands værk at føre ugler til Athen?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>Herren</speaker>.</HIS:spOpener>
+<lb/><p>Mine ugler forliges ikke med dagslyset i kejser&typHyp;
+<lb/>staden.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Sandt, herre, her er meget lys.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>Herren</speaker>.</HIS:spOpener>
+<lb/><p><HIS:hisDel rend="overstrike">Et tvefoldigt; lys fra Chi og lys fra Kappa</HIS:hisDel>.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>
+<lb/><HIS:hisStage>(dæmpet.)</HIS:hisStage></HIS:spOpener>
+<lb/><HIS:hisDel rend="overstrike"><p>Hvad mener han, Julian?</p></HIS:hisDel></HIS:hisSp>
+<pb ed="faksBase" n="188"/>
+<pb n="[16]v"/>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>
+<lb/><HIS:hisDel rend="overstrike"><HIS:hisStage>(griber ham om armen)</HIS:hisStage></HIS:hisDel></HIS:spOpener>
+<lb/><p><HIS:hisDel rend="overstrike">Stille, røb mig ikke</HIS:hisDel>!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>Herren</speaker>.
+<lb/><HIS:hisStage>(sagte.)</HIS:hisStage></HIS:spOpener>
+<lb/><p>Ha; Julian! <HIS:hisStage>(betragter ham opmærksomt men dulgt.)</HIS:hisStage></p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:hisDel rend="overstrike"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener></HIS:hisDel>
+<lb/><p><HIS:hisDel rend="overstrike">Hvorfor ikke et trefoldigt</HIS:hisDel>?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>Herren</speaker>.
+<lb/><HIS:hisStage>(som før.)</HIS:hisStage></HIS:spOpener>
+<lb/><p>Ja, ja, det er ham. <HIS:hisStage>(højt)</HIS:hisStage> Du tænker på lyset
+<lb/>fra læresalene?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Nu ja, skinner ikke det lys dig nærmest.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>Herren</speaker>.</HIS:spOpener>
+<lb/><p>Min korte kappe vilde vidne mod mig, hvis
+<lb/>jeg nægtede.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Kender du mig?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>Herren</speaker>.</HIS:spOpener>
+<lb/><p>Jeg kender en kristen i dig?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><HIS:hisDel rend="overstrike"><speaker>Julian</speaker></HIS:hisDel>.</HIS:spOpener>
+<lb/><HIS:hisDel rend="overstrike"><p>Af min hofklædning?</p></HIS:hisDel></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>Herren</speaker>.</HIS:spOpener>
+<lb/><p>Af din <HIS:hisDel rend="overstrike">tale</HIS:hisDel> hofklædning.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker><restore type="del" rend="subpunction"><HIS:hisDel rend="overstrike">Julian</HIS:hisDel></restore></speaker>.</HIS:spOpener>
+<lb/><p><HIS:hisDel rend="overstrike">Give Gud Herren at det kendtes af mere</HIS:hisDel>. Men
+<lb/>sig mig, hvad søger du i Athen?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>Herren</speaker>.</HIS:spOpener>
+<lb/><p>Hvad søgte Pil<HIS:clarification place="inline">a</HIS:clarification>tus?</p></HIS:hisSp>
+<pb ed="faksBase" n="189"/>
+<pb n="[17]r"/>
+<lb/><fw type="leaf" place="top-right" scribe="h1">17</fw>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Ej hvad! Er ikke sandheden &dash; <HIS:hisDel rend="overstrike"><emph>din</emph> sandhed</HIS:hisDel>
+<lb/>her, hvor Libanius er?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><HIS:hisDel rend="overstrike"><speaker>Herren</speaker></HIS:hisDel>.</HIS:spOpener>
+<lb/><p><HIS:hisDel rend="overstrike">Kender du Libanius</HIS:hisDel>?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><HIS:hisDel rend="overstrike"><speaker>Julian</speaker></HIS:hisDel>.</HIS:spOpener>
+<lb/><HIS:hisDel rend="overstrike"><p>Nej.</p></HIS:hisDel></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><HIS:hisDel rend="overstrike"><speaker>Herren</speaker>.</HIS:hisDel></HIS:spOpener>
+<lb/><p><HIS:hisDel rend="overstrike">Gad du se ham</HIS:hisDel>?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><HIS:hisDel rend="overstrike"><speaker>Julian</speaker></HIS:hisDel>.</HIS:spOpener>
+<lb/><p><HIS:hisDel rend="overstrike">Ja, død</HIS:hisDel>.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><HIS:hisDel rend="overstrike"><speaker>Herren</speaker></HIS:hisDel>.</HIS:spOpener>
+<lb/><p><HIS:hisDel rend="overstrike">Så elsker du ham</HIS:hisDel>.</p></HIS:hisSp>
+<HIS:hisDel rend="overstrike"><lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Hvorledes? Hvad mener du?</p></HIS:hisSp></HIS:hisDel>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><HIS:hisDel rend="overstrike"><speaker>Herren</speaker></HIS:hisDel>.</HIS:spOpener>
+<lb/><p><HIS:hisDel rend="overstrike">Kan en kristen spørge så? En sælsom sek</HIS:hisDel>t.
+<lb/><HIS:hisDel rend="overstrike">Der er kun en iblandt jer, som har syn for lyset
+<lb/>og for stjernerne og for verdenssandheden</HIS:hisDel>.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><HIS:hisDel rend="overstrike"><speaker>Julian</speaker></HIS:hisDel>.</HIS:spOpener>
+<lb/><HIS:hisDel rend="overstrike"><p>Hvem er den ene?</p></HIS:hisDel></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:hisDel rend="overstrike"><HIS:spOpener><speaker>Herren</speaker></HIS:spOpener></HIS:hisDel>
+<lb/><p><HIS:hisDel rend="overstrike">Det er farligt at nævne ham</HIS:hisDel>.</p></HIS:hisSp>
+<HIS:hisDel rend="overstrike"><lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Hvorfor farligt?</p></HIS:hisSp></HIS:hisDel>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><HIS:hisDel rend="overstrike"><speaker>Herren</speaker></HIS:hisDel>.</HIS:spOpener>
+<lb/><HIS:hisDel rend="overstrike"><p>Fordi det er farligt at prise kejserens efter&typHyp;
+<lb/>følger.</p></HIS:hisDel></HIS:hisSp>
+<HIS:hisDel rend="overstrike"><lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Ha!</p></HIS:hisSp></HIS:hisDel>
+<pb ed="faksBase" n="190"/>
+<pb n="[17]v"/>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>Herren</speaker>.</HIS:spOpener>
+<lb/><p>Du vredes over min tale.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Ingen vrede; jeg står prinsen nær; jeg gad vide &dash;
+<lb/>&dash; gå tilside, Theodorus &dash; jeg må tale med denne
+<lb/>mand &dash; &dash; hvad ved du &dash; hvad ved I alle om Ju&typHyp;
+<lb/>lian &dash;?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>Herren</speaker>.</HIS:spOpener>
+<lb/><p>Kan skyen dølge en stjerne; vil der ikke hist
+<lb/>eller her gives en rift, hvor der glider med glans
+<lb/>forbi &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Lige til; jeg beder dig.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>Herren</speaker>.</HIS:spOpener>
+<lb/><p>Hvorfor holdes han som en fyrstelig fange?
+<lb/>Hvorfor er det ham forbudt at søge omgang med
+<lb/>de lærde &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Det er af omhu for hans sjæl.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>Herren</speaker>.</HIS:spOpener>
+<lb/><p>Du mener hans tro? Men hvad ved han om
+<lb/>sin tro, så længe han ikke kender hvad der
+<lb/>kan siges imod. Ved nogen, hvad et sverd duer
+<lb/>til, hvis det aldrig prøves.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Sandt, sandt.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>Herren</speaker>.</HIS:spOpener>
+<lb/><p>Hvor kunde ikke han lyse over kejserstaden!
+<lb/>Går der ikke sagn om ham fra hans barndom
+<pb ed="faksBase" n="191"/>
+<pb n="[18]r"/>
+<lb/><fw type="leaf" place="top-right" scribe="h1">18</fw>
+<lb/>da han i ordkamp med sin broder Gallus
+<lb/>tog gudernes sag og forsvarede den mod
+<lb/>Galilæeren.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Det var spøg &dash; taleøvelser.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>Herren</speaker>.</HIS:spOpener>
+<lb/><p>Vel; men hvilken kunst lå der ikke
+<lb/>alt dengang i hans tale; hvilken skønhed,
+<lb/>hvilken ynde i tankernes lette leg &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Og det tykkes dig &dash;?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>Herren</speaker></HIS:spOpener>
+<lb/><p>Hvad mig tykkes, ligger liden vægt på. &dash;
+<lb/>Men jeg kunde nævne Libanius.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Libanius!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>H.</speaker></HIS:spOpener>
+<lb/><p>O, tilgiv, herre &dash; jeg glemte hvor bittert
+<lb/>du hader ham &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>J.</speaker></HIS:spOpener>
+<lb/><p>Ligemeget &dash; hvad siger Libanius &dash; hvad
+<lb/>siger <HIS:hisDel rend="overstrike">Li</HIS:hisDel> han om &dash; om prins Julian</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>H.</speaker></HIS:spOpener>
+<lb/><p>Han kalder ham en åndens Achilles.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>J.</speaker></HIS:spOpener>
+<lb/><p>Achilles! <HIS:hisStage>(sagte)</HIS:hisStage> min moders drøm!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>Herren</speaker></HIS:spOpener>
+<lb/><p>Der inde i de åbne læresale står kampen.
+<lb/>Ordets pile hviner, viddets hvasse sverd
+<lb/>glittrer i salen &dash; de salige guder sidder højt
+<pb ed="faksBase" n="192"/>
+<pb n="[18]v"/>
+<lb/>i skyerne &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>J.</speaker></HIS:spOpener>
+<lb/><p>O, vig fra mig med dit hedenskab!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>H.</speaker></HIS:spOpener>
+<lb/><p>Og heltene går hjem til lejren med sandhed<unclear reason="writing">ens</unclear>
+<lb/>bytte, og med krans om panden &dash; men Achilles
+<lb/>er ikke iblandt dem &dash; Achilles er vred &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>J.</speaker></HIS:spOpener>
+<lb/><p>Achilles er ulykkelig! <HIS:hisAdd place="offline">Men kan jeg <HIS:clarification place="inline">tr</HIS:clarification>o det</HIS:hisAdd> O, sig mig &dash; jeg svim&typHyp;
+<lb/>ler &dash; alt det siger Libanius &dash;</p></HIS:hisSp>
+<lb/><note resp="author" scribe="HI-1" place="margin-right">Epigr: ikke det om Atlas med de skrå
+<lb/>skuldre? Heller ikke <HIS:hisDel rend="overstrike">de</HIS:hisDel> verset om
+<lb/>aben i hofklæder?</note>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>H.</speaker></HIS:spOpener>
+<lb/><p>Havde prinsen kendt ham, havde han ikke
+<lb/>straffet ham så hårdt &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>J.</speaker></HIS:spOpener>
+<lb/><p>Straffet? Hvad taler du om?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>H.</speaker></HIS:spOpener>
+<lb/><p>Det ved du ikke?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>J.</speaker></HIS:spOpener>
+<lb/><p>Nej, tusende gange nej!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>H.</speaker></HIS:spOpener>
+<lb/><p>Så lad mig tie!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>J.</speaker></HIS:spOpener>
+<lb/><p>Nej, nej &dash; tal.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>H.</speaker></HIS:spOpener>
+<lb/><p>Ikke et ord mere. Farvel.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>J.</speaker></HIS:spOpener>
+<lb/><p>Men sig mig dog, hvem er du &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>H.</speaker></HIS:spOpener>
+<lb/><p>En mand, som sørger når det store går under.</p></HIS:hisSp>
+<pb ed="faksBase" n="193"/>
+<pb n="[19]r"/>
+<lb/><fw type="gathering" place="top-left">4.</fw><fw type="leaf" place="top-right" scribe="h1">19</fw>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Hvad kalder du det store?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>Herren</speaker>.</HIS:spOpener>
+<lb/><p>Det <HIS:hisDel rend="overstrike">evige i det</HIS:hisDel> uskabte. <HIS:hisAdd place="inline">Det som er og blir <HIS:hisDel rend="overstrike">sandt</HIS:hisDel> i det
+<lb/>skiftende.</HIS:hisAdd></p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Lige dunkelt for mig.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>Herren</speaker>.</HIS:spOpener>
+<lb/><p>Der er en hel verden af ånd og skønhed, som
+<lb/>Galilæerne ikke kender; i den er livet en
+<lb/>fest med billeder og med sang, med fyldte
+<lb/>skåler og med <unclear reason="writing">løv</unclear> i håret. Jeg ved den
+<lb/>som kunde være kejser i dette store strå&typHyp;
+<lb/>lende rige &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Ja, med evighedens forlis!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>Herren</speaker>.</HIS:spOpener>
+<lb/><p>Hvad er evighed? Genforening med op&typHyp;
+<lb/>havet.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Ja, i bevidst liv &dash; genforening for mig, som
+<lb/>den jeg er.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>Herren</speaker>.</HIS:spOpener>
+<lb/><p>Genforening, som dråbens med havet.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>O, havde jeg lærdom &dash; <HIS:hisAdd place="inline">havde jeg våben at løfte
+<lb/>mod dig &dash;</HIS:hisAdd></p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>Herren</speaker>.</HIS:spOpener>
+<lb/><p>Vejen står dig åben &dash; <HIS:hisDel rend="overstrike">farvel</HIS:hisDel>!</p></HIS:hisSp>
+<HIS:hisAdd place="margin"><note resp="editor">Tilføyelsen er skrevet i høyre marg.</note>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener><p>Vejen.
+<lb/>Hvilken vej?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>Herren</speaker>.</HIS:spOpener><p>Til sandhed.
+<lb/>Libanius stænger ikke sin
+<lb/>dør for nogen.</p></HIS:hisSp>
+</HIS:hisAdd>
+<lb/><HIS:hisRef type="refMark" xml:id="nb1" target="n1">&referenceMark;</HIS:hisRef><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Og alt, hvad du sagde om prinsen, om Julian</p></HIS:hisSp>
+<HIS:hisAdd place="margin"><note resp="editor">Tilføyelsen er skrevet nederst på siden.</note>
+<lb/><HIS:hisSp><HIS:spOpener><speaker><ptr type="refMark" xml:id="n1" target="nb1"/>Julian</speaker></HIS:spOpener><p>Ha, da vil &dash; jeg &dash; jeg i løvens hule!</p></HIS:hisSp>
+</HIS:hisAdd>
+<pb ed="faksBase" n="194"/>
+<pb n="[19]v"/>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>Herren</speaker>.</HIS:spOpener>
+<lb/><p>O, herre, forråd mig ikke &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Nej, nej, men sig mig &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>Herren</speaker>.</HIS:spOpener>
+<lb/><p>Jeg må bort; her er sandheden landflyg&typHyp;
+<lb/>tig. Men jeg går med løftet pande. Der,
+<lb/>som her, er Helios over mig.</p>
+<lb/><HIS:hisStage>(går ned i båden, som støde<unclear reason="writing">s</unclear> fra land.)</HIS:hisStage></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Hvem var han, den gådefulde?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>O, sig mig, hvad talte du om løvens hule?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Kun et ord. Ja, jeg vil ind iblandt det. O, Theo<gap reason="binding"/>
+<lb/>dorus &dash; der er jeg altså forstået &dash; du skulde hørt &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>O, hør, hør &dash; nu er det tid for mig at tale &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker></HIS:spOpener>
+<lb/><p>Jeg holder det ikke længer ud ved kejserhoffet,
+<lb/>jeg forhånes, de ler ad mig bag min ryg &dash;
+<lb/>her er ingen som tror på at der <HIS:hisDel rend="overstrike">er</HIS:hisDel> bor noget i
+<lb/>mig &dash; de spotter mine lad<unclear reason="writing">er</unclear>, min tale &dash;
+<lb/>de går efter mig &dash; de vrænger ad mig &dash; &dash; o, jeg
+<lb/>føler det &dash; <HIS:hisDel rend="overwritten">k</HIS:hisDel>Kristus viger fra mig &dash; jeg blir
+<lb/>v<gap reason="writing"/> her &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker></HIS:spOpener>
+<lb/><p>Kristus er med dig &dash; hør mig Julian &dash;</p></HIS:hisSp>
+<pb ed="faksBase" n="195"/>
+<pb n="[20]r"/>
+<lb/><fw type="leaf" place="top-right" scribe="h1">20</fw>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Jeg er den, som Libanius gad kæmpe mod, &dash;
+<lb/>ja, det sagde han, den fremmede &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Th.</speaker></HIS:spOpener>
+<lb/><p>Hør, hør &dash; Kristus har bud til dig &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>J.</speaker></HIS:spOpener>
+<lb/><p>Hvad mener du &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Th.</speaker></HIS:spOpener>
+<lb/><p>Et syn er det som fører mig til Konstan&typHyp;
+<lb/>tinopel &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker></HIS:spOpener>
+<lb/><p>Et syn &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Th.</speaker></HIS:spOpener>
+<lb/><p>Det var en nat; da bares det mig for der
+<lb/>kom en mand i hvide klæder for min
+<lb/>seng &dash; der stod stråler om hans hoved,
+<lb/>han holdt et rør i armen og så mildt ned på
+<lb/>mig &dash;</p></HIS:hisSp><note resp="author" scribe="HI-1" place="margin-right">Cybeled<unclear reason="writing">yrkerne</unclear> overfaldtes, mange
+<lb/>dræbtes i husene; o, det var en
+<lb/>stor tid til Guds ære.</note>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>J.</speaker></HIS:spOpener>
+<lb/><p>Og det så du &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Th.</speaker></HIS:spOpener>
+<lb/><p>Og han talte og sagde: <HIS:hisAdd place="offline">s<unclear reason="writing">tat</unclear> op</HIS:hisAdd> søg ham, som skal
+<lb/>arve jordens rige og byd ham gå ind i løvens
+<lb/>hule &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Jul</speaker></HIS:spOpener>
+<lb/><p>O, sælsomt, sælsomt &dash; og nu dette møde &dash;
+<lb/>Ja det er guds villie at jeg skal søge Libani&typHyp;
+<lb/>us &dash;, lære ham hans lærdom af, slå ham
+<lb/>med hans egne våben &dash; slå, slå, sejre for
+<lb/>herrens sag &dash;</p></HIS:hisSp>
+<pb ed="faksBase" n="196"/>
+<pb n="[20]v"/>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Th</speaker></HIS:spOpener>
+<lb/><p>Nej, således er det ikke ment &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>J.</speaker></HIS:spOpener>
+<lb/><p>Kan du tvivle &dash; ser du ikke Guds finger &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Th.</speaker></HIS:spOpener>
+<lb/><p>Jeg siger dig det er ikke så, thi synet lagde
+<lb/>til; sig ham, han skal ryste kejserstadens
+<lb/>støv af sine fødder, vende den rygg<unclear reason="writing">en</unclear> og
+<lb/>aldrig gense den mere.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>J.</speaker></HIS:spOpener>
+<lb/><p>Bort, bort altså, o, hvor finder jeg lys &dash;</p></HIS:hisSp>
+<lb/><HIS:hisStage>(Gallus, en smuk, stærkbygget ung mand, med brunt
+<lb/>krøllet hår, kommer fra <HIS:hisDel rend="overstrike">h</HIS:hisDel> venstre; Julian iler
+<lb/>ham imøde.)</HIS:hisStage>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>O, Gallus, Gallus!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GALLOS"><HIS:spOpener><speaker>Gallus</speaker>.</HIS:spOpener>
+<lb/><p>Hvad godt? <HIS:hisStage>(peger på Theodorus)</HIS:hisStage> Hvem er det?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Theodorus.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GALLOS"><HIS:spOpener><speaker>Gallus</speaker>.</HIS:spOpener>
+<lb/><p>Hvilken Theodorus? Nå, <HIS:hisDel rend="overwritten">d</HIS:hisDel>ham. Er du her?
+<lb/>Velkommen.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>O, ved du det? Kejseren har spurgt efter dig.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GALLOS"><HIS:spOpener><speaker>Gallus</speaker>.</HIS:spOpener>
+<lb/><p>Nu? Inat?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p><HIS:hisDel rend="overstrike">Hvad vil han</HIS:hisDel> Ja, ja &dash; &dash;</p></HIS:hisSp>
+<pb ed="faksBase" n="197"/>
+<pb n="[21]r"/>
+<lb/><fw type="leaf" place="top-right" scribe="h1">21</fw>
+<lb/><HIS:hisSp who="GALLOS"><HIS:spOpener><speaker>Gallus</speaker>.</HIS:spOpener>
+<lb/><p>Det gælder død eller landsforvisning &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>O, ti, ti &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>Gallus &dash; hvor kan du frygte &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GALLOS"><HIS:spOpener><speaker>Gallus</speaker>.</HIS:spOpener>
+<lb/><p>Hvad ved du om vore ting.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>O, tal dog ikke så højt.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GALLOS"><HIS:spOpener><speaker>Gallus</speaker>.</HIS:spOpener>
+<lb/><p>Væk fra mig. Lad ham komme.
+<lb/>Og hvorfor er du her &dash;</p><HIS:hisDel rend="overstrike"><HIS:hisStage>(peger mod kirken)</HIS:hisStage></HIS:hisDel></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker></HIS:spOpener>
+<lb/><p>O, du ved jo &dash; <HIS:hisStage>(peger mod kirken)</HIS:hisStage></p></HIS:hisSp>
+<lb/><HIS:hisSp who="GALLOS"><HIS:spOpener><speaker>Gallus</speaker>.</HIS:spOpener>
+<lb/><p>Nej, det er sandt; han tåler os ikke under
+<lb/>kirketag med sig. Han gyser for vore bønner &dash;
+<lb/>han ved vi beder om hævn &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker></HIS:spOpener>
+<lb/><p>Jeg ikke &dash; jeg ikke</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GALLOS"><HIS:spOpener><speaker>Gallus</speaker></HIS:spOpener>
+<lb/><p>Nej, thi du er fejg. Men jeg skal skrige
+<lb/>det ud på alle torve &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker></HIS:spOpener>
+<lb/><p>O, ti ti &dash; man hører dig &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GALLOS"><HIS:spOpener><speaker>Gallus</speaker>.</HIS:spOpener>
+<lb/><p>Jeg skal skrige det ud, siger jeg. <HIS:hisStage>(til
+<lb/>Theodorus)</HIS:hisStage> Har du set ham &dash; har du
+<lb/>set morderen?</p></HIS:hisSp>
+<pb ed="faksBase" n="198"/>
+<pb n="[21]v"/>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>Morderen?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GALLOS"><HIS:spOpener><speaker>Gallus</speaker>.</HIS:spOpener>
+<lb/><p><xptr type="synopticView_msVersions" xml:id="KG_31000ms"/>Han i kejserkåben; min faders morder &dash;
+<lb/>min <HIS:hisDel rend="overstrike">b</HIS:hisDel> moders, min ældste broders &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker></HIS:spOpener>
+<lb/><p>O, du kalder fordærvelse over dig &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GALLOS"><HIS:spOpener><speaker>Gallus</speaker></HIS:spOpener>
+<lb/><p>Elleve hoveder faldt p<HIS:clarification place="inline">å</HIS:clarification> en gang &dash;
+<lb/>ha, ha &dash; men du kan tro samvittigheden mar&typHyp;
+<lb/>trer ham &dash; den rissler gennem ham som en
+<lb/>ormemylder i benpiberne &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker><HIS:hisDel rend="overwritten">H</HIS:hisDel>Julian</speaker></HIS:spOpener>
+<lb/><p>Hør ikke på ham; bort &dash; bort &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GALLOS"><HIS:spOpener><speaker>Gallus</speaker>.</HIS:spOpener>
+<lb/><p>Stands! Du er med i det!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Jeg!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GALLOS"><HIS:spOpener><speaker>Gallus</speaker>.</HIS:spOpener>
+<lb/><p>Tror du ikke jeg ved, hvad alle hvisker om?
+<lb/>Det er dig som skal være hans efterfølger &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker></HIS:spOpener>
+<lb/><p>Aldrig, det sværger jeg, har kejseren talt
+<lb/>et ord til mig om sligt.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GALLOS"><HIS:spOpener><speaker>Gallus</speaker>.</HIS:spOpener>
+<lb/><p>Han! Når taler han? Han tier og lurer på
+<lb/>lejligheden, og så slår han ned.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Jeg, jeg. Ser jeg ud som en kejser<HIS:hisDel rend="overwritten">,</HIS:hisDel>? Ved du ikke
+<lb/>at hofmændene ler ad mig &dash;</p></HIS:hisSp>
+<pb ed="faksBase" n="199"/>
+<pb n="[22]r"/>
+<lb/><fw type="leaf" place="top-right" scribe="h1">22</fw>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><HIS:hisDel rend="overstrike"><speaker>Herren</speaker></HIS:hisDel>.</HIS:spOpener>
+<lb/><p><HIS:hisDel rend="overstrike">O, herren forråder mig ikke</HIS:hisDel> &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><HIS:hisDel rend="overstrike"><speaker>Julian</speaker></HIS:hisDel>.</HIS:spOpener>
+<lb/><p><HIS:hisDel rend="overstrike">Nej, nej, men sig mig</HIS:hisDel> &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><HIS:hisDel rend="overstrike"><speaker>Herren</speaker></HIS:hisDel>.</HIS:spOpener>
+<lb/><p><HIS:hisDel rend="overstrike">Jeg må bort. Her er sandheden landflygtig</HIS:hisDel>.
+<lb/><HIS:hisDel rend="overstrike">Men jeg går med løftet pande; der, som her</HIS:hisDel>,
+<lb/><HIS:hisDel rend="overstrike">er Helios over mig &dash; <HIS:hisStage>(går ud i båden.)</HIS:hisStage></HIS:hisDel></p></HIS:hisSp>
+<lb/><HIS:hisSp who="GALLOS"><HIS:spOpener><speaker>Gallus</speaker>.</HIS:spOpener>
+<lb/><p>Ja, så længe den gamle er ilive. Tør en hof&typHyp;
+<lb/>mand lade sig mærke med at han tænker
+<lb/>kejseren kan dø?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>O, hvad jammer over denne slægt. Broder
+<lb/>imod broder!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GALLOS"><HIS:spOpener><speaker>Gallus</speaker>.</HIS:spOpener>
+<lb/><p>Ha, ha, hvad gælder et broderskab som
+<lb/>spærrer vejen til tronen.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>O, Theodorus &dash; o Gallus &dash; her, her tæt sam&typHyp;
+<lb/>men; svar mig, broder; tror du jeg er
+<lb/>falsk &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GALLOS"><HIS:spOpener><speaker>Gallus</speaker>.</HIS:spOpener>
+<lb/><p>Du er fejg, Julian; du har ikke mod
+<lb/>til at være ærlig &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker></HIS:spOpener>
+<lb/><p>Fordi dette du taler om, tronen, er
+<lb/>min rædsel &dash; jeg vil ikke &dash; o, du
+<lb/>almægtige Gud &dash; jeg på tronen &dash; nej,
+<lb/>nej &dash; nej!</p></HIS:hisSp>
+<pb ed="faksBase" n="200"/>
+<pb n="[22]v"/>
+<lb/><HIS:hisSp who="GALLOS"><HIS:spOpener><speaker>Gallus</speaker>.</HIS:spOpener>
+<lb/><p>Ha-ha! Godt spillet!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener><p>
+<HIS:hisAdd place="margin"><note resp="editor">Tilføyelsen er skrevet i høyre marg.</note>
+<lb/>Også du læser mig som
+<lb/>en bog du ikke kan tyde.
+</HIS:hisAdd>
+<lb/>Du kender mig ikke &dash;; du ser ikke min
+<lb/>syndige natur &dash; du ved ikke hvad onde og
+<lb/>formastelige tanker &dash; &dash; o, dette hoved
+<lb/>skulde salves! Vilde ikke herrens hellige
+<lb/>olje brænde mi<unclear reason="writing">g</unclear> som hvislende bly &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GALLOS"><HIS:spOpener><speaker>Gallus</speaker>.</HIS:spOpener>
+<lb/><p>Da måtte vor høje fætter være skaldet,
+<lb/>som Cæsar.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Forbryd dig ikke imod kejseren. Han er skyld&typHyp;
+<lb/>fri &dash; må være det &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GALLOS"><HIS:spOpener><speaker>Gallus</speaker></HIS:spOpener>
+<lb/><p>Og din moders blod &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker></HIS:spOpener>
+<lb/><p>Det var soldaterne &dash; onde rådgivere</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GALLOS"><HIS:spOpener><speaker>G.</speaker></HIS:spOpener>
+<lb/><p>Ha ha, hvem stod bag!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>J.</speaker></HIS:spOpener>
+<lb/><p>Men du &dash; du selv blev dog skånet</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GALLOS"><HIS:spOpener><speaker>G.</speaker></HIS:spOpener>
+<lb/><p>Var jeg ikke syg, døende dengang &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>J.</speaker></HIS:spOpener>
+<lb/><p>Og jeg &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GALLOS"><HIS:spOpener><speaker>G.</speaker></HIS:spOpener>
+<lb/><p>Et barn &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>J.</speaker></HIS:spOpener>
+<lb/><p>O, men siden &dash;</p></HIS:hisSp>
+<pb ed="faksBase" n="201"/>
+<pb n="[23]r"/>
+<lb/><fw type="gathering" place="top-left">5.</fw><fw type="leaf" place="top-right" scribe="h1">23</fw>
+<lb/><HIS:hisSp who="GALLOS"><HIS:spOpener><speaker>Gallus</speaker>.</HIS:spOpener>
+<lb/><p>Tænk på, hvem vi nu havde været om
+<lb/>ikke kejseren var børnløs &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>O, Gallus, om jeg fik gå i dit sted. Jeg forspil&typHyp;
+<lb/>der min sjæl her. Dette liv skiller mig fra Gud.
+<lb/>Jeg kender det onde vokse i mig. Had,
+<lb/>hævn hvisker &dash; &dash; Nej, nej &dash; tag dette fra mig;
+<lb/>Kristus, stå mig nær!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GALLOS"><HIS:spOpener><speaker>Gallus</speaker>.</HIS:spOpener>
+<lb/><p>Kejseren kommer!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Vær sindig, dyrebare broder!</p></HIS:hisSp>
+<lb/><HIS:hisStage>(Kejseren med følget kommer fra kirken.)</HIS:hisStage>
+<lb/><HIS:hisSp who="KONSTANZIOS"><HIS:spOpener><speaker>Kejser Konstantius</speaker>.</HIS:spOpener>
+<lb/><p>Og nu til fest &dash; &dash;. Der står de begge.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="MEMNON"><HIS:spOpener><speaker>Memnon</speaker>.</HIS:spOpener>
+<lb/><p>Nu straks, herre!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KONSTANZIOS"><HIS:spOpener><speaker>Kejser Konstantius</speaker>.</HIS:spOpener>
+<lb/><p>Gallus, frænde! <HIS:hisStage>(kysser ham.)</HIS:hisStage> I ser det alle;
+<lb/>bøj jer; hils Cæsar Gallus &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GALLOS"><HIS:spOpener><speaker>Gallus</speaker>.</HIS:spOpener>
+<lb/><p>Cæsar!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Ha!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KONSTANZIOS"><HIS:spOpener><speaker>Kejser Konstantius</speaker>.</HIS:spOpener>
+<lb/><p>Nærm dig ikke. Han er den ældste.
+<lb/>Han har en under-kejsers værdighed. Hvad
+<lb/>håb har du gjort dig. Hvad har du &dash;?
+<lb/>Bort, bort, siger jeg &dash;</p></HIS:hisSp>
+<pb ed="faksBase" n="202"/>
+<pb n="[23]v"/>
+<lb/><HIS:hisSp who="GALLOS"><HIS:spOpener><speaker>Gallus</speaker>.</HIS:spOpener>
+<lb/><p>Jeg &dash; jeg!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KONSTANZIOS"><HIS:spOpener><speaker>Kejser Konstantius</speaker>.</HIS:spOpener>
+<lb/><p>Du drager til Asien. Perserkongen står væbnet &dash;
+<lb/>det er min vilje at slå ham &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GALLOS"><HIS:spOpener><speaker>Gallus</speaker>.</HIS:spOpener>
+<lb/><p>O, min nådigste herre!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KONSTANZIOS"><HIS:spOpener><speaker>Kejser Konstantius</speaker>.</HIS:spOpener>
+<lb/><p>Tak mig i gerning. Og du, Julian, fromme
+<lb/>broder &dash; det måtte så være &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Velsignelse over kejserens vilje &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KONSTANZIOS"><HIS:spOpener><speaker>Kejseren Konstantius</speaker>.</HIS:spOpener>
+<lb/><p>Ingen ønsker. Hør, nu kan du ånde i Kon&typHyp;
+<lb/>stantinopel &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker></HIS:spOpener>
+<lb/><p>Ja <HIS:hisDel rend="overstrike">nu</HIS:hisDel> Kristus være lovet, nu kan jeg ånde
+<lb/>her.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KONSTANZIOS"><HIS:spOpener><speaker>Kejser Konstantius</speaker></HIS:spOpener>
+<lb/><p>Du ved det alt</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Hvilket.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KONSTANZIOS"><HIS:spOpener><speaker>Kejser Konstantius</speaker></HIS:spOpener>
+<lb/><p>Libanius er forvist &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker></HIS:spOpener>
+<lb/><p>Libanius &dash; forvist &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KONSTANZIOS"><HIS:spOpener><speaker>Kejser Konstantius</speaker>.</HIS:spOpener>
+<lb/><p>Til Athen &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker></HIS:spOpener>
+<lb/><p>Ha &dash;
+<pb ed="faksBase" n="203"/>
+<pb n="[24]r"/>
+<lb/><fw type="leaf" place="top-right" scribe="h1">24</fw></p></HIS:hisSp>
+<lb/><HIS:hisSp who="KONSTANZIOS"><HIS:spOpener><speaker>Kejser Konstantius</speaker>.</HIS:spOpener>
+<lb/><p>Derude ligger skibet; han sejler i nat.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Det var ham &dash; ham selv &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KONSTANZIOS"><HIS:spOpener><speaker>Kejser Konstantius</speaker>.</HIS:spOpener>
+<lb/><p>Har du mødt ham.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Vis mig en nåde, herre!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KONSTANZIOS"><HIS:spOpener><speaker>Kejser Konstantius</speaker>.</HIS:spOpener>
+<lb/><p>Tal.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Lad mig rejse<HIS:hisDel rend="overstrike">r</HIS:hisDel> til Athen.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KONSTANZIOS"><HIS:spOpener><speaker>Kejser K.</speaker></HIS:spOpener>
+<lb/><p>Du &dash; til Athen &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker></HIS:spOpener>
+<lb/><p>Ja, ja &dash; did &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KONSTANZIOS"><HIS:spOpener><speaker>Kejser K</speaker></HIS:spOpener>
+<lb/><p>Og hvad vil du der &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker></HIS:spOpener><p>
+<HIS:hisAdd place="margin"><note resp="editor">Tilføyelsen er skrevet i høyre marg.</note>
+<lb/>lad mig rense verden og
+<lb/>så gå ind i ensomheden
+</HIS:hisAdd>
+<lb/>Som Daniel ind i løvens hule &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KONSTANZIOS"><HIS:spOpener><speaker>Kejser K.</speaker></HIS:spOpener>
+<lb/><p>Jeg forstår dig &dash; og du tror dig stærk nok</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker></HIS:spOpener>
+<lb/><p>Gud herren har sendt mig et bud i natten</p></HIS:hisSp>
+<lb/><HIS:hisSp who="KONSTANZIOS"><HIS:spOpener><speaker>Kejser K.</speaker></HIS:spOpener>
+<lb/><p>Julian</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GALLOS"><HIS:spOpener><speaker>Gallus</speaker></HIS:spOpener>
+<lb/><p>Lad ham drage &dash; det vil afholde ham fra
+<lb/>at pønse på større ting &dash;</p></HIS:hisSp>
+<pb ed="faksBase" n="204"/>
+<pb n="[24]v"/>
+<lb/><HIS:hisSp who="KONSTANZIOS"><HIS:spOpener><speaker>Kejser K.</speaker></HIS:spOpener>
+<lb/><p>Gå; hvor skulde jeg kunne nægte dig noget
+<lb/>Fremad &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GALLOS"><HIS:spOpener><speaker>Gallus</speaker>.</HIS:spOpener>
+<lb/><p>Helena &dash; hvilket eventyr &dash; hvilken drøm &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Helena</speaker>.</HIS:spOpener>
+<lb/><p>O, Gallus, n<HIS:clarification place="inline">u</HIS:clarification> dages det over os &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GALLOS"><HIS:spOpener><speaker>Gallus</speaker>.</HIS:spOpener>
+<lb/><p>Men hvem er skyld i dette &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Helena</speaker>.</HIS:spOpener>
+<lb/><p>Tys &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GALLOS"><HIS:spOpener><speaker>Gallus</speaker>.</HIS:spOpener>
+<lb/><p>Du, du &dash; eller &dash; kejserinden &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Helena</speaker>.</HIS:spOpener>
+<lb/><p>Memnons spartanske hund &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GALLOS"><HIS:spOpener><speaker>Gallus</speaker>.</HIS:spOpener>
+<lb/><p>Hvad mener du &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="HELENA"><HIS:spOpener><speaker>Helena</speaker>.</HIS:spOpener>
+<lb/><p>Memnons hund; Julian har givet den et
+<lb/>fodspark &dash; det er det som hævnes &dash;</p></HIS:hisSp>
+<lb/><HIS:hisStage>(Alle undtagen Julian og Theodorus ind
+<lb/>i slottet.)</HIS:hisStage>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Det var stjernen som faldt &dash;; riget af min
+<lb/>hånd &dash; nu er jeg fri fri, fri &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>Vidunderligt er Herrens råd åbenbaret</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker></HIS:spOpener>
+<lb/><p>Theodorus, vil du følge mig.</p></HIS:hisSp>
+<pb ed="faksBase" n="205"/>
+<pb n="[25]r"/>
+<lb/><fw type="leaf" place="top-right" scribe="h1">25</fw>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>Ja, jeg følger dig.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker>.</HIS:spOpener>
+<lb/><p>Der letter de anker &dash;. God bør, du <app type="alteration"><lem><HIS:hisAdd place="offline">verdens</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">løgnens</HIS:hisDel></HIS:hisRdg></app>
+<lb/>vismand; <HIS:hisDel rend="overstrike">imorgen kommer din overvinder</HIS:hisDel>.
+<lb/>din overvinder følger dig i kølvandet.
+<lb/><HIS:hisStage>(råber)</HIS:hisStage> Ha!</p></HIS:hisSp>
+<lb/><HIS:hisDel rend="overstrike"><figure type="bar"/></HIS:hisDel>
+<lb/><HIS:hisSp who="AGATHON"><HIS:spOpener><speaker>Theodorus</speaker>.</HIS:spOpener>
+<lb/><p>Hvad var det?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Julian</speaker></HIS:spOpener>
+<lb/><p>Der faldt en stjerne.</p></HIS:hisSp>
+<lb/><figure type="bar"/>
+<lb/><note resp="author" scribe="HI-1" place="inline">Euph<gap reason="writing"/> (gys<unclear reason="writing">ende</unclear>) De to brødre har rigets skæbne i hånd.
+<lb/>Men om dem står de dræbtes ånder &dash; Himmel, jord og
+<lb/>afgrund ruster sig til en kamp om verdens <app type="alteration"><lem><HIS:hisAdd place="offline">skæbne</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">fremtid</HIS:hisDel></HIS:hisRdg></app>.</note>
+</div>
+<pb ed="faksBase" n="206"/>
+<pb n="[25]v"/>
+<div type="act" n="1-2">
+<xptr type="synopticView_msVersions" xml:id="KG_63ms"/>
+<lb/><head>Anden handling.</head>
+<lb/><HIS:hisStage>I Athen. En åben plads, omgiven af søjlegange,
+<lb/>nær ved havnen. Henimod solnedgang.</HIS:hisStage>
+<lb/><HIS:hisStage>Basilius fra Cæsarea, Gregor fra Nazians og
+<lb/>flere af højskolens lærlinge spadserer i spredte
+<lb/>klynger op og ned i søjlegangene. En anden
+<lb/>flok løber over pladsen ned mod havnen.</HIS:hisStage>
+<lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basilius fra Cæsarea</speaker>.</HIS:spOpener>
+<lb/><p>Hvad betyder hine vilde skrig.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gregor fra Nazianz</speaker>.</HIS:spOpener>
+<lb/><p>Et skib med lærlinge er kommet fra Efesus.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil:</speaker></HIS:spOpener>
+<lb/><p>Se hvor de ældre kredser om dem; med svungne
+<lb/>knipler, lig Skyter og Perser.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gr:</speaker></HIS:spOpener>
+<lb/><p>Ej hvad, <HIS:hisAdd place="offline">det er jo hævd<unclear reason="writing">et</unclear> skikk</HIS:hisAdd> nu føres de til badstuen; der går det
+<lb/>slemmere til. Se, klæderne rives af dem.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil.</speaker></HIS:spOpener>
+<lb/><p>O, vend dit øje bort fra al den råhed &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gr.</speaker></HIS:spOpener>
+<lb/><p>Tag det dog ikke så dybt, ven &dash;; det er ungdomslyst</p></HIS:hisSp>
+<lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil.</speaker></HIS:spOpener>
+<lb/><p>Ja men det skærer mig i hjertet &dash; at vore egne er
+<lb/>de værste; er en borger slagen; har nogen fornærmet
+<lb/>hans hustru eller datter &dash; er det ikke altid en
+<lb/>kristen &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gr.</speaker></HIS:spOpener>
+<lb/><p>Nu, de har mindst at vove &dash;</p></HIS:hisSp>
+<pb ed="faksBase" n="207"/>
+<pb n="[26]r"/>
+<lb/><fw type="leaf" place="top-right" scribe="h1">26</fw>
+<lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil:</speaker></HIS:spOpener>
+<lb/><p>Det vil blive anderledes; det må &dash; ha &dash; vend
+<lb/>dig bort &dash; fy, fy &dash; over al den uterlighed.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gr.</speaker></HIS:spOpener>
+<lb/><p>Se did; er det et bedre syn &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil.</speaker></HIS:spOpener>
+<lb/><p>Prins Julian &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil.</speaker></HIS:spOpener>
+<lb/><p>Med egeløv i håret &dash; hvad kan det være &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gr.</speaker></HIS:spOpener>
+<lb/><p>En leg; ikke andet.</p></HIS:hisSp>
+<lb/><HIS:hisStage>(Prins Julian og en stor skare studenter kom&typHyp;
+<lb/>mer over torvet.)</HIS:hisStage>
+<lb/><HIS:hisSp><HIS:spOpener><speaker>Skaren</speaker>.</HIS:spOpener>
+<lb/><p>Leve Julian! Leve vort lys! Leve visdoms&typHyp;
+<lb/>elskeren &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr: Julian</speaker>.</HIS:spOpener>
+<lb/><p>Nu en ny leg &dash; det skal være om retsvidenskaben</p></HIS:hisSp>
+<lb/><HIS:hisSp><HIS:spOpener><speaker>St<unclear reason="writing">emmer</unclear></speaker></HIS:spOpener>
+<lb/><p>Ja ja &dash; Prins Julian på dommersædet &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
+<lb/><p>Væk med prinsen &dash; der står en bedre &dash;; hvem er
+<lb/>større i retslære end Gregor fra Nazians</p></HIS:hisSp>
+<lb/><HIS:hisSp><HIS:spOpener><speaker>St.</speaker></HIS:spOpener>
+<lb/><p>Det er sandt &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>P. J.</speaker></HIS:spOpener>
+<lb/><p>På dommersædet, Gregor; jeg er en anklaget &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gr</speaker></HIS:spOpener>
+<lb/><p>Lad mig udenfor &dash;</p></HIS:hisSp>
+<pb ed="faksBase" n="208"/>
+<pb n="[26]v"/>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
+<lb/><p>På dommersædet, siger jeg, på dommersædet</p></HIS:hisSp>
+<lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil.</speaker></HIS:spOpener>
+<lb/><p>Kom, kom &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
+<lb/><p>Bliv &dash; Hvad har jeg forbrudt</p></HIS:hisSp>
+<lb/><HIS:hisSp><HIS:spOpener><speaker>St<gap reason="writing"/></speaker></HIS:spOpener>
+<lb/><p>Ja hvad &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp><HIS:spOpener><speaker>En <unclear reason="writing">enkelt</unclear></speaker>.</HIS:spOpener>
+<lb/><p>Det må være noget galilæisk</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
+<lb/><p>Lad gå; noget galilæisk, som I siger; jeg
+<lb/>har nægtet at betale kejseren skat</p></HIS:hisSp>
+<lb/><HIS:hisSp><HIS:spOpener><speaker>St</speaker></HIS:spOpener>
+<lb/><p>Ha ha &dash; leve prins Julian</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr J.</speaker></HIS:spOpener>
+<lb/><p>Her føres jeg frem &dash; som en synder</p></HIS:hisSp>
+<lb/><HIS:hisSp><HIS:spOpener><speaker>En student</speaker></HIS:spOpener>
+<lb/><p>Høje dommer &dash; se denne ugudelige mand
+<lb/>har nægtet at betale kejseren skat</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J</speaker></HIS:spOpener>
+<lb/><p>Døm mig ikke uhørt &dash;; jeg er en græsk borger
+<lb/>hvor meget er en græsk borger kejseren skyl&typHyp;
+<lb/>dig &dash;?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gr.</speaker></HIS:spOpener>
+<lb/><p>Hvad kejseren kræver</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
+<lb/><p>Godt, men hvor meget tør kejseren kræve
+<HIS:hisAdd place="margin"><note resp="editor">Tilføyelsen er skrevet i høyre marg.</note>
+<lb/>svar mig som om kejseren selv var
+<lb/>tilstede
+</HIS:hisAdd></p></HIS:hisSp>
+<lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gr.</speaker></HIS:spOpener>
+<lb/><p>Alt tør kejseren kræve
+<HIS:hisAdd place="margin"><note resp="editor">Tilføyelsen er skrevet i høyre marg.</note>
+<lb/>Det var svaret som om kejseren
+<lb/>selv var tilstede
+</HIS:hisAdd></p></HIS:hisSp>
+<pb ed="faksBase" n="209"/>
+<pb n="[27]r"/>
+<lb/><fw type="gathering" place="top-left">6.</fw><fw type="leaf" place="top-right" scribe="h1">27</fw>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
+<lb/><p>Det tør han; men der står skrevet, Giv gud hvad
+<lb/>guds er, og kejseren hvad kejserens er &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gr.</speaker></HIS:spOpener>
+<lb/><p>Og hvad så.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr J.</speaker></HIS:spOpener>
+<lb/><p>Så sig mig, vise dommer &dash; hvor meget af mit
+<lb/>er Guds &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gr.</speaker></HIS:spOpener>
+<lb/><p>Alt &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
+<lb/><p>Hvor meget tør så kejseren kræve</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gr</speaker></HIS:spOpener>
+<lb/><p>Ikke mer af denne leg &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
+<lb/><p>Svar, hvor meget &dash; hvor meget tør kejseren kræve</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gr.</speaker></HIS:spOpener>
+<lb/><p>Jeg vil ikke &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr J.</speaker></HIS:spOpener>
+<lb/><p>Så en anden leg &dash; nu vil jeg være dommer &dash;
+<lb/>jeg vil være kejseren selv &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker><HIS:hisDel rend="overstrike">Gr.</HIS:hisDel> Basil.</speaker></HIS:spOpener>
+<lb/><p>Lad os gå &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
+<lb/><p>Hold h<HIS:clarification place="inline">am</HIS:clarification>! Frem for mig &dash; Se, mit f<unclear reason="writing">olk</unclear>
+<lb/>den<unclear reason="writing">ne</unclear> mand <unclear reason="writing">er</unclear> fl<unclear reason="writing">ygtet</unclear> &dash; til skyterne &dash; han
+<lb/>skylder kejseren sig selv og alt sit &dash; det har han
+<lb/>unddraget kejseren &dash;, han har unddraget kejseren
+<lb/>sit liv &dash;; hvad straf er der for det &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp><HIS:spOpener><speaker>St<unclear reason="writing">emmer</unclear></speaker></HIS:spOpener>
+<lb/><p>Døden &dash;</p></HIS:hisSp>
+<pb ed="faksBase" n="210"/>
+<pb n="[27]v"/>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
+<lb/><p>Lad os tænke efter. Hvor ophører kejserens magt &dash;
+<lb/>Svar, fr<unclear reason="writing">omme</unclear> Basil &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil.</speaker></HIS:spOpener>
+<lb/><p>På verdens grænse &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
+<lb/><p>Kan en mand flygte udenfor verdens grænse</p></HIS:hisSp>
+<lb/><HIS:hisSp><HIS:spOpener><speaker>St.</speaker></HIS:spOpener>
+<lb/><p>Nej, nej &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
+<lb/><p>Så er flygtningen vanvittig &dash; giv ham løs</p></HIS:hisSp>
+<lb/><HIS:hisSp><HIS:spOpener><speaker>St</speaker></HIS:spOpener>
+<lb/><p>Leve Julian &dash; leve vor vise dommer &dash; <unclear reason="writing">leve</unclear></p></HIS:hisSp>
+<lb/><HIS:hisStage>(Libanius kommer.))</HIS:hisStage>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>Libanius</speaker>.</HIS:spOpener>
+<lb/><p>Ej se, min broder Julian på dommersædet &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
+<lb/><p>Når visdommen vandrer ud får narren dømme</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>L.</speaker></HIS:spOpener>
+<lb/><p>Er visdommen vandret ud &dash; hvorhen, hvorhen</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr J.</speaker></HIS:spOpener>
+<lb/><p>Til Piræus.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>L.</speaker></HIS:spOpener>
+<lb/><p>Hvorfor til <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>Piræus.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr J.</speaker></HIS:spOpener>
+<lb/><p>Ved du ikke, o vise broder, et skib med lærlinge
+<lb/>er landet &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>L.</speaker></HIS:spOpener>
+<lb/><p>Ej hvad gælder det; det kom jo fra Efesus &dash;</p></HIS:hisSp>
+<pb ed="faksBase" n="211"/>
+<pb n="[28]r"/>
+<lb/><fw type="leaf" place="top-right" scribe="h1">28</fw>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
+<lb/><p>Er ikke guldet lige dyrt, hvor det kommer fra.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>L.</speaker></HIS:spOpener>
+<lb/><p>Guld &dash; haha &dash; kræmmersønner, håndværkeres før&typHyp;
+<lb/>stefødte &dash; guld &dash; ja, I unge &dash; jeg skal <unclear reason="writing">mynte</unclear>
+<lb/>mangelen på guld om til guld for jer &dash;
+<lb/>Se hine mænd, som kalder sig visdomsel&typHyp;
+<lb/>skere &dash; der strø<unclear reason="writing">mmer</unclear> de ned at hverve lær&typHyp;
+<lb/>linger &dash; hvor de bedrages &dash; lær heraf hul&typHyp;
+<lb/>heden &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr J.</speaker></HIS:spOpener>
+<lb/><p>Holdt, holdt &dash; vise broder &dash; aldrig er så me&typHyp;
+<lb/>get guld kommet på engang til Athen</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>L.</speaker></HIS:spOpener>
+<lb/><p>Fra E<unclear reason="writing">phesus</unclear> &dash; du spotter &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
+<lb/><p>Præfekten Lykons to sønner er ombord</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>L.</speaker></HIS:spOpener>
+<lb/><p>Hvad siger du &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>P. J.</speaker></HIS:spOpener>
+<lb/><p>Eutherius er alt en rig mand &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>L.</speaker></HIS:spOpener>
+<lb/><p>Eutherius &dash; Lykons to sønner &dash; den
+<lb/>rige <HIS:clarification place="inline">L</HIS:clarification>ykon, den fortræffelige præfekt</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr J.</speaker></HIS:spOpener>
+<lb/><p>Den gæst<unclear reason="writing">milde</unclear>, vise Libanius &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>L.</speaker></HIS:spOpener>
+<lb/><p>God aften jeg må afsted &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr J.</speaker></HIS:spOpener>
+<lb/><p>Hvorhen, hvorhen &dash;</p></HIS:hisSp>
+<pb ed="faksBase" n="212"/>
+<pb n="[28]v"/>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>L.</speaker></HIS:spOpener>
+<lb/><p>Thoas &dash; Thoas &dash; hvor er du hund &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr J.</speaker></HIS:spOpener>
+<lb/><p>Hvorhen &dash; dog ikke til havnen</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>L.</speaker></HIS:spOpener>
+<lb/><p>Er det ikke min pligt at redde ungdommen
+<lb/>Hvo ved i hvis klør de kan falde</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>P. J.</speaker></HIS:spOpener>
+<lb/><p>Plads for visdommen &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="LIBANIOS"><HIS:spOpener><speaker>L.</speaker></HIS:spOpener>
+<lb/><p>Afsted &dash; hvorfor har du ikke sagt mig &dash;</p></HIS:hisSp>
+<lb/><HIS:hisStage>(ud til højre)</HIS:hisStage>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener><p>
+<HIS:hisAdd place="margin"><note resp="editor">Tilføyelsen er skrevet i høyre marg.</note>
+<lb/>Slikker sig om mundkrogene for al
+<lb/>den vin som ikke skal koste dem noget.
+</HIS:hisAdd>
+<lb/>Se hvor de boltrer sig som en flok af fauner.
+<lb/>Lærlinge og lærere, med tungen ude af halsen.
+<lb/>O, I venner, er dette Attikas salt!</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gregor</speaker>.</HIS:spOpener>
+<lb/><p>Hvor tør du laste dem for det? Går ikke din store broder
+<lb/>i spidsen?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
+<lb/><p>Min broder? Ja, jeg ved hvad du sigter til. O, hvad har ikke
+<lb/>det menneske brudt ned i mig. Jeg gik ham imøde
+<lb/>da jeg kom hertil, bøjet mig for ham, kysset
+<lb/>ham og kaldte ham min store broder.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gr.</speaker></HIS:spOpener>
+<lb/><p>Og dog din modstander &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr J.</speaker></HIS:spOpener>
+<lb/><p>Just derfor, Gregor &dash; Jeg så en vældig kamp i ån&typHyp;
+<lb/>den; &dash; sandhed som skulde brydes imod sandhed &dash;
+<lb/>hvor havde jeg mine øjne? Jeg ser dog ellers klart.
+<pb ed="faksBase" n="213"/>
+<pb n="[29]r"/>
+<lb/><fw type="leaf" place="top-right" scribe="h1">29</fw>
+<lb/>Men var det at undres over? Kom jeg ikke dengang
+<lb/>som fra et fængsel? Jeg vil sige eder det, &dash; Libanius
+<lb/>er ingen stor mand.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gr.</speaker></HIS:spOpener>
+<lb/><p>Da siger dig hele Grækenland at han er det.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr J.</speaker></HIS:spOpener>
+<lb/><p>Og dog er han ingen stor mand, siger jeg dig.
+<lb/>Han har stor lærdom, men han er ingen stor mand.
+<lb/>Libanius er misundelig &dash; han er forfængelig
+<lb/>han er grisk. Er hans liv som hans lære?
+<lb/>Han kender alle dyders væsen og natur; men øver
+<lb/>han dem? Hvad er hans foragt for verdens
+<lb/>goder. Smigret han ikke kejseren indtil han blev
+<lb/>forjaget. &dash; Og nu hans had til Maximus, hin
+<lb/>sælsomme mand, som er dukket op i Efesus?
+<lb/>Er dette det <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>store! O, når jeg hører råbet: han er stor,
+<lb/>da gad jeg spytte Grækerfolket i ansigtet &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basilius fra Cæsarea</speaker>
+<lb/><HIS:hisStage>(kommer fra højre.)</HIS:hisStage></HIS:spOpener>
+<lb/><p>Breve fra Kappadocien.</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gr.</speaker></HIS:spOpener>
+<lb/><p><HIS:hisDel rend="overwritten"><unclear>T</unclear></HIS:hisDel>Også til mig?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil<unclear>:</unclear></speaker></HIS:spOpener>
+<lb/><p>Se her; fra din moder &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="GREGOR"><HIS:spOpener><speaker>Gr.</speaker></HIS:spOpener>
+<lb/><p>Min fromme moder &dash;</p></HIS:hisSp>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker><HIS:hisDel rend="overstrike">Br</HIS:hisDel> Pr J.</speaker></HIS:spOpener>
+<lb/><p>Er det fra hende &dash; fra Makrina?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil:</speaker></HIS:spOpener>
+<lb/><p>Ja &dash; varmt og inderligt &dash; du, du fylder hver linje</p></HIS:hisSp>
+<pb ed="faksBase" n="214"/>
+<pb n="[29]v"/>
+<lb/><HIS:hisSp who="JULIAN"><HIS:spOpener><speaker>Pr. J.</speaker></HIS:spOpener>
+<lb/><p><HIS:hisDel rend="overstrike">Hele Asien</HIS:hisDel> Ja, ja &dash; hvad skriver hun?</p></HIS:hisSp>
+<lb/><HIS:hisSp who="BASILIOS"><HIS:spOpener><speaker>Basil:</speaker></HIS:spOpener>
+<lb/><p>Hele Asien er i gæring. Maximus nævnes på alles
+<lb/>læber. Er han en bedrager eller en dæmon &dash;
+<lb/>ingen kan forklare de underlige gerninger</p></HIS:hisSp>
+</div>
+<pb ed="faksBase" n="215"/>
+<pb n="[30]r"/>
+<lb/><fw type="leaf" place="top-right" scribe="h1">30</fw>
+<pb ed="faksBase" n="216"/>
+<pb n="[30]v"/>
+<pb ed="faksBase" n="217"/>
+<pb n="[31]r"/>
+<lb/><fw type="leaf" place="top-right" scribe="h1">31</fw>
+<pb ed="faksBase" n="218"/>
+<pb n="[31]v"/>
+<pb ed="faksBase" n="219"/>
+<pb n="[32]r"/>
+<lb/><fw type="leaf" place="top-right" scribe="h1">32</fw>
+<pb ed="faksBase" n="220"/>
+<pb n="[32]v"/>
+</body>
+</text>
+</TEI>

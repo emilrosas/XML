@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI
+[
+<!ENTITY % HIS_entiteter SYSTEM
+'http://www.edd.uio.no/ibsen/schema/ibsen-charent.dtd'   >
+%HIS_entiteter;
+]>
+<?xml-model href="http://www.edd.uio.no/ibsen/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+<teiHeader xml:lang="nob">
+<fileDesc>
+<titleStmt>
+<title level="s" type="main">Henrik Ibsens skrifter</title>
+<title level="s" type="desc">Diplomatarisk tekstarkiv</title>
+<title level="a" type="main">[Episk Brand]</title>
+<title level="a" type="desc">Grunntekst, KBK NKS 2869, 4&deg;, 1; II. bl. 4-16</title>
+<author>Henrik Ibsen</author>
+<funder>&funder;</funder>
+<editor>&editor;</editor>
+<respStmt>
+<resp>Kollasjonering, transkripsjon, koding og korrekturlesing</resp>
+<name xml:id="HIS-HB">Hilde Bøe</name>
+<name xml:id="HIS-ENW">Ellen Nessheim (Wiger)</name>
+</respStmt>
+<respStmt>
+<resp>Kodeoppdatering</resp>
+<name xml:id="HIS-IF">Ingrid Falkenberg</name>
+</respStmt>
+</titleStmt>
+<editionStmt><edition xml:id="BE428691_II_4-16-1108"/></editionStmt>
+<publicationStmt>
+<publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+<distributor xml:id="HISe">Universitetet i Oslo</distributor>
+<date when="2007" xml:id="HISe-date"/>
+<pubPlace>Oslo</pubPlace>
+</publicationStmt>
+<sourceDesc><p>Denne filen bygger på BE428691.xml (BE428691-0106).</p></sourceDesc>
+</fileDesc>
+<encodingDesc>
+<projectDesc><p>&projectDesc-grt-ms;</p></projectDesc>
+<editorialDecl>
+<stdVals><p>&stdVals;</p></stdVals>
+<p>&editorialDecl;</p>
+</editorialDecl>
+<tagsDecl><namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="tei.2">&tagUsage-TEI;</tagUsage></namespace></tagsDecl>
+<variantEncoding type="alteration" method="parallel-segmentation" location="internal"/>
+</encodingDesc>
+<profileDesc>
+<langUsage><language ident="nob"/><language ident="dan-nob"/></langUsage>
+<handNotes>
+<handNote scribe="HI-1" xml:id="HI-1" medium="pen1"><p>Henrik Ibsen. Sort penn. Rettelser bl. 4r, 6r, 7r, 10r.</p></handNote>
+<handNote scribe="HI-2" xml:id="HI-2" medium="pen2" scope="major"><p>Henrik Ibsen. Brun penn. Bl. 4-17.</p></handNote>
+<handNote scribe="KL" xml:id="KL" medium="pencil"><p>Karl Larsen. Blyantnotatene er Karl Larsens (signert KL på bl. 7r og 19v); det er uvisst om også alle merkene er hans.</p></handNote>
+<handNote scribe="h4" xml:id="h4" medium="pencil"><p>Ukjent hånd. Blyantfoliering i øvre, høyre hjørne.</p></handNote>
+</handNotes>
+</profileDesc>
+<revisionDesc>
+<change><date>11.11.2008</date>
+<name>HB</name><title>Splittet fil i  versjoner for HISe</title>
+Arkiverte pre-splitting-kopi + lagret kopi som inneholder KBKs ordning av mset (=arkivert kopi). Slettet all logg fra tidligere år, bevart i arkivert kopi.</change>
+</revisionDesc>
+</teiHeader>
+<text xml:id="">
+<body>
+<pb n="[4]r"/><lb/><fw type="leaf" place="top-right" scribe="h4">4</fw>
+<div type="poem" n="3a">
+<xptr type="synopticView_msVersions" xml:id="BE_379ms"/><head><handShift new="HI-2" old="HI-1"/><lb/><hi rend="underlined">Over Storfjellet</hi>.
+<lb/><HIS:hisDel rend="overstrike"><HIS:hisDel rend="overwritten">2</HIS:hisDel>3</HIS:hisDel>.</head>
+<lb/><l rend="indent">Der højner sig et Strøg i Norges Land;</l>
+<lb/><l>Mod Øst det langsomt opp af Dalen stiger,</l>
+<lb/><l>Mod Vest det styrter bratt til Fjordens Rand,</l>
+<lb/><l>Og dette Strøg er Viddens øde Riger<HIS:hisDel rend="overstrike">,</HIS:hisDel><HIS:hisAdd place="inline">.</HIS:hisAdd></l>
+<lb/><l>Der gror den brune Lyng i Skogens Sted,</l>
+<lb/><l>Der modnes M<HIS:clarification place="inline">o</HIS:clarification>s kun mellem mørskne Stene,</l>
+<lb/><l>Der folder Fonnen ud sin Kappe bred,</l>
+<lb/><l>Der lever Renen uskræmt og alene.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Der gaar ej banet Vej i dette Strøg,</l>
+<lb/><l>Det er et vildsomt Land for Fod og Tanke;</l>
+<lb/><l>Snart hvirvler Bræen som en Skogbrands Røg,</l>
+<lb/><l>Snart ligger den <HIS:hisAdd place="offline" hand="HI-1">og skinner</HIS:hisAdd> som Lin i Folder slanke,</l>
+<lb/><l>Snart nikker nøgne Nuter over Hejen,</l>
+<lb/><l>Snart hyller de si<HIS:hisDel rend="overwritten">t</HIS:hisDel>g <app type="alteration"><lem><HIS:hisAdd place="offline">tætt i Skodden<HIS:hisDel rend="overstrike" hand="HI-1">s</HIS:hisDel></HIS:hisAdd> <HIS:hisAdd place="offline" hand="HI-1">som i Hætter og</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Hoved ind i</HIS:hisDel></HIS:hisRdg></app> Slør;</l>
+<lb/><l>En enlig Stav, en Stenrøs viser Vejen</l>
+<lb/><l>Igjennem Skardet, stængt mod Nord og Sør.</l>
+<pb n="[4]v"/><lb/><figure type="num"/>
+<lb/><l rend="indent">Det var en Sommermorgen sval og stille<HIS:hisDel rend="overstrike">;</HIS:hisDel>.</l>
+<lb/><l>Nær ved det Sted paa Viddens brede Bryst,</l>
+<lb/><l>Hvor Elven, minket til en tvedelt Kilde,</l>
+<lb/><l>Af Myren siver ud mod Vest og Øst, &dash;</l>
+<lb/><l>Der sad en liden Flok af glade Venner</l>
+<lb/><l>Med unge Piger i et samlet Lag;</l>
+<lb/><l>I Gru<HIS:hisDel rend="overwritten">en</HIS:hisDel>ven under Kjedlen Lyngen brænder</l>
+<lb/><l>Og Vinen funkler i den klare Dag.</l>
+<lb/><figure type="num"/>
+<HIS:hisAdd place="margin"><note resp="editor">Tilføyelsen er gjort på innlimt lapp i høyre marg.</note>
+<lb/><figure type="num"/><xptr type="synopticView_msVersions" xml:id="BE_380ms"/>
+<lb/><l rend="indent">Det er nok Stor<HIS:hisDel rend="overstrike">karle</HIS:hisDel>folk, <HIS:hisAdd place="offline">de,</HIS:hisAdd> som her er ude;</l>
+<lb/><l>thi de har Fører med, og Hest, og Kløv,</l>
+<lb/><l>og Flag paa Stang og Hatte smykt med Løv,</l>
+<lb/><l>og Dug er bredt udover Lyngens Pude.</l>
+<lb/><l><app type="alteration"><lem><HIS:hisAdd place="offline">Iblandt de Unge sidder en og synger;</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Der sidder en og synger blandt de Unge</HIS:hisDel></HIS:hisRdg></app></l>
+<lb/><l>Der er som Sol udover Sangen spredt;</l>
+<lb/><l>nær ved ham hviler sig en Pige, let,</l>
+<lb/><l>som Fugl, der opp og ned paa Pilkvist gynger.</l>
+<lb/><figure type="num"/></HIS:hisAdd>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Snart klinger Spøg og Lattersalver stærke,</l>
+<lb/><l>Snart tystner Jublen <app type="alteration"><lem><HIS:hisAdd place="offline">naar</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">just</HIS:hisDel></HIS:hisRdg></app> den lød som bedst,</l>
+<lb/><l>Paa Ord og Aasyn er det klart at mærke</l>
+<lb/><l>Vort Lag er samlet til en Afskedsfest.</l>
+<lb/><l><HIS:hisDel rend="overwritten">D</HIS:hisDel>I<HIS:hisDel rend="overstrike">et</HIS:hisDel> Klyngen staar en Mand, ej just bedaget,</l>
+<lb/><l>Ej heller ung, men stærk og vel ved Magt;</l>
+<lb/><l>Han vender si<HIS:hisDel rend="overwritten">t</HIS:hisDel>g til To, <app type="alteration"><lem><HIS:hisAdd place="offline">hint</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">et</HIS:hisDel></HIS:hisRdg></app> Par i Laget,</l>
+<lb/><l>Med lyse Syner over Panden lagt.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Han fylder Glasset og til Lyd han slaar,</l>
+<lb/><l>Han leer saa smaat<HIS:hisDel rend="overstrike">t</HIS:hisDel> og tager saa tilorde:</l>
+<lb/><l>&lquo;Vorherre vid<HIS:hisAdd place="inline">s</HIS:hisAdd>te pr<HIS:hisDel rend="overwritten">ø</HIS:hisDel>ægtigt hvad han gjorde</l>
+<lb/><l>Da han lod Eder mødes paa min Gaard.</l>
+<lb/><l>Du, <app type="alteration"><lem><HIS:hisAdd place="offline">Agnes, sendtes skrantende fra</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Dagmar, skranted lidt svaart i</HIS:hisDel></HIS:hisRdg></app> Byen;</l>
+<lb/><l><app type="alteration"><lem><HIS:hisAdd place="offline">Du skulde</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Og sendtes</HIS:hisDel></HIS:hisRdg></app> opp i Fjeldets friske Luft</l>
+<lb/><l>At drikke Sol og Dugg og Granens Duft, &dash;</l>
+<lb/><l>Og saa kom <emph>han</emph> som falden ned fra Skyen<unclear reason="writing">.</unclear></l>
+<pb n="[5]r"/><lb/><fw type="leaf" place="top-right" scribe="h4">5</fw>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">&lquo;Han kom med Malerkassen paa sin Rygg,</l>
+<lb/><l>Han kom fra Syden hjem, fra Rejser lange,</l>
+<lb/><l>Han var saa stærk og sund, saa kjæk og trygg,</l>
+<lb/><l>Og havde Brystet fuldt af tusind Sange.</l>
+<lb/><l>Han søgte Skjønhed, sagde han, paa Fjeldet,</l>
+<lb/><l><sic>Bland</sic> Moens Graner og langs Skogens Elv,</l>
+<xptr type="synopticView_msVersions" xml:id="BE_381ms"/><lb/><l>I Skye<HIS:hisDel rend="overwritten">ns</HIS:hisDel>rs Stormflugt under Himlens Hvælv, &dash;</l>
+<lb/><l>Da traf han dig, &dash; da fandt han Skjønhedsvældet.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">&lquo;Da malte han sit bedste Mesterstykke,</l>
+<lb/><l>Han malte Sundhedsroser paa din Kind,</l>
+<lb/><l>To Øine malte han, som lyste Lykke &dash;</l>
+<lb/><l>Og saa et Smil, som lo i Sjælen ind;</l>
+<lb/><l>Jeg mærked snart at jeg, din gamle Doktor,</l>
+<lb/><l>Var overflødig Mand ved slig en Kur;</l>
+<lb/><l>Hans Sange virked bedre end Dekokter,</l>
+<lb/><l>Ja bedre selv end Bad i Guds Natur.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Dog, overflødig? Nej, det var jeg neppe;</l>
+<lb/><l>Mig var det jo, som stopped ham en Dag,</l>
+<lb/><l>D<HIS:hisDel rend="overwritten">er</HIS:hisDel>a han stod rejseklædt med pakket Skræppe,</l>
+<lb/><l>Og minded ham om en fornøden Sag, &dash;</l>
+<lb/><l>En Sag, som I <HIS:hisDel rend="overwritten">t</HIS:hisDel>To havde ganske sovet</l>
+<lb/><l>Blandt Drømme bort i Leg og Gjækkeri;</l>
+<lb/><l>Og hvilken Sag? Jo, den at bli' forlovet; &dash;</l>
+<lb/><l>Hvorfor? Fordi han havde glemt at fri.</l>
+<pb n="[5]v"/><lb/><figure type="num"/>
+<lb/><l rend="indent">Han havde glemt at fri og du at svare;</l>
+<lb/><l>I nød kun Timen, som den blev jer undt;</l>
+<lb/><l>I tænkte nok at Legen kunde vare</l>
+<lb/><l>Lig Sommergildet, der gaar Døgnet rundt.</l>
+<lb/><l>I <emph>tænkte</emph>? Nej, I tænkte netop <emph>ikke</emph>,</l>
+<lb/><l>Og allermindst paa eders Fremtids Hus;</l>
+<lb/><l>I <app type="alteration"><lem><HIS:hisAdd place="offline">sang i</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">lo med</HIS:hisDel></HIS:hisRdg></app> Sjælen, lo med Mund og Blikke, &dash;</l>
+<lb/><l>Og Uger gik som i en Festnatts Rus.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Saa maatte jeg vel handle, kan jeg tro;</l>
+<lb/><l>For ham jeg fried og for dig jeg svared,</l>
+<lb/><l>Og lagde sammen eders Hænder to</l>
+<lb/><l>Og dermed var det Hele grejt og klaret.</l>
+<xptr type="synopticView_msVersions" xml:id="BE_382ms"/><lb/><l>Saa stod et Lag tre hele Døgn tilende,</l>
+<lb/><l>Saa fulgte vi det unge Par fra Gaard;</l>
+<lb/><l>Nu, Venner, er det Afskedstimen slaar;</l>
+<lb/><l>Thi her vi skilles maa fra ham og hende.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Snart er det stillt som før hos os i Dalen,</l>
+<lb/><l>Kun Elven synger os sin gamle Sang,</l>
+<lb/><l>Snart sænker Solen sig, snart flygter Svalen,</l>
+<lb/><l>Af Mindet har vi kun en Efterklang;</l>
+<lb/><l>Saa gulner Hægg og Hasl ved Løvfaldstid,</l>
+<lb/><l>Saa stivner Mark og Myr og Vintren kommer, &dash;</l>
+<lb/><l>En Natt, &dash; saa ligger B<HIS:hisDel rend="overwritten">e</HIS:hisDel>ø<HIS:hisDel rend="overstrike">rg</HIS:hisDel> og Bakke hvid, &dash;</l>
+<lb/><l>Men I gaar ind i Lykkens lyse Sommer.</l>
+<pb n="[6]r"/><lb/><fw type="gathering" place="top-left"><HIS:hisDel rend="overstrike">2.</HIS:hisDel> 4.</fw><fw type="leaf" place="top-right" scribe="h4">6</fw>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Først gaar I over Viddens tause Toppe,</l>
+<lb/><l>Saa gaar I ned til Fjorden dybt i Vest;</l>
+<lb/><l>Der <app type="alteration"><lem><HIS:hisAdd place="offline">venter</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">ligger</HIS:hisDel></HIS:hisRdg></app> Ægirs Hest med Dampen oppe, &dash;</l>
+<lb/><l>Paa den I rider hjem til Bryllupsfest;</l>
+<lb/><l>Saa <app type="alteration"><lem><HIS:hisAdd place="offline">styrer</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">flyver</HIS:hisDel></HIS:hisRdg></app> I mod Sydens Land tilsammen,</l>
+<lb/><l>Lig unge Svaner paa den første Flugt;</l>
+<lb/><l>Der lever I et Sommerliv med Gammen,</l>
+<lb/><l>Som Drømme<HIS:hisDel rend="overstrike">n</HIS:hisDel> dejligt og som Sagnet smukt.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Thi Glædens Godvejr er det, som skal berge</l>
+<lb/><l>Jer Baad paa Farten over Livets Hav;</l>
+<lb/><l>Til Lykkens Fane er det I maa sværge, &dash;</l>
+<lb/><l>E<HIS:hisDel rend="overwritten">n</HIS:hisDel>t Sorgens <app type="alteration"><lem><HIS:hisAdd place="offline">Hærtog</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Vinter</HIS:hisDel></HIS:hisRdg></app> lagde Jer i Grav;</l>
+<lb/><l>I skabtes til, og derfor være priset</l>
+<lb/><l>Den Haand, som spinder Skjæbnetraaden lang,</l>
+<lb/><l>At gaa jer Pilgrimsgang til Paradiset</l>
+<lb/><l>Igjennem fagre Riger frem med Sang.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Se, derfor vil jeg denne Søndagsmorgen,</l>
+<lb/><l>Skjønt Læge kun og Lægmand, ikke Pr<HIS:clarification place="inline">æ</HIS:clarification>st,</l>
+<xptr type="synopticView_msVersions" xml:id="BE_383ms"/><lb/><l>Fredlyse jer for Savnet og for Sorgen</l>
+<lb/><l>Og vie ind jert Liv til <HIS:hisAdd place="inline" hand="HI-1">en</HIS:hisAdd> Glædens Fest.</l>
+<lb/><l>I Solskin <HIS:hisAdd place="offline" hand="HI-1">og Godvejr</HIS:hisAdd> skal I stævne gjennem Stimlen,</l>
+<lb/><l>For jer skal Stjerner <HIS:hisAdd place="offline" hand="HI-1">tændes og</HIS:hisAdd> tindre <HIS:hisAdd place="offline"><HIS:hisDel rend="overstrike" hand="HI-1">smukt</HIS:hisDel></HIS:hisAdd> hver <HIS:hisDel rend="overstrike">en</HIS:hisDel> Natt,</l>
+<lb/><l>Jert Liv skal være som et <HIS:hisAdd place="offline" hand="HI-1">eneste</HIS:hisAdd> stort Tagfatt,</l>
+<lb/><l>Til legende som Børn I <HIS:hisAdd place="infralinear" hand="HI-1">engang</HIS:hisAdd> finder Himlen!&rquo;</l>
+<pb n="[6]v"/><lb/><figure type="num"/>
+<lb/><l rend="indent">Her taug han stille<HIS:hisDel rend="overstrike">;</HIS:hisDel>. <app type="alteration"><lem><HIS:hisAdd place="offline"><HIS:hisDel rend="overwritten">b</HIS:hisDel>Bagom Talens</HIS:hisAdd> <HIS:hisAdd place="offline"><HIS:hisDel rend="overstrike">halvgjemt</HIS:hisDel></HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">der laa halvvejs</HIS:hisDel></HIS:hisRdg></app> Spøg</l>
+<lb/><l><app type="alteration"><lem><HIS:hisAdd place="offline">laa Alvor glyttende som bag en</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">I Talens Ord indunder Alators</HIS:hisDel></HIS:hisRdg></app> Kaabe;</l>
+<lb/><l>Med Fingren over Øjet lett han strøg</l>
+<lb/><l>Og tømte Glasset ud til sidste Draabe.</l>
+<lb/><l>Men Ungdo<HIS:hisDel rend="overwritten">g</HIS:hisDel>msflokken stormed frem i Klynge</l>
+<lb/><l>Med fyldte Bægre om de unge To,</l>
+<lb/><l>I Ban <HIS:hisDel rend="overstrike">blev</HIS:hisDel> <HIS:hisAdd place="offline">hver</HIS:hisAdd> Sorg<HIS:hisDel rend="overstrike">en</HIS:hisDel> <HIS:hisAdd place="offline">blev</HIS:hisAdd> lyst, der turde tynge</l>
+<lb/><l>Det lette Løvværk over deres Bo.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent"><HIS:hisDel rend="overwritten">M</HIS:hisDel>Han strøg af Sproget ud hvert Ord, som hyste</l>
+<lb/><l>En Tanke kun om fjerne Uvejrsdrøn,</l>
+<lb/><l>Man <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>kransed dem med <HIS:hisDel rend="overwritten">l</HIS:hisDel>Løv og man dem lyste</l>
+<lb/><l>Som Glædens ægte Børn i Kuld og Kjøn.</l>
+<lb/><l>Og mer og mere vildt sig Flokken fletter</l>
+<lb/><l>I Ringdans over Lyngens brune Bræm;</l>
+<lb/><l>Man rejser Nidstang højt mod Mørkets Vætter,</l>
+<lb/><l><HIS:hisDel rend="overstrike">Og</HIS:hisDel> <HIS:hisAdd place="offline">Man</HIS:hisAdd> maner alle Dagens Alfer frem.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Saa faldt der som en Slapphed paa de Vilde,</l>
+<lb/><l>Den sidste Rest var tømt af Jublens Væld,</l>
+<lb/><l>Man trykked Parrets Hænder <app type="alteration"><lem><HIS:hisAdd place="offline">stærkt</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">tungt</HIS:hisDel></HIS:hisRdg></app> og stille</l>
+<lb/><l>Og bød et langt og alvors<app type="alteration"><lem><HIS:hisAdd place="offline">tungt</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">stærkt</HIS:hisDel></HIS:hisRdg></app> Farvel;</l>
+<lb/><l>Saa vandred Flokken østerpaa mod Dalen</l>
+<lb/><l><app type="alteration"><lem><HIS:hisAdd place="offline">Og</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Mens</HIS:hisDel></HIS:hisRdg></app> Føreren red langsomt vesterud, &dash;</l>
+<lb/><l>Men viftende stod midt i Højfjeldssalen</l>
+<lb/><l>Den unge Maler ene med sin Brud.</l>
+<pb n="[7]r"/><lb/><fw type="leaf" place="top-right" scribe="h4">7</fw>
+<lb/><figure type="num"/>
+<xptr type="synopticView_msVersions" xml:id="BE_384ms"/><lb/><l rend="indent">Han svang sin Hatt og hun lod Sløret flagre</l>
+<lb/><l>Til Takk for hvert Farvel, som blev dem sendt,</l>
+<lb/><l>Til Takk for hver en Hilsen, stedse <HIS:hisDel rend="overwritten">S</HIS:hisDel>svagre,</l>
+<lb/><l>Der lød, til Flokken svandt i Skardets Skrænt.</l>
+<lb/><l>Da saa de paa hinanden stillt en Stund</l>
+<lb/><l>I Alvors Efterglands af Afskedsstunden,</l>
+<lb/><l>Saa sittred frem et Smil om Begges Mund,</l>
+<lb/><l>Lig Sol der sittrer gjennem Løv i Lunden.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Og Smilet voxte <HIS:hisAdd place="offline" hand="HI-1">og voxte</HIS:hisAdd> til der laa en Verden</l>
+<lb/><l>Af <HIS:hisAdd place="offline" hand="HI-1">hele</HIS:hisAdd> Ungdom<HIS:hisDel rend="overwritten">s</HIS:hisDel><HIS:hisAdd place="offline" hand="HI-1">mens</HIS:hisAdd> <HIS:hisDel rend="overwritten">l</HIS:hisDel><HIS:hisAdd place="inline" hand="HI-1">L</HIS:hisAdd>ykke lysende deri;</l>
+<lb/><l>Forglemt var Venners Flok og <app type="alteration"><lem><HIS:hisAdd place="offline">Venners</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">D<gap/></HIS:hisDel></HIS:hisRdg></app> Færden,</l>
+<lb/><l>Som Sky er glemt saa bratt den strøg forbi.</l>
+<lb/><l>De saa ej fremad, heller ej tilbage,</l>
+<lb/><l>De saa kun Nuets straalende Sekund; &dash;</l>
+<lb/><l>De saa ej <app type="alteration"><lem><HIS:hisAdd place="offline">skræmte</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">fjerne</HIS:hisDel></HIS:hisRdg></app> Uvejrsfugle jage</l>
+<lb/><l>Med spilte Vinger opp fra Fjord og Sund.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">De sprang som glade Søskend Haand i Haand</l>
+<lb/><l>Mod Vest <app type="alteration"><lem><HIS:hisAdd place="offline">bortover</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">henover</HIS:hisDel></HIS:hisRdg></app> Viddens brune Teppe;</l>
+<lb/><l>Han var saa slank og smidig som en Vaand,</l>
+<lb/><l>Og <app type="alteration"><lem><HIS:hisAdd place="offline" hand="HI-1">Pigens</HIS:hisAdd></lem><HIS:hisRdg>hendes</HIS:hisRdg></app> Fødder <app type="alteration"><lem><HIS:hisAdd place="offline" hand="HI-1">traadte Lyngtoppen</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="HI-1">rørte Jorden</HIS:hisDel></HIS:hisRdg></app> neppe.</l>
+<lb/><l>Hun rev sig løs og leende hun veg,</l>
+<lb/><l>Da raskt han atter vilde hende fange,</l>
+<lb/><l>Og Gangen blev en Flugt og Spøgen Leg,</l>
+<lb/><l>Og deres Ord og Latter blev til Sange:</l>
+<pb n="[7]v"/><lb/><figure type="num"/>
+<lb/><l>&lquo;<app type="alteration"><lem><HIS:hisAdd place="offline">Agnes</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Dagmar</HIS:hisDel></HIS:hisRdg></app>, min dejlige Sommerfugl,</l>
+<lb/><l>Dig vil jeg legende fange;</l>
+<lb/><l>Jeg <app type="alteration"><lem><HIS:hisAdd place="offline">fletter</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">ejer</HIS:hisDel></HIS:hisRdg></app> et Nætt med Masker smaa,</l>
+<lb/><l>Og Maskerne er mine Sange!&rquo;</l>
+<lb/><figure type="num"/>
+<lb/><l>&lquo;<HIS:hisDel rend="overstrike">Og</HIS:hisDel> <HIS:hisDel rend="overwritten">e</HIS:hisDel>Er jeg en Sommerfugl liden og skjær,</l>
+<lb/><l>Saa lad mig af Blomsterne drikke;</l>
+<xptr type="synopticView_msVersions" xml:id="BE_385ms"/><lb/><l>Og er du en Svend, som lyster en Leg,</l>
+<lb/><l>Saa jag mig, men fang mig ikke.&rquo;</l>
+<lb/><figure type="num"/>
+<lb/><l>&lquo;<app type="alteration"><lem><HIS:hisAdd place="offline">Agnes</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Dagmar</HIS:hisDel></HIS:hisRdg></app>, min dejlige Sommerfugl,</l>
+<lb/><l>Nu har jeg Maskerne flettet;</l>
+<lb/><l>Dig hjælper saalidet din <app type="alteration"><lem><HIS:hisAdd place="offline">flagrende</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">legende</HIS:hisDel></HIS:hisRdg></app> Flugt,</l>
+<lb/><l>Snart sidder du fangen i Nættet.&rquo;</l>
+<lb/><figure type="num"/>
+<lb/><l>&lquo;<HIS:hisDel rend="overstrike">Og</HIS:hisDel> <HIS:hisDel rend="overwritten">e</HIS:hisDel>Er jeg en Sommerfugl ung og blank,</l>
+<lb/><l>Jeg lystig i Legen <HIS:hisDel rend="overstrike">svi</HIS:hisDel> mig svin<HIS:clarification place="inline">g</HIS:clarification>er;</l>
+<lb/><l>Men fanger du mig under Nettets Spind,</l>
+<lb/><l>Saa rør ikke ved mine Vinger.&rquo;</l>
+<lb/><figure type="num"/>
+<lb/><l>Nej, jeg skal løfte dig varligt paa Haand</l>
+<lb/><l>Og lukke dig ind i mit Hjerte;</l>
+<lb/><l>Der kan du lege dit hele Liv</l>
+<lb/><l>Den lystigste Leg, du lærte.&rquo;</l>
+<pb n="[8]r"/><lb/><fw type="leaf" place="top-right" scribe="h4">8</fw>
+<lb/><figure type="num"/>
+<lb/><l>&lquo;<app type="alteration"><lem><HIS:hisDel rend="overstrike"><HIS:hisAdd place="offline">Nej</HIS:hisAdd></HIS:hisDel></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Og</HIS:hisDel></HIS:hisRdg></app><HIS:hisDel rend="overstrike">, er jeg en Sommerfugl glad og fri</HIS:hisDel>,</l>
+<lb/><l><HIS:hisDel rend="overstrike">Er Buret mig ubelejligt</HIS:hisDel>;</l>
+<lb/><l><HIS:hisDel rend="overstrike">Jeg ved ej om Livet er</HIS:hisDel> <seg type="transposition" subtype="words_numbered"><seg rend="supralinear" subtype="no"><HIS:hisDel rend="overstrike">2</HIS:hisDel></seg><HIS:hisDel rend="overstrike"><seg subtype="word">kort</seg> eller</HIS:hisDel> <seg rend="supralinear" subtype="no">1</seg><seg subtype="word"><HIS:hisDel rend="overstrike">langt</HIS:hisDel></seg></seg>,</l>
+<lb/><l><HIS:hisDel rend="overstrike">Men jeg ved det er sommerfugldejligt</HIS:hisDel>.&rquo;</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Da standses deres Leg medet paa Skrænten,</l>
+<lb/><l>Der styrter i et Braadyb ned mod Vest;</l>
+<lb/><l>Dybt under deres Fødder sejled Glenten,</l>
+<lb/><l><HIS:hisDel rend="overwritten">&lquo;</HIS:hisDel>Og Føreren steg varligt af sin Hest.</l>
+<lb/><l>&lquo;Far langsomt her,&rquo; sa<HIS:hisDel rend="overwritten">ae</HIS:hisDel>a talte han til Parret,</l>
+<lb/><l>Og dersom I vil værge jer imod</l>
+<lb/><l>Hvad Ondt <app type="alteration"><lem><HIS:hisAdd place="offline">og Ildt, jer møde kan i</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">I møde kan der nedi</HIS:hisDel></HIS:hisRdg></app> Skaret,</l>
+<lb/><l>Kast Kviste to ikors for eders Fod.&rquo;</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Saa skred han foran og de Unge fulgte</l>
+<lb/><l>Med Hjerter klappende af stille Skrækk,</l>
+<xptr type="synopticView_msVersions" xml:id="BE_386ms"/><lb/><l>Mens nu og da et Gufs jog Skodden væk</l>
+<lb/><l>Og viste Dybet, som sig atter dulgte.</l>
+<lb/><l>Hun holdt ham fast, som bange Barn om Kveld,</l>
+<lb/><l>Og hvisked: &lquo;Er det ikke som vi stiger<HIS:hisDel rend="overstrike">,</HIS:hisDel></l>
+<lb/><l>Fra Livet ud, fra Lysets varme Væld,</l>
+<lb/><l>Og skulde ned i Dødens mørke Riger?&rquo;</l>
+<pb n="[8]v"/><lb/><figure type="num"/>
+<lb/><l rend="indent">Da løfted sig en Sky, som havde ruget,</l>
+<lb/><l>I Uvejrsfolder svøbt, paa Bergets Barm,</l>
+<lb/><l>Og langt bag Skyggelandet dybt i Sluget,</l>
+<lb/><l>Steg frem en Verden, vuggende og varm;</l>
+<lb/><l>Det var et Syn, som ingen Haand kan male,</l>
+<lb/><l>Det var det store, endeløse Hav,</l>
+<lb/><l>Der laa og lyste bagom alle Dale,</l>
+<lb/><l>Som Evigheden lyser <app type="alteration"><lem><HIS:hisAdd place="offline">bagom</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">over</HIS:hisDel></HIS:hisRdg></app> Grav.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Der sittred So<HIS:hisDel rend="overwritten">lskin</HIS:hisDel>lguld paa de brede Vande,</l>
+<lb/><l>Og hvide Sejl <app type="alteration"><lem><HIS:hisAdd place="offline">skar</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">jog</HIS:hisDel></HIS:hisRdg></app> skinnende fra <app type="alteration"><lem><HIS:hisAdd place="offline">Strand</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Land</HIS:hisDel></HIS:hisRdg></app>,</l>
+<lb/><l>Lig lyse Længsler over Verdens Pande</l>
+<lb/><l>Paa Flugten mod Uendlighedens <HIS:hisDel rend="overwritten">Str</HIS:hisDel>Land.</l>
+<lb/><l>Og som en Ramme om det <app type="alteration"><lem><HIS:hisAdd place="offline">store</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">lyse</HIS:hisDel></HIS:hisRdg></app> Billed</l>
+<lb/><l>Stod Slugets mørke Vægge, Skyens Tag,</l>
+<lb/><l>Mens Urdens Ørken var som Forgrund stillet</l>
+<lb/><l>Mod Fjernets Lys i stærke Skyggedrag.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Da jog en Kuling opp i Himmelbrynet</l>
+<lb/><l>Og pidsked Bølgevidden <app type="alteration"><lem><HIS:hisAdd place="offline">højt i Skum</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">paa sin Flugt</HIS:hisDel></HIS:hisRdg></app>;</l>
+<lb/><l>Saa lagde Skoddens Tæppe sig <app type="alteration"><lem><HIS:hisAdd place="offline">om</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">for</HIS:hisDel></HIS:hisRdg></app> Synet,</l>
+<lb/><l>Og <app type="alteration"><lem><HIS:hisAdd place="offline">slørte</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">stængte</HIS:hisDel></HIS:hisRdg></app> for det vide Verdensrum.</l>
+<lb/><l>Og mere trangt og bratt sig <HIS:hisDel rend="overstrike">sænked</HIS:hisDel> Stien sænkte,</l>
+<lb/><l>Og mere vildt sprang Elven ved dens Kant,</l>
+<lb/><l>Og mere sort stod Bergets Vægg og stængte</l>
+<lb/><l>For Dalens Løb, <app type="alteration"><lem><HIS:hisAdd place="offline">mens</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">og</HIS:hisDel></HIS:hisRdg></app> Viddens Solskjær svandt.</l>
+<pb n="[9]r"/><lb/><fw type="leaf" place="top-right" scribe="h4">9</fw>
+<lb/><figure type="num"/>
+<xptr type="synopticView_msVersions" xml:id="BE_387ms"/><lb/><l rend="indent">Lig Rester af en sønderslagen Verden</l>
+<lb/><l>Laa kirkestore Skred langs Stien strødd,</l>
+<lb/><l>Og intet Straa af Slugets Grusbund skjød,</l>
+<lb/><l>Og ingen Vandrer mødte dem paa Færden.</l>
+<lb/><l>Bleg gik hun ved hans Side, syg i Aanden;</l>
+<lb/><l>Han hørte Hjertet slaa i hendes Bryst;</l>
+<lb/><l>Hun saa paa ham, som Barnet ser i Vaanden;</l>
+<lb/><l>Da smilte han og sang med hævet Røst:</l>
+<lb/><figure type="num"/>
+<lb/><l>&lquo;<app type="alteration"><lem><HIS:hisAdd place="offline">Agnes</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Dagmar</HIS:hisDel></HIS:hisRdg></app>, min dejlige Søster,</l>
+<lb/><l>Sig hvorfor dit Hjerte slaar;</l>
+<lb/><l>Lad ikke Fjeldet dig ængste og skræmme, &dash;</l>
+<lb/><l>Du er i din Moders Gaard.</l>
+<lb/><figure type="num"/>
+<lb/><l>Du er jo Naturens Datter;</l>
+<lb/><l>Hvorfor vil du da grue?</l>
+<lb/><l>Lydige Børn tør gaa om Kveld</l>
+<lb/><l>I den mørke Spøgelsestue.</l>
+<lb/><figure type="num"/>
+<lb/><l>Du er i <app type="alteration"><lem><HIS:hisAdd place="offline">din Moders</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Naturens</HIS:hisDel></HIS:hisRdg></app> Spøgelsestue,</l>
+<lb/><l>Men vær ikke klemt i Aanden;</l>
+<lb/><l>Din Broder følger dig jo med Sang,</l>
+<lb/><l>Og holder dig <app type="alteration"><lem><HIS:hisAdd place="offline">trofast</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">fast</HIS:hisDel></HIS:hisRdg></app> i Haanden.</l>
+<pb n="[9]v"/><lb/><figure type="num"/>
+<lb/><l>Lad dig ej skræmme, hvad <seg type="transposition" subtype="words_numbered"><seg rend="supralinear" subtype="no">2</seg><seg subtype="word">saa</seg> <seg rend="supralinear" subtype="no"><HIS:hisDel rend="overwritten">2</HIS:hisDel>1</seg><seg subtype="word">du</seg></seg> h<HIS:clarification place="inline">ø</HIS:clarification>rer,</l>
+<lb/><l>Om Hyl eller <HIS:hisDel rend="overstrike">Ugletuden,</HIS:hisDel> Hundetuden;</l>
+<lb/><l>Det er ikke Kveld, det er ikke Natt, &dash;</l>
+<lb/><l>Her er kun Skodder for Ruden.</l>
+<lb/><figure type="num"/>
+<lb/><l>Ude er Solskin og lysen Dag;</l>
+<lb/><l>Snart aabner sig Dørens Bue;</l>
+<lb/><l>Lad os kun trøstigt gaa syngende gjennem</l>
+<lb/><l>Den mørke Spøgelsestue!</l>
+<lb/><figure type="num"/>
+<xptr type="synopticView_msVersions" xml:id="BE_388ms"/><lb/><l rend="indent">Og alt som Sangen løfted sig fra Brystet,</l>
+<lb/><l>Saa løfted Sløret sig fra Pigens Syn;</l>
+<lb/><l>Hun gik ej længer klemt og hjertekrystet;</l>
+<lb/><l><HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>Paa hendes Læber legte Smil og Nyn<HIS:hisAdd place="inline">n</HIS:hisAdd>.</l>
+<lb/><l>To Stene greb hun<HIS:hisDel rend="overwritten">;</HIS:hisDel>, <app type="alteration"><lem><HIS:hisAdd place="offline">kasted</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">slynged</HIS:hisDel></HIS:hisRdg></app> en i Fossen,</l>
+<lb/><l>Og slynged en mod Bergets bratte Vægg,</l>
+<lb/><l>Hvor Kampen stod og trued som en frossen</l>
+<lb/><l>Forstenet Jutul med sit Moseskjægg.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Og kjækk og varm hun raabte: &lquo;Nøkk i Elven,</l>
+<lb/><l>Gaa ej med Hulken og med Suk din Gang;</l>
+<lb/><l>Vid at du fylder os med Frost og Skjælven;</l>
+<lb/><l>Thi vi er skabte kun for Glædens Sang!</l>
+<lb/><l>Du onde Bergtrold med din runkne Pande,</l>
+<lb/><l>Staa ej og tru os hvor vi skal forbi;</l>
+<lb/><l>Stæng ikke Vejen for os; vid at vi</l>
+<lb/><l>Skal ud til <seg type="transposition" subtype="words_numbered"><seg rend="supralinear" subtype="no">2</seg><seg subtype="word">Lys<HIS:hisDel rend="overwritten">e</HIS:hisDel>t<HIS:hisDel rend="overstrike">t</HIS:hisDel></seg> og <HIS:hisAdd place="infralinear"><seg rend="supralinear" subtype="no">1</seg><seg subtype="word">Leg</seg> i</HIS:hisAdd></seg> <HIS:hisDel rend="overstrike">til</HIS:hisDel> Lykkens Lande!&rquo;</l>
+<pb n="[10]r"/><lb/><fw type="gathering" place="top-left"><HIS:hisDel rend="overstrike">3.</HIS:hisDel> 5.</fw><fw type="leaf" place="top-right" scribe="h4">10</fw>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Da <app type="alteration"><lem><HIS:hisAdd place="offline">runger der en Sangerrøst</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">lyde en mægtig Røst i Sang</HIS:hisDel></HIS:hisRdg></app> fra Fjeldet,</l>
+<lb/><l>Som naar et Orgel <app type="alteration"><lem><HIS:hisAdd place="offline">i en</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">gjennem</HIS:hisDel></HIS:hisRdg></app> Kirke<HIS:hisDel rend="overstrike">n</HIS:hisDel> gaar;</l>
+<lb/><l>Den døve<HIS:hisDel rend="overwritten">d</HIS:hisDel>r Elvens <HIS:hisAdd place="offline">Brag</HIS:hisAdd> og Fossevældet,</l>
+<lb/><l>Og langt af Led dens stærke Bølger slaar.</l>
+<lb/><l><HIS:hisAdd place="inline">Den</HIS:hisAdd> <HIS:hisDel rend="overstrike">Da</HIS:hisDel> standser Lykkebørnene paa Vejen,</l>
+<lb/><l>Hvor nys, trods Nøkk og Jutul, frem de foer;</l>
+<lb/><l>De studser, lytter, stirrer opp mod Hejen,</l>
+<lb/><l><HIS:hisAdd place="inline">Der</HIS:hisAdd> <HIS:hisDel rend="overstrike">Hvor</HIS:hisDel> Røsten ruller gjennem Sangens Ord:</l>
+<lb/><figure type="num"/>
+<lb/><l>Herre, gjør mig paa Smerte rig,</l>
+<lb/><l>skygg for <app type="alteration"><lem><HIS:hisAdd place="offline" hand="HI-1">hver fristende</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="HI-1">min eneste</HIS:hisDel></HIS:hisRdg></app> Glæde;</l>
+<lb/><l>pidsk mig ind under Forsagelsens Flig;</l>
+<lb/><l>Herre Gud Fader i Himmerig,</l>
+<lb/><l>Lær mig at lide og bede!</l>
+<lb/><figure type="num"/>
+<xptr type="synopticView_msVersions" xml:id="BE_389ms"/><lb/><l>Lær mig at gaa gjennem <app type="alteration"><lem><HIS:hisAdd place="offline" hand="HI-1">Kjødets</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="HI-1">Livets</HIS:hisDel></HIS:hisRdg></app> Land</l>
+<lb/><l>blind for Sol og for Sommer;</l>
+<lb/><l>lær mig at ville mer end jeg kan;</l>
+<lb/><l><HIS:hisDel rend="overwritten">R</HIS:hisDel>raab paa mig, <app type="alteration"><lem><HIS:hisAdd place="offline" hand="HI-1">Herre</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="HI-1">Jesus</HIS:hisDel></HIS:hisRdg></app>, min Frelsermand,</l>
+<lb/><l><HIS:hisAdd place="infralinear" hand="HI-1">og bøj saa mit Sind at jeg kommer</HIS:hisAdd><HIS:hisDel rend="overstrike" hand="HI-1">min Konge, min straffende Dommer</HIS:hisDel>!</l>
+<lb/><figure type="num"/>
+<lb/><l>Jorden er som en Vinternatt,</l>
+<lb/><l>alle Sorger er tindrende Stjerner; &dash;</l>
+<lb/><l>som Lys for Vildfarendes Fod er de sat;</l>
+<lb/><l><app type="alteration"><lem><HIS:hisAdd place="offline" hand="HI-1">slukkes de Lys</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="HI-1">slipper jeg dem</HIS:hisDel></HIS:hisRdg></app>, da gaar jeg forladt, &dash;</l>
+<lb/><l><HIS:hisDel rend="overstrike">og</HIS:hisDel> <HIS:hisAdd place="infralinear" hand="HI-1">jeg ved ikke den som mig</HIS:hisAdd><HIS:hisDel rend="overstrike" hand="HI-1">Ingen mig leder og</HIS:hisDel> værner.</l>
+<HIS:hisAdd place="margin_vertical"><note resp="editor">Tilføyelsen er gjort vertikalt i venstre marg.</note><lb/><l>Sorgen sidder som Dronning prud</l>
+<lb/><l>I sit isnende Nordlysklæde.</l>
+<lb/><l>Følg mig, Alle, i Natten ud!</l>
+<lb/><l>Herre, Herre, du Himmerigs Gud,</l>
+<lb/><l>Lær os at lide og bede!</l></HIS:hisAdd>
+<pb n="[10]v"/><lb/><figure type="num"/>
+<lb/><l rend="indent">Saa lød det højt deroppe, hvor en Sti</l>
+<lb/><l>sig bugted fra en Afdal gjennem Urden;</l>
+<lb/><l>saa lokked <app type="alteration"><lem><HIS:hisAdd place="offline">det</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">han</HIS:hisDel></HIS:hisRdg></app> igjennem Alvorsluren</l>
+<lb/><l>for Verdens Hjord vidt over <app type="alteration"><lem><HIS:hisAdd place="offline">Skard</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Dal</HIS:hisDel></HIS:hisRdg></app> og Li.</l>
+<lb/><l>Da kom de To ihug med lønlig Anger,</l>
+<lb/><l>hvad før <app type="alteration"><lem><HIS:hisAdd place="offline">blev</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">var</HIS:hisDel></HIS:hisRdg></app> glemt, at kaste Kors for Fod; &dash;</l>
+<lb/><l>forsent; her spratt ej nogen Kvist fra Rod,</l>
+<lb/><l>og ned imod dem kom den stærke Sanger.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Det var en sortklædt Mand med fine Trækk,</l>
+<lb/><l>lidt bleg, lidt skarp, lidt skaldet over Panden;</l>
+<lb/><l>med højre Haand han visked Sveden væk</l>
+<lb/><l>og gik imens med Hatten i den anden.</l>
+<lb/><l>Hans Øje minded om et Tjern i Skyggen,</l>
+<lb/><l>om Noget, som er dybt og dulgt og gjemt;</l>
+<xptr type="synopticView_msVersions" xml:id="BE_390ms"/><lb/><l>han bar en snøret Randsel over Ryggen</l>
+<lb/><l>og holdt sin Kjæpp indunder Armen klemt.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Hans Vej <app type="alteration"><lem><HIS:hisAdd place="offline">bar</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">gik</HIS:hisDel></HIS:hisRdg></app> <HIS:hisDel rend="overwritten">m</HIS:hisDel>ned mod Bygden, som de Tvendes;</l>
+<lb/><l>han hilste høfligt der han gik forbi,</l>
+<lb/><l>dog laa der noget Spørgende deri,</l>
+<lb/><l>som om han tæ<HIS:hisAdd place="offline">n</HIS:hisAdd>kte &lquo;skulde <emph>vi</emph> ej kjendes?&rquo;</l>
+<lb/><l>Og samme Tanke greb den unge Maler,</l>
+<lb/><l>Han standse<HIS:hisDel rend="overwritten">r</HIS:hisDel>d tvivlsom Manden paa hans Vej</l>
+<lb/><l>Og sp<HIS:hisDel rend="overwritten">ø</HIS:hisDel>urg<HIS:hisDel rend="overwritten">er</HIS:hisDel>te: &lquo;Koll! Er det med dig jeg taler?&rquo;</l>
+<lb/><l>Da svared hin &lquo;Hvad<HIS:hisDel rend="overstrike">,</HIS:hisDel>? Axel, er det dig?&rquo;</l>
+<pb n="[11]r"/><lb/><fw type="leaf" place="top-right" scribe="h4">11</fw>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Det var <app type="alteration"><lem><HIS:hisAdd place="offline">hint</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">et</HIS:hisDel></HIS:hisRdg></app> Vennepar fra Skoletiden,</l>
+<lb/><l>som engang stod hinanden brodernær;</l>
+<lb/><l>saa skiltes de og mødtes aldrig siden,</l>
+<lb/><l>før halvt som Fremmede de mødtes her.</l>
+<lb/><l>Hvor<HIS:hisDel rend="overstrike">m</HIS:hisDel> Meget laa ej mellem nu og Skolen?</l>
+<lb/><l><HIS:hisDel rend="overwritten">H</HIS:hisDel>hver gik sin egen Vej i Verden ud;</l>
+<lb/><l><HIS:hisDel rend="overwritten">H</HIS:hisDel>hver higed paa sin egen Vis mod Gud, &dash;</l>
+<lb/><l><emph>en</emph> ved Paletten, <emph>en</emph> paa Prækestolen.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Men Axel var den Første, der fik Mæle</l>
+<lb/><l>for alle Minder, som i Sjælen sov;</l>
+<lb/><l>han fatted Vennens Hænder, <app type="alteration"><lem><HIS:hisAdd place="offline">lig</HIS:hisAdd></lem><HIS:hisRdg><unclear><HIS:hisDel rend="overstrike">som</HIS:hisDel></unclear></HIS:hisRdg></app> et Rov,</l>
+<lb/><l>det han med ingen Mand paa Jord gad dele.</l>
+<lb/><l>Saa talte han med Glædens Feberhast</l>
+<lb/><l>om <HIS:clarification place="inline">B</HIS:clarification>aandet, han isommer havde bundet,</l>
+<lb/><l>om alt sit Haab, og mente fuldt og fast</l>
+<lb/><l>han havde Vej til Vennehjertet fundet.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Dog Koll stod stum; han løsnede med Læmpe</l>
+<lb/><l>sin Haand af Vennens <HIS:hisDel rend="overstrike"><gap/></HIS:hisDel>varme Nævetag;</l>
+<lb/><l>der spilled om hans Mund en Trækkning svag,</l>
+<lb/><l>han syntes med sig selv en Strid at kjæmpe.</l>
+<xptr type="synopticView_msVersions" xml:id="BE_391ms"/><lb/><l>Han svared, <sic>halvejs</sic> fremmed, halvt forlegen:</l>
+<lb/><l>&lquo;Det er jo godt at vide sig i Havn;</l>
+<lb/><l><HIS:hisDel rend="overwritten">D</HIS:hisDel>du er jo Maler nu og har et Navn;</l>
+<lb/><l>hver Vej er rett, saafremt den er ens egen.&rquo;</l>
+<pb n="[11]v"/><lb/><figure type="num"/>
+<lb/><l rend="indent">Men to Slags Vej <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>kan <HIS:hisDel rend="overwritten">V</HIS:hisDel>v<HIS:clarification place="inline">æ</HIS:clarification>lges af Ens Vilje;</l>
+<lb/><l><emph>en</emph> er at ligne ved en farbar Elv;</l>
+<lb/><l>paa den gaar Farten, lig en <app type="alteration"><lem><HIS:hisAdd place="offline">Leg</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Dands</HIS:hisDel></HIS:hisRdg></app> paa Tilje;</l>
+<lb/><l>en anden er den Vej du bry<HIS:hisDel rend="overwritten"><unclear>g</unclear></HIS:hisDel>der selv; &dash;</l>
+<lb/><l><HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>hin ligger bred for dig og tusind Andre;</l>
+<lb/><l><HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>den sidste maa du sprænge selv med Staal;</l>
+<lb/><l>paa den tør du og ingen Anden vandre,</l>
+<lb/><l>før Verden ser den bærer til et Maal.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Og to Slags Kald kan <app type="alteration"><lem><HIS:hisAdd place="offline">vække</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">lokke</HIS:hisDel></HIS:hisRdg></app> Mandens Evne;</l>
+<lb/><l>et lokker ham igjennem <app type="alteration"><lem><HIS:hisAdd place="offline">Drift</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Trang</HIS:hisDel></HIS:hisRdg></app> og Lyst;</l>
+<lb/><l>det <HIS:hisDel rend="overwritten">e</HIS:hisDel>andet er den Helligaand at nævne,</l>
+<lb/><l>som sænker Flammetungen <app type="alteration"><lem><HIS:hisAdd place="offline">i</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">mod</HIS:hisDel></HIS:hisRdg></app> hans Bryst;</l>
+<lb/><l>i <sic>Kaft</sic> af <emph>den</emph> et ukjendt Sprog han taler,</l>
+<lb/><l>i Kraft af <emph>den</emph> ham hører Jorden til;</l>
+<lb/><l>og fik du Naaden af en saadan Ild,</l>
+<lb/><l>da fatter jeg at du er bleven Maler.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Da kan du gaa i Hedninglandet ud,</l>
+<lb/><l>og tolke <app type="alteration"><lem><HIS:hisAdd place="offline">Lysets Sag</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Herrens Ord</HIS:hisDel></HIS:hisRdg></app> i Form og Farver,</l>
+<lb/><l>saa løste Sjæle svinger sig mod Gud,</l>
+<lb/><l><app type="alteration"><lem><HIS:hisAdd place="offline">lig</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">som</HIS:hisDel></HIS:hisRdg></app> Sommerfugle fra de sprængte Larver;</l>
+<HIS:blockSeg type="transposition_lines" xml:id="tp_no1"><note type="transposition_lines" resp="author">2</note><lb/><l>thi da er du med Himmelen i Pagt; &dash;</l></HIS:blockSeg>
+<HIS:blockSeg type="transposition_lines" corresp="tp_no1"><note type="transposition_lines" resp="author">1</note><lb/><l>da kan du Folkets Jøkelhjerter tine;</l></HIS:blockSeg>
+<lb/><l>men kom ihug, at ha<HIS:hisDel rend="overwritten">n</HIS:hisDel>r du denne Magt,</l>
+<lb/><l>saa er du vel den Eneste blandt dine!&rquo;</l>
+<pb n="[12]r"/><lb/><fw type="leaf" place="top-right" scribe="h4">12</fw>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Han talte med en viss urolig Il,</l>
+<lb/><l>med dæmpet Stemme og med hede Kinder;</l>
+<xptr type="synopticView_msVersions" xml:id="BE_392ms"/><lb/><l>hans Øjnes Glød var Blodets lig, der skinner</l>
+<lb/><l>i Uvejrslys paa Spidsen af en Pil.</l>
+<lb/><l>Det var som om han vred sig under Ordet,</l>
+<lb/><l>som om han sloges med en lønlig Magt,</l>
+<lb/><l>som om hans Tanker under Modstand bored</l>
+<lb/><l>sig Vej og blev ham lydt paa Læben lagt.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Den unge Pige stirred paa ham nøje,</l>
+<lb/><l>som en, der spejder i sin Fiendes Lejr;</l>
+<lb/><l>saa søgte hun med Tillid Vennens Øje<HIS:hisDel rend="overstrike">;</HIS:hisDel></l>
+<lb/><l><app type="alteration"><lem><HIS:hisAdd place="offline">og</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">det</HIS:hisDel></HIS:hisRdg></app> krævte, skjønt i Taushed, Svarets Sejr.</l>
+<lb/><l>Hun var saa trygg, saa sikker i sin Sag,</l>
+<lb/><l>da Maleren med Alvor tog tilorde:</l>
+<lb/><l>&lquo;Min Ven, det er alt anden Gang idag</l>
+<lb/><l>du prøver paa vort glade Sind at jorde.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">&lquo;Først har du skygget for os med din Sang,</l>
+<lb/><l>nu vil du mørkne for os med din Tale;</l>
+<lb/><l>men giv hvad Navn du vil den glade Trang,</l>
+<lb/><l>som hvisker i mig: Livet er at male!</l>
+<lb/><l>Jeg trænger ingen tydende Forklaring,</l>
+<lb/><l>jeg venter ingen Engel fra det Blaa;</l>
+<lb/><l>Gud sender ej til hver sin Aabenbaring;</l>
+<lb/><l>mig er det nok, at gaa den Vej, jeg <emph>maa</emph>.</l>
+<pb n="[12]v"/><lb/><figure type="num"/>
+<lb/><l rend="indent">Og lidet har du fattet Skjønheds Gaade,</l>
+<lb/><l><HIS:hisDel rend="overwritten">K</HIS:hisDel>kun lidt du ved hvad Kunsten skal og kan,</l>
+<lb/><l><HIS:hisDel rend="overwritten">I</HIS:hisDel>ifald du vil <HIS:hisDel rend="overwritten"><unclear>d</unclear></HIS:hisDel>at <app type="alteration"><lem><HIS:hisAdd place="offline">Frelsens</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Nyttens</HIS:hisDel></HIS:hisRdg></app> Lov skal raade</l>
+<lb/><l><HIS:hisDel rend="overwritten">I</HIS:hisDel>i Farvedigtets <app type="alteration"><lem><HIS:hisAdd place="offline">glade</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">fagre</HIS:hisDel></HIS:hisRdg></app> Børneland.</l>
+<lb/><l>O, tror du Blomstens Ret til smukt at tindre</l>
+<lb/><l>er større, naar den Lægdomskræfter bær</l>
+<lb/><l>i Stænglens Saftgang og i Bladets Indre,</l>
+<lb/><l>end naar den kun har Duft og Farveskjær?</l>
+<lb/><figure type="num"/>
+<xptr type="synopticView_msVersions" xml:id="BE_393ms"/><lb/><l rend="indent">Og tror du Fugl skal sidde stum i Skog</l>
+<lb/><l>hvis ej dens Sang kan lindre <HIS:hisDel rend="overwritten">n</HIS:hisDel>Nogens Klage,</l>
+<lb/><l>at alt, hvoraf du ej kan Lærdom drage,</l>
+<lb/><l>er uden Mening i Naturens Bog?</l>
+<lb/><l><emph>Jeg</emph> tror paa Sjælens Rett til Fryd ved Livet,</l>
+<lb/><l>paa Røstens Rett til Sang for Sangens Skyld,</l>
+<lb/><l>at samme Rett er Vaarens Hvidvejs givet,</l>
+<lb/><l>som den der givet er til Hægg og Hyld.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Og sig mig saa tilsidst med Haand paa Hjerte,</l>
+<lb/><l>med Sandhed fuldt og helt paa Læben lagt,</l>
+<lb/><l>fik <emph>du</emph> det Naadens Kald, som <app type="alteration"><lem><HIS:hisAdd place="offline">klart dig lærte,</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">du begjærte</HIS:hisDel></HIS:hisRdg></app></l>
+<lb/><l>du kaaret er til Lysets Fanevagt?</l>
+<lb/><l>Har <emph>du</emph> fornummet Herrens Pindsemorgen,</l>
+<lb/><l>har <emph>du</emph> følt Duen dale paa dit Sind,</l>
+<lb/><l><HIS:hisAdd place="offline">har <emph>du</emph></HIS:hisAdd> hørt <HIS:hisDel rend="overstrike">Flamm</HIS:hisDel><HIS:hisDel rend="overwritten">er</HIS:hisDel>Røsten højt fra Himmelborgen</l>
+<lb/><l>at vie al din Livsensgjerning ind?&rquo;</l>
+<pb n="[13]r"/><lb/><fw type="leaf" place="top-right" scribe="h4">13</fw>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Det var en Stund før Præsten samled Ord</l>
+<lb/><l>for Svaret, som laa gjærende i Barmen;</l>
+<lb/><l>en Feberglød ham opp i Kinden foer;</l>
+<lb/><l>han hvisked mens han greb sin Ven om Armen:</l>
+<lb/><l>&lquo;Ja, jeg har Kaldet, men til spredte Tider;</l>
+<lb/><l>som Maanen voxer det og tager af;</l>
+<lb/><l>jeg vugges opp og <sic>med</sic> som Skib paa Hav;</l>
+<lb/><l>i Strid jeg beder og i Bøn jeg strider.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Men jeg vil sejre; først i eget Indre,</l>
+<lb/><l>saa over Brødrene paa Jordens Kreds;</l>
+<lb/><l>jeg tør ej prutte; jeg er ej tilfreds</l>
+<lb/><l>med <emph>Noget</emph>; <emph>Alt</emph> maa gjøres, intet <HIS:hisDel rend="overwritten">m</HIS:hisDel>Mindre.</l>
+<lb/><l><HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>Se, Tidens Kræft er &lquo;Arbejdets Fordeling&rquo;,</l>
+<lb/><l><HIS:hisDel rend="overstrike">&lquo;</HIS:hisDel>og det er den som slaar alt Hell ihjæl;</l>
+<xptr type="synopticView_msVersions" xml:id="BE_394ms"/><lb/><l>En <app type="alteration"><lem><HIS:hisAdd place="offline">sørger for sin Bug</HIS:hisAdd></lem><HIS:hisRdg><unclear><HIS:hisDel rend="overstrike">pløjer Hav</HIS:hisDel></unclear></HIS:hisRdg></app>, En <HIS:hisDel rend="overstrike">sørger</HIS:hisDel> for <app type="alteration"><lem><HIS:hisAdd place="offline">sin</HIS:hisAdd></lem><HIS:hisRdg><unclear><HIS:hisDel rend="overstrike">vor</HIS:hisDel></unclear></HIS:hisRdg></app> Sjæl,</l>
+<lb/><l>En for <app type="alteration"><lem><HIS:hisAdd place="offline">sin</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">vor</HIS:hisDel></HIS:hisRdg></app> Lærdom &dash; en for <app type="alteration"><lem><HIS:hisAdd place="offline">sin</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">vor</HIS:hisDel></HIS:hisRdg></app> Forkjæling.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Se derfor er vor Slægt i Dyndet sunken,</l>
+<lb/><l><app type="alteration"><lem><HIS:hisAdd place="offline">thi</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">og</HIS:hisDel></HIS:hisRdg></app> Trællen higer ej mod Løftets Land,</l>
+<lb/><l>han lusker gjennem Livet lam og lunken,</l>
+<lb/><l>og havner hvor det helst sig falde kan.</l>
+<lb/><l>Sig, hvor er den, som <emph>vil</emph> og <emph>tror</emph> og <emph>ser</emph>,</l>
+<lb/><l>som <emph>slaar</emph> for samme Maal, hvorfor han <emph>brænder</emph>? &dash;</l>
+<lb/><l>Jeg ser ej <emph>Mennesker</emph> paa Jorden mer;</l>
+<lb/><l>jeg ser kun <emph>Fødder</emph>, <emph>Hoveder</emph> og <emph>Hænder</emph>!</l>
+<pb n="[13]v"/><lb/><figure type="num"/>
+<lb/><l rend="indent">Men det var <emph>Mennesker</emph>, som Herren skabte;</l>
+<lb/><l>det var til <emph>Mennesker</emph> at <app type="alteration"><lem><HIS:hisAdd place="offline">Kristus</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Herren</HIS:hisDel></HIS:hisRdg></app> kom;</l>
+<lb/><l>thi det var <emph>Mennesker</emph>, som var fortabte</l>
+<lb/><l>og skulde kjøbes <app type="alteration"><lem><HIS:hisAdd place="offline">løs</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">fr</HIS:hisDel></HIS:hisRdg></app> fra Lovens Dom.</l>
+<lb/><l>Nu ligger fast i Grus det store Værk;</l>
+<lb/><l>still dig paa Tinden, Mand, og se kun efter; &dash;</l>
+<lb/><l>græd, om du kan, og le, hvis du er stærk, &dash;</l>
+<lb/><l>og raab saa: ha, de skjønne spildte Kræfter!</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Se, <emph>det</emph> <app type="alteration"><lem><HIS:hisAdd place="offline">er</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">var</HIS:hisDel></HIS:hisRdg></app> Fingerpeget for min Sjæl;</l>
+<lb/><l>grant skjønner jeg at hvad der staar tilbage,</l>
+<lb/><l>som Livsværk for en Mand i vore Dage,</l>
+<lb/><l>det er: paany at gjøre Slægten hel.</l>
+<lb/><l>Mirakeltiden raader ikke længer;</l>
+<lb/><l>Gud skaber ingen Adam mer paa Jord;</l>
+<lb/><l>det er til Mandehjælp at <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>Herren trænger,</l>
+<lb/><l>skal Slægten atter bringes i sit Spor.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Se, derfor vil jeg gaa i Verden ud,</l>
+<lb/><l>og samle Lemmerne, de spredte Dele,</l>
+<lb/><l>og skabe Mennesket, det sande Hele,</l>
+<lb/><l>for anden Gang i Lignelse af Gud.</l>
+<xptr type="synopticView_msVersions" xml:id="BE_395ms"/><lb/><l>Og derfor har jeg Krig med dig og dine,</l>
+<lb/><l>med Alle, ved hvis <app type="alteration"><lem><HIS:hisAdd place="offline">Vrangsyn</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Brøde</HIS:hisDel></HIS:hisRdg></app> Slægten faldt<HIS:hisDel rend="overwritten">;</HIS:hisDel>, &dash;</l>
+<lb/><l>som dyrked <app type="alteration"><lem><HIS:hisAdd place="offline">Sandhed</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Skjønhed</HIS:hisDel></HIS:hisRdg></app> i den enkle Mine,</l>
+<lb/><l>mens <app type="alteration"><lem><HIS:hisAdd place="offline">Sandhed</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Skjønhed</HIS:hisDel></HIS:hisRdg></app> er i Intet uden Alt!&rquo;</l>
+<pb n="[14]r"/><lb/><fw type="gathering" place="top-left"><HIS:hisDel rend="overstrike">4.</HIS:hisDel> 6.</fw><fw type="leaf" place="top-right" scribe="h4">14</fw>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Med Øjne som en ængstet Fugl i Fælden</l>
+<lb/><l>svam Pigen paa hans Tankers stride Flod;</l>
+<lb/><l>det var som om hun bøjdes under Vælden</l>
+<lb/><l>af Viljestormen i hans stærke Mod.</l>
+<lb/><l>Men Axel rysted paa sit lyse Hoved</l>
+<lb/><l>og svared med et Smil paa venlig Vis:</l>
+<lb/><l>&lquo;Jeg ser, som Mand du holder, hvad du loved</l>
+<lb/><l>som Barn, at vorde til et Verdens Ris.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Jeg mindes godt fra Skolen mangen Stund</l>
+<lb/><l><sic>naa</sic> ind vi drømte os i Fortids Sage</l>
+<lb/><l>med al dens Vold, dens Urett og dens Klage,</l>
+<lb/><l><HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>og digted vidre paa vor Kundskabs Grund;</l>
+<lb/><l><HIS:hisDel rend="overwritten">med</HIS:hisDel>til Hjælp<app type="alteration"><lem><HIS:hisAdd place="offline">og Trøst</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">ens Sværd</HIS:hisDel></HIS:hisRdg></app> du aldrig kom i Nøden;</l>
+<lb/><l>du læmped aldrig paa de <HIS:hisDel rend="overwritten">o</HIS:hisDel>Ondes Færd;</l>
+<lb/><l>du lod det Værste ske; men <emph>efter</emph> Brøden</l>
+<lb/><l>du stormed frem med Hævnens hvasse Sværd.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Det er det samme <HIS:hisDel rend="overstrike">stærke</HIS:hisDel> Sind, som <HIS:hisAdd place="offline">nu dig</HIS:hisAdd> driver</l>
+<lb/><l><HIS:hisDel rend="overstrike">dig</HIS:hisDel> til <HIS:hisAdd place="offline">kjækkt</HIS:hisAdd><note resp="editor">Innføyningstegn kan se ut til å føye ordet inn i 3. verslinje istedenfor 2. Siden teksten da blir meningsløs, føyer HIS ordet inn i 2. verslinje, der det gir mening.</note> at vende Verden opp og ned;</l>
+<lb/><l>men <app type="alteration"><lem><HIS:hisAdd place="offline">vid</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">husk</HIS:hisDel></HIS:hisRdg></app>, hvert Frø, som opp med Rod du river,</l>
+<lb/><l>en bedre Spire kræver i sit Sted;</l>
+<lb/><l>slukk ikke Tyristikken, skjønt den oser,</l>
+<lb/><l>før du har <app type="alteration"><lem><HIS:hisAdd place="offline">Lygten tændt</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">bedre Lys</HIS:hisDel></HIS:hisRdg></app> for Folkets <HIS:hisDel rend="overstrike">Fod</HIS:hisDel><HIS:hisDel rend="overwritten">;</HIS:hisDel>Spor;</l>
+<lb/><l>stryg ej af <sic>Sporget</sic> ud de gamle Gloser,</l>
+<lb/><l>før nye Tanker kræver nye Ord.</l>
+<pb n="[14]v"/><lb/><figure type="num"/>
+<lb/><l rend="indent">Og husk, Ens Kald med Livets <HIS:hisDel rend="overwritten">A</HIS:hisDel>Vilkaar tidt</l>
+<lb/><l>kan staa paa krigersk Fod; Stiftskapellanen</l>
+<xptr type="synopticView_msVersions" xml:id="BE_396ms"/><lb/><l>har knapt sin Plads paa Reformatorbanen; &dash;</l>
+<lb/><l>hvor Fjeldet lukker, naaer ej Røsten vidt.</l>
+<lb/><l>Forstaa mig vel; jeg ved, fra ringe Stilling</l>
+<lb/><l>er mangen Verdenskjæmpe gaaen ud;</l>
+<lb/><l>men dette <app type="alteration"><lem><HIS:hisAdd place="offline">Folk</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Land</HIS:hisDel></HIS:hisRdg></app> er myntet til en Skilling, &dash;</l>
+<lb/><l>forfalsk ej Præget, som det fik <HIS:hisDel rend="overstrike">fr</HIS:hisDel> af Gud!&rquo;</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Da klukked det i Præsten, lig en Latter,</l>
+<lb/><l>der døde før den frem paa Læben rakk;</l>
+<lb/><l>et Haanglimt om hans fine Mund sig trakk</l>
+<lb/><l>og legte der, mens han tog Ordet atter:</l>
+<lb/><l>&lquo;Ja, dette Folk er <app type="alteration"><lem><HIS:hisAdd place="offline">tvedelt</HIS:hisAdd></lem><HIS:hisRdg><unclear><HIS:hisDel rend="overstrike">dobbelt</HIS:hisDel></unclear></HIS:hisRdg></app> af Natur;</l>
+<lb/><l>det er et <app type="alteration"><lem><HIS:hisAdd place="offline">Storværksfolk</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Kjæmpefolk</HIS:hisDel></HIS:hisRdg></app> naar Glasset klinger,</l>
+<lb/><l>naar Sang og Tale løser Aandens Vinger</l>
+<lb/><l>og Tan<unclear reason="writing">k</unclear>en flyver fra sit Hverdagsbur.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Det er et Folk <HIS:hisAdd place="offline">med</HIS:hisAdd> mageløse Minder;</l>
+<lb/><l>det er et Folk, som var saa stort engang;</l>
+<lb/><l>det er et Folk af Kjæmper og <app type="alteration"><lem><HIS:hisAdd place="offline">Kjæmpinder</HIS:hisAdd></lem><HIS:hisRdg><unclear><HIS:hisDel rend="overstrike">Hjælpinder</HIS:hisDel></unclear></HIS:hisRdg></app> &dash;</l>
+<lb/><l>naar Skalden har Bestilling paa en Sang.</l>
+<lb/><l>Det er et Folk, <app type="alteration"><lem><HIS:hisAdd place="offline">saa stærkt, <HIS:hisDel rend="overwritten">og</HIS:hisDel>saa uforsagt;</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">som anden Gang blir vakt</HIS:hisDel></HIS:hisRdg></app></l>
+<lb/><l>det er et Folk, som knytter Haand mod Østen;</l>
+<lb/><l>det er et Folk, som staar mod Syd paa Vagt &dash;</l>
+<lb/><l>naar Taleren ved Gildet hæver Røsten.</l>
+<pb n="[15]r"/><lb/><fw type="leaf" place="top-right" scribe="h4">15</fw>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Det er et Folk, hvor Hvermand er saa gjæv,</l>
+<lb/><l>at hele <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>Verden kan hos ham faa lære</l>
+<lb/><l>hver herlig Egenskab, som skjænker Ære,</l>
+<lb/><l>hvad jo et Sandhedsvidne engang skrev.</l>
+<lb/><l>Det er et Folk, som tryggt tror paa sin Rett</l>
+<lb/><l>til Verdensstyrelse fra Klippekrogen,</l>
+<lb/><l>som <HIS:hisAdd place="infralinear">tog sin Væxt</HIS:hisAdd><app type="alteration"><lem><HIS:hisAdd place="offline"><HIS:hisDel rend="overstrike">voxed opp</HIS:hisDel></HIS:hisAdd> <HIS:hisAdd place="offline">mens</HIS:hisAdd></lem><HIS:hisRdg><unclear><HIS:hisDel rend="overstrike">vaagned ungt da</HIS:hisDel></unclear></HIS:hisRdg></app> Tidens Aand <app type="alteration"><lem><HIS:hisAdd place="offline">gik</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">var</HIS:hisDel></HIS:hisRdg></app> trætt; &dash;</l>
+<lb/><l>slig<HIS:hisAdd place="inline">t</HIS:hisAdd> <seg type="transposition" subtype="words_numbered"><seg rend="infralinear" subtype="no">2</seg><seg subtype="phrase">er vort</seg> <seg rend="infralinear" subtype="no">1</seg><seg subtype="word">Folk</seg></seg> &dash; ifølge Skudsmaalsbogen.</l>
+<lb/><figure type="num"/>
+<xptr type="synopticView_msVersions" xml:id="BE_397ms"/><lb/><l rend="indent">Men klæder Tiden sig i Uvejrskofte,</l>
+<lb/><l>og tystner Snakke<HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>n for en Livsdaads Krav,</l>
+<lb/><l>og gjælder det at svinge <app type="alteration"><lem><HIS:hisAdd place="offline">Staal</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Sværd</HIS:hisDel></HIS:hisRdg></app> for Stav</l>
+<lb/><l>og bære Slidren tom ved venstre Hofte, &dash;</l>
+<lb/><l>hvad er saa <emph>dette Folk</emph>, dets Mænd, dets Kvinder?</l>
+<lb/><l>Et Folk, som har paa Magt og Evne Brist;</l>
+<lb/><l><app type="alteration"><lem><HIS:hisAdd place="offline">et Folk, som gjør sig selv saa</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">da bliver det saa bitte</HIS:hisDel></HIS:hisRdg></app> smaat tilsidst,</l>
+<lb/><l>at <app type="alteration"><lem><HIS:hisAdd place="offline" hand="HI-1">bag sin</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike" hand="HI-1">fast af</HIS:hisDel></HIS:hisRdg></app> egen Synskreds det forsvinder.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Da <app type="alteration"><lem><HIS:hisAdd place="offline">skriger</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">ræddes</HIS:hisDel></HIS:hisRdg></app> Kvinden og da viger Manden,</l>
+<lb/><l>da stoppes Øret til for Ærens Bud,</l>
+<lb/><l>da nævner <app type="alteration"><lem><HIS:hisAdd place="offline">vi os</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">de sig</HIS:hisDel></HIS:hisRdg></app> Fattigfolk ved Stranden,</l>
+<lb/><l>som, Gudskelov, fik Skillingspræg af Gud.</l>
+<lb/><l>Hvad har ved Styrkestævnet <emph>vi</emph> at gjøre?</l>
+<lb/><l>Hvad gjælder <emph>der</emph> vel Klippesønnens Skjærv?</l>
+<lb/><l>Han fik engang for Alle jo det Hverv</l>
+<lb/><l>at styre Plogen og sin Skude føre.</l>
+<pb n="[15]v"/><lb/><figure type="num"/>
+<lb/><app type="alteration"><lem><HIS:hisAdd place="offline"><l rend="indent">Hvad kan vi for at <HIS:hisDel rend="overwritten">al</HIS:hisDel>Fienden sig nærmer?</l></HIS:hisAdd></lem><HIS:hisRdg><l><HIS:hisDel rend="overstrike">H<gap/> skal sin Fridag nyde, ej forsvare</HIS:hisDel>,</l></HIS:hisRdg></app>
+<lb/><l><HIS:hisDel rend="overwritten">a</HIS:hisDel>At bringe Offer er de Andres Sag;</l>
+<lb/><l>det var til Stads kun at en uklar Sværmer</l>
+<lb/><l>skar Splitt og Tunge i det norske Flag.</l>
+<lb/><l>Nej, lad de store Samfunds Kinder gløde</l>
+<lb/><l>naar <HIS:hisDel rend="overstrike">T<unclear>idens</unclear></HIS:hisDel><app type="alteration"><lem><HIS:hisAdd place="offline">Tidens</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisAdd place="inline"><HIS:hisDel rend="overstrike">Verdens</HIS:hisDel></HIS:hisAdd></HIS:hisRdg></app> Aare <app type="alteration"><lem><HIS:hisAdd place="offline">flommer</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">svulmer</HIS:hisDel></HIS:hisRdg></app> hed og fuld;</l>
+<lb/><l>vi skabtes til at pløje Hav og Muld;</l>
+<lb/><l>vor Gjerning er at svede, ej at bløde.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent"><app type="alteration"><lem><HIS:hisAdd place="offline">Ti Aar</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Et Skridt</HIS:hisDel></HIS:hisRdg></app> endnu, saa har vi <app type="alteration"><lem><HIS:hisAdd place="offline">Folkemørket</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike"><unclear>Sjæle</unclear>mørket</HIS:hisDel></HIS:hisRdg></app>,</l>
+<lb/><l>den klamme Halvnatt for en Dvergfloks Dont,</l>
+<lb/><l>hvor Ingen skjelner mellem Godt og Ondt,</l>
+<lb/><l>fordi hans Syn er dumt, hans Bryst fortørket.</l>
+<lb/><l>Da ruger Stenkulskyen over Landet,</l>
+<lb/><l>lig Askeregnen over Oldtids By;</l>
+<xptr type="synopticView_msVersions" xml:id="BE_398ms"/><lb/><l>men Ingen ser at Strøget er forbandet,</l>
+<lb/><l>og Ingen rinder det ihug at fly.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Nej, tvertimod; i Gru<HIS:hisDel rend="overwritten">b</HIS:hisDel>vens krumme Gange</l>
+<lb/><l>vil Hvermand <app type="alteration"><lem><HIS:hisAdd place="offline">kjende</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">finde</HIS:hisDel></HIS:hisRdg></app> sig saa hjemlig trygg<HIS:hisDel rend="overstrike">,</HIS:hisDel></l>
+<lb/><l>og bryde Malmen under Drypvandssange,</l>
+<lb/><l>med Pukkel paa sin Sjæl som paa sin Rygg.</l>
+<lb/><l>Hvert Hjerteslag af Hammerslag vil døves,</l>
+<lb/><l>hvert <app type="alteration"><lem><HIS:hisAdd place="offline">Sjæleskrig</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">Sj</HIS:hisDel><HIS:hisAdd place="inline"><HIS:hisDel rend="overstrike">Hjerteskrig</HIS:hisDel></HIS:hisAdd></HIS:hisRdg></app> af Sagbladstandens Fil;</l>
+<lb/><l>ved Venners Ve vil intet Hjerte kløves,</l>
+<lb/><l>ved Frænders Fald ej slukkes noget Smil.</l>
+<pb n="[16]r"/><lb/><fw type="leaf" place="top-right" scribe="h4">16</fw>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Og trues Troens Maane her paa Jorden</l>
+<lb/><l>af Tvivlens Fenrisulv med Gluff og Glam, &dash;</l>
+<lb/><l>vil Dvergens Ættling finde det i Orden,</l>
+<lb/><l>de<HIS:hisDel rend="overwritten">n</HIS:hisDel>t <HIS:hisAdd place="offline">er en</HIS:hisAdd> Sag <HIS:hisDel rend="overstrike">er</HIS:hisDel> for <HIS:hisDel rend="overstrike">de</HIS:hisDel> Andre, ej for ham.</l>
+<lb/><l>Han <HIS:hisDel rend="overwritten"><gap/></HIS:hisDel>hører til et Folk, kun skabt for Kiv,</l>
+<lb/><l>men ej for Strid, for Sejr og for Berømmelse,</l>
+<lb/><l>han nøjes med at naa, bag dette Liv,</l>
+<lb/><l>en Smule Salighed eller lidt Fordømmelse.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Hvad rager <emph>ham</emph> de N<HIS:clarification place="inline">agl</HIS:clarification>espor i Hænder<HIS:hisDel rend="overstrike">,</HIS:hisDel><HIS:hisAdd place="inline">?</HIS:hisAdd></l>
+<lb/><l><HIS:hisDel rend="overwritten">h</HIS:hisDel>Hvad Dødens Angst i Olje<HIS:hisDel rend="overwritten">j</HIS:hisDel>b<HIS:hisDel rend="overstrike">j</HIS:hisDel>ergets Lund<HIS:hisDel rend="overstrike">,</HIS:hisDel><HIS:hisAdd place="inline">?</HIS:hisAdd></l>
+<lb/><l><HIS:hisDel rend="overwritten">h</HIS:hisDel>Hvad Blodrubinerne, <app type="alteration"><lem><HIS:hisAdd place="offline">da</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">som</HIS:hisDel></HIS:hisRdg></app> Tornens <HIS:hisDel rend="overstrike">T<gap/>der</HIS:hisDel> Tænder</l>
+<lb/><l>bed Herrens Pande i den store Stund?</l>
+<lb/><l>Det var jo for <emph>de Andre</emph> Kristus døde,</l>
+<lb/><l><app type="alteration"><lem><HIS:hisAdd place="offline">til <emph>dem</emph></HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">det var</HIS:hisDel></HIS:hisRdg></app> han kom som Kjærlighedens Tolk;</l>
+<lb/><l>kun Spanremslaget af den evige Jøde</l>
+<lb/><l>var hvad vor Herre led for <emph>dette Folk</emph>!&rquo;</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Ej Ord blev svaret. Stillt, som rædde Børn,</l>
+<lb/><l>der <HIS:hisDel rend="overstrike">foer</HIS:hisDel> <HIS:hisAdd place="offline">gaar</HIS:hisAdd> paa sorgløs Bærfangst gjennem Lien,</l>
+<lb/><l>og staar med et for Bergets barske Bjørn,</l>
+<lb/><l>stod Parret fjettret for ham midt paa Stien.</l>
+<xptr type="synopticView_msVersions" xml:id="BE_399ms"/><lb/><l>Med Øjne bundne til det vrede Skræmsel,</l>
+<lb/><l>med kolde Hænder i hinanden klemt,</l>
+<lb/><l>tilbage stirrende, forvildet, skræmt,</l>
+<lb/><l>de sneg sig lydløst bort og søgte Gjemsel.</l>
+<pb n="[16]v"/><lb/><figure type="num"/>
+<lb/><l rend="indent">De kom ham snart afsyne; <app type="alteration"><lem><HIS:hisAdd place="offline">Axel</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">dybt de</HIS:hisDel></HIS:hisRdg></app> aanded,</l>
+<lb/><l>som <app type="alteration"><lem><HIS:hisAdd place="offline">en der</HIS:hisAdd></lem><HIS:hisRdg><HIS:hisDel rend="overstrike">om de</HIS:hisDel></HIS:hisRdg></app> havde haardt og svarlig stridt,</l>
+<lb/><l>h<HIS:hisDel rend="overwritten"><unclear>a</unclear>n</HIS:hisDel>un trakk sit Vejr, som en, der tungt har vaandet</l>
+<lb/><l>sig under Nattens hemske Mareridt.</l>
+<lb/><l>Han vilde synge; men hans Stemme svigted;</l>
+<lb/><l>han vilde le; men da var Røsten hul;</l>
+<lb/><l>han vilde spøge; Spøgen var en Fugl,</l>
+<lb/><l>som flygted, da den skjønte Jægren sigted.</l>
+<lb/><figure type="num"/>
+<lb/><l rend="indent">Saa vendte han sit Syn mod Sydens Pinie,</l>
+<lb/><l>mod Laurbærlunden, mod Citronens Guld,</l>
+<lb/><l>mod Sommerlivet i den varme Vigne,</l>
+<lb/><l>mod Drueklasen, funklende og fuld. &dash;</l>
+<lb/><l>Med Øret kun hun fanged hvad han malte;</l>
+<lb/><l>halvt uden Sekraft saa hun over Fjord</l>
+<lb/><l>og havde kun til Svar de enkle Ord:</l>
+<lb/><l>&lquo;Men saa du hvor han voxte, mens han talte!&rquo;</l>
+<lb/><figure type="bar"/>
+</div>
+</body>
+</text>
+</TEI>

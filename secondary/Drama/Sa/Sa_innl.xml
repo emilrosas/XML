@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title level="s" type="main">Henrik Ibsens skrifter</title>
+<title level="a" type="desc">Innledning til Sancthansnatten</title>
+<author>ført i pennen av Asbjørn Aarseth</author>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
+<respStmt>
+<resp>Kodeteknisk støtte og utvikling</resp>
+<name>AKSIS: Avdeling for kultur, språk og informasjonsteknologi, Universitetsforskning i Bergen (Unifob AS)</name>
+</respStmt>
+<respStmt>
+<resp>Koding</resp>
+<name xml:id="HIS-HB">Hilde Bøe</name>
+<name xml:id="HIS-IF">Ingrid Falkenberg</name>
+<name xml:id="HIS-SBT">Stine Brenna Taugbøl</name>
+<name xml:id="HIS-AMB">Aasta Marie Bjorvand Bjørkøy</name>
+<name xml:id="HIS-NME">Nina M Evensen</name>
+</respStmt>
+<respStmt>
+<resp>Kommentarentiteter</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+</respStmt>
+<respStmt>
+<resp>Rettelser i manuskriptbeskrivelsene</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+</respStmt>
+<respStmt>
+<resp>Implementering av kode</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+<name>Nina M Evensen</name>
+</respStmt>
+<respStmt>
+<resp>Kodekontroll</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+<name>Nina M Evensen</name>
+</respStmt>
+<respStmt>
+<resp>Tekstarbeid</resp>
+<name>Nina M Evensen</name>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+</respStmt>
+</titleStmt>
+<publicationStmt>
+<publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+<distributor xml:id="HISe">Universitetet i Oslo</distributor>
+<date when="2012" xml:id="HISe-date"/>
+<pubPlace>Oslo</pubPlace>
+</publicationStmt>
+<sourceDesc>
+<p>Dette dokumentet har ingen kilde.</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<tagsDecl>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
+<list>
+<headLabel>castItem id=""</headLabel><headItem>castItem/speaker</headItem>
+<label>AMBIORIX</label><item>Ambiorix</item>
+<label>AURELIA</label><item>Aurelia</item>
+<label xml:id="CATILINA">CATILINA</label><item>Lucius Catilina/Catilina</item>
+<label>CETHEGUS</label><item>Cethegus</item>
+<label>COEPARIUS</label><item>Coeparius</item>
+<label xml:id="CURIUS">CURIUS</label><item>Curius</item>
+<label xml:id="FURIA">FURIA</label><item>Furia</item>
+<label>GABINIUS</label><item>Gabinius</item>
+<label>GLADIATOR</label><item>-/1ste Gladiator,2den Gladiator</item>
+<label>LENTULUS</label><item>Lentulus</item>
+<label>MANLIUS</label><item>Manlius</item>
+<label>OLDING</label><item>-/En gammel Soldat, Soldaten</item>
+<label>OLLOVICO</label><item>Ollovico</item>
+<label>STATILIUS</label><item>Statilius</item>
+<label>VESTALINDEN</label><item>-/En Vestalinde, Vestalinden</item>
+<label>AANDEN</label><item>En Aand/Aanden</item>
+</list>
+</tagUsage></namespace>
+
+</tagsDecl>
+</encodingDesc>
+<profileDesc>
+<langUsage>
+<language ident="nob"/>
+<language ident="fre"/>
+<language ident="eng"/>
+<language ident="rus"/>
+<language ident="ger"/>
+</langUsage>
+</profileDesc>
+<revisionDesc>
+<change><date>23.11.12</date>
+<name>SBT</name><title>Omkoding til TEI P5 og HISe</title>
+</change>
+</revisionDesc>
+</teiHeader>
+<text>
+<body>
+<div type="introduction" xml:id="intro">
+<div type="background" xml:id="intro_background">
+<head rend="level2">BAKGRUNN</head>
+<p>I romantikkens diktning finner man ofte at to verdener, en ideell og
+en triviell, stilles mot hverandre. For at den eteriske
+skjønnhetens og fantasiens sfære skal
+fremstå med særlig tiltrekningskraft, blir den
+kontrastert mot det ordinære og dagligdagse,
+småborgerens begrensede tilværelse, som gjerne
+blir satirisk belyst. Begrepet spissborger (opprinnelig med
+betydningen ‘krigsknekt bevæpnet med
+spyd’) hadde i det 19. århundre for lengst
+fått en nedsettende betydning, og var kommet til
+å betegne den jevne borger, tillagt sneversyn og
+materielle interesser. På den annen side ble begrepet
+student gitt betydningen ‘et ungt, idealistisk innstilt
+menneske’. I norsk litteratur kan vi se Henrik Anker
+Bjerregaards syngespill <title rend="italic">Fjeldeventyret</title>
+(1825), med musikk av Waldemar Thrane, som et tidlig eksempel
+på en viss kulturell motsetning.</p>
+<p>Ibsen hadde tidlig anlegg for et dobbelt blikk på diktning
+som kretset omkring nasjonale stemninger og motiver. Vi finner det i
+hans teaterkritikk, og det gikk ikke lenge før det kom
+til uttrykk også i hans dramatikk. En måned
+etter sin ankomst til Bergen 21. oktober 1851 <bibl>(jf. Dahl
+2002)</bibl> fikk han et vink om hva den bergenske offentligheten
+ønsket at han skulle bidra med. Det skjedde ved en
+bemerkning i forbindelse med en stemningsrapport fra teateret i <bibl><title rend="italic">Bergens Stiftstidende</title> 20. november 1851:</bibl> <quote rend="proseIndent">Hr. Ibsen er engageret som Theaterdigter, og vi ville haabe i Saisonens Løb, nu da han kjender og vurderer vort
+Theater, at erholde fra hans Haand nogle <hi rend="italic">nationale</hi>, efter Theatrets Kræfter
+afpassede Skuespil, som kunne give vor Scene ogsaa i den
+Forstand dens rette Betydning <bibl>(Anonym 1851).</bibl></quote> Det samme håpet
+til Ibsens gjerning i Bergen hadde teaterets styre. Allerede
+våren 1852 fikk han av styret bevilget midler til en
+studietur til Danmark og Tyskland. Han skulle skaffe seg kunnskap og
+innsikt som kunne kvalifisere ham som instruktør og
+gjøre ham fortrolig med ulike muligheter
+angående scenisk arrangement, dekorasjoner, kostymer o.a.
+Etter tre måneders fravær, for det meste i
+København og Dresden, kom han tilbake til Bergen mot
+slutten av juli 1852.</p>
+<p>Den unge Ibsens mottagelighet for aktuelle strømninger i
+tidens teaterliv kom raskt til å bære frukter,
+og det var ikke noe paradoks at en slik dannelsesreise til utlandet
+skulle gi impulser til arbeidet med nasjonal dramatikk. Blant annet
+merket han seg en tydelig interesse hos dramatikere og publikum i
+Danmark for syngespill med folkloristiske motiver kombinert med
+borgerlig satire. Talt tekst med musikk, såkalt <hi rend="italic">melodrama</hi>, var en dramatisk form som hadde vokst
+frem omkring 1780. Starten ble gjort med J.-J. Rousseaus <title rend="italic">Pygmalion</title> (med musikk av
+amatørkomponisten H. Coignet) i 1770, men ideen ble
+videreført på tysk grunn, hvor melodramaet snart
+ble innført som en del av syngespillstilen. Det fulgte
+genren også til norske scener, hvor melodramatiske innslag
+i syngespillene ikke var noen sjeldenhet. Som eksempel kan nevnes at
+L.M. Lindeman hadde komponert fire melodramaer til Wergelands <title rend="italic">Campbellerne</title> da dette stykket ble
+oppført ved Christiania Theater i 1838. Av stykker med
+melodramatisk musikk som ble oppført under Ibsens tid ved
+Det norske Theater, er Carsten Hauchs <title rend="italic">Søstrene paa Kinnekullen</title> det
+eneste som er kjent. Hvem som har komponert musikken til dette
+stykket, er ikke kjent.</p>
+<p>Et av de første teaterstykkene Ibsen fikk anledning til
+å se i København, var J.Chr. Hostrups <title rend="italic">Mester og Lærling</title>, romantisk
+syngespill i fem akter, som gikk på Casino Theater.
+Stykket fremstiller dels et borgerlig miljø av
+københavnere og dels en del alvefolk. Handlingen
+foregår på et landsted nær
+København og byr på skogsscener, havescener og
+interiørscener. Det er sommerkveld som går
+over til å bli natt. Helten har oppholdt seg blant alvene,
+men finner tilbake til menneskene. Han erfarer især
+mennenes falskhet og hensynsløshet, og ved sin manglende
+kjennskap til deres omgangsformer blir han et middel til å
+sette borgerlig løgnaktighet og egennytte i relieff. Ved
+hjelp av magi kan han gjennomskue menneskene, og de blir satirisk
+belyst. Ibsen oppsøkte Hostrup for å snakke om
+stykket, og det ble senere oppført i Bergen <bibl>(M. Meyer
+1971, 97)</bibl>.</p>
+<p>En annen av Hostrups komedier som Ibsen trolig har studert, er
+syngespillet <title rend="italic">En Spurv i Tranedans</title>
+(1846). Også her er det et overnaturlig innslag, en magisk
+ring som gjør en skreddersvenn midlertidig attraktiv for
+adel og borgerskap, og skaper forviklinger som avslører
+sosial forfengelighet. Rammen omkring handlingen er farvet av en
+karakteristisk spenning mellom studenter og spissborgere.</p>
+<p>I det hele tatt var romantisk eventyrkomedie med sang en populær genre i
+Danmark. Et tredje stykke som Ibsen nok har kjent, og som
+ifølge Fredrik Paasche har vært et forbilde for
+hans arbeid, er J.L. Heibergs <title rend="italic">Syvsoverdag</title>, komedie i tre akter (1840)
+<bibl>(Paasche 1908, 67–68)</bibl>. Handlingen
+foregår dels på Fredensborg og dels ved Gurre
+Sø, og på to tidsplan; noen av personene er
+københavnske borgere fra samtiden, og andre er kongelige
+og hoff-folk fra middelalderen i kretsen omkring Valdemar Atterdag.
+Phantasus, en luftens ånd, sammen med sylfer, alver,
+undiner og gnomer er aktører som bidrar til den
+eventyrlignende stemningen. To adoptivbarn, Anna og Balthasar, som
+hører til i den borgerlige verden, har på
+magisk vis adgang til fortidens miljø ved Gurre
+Sø. Anna og middelalderskalden Thorstein knyttes sammen i
+kjærlighet, og Thorstein blir med tilbake til samtiden.
+Motsetningen mellom de københavnske spissborgerne og de
+idealistiske unge er gjennomgående for konflikten i stykket.</p>
+<p>Allerede før Ibsen dro videre til Tyskland, kan han ha
+fått tak i en nettopp utkommet tysk bok: Hermann Hettners
+<title rend="italic">Das moderne Drama</title>, en kritisk
+gjennomgang av aktuelle dramatiske genrer, skrevet især
+med tanke på yngre dramatikere som trengte veiledning. En
+undergenre som Ibsen må ha merket seg omtalen av, er det
+Hettner kaller <quote>das romantische Märchenlustspiel</quote>
+<bibl>(Hettner 1959, 244)</bibl>. Som det mest fullendte
+mønsteret for den romantiske eventyrkomedien nevnes Shakespeares <title rend="italic">A Midsummer Night’s Dream</title> (skrevet ca. 1595). Da Shakespeare-resepsjonen skjøt fart på det
+europeiske kontinentet mot slutten av det 18. århundre,
+fikk også dette skuespillet økt betydning. Ved
+inngangen til det 19. århundre hadde for eksempel Goethe tatt
+opp tråden fra Shakespeares drømmespill ved
+å legge inn et intermezzo i første del av sin
+tragedie <title rend="italic">Faust</title>, <title rend="quotes">Walpurgisnachtstraum, oder Oberons und Titanias Goldne Hochzeit</title>.</p>
+<p>De danske romantikerne forsøkte å gjenopplive
+eventyrkomedien som genre. Eksempler på det er de omtalte
+stykkene av Heiberg og Hostrup, men også et tidlig stykke
+av Adam Oehlenschläger, det lyriske dramaet <title rend="italic">Sanct Hansaften-Spil</title> (1803), kan nevnes.
+Det inneholder både komiske og tragiske elementer og
+består av en rekke korsanger, dialoger og monologer i
+ulike versemål. Handlingen fremstiller en utflukt til
+Kirstens Kilde i Dyrehaven i København. To unge mennesker
+som er holdt adskilt av standsforskjell og sosiale konvensjoner,
+får ved list anledning til å møtes.
+Her utfoldes et farverikt skue av markedsløyer, med
+dansere, musikere, selgere, marionett-teater, kunstdommere, en
+Harlekin-figur o.a. Mens dagen svinner og stillheten overtar,
+opptrer andre og mer eteriske skikkelser:
+<quote>Døden</quote>, <quote>Sanct Kirsten</quote>,
+<quote>en alvepike</quote> og <quote>Kiærligheds
+Genie</quote>. Den siste anviser de unge elskende den eneste veien
+ut av verdens kjærlighetsløse kummer; døden.</p>
+<p>Da Ibsen på sin stipendreise kom til Dresden i juni 1852,
+var Shakespeares eventyrkomedie ett av de skuespillene som stod
+på plakaten (<bibl>Arestad 1946, 93</bibl>; <bibl>Van Laan
+1995, 287</bibl>; <bibl>Ewbank 2001, 70–71</bibl>).
+Hettner beskriver stykkets verden med entusiasme: Vi befinner oss
+<quote>utenfor den vanlige verdens liv. Alver og gnomer, gode og
+onde ånder viser seg, de vidunderligste og sjeldneste
+ting skjer, ting som motsier naturlovene; kort sagt, vi lever i
+en fortrollet verden, i drømmens land, i underets
+poesi</quote> (<bibl>Hettner 1959, 244</bibl>, til norsk ved A.Aa.). Dramatikeren får drømmens verden til å virke sann og fornuftig, mens virkeligheten fremtrer som
+unaturlig og floket, og hele spillet prøver på
+listig vis å lokke tilskueren til å akseptere
+den overnaturlige verden som den egentlige.</p>
+<p>Ibsen behersket ikke engelsk og kan ha lest <title rend="italic">A
+Midsummer Night’s Dream</title> i August Wilhelm von
+Schlegels tyske oversettelse. Schlegels oversettelse av 17
+Shakespeare-skuespill, deriblant <title rend="italic">Ein
+Sommernachtstraum</title>, kom ut i to bind 1797–1810. Det
+er minst like sannsynlig at han leste stykket i Adam
+Oehlenschlägers danske oversettelse, <title rend="italic">En Skiærsommernats
+Drøm</title> (1816 og senere), eller muligens i en annen
+dansk versjon, Simon Meislings (1807–08). Det er likevel
+grunn til å tro at det først og fremst var
+oppførelsen av den shakespearske eventyrkomedien
+på Hoftheater i Dresden som inspirerte Ibsen til
+å velge sankthansnattens flettverk av det mytiske, det
+erotiske og det trivielle som emne for sitt skuespill. Han har ikke
+i brev eller på annen måte fortalt om sine
+teateropplevelser i Dresden, men det er en utbredt oppfatning at
+Hoftheater på denne tiden forvaltet Shakespeares
+dramatiske kunst på en fremragende måte.
+Innflytelsen fra København-oppholdet hadde trolig mindre
+betydning i denne sammenhengen <bibl>(Ewbank 2001, 71–72)</bibl>.</p>
+<p>Allerede tittelen som Ibsen har valgt, antyder slektskap
+både med Shakespeares og Oehlenschlägers
+midtsommernattsskuespill. Når det gjelder handling, er
+likheten med det engelske stykket størst. Både
+i Shakespeares og Ibsens komedier opplever vi en
+kjærlighetsforvikling mellom fire unge mennesker, som
+lykkeligvis finner frem til seg selv og sine egentlige
+kjærester etter en natt i skogen hvor alvene
+rår. Hos Shakespeare er det i utgangspunktet to gutter som
+vil ha samme jente (Hermia), hos Ibsen to jenter som er bundet til
+eller tiltrukket av samme gutt (Johannes Birk). Hos Shakespeare
+møter vi et alvevesen, Puck, som også kalles
+Robin Goodfellow, og som i mangt minner om Nissen i norsk folketro. Han
+og hans herre, Alvekongen, kryster saften av en magisk blomst i
+øynene på de sovende unge, slik at de
+går surr i sine forelskelser, men til slutt havner i ekte
+parforhold. Hos Ibsen er Nissen den som ved et lignende middel
+(magisk blomstersaft i punsjbollen) sørger for at de
+rette kjærestene finner hverandre.</p>
+<p>En av de unge mennene som kommer til gårds i <title rend="italic">Sancthansnatten</title>, Julian Paulsen,
+karakteriseres av sin venn, vertinnens sønn
+Jørgen, som <quote>en ægte Digter
+mørk og vild</quote>
+<HIS:hisRef>(<seg type="red"><ptr type="ht" target="Saht.xml" corresp="koSa_ht_1"/></seg>)</HIS:hisRef>, selv om han ikke har offentliggjort
+noe ennå. Denne dikter-skikkelsen kan lede tankene til
+romantikkens forestillinger om Lord Byron <bibl>(Woerner 1923, b. 1,
+61)</bibl>, blant annet når han taler om sitt
+<quote>mørke sønderrevne Væsen</quote>
+<HIS:hisRef> (<seg type="red"><ptr type="ht" target="Saht.xml" corresp="koSa_ht_2"/></seg>)</HIS:hisRef>. Like viktig er trolig impulsene fra
+Søren Kierkegaards tanker om estetikeren som
+mennesketype, for eksempel når Paulsen reflekterer over at andre
+mennesker vil bemerke hans utseende som <quote>et aandrigt Ansigt!
+et skarpt Blik – noget melankolsk – men
+interessant, – forbandet interessant</quote><HIS:hisRef> (<seg type="red"><ptr type="ht" target="Saht.xml" corresp="koSa_ht_3"/></seg>)</HIS:hisRef>. Han omtaler seg overfor
+Jørgens søster, Juliane, som fylt av <quote>Weltschmerz</quote><HIS:hisRef> (<seg type="red"><ptr type="ht" target="Saht.xml" corresp="koSa_ht_4"/></seg>)</HIS:hisRef>. Til den tredje unge mannen, Johannes Birk, sier han at det skal så lite til
+før han blir <quote>mørk og bitter</quote>,
+men Birk svarer at han er lei av å høre
+Paulsens snakk om sine lidelser og sitt mørke
+humør, <quote>det er lutter Affectation</quote><HIS:hisRef> (<seg type="red"><ptr type="ht" target="Saht.xml" corresp="koSa_ht_5"/></seg>)</HIS:hisRef>. Paulsen kan også ha
+lånt trekk fra Henrik Wergeland, slik han særlig
+ble fremstilt i Welhavens pamflett <title rend="italic">Henrik
+Wergelands Digtekunst og Polemik</title> (1832). Welhaven hevder
+der at Wergeland har hatt Byron og Shakespeare som forbilder, men at
+han er blitt stående ved å kopiere deres feil
+(jf. <bibl>Welhaven 1990–92, b. 3, 80</bibl>). Paulsens
+svermeri for <quote>den stolte vilde Natur</quote><HIS:hisRef> (<seg type="red"><ptr type="ht" target="Saht.xml" corresp="koSa_ht_6"/></seg>)</HIS:hisRef> eller <quote>den stolte frie Natur</quote><HIS:hisRef> (<seg type="red"><ptr type="ht" target="Saht.xml" corresp="koSa_ht_7"/></seg>)</HIS:hisRef> kan minne om Byrons ekte og
+lidenskapelige naturtilbedelse. Paulsens svermeri for det nasjonale
+og opprinnelige er ikke byronsk, men kan henspille på
+Wergeland og hans tilhengere.</p>
+<p>At det byronske sees som en motsetning til det nasjonale, kommer
+sterkere til uttrykk i en variant som står i den
+første trykte versjonen av <title rend="italic">Sancthansnatten</title>, i <bibl><title rend="italic">Efterladte skrifter</title> 1</bibl>, hvor grunnlaget er en annen sufflørbok, BOB hBI, fra Bergen
+Offentlige Bibliotek. Her kommer Julian Paulsen – i
+samtalen med Juliane mot slutten av første akt, 14. scene – inn
+på det som skjedde med hans personlige utvikling, etter at
+han hadde måttet gi opp sin kjærlighet til
+huldra og det primitivt nasjonale: <quote rend="proseIndent">jeg
+maatte indtage et negativt Standpunkt ligeoverfor Menneskeheden.
+Jeg begyndte med at nedlægge min Sjæl i
+Theaterkritiker og Korrespondentartikler for Provindspressen,
+som – nok sagt – – jeg gik bestandig
+videre paa denne negative Bane. Lidt efter lidt ansatte der sig
+indeni i mig noget Mørkt, noget
+Djævleblændt – –
+Dæmonisk skulde jeg sagt – noget vist
+– lad mig kalde det Menneskeforagt, noget Byronsk.
+Heraf kommer denne Splittelse, denne Disharmoni, som man
+bemærker i mit Væsen; paa Overfladen er jeg
+kold, for ikke at sige iisnende kold; men her indenfor
+brænder det – tro De mig – det
+brænder – – (skyller et Glas Punsch ned.)
+<bibl>(ES 1, 399)</bibl></quote> Paulsens selvfremstilling her kan tyde
+på at Ibsen i <title rend="italic">Sancthansnatten</title> arbeider med å
+løsrive seg fra en viss romantisk estetikk som hadde
+preget ham i årene omkring 1850 <bibl>(jf. S. Skard 1939, 119)</bibl>.</p>
+<p>Liksom i skuespillet <title rend="italic">Huldrebrylluppet</title>
+(1851) av Ibsens venn Paul Botten-Hansen kommer nasjonale stemninger
+til uttrykk på to nivåer i <title rend="italic">Sancthansnatten</title>; det ene som gjenstand for
+parodisk behandling, det andre med et positivt fortegn. Den delte
+innstillingen til nasjonale holdninger finner vi også i
+teateranmeldelser Ibsen skrev i «<title rend="italic">Manden</title>»/<title rend="italic">Andhrimner</title> forsommeren 1851. Etter premieren
+på P.A. Jensens skuespill <title rend="italic">Huldrens
+Hjem</title> har han den innvendingen at: <quote rend="proseIndent">det Nationale kun er noget
+Udenpaahængt, som ingenlunde berører
+Stykkets Grundvæsen. Til denne nationale Flitterstads
+maa henregnes Stevkampen, Springdandsen, Skjældsordene
+og Dialektudtrykkene, som vel kunne blænde den
+Ubefæstede, men som for den kritiske
+Undersøgelse vise sig i al sin Tomhed og Kjærneløshed <bibl>(HU 15, 80).</bibl></quote> Han runder av sin omtale med en programerklæring for den nasjonale dramatiske
+litteraturen. Forfatterne må forstå å
+skjelne virkelighetens fordringer fra kunstens; virkelighetens
+rå kanter må slipes bort før verket
+kan bli kunst: <quote rend="proseIndent">Og da ville de ogsaa
+begribe, at det Nationale i Kunsten ingenlunde fremmes ved en
+smaalig Kopieren af Scener fra Hverdagslivet; da ville de
+indsee, at den nationale Forfatter er den, der forstaar at
+meddele sit Værk hiin Grundtone, der klinger os
+imøde fra Fjeld og Dal, fra Li og Strand, men fremfor
+Alt fra vort eget Indre <bibl>(HU 15, 81).</bibl></quote> Konflikten mellom de to nivåene
+av det nasjonale har også berøringspunkter med
+en annen av tidens skuespillkonvensjoner. I en omtale i <title rend="italic">Samfundsbladet</title> 1. mars 1851 av <title rend="italic">Asylet paa Grønland. Han er ude og
+læser : Studentervaudeville i een Act</title>, av
+Richard Petersen, peker Ibsen på at det aktuelle
+skuespillet må vurderes i relasjon til dets genremessige
+egenskaper: <quote rend="proseIndent">Vi ere i de senere Aar blevne
+bekjendte med en ny Art af Skuespil, hvilken, om den end ikke af
+Æsthetikerne indrømmes Plads blandt de
+dramatiske Kunstformer, dog i en vis Forstand har erholdt sin
+Berettigelse, – jeg mener nemlig Studenterkomedien <bibl>(HU 15, 37).</bibl></quote> Denne typen skuespill defineres i artikkelen ut fra et krav om at den utvikler en grunnidé,
+<quote>nemlig Fremstillingen af det Aandige,
+repræsenteret ved Studenten, i dets Brydninger med det
+Ikke-Aandige, der her maa fremtræde som
+Spidsborgerlighed</quote> (HU 15, 38). Ibsen viser til Hostrup som
+den som har lansert den nye skuespilltypen i Norden. Han hevder
+også at studenterkomedien i samtiden gjerne fremtrer som
+vaudeville og ikke som lystspill.</p>
+<p>Ifølge listen over de handlende opptrer hele tre studenter
+i <title rend="italic">Sancthansnatten</title> –
+Jørgen Kvist, som er sønn av vertinnen, og de
+to gjestene Johannes Birk og Julian Paulsen, som begge i
+utgangspunktet er interessert i Jørgens søster
+Juliane. Dette kan synes å komplisere
+spørsmålet om hvem av de opptredende som
+representerer <quote>det Aandige</quote>. Det er tydelig at
+fru Berg ved sine sosiale ambisjoner og sin manglende
+forståelse for det som er knyttet til den gamle
+bjelkestuen, nærmest kan karakteriseres som spissborgerlig.
+Det samme gjelder hennes datter Juliane. Sønnen
+Jørgen er relativt nøytral. Julian Paulsen
+presenterer seg mer som dikter enn som student, og kan ved den
+parodiske belysningen han utsettes for, blant annet ved sin sans for
+selviscenesettelse, ikke representere noe åndig. Det blir
+Johannes Birk, som i løpet av handlingen orienterer seg
+bort fra Juliane og kommer til forståelse med Anna, som
+best svarer til rollen som student i studenterkomediens forstand.
+Ledet av Anna blir han i stand til å se inn i det
+eventyrlige, i sitt eget indre, sin egen fortid, i den
+åpne Sancthanshaugen, mens Paulsen og Juliane bare
+oppnår en overfladisk og falsk forståelse av det
+samme synet.</p>
+<p>Med <title rend="italic">Sancthansnatten</title> holder prosaen sitt
+inntog i Ibsens dialog, men det finnes også innslag av
+vers, ikke minst i aktavslutninger og aktinnledninger. Anna synger
+enkelte folkeviselignende vers mens hun arbeider. Nissens versform
+er knittel, en folkelig form med parrim, ofte brukt i satirisk
+diktning. I åpningen av annen akt opptrer et kor av
+<quote>Usynlige Alfer</quote>: Alvene synger i trokeiske firtaktere,
+en svært utbredt form under romantikken. Generelt er
+versformen i stykket forbeholdt skuespillets poetiske stemninger,
+mens den mer prosaisk-spissborgerlige dialogen er henvist til prosa.
+Unntaket er gjenkjennelsesscenen i slutten av annen akt, der selv
+Paulsen og Juliane taler på vers, i kryssrimede femfotsjamber.</p>
+<p>Sammen med <title rend="italic">Olaf Liljekrans</title> og <title rend="italic">Gildet paa Solhoug</title> fremtrer <title rend="italic">Sancthansnatten</title> som det mest
+nasjonalromantiske av Ibsens skuespill. En rekke nasjonale og
+folkloristiske rekvisitter nevnes flere steder i stykket –
+nisse, hulder, alver, haugfolk, viser og eventyr,
+lindetrær og granlier. Man finner en rekke strofer og vers
+i romantisk folkevisestil. Nissen nevner at <quote>Huldren
+[…] synger og slaaer sit Langelegspil</quote><HIS:hisRef> (<seg type="red"><ptr type="ht" target="Saht.xml" corresp="koSa_ht_8"/></seg>)</HIS:hisRef>. Langeleik er et strengeinstrument som har vært i bruk i Norge i alle fall fra tidlig
+på 1600-tallet, spredt over hele landet, men dets
+popularitet gikk tilbake på slutten av 1700-tallet. Fra
+1840-årene kom langeleiken til å spille en
+viktig rolle som nasjonalromantisk symbol. I Wergelands farse <title rend="italic">Vinægers Fjeldeventyr</title> (1841) er
+langeleiken et symbol på det norske. Da Wergeland i 1842
+gav ut en liten samling dikt <quote>i Dølemaal</quote>, gav han den navnet <title rend="italic">Langeleiken</title>.</p>
+<p>I enkelte av personenes egenskaper og i relasjonene mellom dem kan
+det skimtes et motiv som er langt mer poengtert i folkeeventyret
+<title rend="quotes">Manddatteren og
+Kjærringdatteren</title>, trykt første gang i
+Asbjørnsen og Moes samling av norske folkeeventyr i 1842.
+Mens Anna Berg, skuespillets nasjonalromantiske heltinne, er datter
+av fru Bergs avdøde mann og stedatter av fru Berg, er
+Juliane Kvist datter av fru Berg og hennes første mann,
+som også er død. I eventyret er all sympati
+på manndatterens side; hun er den vakre og snille av de
+to. Hun herses med av sin onde stemor, men hun får magiske
+hjelpere, og det er den late og uskikkelige kjerringdatteren som
+kommer dårligst ut <bibl>(Johnsen 1982,
+33–40)</bibl>. I skuespillet er denne motsetningen klart
+dempet, men også her er det manndatteren som fortjener
+publikums sympati og som blir vinneren, idet stemoren hennes setter
+henne til det simpleste arbeidet, mens hun intrigerer for
+å skaffe sin egen datter rikdom og et godt giftermål.</p>
+<p>Det finnes en annen mulig kilde til Ibsens bruk av motivet med
+manndatteren og kjerringdatteren enn folkeeventyret. I Henrik
+Hertz’ romantiske tragedie <title rend="italic">Svend
+Dyrings Hus</title> (1837) har Svend Dyrings annen hustru, fru
+Guldborg, datteren Ragnhild fra sitt første ekteskap,
+mens Svend Dyring fra sitt første ekteskap har datteren
+Regisse foruten to mindre sønner. Også her er
+det mannens datter som vinner leserens sympati, især fordi
+hun undertrykkes av sin stemor, mens kvinnens datter er en mindre
+positiv skikkelse. Begge de to unge pikene er tiltrukket av ridder
+Stig Hvide, som elsker Regisse.</p>
+</div>
+
+<div type="creation" xml:id="intro_creation">
+<head rend="level2">TILBLIVELSE</head>
+<p>Ibsens uttalelser ved ulike anledninger i ettertid gir ikke noe
+entydig bilde av hvordan og når han begynte på
+det første skuespillet han leverte til sin arbeidsgiver,
+Det norske Theater i Bergen. Ifølge muntlig meddelelse
+til Henrik Jæger i 1887 hadde han før sin
+utenlandsreise inngått en avtale med en studiekamerat,
+Theodor Bernhoft, om at de to skulle skrive et skuespill sammen. Da
+Ibsen sendte Bernhoft sitt utkast til <title rend="italic">Sancthansnatten</title>, svarte han at han i
+mellomtiden var begynt på et studium som hadde ledet
+tankene hans bort fra slike ting (jf. <bibl>Midbøe 1960,
+143</bibl>). Da det mange år senere ble aktuelt
+å planlegge en samlet utgave av Ibsens skuespill,
+på tysk i første omgang, reagerte Ibsen
+negativt på at <title rend="italic">Sancthansnatten</title> skulle tas med. I et brev til
+sine tyske utgivere 19. september 1897 går han
+nokså langt i å frakjenne seg hovedansvaret for
+at <title rend="italic">Sancthansnatten</title> ble skrevet:
+<quote rend="proseIndent">Stykket er et miserabelt produkt, der ikke egentlig
+hidrører fra <hi rend="italic">min</hi>
+hånd. Det er bygget over et løst,
+fuskeragtigt udkast, som jeg i sin tid modtog fra en
+studiekammerat, bearbejdede og satte mit navn på men
+som jeg nu umulig kan vedkende mig.</quote> Enkelte har ment at
+skuespillet må ha blitt ferdig mens Ibsen var i utlandet
+(jf. <bibl>M. Meyer 1971, 100</bibl>), mens andre har hevdet at det ble
+ferdigskrevet i Bergen høsten 1852 <bibl>(Jæger
+1889)</bibl>. Selv oppgir Ibsen, i et tilbakeblikk på sin
+litterære virksomhet i søknaden av 10. mars
+1863 til Kongen om diktergasje, at han fra sin utenlandsreise i 1852
+bragte med seg tilbake til Bergen <quote>et nyt Skuespil i 3 Akter,
+betitlet ‹Sancthansnatten›</quote>. I alle
+fall hadde utenlandsreisen hatt produktiv betydning for denne
+eventyrkomedien. Samtaler han hadde hatt med teaterfolk ikke minst i
+København, teaterkunst han hadde sett, og litteratur han
+hadde lest, hadde pekt ut retningen for det arbeidet han
+høsten 1852 kunne levere teateret.</p>
+</div>
+
+<div type="performance" xml:id="intro_performance">
+<head rend="level2">OPPFØRELSE</head>
+<p><title rend="italic">Sancthansnatten</title> ble satt på
+plakaten for teaterets stiftelsesdag 2. januar 1853, og forfatterens
+riktige navn var for første gang med i
+kunngjøringen: <hi rend="italic">Henr. Ibsen</hi>.
+Dikteren må ha vært relativt tilfreds med sitt
+verk. At han vedkjente seg forfatterskapet, innebar også
+at han fikk eneansvaret for regien. Rollene ble besatt slik at
+Helene Wiese spilte Fru Berg, Jacob Prom og Benedicte Hundevadt
+spilte rollene som hennes to barn fra første ekteskap,
+Jørgen og Juliane Kvist; Louise Brun spilte stedatteren
+Anna Berg, Andreas Isachsen og Johannes Brun spilte de to
+besøkende studentene Johannes Birk og Julian Poulsen,
+mens Lucie Johannesen spilte Nissen. En gruppe bønder
+samt alver og haugfolk ble spilt av statister. Prøvene
+kan ha startet like før jul 1852; ved Teaterarkivet i
+Bergen er det bevart åtte rollehefter med
+påskrift om at de ble utlevert 19. desember 1852.</p>
+<p>I stedet for å benytte teaterets standarddekorasjoner
+valgte direksjonen å spandere penger på nye
+dekorasjoner, et tegn på at man ønsket
+å gjøre noe spesielt ut av denne oppsetningen.
+Ibsen hadde forfattet en lyrisk prolog om kunstens oppgave;
+å fortolke folkets liv. Den ble fremsagt av skuespilleren
+Harald Nielsen.</p>
+<p>Både syngespilltradisjonens og operaens sterke stilling ved
+teatrene omkring 1850, og den nasjonalromantiske og balladepregede
+karakteren ved <title rend="italic">Sancthansnatten</title>, er med
+på å skape et inntrykk av at Ibsen har tenkt seg
+mye musikk til forestillingen, særlig i annen akt. I
+hvilken grad Det norske Theaters musikere, arrangører og
+komponister har maktet å følge opp dikterens og
+instruktørens ønsker, er usikkert. Kildene
+inneholder lite om den musikken som ble benyttet.</p>
+    <p>Plakaten for forestillingen <!--(se illustrasjon s. <ptr target="illus-19"/>)-->opplyser at det som vanlig ble spilt
+både forspill og mellomaktsmusikk. Orkesteret
+åpnet med ouverturen til <title rend="italic">Zampa</title> (1831) av Ferdinand Hérold.
+Mellom prologen og første akt hadde man valgt norsk
+musikk: ouverturen til <title rend="italic">Fjeldeventyret</title>
+av Waldemar Thrane. Før annen akt spilte orkesteret
+ouverturen til <title rend="italic">Les deux
+journées</title> (1800) av Luigi Cherubini, og
+før tredje akt ouverturen til <title rend="italic">Le
+vampyr</title> (1828) av Peter Josef von Lindpaintner. <title rend="italic">Fjeldeventyret</title>, Henrik Anker Bjerregaards
+syngespill (1824), var oppført ved teateret i oktober
+1851, og ouverturen av Thrane ble trolig ofte spilt til norske
+stykker. Ouverturene av Cherubini og Lindpaintner kan regnes til
+orkesterets standardrepertoar til bruk som mellomaktsmusikk.</p>
+<p><hi rend="italic">Plakat for uroppførelsen av <title rend="normal">Sancthansnatten</title> ved Det norske Theater i Bergen 2. januar 1853.</hi> <hi rend="kreditering">Teaterarkivet UiB/Bergen Museum, Teatersamlingen, UiB</hi></p>
+<p>Musikalsk leder ved teateret på denne tiden var Edvard
+Bull, bror av Ole Bull. Det er ikke kjent at han har komponert eller
+arrangert noe musikk til teaterets oppførelser, og det er
+tvilsomt om han hadde den nødvendige musikalske
+utdannelsen og erfaringen til å komponere eller arrangere
+musikk til oppførelsen av <title rend="italic">Sancthansnatten</title>. En mer sannsynlig
+bidragsyter var den opprinnelig tsjekkiske musikeren Ferdinand
+Giovanni Schediwy, som i 1825 hadde slått seg ned i
+Bergen. En tid var han orkesterleder ved Det dramatiske Selskab og
+arrangerte musikk for noen av oppførelsene der. I Ibsens
+tid i Bergen var Schediwy mye benyttet til å komponere og
+arrangere musikk for teaterets oppførelser. Det fantes
+imidlertid også andre arrangører som arbeidet
+for teateret, så det er usikkert om det var Schediwy som
+skrev musikken.</p>
+<p>I flere av scenene, ikke minst i annen akt, som foregår om
+natten og er lokalisert i skogen i nærheten av <quote>en
+rund Bjergkolle</quote><HIS:hisRef> (<seg type="red"><ptr type="ht" target="Saht.xml" corresp="koSa_ht_15"/></seg>)</HIS:hisRef>, er det foreskrevet musikk, for eksempel
+i femte scene: <quote>Dæmpet Musik høres fra
+Baggrunden; – Bjerget aabner sig, og i det Indre sees
+en stor og glimrende oplyst Hal […]</quote><HIS:hisRef> (<seg type="red"><ptr type="ht" target="Saht.xml" corresp="koSa_ht_16"/></seg>)</HIS:hisRef>. Det kan se ut til at det har vært bakgrunnsmusikk sammenhengende fra dette stedet og ut
+akten; Birks ord <quote>Og disse Toner</quote><HIS:hisRef> (<seg type="red"><ptr type="ht" target="Saht.xml" corresp="koSa_ht_9"/></seg>)</HIS:hisRef>, aktavslutningen med <quote>Chor af Usynlige Alfer</quote><HIS:hisRef> (<seg type="red"><ptr type="ht" target="Saht.xml" corresp="koSa_ht_16a"/></seg>)</HIS:hisRef> og <quote>Efterspillet
+hendøer lidt efter lidt</quote> (tillegg i <title type="quotes">B</title>) kan tyde på det. Det er usikkert
+om noen av diktene i denne delen er blitt sunget, eller om de er
+blitt deklamert. Det dreier seg om balladeetterligninger, men ingen
+av dem tilsvarer helt noen av folkevisenes vanlige strukturer.</p>
+<p>Det er bevart noter til tre av sangene i <title rend="italic">Sancthansnatten</title>: Annas sang eller nynning til
+arbeidet, <quote>Og hør, liden Fugl paa Furrukvist!</quote>
+<HIS:hisRef> (<seg type="red"><ptr type="ht" target="Saht.xml" corresp="koSa_ht_10"/></seg>)</HIS:hisRef>, et blandet kor av
+<quote>Bønder og Piger</quote> som går over
+scenen og synger <quote>Mens Felen klinger gjennem Mark og Li</quote>
+<HIS:hisRef> (<seg type="red"><ptr type="ht" target="Saht.xml" corresp="koSa_ht_11"/></seg>)</HIS:hisRef> og et kor av <quote>Usynlige
+Alfer</quote> i åpningen av annen akt som synger
+<quote>Stille, stille; Natten kommer</quote><HIS:hisRef> (<seg type="red"><ptr type="ht" target="Saht.xml" corresp="koSa_ht_12"/></seg>)</HIS:hisRef>. De bevarte notelinjene til denne
+sangen (i tre eksemplarer) er merket <quote>soprano</quote>. Ved
+oppførelsen i Bergen har den trolig vært
+fremført av damekor, og siden stemmen er merket for
+sopranene, har den sannsynligvis vært sunget to- eller
+trestemt. En eller to altstemmer må da være
+kommet bort. Notelinjer til alle tre sangene er gjengitt i
+sammenheng med realkommentarene.</p>
+<p>Forestillingen startet kl. 17 og varte til kl. 20.30.</p>
+
+<div xml:id="intro_performance_reception">
+<head rend="level3">mottagelse av oppførelsen</head>
+<p>Av byens to aviser var det bare <title rend="italic">Bergens Stiftstidende</title> som (5.
+januar 1853) bragte en omtale av denne urpremieren.
+Anmelderen hadde festet seg mest ved det folkloristiske
+apparatet: <quote rend="proseIndent">Herr Henr. Ibsen gav i
+Søndags tilbedste
+Førstegrøden af sit dramatiske
+Forfattertalent i Eventyrkomedien
+«Sankthansnatten», med Nisse, Huldre og
+hvad der forresten foregaar inde i Hougen Sankthansnatten af
+«nationale Dandse» mellem
+Vætter og Huldrer, Kjærlighedsscener
+mellem Fjeldkongen og liten Karin m. m. <bibl>(Anonym 1853a).</bibl></quote> Teateret
+hadde fullt hus; mange måtte gi opp å
+få billett, forteller avisen, og det ser ut til at
+forventningene var store. Anmelderen roser de nye dekorasjonene
+som var malt av Frederik Sørvig; de <quote>vare
+særdeles heldigt udførte og svarende
+til de Forventninger, man har havt om denne unge
+Theatermaler</quote> <bibl>(Anonym 1853a)</bibl>. Når det gjelder skuespillet, er
+vurderingen hovedsakelig basert på publikums
+reaksjoner, og de var ikke særlig positive. Det ser ut
+til at det ikke har vært lett å få
+med seg hva som foregår på scenen, og
+anmelderen gjør ikke noe forsøk
+på å formidle innholdet til leserne: <quote rend="proseIndent">«Sankthansnattens»
+Idé og Handling er nok forblevet staaende noget
+paa det Uklare for Publikum, som ved Teppets Fald syntes
+lidt konsterneret, men vi betvivle ikke, at den anden
+Opførelse paa Onsdag vil give Forfatteren et mere
+fyldestgjørende Resultat, især dersom
+det gives for et ligesaa fuldt Hus som i
+Søndags <bibl>(Anonym 1853a).</bibl></quote> At skuespillet allerede skal
+være innsendt til oppførelse i Kristiania,
+blir notert, og for sin egen del finner anmelderen at det ikke
+står tilbake for et par andre bergenske stykker som
+nylig har oppnådd publikums gunst på byens
+teater. Avisen er uten tvil velvillig overfor den unge dikteren
+og sender sin representant også til den andre og siste
+oppførelsen. Håpet om et bedre resultat for
+<title rend="italic">Sancthansnatten</title> denne gangen
+ble ikke innfridd: <quote>I sin Heelhed maa det betragtes som et
+mindre vellykket Product, skjønt det har smukke
+Enkeltheder […] At det nu ikke gouterer
+Publikum, viste de tomme Bænke</quote> (Anonym 1853b, <title rend="italic">Bergens Stiftstidende</title> 9/1 1853).</p>
+<p>Et par vitnemål i ettertid bekrefter at
+oppførelsen ikke fikk noen positiv mottagelse. Peter
+Blytt minnes at stykket artet seg som <quote>en forunderlig,
+noget uklar Blanding af Romantik og Virkelighed</quote>, og
+at det <quote>gjorde liden Lykke</quote>
+<bibl>(Blytt 1894, 11)</bibl>. Det kan nok være at
+Blytt hadde frisket opp sin hukommelse ved å
+konsultere Tharald Blancs ti år eldre bok <title rend="italic">Norges første nationale Scene
+(Bergen 1850–1863)</title>, hvor det heter at
+<quote>Stykket gjorde ingen Lykke</quote>, noe som forklares
+ved at publikum nok <quote>har følt sig en Smule
+forvirret over den eiendommelige Blanding af Romantik og
+Realisme, som her blev budt dem</quote>
+<bibl>(Blanc 1884, 149)</bibl>. Den senere bergenske
+instruktør, forfatter og teaterhistoriker Hans
+Wiers-Jenssen refererer i <title rend="italic">Aftenposten</title> seksti år etter
+premieren en som var til stede, og som på
+spørsmålet om <title rend="italic">Sancthansnatten</title> ikke gjorde noen lykke,
+svarte: <quote>Ingen lykke? Nei, det skal Vorherre vide. Der blev baade hysset og pebet</quote> <bibl>(Wiers-Jenssen 1912)</bibl>.</p>
+<p>Et inserat i <title rend="italic">Bergens Stiftstidende</title> 9. januar 1853, samme dag som avisens omtale av <title rend="italic">Sancthansnatten</title>s siste oppførelse, kan sannsynligvis sees i sammenheng med
+det kildene kan fortelle om mishagsytringer fra publikum.
+Innsenderen, som henvender seg <quote>Til mine Herrer yngre
+Medkritici i Theatret</quote>, har merket seg at det er
+blitt en alminnelig tone blant yngre teatergjengere at man tross
+mangelfull estetisk dannelse ytrer seg på
+høyrøstet vis og med avgjørende
+domsavsigelser. Han finner det nødvendig å
+be om forståelse for betydningen av å verne
+om et nasjonalt innrettet teater. Det er nemlig positive trekk
+å observere, og de må ikke
+ødelegges: <quote rend="proseIndent">Gaar vort
+Theater saaledes fremad som hidtil, vil det ikke vare
+længe, inden det kan maale sig idetmindste med det
+nuværende Theater i Christiania (her tales ikke om
+den norske Skoles), thi der er Talenter ved vor Scene, der
+tegne til at blive sande Kunstnere. Derfor – nok
+see, men ikke røre <bibl>(Anonym 1853c).</bibl></quote> Signaturen (<hi rend="italic">X</hi>.) nevner ikke noe stykke, men det er ikke urimelig å se det som en reaksjon på mottagelsen av <title rend="italic">Sancthansnatten</title>.</p>
+<p>Selv om man nok kan finne et og annet tegn som kan modifisere
+bildet av nederlag i den unge Ibsens første direkte
+møte med det bergenske publikum, er det neppe tvil om
+at han var meget skuffet over resultatet. Det ble ingen flere
+oppførelser av dette skuespillet ved noe teater i
+Ibsens levetid.</p>
+</div>
+</div>
+
+<div type="publication" xml:id="intro_publication">
+<head rend="level2">UTGIVELSE</head>
+<p>Ibsen gjorde ikke noe forsøk på å
+få <title rend="italic">Sancthansnatten</title> utgitt
+som bok, ikke engang i omarbeidet form, som han ellers gjorde med
+flere av de tidlige skuespillene. Da Julius Elias og Paul Schlenther
+i 1897 la frem sine planer om en samlet tysk utgave av verkene hans,
+nevnte Ibsen i et brev at det var et par skuespill han hadde skrevet
+i sin ungdom, som han ikke ønsket å
+offentliggjøre. Elias gjorde et forsøk
+på å få dikteren til å
+forandre oppfatning når det gjaldt <title rend="italic">Sancthansnatten</title>, men fikk et svar som var
+meget skarpt i tonen: <quote rend="proseIndent">For sidste gang
+må jeg herved kategorisk erklære at jeg
+hverken vil eller <hi rend="italic">kan</hi> lade skuespillet
+«Sankthansnatten» optage i samlingen af <hi rend="italic">mine</hi> arbejder. […] Jeg må derfor indstændig bede Dem og dr. Schlenther ikke yderligere insistere på at dette
+makværk bliver offentliggjort. Langt fra at forklare
+noget af min øvrige produktion står det
+ganske udenfor enhver sammenhæng med denne; jeg har
+derfor allerede i mange år betragtet det som uskrevet
+og ikke existerende (brev til Elias 19/9 1897).</quote>
+<title rend="italic">Sancthansnatten</title> ble ikke trykt
+så lenge Ibsen levde.</p>
+</div>
+</div>
+</body>
+</text>
+</TEI>

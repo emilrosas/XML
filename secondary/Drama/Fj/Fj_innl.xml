@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title level="s">Henrik Ibsens skrifter</title>
+<title level="a">Innledning til Fjeldfuglen</title>
+<author>ført i pennen av Asbjørn Aarseth</author>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
+<respStmt>
+<resp>Kodeteknisk støtte og utvikling</resp>
+<name>AKSIS: Avdeling for kultur, språk og informasjonsteknologi, Universitetsforskning i Bergen (Unifob AS)</name>
+</respStmt>
+<respStmt>
+<resp>Koding</resp>
+<name xml:id="NME">Nina Marie Evensen</name>
+</respStmt>
+<respStmt>
+<resp>Tekstarbeid</resp>
+<name>Nina Marie Evensen</name>
+<name>Erlend Lønnum</name>
+</respStmt>
+<respStmt>
+<resp>Kontroll av sitater og referanser</resp>
+<name>Erlend Lønnum</name>
+</respStmt>
+<respStmt>
+<resp>Kommentarentiteter</resp>
+<name>Nina Marie Evensen</name>
+</respStmt>
+<respStmt>
+<resp>Kodekontroll</resp>
+<name/>
+</respStmt>
+</titleStmt>
+<publicationStmt>
+<publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+<distributor xml:id="HISe">Universitetet i Oslo</distributor>
+<date when="2012" xml:id="HISe-date"/>
+<pubPlace>Oslo</pubPlace>
+</publicationStmt>
+<sourceDesc>
+<p>Dette dokumentet har ingen kilde.</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<tagsDecl>
+
+</tagsDecl>
+</encodingDesc>
+<profileDesc>
+<langUsage>
+<language ident="nob"/>
+</langUsage>
+</profileDesc>
+<revisionDesc>
+    <change><date>07.09.2</date>
+        <name>NME</name><title>La inn type-attributt i text</title>
+    </change>
+    <change><date>08.11.12</date>
+<name>SBT</name><title>Omkoding til TEI P5 og HISe</title>
+</change>
+</revisionDesc>
+</teiHeader>
+<text type="introduction">
+<body>
+<div type="introduction" xml:id="intro">
+<div type="background" xml:id="intro_background">
+<head rend="level2">BAKGRUNN</head>
+<p rend="noIndent">Den sterke interessen for nasjonalromantisk stoff blant 1850-årenes norske borgerskap var tidlig registrert av Ibsen, og han gjorde flere forsøk på å nå teaterets publikum med en dramatisering av populære motiver med røtter i folkediktningen. Det første forsøket, <title rend="italic">Rypen i Justedal</title>, ble lagt til side ufullført i 1850. I årene som fulgte, gjorde han seg bedre kjent med de norske folkevisene, særlig etter at Magnus B. Landstads samling av <title rend="italic">Norske Folkeviser</title> var kommet ut i 1853. Etter at <title rend="italic">Gildet paa Solhoug</title> i januar 1856 hadde oppnådd en viss suksess på teateret i Bergen, fikk han ny tro på den romantiske fortellingen om piken fra den øde fjelldalen og hennes møte med bygdemenneskene som emne for et nasjonalt skuespill, og han fullførte <title rend="italic">Olaf Liljekrans</title> i løpet av høsten 1856. Dette folkevise-inspirerte dramaet møtte blandede reaksjoner da det ble oppført i Bergen 2. og 4. januar 1857, og Ibsen var neppe helt tilfreds med resultatet.</p>
+<p>Det teateret han i 1857 var blitt kunstnerisk leder for, Kristiania Norske Theater, var blitt grunnlagt i 1852 på et program som etter hvert ble mer og mer eksplisitt nasjonalt. Scenespråket skulle være norsk, i motsetning til det overveiende danske preget ved Christiania Theater. Å få frem et nasjonalt repertoar var ikke lett, men viljen var til stede. Den betydelige operainteressen gjorde at ønsket om å skape en nasjonal norsk opera var sterkt i disse årene. Waldemar Thranes syngespill <title rend="italic">Fjeldeventyret</title>, med tekst av Henrik Anker Bjerregaard, som hadde sin førsteoppførelse i 1825, ble satt opp på Christiania Theater for første gang våren 1850. Det var en stor suksess, men stykket ble ikke oppfattet som en opera. Det ble heller ikke Wergelands <title rend="italic">Søkadetterne iland</title> (1848; skrevet 1839), et lystspill med sang, og med musikk av Halfdan Kjerulf. Det samme gjaldt <title rend="italic">Til Sæters</title> (1850), en dramatisk idyll med sanger av Claus Pavels Riis og kjente melodier arrangert av Friedrich August Reissiger, og <title rend="italic">Ervingen</title> (1855), et syngespill i én akt av Ivar Aasen. Dette var norske forsøk i vaudeville-tradisjonen fra dansk teater.</p>
+<p>Ikke lenge etter at Ibsen kom inn i ledelsen for Kristiania Norske Theater, i november 1857, vedtok teaterets styre å utlove en pris for det beste skuespillet, fortrinnsvis et syngestykke, som ble sendt inn. En betingelse var at <quote>Stoffet maa være hentet fra vort eget Folkeliv eller vor egen Historie</quote> <bibl>(Koht 1928–29, b. 1, 172)</bibl>. Det tok en tid før denne kunngjøringen førte til noe, men i 1859 kom det et lovende manuskript fra Trondheim. Det var <title rend="italic">Fredkulla</title>, det første forsøket på å skape en nasjonal opera som var gjort i Norge. Teksten var av Carl Müller og musikken av Martin Andreas Udbye. Operaen ble antatt til oppførelse, selv om teateret på den tiden hadde økonomiske problemer og ikke rådet over de orkesterressursene som skulle til. Da teaterets styre sommeren 1862 måtte gå til skifteretten, var <title rend="italic">Fredkulla</title> fremdeles ikke oppført.</p>
+<p>Interessen for opera var ikke fullstendig ny hos Ibsen da hans teater i 1859 fikk hånd om et ekte norsk operamanuskript. Det tidligste vitnesbyrdet om hans orientering i denne retningen har vi i en teaterartikkel i «<title rend="italic">Manden</title>»/<title rend="italic">Andhrimner</title> 4. mai 1851, som blant annet inneholder en anmeldelse av <title rend="italic">Wilhelm Tell</title>, <quote>Rosinis herlige Opera</quote> <bibl>(Ibsen 1851, 79; HU 15, 56)</bibl>, basert på Friedrich von Schillers tragedie med samme tittel. Operainteresse av et annet slag finner vi uttrykk for i stortingssatiren <title rend="italic">Norma</title>, det korte leilighetsstykket Ibsen skrev om forhandlingene i Stortinget i slutten av mai 1851, etter å ha sett og anmeldt oppførelsen av Vincenzo Bellinis opera <title rend="italic">Norma</title> på Christiania Theater 20. mai. Mer teoretisk er Ibsen i sin teaterartikkel tre uker senere, hvor han drøfter forholdet mellom musikk og tekst i operagenren. Han reagerer på en utbredt oppfatning som går ut på at musikken er det vesentlige i en opera, og at teksten bare er av sekundær betydning. Mot dette synet hevder Ibsen at en opera som dramatisk kunstform er sammensatt av to elementer, og at begge er nødvendige for en realisering av det som er genrens mål, å gjenskape virkeligheten i et idealt bilde:</p>
+<quote rend="proseIndent">Operamusikens Fuldkommenhed ligger derfor netop i dens Ufuldkommenhed til i og for sig selv at kunne udtrykke Komponistens Digtertanke, ligesom Textens Fuldkommenhed ligger deri, at den intet Fuldkomment er, saalænge den ikke udtales gjennem Eenheden af Musik og Plastik. Den inderligste Harmoni maa saaledes finde Sted mellem Musik og Text; Musiken er Operaens Sjæl, Texten den konkrete Form, hvoraf den er omsluttet, og da vi i Operaen befinde os paa det Ideelles Gebet, saa kræve vi her en fuldkommen Overeensstemmelse mellem Indhold og Form <bibl>(HU 15, 67)</bibl>.</quote>
+<p rend="noIndent">Det er tydelig at den unge Ibsen har tenkt en del på hva som konstituerer opera som kunstform. Han går lenger enn Richard Wagner i å peke mot en moderne oppfatning av operaen <bibl>(jf. Witt 1928)</bibl>. Artikkelen fra mai 1851 gjenspeiler også at teaterinteresserte i Kristiania omkring 1850 hadde forholdsvis gode muligheter til å oppleve operafremførelser. Helt siden den nye teaterbygningen på Bankplassen ble åpnet i 1837, hadde både syngespill og operaer hatt en bred plass på repertoaret, og det var gjerne disse stykkene, især romantiske operaer<HIS:hisRef> (se kommentar til tittelsiden <ptr type="internal" target="Fjht.xml" corresp="koFj_1"/>)</HIS:hisRef>, som trakk best hus. I sesongene 1841–46 ble det ved Christiania Theater oppført i alt 18 operaer, 44 syngespill og 125 talestykker. Av disse 187 stykkene ble 18 oppført ti ganger eller mer, og disse 18 fordelte seg med seks operaer, seks syngespill og seks talestykker <bibl>(Anker 1956a, 160–62)</bibl>. I løpet av Ibsens første opphold i Kristiania, fra våren 1850 til høsten 1851, ble følgende operaer oppført: <title rend="italic">Den sorte Domino</title> og <title rend="italic">Den Stumme fra Portici</title> av Daniel François Esprit Auber, <title rend="italic">Norma</title> og <title rend="italic">Søvngjengersken</title> av Vincenzo Bellini og <title rend="italic">Wilhelm Tell</title> av Gioacchino Rossini, dessuten syngespillene <title rend="italic">Til Sæters</title> av Riis/Reissiger og <title rend="italic">Fjeldeventyret</title> av Waldemar Thrane <bibl>(Anker 1956a, 164–65)</bibl>. Ved teateret i Bergen ble det i Ibsens tid der fra 1851 til 1857 oppført enkelte syngespill, men ingen operaer. Også ved Kristiania Norske Theater ble det oppført syngespill mens Ibsen var der, men det norske repertoaret var meget begrenset.</p>
+
+<div xml:id="intro_background_dramaform">
+<head rend="level3">dramaform</head>
+<p rend="noIndent">Tekstens litterære form har ikke vært gjenstand for nærmere undersøkelse i sekundærlitteraturen. Det har nok sammenheng med dens karakter av fragment, men også med det forholdet at Ibsen-dramatikken ellers er så fjern fra operagenren. Teksten står naturlig nok svært nær <title rend="italic">Olaf Liljekrans</title>, og er vel nærmest tenkt som en librettoversjon av dette dramaet. Med unntak av at fru Kirsten mangler, deltar de samme personene i <title rend="italic">Fjeldfuglen</title> som i <title rend="italic">Olaf Liljekrans</title>, dog under litt andre navn.</p>
+<p>Det er ikke uten interesse at Ibsen i <title rend="italic">Fjeldfuglen</title>, til forskjell fra <title rend="italic">Olaf Liljekrans</title>, fører inn overnaturlige vesener i persongalleriet. Det er gammel tradisjon i operalitteraturen å bruke eventyrskikkelser og mytologiske personer (også fjerne historiske personer) som roller. Slike emner og slike personer var en slags unnskyldning for det i og for seg unaturlige i operaen at alt skulle synges.</p>
+<p>En meget karakteristisk rolle i persongalleriet er <quote>Thorgejr</quote> (i <title rend="italic">Olaf Liljekrans</title> <quote>Thorgjerd</quote>), som er modellert etter spillemannen Torgeir Augundsson, <quote>Myllarguten</quote> (1801–72). Han stod svært sentralt i folks oppfatning av folkemusikk omkring midten av 1800-tallet. Ole Bull hadde truffet ham første gang i Bergen i 1831, og hadde stor tro på hans evner. Bull gav konsert sammen med ham i Kristiania 15. januar 1849; senere på våren spilte Myllarguten også i noen andre byer på Østlandet. Han spilte også noen ganger på Det norske Theater i Bergen vinteren og våren 1850, og dro på flere turneer på 1850-tallet, blant annet spilte han i Kristiania igjen våren 1858. Myllarguten ble <quote>en aabenbarelse fra fjeldets verden</quote> <bibl>(Berge 1972, 57)</bibl>, og plasserte seg midt inn i den nasjonalromantiske bevegelsen i dens første periode. Ibsens bruk av personen Thorgejr som representant for fjellets mystikk er meget tydelig, både i <title rend="italic">Olaf Liljekrans</title> og i <title rend="italic">Fjeldfuglen</title>.</p>
+<p>Foruten de seks personene deltar et kor av bryllupsgjester, som representerer bygdefolket, og et kor av underjordiske, som hører fjelldalen til. I <title rend="italic">Olaf Liljekrans</title> er <quote>Hougfolket</quote> riktignok ikke representert, og motsetningen mellom <quote>Arnes Slægtninger</quote> og <quote>Fru Kirstens Følge</quote> skaper kanskje enda sterkere dramatikk enn åpningen av <title rend="italic">Fjeldfuglen</title>.</p>
+<p>Henrik Jæger gir en presentasjon og en vurdering av Ibsens forsøk på å bidra til en nasjonal norsk opera, så langt det gikk. Jæger finner at forfatteren har et lovende grep om stoffet.</p>
+<quote rend="proseIndent">Det hele er skrevet med en levende Sans for dramatisk-musikalsk Effekt. Specielt er Korene lagt tilrette med meget Raffinement, der røber den kyndige og erfarne Theaterleder. Af Handling er der derimod et Minimum. Det hele er igrunden ikke andet end et Tableau med Kor, hvori Personerne præsenteres og den paatænkte Konflikt lægges tilrette <bibl>(Jæger 1891, 362)</bibl>.</quote>
+<p rend="noIndent">Man må gi Jæger rett i at hele scenen av <title rend="italic">Fjeldfuglen</title> virker operamessig tenkt. Vekslingen mellom soloinnslagene (Thorgejr, Alfhild og andre) og de to korene burde kunne fungere godt i en opera. Senere følger blant annet en duett mellom Knut og Alfhild og flere vekslinger mellom solister og kor. Så vidt vi nå kjenner til, ble det ikke komponert musikk til <title rend="italic">Fjeldfuglen</title>.</p>
+<p>Hele teksten er så langt skrevet i versform, ikke vekslende med prosaavsnitt; dette skyldes nok hensynet til librettobruken. Det veksles imidlertid mellom ustrofiske og strofiske partier, der de ustrofiske vil kunne fungere som operaens <hi rend="italic">resitativer</hi> (talevers) og de strofiske som dens <hi rend="italic">arier</hi> <bibl>(Fafner 1989–2000, b. 2:1, 36)</bibl>. I resitativene ligger operaens dialog, dens (sparsomme) handling og fremdrift:</p>
+<quote rend="indent">
+<HIS:hisLg>
+<HIS:hisSp><HIS:spOpener><speaker rend="smallCaps">gjæsterne</speaker></HIS:spOpener>
+<l>Nu er Fæstemanden funden</l>
+<l>Der han gik som trolddomsbunden!</l>
+<l>Endt er Sorgen;</l>
+<l>Spil og Dands fra tidligst Morgen</l>
+<l>Lyde skal i Bryllupsgaard!</l></HIS:hisSp>
+<HIS:hisSp><HIS:spOpener><speaker rend="smallCaps">ingeborg</speaker><lb/>
+<HIS:hisStage>(til Svend.)</HIS:hisStage></HIS:spOpener>
+<l>See hvor hjerteklemt han staar!</l></HIS:hisSp>
+<HIS:hisSp><HIS:spOpener><speaker rend="smallCaps">ivar</speaker><lb/>
+<HIS:hisStage>(til Knut.)</HIS:hisStage></HIS:spOpener>
+<l>Hvad er mødt?</l></HIS:hisSp>
+<HIS:hisSp><HIS:spOpener><speaker rend="smallCaps">knut</speaker><lb/>
+<HIS:hisStage>(afsides.)</HIS:hisStage></HIS:spOpener>
+<l>Hvad skal jeg svare!</l></HIS:hisSp>
+<HIS:hisSp><HIS:spOpener><speaker rend="smallCaps">gjæsterne</speaker></HIS:spOpener>
+<l>Siden kan I Tingen klare;</l>
+<HIS:hisStage>(til Knut.)</HIS:hisStage>
+<l>Hjemad nu, dit Ord at holde!</l></HIS:hisSp>
+<HIS:hisSp><HIS:spOpener><speaker rend="smallCaps">knut</speaker><lb/>
+<HIS:hisStage>(sagte og smærteligt med et Blik paa Alfhild.)</HIS:hisStage></HIS:spOpener>
+<l>Og hende jeg maa slig Kvide volde!</l></HIS:hisSp>
+</HIS:hisLg>
+<bibl>(HIS 2, <ptr type="ht" target="Fjht.xml" corresp="koFj_ht_1"/>)</bibl>
+</quote>
+<p rend="noIndent">De mer lyriske ariene fører til en oppbremsing av handlingen; de fastholder affekten, sinnsstemningen i øyeblikket:</p>
+<quote rend="indent">
+<HIS:hisLg>
+<HIS:hisSp><HIS:spOpener><speaker rend="smallCaps">alfhild</speaker></HIS:spOpener>
+<l>Han er kommen, han er funden,</l>
+<l>Han, som længe</l>
+<l>Sang til mig fra dine Strenge!</l>
+<l>Verdens Lykke</l>
+<l>Vént mig lokker</l>
+<l>Gjennem Laat af</l>
+<l>Lur og Klokker!</l>
+<l>Han er kommen, han er funden!</l>
+<l>Nu er Alfhilds Vaar oprunden!</l></HIS:hisSp>
+</HIS:hisLg>
+<bibl>(HIS 2, <ptr type="ht" target="Fjht.xml" corresp="koFj_ht_2"/>)</bibl>
+</quote>
+<p rend="noIndent"><title rend="italic">Fjeldfuglen</title> består av til dels lange partier med arier, noe som bidrar til operaens statiske preg (jf. Jæger 1891). Samtidig er det i disse partiene at konflikten bygges opp og tydeliggjøres ved at personenes motsatte følelser stilles opp mot hverandre. Alfhilds jubel kontrasteres umiddelbart av Knuts fortvilelse:
+<quote rend="indent">
+<HIS:hisLg>
+<HIS:hisSp><HIS:spOpener><speaker rend="smallCaps">knut</speaker></HIS:spOpener>
+<l>Tankestjaalen, trolddomsbunden</l>
+<l>Gik jeg længe,</l>
+<l>Gad mig ud fra Livet stænge;</l>
+<l>Lys og Fred var</l>
+<l>I min Bringe,</l>
+<l>Kvide nu mig</l>
+<l>Hart mon stinge;</l>
+<l>Endt er Skyttens Liv i Lunden;</l>
+<l>Tungest Dag for mig er runden!</l></HIS:hisSp>
+</HIS:hisLg>
+<bibl>(HIS 2, <ptr type="ht" target="Fjht.xml" corresp="koFj_ht_3"/>)</bibl>
+</quote>
+Ifølge sceneanvisningene skal flere arier synges samtidig, som ensemblesatser. Ofte inngår også korene i ensemblesatsene. Disse satsene bygges gradvis opp, fra duetter i stykkets åpning til en trio, og med kulminasjon i aktavslutningen, der en kvartett synger sammen med et kor, og etterfølges av en ny kvartett med dobbelt kor. Slike ensemblesatser forekom hyppig i den italienske operaen (blant annet hos Bellini), og det er godt mulig at Ibsen kan ha hentet inspirasjon herfra.</p>
+<p>Mange ulike versemål er representert i <title rend="italic">Fjeldfuglen</title>, og det er vanskelig å utpeke ett til hovedvers. De ustrofiske partiene veksler mellom folkevisevers og trokeiske vers. Både folkeviseversene og de trokeiske versene veksler mellom tre- og fireslagsrekker, med noen kortvers (toslagsrekker) innimellom. Verslinjene er hovedsakelig rimede, men nullrim forekommer.</p>
+<p>Innenfor de strofiske partiene er det de trokeiske strofene som er mest dominerende, og som utgjør ariene eller ensemblesatsene i stykket. Disse har fast verslengde og rimskjema, og deler av teksten repeteres (<quote>Han er funden, han er funden!</quote>).</p>
+<p>Ved siden av resitativet og ariene eller ensemblesatsene finnes en rekke strofiske <hi rend="italic">kortvers</hi> (toslagsrekker, ev. med enkelte lengre vers) i varierende utforminger: jambisk <note type="metKomm">(∪ - ∪ - ∪)</note>, trokeisk <note type="metKomm">(- ∪ -)</note> og daktylisk <note type="metKomm">(- ∪ ∪ - ∪ (∪))</note>. Vi kan regne med tre opphav til kortversene: norrøn poesi, italiensk opera og Shakespeare. Innenfor det nordiske området er de to første kortverstypene alminneligst, mens det daktyliske kortverset vanligvis opptrer innenfor det romanske. I opera benyttes kortversene flittig som en kontrast til det bredt fortellende resitativet og de følelsesladede ariene. De romantiske dikterne ble tiltrukket av kortformens fortettede uttrykkskraft, og de benyttet gjerne ulike kortverstyper om hverandre. De små, hurtige strofene ble særlig brukt for å skildre overnaturlige veseners letthet, slik også i <title rend="italic">Fjeldfuglen</title> (her i den trokeiske varianten):</p>
+<quote rend="indent">
+<HIS:hisLg>
+<HIS:hisSp><HIS:spOpener><speaker rend="smallCaps">chor af hougfolk</speaker></HIS:spOpener>
+<l>Hys! hør paa!</l>
+<l>Hougfolk smaa</l>
+<l>Gjerne vil i Dansen gaa!</l>
+<l>Sommerkvæld</l>
+<l>Duger vel</l>
+<l>Til et Stævne over Fjeld!</l>
+<l>(HIS 2, <ptr type="ht" target="Fjht.xml" corresp="koFj_ht_4"/>)</l>
+<!--<l>[…]</l>-->
+<l>Huttetu!</l>
+<l>Skræk og Gru</l>
+<l>Fylder Hougafolkets Hug!</l>
+<l>Rap og snygg, –</l>
+<l>Hougens Ryg</l>
+<l>Dølge dig; der er du tryg!</l></HIS:hisSp>
+</HIS:hisLg>
+<bibl>(HIS 2, <ptr type="ht" target="Fjht.xml" corresp="koFj_ht_5"/>)</bibl>
+</quote>
+<p rend="noIndent">Nytt med romantikken er den frie omgangen med ulike versemål. Under barokken skulle tekster helst holdes innenfor ett versemål. De ulike versemålene ble knyttet til hver sine <hi rend="italic">etos</hi> (følelsesuttrykk), og en overgang til et nytt versemål skulle være motivert i et skifte til en ny affekt. For eksempel ble trokeiske vers forbundet med tyngde, stillstand og sorg, og trisyllablene med letthet, bevegelse og glede. Under romantikken ble versbehandlingen mer allsidig, og barokkens affektlære mistet gradvis herredømmet <bibl>(Fafner 1989–2000, b. 2:1, 38–39)</bibl>. I <title rend="italic">Fjeldfuglen</title> ser de ulike versemålene ikke ut til å være bærere av faste følelsesuttrykk. Bygdefolkene og haugfolkene benytter de samme versemålene, og som vist i arieeksemplene ovenfor, brukes eksempelvis de trokeiske versene til å uttrykke både glede og sorg. Det er mer sannsynlig at så mange ulike versformer er tatt i bruk for å skape spenning, variasjon og temposkifter i sangfremførelsen, samt selvfølgelig for å strukturere de ulike delene (resitativ, arie/ensemblesats, kortvers) av operaen.</p>
+<p>En særlig interesse knytter seg til fragmentet <title rend="italic">Fjeldfuglen</title> som kilde til innsyn i Ibsens språklige utvikling. I ungdomsverkene fra tiåret mellom 1850 (<title rend="italic">Catilina</title>) og 1860 (<title rend="italic">Fjeldfuglen</title>) kan man spore innflytelse fra flere kanter. Dikterens egen interesse for folkelig diktning og tradisjon er det første som må nevnes, sammen med nasjonalromantikkens fremhenting av sagamotiver. For det annet har nok Ivar Aasens innsats med folkespråkets grammatikk (1848) og ordforråd (1850) og den første landsmålsnormen (1853), som straks vakte interesse og debatt, hatt betydning. For det tredje har Ibsen vært influert av Knud Knudsens aktivitet som fornyer av det danske skriftspråket i Norge, nå dansk-norsk. I 1856 kom hans <title rend="italic">Haandbog i dansk-norsk Sproglære</title> og året etter en mindre <title rend="italic">Lærebog i dansk-norsk Sproglære</title>. Ibsen var fra 1857 artistisk direktør ved Kristiania Norske Theater, der Knudsen var språkkonsulent fra 1852. De to hadde før møtt hverandre i <quote>Sprogforeningen</quote> som Knudsen og Sophus Bugge stiftet i 1852 i tilknytning til Det norske Studentersamfund. Senere gav Ibsen Knudsen hovedæren for sin <quote>sproglige vækkelse</quote> <bibl>(i brev til ham 8. januar 1892)</bibl>.</p>
+<p>Mens første utgave av <title rend="italic">Catilina</title> er så gjennomført dansk i språkformen at det ikke kan påvises en eneste sikker norvagisme, finnes det enkelte slike alt i <title rend="italic">Rypen i Justedal</title> fra samme år. De følgende ungdomsverkene viser hvordan Ibsen eksperimenterte videre med særnorske innslag, særlig i ordvalget, men også i ortografi og bøyning. Didrik Arup Seip konstaterer <quote>bevegelse […] i Ibsens sprogform fra ‹Hærmændene› av</quote> <bibl>(HU 1, 17)</bibl>, og tilskriver det innflytelse fra Knudsen. Langt mer merkbar er den språklige <quote>bevegelsen</quote> i <title rend="italic">Fjeldfuglen</title>. Spesielt i rettskrivningen opptrer det her ofte norske detaljer der det særlig passer med ordvalget, for eksempel (norsk/dansk): Bergsider/Bjergsider, Lauv/Løv, duger/duer, vent/vænt, Furru/Fyr, stunder/længes, spratt/sprat, Vildske/Vildelse, Trost/Drossel, Heiene/Hede, skyndte/skyndes. Fornorskningen ytrer seg noe mindre i syntaksen. Det forekommer etterstilt pronomen på talemålsgrunnlag (<quote>Datter din</quote>, <quote>Hugen min</quote>) og flertallsbøyning av verb i sceneanvisninger (<quote>Alle <hi rend="italic">vige</hi> sky tilbage</quote>), men ikke i replikker (<quote>Høit over Heiene / <hi rend="italic">bugter</hi> sig Veiene</quote>) (uth. her).</p>
+<p>Språklige trekk av denne typen gir et markant inntrykk av norskhet, og har avfødt kommentarer som det ellers er liten dekning for i de andre delene av Ibsens forfatterskap. Halvdan Koht og Julius Elias skriver at <quote>‹Fjeldfuglen› viser, at også han engang fra sit romantiske standpunkt havde været inde på målstræverske veje</quote> <bibl>(Koht &amp; Elias 1909, LXVIII)</bibl>. Francis Bull noterer diftonger, harde konsonanter og særnorske ord: <quote>Det merkeligste ved <title rend="italic">Fjeldfuglen</title> er utvilsomt sprogformen; dette operafragment betegner høidepunktet av Ibsens norskhetsbestrebelser i sproglig henseende</quote> <bibl>(Bull 1929, 132)</bibl>.</p>
+</div>
+</div>
+
+<div type="creation" xml:id="intro_creation">
+<head rend="level2">TILBLIVELSE</head>
+<p rend="noIndent">I 1859, trolig omtrent samtidig med at <title rend="italic">Fredkulla</title> ble antatt, tok Ibsen til å arbeide med Alfhild-temaet igjen, det stoffet han hadde begynt på i 1850 med tittelen <title rend="italic">Rypen i Justedal</title>, og som i 1856 ble brukt i <title rend="italic">Olaf Liljekrans</title>. Denne tredje gangen ville han bruke det i en opera. En romantisk opera ville kanskje gi et mer treffende uttrykk til de folkevisestemningene som han ikke hadde hatt suksess med i <title rend="italic">Olaf Liljekrans</title>. Verkets tittel var først tenkt å være <hi rend="italic">Alfhild</hi>, men den ble endret til <title rend="italic">Fjeldfuglen</title>, jf. overstrykningen på tittelbladet.</p>
+<p>For Ibsen var det nå viktig snarest å finne en komponist han kunne samarbeide med. I Bergen hadde den tsjekkisk-fødte kantoren og orkesterlederen Ferdinand Giovanni Schediwy stått for scenemusikken både til <title rend="italic">Gildet paa Solhoug</title> og <title rend="italic">Olaf Liljekrans</title>, men denne gangen gjaldt det et større musikalsk prosjekt. Den som i tiden omkring 1860 var alment ansett som den fremste komponisten i landet, var Halfdan Kjerulf, men han hadde aldri våget seg i kast med noe større orkesterverk, og det kan være en grunn til at Ibsen ikke gikk til ham. Det var nok det innsendte verket <title rend="italic">Fredkulla</title> som gjorde at han valgte å henvende seg til Trondheims-komponisten M.A. Udbye. Brevet er datert 18. juli 1861:</p>
+<quote rend="proseIndent">Indlagt tager jeg mig den Frihed at sende Dem de første Scener af en Operatext med Forespørgsel om hvorvidt De skulde være villig til at komponere Musiken. Da Deres Navn som Komponist har en bedre Klang end nogen Andens hertillands vilde det være mig en Ære og en sikker Borgen for Stykkets Lykke ifald De vilde indgaa herpaa. Jeg venter med Længsel nogle Linjer fra Dem i denne Sag. Resten af Manuscriptet kan snart sendes.
+<p rend="noIndent">ærbødigst</p>
+<p rend="noIndent">Henr: Ibsen</p>
+<p rend="noIndent"><bibl>(HIS 12)</bibl></p>
+</quote>
+<p rend="noIndent">I et notat på baksiden av det manuskriptet Udbye hadde mottatt fra Ibsen, skriver komponisten at hans svar til Ibsen var imøtekommende; han ville ta fatt på arbeidet så snart han fikk fortsettelsen. Imidlertid kom det ikke noe mer operatekst fra Ibsen. Et års tid etter den første kontakten fikk Udbye en hilsen fra Ibsen gjennom skuespiller Andreas Isachsen, med spørsmål om hvor langt han var kommet med arbeidet. På sangerfesten i Bergen i 1863 deltok både Udbye og Ibsen, og komponisten benyttet anledningen til å spørre forfatteren om når han kunne vente resten av manuskriptet.</p>
+<quote rend="proseIndent">Han var da efter, hvad han sagde, kommet til det Resultat, at Emnet, han havde valgt, ikke egnede sig for en Opera, hvilket jeg efter Begyndelsen til den leverede Tekst at dømme fandt mig opfordret til meget at beklage for min Del. <bibl>(UBiT Ms. 504, 4°)</bibl></quote>
+<p rend="noIndent">Av Udbyes notat går det frem at han har oppfattet omfanget av det planlagte verket som én akt, mens Jæger mener at Ibsen kan ha tenkt på tre akter.</p>
+<p>Hvorfor ble prosjektet oppgitt? Henrik Jæger forklarer henleggelsen med at Ibsen gradvis tapte interessen for motivet, den unge pikens gang fra ensomheten i fjellet til fellesskapet i bygdesamfunnet. Det var blitt større forlokkelse i å føre heltene sine den motsatte veien, fra dalen til høyfjellet, hvor det er frihet: <quote>Det interesserede ham ikke længer at lade et konstrueret Naturbarn komme i Konflikt med Samfundet; det var den udviklede og fuldt bevidste Personligheds Kamp med det og Løsrivelse fra det, som optog ham</quote> <bibl>(Jæger 1891, 363)</bibl>.</p>
+<p>Andre og mer praktiske grunner kan også tenkes. Det faktum at teaterets planer for <title rend="italic">Fredkulla</title> ikke kunne realiseres, var ikke oppmuntrende for den som hadde noe tilsvarende i tankene. Ibsen var nok klar over at en operaproduksjon i utgangspunktet krever større ressurser enn et skuespill. En annen og trolig viktigere grunn kan være at årene omkring 1860 var en økonomisk vanskelig periode i Ibsens liv, og at han derfor ikke kunne bruke mye tid på litterært arbeid som hadde lange utsikter med å gi gevinst.</p>
+</div>
+
+<div type="publication" xml:id="intro_publication">
+<head rend="level2">UTGIVELSE</head>
+<p rend="noIndent">Ibsen la planen om en nasjonalromantisk opera basert på Alfhild-temaet til side tidlig på 1860-tallet, men han skrinla den ikke fullstendig. Omkring 15 år senere var han igjen inne på tanken. I et brev av 20. juni 1877 til B.E. Bendixen, formann for teaterets styre i Bergen, ber han om å få låne manuskriptet til <title rend="italic">Olaf Liljekrans</title>, som fantes i teaterets bibliotek: <quote>Det er nemlig min agt at omarbejde mit gamle skuespil ‹Olaf Liljekrans› til en operatekst for Grieg […].</quote> Denne gangen ble det imidlertid med et enda mindre fragment av en operalibretto, jf. innledningen til [<title rend="italic">Olaf Liljekrans</title> 1877/78]. Olaf Liljekrans-sujettet fenget ikke Grieg, og Ibsen på sin side opplevde etter hvert en så stor interesse for den typen skuespill som han på denne tiden begynte å gi ut, at det ikke ble aktuelt å vende tilbake til nasjonalromantikken.</p>
+<p>Operafragmentet Ibsen sendte til Trondheimskomponisten M.A. Udbye i 1861, ble ikke trykt i dikterens levetid. Det er tidligere utgitt i <title rend="italic">Efterladte skrifter</title> <bibl>(ES 1)</bibl>, i <title rend="italic">Samlede verker</title> <bibl>(HU 3)</bibl> og dessuten ved Peter Ravn Sollied i <title rend="italic">Ibsenårbok 1954</title>.</p>
+</div>
+</div>
+</body>
+</text>
+</TEI>

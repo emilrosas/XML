@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Henrik Ibsens skrifter, elektronisk versjon</title>
+                <title level="a">Tekstredegjørelse til Hedda Gabler</title>
+                <author>ved Christian Janss</author>
+                <funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+                <editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
+                <respStmt>
+                    <resp>Kodeteknisk støtte og utvikling</resp>
+                    <name>AKSIS: Avdeling for kultur, språk og informasjonsteknologi, Universitetsforskning i Bergen (Unifob AS)</name></respStmt>
+                <respStmt><resp>Koding</resp>
+                    <name>Erlend Lønnum</name></respStmt>
+                <respStmt><resp>Tekstarbeid</resp>
+                    <name>Erlend Lønnum</name></respStmt>
+                <respStmt><resp>Kontroll av sitater og ordbøker</resp>
+                    <name xml:id="IK">Ingrid Korvald</name>
+                    <name>Erlend Lønnum</name></respStmt>
+                <respStmt><resp>Kontroll av littlist og referanser</resp>
+                    <name>Erlend Lønnum</name></respStmt>
+                <respStmt><resp>Kommentar-, intern- og ht-entiteter</resp>
+                    <name>Erlend Lønnum</name></respStmt>
+                <respStmt><resp>Kodekontroll</resp>
+                    <name/>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+                <distributor xml:id="HISe">Universitetet i Oslo</distributor>
+                <date when="2011" xml:id="HISe-date"/>
+                <pubPlace>Oslo</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Fila bygger på 9k_sisteversjon.xml.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <tagsDecl>
+                
+            </tagsDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="nob"/>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change>
+                <date>10.07.12</date>
+                <name>SBT</name><title>La inn lenkekoding.</title>
+            </change>
+            <change>
+                <date>24.10.11</date>
+                <name>SBT</name><title>Skilte ut tekstredegjørelsen til HG i en egen fil. Kodet om til HISe og TEI P5. Validert.</title>
+            </change>
+            <change>
+                <date/>
+                <name>Erlend Lønnum</name><title>Koding og oppdatering</title>
+            </change>
+            <change>
+                <date/>
+                <name>Erlend Lønnum</name><title>Opprettet xml-fil</title>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    
+<text type="introduction">
+<body>
+<div type="editorialStatement" xml:id="edState">
+                
+<div xml:id="edState_basetext">                    
+<head rend="level3">valg av grunntekst</head>
+<p rend="noIndent">Grunnteksten, grunnlaget for HIS’ hovedtekst, er førstetrykket fra 1890.</p>
+</div>
+    
+<div xml:id="edState_bibl"> 
+<head rend="level3">bibliografiske opplysninger</head>
+<p rend="noIndent">Ved tekstetableringen er det kollasjonert følgende eksemplarer:</p>            
+        
+<list type="numbered">
+<item n="1">Nasjonalbibliotekets eksemplar (74ga05816)</item>
+<item n="2">Nasjonalbibliotekets eksemplar (74ga01743)</item>
+<item n="3"><hi rend="italic">Henrik Ibsens skrifter</hi>s eksemplar</item>
+</list>
+        
+<p rend="noIndent">Det er avdekket satsintern variasjon (endringer foretatt under trykkeprosessen i samme opplag) i teksten i de tre eksemplarene. Det er derfor delkollasjonert ytterligere fem eksemplarer:</p>        
+        
+<list type="numbered">
+<item n="4">Nasjonalbibliotekets eksemplar (89ga02520)</item>
+<item n="5">Nasjonalbibliotekets eksemplar (80ga25230)</item>
+<item n="6">Nasjonalbibliotekets eksemplar (80ga25231)</item>
+<item n="7">Universitetsbiblioteket i Bergens eksemplar (98do41680)</item>
+<item n="8">Universitetsbiblioteket i Bergens eksemplar (98do41681)</item>
+</list>
+        
+<p rend="noIndent">Variasjonen mellom eksemplarene finnes på fire steder, i arkene 8, 9, 10 og 15; disse er derfor kollasjonert i de fem ekstraeksemplarene. På side 113, linje 18 er rollenavnet <hi rend="italic">Berte</hi> satt i majuskler i eksemplar 1, 4 og 7; på side 121, siste linje mangler startparentes foran rollenavnet <hi rend="italic">Tesman</hi> i eksemplar 2, 3, 5, 6 og 8; på side 143, linje 25–26 mangler bindestrek ved delingen av ordet <quote>Sam-/tidig</quote> i eksemplar 1; på side 154, siste linje er ordet <quote>Gløderne</quote> satt med stor forbokstav i eksemplar 2, 3 og 5; på side 234, linje 13 mangler <quote>l</quote> i <quote>til</quote> i eksemplar 2, 3, 4, 6 og 7 (i eksemplar 5 mangler også <quote>i</quote>). I eksemplarene 4, 6, 7 og 8 mangler dessuten sluttparentes på side 234, linje 13, der de øvrige eksemplarene har <quote>hånden.)</quote>. Med unntak av parentesfeilene, som i disse tilfellene omfattes av HIS’ standardisering ved sceneanvisninger (jf. <HIS:hisRef target="edState_critical"><hi rend="italic">Tekstkritiske bemerkninger</hi></HIS:hisRef>), opplyses det om internvariasjonen i eksemplarene 1–3 i de tekstkritiske notene.</p>
+<p>Nr. 1, det mest feilfrie, er brukt som hovedeksemplar og er grunnlag for beskrivelsen i det følgende.</p>
+        
+<div xml:id="edState_bibl_binding">
+<head rend="level4">innbinding, forsatsblad og omslag.</head>
+<p rend="noIndent">Boken er beskåret og bundet inn uten originalt omslagsblad. Innbindingen er et håndverksmessig privat halvbind med rygg og hjørner i lyst, brunt skinn og permene overtrukket med papir, marmorert i lyst og mørkt brunt. Ryggen har forfatternavn og tittel i gullpreg. Forsatsbladene er oppskårne dobbeltblad av tykt, gulaktig papir, begge limt med den ene delen til for- og bakpermen og den andre bundet inn sammen med bokblokken (begge i tillegg festet til permen med limbånd).</p>
+</div>
+        
+<div xml:id="edState_bibl_format"> 
+<head rend="level4">format og paginering.</head>
+<p rend="noIndent">Boken består av 15 ark falset i oktavformat (8 blad, 16 sider pr. ark), ca. 109 × 172 mm.<note type="footer">Målene gjelder bokens blad, bredde × høyde.</note> Arksignaturene 1–15 (uten tekst) finnes på s. 1, 17, 33, 49, 65, 81, 97, 113, 129, 145, 161, 177, 193, 209 og 225. Det siste arket har seks blad, og bokens omfang er på 236 + 4 sider. Pagineringen er med arabiske tall, inkluderer begynnelsen på første akt s. [I] og løper fra s. 2 til 236. Et upaginert dobbeltblad omfatter stykkets tittelblad på s. [I]r, stykkets tittel s. [II]r og personlisten s. [II]v. På side [I], [77], [147] og [194] begynner nye akter, og sidetall er her utelatt.</p>
+</div>
+        
+<div xml:id="edState_bibl_typo"> 
+<head rend="level4">typografi.</head>
+<p rend="noIndent">Teksten i <title rend="italic">Hedda Gabler</title> (1890) er satt i antikva. Tittelbladet er satt med midtstilte majuskler. Tittelen s. [2]r er midtstilt og satt i majuskler. Personlisten er venstrestilt, i en mindre skriftgrad enn replikkene, rollenavnene sperret, overskriften <quote>Personerne:</quote> er sentrert og satt i majuskler. Aktoverskrifter er satt med midtstilte majuskler, i en større grad enn replikkene. Rollenavn før replikk står sperret og midtstilt på egen linje i majuskel og kapiteler. Sceneanvisninger er satt i en mindre grad enn replikkene og personlisten, etter rollenavn står de på midtstilt, egen linje. De frittstående sceneanvisningene er blokkjustert med innrykket førstelinje; i replikker står de i flukt med teksten, ved slutten midstilt. Alle sceneanvisninger står i parentes. Sperring er benyttet som utheving. Rollenavn i sceneanvisninger står i samme grad som disse, dels i majuskel og kapiteler. Etter personlisten, aktoverskrifter og ved aktslutt står enkle skillestreker, ved siste akts slutt en ornamentert strek. Sidetall er plassert i overmargen med en kort strek under. Trykkvaliteten er jevnt god.</p>
+</div>
+        
+<div xml:id="edState_bibl_paper"> 
+<head rend="level4">papir og tilstand.</head>
+<p rend="noIndent">Papiret i bokblokken er svakt gulnet. For øvrig er eksemplaret i god stand.</p>
+</div>
+</div>
+    
+<div xml:id="edState_textsources"> 
+<head rend="level3">øvrige tekstkilder</head>
+<p rend="noIndent">De øvrige tekstkildene fra Ibsens levetid består av manuskripter og trykte utgaver.</p>
+<p>Manuskriptene til <title rend="italic">Hedda Gabler</title> omfatter arbeidsmanuskripter (opptegnelser og utkast i de to notisbøkene NBO Ms.8° 2638 og 2639), personliste og planskisse til første og noe av annen akt (NBO Ms.8° 1942), forskjellige mindre arbeidsmanuskripter (NBO Ms.8° 809), et egenhendig arbeidsmanuskript (NBO Ms.8° 808) og et egenhendig trykkmanuskript (KBK Collin 262, 4°, III.4). (For nærmere beskrivelser, se de enkelte manuskriptbeskrivelsene.) De trykte utgavene i Ibsens levetid omfatter 1. utg. 1890, den såkalte London-utgaven samme år og FU 8 1900.</p>
+<p>Det er mange større og mindre forskjeller mellom tekstkildene. Skriveprosessen gjennomgikk faser som det er vanskelig å rekonstruere fullstendig (jf. diskusjonen i manuskriptbeskrivelsene). Både ES og HU presenterer materialet etter innhold og grad av utarbeidelse, og med formodninger om genetisk sammenheng. I HIS følger inndelingen av manuskriptet manuskriptbeskrivelsen. Der gis også referanse til omtalen i ES og HU.</p>        
+<p>NBO Ms.8° 809 inneholder manuskriptene 1, 5, 6 og 9; notater, personliste, replikkutkast og replikker til spredte deler av stykket (jf. manuskriptbeskrivelsen om sammenhengen med de øvrige manuskriptene). Manuskript 1 tilhører trolig det eldste materialet som kan knyttes til arbeidet med <title rend="italic">Hedda Gabler</title>. For øvrig fordeler manuskriptene under denne signaturen seg på hele arbeidsprosessen, men det meste tilhører en sen fase.</p>
+<p>NBO Ms.8° 2639 (manuskript 2) er en notisbok som inneholder notater, replikkutkast og mindre regnskaper og regnestykker, bl.a. med datoene <quote>7.4.90</quote> og <quote>26.6.90</quote>, noe som kan tyde på at notisheftet stammer fra dette tidsrommet. Navnet <quote>Fru Rising</quote>, som senere blir til varianter av <hi rend="italic">Elvsted</hi>, peker mot en tidlig dato, på samme tid som og kanskje før personlisten NBO Ms.8° 1942:1, som også har <quote>Fru Rising</quote>. Manuskriptene NBO Ms.8° 2638 og 2639 og NBO Ms.8° 809 har ikke hatt betydning for etableringen av HIS’ hovedtekst.</p>
+<p>NBO Ms.8° 1942 inneholder en tidlig personliste (manuskript 3) og en planskisse til første og noe av annen akt med enkelte replikkutkast (manuskript 7). Planskissen er utarbeidet samtidig med annen og tredje akt i NBO Ms.8° 808 (jf. <hi rend="italic">Manuskriptbeskrivelse</hi>). Stykkets tittel er her <title rend="quotes">Hedda</title>. Manuskriptene i NBO Ms.8° 1942 har ikke hatt betydning for etableringen av HIS’ hovedtekst.</p>
+<p>NBO Ms.8° 2638 (manuskript 4) er en notisbok som på de første sidene (t.o.m. bl. [3]v) inneholder almene utsagn, men også tekst som kan knyttes til handling og problematikk i <title rend="italic">Hedda Gabler</title>. HU (11, 270) daterer det første notatet, om dramatiske teorier og franskmenn, til oktober 1889, med den begrunnelse at Moritz Prozor da hadde skrevet til Ibsen om sine oversettelser av hans dramaer, og at dette gjenspeiles i notatet. Notatet som følger, om <quote>Den gifte dames tiltagende indbildning at være en betydelig personlighed</quote>, knytter HU til et brev Ibsen fikk av Camilla Collett (trolig menes brev til Ibsen 24. februar [1889], NBO Brevs. 200; jf. kommentar til <quote>den forståelse</quote> i brev til Camilla Collett <HIS:hisRef target="B1880-1889ht.xml#B18890503CC">3. mai 1889</HIS:hisRef>). Dateringene har usikkert grunnlag. Teksten på en av de innlagte lappene – <quote>Hermed har jeg både for øjeblikket og for al fremtid sagt hvad jeg har at sige det norske studentersamfund.</quote> – er nesten ordrett den samme som avslutningen på Ibsens brev til Det Norske Studentersamfund <HIS:hisRef target="B1880-1889ht.xml#B18851023Stud">23. oktober 1885</HIS:hisRef> (som avslutter feiden med Lorentz Dietrichson og Studentersamfundet), uten at det derved kan hevdes at deler av notisbokens fastsittende blader stammer fra denne tiden. Heller ikke navneendringene gir god støtte for dateringen av notisboken som helhet; Ejlert Løvborg har i NBO Ms.8° 2638 det tidligere fornavnet Holger, men også Ejlert (bl. [12], [16] og [31]), noe som tyder på at teksten på disse bladene er blitt til samtidig med NBO Ms.8° 808, og at i alle fall denne delen er yngre enn NBO Ms.8° 2639, som bare har H.[olger] L.[øvborg]. Størstedelen av opptegnelsene i boken (fra og med bl. [4]r), som inneholder skisser til handlingen, planer for innholdet og replikkutkast, viser dramaet i et tidlig stadium av utarbeidelse, dog med en variasjon i navneformer (jf. f.eks. tantens navn, som spenner over den tidligste formen (<quote>tante Rising</quote>), over mellomstadiet (<quote>frøken Rysing</quote>) til den endelige (<quote>frøken T</quote>)). Manuskriptet er trolig påbegynt før arbeidet med første akt i NBO Ms.8° 808, datert 13. august 1890. Else Høst vier NBO Ms.8° 2638 særlig oppmerksomhet i sin monografi om <title rend="italic">Hedda Gabler</title> <bibl>(1958, 73–81)</bibl>. Hun imøtegår Kohts grunnlag for dateringen av den første delen av NBO Ms.8° 2638 til oktober 1889 ved å hevde at det er svak sammenheng med det ferdige <title rend="italic">Hedda Gabler</title>, og mener i stedet at den kan ha hatt sammenheng med de skuespillplanene Ibsen la frem for Emilie Bardach høsten 1889, og med Ibsens forhold til henne, jf. f.eks. brev til Bardach <HIS:hisRef target="B1880-1889ht.xml#B18891007EBa">7. oktober 1889</HIS:hisRef>. Både ES (3, 488) og HU (11, 273) knytter dette brevet til <title rend="italic">Hedda Gabler</title>, mens Høst hevder at det må ha hatt et annet innhold enn <title rend="italic">Hedda Gabler</title>, nemlig manuskriptets bl. [1]r: <quote>Den gifte dames tiltagende indbildning</quote>. Hun anfører bladets ensartede skrift og forskjellen fra skriften på bl. [2]r som argument. Antagelsen er ikke belagt utover dette, og man kan som motargument hevde at det finnes en mulig forbindelse til Ibsens første møte med Bardach i Gossensass i det ferdige dramaet: i henvisningen til oppholdet i den lille landsbyen nedenfor Brennerpasset med <quote>alle de livlige sommergæsterne</quote><ptr type="ht" target="HGht.xml" corresp="koHG_ht_38"/>. Men Høst har åpenbart rett i at flere av notatene i begge notisbøkene ikke har vært direkte forelegg for manuskriptene som ligger nær den ferdige dramateksten. Koht diskuterer Høsts bok delvis anerkjennende i en artikkel fra 1958. (Han hadde offentliggjort utdrag av notisbøkene i <title rend="italic">Aftenposten</title> i 1932.)</p>
+<p>NBO Ms.8° 808 (manuskript 8) har egenhendige datoer i tidsrommet mellom 13. august og 7. oktober 1890. Manuskriptet inneholder en fullstendig versjon av stykket, med mange rettelser, overstrykninger og tilføyelser (bl.a. føyes <quote>Gabler</quote> til <title rend="quotes">Hedda</title> i tittelen). Den rettede teksten ligger i hovedsak til grunn for trykkmanuskriptet. Flere av tilføyelsene er ikke tatt opp der i samme form, men bare ganske få av tilføyelsene er helt utelatt i trykkmanuskriptet, f.eks. denne linjen i replikkvekslingen mellom Hedda og Ejlert Løvborg: <quote>De var for mig som budbærer fra et lukket land</quote> (legg 31, bl. [1]v). Legg 16, bl. [4]v inneholder en overstrøket begynnelse til annen akt med handlingen satt til Tesmans have. Av størst interesse for sammenligningen med den endelige teksten er kanskje de lengre overstrykningene, hvorav den lengste finnes i legg 39–42, begynnelsen av tredje akt, hvor Hedda og Tesman samtaler om nattens hendelser hos Brack og om Løvborgs tapte manuskript. Scenen gjenfinnes i forkortet og endret skikkelse i den endelige teksten, bl.a. er Heddas oppfordring til Tesman om å brenne manuskriptet han gjenfant, utelatt.</p>
+<p>NBO Ms.8° 809 (manuskript 9) utgjør sammen med NBO Ms.8° 808 forelegget for trykkmanuskriptet. En oversikt over sammenhengen mellom disse finnes i manuskriptbeskrivelsen. Som et eksempel på tekstutviklingen kan nevnes følgende samtale mellom Brack og Hedda:</p>
+                
+        <quote rend="indent">
+            <HIS:hisSp><HIS:spOpener><speaker>Brack</speaker>.</HIS:spOpener>
+                <lb/><p>Ja, jeg tilstår, jeg er på min post imod
+                    <lb/>den herre. Det vilde være mig en forfærde‐
+                    <lb/>lig tanke om her skulde komme en uved‐
+                    <lb/>kommende ind i –</p></HIS:hisSp>
+            <lb/><HIS:hisSp><HIS:spOpener><speaker>Hedda</speaker>.</HIS:spOpener>
+                <lb/><p>– ind i trekanten.</p></HIS:hisSp>
+            <lb/><HIS:hisSp><HIS:spOpener><speaker>Brack</speaker>.</HIS:spOpener>
+                <lb/><p>Ja, netop. Le ikke af det. Det vilde for
+                    <lb/>mig være det samme som at bli hjemløs.</p></HIS:hisSp>
+            <lb/><HIS:hisSp><HIS:spOpener><speaker>Hedda</speaker>.</HIS:spOpener>
+                <lb/><p>Å hvad, De har visst så mange andre
+                    <lb/>gode hjem omkring i byen.</p></HIS:hisSp>
+            <lb/>(NBO Ms.8° 808, legg 45, bl. [1]v)</quote>
+        
+        <quote rend="indent">
+            <HIS:hisSp><HIS:spOpener><speaker rend="smallCaps">Brack</speaker>.</HIS:spOpener>
+                <lb/><p>Ja. Jeg tilstår, det vilde være mig mere end pinligt
+                    <lb/>om han fik indpas her. Om han som en uvedkommende
+                    <lb/>skulde trænge sig ind i –</p></HIS:hisSp>
+            <lb/><HIS:hisSp><HIS:spOpener><speaker rend="smallCaps">Hedda</speaker>.</HIS:spOpener>
+                <lb/><p>Ind i firkanten?</p></HIS:hisSp>
+            <HIS:hisSp><HIS:spOpener><speaker rend="smallCaps">Brack</speaker>.</HIS:spOpener>
+                <lb/><p>Netop. Det vilde for mig være samme som at bli’
+                    <lb/>hjemløs.</p></HIS:hisSp>
+            <lb/><HIS:hisSp><HIS:spOpener><speaker rend="smallCaps">Hedda</speaker>.</HIS:spOpener>
+                <lb/><p>Altså, – eneste hane i kurven, – det er Deres mål.</p></HIS:hisSp>
+            <lb/>(NBO Ms.8° 809:10)</quote>
+        
+        <quote rend="indent">
+            <HIS:hisSp><HIS:spOpener><speaker rend="smallCaps">Brack</speaker>.</HIS:spOpener>
+                <lb/><p>Ja. Jeg tilstår, det vilde falde mig mere end
+                    <lb/>pinligt om denne herre fik fast indpas her. Om
+                    <lb/>han, som en overflødig – og en uvedkommende
+                    <lb/>– skulde trænge sig ind i –</p></HIS:hisSp>
+            <lb/><HIS:hisSp><HIS:spOpener><speaker rend="smallCaps">Hedda</speaker>.</HIS:spOpener>
+                <lb/><p>– ind i trekanten?</p></HIS:hisSp>
+            <HIS:hisSp><HIS:spOpener><speaker rend="smallCaps">Brack</speaker>.</HIS:spOpener>
+                <lb/><p>Netop. Det vilde for mig være det samme, som
+                    <lb/>at bli’ hjemløs.</p></HIS:hisSp>
+            <lb/><HIS:hisSp><HIS:spOpener><speaker rend="smallCaps">Hedda</speaker>,
+                <lb/><HIS:hisStage>(ser smilende på ham.)</HIS:hisStage></HIS:spOpener>
+                <lb/><p>Altså, – eneste hane i kurven, – det er Deres
+                    <lb/>mål.</p></HIS:hisSp>
+            <lb/>(KBK Collin 262, 4°, III.4, s. 166–67)</quote>
+        
+<p rend="noIndent">KBK Collin 262, 4°, III.4 (manuskript 10) er det endelige og fullstendige trykkmanuskriptet. Trykkmanuskriptet adskiller seg i ubetydelig grad fra grunnteksten og de øvrige trykte utgavene. Variasjonen dem i mellom gjelder en del småfeil i trykkmanuskriptet som forlaget har rettet opp; førsteutgaven har svært få feil. Den viktigste forskjellen skyldes Ibsens oppfylte ønske om en endring i brev til Gyldendals fullmektig August Larsen <HIS:hisRef target="B1890-1905ht.xml#B18901125AuLa">25. november 1890</HIS:hisRef>: <quote>I samtalen mellem Hedda og assessor Brack i tredje akt heder det i en af hans replikker – Almindeligt slagsmål mellem både damer og herrer. Dette bedes forandret til – Almindelig hanekamp o. s. v.</quote> Opplysningen om samtidige oversettelser av stykket på s. [I]v meddelte Ibsen i brev til Larsen <HIS:hisRef target="B1890-1905ht.xml#B18901127AuLa">27. november 1890</HIS:hisRef>. Kommateringen er som vanlig i Ibsens trykkmanuskripter mangelfull ut fra dansk standard. Ibsen gjorde etter utgivelsen selv oppmerksom på en (den eneste ifølge ham) feillesning av trykkmanuskriptet i et brev til Larsen <HIS:hisRef target="B1890-1905ht.xml#B18910104AuLa">4. januar 1891</HIS:hisRef>. På s. 189 sier Løvborg om sine manuskripthefter: <quote>Jeg har ødelagt Dem alligevel.</quote> Trykkmanuskriptet har <quote>dem</quote>, og HIS har fulgt dette. Rettelsen ble tatt inn i FU. <title rend="italic">Hedda Gabler</title> kom ut 16. desember 1890. Dessuten kom dramaet ut hos W. Heinemann i London 11. desember samme år, altså tidligere enn i København (jf. Ibsens brev til Larsen 27. november 1890). De tolv eksemplarene som ble utgitt i London, skulle sikre forlagsretten i England. London-utgaven er satsidentisk med førsteutgaven, med unntak av tittelbladet, der Gyldendals segl, angivelse av sted, forlag og trykkeri er erstattet av <quote>London / William Heinemanns forlag</quote>. Mellom førsteutgaven/London-utgaven og FU er det ingen vesentlige endringer, men enkelte mindre trykkfeil er kommet til i FU. Den <HIS:hisRef target="B1890-1905ht.xml#B18901202PR">2. desember 1890</HIS:hisRef> skriver Ibsen til forleggeren Phillip Reclam og ber ham opprette kontakt mellom seg og oversetteren av stykket <quote>i anledning enkelte endringer som jeg betrakter som ønskelige overfor det tyske publikum</quote> (til norsk ved HIS). Det er ikke kjent hvilke endringer Ibsen kan ha hatt i tankene, og HIS har ikke hatt anledning til å sammeligne Reclams tyske oversettelse fra 1891 med førstetrykket.</p>
+<p>I tillegg til HIS’ hovedtekst finnes en diplomatarisk og søkbar gjengivelse samt en fotografisk faksimile av grunnteksten. De øvrige tekstkildene gjengis diplomatarisk, manuskriptene også med faksimile, med mulighet for søk og sammenligning med grunnteksten.</p>
+<p>HIS har i margen sidereferanser til grunnteksten, til den trykte utgaven av HIS og til HU.</p>
+</div>
+    
+<div xml:id="edState_critical"> 
+<head rend="level3">tekstkritiske bemerkninger</head>
+<p rend="noIndent">Ved etableringen av hovedteksten er alle tekstkilder fra Ibsens levetid blitt konsultert. Emendasjoner er foretatt med utgangspunkt i de trykte utgavene samt trykkmanuskriptet KBK Collin 262, 4°, III.4 og arbeidsmanuskriptet NBO Ms.8° 808.</p>
+<p>Ordvalg, ortografi og grammatikk i grunnteksten er, som offisiell norsk i samtiden, i tråd med danske normer, men med flere eksempler på folkemålsformer (mest i Bertes replikker). En tiltagende grad av fornorskning sees hos Ibsen fra <hi rend="italic">Kjærlighedens Komedie</hi> av, jf. <HIS:hisRef target="KK_innl.xml#intro_background_verse">innledningen</HIS:hisRef> til dette stykket og <HIS:hisRef target="KE_innl.xml#intro_background_language">innledningen</HIS:hisRef> til <title rend="italic">Kongs-Emnerne</title>. Ibsen følger i <title rend="italic">Hedda Gabler</title> fortsatt anbefalingene fra det skandinaviske rettskrivningsmøtet i Stockholm i 1869 (jf. kommentar til <quote>Sprogkongressens Rettskrivning</quote> i brev til Frederik Hegel <HIS:hisRef target="B1844-1871ht.xml#B18700212FH">12. februar 1870</HIS:hisRef>). En mer utførlig gjennomgåelse av språklige trekk i <title rend="italic">Hedda Gabler</title> finnes under <HIS:hisRef target="HG_innl.xml#intro_background_language"><hi rend="italic">Ibsens språklige utvikling</hi></HIS:hisRef>.</p>
+<p>I HIS er tegnsetting standardisert på følgende måte: Etter titler, overskrifter og rolleinnførsler i personlister samt replikkåpner i dramateksten er eventuelle skilletegn (punktum, komma, kolon) fjernet. I sceneanvisninger først i akt og scener, i frittstående sceneanvisninger mellom replikker og i stedsbeskrivelser etter personliste er eventuell parentes fjernet. Disse elementene har gjennomgående fått stor forbokstav og avsluttes med punktum. Frittstående sceneanvisninger har beholdt eventuelle <quote>indre</quote> parenteser. Sceneanvisninger til slutt i replikker regnes som del av replikken dersom de er ufullstendige setninger, og som frittstående, utenfor replikken, dersom setningen er fullstendig.</p>
+<p>Sceneanvisninger inne i replikk, inkludert de som står til slutt i replikk (ikke frittstående), begynner med liten forbokstav og avsluttes uten interpunksjon. Sceneanvisninger som følger rett etter replikkinnehaverens navn, har ikke parenteser. Øvrige sceneanvisninger i replikk har parentes.</p>
+<p>Skillestreker er beholdt der de har strukturerende funksjon, for eksempel når de markerer sceneskift og sceneskiftet ikke er markert på annen måte. Skillestreker som bare har karakter av ornament, er ikke gjengitt. Grunntekstens typografiske system for øvrig er ikke forsøkt imitert i HIS.</p>
+<p>Tekstfeilene i <title rend="italic">Hedda Gabler</title> (1890) omfatter i hovedsak mindre setterfeil og feil av typen <hi rend="italic">aa</hi> for <hi rend="italic">å</hi>, samt majuskel for minuskel. Alle HIS’ rettelser, bortsett fra de stilltiende (typografiske feil), er anført i det tekstkritiske noteapparatet. Når teksten avviker betydelig i kilder som anvendes ved rettelser, føres ikke tekst herfra i rettelsesnoten, og formuleringen <quote>teksten mangler i</quote> benyttes heller ikke. Den avvikende teksten vises derimot i sin sammenheng i den elektroniske delen av HIS. Dersom det er relevant for vår rettelse, vil tekstendringer i kilden det siteres fra, kommenteres kort i rettelsesnoten. Vakling i ortografi (f.eks. <hi rend="italic">si’/sige</hi>) og interpunksjon som avspeiler tidens og Ibsens vekslende praksis, er ikke rettet i HIS.</p>
+<p>For en oversikt over samtidens språknormer og Ibsens språk vises det til redegjørelser i innledningene til <title rend="italic">Catilina</title> <HIS:hisRef target="C1_innl.xml#intro_background_language">1850</HIS:hisRef> og <HIS:hisRef target="C2_innl.xml#intro_background_language">1875</HIS:hisRef>. Det vises for øvrig til de <HIS:hisRef target="tekstkritiskeRetningslinjer.xml">tekstkritiske retningslinjene</HIS:hisRef>.</p>
+</div>
+    
+<div xml:id="edState_editions"> 
+<head rend="level3">tidligere tekstkritiske utgaver</head>
+<p rend="noIndent">I FU er <title rend="italic">Hedda Gabler</title> trykt i bind 8, med en kort innledning om tilblivelsen, oversettelser, sekundærlitteratur, mottagelse, parodier og oppførelser på s. XII–XIX. Det gis ikke tekstkritiske opplysninger. I MU er <title rend="italic">Hedda Gabler</title> trykt i bind 5. Rettelser foretatt av Johan Storm mot hans tekstgrunnlag, FU, og etter sammenligning av trykte utgaver i Ibsens levetid er oppført i MU 5, 17; errata på s. 42. I ES er forarbeider og utkast til <title rend="italic">Hedda Gabler</title> trykt i bind 3, s. 187–261, opplysninger og varianter s. 486–93. ES har kjent til trykkmanuskriptet (og omtaler kort at det finnes), men ikke til NBO Ms.8° 2638, Ms.8° 2638 og Ms.8° 1942. I SU er <title rend="italic">Hedda Gabler</title> trykt i bind 5, tekstgrunnlaget oppgis (SU 7, 303) å være førsteutgaven, med enkelte rettelser. I HU er <title rend="italic">Hedda Gabler</title> trykt i bind 11. I HU 11, 397–556 redegjøres for og trykkes, dels fullstendig, dels som variantapparat, alle manuskripter til <title rend="italic">Hedda Gabler</title> (teksten på følgende manuskriptsider er ikke tatt med: Ms.8° 2638, bl. [1]r, det første notatet; siste ord på bl. [2]r og teksten på bl. [2]v, [6]v og [7]r samt de to bladene i bakpermens lomme). Grunnteksten for HU er trolig førstetrykket (det nevnes ikke eksplisitt), rettelser er utført i tråd med trykkmanuskriptet. Rettelsene har hovedsakelig bestått i å fjerne komma foran leddsetninger som var tilføyd av forlaget (antall steder oppgitt til 185; HU 11, 554). I appendiks 2 til oversettelsen av dramaet i <title rend="italic">The Oxford Ibsen</title> <bibl>(Ibsen 1960–77, b. 7, 496)</bibl> finnes en oppstilling av rollenavnene og deres utvikling i manuskriptmaterialet.</p>
+</div>
+</div>
+</body>
+</text>
+</TEI>

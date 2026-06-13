@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title level="s">Henrik Ibsens skrifter</title>
+<title level="a">Tekstredegjørelse til Kjæmpehøien, 2. versjon</title>
+<author>ved Christian Janss</author>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
+<respStmt>
+<resp>Kodeteknisk støtte og utvikling</resp>
+<name>AKSIS: Avdeling for kultur, språk og informasjonsteknologi, Universitetsforskning i Bergen (Unifob AS)</name>
+</respStmt>
+<respStmt>
+<resp>Koding</resp>
+<name xml:id="HIS-HB">Hilde Bøe</name>
+<name xml:id="HIS-IF">Ingrid Falkenberg</name>
+<name xml:id="HIS-SBT">Stine Brenna Taugbøl</name>
+<name xml:id="HIS-AMB">Aasta Marie Bjorvand Bjørkøy</name>
+<name xml:id="HIS-NME">Nina M Evensen</name>
+</respStmt>
+<respStmt>
+<resp>Kommentarentiteter</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+</respStmt>
+<respStmt>
+<resp>Rettelser i manuskriptbeskrivelsene</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+</respStmt>
+<respStmt>
+<resp>Implementering av kode</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+<name>Nina M Evensen</name>
+</respStmt>
+<respStmt>
+<resp>Kodekontroll</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+<name>Nina M Evensen</name>
+</respStmt>
+<respStmt>
+<resp>Tekstarbeid</resp>
+<name>Nina M Evensen</name>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+</respStmt>
+</titleStmt>
+<publicationStmt>
+<publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+<distributor xml:id="HISe">Universitetet i Oslo</distributor>
+<date when="2012" xml:id="HISe-date"/>
+<pubPlace>Oslo</pubPlace>
+</publicationStmt>
+<sourceDesc>
+<p>Dette dokumentet har ingen kilde.</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<tagsDecl>
+
+</tagsDecl>
+</encodingDesc>
+<profileDesc>
+<langUsage>
+<language ident="nob"/>
+<language ident="fre"/>
+<language ident="eng"/>
+<language ident="rus"/>
+<language ident="ger"/>
+</langUsage>
+</profileDesc>
+<revisionDesc>
+<change>
+<date>06.12.2012</date>
+<name>SBT</name><title>Omkoding til TEI P5 og HISe</title>
+</change>
+</revisionDesc>
+</teiHeader>
+<text type="introduction">
+<body>
+<div type="editorialStatement" xml:id="edState">
+
+<div xml:id="edState_basetext">
+<head rend="level3">valg av grunntekst</head>
+<p>Grunnteksten, grunnlaget for HIS’ hovedtekst, er
+førstetrykket fra 1854, føljetong i <title rend="italic">Bergenske Blade</title>, 7. årgang,
+nr. 9–12. Første scene er trykt i nr. 9,
+søndag 29. januar; annen scene i nr. 10, onsdag 1.
+februar; tredje og fjerde scene i nr. 11, søndag 5.
+februar; femte og sjette scene i nr. 12, onsdag 8. februar. (Om
+forholdet til den første hovedversjonen HIS utgir,
+<title rend="italic">Kjæmpehøien</title> 1850, se
+avsnittet <title rend="italic">Tilblivelse</title>.)</p>
+</div>
+
+<div xml:id="edState_bibl">
+<head rend="level3">bibliografiske opplysninger</head>
+<p>Ved tekstetableringen er det benyttet følgende
+eksemplar av <title rend="italic">Bergenske Blade</title>:</p>
+<p>Bergen Offentlige Biblioteks eksemplar (q078.1 B)</p>
+<p>Det har ikke vært mulig å fremskaffe flere
+eksemplarer av <title rend="italic">Bergenske Blade</title>, 7.
+årgang, nr. 9–12. (Ukomplette
+årganger er tilgjengelige ved noen biblioteker.)</p>
+
+<div xml:id="edState_bibl_binding">
+<head rend="level4">innbinding.</head>
+<p>Hele årgang nr. 7 fra 1854 er bundet sammen. Bindet
+har brun skinnrygg med gulltrykk og teksten <quote>Bergenske
+Blade 7. årgang 1854</quote>.</p>
+</div>
+
+<div xml:id="edState_bibl_format">
+<head rend="level4">format og paginering.</head>
+<p>Hver avis består av ett ark falset i folioformat
+(to blad, fire sider pr. ark), ca. 280 x 365 mm.<note type="footer">Målene gjelder avisens blad,
+bredde x høyde.</note> Sidene er upaginerte,
+de tre spaltene er unummererte. <title rend="italic">Kjæmpehøien</title> er
+plassert som kjellerføljetong, adskilt fra den
+ovenstående teksten med en tykk skillestrek.
+Føljetongdelene innledes med fullstendig tittel:
+<title rend="quotes">Kjæmpehøien.
+Dramatisk Digtning i een Act af Henrik Ibsen</title>.
+Første føljetongdel avsluttes med
+<quote>(Fortsættes)</quote>. I annen og tredje
+føljetongdel suppleres undertittelen med
+<quote>(Fortsættelse fra forr. No.)</quote> og
+avsluttes med <quote>(Fortsættes)</quote>. I siste
+føljetongdel suppleres undertittelen med
+<quote>(Slutning fra forr. No.)</quote>.</p>
+</div>
+
+<div xml:id="edState_bibl_typo">
+<head rend="level4">typografi.</head>
+    <p>Teksten i <title rend="italic">Kjæmpehøien</title> 1854 er satt i fraktur. <!--En faksimile av tittelteksten med rollelisten gjengis i illustrasjon s. 259, HIS 1k <ptr target="illus-11"/>. -->Initial er brukt ved tittelen, som er midtstilt i et fett snitt. Sceneoverskrifter og rollenavn er midtstilt, rollenavn i tillegg i et fett snitt. Sceneanvisninger i replikk står i parentes og har ellers varierende oppsett. Det er brukt samme grad i sceneoverskrifter, sceneanvisninger, rollenavn og replikktekst. I nr. 10, 11 og 12 står føljetonghenvisninger i parentes etter tittelen, etterfulgt av en skillestrek. I nr. 9, 10 og 11 står føljetonghenvisninger i parentes til sist i tekstdelene, etterfulgt av en skillestrek. Skillestreker er for øvrig plassert etter tittelen, rollelisten og etterfølgende sceneanvisning, før første scene og før en fotnote fra redaksjonen (nederst i første spalte i nr. 9), samt som finalstrek. I tråd med konvensjonen har de versifiserte deler av teksten majuskel i første ord i linjen.</p>
+<p>Trykkvaliteten er jevnt god. Det finnes noen typografiske avvik, f.eks. manglende fet skrift eller feilaktig sperring ved uthevning av rollenavn, feilaktig fet skrift ved normal replikktekst, noen typeskader og snudde og forbyttede typer (f.eks. <hi rend="italic">Blauka</hi> for <hi rend="italic">Blanka</hi>). Det er ett tilfelle av manglende innrykk ved verslinje delt mellom replikkinnehavere. Slike typografiske feil er i HIS’ hovedtekst rettet stilltiende.</p>
+</div>
+
+<div xml:id="edState_bibl_paper">
+<head rend="level4">papir og tilstand.</head>
+<p>Papiret er gulnet avispapir av varierende tykkelse (tynnere
+for hver utgave) med (tiltagende) gjennomslag. Bindet er noe slitt.</p>
+</div>
+</div>
+
+<div xml:id="edState_textsources">
+<head rend="level3">øvrige tekstkilder</head>
+<p>Fra førsteoppførelsen av <title rend="italic">Kjæmpehøien</title> i
+Bergen 2. januar 1854 er det bevart én
+sufflørbok,<note type="footer"><hi rend="italic">Sufflørbok</hi> brukes her om
+scenemanuskript som inneholder hele teksten, i motsetning til
+rollehefter, også om det ikke kan
+påvises at boken har vært brukt til
+suffli.</note> NBO Ms.4° 1107, og ni rollehefter,
+TarkUiB NT238r (se <hi rend="italic">Manuskriptbeskrivelse</hi>).</p>
+<p>Det er ikke usannsynlig at sufflørboken har
+vært benyttet som trykkmanuskript; forskjellene mellom
+grunnteksten og sufflørboken er små og
+omfatter enkle rettelser (og enkelte nye feil) i den trykte
+teksten. Det er likevel noen avvik som enten kan tyde
+på at avistrykket har hatt et annet, ukjent forelegg,
+eller at sufflørboken er blitt rettet under setting
+(uten markering i teksten). Noen få ord i grunnteksten
+finnes ikke i de andre kildene, f.eks. <quote>Aftentide</quote>
+(1. scene) for <quote>Solnedgang</quote> i manuskriptene. En
+rettelse i siste sceneanvisning, 1. scene (<quote>til
+Venstre</quote> for <quote>tilhøire/til
+Høire</quote>) kan også skyldes en slik
+bearbeidelse før eller under trykk, i likhet med
+grunntekstens skrivemåte <quote>Mjølner</quote> (6. scene), der de øvrige kildene har <quote>Mjølnir</quote>. Det er dessuten brukt understøttende <hi rend="italic">e</hi> i større grad i sufflørboken (eks. <quote>staaer</quote>) enn i grunnteksten (<quote>staar</quote>).</p>
+<p>I rolleheftene finner vi noen endringer som går utover
+enkle rettelser: I Asgauts rollehefte er Gandalfs siste replikk
+på s. 8 og Vikingernes replikk på s. 9
+strøket. I Gandalfs rollehefte er interpunksjon og
+ord rettet gjennomgående, og noen ord er understreket.
+At Ibsens egenhendige endring på s. 44 i sufflørboken
+ikke er tatt hensyn til i rolleheftene, betyr at de er skrevet
+tidligere. Men endringer i rollehefter og sufflørbok
+kan ha foregått parallelt i den korte
+prøveperioden, uten at de ble gjensidig
+ajourført. Dessuten kan endringer i
+sufflørboken ha kommet til ved oppførelsen
+i 1856. Det er derfor vanskelig å vite om det er
+sufflørboken eller rolleheftene som reflekterer
+førsteoppførelsens tekst.</p>
+<p>Verket ble senere trykt i FU 10, her under tittelen <title rend="italic">Kæmpehøjen : dramatisk
+digtning i en akt</title>. Tekstgrunnlaget i FU er trolig
+NBO Ms.4° 1107. Dette valget skyldes at
+1854-årgangen av <title rend="italic">Bergenske
+Blade</title> allerede den gang var svært sjelden:
+<quote>den findes ialfald ikke i noget offentligt bibliotek
+hverken i Bergen eller i Christiania, og den her foreliggende
+udgave har derfor måttet foretages efter en
+afskrift i Bergens teaterbibliotek</quote> (FU 10, III).
+Utgiveren har foretatt en ortografisk modernisering i
+tråd med den rettskrivning Ibsen fulgte etter 1869.
+Siste utgave i Ibsens levetid kom i 1904 (København
+– Kristiania, Gyldendalske Boghandel Nordisk Forlag),
+trykt sammen med <title rend="italic">Olaf Liljekrans</title>.
+Satsen er her identisk med FU, med unntak av teksten i
+arksignaturen. (I FU er den <title rend="quotes"><hi rend="smallCaps">henrik ibsens samlede værker</hi>. <hi rend="smallCaps">X</hi></title>. I utgaven fra 1904 lyder den <title rend="quotes">Henrik Ibsen: Kæmpehøjen</title>.)</p>
+<p>Forskjellene mellom FU, den satsidentiske 1904-utgavens tekst og
+sufflørboken er av ortografisk karakter (en
+følge av moderniseringen), slik at vi i de to senere
+utgavene ikke finner eldre stavemåter som
+<quote>Skjald</quote> (men <quote>skald</quote>), heller ikke
+dobbeltskrivning av lang vokal (f.eks. presensformen
+<quote>seer</quote>; <quote>ser</quote> etter modernisering),
+flertallsbøyning av verb eller
+understøttende <hi rend="italic">e</hi>. I FU og
+1904-utgaven er det også foretatt enkelte rettelser av trykkfeil.</p>
+<p>I tillegg til HIS’ hovedtekst finnes en diplomatarisk og
+søkbar gjengivelse samt en fotografisk faksimile av
+grunnteksten i den elektroniske delen av HIS. Her gjengis
+også de øvrige tekstkildene diplomatarisk
+(og for manuskripter: med faksimile), med mulighet for
+søk og sammenligning. Her finnes også en
+metrisk analyse av teksten.</p>
+<p>HIS har i margen sidereferanser til grunnteksten og til HU.</p>
+</div>
+
+<div xml:id="edState_critical">
+<head rend="level3">tekstkritiske bemerkninger</head>
+<p>Ved emendasjoner er også de øvrige
+tekstkilder fra Ibsens levetid blitt konsultert. Egenhendighet
+er gitt prioritet.</p>
+<p>Ordvalg, ortografi og grammatikk i <title rend="italic">Kjæmpehøien</title> 1854 er,
+som offisiell norsk i samtiden, i tråd med danske normer.</p>
+<p>I HIS er tegnsetting standardisert på
+følgende måte: Etter titler, overskrifter
+og rolleinnførsler i rollelister samt
+replikkåpner i dramateksten er eventuelle skilletegn
+(punktum, komma, kolon) fjernet. I sceneanvisninger
+først i akt og scener, i frittstående
+sceneanvisninger mellom replikker og i stedsbeskrivelser etter
+rolleliste er eventuell parentes fjernet. Disse elementene har
+gjennomgående fått stor forbokstav og
+avsluttes med punktum. Frittstående sceneanvisninger
+har beholdt eventuelle <title rend="quotes">indre</title>
+parenteser. Sceneanvisninger til slutt i replikker regnes som
+del av replikken dersom de er ufullstendige setninger, og som
+frittstående, utenfor replikken, dersom setningen er fullstendig.</p>
+<p>Sceneanvisninger inne i replikk, inkludert sceneanvisninger som
+står til slutt i replikk (ikke
+frittstående), begynner med liten forbokstav og
+avsluttes uten interpunksjon. Sceneanvisninger som
+følger rett etter replikkinnehaverens navn, har ikke
+parenteser. Øvrige sceneanvisninger i replikk har parentes.</p>
+<p>Noter som hører til teksten, samt tekst som binder
+sammen f.eks. føljetongdeler (f.eks.
+<quote>Fortsættes</quote>), er ikke standardisert, men
+følger grunnteksten.</p>
+<p>Skillestreker er beholdt der de har strukturerende funksjon,
+f.eks. når de markerer sceneskift, og sceneskiftet
+ikke er markert på annen måte. Skillestreker
+som har karakter av ornament alene, er ikke gjengitt.
+Grunntekstens typografiske system for øvrig er ikke
+forsøkt imitert i HIS.</p>
+<p>Tekstfeilene i <title rend="italic">Kjæmpehøien</title> 1854
+består som regel av feilstaving og manglende eller
+misvisende tegnsetting. Alle rettelser er anført i
+det tekstkritiske noteapparatet. En inkonsekvens i
+tidsangivelsen er ikke rettet, men anført i
+noteapparatet. Avisredaksjonens note er sitert i sin helhet i en
+supplerende note. HIS har forsynt teksten med spaltereferanse.
+Vakling i ortografi og interpunksjon som avspeiler tidens og
+Ibsens vekslende praksis, er ikke rettet i HIS.</p>
+<p>For en oversikt over samtidens språknormer og Ibsens
+språk vises det til en redegjørelse i
+innledningen til <title rend="italic">Catilina</title> 1850.
+Det vises dessuten til de tekstkritiske retningslinjene for HIS
+i registerbindet.</p>
+</div>
+
+<div xml:id="edState_editions">
+<head rend="level3">tidligere tekstkritiske utgaver</head>
+<p><title rend="italic">Kjæmpehøien</title>
+1854 er tidligere utgitt i HU 1 (datert til 1853 etter
+avfattelsestidspunktet). HU har samme grunntekst som HIS, men
+erstatter enkelte steder tekst med lesemåter fra
+manuskriptene, noe det delvis gjøres rede for (HU 1,
+313–15). HU redegjør dessuten kort for noen
+egne rettelser, men retter som oftest stilltiende.</p>
+</div>
+</div>
+</body>
+</text>
+</TEI>

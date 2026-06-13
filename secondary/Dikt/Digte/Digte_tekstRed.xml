@@ -1,0 +1,974 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+    <teiHeader>
+        <fileDesc>
+      <titleStmt>
+        <title level="s">Henrik Ibsens skrifter, elektronisk versjon</title>
+          <title level="a">Tekstredegjørelse for <hi rend="italic">Digte</hi></title>
+          <author>ved Christian Janss</author>
+        <funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+        <editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
+        <respStmt>
+          <resp>Innlemming i elektronisk utgave</resp>
+          <name>EDD: Eining for digital dokumentasjon</name></respStmt>
+          <respStmt><resp>Kodeteknisk støtte og utvikling</resp>
+          <name>AKSIS: Avdeling for kultur, språk og informasjonsteknologi, Universitetsforskning i Bergen (Unifob AS)</name></respStmt>
+          <respStmt><resp>HISe-koding</resp>
+          <name xml:id="SBT">Stine Brenna Taugbøl</name></respStmt>
+          <respStmt><resp>Koding</resp>
+          <name xml:id="GMS">Gaute M. Sortland</name>
+          <name xml:id="AMB">Aasta Marie Bjorvand Bjørkøy</name></respStmt>
+          <respStmt><resp>Tekstarbeid</resp>
+          <name>Aasta Marie Bjorvand Bjørkøy</name>
+          <name>Maria Alnæs</name>
+          <name>Gaute M. Sortland</name></respStmt>
+          <respStmt><resp>Kontroll av sitater og ordbøker</resp>
+          <name xml:id="IK">Ingrid Korvald</name>
+          <name>Aasta Marie Bjorvand Bjørkøy</name>
+          <name>Maria Alnæs</name></respStmt>
+          <respStmt><resp>Kontroll av littlist og referanser</resp>
+          <name xml:id="AH">Anette Hjerde</name>
+          <name>Gaute M. Sortland</name>
+          <name>Aasta Marie Bjorvand Bjørkøy</name>
+          <name>Maria Alnæs</name>
+          <name xml:id="EL">Erlend Lønnum</name></respStmt>
+          <respStmt><resp>Kommentar-, intern- og ht-entiteter</resp>
+          <name>Aasta Marie Bjorvand Bjørkøy</name>
+          <name>Gaute M. Sortland</name></respStmt>
+          <respStmt><resp>Kodekontroll</resp>
+          <name>Aasta Marie Bjorvand Bjørkøy</name>
+          <name>Gaute M. Sortland</name>
+        </respStmt>
+      </titleStmt>
+<publicationStmt>
+ <publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+        <distributor xml:id="HISe">Universitetet i Oslo</distributor>
+        <date when="2010" xml:id="HISe-date"/>
+ <pubPlace>Oslo</pubPlace>
+      </publicationStmt>
+      <sourceDesc>
+ <p>Filen bygger på 11k_sisteversjon.xml.</p>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <tagsDecl>
+      </tagsDecl>
+    </encodingDesc>
+<profileDesc>
+      <langUsage>
+        <language ident="nob"/>
+        <language ident="dut"/>
+        <language ident="cze"/>
+        <language ident="ger"/>
+        <language ident="fre"/>
+        <language ident="ice"/>
+        <language ident="eng"/>
+        <language ident="ita"/>
+        <language ident="spa"/>
+        <language ident="swe"/>
+        <language ident="scc"/>
+        <language ident="rus"/>
+        <language ident="por"/>
+        <language ident="hun"/>
+        <language ident="pol"/>
+        <language ident="fin"/>
+        <language ident="jpn"/>
+        <language ident="ukr"/>
+        <language ident="bul"/>
+        <language ident="rum"/>
+        <language ident="scr"/>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+        <change><date>07.09.2011</date>
+            <name>SBT</name><title>TEI P5</title>
+            Endret fra P4 til P5.</change>
+        <change><date>06.01.2011</date>
+            <name>SBT</name><title>Listekoding</title>
+            Oppdaterte listekoding.</change>
+        <change><date>22.12.2010</date>
+            <name>SBT</name><title>Omkoding</title>
+            Kodet om overskrifter for HISe.</change>
+        <change><date>09.12.2010</date>
+            <name>SBT</name><title>Splitting</title>
+            Denne fila inneholder tekstredegjørelsen til Digte.</change>
+        <change><date>24.11.2010</date>
+            <name>SBT</name><title>Validering</title>
+            Fjernet ref til files og figures i dokumenttoppen. Fila er valid.</change>
+        <change><date>13.09.2010</date>
+    <name>SBT</name><title>dokumentforfatter</title>
+    La inn dokumentforfatter etter hovedoverskrift. NB: vurder om dokumentet bør deles i to, eller om forfatterne bør stå under hver sin del!</change>
+        <change>
+            <date>16.07.2010</date>
+            <name>SBT</name><title>Validering</title>
+            Validert.
+        </change><change>
+        <date>15.07.2010</date>
+        <name>SBT</name><title>Opprettet xml-fil</title>
+        Skilte ut tekstredegjørelsen til diktbindet i en egen fil. Har lagt inn opplysninger vedr HISe i teiHeader. Har foreløpig latt rend-attr. og bokstavtyper (majuskler/minuskler/kapiteler) i overskriftene stå; dette er endret i Ge. Samkjør! Er nå mest stemt for å beholde mest mulig av bokutgaveoppsettet. Det er mulig at fila bør deles opp i mindre deler: Digte, Blandede Digtninger, enkeltdikt. Forfattere av tekstredegjørelsene bør vel også hentes inn.
+      </change>
+    </revisionDesc>
+  </teiHeader>
+
+<text type="tekstRed" xml:id="Digte_tekstRed">
+<body>
+<div type="editorialStatement" xml:id="edState"> 
+     <byline><docAuthor>ved Christian Janss</docAuthor></byline>
+        
+        
+<div xml:id="edState_basetext">  
+<head rend="level2">VALG AV GRUNNTEKST</head>
+<p rend="noIndent">Grunnteksten, grunnlaget for HIS’ hovedtekst, er førstetrykket fra 1871 samt de nye diktene som kom til i annen utgave (1875), femte utgave (1886) og FU 4 (1899).</p>
+</div>
+        
+<div xml:id="edState_bibl">
+<head rend="level2">BIBLIOGRAFISKE OPPLYSNINGER</head>
+<p rend="noIndent">Ved tekstetableringen er det kollasjonert følgende eksemplarer:</p>
+
+          <list type="numbered">
+            <item n="1"><hi rend="italic">Henrik Ibsens skrifter</hi>s eksemplar</item>
+            <item n="2">Nasjonalbibliotekets eksemplar (85ga06257)</item>
+            <item n="3">Nasjonalbibliotekets eksemplar (85ga06140)</item>
+          </list>
+
+ <p rend="noIndent">Det er ikke avdekket satsintern variasjon (endringer foretatt under trykkeprosessen i samme opplag) i teksten i de tre eksemplarene. Nr. 1 er brukt som hovedeksemplar og er grunnlag for beskrivelsen i det følgende.</p>
+
+<div>
+<head rend="level3">innbinding, forsatsblad og omslag</head> 
+<p>Boken er beskåret, har tresidet gullsnitt og er bundet inn uten originalt omslagsblad. Innbindingen er håndverksmessig utført forlagsbind i dekorert, vinrød helshirting. Ryggen har forfatternavn og tittel i gullpreg (<quote>H. IBSEN: DIGTE.</quote>) med ornamenter i dragestil over og under. Forpermen er dekorert med tegning (lubbent barn med kappe, spyd, lyre og skjold) og to rammer i gullpreg og grankvister i blindpreg. Bakpermen har ramme, grankvister og forlagslogo i blindpreg (for varianter, se Schiøtz &amp; Ringstrøm 2006, 169). Forsatsbladene er dobbeltblad i glanset, hvitt papir, med den ene delen limt til for- og bakperm. Et flyblad (noe tykkere enn bokblokkens papir) er limt til forsatsbladenes frie del foran og bak.</p>
+</div>
+       
+          
+    <div xml:id="edState_bibl_binding">
+<head rend="level3">format og paginering</head>
+<p>Boken består av åtte ark falset i duodesformat (12 blad, 24 sider pr. ark), ca. 98 × 148 mm.<note type="footer">Målene gjelder boksiden, bredde × høyde.</note> (Korrespondansen mellom Hegel og Ibsen om et ønskelig omfang på ca. ti ark, jf. nedenfor under omtalen av trykkmanuskriptet, tyder på at Hegel først har planlagt utgivelsen i oktavformat. Sidetallet i <hi rend="italic">Digte</hi> 1871 tilsvarer ca. 11 oktavark. Også når boken foreligger, beregner Hegel honoraret ut fra det tilsvarende omfanget i oktav, jf. brevkonsept av 1. mai 1871.) Arksignaturene 1–8 (med teksten <quote>Henrik Ibsen: Digte.</quote>) finnes på s. 1, 25, 49, 73, 97, 121, 145 og 169. Det siste arket har fem blad, og bokens omfang er 178 sider. Pagineringen er med arabiske tall, inkluderer tittel s. [I], blank s. [II], innholdsfortegnelse s. [III] og [IV] og løper fra side 1 til 178.</p>
+</div>
+       
+          
+    <div xml:id="edState_bibl_typo">
+<head rend="level3">typografi</head>
+<p>Teksten i <hi rend="italic">Digte</hi> (1871) er satt i antikva. En faksimile av tittelsiden gjengis på s. 617.<note> SIDEHENV. MAA INTERNKOBLES I HISe</note> Tittelbladet er satt med midtstilte majuskler, det samme er overskriften <title rend="quotes">Indhold</title> s. [III]. Innholdsfortegnelsen er venstrestilt, i en mindre skriftgrad enn diktteksten. Diktoverskrifter er sentrert med en enkel skillestrek under og satt i et grotesksnitt, større enn diktteksten; undertitler i en mindre grad og i parentes. Dikttekst innledes med initial, innrykket førstelinje og står venstrejustert. Sperring er benyttet som utheving, latinske ord er kursivert. <title rend="quotes">Åbent brev</title> (s. 60), <title rend="quotes">Ballonbrev til en svensk dame</title> (s. 145) og <title rend="quotes">Rimbrev til fru Heiberg</title> (s. 164) har høyrejustert sted og dato i liten skrift etter tittel og skillestrek. Diktene avsluttes med dobbel skillestrek, og nytt dikt begynner på ny side. Sidetall er plassert i overmarg med en strek under. Trykkvaliteten er jevnt god, men det er forekomster av svakt trykk og skadde typer. Slike typografiske mangler er i HIS’ hovedtekst rettet stilltiende. Innholdsfortegnelsen fra <hi rend="italic">Digte</hi> 1871 etterfølges av en egen innholdsfortegnelse for de titlene som kom til i senere utgaver; disse er satt i kronologisk rekkefølge.</p>
+</div>
+          
+    <div xml:id="edState_bibl_paper">
+<head rend="level3">papir og tilstand</head>
+<p>Hele materien er løsnet fra ryggen og henger dårlig sammen. Papiret i bokblokken er svakt gulnet. Ryggen og permen er noe slitt.</p>
+</div>
+</div>
+
+      
+    <div xml:id="edState_textsources">
+<head rend="level2">ØVRIGE TEKSTKILDER</head>
+<p rend="noIndent">De øvrige tekstkildene fra Ibsens levetid består av manuskripter og trykte utgaver. NBO Ms. 4° 1110a inneholder Jakob Løkkes samling av avskrifter av tidligere publiserte dikt i aviser og tidsskrifter med Ibsens egenhendige endringer (og de regnes derfor som tekstkilde til <hi rend="italic">Digte</hi> (1871)). NBO Ms. 4° 1110b omfatter egenhendige arbeidsmanuskripter til innholdslister og enkeltdikt, samt enkelte avskrifter i andre hender og blad fra trykte bøker. Manuskriptmaterialet omfatter videre det egenhendige trykkmanuskriptet KBK Collin 262, 4°, II.2, en liste over syv påtenkte nye dikt til annen utgave av <hi rend="italic">Digte</hi> (1875), NBO Ms. 8° 1928, og en liste over trykkfeil i annen utgave til bruk for tredje utgave (1879), NBO Ms. 4° 1113h. (For nærmere beskrivelser, se <hi rend="italic">Manuskriptbeskrivelse</hi>.) De trykte utgavene i Ibsens levetid omfatter: 1. utg. 1871, 2. utg. 1875, 3. utg. 1879, 4. utg. 1882, 5. utg. 1886, 6. utg. 1891, 7. utg. 1896, FU 4 1899 og 8. utg. 1901.</p>
+<p>Det er mange større og mindre forskjeller mellom tekstkildene. Skriveprosessen gjennomgikk faser det er vanskelig å rekonstruere fullstendig, særlig siden de inneholder et stort antall enkeltstående tekster, og siden den nåværende ordningen av manuskriptdelene ikke gjenspeiler kronologien i tilblivelsen (jf. <hi rend="italic">Manuskriptbeskrivelse</hi>). I HISe vil inndelingen av manuskriptene følge manuskriptbeskrivelsen nedenfor.</p>
+<p>Under etableringen av HIS’ hovedtekst har alle manuskripter unntatt NBO Ms. 8° 1928 vært brukt som tekstkilder.</p>
+
+        <div xml:id="edState_textsources_Di41110a">
+<head rend="level3">nbo ms. 4° 1110a, løkkes samling</head>
+<p>Den 25. januar 1870 svarer Ibsen samtykkende på Hegels oppfordring om å gi ut en samling dikt. Hegel hadde tatt opp spørsmålet tidligere (se <hi rend="italic">Tilblivelse</hi> ovenfor). Ibsen skriver at blant andre som også har tilskyndet ham til det, er overlærer Jakob Løkke, som selv har tilbudt seg å samle og besørge avskrifter fra Ibsens dikt i aviser og tidsskrifter. <quote>Adskilligt utrykkt</quote> måtte også skaffes tilveie, mener Ibsen, og han ønsker å skrive en fortale. Arbeidet skulle være avsluttet fra Ibsens hånd sommeren 1870, men 10. oktober skriver han til Hegel at Løkkes avskrifter ennå ikke er ferdige; 2. desember forteller Ibsen Hegel at avskrivningen fremdeles pågår. Først 8. januar 1871 kan han meddele Hegel at han har mottatt avskriftene, og at han er i gang med å omarbeide det som skal beholdes, ca. en fjerdedel. Han endte med å beholde nærmere to tredjedeler.</p>
+<p>Alle tekstene i Løkkes samling er kjent fra eldre trykk. De diktene som er skrevet av her og som ikke ble tatt opp i <hi rend="italic">Digte</hi> (1871), er i HIS gjengitt i sin kronologiske sammenheng basert på de opprinnelige tekstgrunnlagene. (I HISe kan disse sammenlignes med Løkkes samling, som der er tilgjengelig som fulltekst.) Det opplyses under <hi rend="italic">Tekstgrunnlag og øvrige tekstkilder</hi> hvorvidt et dikt foreligger som avskrift i Løkkes samling, og om det ble tatt opp i <hi rend="italic">Digte</hi> (1871).</p>
+<p>De forskjellene som finnes mellom dikttekstene i NBO Ms. 4° 1110a og trykkmanuskriptet til <hi rend="italic">Digte</hi>, er enten endringer som er synlige som egenhendige endringer i 1110a, eller som er tilkommet under arbeidet med trykkmanuskriptet (jf. <hi rend="italic">Manuskriptbeskrivelse</hi>). Noen fortale, slik Ibsen annonserte, er det ikke spor av i manuskriptene. To egenhendige titler i NBO Ms. 4° 1110a, s. 2, finnes ikke som utarbeidede dikt i manuskriptet eller andre steder (se <hi rend="italic">Manuskriptbeskrivelse</hi>).</p>
+</div>
+  
+        <div xml:id="edState_textsources_Di41110b">
+<head rend="level3">nbo ms. 4° 1110b, egenhendige arbeidsmanuskripter til innholdslister og enkeltdikt</head>
+<p>Fire innholdslister i manuskriptene utgjør holdepunkter for antagelser om Ibsens arbeid med å samle innholdet til <hi rend="italic">Digte</hi> 1871. Den første innholdslisten (bl. 2) er skrevet med utgangspunkt i Løkkes samling; de dikt som er merket eller omarbeidet i denne, gjenfinnes som titler og førstelinjer i innholdsliste 1. Titlene <quote>Jeg ved et sind som …</quote> og <quote>Jeg og min skorpion</quote> finnes i innholdsliste 1, uten at vi kan knytte dem til noe fullført dikt. Innholdsliste 2, bl. 19, bygger på liste 1, med noen endrede og nye titler og rekkefølger. Den tredje innholdslisten, bl. 8, kan være en renskrift av den andre, som så er blitt rettet i form av endrede titler, strykninger og tilføyelser. Her finnes også to titler som ikke umiddelbart kan knyttes til noe dikt, <quote>Opgør</quote> og <quote>Italia unita</quote> (men jf. <hi rend="italic">Manuskriptbeskrivelse</hi> om en tenkelig gjenbruk av det siste). Innholdsliste 4 er en renskrift av den tredje listen, med noen endringer. Se <hi rend="italic">Manuskriptbeskrivelse</hi> for detaljert redegjørelse for tekstendringer i de fire innholdslistene, forholdet mellom dem og trykkmanuskriptet, som Ibsen sendte Gyldendal i flere deler.</p>
+<p>NBO Ms. 4° 1110b inneholder ferdige utarbeidede dikt, dikt i flere (ferdige og uferdige) versjoner, men også ikke-egenhendige avskrifter til dels med Ibsens rettelser samt trykte tekstsider, blant annet ett ark fra et korrekturtrykk til <hi rend="italic">Brand</hi>, hvor bare noen få verslinjer blir bearbeidet til et dikt (<title rend="quotes">De usynliges kor</title>).</p>
+<p>To dikt i NBO Ms. 4° 1110b kom ikke med i <hi rend="italic">Digte</hi> 1871: <title rend="quotes">Til min forlægger. (ved hans jubilæum.)</title> og <title rend="quotes">Judas</title>. Det første ble tatt opp i FU med tittelen <title rend="quotes">Til Frederik Hegel</title>; det siste finnes bare i NBO Ms. 4° 1110b. Til oppførelsen av <hi rend="italic">Kongs-Emnerne</hi> 1871 skrev Ibsen fire nye sanger, som finnes i NBO Ms. 4° 1110b. Tre av dem, <title rend="quotes">Munkenes sang</title>, <title rend="quotes">Domine coeli!</title> og <title rend="quotes">Gloria in excelsis deo!</title>, er ikke kjent trykt andre steder i Ibsens levetid, men finnes som vedlegg til brev til Peter Heise 25. juni 1870. Sangene og <title rend="quotes">Judas</title> gjengis i HIS under utrykte dikt fra manuskriptmaterialet til <hi rend="italic">Digte</hi></p>
+<p>Ibsen har trolig arbeidet delvis parallelt med Løkkes samling og arbeidsmanuskriptene i NBO Ms. 4° 1110b under utarbeidelsen av trykkmanuskriptet til <hi rend="italic">Digte</hi> 1871. Bare noen få av diktene i NBO Ms. 4° 1110a finner vi derfor igjen som tekster i NBO Ms. 4° 1110b (f.eks. <title rend="quotes">Til de genlevende</title> og <title rend="quotes">Fugl og fuglefænger</title>, som bearbeides begge steder). Halvdan Koht har (1908) ved eksempler vist hvordan Ibsen har omarbeidet sine dikt.</p>
+</div>
+  
+        <div xml:id="edState_textsources_Di4262">
+<head rend="level3">kbk collin 262, 4°, II.2, trykkmanuskript</head>
+<p>Trykkmanuskriptet ble sendt Hegel i porsjoner fra 21. januar til 17. april 1871. I <hi rend="italic">Manuskriptbeskrivelse</hi> er det redegjort for hvilke deler som trolig har inngått i hvilke sendinger, og hvordan denne rekkefølgen avviker fra den orden diktene har i manuskriptet slik det er bundet inn (flere dikt står i en annen rekkefølge enn i førstetrykket og noen av diktene er splittet opp). Innholdsfortegnelsen stemmer overens med førsteutgavens med unntak av det ettersendte <title rend="quotes">Rimbrev til fru Heiberg</title>, som mangler i fortegnelsen. Selve teksten i diktene er renskrevet og har få endringer.</p>
+<p>Tabellen nedenfor tar utgangspunkt i titlene i trykkmanuskriptet og viser forekomsten av diktene i de to manuskriptnumrene som ligger til grunn for dette. Diktene er i større og mindre grad omarbeidet frem mot publikasjon i <hi rend="italic">Digte</hi> 1871; teksten her skiller seg imidlertid lite fra trykkmanuskriptet. Tabellen viser også hva som finnes av tidligere og senere versjoner i andre, spredte manuskripter (jf. <hi rend="italic">Tekstgrunnlag og øvrige tekstkilder</hi> nedenfor og HISe for tekstsammenligning, varianter samt opplysninger om trykte versjoner).</p>
+
+<table rend="compareText">
+        <row>
+            <cell role="label" n="compare1"><hi rend="italic">Dikt i KBK Collin 262, 4°, II (trykkmanuskriptet)</hi></cell>
+            <cell role="label" n="compare2"><hi rend="italic">NBO Ms. 4° 1110b (egenhendige arbeidsmanuskripter)</hi></cell>
+            <cell role="label" n="compare3"><hi rend="italic">NBO Ms. 4° 1110a (Løkkes samling)</hi></cell>
+            <cell role="label" n="compare4"><hi rend="italic">Andre manuskripter</hi></cell>
+        </row>
+        <row>
+            <cell n="compare1">
+                <seg type="poem"><title rend="quotes">Spillemænd</title></seg>
+            </cell>
+            <cell n="compare2">
+                <seg type="poem">NEI (men oppført i innh.fortegnelser)</seg>
+            </cell>
+            <cell n="compare3">
+                <seg type="poem">NEI (diktet bygger delvis på <title rend="quotes">En Løverdagsaften i Hardanger</title>)</seg>
+            </cell>
+            <cell n="compare4">
+                <seg type="poem"/>
+            </cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">Kong Håkons gildehal</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">NEI (men oppført i innh.fortegnelser)</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">JA (i tillegg et annet dikt med samme tittel)</seg>
+</cell>
+<cell n="compare4">
+<seg type="poem"/>
+</cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">Byggeplaner</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">NEI (men som prøvetrykk, samt oppført i innh.fortegnelser)</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">JA</seg>
+</cell>
+<cell n="compare4">
+<seg type="poem"/>
+</cell>
+        </row>
+<row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">Markblomster og potteplanter</title></seg>
+</cell>
+    <cell n="compare2">
+        <seg type="poem">NEI (men oppført i innh.fortegnelser)</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">JA</seg>
+</cell>
+<cell n="compare4">
+<seg type="poem"/>
+</cell>
+</row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">En fuglevise</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">NEI (men oppført i innh.fortegnelser)</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">JA</seg>
+</cell>
+<cell n="compare4">
+<seg type="poem"/>
+</cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">På Akershus</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">JA (noen strofer i prøvetrykk)</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">JA</seg>
+</cell>
+<cell n="compare4">
+<seg type="poem"/>
+</cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">Ederfuglen</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">JA</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">JA</seg>
+</cell>
+<cell n="compare4">
+<seg type="poem"/>
+</cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">Med en vandlilje</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">NEI (men oppført i innh.fortegnelser)</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">JA</seg>
+</cell>
+<cell n="compare4">
+    <seg type="poem">John Hay Library, Brown University, Providence, Rhode Island, Ms. 24. 227</seg>
+</cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">Fugl og fuglefænger</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">JA (tre strofer)</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">JA</seg>
+</cell>
+<cell n="compare4">
+    <seg type="poem">Ibsen-museet i Grimstad</seg>
+</cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">Bergmanden</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">JA</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">JA</seg>
+</cell>
+<cell n="compare4">
+    <seg type="poem">UBiT Ms Oct. 358 (til den eldre, avvikende versjonen <title rend="quotes">Bjergmanden</title> (1851) finnes et manuskript ved Ibsen-museet i Grimstad) </seg>
+</cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">Min unge vin</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">JA</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">NEI (diktet kan bygge på deler av <title rend="quotes">I Billedgalleriet</title>)</seg>
+</cell>
+<cell n="compare4">
+<seg type="poem"/>
+</cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">Lysræd</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">NEI (men oppført i innh.fortegnelser)</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">JA</seg>
+</cell>
+<cell n="compare4">
+    <seg type="poem">UBiT Ms Oct. 368</seg>
+</cell>
+        </row>
+        <row>
+        <cell n="compare1">
+            <seg type="poem"><title rend="quotes">Digterens vise</title></seg>
+        </cell>
+        <cell n="compare2">
+            <seg type="poem">NEI (men oppført i innh.fortegnelser)</seg>
+        </cell>
+        <cell n="compare3">
+            <seg type="poem">NEI</seg>
+        </cell>
+        <cell n="compare4">
+            <seg type="poem">(Teksten er hentet fra <title rend="italic">Kjærlighedens Komedie</title>)</seg>
+        </cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">Kløften</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">JA</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">NEI (diktet kan bygge på deler av <title rend="quotes">I Billedgalleriet</title>)</seg>
+</cell>
+<cell n="compare4">
+<seg type="poem"/>
+</cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">Højfjeldsliv</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">NEI (men oppført i innh.fortegnelser)</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">JA</seg>
+</cell>
+<cell n="compare4">
+<seg type="poem"/>
+</cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">På sangertog</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">NEI (men oppført i innh.fortegnelser)</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">JA (under tittelen <title rend="quotes">Fra Sangertoget</title>)</seg>
+</cell>
+<cell n="compare4">
+    <seg type="poem">UBiT Ms Oct. 836</seg>
+</cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">En svane</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">JA</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">NEI (diktet kan bygge på deler av <title rend="quotes">I Billedgalleriet</title>; <title rend="quotes">Svanen</title> er et annet dikt)</seg>
+</cell>
+<cell n="compare4">
+<seg type="poem"/>
+</cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">Priset være kvinden!</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">NEI (men oppført i innh.fortegnelser)</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">JA (under tittelen <title rend="quotes">Ved Sangerfesten i Arendal 1859</title>)</seg>
+</cell>
+<cell n="compare4">
+<seg type="poem"/>
+</cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">4<hi rend="raised">de</hi> Juli 1859</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">NEI (men oppført i innh.fortegnelser)</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">JA</seg>
+</cell>
+<cell n="compare4">
+<seg type="poem"/>
+</cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">Skolehuset</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">NEI (men oppført i innh.fortegnelser)</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">JA (under tittelen <title rend="quotes">Ved Indvielsen af de nye Bygninger for Lillehammers lærde Skole den 5<hi rend="raised">te</hi> November 1858</title>)</seg>
+</cell>
+<cell n="compare4">
+<seg type="poem"/>
+</cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">Folkesorg</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">NEI (men oppført i innh.fortegnelser)</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">JA</seg>
+</cell>
+<cell n="compare4">
+<seg type="poem"/>
+</cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">Til thingmændene</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">NEI (men oppført i innh.fortegnelser)</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">JA (under tittelen <title rend="quotes">Til Storthinget</title>)</seg>
+</cell>
+<cell n="compare4">
+<seg type="poem"/>
+</cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">Hilsen til Svenskerne</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">JA (oppført i innh.fortegnelser; teksten under tittelen i 1110a)</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">NEI (tittelen til det likelydende diktet <title rend="quotes">Sangen i Trondheim</title> står oppført)</seg>
+</cell>
+<cell n="compare4">
+<seg type="poem"/>
+</cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">Til de genlevende</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">JA</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">JA (under tittelen <title rend="quotes">Ved J.L. Heibergs Død</title>)</seg>
+</cell>
+<cell n="compare4">
+<seg type="poem"/>
+</cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">Til professor Schweigård</title></seg>
+</cell>
+ <cell n="compare2">
+     <seg type="poem">NEI (men oppført i innh.fortegnelser)</seg>
+ </cell>
+ <cell n="compare3">
+     <seg type="poem">JA</seg>
+ </cell>
+ <cell n="compare4">
+ <seg type="poem"/>
+ </cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">Vuggevise</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">NEI (men oppført i innh.fortegnelser)</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">NEI</seg>
+</cell>
+<cell n="compare4">
+    <seg type="poem">(Teksten er hentet fra <title rend="italic">Kongs-Emnerne</title>)</seg>
+</cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">Stormsvalen</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">JA</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">NEI (diktet kan bygge på deler av <title rend="quotes">I Billedgalleriet</title>)</seg>
+</cell>
+<cell n="compare4">
+<seg type="poem"/>
+</cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">Agnes</title></seg>
+</cell>
+<cell n="compare1">
+    <seg type="poem">NEI (men oppført i innh.fortegnelser)</seg>
+</cell>
+<cell n="compare1">
+    <seg type="poem">NEI</seg>
+</cell>
+<cell n="compare1">
+    <seg type="poem">(Teksten er hentet fra [<title rend="italic">Episk Brand</title>]/<title rend="italic">Brand</title>)</seg>
+</cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">Stambogsrim</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">JA</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">NEI (diktet kan bygge på deler av <title rend="quotes">I Billedgalleriet</title>)</seg>
+</cell>
+<cell n="compare4">
+<seg type="poem"/>
+</cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">Mindets magt</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">JA</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">NEI</seg>
+</cell>
+<cell n="compare4">
+<seg type="poem"/>
+</cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">Åbent brev</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">NEI (men oppført i innh.fortegnelser)</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">JA</seg>
+</cell>
+<cell n="compare4">
+<seg type="poem"/>
+</cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">Til en bortdragende kunstner</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">JA (avskrift)</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">NEI</seg>
+</cell>
+<cell n="compare4">
+    <seg type="poem">NBO Ms. 4° 931</seg>
+</cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">Ørnulfs drapa</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">JA (avskrift)</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">NEI</seg>
+</cell>
+<cell n="compare4">
+    <seg type="poem">(Teksten er hentet fra <title rend="italic">Hærmændene paa Helgeland</title>)</seg>
+</cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">Fredrik den syvendes minde</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">NEI</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">JA</seg>
+</cell>
+<cell n="compare4">
+<seg type="poem"/>
+</cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">En broder i nød!</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">NEI (men oppført i innh.fortegnelser)</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">JA</seg>
+</cell>
+<cell n="compare4">
+    <seg type="poem">UBiT Ms Oct. 359</seg>
+</cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">Troens grund</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">JA</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">NEI (diktet kan bygge på deler av <title rend="quotes">I Billedgalleriet</title>)</seg>
+</cell>
+<cell n="compare4">
+<seg type="poem"/>
+</cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">Storthings-gården</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">NEI (men oppført i innh.fortegnelser)</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">JA</seg>
+</cell>
+<cell n="compare4">
+<seg type="poem"/>
+</cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">Terje Vigen</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">NEI (men oppført i innh.fortegnelser)</seg>
+</cell>
+<cell n="compare1">
+    <seg type="poem">JA</seg>
+</cell>
+<cell n="compare1">
+    <seg type="poem">NBO Ms. 4° 925</seg>
+</cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">Forviklinger</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">NEI (men oppført i innh.fortegnelser)</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">JA</seg>
+</cell>
+<cell n="compare4">
+    <seg type="poem">UBiT Ms Oct. 361 og 375</seg>
+</cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">Fra mit husliv</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">JA</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">NEI</seg>
+</cell>
+<cell n="compare4">
+<seg type="poem"/>
+</cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">En kirke</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">JA</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">NEI</seg>
+</cell>
+<cell n="compare4">
+<seg type="poem"/>
+</cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">I galleriet</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">JA</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">NEI (diktet kan bygge på deler av <title rend="quotes">I Billedgalleriet</title>)</seg>
+</cell>
+<cell n="compare4">
+<seg type="poem"/>
+</cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">De usynliges kor</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">JA</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">NEI</seg>
+</cell>
+<cell n="compare4">
+    <seg type="poem">(Teksten er hentet fra [<title rend="italic">Episk Brand</title>]/<title rend="italic">Brand</title>)</seg>
+</cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">På vidderne</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">NEI (men oppført i innh.fortegnelser)</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">JA</seg>
+ </cell>
+ <cell n="compare4">
+     <seg type="poem">UBiT Ms Oct. 369</seg>
+ </cell>
+        </row>
+        <row>
+<cell n="compare1">
+    <seg type="poem"><title rend="quotes">Kvindernes bøn</title></seg>
+</cell>
+<cell n="compare2">
+    <seg type="poem">JA</seg>
+</cell>
+<cell n="compare3">
+    <seg type="poem">NEI</seg>
+</cell>
+<cell n="compare4">
+    <seg type="poem">Nordiska Museet, Stockholm, inv.nr. 20. 082 a–b (teksten er skrevet til en oppførelse av <title rend="italic">Kongs-Emnerne</title>)</seg>
+</cell>
+        </row>
+        <row>
+            <cell n="compare1">
+                <seg type="poem"><title rend="quotes">Tak</title></seg>
+            </cell>
+            <cell n="compare2">
+                <seg type="poem">JA</seg>
+            </cell>
+            <cell n="compare3">
+                <seg type="poem">NEI</seg>
+            </cell>
+            <cell n="compare4">
+                <seg type="poem"/>
+            </cell>
+        </row>
+        <row>
+            <cell n="compare1">
+                <seg type="poem"><title rend="quotes">Abraham Lincolns mord</title></seg>
+            </cell>
+            <cell n="compare2">
+                <seg type="poem">NEI (men oppført i innh.fortegnelser)</seg>
+            </cell>
+            <cell n="compare3">
+                <seg type="poem">NEI (tittelen er nevnt)</seg>
+            </cell>
+            <cell n="compare4">
+                <seg type="poem">NBO Ms. 8° 1591</seg>
+            </cell>
+        </row>
+        <row>
+            <cell n="compare1">
+                <seg type="poem"><title rend="quotes">Til min ven revolutions-taleren</title></seg>
+            </cell>
+            <cell n="compare2">
+                <seg type="poem">JA</seg>
+            </cell>
+            <cell n="compare3">
+                <seg type="poem">NEI</seg>
+            </cell>
+            <cell n="compare4">
+                <seg type="poem"/>
+            </cell>
+        </row>
+        <row>
+            <cell n="compare1">
+                <seg type="poem"><title rend="quotes">Uden navn</title></seg>
+            </cell>
+            <cell n="compare2">
+                <seg type="poem">JA</seg>
+            </cell>
+            <cell n="compare3">
+                <seg type="poem">NEI</seg>
+            </cell>
+            <cell n="compare4">
+                <seg type="poem"/>
+            </cell>
+        </row>
+        <row>
+            <cell n="compare1">
+                <seg type="poem"><title rend="quotes">Ved Port Said</title></seg>
+            </cell>
+            <cell n="compare2">
+                <seg type="poem">JA</seg>
+            </cell>
+            <cell n="compare3">
+                <seg type="poem">NEI (tittelen er nevnt)</seg>
+            </cell>
+            <cell n="compare4">
+                <seg type="poem"/>
+            </cell>
+        </row>
+        <row>
+            <cell n="compare1">
+                <seg type="poem"><title rend="quotes">Ballonbrev</title></seg>
+            </cell>
+            <cell n="compare2">
+                <seg type="poem">JA</seg>
+            </cell>
+            <cell n="compare3">
+                <seg type="poem">NEI</seg>
+            </cell>
+            <cell n="compare4">
+                <seg type="poem">KBS Vu. 91</seg>
+            </cell>
+        </row>
+        <row>
+            <cell n="compare1">
+                <seg type="poem"><title rend="quotes">Rimbrev til fru Heiberg</title> (ikke i innh.fortegnelsen)</seg>
+            </cell>
+            <cell n="compare2">
+                <seg type="poem">JA</seg>
+            </cell>
+            <cell n="compare3">
+                <seg type="poem">NEI</seg>
+            </cell>
+            <cell n="compare4">
+                <seg type="poem">Teatermuseet, København</seg>
+            </cell>
+        </row>
+        <row>
+            <cell n="compare1">
+                <seg type="poem"><title rend="quotes">I en komponists stambog</title></seg>
+            </cell>
+            <cell n="compare2">
+                <seg type="poem">NEI (men oppført i innh.fortegnelser)</seg>
+            </cell>
+            <cell n="compare3">
+                <seg type="poem">NEI</seg>
+            </cell>
+            <cell n="compare4">
+                <seg type="poem">BOB Grieg-samlingen</seg>
+            </cell>
+        </row>
+        <row>
+            <cell n="compare1">
+                <seg type="poem"><title rend="quotes">Brændte skibe</title></seg>
+            </cell>
+            <cell n="compare2">
+                <seg type="poem">NEI (men oppført i innh.fortegnelser)</seg>
+            </cell>
+            <cell n="compare3">
+                <seg type="poem">NEI</seg>
+            </cell>
+            <cell n="compare4">
+                <seg type="poem">NBO Ms. 8° 3516 (kopi) og 3680</seg>
+            </cell>
+        </row>
+</table>
+
+<p rend="noIndent">Ibsens brev til Hegel 21. januar 1871, som inneholdt den første sendingen, berører flere enkeltheter: Ibsen ønsker <title rend="quotes">På vidderne</title> delt i avsnitt (det medfulgte som rettet trykk), og han ber om å få lese <quote>revision</quote> på dette diktet og på <title rend="quotes">Terje Vigen</title>, som også medfulgte som trykt tekst sammen med <title rend="quotes">Ballonbrev til en svensk dame</title>. På dette tidspunktet ser Ibsen for seg at samlingen kan få et omfang på åtte–ni ark. Han erklærer at han har <quote>materialier til meget mere, men det kan ligge indtil videre</quote>. Han ønsker seg et format <quote>som Richardts eller Plougs digte, og ligesom i disse bør hvert digt begynde på en ny side</quote> (jf. HIS 12k, 574–75). Verskolonnene ønsker Ibsen satt sentrert under sidetallet, og han foreslår å kalle samlingen <quote>‹Spredte digte›, eller, hvis De tror det bedre, simpelt hen ‹Digte›.</quote> Han anmoder også Hegel om å velge et så tykt papir at typene ikke skjærer gjennom.</p>
+<p>Hegel svarer ifølge brevkonsept 27. januar 1871 at han har mottatt en avdeling dikt og at han kan etterkomme Ibsens ønske, men helst ser at samlingen kommer opp i 160 sider (10 ark). Hegel vil gjerne utstyre boken med en <quote>Titelvignet</quote> og gir Ibsen muligheten til å velge motiv og anbefale en norsk kunstner til utformingen. Hegel foreslår at bokens tittel må bli <quote>Digte af H.I.</quote>. Han vil bruke godt papir, og vedlegger to skriftprøver, hvorav en helt ny fransk sort (jf. NBO Ms. 4° 1110b, bl. 9r–10v), som han ber om Ibsens syn på. Hegel venter sterk etterspørsel og setter opplaget til 4000 <bibl>(KBK NKS 3742, 4°, II)</bibl>. Ibsen svarer Hegel 31. januar, sammen med en ny porsjon dikt, og ber ham i spørsmålet om vignett henvende seg til vennen Peter Hansen (jf. HIS 12k, 745–46) for å få en idé, og ber om at en dansk kunstner må utføre den. De franske typene er Ibsen begeistret for: <quote>I de store franske typer er jeg aldeles forelsket; jeg har ikke set noget smukkere for en digtsamling; og, hvad der er det vigtigste, de svarer, synes mig, aldeles til karakteren af mine digte. Trykte med disse typer vil digtene blive dobbelt så gode!</quote> Prøvetrykket inneholdt <title rend="quotes">Byggeplaner</title>; Ibsen ber om å unngå linjebrudd i linje 3, 5 og 11 (ved ordene <quote>drag</quote>, <quote>Nord</quote> og <quote>galt</quote>), noe forlaget etterkom. Ibsen ber Hegel sende avskrifter av <title rend="quotes">Abraham Lincolns mord</title>, <title rend="quotes">Til en bortdragende kunstner</title> og <title rend="quotes">Digterens vise</title>; disse manglet i Løkkes avskrift. Han vil bearbeide diktene, og lover alt ferdig i tredje uke av februar. Hegel svarer 7. februar at han har sendt avistrykket av <title rend="quotes">Abraham Lincolns mord</title>, en avskrift av <title rend="quotes">Til en bortdragende kunstner</title> og et eksemplar av <hi rend="italic">Kjærlighedens Komedie</hi>, som inneholder diktet <title rend="quotes">Digterens vise</title>. Hegel har bedt trykkeren om å unngå brutte linjer og vil treffe avtale med Hansen om vignetten. Ibsen sender en ny avdeling manuskript 8. februar, sammen med en foreløpig innholdsfortegnelse, som han ber Hegel vente med å trykke. Han ber også om en avskrift av <title rend="quotes">Ørnulfs drapa</title>, som han ønsker opptatt i samlingen. Han skriver at han har tatt med noen flere dikt fra dramaene <quote>efter nærmere overvejelse</quote>, men i bearbeidet form; han beklager derfor at P. Hansen kan ha trykt noen av <quote>mine smådigte</quote> i <hi rend="italic">Nordiske Digtere i vort Aarhundrede</hi> (1871; om hvilke dikt P. Hansen hadde trykt, se HIS 12k, 746). En feil ber Ibsen om å få rettet av August Larsen: <quote>filler</quote> til <quote>klude</quote> i <title rend="quotes">Kong Håkons gildehal</title>. 16. februar sender Ibsen en ny del av manuskriptet, med to dikt han trodde var tapt (<title rend="quotes">Ved Port Said</title> og <title rend="quotes">Brændte skibe</title>), men som først nå var gjenfunnet, og som derfor ikke står på den avsendte innholdsfortegnelsen. Han skriver at det nå bare mangler to dikt, <title rend="quotes">Hilsen til Svenskerne</title> og <title rend="quotes">Ørnulfs drapa</title>. Dessuten har han ombestemt seg med hensyn til vignetten, han ønsker den ikke lenger. 25. februar sender Ibsen disse to diktene som del av siste porsjon og samlingen teller nå 54 dikt. Korrektur er ikke nødvendig, skriver Ibsen, men ber 1. mars likevel om at de siste to <quote>særligt</quote> kontrolleres. Hegel skriver 1. mars 1871 at han frafaller ønsket om vignett, og at det derfor bare kommer en tegning på bindet. Han vil likevel på August Larsens oppfordring sende Ibsen korrektur av de første arkene. Forlaget har avmerket et ord i <title rend="quotes">Til thingmændene</title> som man er i tvil om. Korrekturen er ikke kjent, men det dreier seg trolig om ordet <quote>hærmod</quote>, som Ibsen kommenterer i følgebrevet til returen av korrekturarkene 5. mars. Han har ikke funnet andre feil enn sin egen (uklart hvilken), og bekrefter videre at ordet <quote>hærmod</quote> er riktig, <quote>i lighed med hærværk, hærmænd, hærfærd o.s.v.</quote> Han ber om at stavemåten <hi rend="italic">ks</hi> for <hi rend="italic">x</hi> beholdes alle steder bortsett fra i ord av latinsk opprinnelse; <quote>Strilen</quote> (i <title rend="quotes">På sangertog</title>) vil han ha skrevet med stor <hi rend="italic">S</hi> og <quote>Schweigård</quote> med <quote>å</quote> (i <title rend="quotes">Til professor Schweigård</title>). Han vil også ha knepet litt inn i mellomrommet mellom bokstavene i sitt eget navn. Neste sending korrekturark returnerer han 7. april; 23. april bemerker han i <quote>det sidst modtagne korrekturark</quote> en gal bindestrek mellom <quote>anings</quote> og <quote>triller</quote> og et kolon mellom <quote>folder</quote> og <quote>dølger</quote>, begge i <title rend="quotes">Rimbrev til fru Heiberg</title>, i henholdsvis annen og niende strofe. Den siste feilen ble ifølge Hegels brevkonsept 1. mai 1871 stående siden arket alt var ferdig trykt og feilen skyldtes trykkmanuskriptet <bibl>(KBK NKS 3742, 4°, II)</bibl> der to flekker kan se ut som et kolon. (Den andre feilen kommenterer Hegel ikke.)</p>
+<p>Ibsen har trolig godtatt forlagets små inngrep i tegnsettingen; for dramaenes del gav Ibsen ofte August Larsen fullmakt til å rette kommateringen. For diktene finnes det ikke noe uttalt om dette, og det er heller ikke her inngrepene finnes, men i bruken av utropstegn, se for eksempel <title rend="quotes">På vidderne</title> der flere av strofene i del I slutter med et utropstegn i trykkmanuskriptet, men med punktum i førstetrykket. En tendens til fordanskning finnes også, jf. ordet <title rend="quotes">Bjerkebusker</title> (<title rend="quotes">På vidderne</title>, del IX) i trykkmanuskriptet som endres til <quote>birkebusker</quote> i førstetrykket, likeledes <quote>dverge</quote> til <quote>dværge</quote> i tredje strofe av <quote>Uden navn</quote>. <title rend="quotes">Terje Vigen</title> og <title rend="quotes">Paa Vidderne</title> har i trykkmanuskriptet Ibsens rettskrivning fra før 1869 (de finnes der på trykksider), mens resten av manuskriptet har rettskrivningen fra etter 1869. Ibsens instrukser ved henvisninger til trykte dikt om hvordan disse skal settes, er fulgt.</p>
+<p>8. april foreslår Hegel, siden det er plass igjen i boken, som nå rommet mer enn ti oktavark, at Ibsen kunne skrive et minnedikt over dronning Lovisa (jf. HIS 12k, 605), men Ibsen svarer 15. april at han ikke er i stand til det; i stedet legger han ved <title rend="quotes">Rimbrev til fru Heiberg</title> (i nesten ferdig renskrift; de manglende to sider ble ettersendt). Det endelige antallet dikt ble 55.</p>
+<p><hi rend="italic">Digte</hi> var ferdig trykt 20. april ifølge Hegels brevkonsept 3. mai <bibl>(KBK NKS 3742, 4°, II)</bibl>, dagen for bokens utgivelse. Noen av eksemplarene skulle få innheftede dedikasjoner til utvalgte mottagere (se Hegels brevkonsept 8. april og 1. mai og Ibsens brev til Hegel 23. og 25. april 1871; jf. HIS 12k, 614). HIS har ikke sett slike eksemplarer. Hegel uttrykker sjelden begeistring over Ibsens bøker i sine brev; ett unntak er uttalelsen om <title rend="quotes">Terje Vigen</title> i brevkonseptet av 1. mai: <quote>et af de skjønneste Digte vor Literatur ejer</quote> <bibl>(KBK NKS 3742, 4°, II)</bibl>. Den 9. mai 1871 skriver Ibsen begeistret til Hegel om utstyret i boken, som han nettopp har mottatt, og fremholder at hans moderne ortografi tjener på de nye typene: <quote>Et stort fortrin ved de benyttede typer er deres ganske overordentlige tydelighed; med disse typer vil min ortografi umuligt genere nogen</quote>.</p>
+</div>
+  
+<div xml:id="edState_editions">
+<head rend="level2">SENERE UTGAVER I IBSENS LEVETID</head>
+    
+<p rend="noIndent">15. oktober 1874 meddelte Hegel Ibsen at et nytt opplag av <hi rend="italic">Digte</hi> ville bli nødvendig. Ibsen svarer 22. oktober at han da ville inkludere <quote>Norges tusendårs-fest samt et par nye hidtil utrykte digte. Om bogen således blev 1½–2 ark større, kunde vel ikke skade?</quote> Hegel skriver 29. oktober at han er innforstått med det <bibl>(KBK NKS 3742, 4°, II)</bibl>. Til Susanna skriver Ibsen 13. november 1874 at han gjerne skulle ha skrevet noen nye dikt til annenutgaven, men at <quote>husets anliggender</quote> oppholder ham.</p>
+<p>Listen NBO Ms. 8° 1928 med overskriften <quote>Nye digte</quote> inneholder følgende titler: <quote>Ved tusendårsfesten. / Ved statsråd Riddervolds afgang. / Munken på Epoméo. / Familjen Carioli. / Tre rejsebilleder. / Danebrog i Tyrol. / Nordens signaler.</quote> Det kan være disse Ibsen sikter til i brevet til Susanna, men bare <title rend="quotes">Ved tusendårsfesten</title> kom med i annenutgaven, og av de øvrige er bare <title rend="quotes">Nordens signaler</title> bevart som ferdig dikt. Til Hegel sender Ibsen 2. desember et brev om at de nye diktene ikke er gjennomarbeidet ennå. 17. juni 1875 skriver Ibsen at Hegel godt kan starte trykningen. De nye diktene kan plasseres sist i boken, og de <quote>vil komme til at indskrænke sig til digtet ved Norges tusendårsfest, sangen ved studentermødet samt tre digte, bestemte for tidsskriftet ‹Det nittende århundrede›, hvoraf det ene allerede er sendt til Brandes. Med indholdslisten kan der jo ventes indtil det øvrige er færdigt.</quote> Ibsen sendte bare to dikt til tidsskriftet: <title rend="quotes">Langt borte</title> og <title rend="quotes">Et Rimbrev</title> (jf. HIS 13k, 391–92), ev. også <title rend="quotes">Nordens Signaler</title>, som også befant seg blant Brandes’ papirer, jf. <hi rend="italic">Tekstgrunnlag og øvrige tekstkilder</hi>. Den 22. august gjentar Ibsen overfor Hegel at trykningen kan begynne, og at tilleggene kan plasseres sist i boken. Hegel svarer 26. august at han gjerne vil motta de nye diktene innen tre uker, og at det snart skal bli tatt fatt på trykningen. 23. oktober meddeler Ibsen Hegel ønsket om at det på tittelbladet skal stå <quote>Andet forøgede oplag</quote>. Han nevner et tidligere avsendt brev om diktsamlingen. Det forrige, kjente brev til Hegel i denne saken er imidlertid fra 22. august. Det kan være dette han refererer til, eventuelt er et brev som inneholdt tilleggene gått tapt. 25. oktober skriver Hegel at boktrykkeren er overlesset med arbeid, og at det derfor går smått med trykningen, men halvparten av diktene er likevel satt. Siden Hegel her ikke lenger etterspør tilleggene, er det sannsynlig at Ibsen har sendt dem tidligere, i september eller oktober. Hegel hadde 1. juli 1875 skrevet at det ikke hastet med den nye utgaven fordi han hadde fått en del eksemplarer av første utgave i retur fra (særlig) svenske bokhandlere. 29. november skriver Hegel at diktsamlingen <quote>endelig</quote> er ferdig, og 13. desember 1875 utkom boken med den av Ibsen foreslåtte undertittel og med følgende nye dikt: <title rend="quotes">Ved Tusendårs-festen den 18<hi rend="raised">de</hi> Juli 1872</title>, <title rend="quotes">Sanger-hilsen til Sverig</title>, <title rend="quotes">Langt borte</title> og <title rend="quotes">Et Rimbrev</title>. 14. desember skriver Hegel at det ved trykkeriets forseelse var kommet inn en feil (uklart hvilken), og at den hadde forårsaket omtrykning av ett blad. I annen utgave ble noen få, mindre feil rettet, men nye kom til, for eksempel <quote>bæter</quote> for <quote>bærer</quote> i femte strofe av <quote>Højfjeldsliv</quote> (s. 27), <quote>sorgeskrud</quote> for <quote>sørgeskrud</quote> i første strofe av <quote>Folkesorg</quote> (den siste feilen ble stående i 2.–8. utg.). Også noen flere fordanskninger kom til i denne runden, for eksempel <quote>bære vi</quote> for <quote>bærer vi</quote> i del VIII av <title rend="quotes">På vidderne</title>. Tekstsammenfall viser at førsteutgaven og ikke trykkmanuskriptet ligger til grunn for annenutgaven.</p>
+<p>Ibsen svarte Hegel 18. februar 1879 på dennes henvendelse om behovet for en tredje utgave av <hi rend="italic">Digte</hi>: <quote>i digtenes andet oplag forekom adskillige trykfejl, hvorom det foresvæver mig at jeg i sin tid tilskrev herr bogholder Larsen; desværre har jeg ikke her noget exemplar af bogen ved hånden; men ved korrekturen vil vel de omskrevne småfejl nok blive opdagede og rettede.</quote> NBO Ms. 4° 1113h, en liste over trykkfeil i <hi rend="italic">Digte</hi> (1875), kan være en kladd til noe Ibsen har sendt eller hadde tenkt å sende til Larsen i denne anledning. 10. mars 1879 skriver Ibsen til Hegel og takker for mottagelsen av et eksemplar av annen utgave, som han vil returnere i rettet stand; vi kjenner ikke dette eksemplaret. Feilene som er notert i listen, er kommet inn både i første og annen utgave og ble alle sammen rettet i tredje utgave. 12. april omtaler Ibsen i brev til Hegel feilene i annen utgave som <quote>ganske enkelte og derhos uvæsentlige trykfejl</quote>, som han vil skrive til Larsen om. I tredje utgave er noen av (de andre) feilene fra annen utgave videreført, men feil er også rettet, dels i tråd med NBO Ms. 4° 1113h (f.eks. <quote>folder:dølger</quote> til <quote>folder dølger</quote> i <title rend="quotes">Rimbrev til fru Heiberg</title>). Nye feil er for eksempel <quote>bønlig</quote> for <quote>lønlig</quote> i <title rend="quotes">Ved Tusendårs-festen den 18<hi rend="raised">de</hi> Juli 1872</title>. I <title rend="quotes">Ballonbrev til en svensk dame</title> (s. 160) er <quote>jeg mindet spænder</quote> blitt til <quote>sig mindet spænder</quote> (en feil som blir stående i 3.–8. utg.).</p>
+<p>Fjerde utgave (1882) skiller seg lite fra tredje, med unntak av et par nye, mindre feil, så som <quote>for</quote> i stedet for <quote>fra</quote> i fjerde strofe av <title rend="quotes">Åbent brev</title>. Mellom fjerde og femte utgave er det noen få, mindre rettelser, og enkelte nye feil er kommet til, for eksempel er <quote>ædles</quote> blitt til <quote>ældes</quote> i <title rend="quotes">Ørnulfs drapa</title> (blir stående i 5.–8. utg.); <quote>hvert eneste steg</quote> i første strofe av <title rend="quotes">Abraham Lincolns mord</title> er i femte (og sjette) utgave blitt til <quote>hver eneste steg</quote>.</p>
+<p>Ytterligere ett dikt kom med i femte utgave (1886), <title rend="quotes">Et vers</title> (vedlagt brev til Hegel 28. august 1886, der Ibsen ber om å få det plassert sist i boken). I sjette utgave (1891) fortsettes tendensen til fordanskning i korrekturen, således er <quote>uglen bygger sig rede</quote> fra de tidligere utgavene blitt til <quote>uglen bygger sin rede</quote>. Av feil kan nevnes ordet <quote>Solguld</quote> (i første strofe av <title rend="quotes">Højfjeldsliv</title>) som er blitt til <title rend="quotes">Solgud</title> (blir stående i 6.–8. utg.), og at <quote>mod</quote> er blitt til <quote>og</quote> i tiende strofe av <title rend="quotes">Ved Tusendårs-festen</title>. Til syvende utgave 1896 har Ibsen ingen rettelser (jf. brev til Hegel 12. februar 1896).</p>
+<p>I FU ble det tatt inn fire nye dikt: <title rend="quotes">Til Frederik Hegel</title> (plassert før <title rend="quotes">Ballonbrev til en svensk dame</title>), <title rend="quotes">Ved et bryllup</title> (plassert før <title rend="quotes">I en komponists stambog</title>), <title rend="quotes">Stjerner i lyståge</title> og <title rend="quotes">De sad der, de to –</title>, begge plassert sist, jf. Ibsens brev til August Larsen 8. januar 1899 hvor han ber om denne plasseringen. Ibsen forklarer i samme brev at det første hadde vært publisert i Ernst Bojesens illustrerte julehefte <hi rend="italic">Juleroser</hi>. Diktet utkom imidlertid ikke der, men i første nummer av tidsskriftet <hi rend="italic">Norden</hi>, 13. oktober 1886, med illustrasjon av Carl Larsson. Ibsens erindringsforskyvning skyldes trolig at begge tidsskriftene var utgitt av samme forlegger, og at <hi rend="italic">Juleroser</hi> i 1885-nummeret ble erklært som forløper for det nye månedsskriftet <hi rend="italic">Norden. Illustreret skandinavisk Revu</hi> (jf. HIS 14k, 15, 446). Om <title rend="quotes">De sad der, de to –</title> sier Ibsen i brevet til Larsen at det <quote>oprindelig blev skrevet som et slags introduktion til ‹Bygmester Solness›</quote>. <bibl>(Det finnes imidlertid i NBO Ms. 4° 1117b, arbeidsmanuskript til <hi rend="italic">Lille Eyolf</hi>, som en av Allmers’ replikker.)</bibl></p>
+<p>Åttende utgave (1901) har samme sats som diktene i FU 4, med unntak av tittelblader, paginering og arksignaturer (utgaven er omtalt som <quote>Særtryk</quote> i Gyldendals <hi rend="italic">Forlagskladde</hi> 1850–1903). Det forekommer eksemplarer av åttende utgave med årstallet 1902 på omslaget, men med det riktige, 1901, på tittelsiden. (Storm har bemerket enkelte av de omtalte feilene i trykkhistorien til <hi rend="italic">Digte</hi>, jf. MU 5, 12–13.)</p>
+<p>I tillegg til HIS’ hovedtekst finnes en diplomatarisk og søkbar gjengivelse samt en fotografisk faksimile av grunnteksten i HISe. Her gjengis også de øvrige tekstkildene diplomatarisk, manuskriptene også med faksimile, med mulighet for søk og sammenligning med grunnteksten. Her finnes også en metrisk analyse av teksten. HIS har i margen sidereferanser til grunnteksten og til HU.</p>
+</div>
+</div>
+</div>
+</body>
+</text>
+</TEI>

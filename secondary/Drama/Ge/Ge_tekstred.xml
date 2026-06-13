@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+  <teiHeader>
+   <fileDesc>
+     <titleStmt>
+      <title level="s">Henrik Ibsens skrifter, elektronisk versjon</title>
+      <title level="a">Tekstkritisk redegjørelse til Gengangere</title>
+       <author>ved Henninge Margrethe Solberg</author>
+      <funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+      <editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
+      <respStmt>
+<resp>Innlemming i elektronisk utgave</resp>
+<name>EDD: Eining for digital dokumentasjon</name></respStmt>
+<respStmt><resp>Kodeteknisk støtte og utvikling</resp>
+<name>AKSIS: Avdeling for kultur, språk og informasjonsteknologi, Universitetsforskning i Bergen (Unifob AS)</name></respStmt>
+<respStmt><resp>HISe-koding</resp>
+<name xml:id="SBT">Stine Brenna Taugbøl</name></respStmt>
+<respStmt><resp>Koding</resp>
+<name xml:id="AMB">Aasta Marie Bjorvand Bjørkøy</name>
+<name xml:id="MA">Maria Alnæs</name>
+<name>Nina Marie Evensen</name></respStmt>
+<respStmt><resp>Tekstarbeid</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Maria Alnæs</name>
+<name>Nina Marie Evensen</name></respStmt>
+<respStmt><resp>Kontroll av sitater og ordbøker</resp>
+<name xml:id="IK">Ingrid Korvald</name>
+<name xml:id="GB">Gry Berg</name></respStmt>
+<respStmt><resp>Kontroll av littlist og referanser</resp>
+<name xml:id="HS">Hege Stensrud</name>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Maria Alnæs</name></respStmt>
+<respStmt><resp>Kommentar-, intern- og ht-entiteter</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name></respStmt>
+<respStmt><resp>Kodekontroll</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+</respStmt>
+   </titleStmt>
+    <publicationStmt>
+      <publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+      <distributor xml:id="HISe">Universitetet i Oslo</distributor>
+      <date when="2010" xml:id="HISe-date"/>
+      <pubPlace>Oslo</pubPlace>
+   </publicationStmt>
+     <sourceDesc>
+      <p>Dette dokumentet har ingen kilde.</p>
+   </sourceDesc>
+  </fileDesc>
+   <encodingDesc>
+     <tagsDecl>
+       
+    </tagsDecl>
+  </encodingDesc>
+   <profileDesc>
+     <langUsage>
+      <language ident="nob"/>
+      </langUsage>
+  </profileDesc>
+   <revisionDesc>
+     <change>
+       <date>19.08.2011</date>
+       <name>SBT</name><title>Tilpasning</title>
+       La inn level-attributt i title. Erstattet entiteter for æ/ø/å med bokstaver.
+     </change>
+     <change>
+       <date>11.08.2011</date>
+       <name>SBT</name><title>Validering</title>
+       Endret sti til skjema i dokumenttopp.
+     </change>
+     <change>
+       <date>03.07.2011</date>
+       <name>SBT</name><title>P5</title>
+       Kodet om til valid P5.
+     </change>
+     <change>
+       <date>27.06.2011</date>
+       <name>SBT</name><title>Lenkekoding</title>
+       La inn eksterne lenker til andre filer. HVA GJØR VI MED FAKSIMILESIDEN (SE UTKOMMENTERT TEKST)???
+     </change>
+     <change>
+       <date>07.06.2011</date>
+       <name>SBT</name><title>Lenkekoding</title>
+       La inn id-verdier i div-er og interne lenker i dokumentet. GJENSTÅR: eksterne lenker til andre filer.
+     </change>
+     <change>
+       <date>05.01.2011</date>
+       <name>SBT</name><title>Listekoding</title>
+       Oppdaterte listekoding.
+     </change>
+     <change>
+       <date>24.11.2010</date>
+       <name>SBT</name><title>Validering</title>
+       Fjernet ref til files og figures i dokumenttoppen. Fila er valid.
+     </change>
+     <change>
+      <date>13.09.2010</date>
+      <name>SBT</name><title>Forfatter</title>
+      La inn dokumentforfatter etter overskriften.
+    </change>
+    <change>
+      <date>03.09.2010</date>
+      <name>SBT</name><title>Overskrifter, listekoding</title>
+      La inn igjen bokutgavens typografi i overskriftene. Forenklet listekodingen.
+    </change>
+    <change>
+      <date>05.05.2010</date>
+      <name>SBT</name><title>Opprettet xml-fil</title>
+      Endret teiHeader. Overskrifter (3 nivåer): foreløpig kodet med level2 (øverste nivå), level3 og level4 i rend-attr; endret tekst til majuskler og minuskler. NB: Dersom level4-overskrifter ikke lenger skal være inline må punktum fjernes. Vurder om lavere div-nivåer bør ha type-attributter. Ryddet i fila: fjernet blanklinjer og overflødig blanke. Listekoding: fjernet rend-attr (4pt).
+    </change>
+    </revisionDesc>
+ </teiHeader>
+ 
+<text type="introduction">
+<body>
+<div type="editorialStatement" xml:id="edState">
+<div xml:id="edState_basetext">
+<head rend="level3">valg av grunntekst</head>
+<p rend="noIndent">Grunnteksten, grunnlaget for HIS’ hovedtekst, er førstetrykket fra 1881.</p>
+</div>
+              
+<div xml:id="edState_bibl">
+<head rend="level3">bibliografiske opplysninger</head>
+<p rend="noIndent">Ved tekstetableringen er det kollasjonert følgende eksemplarer:</p>
+<list type="numbered">
+<item n="1"><hi rend="italic">Henrik Ibsen skrifter</hi>s eksemplar, ekspl. 1</item>
+<item n="2"><hi rend="italic">Henrik Ibsen skrifter</hi>s eksemplar, ekspl. 2</item>
+<item n="3"><hi rend="italic">Henrik Ibsen skrifter</hi>s eksemplar, ekspl. 3</item>
+</list>
+
+<p rend="noIndent">Det er avdekket satsintern variasjon (endringer foretatt under trykkeprosessen i samme opplag) i teksten i de tre eksemplarene. Ytterligere fem eksemplarer er derfor delkollasjonert (arkene 4, 9 og 11):</p>
+
+<list type="numbered">
+<item n="4">Nasjonalbibliotekets eksemplar (80ga25610)</item>
+<item n="5">Nasjonalbibliotekets eksemplar (80ga25611)</item>
+<item n="6">Nasjonalbibliotekets eksemplar (80ga25612)</item>
+<item n="7">Nasjonalbibliotekets eksemplar (74ga05824)</item>
+<item n="8">Nasjonalbibliotekets eksemplar (00ga19643)</item>
+</list>
+
+<p rend="noIndent">Variasjonen mellom eksemplarene finnes på fem steder: I ark 4, s. 58 l. 25 mangler venstre parentesbue i sceneanvisningen i ekspl. 2, 3, 7 og 8; i ark 9, s. 133 l. 25 mangler <quote>Å</quote> ring i ekspl. 3, 4, 5, 6, 7 og 8; i ark 9, s. 134 l. 11 mangler <quote>Å</quote> ring i ekspl. 1, 4 og 7; i ark 11, s. 163 l. 29 har ekspl. 1, 3, 4, 6 og 8 utropstegn etter <quote>dette</quote>, mens ekspl. 2, 5 og 7 har spørsmålstegn; i ark 11, s. 164 l. 13 mangler komma etter <quote>håret</quote> i ekspl. 2, 5 og 7.</p>
+<p>Med unntak av det første tilfellet, som omfattes av HIS’ standardisering ved sceneanvisninger (jf. <HIS:hisRef target="edState_critical"><hi rend="italic">Tekstkritiske bemerkninger</hi></HIS:hisRef>), opplyses det om internvariasjonen i ekspl. 1–3 i de tekstkritiske notene.</p>
+<p>Nr. 1, det mest feilfrie, er brukt som hovedeksemplar og er grunnlag for beskrivelsen i det følgende.</p>
+              
+<div xml:id="edState_bibl_binding">
+<head rend="level4">innbinding, forsatsblad og omslag.</head>
+<p>Boken er beskåret og bundet inn uten originalt omslagsblad. Innbindingen er håndverksmessig utført i halvbind med rygg og hjørner i brunt skinn. Permen er overtrukket med sort shirting. Ryggen er dekorert med horisontale rette og ornamenterte streker i gullpreg. På ryggens øvre halvdel står teksten <quote>Ibsen. / Gengangere.</quote> Forsatsbladene er i gråbrunt, tynt papir.</p>
+</div>
+              
+<div xml:id="edState_bibl_format">
+<head rend="level4">format og paginering.</head>
+<p>Boken består av 11 ark falset i oktavformat (8 blad, 16 sider pr. ark), ca. 110 × 172 mm.<note type="footer">Målene gjelder boksiden, bredde × høyde.</note> Arksignaturene 2–11 (med teksten <quote>Henrik Ibsen: Gengangere.</quote>) finnes på s. 17, 33, 49, 65, 81, 97, 113, [129], 145 og 161. Det siste arket har to blad, og bokens omfang er 164 sider. Pagineringen er med arabiske tall. Den inkluderer smusstittelbladet s. [1], blank s. [2], tittelbladet s. [3], blank s. [4], rollelisten s. [5], blank s. [6], begynnelsen på første akt s. [7] og løper fra s. 8 til 164. På sidene [70] og [129] begynner nye akter, og sidetall er her utelatt.</p>
+</div>
+              
+<div xml:id="edState_bibl_typo">
+<head rend="level4">typografi.</head>
+  <p>Teksten i <title rend="italic">Gengangere</title> (1881) er satt i antikva. <!-- En faksimile av tittelsiden gjengis på s.  <HIS:hisRef targType="figure" target="illus-22">.-->Tittelen er satt med midtstilte majuskler. Rollelisten er venstrestilt og i en mindre skriftgrad enn replikkene. Overskriften <quote>Personerne</quote> er sentrert og i majuskler; rollenavnene er sperret. Aktoverskrifter er satt med midtstilte majuskler, i samme grad som replikkene. Rollenavn før replikk og/eller sceneanvisning står sperret og midtstilt på egen linje. Sceneanvisningene er satt i en mindre skriftgrad enn replikkene og står i parentes. Rollenavn i sceneanvisninger står i samme grad som disse, men er sperret. Etter tittelen på smusstittelsiden, etter stedsbeskrivelsen og etter aktoverskrifter står enkle skillestreker av varierende lengde. Ved aktslutt står en dobbel finalstrek. Sidetall er plassert i overmarg med en kort strek under.</p>
+                
+<p>Trykkvaliteten er jevnt god. Det er et lite antall typografiske mangler og inkonsekvenser, som er rettet stilltiende i HIS’ hovedtekst.</p>
+</div>
+              
+<div xml:id="edState_bibl_paper">
+<head rend="level4">papir og tilstand.</head>
+<p>Bindet er slitt, spesielt gjelder dette ryggen og hjørnene. Papiret er gulnet og har en del gulbrune flekker, på noen blad svært mange. For øvrig er eksemplaret i god stand.</p>
+</div>
+</div>
+              
+<div xml:id="edState_textsources">
+<head rend="level3">øvrige tekstkilder</head>
+<p rend="noIndent">De øvrige tekstkildene fra Ibsens levetid består av manuskripter og trykte utgaver. Manuskriptene er alle egenhendige og omfatter notatene NBO Ms. 8° 1452, NBO Ms. 8° 1219:2 (med unntak av andre avsnitt s. 2, jf. nedenfor) og NBO Ms. 8° 1946, arbeidsmanuskriptet NBO Ms. 4° 1114, replikkutkast på baksiden av et brev fra Sigurd Ibsen til Henrik Ibsen 19. oktober [1881] (NBO Brevs. 200), tittelbladet NBO Ms.fol. 3212 og trykkmanuskriptet NBO Ms. 8° 953. (For nærmere beskrivelser, se <HIS:hisRef target="Ge_msbeskr.xml"><hi rend="italic">Manuskriptbeskrivelse</hi></HIS:hisRef>.) De trykte utgavene i Ibsens levetid omfatter 1. utg. 1881, 2. utg. 1894, FU 6 1899 og 3. utg. 1903. Det kom ulovlige, uautoriserte ettertrykk av <title rend="italic">Gengangere</title> i USA i Ibsens levetid; HIS kjenner til to utgaver ved Rasmussens boghandel, den første fra 1888 i serien Skandinavisk national-bibliothek, b. 1, 1. hefte (Chicago), den andre fra 1888 (Minneapolis). Ulovlige ettertrykksutgaver er det ikke tatt hensyn til under tekstetableringen.</p>
+<p>Vi kan anta at notatene NBO Ms. 8° 1452, NBO Ms. 8° 1219 og NBO Ms. 8° 1946 enten delvis eller i sin helhet er forarbeider til <title rend="italic">Gengangere</title>. I sitt brev til Hegel <HIS:hisRef target="B1880-1889ht.xml#B18810618FH">18. juni 1881</HIS:hisRef> skriver Ibsen at stoffet til <title rend="italic">Gengangere</title>, som han tok fatt på i begynnelsen av måneden, lenge hadde beskjeftiget hans tanker; tankene kan ha nedfelt seg i notater som disse. NBO Ms. 8° 1452 og 1219 inneholder forskjellige korte notater som ifølge ES (3, [461]) ikke fantes <quote>vedlagt manuskriptet til skuespillet, men løst blandt andre af Ibsens papirer og uden betegnelse af hvor de hørte hen</quote>. Ms. 8° 1452 beskriver grunnstemningen i noe vi ut fra formuleringen <quote>Grundstemningen skal være</quote> kan anta at er et fremtidig verk. Det kan ikke endelig fastslås at dette verket er <title rend="italic">Gengangere</title>, til det er innholdet for generelt. Når HIS likevel velger å betrakte dette manuskriptet som del av <title rend="italic">Gengangere</title>-materialet, skyldes det at beskrivelsen av grunnstemningen (<quote>Det stærke opblomstrende åndelige liv hos os</quote>, <quote>hele menneskeheden på afveje</quote>) kan minne om rammene for nettopp dette stykket. Vi kan ikke endelig tidfeste notatet, men vet at det tidligst kan være fra 11. november 1880 (jf. <HIS:hisRef target="Ge_msbeskr.xml"><hi rend="italic">Manuskriptbeskrivelse</hi></HIS:hisRef>), så det er ikke usannsynlig at det er skrevet i løpet av tiden da Ibsen arbeidet med <title rend="italic">Gengangere</title> (jf. <HIS:hisRef target="Ge_innl.xml#intro_creation"><hi rend="italic">Tilblivelse</hi></HIS:hisRef>).</p>
+<p>I Ms. 8° 1219 er det samlet en rekke opptegnelser der bare noen med relativt stor sikkerhet kan knyttes til <title rend="italic">Gengangere</title>. Ms. 8° 1219:1 og Ms. 8° 1219:3 anser ikke HIS som del av <title rend="italic">Gengangere</title>-materialet. Disse tekstene inngår i utgavens sakprosa- og variaavdeling. Innholdet i Ms. 8° 1219:1, en betraktning over naturlover og over forholdet mellom håndverk og diktning, er for generelt til å kunne sees i sammenheng med et bestemt verk. Nummereringen over teksten (<quote>1.</quote>) og innholdet peker i retning av et utkast til en tale. Heller ikke ES og HU anser denne teksten som del av <title rend="italic">Gengangere</title>-materialet, de gjengir den i henholdsvis ES (1, 303–04, under <quote>Prosastykker</quote>) og HU (15, 364, under <quote>Artikler</quote>), med redegjørelser i ES (3, 364) og HU (15, 467). Notatene Ms. 8° 1219:3 består av tre avsnitt som ser ut til å ha vært skrevet samtidig. To av dem inneholder tankegods som <hi rend="italic">kan</hi> sees i sammenheng med <title rend="italic">Gengangere</title>, dette gjelder spesielt uttrykket <quote>monumenter over de <hi rend="italic">døde</hi></quote> og omtalen av de spedalske og deres avkom. Videre minner formuleringen <quote>Fejlen stikker i at hele menneskeheden er mislykket</quote> om formuleringen <quote>hele menneskeheden på afveje</quote> i Ms. 8° 1452, som med noe større sikkerhet kan knyttes til <title rend="italic">Gengangere</title>. Imidlertid er ett av avsnittene på denne siden vanskelig å knytte til noe bestemt verk (<quote>Det fuldfærdige menneske er ikke et naturprodukt længer, det er et kunstprodukt således som kornet er det, og frugttræerne, og kreolerracen og de ædle heste og hunderacer, vinstokke o. s. v. –</quote>). Innholdet i dette avsnittet minner om Ms. 8° 1219:1, idet Ibsen også her omtaler forholdet mellom natur og det kunstige/kunsten. Fordi disse tre avsnittene ser ut til å være skrevet samtidig, og to av dem i beste fall har en usikker tilknytning til <title rend="italic">Gengangere</title>, har HIS valgt å plassere dem samlet i utgavens sakprosa- og variaavdeling. Dette er ikke i tråd med ES’ og HUs forståelse av notatene; de trykker dem blant materialet til <title rend="italic">Gengangere</title> i henholdsvis ES (3, 6) og HU (9, 137).</p>
+  <p>Ms. 8° 1219:2 består av syv avsnitt fordelt på tre sider. Flere av avsnittene kan med relativt stor sikkerhet betraktes som forarbeider til <title rend="italic">Gengangere</title>, dette gjelder de fire avsnittene s. 1 og første avsnitt s. 2. Avsnittene på s. 1 ser ut til å være skrevet noenlunde samtidig, og alle inneholder formuleringer eller forhold som gjør det nærliggende å knytte dem til <title rend="italic">Gengangere</title>. I første avsnitt s. 1 er det blant annet tale om <quote>Asylet</quote>, og i dette og neste avsnitt forekommer setningen <quote>alt er gengangere</quote>. I tredje avsnitt er det tale om følgene av foreldrenes handlinger for <quote>afkommet</quote>. I det siste avsnittet på siden omtales <quote>Hun, det uægte barn</quote> og <quote>sønnen</quote>, som sannsynligvis viser til Regine og Osvald. Også første avsnitt i Ms. 8° 1219:2, s. 2 kan sees i sammenheng med <title rend="italic">Gengangere</title>. Her gjøres det kort rede for et forhold mellom <quote>han</quote> og <quote>hun</quote>, et forhold som etter all sannsynlighet er ment å skissere forhistorien til herr og fru Alving. Det er også snakk om <quote>en pige</quote>, <quote>en søn</quote> og <quote>en datter</quote>, og dette kan peke fram mot Johanne, Osvald og Regine. Andre avsnitt på denne siden har HIS valgt å innlemme i utgavens sakprosa- og variaavdeling siden teksten er for generell til at den kan knyttes til <title rend="italic">Gengangere</title> – Ibsen omtaler her forholdet mellom <quote>det uorganiske</quote> og <quote>det organiske</quote>, mellom død og levende natur, og kommenterer deretter sin egen måte å arbeide på (<quote>Først vil jeg altid af et opdukkende stof gøre en skitze men det blir til et drama</quote>). Dette er i tråd med ES og HU; de trykker avsnittet sammen med Ms. 8° 1219:1 i ES (1, 304) og HU (15, 364). Avsnittet på s. 3 i Ms. 8° 1219:2 betrakter HIS under tvil som tilhørende materialet til <title rend="italic">Gengangere</title>. Det dreier seg om <quote>nutidens kvinder</quote>, og innholdet er såpass generelt at det kan peke mot flere av Ibsens stykker: <quote>ikke opdragne efter deres begavelse, holdt borte fra deres kald, frataget deres arv […] Hvad blir følgen?</quote> Imidlertid ligner innholdet noe Ibsen skal ha sagt til William Archer 2. januar 1882 om hva han ønsket å vise gjennom fru Alving (ES 3, 462), hvilket gjør det nærliggende å knytte teksten til <title rend="italic">Gengangere</title>: <quote>Then he went on to say that his idea had been to show, in Fru Alving, how a badly educated, badly trained woman was certain to be driven, by men of Pastor Manders’ way of thought and feeling, into opposite extremes</quote> <bibl>(Archer 1906, 7)</bibl>. Jf. også brev til Sophus Schandorph <HIS:hisRef target="B1880-1889ht.xml#B18820106SS">6. januar 1882</HIS:hisRef>.</p>
+<p>Ms. 8° 1946 er et notat med overskriften <quote>Optegnelser</quote>. Notatet slutter med <quote>Her begynder stykket</quote>. I første avsnitt skisseres bakgrunnen for dette stykkets handling. Selv om en del detaljer ikke stemmer overens med forholdene i <title rend="italic">Gengangere</title>, er hovedtrekkene de samme: Det dreier seg om et ekteskap mellom <quote>han</quote> og <quote>hun</quote>, <quote>han</quote> får en høy stilling i samfunnet, de får en sønn som de sender vekk, <quote>han</quote> dør, det stiftes et legat av arven etter ham, og stykket planlegges å begynne når et monument over ham skal innvies. Det er derfor sannsynlig at dette manuskriptet er et forarbeid til <title rend="italic">Gengangere</title>.</p>
+<p>Arbeidsmanuskriptet NBO Ms. 4° 1114 er en fullstendig gjennomskrivning av stykket, og er gjennomarbeidet med mange rettelser og tillegg. Teksten ligger nær den endelige utgaven av stykket (se nedenfor). Det er med andre ord overveiende sannsynlig at dette ikke er første fullstendige gjennomarbeidelse av stykket, og at det har eksistert en tidligere versjon som nå er tapt. At Ibsen bruker forkortede rollenavn i så å si hele manuskriptet, og at han ikke vakler mellom forskjellige navn for samme person, tyder også på at han har arbeidet med dette i en tidligere form. (Om dette, se også <HIS:hisRef target="Ge_msbeskr.xml"><hi rend="italic">Manuskriptbeskrivelse</hi></HIS:hisRef>.)</p>
+<p>Avvikene mellom arbeidsmanuskriptet og trykkmanuskriptet er forholdsvis små, men mange. Gangen i stykket er stort sett lik i de to manuskriptene, men det er mange avvik i tegnsetting, ordvalg og formuleringer. I arbeidsmanuskriptet har Ibsen som nevnt for det meste benyttet forkortede rollenavn. Videre mangler arbeidsmanuskriptet personliste og den innledende sceneanvisningen i første akt, og enkelte steder er hele replikker lagt til eller fjernet i trykkmanuskriptet. Tre steder har Ibsen endret eller lagt til lengre passasjer ved hjelp av innføyde blad. Felles for tekstene på disse bladene er at de alle ligger relativt nær den tilsvarende passasjen i trykkmanuskriptet, men med enkelte forskjeller i detaljene.</p>
+<p>I NBO Brevs. 200 er det bevart replikkutkast som Ibsen må ha skrevet ned i løpet av arbeidet med å renskrive stykket (se <HIS:hisRef target="Ge_msbeskr.xml"><hi rend="italic">Manuskriptbeskrivelse</hi></HIS:hisRef>). Disse befinner seg på baksiden av et brev fra Sigurd Ibsen til Henrik Ibsen 19. oktober [1881]. Alle replikkene hører til i andre akt i den endelige utgaven av stykket. Den øverste og de fire nederste replikkene på siden er utkast til samme replikkveksling. I de fire nederste replikkene har teksten fått sin endelige utforming – med unntak av de forkortede rollenavnene samt en kort sceneanvisning og en retorisk utheving som er kommet til i trykkmanuskriptet. Mellom den øverste og de fire nederste replikkene står et utkast til en replikkveksling som også er å finne i trykkmanuskriptet, dog i noe omarbeidet form; blant annet er Engstrands første replikk noe bygget ut.</p>
+  <p>Tittelbladet NBO Ms.fol. 3212 synes ikke å høre hjemme i noe kjent manuskript. Ms. 4° 1114 mangler tittelblad, men Ms.fol. 3212 tilhører sannsynligvis ikke dette manuskriptet (om dette, se <HIS:hisRef target="Ge_msbeskr.xml"><hi rend="italic">Manuskriptbeskrivelse</hi></HIS:hisRef>). Det <hi rend="italic">kan</hi> ha vært sendt et teater, slik vi vet at det var tilfellet med <title rend="italic">Samfundets støtter</title> i 1877, jf. Hegels brevkonsept 28. juni 1877, som var et svar på Ibsens brev 24. juni 1877: <quote>Mon det skulde være nødvendigt, at De tager Afskrift til Theateret i Stockholm? Naar Stykket trykkes og udsendes med et haandskrevet Titelblad og det derhos bemærkes, at det ikke vil komme i Boghandelen før efter 15 Novbr., burde det indsendte Ex. dog fuldstændig kunne gjelde som Manuskript</quote> <bibl>(KBK NKS 3742, 4°, II)</bibl>. I et brev til Kongl. Dramatiska Theatern i Stockholm <HIS:hisRef target="B1880-1889ht.xml#B18811017KoTh">17. oktober 1881</HIS:hisRef> skriver Ibsen: <quote>Et trykt exemplar vil imidlertid i løbet af November måned, og forinden skuespillet kommer i boghandelen, blive den kgl: direktion tilstillet gennem min forlægger i København</quote>. Tittelbladet kan ha vært brukt, eller tenkt brukt, på samme måte som for <title rend="italic">Samfundets støtter</title>, det vil si for å få det trykte eksemplaret til å gjelde som manuskript og dermed sikre forfatteren honorar ved teateroppførelser (publiserte dramaer var ikke beskyttet på samme måte, jf. HIS 13k, 407 og 519)<note resp="SBT">Legg inn lenker til brev-kommentarmateriale! (Komm. til B18751101EaE og til B18770904FH og/eller B19770907EF - vil disse være tilgjengelige i sept.?)</note>.</p>
+<p>Trykkmanuskriptet NBO Ms. 8° 953 og førstetrykket er i stor grad sammenfallende. Over halvparten av variasjonen mellom de to tekstkildene skyldes forskjell i kommasetting – det er adskillig flere kommaer i førstetrykket enn i trykkmanuskriptet. Av andre forskjeller kan skrivefeilene i trykkmanuskriptet nevnes, disse er rettet i førsteutgaven. For eksempel er <quote>Mit på lyse dagen</quote> rettet til <quote>Midt på lyse dagen</quote> (1. utg., 8), <quote>arvorligt</quote> til <quote>alvorligt</quote> (1. utg., 147) og en forekomst av galt rollenavn er rettet fra trykkmanuskriptets <quote>Osvald</quote> til <quote>fru Alving</quote> (1. utg., 147). Til gjengjeld er noen nye feil kommet til (jf. <HIS:hisRef target="edState_critical"><hi rend="italic">Tekstkritiske bemerkninger</hi></HIS:hisRef>). Ibsens få rettelser i trykkmanuskriptet er tatt til følge i grunnteksten.</p>
+  <p>Forskjellene mellom de trykte utgavene av <title rend="italic">Gengangere</title> er små og gjelder i all hovedsak tegnsetting og ortografi. Trykkfeil er rettet og nye kommet til, men ingen av større betydning. I et brev til Hegel <HIS:hisRef target="B1880-1889ht.xml#B18811220FH">20. desember 1881</HIS:hisRef> skriver Ibsen: <quote>‹Gengangere› er som sædvanligt særdeles smukt udstyret og indbindingen pragtfuld. Nogle små uvæsentlige trykfejl, som jeg har fundet, skal jeg ved lejlighed sende en fortegnelse over.</quote> Denne fortegnelsen kjenner ikke HIS til. Av andre forskjeller mellom første og andre utgave kan nevnes endring fra <quote>en</quote> til <quote>man</quote> i <quote>noget, som man ikke selv kunde gøre for</quote> (2. utg., 110), fra <quote>om</quote> til <quote>over</quote> i <quote>hænger rejsetasken over skuldren</quote> (2. utg., 138) og fra <quote>forstuen</quote> til <quote>forstuedøren</quote> i <quote>han og Engstrand går ud gennem forstuedøren</quote> (2. utg., 139). Færrest forskjeller er det mellom FU og tredje utgave; de to utgavene er satsidentiske med unntak av tittelsider, paginering og arksignaturer. Den eneste variansen dem imellom dreier seg om bortfalte tegn og andre mindre forskjeller i trykkvaliteten.</p>
+<p>I tillegg til HIS’ hovedtekst finnes en diplomatarisk og søkbar gjengivelse samt en fotografisk faksimile av grunnteksten i den elektroniske delen av HIS. I den elektroniske utgaven gjengis også de øvrige tekstkildene diplomatarisk, manuskriptene også med faksimile, med mulighet for søk og sammenligning med grunnteksten.</p>
+<p>HIS har i margen sidereferanser til grunnteksten og til HU.</p>
+</div>
+              
+<div xml:id="edState_critical">
+<head rend="level3">tekstkritiske bemerkninger</head>
+<p rend="noIndent">Ved etableringen av hovedteksten er også de andre tekstkildene fra Ibsens levetid blitt konsultert. Emendasjoner er foretatt med utgangspunkt i samtlige trykte utgaver samt trykk- og arbeidsmanuskriptene NBO Ms. 8° 953 og NBO Ms. 4° 1114.</p>             
+<p>Ordvalg, ortografi og grammatikk i grunnteksten er i hovedtrekk som offisiell norsk i samtiden (for unntak, se <HIS:hisRef target="Ge_komm.xml"><hi rend="italic">Ord- og sakkommentarer</hi></HIS:hisRef><note resp="SBT">Usikkert om vi vil ha kommentarene samlet i ei liste!</note>).</p>             
+<p>I HIS er tegnsetting standardisert på følgende måte: Etter titler, overskrifter og rolleinnførsler i rollelister samt replikkåpner i dramateksten er eventuelle skilletegn (punktum, komma, kolon) fjernet. I sceneanvisninger først i akt og scener, i frittstående sceneanvisninger mellom replikker og i stedsbeskrivelser etter rolleliste er eventuell parentes fjernet. Disse elementene har gjennomgående fått stor forbokstav og avsluttes med punktum. Frittstående sceneanvisninger har beholdt eventuelle <quote>indre</quote> parenteser. Sceneanvisninger til slutt i replikker regnes som del av replikken dersom de er ufullstendige setninger, og som frittstående, utenfor replikken, dersom setningen er fullstendig.</p>             
+<p>Sceneanvisninger inne i replikk, inkludert sceneanvisninger som står til slutt i replikk (ikke frittstående), begynner med liten forbokstav og avsluttes uten interpunksjon. Sceneanvisninger som følger rett etter replikkinnehaverens navn, har ikke parenteser. Øvrige sceneanvisninger i replikk har parentes. Grunntekstens typografiske system for øvrig er ikke forsøkt imitert i HIS.</p>             
+  <p>Tekstfeilene i <title rend="italic">Gengangere</title> (1881) omfatter ut over internvariasjonen (jf. <HIS:hisRef target="edState_bibl"><hi rend="italic">Bibliografiske opplysninger</hi></HIS:hisRef>) i hovedsak setterfeil. For eksempel er trykkmanuskriptets <quote>varmblodige</quote> blitt til <quote>varmblodigede</quote> og <quote>naget</quote> til <quote>noget</quote> i førsteutgaven. Disse er i HIS emendert etter trykkmanuskriptet. Verdt å nevne er også to skrivefeil som er rettet i HIS: Trykkmanuskriptets og de senere kildenes <quote>vakker</quote> i <quote>Og hvis jeg så pent og vakker turde be’</quote> er rettet til arbeidsmanuskriptets <quote>vakkert</quote>, og <quote>komunale</quote>, som finnes i alle kildene til <title rend="italic">Gengangere</title>, er rettet til <quote>kommunale</quote>. Alle rettelser er anført i det tekstkritiske noteapparatet. Vakling i ortografi og interpunksjon som avspeiler tidens og Ibsens vekslende praksis, er ikke rettet i HIS.</p>             
+  <p>For en oversikt over samtidens språknormer og Ibsens språk vises det dessuten til redegjørelser i innledningene til <title rend="italic">Catilina</title> 1850 og 1875, HIS 1k, 34–40 og 146–48. Det vises for øvrig til de <HIS:hisRef target="tekstkritiskeRetningslinjer.xml">tekstkritiske retningslinjene</HIS:hisRef> for HIS.</p>
+</div>
+              
+<div xml:id="edState_editions">
+<head rend="level3">tidligere tekstkritiske utgaver</head>
+<p rend="noIndent">I FU er <title rend="italic">Gengangere</title> trykt i bind 6, med en innledning om tilblivelsen, oversettelser, sekundærlitteratur og oppførelser s. XX–XXXI. Det gis ikke tekstkritiske opplysninger. I MU er <title rend="italic">Gengangere</title> trykt i bind 4. FU oppgis som tekstgrunnlag (MU 5, 3). Rettelser foretatt av Storm, et utvalg feil i tidligere utgaver samt en språklig kommentar finnes i tillegget i MU (5, 15). I ES 3 er en del av manuskriptmaterialet til <title rend="italic">Gengangere</title> gjengitt på s. 5–10, med opplysninger og varianter på s. 461–63. ES har ikke kjent eller hatt tilgang til NBO Ms. 8° 1946, replikkutkastene på baksiden av brevet fra Sigurd Ibsen til Henrik Ibsen (NBO Brevs. 200) og NBO Ms.fol. 3212. I SU er <title rend="italic">Gengangere</title> trykt i bind 4. Tekstgrunnlaget oppgis å være <quote>originalutgaven</quote>, det vil si førstetrykket (SU 7, 300). Kun én rettelse skal være gjort i førstetrykkets tekst, nemlig <quote>varmblodigede</quote>, som i SU er rettet til <quote>varmblodige</quote>. I HU er <title rend="italic">Gengangere</title> trykt i bind 9. Tekstgrunnlaget oppgis å være førsteutgaven sammenholdt med trykkmanuskriptet (HU 9, 176). I tekstkritiske noter gjøres det rede for Ibsens egne endringer i trykkmanuskriptet samt for de tekststedene der utgiverne følger trykkmanuskriptet fremfor førstetrykket. Det gjøres også rede for forholdet mellom arbeidsmanuskriptet NBO Ms. 4° 1114 og teksten i HU 9 samt for Ibsens egne endringer i arbeidsmanuskriptet, dels i apparat, dels som løpende tekst. ES’ omtale og gjengivelse av NBO Ms. 8° 1452 og de delene av NBO Ms. 8° 1219 som knyttes til <title rend="italic">Gengangere</title>, er trykt også i HU 9. I tillegg gjengis NBO Ms. 8° 1946. HU omtaler ikke NBO Ms.fol. 3212. Manuskriptmaterialet til <title rend="italic">Gengangere</title> er utgitt og beskrevet i hovedfagsoppgaven <title rend="italic">En genetisk analyse av Henrik Ibsens <hi rend="normal">Gengangere</hi></title> <bibl>(Sauar 2002)</bibl>. I tillegg til de manuskriptene HIS anser som del av materialet til <title rend="italic">Gengangere</title>, inkluderer Sauar NBO Ms. 8° 1219:1, andre avsnitt i Ms. 8° 1219:2, 2 og Ms. 8° 1219:3 i sin analyse.</p>
+</div>
+</div>          
+</body>
+</text>
+</TEI>

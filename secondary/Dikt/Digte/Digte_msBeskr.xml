@@ -1,0 +1,916 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Henrik Ibsens skrifter, elektronisk versjon</title>
+        <title>Manuskriptbeskrivelser til Digte</title>
+        <author>Tone Modalsli</author>
+        <funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+        <editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
+        <respStmt>
+          <resp>Innlemming i elektronisk utgave</resp>
+          <name>EDD: Eining for digital dokumentasjon</name></respStmt>
+          <respStmt><resp>Kodeteknisk støtte og utvikling</resp>
+          <name>AKSIS: Avdeling for kultur, språk og informasjonsteknologi, Universitetsforskning i Bergen (Unifob AS)</name></respStmt>
+          <respStmt><resp>HISe-koding</resp>
+          <name xml:id="SBT">Stine Brenna Taugbøl</name></respStmt>
+          <respStmt><resp>Koding</resp>
+          <name xml:id="GMS">Gaute M. Sortland</name>
+          <name xml:id="AMB">Aasta Marie Bjorvand Bjørkøy</name></respStmt>
+          <respStmt><resp>Tekstarbeid</resp>
+          <name>Aasta Marie Bjorvand Bjørkøy</name>
+          <name>Maria Alnæs</name>
+          <name>Gaute M. Sortland</name></respStmt>
+          <respStmt><resp>Kontroll av sitater og ordbøker</resp>
+          <name xml:id="IK">Ingrid Korvald</name>
+          <name>Aasta Marie Bjorvand Bjørkøy</name>
+          <name>Maria Alnæs</name></respStmt>
+          <respStmt><resp>Kontroll av littlist og referanser</resp>
+          <name xml:id="AH">Anette Hjerde</name>
+          <name>Gaute M. Sortland</name>
+          <name>Aasta Marie Bjorvand Bjørkøy</name>
+          <name>Maria Alnæs</name>
+          <name xml:id="EL">Erlend Lønnum</name></respStmt>
+          <respStmt><resp>Kommentar-, intern- og ht-entiteter</resp>
+          <name>Aasta Marie Bjorvand Bjørkøy</name>
+          <name>Gaute M. Sortland</name></respStmt>
+          <respStmt><resp>Kodekontroll</resp>
+          <name>Aasta Marie Bjorvand Bjørkøy</name>
+          <name>Gaute M. Sortland</name>
+        </respStmt>
+      </titleStmt>
+<publicationStmt>
+ <publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+        <distributor xml:id="HISe">Universitetet i Oslo</distributor>
+        <date when="2010" xml:id="HISe-date"/>
+ <pubPlace>Oslo</pubPlace>
+      </publicationStmt>
+      <sourceDesc>
+ <p>Filen bygger på 11k_sisteversjon.xml.</p>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <tagsDecl>
+      </tagsDecl>
+    </encodingDesc>
+<profileDesc>
+      <langUsage>
+        <language ident="nob"/>
+        <language ident="dut"/>
+        <language ident="cze"/>
+        <language ident="ger"/>
+        <language ident="fre"/>
+        <language ident="ice"/>
+        <language ident="eng"/>
+        <language ident="ita"/>
+        <language ident="spa"/>
+        <language ident="swe"/>
+        <language ident="scc"/>
+        <language ident="rus"/>
+        <language ident="por"/>
+        <language ident="hun"/>
+        <language ident="pol"/>
+        <language ident="fin"/>
+        <language ident="jpn"/>
+        <language ident="ukr"/>
+        <language ident="bul"/>
+        <language ident="rum"/>
+        <language ident="scr"/>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change><date>20.01.2011</date>
+        <name>SBT</name><title>Ferdigstilte listekoding</title>
+        Ferdigstilte listekoding.</change>
+      <change><date>06.01.2011</date>
+        <name>SBT</name><title>Listekoding</title>
+        Holder på å oppdatere listekoding.</change>
+      <change><date>22.12.2010</date>
+        <name>SBT</name><title>Omkoding</title>
+        Kodet om overskrifter for HISe.</change>
+      <change><date>09.12.2010</date>
+        <name>SBT</name><title>Splitting</title>
+        Denne fila inneholder manuskriptbeskrivelser til Digte.</change>
+      <change><date>24.11.2010</date>
+        <name>SBT</name><title>Validering</title>
+        Fjernet ref til files og figures i dokumenttoppen. La manuskriptregisteret over i en egen fil! Fila er valid.</change>
+      <change><date>13.09.2010</date>
+    <name>SBT</name><title>dokumentforfatter</title>
+    La inn dokumentforfatter etter hovedoverskrift. NB: vurder om dokumentet bør deles i to, eller om forfatterne bør stå under hver sin del!</change>
+      <change>
+      <date>16.07.2010</date>
+        <name>SBT</name><title>Validering</title>
+        Får feilmeldinger på lenkene fra manuskriptregisteret til tekstredegjørelsene som nå ligger i en annen fil. Vurder om registeret skal legges i en egen fil; må ev. endre lenkene da.</change>
+      <change>
+        <date>15.07.2010</date>
+        <name>SBT</name><title>Opprettet xml-fil</title>
+        Skilte ut manuskriptbeskrivelsene til diktbindet i en egen fil. Har lagt inn opplysninger vedr HISe i teiHeader. Har foreløpig latt rend-attr. og bokstavtyper (majuskler/minuskler/kapiteler) i overskriftene stå; dette er endret i Ge. Samkjør! Er nå mest stemt for å beholde mest mulig av bokutgaveoppsettet. Det er mulig at fila bør deles opp i mindre deler: Digte, Blandede Digtninger, enkeltdikt. Forfattere av manuskriptbeskrivelsene bør vel også hentes inn. MANUSKRIPTREGISTRET NEDERST I DOKUMENTET BØR KANSKJE VÆRE I EN EGEN FIL?
+      </change>
+    </revisionDesc>
+  </teiHeader>
+
+<text type="msBeskr" xml:id="Dikt_msBeskr">
+<body>
+<div type="msDescription">
+<head rend="level1">MANUSKRIPTBESKRIVELSER TIL DIGTE</head>
+<byline><docAuthor>Tone Modalsli</docAuthor></byline>
+
+<div xml:id="Di41110a_msBeskr">
+<head rend="level2">1. nbo m<hi rend="miniscule">s</hi>.4 ° 1110<hi rend="miniscule">a</hi></head>
+<p rend="noIndent">Jakob Løkkes samling av avskrifter av tidligere publiserte dikt i aviser og tidsskrifter, med Ibsens egenhendige rettelser. Ett bind, paginert 1–188. På forpermen: <quote>Digte af Henrik Ibsen.</quote> Manuskriptet er i ES (3, 382) og HU (14, 490) kalt a (sammen med mindre deler av manuskript 2). HU omtaler manuskriptet dessuten som Løkkes samling, det vil også bli gjort i det følgende.</p>
+
+<div>
+<head rend="level3">innhold og genetisk status</head>
+<p>Manuskriptet inneholder 53 avskrifter av tidligere trykte dikt av Ibsen. Avskriftene er besørget av Jakob Løkke, se <hi rend="italic">Tilblivelse</hi> ovenfor. Bare ett dikt samt en dikttittel er i Løkkes hånd; hvem som har skrevet av de øvrige, er ukjent.</p>
+<p>Avskriveren har nummerert diktene 1–52 og trolig også paginert boken. Avskriftene er ordnet etter den avis eller det tidsskrift de er skrevet av etter. For hver avis/tidsskrift, bortsett fra <hi rend="italic">Aftenbladet</hi>, er diktene ordnet kronologisk. Avskriveren har satt henvisninger til trykkested etter hvert dikt. Etter de 52 nummererte diktene har Løkke føyd til ett unummerert dikt samt en dikttittel. Diktene er:</p>
+    
+  <list type="bulleted">
+      <item>s. 3–98, dikt nr. 1–34: dikt som har vært trykt i <hi rend="italic">Illustreret Nyhedsblad</hi> 1851–64</item>
+      <item>s. 3–4, nr. 1, <title rend="quotes">Et Puds</title>, 25. oktober 1851, nr. 1–2</item>
+      <item>s. 5–6, nr. 2, <title rend="quotes">Prolog ved Fjeldeventyrets første Opførelse paa Christiania norske Theater</title>, 20. september 1857, nr. 38</item>
+      <item>s. 6–9, nr. 3, <title rend="quotes">Til Carl Johans Minde. (Tilegnet Carl-Johans-Forbundet.)</title>, 24. januar 1858, nr. 4</item>
+      <item>s. 10–11, nr. 4, <title rend="quotes">Kong Haakons Gildehal</title>, 28. februar 1858, nr. 9. I en note ved tittelen henvises det til s. 14 (samme tittel, men et annet dikt); noten er trolig skrevet av Løkke.</item>
+      <item>s. 11–14, nr. 5–7, <title rend="quotes">Byggeplaner</title>, <title rend="quotes">Markblomster og Potteplanter</title>, <title rend="quotes">En Fuglevise</title>, 14. mars 1858, nr. 11. Foran nr. 5 har avskriveren tatt med en redaksjonell notis fra bladet om de tre diktene.</item>
+      <item>s. 14–25, nr. 8, <title rend="quotes">Kong Haakons Gildehal, fortællende Digt</title>, 12. september 1858, nr. 37</item>
+      <item>s. 25–26, nr. 9, <title rend="quotes">Ved Indvielsen af de nye Bygninger for Lillehammers lærde Skole den 5<hi rend="raised">te</hi> November 1858</title>, uten kildehenvisning (diktet ble trykt i bladet 14. november 1858, nr. 46)</item>
+      <item>s. 26–29, nr. 10, <title rend="quotes">Maageskrig</title>, 2. januar 1859, nr. 1</item>
+      <item>s. 29–30, nr. 11, <title rend="quotes">Ved Sangerfesten i Arendal 1859</title>, 26. juni 1859, nr. 26</item>
+      <item>s. 30–31, nr. 12, <title rend="quotes">Ved Christiania Turnforenings Fest paa Lindøen 26<hi rend="raised">de</hi> Juni 1859</title>, 3. juli 1859, nr. 27</item>
+      <item>s. 31–33, nr. 13, <title rend="quotes">Folkesorg</title>, 14. august 1859, nr. 33</item>
+      <item>s. 33–51, nr. 14, <title rend="quotes">I Billedgalleriet</title>, etterfulgt av avskrift av en redaksjonell notis, 18. og 25. september 1859, nr. 38 og 39</item>
+      <item>s. 52–53, nr. 15, <title rend="quotes">Ved Studenternes Fakkeltog til Ære for Hs. Maj. Kongen den 5<hi rend="raised">te</hi> Octbr. 1859</title>, 9. oktober 1859, nr. 41</item>
+      <item>s. 53–55, nr. 16, <title rend="quotes">Høifjeldsliv</title>, 29. januar 1860, nr. 5</item>
+      <item>s. 56–58, nr. 17, <title rend="quotes">Til Storthinget. (17<hi rend="raised">de</hi> Mai 1860)</title>, 20. mai 1860, nr. 21</item>
+      <item>s. 58–59, nr. 18, <title rend="quotes">Til Professor Schweigaard i Anledning af hans 25aarige Virken ved Universitetet</title>, 20. mai 1860, nr. 21</item>
+      <item>s. 60–61, nr 19, <title rend="quotes">Ved Skydefesten paa Ladegaardsøen 1ste Juli 1860</title>, 8. juli 1860, nr. 28</item>
+      <item>s. 61–62, nr. 20, <title rend="quotes">Ved Festen i Christiania paa Kongens Kroningsdag</title>, 12. august 1860, nr. 33</item>
+      <item>s. 62–63, nr. 21, <title rend="quotes">Ved Gildet paa Klingenberg for den svenske Kroningsdeputations herværende Medlemmer den 17<hi rend="raised">de</hi> August 1860</title>, 19. august 1860, nr. 34</item>
+      <item>s. 64–66, nr. 22, <title rend="quotes">Epilog ved Hr. Buchers Benefice paa det norske Theater 21<hi rend="raised">de</hi> Januar 1861</title>, 20. januar 1861, nr. 3</item>
+      <item>s. 66–68, nr. 23, <title rend="quotes">Ved Festen paa Klingenberg Konstitutionsdagen 1861</title>, 19. mai 1861, nr. 20</item>
+      <item>s. 68–75, nr. 24, <title rend="quotes">I Havsnød. <bibl>(Marts 1861)</bibl></title>, 7. juli 1861, nr. 27</item>
+      <item>s. 76–77, nr. 25, <title rend="quotes">Sang for Universitetet paa dets halvhundredeaarige Stiftelsesdag</title>, 8. september 1861, nr. 36</item>
+      <item>s. 78–80, nr. 26, <title rend="quotes">Forviklinger</title>, 14. september 1862, nr. 37</item>
+      <item>s. 80–83, nr. 27, <title rend="quotes">Paa Akershus</title>, 4. januar 1863, nr. 1. I en note ved tittelen henviser avskriveren til s. 138 (en variant av samme dikt).</item>
+      <item>s. 84, nr. 28, <title rend="quotes">Med en Vandlilje</title>, 25. januar 1863, nr. 4</item>
+      <item>s. 85–86, nr. 29, <title rend="quotes">Bergmanden</title>, 1. februar 1863, nr. 5. I en note ved tittelen henviser avskriveren til s. 158 (en variant av samme dikt).</item>
+      <item>s. 87–88, nr. 30, <title rend="quotes">Lysrædd</title>, 8. februar 1863, nr. 6</item>
+      <item>s. 88–91, nr. 31, <title rend="quotes">Fra Sangertoget</title>, 28. juni 1863, nr. 26</item>
+      <item>s. 91–93, nr. 32, <title rend="quotes">Ved Studentersamfundets Fest paa sin halvhundredeaarige Stiftelsesdag</title>, 11. oktober 1863, nr. 41</item>
+      <item>s. 93–96, nr. 33, <title rend="quotes">En Broder i Nød!</title>, 13. desember 1863, nr. 50</item>
+      <item>s. 96–98, nr. 34, <title rend="quotes">Fredrik VII’s Minde</title>, 17. januar 1864, nr. 3</item>
+      <item>s. 98–135, dikt nr. 35 og 36: dikt som har vært trykt i <hi rend="italic">Nytaarsgave for Illustreret Nyhedsblads Abonnenter</hi> 1860, 1862</item>
+      <item>s. 98–117, nr. 35, <title rend="quotes">Paa Vidderne</title>, 1860, s. 57</item>
+      <item>s. 118–35, nr. 36, <title rend="quotes">Terje Vigen</title>, 1862, s. 41</item>
+      <item>s. 136–62, dikt nr. 37–44: dikt som har vært trykt i <hi rend="italic">Andhrimner</hi> 1851</item>
+      <item>s. 136–38, nr. 37, <title rend="quotes">Svanen</title>, 1. kvartal, spalte 29</item>
+      <item>s. 138–41, nr. 38, <title rend="quotes">Paa Akershuus</title>, 1. kvartal, spalte 42. I en note ved tittelen henviser avskriveren til s. 80 (en variant av samme dikt).</item>
+      <item>s. 141–44, nr. 39, <title rend="quotes">Gutten i Blaabærmyren</title>, 1. kvartal, spalte 59</item>
+      <item>s. 145–46, nr. 40, <title rend="quotes">Fugl og Fuglefænger</title>, 1. kvartal, spalte 111</item>
+      <item>s. 147–49, nr. 41, <title rend="quotes">Taaren</title>, 1. kvartal, spalte 144</item>
+      <item>s. 149–56, nr. 42, <title rend="quotes">En Løverdagsaften i Hardanger</title>, 2. kvartal, spalte 13, 46. Under teksten henviser avskriveren til fortsettelse på s. 161.</item>
+      <item>s. 156–58, nr. 43, <title rend="quotes">Edderfuglen</title>, 2. kvartal, spalte 62</item>
+      <item>s. 158–160, nr. 44, <title rend="quotes">Bjergmanden</title>, 2. kvartal, spalte 143. I en note ved tittelen henviser avskriveren til s. 85 (en variant av samme dikt).</item>
+      <item>s. 161–62, <title rend="quotes">Fortsættelse af Nr. 42, ‹En Løverdagsaften i Hardanger›</title>, 2. kvartal, spalte 47</item>
+      <item>s. 162–72, dikt nr. 45–47: dikt som har vært trykt i <hi rend="italic">Morgenbladet</hi> 1859–60</item>
+      <item>s. 162–66, nr. 45, <title rend="quotes">4<hi rend="raised">de</hi> Juli 1859</title>, 4. juli 1859, nr. 181</item>
+      <item>s. 166–69, nr. 46, <title rend="quotes">Prolog, fremsagt i det norske Theater 21<hi rend="raised">de</hi> August 1859</title>, 22. august 1859, nr. 230</item>
+      <item>s. 169–72, nr. 47, <title rend="quotes">Ved J.L. Heibergs Død</title>, 11. september 1860, nr. 251</item>
+      <item>s. 173–87, dikt nr. 48–52: dikt som har vært trykt i <hi rend="italic">Aftenbladet</hi> 1858–61</item>
+      <item>s. 173–79, nr. 48, <title rend="quotes">Sendebrev til H. Ø. Blom</title>, 10. desember 1859, nr. 288</item>
+      <item>s. 179–82, nr. 49, <title rend="quotes">Prolog ved det norske Theaters Festforestilling d. 10<hi rend="raised">de</hi> Oktbr. 1861</title>, 10. oktober 1861, nr. 236</item>
+      <item>s. 183–84, nr. 50, <title rend="quotes">Ved Festen til Fædrenes Minde i Studentersamfundet 1858</title>, 14. januar 1858, nr. 11</item>
+      <item>s. 184–85, nr. 51, <title rend="quotes">Ved Festen paa Klingenberg 17<hi rend="raised">de</hi> Maj 1858</title>, 18. mai 1858, nr. 112</item>
+      <item>s. 185–87, nr. 52, <title rend="quotes">Ved Selskabet ‹Kristian Augusts Venner›s Halvhundredeaars-Fest, 1858</title>, 27. september 1858, nr. 224</item>
+      <item>s. 187–[189], i Jakob Løkkes hånd, uten nummer</item>
+      <item>s. 187–[189], <title rend="quotes">Prolog fremsagt paa det norske Theater ved Festforestillingen i Anledning af Grundstenens Nedlæggelse til Storthingsbygningen den 10<hi rend="raised">de</hi> Oktober 1861</title>, <hi rend="italic">Morgenbladet</hi> 11. oktober 1861, nr. 281. Løkke har i en note ved tittelen henvist til avskriften etter <hi rend="italic">Aftenbladet</hi> på s. 179–82.</item>
+      <item>s. [189], <title rend="quotes">Lincoln’s Mord</title>, bare tittelen, med henvisning til <hi rend="italic">Nordiske Digte</hi> (dvs. P. Hansen red. 1870) og opplysning om at det opprinnelig var trykt i <hi rend="italic">Fædrelandet</hi></item>
+</list>      
+
+<p rend="noIndent">Teksten har noen få rettelser av hovedhånden. Løkke må ha lest igjennom avskriften, han har føyd til en melodiangivelse på s. 25, og det finnes enkelte rettelser og henvisninger med blekk som synes å være skrevet av ham (bl.a. <quote>stævner</quote> s. 90; margnotis om trykkfeil s. 85). Dessuten finnes det noen rettelser og rettelsesforslag skrevet med blå blyant. Som regel gjelder dette ortografi (avvik fra den forventede), tegnsetting, inkonsekvenser eller forslag om norsk skrivemåte i særnorske ord (s. 52 <quote>Slaatt</quote> for <quote>Slaat</quote>, s. 54 <quote>Brott</quote> for <quote>Brot</quote>, jf. <quote>Brott</quote> på s. 68), eller omvendt (s. 30 <quote>Birken</quote> foreslått for <quote>Bjerken</quote>, s. 69 <quote>Ageren</quote> foreslått for <quote>Akeren</quote>). Det er sannsynlig at også disse er skrevet av Løkke. Skriften ligner, men materialet er for lite til at det kan fastslås med sikkerhet. Løkkes margnotis på s. 85 med blekk er skrevet i flukt med en notis med blå blyant; det kan tyde på at det blå er eldre.</p>
+<p>I brev til Hegel 8. januar 1871 forteller Ibsen at han <quote>foreløpig kasserer</quote> tre fjerdedeler av det han har fått fra Løkke, men omarbeider resten. Før omarbeidelsen må han ha utarbeidet første innholdsliste i Ms. 4° 1110b, se manuskript 2 nedenfor. Omarbeidelsen sees som Ibsens rettelser i Løkkes samling og kan i noen dikt gjelde spredte enkeltord, i andre strykninger og/eller større omarbeidelser. Ibsen har rettet i følgende dikt: <title rend="quotes">Til Carl Johans Minde</title> (s. 8), <title rend="quotes">Kong Haakons Gildehal</title> (s. 10–11), <title rend="quotes">Byggeplaner</title> (s. 11–12), <title rend="quotes">Markblomster og Potteplanter</title> (s. 12–13), <title rend="quotes">En fuglevise</title> (s. 13–14), <title rend="quotes">Ved Indvielsen af de nye Bygninger for Lillehammers lærde Skole den 5<hi rend="raised">te</hi> November 1858</title> (s. 25–26), <title rend="quotes">Høifjeldsliv</title> (s. 54–55), <title rend="quotes">Til Storthinget</title> (s. 56–57), <title rend="quotes">Til Professor Schweigaard i Anledning af hans 25aarige Virken ved Universitetet</title> (s. 58–59), <title rend="quotes">I Havsnød</title> (s. 68–75), <title rend="quotes">Bergmanden</title> (s. 85), <title rend="quotes">Lysrædd</title> (s. 87), <title rend="quotes">Fra Sangertoget</title> (s. 89), <title rend="quotes">Fredrik VII’s Minde</title> (s. 98), <title rend="quotes">Fugl og Fuglefænger</title> (s. 145–46), <title rend="quotes">En Løverdagsaften i Hardanger</title> (s. 154–56), <title rend="quotes">Edderfuglen</title> (s. 157), <title rend="quotes">4<hi rend="raised">de</hi> Juli 1859</title> (s. 162–66), <title rend="quotes">Ved J. L. Heibergs Død</title> (s. 169–72), <title rend="quotes">Sendebrev til H. Ø. Blom</title> (s. 173–78), <title rend="quotes">Prolog ved det norske Theaters Festforestilling d. 10<hi rend="raised">de</hi> Oktbr. 1861</title> (s. 179–82). I <title rend="quotes">I Billedgalleriet</title> har Ibsen satt kryss ved sonettene II, III, XVII, XVIII, XX, XXI, XXII og XXIII (s. 34–35, 46–51). På dette stadium later det altså til at han ser nærmere på 21 dikt, som er mer enn den fjerdedelen han nevner i brevet 8. januar. På s. 62, mellom diktene 20 og 21, har han føyd til <quote>NB. Sangen i Trondhjem!</quote>; om Løkkes avskrift av dette diktet, se manuskript 2 <bibl>(Ms. 4° 1110b, bl. 49; HU 14, 491 sier at avskriften er vedlagt Ms. 4° 1110a)</bibl>. Alle disse diktene, inklusive de merkede bolkene fra <title rend="quotes">I Billedgalleriet</title> og den innskutte tittelen på s. 62, er med i første innholdsliste i Ms. 4° 1110b, bl. 2, eventuelt med førstelinje i stedet for tittel, eller med noe endret tittel. Av disse igjen er det bare <title rend="quotes">Til Carl Johans Minde</title> og <title rend="quotes">I Havsnød</title> som ikke er med i <hi rend="italic">Digte</hi>. De merkede sonettene fra <title rend="quotes">I Billedgalleriet</title> er heller ikke med i det endelige utvalget, men noen av dem kan ligge til grunn for diktene <title rend="quotes">Kløften</title>, <title rend="quotes">En svane</title>, <title rend="quotes">I galleriet</title> og <title rend="quotes">Min unge vin</title> (ES 1, 384; HU 14, 491). For de diktene som Ibsen tar med i <hi rend="italic">Digte</hi>, er hans rettelser i Løkkes samling et ledd på veien til den endelige formen; versjonen i trykkmanuskriptet er ofte ytterligere bearbeidet. Noen få finnes i bearbeidet form i Ms. 4° 1110b, og disse må bygge på Ibsens rettede versjoner i Løkkes samling.</p>
+<p>På s. 2, før avskriftene, har Ibsen skrevet noen korte notater. Til venstre på siden står noe som trolig skal leses som <quote>Side 42</quote>. Det er sannsynlig at dette gjelder manuskriptets s. 42, for der begynner sonett 14 i <title rend="quotes">I Billedgalleriet</title>, sonetten gjentas under tittelen <title rend="quotes">Lysrædd</title> på s. 87 (ES 3, 384). Til høyre for dette står først noen stikkord for et <quote>Sujet</quote> som kanskje kan gjelde nettopp diktet <title rend="quotes">Lysrædd</title> (HU 14, 491), og under dette tre dikttitler (<title rend="quotes">Skorpionen</title>, <title rend="quotes">Munken på Epomeo</title>, <title rend="quotes">Ved Port Saïd</title>). Av disse er bare <title rend="quotes">Ved Port Saïd</title> kjent som dikt, mens <title rend="quotes">Skorpionen</title> vel er det som gjenfinnes i første innholdsliste i Ms. 4° 1110b, bl. 2 som <quote>Jeg og min skorpion</quote>; <title rend="quotes">Munken på Epomeo</title> finnes som tittel også i manuskript 4 <bibl>(Ms. 8° 1928)</bibl>.</p>
+<p>Det finnes noen få tegn etc. som er føyd til i manuskriptet av ukjente hender. Det gjelder strofetall ved strofe 7 og 10 av <title rend="quotes">I Havsnød</title> (s. 70–71) og to rettelser av komma til punktum på s. 140 (i <title rend="quotes">Paa Akershuus</title>). Det er mulig at dette er gjort av utgiverne av ES; ES (3, 343) bruker strofetall i omtale av <title rend="quotes">I Havsnød</title>, og de to rettelsene er tatt til følge i ES (1, 60, også i HU 14, 108–09).</p>
+</div>
+  
+<div>
+<head rend="level3">datering</head>
+<p>Avskriftene må være foretatt i tiden fra januar 1870 til årsskiftet 1870–71, jf. <hi rend="italic">Tilblivelse</hi> ovenfor. Ibsen purret utpå høsten (se brev til Hegel 10. oktober 1870), men arbeidet trakk ut. Så sent som 2. desember skriver Ibsen til Hegel at avskrivingen fortsatt foregår i Kristiania, og at Løkke hadde lovet å sende i hvert fall det meste i inneværende måned. Da Ibsen skrev til Hegel 8. januar 1871, var bindet med avskriftene mottatt, og Ibsen var i gang med å vurdere stoffet og hadde begynt å omarbeide det han ville bruke.</p>
+</div>
+  
+<div>
+<head rend="level3">mengde, struktur og rekkefølge</head>
+<p>Manuskriptet består av 94 blad i ett bind, paginert 1–188. S. 1 er blank, alle andre sider er beskrevne, også innsiden av bakpermen, s. [189]. Diktene står i nummerrekkefølge med et unummerert dikt og en unummerert dikttittel til slutt. Bindet måler ca. 172 × 207 mm. Ryggen er i brunt skinn. Permene har overtrekkspapir marmorert i sort, rosa og gult. Heftetråden er gulaktig. Utenpå forpermen er det limt en tittel-etikett.</p>
+</div>
+  
+<div>
+<head rend="level3">tilstand</head>
+<p>Bindet er slitt. Permene har brister i hjørnene, kraftigst i forpermens nedre høyre hjørne; hele bokblokken har en tilsvarende svak brett, med et lite papirtap på s. 1/2. Forsatsen har sprukket langs ryggen. Mange blad har rifter nederst og/eller øverst i falsen. S. 21/22 og 23/24 er nesten helt løse. Dobbeltbladene s. 105–08 og 153–56 er heftet noe lavere enn de andre og er derfor skadet i nedre kant. Også enkelte andre blad har mindre skader i nedre kant. Snittet er noe skittent. Det finnes en del flekker.</p>
+</div>
+  
+<div>
+<head rend="level3">papir</head>
+<p>Papiret er gulaktig. Siden måler 168 × 207 mm.</p>
+</div>
+  
+<div>
+<head rend="level3">skriveredskap og -stoff</head>
+<p>Hovedhånden har skrevet med blekk. Skriftbildet er mørkebrunt. Løkke har også brukt blekk; skriftbildet har noenlunde samme farve som hovedhåndens. Noe er skrevet med blå blyant. Ibsens rettelser er med blekk; skriftbildet er fiolett. Det finnes dessuten noen få innslag med vanlig blyant.</p>
+</div>
+  
+<div>
+<head rend="level3">hender og skrift</head>
+  <list type="numbered">
+<item n="1"><hi rend="italic">Hovedhånden</hi>: Skriften er omhyggelig og tydelig. ES (3, 382) kaller hånden <quote>noget uøvet</quote>. Diktene er plassert noenlunde midt på siden. Alle diktoverskriftene er streket under, og det er satt dobbel skillestrek mellom diktene. I de tretten første diktene og i første sonett i dikt 14 er det satt enkle skillestreker mellom strofene; slik strek finnes ikke i de trykte foreleggene. Foran siste strofe i dikt 9 er det i stedet for strek satt tre stjerner, som i avistrykket. I diktene 33, 35 og 47 er trykkenes skillestreker gjengitt. Bortsett fra i dikt 4 er det skillestrek mellom siste strofe og kildeopplysningen. Noter til tittelen er satt under en strek nederst på siden. I <title rend="quotes">En Broder i Nød!</title> er ordet <quote>Finis</quote> på s. 94 tydeliggjort med kraftigere penn og med mer trykk-lignende bokstaver.</item>
+    <item n="2"><hi rend="italic">Jakob Løkke</hi>: Løkkes skrift har enkelte gotiske innslag. Den er overveiende omhyggelig, men virker noe rask og kan enkelte steder være litt utydelig. Han har satt dobbeltkryss mellom strofene, som på s. 188 er plassert i to spalter. Overstrykninger er utført med tette løkker. Noten på s. 187 står under en strek nederst på siden, som i hovedhåndens tekst. Løkke kan også ha skrevet fotnoten på s. 10, den står på tilsvarende sted, men uten strek. En del av de innslagene i boken som kan være skrevet av Løkke, er små, og det er derfor vanskelig å si sikkert at de er skrevet av ham (se <hi rend="italic">Innhold og genetisk status</hi>). Det meste av dette er tydelig skrevet; det med blå blyant er alltid tydelig. Om Løkke, se HIS 12k, 689–90. Hans håndskrift fra begynnelsen av 1870-tallet finnes bl.a. i hans brev til Ludvig L. Daae (NBO Brevs. 65) og til Christian H. Schweigaard (NBO Brevs. 213). Jf. manuskript 2 <bibl>(Ms. 4° 1110b, bl. 49–51)</bibl>.</item>
+    <item n="3"><hi rend="italic">Henrik Ibsen</hi>: Ibsens rettelser er overveiende skjødesløst skrevet, ofte svært skjødesløst. Skriften er venstrehellende, noen ganger nærmest rett. Overstrykning av flere linjer og hele strofer er utført med parallelle skråstreker, på s. 169 og 175–77 med (bølge)streker i linjen. På s. 54 og s. 165 har han tilføyd tekst på langs i venstre marg. Han har streket under tittelen <title rend="quotes">En spillemand</title>, som han har tilføyd på s. 155; på samme side har han skrevet erstatningstekst i høyre marg, i samme skriveretning som ellers på siden.</item>
+    <item n="4"><hi rend="italic">Andre</hi>: Det er usikkert om rettelser etc. med blå blyant er Løkkes, se ovenfor. Det finnes noen få blyantinnslag som muligens kan være ført inn av utgiverne av ES.</item>
+  </list>
+</div>
+  
+<div>
+<head rend="level3">stempel og katalogsignatur</head>
+<p>Bibliotekets stempel finnes på s. 1, katalogsignaturen på innsiden av forpermen og på en kartongstrimmel som er limt til denne på innsiden og stikker opp over boken.</p>
+</div>
+  
+<div>
+<head rend="level3">proveniens</head>
+<p>Manuskriptet tilhører Nasjonalbiblioteket, Oslo. Biblioteket (den gang Universitetsbiblioteket) mottok hele Ms. 4° 1110 som gave fra Henrik Ibsens familie i 1906.</p>
+</div>
+</div>
+
+<div xml:id="Di41110b_msBeskr">
+<head rend="level2">2. nbo m<hi rend="miniscule">s</hi>.4 ° 1110<hi rend="miniscule">b</hi></head>
+<p rend="noIndent">Egenhendige arbeidsmanuskripter til innholdslister og enkeltdikt, samt enkelte avskrifter i andre hender og blad fra trykte bøker. 64 blad, foliert (nyere, med rødt) 1–64. ES (3, 384) deler materialet inn i b og c på grunnlag av papiret; HU (14, 491–95) bruker samme inndeling og siterer ES. Avskriftene er i ES (3, 382) og HU (14, 491) omtalt sammen med manuskript 1. I det følgende brukes den røde folieringen ved henvisning til sider.</p>
+    
+<div>
+<head rend="level3">innhold og genetisk status</head>
+<p>Manuskriptet består av forskjellige utkast, avskrifter og trykk som kan være lagt sammen av praktiske grunner. Den fortløpende folieringen er langt på vei tilfeldig. Materialet består dels av innholdslister (to av dem med tilhørende tittelblad), dels av diktutkast og noen få avskrifter og trykk. I det følgende behandles innholdslistene og enkeltdiktene hver for seg (men listene nevnes kort også under gjennomgåelsen av enkeltdiktene). Listene blir forsøkt relatert til de forskjellige sendingene som til sammen utgjør trykkmanuskriptet (manuskript 3), enkeltdiktene til versjonen i trykkmanuskriptet. Arbeidet både med listene og med enkeltdiktene har trolig skjedd underveis i utarbeidelsen av trykkmanuskriptet, samtidig med at Ibsen bearbeidet avskriftene i Løkkes samling (manuskript 1). For enkeltdiktene brukes samme inndeling som i ES og HU, men uten bruk av betegnelsene b og c, se nedenfor. Noen av avskriftene hører nærmest sammen med Løkkes samling.</p>
+</div>
+
+<div>
+<head rend="level3">innholdsliste 1, bl. 2</head> 
+ <p>Overskrift på bl. 2r: <quote>Indhold:</quote>. I ES (3, 384) omtales listen som liste I, i HU (14, 491) er den kalt første innholdsliste. Den dekker begge sider av bladet. Bl. 2 er første blad i et dobbeltblad, på dobbeltbladets andre blad (bl. 7) står diktutkast. Først på listen står dikt fra fire av Ibsens dramaer (<title rend="quotes">Agnes, min dejlige sommerfugl!</title> og <title rend="quotes">De usynliges sang</title> fra <hi rend="italic">Brand</hi>, <title rend="quotes">Solvejgs sange</title> fra <hi rend="italic">Peer Gynt</hi>, <title rend="quotes">Vuggesang</title> og <title rend="quotes">Kvindernes bøn</title> fra <hi rend="italic">Kongs-Emnerne</hi>, <title rend="quotes">Drikke-vise</title> og <title rend="quotes">De sejlendes sang</title> fra <hi rend="italic">Kjærlighedens Komedie</hi>). Deretter følger en rekke dikt fra Løkkes samling (manuskript 1), bl.a. alle de som Ibsen hadde rettet. Rekkefølgen er som der, med ett unntak: Diktet <title rend="quotes">Fugl og fuglefænger</title> er på listen satt etter det som tas med fra <title rend="quotes">En Løverdagsaften i Hardanger</title>. I stedet for <title rend="quotes">I Billedgalleriet</title> har Ibsen skrevet førstelinjen av de åtte sonettene som han i Løkkes samling hadde merket med kryss, og for <title rend="quotes">En Løverdagsaften i Hardanger</title> førstelinjen (<title rend="quotes">I gamle tider sad jeg</title>) av den delen av diktet som ble til <title rend="quotes">Spillemænd</title>. Noen av diktene i Løkkes samling er ført opp med endret tittel, for eksempel er <title rend="quotes">Ved Sangerfesten i Arendal 1859</title> oppført som <title rend="quotes">Ved et sangerstævne</title>, og <title rend="quotes">Ved Gildet paa Klingenberg for den svenske Kroningsdeputations herværende Medlemmer</title> som <title rend="quotes">Til den svenske kroningsdeputation</title>. Foran <title rend="quotes">Lincolns mord</title>, som i Løkkes samling bare er med som tittel helt til slutt, står <title rend="quotes">Storthingets sang (ved kroningen i Trondhjem.)</title>, det må gjelde samme dikt som Ibsen nevner som <title rend="quotes">Sangen i Trondhjem</title> i Løkkes samling s. 62. Til slutt har Ibsen ført opp to titler som ikke finnes i Løkkes samling: <title rend="quotes">Ballonbrev</title> og <title rend="quotes">Jeg og min skorpion</title>. Listen ser ut som den er skrevet under ett. <title rend="quotes">Ballonbrev</title> var trykt i <hi rend="italic">Morgenbladet</hi> 8. januar 1871; skorpion-tittelen kan svare til Ibsens notis på s. 2 i manuskript 1, men diktet er ellers ikke kjent.</p>
+  <p>Siden listen inneholder de fleste diktene fra Løkkes samling, er det sannsynlig at listen er skrevet før Ibsen for alvor begynte å vurdere hvilke av de avskrevne diktene han skulle ta med og dermed trolig før han skrev til Hegel 7. januar 1871 om at han regnet med å redusere mengden til ca. en fjerdedel. Listen synes å være skrevet etter at Ibsen hadde satt kryss ved de åtte utvalgte sonettene i <title rend="quotes">I Billedgalleriet</title> i Løkkes samling, men før han strøk strofer i <title rend="quotes">En Løverdagsaften […]</title> på s. 154–55 i avskriften, bl.a. den som begynner med <quote>I gamle Tider sad jeg</quote>, og før han på s. 155 satte inn tittelen <title rend="quotes">En spillemand</title> foran den opprinnelig tredje strofen i denne delen av diktet.</p>
+<p>Ibsen har gått igjennom listen i flere omganger. Til venstre for noen av titlene har han ved tall angitt den rekkefølgen han vil de skal ha. Helt til venstre har han for noen av diktene skrevet sidetallene i Løkkes samling.</p>
+<p>Ibsens tall gir følgende ønskede rekkefølge:</p>
+<list type="numbered">
+<item n="1"><title rend="quotes">I gamle tider sad jeg</title> (dvs. det senere <title rend="quotes">Spillemænd</title>), ved denne tittelen har Ibsen satt et kryss</item>
+<item n="2"><title rend="quotes">Kong Håkons gildehal</title></item>
+<item n="3"><title rend="quotes">Byggeplaner</title></item>
+<item n="4"><title rend="quotes">Markblomster og potteplanter</title></item>
+<item n="5"><title rend="quotes">En fuglevise</title></item>
+<item n="6"><title rend="quotes">På Akershus</title></item>
+<item n="7"><title rend="quotes">Fugl og fuglefænger</title></item>
+<item n="8"><title rend="quotes">Med en vandlilje</title></item>
+<item n="9"><title rend="quotes">Bergmanden</title></item>
+<item n="10"><title rend="quotes">Højfjelds-liv</title></item>
+<item n="11"><title rend="quotes">Lysræd</title></item>
+  </list>
+<p rend="noIndent">Som 12–15 står de åtte sonettene fra <title rend="quotes">I Billedgalleriet</title> som Ibsen hadde markert med kryss i avskriften (fem av dem er samlet under 13). Tallene 12–15 er også brukt for noen av diktene fra hans skuespill:</p>
+  <list type="numbered">
+  <item n="12"><title rend="quotes">Drikke-vise</title></item>
+<item n="13"><title rend="quotes">De sejlendes sang</title></item>
+<item n="14"><title rend="quotes">Vuggesang</title></item>
+<item n="15"><title rend="quotes">Kvindernes bøn</title></item>
+<item n="16"><title rend="quotes">Agnes, min dejlige sommerfugl!</title></item>
+<item n="17"><title rend="quotes">De usynliges sang</title></item>
+<item n="18"><title rend="quotes">Solvejgs sange</title></item>
+    </list>
+<p rend="noIndent">Både denne bolken med drama-dikt og bolken med sonettene er strøket over (med én skråstrek over hver bolk), men det er ikke mulig å se hvilken av dem som ble strøket først. Dramadiktene er trolig strøket før 21. januar 1871, da sendte han første porsjon av trykkmanuskriptet (manuskript 3) til Hegel og skrev i brevet at han ikke ville ta med <quote>smådigtene</quote> fra sine <quote>andre bøger</quote> (i motsetning til de lengre diktene <title rend="quotes">På vidderne</title> og <title rend="quotes">Terje Vigen</title>).</p>
+<p>En annen type overstrykning finnes ved de fleste andre titlene i listen. Den er utført som overstrykning av linjen med tilhørende nummer og må være gjort etter at tallene for rekkefølgen 1–11 var skrevet. ES (3, 385) og HU (14, 492) antar at Ibsen har strøket titlene etter hvert som han har ført dem over i en annen liste; det må være innholdsliste 2. Titlene <title rend="quotes">Kongshallen i Bergen</title> og <title rend="quotes">Mågeskrig</title> er strøket over, men begge er markert med NB før og etter; og ved det første har han skrevet <quote>udgår?</quote>, ved det andre <quote>udgår</quote>. Den siste tittelen, <quote>Jeg og min skorpion</quote>, har Ibsen strøket kraftig over, med bølgestrek. Etter tittelen <quote>Folke-sorg</quote> har han senere føyd til <quote>Jeg ved et sind som ….</quote>, det er ukjent hvilket dikt dette gjelder. Det er bare fire titler som ikke har noen form for overstrykning: <title rend="quotes">Ved indvielsen af et skolehus</title>, <quote>Jeg ved et sind som …</quote>, <title rend="quotes">Lincolns mord</title> og <title rend="quotes">Ballonbrev</title>.</p>
+</div>
+    
+<div>
+<head rend="level3">Innholdsliste 2, bl. 19</head> 
+  <p>Overskrift på bl. 19r: <quote>Indhold.</quote> I ES (3, 386) omtales listen som liste II, i HU (14, 493) er den kalt andre innholdsliste. Den dekker begge sider av bladet. Bl. 19 har trolig utgjort et dobbeltblad sammen med bl. 24 (se <hi rend="italic">Mengde, struktur og rekkefølge</hi>), på bl. 24 står diktutkast. Først på listen står <title rend="quotes">Spillemænd</title>, det er nærliggende å regne med at listen dermed er skrevet senere enn eller omtrent samtidig med omarbeidelsen av deler av diktet <title rend="quotes">En Løverdagsaften […]</title> i manuskript 1 (Løkkes samling). Listen bygger på innholdsliste 1, idet de fleste titlene er de samme som er strøket over enkeltvis der, det bekrefter at Ibsen strøk over disse linjene etter hvert som han førte dem over i denne nye listen. De første seks titlene i liste 2 er ført opp i den rekkefølgen Ibsen hadde angitt med tallene 1–6 i liste 1. Deretter kommer <title rend="quotes">Ederfuglen</title>, fulgt av titlene 7–11 i liste 1, men nå står <title rend="quotes">Med en vandlilje</title> foran <title rend="quotes">Fugl og fuglefænger</title> og <title rend="quotes">Lysræd</title> foran <title rend="quotes">Højfjeldsliv</title>. Enkelte titler er endret. <title rend="quotes">Til de svenske rigsdagsmænd</title> må være det diktet som i liste 1 heter <title rend="quotes">Storthingets sang (ved kroningen i Trondhjem.)</title> og som Ibsen i Løkkes samling har nevnt som <title rend="quotes">Sangen i Trondhjem</title>, jf. nedenfor om enkeltdiktene, bl. 49. Til slutt kommer følgende fire dikt: <title rend="quotes">Kvindernes sang (af Kongsemnerne)</title>, som må være det samme som <title rend="quotes">Kvindernes bøn</title> som står i liste 1 i den strøkne bolken av dikt fra skuespillene, deretter <title rend="quotes">Abraham Lincolns mord</title> og <title rend="quotes">Ballonbrev</title> som ikke er strøket over i liste 1, men som står på nøyaktig samme plass i begge listene. Som det siste har Ibsen ført opp en tittel som ikke var med i liste 1, <title rend="quotes">I en ung komponists stambog</title>. Til høyre for alle disse titlene har han skrevet tall som angir diktenes omfang i sider, og han har summert tallene, til sammen 128. Han har så rettet noen få titler, føyd til noen titler innimellom og ført opp antall sider også for disse. Av de tilføyde titlene er det bare <title rend="quotes">Skolehuset</title> som finnes i liste 1 (<title rend="quotes">Ved indvielsen af et skolehus</title>, der ikke strøket over). De øvrige tilføyde titlene er nye (men noen kan til dels bygge på de utvalgte sonettene fra <title rend="quotes">I Billedgalleriet</title>, jf. liste 1): <title rend="quotes">Min unge vin</title>, <title rend="quotes">Kløften</title>, <title rend="quotes">En svane</title>, <title rend="quotes">Stambogs-rim</title>, <title rend="quotes">Stormsvalen</title>, <title rend="quotes">Troens grund</title>. Noen titler er strøket, med tette skrå- eller bølgestreker: <title rend="quotes">Til kong Karl Johans minde</title>, <title rend="quotes">Skolehuset</title>, <title rend="quotes">Ved J. L. Heibergs død</title> med tilføyd ny tittel <title rend="quotes">Til de genlevende</title>, og <title rend="quotes">Kvindernes sang</title>. <title rend="quotes">Skolehuset</title> og <title rend="quotes">Til de genlevende</title> er dessuten tilføyd litt ovenfor de første stedene, og der ikke strøket over. <title rend="quotes">Til de svenske rigsdagsmænd</title> og <title rend="quotes">Sang for kvinden</title> har Ibsen strøket over med enkel strek gjennom linjen, ut for disse to har han skrevet <quote>NB! (Reserve)</quote>.</p>
+<p>På nederste del av bladets annen side har Ibsen føyd til et <quote>Tillæg</quote>, også her med angivelse av antall sider. Her står (til dels i annen rekkefølge) alle titlene (bortsett fra <title rend="quotes">De sejlendes sang</title>) fra den overstrøkne <quote>skuespill-bolken</quote> i liste 1, tittelen <title rend="quotes">Til Kong Karl Johans minde</title> om igjen, dessuten de to titlene som han foran hadde strøket over og merket som reserve, samt to som svarer til ytterligere to overstrøkne enkelttitler i liste 1 (<quote>I haven udenfor mit vindu står</quote> og <title rend="quotes">I havsnød</title>). Til slutt står to nye titler, <title rend="quotes">Til en bortdragende Kunstner</title> og <title rend="quotes">Ørnulfs drapa</title>. Foran alle diktene i tillegget, så nær som <title rend="quotes">Solvejgs sange</title> og <title rend="quotes">Vuggevise</title>, har Ibsen satt kryss; <title rend="quotes">Solvejgs sange</title> er strøket over.</p>
+<p>I trykkmanuskriptet finnes seks legg merket 1–6. Mye tyder på at Ibsen sendte de fire første av disse til Hegel 21. januar 1871, det femte 31. januar og det sjette 8. februar (se beskrivelsen av manuskript 3, avsnittet <hi rend="italic">Mengde, struktur og rekkefølge</hi>, med oversikt over hvordan materialet kan ha blitt oversendt til Hegel). Rekkefølgen av diktene til og med <title rend="quotes">Forviklinger</title> i innholdsliste 2, etter innskudd og rettelser, svarer helt til disse leggene frem til og med nest siste dikt i legg 5 (bortsett fra at <title rend="quotes">Terje Vigen</title> der er kommet til foran <title rend="quotes">Forviklinger</title>). I den rettede liste 2 gjenstår det da, før tillegget, fire dikt, som alle finnes i samme rekkefølge til slutt i legg 6. Dette indikerer at listen før tillegget er skrevet i tilknytning til utarbeidelsen av disse seks leggene, trolig før han gjorde ferdig legg 5 og 6. At listen hører sammen med sendingen 21. januar, bekreftes også ved at han i brevet til Hegel den dagen skriver at han regner med at boken blir på åtte–ni ark. Han har på listen – før strykninger og innskudd og før tillegget – anslått et omfang på 128 sider, som svarer til åtte oktavark. Han stryker ni sider, men har skutt inn dikt med et omfang på ti sider, så det totale blir 129 sider. Av Hegels konsept til brev til Ibsen 27. januar 1871 <bibl>(KBK NKS 3742, 4°, II)</bibl> fremgår det at forleggeren ønsket boken på <quote>10 Ark (160 Sider)</quote>. Ibsen godtar dette i sitt brev 31. januar og sier at han følgelig må omarbeide innholdsfortegnelsen. Tillegget i liste 2 kan derfor være føyd til rundt 31. januar, det utgjør etter Ibsens summering 32 sider, slik at han dermed har fått summen opp i 160 <bibl>(H. Dahl 1958, 230)</bibl>.</p>
+</div>
+    
+<div>
+<head rend="level3">innholdsliste 3, bl. 8</head> 
+<p>Overskrift på bl. 8r: <quote>Indhold:</quote>. I ES (3, 388) omtales listen som liste III, i HU (14, 494) er den kalt tredje innholdsliste. Den dekker begge sider av bladet. Bl. 8 har vært siste blad i et dobbeltblad (nå gått fra hverandre i falsen), dobbeltbladets første blad (bl. 1) er et renskrevet tittelblad til <hi rend="italic">Digte</hi>. Listen har senere rettelser i form av tittelendringer, strykninger og tilføyelser. Den urettede listen svarer helt til den rettede innholdsliste 2 (uten de diktene som Ibsen har ført opp i sitt <quote>Tillæg</quote>) og kan være skrevet som renskrift av denne. For tittelen <title rend="quotes">Sendebrev til H. Ø. Blom</title> står nå <title rend="quotes">Åbent brev</title>. Ibsen har understreket overskriften og satt finalstrek etter listen. Han har senere føyd til en rekke titler innimellom de andre og prøvd seg med forskjellige plasseringer, han har også rettet i flere titler. De tilføyde titlene er: <title rend="quotes">Mindets magt</title> (to ganger, en gang strøket over), <title rend="quotes">Digterens vise</title> (trolig samme som <title rend="quotes">Drikke-vise</title> i innholdsliste 1), <title rend="quotes">Til Karl Johans minde</title> (strøket over), <title rend="quotes">Sang for kvinden!</title>/ <title rend="quotes">Priset være kvinden!</title>, <title rend="quotes">I billedgalleriet</title> (strøket over, men annet sted er innskutt <title rend="quotes">I galleriet</title>), <title rend="quotes">Til Sverge</title>/ <title rend="quotes">Hilsen til Svenskerne</title>, <title rend="quotes">I havsnød</title> (to ganger, begge ganger strøket over, en gang merket med et kryss), <title rend="quotes">Vuggevise</title> (to ganger, en gang strøket over), <title rend="quotes">Borte!</title>, <title rend="quotes">Agnes</title>, <title rend="quotes">Familje-scene</title> (strøket over, kanskje et annet navn på <title rend="quotes">Fra mit husliv</title>), <title rend="quotes">Til en bortdragende kunstner</title>, <title rend="quotes">Ørnulfs drapa</title> (to ganger, en gang strøket over), <title rend="quotes">Af mit husliv</title>/ <title rend="quotes">Fra mit husliv</title>, <title rend="quotes">De usynliges kor</title>, <title rend="quotes">Kvindernes sang</title>/ <title rend="quotes">Kvindernes bøn</title>, <title rend="quotes">Til min ven revolutionsmanden</title>, <title rend="quotes">Martyrdom</title> (trolig det som senere ble hetende <title rend="quotes">Uden navn</title>). Han har også føyd til to ukjente titler som ikke kan knyttes til noe dikt, begge er strøket over og vanskelige å lese. I mikroskop leses den ene tydelig som <quote>Opgør</quote>, den andre trolig som <quote>Italia unita</quote> (jf. ES 3, 388); ved det siste har Ibsen tilføyd <quote>I og II</quote> (eller <quote>1 og 11</quote>?) samt <quote>NB!</quote>. HU (14, 525) antar at noe av det påtenkte <quote>Italia unita</quote> kan ha gått inn i <title rend="quotes">Langt borte</title>, som Ibsen skrev i 1875 og tok inn i annen utgave av <hi rend="italic">Digte</hi>. Følgende titler finnes ikke på de to tidligere listene: <title rend="quotes">Mindets magt</title>, <title rend="quotes">Borte!</title>, <title rend="quotes">Fra mit husliv</title>, <title rend="quotes">I galleriet</title>, <title rend="quotes">Til min ven revolutionsmanden</title>, <title rend="quotes">Martyrdom</title>, samt de to ukjente. Tre tilføyde titler (<title rend="quotes">Fra mit husliv</title>, <title rend="quotes">Kvindernes bøn</title> og <title rend="quotes">I galleriet</title>) er fra legg 5 og 6 i trykkmanuskriptet, kanskje sendt 31. januar og 8. februar (se manuskript 3, avsnittet <hi rend="italic">Mengde, struktur og rekkefølge</hi>). To andre legg i trykkmanuskriptet, merket a og b, ble trolig sendt først 16. februar; de inneholder utelukkende dikt som er føyd til i liste 3 (<title rend="quotes">Digterens vise</title>, <title rend="quotes">Priset være kvinden!</title>, <title rend="quotes">Hilsen til Svenskerne</title>, <title rend="quotes">Borte!</title>, <title rend="quotes">Agnes</title>, <title rend="quotes">Mindets magt</title>, <title rend="quotes">Til min ven revolutionsmanden</title>, <title rend="quotes">Martyrdom</title>, titlene er listens, noen er endret i trykkmanuskriptet). Liste 3 må følgelig ha sammenheng med utarbeidelsen av disse forsendelsene til Hegel. Den rettede listen er grunnlaget for innholdsliste 4 og dermed også indirekte for den innholdslisten som ligger i trykkmanuskriptet og som ble sendt til Hegel 8. februar 1871 (selv om noen av dikttekstene først ble sendt senere).</p>
+<p>Også i liste 3 har Ibsen notert hvor mange sider diktene vil fylle, og han kommer til slutt, med de tillagte titler, frem til tallet 154, dvs. opp mot Hegels ønskede ti ark (jf. Ibsens brev til ham 31. januar).</p>
+</div>
+    
+<div>
+<head rend="level3">Innholdsliste 4, bl. 42</head> 
+<p>Overskrift på bl. 42r: <quote>Indhold:</quote>. I ES (3, 388) omtales listen som liste IV, i HU (14, 495) er den kalt fjerde innholdsliste. Den dekker begge sider av bladet. Bl. 42 har trolig utgjort et dobbeltblad sammen med bl. 25 (se <hi rend="italic">Mengde, struktur og rekkefølge</hi>), bl. 25 er et renskrevet tittelblad til <hi rend="italic">Digte</hi>. Listen er en renskrift av den rettede innholdsliste 3; strykninger og tilføyelser er tatt til følge, og rekkefølgen er som der. Under listen har Ibsen satt en dobbel finalstrek. Tittelen er ikke understreket. På listens annen side (bl. 42v) har han foretatt noen endringer. Han hadde først skrevet <title rend="quotes">Til min ven revolutionsmanden</title> som i liste 3, men har rettet til <title rend="quotes">Til min ven, revolutions-taleren</title>. <title rend="quotes">Martyrdom</title> i liste 3 er først erstattet av <title rend="quotes">Kval i højhed</title>, som Ibsen har strøket over og så erstattet med <title rend="quotes">Uden navn</title>. Denne listen må være det umiddelbare forelegget for den listen som ligger i trykkmanuskriptet. Ibsen har senere tilføyd noen titler, det er de samme som er tilføyd, trolig av Hegel, i trykkmanuskriptets liste, og de er føyd inn på samme plass der: <title rend="quotes">En kirke</title>, <title rend="quotes">Tak</title>, <title rend="quotes">Ved Port Said</title> og <title rend="quotes">Brændte skibe</title>. Det ser ut som Ibsen først hadde tenkt å plassere <title rend="quotes">En kirke</title> mellom <title rend="quotes">Mindets magt</title> og <title rend="quotes">Åbent brev</title>, han har her skrevet <quote>En</quote>, men strøket det. Mellom <title rend="quotes">I galleriet</title> og <title rend="quotes">De usynliges kor</title> har han dessuten føyd inn <title rend="quotes">Judas</title>, men også det er strøket.</p>
+<p>Som i de tidligere listene har han føyd til antatt omfang i sider, med de innskutte titlene kommer han opp i 158, altså svært nær Hegels ønskede 160. Ibsen må ha skrevet inn de tilføyde titlene i tilknytning til sendingene til Hegel 16. og 25. februar (jf. manuskript 3, avsnittet <hi rend="italic">Mengde, struktur og rekkefølge</hi>). Foran <title rend="quotes">Abraham Lincolns mord</title> har han skrevet noe som kan leses som <quote>afsendt!</quote>, han har strøket det kraftig over. Teksten til dette diktet ble trolig sendt 16. februar.</p>
+<p>Med samme blekk (fiolett) har han foran en rekke av titlene satt en liten strek etterfulgt av et kryss; det gjelder alle diktene som ble sendt (trolig 16. februar) i legg a og b, ett dikt (<title rend="quotes">Til en bortdragende kunstner</title>) som også ble sendt 16. februar, og tre dikt (<title rend="quotes">Ørnulfs drapa</title>, <title rend="quotes">En kirke</title> og <title rend="quotes">Tak</title>, det siste har bare kryss) som ble sendt 25. februar. Med annet blekk (mørkebrunt) har Ibsen senere ved en rekke av diktene skrevet <quote>komp</quote>, gjerne fulgt en tilsvarende liten strek som ved kryssene. Det er mulig at Ibsens tilføyde <quote>komp</quote> har sammenheng med hans brev til komponisten Peter Heise 7. februar 1871, om muligheten for at Heise kan skrive musikk til noen av diktene i <hi rend="italic">Digte</hi>: <quote>Jeg tror nemlig at adskillige af digtene egner sig til musikalsk behandling</quote>. Jf. HIS 12k, 581. Blekkfarven i <quote>komp</quote> osv. svarer til bruken i Ibsens brev etter 25. februar, jf. <hi rend="italic">Skriveredskap og -stoff</hi>.</p>
+</div>
+  
+<div>
+<head rend="level3">enkeltdiktene</head>
+<p>De fleste diktene er egenhendige. Noen få er avskrifter i andre hender og trykk. Inndelingen i ES og HU i b og c begrunnes med papiret: Papirformatet i b er mindre enn i c, se <hi rend="italic">Papir</hi>. I brevmaterialet er begge disse papirtypene brukt i januar og frem til 17. februar 1871, men etter det brukes bare det største av disse to. Diktene på det minste papiret (i HIS 12 kalt papir 15) er trolig sendt til Hegel før diktene på det største papiret (i HIS 12 kalt papir 14), noe som kan stemme med bruken av papirtypene i brevene. Inndelingen etter papiret blir derfor fulgt her. Om blanke blad, se <hi rend="italic">Mengde, struktur og rekkefølge</hi>.</p>
+</div>
+  
+<div>
+<head rend="level3">egenhendige dikt etc. på papir 15 (i es og hu kalt b)</head>
+<p rend="noIndent">Bl. 22–23, 19, 24. Ett dobbelt og (nå) to enkle blad med utkast til åtte dikt samt en innholdsliste. Rettelser (men se om en strofe til <title rend="quotes">Fra mit husliv</title> på bl. 23v) er tatt til følge i trykkmanuskriptet, der diktene finnes i legg 2–5, trolig sendt til Hegel 21. og 31. januar 1871:</p>
+
+        <list type="bulleted">
+        <item>bl. 22r, [<title rend="quotes">Troens grund</title>] <title rend="quotes">Fra Dybbøl-dagene</title>, begynnelsen. Med rettelser. Teksten fortsetter på bl. 24v. På bl. 22v står et utkast som er brukt i syvende strofe på bl. 24v (strofe 15 i det endelige diktet). Et identisk utkast til tredje strofe på bl. 24v (strofe 11 i det endelige diktet) står på bl. 7v, se <hi rend="italic">Egenhendige dikt etc. på papir 14</hi>.</item>
+        <item>bl. 22v, <title rend="quotes">Kløften</title>. Med rettelser. Under dette står utkast til en del av en strofe i [<title rend="quotes">Troens grund</title>], se omtalen av bl. 22r.</item>
+        <item>bl. 23r.
+            <list type="bulleted">
+            <item>[<title rend="quotes">Fugl og fuglefænger</title>]. Uten tittel. De to første strofer, med rettelse. Dette kan bygge på Ibsens rettede tekst i manuskript 1 (Løkkes samling), men er videre bearbeidet. Utkast til siste strofe står på bl. 7v, se <hi rend="italic">Egenhendige dikt etc. på papir 14</hi>.</item>
+            <item>[<title rend="quotes">Min unge vin</title>]. Uten tittel. Med rettelser.</item>
+            <item>[<title rend="quotes">Stambogsrim</title>] <title rend="quotes">Et stambogsrim</title>. Med rettelser. I margen har Ibsen skrevet <quote>ikke afsendt</quote>.</item>
+            </list>
+        </item>
+        <item>bl. 23v
+            <list type="bulleted">
+            <item><title rend="quotes">En Svane</title>. Et helt annet dikt enn <title rend="quotes">Svanen</title>, nr. 37 i Løkkes samling. Med rettelser</item>
+            <item>[<title rend="quotes">Fra mit husliv</title>]. Siste strofe. Med rettelse. Strofen er skrevet på langs i høyre marg. Langs strofens venstre marg er det satt en strek og ut for denne et spørsmålstegn, begge med blyant. Utkast til hele diktet står på bl. 20r, en rettelse på bl. 23v er tatt til følge i siste strofe.</item>
+            </list>
+        </item>           
+        <item>bl. 24v, [<title rend="quotes">Troens grund</title>] Slutten, fortsettelse av <title rend="quotes">Fra Dybbøl-dagene</title> på bl. 22r. Det er nærliggende å regne med at denne siden er skrevet i flukt med bl. 22r og derfor kanskje skrevet før bl. 24r.</item>            
+        <item>bl. 24r, <title rend="quotes">Til de genlevende</title>. Overveiende omhyggelig skrevet. Dette bygger på Ibsens rettede tekst i manuskript 1 (Løkkes samling). Med rettelser</item>            
+        <item>bl. 19, innholdsliste 2. Blant de titlene som Ibsen føyde til på denne listen, finnes noen av diktene på bl. 22–24. Ingen av diktene på de følgende delene av materialet med dette papiret finnes på listen. Bl. 19 og 24 har utgjort et dobbeltblad, se <hi rend="italic">Mengde, struktur og rekkefølge</hi>.</item>
+        </list>
+          
+<p rend="noIndent">Bl. 20–21. Ett dobbeltblad, med utkast til tre dikt. Rettelser er tatt til følge i en renskrift på bl. 4–5:</p>
+        
+        <list type="bulleted">
+        <item>bl. 20r, <title rend="quotes">Fra mit husliv</title>. Med rettelser. Siste strofe bygger på bl. 23v.</item>
+        <item>bl. 20v–21r, <title rend="quotes">I galleriet</title>. Med rettelser</item>
+        <item>bl. 21v, <title rend="quotes">Borte!</title></item>
+        </list>
+        
+<p rend="noIndent">Bl. 3 og 6. Ett dobbeltblad, med utkast til tre dikt. Rettelser er tatt til følge i en renskrift på bl. 30 (de to første) og på bl. 63–64 (det siste, se <hi rend="italic">Egenhendige dikt etc. på papir 14</hi>):</p>
+                    
+            <list type="bulleted">
+            <item>bl. 3r–v, <title rend="quotes">Mindets magt</title>. Med rettelser. Den rettede versjonen av siste strofe er skrevet nederst på bl. 7v (se <hi rend="italic">Egenhendige dikt etc. på papir 14</hi>).</item>
+            <item>bl. 3v, <title rend="quotes">Til min ven revolutionstaleren!</title> Med rettelser</item>
+            <item>bl. 6r–v, [<title rend="quotes">Uden navn</title>] <title rend="quotes">Kval i højhed</title>. Seks strofer og to vers av en syvende, samt et prosanotat. Med rettelser. På bl. 63–64 står en bearbeidet, renskrevet versjon med tittel <title rend="quotes">Uden navn</title>; prosanotatene kan være forarbeid til strofe 7–10 der.</item>
+            </list>
+                            
+<p rend="noIndent">Bl. 4–5. Ett dobbeltblad, merket a, med renskrifter av utkastene på bl. 20–21, fortsetter med bl. 30–31. Diktene har her fått sin endelige form. De finnes i legg 5–6 og a i trykkmanuskriptet, kanskje sendt til Hegel 31. januar, 8. og 16. februar 1871:</p>
+        
+            <list type="bulleted">
+        <item>bl. 4r, <title rend="quotes">Fra mit husliv</title></item>
+        <item>bl. 4v–5r, <title rend="quotes">I galleriet</title>. Med rettelse, som er tatt til følge i trykkmanuskriptet</item>
+        <item>bl. 5v, <title rend="quotes">Borte!</title></item>
+            </list>
+              
+<p rend="noIndent">Bl. 30–31. Ett dobbeltblad, merket b, på bl. 30 med renskrifter av utkastene på bl. 3, må være skrevet i flukt med bl. 4–5; diktene har her fått sin endelige form. Bl. 31 har utkast. Diktene finnes i legg a–c i trykkmanuskriptet, trolig sendt til Hegel 16. februar 1871:</p>
+        
+           <list type="bulleted">
+        <item>bl. 30r, <title rend="quotes">Mindets magt</title></item>
+        <item>bl. 30v, <title rend="quotes">Til min ven revolutions-taleren!</title></item>
+        <item>bl. 31r–v, <title rend="quotes">Ved Port Saïd</title>. Utkast med rettelser. Rettelser er tatt til følge i trykkmanuskriptet. Under utkastet har Ibsen skrevet utkast til en melding for Sigurd Ibsen om sykefravær fra skolen.</item>
+            </list>
+          
+          
+<p rend="noIndent">Bl. 26–27. Ett dobbeltblad med utkast til tre dikt. Rettelser er tatt til følge i en renskrift på bl. 32–33 (se <hi rend="italic">Egenhendige dikt etc. på papir 14</hi>). Foran diktene står et brevutkast:</p>
+        
+        <list type="bulleted">
+        <item>bl. 26r, Ibsens utkast til brev til Brandes 17. februar 1871. Se HIS 12, 659.</item>
+        <item>bl. 26v, <title rend="quotes">En kirke</title>. Med rettelser</item>
+        <item>bl. 27r, <title rend="quotes">Judas</title>. Med rettelser. Under diktet er et annet utkast til annen strofe.</item>            
+        <item>bl. 27v, <title rend="quotes">Tak!</title> Med rettelser</item>
+        </list>
+
+<p rend="noIndent">Bl. 28–29. Ett dobbeltblad med utkast til ett dikt:</p>
+        
+        <list type="bulleted">
+        <item>bl. 28r, <title rend="quotes">Til min forlægger. (ved hans jubilæum.)</title> Med rettelser. Rettelsene er tatt til følge i renskrift på bl. 32r (se <hi rend="italic">Egenhendige dikt etc. på papir 14</hi>).</item>
+        </list>            
+</div>
+  
+<div>
+<head rend="level3">egenhendige dikt etc. på papir 14 (i es og hu kalt c)</head>
+
+<p rend="noIndent">Bl. 43–44, 17–18, 60v–r, 58–59, 15–16: <title rend="quotes">Ballonbrev til en svensk dame</title>. Utkast med rettelser. Dobbeltbladet 17–18 har Ibsens leggnummer 2, dobbeltbladene 58–59 og 15–16 hans leggnumre 4 og 5. Utkastet må ligge til grunn for det avsendte diktet (til Fredrika Limnell [24.] desember 1870, se HIS 12); de fleste rettelsene er tatt til følge der. Øverst på utkastets første side, bl. 43r, har Ibsen skrevet at det ble sendt til Stockholm 24. desember 1870 og til <hi rend="italic">Morgenbladet</hi> 28. desember. Diktets tittel, med henvisning til trykk, er nevnt i trykkmanuskriptets legg 6, som kanskje ble sendt til Hegel 8. februar 1871; Ibsen nevner diktet også i brevet til Hegel 8. januar.</p>
+<p>Bl. 2 og 7. Ett dobbeltblad med innholdsliste og utkast til to hele dikt og til spredte strofer i tre andre. Rettelser i de to hele diktene er tatt til følge i trykkmanuskriptet, der de finnes i legg 1 og 4, trolig sendt til Hegel 21. januar 1871:</p>    
+    
+    <list type="bulleted">
+    <item>bl. 2r–v, innholdsliste 1, se ovenfor</item>
+    <item>bl. 7r, <title rend="quotes">Stormsvalen</title>. Med rettelser</item>
+    <item>bl. 7v øverst, [<title rend="quotes">Fugl og fuglefænger</title>], siste strofe, bygger på Ibsens rettede versjon i manuskript 1 (Løkkes samling). Jf. bl. 23r (se <hi rend="italic">Egenhendige dikt etc. på papir 15</hi>). Til venstre for strofen er det med blyant satt en langsgående strek og ut for denne et spørsmålstegn, begge med blyant, jf. bl. 23v.</item>
+    <item>bl. 7v, [<title rend="quotes">Ederfuglen</title>] Uten tittel. Med rettelser. Dette bygger på Ibsens rettede tekst i manuskript 1 (Løkkes samling). En blyantklamme er trolig satt til av Julius Elias, jf. nedenfor om bl. 54–55, 13–14 osv.</item>
+    <item>bl. 7v, [<title rend="quotes">Troens grund</title>], en strofe. Jf. bl. 22r (se <hi rend="italic">Egenhendige dikt etc. på papir 15</hi>). I venstre marg, litt ovenfor strofen og med skriveretningen parallell med bladets langside, har Ibsen skrevet <quote>NB</quote>.</item>
+    <item>bl. 7v, [<title rend="quotes">Mindets magt</title>], siste strofe. Jf. bl. 3r–v (se <hi rend="italic">Egenhendige dikt etc. på papir 15</hi>).</item>
+    </list>
+    
+<p rend="noIndent">Bl. 45–46. Ett dobbeltblad med fire dikt fra <hi rend="italic">Kongs-Emnerne</hi>. Renskrift, med mørkebrunt blekk. De samme sangene finnes som vedlegg til Ibsens brev til Peter Heise 25. juni 1870, se HIS 4k, 403 og HIS 12, 644. Om blekkfarven som mulig grunnlag for datering, se <hi rend="italic">Skriveredskap og -stoff</hi>. Det kan tenkes at Ibsen har foretatt denne renskriften tidligere, kanskje som avskrift av det han sendte til Heise; diktene der er skrevet på samme slags papir. Bare ett av disse diktene er tatt med i <hi rend="italic">Digte</hi>:</p>
+    
+    <list type="bulleted">
+    <item>bl. 45r, fra femte akt, <quote>Kvindernes sang i kapellet</quote>. Her har Ibsen foretatt en rettelse med fiolett blekk, den er tatt til følge i trykkmanuskriptet. I innholdslistene er <title rend="quotes">Kvindernes bøn</title> med i innholdsliste 1, men så strøket, ført inn igjen som <title rend="quotes">Kvindernes sang</title> i tillegget i innholdsliste 2, videre føyd til i innholdsliste 3 først som <title rend="quotes">Kvindernes bøn</title>, rettet til <title rend="quotes">Kvindernes sang</title>, og tatt med i innholdsliste 4 og i trykkmanuskriptets liste som <title rend="quotes">Kvindernes bøn</title>. Diktet finnes i trykkmanuskriptet i legg 6, kanskje sendt til Hegel 8. februar 1871.</item>
+    <item>bl. 46r, fra tredje akt, <title rend="quotes">Munkenes sang</title></item>
+    <item>bl. 46v, fra første akt, <title rend="quotes">Domine coeli!</title> og <title rend="quotes">Gloria in excelsis deo!</title></item>
+    </list>
+
+<p rend="noIndent">Bl. 63–64. Ett dobbeltblad med utkast til <title rend="quotes">Uden navn</title>. Det begynner som renskrift, men går etter hvert over til utkast i mer skjødesløs skrift. Hele diktet har rettelser, som er tatt til følge i trykkmanuskriptet. Det bygger på utkastet <title rend="quotes">Kval i højhed</title> på bl. 6r–v (se <hi rend="italic">Egenhendige dikt etc. på papir 15</hi>). I trykkmanuskriptet finnes diktet i legg b og c, som kan være sendt til Hegel 16. februar 1871. Jf. innholdsliste 3 og 4 om titlene <title rend="quotes">Martyrdom</title> og <title rend="quotes">Kval i højhed</title>.</p>
+<p>Bl. 32–33. Ett dobbeltblad, av Ibsen merket 1, med fire renskrevne dikt. To er ikke tatt med i <hi rend="italic">Digte</hi>. Rettelser i de to andre er tatt til følge i trykkmanuskriptet, der de finnes i et legg B som Ibsen sendte til Hegel 25. februar 1871. Alle bygger på utkast på bl. 28r, 26v og 27r–v (se <hi rend="italic">Egenhendige dikt etc. på papir 15</hi>):</p>
+    
+    <list type="bulleted">
+    <item>bl. 32r, <title rend="quotes">Til min forlægger. (Ved hans jubilæum.)</title> Diktet står ikke på noen av innholdslistene. Det ble trykt i FU 4 (1899) med tittelen <title rend="quotes">Til Frederik Hegel</title> med bare små avvik i tegnsetting.</item>
+    <item>bl. 32v, <title rend="quotes">En kirke</title>. Med rettelser</item>
+    <item>bl. 33r, <title rend="quotes">Judas</title>. Diktet er ikke tatt med i <hi rend="italic">Digte</hi> og finnes følgelig heller ikke i trykkmanuskriptet, men det er føyd inn og så strøket i innholdsliste 4, se ovenfor</item>
+    <item>bl. 33r–v, <title rend="quotes">Tak</title>. Med rettelser</item>
+        </list>   
+        
+<p rend="noIndent">Bl. 1 og 8. Renskrevet tittelblad til <hi rend="italic">Digte</hi> og innholdsliste 3, se ovenfor. Opprinnelig ett dobbeltblad, nå gått fra hverandre i falsen.</p>
+  <p>Bl. 42. Innholdsliste 4, se ovenfor.</p>
+  <p>Bl. 25. Renskrevet tittelblad til <hi rend="italic">Digte</hi>. Bl. 25 og 42 har utgjort et dobbeltblad, se <hi rend="italic">Mengde, struktur og rekkefølge</hi>.</p>     
+  <p>Bl. 54–55, 13–14, 56v–r, 48v, 57v, 12, 11r, 56r, 47r. <title rend="quotes">Rimbrev til fru Heiberg</title>. Forskjellige utkast, også et par strofer i renskrift, samt et brevutkast. Diktet ble sendt som brev til Johanne Luise Heiberg i april 1871, som manuskript til <hi rend="italic">Digte</hi> ble det sendt til Hegel 15. april 1871 og de følgende dagene, se manuskript 3 og HIS 12k, 606. Flere steder finnes blyantklammer, de er trolig satt der av Julius Elias under arbeidet med ES. Katalogen i Nasjonalbibliotekets håndskriftsamling opplyser (i et notat tilføyd mellom 1928 og 1935) om Ibsen-manuskriptene Ms. 4° 1107–19: <quote>Flere av skuespilhåndskriftene har blyantstreker (særlig parenteser). Disse er satt der av Julius Elias under arbeidet med ‹Efterlatte skr.›</quote> Jf. brev fra Elias til Halvdan Koht 18. mai 1907 (NBO Brevs. 386), der han beskriver sin generelle fremgangsmåte: Etter nøyaktig kollasjon har han forsynt alle varianter med hakeparenteser, slik at Koht ikke trenger å gjennomgå med avskriveren annet enn de stedene som er markert på denne måten.</p>
+     
+    <list type="bulleted">
+      <item>bl. 54–55, 13–14, 56v (motsatt vei, senere foliert [57]) – øverst på bl. 56r (motsatt vei, dvs. [57]v), sammenhengende utkast til og med verslinjene <quote>synets skønheds-form fortolker / efter skiftende behov</quote>. Dobbeltbladet 13–14 er merket 2, det samme er dobbeltbladet [57]–[56]. De to første strofene på bl. 54r og den første på bl. 13r er mer omhyggelig skrevet, ellers er skriften til dels svært skjødesløs, og Ibsen har foretatt mange rettelser; en rettelse på bl. 54v er i motsetning til det øvrige med fiolett blekk (men se om bl. 56r og 47r). For de delene av teksten som ikke finnes i bearbeidet versjon i samme manuskript (se nedenfor), er rettelser tatt til følge i trykkmanuskriptet.</item>
+    <item>bl. 48v, utkast til de siste seks linjer av avsnittet <quote>Underfuldt til Danmark bundet</quote>, så godt som identisk med denne delen av diktet på bl. 56v (motsatt vei)</item>   
+      <item>bl. 57v (motsatt vei, senere foliert [56]r), bearbeidelse, med rettelser, av utkastet på bl. 13 til avsnittene <quote>Slank og smekker</quote> og det følgende <quote>Og se der, – et modsat billed!</quote> De seks siste linjene av avsnittet <quote>Underfuldt til Danmark bundet</quote> på bl. [57]v er så godt som identiske med utkastet på bl. 48v. Skriften er mindre skjødesløs. Rettelsene er tatt til følge i trykkmanuskriptet.</item>
+    <item>bl. 12r–v, bl. 11r, ny gjennomskrivning, med rettelser, av avsnittene fra og med <quote>Man har sagt at scenens kunst</quote> (jf. bl. 14v og 56) og ut diktet. Rettelser på bl. 14v og 56 er tatt til følge. Nye rettelser er tatt til følge i trykkmanuskriptet.</item>
+    <item>bl. 56r og 47r, renskrifter med fiolett blekk. Jf. <hi rend="italic">Skriveredskap og -stoff</hi>.
+          <list type="bulleted">
+          <item>bl. 56r, begynnelsen av diktet (det meste av første avsnitt), med tittel og steds- og tidsangivelse. Dette er det eneste stedet i dette materialet at diktets tittel er med. Teksten er identisk med den på bl. 54r, men linjen <quote>hele vrimlen</quote> mangler; Ibsen kan ha avbrutt skrivingen da han oppdaget det.</item>
+          <item>bl. 47r, avsnittet <quote>Men derude,</quote>. De fleste rettelsene på bl. 13r er tatt til følge. Legget er merket 2. Under teksten står utkast til brev til kong Karl 15. den 13. april 1871 (jf. HIS 12, 665).</item>
+          </list>
+     </item>
+     </list>
+                
+<p rend="noIndent">Bl. 49–51. Avskrifter i Jakob Løkkes hånd. Ibsens utsagn i brev til Hegel 2. desember 1870 indikerer at han kunne vente tillegg til hovedforsendelsen fra Løkke. For de to diktene på bl. 50–51 har Løkke gitt nøyaktige kildeopplysninger (diktene er fra <hi rend="italic">Christiania-Posten</hi> 1851).</p>
+     
+    <list type="bulleted">
+    <item>bl. 49, <quote>Ved Festen i Throndhjem for de Svenske Kronings-Deputerede. (5<hi rend="raised">te</hi> August 1860.)</quote> Ibsen har i Løkkes samling <bibl>(Ms. 4° 1110a)</bibl> s. 62 føyd til <quote>NB. Sangen i Trondhjem!</quote>, og i brev til Hegel 16. februar 1871 sier han at han har bedt om å få dette tilsendt fra Kristiania. Det er tatt med i innholdsliste 1, se ovenfor. Ibsen har foretatt enkelte rettelser i teksten (med fiolett blekk); rettelsene er tatt til følge i trykkmanuskriptet.</item>
+    <item>bl. 50, <title rend="quotes">Til de danske Studenter ved Festen i Frimurerlogen den 9<hi rend="raised">de</hi> Juni 1851, under det nordiske Studentermøde</title></item>
+    <item>bl. 51, <title rend="quotes">Sang ved H. M. Kongens Fest for de nordiske Studenter paa Ladegaardsøen, den 10<hi rend="raised">de</hi> Juni 1851</title></item>
+    </list>     
+        
+<p rend="noIndent">Bl. 52–53, 61–62. Avskrifter av to dikt, sendt Ibsen fra Hegel. De to diktene er skrevet av samme hånd, uvisst hvem.</p>
+    
+     <list type="bulleted">
+    <item>bl. 52–53, [<title rend="quotes">Ørnulfs drapa</title>]. I brev til Hegel 16. februar 1871 sier Ibsen at han håper å få diktet fra Hegel. Teksten i trykkmanuskriptet har noen avvik fra denne.</item>
+    <item>bl. 61–62, [<title rend="quotes">Til en bortdragende kunstner</title>] <title rend="quotes">Sang ved Kunstnerforeningens Fest for Skuespiller Chr Jørgensen den 30te Mai 1863</title>. Ibsen har rettet i teksten (med fiolett blekk), de fleste rettelsene er tatt til følge i trykkmanuskriptet. Ibsen hadde i brev til Hegel 31. januar bedt om å få tilsendt en avskrift av dette diktet.</item>
+    </list>
+         
+<p rend="noIndent">Bl. 9, 10, 34–41. Trykk. Bl. 9 og 10 er fra et prøvetrykk til <hi rend="italic">Digte</hi>, begge har sidetallet 2.</p>
+     
+    <list type="bulleted">
+    <item>bl. 9, <title rend="quotes">Byggeplaner</title>. Den trykte tittelen er <title rend="quotes">Markblomster og potteplanter</title>, dette er rettet med blyant, trolig av Halvdan Koht.</item>
+      <item>bl. 10, noen strofer av [<title rend="quotes">På Akershus</title>]</item>
+    <item>bl. 34–41, s. 257–71 fra et korrekturtrykk til <hi rend="italic">Brand</hi>, på s. 257 <title rend="quotes">De usynliges Kor</title>, avmerket med røde og blå blyantstreker i margen.</item>
+</list>
+</div>
+
+<div>
+<head rend="level3">datering</head>
+<p>Det meste er trolig skrevet tidlig i 1871. Se <hi rend="italic">Innhold og genetisk status</hi>, der særlig innholdslistene relateres til datoer for oversendelse av trykkmanuskriptet.</p>
+</div>
+  
+<div>
+<head rend="level3">mengde, struktur og rekkefølge</head>
+  <p>Ms. 4° 1110b består av 64 blad, de fleste inngår i dobbeltblad. Alt er senere (ikke av Ibsen) foliert 1–64 med rødt. Den røde folieringen er nevnt i bibliotekets eldste katalog og må være foretatt før manuskriptet ble katalogisert i 1910. Slik rød foliering finnes sporadisk i andre av de Ibsen-manuskripter biblioteket mottok samtidig med dette, bl.a. i Ms. 4° 1111 (til <hi rend="italic">Kejser og Galilæer</hi>), Ms. 4° 1112 (til <hi rend="italic">Samfundets støtter</hi>) og Ms. 4° 1115 (til <hi rend="italic">Vildanden</hi>), se omtalen av Ms. 4° 1111 i HIS 6k, 294. Folieringen synes temmelig vilkårlig. Dobbeltbladet 11–12 må være brettet galt; teksten begynner på bl. 12r og slutter på bl. 11r. Dobbeltbladet 56–57 er foliert med utgangspunkt i den renskrevne strofen på bl. 56r. Resten av legget har tekst (forskjellige deler av <title rend="quotes">Rimbrev til fru Heiberg</title>) motsatt vei; den begynner på bl. 56v, som siden (av biblioteket) er foliert [57] i samme skriveretning som rimbrevet, bl. 57v er tilsvarende foliert [56]. Bl. 12v har vært foliert 11 med rødt, dette er strøket over (også med rødt). Ibsen har merket/nummerert noen av dobbeltbladene i første blads øvre venstre hjørne. Dobbeltbladet 4–5 er merket a og 30–31 b (begge i papir 15). I materialet til <title rend="quotes">Ballonbrev</title> er dobbeltbladene 17–18, 58–59 og 15–16 merket henholdsvis 2, 4 og 5. Dobbeltbladet 32–33 er merket 1. I materialet til <title rend="quotes">Rimbrev til fru Heiberg</title> er det tre dobbeltblad som er merket 2, nemlig 13–14, 56–57 (dvs. [57]–[56], nummeret står på bl. 56v = [57]r) og 47–48. Dobbeltbladet 2/7 var tidligere (motsatt vei, med bl. 7v som første side) påbegynt som et legg merket 5, av tekst hadde Ibsen bare skrevet <quote>ga</quote>. To legg er merket av nyere (ukjent) hånd: dobbeltbladet 28–29 (<title rend="quotes">Til min forlægger</title>, papir 15), som 5a, og 47–48 (del av <title rend="quotes">Rimbrev til fru Heiberg</title>) som 5b. Følgende blad er (nå) enkle: bl. 1 og 8, som fortsatt hang så vidt sammen tidlig i 2009; bl. 19 og 24 (papir 15), men de er i ES (3, 388) omtalt som et <quote>ark</quote> og må følgelig ha hørt sammen i et dobbeltblad med bl. 19r som første side og 24r som tredje; tilsvarende må gjelde bl. 25 og 42, som samme sted i ES omtales som <quote>Titelblad med innholdsfortegnelse</quote>; dessuten bl. 60 og bl. 49, som aldri har hørt sammen. Bl. 28v, 29r–v (disse i papir 15), 1v, 9v, 10r, 11v, 25v, 41v, 45v, 47v, 48r, 57r og 62v er blanke, alle andre sider er beskrevne. I materialet på papir 14 synes noen dobbeltblad å være klippet til i øvre kant, skjevt inn mot falsen. Det gjelder bl. 1/8, 2/7 og 58–59, på bl. 58r går leggnummeret helt opp til sidens øvre kant. Dobbeltbladet 56–57 er også klippet skrått (i nedre kant); med utgangspunkt i folieringen [56]–[57] blir det øvre kant, men med skråning ut mot ytre kant. På bl. 60 er en del av hele øvre marg klippet av, skjevt mot begge kantene; dobbeltbladet 63–64 likedan, men mindre er klippet bort (siden er høyere).</p>
+<p>De røde foliotallene gir denne rekkefølgen (med tilføyde summariske opplysninger om papir, avskrift, trykk, jf. <hi rend="italic">Innhold og genetisk status</hi>):</p>
+      
+      <list type="bulleted">
+      <item>bl. 1, tittelblad (papir 14)</item>
+      <item>bl. 2, innholdsliste 1 (papir 14)</item>
+          <item>bl. 3, <title rend="quotes">Mindets magt</title>, <title rend="quotes">Til min ven revolutionstaleren!</title>, utkast (papir 15)</item>
+          <item>bl. 4–5, <title rend="quotes">Fra mit husliv</title>, <title rend="quotes">I galleriet</title>, <title rend="quotes">Borte!</title>, renskrifter (papir 15)</item>
+          <item>bl. 6, <title rend="quotes">Kval i højhed</title>, utkast (papir 15)</item>
+          <item>bl. 7, <title rend="quotes">Stormsvalen</title>, en strofe av [<title rend="quotes">Fugl og fuglefænger</title>], [<title rend="quotes">Ederfuglen</title>], en strofe av [<title rend="quotes">Troens grund</title>], en strofe av [<title rend="quotes">Mindets magt</title>] (papir 14)</item>
+          <item>bl. 8, innholdsliste 3 (papir 14)</item>
+          <item>bl. 9 og 10, <title rend="quotes">Byggeplaner</title>, noen strofer av [<title rend="quotes">På Akershus</title>], i prøvetrykk (<hi rend="italic">Digte</hi>)</item>
+          <item>bl. 11–14, deler av <title rend="quotes">Rimbrev til fru Heiberg</title>, se ovenfor om innbyrdes rekkefølge (papir 14)</item>
+          <item>bl. 15–16, slutten av <title rend="quotes">Ballonbrev til en svensk dame</title>, fortsettelse av bl. 58–59 (papir 14)</item>
+          <item>bl. 17–18, del av <title rend="quotes">Ballonbrev</title>, fortsettelse av bl. 43–44 (papir 14)</item>
+          <item>bl. 19, innholdsliste 2 (papir 15)</item>
+          <item>bl. 20–21, <title rend="quotes">Fra mit husliv</title>, <title rend="quotes">I galleriet</title>, <title rend="quotes">Borte!</title>, utkast (papir 15)</item>
+          <item>bl. 22–23, 24, begynnelsen av [<title rend="quotes">Troens grund</title>] med tittelen <title rend="quotes">Fra Dybbøl-dagene</title>, <title rend="quotes">Kløften</title>, en ufullstendig strofe av [<title rend="quotes">Troens grund</title>], begynnelsen av [<title rend="quotes">Fugl og fuglefænger</title>], [<title rend="quotes">Min unge vin</title>], <title rend="quotes">Et stambogsrim</title>, <title rend="quotes">En svane</title>, slutten av [<title rend="quotes">Fra mit husliv</title>], slutten av <title rend="quotes">Fra Dybbøl-dagene</title>, <title rend="quotes">Til de genlevende</title>, utkast (papir 15)</item>
+          <item>bl. 25, tittelblad (papir 14)</item>
+          <item>bl. 26–29, brevutkast, <title rend="quotes">En kirke</title>, <title rend="quotes">Judas</title>, <title rend="quotes">Tak!</title>, <title rend="quotes">Til min forlægger</title>, utkast (papir 15)</item>
+          <item>bl. 30–31, <title rend="quotes">Mindets magt</title>, <title rend="quotes">Til min ven revolutions-taleren!</title>, renskrifter; <title rend="quotes">Ved Port Saïd</title>, utkast (papir 15)</item>
+          <item>bl. 32–33, <title rend="quotes">Til min forlægger</title>, <title rend="quotes">En kirke</title>, <title rend="quotes">Judas</title>, <title rend="quotes">Tak</title>, renskrifter (papir 14)</item>
+          <item>bl. 34–41, <title rend="quotes">De usynliges Kor</title>, i korrekturtrykk (<hi rend="italic">Brand</hi>)</item>
+          <item>bl. 42, innholdsliste 4 (papir 14)</item>
+          <item>bl. 43–44, <title rend="quotes">Ballonbrev</title>, begynnelsen (papir 14)</item>
+          <item>bl. 45–46, fire dikt fra <hi rend="italic">Kongs-Emnerne</hi> (papir 14)</item>
+          <item>bl. 47–48, deler av <title rend="quotes">Rimbrev til fru Heiberg</title>, se ovenfor om innbyrdes rekkefølge; brevutkast (papir 14)</item>
+          <item>bl. 49–51, avskrifter i Jacob Løkkes hånd</item>
+          <item>bl. 52–53, avskrifter sendt fra Hegel</item>
+          <item>bl. 54–57, deler av <title rend="quotes">Rimbrev til fru Heiberg</title>, se ovenfor om innbyrdes rekkefølge (papir 14)</item>
+          <item>bl. 58–60, deler av <title rend="quotes">Ballonbrev</title>, teksten begynner på bl. 60 som fortsettelse av bl. 17–18 og fotsetter på bl. 58–59 (papir 14)</item>
+          <item>bl. 61–62, avskrifter sendt fra Hegel</item>
+          <item>bl. 63–64, <title rend="quotes">Uden navn</title>, utkast (papir 14)</item>
+      </list>
+     
+</div>
+  
+<div>
+<head rend="level3">tilstand</head>
+<p>Mange blad er stedvis misfarvet. Det finnes en del flekker, noen mindre tilfeller av blekksmitte, og skrukker. Mange dobbeltblad har mindre rifter i ryggfalsen. Dobbeltbladet 1/8 henger nå bare så vidt sammen i falsen, bl. 2/7 er også i ferd med å gå fra hverandre. Bl. 43–44 har rifter i nedkant, det finnes også andre mindre rifter. Bl. 49 og 50–51 med Løkkes avskrifter er brettet to ganger på tvers som for å passe i en konvolutt. Avskriftene med ukjent hånd er brettet dels to ganger på tvers (bl. 61–62, brettene er ikke sammenfallende med Løkkes), dels en gang (bl. 52–53).</p>
+</div>
+  
+<div>
+<head rend="level3">papir</head>
+<p>Til det egenhendige materialet i Ms. 4° 1110b har Ibsen benyttet to slags papir.</p>
+<p>Bl. 3/6, 4–5, 19, 20–21, 22–23, 24, 26–27, 28–29, 30–31: Papiret er gulaktig med bunn- og kjedelinjer. Siden måler 114 × 178 mm. Papiret er brukt i noen av Ibsens brev 20. desember 1870 – 21. januar 1871 og er i HIS 12 kalt papir 15, se HIS 12, 519, 651–55 (på s. 519 er også brevutkastet på bl. 26r regnet med).</p>
+<p>Bl. 1/8, 2/7, 11–12, 13–14, 15–16, 17–18, 25, 32–33, 42, 43–44, 45–46, 47–48, 54–55, 56–57, 58–59, 60, 63–64: Papiret er gulaktig, noe tynnere enn det foregående, med bunn- og kjedelinjer. Siden måler 141 × 219 mm. Papiret er brukt i mange av Ibsens brev 16. juni 1870 – 23. mai 1871 og er i HIS 12 kalt papir 14, se HIS 12, 519, 643–71.</p>
+<p>Avskriftene i andre hender, bl. 49, 50–51, 52–53, 61–62, er skrevet på samme slags papir: gulaktig, forholdsvis tynt, linjert ved linjer i strukturen. (Siden måler 135 × 208 mm (Løkkes avskrifter, bl. 49–51), 134 × 208 (de øvrige).)</p>
+</div>
+  
+<div>
+<head rend="level3">skriveredskap og -stoff</head>
+<p>Ibsen har skrevet med blekk. Skriftbildet er fiolett i det meste av materialet i hans hånd, (mørke)brunt i resten. Det fiolette sees følgende steder: alt som er skrevet på papir 15; hele <title rend="quotes">Ballonbrev</title>; bl. 1/8, 2/7, 25, 32–33, 42 (men se nedenfor om innslag med mørkebrunt blekk), 63–64; de renskrevne strofene av <title rend="quotes">Rimbrev til fru Heiberg</title>, bl. 47r og 56r; rettelser på bl. 45r og 54v, samt rettelser i avskriftene på bl. 49 og 61–62. Det mørkebrune sees i diktene fra <hi rend="italic">Kongs-Emnerne</hi>, bl. 45–46, og det tilføyde <quote>komp.</quote> etc. på bl. 42, samt i hele materialet til <title rend="quotes">Rimbrev til fru Heiberg</title> bortsett fra de to renskrevne strofene på bl. 47r og 56r, jf. <hi rend="italic">Innhold og genetisk status</hi>. I det undersøkte brevmaterialet er skriftbildet fiolett i de fleste brevene 2. juli – 10. oktober 1870 og i alle 2. november 1870 – 25. februar 1871, etter dette finnes ikke fiolett blekk i brevene før 27. desember 1871. Dette kan tyde på at de delene av materialet som er skrevet med mørkebrunt blekk, kan være eldre enn det fiolette (gjelder trolig avskriftene fra <hi rend="italic">Kongs-Emnerne</hi>), eller yngre (trolig tilføyelsen på bl. 42). Men Ibsen brukte det fiolette blekket også da han renskrev de to strofene av <title rend="quotes">Rimbrev til fru Heiberg</title>, på bl. 56r datert til <quote>påske-ugen 1871</quote> (dvs. april), og i trykkmanuskriptet (manuskript 3). Det er derfor vanskelig å bruke blekkfarven til sikker datering.</p>
+<p>Avskriftene i andre hender er skrevet med blekk; skriftbildet er brunt. Elias har brukt blyant. Også strek og spørsmålstegn på bl. 7v og 23v er med blyant.</p>
+</div>
+  
+<div>
+<head rend="level3">hender og skrift</head>
+  <list type="numbered">
+<item n="1"><hi rend="italic">Henrik Ibsen</hi>: Skriften er venstrehellende. I utkastene er den skjødesløs, i varierende grad, noen steder svært skjødesløs, andre (bl.a. bl. 12r, 24r, 54r) mer omhyggelig. I renskriftene er den omhyggelig. Flere steder har han tilføyd tekst i margen, noen ganger (bl. 6v, 23v og 44v) med skriveretningen parallell med bladets langside. Hans opplysninger på bl. 43r om <title rend="quotes">Ballonbrev</title> står på skrå i øvre venstre hjørne. I innholdslisten på bl. 19 har han satt prikker e.l. mellom titlene og de tilsvarende tallene, som står helt til høyre på linjen. I diktene på papir 15 har han i utkastene som regel streket under titlene og satt strek mellom diktene, dette er gjort systematisk i alle renskriftene i hele materialet, men tittelen over den renskrevne første strofen av <title rend="quotes">Rimbrev til fru Heiberg</title>, bl. 56r, er ikke understreket. Tittelsidene (bl. 1r og 25r) er omhyggelig skrevet. Større overstrykninger er ofte gjort med små bølgestreker eller gjennomstrekning av linjen.</item>
+  <item n="2"><hi rend="italic">Jakob Løkke</hi>: Skriften er overveiende omhyggelig, med bare spredte innslag av gotisk skrift (lang <hi rend="italic">s</hi>), jf. manuskript 1. Bl. 49 er skrevet med mindre skrift enn bl. 50–51.</item>
+  <item n="3"><hi rend="italic">Ukjent avskriver</hi>: Skriften er omhyggelig og svært tydelig.</item>
+  <item n="4"><hi rend="italic">Julius Elias</hi>: Blyantklammene, se <hi rend="italic">Innhold og genetisk status</hi>, omtalen av bl. 54–55, 13–14 osv. Det er uvisst om det er han som har brukt blyant på bl. 7v og 23v. Elias (1861–1927) var tysk litterat, kunsthistoriker og oversetter.</item>
+  </list>
+</div>
+  
+<div>
+<head rend="level3">stempel og katalogsignatur</head>
+<p>Bibliotekets stempel og katalogsignatur finnes på bl. 1v, katalogsignaturen også på bl. 28v, 32r og 47v.</p>
+</div>
+  
+<div>
+<head rend="level3">proveniens</head>
+<p>Se manuskript 1.</p>
+</div>
+</div>
+      
+<div xml:id="Di42622_msBeskr">
+<head rend="level2">3. kbk collin 262, 4°, II.2</head>
+<p rend="noIndent">Trykkmanuskript, hovedsakelig egenhendig. Ett bind. Senere foliert 1–59. På bl. 1r: <quote>Indhold:</quote>.</p>
+
+<div>
+<head rend="level3">innhold og genetisk status</head>
+<p>Bl. 1r–2r <quote>Indhold:</quote>, dvs. innholdsfortegnelse som i førsteutgaven, men <title rend="quotes">Rimbrev til fru Heiberg</title> mangler. Listen er så godt som identisk med den opprinnelige teksten i innholdsliste 4. Linjen med <quote>Kval i højhed</quote> har samme overstrykning og tilføyelse som der. Tittelen <title rend="quotes">Til min ven revolutions-taleren</title> har denne formen, dvs. bare den rettede formen fra liste 4. Følgende titler er senere tilføyd, trolig av Hegel, på riktig plass: <title rend="quotes">En Kirke</title>, <title rend="quotes">Tak</title>, <title rend="quotes">Ved Port Said</title> og <title rend="quotes">Brændte Skibe</title>; disse må være føyd til etter mottagelsen av Ibsens sendinger 16. og 25. februar, se oversikt nedenfor under <hi rend="italic">Mengde, struktur og rekkefølge</hi>. Til høyre for titlene er utgavens sidetall tilføyd av forskjellige hender. Sidetallene for de to siste diktene stemmer ikke med utgaven, fordi <title rend="quotes">Rimbrev til fru Heiberg</title> er kommet til der. For de første tolv diktene (til og med s. 21) kan tallene være skrevet av August Larsen. Det er satt et kryss foran diktene (bortsett fra de åtte diktene mellom det første og <title rend="quotes">Bergmanden</title>), med blå eller med vanlig blyant, i ett tilfelle (<title rend="quotes">Hilsen til Svenskerne</title>) med blekk. Ved noen av diktene står det også spørsmålstegn, til dels skrevet før krysset.</p>
+<p>Diktene står på bl. 3r–59v. Innholdet er fullstendig, som i førsteutgaven. Fra begynnelsen er rekkefølgen i manuskriptet omtrent som der, men avviker fra den etter hvert. Ved innbindingen er flere blad plassert galt, slik at en del av diktene ikke har sammenhengende tekst. For diktene <title rend="quotes">Digterens vise</title> (bl. 28r), <title rend="quotes">Hilsen til Svenskerne</title> (bl. 28v), <title rend="quotes">Vuggevise</title> (bl. 28v), <title rend="quotes">Agnes</title> (bl. 29r), <title rend="quotes">Terje Vigen</title> (bl. 41r), <title rend="quotes">De usynliges kor</title> (bl. 43v), <title rend="quotes">På vidderne</title> (bl. 53r), <title rend="quotes">Abraham Lincolns mord</title> (bl. 53r) og <title rend="quotes">Ballonbrev</title> (bl. 53v) har Ibsen bare skrevet tittelen og henvist til trykk som er eller skal bli sendt. Bortsett fra <title rend="quotes">Ballonbrev</title> finnes alle disse i full tekst andre steder i manuskriptet; <title rend="quotes">Vuggevise</title> og <title rend="quotes">Agnes</title> (bl. 30 og 31) i avskrift ved August Larsen, <title rend="quotes">Terje Vigen</title> (bl. 37) og <title rend="quotes">På vidderne</title> (bl. 50) som trykk (utrevne sider fra Winterhjelm red. 1868, jf. Dahl 1958, 228). Som bl. 27 står et tittelblad, kanskje fra et korrektureksemplar av førsteutgaven. Se oversikten over den nåværende rekkefølgen av diktene under <hi rend="italic">Mengde, struktur og rekkefølge</hi>.</p>
+<p>På bl. 30r har ukjent hånd notert at avskriverhånden er August Larsens. Ved enkelte linjer i den trykte teksten til <title rend="quotes">Terje Vigen</title> (foran bl. 38) står det blyantkryss. På bl. 3r står tallet 23458.</p>
+<p>Når Ibsen henviser til tidligere trykk, gir han også instrukser til setteren, likedan på første side av den trykte teksten til <title rend="quotes">Terje Vigen</title>. I den trykte teksten til <title rend="quotes">På vidderne</title> har han føyd til romertall over bolkene. Foran noen dikt (<title rend="quotes">En kirke</title>, bl. 44v; <title rend="quotes">Tak</title>, bl. 45r; <title rend="quotes">Brændte skibe</title>, bl. 51r; <title rend="quotes">Ved Port Said</title>, bl. 52r) har han skrevet beskjed om hvor diktet skal føyes inn. En del av Ibsens instrukser er strøket over med tynn blyantstrek (bl. 28r og v, 29r, 51r, 52r). På sidene med trykte dikt-tekster har Ibsen strøket over omkringliggende tekst.</p>
+<p>Settermarkeringer og merker etter svertede fingre viser at manuskriptet har vært brukt som trykkforelegg. Det bygger på manuskript 2 <bibl>(Ms. 4° 1110b)</bibl>, for de diktene som finnes der. Andre dikt kan (til dels indirekte) bygge på de rettede versjonene i Løkkes samling, se manuskript 1. Se <hi rend="italic">Tekstkritisk redegjørelse</hi> for tabellarisk oversikt over det samlede manuskriptmaterialet for diktene i <hi rend="italic">Digte</hi>. Ibsen har ført inn enkelte rettelser. Det aller meste gjelder utskiftning av ord (eksempler: <quote>dyb</quote> for <quote>sval</quote> og <quote>flakser</quote> for <quote>sidder</quote>, bl. 9r; <quote>kongespor</quote> for <quote>færd på jord</quote>, bl. 20v). Larsen har rettet i sin tekst på bl. 30 (avskriverfeil), og han har rettet til <quote>klude</quote> for <quote>filler</quote> på bl. 4r, etter Ibsens ønske i brev til Hegel 8. februar 1871. På bl. 9r har ukjent hånd skrevet inn igjen et ord som Ibsen hadde strøket over.</p>
+</div>
+    
+<div>
+<head rend="level3">datering</head>
+<p>Ibsen sendte manuskriptet porsjonsvis til Hegel. De forskjellige delene må følgelig være ferdigstilt før avsendelsesdatoene. Det meste ble sendt 21. januar 1871, mer fulgte 31. januar, 8., 16. og 25. februar, 15. og 17. april. Se <hi rend="italic">Mengde, struktur og rekkefølge</hi> med tentativ redegjørelse for hva som ble sendt når.</p>
+</div>
+    
+<div>
+<head rend="level3">mengde, struktur og rekkefølge</head>
+<p>Manuskriptet er bundet inn i ett bind og er senere (ikke av Ibsen) foliert 1–59. Bl. 37 og 50 er egentlig begge åtte blad (s. 345–60 og 365–80) fra en trykt bok (Winterhjelm red. 1868), nederste del av s. 359/360 (etter <title rend="quotes">Terje Vigen</title> på s. 359) er klippet bort; bladtallene 37 og 50 står på s. 345 og 365. Det samlede antall blad er dermed 73. Innholdsfortegnelsen står først. Den består av to blad (bl. 1 og 2) som trolig har utgjort et dobbeltblad. Bl. 2v er blankt. Diktene følger på bl. 3–59. Bl. 27v, 30v, 31v og 33r er blanke, alle andre sider er beskrevne. Noen av diktene står i legg som Ibsen har nummerert eller merket i øvre venstre hjørne av leggets første side. En rekke blad er plassert galt ved innbindingen, og noen blad er snudd (se nedenfor om bl. 26, 33, 36, 51 og 52), med den følge at flere dikt er splittet opp slik at delene ikke følger på hverandre. Også bl. 21 og s. 359/60 (mellom bl. 37 og 38) må på et tidspunkt ha vært snudd, de har hakk fra heftingen i ytterkant.</p>
+<p>Innbindingen er trolig besørget av Jonas Collin. Bindet måler ca. 145 × 225 mm. Rygg og hjørner er i brunt skinn; bindets innhold er angitt med gulltrykk på ryggen, som også har striper i gull- og blindtrykk. Permene er trukket med fiolett shirting. Forsatspapiret er nyere, gulaktig. Snittet er noe ujevnt. Heftetråden er gulaktig.</p>
+<p>Rekkefølgen gjenspeiler ikke alle avleveringene til Hegel. Det gis derfor her oversikt både over den nåværende rekkefølgen og over den opprinnelige leggstrukturen og avleveringene, så langt slikt lar seg påvise. På grunn av innbindingen er det ofte ikke mulig å se hvilke blad som opprinnelig har hørt sammen i dobbeltblad.</p>
+
+<div><head rend="italic">Nåværende rekkefølge</head>
+<p rend="noIndent">Bl. 3–8. Ett legg (tre dobbeltblad), av Ibsen merket 1. Jf. legg 2–6, se bl. 9, 11–15, 16–21, 22–26, 38 og 43.</p>
+<p>bl. 3r–v, <title rend="quotes">Spillemænd</title></p>
+<p>bl. 3v–4r, <title rend="quotes">Kong Håkons gildehal</title></p>
+<p>bl. 4v, <title rend="quotes">Byggeplaner</title></p>
+<p>bl. 5r–v, <title rend="quotes">Markblomster og potteplanter</title></p>
+<p>bl. 5v–6r, <title rend="quotes">En fuglevise</title></p>
+<p>bl. 6v–8r, <title rend="quotes">På Akershus</title></p>
+<p>bl. 8r–v, <title rend="quotes">Ederfuglen</title></p>
+<p>bl. 8v, <title rend="quotes">Med en vandlilje</title>, første strofe, fortsetter på bl. 9r</p>
+<p rend="noIndent">Bl. 9. Må være første blad i et legg, av Ibsen merket 2, resten av legget er bl. 11–15 (legget har i alt seks blad). Ved siden av tallet 9 sees et svakt tre-tall (blyant, ikke skrevet av Ibsen). Jf. legg 1 og 3–6, se bl. 3–8, 16–21, 22–26, 38 og 43.</p>
+<p>bl. 9r, [<title rend="quotes">Med en vandlilje</title>], fra og med annen strofe, fortsettelse av bl. 8v</p>
+<p>bl. 9r–v, <title rend="quotes">Fugl og fuglefænger</title>, de seks første strofer, fortsetter på bl. 11r</p>
+<p rend="noIndent">Bl. 10. Må være første blad i et legg, av Ibsen merket A, resten av legget er bl. 49 (i alt to blad). Jf. legg B, se bl. 48.</p>
+<p>bl. 10r–v, <title rend="quotes">Digterens vise. (Af ‹Kærlighedens komedie[›].)</title>. Jf. bl. 28r.</p>
+<p rend="noIndent">Bl. 11–15. Fem blad, fortsettelse av bl. 9, utgjør sammen med dette et legg 2</p>
+<p>bl. 11r, [<title rend="quotes">Fugl og fuglefænger</title>], siste strofe, fortsettelse av bl. 9v</p>
+<p>bl. 11r–12r, <title rend="quotes">Bergmanden</title></p>
+<p>bl. 12r–v, <title rend="quotes">Min unge vin</title></p>
+<p>bl. 12v–13v, <title rend="quotes">Lysræd</title></p>
+<p>bl. 13v–14r, <title rend="quotes">Kløften</title></p>
+<p>bl. 14r–15r, <title rend="quotes">Højfjeldsliv</title></p>
+<p>bl. 15r–v, <title rend="quotes">På sangertog</title>, de første seks strofer og de to første linjer av den syvende, fortsetter på bl. 16r</p>
+<p rend="noIndent">Bl. 16–21. Ett legg, av Ibsen merket 3 (i alt seks blad, trolig tre dobbeltblad). Fortsettelse av legg 2. Jf. legg 1, 2 og 4–6, se bl. 3–8, 9, 11–15, 22–26, 38 og 43.</p>
+<p>bl. 16r–v, [<title rend="quotes">På sangertog</title>], fra og med de to siste linjer av syvende strofe, fortsettelse av bl. 15v</p>
+<p>bl. 16v–17r, <title rend="quotes">En svane</title></p>
+<p>bl. 17r–18v, <title rend="quotes">4<hi rend="raised">de</hi> Juli 1859. (Kong Oskars fødselsdag.)</title></p>
+<p>bl. 19r–v, <title rend="quotes">Skolehuset. (Ved indvielsen.)</title></p>
+<p>bl. 20r–21r, <title rend="quotes">Folkesorg</title></p>
+<p>bl. 21r–v, <title rend="quotes">Til thingmændene. (17<hi rend="raised">de</hi> Maj 1860.)</title>, de første fire strofer, fortsetter på bl. 22r</p>
+<p rend="noIndent">Bl. 22–26. Må være de fem første bladene i et legg, av Ibsen merket 4, resten av legget er bl. 36 (i alt seks blad). Jf. legg 1–3 og 5–6, se bl. 3–8, 9, 11–15, 16–21, 38 og 43.</p>
+<p>bl. 22r, [<title rend="quotes">Til thingmændene</title>], fra og med femte strofe, fortsettelse av bl. 21v</p>
+<p>bl. 22v, <title rend="quotes">Til de genlevende</title></p>
+<p>bl. 23r–v, <title rend="quotes">Til professor Schweigaard. (Studenternes sang ved hans jubilæum.)</title></p>
+<p>bl. 24r, <title rend="quotes">Stormsvalen</title></p>
+<p>bl. 24v, <title rend="quotes">Stambogsrim</title></p>
+<p>bl. 24v–25v, 26v–26r <title rend="quotes">Åbent brev. (Til digteren H. Ø. Blom.)</title>, de 13 første strofer fortsetter på bl. 36v. Bl. 26 må være snudd ved innbindingen.</p>
+<p rend="noIndent">Bl. 27. Et trykt tittelblad, kanskje fra et korrektureksemplar av førsteutgaven</p>
+<p rend="noIndent">Bl. 28–29. Ett legg, av Ibsen merket a (to blad), jf. legg b og c, bl. 46–47 og 51–52</p>
+<p>bl. 28r, <title rend="quotes">Digterens vise. (Af ‹Kærlighedens komedie›.)</title>, bare tittelen og henvisning til trykt tekst med instruks om hvordan diktet skal settes. Senere har Ibsen føyd til at han <quote>hermed</quote> sender diktet i avskrift, det må være bl. 10.</p>
+<p>bl. 28r–v, <title rend="quotes">Priset være kvinden! (Ved en sangerfest.)</title></p>
+<p>bl. 28v, <title rend="quotes">Hilsen til Svenskerne. (I Trondhjem ved kroningen.)</title>, bare tittelen og opplysning om at teksten skal bli sendt</p>
+<p>bl. 28v, <title rend="quotes">Vuggevise. (Af ‹Kongs-emnerne›.)</title>, bare tittelen og henvisning til trykt tekst med instruks om hvordan diktet skal settes</p>
+<p>bl. 29r, <title rend="quotes">Borte!</title></p>
+<p>bl. 29r, <title rend="quotes">Agnes. (Af ‹Brand›.)</title>, bare tittelen og henvisning til trykt tekst med instruks om hvordan diktet skal settes</p>
+<p>bl. 29v, <title rend="quotes">Mindets magt</title>, de syv første strofer, fortsetter på bl. 46r</p>
+<p rend="noIndent">Bl. 30–31. To dikt i avskrift ved August Larsen</p>
+<p>bl. 30r, <title rend="quotes">Agnes. (Af ‹Brand.›)</title></p>
+<p>bl. 31r, <title rend="quotes">Vuggevise. (Af ‹Kongs-emnerne.›)</title></p>
+<p rend="noIndent">Bl. 32. Må høre sammen med bl. 38, 40, 39, 41 og 42 som andre blad i et legg 5</p>
+<p>bl. 32r–v, [<title rend="quotes">En broder i nød</title>], fra og med de tre siste linjer i fjerde strofe, fortsettelse av bl. 38</p>
+<p>bl. 32v, <title rend="quotes">Troens grund</title>, de fire første strofer, fortsetter på bl. 40r</p>
+<p rend="noIndent">Bl. 33. Bladet må være snudd ved innbindingen, versosiden skulle vært satt først (bl. 33r er blankt). Må være siste blad i et legg B, se bl. 48</p>
+<p>bl. 33v, [<title rend="quotes">Til en bortdragende kunstner</title>], fra og med annen strofe, fortsettelse av bl. 48v</p>
+<p rend="noIndent">Bl. 34–35. Ett legg (to blad), av Ibsen merket A. Jf. legg B, bl. 44–45.</p>
+<p>bl. 34r–v, <title rend="quotes">Hilsen til Svenskerne. (I Trondhjem, ved storthingets fest for den svenske kronings-deputation.)</title></p>
+<p>bl. 34v–35v, <title rend="quotes">Ørnulfs drapa. (Af ‹Hærmændene på Helgeland›.)</title>, de elleve første strofer, fortsetter på bl. 44r</p>
+<p rend="noIndent">Bl. 36. Må høre sammen med bl. 22–26 i legg 4. Bladet må være snudd ved innbindingen, bl. 36v er fortsettelse av bl. 26r (bl. 26 er snudd ved innbindingen).</p>
+<p>bl. 36r, <title rend="quotes">Fredrik den syvendes minde. (Sang i studentersamfundet.)</title>, de to første strofer, fortsetter på bl. 38r</p>
+<p>bl. 36v, [<title rend="quotes">Åbent brev</title>], fra og med 14. strofe. Fortsettelse av bl. 26r (bl. 26 er snudd ved innbindingen).</p>
+<p rend="noIndent">Bl. 37. <title rend="quotes">Terje Vigen</title>, de trykte s. 345–60 fra Winterhjelm red. 1868. Ibsen har strøket over siste side, som inneholder begynnelsen av <title rend="quotes">Trysil-Knud</title>.</p>
+<p rend="noIndent">Bl. 38. Må være første blad i et legg 5 som for øvrig består av bl. 32, 40, 39, 41 og 42 (i alt seks blad). Jf. legg 1–4 og 6, se bl. 3–8, 9, 11–15, 16–21, 22–26 og 43.</p>
+<p>bl. 38r, [<title rend="quotes">Fredrik den syvendes minde</title>], siste strofe, fortsettelse av bl. 36r</p>
+<p>bl. 38r–v, <title rend="quotes">En broder i nød! <bibl>(December 1863.)</bibl></title>, de tre første strofer og de seks første linjer av fjerde strofe, fortsetter på bl. 32r</p>
+<p rend="noIndent">Bl. 39. Inngår som fjerde blad i legg 5, se bl. 38</p>
+<p>bl. 39r–v, [<title rend="quotes">Storthings-gården</title>], fra og med annen strofe, fortsettelse av bl. 40v</p>
+<p rend="noIndent">Bl. 40. Inngår som tredje blad i legg 5, se bl. 38</p>
+<p>bl. 40r–v, [<title rend="quotes">Troens grund</title>], fra og med femte strofe, fortsettelse av bl. 32v</p>
+<p>bl. 40v, <title rend="quotes">Storthings-gården</title>, første strofe, fortsetter på bl. 39r</p>
+<p rend="noIndent">Bl. 41–42. Inngår som femte og sjette blad i legg 5, se bl. 38</p>
+<p>bl. 41r, <title rend="quotes">Terje Vigen</title>, bare tittelen og opplysning om at diktet allerede er sendt</p>
+<p>bl. 41r–42r, <title rend="quotes">Forviklinger</title></p>
+<p>bl. 42r–v, <title rend="quotes">Fra mit husliv</title></p>
+<p rend="noIndent">Bl. 43. Må være første blad i et legg 6 som for øvrig består av bl. 53 (i alt to blad). Jf. legg 1–5, se bl. 3–8, 9, 11–15, 16–21, 22–26 og 38.</p>
+<p>bl. 43r–v, <title rend="quotes">I galleriet</title></p>
+<p>bl. 43v, <title rend="quotes">De usynliges kor. (af ‹Brand›.)</title>, bare tittelen og henvisning til trykt tekst med instruks om hvordan diktet skal settes</p>
+<p rend="noIndent">Bl. 44–45. Ett legg (to blad), av Ibsen merket B. Jf. legg A, bl. 34–35.</p>
+<p>bl. 44r, [<title rend="quotes">Ørnulfs drapa</title>], fra og med tolvte strofe, fortsettelse av bl. 35v</p>
+<p>bl. 44v, <title rend="quotes">En kirke</title>, med instruks om at det skal føyes inn og tilføyes i innholdslisten mellom <title rend="quotes">Fra mit husliv</title> og <title rend="quotes">I galleriet</title></p>
+<p>bl. 45r, <title rend="quotes">De usynliges kor. (Af ‹Brand›.)</title></p>
+<p>bl. 45r–v, <title rend="quotes">Tak</title>, med instruks om at det skal føyes inn og tilføyes i innholdslisten mellom <title rend="quotes">Kvindernes bøn</title> og <title rend="quotes">Abraham Lincolns mord</title></p>
+<p rend="noIndent">Bl. 46–47. Ett legg (to blad), av Ibsen merket b. Jf. legg a og c, bl. 28–29 og 51–52.</p>
+<p>bl. 46r, [<title rend="quotes">Mindets magt</title>], fra og med åttende strofe, fortsettelse av bl. 29v</p>
+<p>bl. 46r–v, <title rend="quotes">Til min ven revolutions-taleren!</title></p>
+<p>bl. 46v–47v, <title rend="quotes">Uden navn</title>, de ni første strofer, fortsetter på bl. 52v</p>
+<p rend="noIndent">Bl. 48. Må være første blad i et legg B som for øvrig består av bl. 33 (i alt to blad). Jf. legg A, bl. 10 og 49.</p>
+<p>bl. 48r–v, [<title rend="quotes">Abraham Lincolns mord</title>], fra og med sjette strofe, fortsettelse av bl. 49</p>
+<p>bl. 48v, <title rend="quotes">Til en bortdragende kunstner. (Ved afskeds-festen for skuespiller Jørgensen.)</title>, første strofe, fortsetter på bl. 33v</p>
+<p rend="noIndent">Bl. 49. Må være annet blad i et legg A, første blad er bl. 10</p>
+<p>bl. 49r–v, <title rend="quotes">Abraham Lincolns mord</title>, de fem første strofer, fortsetter på bl. 48r</p>
+<p rend="noIndent">Bl. 50. <title rend="quotes">Paa vidderne</title>, trykt tekst fra Winterhjelm red. 1868, s. 365–80</p>
+<p rend="noIndent">Bl. 51–52. Ett legg (to blad), av Ibsen merket c på bl. 52v. Legget må være snudd ved innbindingen, bl. 52v skulle stått først. Jf. legg a og b, bl. 28–39 og 46–47.</p>
+<p>bl. 51r, <title rend="quotes">Brændte skibe</title> med instruks om at det skal stå sist i samlingen; under diktet har Ibsen satt finalstrek</p>
+<p>bl. 51v, [<title rend="quotes">Ved Port Said</title>], fra og med annen strofe, fortsettelse av bl. 52r</p>
+<p>bl. 52r, [<title rend="quotes">Uden navn</title>], siste strofe, fortsettelse av bl. 52v</p>
+<p>bl. 52r, <title rend="quotes">Ved Port Said</title>, første strofe med instruks om at det senere vil bli gitt beskjed om hvor diktet skal plasseres, med senere tilføyelse om at det skal inn mellom <title rend="quotes">Uden navn</title> og <title rend="quotes">Ballonbrev</title>; diktet fortsetter på bl. 51v</p>
+<p>bl. 52v, [<title rend="quotes">Uden navn</title>], strofe 10–13, fortsettelse av bl. 47v, fortsetter på bl. 52r</p>
+<p rend="noIndent">Bl. 53. Må være annet blad i legg 6, første blad er bl. 43</p>
+<p>bl. 53r, <title rend="quotes">På vidderne</title>, bare tittelen og opplysning om at trykt versjon er sendt</p>
+<p>bl. 53r, <title rend="quotes">Kvindernes bøn. (af ‹Kongs-emnerne›)</title></p>
+<p>bl. 53r, <title rend="quotes">Abraham Lincolns mord</title>, bare tittelen og opplysning om at det skal bli sendt, jf. bl. 49</p>
+<p>bl. 53v, <title rend="quotes">Ballonbrev</title>, bare tittelen og opplysning om at det foreligger trykt</p>
+<p>bl. 53v, <title rend="quotes">I en komponists stambog</title>; under diktet har Ibsen satt finalstrek, jf. innholdsfortegnelsen, der det opprinnelig var siste dikt</p>
+<p rend="noIndent">Bl. 54–59. <title rend="quotes">Rimbrev til fru Heiberg</title></p>
+</div>
+        
+<div><head rend="italic">Oversikt over hvordan materialet kan ha blitt oversendt til Hegel</head><note type="footer">Utarbeidet på grunnlag av Stine Brenna Taugbøls undersøkelser for HIS.</note>
+<p rend="noIndent">Den følgende tentative rekonstruksjonen bygger på Ibsens brev til Hegel i kombinasjon med Ibsens merking av leggene og hans notiser om at teksten er eller skal bli sendt.</p>
+<p>I brev til Hegel 21. januar 1871 sender Ibsen <quote>en del manuscript til digtsamlingen</quote>; han skal <quote>hver uge sende Dem en lignende skreven portion</quote>. Han nevner også at det følger med tre dikt som foreligger i trykk. Det er sannsynlig at det Ibsen sendte i første omgang, var de første fire av de seks leggene merket 1–6. H. Dahl (1958, 229–30) går ut fra at det bare var de tre trykte diktene som ble sendt 21. januar, og at <quote>hovedstammen</quote> fulgte 31. januar. Men det strider bl.a. mot ordlyden i brevet 21. januar: Ibsen skriver <hi rend="italic">både</hi> om <quote>en del manuscript</quote> <hi rend="italic">og</hi> om de <quote>i tryk medfølgende tre digte</quote>. Han nevner spesielt <title rend="quotes">På vidderne</title> og <title rend="quotes">Terje Vigen</title>, det må være to av de tre trykte. Det tredje kan være <title rend="quotes">Ballonbrev til en svensk dame</title> i trykk fra <hi rend="italic">Morgenbladet</hi> 8. januar 1871; Ibsen omtaler dette diktet i sitt brev til Hegel 8. januar og vil oppta det i samlingen. Disse tre diktene er de eneste i trykkmanuskriptet som der foreligger som trykt tekst. Titlene er ført opp i legg 5 og 6. Ibsen sier i brevet at han ikke vil ta med noen av <quote>smådigtene</quote> i sine <quote>andre bøger</quote>, ingen slike finnes i legg 1–5.</p>
+<p>Legg 1–5 har seks blad hver, legg 6 to. Leggene inneholder:</p>
+<p rend="noIndent">legg 1 (bl. 3–8):</p>
+<p><title rend="quotes">Spillemænd</title></p>
+<p><title rend="quotes">Kong Håkons gildehal</title></p>
+<p><title rend="quotes">Byggeplaner</title></p>
+<p><title rend="quotes">Markblomster og potteplanter</title></p>
+<p><title rend="quotes">En fuglevise</title></p>
+<p><title rend="quotes">På Akershus</title></p>
+<p><title rend="quotes">Ederfuglen</title></p>
+<p><title rend="quotes">Med en vandlilje</title> (begynnelsen)</p>
+<p rend="noIndent">legg 2 (bl. 9, 11–15):</p>
+<p>[<title rend="quotes">Med en vandlilje</title>] (slutten)</p>
+<p><title rend="quotes">Fugl og fuglefænger</title></p>
+<p><title rend="quotes">Bergmanden</title></p>
+<p><title rend="quotes">Min unge vin</title></p>
+<p><title rend="quotes">Lysræd</title></p>
+<p><title rend="quotes">Kløften</title></p>
+<p><title rend="quotes">Højfjeldsliv</title></p>
+<p><title rend="quotes">På sangertog</title> (begynnelsen)</p>
+<p rend="noIndent">legg 3 (bl. 16–21):</p>
+<p>[<title rend="quotes">På sangertog</title>] (slutten)</p>
+<p><title rend="quotes">En svane</title></p>
+<p><title rend="quotes">4<hi rend="raised">de</hi> Juli 1859</title></p>
+<p><title rend="quotes">Skolehuset</title></p>
+<p><title rend="quotes">Folkesorg</title></p>
+<p><title rend="quotes">Til thingmændene</title> (begynnelsen)</p>
+<p rend="noIndent">legg 4 (bl. 22–26, 36):</p>
+<p>[<title rend="quotes">Til thingmændene</title>] (slutten)</p>
+<p><title rend="quotes">Til de genlevende</title></p>
+<p><title rend="quotes">Til professor Schweigaard</title></p>
+<p><title rend="quotes">Stormsvalen</title></p>
+<p><title rend="quotes">Stambogsrim</title></p>
+<p><title rend="quotes">Åbent brev</title></p>
+<p><title rend="quotes">Fredrik den syvendes minde</title> (begynnelsen)</p>
+<p rend="noIndent">legg 5 (bl. 38, 32, 40, 39, 41–42):</p>
+<p>[<title rend="quotes">Fredrik den syvendes minde</title>] (slutten)</p>
+<p><title rend="quotes">En broder i nød!</title></p>
+<p><title rend="quotes">Troens grund</title></p>
+<p><title rend="quotes">Storthings-gården</title></p>
+<p><title rend="quotes">Terje Vigen</title>, tittelen og opplysning om at diktet er sendt</p>
+<p><title rend="quotes">Forviklinger</title></p>
+<p><title rend="quotes">Fra mit husliv</title></p>
+<p rend="noIndent">legg 6 (bl. 43, 53):</p>
+<p><title rend="quotes">I galleriet</title></p>
+<p><title rend="quotes">De usynliges kor</title>, tittelen og henvisning til trykk</p>
+<p><title rend="quotes">På vidderne</title>, tittelen og henvisning til avsendt trykk</p>
+<p><title rend="quotes">Kvindernes bøn</title></p>
+<p><title rend="quotes">Abraham Lincolns mord</title>, tittelen og opplysning om at diktet skal bli sendt</p>
+<p><title rend="quotes">Ballonbrev</title>, tittelen og henvisning til trykk</p>
+<p><title rend="quotes">I en komponists stambog</title>. Under dette diktet har Ibsen satt dobbel finalstrek, det var tenkt som samlingens siste, jf. innholdsfortegnelsen, bl. 2r.</p>
+</div>
+  
+<div><p rend="noIndent">Sammen med sitt brev til Hegel 31. januar sender Ibsen <quote>atter en del manuscript</quote>. Det kan ha vært legg 5, siden han om <title rend="quotes">Terje Vigen</title> (legg 5) sier at diktet alt er sendt. Han sier i brevet at innholdet nå er klart til og med <title rend="quotes">Bergmanden</title>, men at det deretter vil måtte flettes inn dikt som kommer etter hvert (<quote>nu kommer til</quote>).</p>
+<p>Neste sending følger med brevet til Hegel 8. februar. Da kan Ibsen ha sendt legg 6. Dette legget inneholder noen mindre dikt fra skuespillene, han skriver nå at han etter nærmere overveielse er kommet til at han likevel tar med noen slike. Med brevet 8. februar sender Ibsen også en foreløpig innholdsliste. Det må være den som er lagt foran manuskriptet som bl. 1 og 2. Den inneholder i sin opprinnelige form (slik den ble skrevet av Ibsen, før senere tilføyelser av Hegel) alle dikttitlene i legg 1–6, dessuten diktene i legg a, b, A og B (disse ble trolig sendt 16. februar, se nedenfor) samt <title rend="quotes">Ørnulfs drapa</title>, som han samtidig ber om avskrift av. Titlene i legg a, b, A og B er på innholdslisten flettet inn blant dikt i legg 2, 3, 4 og 6, jf. at han i brevet 31. januar forberedte Hegel på at det ville bli endringer i rekkefølgen etter <title rend="quotes">Bergmanden</title> (i legg 2).</p>
+<p>Siden diktene i legg a, b, A og B er nevnt i den innholdslisten Ibsen sendte 8. februar, ville man ventet at disse leggene fulgte sammen med listen. Men det er mye som taler for at de ble sendt først 16. februar. I sitt brev til Hegel den dagen skriver Ibsen at han sender en forbedret versjon av <title rend="quotes">Til en bortdragende kunstner</title>, som han hadde mottatt i avskrift fra Hegel dagen før (se manuskript 2, Ms. 4° 1110b, bl. 61–62). I trykkmanuskriptet finnes diktet i et legg B, som følgelig må være sendt 16. februar. Legget inneholder også slutten av <title rend="quotes">Abraham Lincolns mord</title>, teksten er en fortsettelse av et legg A som derfor trolig er sendt samtidig. I sitt brev 31. januar hadde Ibsen bedt om avskrift av disse to diktene, Hegel sendte dem 7. februar <bibl>(KBK NKS 3742, 4°, II)</bibl>.</p>
+<p>Legg A og B har to blad hver og inneholder:</p>
+<p rend="noIndent">legg A (bl. 10 og 49):</p>
+<p><title rend="quotes">Digterens vise</title>, jf. manglende tekst i legg a, se nedenfor</p>
+<p><title rend="quotes">Abraham Lincolns mord</title> (begynnelsen), jf. manglende tekst i legg 6</p>
+<p rend="noIndent">legg B (bl. 48 og 33):</p>
+<p>[<title rend="quotes">Abraham Lincolns mord</title>] (slutten)</p>
+<p><title rend="quotes">Til en bortdragende kunstner</title></p>
+<p rend="noIndent">Det første diktet i legg A svarer til omtale på første blad i et legg a. Der har Ibsen skrevet tittelen med henvisning til trykk. Men så har han føyd til: <quote>Senere Anm: Digtet følger hermed i afskrift!</quote> Det vil si at han 16. februar også sender legg a. Som i legg 6 finnes her smådikt fra skuespill, jf. brevet 8. februar. Det fremgår av brevet 16. februar at han i tillegg sender to tidligere utrykte dikt som ikke var oppført på innholdslisten, og som han hadde funnet blant sine reisepapirer; det må være <title rend="quotes">Ved Port Said</title> og <title rend="quotes">Brændte Skibe</title> i et legg c. Diktene i legg b nevnes ikke spesielt i brevet, teksten der hører sammen med både a og c.</p>
+<p>Legg a–c har to blad hver og inneholder:</p>
+<p rend="noIndent">legg a (bl. 28–29):</p>
+<p><title rend="quotes">Digterens vise</title>, tittelen, henvisning til trykk og opplysning om at det samtidig sendes i avskrift</p>
+<p><title rend="quotes">Priset være kvinden!</title></p>
+<p><title rend="quotes">Hilsen til Svenskerne</title>, tittelen og opplysning om at diktet skal bli sendt</p>
+<p><title rend="quotes">Vuggevise</title>, tittelen og henvisning til trykk</p>
+<p><title rend="quotes">Borte!</title></p>
+<p><title rend="quotes">Agnes</title>, tittelen og henvisning til trykk</p>
+<p><title rend="quotes">Mindets magt</title> (begynnelsen)</p>
+<p rend="noIndent">legg b (bl. 46–47):</p>
+<p>[<title rend="quotes">Mindets magt</title>] (slutten)</p>
+<p><title rend="quotes">Til min ven revolutions-taleren!</title></p>
+<p><title rend="quotes">Uden navn</title> (begynnelsen)</p>
+<p rend="noIndent">legg c (bl. 51–52):</p>
+<p>[<title rend="quotes">Uden navn</title>] (slutten)</p>
+<p><title rend="quotes">Ved Port Said</title></p>
+<p><title rend="quotes">Brændte skibe</title></p>
+<p rend="noIndent">Ifølge brevet 16. februar mangler nå bare <title rend="quotes">Hilsen til Svenskerne</title> og <title rend="quotes">Ørnulfs drapa</title>. Disse sendes 25. februar i et nytt sett legg A og B.</p>
+<p>De nye leggene A og B har to blad hver (dvs. i alt åtte sider, som Ibsen oppgir i brevet) og inneholder:</p>
+<p rend="noIndent">legg A (bl. 34–35):</p>
+<p><title rend="quotes">Hilsen til Svenskerne</title>, jf. manglende tekst i legg a</p>
+<p><title rend="quotes">Ørnulfs drapa</title> (begynnelsen)</p>
+<p rend="noIndent">legg B (bl. 44–45):</p>
+<p>[<title rend="quotes">Ørnulfs drapa</title>] (slutten)</p>
+<p><title rend="quotes">En kirke</title></p>
+<p><title rend="quotes">De usynliges kor</title>, jf. manglende tekst i legg 6</p>
+<p><title rend="quotes">Tak</title></p>
+<p rend="noIndent"><title rend="quotes">En kirke</title> og <title rend="quotes">Tak</title> er føyd til i innholdsfortegnelsen av Hegel, jf. omtalen av bl. 44v og 45r ovenfor.</p>
+<p>Sammen med sitt brev til Hegel 7. april 1871 returnerer Ibsen tilsendte korrekturark. Tittelbladet som inngår som bl. 27 i manuskriptet, kan kanskje stamme fra ett av disse.</p>
+<p>Til slutt sender han <title rend="quotes">Rimbrev til fru Heiberg</title>. Det meste følger med hans brev til Hegel (lørdag) 15. april, han sier i brevet at de to siste sidene skal sendes mandag, dvs. 17. april.</p>
+<p>Sammenfattende (alle datoer gjelder 1871):</p>
+<p>21. januar: legg 1–4</p>
+<p>31. januar: legg 5</p>
+<p>8. februar: legg 6, innholdslisten (bl. 1–2)</p>
+<p>16. februar: legg a–c, legg A–B</p>
+<p>25. februar: nye legg A–B</p>
+<p>15. og 17. april: <title rend="quotes">Rimbrev til fru Heiberg</title></p>
+</div>
+</div>
+    
+<div>
+<head rend="level3">tilstand</head>
+<p>Bindet er noe slitt, og bakpermen noe misfarvet. Innbindingen har ført til at tekst inn mot falsen iblant er vanskelig å se (gjelder særlig enkelte leggnumre på rectosider og linjeslutt på enkelte versosider). Det meste av manuskriptet, bl. 1–29, 32–53, 58–59, har vært foldet på langs, foldingen synes å være foretatt porsjonsvis. Noen få blad, bl.a. bl. 1–2 (innholdsfortegnelsen), er dessuten foldet en gang på tvers. Bl. 30–31 (Larsens avskrifter, disse er ikke foldet på langs), 34–35, 44–45 (legg A og B) samt bl. 54–59 (<title rend="quotes">Rimbrev til fru Heiberg</title>) er foldet to ganger på tvers som for å passe i en konvolutt. Manuskriptet har en del flekker, bl.a. fingermerker, og enkelte steder blekksmitte. Bl. 1–2 er særlig skitne med mange flekker. Det finnes også en del skrukker, mest på bl. 54–57. Papiret er stedvis noe misfarvet; bl.a. har de trykte bladene forårsaket mørkere partier på tilstøtende sider.</p>
+</div>
+    
+<div>
+<head rend="level3">papir</head>
+<p>Papiret i Ibsens egenhendige tekst er gulaktig med bunn- og kjedelinjer. Siden måler ca. 140 × 219 mm. Papiret er også brukt i en del av manuskript 2 <bibl>(Ms. 4° 1110b)</bibl>, se dette. Bl. 30 og 31 (Larsens avskrifter) er i tynnere gulaktig papir, bl. 30 måler ca. 139 × 220 mm, bl. 31 ca. 136 × 217 mm.</p>
+</div>
+    
+<div>
+<head rend="level3">skriveredskap og -stoff</head>
+<p>Ibsen har skrevet med blekk. Skriftbildet er fiolett. August Larsen har skrevet med blekk; skriftbildet er nærmest sort. Et notat på bl. 30r om at det er August Larsens skrift, er skrevet med blyant. Folieringen er med blyant. I innholdsfortegnelsen er tilføyde sidetall til og med s. 21 med blekk, deretter med blyant; kryss foran titler er med vanlig eller med blå blyant, i ett tilfelle med blekk, spørsmålstegn med blekk og blyant; tilføyde titler i annen hånd er med blyant. I dikttekstene er streker over Ibsens instrukser o.l. med blyant, likedan det innskrevne ordet på bl. 9r. Settermarkeringene er med blekk og blyant. Tallet på bl. 3r er med rød blyant.</p>
+</div>
+      
+<div>
+<head rend="level3">hender og skrift</head>
+  <list type="numbered">
+    <item n="1"><hi rend="italic">Henrik Ibsen</hi>: Skriften er venstrehellende og omhyggelig. Diktene er plassert noenlunde midt på siden eller mot høyre. Ibsen har streket under hovedtitler og undertitler med henholdsvis dobbelt og enkelt strek og satt skillestrek mellom diktene og dobbel finalstrek etter innholdsfortegnelsen på bl. 2r, etter <title rend="quotes">Brændte skibe</title> på bl. 51r og etter <title rend="quotes">I en komponists stambog</title> på bl. 53v. Strykninger er ofte utført med små skråstreker eller tette bølgestreker.</item>
+  <item n="2"><hi rend="italic">August Larsen</hi>: Larsens tall, avskrifter og rettelse er tydelig skrevet. August Larsen (1843–1906) var dansk bokhandler; han var ansatt i Gyldendals forlag fra 1863 og utførte korrekturtjenesten på Ibsens manuskripter. Jf. Ibsens brev til Frederik Hegel 15. april 1871 (om <title rend="quotes">Rimbrev til fru Heiberg</title>): <quote>Jeg stoler på herr Larsen.</quote></item>
+    <item n="3"><hi rend="italic">Frederik Hegel</hi>: De tilføyde titlene i innholdslisten er trolig skrevet av ham. Skriften er tydelig.</item>
+      <item n="4"><hi rend="italic">Andre</hi>: Notatet om Larsen på bl. 30r, et ord på bl. 9r, noen av tallene i innholdsfortegnelsen, streker, kryss og spørsmålstegn, settermarkeringene, folieringen o.a.</item>
+  </list>
+</div>
+      
+<div>
+<head rend="level3">stempel og katalogsignatur</head>
+<p>Bibliotekets katalogsignatur (Af Collin 262 4to II) finnes på bl. 1r, tallet 2 på innsiden av forpermen. Bl. 1r er stemplet <quote>Den Collinske Manuscriptsamling</quote>. På bakpermen er det limt en lapp med tallet 876.</p>
+</div>
+      
+<div>
+<head rend="level3">proveniens</head>
+<p>Manuskriptet tilhører Det Kongelige Bibliotek, København, som del av bibliotekets Collinske Samling. Ibsen hadde gitt sitt samtykke til at hans forlegger Frederik Hegel kunne avlevere trykkmanuskriptene til Edvard og Jonas Collin <bibl>(L. Nielsen 1943, XXXI)</bibl>. Ordningen kan ha blitt etablert i 1870. Den 4. januar det året skrev Ibsen til Jonas Collin: <quote>Hvad de omhandlede Manuscripter betræffer, saa anser jeg mig ikke som ejendomsberettiget till disse. Men dersom Cancelliraad Hegel er villig till at afstaa dem, saa er det en Selvfølge at jeg vil betragte det som en Ære at faa dem indlemmede i Deres Herr Faders Samling.</quote></p>
+</div>
+</div>
+    
+<div xml:id="Di81928_msBeskr">
+<head rend="level2">4. nbo m<hi rend="miniscule">s</hi>.8° 1928</head>
+<p rend="noIndent">Egenhendig liste over påtenkte nye dikt til annen utgave av <hi rend="italic">Digte</hi> (1875). Overskrift: <quote>Nye digte.</quote> En side. Listen er gjengitt og omtalt i HU 14, 38–39.</p>
+
+<div>
+<head rend="level3">innhold og genetisk status</head>
+<p>Listen består av overskrift og syv dikttitler, se <hi rend="italic">Tekstkritisk redegjørelse</hi> for <hi rend="italic">Digte</hi>, avsnittet <hi rend="italic">Senere utgaver i Ibsens levetid</hi>. Det første, <title rend="quotes">Ved tusendårsfesten</title> ble første gang trykt særskilt til festen 18. juli 1872 og senere trykt i en rekke aviser (HIS 13k, 179). Den siste tittelen er <title rend="quotes">Nordens signaler</title>, som ble trykt i den danske avisen <hi rend="italic">Fædrelandet</hi> 7. november 1872. Tittelen <title rend="quotes">Ved statsråd Riddervolds afgang</title> knytter an til 1. juli 1872, da Hans Riddervold ble innvilget avskjed. En tittel, <title rend="quotes">Munken på Epoméo</title>, er ellers bare kjent som tittel i manuskript 1 <bibl>(Ms. 4° 1110a)</bibl>. De resterende tre titlene finnes bare her i manuskript 4. Listen står på en side i et dobbeltblad. Ibsen har så brukt de øvrige sidene til regnskaper og budsjetter, en rolleliste til <hi rend="italic">Kjærlighedens Komedie</hi> som trolig er utkast til vedlegg til Ibsens brev til Hartvig Lassen 24. oktober 1872 (jf. HIS 13, 564), dessuten noen tegninger. Blant regnskapene på dobbeltbladets annen side er notater som svarer til innførsler i Ibsens regnskapsbok for 1872 <bibl>(NBO Ms. fol. 3222)</bibl>.</p>
+</div>
+ 
+<div>
+<head rend="level3">datering</head>
+<p>Etter noen av titlene og etter innholdet på de følgende sider i dobbeltbladet å dømme (jf. <hi rend="italic">Innhold og genetisk status</hi>) kan listen være skrevet i 1872. Men det er først i brev til Hegel 22. oktober 1874 at Ibsen nevner dikt som han ønsker opptatt i en ny utgave av diktsamlingen: <quote>mit digt ved Norges tusendårs-fest samt et par nye hidtil utrykte digte</quote>.</p>
+</div>
+  
+<div>
+<head rend="level3">mengde, struktur og rekkefølge</head>
+<p>Manuskriptet står på første side i et dobbeltblad, som eneste tekst på denne siden. Siden er av biblioteket paginert 1.</p>
+</div>
+  
+<div>
+<head rend="level3">tilstand</head>
+<p>Dobbeltbladet har en liten rift nederst i falsen. Siden med listen er stedvis noe misfarvet, og det er svakt gjennomslag av tekst og tegning på versosiden.</p>
+</div>
+  
+<div>
+<head rend="level3">papir</head>
+<p>Papiret er som i trykkmanuskriptet, gulaktig med bunn- og kjedelinjer. Siden måler 142 × 219 mm. Papiret er brukt i mange brev fra Ibsen 12. juli 1871 – 16. oktober 1873, jf. papir 14 i HIS 13, 535, 539–86.</p>
+</div>
+  
+<div>
+<head rend="level3">skriveredskap og -stoff</head>
+<p>Manuskriptet er skrevet med blekk. Skriftbildet er brunt.</p>
+</div>
+  
+<div>
+<head rend="level3">skrift</head>
+<p>Skriften er venstrehellende og overveiende omhyggelig.</p>
+</div>
+  
+<div>
+<head rend="level3">stempel og katalogsignatur</head>
+<p>Bibliotekets stempel og katalogsignatur finnes på dobbeltbladets første side (listen) og på siste side.</p>
+</div>
+  
+<div>
+<head rend="level3">proveniens</head>
+<p>Manuskriptet tilhører Nasjonalbiblioteket, Oslo. Biblioteket (den gang Universitetsbiblioteket) kjøpte det av Henrik Ibsens arvinger i 1968–69. Det var i 1956 innlevert til biblioteket av Halvdan Koht.</p>
+</div>
+</div>
+
+<div xml:id="Di41113h_msBeskr">
+<head rend="level2">5. nbo m<hi rend="miniscule">s</hi>.4° 1113<hi rend="miniscule">h</hi></head>
+<p>Egenhendig rettelse av trykkfeil i annen utgave av <hi rend="italic">Digte</hi> (1875), til bruk for tredje utgave (1879). En side.</p>
+
+<div>
+<head rend="level3">innhold og genetisk status</head>
+<p>Manuskriptet består av en liste over trykkfeil i annen utgave av <hi rend="italic">Digte</hi> (1875) som Ibsen ønsker rettet i tredje (1879), jf. <hi rend="italic">Tekstkritisk redegjørelse</hi> til <hi rend="italic">Digte</hi>, avsnittet <hi rend="italic">Senere utgaver i Ibsens levetid</hi>. Under listen har biblioteket skrevet opplysninger om hva teksten gjelder.</p>
+</div>
+      
+<div>
+<head rend="level3">datering</head>
+<p>Listen kan være skrevet like etter 10. mars 1879. Av Ibsens brev til Hegel den dagen fremgår det at han skal gjennomgå annen utgave for å rette trykkfeil. Jf. også brevet til Hegel 18. februar 1879.</p>
+</div>
+      
+<div>
+<head rend="level3">mengde, struktur og rekkefølge</head>
+<p>Manuskriptet står på en side i et dobbeltblad, som eneste tekst på siden. Dobbeltbladet er nå brettet slik at teksten står på en innerside; på motstående innerside står opptegnelser som gjelder <hi rend="italic">Et dukkehjem</hi> (se HIS 7k, 284–85), skrevet opp ned i forhold til listen. Siden med trykkfeil er av Ibsen merket 8 i øvre venstre hjørne, trolig et leggnummer som kan ha stått der fra før. Det er derfor sannsynlig at dobbeltbladet opprinnelig har vært brettet slik at den siden som er merket 8, var første side. De to andre sidene av dobbeltbladet er blanke.</p>
+</div>
+      
+<div>
+<head rend="level3">tilstand</head>
+<p>Dobbeltbladet har skrukker og en liten rift i falsen.</p>
+</div>
+      
+<div>
+<head rend="level3">papir</head>
+<p>Papiret er gulaktig med bunn- og kjedelinjer. Siden måler 140 × 217 mm. Jf. papir 22 i HIS 13, 536.</p>
+</div>
+      
+<div>
+<head rend="level3">skriveredskap og -stoff</head>
+<p>Manuskriptet er skrevet med blekk. Skriftbildet er brunt.</p>
+</div>
+      
+<div>
+<head rend="level3">skrift</head>
+<p>Skriften er svakt venstrehellende og noe skjødesløs.</p>
+</div>
+      
+<div>
+<head rend="level3">stempel og katalogsignatur</head>
+<p>Bibliotekets stempel og katalogsignatur finnes på versosiden av den siden som gjelder <hi rend="italic">Et dukkehjem</hi>.</p>
+</div>
+      
+<div>
+<head rend="level3">proveniens</head>
+<p>Som for manuskript 4 <bibl>(Ms. 8° 1928)</bibl>.</p>
+</div>
+</div>
+</div>            
+</body>
+</text>
+</TEI>

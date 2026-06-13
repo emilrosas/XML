@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title level="s">Henrik Ibsens skrifter. elektronisk versjon</title>
+        <title level="a">Generell tekstredegjørelse for dikt</title>
+          <author>ved Christian Janss</author>
+        <funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+        <editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
+        <respStmt>
+          <resp>Innlemming i elektronisk utgave</resp>
+          <name>EDD: Eining for digital dokumentasjon</name></respStmt>
+          <respStmt><resp>Kodeteknisk støtte og utvikling</resp>
+          <name>AKSIS: Avdeling for kultur, språk og informasjonsteknologi, Universitetsforskning i Bergen (Unifob AS)</name></respStmt>
+          <respStmt><resp>HISe-koding</resp>
+          <name xml:id="SBT">Stine Brenna Taugbøl</name></respStmt>
+          <respStmt><resp>Koding</resp>
+          <name xml:id="GMS">Gaute M. Sortland</name>
+          <name xml:id="AMB">Aasta Marie Bjorvand Bjørkøy</name></respStmt>
+          <respStmt><resp>Tekstarbeid</resp>
+          <name>Aasta Marie Bjorvand Bjørkøy</name>
+          <name>Maria Alnæs</name>
+          <name>Gaute M. Sortland</name></respStmt>
+          <respStmt><resp>Kontroll av sitater og ordbøker</resp>
+          <name xml:id="IK">Ingrid Korvald</name>
+          <name>Aasta Marie Bjorvand Bjørkøy</name>
+          <name>Maria Alnæs</name></respStmt>
+          <respStmt><resp>Kontroll av littlist og referanser</resp>
+          <name xml:id="AH">Anette Hjerde</name>
+          <name>Gaute M. Sortland</name>
+          <name>Aasta Marie Bjorvand Bjørkøy</name>
+          <name>Maria Alnæs</name>
+          <name xml:id="EL">Erlend Lønnum</name></respStmt>
+          <respStmt><resp>Kommentar-, intern- og ht-entiteter</resp>
+          <name>Aasta Marie Bjorvand Bjørkøy</name>
+          <name>Gaute M. Sortland</name></respStmt>
+          <respStmt><resp>Kodekontroll</resp>
+          <name>Aasta Marie Bjorvand Bjørkøy</name>
+          <name>Gaute M. Sortland</name>
+        </respStmt>
+      </titleStmt>
+<publicationStmt>
+ <publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+        <distributor xml:id="HISe">Universitetet i Oslo</distributor>
+        <date when="2010" xml:id="HISe-date"/>
+ <pubPlace>Oslo</pubPlace>
+      </publicationStmt>
+      <sourceDesc>
+ <p>Filen bygger på 11k_sisteversjon.xml.</p>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <tagsDecl>
+      </tagsDecl>
+    </encodingDesc>
+<profileDesc>
+      <langUsage>
+        <language ident="nob"/>
+        <language ident="dut"/>
+        <language ident="cze"/>
+        <language ident="ger"/>
+        <language ident="fre"/>
+        <language ident="ice"/>
+        <language ident="eng"/>
+        <language ident="ita"/>
+        <language ident="spa"/>
+        <language ident="swe"/>
+        <language ident="scc"/>
+        <language ident="rus"/>
+        <language ident="por"/>
+        <language ident="hun"/>
+        <language ident="pol"/>
+        <language ident="fin"/>
+        <language ident="jpn"/>
+        <language ident="ukr"/>
+        <language ident="bul"/>
+        <language ident="rum"/>
+        <language ident="scr"/>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change><date>07.09.2011</date>
+        <name>SBT</name><title>TEI P5</title>
+        Endret fra P4 til P5.</change>
+      <change><date>20.01.2011</date>
+        <name>SBT</name><title>Listekoding</title>
+        Oppdaterte listekoding.</change>
+      <change><date>22.12.2010</date>
+        <name>SBT</name><title>Omkoding</title>
+        Kodet om overskrifter for HISe.</change>
+      <change><date>09.12.2010</date>
+            <name>SBT</name><title>Splitting</title>
+            Denne fila inneholder den generelle tekstredegjørelsen for dikt.</change>
+        <change><date>24.11.2010</date>
+            <name>SBT</name><title>Validering</title>
+            Fjernet ref til files og figures i dokumenttoppen. Fila er valid.</change>
+        <change><date>13.09.2010</date>
+    <name>SBT</name><title>dokumentforfatter</title>
+    La inn dokumentforfatter etter hovedoverskrift. NB: vurder om dokumentet bør deles i to, eller om forfatterne bør stå under hver sin del!</change>
+        <change>
+            <date>16.07.2010</date>
+            <name>SBT</name><title>Validering</title>
+            Validert.
+        </change><change>
+        <date>15.07.2010</date>
+        <name>SBT</name><title>Opprettet xml-fil</title>
+        Skilte ut tekstredegjørelsen til diktbindet i en egen fil. Har lagt inn opplysninger vedr HISe i teiHeader. Har foreløpig latt rend-attr. og bokstavtyper (majuskler/minuskler/kapiteler) i overskriftene stå; dette er endret i Ge. Samkjør! Er nå mest stemt for å beholde mest mulig av bokutgaveoppsettet. Det er mulig at fila bør deles opp i mindre deler: Digte, Blandede Digtninger, enkeltdikt. Forfattere av tekstredegjørelsene bør vel også hentes inn.
+      </change>
+    </revisionDesc>
+  </teiHeader>
+
+<text type="introduction">
+<body>
+<div type="editorialStatement" xml:id="edState">        
+  <byline><docAuthor>ved Christian Janss</docAuthor></byline>
+  
+  <div xml:id="edState_definition">
+<head rend="level2">HVA ER ET DIKT?</head>
+<p rend="noIndent"><hi rend="italic">Dikt</hi> kan defineres på flere måter. Ibsen kaller selv, og i tråd med tradisjonen, sine versdramaer for <hi rend="italic">digt</hi> og enkelte steder for <hi rend="italic">poesi</hi> (jf. brev til Bjørnson 9. desember 1867); sine prosadramaer omtaler han ofte som <hi rend="italic">digtning</hi>, nærmest ensbetydende med fiksjon. Den eneste samlingen av dikt i den nå alminnelige oppfatning av ordet som Ibsen utgav i bokform, bærer likevel navnet <hi rend="italic">Digte</hi>. Genreforståelsen har gjennomgått forandringer (jf. HIS 5k, 273–79), men det er likevel uproblematisk å anlegge et praktisk synspunkt på hva som burde samles i foreliggende bind; versdramaene har sin naturlige plass blant skuespillene, og lyrikk i ubunden form skrev Ibsen knapt (ett unntak er <title rend="quotes">Balminder</title>). HIS har således i bind 11 samlet Ibsens mer og mindre korte tekster i bunden form, i alt ca. 200.</p>
+<p>De brev som er skrevet på vers, som for eksempel <title rend="quotes">Til min Aurikel</title> (brev til Rikke Holst 22. mai 1853), gjengis både i diktbindet og i brevbindene. Det gjelder også dikt som inngår i brev som ellers er skrevet i prosa (for eksempel i brev til Cathrine Martini 12. april 1850) samt alle dikt som har vært vedlagt brev (for eksempel sangene til <hi rend="italic">Kongs-Emnerne</hi> vedlagt brev til Peter Heise 25. juni 1870). I bindet inkluderes i tråd med dette også dedikasjoner og deviser på vers.</p>
+</div>
+
+  <div xml:id="edState_collection">
+<head rend="level2">INNSAMLING</head>
+<p rend="noIndent">HIS’ innsamling og registrering av diktmaterialet er en fortsettelse av tidligere forskeres arbeid. En grunnleggende innsats ble gjort av Jakob Løkke i 1870, som da Ibsen planla samlingen <hi rend="italic">Digte</hi> (1871), tok på seg å samle og skrive av en rekke dikt. Bibliografen J. B. Halvorsen kom med et viktig supplement i sin artikkel om Ibsen i <hi rend="italic">Norsk Forfatter-Lexikon</hi> (HFL). I FU 10 (1902), ES 1 (1909) og HU 14 (1937) er det samlet enkelte senere gjenfunne, spredt publiserte dikt. I 2001 laget Sverre Ingstad en bibliografisk oversikt over Ibsens dikt og tilhørende kilder for Senter for Ibsen-studier, et arbeid som senere er blitt komplettert ved HIS. Nevnes må også <hi rend="italic">Manuskriptprosjektet</hi> ved Senter for Ibsen-studier, Universitetet i Oslo, ledet av Øyvind Eide 1998–2000, i samarbeid med blant andre HIS. Dette arbeidet bestod i å avfotografere kjent materiale for digital tilgjengeliggjøring, herunder også manuskripter til Ibsens dikt, se <ref type="link" target="http://www.dokpro.uio.no/litteratur/ibsen/ms/">&lt;http://www.dokpro.uio.no/litteratur/ibsen/ms/&gt;</ref>.</p>
+<p>Av de spredt publiserte diktene er det største antallet første gang publisert i aviser, en del i småtrykk (leilighetsdikt), og et mindre antall i bøker. 36 dikt (utenom de 26 diktene i manuskriptsamlingen <hi rend="italic">Blandede Digtninger</hi>) finnes bare i manuskript. Enkelte dikt er tilgjengelige bare i avskrifter med originalen som antatt forelegg.</p>
+<p>Ibsen skrev få dikt etter <hi rend="italic">Digte</hi> (1871). Det siste kjente småtrykk stammer fra 1875: <title rend="quotes">Til Upsala Studenter</title>. Det ble opptatt i annenutgaven av <hi rend="italic">Digte</hi> (1875) under tittelen <title rend="quotes">Sanger-hilsen til Sverig</title>.</p>
+<p>Dikt som også er opptatt i sangbøker, diktantologier, skolebøker og andre steder, er ikke gjengitt og heller ikke systematisk registrert. Imidlertid har Norsk Musikksamling ved Nasjonalbiblioteket utarbeidet en registrant over dikt publisert i sangbøker som – supplert med Sverre Ingstads registrant og det HIS senere har registrert – vil publiseres i den elektroniske delen av utgaven (HISe). Der publiseres også en registrant over versemål i Ibsens dikt. Senere offentliggjøringer av dikt trykt i <hi rend="italic">Digte</hi> (1871 og etterfølgende utgaver) i for eksempel aviser og tidsskrifter nevnes heller ikke systematisk. Å registrere alle de steder i norske og utenlandske periodika og bøker hvor Ibsens dikt har vært gjengitt helt eller delvis, og som regel uten forfatterens autorisasjon, ville innebære et større, selvstendig bibliograferingsprosjekt.</p>
+
+    <div>
+<head rend="level3">nye dikt</head>
+<p>HIS har funnet følgende hittil ukjente dikt: <title rend="quotes">Chor [ved Studentersamfundets aftenunderholdning for Det norske Theater i Bergen 15. oktober 1851]</title>, <title rend="quotes">Til Bergenske Blade i Anledning af Magister Stubs Theaterartikler</title> (1851), <title rend="quotes">Epilog fremsagt af Mad. Isachsen, ved Slutnings-Forestillingen i Theatret</title> (1854), <title rend="quotes">Serenade udført ved Hans Kongelige Høihed Vicekongens Besøg i Bergen d. 24. Juli 1856</title> og <title rend="quotes">[Sang til Haandverkssvendenes Dannelses-Forening 24. januar 1857]</title>.</p>
+</div>
+        
+    <div>
+<head rend="level3">nye førstetrykk</head>
+<p>HIS har funnet nye førstetrykk, dvs. avistrykk av dikt som tidligere har vært utgitt med yngre tekstgrunnlag:</p>
+
+<list type="bulleted">
+            <item><title rend="quotes">Prolog fremsagt paa Theatret ved Forestillingen d. 17<hi rend="raised">de</hi> Novbr. 1851 til Indtægt for det Norske Studentersamfunds Byggefond</title></item>
+            <item><title rend="quotes">Prolog paa det Norske Theaters Stiftelsesdag den 2. Januar 1852</title></item>
+            <item>[Prolog ved sesongåpningen av Det norske Theater i Bergen 5. oktober 1853]</item>
+            <item><title rend="quotes">Mindets og Løftets Bæger</title></item>
+</list>
+            
+<p rend="noIndent">Disse fire diktene stammer fra Bergens-aviser i tidsrommet 1851–57.</p>
+</div>
+</div>
+
+  <div xml:id="edState_attribution">
+<head rend="level2">ATTRIBUSJON</head>
+<p rend="noIndent">Følgende dikt har HU omtalt som et mulig Ibsen-dikt, men er høyst sannsynlig forfattet av en annen og er derfor ikke tatt med i HIS:</p>
+
+
+<list type="bulleted">
+            <item><title rend="quotes">Kapitelbjerget</title> (ukjent dato). Diktet finnes i Coll 1902, 35–36, hvor det hevdes at rektor H. J. Hammer er forfatteren. Av avisen <hi rend="italic">Fremskridt</hi> 18. april 1899 fremgår det med større entydighet at teksten er av Hammer: <quote>Dette Digt er forfattet af Rektor Hammer og har været offentliggjort i Correspondenten for antagelig en god Menneskealder siden. Manuskriptet er os velvillig overladt af en af Forfatterens nærmeste pårørende. Red.</quote> HU argumenterte (19, 65–67) for at diktet kunne være av Ibsen, men hadde ikke <hi rend="italic">Fremskridt</hi> som kilde.</item>
+            </list>
+            
+<p rend="noIndent">Følgende dikt, ikke opptatt i ES eller HU, er senere gjenfunnet og har Ibsens navn under teksten, men er av HIS vurdert som forfattet av andre og derfor ikke inkludert:</p>
+
+<list type="bulleted">
+            <item><title rend="quotes">Du skjønneste Pige</title> [1850]. Diktet finnes som avistrykk i <hi rend="italic">Drammens Tidende og Buskerud Blad</hi>, 20. november 1982, i artikkelen: <quote>Ukjent Ibsen-dikt på Snarum</quote>. Kopi av faksimile NBO Ms. 4° 3689; original i privat eie. Diktet er signert <quote>H Ibsen</quote>, men er neppe skrevet av ham; håndskrift, innhold og stil peker ikke i hans retning.</item>
+            <item><title rend="quotes">Nytaarsnyet</title> (1853). Diktet finnes som avistrykk i <hi rend="italic">Bergens Stiftstidende</hi>, søndag 23. januar 1853, nr. 7. Diktet er signert <quote>B. Bj.</quote>, som kunne leses som Ibsens pseudonym Brynjolf Bjarme. Men Ibsen hadde brukt dette siste gang i 1851, og diktet er neppe skrevet av Ibsen; innhold, stil og ortografi peker ikke i hans retning.</item>
+            <item><title rend="quotes">Sang til Fædrenes Minde den 22<hi rend="raised">de</hi> Januar 1863</title>. Diktet finnes som småtrykk, Tønsberg og Strøms Bogtrykkeri. Øyvind Anker har påvist at diktet ble signert Ibsen som en spøk fra Det Norske Studentersamfunds side; forfatteren var Olaf Skavlan <bibl>(Anker 1933)</bibl>.</item>
+            <item><title rend="quotes">Den sidste Bøn</title> (ukjent dato). Diktet finnes som fotografi av et tapt manuskript, NBO Ms. fol. 3848, som også inneholder Ibsens dikt <title rend="quotes">Sigurd von Finkelbech’s Gravsted</title>. <title rend="quotes">Den sidste Bøn</title> gjengis nedenfor i redegjørelsen til <title rend="quotes">Sigurd von Finkelbech’s Gravsted</title>, men er neppe skrevet av Ibsen. Håndskriften er ikke hans, men han kan ha vært meddikter. I brev til Didrik Grønvold 14. oktober 1899 nevner Ibsen et dikt som denne skal ha funnet hos Jacob Holst (en venn av Ibsen fra Grimstad-tiden og Rikke Holsts fetter) og som han ikke vil ha offentliggjort: <quote>Jeg selv har med forset tilbageholdt det.</quote> Det dreier seg sannsynligvis om <title rend="quotes">Sigurd von Finkelbech’s Gravsted</title>, omtalt som <quote>Inscriptionerne</quote> i P.E. Larson 1999, 79.</item>
+</list>
+</div>
+      
+  <div xml:id="edState_organization">
+<head rend="level2">ORDNING</head>
+<!-- GJELDER FOR HISB! <p rend="noIndent">Diktenes rekkefølge i HIS bygger på kronologi og verktilhørighet. Diktene plasseres som hovedprinsipp etter avfattelsestidspunktet. På denne kronologiske aksen har imidlertid de to samlingene fra henholdsvis 1850 og 1871, <hi rend="italic">Blandede Digtninger</hi> (2) og <hi rend="italic">Digte</hi> (4) en fremskutt plass. Enkelte av diktene som hører til i samlingene, forekommer også som separate førstetrykk (2.2. og 4.1.) og vil derfor gjengis to ganger (jf. begrunnelse under <hi rend="italic">Valg av grunntekst</hi>). Alle dikt som tilhører de to verk-kompleksene, vil holdes samlet i sin del av bindet: De førstetrykkene av dikt fra <hi rend="italic">Blandede Digtninger</hi> som ble gjengitt i <hi rend="italic">Folkebladet</hi> 1892, er således plassert umiddelbart etter samlingen <hi rend="italic">Blandede Digtninger</hi>, 1847–50, og ikke blant enkeltdiktene fra 1892. Innenfor avdelingene med tidligere og senere førstetrykk av dikt med tilhørighet til samlingene plasseres diktene kronologisk etter trykketidspunkt (altså ikke etter sin plass i samlingene).</p>
+<p>Enkeltdiktene som ikke kan knyttes til noen av de to samlingene, herunder en del av de tidlige førstetrykkene til dikt som ble tatt opp i <hi rend="italic">Digte</hi>, men som har så store forskjeller at det er hensiktsmessig å kalle dem egne dikt, er kronologisk plassert ut fra skrivetidspunktet, med førstetrykket som grunntekst (del 1, 3 og 5). For eksempel vil diktene <title rend="quotes">Til den eneste</title>, <title rend="quotes">Til Susannah Thoresen</title>, <title rend="quotes">Til Sophie Thoresen</title> og <title rend="quotes">Til min Rose</title>, der det første ble trykt første gang i K&amp;E (1904) og de tre siste første gang i ES (1909), plasseres på sine respektive antatte skrivetidspunkter 1856 og 1857 (jf. kommentarene om dateringen av disse).</p>
+<p>Dikt som mangler dato, har HIS forsøkt å tidfeste. HIS’ antagelser settes i skarpe klammer og begrunnes i kommentaren. <hi rend="italic">Nye dikt i senere utgaver</hi> er gjengitt i egen, kronologisk orden etter den utgave de ble føyd til i. Ordningen i de senere utgavene av <hi rend="italic">Digte</hi>, der de nye diktene flettes inn blant diktene slik disse opprinnelig var ordnet i første utgave, gjengis altså ikke.</p>
+
+<p>Diktene fordeler seg dermed slik:</p>
+
+<p rend="noIndent">1. Enkeltdikt 1844–50</p>
+<p rend="noIndent">2. <hi rend="italic">Blandede Digtninger</hi> 1847–50</p>
+<p>2.1. <hi rend="italic">Blandede Digtninger</hi>, samlingen NBO Ms. 8° 191</p>
+<p>2.2. Førstetrykk av dikt fra <hi rend="italic">Blandede Digtninger</hi></p>
+<p rend="noIndent">3. Enkeltdikt 1850–71</p>
+<p rend="noIndent">4. <hi rend="italic">Digte</hi> 1871</p>
+<p>4.1. Første publiserte versjoner</p>
+<p>4.2. Upubliserte dikt fra manuskriptene til <hi rend="italic">Digte</hi> 1871</p>
+<p>4.3. <hi rend="italic">Digte</hi> 1871</p>
+<p>4.4. Nye dikt i senere utgaver</p>
+<p rend="noIndent">5. Enkeltdikt 1871–1906</p>-->
+<p rend="noIndent">I den digitale utgaven er det to innganger til diktmaterialet: en for enkeltdikt og en for diktsamlinger.</p>
+<p>På enkeltdiktsiden vil det være en oversikt over alle Ibsens dikt, med informasjon om hvilken diktsamling de eventuelt inngår i. Listen kan sorteres alfabetisk eller kronologisk.</p>
+<p>På siden med diktsamlinger er det innganger til egne verkssider for Ibsens to diktsamlinger, <title rend="italic">Digte</title> (1871), og <title rend="italic">Blandede Digtninger</title> (ikke trykt i Ibsens levetid). Her ligger oversikter over og innganger til utgavens hovedtekst og til alle tekstkilder, det vil si alle manuskripter og alle trykte utgaver i dikterens levetid.</p>
+<p>I de tilfellene der et dikt gjengis både som enkeltdikt og som del av en diktsamling, er det bare versjonen i diktsamlingen som er kommentert.</p>
+  </div>
+
+<div xml:id="edState_basetext">
+<head rend="level2">VALG AV GRUNNTEKST</head>
+<p rend="noIndent">Grunnteksten, grunnlaget for HIS’ hovedtekst, er førstetrykket. Dersom dette ikke finnes, benyttes, i hierarkisk orden egenhendige håndskrifter (et fåtall dikt kjennes bare som manuskript), digital eller trykt faksimile, fotokopi av egenhendig tekst, trykk i HU, trykk i andre publikasjoner, ikke-egenhendig avskrift. Et unntak er <title rend="quotes">En Livsvaar</title> der egenhendig manuskript er valgt som grunntekst foran førstetrykk. Førstetrykket er her en sen gjengivelse av manuskriptet.</p>
+<p>I noen tilfeller kan det være vanskelig å avgjøre om et udatert småtrykk eller et avistrykk er det tidligste trykket av et dikt. Som grunntekst velges som regel småtrykk, begrunnet i situasjonen for publiseringen: Småtrykkene ble trykt opp og fordelt blant deltagerne ved den aktuelle anledningen, mens avisen trolig har bragt teksten like etter. Det kan selvsagt også ha vært tilfeller hvor avisen har fått teksten på forhånd slik at småtrykk og avis er utkommet samtidig, og vi kjenner ett tilfelle hvor småtrykket er satt med avis som tekstgrunnlag (<title rend="quotes">En Broder i Nød!</title>). I andre tilfeller kan det by på vanskeligheter å avgjøre hvilket avistrykk som kom først, for eksempel <title rend="quotes">Prolog [ved Studentersamfundets aftenunderholdning for Det norske Theater i Bergen 15. oktober 1851]</title>, publisert første gang samme dag i to innbyrdes avvikende versjoner, i to forskjellige aviser (<hi rend="italic">Morgenbladet</hi> og <hi rend="italic">Christiania-Posten</hi>). Å avgjøre hvilken avis som her har vært først ute, er vanskelig. Den tekst som fremstår som mest feilfri og fullstendig og er mest i overensstemmelse med Ibsens ortografi, velges som tekstgrunnlag. Opplysninger i teksten omkring, for eksempel om tittel og anledning, teller med i vurderingen. En systematisk gjennomsøkning av norske og danske aviser fra midten av 1800-tallet av for å finne trykk av Ibsens dikt, har det ikke vært mulig å gjennomføre innenfor HIS’ rammer. Vekten i arbeidet har derfor ligget på å finne førstetrykk overhodet; der vi imidlertid underveis har funnet flere tekstkilder, er disse dels transkribert og konsultert under ederingen, og omtalt i <hi rend="italic">Tekstgrunnlag og øvrige tekstkilder</hi>.</p>
+<p>Gjengivelsen av et dikt i to hovedversjoner, som henholdsvis enkeltstående dikt under 2.2. og 4.1 <hi rend="italic">og</hi> som del av samlingene <hi rend="italic">Blandede Digtninger</hi> og <hi rend="italic">Digte</hi> er begrunnet med at diktene opptrer som førstegangspublisert i svært ulike medier. Et dikt kan først opptre som leilighetsdikt og småtrykk og deretter enkeltvis i bokform mange år senere, hvor utbredelse og publikum er et helt annet og hvor teksten også som oftest er endret. Dikt som av denne grunn trykkes to ganger, oppviser forskjeller i ulik grad. I noen tilfeller finner vi minimale endringer, i andre mer omfattende bearbeidelser (jf. f.eks. de tre versjonene <title rend="quotes">Bjergmanden</title> 1851 og <title rend="quotes">Bergmanden</title> 1863 og 1871). Det er likevel førstetrykks-situasjonen, og de svært ulike publikasjons- og resepsjonshistoriene, som først og fremst legitimerer versjoneringen. Et visst skjønn har vært nødvendig å utøve i slike avgjørelser. Dersom et dikt har gjennomgått substansielle endringer, og man må kalle det en ny tekst, som i tilfellet <title rend="quotes">Spillemænd</title> (1871), en omarbeidet versjon av en del av <title rend="quotes">En Løverdagsaften i Hardanger</title> (1851), gjengis denne i gruppe 3 eller 5. Det opplyses under <hi rend="italic">Tekstgrunnlag og øvrige tekstkilder</hi> om alle tidligere og senere kilder til en dikttekst.</p>
+<p>Tekstkilden til noen få dikt er gått tapt i tiden etter at Halvdan Koht og Julius Elias hadde transkribert dem i K&amp;E og ES. I slike tilfeller danner disse utgavenes tekst grunnlaget (f.eks. <title rend="quotes">Til den eneste</title> og <title rend="quotes">Til min Rose</title>).</p>
+<p>I flere tilfeller er det bevart utkast til dikt. Utkast eller kladd er også transkribert og gjort tilgjengelig i HISe, og omtales dessuten under <hi rend="italic">Manuskriptbeskrivelse</hi>.</p>
+<p>I tidligere utgaver av Ibsens dikt (f.eks. i HU) har det vært vanlig å hente ut tekst fra Ibsens dramaer og gjengi dem som selvstendige dikt. HIS har ikke fulgt denne tradisjonen; slike utvalg vil alltid være vilkårlige (store deler av f.eks. <hi rend="italic">Peer Gynt</hi> ville kunne leses som selvstendige dikt). Ibsen var selv restriktiv på dette punktet, noe han forklarer i brev til Frederik Hegel 21. januar 1871 under arbeidet med <hi rend="italic">Digte</hi>: <quote>Af smådigtene i mine andre bøger tager jeg intet med; Bjørnson har gjort det for grovt i denne henseende.</quote> (Noen få tekster tok Ibsen likevel siden med, jf. nedenfor.) En registrant over de viktigste eksemplene på dikt fra dramaer som er publisert selvstendig på denne måten, vil legges frem i HISe siden HIS anerkjenner at enkelte av tekstutdragene gjennom utgivelsene har fått en egen resepsjonshistorie, for eksempel <quote>Sov du, dyreste Gutten min!</quote> (<hi rend="italic">Peer Gynt</hi>). I 1869 hadde K.A. Winterhjelm brukt bl.a. linjene <quote>Agnes, min dejlige sommerfugl […]</quote> fra <hi rend="italic">Brand</hi> i sin antologi <hi rend="italic">Norsk Lyrik (1814–1868) i Udvalg</hi> (1868), og Ibsen reagerte på bruken av disse og flere andre dikt i antologien som plyndring (brev til Hegel 22. januar 1869; jf. HIS 12k, 386–87). I de tilfeller Ibsen selv har gjenbrukt dramatekst som dikt, for eksempel <title rend="quotes">Kvindernes bøn</title> (fra <hi rend="italic">Kongs-Emnerne</hi>) i <hi rend="italic">Digte</hi> 1871, har HIS selvsagt også behandlet dem som dikt. Også <title rend="quotes">Agnes</title> tok Ibsen med i <hi rend="italic">Digte</hi>, kanskje tilskyndet av tekstens nye status i Winterhjelms antologi, som kom i flere utgaver. Ibsens innstilling til å la enkeltdikt eller deler av dramaer bli opptrykt andre steder ble mer liberal, i alle fall overfor utgivere som først innhentet tillatelse fra Hegel, jf. brev til Hartvig Lassen 10. mars 1875, der Ibsen samtykker i å la <title rend="quotes">Terje Vigen</title> og <quote>større brudstykker af ‹Hærmændene paa Helgeland›</quote> finne veien inn i Lassens lesebok for skolen (jf. HIS 13k, 367).</p>
+<p>I HISe finnes i tillegg til HIS’ hovedtekst en diplomatarisk og søkbar gjengivelse av alle tekstkilder samt de tilgjengelige fotografiske faksimilene av manuskriptene. Ikke alle grunntekster har latt seg avfotografere, hovedsakelig fordi en del dikt ikke (lenger) er tilgjengelige i original.</p>
+</div>
+      
+<div xml:id="edState_collation">
+<head rend="level2">KOLLASJONERING</head>
+<p rend="noIndent">Første del av tekstetableringen, som inkluderer transkripsjon og filologisk koding, skjer enten med den trykte kilden eller med de digitale faksimilene i <hi rend="italic">Manuskriptprosjektet</hi>s base som grunnlag. Annen del er en kollasjon foretatt mot originalene. Til sist er det foretatt en korrekturkollasjon av den ederte teksten mot faksimile.</p>
+<p>Flere av de trykte diktgrunntekstene finnes i publikasjoner som er vanskelige å oppspore, det overveiende flertall av disse i aviser og småtrykk. Av ressursmessige hensyn har HIS ikke kunnet legge arbeid i å fremskaffe tre eksemplarer av alle disse kildene. For småtrykk gjelder likevel at det er internkollasjonert tre eksemplarer når disse finnes tilgjengelige i norske biblioteker. Ytterligere en begrunnelse for ikke å prioritere oppsporingen av ekstra aviseksemplarer ligger i de gradvis endrede produksjonsforhold i trykkeriene. Sannsynligheten for å finne internvariasjon (endringer foretatt under trykkeprosessen i samme opplag) avtar ettersom tempoet i trykkeriene øker. Sylinderpressene, som norske aviser tok i bruk fra 1840-årene av, økte effektiviteten i trykkeriene betraktelig (se Johansen 2006, 83–90). <bibl>(Etter ca. 1885 er det lite sannsynlig å finne internvarianter i aviser, da innføringen av rotasjonspresser gjorde det tidkrevende og kostbart å rette feil under trykkeprosessen, og det ble bare gjort i særlige tilfeller, jf. Johansen 2007, 11–20.)</bibl> Det opplyses om eventuell satsintern variasjon i teksten i de tre eksemplarene.</p>
+</div>
+      
+<div xml:id="edState_critical">
+<head rend="level2">TEKSTKRITISKE BEMERKNINGER</head>
+<div>
+<head rend="level3">transkripsjon</head>
+<p>I etableringen av teksten vil en del trekk ved tekstbæreren (det fysiske dokumentet) ikke gjengis. For manuskriptene (med unntak av tapt eller utilgjengelig materiale) vil HIS inkludere en elektronisk faksimile. I tillegg gir manuskriptbeskrivelsene utover en analyse av genetiske forhold også vesentlige opplysninger om dokumentets fysiske trekk, som for eksempel påskrifter i annen hånd.</p>
+<p>Strukturen i diktet, dvs. rekkefølgen for tittel, stedsangivelse, dato, tilegnelse, melodiangivelse, strofeinndeling, signatur, samt linjeskift og meningsbærende innrykk følger originalen. All dikttekst gjengis med samme skriftsnitt og -grad. Utheving i form av understrekning gjengis som kursiv. Der grunnlaget er avistrykk i spalter, er teksten satt som øvrige dikt. Grunntekstens typografiske system er altså ikke forsøkt imitert i HIS.</p>
+<p>Ibsens håndskrift er gjennomgående latinsk, med en særegen skrivemåte av <hi rend="italic">y</hi>, med til å begynne med én, etter hvert to streker over, trolig en reminisens av gotisk håndskrift. I manuskriptgrunntekster transkriberes <hi rend="italic">y</hi> uten strek. Ibsen veksler i manuskriptene mellom <hi rend="italic">ö</hi>, <hi rend="italic">ó</hi> (enkel strek over <hi rend="italic">o</hi>) og <hi rend="italic">ø</hi>. Transkripsjonen er normalisert slik at svenske og tyske ord beholder <hi rend="italic">ö</hi> (og <hi rend="italic">ä</hi>), mens norske og danske ord normaliseres til <hi rend="italic">ø</hi>.</p>
+<p>Enkelte ord og bokstaver er i seg selv utydelige, men ut fra sammenhengen likevel entydige. Det dreier seg gjerne om slutten av ord, for eksempel -<hi rend="italic">mmer</hi> i <hi rend="italic">kommer</hi>. Her gjengir HIS den innlysende skrivemåten. Ved ordenstall skriver Ibsen for eksempel <hi rend="italic">1<hi rend="raised">ste</hi> eller 20<hi rend="raised">de</hi></hi>. I mange tilfeller er disse kombinasjonene av tall og hevede bokstaver ikke tydelig utført. Selv om det bare står en krøll i for eksempel <hi rend="italic">20</hi><hi rend="raised"><hi rend="italic">d</hi></hi>, transkriberes den velvillig som <hi rend="italic">20</hi><hi rend="raised"><hi rend="italic">de</hi></hi>. Det samme gjelder bokstaver som mangler diakritiske tegn, særlig <hi rend="italic">i</hi> og <hi rend="italic">ø</hi>. Generelt regnes ulike måter å forme en bokstav på, herunder også forskjellige skrivemåter av <hi rend="italic">ø</hi>, ikke som meningsbærende. For eksempel er gotisk <hi rend="italic">s</hi> skrevet over latinsk <hi rend="italic">s</hi> i ordet <quote>stemte</quote> i diktet <title rend="quotes">Afskedens Minde</title> i <hi rend="italic">Blandede Digtninger</hi> (s. 14 l. 10). Denne rettelsen opplyses det ikke om i de tekstkritiske notene ettersom HIS benytter én s-form. Om Ibsens endring fra høyrehellende til den karakteristiske venstrehellende skriften i løpet av høsten 1867, se HIS 12, 15–16.</p>
+<p>Forkortelser er ikke oppløst; ett unntak finnes i <hi rend="italic">Blandede Digtninger</hi> (nederst på s. 39): <hi rend="italic">m̅</hi> (forkortelse for <hi rend="italic">mm</hi>) er her stilltiende oppløst. Øvrige forkortelser som er vanskelige å forstå, blir forklart i kommentaren til det enkelte dikt. Understrekninger av hevede bokstaver forekommer, særlig i småtrykk, men er ikke tatt med i HIS’ hovedtekst. (Hevet <hi rend="italic">s</hi> i <quote>Hoffs</quote> i <title rend="quotes">Sang ved Fru Marie Gerhardine Hoffs Grav</title> er transkribert som normal <hi rend="italic">s</hi>.) Fremmedord som i fraktur-grunntekster er satt i antikva, er ikke satt i eget skriftsnitt i HIS.</p>
+<p>Når grunnteksten er småtrykk, typisk et dobbeltblad hvor første side inneholder tittelen og ofte trykkeopplysninger, markeres sideskift mellom tittel og dikttekst med asterisk. Asterisk benyttes også som skilletegn mellom deler i dikt. Trykkeopplysninger er gjengitt under <hi rend="italic">Tekstgrunnlag og øvrige tekstkilder</hi> til det enkelte dikt. Sidereferanser følger originalens paginering; der slik ikke finnes, har HIS paginert [i skarpe klammer]. Dikt i bladet <hi rend="italic">Andhrimner</hi> har spaltenummerering som er gjengitt i HIS.</p>
+</div>
+<div>
+<head rend="level3">varianter</head>
+<p>Ibsens tekstendringer i manuskriptet, dvs. tilføyelser, strykninger, erstatninger og omplasseringer, er på samme måte som i brev (og sufflørbøker) gjengitt fullstendig som variantapparat i de tekstkritiske fotnotene, for eksempel slik:</p>
+
+<p>Fædreø <hi rend="italic">umiddelbart endret fra</hi> Brø</p>
+
+<p>Ibsen har her begynt å skrive <quote>Brø</quote>, men ombestemt seg (diktet handler i den aktuelle passasjen om bl.a. brødre og fedre), strøket dette og skrevet <quote>Fædre</quote> umiddelbart etter og på samme linje. Øvrige endringstyper, anvendte tekstkritiske tegn og forkortelser er forklart i tekstbindet, s. 651. Behandlingen av diktene i HIS skiller seg således sammen med brev og sufflørbøker ut fra den lille andelen egenhendige, ikke fullførte tekster, der Ibsens endringer gjengis visualisert i brødteksten, ikke som fotnoter.</p>
+<p>Frittstående, uleselige overstrøkne tegn er ikke angitt i noteapparatet. Typiske eksempler på dette er påbegynte, overstrøkne tegn som ikke kan bestemmes. Når endringen er ikke-egenhendig, gis det opplysning om dette i note.</p>
+<p>Ekstern variasjon, dvs. forskjeller mellom tekstkildene til det enkelte dikt (typisk utkast, senere trykk) vil være tilgjengelig i form av synoptiske visninger (parallelle oppstillinger) i HISe. For de to samlingenes del tilbys i tillegg et variantapparat med forskjellene mellom tekstkildene markert.</p>
+</div>
+
+<div>
+<head rend="level3">teksttap</head>
+<p>Manuskriptgrunntekstene er som hovedregel lett leselige, med unntak for tekst som er tapt på grunn av skader i manuskriptet og tilfeller av strøket og/eller utradert tekst. Tilfeller av utydelig eller uleselig tekst er markert som &lt;tekst&gt; eller &lt;…&gt;. Dersom teksttapet skyldes skade, er det dessuten forklart i fotnote. Uleselighet kan skyldes flekker av blekk eller andre stoffer, slurvete skrift, men også senere beskjæring eller hefting som dekker tekst i margen. Dersom det er skader på originalen som strekker seg over et større parti, vil opplysningen om dette samles i én note, med utgangspunkt i det stedet der skaden begynner. I manuskriptbeskrivelsene opplyses det generelt om skader på originalen.</p>
+</div>
+        
+<div>
+<head rend="level3">tekstfeil, konjektur og emendasjon</head>
+<p>Ordvalg, ortografi, tegnsetting og grammatikk i Ibsens dikt er i hovedsak i samsvar med offisiell norsk i samtiden, det vil si i tråd med danske normer, med en tiltagende fornorskning i løpet av perioden diktene ble skrevet i. For en oversikt over samtidens språknormer og Ibsens språk vises det til innledningene til <hi rend="italic">Catilina</hi> 1850 og <hi rend="italic">Catilina</hi> 1875 (HIS 1k, 34–40 og 146–48). Ibsen sluttet seg til anbefalingene fra det skandinaviske språkmøtet 25.–30. juli 1869, også de valgfrie (f.eks. dobbelt konsonant for å markere kort vokal), men elementer fra anbefalingen finnes hos Ibsen også før 1869, på samme måte som også eldre former opptrer i dikt etter dette året.</p>
+<p>Ibsens særegne skrivemåter, som ikke kan karakteriseres som feil, er beholdt. Det samme er hans inkonsekvente og delvis mangelfulle tegnsetting, som særlig gjelder kommateringen. Vakling i ortografi og interpunksjon som avspeiler tidens fleksible normer og vekslende praksis, er også beholdt. Ibsen skriver like gjerne <quote>Stokholm</quote> som <quote>Stockholm</quote>, noe som gjenspeiler ulike, anvendbare stavemåter, henholdsvis eldre og nyere dansk-norsk, gammel og ny svensk stavemåte. HIS endrer ikke disse stavemåtene i hovedteksten og gir dem i de kodede grunntekstene samme identifikator, slik at de kan søkes opp samlet i HISe.</p>
+<p>Det emenderes (rettes) i tekstfeil etter HIS’ definisjon av tekstfeil for trykte skrifter, der to sentrale momenter er at den må være meningsforstyrrende, og at den må kunne rettes entydig.</p>
+<p>Det er lagt vekt på å skille mellom Ibsens endringer og HIS’ inngrep. Siglen <hi rend="italic">HIS</hi> settes derfor alltid når rettelsen er utgiverens, og markerer altså at rettelsen ikke har grunnlag i andre tekstkilder. En slik utgiverrettelse, såkalt konjektur, ser slik ut i det tekstkritiske noteapparatet:
+
+<quote rend="proseIndent">Budø <hi rend="italic">HIS</hi>, Bue NBO Ms. 8° 191</quote></p>
+
+<p rend="noIndent">Noten skal forstås slik: Ordet <quote>Bud</quote> står i den ederte diktteksten. <hi rend="italic">HIS</hi> etter lemmategnet betyr at lemmaets form er utgivernes valg. Så følger ordets feilaktige form fra tekstgrunnlaget. Dersom feilen rettes med grunnlag i annen tekstkilde, føres rettelsen, nå kalt emendasjon, slik:
+
+<quote rend="proseIndent">Flokø <hi rend="italic">UBiT Ms Oct. 364, NBO Ms. 4° 1110a</hi>, Folk <hi rend="italic">Illustreret Nyhedsblad 7/7 1861</hi></quote></p>
+
+<p rend="noIndent">Tekstgrunnlaget er <hi rend="italic">Illustreret Nyhedsblad</hi>; feilen er rettet etter de to andre kildene til diktet, avskrift og egenhendig manuskript.</p>
+<p>Tekstfeilene i dikt angår i hovedsak feilskriving av ord, manglende tegnsetting og majuskel for minuskel. Det ville innebære en fare for å rette i utakt med Ibsen, som fulgte en mer retorisk eller stilistisk motivert praksis i kommateringen (styrt av behovet for naturlige pauser), om HIS skulle foreta rettelser etter en syntaktisk eller grammatisk motivert standard.</p>
+<p>HIS retter i tillegg til meningsforstyrrende, entydige feil også slikt som må anses som enkle skrive- og trykkfeil, ikke intendert av Ibsen, for eksempel dittografier (gjentagelse av samme ord, stavelse eller bokstav). Også enkeltord som Ibsen har utelatt i forglemmelse, typisk infinitivsmerket <hi rend="italic">at</hi>, rettes ved at HIS emenderer inn det uteglemte ordet eller tegnet. Galt gjengitte navn, begreper, saksforhold rettes derimot ikke, men blir gjengitt i riktig form og forklart i ord- og sakkommentarene. Leseren av den kritiske diktutgaven vil slik få innblikk i hans samtids elastiske norm uten å bli forstyrret av uintendert slurv og banale feil – som det ikke er mange av.</p>
+<p>Det redegjøres for alle rettelser foretatt av HIS i de tekstkritiske fotnotene. Mulige feil og feil som ikke kan rettes entydig, er også anført i noteapparatet. Den urettede grunnteksten vil være tilgjengelig i HISe.</p>
+<p>Dikt som er overlevert i ikke-egenhendig avskrift, trykt i aviser eller ført i pennen av andre, rettes på samme måte som de øvrige trykte grunntekstene. I disse tilfellene er det oftest svært vanskelig å vite i hvilken grad en feil skyldes Ibsen eller andre.</p>
+</div>
+        
+<div>
+<head rend="level3">utgivertekst</head>
+<p>HIS’ utgivertekst, dvs. kolumnetitler samt opplysninger i de tekstkritiske notene, står i kursiv, Ibsens tekst i normal. I innholdsfortegnelsen gis i en del tilfeller forenklede titler. Her gis også opplysninger om dato og anledning, i skarpe klammer, når det er nødvendig for å skille dikt med identiske titler fra hverandre. I margen finnes linjeteller og henvisning til originalens sidetall og til HU, satt i normal.</p>
+</div>
+        
+<div>
+<head rend="level3">ikke-egenhendige påskrifter</head>
+<p>Ikke-egenhendig tekst på manuskriptgrunntekster gjengis ikke i diktteksten, men omtales i manuskriptbeskrivelsen og refereres eller siteres i kommentaren dersom den inneholder substansielle opplysninger fra diktets egen tid.</p>
+</div>
+        
+<div>
+<head rend="level3">standardisering</head>
+<p>I HIS er tegnsetting standardisert på følgende måte: Etter titler, overskrifter, datolinjer, tilegnelser, signaturer og melodiangivelser er eventuelle skilletegn (punktum, komma eller kolon) fjernet. Bruken av anførselstegn er også underkastet en forsiktig harmonisering. For eksempel har diktene <title rend="quotes">Helge Hundingsbane</title> og <title rend="quotes">Kong Haakons Gildehal, fortællende Digt</title> og dikt trykt i <hi rend="italic">Andhrimner</hi> et system av anførselstegn som ikke er sitatmarkører etter moderne praksis, men som er et vanlig trekk ved poesi trykt på 1800-tallet. Det gir et antall overflødige anførselstegn ved begynnelsen av verslinjer, og er stilltiende fjernet av  HIS siden den eldre praksis skaper misforståelser om hvem som taler.</p>
+<p>Strofiske dikt som i grunnteksten mangler strofeinndeling, for eksempel sonetter, har beholdt originalens oppsett. Diktene <title rend="quotes">Resignation</title> og <title rend="quotes">Til min Aurikel</title> er formelt sett strofiske, men strofene er ikke markert med luft eller innrykk. I HIS er oppsettet uten luft mellom strofene beholdt. Forstørrede initialer er ikke gjengitt. Ulike repetisjonstegn (jf. f.eks. <title rend="quotes">[Sang til Haandverkersvendenes Dannelses-Forening 24. januar 1857]</title>, som benytter tegnene :,: […] :,:) er standardisert etter nyere praksis.</p>
+</div>
+</div>
+
+<div xml:id="edState_editions">
+<head rend="level2">TIDLIGERE TEKSTKRITISKE UTGAVER</head>
+<p rend="noIndent">I FU trykkes i b. 4 <hi rend="italic">Digte</hi> med tillegg i utgavene etter 1871 samt nye dikt (jf. nedenfor under behandlingen av <hi rend="italic">Digte</hi>s trykkhistorie). J. B. Halvorsen nevner (FU 4, V) at Universitetsbiblioteket, [nå Nasjonalbiblioteket] eier manuskriptet <hi rend="italic">Blandede Digtninger</hi> og den avbrutte samlingen <quote>En Livsvaar</quote>, men i FU 4 trykkes ingen av dem; FU 10 gjengir <title rend="quotes">En Livsvaar</title> og av diktene fra <hi rend="italic">Blandede Digtninger</hi>: <title rend="quotes">I Natten</title> og <title rend="quotes">Maaneskinsvandring efter et Bal</title>. Innledningen i FU inneholder opplysninger om de enkelte diktenes publiseringshistorie, oversettelser og sekundærlitteratur på s. V–XVIII. I b. 10, 527–69, gjengis <quote>Digte i udvalg. 1848–1872</quote>, i alt elleve dikt utenfor <hi rend="italic">Digte</hi>-komplekset, uten redegjørelse for utvalgets kriterier, men med opplysninger om tekstgrunnlag ved Carl Nærup.</p>
+
+<p>I MU er Ibsens dikt trykt i utvalg i b. 3, 9–151. Utgiveren, Johan Storm, innfører den rettskrivning Ibsen benyttet fra 1869 også i de eldre diktene. Han har ordnet diktene kronologisk etter <quote>affattelsestiden</quote>; dersom denne ikke er kjent, etter trykkeår (jf. b. 3, 3–4). J. B. Halvorsens bibliografiske opplysninger (i HFL) er lagt til grunn. Rettelser (herunder enkelte fornorskninger) foretatt av Storm mot hans tekstgrunnlag, FU, og etter sammenligning med øvrige trykte utgaver fra Ibsens levetid, er oppført i MU 5, 12–13; errata på s. 40. MU har med ett unntak, <title rend="quotes">Nordens Signaler</title>, bare med dikt fra <hi rend="italic">Digte</hi>-utgavene.</p>
+
+<p>I ES er de til da kjente dikt som foreligger i manuskript og/eller var publisert andre steder enn i <hi rend="italic">Digte</hi>-samlingene, gjengitt i b. 1, 3–215 og 465–69, varianter s. 475–506. Opplysninger står i b. 3, 331–47 og 380–95. ES har ikke kjent eller hatt tilgang til NBO Ms. 8° 1928 og NBO Ms. 4° 1113h.</p>
+
+<p>I SU er diktene trykt i b. 6, 299–413, tekstgrunnlaget oppgis (SU 7, 309) å være <quote>den siste forming Ibsen selv gav sine verker</quote>, dvs. førstetrykket av <hi rend="italic">Digte</hi>, med tillegg fra de senere utgavene. Trykkfeil er rettet med støtte i tredje utgave. Seip påpeker at ordningen i MU er feilaktig noen steder, men medgir at det kan være vanskelig å fastsette kronologien for diktene. SU følger ordningen i FU. I SU finnes en liste der diktenes trykkeår, dels også tilblivelsesår, er angitt, sammen med eldre varianter til noen av diktene. SU har bare med dikt fra <hi rend="italic">Digte</hi>-utgavene; i b. 7, 319 finnes en liste over dikt som ikke er tatt med i utgaven.</p>
+
+<p>I HU er Ibsens dikt trykt i b. 14 og 19 (tillegg, s. 65–71). I HU 14, 467–529 redegjøres det i noen grad for HUs tekstgrunnlag og for en del tekstkilder og varianter, fullstendigst for manuskriptene til <hi rend="italic">Digte</hi> 1871 (ofte med henvisning til ES). HU har ikke foretatt et konsekvent valg av tekstgrunnlag, men benytter manuskript eller trykt versjon uten begrunnelse, noen ganger også i kombinasjon. Som i MU har HU i noen tilfeller benyttet Ibsens ortografi etter 1869 på eldre grunntekster; i andre tilfeller er den eldre ortografien fra tilblivelsetiden overført til et yngre trykkgrunnlag. Det rettes i hovedsak stilltiende. Ordningen er uoversiktlig. HU har plassert en del tekstutdrag av Ibsens versdramaer sammen med diktene (jf. innholdsfortegnelsen b. 14, 538–44). En del manuskripter og trykk har ikke vært konsultert eller ikke vært tilgjengelig for utgiverne av HU.</p>
+<p>HIS gjør ikke oppmerksom på feil i andre utgavers tekst. I <hi rend="italic">Tekstgrunnlag og øvrige tekstkilder</hi> for de enkelte dikt opplyses det under det enkelte dikt hvorvidt det er gjengitt/omtalt i FU, ES, MU, SU eller HU.</p>
+</div>
+</div>
+</body>
+</text>
+</TEI>

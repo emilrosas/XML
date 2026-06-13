@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+    <teiHeader>
+    <fileDesc>
+        <titleStmt>
+            <title level="s">Henrik Ibsens skrifter, elektronisk versjon</title>
+            <title level="a">Tekstredegjørelse til Peer Gynt</title>
+            <author>ved Christian Janss</author>
+            <funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+            <editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
+<respStmt>
+<resp>Innlemming i elektronisk utgave</resp>
+<name>EDD: Eining for digital dokumentasjon</name></respStmt>
+<respStmt><resp>Kodeteknisk støtte og utvikling</resp>
+<name>AKSIS: Avdeling for kultur, språk og informasjonsteknologi, Universitetsforskning i Bergen (Unifob AS)</name></respStmt>
+<respStmt><resp>HISe-koding</resp>
+<name xml:id="SBT">Stine Brenna Taugbøl</name>
+<name xml:id="EFS">Eivor Finset Spilling</name></respStmt>
+<respStmt><resp>Koding</resp>
+<name xml:id="EL">Erlend Lønnum</name></respStmt>
+<respStmt><resp>Tekstarbeid</resp>
+<name>Nina Marie Evensen</name>
+<name>Erlend Lønnum</name></respStmt>
+<respStmt><resp>Kontroll av sitater og referanser m.m.</resp>
+<name>Maria Alnæs</name>
+<name>Eva Rief</name></respStmt>
+<respStmt><resp>Kommentarentiteter</resp>
+<name>Erlend Lønnum</name></respStmt>
+<respStmt><resp>Kodekontroll</resp>
+<name>Erlend Lønnum</name>
+</respStmt>
+        </titleStmt>
+        <publicationStmt>
+            <publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+            <distributor xml:id="HISe">Universitetet i Oslo</distributor>
+            <date when="2011" xml:id="HISe-date"/>
+            <pubPlace>Oslo</pubPlace>
+        </publicationStmt>
+        <sourceDesc>
+            <p>Fila bygger på 5k_sisteversjon.xml.</p>
+        </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+        <tagsDecl>
+        </tagsDecl>
+    </encodingDesc>
+    <profileDesc>
+        <langUsage>
+            <language ident="nob"/>
+        </langUsage>
+    </profileDesc>
+    <revisionDesc>
+        <change>
+            <date>21.08.2011</date>
+            <name>SBT</name><title>Entiteter</title>
+            Erstattet æ/ø/å-entiteter med bokstaver. Fila er valid.
+        </change>
+        <change>
+            <date>11.08.2011</date>
+            <name>SBT</name><title>Validering</title>
+            Endret sti til skjema i dokumenttopp.
+        </change>
+        <change>
+            <date>07.07.2011</date>
+            <name>EFS</name><title>Lenkekoding</title>
+            La inn id-verdier i div-strukturen og lenkekodet referansene til tekster som er med i første utgave av HISe.
+        </change>
+        <change>
+            <date>04.07.2011</date>
+            <name>SBT</name><title>P5</title>
+            Kodet om til valid P5.
+        </change>
+        <change>
+            <date>31.01.2011</date>
+            <name>SBT</name><title>HISe-fil</title>
+            La tekstredegjørelsen i en egen fil for HISe. Endret listekoding og attributtverdier i head. Validert.
+        </change>
+    </revisionDesc>
+</teiHeader>
+    
+    <text type="commentary">
+        <body>                    
+            
+            <div type="editorialStatement" xml:id="edState">
+                <!--6-->
+                <div xml:id="edState_basetext">
+                    <!--6.1-->                         
+                    <head rend="level3">valg av grunntekst</head>
+                    <p rend="noIndent">Grunnteksten, grunnlaget for HIS’ hovedtekst, er førstetrykket fra 1867.</p>
+                    
+                </div>
+                <!--slutt 6.1 -->
+                
+                <div xml:id="edState_bibl">
+                    <!--6.2-->
+                    <head rend="level3">bibliografiske opplysninger</head>
+                    
+                    <p rend="noIndent">Ved tekstetableringen er det kollasjonert følgende eksemplarer:</p>
+                    
+                    <list type="numbered">
+                        <item n="1">Nasjonalbibliotekets eksemplar (74ga01744)</item>
+                        <item n="2">Nasjonalbibliotekets eksemplar (84ga07073)</item>
+                        <item n="3">Nasjonalbibliotekets eksemplar (84ga07074)</item>
+                    </list>
+                    
+                    <p rend="noIndent">Det er ikke avdekket satsintern variasjon (endringer foretatt under trykkeprosessen i samme opplag) i teksten i de tre eksemplarene. Nr. 1 er brukt som hovedeksemplar og er grunnlag for beskrivelsen i det følgende.</p>
+                    
+                    <div xml:id="edState_bibl_binding">
+                        <!--6.2.1-->
+                        <head rend="level4">innbinding, forsatsblad og omslag.</head>
+                        
+                        <p>Boken er beskåret og bundet inn sammen med forsatsblad og fremre og bakre flyblad, men uten omslagsblad. Innbindingen er håndverksmessig utført i halvbind med rygg og hjørner i rødt skinn. Permen er overtrukket med sort, strukturert papir. Bindet har gullpreg, og ryggen er dekorert med horisontale rette og ornamenterte streker. På øvre halvdel står teksten <quote>Ibsen, / Peer Gynt</quote>; tittelen i fraktur. Øverst på ryggen står Universitetsbiblioteket i Oslos stempel. Forsatsbladene er i lyst lilla, enkelt papir. Både fremre og bakre forsatsblad er skåret opp, og den ene halvparten av bladet er foran og bak limt på innsiden av permene, mens det andre er fritt. Det er spor etter det originale, grønne omslaget (jf. Schiøtz &amp; Ringstrøm 2006, 168) i tittelbladets og siste blads innermarg.</p>
+                        
+                    </div>
+                    <!--slutt 6.2.1 -->
+                    
+                    <div xml:id="edState_bibl_format">
+                        <!--6.2.2-->
+                        <head rend="level4">format og paginering.</head>
+                        
+                        <p>Boken består av 17 ark falset i oktavformat (8 blad, 16 sider pr. ark), ca. 110 × 170 mm.<note type="footer">Målene gjelder bokens blad, bredde × høyde.</note> Arksignaturene 1–17 (med teksten <quote>Henrik Ibsen : Peer Gynt.</quote>) finnes på s. 1, 17, 33, 49, 65, 81, 97, 113, 129, 145, 161, 177, 193, 209, 225, 241 og 257. Det siste arket har to blad, og bokens omfang er 4 + 259 sider. Pagineringen er med arabiske tall, inkluderer begynnelsen av første akt s. [1] og løper fra s. 2 til 259. Tittelbladet med blank versoside og påfølgende mellomtittel med rollelisten på versosiden er ikke inkludert i pagineringen. På sidene [48] og [87], [114] og [186] begynner nye akter, og pagina er her utelatt.</p>
+                        
+                    </div>
+                    <!--slutt 6.2.2 -->
+                    
+                    <div xml:id="edState_bibl_typo">
+                        <!--6.2.3 -->
+                        <head rend="level4">typografi.</head> 
+                        
+                        <p>Teksten i <hi rend="italic">Peer Gynt</hi> 1867 er satt i antikva. <!-- En faksimile av tittelbladet gjengis på s. 545.  -->Tittelen er satt med midtstilte majuskler. Mellomtittelen er midtstilt og satt i sperrede og konturerte majuskler. Rollelisten er venstrestilt, i en mindre grad enn replikkene, rollenavnene i et fett snitt, overskriften <quote>De handlende:</quote> er sentrert. Aktoverskrifter er satt med midtstilte majuskler, i en større grad enn replikkene. Rollenavn før replikk og/eller sceneanvisning står sperret og midtstilt på egen linje og er satt i en større grad enn replikkene. Sceneanvisninger er satt i en mindre grad enn replikkene, sceneanvisningene står i parentes. Sanger er midtstilt og har samme grad som replikker. Rollenavn i sceneanvisninger står i samme grad som disse, men er sperret. Etter rollelistens overskrift, etter aktoverskrifter og sceneanvisninger står enkle skillestreker av varierende lengde. Skillestrek benyttes også før sceneanvisninger som innleder ny scene innenfor akten. Ved aktslutt står en dobbel finalstrek. Sidetall er plassert i overmarg med en kort strek under.</p>
+                        <p>Trykkvaliteten er jevnt god, men det er forekomster av svakt trykk eller skadde typer, feilplasserte skilletegn, feil i satsen (rolleinnehaver satt på samme måte som sceneanvisning, for store mellomrom) og manglende innrykk ved vers. Slike typografiske mangler er i HIS’ hovedtekst rettet stilltiende.</p>
+                        
+                    </div>
+                    <!--slutt 6.2.3 -->
+                    
+                    <div xml:id="edState_bibl_paper">
+                        <!--6.2.4 -->
+                        <head rend="level4">papir og tilstand.</head>  
+                        
+                        <p>Papiret har noen få bruksspor (fingermerker og rifter i kantene). Skinnryggen, særlig øverste del, er slitt, likeledes permens hjørner. For øvrig er eksemplaret i god stand.</p>
+                        
+                    </div>
+                    <!--slutt 6.2.4 -->
+                </div>
+                <!--slutt 6.2 -->
+                
+                <div xml:id="edState_textsources">
+                    <!--6.3 -->
+                    <head rend="level3">øvrige tekstkilder</head>
+                    <p rend="noIndent">De øvrige tekstkildene fra Ibsens levetid består av manuskripter og trykte utgaver. Manuskriptene omfatter et fragment av sceneplanen, NBO Ms.8° 1940; det egenhendige arbeidsmanuskriptet KBK NKS 2869, 4°, 2; det egenhendige trykkmanuskriptet KBK Collin 262, 4°, I.2; et trykt eksemplar av annen utgave med egenhendige rettelser til tredje utgave, NBO Ms.8° 894; et trykt eksemplar av sjette utgave med egenhendige rettelser til oppførelsen ved Dagmarteatret 1886, NBO Ms.4° 4461. (For nærmere beskrivelser, se <HIS:hisRef target="PG_msbeskr.xml"><hi rend="italic">Manuskriptbeskrivelse</hi></HIS:hisRef>.) De trykte utgavene i Ibsens levetid omfatter: 1. utg. 1867, 2. utg. 1867, 3. utg. 1874, 4. utg. 1876, 5. utg. 1881, 6. utg. 1885, 7. utg. 1886, 8. utg. 1891, 9. utg. 1893, 10. utg. 1896, FU 3 1898, 11. utg. 1899, 12. utg. 1903 og 13. utg. 1906. Det kom ulovlige, uautoriserte ettertrykk av <hi rend="italic">Peer Gynt</hi> i USA i Ibsens levetid (og senere); HIS kjenner til to utgaver fra 1894 og 1902 på forlaget J. Anderson i Chicago. Ulovlige ettertrykksutgaver er det ikke tatt hensyn til under tekstetableringen.</p>
+                    
+                    <p>Det er mange større og mindre forskjeller mellom grunnteksten og manuskriptene. Trykkmanuskriptet og førstetrykket sammenfaller i det store og hele. Ibsens få rettelser i trykkmanuskriptet er i hovedsak tatt til følge i grunnteksten.</p>
+                    
+                    <p>Et påfallende unntak fra samsvaret mellom trykkmanuskript og førstetrykk finnes i rollelisten. Førstetrykkets <quote>En Tyv og en Hæler</quote> gjenfinnes ikke i noen av manuskriptene. I trykkmanuskriptet står det <quote>To Tyve</quote>, og i arbeidsmanuskriptet er disse rollene ikke med. Forklaringen finnes i Ibsens brev til Hegel <HIS:hisRef target="B1844-1871ht.xml#B18670918FH">18. september 1867</HIS:hisRef>, som ledsaget renskriften av fjerde akt: <quote>Hvis første Ark ikke er trykkt ønskede jeg paa Listen over de handlende følgende Rettelser: istedetfor To Tyve sættes <hi rend="italic">En Tyv og en Hæler</hi></quote>. Men forskjellene gjelder også <quote>En Lensmand</quote>, som Ibsen ikke nevner i brevet. I trykkmanuskriptet heter han <quote>En Rodemester</quote>, og i arbeidsmanuskriptet er hverken <quote>En Lensmand</quote> eller <quote>En Rodemester</quote> med. Ibsen skriver videre: <quote>Kunde Trykkningen af Personlisten idethele udsættes till jeg har sendt Dem Resten, saa var det vel, da jeg muligens kunde ville oppføre endnu et Par Bifigurer; forresten er det ikke saa magtpaaliggende.</quote> Hegel skriver i brevkonsept av 27. september 1867 at de første syv ark er
+                        
+                        <quote rend="proseIndent">opsatte og korrigerede; men ikke trykte, fordi jeg tænkte mig Muligheden af, at De ønskede at foretage en eller anden Ændring. Da dette nu ikke er Tilfældet og Skriften skal benyttes til de følgende Ark, vil de 7 Ark i disse Dage blive rentrykte. Indholdsfortegnelsen og Titel venter jeg med tilsidst; de gjorte Rættelser i Personlisten ere bemærkede og flere kunne, om De ønsker det gjøres (KBK NKS 3742, 4°, II).</quote></p>
+                    
+                    <p rend="noIndent">Den manglende pagineringen av tittelblad og rolleliste viser at Hegel ventet med å trykke de første bladene i boken. (At det i mellomtittelen og rollelisten er benyttet et annet skriftsnitt enn i teksten for øvrig, peker i samme retning.) Det kom imidlertid ikke flere endringer i rollelisten.</p>
+                    
+                    <p>Nesten hele opplaget ble forhåndsbestilt, og Hegel skriver til Ibsen på utgivelsesdagen 14. november at han samme dag <quote>har ladt paabegynde et andet Oplag</quote> (KBK NKS 3742, 4°, II). Den <HIS:hisRef target="B1844-1871.ht.xml#B18671123FH">23. november 1867</HIS:hisRef>, få dager før annen utgave utgis, og derfor for sent til å rekke å bli opptatt i denne, meddeler Ibsen Hegel noen feil i førsteutgaven:
+                        
+                        <quote rend="proseIndent">Af Trykkfejl har jeg kun bemærket Side 80: (En Stemme i Mørket) der er sat i Parentes med smaa Typer istedetfor som de sædvanlige Overskrifter. Side 236 staar <hi rend="italic">hverve</hi> istedetfor kverve. Paa sidste Side staar i Knappestøberens Replik Tankestregen foran Ordet <hi rend="italic">om</hi> istedetfor bagefter (skal staa: se, om –;) Nederst paa Side 50 staar Ordene <quote>Hvad er saa Resten</quote> for langt fremskudt. De Partier der er skrevne i korte Verslinjer, f: Ex: Side 222 o. fl. skulde jeg gjerne ønske Verskolonnerne flyttede mere midt paa Siden. Det samme gjælder nogle Parenteser ved <hi rend="italic">Sceneforandringerne</hi> f. Ex: s. 144, 150, 157, 161. Paa Side 247 bør Punktum i sidste Linje udgaa foran Tankestregen. Altsammen Smaating.</quote></p>
+                    
+                    <p rend="noIndent">De tekstfeil Ibsen påpeker, ble altså stående, noe Hegel beklager i brev til Ibsen 12. desember 1867. HIS har tatt hensyn til Ibsens rettelser.</p>
+                    
+                    <p>De største forskjellene mellom tekstkildene til <hi rend="italic">Peer Gynt</hi> finner vi mellom arbeidsmanuskriptet og trykkmanuskriptet. Endringene i arbeidsmanuskriptet er omfattende og angår såvel mindre, stilistiske forhold som større tekstpartier samt vakling mellom prosa og vers og mellom ulike versemål (i ES 1, LV og i Koht 1908, 423–25 redegjøres det for arbeidsmanuskriptets metriske forhold). I arbeidsmanuskriptet er det flere forekomster av lengre partier som er strøket, og som ikke opptas i trykkmanuskriptet. Et eksempel finner vi i Ibsens arbeid med rollefiguren Dovregubben på arbeidsmanuskriptets bl. 38v–40r. Her er teksten strøket, og trykkmanuskriptet viderefører heller ikke alle de troll som opptrer her (bl.a. Professortrollet), men samler replikkene under Dovregubben. Trykkmanuskriptet er en gjennomgående rettet renskrift av arbeidsmanuskriptet.</p>
+                    
+                    <p>Flere av overstrykningene i KBK NKS 2869, 4°, 2 er utført svært omhyggelig. De vanskeligste stedene har HIS forsøkt å lese ved hjelp av stereolysmikroskop. De fleste av de lesemåter vi på forhånd hadde forslag til, ble bekreftet. Noen få spesielt vanskelige steder måtte oppgis. Utgiverne av HU var i stand til å lese mye av den strøkne teksten uten hjelp av det avanserte mikroskop som HIS har disponert. En forklaring på dette kan være at blekket har forvitret en del i løpet av de ca. 130 årene som er gått siden Ibsen skrev manuskriptet. Blekkstrekene glir over i hverandre, og i tillegg foregår en langsom kjemisk reaksjon mellom blekket og papiret. Med årene vil det trolig bli enda vanskeligere å skjelne de forskjellige skriveomgangene.</p>
+                    
+                    <p>I KBK NKS 2869, 4°, 1 [<hi rend="italic">Episk Brand</hi>] fortelles det på bl. 19v–20v og 54v–55v om en ung mann som hugger av seg en finger for å slippe militærtjeneste. Historien, som ikke finnes i <hi rend="italic">Brand</hi>, tas opp igjen i <hi rend="italic">Peer Gynt</hi> (HIS 5, <ptr type="ht" target="PGht.xml" corresp="koPG_ht_6"/>) og i prestens tale ved mannens grav (HIS 5, <ptr type="ht" target="PGht.xml" corresp="koPG_ht_7"/>).</p>
+                    
+                    <p>NBO Ms.8° 894 er en gjennomrettet utgave ved Henrik og Sigurd Ibsen, brukt som trykkmanuskript for tredje utgave 1874 (jf. <hi rend="italic">Manuskriptbeskrivelse</hi>), der anbefalingene fra det skandinaviske rettskrivningsmøtet i Stockholm 1869 om ny ortografi i norsk, svensk og dansk er fulgt, men med visse for Ibsen særegne unntak, jf. innledningen til <hi rend="italic">Catilina</hi> 1875 (HIS 1k, 146–48; jf. også Logeman 1917, 409–18 for en analyse av Ibsens endringer). Rettelsene i NBO Ms.8° 894 angår også feil i annen utgave, eksempelvis <quote>Kvinderne neje sig</quote> (s. 25) og <quote>Da faar ikke</quote> (s. 159), hvor første utgave hadde <quote>nejer</quote> og <quote>Du</quote>, noe Ibsen gjenoppretter i NBO Ms.8° 894 (den siste rettelsen kan være August Larsens). Ibsen har imidlertid under arbeidet med NBO Ms.8° 894 oversett flere av feilene i de to første utgavene. Blant annet er ordet <quote>Oreholdt</quote> på s. 2 blitt stående, mens både arbeidsmanuskriptet og trykkmanuskriptet hadde det korrekte <quote>Oreholt</quote>. På s. 96 i NBO Ms.8° 894 er ordet <quote>Hun</quote> understreket med blekk. Det kan være August Larsen som har oppdaget feilen. Det skal stå <quote>Han</quote>, slik det også gjør i førsteutgaven. (I fjerde utgave finnes fortsatt feilen, mens den i sjette utgave er rettet igjen.) Ibsen har også benyttet anledningen til mindre endringer i tegnsettingen.</p>
+                    
+                    <p>NBO Ms.4° 4461, et rettet eksemplar av sjette utgave brukt ved iscenesettelsen på Dagmarteatret i 1886 (jf. Bense 1916 og Neiiendam 1976), inntar en særstilling i tekstens utvikling. Andersen hadde sendt eksemplaret til Ibsen for å få hans samtykke i en rekke strykninger. Ibsen ikke bare godkjente Andersens forslag, men foreslo ytterligere strykninger og dramaturgiske løsninger. Ved tilbakesendelsen av boken <HIS:hisRef target="B1880-1889ht.xml#B18851117TAn">17. november 1885</HIS:hisRef> skrev Ibsen i et ledsagende brev (jf. også <HIS:hisRef target="PG_msbeskr.xml"><hi rend="italic">Manuskriptbeskrivelse</hi></HIS:hisRef>):
+                        
+                        <quote rend="proseIndent">De af Dem foretagne strygninger billiger jeg, og jeg har, som De ser, end yderligere beskåret dialogen. Skulde det under prøverne vise sig at endnu flere forkortelser […] vilde være ønskelige, beder jeg Dem om i så henseende selv at besørge det fornødne efter bedste skøn.</quote></p>
+                    
+                    <p rend="noIndent">Ibsen har dessuten rettet teksten to steder: <quote>død</quote> (Bøjgens replikk, s. 85) er rettet til <quote>sårløs</quote>, i samsvar med <quote>saarløs</quote> i 1.–4. utgave: <quote>Bøjgen, Peer Gynt! En eneste en. / Det er Bøjgen, som er saarløs […]</quote> (HIS 5, <ptr type="ht" target="PGht.xml" corresp="koPG_ht_8"/>). Videre er <quote>Nej!</quote> (Peers replikk, s. 100) rettet til <quote>Hej!</quote> i samsvar med 1.–4. utgave: <quote>Min kongsdatter! Nu er hun funden og vunden! / Hej! Nu skal […]</quote> (HIS 5, <ptr type="ht" target="PGht.xml" corresp="koPG_ht_9"/>). Disse to feilene opptrer første gang i femte utgave (1881) og finnes i alle senere utgaver i Ibsens levetid.</p>
+                    
+                    <p>Ibsen skriver til Hegel <HIS:hisRef target="B1871-1879ht.xml#B18761031FH">31. oktober 1876</HIS:hisRef> om fjerde utgave av <hi rend="italic">Peer Gynt</hi>: <quote>Der har deri hist og her indsneget sig nogle trykfejl, som jeg ved lejlighed skal sende Dem en fortegnelse over.</quote> Noen slik fortegnelse er ikke kjent. Før femte utgave skriver Ibsen til Hegel (4. mars 1881) at han ikke har rettelser til de nye utgavene av <hi rend="italic">Brand</hi> og <hi rend="italic">Peer Gynt</hi>: <quote>Jeg ønsker ikke at rette eller tilføje noget i bøgerne, som altså kan trykkes uforandret.</quote></p>
+                    
+                    <p>Vi kjenner til at enda et egenhendig scenemanuskript har eksistert. Ibsen skriver <HIS:hisRef target="B1871-1879ht.xml#B18740206LJ">6. februar 1874</HIS:hisRef> til lederen ved Christiania Theater, Ludvig Josephson, at han har <quote>foretaget en <hi rend="italic">bearbejdelse</hi>, således at det i en <hi rend="italic">forkortet</hi> skikkelse bliver brugbart til opførelse på scenen</quote>. I samme brev skriver Ibsen at han vil avvente Josephsons og Edvard Griegs samtale om saken før han eventuelt vil <quote>sende Dem et rettet og forkortet exemplar af stykket</quote>. At en rettet utgave skulle sendes til teateret, hadde Ibsen også meddelt Grieg <HIS:hisRef target="B1871-1879ht.xml#B18740123EGr">23. januar 1874</HIS:hisRef>. Urpremieren på <hi rend="italic">Peer Gynt</hi> fant sted i Kristiania i 1876, og tekstgrunnlaget kan ha fulgt Ibsens endringer i kombinasjon med de endringer Josephson og Hartvig Lassen hadde ønsket. Josephson skriver i sin erindringsbok at han personlig hadde forelagt Ibsen et bearbeidet eksemplar av stykket under Ibsens opphold i Kristiania sommeren 1874, <quote>med de ytterligare förkortningar jag ansåg behöfliga för styckets gifvande och hvilka af Ibsen gillades</quote> (Josephson 1898, 52–53). Ibsen bekrefter <HIS:hisRef target="B1871-1879ht.xml#B18750816HL">16. august 1876</HIS:hisRef> overfor Lassen at han hadde gitt Josephson sitt samtykke i hans endringsforslag, samt akseptert at Josephson ikke, som Ibsen hadde foreslått, ville stryke fjerde akt:
+                        
+                        <quote rend="proseIndent">Denne plan meddelte jeg herr Josephson, men han var ikke enig med mig deri; hvorimod han forelagde mig et forslag til strygninger i replikkerne, hvilke strygninger forekom mig foretagne med megen skønsomhed og hvortil jeg gav mit samtykke.</quote></p>
+                    
+                    <p rend="noIndent">Ibsens manuskript fra oppførelsen har vi ikke. Emil Reich opplyser (1908, 141) at han i forbindelse med sjette utgave av sin bok <hi rend="italic">Henrik Ibsens Dramen</hi> fikk tilsendt et scenemanuskript til <hi rend="italic">Peer Gynt</hi> fra Nationaltheatret. Forskjellene mellom dette og førstetrykket beskriver Reich som Ibsens egne, noe som kan tyde på at Reich faktisk fikk tilsendt manuskriptet til uroppførelsen, muligens med Ibsens egenhendige endringer. Det har ikke lyktes HIS å finne dette manuskriptet, og antagelsen kan derfor ikke bekreftes, heller ikke om strykningene og endringene er egenhendige eller utført av andre etter Ibsens godkjennelse. Jf. innledningen, under <HIS:hisRef target="PG_innl.xml_intro_performance"><hi rend="italic">Oppførelse</hi></HIS:hisRef>.</p>
+                    
+                    <p>Ved Sveriges Teatermuseum, Stockholm, finnes Josephsons regieksemplar av tredje utgave 1874 med strykninger. Det er vanskelig å avgjøre hvem som har foretatt disse, men det er lite trolig Ibsen, ettersom tredje utgave forelå først i september 1874 (jf. Hegels brevkonsept til Ibsen 22. september 1874, KBK NKS 3742, 4°, II), og Ibsen må ha utført sine endringer i et eksemplar av første eller annen utgave. Josephsons endringer i dette eksemplaret kan likevel tenkes å svare helt til de endringene han var blitt enig med Ibsen om, og de kan ha blitt overført fra et eksemplar av første eller annen utgave. Det kan heller ikke utelukkes at dette eksemplaret er det samme som Reich fikk tilsendt. </p>
+                    
+                    <p>Endringene ble diskutert også i premiereåret, noe f.eks. Ibsens brev til Hartvig Lassen <HIS:hisRef target="1871-1876ht.xml#B18760122HL">22. januar 1876</HIS:hisRef> vitner om: <quote>befindes noget parti eller det hele for langt, så stryg, stryg!</quote> Det har antagelig vært benyttet flere eksemplarer av første, annen og tredje utgave under bearbeidelsen av teksten til uroppførelsen. I tillegg til Ibsens og Josephsons eksemplarer, ble det også sendt ett til Grieg (jf. <HIS:hisRef target="PG_innl.xml#intro_performance"><hi rend="italic">Oppførelse</hi></HIS:hisRef>). HIS har ikke funnet dette; det eksemplar av førsteutgaven som eies av Bergen Offentlige Bibliotek, BOB Griegsamlingen 2, inneholder ingen tegn på at det har vært benyttet under arbeidet med musikken til <hi rend="italic">Peer Gynt</hi> eller som grunnlag for forkortelsene.</p>
+                    
+                    <p>At Ibsen ikke så for seg at den forkortede og endrede sceneversjonen skulle benyttes som forelegg for tredje utgave, bekreftes ved eksistensen av NBO Ms.8° 894 og av Ibsens brev til Hegel <HIS:hisRef target="B1871-1879ht.xml#B18740210FH">10. februar 1874</HIS:hisRef>, der denne bearbeidede utgaven omtales:
+                        
+                        <quote rend="proseIndent">Af <quote>Peer Gynt</quote> har jeg i denne tid foretaget en bearbejdelse til brug for scenen, hvilken til høsten vil komme til opførelse på Kristiania theater med musik, der komponeres af Edvard Grieg. Bearbejdelsen består mest i forkortninger; men i det nye oplag bør digtet udkomme uforandret.</quote></p>
+                    
+                    <p rend="noIndent">(For utfyllende opplysninger om oppførelsen og korrespondansen om denne, se kommentarene til de nevnte brevene i HIS 13k.)</p>
+                    
+                    <p>Også mellom de mange trykte utgavene av <hi rend="italic">Peer Gynt</hi> som kom i Ibsens levetid, er det flere betydelige forskjeller. Henri Logeman gjorde i artikkelen <title rend="quotes">Tilbake til Ibsen</title> i <hi rend="italic">Edda</hi> 1914 oppmerksom på et stort antall feil – over 300 – som var akkumulert i de av ham undersøkte 18 utgavene av <hi rend="italic">Peer Gynt</hi> (inklusive Ibsens egenhendig rettede eksemplar av annen utgave, NBO Ms.8° 894). Han publiserte en utvidet versjon av sine sammenligninger av utgavene mot trykkmanuskriptet i en avhandling om <hi rend="italic">Peer Gynt</hi> tre år senere. Artikkelen i <hi rend="italic">Edda</hi> vakte stor almen oppsikt og polemisk motstand fra blant andre Gyldendals Peter Nansen (Logeman 1917, 367–68).</p>
+                    
+                    <p>I en resepsjonsestetisk fundert utgivelsespraksis vil ikke alle de avvik som finnes mellom tekster, automatisk kalles feil eller påkalle rettelser. Flere av dem Logeman lister opp, er avvik som gir mening, og noen kan skyldes Ibsens bevisste endringer i prosessen mellom arbeidsmanuskript og trykkmanuskript. Flere av <quote>feilene</quote> er videre den danske setters normale reaksjon på det han måtte oppfatte som skrivefeil, men som altså godt kunne være norvagismer eller Ibsens egenrådige (men til dels betydningsbærende) kommatering. Det er også mange regulære feillesninger fra setterens side, som nok skyldtes høyt arbeidstempo, og flere av disse korrumperer teksten i en betraktelig grad, for eksempel en ombytting av verslinjer og en feilstaving som <quote>brændende</quote> for <quote>bændende</quote>. Det finnes mange eksempler på gal sperring, altså utheving, slik som <quote>Hvem e r du?</quote> i stedet for <quote>Hvem er d u?</quote>. Eksempler på gal tegnsetting er det også mange av. Ibsen hadde bemerket enkelte av disse i brevet til Hegel <HIS:hisRef target="B1844-1871ht.xml#B18671123FH">22. november 1867</HIS:hisRef>, jf. ovenfor. Han påpekte også senere trykkfeil, jf. brevet til Hegel <HIS:hisRef target="B1871-1879ht.xml#B18761031FH">31. oktober 1876</HIS:hisRef>.</p>
+                    
+                    <p>De aller fleste tilfellene som Logeman viser til i sin avhandling, og som må kunne kalles feil, er oppstått etter førstetrykket og viser hvor nødvendig det er å gå tilbake til dette, og om mulig til trykkmanuskriptet, for å sikre en pålitelig tekst. Allerede i annen utgave kom det til rundt 20 nye feil.</p>
+                    
+                    <p>I tillegg til HIS’ hovedtekst finnes en diplomatarisk og søkbar gjengivelse samt en fotografisk faksimile av grunnteksten i den elektroniske delen av HIS. I den elektroniske utgaven gjengis også de øvrige tekstkildene diplomatarisk, manuskriptene også med faksimile, med mulighet for søk og sammenligning med grunnteksten, samt en metrisk analyse av de versifiserte partiene i teksten. (I den elektroniske delen vil dessuten en analyse som den Logeman foretok av <hi rend="italic">Peer Gynt</hi>-utgavene, kunne gjennomføres for alle trykte utgaver i Ibsens levetid. Sannsynligheten for tilsvarende funn er stor.)</p>
+                    
+                    <p>HIS har i margen sidereferanser til grunnteksten og til HU.</p>
+                    
+                </div>
+                <!--slutt 6.3-->
+                
+                <div xml:id="edState_critical">
+                    <!--6.4-->
+                    <head rend="level3">tekstkritiske bemerkninger</head>
+                    
+                    <p rend="noIndent">Ved emendasjoner er også de andre tekstkildene fra Ibsens levetid blitt konsultert. Trykkmanuskriptet er gitt prioritet. NBO Ms.4° 4461 er også ført som kilde i HIS’ rettelsesnoter i <hi rend="italic">Peer Gynt</hi>. (Tekst i NBO Ms.4° 4461 som er strøket, er ikke brukt som kilde for rettelser; heller ikke i rettelsesnoten til <quote>Oreholt</quote> er dette manuskriptet benyttet. Dette har her teksten <quote>&lt;…&gt;lekrat</quote> (teksttap ved beskjæring). Ordet har sannsynligvis vært <quote>Ellekrat</quote>, den danske oversettelsen av <quote>Oreholt</quote>. Endringen er ikke egenhendig, sannsynligvis Th. Andersens.)</p>
+                    
+                    <p>Ordvalg, ortografi og grammatikk i grunnteksten er, som offisiell norsk i samtiden, i tråd med danske normer, men med visse særegenheter. Ibsen kommenterer selv sitt eget skriftspråk slik vi finner det i <hi rend="italic">Brand</hi> og <hi rend="italic">Peer Gynt</hi> i et brev til Frederik Hegel <HIS:hisRef target="B1844-1871ht.xml#B18651125FH">25. november 1865</HIS:hisRef> (jf. kommentarer til Ibsens brev til Hegel <HIS:hisRef target="B1844-1871ht.xml#B18651125FH">25. november 1865</HIS:hisRef>). (Se også <HIS:hisRef target="PG_komm.xml"><hi rend="italic">Ord- og sakkommentarer</hi></HIS:hisRef>.)</p>
+                    
+                    <p>I HIS er tegnsetting standardisert på følgende måte: Etter titler, overskrifter og rolleinnførsler i rollelister samt replikkåpner i dramateksten er eventuelle skilletegn (punktum, komma, kolon) fjernet. I sceneanvisninger først i akt og scener, i frittstående sceneanvisninger mellom replikker og i stedsbeskrivelser etter rolleliste er eventuell parentes fjernet. Disse elementene har gjennomgående fått stor forbokstav og avsluttes med punktum. Frittstående sceneanvisninger har beholdt eventuelle <quote>indre</quote> parenteser. Sceneanvisninger til slutt i replikker regnes som del av replikken dersom de er ufullstendige setninger, og som frittstående, utenfor replikken, dersom setningen er fullstendig.</p>
+                    
+                    <p>Sceneanvisninger inne i replikk, inkludert de som står til slutt i replikk (ikke frittstående), begynner med liten forbokstav og avsluttes uten interpunksjon. Sceneanvisninger som følger rett etter replikkinnehaverens navn, har ikke parenteser. Øvrige sceneanvisninger i replikk har parentes. Avsnittsinnrykk først i versreplikker er fjernet.</p>
+                    
+                    <p>Skillestreker er beholdt der de har strukturerende funksjon, for eksempel når de markerer sceneskift, og sceneskiftet ikke er markert på annen måte. Skillestreker som bare har karakter av ornament, er ikke gjengitt. Grunntekstens typografiske system for øvrig er ikke forsøkt imitert i HIS.</p>
+                    
+                    <p>Tekstfeilene i <hi rend="italic">Peer Gynt</hi> 1867 omfatter i hovedsak setterfeil og misforståelser, for eksempel ordet <quote>kverve</quote>, som i grunnteksten er blitt til <quote>hverve</quote>. Også i tegnsettingen finner vi feil, for eksempel spørsmålstegn for utropstegn. Et par tilfeller av feilaktig typografi (rollenavn satt som sceneanvisning og manglende innrykk av verslinjedeler) forstyrrer betydningen og er rettet i HIS. Alle rettelser er anført i det tekstkritiske noteapparatet. Når teksten avviker betydelig i kilder som anvendes ved rettelser, føres ikke tekst herfra i rettelsesnoten, og formuleringen <quote>teksten mangler i</quote> benyttes heller ikke. Den avvikende teksten vises derimot i sin sammenheng i den elektroniske delen av HIS. Dersom det er relevant for vår rettelse, vil tekstendringer i kilden det siteres fra, kommenteres kort i rettelsesnoten. Vakling i ortografi og interpunksjon som avspeiler tidens og Ibsens vekslende praksis, er ikke rettet i HIS. I <hi rend="italic">Peer Gynt</hi> forekommer også flere egenartede stavemåter av utenlandske ord, for eksempel tysk <quote>wass</quote> (for <hi rend="italic">was</hi>), engelsk <quote>God dam</quote> (for <hi rend="italic">Goddam</hi>), <quote>Werry</quote> (for <hi rend="italic">Very</hi>) og <quote>Stewart</quote> (for <hi rend="italic">Steward</hi>). Det ville være problematisk å korrigere slike steder, siden de kan ha vært tenkt som en karakteristikk av rolleinnehaveren, jf. kommentar til <quote>Werry</quote> (<ptr type="internal" target="PGht.xml" corresp="koPG_764"/>).</p>
+                    
+                    <p>For en oversikt over samtidens språknormer og Ibsens språk vises det dessuten til redegjørelser i innledningene til <hi rend="italic">Catilina</hi> 1850 og 1875 (HIS 1k, 34–40 og 146–48). Det vises for øvrig til de tekstkritiske retningslinjene for HIS i registerbindet.</p>
+                    
+                </div>
+                <!--slutt 6.4 -->
+                
+                <div xml:id="edState_editions">
+                    <!--6.5-->
+                    <head rend="level3">tidligere tekstkritiske utgaver</head>
+                    <p rend="noIndent">I FU er <hi rend="italic">Peer Gynt</hi> trykt i bind 3, med en innledning om tilblivelsen, oversettelser, sekundærlitteratur og oppførelser s. VIII–XII. Det gis ikke tekstkritiske opplysninger. I MU er <hi rend="italic">Peer Gynt</hi> trykt i bind 2. Rettelser foretatt av Storm og et utvalg feil i FU og tidligere utgaver er oppgitt i MU 5, 8–11 og 39–40. Logeman argumenterer (1917, 441–46) for at Storm ikke kan ha benyttet FU som tekstgrunnlag (noe Storm selv hevder, MU 5, 3), men 13. utgave. Logeman viser til at alle de feil som kom inn i utgavene etter FU, er ført videre i MU. (Logemans avhandling inneholder for øvrig punktvise diskusjoner av Storms valg.) I ES 2, 72–112 er arbeidsmanuskriptet gjengitt i utdrag. Det redegjøres for arbeidsmanuskriptets tilblivelse, for Ibsens tekstendringer i dette og for avvik mellom dette og teksten i FU 3, 413–20. ES’ utgivere har ikke kjent til eller omtalt andre manuskripter til <hi rend="italic">Peer Gynt</hi> enn arbeidsmanuskriptet. I SU er <hi rend="italic">Peer Gynt</hi> trykt i bind 2, tekstgrunnlaget oppgis (SU 7, 292) å være tredje utgave sammenholdt med NBO Ms.8° 894. Noen av Ibsens rettelser i dette er gjengitt som liste på s. 292–95, som også inkluderer feil i senere utgaver. I HU er <hi rend="italic">Peer Gynt</hi> trykt i bind 6, tekstgrunnlaget er <quote>nesten alltid</quote> førstetrykket (HU 6, 245). Det redegjøres ikke for utgivernes rettelser, derimot for forholdet mellom arbeidsmanuskriptet og trykkmanuskriptet ved at store deler av den avvikende teksten i arbeidsmanuskriptet er gjengitt, dels som apparat, dels som løpende tekst (HU 6, 245–330). Videre opplyses det om noen forskjeller mellom trykkmanuskriptet og førstetrykket samt for noen av rettelsene i NBO Ms.8° 894. I HU 19, 39–44 er sceneplanen redegjort for og gjengitt i sin helhet. HU har ikke brukt eller omtalt NBO Ms.4° 4461.</p>
+                </div>
+                <!--slutt 6.5-->
+                
+            </div>
+            </body>
+            </text>
+    
+</TEI>

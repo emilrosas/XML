@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title level="s">Henrik Ibsens skrifter</title>
+<title level="a">Innledning til Catilina, 2. versjon</title>
+<author>ført i pennen av Vigdis Ystad</author>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
+<respStmt>
+<resp>Koding</resp>
+<name xml:id="HIS-HB">Hilde Bøe</name>
+<name xml:id="HIS-IF">Ingrid Falkenberg</name>
+<name xml:id="HIS-SBT">Stine Brenna Taugbøl</name>
+<name xml:id="HIS-AMB">Aasta Marie Bjorvand Bjørkøy</name>
+<name xml:id="HIS-NME">Nina M Evensen</name>
+</respStmt>
+<respStmt>
+<resp>Kommentarentiteter</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+</respStmt>
+<respStmt>
+<resp>Rettelser i manuskriptbeskrivelsene</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+</respStmt>
+<respStmt>
+<resp>Implementering av kode</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+<name>Nina M Evensen</name>
+</respStmt>
+<respStmt>
+<resp>Kodekontroll</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+<name>Nina M Evensen</name>
+</respStmt>
+<respStmt>
+<resp>Tekstarbeid</resp>
+<name>Nina M Evensen</name>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+</respStmt>
+</titleStmt>
+<publicationStmt>
+<publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+<distributor xml:id="HISe">Universitetet i Oslo</distributor>
+<date when="2012" xml:id="HISe-date"/>
+<pubPlace>Oslo</pubPlace>
+</publicationStmt>
+<sourceDesc>
+<p>Denne filen har ingen kilde.</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<tagsDecl>
+
+</tagsDecl>
+</encodingDesc>
+<profileDesc>
+<langUsage>
+<language ident="nob"/>
+<language ident="fre"/>
+<language ident="eng"/>
+<language ident="rus"/>
+<language ident="ger"/>
+</langUsage>
+</profileDesc>
+<revisionDesc>
+    <change><date>07.09.22</date>
+        <name>NME</name><title>La inn type-attributt i text.</title>
+    </change>
+    <change><date>14.02.13</date>
+<name>SBT</name><title>Lenkekoding</title>
+</change>
+<change><date>29.09.12</date>
+<name>SBT</name><title>Omkoding til TEI P5 og HISe</title>
+</change>
+</revisionDesc>
+</teiHeader>
+<text type="introduction">
+<body>
+<div type="introduction" xml:id="intro">
+<div type="background" xml:id="intro_background">
+<head rend="level2">BAKGRUNN</head>
+<p>Sommeren 1874 besøkte Ibsen Norge for
+første gang etter utreisen i 1864. Han var
+nå en etablert forfatter, men hans økonomi
+var fremdeles vanskelig, og han var avhengig av
+fortløpende å kunne sende eldre
+(omarbeidede) og nye verker ut på bokmarkedet,
+samtidig som han arbeidet aktivt for å få
+sine tidligere stykker satt opp ved ulike teatre.
+Økonomiske hensyn, kombinert med at han under
+arbeidet med <title rend="italic">Kejser og
+Galilæer</title> (1873) nettopp hadde fordypet seg i
+studiet av romersk historie, var sannsynligvis medvirkende årsaker til at
+han foreslo for sin forlegger å markere sitt
+25-årsjubileum som forfatter med en ny utgivelse av
+debutdramaet <title rend="italic">Catilina</title> 1850. I et brev til Frederik Hegel datert <HIS:hisRef target="B1871-1879ht.xml#B18741123FH">23. november 1874</HIS:hisRef> skriver han: <quote rend="proseIndent">Til næste år fejrer jeg, foruden som student, også mit 25-årige
+forfatterjubilæum. I Marts måned 1850
+udkom nemlig «Catilina», drama i tre
+akter, hvilket var den første bog, jeg lod
+trykke. Dette arbejde indeholder adskilligt godt ved siden
+af adskilligt umodent; i de senere år har kritiken
+ofte fremhævet det som karakteristisk for mig at
+jeg debuterede med dette stykke; og jeg må selv
+være enig heri, idet jeg nu føler at
+det hænger nøje sammen med mine
+daværende livsforholde, og at det indeslutter i
+sig spirerne til adskilligt, som senere er kommet frem i min
+digtning. […] Der skulde ikke
+røres ved tankerne og ideerne, men kun ved disses
+sproglige form.</quote></p>
+<p>Før nyutgivelsen foretok Ibsen en grundig revisjon av
+sitt ungdomsverk. Omarbeidelsen gjaldt langt mer enn den
+språklige form, og var så gjennomgripende at
+da <title rend="italic">Catilina</title> utkom på ny
+i 1875, var ikke bare originalens noe haltende versifikasjon
+rettet i samsvar med metrikkens krav, han hadde også
+endret ordvalg og billedbruk og korrigert originalens av og til
+feilaktige referanser til romerske forhold. De omfattende
+endringene kan skyldes at Ibsen på grunn av sin nye
+lærdom, og på bakgrunn av sine egne
+erfaringer de fire årene i Roma (1864–68),
+nå hadde ervervet seg kunnskaper som gjorde at han
+ønsket å korrigere sitt debutdrama.</p>
+<p>Det generelle inntrykk av Ibsens revisjonsarbeid er at han som
+regel holder seg til de opprinnelige forestillinger og
+intensjoner. Utskiftning av uttrykk er som regel språklig, metrisk og billedmessig betinget. Ibsen fikk
+kritikk for den skjødesløse metrikken i
+<title rend="italic">Catilina</title> 1850, og i
+1875-utgaven er så godt som alle uregelmessigheter i
+forhold til femfotsjambene/blankverset rettet opp. Slike
+uregelmessigheter kunne være over- og undertallige
+verslinjer, manglende opptakter, substitusjon (flere trykksvake
+stavelser etter hverandre) og reduksjon (manglende trykksvake stavelser).
+Følgende passasje fra 1850-utgaven gir et godt
+inntrykk av hele verkets revisjon til regelrett form <ptr type="ht" target="C1ht.xml" corresp="koC1_ht_56"/>:
+<quote rend="indent">
+<HIS:hisLg>
+<l>ha, det er min Opvaagnen af de Drømme</l>
+<l>om Storhed, om et daadrigt Liv,</l>
+<l>som længst jeg næred’
+– kun i Sjælens Indre</l>
+<l>var deres Tumleplads og Ingen kjendte dem!</l>
+<l>– Ha! det er ei hiin tunge Rolighed</l>
+<l>langt fra Verdenslarmen, som mig skrækker –</l>
+<l>– nei – for et Øieblik at
+lyse klart</l>
+<l>og flammende som Meteoret,</l>
+<l>for med en herlig Daad at vie ind</l>
+<l>mit Navn til Storhed, til
+Udød’ligheden –</l>
+</HIS:hisLg>
+</quote>
+I 1875-utgaven er det endret til <ptr type="ht" target="C2ht.xml" corresp="koC2_ht_23"/>:
+<quote rend="indent">
+<HIS:hisLg>
+<l>Nu er jeg vågnet op af alle drømme</l>
+<l>om magt, om storhed, om et dådrigt levnet; –</l>
+<l>de svandt som duggen; i mit indres nat</l>
+<l>var deres tumleplads; – dem ingen kendte.</l>
+<l>Det er ej denne dumpe døs og ro,</l>
+<l>afstængt fra verdens larm, som
+skræmmer mig.</l>
+<l>Hvis blot et øjeblik jeg kunde lyse</l>
+<l>og flamme som en stjerne i sit fald, –</l>
+<l>hvis blot jeg en gang med en herlig dåd</l>
+<l>fik knytte mig og navnet «Catilina»</l>
+<l>til ry og til udødelige sagn, –</l>
+</HIS:hisLg>
+</quote>
+Det store antall «ha» er fjernet og erstattet
+med mindre svulstige uttrykk i 1875-utgaven. Det er
+også en betydelig reduksjon i bruk av utropstegn (jf.
+i begge tilfeller eksemplet ovenfor). Dette er betegnende for
+endringen i stilnivå fra den yngre til den eldre Ibsen.</p>
+<p>En rekke endringer i annen utgave er knyttet til realia. Et
+eksempel er <quote>Den lille Villa mellem dunkle
+Træer</quote>, som blir til <quote>Den hvide villa
+mellem mørke trær</quote>
+<ptr type="ht" target="C2ht.xml" corresp="koC2_ht_7"/>. Med bedre kjennskap til Italia har Ibsen
+kanskje visst at romerske villaer var store og flotte; den mest
+berømte, Hadrians villa nær Tivoli, til og
+med et mektig kompleks av mange bygninger. I første
+utgave taler Furia om den druknede Tullias
+<quote>Tangkrands</quote>. Men det at <quote>hendes Liig paa
+Tibervoven svømmed</quote>, betyr at hun druknet
+i ferskvann – og følgelig retter Ibsen til
+<quote>sivkrans</quote>. At liket
+<quote>svømmed</quote>, er tilsvarende endret til
+<quote>da hendes lig flød op ved Tibers
+munding</quote> <ptr type="ht" target="C2ht.xml" corresp="koC2_ht_8"/>. Når Ibsen
+også endrer <quote>et bedre Fødeland vi
+ville finde</quote> til <quote>et nyskabt
+fædreland vi vil os finde</quote><ptr type="ht" target="C2ht.xml" corresp="koC2_ht_9"/>, kan det henge sammen med at <hi rend="italic">fødeland</hi> er knyttet til
+betydningen <quote>land der en selv er født</quote>,
+og det stemmer jo ikke her. <quote>Meteoret</quote> i første utgave
+er blitt til <quote>en stjerne i sit fald</quote>, dvs. en
+utskiftning av <hi rend="italic">species</hi>-betegnelser til
+fordel for én (mer enhetsskapende) <hi rend="italic">genus</hi>-betegnelse. I annen utgave har Ibsen
+også vært opptatt av dels å
+variere, dels å erstatte flere av forekomstene med
+andre begreper: <quote>fædrelandets
+velfærd</quote> (erstatter <quote>dets gamle
+Frihed</quote>), <quote>nyskabt liv</quote> (erstatter
+<quote>Frihedssindet</quote>), <quote>borgerfrihed
+[…] borgerånd</quote>
+(erstatter <quote>Frihed! Frihed</quote>). Det er snarest
+tale om en berikelse, ikke en dreining av talens innhold.</p>
+<p>Under omarbeidelsen tok han (slik han allerede hadde gjort i
+<title rend="italic">Digte</title> 1871 og <title rend="italic">Kejser og Galilæer</title> 1873)
+hensyn til anbefalingene fra det nordiske
+rettskrivningsmøtet i 1869. Beretninger om det
+nordiske språkmøtet ble skrevet av
+sekretærene for møtet, Jakob
+Løkke for Norge og K.J. Lyngby for Danmark (begge
+1870) og Arthur Hazelius for Sverige (1871). Løkke
+viser til at de foreslåtte endringer for lengst var
+anbefalt, særlig av Rasmus Rask for dansk-norskens
+vedkommende, at de til dels allerede var tatt i bruk, og at de
+ville forenkle hvert språks rettskrivning og samtidig
+nærme det ene språket til det andre og
+derved gjøre det lettere for Nordens folk å
+forstå og tilegne seg hverandres litteratur. Til dels
+var det snakk om å vende tilbake til tidligere
+skriveskikk, for eksempel små forbokstaver i substantiver.
+Videre var det bare snakk om endringer av skrivemåte,
+ikke uttale og bøyning. Endringene gjaldt
+også valgfrie former.</p>
+<p><title rend="italic">Catilina</title> 1850 var trykt i fraktur.
+Den nye utgaven benytter antikva, som hadde vært
+skriftsnittet i alle Ibsens utgaver fra og med <title rend="italic">Brand</title> (1866), og
+som også var anbefalt av det skandinaviske
+språkmøtet. Ved å sammenligne
+språket i <title rend="italic">Catilina</title>-utgavene fra 1850 og 1875, vil
+man få et inntrykk av utviklingen i Ibsens
+språkbruk. Det vises i denne sammenheng tilbake til
+den <HIS:hisRef target="C1_innl.xml#intro_background_language">språklige redegjørelsen</HIS:hisRef> i innledningen
+til første utgave.</p>
+
+<div xml:id="intro_background_language">
+<head rend="level3">språket i catilina 1875</head>
+<div xml:id="intro_background_language_ortography">
+<head rend="level4">rettskrivning.</head>
+<p>Ibsen har helt ut sluttet seg til anbefalingene fra 1869,
+også de valgfrie: Han skriver for eksempel <hi rend="italic">visshed</hi> med dobbel konsonant for
+å markere kort vokal. <hi rend="italic">Samfunds-ånd</hi> og mange andre
+lange ord skrives med den anbefalte bindestreken. Han
+skriver liten forbokstav i substantiver og i 2. person
+entall av personlig pronomen (<quote>Du</quote>,
+<quote>Dig</quote> i 1. utg.; <quote>I</quote>,
+<quote>eder</quote> i 2. utg.), men for eksempel stor <hi rend="italic">R</hi> i <hi rend="italic">Romer-</hi>, der han også bruker
+bindestrek når ordet forekommer i sammensetninger.
+Han regner altså personavledningen til landsnavnet
+som egennavn når den opptrer alene eller utskilt.
+Det var det ingen regel for, hverken fra 1869 eller i
+grammatikkene, men det var ikke uvanlig.</p>
+<p>Norvagisering av fremmedord forekommer i form av at <hi rend="italic">c</hi> blir til <hi rend="italic">k</hi> (<hi rend="italic">konsulatet</hi>, <hi rend="italic">diktatoren</hi>). Endring fra <hi rend="italic">hvidskende</hi> til <hi rend="italic">hviskende</hi> er et eksempel på å sløyfe <hi rend="italic">d</hi> foran <hi rend="italic">s</hi> der <hi rend="italic">d-</hi>en ikke er del av ordets rot.</p>
+</div>
+
+<div xml:id="intro_background_language_morphology">
+<head rend="level4">bøyning.</head>
+<p>Flertallsbøyning av verb er forlatt: <quote>et bedre Fødeland vi <hi rend="italic">ville</hi> finde</quote> blir til <quote>et nyskabt fædreland vi <hi rend="italic">vil</hi> os finde</quote>; i <quote>sælsomt <hi rend="italic">flamme</hi> dine Blikke</quote> endres verbformen til <hi rend="italic">flammer</hi> (uth. her). Dette var i samsvar med reglene i J. Aars’ ordlister, som også Kirkedepartementet la til grunn for offisiell rettskrivning. I 1866-utgaven opplyser Aars at flertallsbøyningen ikke brukes ved hans egen skole, og i 1874-utgaven skriver han om flertallsformene av  verb at neppe noen forfatter lenger bruker dem konsekvent, og at det levende språk fullstendig har oppgitt dem. (Sitert hos <bibl>Vinje 1978, 218</bibl>.)</p>
+<p>Det er ikke mange norvagismer i bøyningsverket utenom den utskiftede flertallsbøyningen av verb. Men de forekommer: <quote>i sidste <hi rend="italic">Gløden</hi> ifra Vestens Sol</quote> endres til <quote>ved sidste <hi rend="italic">blinket</hi> ifra vestens sol</quote> <ptr type="ht" target="C2ht.xml" corresp="koC2_ht_10"/> (uth. her). At dette skulle oppfattes som bestemt form, var uvisst i første utgave, men her er det sikkert, og
+utelatelsen av foranstilt artikkel er et ytterligere
+talemålstrekk, av <bibl>Ivar Aasen (<title rend="italic">Norsk
+Grammatik</title> § 311)</bibl> hevdet å skje
+<quote>naar en naturlig Egenskab ved Tingen bliver
+stærkt fremhævet ved
+Adjektivet</quote>. Andre norvagismer er <quote>kom <hi rend="italic">ihug</hi></quote> (uth. her): <hi rend="italic">Hu</hi> er vanligst hos Ibsen,
+men <hi rend="italic">Hug</hi> er ingen sjelden form. Det
+er ingen klar kronologisk eller betydningsmessig fordeling
+av formene. <hi rend="italic">Hug</hi> var en foreldet form
+i dansk, og må her kunne regnes som en norvagisme.
+<quote>Skynd Dig <hi rend="italic">Gamle</hi></quote> endres til <quote>skynd dig, <hi rend="italic">gubbe</hi></quote> <ptr type="ht" target="C2ht.xml" corresp="koC2_ht_11"/> (uth. her); men selv dette finnes hos
+Molbech, som kaller det svensk og viser til <quote>Bording;
+Moth; enkelte nyere Digtere</quote>.</p>
+<p>I behandlingen av fremmedord foretar Ibsen av og til full
+utskiftning; <hi rend="italic">Echo</hi> er endret til <hi rend="italic">genlyd</hi>. Dette blir vanligvis regnet som
+<quote>fornorskning</quote> til forskjell fra norvagisering
+av skrivemåten. Men også Molbech
+fører opp <hi rend="italic">Gienlyd</hi> (og
+ikke <hi rend="italic">Echo</hi>), så det er like
+snart en fordanskning. Det samme gjelder <hi rend="italic">Sympathi</hi>, endret til <hi rend="italic">samklang</hi>. Også dette har
+Molbech, men som synonym har han <hi rend="italic">Harmonie</hi>. Slik også NRO <hi rend="italic">samklang</hi> 2 a: <quote>samstemthet;
+innbyrdes forståelse; harmoni (2)</quote>,
+nettopp med dette stedet i <title rend="italic">Catilina</title> som belegg. Videre er <hi rend="italic">Bacchanal</hi> blitt <hi rend="italic">drikkelag</hi> (også hos Molbech 1859).</p>
+<p>Ut fra moderne norsk kan enkelte detaljer virke som
+norvagismer uten at de er det: <quote>Saa lad os <hi rend="italic">fly</hi> i dette
+Øieblik –</quote> endres til <quote>Så
+lad os <hi rend="italic">nytte</hi> dette
+øjeblik!</quote> <ptr type="ht" target="C2ht.xml" corresp="koC2_ht_12"/> (uth. her). Verbet <hi rend="italic">nytte</hi> er godt belagt i eldre dansk
+(Molbech 1859, ODS). <hi rend="italic">[M]undkrogene</hi> er en
+tilsynelatende norvagisme, men det finnes ikke spor av den i
+samtidig norsk; dette må tvert om regnes som en ny
+danisme hos Ibsen. Ordet er angitt i ODS: <hi rend="italic">mundkrog</hi> (og <hi rend="italic">-krig</hi>), men mangler hos Molbech.</p>
+<p>Av de markante nye ord i 1875-utgaven kan nevnes <hi rend="italic">drømmeløs</hi>, <hi rend="italic">feltråb</hi>, <hi rend="italic">giftfuld</hi>, <hi rend="italic">halvglemt</hi>, <hi rend="italic">ildflod</hi>, <hi rend="italic">ildhav</hi>,
+<hi rend="italic">luftsyn</hi>, <hi rend="italic">taksomhed</hi>.</p>
+<p>I et forord til den nye versjonen av <title rend="italic">Catilina</title> skriver Ibsen om sin
+ungdommelige revolusjonslyst og sin kritiske distanse til
+kildematerialet (Cicero og Sallust) den gang han forfattet
+sitt første skuespill. Han <quote rend="proseIndent">delte […] ikke
+dengang de to gamle romerske skribenters opfatning af Catilinas
+karakter og handlemåde, og jeg er endnu
+tilbøjelig til at tro at der dog må
+have været adskilligt stort eller betydeligt
+ved en mand, med hvem majoriteternes
+ufortrødne sagfører Cicero ikke
+fandt det hensigtsmæssigt at give sig ikast
+[…] der gives få
+historiske personer, hvis eftermæle har
+været mere udelukkende i modstandernes vold,
+end Catilinas. <ptr type="ht" target="C2ht.xml" corresp="koC2_ht_5"/></quote>
+I forordet understreker Ibsen at
+den nye utgaven ikke avviker fra originalen med hensyn til
+<quote>ideerne, forestillingerne og det heles
+udviklingsgang</quote>. De to versjoner av dramaet
+følger hverandre scene for scene, oftest replikk
+for replikk, og nesten også linje for linje.
+Endringene, som blir mer gjennomgripende fra annen akt og
+utover, fører til en utvidelse av teksten; annen
+utgave er økt med 100 verslinjer, i form av
+tillegg i annen og tredje akt. Enkelte av de opprinnelige formene
+fra manuskriptet 1849 <bibl>(NBO Ms.4° 936; Ibsen 2000)</bibl> er også
+tatt inn igjen i annen utgave <bibl>(jf. ES 3, 377)</bibl>. Ifølge
+Francis Bull <quote>har dikteren også glattet og
+pusset mer enn ønskelig kunde være;
+men der er ingen inngripende endringer i opfatning eller
+i innhold</quote>
+<bibl>(Bull 1928a, 37)</bibl>.</p>
+<p>Omarbeidelsen begrunner Ibsen i forordet med at
+førstetrykket (1850) ble til som <quote>aftryk af
+mit ufærdige og urettede koncept eller af det
+allerførste rå udkast</quote>.
+Særlig er han misfornøyd med
+1850-utgaven i rent formell forstand. Han finner
+nå at <quote>formen [afgav]
+sågodtsom intetsteds […]
+et fyldestgørende udtryk for, hvad jeg havde
+villet</quote>. Det er da også på det
+rent formelle plan, det vil si i versifikasjonen, at
+endringene er mest gjennomgripende.</p>
+<p>I forordet til annen utgave redegjør Ibsen for at
+han som ung apotekerbetjent måtte bruke sene
+nattetimer til dikterisk virksomhet. Han anser dette som den
+ubevisste årsaken til at nesten hele handlingen
+foregår ved nattetid. En merkbar endring i annen
+utgave er utvidet bruk av dagslys. <quote>Som lette
+Luftgestalter de forsvandt</quote> endres til <quote>Som
+lette sommerskyer de forsvandt</quote>
+<ptr type="ht" target="C2ht.xml" corresp="koC2_ht_13"/>, <quote>fremtræder skarpt og
+klarlig for min Sjæl</quote> erstattes av
+<quote>fremtræder klart som solen for mit
+syn</quote> <ptr type="ht" target="C2ht.xml" corresp="koC2_ht_14"/>. I stedet for <quote>for
+Sværdet vil vi bløde</quote> heter
+det nå <quote>Til bad i kampens morgenskyer
+røde</quote> <ptr type="ht" target="C2ht.xml" corresp="koC2_ht_15"/>. Den opprinnelige
+sluttreplikken <quote>Himlens høie Guder skue med
+Forsoning ned</quote> endres til <quote>Morgnens milde
+magter skuer i forsoning ned</quote> <ptr type="ht" target="C2ht.xml" corresp="koC2_ht_16"/>,
+<quote>Du har Mørkets Magt beseiret ved din
+Kjærlighed!</quote> blir til <quote>du har nattens
+ånd besejret ved din
+kærlighed!</quote> <ptr type="ht" target="C2ht.xml" corresp="koC2_ht_17"/>.</p>
+<p>Noe av det mest interessante ved endringene fra
+første til annen utgave av <title rend="italic">Catilina</title> er den tydelige
+kvalitetsforskjellen mellom de to versjonene. Billedbruken i
+annen utgave kan sies å være forbedret:
+<quote>der pladsker Bølgen venligt imod
+Stranden</quote> endres til <quote>der triller
+bølgen lydløst imod
+stranden</quote> <ptr type="ht" target="C2ht.xml" corresp="koC2_ht_18"/>, og <quote><hi rend="italic">Kometens</hi> lig, der flygtig kom og svandt!</quote> (uth. her) blir til <quote>Lig <hi rend="italic">stjerneskuddet</hi> alting kom –
+og svandt</quote> <ptr type="ht" target="C2ht.xml" corresp="koC2_ht_19"/> (uth. her). I
+første utgave finner vi denne replikken <ptr type="ht" target="C1ht.xml" corresp="koC1_ht_3"/>: <quote rend="indent">
+<HIS:hisLg>
+<l>Ha, Daare! troer Du da, de blege Døde</l>
+<l>vil lade Dig i Fred, – nei, nei, de skulle</l>
+<l>i vilde Hobe samles rundt om Dig; –</l>
+<l>fælt vil de stirre med de hule Øine,</l>
+<l>og kræve blodig Hævn
+– –</l>
+</HIS:hisLg>
+</quote>
+I annen utgave lyder den tilsvarende replikken <ptr type="ht" target="C2ht.xml" corresp="koC2_ht_1"/>:
+<quote rend="indent">
+<HIS:hisLg>
+<l>Snart vil de rejse sig, de tusend døde;</l>
+<l>forførte kvinder slutter sig til dem;</l>
+<l>og alle, alle vil de kræve af dig</l>
+<l>det liv, det blod, den ære du har røvet.</l>
+<l>Forfærdet vil du flygte ud i natten, –</l>
+<l>vil flygte jorden rundt langs alle strande,</l>
+<l>Actæon lig, af hunde-koblet jaget, –</l>
+<l>en skygge, jaget af de tusend skygger!</l>
+</HIS:hisLg>
+</quote> Ibsens omarbeidelse innebar så
+gjennomgripende endringer at <title rend="italic">Catilina</title> 1875 må karakteriseres som et nytt verk i
+forhold til den opprinnelige utgaven fra 1850.</p>
+</div>
+</div>
+</div>
+
+<div type="creation" xml:id="intro_creation">
+<head rend="level2">TILBLIVELSE</head>
+<p>Ibsens brev til Hegel <HIS:hisRef target="B1871-1879ht.xml#B18741123FH">23. november 1874</HIS:hisRef>, der hans første
+planer om en nyutgivelse av Catilina er omtalt, er sitert ovenfor.
+Ved månedsskiftet november/desember mottok han fra
+Hegel et eksemplar av førsteutgaven, til bruk ved
+omarbeidelsen, jf. takkebrev til Hegel av <HIS:hisRef target="B1871-1879ht.xml#B18741202FH">2. desember 1874</HIS:hisRef>. Allerede <HIS:hisRef target="B1871-1879ht.xml#B18741230FH">30.
+desember</HIS:hisRef> melder han i brev til Hegel at omarbeidelsen på det
+nærmeste er ferdig. Renskriften av den nye versjonen ble fullført og sendt til forlaget <HIS:hisRef target="B1871-1879ht.xml#B18750127FH">27. januar 1875</HIS:hisRef>. I et brev som fulgte manuskriptet, bad
+Ibsen om at Hegel måtte sørge for makulatur av
+gjenværende eksemplarer av første utgave
+(1850). Ifølge forordet, som ble omtalt i brevet til
+Hegel allerede <HIS:hisRef target="B1871-1879ht.xml#B18741123FH">23. november 1874</HIS:hisRef>, er nyutgivelsen inspirert av
+oppholdet i Norge sommeren 1874. I tillegg har Ibsen kunnet trekke
+veksler på sine kunnskaper etter arbeidet med det nylig
+utgitte <title rend="italic">Kejser og Galilæer</title>,
+og han har fulgt de anbefalinger som han selv var med på
+å vedta under språkmøtet i Stockholm
+i juli 1869 (se ovenfor).</p>
+</div>
+
+<div type="publication" xml:id="intro_publication">
+<head rend="level2">UTGIVELSE</head>
+<p><title rend="italic">Catilina</title> utkom i
+månedsskiftet februar/mars 1875 ved Gyldendalske
+Boghandels Forlag, København. Boken var trykt ved Thieles
+Bogtrykkeri. <bibl>FU 1, II</bibl> angir opplagstallet til 3000 eksemplarer, mens
+<bibl>katalogen for Ibsen-utstillingen ved Universitetsbiblioteket i Oslo 1928 angir det til 3100 (1928, 23)</bibl>. H.L. Tveterås setter det til 3112 eksemplarer <bibl>(Tveterås 1950–96, b. 2, 196)</bibl>.
+Tveterås opplyser at det høye opplagstallet
+trolig skyldtes velvilje fra forleggerens side. Hegel skal ikke ha
+regnet med at den nye utgaven av ungdomsdramaet ville bli noen
+salgssuksess, noe den heller ikke ble; opplaget varte i 16
+år, til 1891 <bibl>(Tveterås 1950–96,
+b. 2, 196)</bibl>.</p>
+<p>Ibsen mottok 9. mars 1875 et første eksemplar av <title rend="italic">Catilina</title> 1875 (brev til Hegel <HIS:hisRef target="B1871-1879ht.xml#B18750310FH">10/3 1875</HIS:hisRef>). Honoraret var 150 prøyssiske talere og 200 spesidaler (brev fra Hegel 23/2 1875). Ibsen bad sin forlegger benytte deler av
+honoraret til <quote>at lade indkøbe
+sjællandske jernbaneaktier</quote> (brev til Hegel <HIS:hisRef target="B1871-1879ht.xml#B18750316FH">16/3 1875</HIS:hisRef>).</p>
+<p>I en bokannonse for Gyldendals Boghandels Forlag i <title rend="italic">Illustreret Tidende</title> oppgis prisen for
+<title rend="italic">Catilina</title> å være <quote>1 kr. 75 Øre,
+eleg. indb. 3 kr.</quote><bibl>(Gyldendal 1877/78)</bibl>.</p>
+
+<div xml:id="intro_publication_reception">
+<head rend="level3">mottagelse av utgaven</head>
+<p>I en anonym anmeldelse i <title rend="italic">Nær og Fjern</title> IV, nr. 146,
+København 1875, heter det: <quote>Det kan ikke
+nægtes, at ‹Catilina›
+trængte til at pudses lidt op
+[…] men forøvrigt indtager
+neppe ‹Catilina›, selv ikke i sin nye
+skikkelse, nogen fremragende Plads i den ny-norske
+Litteratur</quote> <bibl>(Anonym 1875)</bibl>. I sitt tidsskrift <title rend="italic">Det
+nittende Aarhundrede</title>, juni 1875, s. 245–47,
+skriver Georg Brandes om Henrik Ibsens <title rend="italic">Catilina</title> og gir uttrykk for at
+annenutgaven av stykket er stilistisk forbedret og dermed
+generelt bedre enn første versjon. Brandes
+sammenligner parallelle passasjer i de to utgaver og priser 1875-utgaven <bibl>(Brandes 1875)</bibl>.</p>
+<p>Ludvig Kristensen Daa anmeldte stykket i artikkelen <title rend="quotes"><title rend="italic">Catilina</title>, Drama af Henrik Ibsen</title> i
+<title rend="italic">Tids-Tavler</title> 1876,
+s. 172–76. I sin anmeldelse skriver Daa at den
+berømte dikter med nyutgivelsen av <title rend="italic">Catilina</title> hadde <quote>skænket
+os en ganske sjælden nydelse</quote>. Han
+fremhevet den nye utgavens <quote>glimrende sprog</quote> og
+<quote>harmonisk[e] versbygning</quote>.
+Men i all hovedsak var Daas anmeldelse en kritikk av manglende
+historisk korrekthet: <quote>Ibsen har visselig uret i at enten
+for Catilinas eller nogen anden Romers stræben var
+borgerfrihet maalet</quote> <bibl>(Daa 1876)</bibl>.
+</p>
+</div>
+</div>
+
+<div type="translatedPublication" xml:id="intro_translation">
+<head rend="level2">OVERSETTELSER I IBSENS LEVETID</head>
+<list type="standardList">
+<item>[1880]. «Cataline – 1st act». Ibsen, Henrik &amp; Peter Dass: <title rend="italic">Translations from the Norse [of Henrik Ibsen and Peter Dass]</title>. By B.S.S. [i.e. Andrew Johnston]. Gloucester, Printed for Private Circulation, [5]–41</item>
+<item>1896. <title rend="italic">Catilina : Drama in 3 Akten</title>. Autorisierte Übersetzung aus dem Norwegischen von Hugo Greinz. Paris, Albert Langen. XVI, 136 s.
+</item>
+<item>1896. «Pervaja drama» [Første drama]. Ibsen, Henrik: <title rend="italic">Sobranie sočinenij</title>, 4. St. Petersburg, Izdanie I. Jurovskago, [329]–33. Forordet til <title rend="italic">Catilina</title> (2. utg.), overs. av forlaget
+</item>
+<item>1902. <title rend="italic">Catilina : drame en trois actes et en vers</title>. Traduit du norvégien par le Vicomte de Colleville et F. de Zepelin. Précédé d'une préface des traducteurs. Paris, Librairie Nilsson. 219 s.
+</item>
+<item>1903. <title rend="italic">Sämtliche Werke in deutscher Sprache</title>, 1. Durchgesehen und eingeleitet von Georg Brandes, Julius Elias, Paul Schlenther. Berlin, Fischer. XLIX, 567 s. Inneholder bl.a. <title rend="italic">Catilina</title>, overs. av Christian Morgenstern
+</item>
+<item>[1906]. <title rend="italic">Katilina : drama v trech dejstvijach</title>. Per. s datsko-norvežsk. A. i P. Hansen [overs. fra dansk-norsk av A. og P. Hansen]. Moskva, S. Skirmunta. 114 s.
+</item>
+</list>
+</div>
+
+<div type="performance" xml:id="intro_performance">
+<head rend="level2">OPPFØRELSE</head>
+<p>I 1875 sendte Ibsen den nye utgaven av <title rend="italic">Catilina</title> til
+<quote>højvelbårne herr hofmarskalken herr
+Erik af Edholm</quote> (brev <HIS:hisRef target="B1871-1879ht.xml#B18750310EaE">10/3 1875</HIS:hisRef>). Erik af Edholm
+var teatersjef ved Kongl. Dramatiska Theatern, men Ibsen presiserte
+at intensjonen med oversendelsen bare var at boken måtte
+<quote>nyde den ære at optages i herr hofmarskalkens
+private bogsamling</quote>. Det var nemlig ikke forfatterens
+mening å innlevere stykket til teateret;
+<quote>til opførelse egner det sig ikke</quote>,
+skrev han i brevet.</p>
+<p>Det gikk 32 år fra <title rend="italic">Catilina</title>
+forelå i førsteutgave til stykket ble satt opp
+ved noe teater, og da var det den omarbeidede teksten som
+lå til grunn for oppførelsen. Initiativ til
+urpremieren kom fra Ludvig Josephson (1832–99), som var
+teatersjef ved Nya teatern i Stockholm. Han henvendte seg til Ibsen
+i et brev av 28. september 1879. Av Ibsens svar fremgår at
+Josephson ønsket retten til å
+oppføre Ibsens siste skuespill, <title rend="italic">Et
+Dukkehjem</title> (1879). Av Ibsens svarbrev <HIS:hisRef target="B1871-1879ht.xml#B18791117LJ">17. november</HIS:hisRef> fremgår det at <quote>Det kgl: theater har allerede for længe siden fået løfte på mit nye skuespil
+med udelukkende ret til at opføre samme i
+Stockholm</quote>.
+Josephson fikk i stedet tilbud om rettighetene til <title rend="italic">Kjærlighedens Komedie</title>, <title rend="italic">Brand</title> og <title rend="italic">Kejser og
+Galilæer</title>. Josephson besvarte Ibsens tilbud 10.
+januar 1879.</p>
+<p>Om rettigheten til <title rend="italic">Catilina</title> skrev Ibsen
+at han var <quote rend="proseIndent">villig til at overlade
+[Josephson] retten til at opføre
+Catilina på Nya teatern i Stockholm mod et honorar af
+400 (fire hundrede kroner) såfremt første
+opførelse af stykket finder sted senest 31. December
+dette år (brev til Josephson
+<HIS:hisRef target="B1880-1889ht.xml#B18800128LJ">28/1 1880</HIS:hisRef>).</quote></p>
+<p><title rend="italic">Catilina</title> ble ikke oppført
+innen denne fristen. Først ett år senere, 3.
+desember 1881, foregikk urpremieren på Nya teatern i
+Stockholm <bibl>(Blanc 1906, 1)</bibl>. Til grunn for Nya teaterns
+svenske oversettelse lå <quote>den 1875 utgifna andra,
+öfverarbetade upplagan</quote> av <title rend="italic">Catilina</title> (<title rend="italic">Nya Dagligt
+Allehanda</title> 5/12 1881).</p>
+<p>Tittelrollen Catilina ble fremført av Emil Hillberg,
+Aurelia ble spilt av Jenny Maria Stenberg, Furia av Louise Fahlman,
+Curius av William Engelbrecht og Manlius av Sven Eduard Nilsson.
+Richard Henneberg hadde komponert musikk til oppførelsen,
+men notene gikk trolig tapt i brannen ved teateret i 1925.
+Ifølge teaterplakaten ble det også
+fremført annen musikk i tilknytning til
+oppførelsen, nemlig <quote>Ouverture och Entreacter till
+‹Prometheus› af Beethoven</quote>. Dette er musikk fra balletten <title rend="italic">Die Geschöpfe des Prometheus, op. 43</title>, men formuleringen <quote>Ouverture
+och Entreacter</quote> er ikke helt entydig. Beethovens
+ouverture til verket ble spilt før <title rend="italic">Catilina</title>s
+første akt. Etter ouverturen har Beethovens komposisjon
+en <quote>Introduction</quote> til ballettens første akt.
+Denne er trolig spilt før <title rend="italic">Catilina</title>s annen akt. Balletten
+har imidlertid bare to akter, og det er ingen introduksjon til annen
+akt. Beethovens musikk består ellers av forholdsvis korte
+dansesatser, med unntak av <quote>Finale</quote> i annen akt. Det er
+en lengre sats og bringer det berømte temaet som brukes i
+hans Eroica-symfoni. Det er mest sannsynlig denne finalen som ble
+spilt før <title rend="italic">Catilina</title>s tredje akt.</p>
+<p>Som honorar for <title rend="italic">Catilina</title>
+førte Ibsen i regnskapet for 1882 kr 400, som tilsvarte
+hans krav <bibl>(NBO Ms.fol. 3222, 65)</bibl>.</p>
+<p>Etter urpremieren ble ikke <title rend="italic">Catilina</title>
+oppført flere ganger i Ibsens levetid.</p>
+
+<div xml:id="intro_performance_reception">
+<head rend="level3">mottagelse av oppførelsen</head>
+<p>Etter urpremieren på Nya teatern i Stockholm
+3. desember 1881 ble stykket anmeldt i flere svenske aviser 5. og 6. desember.
+Noen av anmeldelsene er gjengitt i det norske <title rend="italic">Morgenbladet</title>, nr. 338 A <bibl>(HFL 3, 31)</bibl>. <title rend="italic">Stockholms Dagblad</title> opplyser at urpremieren foregikk <quote>för fullsatt salong</quote> <bibl>(Anonym 1881d)</bibl>. Ifølge <title rend="italic">Aftonbladet</title> var <quote>en del af publiken ganska belåten och gaf äfen oförbehållsamt luft åt denna känsla</quote> <bibl>(A.F. 1881)</bibl>. Men anmelderne var likevel ikke tilfredse etter urpremieren. Anmelderen i <title rend="italic">Nya Dagligt Allehanda</title> hevdet at <quote>Stycket kan utan tvivel vara af interesse för litteraturhistorikern ex
+professo, men att det ej har med scenen att göra,
+inser man bäst efter dess uppförande</quote>
+<bibl>(Anonym 1881b)</bibl>.</p>
+<p>Det var flere forhold ved <title rend="italic">Catilina</title>
+som ikke tilfredsstilte anmeldernes forventninger. Komposisjonen
+var ikke like konsekvent som Ibsens senere dramatikk (<title rend="italic">Post och Inrikes
+Tidningar</title> 5/12 1881), og ifølge <title rend="italic">Aftonbladet</title> led karaktertegningen <quote>af det felet, att vara alt för fullfärdig på förhand, så att om någon
+egentlig utveckling är här ej tala</quote>
+<bibl>(A.F. 1881)</bibl>.</p>
+<p>Anmelderen i <title rend="italic">Göteborgs Handels- och Sjöfartstidning</title> undret seg over <quote rend="proseIndent">att Henrik Ibsen, kommen till mognad, velat låta ett sådant dramatiskt
+odjur, som <title rend="italic">Catilina</title>, bära ut hans namn till en
+allmänhet, som deri vant sig att se en fullgod
+borgen för en dramatisk konstbyggnad af mindre
+vanligt slag, det är fast obegripligt –
+och ännu obegripligare blir detta, när man
+vet, att han för ej så länge
+sedan kostat på <title rend="italic">Catilina</title> en öfverarbetning
+<bibl>(Anonym 1881a).</bibl></quote>
+Til tross for innvendinger som ble reist mot oppsetningen, mente anmelderen i <title rend="italic">Post och Inrikes Tidningar</title> at <title rend="italic">Catilina</title> likevel var
+<quote>ett stycke af stort interesse och väl värdt
+att ses</quote>, og at oppsetningen som helhet var
+<quote>[…] vacker och vårdad</quote> <bibl>(Anonym 1881c)</bibl>, mens <title rend="italic">Stockholms Dagblad</title> påpekte at den var <quote>gjord med
+mycken omsorg</quote> <bibl>(Anonym 1881d)</bibl>.</p>
+<p>Ludvig Josephson underrettet Ibsen om kritikernes mottagelse av
+urpremieren på <title rend="italic">Catilina</title>.
+Ibsen uttrykte i brev til Ludvig Josephson <HIS:hisRef target="B1880-1889ht.xml#B18820125LJ">25. januar 1882</HIS:hisRef> sin
+reaksjon på følgende måte:
+<quote rend="proseIndent">Af Deres sidste venlige brev erfarer jeg at
+«Catilina» ved opførelsen i
+Stockholm ikke har havt den fremgang, som De, og ligeledes
+jeg, havde ventet. Jeg holder adskilligt på dette
+drama og mener fremdeles at det må gøre
+en ikke ringe scenisk virkning når det
+får en i alle henseender og på alle
+punkter udmærket udførelse. Men dette
+sidste er rigtignok også en aldeles
+nødvendig betingelse.</quote>
+</p>
+</div>
+</div>
+</div>
+</body>
+</text>
+</TEI>

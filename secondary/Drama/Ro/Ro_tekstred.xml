@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Henrik Ibsens skrifter, elektronisk versjon</title>
+                <title level="a">Tekstredegjørelse til Rosmersholm</title>
+                <author>ved Stine Brenna Taugbøl</author>
+                <funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+                <editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
+                <respStmt>
+                    <resp>Kodeteknisk støtte og utvikling</resp>
+                    <name>AKSIS: Avdeling for kultur, språk og informasjonsteknologi, Universitetsforskning i Bergen (Unifob AS)</name></respStmt>
+                    <respStmt><resp>Koding</resp>
+                    <name>Gaute M. Sortland</name></respStmt>
+                    <respStmt><resp>Tekstarbeid</resp>
+                    <name>Gaute M. Sortland</name>
+                    <name>Erlend Lønnum</name></respStmt>
+                    <respStmt><resp>Kontroll av sitater og ordbøker</resp>
+                    <name xml:id="IK">Ingrid Korvald</name>
+                    <name xml:id="GB">Gry Berg</name></respStmt>
+                    <respStmt><resp>Kontroll av littlist og referanser</resp>
+                    <name xml:id="HS">Hege Stensrud</name>
+                    <name>Gaute M. Sortland</name>
+                    <name>Hanne Sine Andresen</name>
+                    <name>Erlend Lønnum</name></respStmt>
+                    <respStmt><resp>Kommentar-, intern- og ht-entiteter</resp>
+                    <name>Gaute M. Sortland</name>
+                    <name>Erlend Lønnum</name></respStmt>
+                    <respStmt><resp>Kodekontroll</resp>
+                    <name/>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+                <date when="2012" xml:id="HISe-date"/>
+                <pubPlace>Oslo</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Fila bygger på 8k_sisteversjon.xml.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <tagsDecl>
+                
+            </tagsDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="nob"/>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change>
+                <date>12.07.12</date>
+                <name>SBT</name><title>La inn lenkekoding.</title>
+            </change>
+            <change>
+                <date>26.03.2012</date>
+                <name>SBT</name><title>Omkoding til TEI P5 og HISe</title>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    
+<text type="introduction">
+<body>
+<div type="editorialStatement" xml:id="edState">
+
+<div xml:id="edState_basetext">
+<head rend="level3">valg av grunntekst</head>
+<p rend="noIndent">Grunnteksten, grunnlaget for HIS’ hovedtekst, er førstetrykket fra 1886.</p>
+</div>
+    
+<div xml:id="edState_bibl"> 
+<head rend="level3">bibliografiske opplysninger</head>
+<p rend="noIndent">Ved tekstetableringen er det kollasjonert følgende eksemplarer:</p>        
+        
+<list type="numbered">
+<item n="1">Nasjonalbibliotekets eksemplar (01ga11454)</item>
+<item n="2"><hi rend="italic">Henrik Ibsens skrifter</hi>s eksemplar 1</item>
+<item n="3"><hi rend="italic">Henrik Ibsens skrifter</hi>s eksemplar 2</item>
+</list>
+
+<p rend="noIndent">Det er avdekket satsintern variasjon (endringer foretatt under trykkeprosessen i samme opplag) i teksten i de tre eksemplarene. Ytterligere fem eksemplarer er derfor delkollasjonert (ark 1, 4, 7, 8, 10, 11 og 12):</p>
+        
+<list type="numbered">
+<item n="1">Nasjonalbibliotekets eksemplar (80ga25385)</item>
+<item n="2">Nasjonalbibliotekets eksemplar (80ga25386)</item>
+<item n="3">Nasjonalbibliotekets eksemplar (80ga25387)</item>
+<item n="4">Nasjonalbibliotekets eksemplar (80ga25388)</item>
+<item n="5">Nasjonalbibliotekets eksemplar (80ga28571)</item>
+</list>
+        
+<p rend="noIndent">Den hyppigst forekommende internvarianten er <quote>A/Å</quote>; det er femten tilfeller av manglende ring i <quote>Å</quote> i ett eller to av eksemplarene. På s. 112 avsluttes siste sceneanvisning med kolon i eksemplar 1 og 3 og med punktum i eksemplar 2. På s. 128 mangler komma i eksemplar 1 i: <quote>jeg elsked dig, Rebekka</quote>. På s. 159 mangler avsluttende punktum etter siste sceneanvisning i eksemplar 1 og 2. Med unntak av internvariantene på s. 112 og 159, som omfattes av HIS’ standardisering ved sceneanvisninger (jf. <HIS:hisRef target="edState_critical"><title rend="italic">Tekstkritiske bemerkninger</title></HIS:hisRef>), opplyses det om internvariasjon i eksemplarene 1–3 i de tekstkritiske notene. Nr. 1, det mest feilfrie, er brukt som hovedeksemplar og er grunnlag for beskrivelsen i det følgende.</p>
+        
+<div xml:id="edState_bibl_binding">
+<head rend="level4">innbinding, forsatsblad og omslag.</head>
+<p rend="noIndent">Boken er beskåret og bundet inn uten originalt omslagsblad. Innbindingen er håndverksmessig utført i grønn helshirting. På permen står teksten <quote>Henrik Ibsen / Rosmersholm</quote> i gullpreg. Forsatsbladene har et gulbrunt mønster.</p>
+</div>
+        
+<div xml:id="edState_bibl_format">
+<head rend="level4">format og paginering.</head>
+<p rend="noIndent">Boken består av 13 ark falset i oktavformat (8 blad, 16 sider pr. ark), 109 × 171 mm.<note type="footer">Målene gjelder boksiden, bredde × høyde.</note> Arksignaturene 1–13 finnes på s. 1, 17, 33, 49, 65, 81, 97, 113, 129, 145, 161, 177 og 193. Det siste arket har 6 blad, og bokens omfang er 4 + 203 sider. Pagineringen er med arabiske tall og inkluderer første akts begynnelse s. [1] og løper fra s. 2 til 203. Tittelbladet med blank versoside og påfølgende mellomtittelblad med rollelisten på versosiden er ikke inkludert i pagineringen. På sidene [58], [113] og [163] begynner nye akter, og pagina er her utelatt.</p>
+</div>
+        
+<div xml:id="edState_bibl_typo"> 
+<head rend="level4">typografi.</head>
+    <p rend="noIndent">Teksten i <title rend="italic">Rosmersholm</title> (1886) er satt i antikva. <!--En faksimile av tittelsiden gjengis på s. <ref targType="figure" target="illus-22">. -->Tittel og mellomtittel er midtstilte, med majuskler i fete snitt. Rollelisten er i en mindre skriftgrad enn replikkene; den er venstrestilt og rollenavnene er sperret. Rollelistens overskrift <quote>Personerne</quote> er midtstilt, i majuskler. Aktoverskriftene er midtstilte, i majuskler i samme grad som rollenavn og replikktekst. Rollenavn før replikk står sperret og midtstilt på egen linje. Sceneanvisningene er satt i en mindre skriftgrad enn replikkene og står i parentes. Rollenavn i sceneanvisninger er sperret. Etter rolleliste, aktoverskrifter og ved aktslutt i akt 1–3 brukes en enkel skillestrek. Ved stykkets slutt er det en ornamentert finalstrek. Sidetall er plassert i overmarg med en horisontalstrek under.</p>
+<p>Trykkvaliteten er jevnt god, med noen få forekomster av svakt trykk.</p>
+</div>
+        
+<div xml:id="edState_bibl_paper"> 
+<head rend="level4">papir og tilstand.</head>
+<p rend="noIndent">Papiret er gulnet. Tittelsiden har noen flekker, og det er en liten rift på s. 111. For øvrig er eksemplaret i god stand.</p>
+</div>
+</div>
+    
+<div xml:id="edState_textsources"> 
+<head rend="level3">øvrige tekstkilder</head>
+<p rend="noIndent">De øvrige tekstkildene fra Ibsens levetid består av manuskripter og en trykt utgave. Manuskriptmaterialet omfatter en egenhendig personliste og notat, NBO Ms. 4° 1291a, bl. 5; et egenhendig fullstendig arbeidsmanuskript, NBO Ms. 4° 1291d; et egenhendig arbeidsmanuskript med replikkutkast, NBO Ms. 4° 1291e, og et egenhendig fullstendig trykkmanuskript, KBK Collin 262, 4°, III.2. (For nærmere beskrivelser, se de enkelte manuskriptbeskrivelsene.) Eneste senere trykk av <title rend="italic">Rosmersholm</title> i Ibsens levetid er FU 7.</p>
+<p>Ibsen omtaler i brev til Frederik Hegel <HIS:hisRef target="B1880-1889ht.xml#B18860713FH">13. juli 1886</HIS:hisRef> både arbeidsmanuskriptet til <title rend="italic">Hvide heste</title> <bibl>(NBO Ms. 4° 1291c)</bibl>, arbeidsmanuskriptet til <title rend="italic">Rosmersholm</title> <bibl>(NBO Ms. 4° 1291d)</bibl> og trykkmanuskriptet til <title rend="italic">Rosmersholm</title> (KBK Collin 262, 4°, III.2), se <HIS:hisRef target="Ro_innl.xml#intro_creation"><title rend="italic">Tilblivelse</title></HIS:hisRef>.</p>
+<p>Eldste manuskript er sannsynligvis det udaterte notatet NBO Ms. 4° 1291a, bl. 5. Første side inneholder en personliste med navneformer på et stadium mellom arbeidsmanuskriptet til <title rend="italic">Hvide heste</title>, NBO Ms. 4° 1291c, og arbeidsmanuskriptet til <title rend="italic">Rosmersholm</title>, NBO Ms. 4° 1291d.</p>
+<p rend="noIndent">Andre side av bladet er en kort prosaskisse over stykkets innhold, som stemmer overens med <title rend="italic">Rosmersholm</title>: Rebekka vil bli Rosmers hustru, Rosmer oppdager det, og det ender med at begge må dø. Jf. <HIS:hisRef target="Ro_innl.xml#intro_creation"><title rend="italic">Tilblivelse</title></HIS:hisRef>.</p>
+<p>Første fullstendige utforming av <title rend="italic">Rosmersholm</title> foreligger i det egenhendige arbeidsmanuskriptet NBO Ms. 4° 1291d. Innholdet er stort sett sammenfallende med førstetrykkets. Skriften har renskriftspreg, men det forekommer noen rettelser og endringer i replikkvekslingene. Et større parti (legg 8, bl. [2]v – legg 10, bl. [1]v), der Ulrik Brendel forteller at han vil gå til krig mot alle jordbesittende i landet, er ikke tatt med i førstetrykket. Det meste av Ulrik Brendels siste visitt, mot slutten av stykket (legg 38, bl. [2]v – legg 40, bl. [1]v), er senere strøket i arbeidsmanuskriptet. Tittelside og rolleliste er sannsynligvis kommet til på et senere tidspunkt, se manuskriptbeskrivelsen.</p>
+<p>Utkastene NBO Ms. 4° 1291e inneholder nye versjoner av noen sentrale replikkvekslinger i arbeidsmanuskriptet, NBO Ms. 4° 1291d. Det dreier seg om scenene med Ulrik Brendel, samt replikkvekslingen mellom Rebekka og Rosmer der Rebekka forteller om sin fortid. Versjonene er, med noen tillegg og justeringer, tatt opp i trykkmanuskriptet og deretter førstetrykket.</p>
+<p>Trykkmanuskriptet, KBK Collin 262, 4°, III.2, har altså NBO Ms. 4° 1291d og NBO Ms. 4° 1291e som forelegg. Verket blir her endelig ferdigskrevet, replikker utvidet og formuleringer justert. Som tillegg til trykkmanuskriptet finnes noen sider av et korrekturtrykk til førsteutgaven, med rettelser av Frederik Hegel og August Larsen.</p>
+<p>Det er ikke store forskjeller mellom trykkmanuskript, førstetrykk og FU. I et brev til korrekturleseren August Larsen <HIS:hisRef target="B1880-1889ht.xml#B18861016AuLa">16. oktober 1886</HIS:hisRef> ber Ibsen om følgende rettelser: Ordet <quote>spøge</quote> skal rettes til <quote>spørge</quote>, og uttrykket <quote>ser tilbageholden ud</quote> endres til <quote>synes forbeholden</quote>. Rettelsene er tatt til følge i førstetrykket (s. 14 og s. 163). Ibsen nevner dessuten rettelsen av <quote>såmen</quote> til <quote>såmænd</quote> (s. 18): <quote>Deres skrivemåde af ordet såmænd er utvilsomt den rigtigste. Den bør derfor benyttes.</quote> Trykkmanuskriptet har flere forekomster av særskrivning enn de trykte utgavene, <quote>Herre gud</quote>, <quote>en gang</quote>, <quote>i stand</quote> og <quote>ingen ting</quote> vs. <quote>Herregud</quote>, <quote>engang</quote>, <quote>istand</quote> og <quote>ingenting</quote>. I førstetrykket er det lagt til flere kommaer, og ved et par anledninger er avsluttende utropstegn erstattet med henholdsvis punktum og spørsmålstegn: <quote>Således at se mig hæmmet og modarbejdet i min livsgerning</quote> (<ptr type="internal" target="Roht.xml" corresp="koRo_31"/>) og <quote>Om mit og Rebekkas forhold –?</quote> (<ptr type="internal" target="Roht.xml" corresp="koRo_32"/>). Det siste eksemplet har støtte i arbeidsmanuskriptets tekst.</p>
+<p>FU har noen innholdsmessige tekstendringer: i Rebekkas replikk <quote>Herr Rosmer, – kan De se, hvem der sidder her?</quote> (<ptr type="internal" target="Roht.xml" corresp="koRo_33"/>) har FU erstattet <quote>her</quote> med <quote>der</quote>; og i rektor Krolls replikk <quote>Hvad der er sked, det kan ties ned, – eller det kan i det mindste fortolkes som en blot og bart forbigående om end beklagelig forvildelse</quote> (<ptr type="internal" target="Roht.xml" corresp="koRo_34"/>) har FU erstattet <quote>forvildelse</quote> med <quote>vildfarelse</quote>. Et par steder har FU invertert ordstillingen i førstetrykket: i Rebekkas replikk <quote>Nå, det var da ikke egentlig af fejghed</quote> (<ptr type="internal" target="Roht.xml" corresp="koRo_35"/>) er <quote>ikke egentlig</quote> endret til <quote>egentlig ikke</quote>, og i rektor Krolls replikk <quote>Derfor kan ikke vi regne på, under eget navn, at skaffe bladet synderlig indgang hos de vildledte masser</quote> (<ptr type="internal" target="Roht.xml" corresp="koRo_36"/>) er <quote>ikke vi</quote> endret til <quote>vi ikke</quote>. Den siste endringen har støtte i arbeidsmanuskriptets tekst.</p>
+<p>I tillegg til HIS’ hovedtekst finnes en diplomatarisk og søkbar gjengivelse samt en fotografisk faksimile av grunnteksten. De øvrige tekstkildene gjengis diplomatarisk, manuskriptene også med faksimile, med mulighet for søk og sammenligning med grunnteksten.</p>
+<p>HIS har i margen sidereferanser til grunnteksten, til den trykte utgaven av HIS og til HU.</p>
+</div>
+    
+<div xml:id="edState_critical"> 
+<head rend="level3">tekstkritiske bemerkninger</head>
+<p rend="noIndent">Ved emendasjoner er også de andre tekstkildene fra Ibsens levetid blitt konsultert.</p>
+<p>Ordvalg, ortografi og grammatikk i grunnteksten er, som offisiell norsk i samtiden, i tråd med danske normer.</p>
+<p>I HIS er tegnsetting standardisert på følgende måte: Etter titler, overskrifter og rolleinnførsler i rollelister samt replikkåpner i dramateksten er eventuelle skilletegn (punktum, komma, kolon) fjernet. I sceneanvisninger først i akt og scener, i frittstående sceneanvisninger mellom replikker og i stedsbeskrivelser etter rolleliste er eventuell parentes fjernet. Disse elementene har gjennomgående fått stor forbokstav og avsluttes med punktum. Frittstående sceneanvisninger har beholdt eventuelle <quote>indre</quote> parenteser. Sceneanvisninger til slutt i replikker regnes som del av replikken dersom de er ufullstendige setninger, og som frittstående, utenfor replikken, dersom setningene er fullstendige.</p>
+<p>Sceneanvisninger inne i replikk, inkludert sceneanvisninger som står til slutt i replikk (ikke frittstående), begynner med liten forbokstav og avsluttes uten interpunksjon. Sceneanvisninger som følger rett etter replikkinnehaverens navn, har ikke parenteser. Øvrige sceneanvisninger i replikk har parentes.</p>
+<p>Skillestreker er beholdt der de har strukturerende funksjon, for eksempel når de markerer sceneskift, og sceneskiftet ikke er markert på annen måte. Skillestreker som bare har karakter av ornament, er ikke gjengitt. Grunntekstens typografiske system for øvrig er ikke forsøkt imitert i HIS.</p>
+<p>Tekstfeilene i <title rend="italic">Rosmersholm</title> (1886) angår foruten internvariasjon (se ovenfor) hovedsaklig trykkfeil, tegnsettingsfeil og feil bruk av minuskel og majuskel. Alle rettelser er gjort rede for i det tekstkritiske noteapparatet.</p>
+<p>For en oversikt over samtidens språknormer og Ibsens språk vises det dessuten til en redegjørelse i innledningene til <title rend="italic">Catilina</title> <HIS:hisRef target="C1_innl.xml#intro_background_language">1850</HIS:hisRef> og <HIS:hisRef target="C2_innl.xml#intro_background_language">1875</HIS:hisRef>, HIS 1k, 34–40 og 146–148. Det vises for øvrig til de <HIS:hisRef target="tekstkritiskeRetningslinjer.xml">tekstkritiske retningslinjene</HIS:hisRef> for HIS.</p>
+</div>
+    
+<div xml:id="edState_editions">
+<head rend="level3">tidligere tekstkritiske utgaver</head>
+<p rend="noIndent">I FU er <title rend="italic">Rosmersholm</title> trykt i bind 8, med en innledning om tilblivelse, utgaver, oversettelser, sekundærlitteratur, bearbeidelser, parodier og oppførelser på s. I–VI. Tekstkritiske opplysninger finnes ikke. I MU er <title rend="italic">Rosmersholm</title> trykt i bind 4. Bakerst i MU 5, i redegjørelsen for <quote>Mindeudgavens tekst</quote>, oppgis FU som tekstgrunnlag (MU 5, 3). Redegjørelsen inneholder også en språklig kommentar, et tekstkritisk apparat og en errataliste (MU 5, 17, 41). I ES gjengis manuskriptet NBO Ms. 4° 1291a–e i utdrag i bind 3, 81–138. Det redegjøres for manuskriptets tilblivelse, omfang, innhold og organisering. Det er satt opp et variantapparat mellom NBO Ms. 4° 1291d og den endelige teksten slik den er presentert i FU. I SU er <title rend="italic">Rosmersholm</title> trykt i bind 5. I SU (7, 302) opplyses det om at førstetrykk er tekstgrunnlag. Trykkfeil er rettet stilltiende og Ibsens egne rettelser, jf. brevet til August Larsen <HIS:hisRef target="B1880-1889ht.xml#B18861016AuLa">16. oktober 1886</HIS:hisRef>, er tatt til følge. For øvrig henviser SU til forarbeider og utkast med opplysninger og varianter i ES. I HU er <title rend="italic">Rosmersholm</title> trykt i bind 10. Tekstgrunnlag er trykkmanuskriptet, KBK Collin 262, 4°, III.2 (HU 10, 544). Varianter mellom trykkmanuskriptet og førstetrykket er listet i et eget apparat, som ikke inneholder variasjon i kommatering (førstetrykket har langt flere kommaer enn trykkmanuskriptet). I variantapparatet inngår også manuskriptendringer. NBO Ms. 4° 1291a, bl. 5 er gjengitt i sin helhet, mens den fullstendige utformingen <bibl>(NBO Ms. 4° 1291d)</bibl> gjengis negativt, i et variantapparat mot førsteutgaven.</p>
+</div>
+</div>          
+</body>
+</text>
+</TEI>

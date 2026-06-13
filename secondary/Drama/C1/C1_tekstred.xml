@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title level="s">Henrik Ibsens skrifter</title>
+<title level="a">Tekstredegjørelse til Catilina, 1. versjon</title>
+<author>ved Christian Janss</author>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
+<respStmt>
+<resp>Koding</resp>
+<name xml:id="HIS-HB">Hilde Bøe</name>
+<name xml:id="HIS-IF">Ingrid Falkenberg</name>
+<name xml:id="HIS-SBT">Stine Brenna Taugbøl</name>
+<name xml:id="HIS-AMB">Aasta Marie Bjorvand Bjørkøy</name>
+<name xml:id="HIS-NME">Nina M Evensen</name>
+</respStmt>
+<respStmt>
+<resp>Kommentarentiteter</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+</respStmt>
+<respStmt>
+<resp>Rettelser i manuskriptbeskrivelsene</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+</respStmt>
+<respStmt>
+<resp>Implementering av kode</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+<name>Nina M Evensen</name>
+</respStmt>
+<respStmt>
+<resp>Kodekontroll</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+<name>Nina M Evensen</name>
+</respStmt>
+<respStmt>
+<resp>Tekstarbeid</resp>
+<name>Nina M Evensen</name>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+</respStmt>
+</titleStmt>
+<publicationStmt>
+<publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+<distributor xml:id="HISe">Universitetet i Oslo</distributor>
+<date when="2012" xml:id="HISe-date"/>
+<pubPlace>Oslo</pubPlace>
+</publicationStmt>
+<sourceDesc>
+<p>Denne filen har ingen kilde.</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<tagsDecl>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
+<list>
+<headLabel>castItem id=""</headLabel><headItem>castItem/speaker</headItem>
+<label>AMBIORIX</label><item>Ambiorix</item>
+<label>AURELIA</label><item>Aurelia</item>
+<label xml:id="CATILINA">CATILINA</label><item>Lucius Catilina/Catilina</item>
+<label>CETHEGUS</label><item>Cethegus</item>
+<label>COEPARIUS</label><item>Coeparius</item>
+<label xml:id="CURIUS">CURIUS</label><item>Curius</item>
+<label xml:id="FURIA">FURIA</label><item>Furia</item>
+<label>GABINIUS</label><item>Gabinius</item>
+<label>GLADIATOR</label><item>-/1ste Gladiator,2den Gladiator</item>
+<label>LENTULUS</label><item>Lentulus</item>
+<label>MANLIUS</label><item>Manlius</item>
+<label>OLDING</label><item>-/En gammel Soldat, Soldaten</item>
+<label>OLLOVICO</label><item>Ollovico</item>
+<label>STATILIUS</label><item>Statilius</item>
+<label>VESTALINDEN</label><item>-/En Vestalinde, Vestalinden</item>
+<label>AANDEN</label><item>En Aand/Aanden</item>
+</list>
+</tagUsage></namespace>
+
+</tagsDecl>
+</encodingDesc>
+<profileDesc>
+<langUsage>
+<language ident="nob"/>
+<language ident="fre"/>
+<language ident="eng"/>
+<language ident="rus"/>
+<language ident="ger"/>
+</langUsage>
+</profileDesc>
+<revisionDesc>
+<change><date>08.02.13</date>
+<name>SBT</name><title>Lenkekoding</title>
+</change>
+<change>
+<date>12.09.2012</date>
+<name>SBT</name><title>Omkoding til TEI P5 og HISe</title>
+</change>
+</revisionDesc>
+</teiHeader>
+<text type="introduction">
+<body>
+<div type="editorialStatement" xml:id="edState">
+
+<div xml:id="edState_basetext">
+<head rend="level3">valg av grunntekst</head>
+<p>Grunnteksten, grunnlaget for HIS’ hovedtekst, er
+førstetrykket fra 1850. (Om forholdet til den andre
+hovedversjonen HIS utgir, se avsnittet <HIS:hisRef target="C2_innl.xml#intro_creation"><hi rend="italic">Tilblivelse</hi></HIS:hisRef> under omtalen
+av <title rend="italic">Catilina</title> 1875.)</p>
+</div>
+
+<div xml:id="edState_bibl">
+<head rend="level3">bibliografiske opplysninger</head>
+<p>Ved tekstetableringen er det kollasjonert følgende
+eksemplarer:
+<list type="standardList">
+<item n="1">Deichmanske biblioteks eksemplar (*Ib8ca 1exp)</item>
+<item n="2">Et eksemplar i privat eie</item>
+<item n="3">Damms antikvariats eksemplar for salg i 1998, tidligere eid av Wilh. Lagerholm</item>
+</list>
+</p>
+<p>Det er ikke avdekket satsintern variasjon (endringer foretatt
+under trykkeprosessen i samme opplag) i teksten i de tre eksemplarene.</p>
+<p>I et eksemplar eid av Nasjonalbiblioteket (02ga11104), tidligere eid av biblioteket i Den
+Skandinaviske Forening i Roma (stempel på
+tittelbladet), er <quote>Brynjolf Bjarme</quote> på
+tittelbladet strøket ut og erstattet med <quote>Henr:
+Ibsen</quote>. <bibl>Arthur Thuesen (1922, 15)</bibl> mener
+endringen er egenhendig og utført under et av Ibsens
+opphold i Roma, men en granskning av håndskriften
+viser at den neppe er Ibsens.</p>
+<p>I to andre eksemplarer skal Ibsen selv på siste side ha
+endret <quote>Nattens Glød</quote><ptr type="ht" target="C1ht.xml" corresp="koC1_ht_36"/>
+til <quote>Lynets Glød</quote>. Opplysningen stammer
+fra <bibl>SU 7, 113–14</bibl>: <quote>en rettelse som
+vel skriver seg fra Ibsen selv (sml. Joh. Neuhaus i danske ‹Nationaltidende› 1914
+1/7 nr. 13 761; foruten i Neuhaus’s eksemplar er rettelsen funnet i et
+eksemplar som nu eies av amanuensis Arthur Thuesen i Kristiania).</quote><note type="footer">Neuhaus skriver at hans eksemplar ble kjøpt fra antikvariatet Baer i Frankfurt, at det
+stammer fra en samling i Düsseldorf, og at det
+tidligere var eid av Hjalmar Kjerulf, hvis navn
+står på smussbladet. Det skal videre
+finnes en dedikasjon lenger nede på smussbladet:
+<quote>Herrm. Julius Grimm freundschaftlichts
+[sic] von Halfdan Kjerulf,
+Düsseldorf, d. 5. Juni 1847
+[sic].</quote> Kjerulf kan
+ifølge Neuhaus ha hatt med seg boken fra
+Kristiania til Düsseldorf. Om rettelsen antar
+Neuhaus at den kan ha vært foretatt sammen med
+Ibsen i Kristiania, og han antyder at eksemplaret kan ha
+vært Ibsens eget, ettersom blyantskriften ligner
+Ibsens i det at <hi rend="italic">y</hi> er skrevet med
+tødler over <bibl>(Neuhaus 1914)</bibl>.</note> Thuesen selv
+bekrefter dette i et intervju i <bibl><title rend="italic">Morgenbladet</title> 29. oktober
+1921</bibl>. Foruten de tre nevnte eksemplarene har HIS
+undersøkt tre i Nasjonalbiblioteket. Ingen av disse
+kan være Thuesens eksemplar.<note type="footer">Rettelsen er også forelagt de
+medlemmer av Bibliofilklubben som eier et eksemplar av
+<title rend="italic">Catilina</title> 1850, men uten
+resultat. (Bibliofilklubben er en privat sammenslutning av
+boksamlere med kunnskaper om bibliografi og
+bokhistorie.)</note> At <quote>Nattens Glød</quote>
+skulle være <quote>meningsløst</quote>, som
+<bibl>HU skriver (1, 242)</bibl>, virker ikke fullstendig
+innlysende. HIS beholder formen slik den står, men
+fører HUs lesemåte (<quote>Lynets Glød</quote>) i en
+supplerende note. I det eneste bevarte manuskriptet, <bibl>NBO
+Ms.4° 936</bibl>, mangler det siste bladet og dermed
+også den aktuelle delen av teksten. Til sammenligning
+har Ibsen i <title rend="italic">Catilina</title> 1875 endret
+uttrykket til <quote>natlyns glød</quote><ptr type="ht" target="C2ht.xml" corresp="koC2_ht_20"/>.</p>
+<p>Nr. 1 er brukt som hovedeksemplar og er grunnlag for beskrivelsen
+i det følgende.</p>
+    
+<div xml:id="edState_bibl_binding">
+<head rend="level4">innbinding, forsatsblad og omslag.</head>
+<p>Boken er beskåret og bundet inn uten forsats- og
+omslagsblad, men et omslagsblad er skåret til og
+brukt som overtrekkspapir på permenes yttersider.
+Innbindingen er håndverksmessig utført,
+men enkel, med permer av papp og rygg av burgunderfarvet
+stoff uten tittel eller dekor. Det finnes ifølge
+Schiötz &amp; Ringstrøm to
+varianter, A og B, av det fremre omslaget
+<bibl>(Schiötz &amp; Ringstrøm
+1990, 86)</bibl>. Forskjellen mellom de to variantene
+angår selve tittelen: I A er den satt med mindre
+typer (32 pkt.); i B er den satt med større typer
+(36 pkt.). I tillegg skal det finnes farvevarianter: A i
+grønt, lysegrønt, gulaktig og
+lyseblått; B i grønt,
+lyseblått og gulaktig. Variant A regnes som den
+eldste. Variasjonen kan bero på at <title rend="italic">Catilina</title> 1850 <quote>kan ha ligget i
+materie, og at det på et bestemt tidspunkt ble
+trykt nye omslag</quote>
+<bibl>(Schiötz &amp; Ringstrøm 1990,
+86)</bibl>. HIS’ hovedeksemplar har omslag av typen
+A, gulaktig. Dette er sannsynligvis utført hos
+forleggeren, ettersom stempel med teksten <quote>P.F.
+Steensballes Boghandel Christiania</quote> er preget
+på omslaget og følgelig siden limt over
+innbindingspappen. Bakre omslagsblad har årstallet <quote>1850</quote>.</p>
+</div>
+    
+<div xml:id="edState_bibl_format">
+<head rend="level4">format og paginering.</head>
+<p>Boken består av seks ark falset i duodesformat (12
+blad, 24 sider pr. ark),<note type="footer">I <title rend="italic">Norsk Bog-Fortegnelse
+1848–1865</title>, 115, er formatet angitt som
+oktav. Formatbetegnelsen gjelder der bokens
+størrelse.</note> ca. 107 x 165 mm.<note type="footer">Målene gjelder bokens blad,
+bredde x høyde.</note> Arksignaturene
+1–6 (uten tekst) finnes på s. 10, 25, 49,
+73, 97 og 121. Det siste arket har fire blad, og bokens
+omfang er 128 sider. Pagineringen er med arabiske tall,
+inkluderer smusstittel s. [1], blank s.
+[2], tittelside s. [3],
+rolleliste s. [4] og går fra
+side 6 til 125. Dramateksten begynner på s.
+[5]. S. [126] er blank,
+s. [127] inneholder Ibsens <title rend="quotes">Anmærkninger</title>, s.
+[128] er blank. På sidene
+[39] og [85] begynner
+nye akter, og pagineringen er utelatt.</p>
+</div>
+
+<div xml:id="edState_bibl_typo">
+<head rend="level4">typografi.</head>
+<p>Teksten i <title rend="italic">Catilina</title> 1850 er satt
+i fraktur. Tittelen er midtstilt i et fett snitt. Rollelisten er venstrestilt, rollenavnene er uthevet ved sperring. Initial er brukt ved første replikk og i <title rend="quotes">Anmærkninger</title>. Aktoverskrifter er fete; sceneoverskrifter normale. Rollenavn er satt i samme grad som replikkene, men er fete og midtstilte. Sceneanvisninger er satt i en mindre grad enn replikkene. I begynnelsen av akter og scener står sceneanvisninger uten parentes. Sceneanvisning i replikk står i parentes. Mellom akt- og sceneoverskrifter og noen steder etter sceneslutt brukes enkel, kort skillestrek av varierende lengde; ved aktslutt en engelsk linje. Pagina er plassert i overmarg med en kort strek under.</p>
+<p>Trykkvaliteten er jevnt god. Det er et lite antall
+typografiske mangler og inkonsekvenser (f.eks. manglende
+eller gal uthevning av rollenavn), typeskader, snudde typer
+(f.eks. <quote>Lentulns</quote> for <quote>Lentulus</quote>), skjeve eller utglidde typer,
+manglende innrykk ved delte verslinjer. Slike typografiske
+feil er i HIS’ hovedtekst rettet stilltiende.</p>
+</div>
+
+<div xml:id="edState_bibl_paper">
+<head rend="level4">papir og tilstand.</head>
+<p>For- og bakpermens yttersider er jevnt skitne, og festet
+mellom forpermen og smusstittelbladet har revnet noe.
+Såvel smusstittelen [1] som
+sidene [2] og [3] er
+misfarvet (i avtagende grad) som følge av
+lånekortet som er limt inn på innsiden
+av forsidepermen. Papiret er simpelt og tynt med tydelig
+gjennomslag. Det er gulnet og har flekker av blekk, fett og
+vann på tittelbladet og på flere sider i
+boken. Blyantkryss og -streker finnes i tilknytning til
+trykkfeil, men trolig også som lesemerker. For
+øvrig er eksemplaret i god stand.</p>
+</div>
+</div>
+
+<div xml:id="edState_textsources">
+<head rend="level3">øvrige tekstkilder</head>
+<p>Den andre tekstkilden fra Ibsens levetid er arbeidsmanuskriptet
+<HIS:hisRef target="C14936_NBO.xml">NBO Ms.4° 936</HIS:hisRef> fra 1849 (se <HIS:hisRef target="C1_msbeskr.xml"><hi rend="italic">Manuskriptbeskrivelse</hi></HIS:hisRef>). Dette er tidligere
+utgitt ved HIS i en diplomatarisk utgave <bibl>(Ibsen
+2000)</bibl>. Manuskriptet har trolig ligget til grunn for
+trykkmanuskriptet, som ble besørget av Christopher
+Due, og som siden er gått tapt. <title rend="italic">Catilina</title> 1850 ble ikke utgitt
+på nytt i Ibsens levetid. Et kort <title rend="quotes">Forord</title> som av ukjente grunner ikke ble
+tatt med i førstetrykket, finnes som en del av et
+brev til Ole C. Schulerud <HIS:hisRef target="B1844-1871ht.xml#B18500105OS">5. januar 1850</HIS:hisRef>. Brevet omtales
+nærmere i avsnittet <HIS:hisRef target="C1_innl.xml#intro_publication"><hi rend="italic">Utgivelse</hi></HIS:hisRef> samt i <HIS:hisRef target="C1_msbeskr.xml"><hi rend="italic">Manuskriptbeskrivelse</hi></HIS:hisRef>.</p>
+<p>Betrakter vi arbeidsmanuskriptet sammen med
+førstetrykket, får vi et inntrykk av
+hvordan teksten har endret seg underveis, sannsynligvis ved Dues renskrift.</p>
+<p>Hvordan Ibsen selv har arbeidet med teksten i manuskriptet, sees i
+Ibsen 2000, der også den andre hånden, Dues,
+er identifisert. Her finnes mange mindre endringer og rettelser,
+tilfeller av tekst på og under innlimte og
+løse lapper, et løst innlagt blad og
+flytting av tekst fra en rollefigur til en annen. Den
+betydeligste endringen i manuskriptet gjelder første
+akt. Den begynte opprinnelig på manuskriptets bl. 2r,
+med en samtale mellom allobrogerne Ambiorix og Ollovico
+på landeveien mot Roma. Så har Ibsen
+strøket aktangivelsen, men ikke sceneanvisningen
+nedenfor, og skrevet <title rend="quotes">Første
+Handling</title> på nytt øverst
+på den ledige motstående side (bl. 1v). Her
+åpner stykket direkte med Catilinas reflekterende
+replikk. Sceneanvisningen beholdes altså, med en
+tilføyelse om at allobrogerne ikke legger merke til
+Catilina. Om den opprinnelige begynnelsen var blitt
+stående, ville ikke Catilina ha blitt introdusert
+før etter at allobrogerne hadde samtalt gjennom syv
+replikker; han kommer da brått til syne for dem (bl.
+2v). Endringen er i samsvar med skissen til handlingsgang som
+finnes på bl. 18v under overskriften <quote>Sceneforandringerne</quote>.</p>
+<p>Om vi ser bort fra det bortklippede bl. 48 (se <HIS:hisRef target="C1_msbeskr.xml"><hi rend="italic">Manuskriptbeskrivelse</hi></HIS:hisRef>) og den teksten som
+Ibsen har strøket eller endret, er manuskript og
+førstetrykk idé- og omfangsmessig
+svært like, og heller ikke med henblikk på
+ordlyd og ortografi særlig ulike. Følgende
+eksempler fra første akt gir en pekepinn på
+avvikenes art og omfang. Manuskriptendringene er gjengitt
+forenklet (med grunntekstens paginering og manuskriptets
+foliering i parentes):</p>
+    
+<table>
+<row role="label"><cell role="data">Catilina 1850</cell><cell role="data">NBO Ms.4° 936</cell></row>
+<row role="data"><cell role="data">det er forbi! mit Liv har intet Maal! – –<ptr type="ht" target="C1ht.xml" corresp="koC1_ht_37"/></cell><cell role="data">det er fordi mit Liv har intet Maal. (1v)</cell></row>
+<row role="data"><cell role="data">det høie Roma, – og den Usselhed
+<lb/>og det Fordærv, hvortil det længst er sjunket,<ptr type="ht" target="C1ht.xml" corresp="koC1_ht_38"/></cell>
+<cell role="data">det høie Roma, midt i al dets Pragt, –
+<lb/>og det Fordærv hvortil det længst er sjunket (1v)</cell></row>
+<row role="data"><cell role="data">og haardt og tungt er Romas Herredom;
+<lb/>til Jorden ned den Kuede det tynger; –
+<lb/>thi kom vi hid, afsendte fra vort Folk,<ptr type="ht" target="C1ht.xml" corresp="koC1_ht_39"/></cell>
+<cell role="data">og haardt og tungt er Romas Jernaag,
+<lb/>til Jorden fast dets Kuede det tynger
+<lb/>Thi komme vi som Bud jo fra vort Folk (2r)</cell></row>
+<row role="data"><cell role="data">ham kaare vi, den Første af vor Stamme
+<lb/>til Leder ud, til Hersker for vort Folk; –<ptr type="ht" target="C1ht.xml" corresp="koC1_ht_40"/></cell>
+<cell role="data">ham kaare vi, den Bedste af vor Stamme,
+<lb/>til H<HIS:hisDel rend="overstrike">øv</HIS:hisDel>ersker ud – til Leder for vort Folk (2v)</cell></row>
+<row role="data"><cell role="data">Du sikkert vil den Fremmede bedrage
+<lb/>er det ei mere, hvad det fordum var –
+<lb/>Tyranners Skræk, Beskytter for den Svage?<ptr type="ht" target="C1ht.xml" corresp="koC1_ht_41"/></cell>
+<cell role="data">maaskee du vil den Fremmede bedrage
+<lb/>Tyrannens Skræk, Beskytter for den Svage
+<lb/>er det ei mere, hvad det fordum var (2v)</cell></row>
+<row role="data"><cell role="data">hvordan i rødlig Aftenglands det luer<ptr type="ht" target="C1ht.xml" corresp="koC1_ht_42"/></cell>
+<cell role="data">i rødlig <HIS:hisDel rend="overstrike">matte</HIS:hisDel>Aften-Glands hvordan det <HIS:hisDel rend="overstrike">dunkelt</HIS:hisDel> luer (2v)</cell></row>
+<row role="data"><cell role="data">dog kan det nægtes ei, en saadan Leveviis –<ptr type="ht" target="C1ht.xml" corresp="koC1_ht_43"/></cell>
+<cell role="data">dog nægtes kan det ei, en saadan Leveviis (3r)</cell></row>
+<row role="data"><cell role="data">hans Fiender imod ham talet –<ptr type="ht" target="C1ht.xml" corresp="koC1_ht_44"/></cell>
+<cell role="data">idag hans Fiender imod ham talet – (5v)</cell></row>
+<row role="data"><cell role="data">men ha! hvor er min Elskov heel forskjellig –<ptr type="ht" target="C1ht.xml" corresp="koC1_ht_45"/></cell>
+<cell role="data">me<HIS:hisDel rend="overstrike">d den </HIS:hisDel>n dog! hvor er min Elskov heel forskjellig (6r)</cell></row>
+<row role="data"><cell role="data">Kan hun ei mætte denne vilde Trang,
+<lb/>kan hun ei følge dine
+Tankers Flyven:<ptr type="ht" target="C1ht.xml" corresp="koC1_ht_46"/>
+</cell>
+<cell role="data">kan <HIS:hisDel rend="overstrike">hun</HIS:hisDel> jeg ei mætte denne vilde Trang
+<lb/>kan <HIS:hisDel rend="overstrike">hun</HIS:hisDel> jeg ei følge <HIS:hisDel rend="overstrike">hver</HIS:hisDel> dine Tankers Flyven: (10r)</cell></row>
+<row role="data"><cell role="data">i hvert et Blik jeg læser taus Foragt,<ptr type="ht" target="C1ht.xml" corresp="koC1_ht_47"/></cell>
+<cell role="data">i hvert et Blik jeg læs<HIS:hisDel rend="overstrike">er</HIS:hisDel>te taus Foragt – (10v)</cell></row>
+<row role="data"><cell role="data">og ingen Daad skal værne om hans Navn,<ptr type="ht" target="C1ht.xml" corresp="koC1_ht_48"/></cell>
+<cell role="data">og ingen Daad skal værne om mit Navn (10v)</cell></row>
+<row role="data"><cell role="data">og kjølig Aftenvind omvifter Panden;<ptr type="ht" target="C1ht.xml" corresp="koC1_ht_49"/></cell>
+<cell role="data">og kjølig Vestenvind omvifter Panden (11r)</cell></row>
+<row role="data"><cell role="data">vil den høre. – Jeg er en fattig Mand,<ptr type="ht" target="C1ht.xml" corresp="koC1_ht_50"/></cell>
+<cell role="data">– vil høre den, jeg er en fattig Mand – (12r)</cell></row>
+<row role="data"><cell role="data">Der ruller Bølgen blytung imod Bredden,<ptr type="ht" target="C1ht.xml" corresp="koC1_ht_51"/></cell>
+<cell role="data">Der pladsker Bølgen <HIS:hisDel rend="overstrike">lydløs</HIS:hisDel> blytung imod Bredden (13r)</cell></row>
+</table>
+<p>Om førstetrykket fremstår som rettet i
+forhold til manuskriptet på en del punkter, er det
+likevel kommet inn ord og formuleringer som noen steder kan sies
+å skape en metrisk sett mindre fullkommen tekst,
+skjønt også manuskriptet er nokså
+fritt i forhold til metriske regler. En av lesemåtene
+ovenfor kan tjene som eksempel: I manuskriptet står
+linjen <quote>– vil høre den, jeg er en
+fattig Mand –</quote>, mens
+førstetrykket har <quote>vil den høre.
+– Jeg er en fattig Mand,</quote> <ptr type="ht" target="C1ht.xml" corresp="koC1_ht_52"/>. Semantisk og grammatisk utgjør denne ombyttingen ingen større forskjell, men metrisk
+er manuskriptet mer korrekt. ES hevder at noen av endringene <quote>viser en
+bestræbelse efter at løfte sproget op
+over det hverdagslige, blant annet ved forandringer i ordstillingen</quote>
+<bibl>(ES 3, 375)</bibl>, noe som kan tenkes å
+forklare hvorfor blant annet denne endringen er gjort.</p>
+<p>Ibsen bemerker selv i forordet til <title rend="italic">Catilina</title>
+1875 at trykkmanuskriptet til <title rend="italic">Catilina</title> 1850 ble utført
+<quote>til den grad samvittighedsfuldt, at han
+[Due] end ikke glemte en eneste af de
+utallige tankestreger, som jeg i produktionens hede havde
+anbragt overalt, hvor det rette udtryk ikke i
+øjeblikket vilde falde mig ind</quote> <ptr type="ht" target="C2ht.xml" corresp="koC2_ht_21"/>. Det skal imidlertid bemerkes at det i manuskriptet ikke alltid er lett å avgjøre
+hva som er tankestrek og hva som er en hastig, slurvete
+avslutning på en bokstav, et skille også Due
+kan ha hatt vanskeligheter med å trekke. Vi kan
+dessuten ikke vite sikkert om enkelte av tankestrekene og
+ortografiske avvik for øvrig stammer fra Due eller
+fra setteren. Det er også noen tankestreker i
+arbeidsmanuskriptet som ikke er kommet med i den trykte versjonen.</p>
+<p>ES påpeker med rette, ut fra en analyse av endringenes
+gjennomføring og vitnesbyrdene fra Ibsen selv om
+dette <quote>rå urettede udkast</quote> (i forordet
+til <title rend="italic">Catilina</title> 1875,
+<HIS:hisRef><seg type="red"><ptr type="ht" target="C2ht.xml" corresp="koC2_ht_22"/></seg></HIS:hisRef>), at manuskriptet må være
+den første utarbeidelsen, og at det altså
+ikke finnes noe eldre utkast <bibl>(ES 3,
+371–75)</bibl>. Strøket tekst viser seg ved
+erstatningens art å være forkastet
+umiddelbart, dvs. under nedskrivningen. Det er flere rettelser
+som inneholder sprang i tanke og logikk, og som gjensidig
+utelukker hverandre.</p>
+<p>Ibsens kommentar er interessant også i et annet
+perspektiv: Dersom Due skrev av så samvittighetsfullt
+som han mener, hvor stammer da disse og alle de andre endringene
+fra? Vi vet ikke om Due har tatt seg friheter, tolket og
+forbedret, eller om Ibsen også selv har deltatt under
+prosessen. ES holder den siste
+muligheten åpen, og viser til at Lentulus’
+lengre replikk på s. 104 ikke finnes i manuskriptet,
+men kan tenkes å stamme fra en egenhendig opptegnelse
+<quote>på et stykke løst papir</quote>
+<bibl>(ES 3, 376)</bibl>. Siden vi
+ikke har denne opptegnelsen, kan vi heller ikke vite hvordan
+teksten eventuelt er formidlet. Tar man i betraktning at
+endringene i mange tilfeller har ført til
+dårligere metrikk, er den første
+muligheten, at Due har hatt hovedansvaret, ikke usannsynlig, men
+altså nok i et slags samråd med forfatteren.
+Jon Gunnar Jørgensen mener også dette
+<bibl>(Ibsen 2000, 27)</bibl>. HU trekker den samme slutningen på stilistisk grunnlag,
+og mener at for eksempel endringen <quote>pladsker</quote> til
+<quote>ruller</quote> i <quote>Der ruller Bølgen
+blytung imod Bredden</quote> må være
+Ibsens <bibl>(HU 1, 212)</bibl>.
+Dertil kommer at manuskriptet stedvis er slurvete skrevet og
+vanskelig å lese, noe som også kan ha
+forårsaket en del av endringene.</p>
+<p>I tillegg til HIS’ hovedtekst finnes en diplomatarisk
+gjengivelse samt fotografisk faksimile av grunnteksten. Manuskriptet gjengis diplomatarisk og med faksimile, med mulighet for
+søk og sammenligning. Her finnes også en
+metrisk analyse av teksten. Det upubliserte <title rend="quotes">Forord</title> gjengis i HIS i brevmaterialet og blant tekstkildene til skuespillet.</p>
+<p>HIS har i margen sidereferanser til grunnteksten og til HU.</p>
+</div>
+
+<div xml:id="edState_critical">
+<head rend="level3">tekstkritiske bemerkninger</head>
+<p>Ved emendasjoner er også den andre tekstkilden fra
+Ibsens levetid, NBO Ms.4°
+936, blitt konsultert.</p>
+<p>Ordvalg, ortografi og grammatikk i grunnteksten er, som offisiell
+norsk i samtiden, i tråd med danske normer.
+Substantiver har store forbokstaver. Med noe vakling benyttes
+dobbel vokal for å markere vokallengde eller trykk,
+eller for å gjøre ord entydige. Det brukes
+også understøttende, dvs. stum, <hi rend="italic">e</hi> for å markere lang vokal i
+trykksterke enstavelsesord (utelates enkelte steder). Ved
+flertallsformer av verb i imperativ vakles det også:
+<quote>ledsager I mig</quote>, men <quote>tænk
+Eder kun</quote>.</p>
+<p>I manuskriptet følger ikke Ibsen den danske normen
+strengt. Som HU har påpekt,
+slurver han med riktig bruk av stor forbokstav, med
+understøttende og dobbel vokal og med
+flertallsbøyningen av verb <bibl>(HU 1, 214)</bibl>. At dette ikke bare er
+slurv, men også en tilpasning til samtidig usus (og
+muligens til Knud Knudsens reformforslag), kan tenkes.</p>
+<p>Tegnsettingen i grunnteksten er for moderne lesere ofte uventet,
+f.eks. bruk av semikolon og tankestrek ved linje- og
+setningsslutt, som også finnes i andre tidlige
+Ibsen-dramaer. I noen tilfeller står majuskel for
+(vanligst) minuskel etter semikolon eller komma. Ibsens
+særegenheter omfatter også
+skrivemåter, f.eks. av folkeslaget
+<quote>Allebroger</quote> som er et ortografisk avvik fra det
+korrekte <quote>Allobroger</quote>. (Formen er beholdt i <title rend="italic">Catilina</title> 1875.) En innholdsmessig
+inkonsistens gjelder <quote>En Olding</quote> i rollelisten.
+Vedkommende opptrer ikke under dette navnet i dramateksten, men
+som <quote>En gammel Soldat</quote> og <quote>Soldaten</quote>.
+ES tolker denne
+uoverensstemmelsen, som også finnes i manuskriptet,
+som et <quote>særligt vidnesbyrd om at renskriften er
+gjort direkte efter det bevarte udkast</quote>
+<bibl>(ES 3, 376)</bibl>.</p>
+<p>I HIS er tegnsetting standardisert på
+følgende måte: Etter titler, overskrifter
+og rolleinnførsler i rollelister samt
+replikkåpner i dramateksten er eventuelle skilletegn
+(punktum, komma, kolon) fjernet. I sceneanvisninger
+først i akt og scener, i frittstående
+sceneanvisninger mellom replikker og i stedsbeskrivelser etter
+rolleliste er eventuell parentes fjernet. Disse elementene har
+gjennomgående fått stor forbokstav og
+avsluttes med punktum. Frittstående sceneanvisninger
+har beholdt eventuelle <quote>indre</quote> parenteser.
+Sceneanvisninger til slutt i replikker regnes som del av
+replikken dersom de er ufullstendige setninger, og som
+frittstående, utenfor replikken, dersom setningen er fullstendig.</p>
+<p>Sceneanvisninger inne i replikk, inkludert sceneanvisninger som
+står til slutt i replikk (ikke
+frittstående), begynner med liten forbokstav og
+avsluttes uten interpunksjon. Sceneanvisninger som
+følger rett etter replikkinnehaverens navn, har ikke
+parenteser. Øvrige sceneanvisninger i replikk har parentes.</p>
+<p>Skillestreker er beholdt der de har strukturerende funksjon,
+f.eks. når de markerer sceneskift, og sceneskiftet
+ikke er markert på annen måte. Skillestreker
+som har karakter av ornament alene, er ikke gjengitt.
+Grunntekstens typografiske system for øvrig er ikke
+forsøkt imitert i HIS.</p>
+<p>Tekstfeilene i <title rend="italic">Catilina</title> 1850
+angår som regel feilskrivning av ord, manglende
+tegnsetting og majuskel for minuskel. Vakling i ortografi og
+interpunksjon som avspeiler tidens og Ibsens vekslende praksis,
+er ikke rettet i HIS. I grunnteksten vakles det f.eks. mellom
+<quote>dig</quote> og <quote>Dig</quote>, <quote>du</quote> og
+<quote>Du</quote>, <quote>din</quote> og <quote>Din</quote>.
+Avvik fra rettskrivningen som <quote>Virklighed</quote> og
+<quote>Udødlighed</quote>, der vokalen er utelatt av
+hensyn til det metriske, forekommer og rettes ikke i HIS. I
+grunnteksten markeres som oftest utelatt vokal med apostrof, men
+ikke alltid. Vi finner både
+<quote>kjæmped</quote> og
+<quote>kjæmped’</quote>. Også i
+andre tilfeller vakles det i grunnteksten, for eksempel mellom
+<quote>rædselfuld</quote> og
+<quote>rædselsfuld</quote>, og vi har i disse
+tilfellene ikke grunnlag for å rette.</p>
+<p>HIS har heller ikke rettet teksten i de tilfellene hvor
+manuskriptet kan sies å ha en metrisk bedre tekst enn
+grunnteksten, ettersom metrikken ikke i noen av de to versjonene
+er strengt overholdt. (Når metrikken er feilaktig
+eller fri, vil den dessuten bare svært sjelden
+forstyrre meningen.) I hovedversemålet, femfotsjamben,
+finner vi både i arbeidsmanuskriptet og
+førstetrykket mange eksempler på manglende
+opptakt og på under- og overtaktighet, slik at den
+formelle metrikken ikke er noen entydig rettesnor for ederingen.
+En emendasjon ville forbedre det enkelte tekststedet metrisk,
+mens det ville gjenstå et stort antall metriske
+uregelmessigheter som ikke ville kunne rettes, siden vi ikke har
+andre supplerende tekstkilder enn NBO Ms.4° 936. I noter opplyses det
+likevel om alternative lesemåter fra manuskriptet som
+ivaretar metrikken bedre enn førstetrykket. Alle
+rettelser er anført i det tekstkritiske
+noteapparatet. Mulige feil som ikke kan rettes entydig, er
+også anført i noteapparatet.</p>
+<p>For en oversikt over samtidens språknormer og Ibsens
+språk vises det til en redegjørelse i
+<HIS:hisRef target="C1_innl.xml#intro_background_language">innledningen</HIS:hisRef> til <title rend="italic">Catilina</title> 1850.
+Det vises dessuten til de <HIS:hisRef target="tekstkritiskeRetningslinjer.xml">tekstkritiske retningslinjene</HIS:hisRef> for HIS.</p>
+</div>
+
+<div xml:id="edState_editions">
+<head rend="level3">tidligere tekstkritiske utgaver</head>
+<p>I ES er <title rend="italic">Catilina</title> 1850 ikke gjengitt, men omtalt
+(se ovenfor; gjengitt er derimot de nevnte <title rend="quotes">Sceneforandringerne</title>). I SU er <title rend="italic">Catilina</title>
+1850 trykt i b. 7. Teksten der følger grunnteksten
+med unntak av noen få rettelser. I HU rettes trykkfeil stilltiende, men det gis
+eksempler på rettede avskrivningsfeil <bibl>(HU 1, 213)</bibl>. Både SU og HU har
+rettet etter manuskriptet (særlig der
+førstetrykket metrisk er dårligere), noe
+det opplyses om sammen med utvalgte avvik mellom NBO Ms.4° 936, <title rend="italic">Catilina</title> 1850 og <title rend="italic">Catilina</title> 1875 <bibl>(HU 1, 221–42)</bibl>.</p>
+</div>
+</div>
+</body>
+</text>
+</TEI>

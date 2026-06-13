@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+   <teiHeader>
+    <fileDesc>
+        <titleStmt>
+            <title level="s">Henrik Ibsens skrifter, elektronisk versjon</title>
+            <title level="a">Manuskriptbeskrivelser til Peer Gynt</title>
+            <author>ved Tone Modalsli</author>
+            <funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+            <editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
+<respStmt>
+<resp>Innlemming i elektronisk utgave</resp>
+<name>EDD: Eining for digital dokumentasjon</name></respStmt>
+<respStmt><resp>Kodeteknisk støtte og utvikling</resp>
+<name>AKSIS: Avdeling for kultur, språk og informasjonsteknologi, Universitetsforskning i Bergen (Unifob AS)</name></respStmt>
+<respStmt><resp>HISe-koding</resp>
+<name xml:id="SBT">Stine Brenna Taugbøl</name>
+<name xml:id="EFS">Eivor Finset Spilling</name></respStmt>
+<respStmt><resp>Koding</resp>
+<name xml:id="EL">Erlend Lønnum</name></respStmt>
+<respStmt><resp>Tekstarbeid</resp>
+<name>Nina Marie Evensen</name>
+<name>Erlend Lønnum</name></respStmt>
+<respStmt><resp>Kontroll av sitater og referanser m.m.</resp>
+<name>Maria Alnæs</name>
+<name>Eva Rief</name></respStmt>
+<respStmt><resp>Kommentarentiteter</resp>
+<name>Erlend Lønnum</name></respStmt>
+<respStmt><resp>Kodekontroll</resp>
+<name>Erlend Lønnum</name>
+</respStmt>
+        </titleStmt>
+        <publicationStmt>
+            <publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+            <distributor xml:id="HISe">Universitetet i Oslo</distributor>
+            <date when="2011" xml:id="HISe-date"/>
+            <pubPlace>Oslo</pubPlace>
+        </publicationStmt>
+        <sourceDesc>
+            <p>Fila bygger på 5k_sisteversjon.xml.</p>
+        </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+        <tagsDecl>
+            
+        </tagsDecl>
+    </encodingDesc>
+    <profileDesc>
+        <langUsage>
+            <language ident="nob"/>
+        </langUsage>
+    </profileDesc>
+    <revisionDesc>
+       <change>
+          <date>21.08.2011</date>
+          <name>SBT</name><title>Entiteter</title>
+          Erstattet æ/ø/å-entiteter med bokstaver. Fila er valid.
+       </change>
+       <change>
+          <date>11.08.2011</date>
+          <name>SBT</name><title>Validering</title>
+          Endret sti til skjema i dokumenttopp.
+       </change>
+       <change>
+          <date>08.07.2011</date>
+          <name>EFS</name><title>Lenkekoding</title>
+          La inn id-verdier i div-strukturen og lenkekodet referansene til tekster som er med i første versjon av HISe.
+       </change>
+       <change>
+          <date>04.07.2011</date>
+          <name>SBT</name><title>P5</title>
+          Kodet om til valid P5.
+       </change>
+       <change>
+            <date>31.01.2011</date>
+            <name>SBT</name><title>HISe-fil</title>
+            La manuskriptbeskrivelsene i en egen fil for HISe. Gjorde om listekoding og attributtverdier i head. Validert.
+        </change>
+    </revisionDesc>
+</teiHeader>
+    
+    <text type="commentary">
+        <body>                    
+            
+    <div type="msDescription" xml:id="msDesc">
+              <!--7-->                        
+              <div xml:id="msDesc_PG81940">
+                <!--7.1-->
+<head rend="level3">1. <HIS:hisRef target="PG81940.xml">nbo m<hi rend="miniscule">s</hi>.8° 1940</HIS:hisRef></head>
+<p rend="noIndent">Egenhendig arbeidsmanuskript til sceneplan, ufullstendig. To dobbeltblad, egenhendig nummerert 2 og 3.</p>
+
+                <div xml:id="msDesc_PG81940_content">
+                <!--7.1.1-->
+<head rend="level4">innhold og genetisk status.</head>
+
+<p>Begynnelsen mangler; første side begynner med de to siste ordene av en setning (<quote>bliver efter.</quote>). Manuskriptet inneholder en kortfattet sceneplan som svarer til det meste av stykkets annen akt fra og med slutten av scenen der Solvejg ber Aase fortelle mer om Peer (jf. HIS 5, <ptr type="ht" target="PGht.xml" corresp="koPG_ht_10"/>), samt tredje akt og fjerde akt til og med scenen med tyven og heleren (jf. HIS 5, <ptr type="ht" target="PGht.xml" corresp="koPG_ht_11"/>); denne siste scenen er mindre utarbeidet enn de foregående. Teksten har noen få mindre rettelser. Handlingsforløpet gis i fortellende stil, med noen replikker i direkte tale. Planen for annen akt har med en scene som er strøket over i arbeidsmanuskriptet (manuskript 2, bl. 29r–33r) og ikke inkludert i trykkmanuskriptet (manuskript 3); sceneplanen må derfor antas å være skrevet før manuskript 2, jf. Ibsens omtale av arbeidet med <hi rend="italic">Peer Gynt</hi> i brev til Frederik Hegel <HIS:hisRef target="B1844-1871ht.xml#B18670105FH">5. januar 1867</HIS:hisRef>: <quote>Jeg har længe havt Stoffet i Tankerne; nu er hele Planen udarbejdet og nedskrevet og første Akt paabegyndt.</quote> Manuskriptet slutter inne i fjerde akt, uten at stykket føres til en avslutning, og uten at de foreliggende dobbeltblad er beskrevet fullt ut (teksten slutter øverst på annen side i dobbeltblad 3). Selv om betegnelsen <quote>hele Planen</quote> altså ikke er helt dekkende, er det likevel mulig at det er det foreliggende manuskript som nevnes i brevet. Skal uttrykket <quote>hele Planen</quote> derimot tas bokstavelig, må det ha eksistert mer. Det kan tenkes at Ms.8° 1940 er en påbegynt renskrift av et tidligere fullstendig utkast, men siden siste avsnitt av den bevarte teksten er såpass kortfattet, synes det mindre sannsynlig at dette skulle være avskrift av en ferdig plan.</p>
+
+                </div>
+                <!--slutt 7.1.1 -->
+                
+                <div xml:id="msDesc_PG81940_date">
+                  <!--7.1.2 -->                
+<head rend="level4">datering.</head>
+<p>Hvis manuskriptet er den <quote>Planen</quote> som omtales i brevet til Hegel <HIS:hisRef target="B1844-1871ht.xml#B18670105FH">5. januar 1867</HIS:hisRef> (jf. sitatet ovenfor), må det være skrevet før denne dato.</p>
+
+              </div>
+                <!--slutt 7.1.2-->
+                          
+              <div xml:id="msDesc_PG81940_material">
+                  <!--7.1.3 --> 
+<head rend="level4">mengde, struktur og rekkefølge.</head>
+                 
+<p>Manuskriptet består av to løse dobbeltblad (fire blad), av Ibsen nummerert 2 og 3, det forutgående mangler. Dobbeltblad 3 har tekst bare på første side og på de tre første linjer av dennes versoside, de siste to sider er blanke.</p>
+
+               </div>
+                <!--slutt 7.1.3-->
+                          
+               <div xml:id="msDesc_PG81940_condition">
+                  <!--7.1.4--> 
+<head rend="level4">tilstand.</head>
+                 
+<p>Manuskriptet har vært brettet to ganger på tvers, dessuten på skrå i nederste venstre hjørne (sett fra første tekstside), det har også andre mindre spor av folding/skrukking. I noen av tverrfoldene er det små rifter. Begge dobbeltbladene har noen få små flekker og en liten rift nederst i falsen, dobbeltblad 2 har en rift også i nedre kant.</p>
+
+               </div>
+                  <!--slutt 7.1.4-->
+                          
+               <div xml:id="msDesc_PG81940_paper">
+                  <!--7.1.5--> 
+<head rend="level4">papir.</head>
+
+<p>Papiret er gulaktig, tynt, med bunn- og kjedelinjer, det er linjert ved kraftigere linjer i strukturen. Siden måler 135 × 212 mm.<note type="footer">Målene gjelder bokens blad, bredde × høyde.</note> Samme papir er brukt i en del av Ibsens brev fra 8. mars 1867 til 15. juli 1869 (se HIS 12, 519, papir 7) og som tilleggsblad i arbeidsmanuskriptet (manuskript 2).</p>
+
+               </div>
+                <!--slutt 7.1.5-->
+                          
+               <div xml:id="msDesc_PG81940_pen">
+                  <!--7.1.6--> 
+<head rend="level4">skriveredskap og -stoff.</head>
+
+<p>Manuskriptet er skrevet med blekk. Skriftbildet er brunt.</p>
+
+               </div>
+                <!--slutt 7.1.6-->
+                          
+               <div xml:id="msDesc_PG81940_handwritin">
+                  <!--7.1.7--> 
+<head rend="level4">skrift.</head>
+                 
+<p>Skriften er høyrehellende og overveiende omhyggelig. Ibsen har streket under aktoverskriftene og de fleste innledende stedsangivelsene i scenene, og han har satt skillestrek mellom aktene.</p>
+
+               </div>
+                 <!--slutt 7.1.7-->
+                          
+               <div xml:id="msDesc_PG81940_stamp">
+                  <!--7.1.8--> 
+<head rend="level4">stempel og katalogsignatur.</head>
+
+<p>Bibliotekets stempel og katalogsignatur finnes på begge dobbeltblads annen side, stempelet også på fjerde side i dobbeltblad 2.</p>
+
+               </div>
+                  <!--slutt 7.1.8-->
+                          
+               <div xml:id="msDesc_PG81940_provenance">
+                  <!--7.1.9--> 
+<head rend="level4">proveniens.</head>
+
+<p>Manuskriptet tilhører Nasjonalbiblioteket, Oslo. Biblioteket (den gang Universitetsbiblioteket) kjøpte det av Henrik Ibsens arvinger i 1968–69. Det var i 1956 innlevert til biblioteket av Halvdan Koht. Ifølge HU 19, 39 befant det seg hos Bergliot Ibsen i januar 1932.</p>
+
+               </div>
+                  <!--slutt 7.1.9-->
+                          
+                </div>
+                   <!--slutt 7.1 -->
+      
+                <div xml:id="msDesc_PG42869">
+                   <!--7.2 -->
+<head rend="level3">2. <HIS:hisRef target="PG42869.xml">kbk nks 2869, 4°, 2</HIS:hisRef></head>
+<p rend="noIndent">Egenhendig arbeidsmanuskript. Egenhendig leggnummerering 1–32. Nyere foliering 1–131. På bl. 1r: <quote>Peer Gynt. / Et dramatisk Digt / af / Henrik Ibsen. / 1867.</quote></p>
+
+                 <div xml:id="msDesc_PG42869_content">
+                  <!--7.2.1--> 
+<head rend="level4">innhold og genetisk status.</head>
+
+                    <p>Bl. 1r tittelside, bl. 2r tittelen, bl. 2v <quote>De handlende</quote>, bl. 3r–131v skuespillets tekst med noen lakuner på grunn av tap. Det som mangler, tilsvarer en del av fjerde akt mot slutten av første scene (HIS 5, <ptr type="ht" target="PGht.xml" corresp="koPG_ht_12"/> til <ptr type="ht" target="PGht.xml" corresp="koPG_ht_13"/>, manuskriptets tapte legg 15), noe av scenen med Knappestøberen i femte akt (HIS 5, <ptr type="ht" target="PGht.xml" corresp="koPG_ht_14"/> til <ptr type="ht" target="PGht.xml" corresp="koPG_ht_15"/>) samt slutten av samme scene og begynnelsen av neste med Dovregubben (HIS 5, <ptr type="ht" target="PGht.xml" corresp="koPG_ht_16"/> til <ptr type="ht" target="PGht.xml" corresp="koPG_ht_17"/>, de tapte første og siste blad av legg 28). Dessuten mangler nedre del av bl. 114 som trolig har inneholdt et tidligere utkast til begynnelsen av scenen med løken på bl. 115; bl. 114v har øverst overstrøken tekst til denne scenen, en fortsettelse av noe som må ha stått på den nedre, bortklippede del av bl. 114r. Flere steder finnes tilleggsblad med erstattende eller supplerende tekst. Se <HIS:hisRef target="msDesc_PG42869_material"><hi rend="italic">Mengde, struktur og rekkefølge</hi></HIS:hisRef> nedenfor med detaljer om lakuner og tillegg. Manuskriptet er dels omhyggelig skrevet (bl.a. fra begynnelsen), dels skjødesløst. Karl Larsen (Ibsen 1907, 198–99) mener å kunne fastslå at manuskriptet er en <quote>stærkt rettet Renskrift efter en tidligere Udarbejdelse</quote>. Det er i hvert fall nærliggende å anta at omhyggelig skrevne partier kan være utarbeidet på grunnlag av eldre forarbeider, jf. beskrivelsen av arbeidsmanuskriptet (manuskript 2) i innledningen til <hi rend="italic">Brand</hi>, under <HIS:hisRef target="Br_msbeskr.xml#msDesc_Br42622_content"><hi rend="italic">Innhold og genetisk status</hi></HIS:hisRef>. Særlig gjelder dette de sirlig skrevne første sidene; i brev til Hegel <HIS:hisRef target="B1844-1871ht.xml#B18670105FH">5. januar 1867</HIS:hisRef> skriver Ibsen at første akt er påbegynt, mens manuskriptet er datert 14. januar 1867 foran første akt (jf. ES 3, 414 og <HIS:hisRef target="msDesc_PG42869_date"><hi rend="italic">Datering</hi></HIS:hisRef> nedenfor). Men det kan også tenkes at Ibsen i brevet ikke gir et helt dekkende bilde av fremdriften, jf. <HIS:hisRef target="PG_innl.xml#intro_creation"><hi rend="italic">Tilblivelse</hi></HIS:hisRef> ovenfor. Aktoverskriftene og de påfølgende innledende sceneanvisningene er alltid omhyggelig skrevet, de kan for de fire første aktenes vedkommende bygge på den bevarte sceneplanen (manuskript 1). Manuskriptet har mange strykninger og rettelser. De fleste steder kan den opprinnelige teksten leses under strykningene (se <HIS:hisRef target="PG_tekstred.xml"><hi rend="italic">Tekstkritisk redegjørelse</hi></HIS:hisRef> om bruk av mikroskop). Dovregubbens annen replikk på bl. 40v er ikke skrevet, bare antydet med to linjer med tette bølgestreker. Hele nederste halvdel av siden er fylt opp av bølgestreker uten tekst, etterfulgt av et notat av Ibsen om at tilleggsbladene a–e skal inn på dette sted. Tretten linjer på bl. 62v ser ut som kraftig overstrøket tekst (jf. HU 6, 283, note til s. 128), men mikroskopering viser at også dette bare er linjer og krøllstreker uten tekst under; hele siden er slettet ved forskjellige bølgestreker og kryss. På tittelsiden finnes noen regnestykker og oversikt over antall sider pr. akt. På bl. 64v og 98r har Ibsen føyd til notater som viser at manuskriptet har ligget til grunn for trykkmanuskriptet (se manuskript 3, under <HIS:hisRef target="msDesc_PG4262_date"><hi rend="italic">Datering</hi></HIS:hisRef>). Bl. 71–72 og 74–76 har notater i annen hånd.</p>
+
+                  </div>
+                  <!--slutt 7.2.1-->
+                  
+                 <div xml:id="msDesc_PG42869_date">
+                  <!--7.2.2--> 
+<head rend="level4">datering.</head>
+
+<p>Bl. 1r (tittelsiden): <quote>1867</quote>. Ibsen har datert manuskriptet ved begynnelsen og slutten av hver akt (men ikke ved slutten av annen og begynnelsen av fjerde akt). Datoene er: 14. januar (bl. 3r, begynnelsen av første akt), 25. februar (bl. 25r, slutten av første akt), 3. mars (bl. 25v, begynnelsen av annen akt), 15. juni (bl. 51r, begynnelsen av tredje akt), 2. juli (bl. 64v, slutten av tredje akt), 15. september (bl. 98r, slutten av fjerde akt), 19. september (bl. 98v, begynnelsen av femte akt) og 14. oktober (bl. 131v, slutten av femte akt) (alt i 1867). Ifølge Ibsens brev til Hegel <HIS:hisRef target="B1844-1871ht.xml#B18670327FH">27. mars 1867</HIS:hisRef> var annen akt ferdig da. I manuskriptet har Ibsen også notert datoer for avsendelse av trykkmanuskriptet (se manuskript 3, under <HIS:hisRef target="msDesc_PG4262_date"><hi rend="italic">Datering</hi></HIS:hisRef>), disse viser at arbeidsmanuskriptets femte akt ble påbegynt etter at trykkmanuskriptet til det foregående var sendt til forlaget. Jf. <HIS:hisRef target="PG_innl.xml#intro_creation"><hi rend="italic">Tilblivelse</hi></HIS:hisRef> ovenfor.</p>
+
+                </div>
+                <!--slutt 7.2.2-->
+                  
+                <div xml:id="msDesc_PG42869_material">
+                  <!--7.2.3--> 
+<head rend="level4">mengde, struktur og rekkefølge.</head>
+                 
+<p>Manuskriptet bestod opprinnelig av 32 legg. De fleste leggene har fire blad (opprinnelig trolig to dobbeltblad, se <HIS:hisRef target="msDesc_PG42869_condition"><hi rend="italic">Tilstand</hi></HIS:hisRef> nedenfor). Legg 1 består av seks blad, leggene 25 og 29 av to, legg 32 av bare ett blad. Når ES (3, 413) sier at legg 1 bare består av to blad (tittelblad og personliste), må bl. 3–6 være uteglemt; leggnummeret 2 står på bl. 7r. Noe av manuskriptet er gått tapt: Legg 15 mangler, og av legg [28] mangler første og siste blad. Av det siste bladet i legg 26 (bl. 114) finnes bare øvre halvdel, resten er bortklippet. Se <HIS:hisRef target="msDesc_PG42869_content"><hi rend="italic">Innhold og genetisk status</hi></HIS:hisRef> ovenfor om innholdet på de tapte delene. Mellom legg 8 og 9 ligger et dobbeltblad (bl. 35–36) med erstatningstekst til bl. 34v og 37r. Mellom legg 9 og 10 ligger fem dobbeltblad (bl. 41–50, av Ibsen merket a–e) som erstatning for overstrøken tekst på bl. 38v–40. Dobbeltbladet b har på siste side (44v) overstrøken tekst som er skrevet opp-ned i forhold til resten av manuskriptet, innholdet svarer til sceneanvisningen på bl. 40v og replikker på bl. 41r (første side av tilleggsbladet a). Denne siden er trolig den av sidene på tilleggsbladene a–e som ble skrevet først (Logeman 1917, 97). Foran legg 16 ligger to blad (bl. 71 og 72) med erstatningstekst til bl. 73 og 74. I alt har manuskriptet nå 131 blad.</p>
+
+<p>Ibsen har nummerert leggene 1–32 i øvre venstre hjørne av hvert leggs første side. Bladene er senere foliert 1–131. Folieringen inkluderer tilleggs- og erstatningsbladene og reflekterer ikke lakunene. Bl. 96 er snudd ved folieringen, slik at tekstrekkefølgen er 95v, 96v, 96r, 97r. Versosiden av bl. 1 (tittelbladet) og av bl. 36 er blanke, alle andre sider er beskrevne.</p>
+
+<p>De første åtte leggene har trolig utgjort et hefte; leggene har to slags gulaktig heftetråd med løkker og løse ender. Det er ingen heftetråd i resten av manuskriptet.</p>
+
+               </div>
+                <!--slutt 7.2.3-->
+                           
+               <div xml:id="msDesc_PG42869_condition">
+                  <!--7.2.4--> 
+<head rend="level4">tilstand.</head>
+
+<p>Om lakuner, se <HIS:hisRef target="msDesc_PG42869_material"><hi rend="italic">Mengde, struktur og rekkefølge</hi></HIS:hisRef> ovenfor. Særlig tittelbladet og det siste bladet er slitt i kantene, med mindre rifter. Tittelsiden er mørknet. I de fleste leggene er første og siste blad løse, mens de to innerste fortsatt utgjør et dobbeltblad, også mange av disse er i ferd med å gå fra hverandre i falsen. De to bladene i legg 25 (bl. 109–10) er limt sammen. Bl. 109 må opprinnelig ha vært første blad i et dobbeltblad, av dettes siste blad er det nå bare igjen en langsgående smal ubeskreven rest langs falsen, nesten helt løsnet fra resten av bladet. Bl. 110 er limt til denne resten og har flekker forårsaket av limet. Manuskriptet har også andre mindre flekker, skrukker, svake folder og små rifter. Bl. 89–92 har et lite, gjennomgående hull; det samme har bl. 93–100 (når bl. 96 ligger med versosiden først), men på et annet sted. Det finnes noen få tilfeller av blekksmitte.</p>
+
+               </div>
+                  <!--slutt 7.2.4-->
+                          
+               <div xml:id="msDesc_PG42869_paper">
+                  <!--7.2.5--> 
+<head rend="level4">papir.</head>
+
+<p>Manuskriptet har tre slags gulaktig papir.</p>
+<p rend="noIndent">Bl. 1–34, 37–40, 51–122: Papiret er glatt, med vannmerke (L – J D L &amp; Co). Siden måler ca. 170 × 219 mm, med noe variasjon. Det avklippede bl. 114 er ca. 111 mm høyt.</p>
+<p rend="noIndent">Bl. 123–31: Papiret har bunn- og kjedelinjer. Siden måler ca. 171 × 220 mm.</p>
+<p rend="noIndent">Tilleggsbladene 35–36, 41–50: Papiret er det samme som i manuskript 1, samme mål som der.</p>
+
+               </div>
+                <!--slutt 7.2.5-->
+                          
+               <div xml:id="msDesc_PG42869_pen">
+                  <!--7.2.6--> 
+<head rend="level4">skriveredskap og -stoff.</head>
+
+<p>Manuskriptet er skrevet med blekk. Skriftbildet er mørkebrunt, nærmest sort. Nedre del av bl. 77v er skrevet med brunt blekk. Noen få av Ibsens rettelser (bl. 117r–18r) er med blyant, likeledes et tall og noen strykninger på bl. 73, 74r og 77r. Karl Larsens notater (se <HIS:hisRef target="msDesc_PG42869_handwriting"><hi rend="italic">Hender og skrift</hi></HIS:hisRef> nedenfor) samt folieringen er med blyant.</p>
+
+               </div>
+                <!--slutt 7.2.6-->
+                          
+               <div xml:id="msDesc_PG42869_handwriting">
+                  <!--7.2.7--> 
+<head rend="level4">hender og skrift.</head><lb/>
+<p>1. <hi rend="italic">Henrik Ibsen</hi>: Skriften er overveiende høyrehellende til midten av legg 16; fra og med dette leggs tredje blad (bl. 75) er skriften i tiltagende grad rettere, mot slutten overveiende rett. Også på de to tilleggsbladene foran legg 16 (bl. 71 og 72) er skriften nærmest rett. Jf. omtalen av denne skriftendringen i HIS 12, 15–16. I hele manuskriptet veksler skriften mellom omhyggelig og skjødesløs. Manuskriptets første sider er svært omhyggelig skrevet. I det hele synes den omhyggelige skriften å dominere frem til midten av legg 16 (bl. 74/75), men med mange partier med skjødesløs hånd. I resten av manuskriptet synes forholdet å være omvendt (overveiende skjødesløst med mer omhyggelige innslag), med et lengre stykke med omhyggelig skrift mot slutten (bl. 119 – begynnelsen av bl. 124r). Strykninger og rettelser finnes i hele manuskriptet, men etter bl. 75 bare kortere strykninger. På bl. 74r har Karl Larsen (se nedenfor) notert at et blyantskrevet to-tall like over er skrevet av Ibsen. Dette er vanskelig å verifisere, men sammenligning med de egenhendige to-tallene på tittelsiden utelukker ikke at Larsen har rett. I så fall viser det at Ibsen har brukt blyant på dette sted i manuskriptet, og blyantstrykninger på bl. 73, 74r og 77r kan følgelig være egenhendige. Noen steder har Ibsen satt tilføyelser i margen på tvers av skriveretningen. Til og med bl. 75 (med visse unntak i overstrøken tekst, og ikke bl. 71–72) har Ibsen brukt et system av understrekninger i tekst som ikke er replikker. Ut fra skriftbildet kan altså manuskriptet deles i to ved ca. bl. 75. Den første delen har høyrehellende, ofte omhyggelig skrift, med system av understrekninger og med noen lange strykninger. Den andre delen (inklusive tilleggsbladene 71 og 72) har rettere skrift, oftest skjødesløs, mangler understrekningssystemet og har ingen lange strykninger.</p>                 
+<p>2. <hi rend="italic">Karl Larsen</hi>: Blyantnotatene på bl. 71r, 72r, 74r, 75v og 76 er hans. Han benyttet dette manuskriptet under sin utgivelse av [<hi rend="italic">Episk Brand</hi>] (Ibsen 1907, 31–34). Hans håndskrift finnes bl.a. også i manuskriptet til [<hi rend="italic">Episk Brand</hi>], se beskrivelsen av dette, under <hi rend="italic">Hender og skrift</hi>.</p>                 
+<p>3. <hi rend="italic">Andre</hi>: Det er uvisst hvem som har foliert manuskriptet.</p>
+
+               </div>
+                 <!--slutt 7.2.7-->
+                          
+               <div xml:id="msDesc_PG42869_stamp">
+                  <!--7.2.8--> 
+<head rend="level4">stempel og katalogsignatur.</head>
+
+<p>Bibliotekets stempel finnes på første og siste side (bl. 1r og 131v), katalogsignaturen bare på emballasjen.</p>
+
+               </div>
+                  <!--slutt 7.2.8-->
+                          
+               <div xml:id="msDesc_PG42869_provenance">
+                  <!--7.2.9--> 
+<head rend="level4">proveniens.</head>
+
+<p>Manuskriptet tilhører Det Kongelige Bibliotek, København. Biblioteket mottok det i 1903 sammen med manuskriptet til [<hi rend="italic">Episk Brand</hi>] som testamentarisk gave fra den danske maleren A.R. Pontoppidans dødsbo (Nielsen 1943, 182), jf. innledningen til [<hi rend="italic">Episk Brand</hi>], under <hi rend="italic">Ibsens ufullførte og forkastede manuskript</hi>. Den <HIS:hisRef target="B1844-1871ht.xml#B18671021JC">21. oktober 1867</HIS:hisRef> skrev Ibsen til Jonas Collin: <quote>Mit nye Arbejde, et dramatisk Digt, der formodentlig udkommer i næste Maaned, har jeg fuldført her. Jeg har, efter Løfte, gjemt Haandskriftet till Deres Hr: Faders Samling, og skal sende Dem Pakken med første Lejlighed.</quote> Det er sannsynlig at Ibsen her må omtale arbeidsmanuskriptet, som likevel ikke ble avsendt (ES 3, 414; jf. Ibsen 1907, 202–03; jf. kommentarer til brevet).</p>
+
+               </div>
+                  <!--slutt 7.2.9-->
+                           
+                </div>
+                  <!--slutt 7.2-->
+                        
+                 <div xml:id="msDesc_PG4262">
+                   <!--7.3 -->
+<head rend="level3">3. <HIS:hisRef target="PG4262.xml">kbk collin 262, 4°, I.2</HIS:hisRef></head>
+                   
+<p rend="noIndent">Egenhendig trykkmanuskript. Ett bind. Egenhendig leggnummerering 1–29. Nyere foliering 1–122. På bl. 1r: <quote>Peer Gynt. / Et dramatisk Digt / af / Henrik Ibsen.</quote></p>
+
+                 <div xml:id="msDesc_PG4262_content">
+                  <!--7.3.1--> 
+<head rend="level4">innhold og genetisk status.</head>
+
+<p>Bl. 1r tittelside, bl. 2r tittelen, bl. 2v <quote>De handlende</quote>, bl. 3r–122r skuespillets tekst (fullstendig), med noen rettelser. Noen få steder er opprinnelig tekst radert ut før nytt er skrevet over. Settermarkering og merker etter svertede fingre viser at manuskriptet har vært brukt som trykkforelegg. Manuskriptet er skrevet på grunnlag av arbeidsmanuskriptet (manuskript 2); Ibsen har et par steder der notert hvor langt han er kommet i skrivingen av trykkmanuskriptet (se <HIS:hisRef target="msDesc_PG4262_date"><hi rend="italic">Datering</hi></HIS:hisRef> nedenfor).</p>
+
+                   </div>
+                  <!--slutt 7.3.1-->
+                  
+                <div xml:id="msDesc_PG4262_date">
+                  <!--7.3.2--> 
+<head rend="level4">datering.</head>
+
+<p>Manuskriptet ble ferdigskrevet sommeren og høsten 1867, men første akt forelå <quote>renskrevet</quote> allerede <HIS:hisRef target="B1844-1871ht.xml#B18670327FH">27. mars 1867</HIS:hisRef>, ifølge Ibsens brev til Hegel denne dato (<hi rend="italic">renskrift</hi> er Ibsens betegnelse for <hi rend="italic">trykkmanuskript</hi>, jf. sitatene i det følgende). De tre første aktene (legg 1–13) ble sendt til forleggeren Frederik Hegel <HIS:hisRef target="B1844-1871ht.xml#B18670808FH">8. august 1867</HIS:hisRef>, fjerde akt (legg 14–21) <HIS:hisRef target="B1844-1871ht.xml#B18670918FH">18. september</HIS:hisRef>, jf. hans notater i arbeidsmanuskriptet (manuskript 2) etter tredje akt, bl. 64v: <quote>Afsendt i Renskrift fra Ischia den 8<hi rend="raised">de</hi> August 1867</quote>, og etter fjerde akt, bl. 98r: <quote>Afsendt i Renskrift fra Sorrento 18<hi rend="raised">de</hi> Septbr 1867</quote>. Siste akt ble sendt sammen med brev til Hegel <HIS:hisRef target="B1844-1871ht.xml#B18671018FH">18. oktober 1867</HIS:hisRef>. Sammenholdt med Ibsens datoer for når arbeidsmanuskriptets forskjellige deler var ferdigskrevet (se manuskript 2, under <HIS:hisRef target="msDesc_PG42869_date"><hi rend="italic">Datering</hi></HIS:hisRef>), vil det si at trykkmanuskriptet til de tre første aktene ble ferdigstilt mellom 2. juli og 8. august, til fjerde akt mellom 15. og 18. september, og til femte akt mellom 14. og 18. oktober. Datoinnførslene viser også at trykkmanuskriptet til de fire første aktene var sendt til forlaget før arbeidsmanuskriptet til femte akt var påbegynt, jf. ES 3, 414. Jf. <HIS:hisRef target="PG_innl.xml#intro_creation"><hi rend="italic">Tilblivelse</hi></HIS:hisRef> ovenfor.</p>
+
+                </div>
+                <!--slutt 7.3.2-->
+                  
+               <div xml:id="msDesc_PG4262_material">
+                  <!--7.3.3--> 
+<head rend="level4">mengde, struktur og rekkefølge.</head>
+
+<p>Manuskriptet består av ett dobbeltblad + 29 legg i ett bind. Leggene har fire blad (to dobbeltblad), bortsett fra leggene 21 og 29, som har seks blad, i alt 122 blad. Ibsen har nummerert leggene 1–29 i øvre venstre hjørne av hvert leggs første side. Bladene er senere foliert 1–122. Versosiden av bl. 1 (tittelbladet) er blank, dessuten finnes blanke sider ved slutten av tredje akt (hele bl. 54) og fjerde akt (bl. 88v), jf. avleveringene til Hegel; alle andre sider er beskrevne. Innbindingen ble trolig besørget av Jonas Collin. Bindet er som i arbeids- og trykkmanuskriptene til <hi rend="italic">Brand</hi>, se beskrivelsen av disse. Bindet måler 205 × 247 mm. Forsatspapiret er gråbrunt. Snittet har svake blågrønne spetter. Bokblokken er heftet på to bånd med gulaktig heftetråd.</p>
+
+               </div>
+                <!--slutt 7.3.3-->
+                           
+               <div xml:id="msDesc_PG4262_condition">
+                  <!--7.3.4--> 
+<head rend="level4">tilstand.</head>
+
+<p>Bindet er slitt, og ryggen er delvis løs. Bokblokken med fremre forsatsblad har løsnet fra ryggen. Bindets fiolette farve er stedvis blå på grunn av lyspåvirkning. Bl. 39 og 82 synes å ha vært revet eller klippet ut. Av begge står det igjen en smal rest langs innermargen som bladene nå er festet til, og de fremstår derfor som smalere enn bindets øvrige blad. Bl. 39 er festet med dårlig limbånd som er i ferd med å løsne. Bl. 82 er festet med lim. Enkelte blad er delvis løsnet fra ryggen. I hvert fall leggene 14–19 har vært foldet på langs, bl. 79–122 (legg 20–29) på tvers, bl. 39 har vært brettet på tvers og deretter på langs. Bl. 54–122 har også skrukker. Det finnes enkelte små rifter samt en del fingermerker og andre flekker, særlig mot slutten. Stempelet på bl. 39r har slått igjennom til versosiden av bladet. Også kraftige blekkstreker (i understrekning) har flere steder slått igjennom.</p>
+
+               </div>
+                  <!--slutt 7.3.4-->
+                          
+                <div xml:id="msDesc_PG4262_paper">
+                  <!--7.3.5--> 
+<head rend="level4">papir.</head>
+
+<p>Papiret er gulaktig med bunn- og kjedelinjer. Siden måler 199 × 242 mm.</p>
+
+               </div>
+                <!--slutt 7.3.5-->
+                          
+               <div xml:id="msDesc_PG4262_pen">
+                  <!--7.3.6--> 
+<head rend="level4">skriveredskap og -stoff.</head>
+
+<p>Manuskriptet er skrevet med blekk. Skriftbildet er mørkebrunt, nærmest sort, brunt særlig i legg 15, og stedvis blekt. En settermarkering samt folieringen er med blyant.</p>
+
+               </div>
+                <!--slutt 7.3.6-->
+                          
+               <div xml:id="msDesc_PG4262_handwriting">
+                  <!--7.3.7--> 
+<head rend="level4">hender og skrift.</head><lb/>
+<p>1. <hi rend="italic">Henrik Ibsen</hi>: Skriften er omhyggelig; høyrehellende i de to første akter, i tredje akt og videre utover i manuskriptet etter hvert med svakere helning. I fjerde akt er skriften til dels rett, i femte akt overveiende rett. Jf. skriftutviklingen i arbeidsmanuskriptet, hvis to siste akter ble ferdigskrevet bare noen dager før de tilsvarende deler av dette. Tittelsiden er skrevet med svak høyrehelning. Ibsen har brukt et system av understrekninger i tekst som ikke er replikker, og satt skillestrek mellom aktene og til slutt.</p>
+<p>2. <hi rend="italic">Andre</hi>: Settermarkeringen. Det er uvisst hvem som har foliert manuskriptet.</p>
+
+               </div>
+                 <!--slutt 7.3.7-->
+                          
+               <div xml:id="msDesc_PG4262_stamp">
+                  <!--7.3.8--> 
+<head rend="level4">stempel og katalogsignatur.</head>
+
+<p>Bibliotekets stempel og katalogsignatur finnes på innsiden av forpermen. Tittelsiden og bl. 39r er stemplet <quote>Den Collinske Manuscriptsamling</quote>. På bakpermen er det limt en lapp med tallet 920.</p>
+
+               </div>
+                  <!--slutt 7.3.8-->
+                          
+               <div xml:id="msDesc_PG4262_provenance">
+                  <!--7.3.9--> 
+<head rend="level4">proveniens.</head>
+
+<p>Manuskriptet tilhører Det Kongelige Bibliotek, København, som del av bibliotekets Collinske Samling. Jf. beskrivelsen av trykkmanuskriptet (manuskript 2) til <hi rend="italic">Brand</hi>, under <HIS:hisRef target="Br_msbeskr.xml#msDesc_Br42622_provenance"><hi rend="italic">Proveniens</hi></HIS:hisRef>.</p>
+
+               </div>
+                  <!--slutt 7.3.9-->
+                           
+                </div>
+                  <!--slutt 7.3-->
+                        
+                 <div xml:id="msDesc_PG8894">
+                   <!--7.4 -->
+<head rend="level3"><HIS:hisRef target="PG8894.xml">4. nbo m<hi rend="miniscule">s</hi>.8° 894</HIS:hisRef></head>
+                   
+<p rend="noIndent">Trykt eksemplar av annen utgave av <hi rend="italic">Peer Gynt</hi> (1867), med rettelser av Ibsen og andre til tredje utgave (1874), brukt som trykkmanuskript til denne.</p>
+
+                   <div xml:id="msDesc_PG8894_content">
+                  <!--7.4.1--> 
+<head rend="level4">innhold og genetisk status.</head>
+
+<p>Eksemplaret er gjennomrettet. Rettelsene er hovedsakelig ortografiske, i samsvar med Ibsens norm fra 1870 av (HIS 1k, 146–48). Rettelsene er for det meste markert ved streker og tegn i selve teksten, i færre tilfeller ved korrekturer i margen, disse gjelder som regel bokstaver eller sjeldnere hele ord. De gjennomgående rettelsene er trolig utført av Sigurd Ibsen. Ifølge Bergliot Ibsen (1948, 24) leste Sigurd allerede som elleveåring korrektur på sin fars bøker. De fleste ordene og bokstavene i margen synes derimot å være skrevet av Ibsen selv; han har rettet slikt som han ikke så lett kunne overlate til andre, eller slikt som Sigurd kunne ha oversett. Iblant har han opphevet enkelte av Sigurds rettelser, for eksempel gjeninnført <hi rend="italic">x</hi> for <hi rend="italic">ks</hi> i tallordet <hi rend="italic">sex</hi>. Men Sigurds skrift kan ligne på farens, og det kan være vanskelig å avgjøre i detalj hvem som har skrevet hva. Noen rettelser på tittelsiden er August Larsens, jf. <HIS:hisRef target="msDesc_PG8894_handwriting"><hi rend="italic">Hender og skrift</hi></HIS:hisRef> nedenfor, og det er trolig han som har satt blekkstreker under enkelte trykkfeil. Settermarkeringer og mange merker etter setternes svertede fingre viser at eksemplaret ble brukt som trykkforelegg.</p>
+
+                   </div>
+                  <!--slutt 7.4.1-->
+                  
+                <div xml:id="msDesc_PG8894_date">
+                  <!--7.4.2--> 
+<head rend="level4">datering.</head>
+
+<p>Rettelsene må være utført senvinteren og våren 1874. I brev til Hegel <HIS:hisRef target="B1871-1879ht.xml#B18740210FH">10. februar 1874</HIS:hisRef> omtales behovet for nye opplag av <hi rend="italic">Peer Gynt</hi> og <hi rend="italic">De unges forbund</hi>; Ibsen vil <quote>om kort tid</quote> sende begge bøker i rettet stand. Den 28. februar sender han <hi rend="italic">De unges forbund</hi>; det rettede eksemplar av <hi rend="italic">Peer Gynt</hi> <quote>skal følge om kort tid</quote>. Av brev til Hegel <HIS:hisRef target="B1871-1879ht.xml#B18670523FH">23. mai</HIS:hisRef> fremgår det at utgaven på det tidspunkt er under produksjon i forlaget, så eksemplaret må ha vært sendt før det.</p>
+
+                </div>
+                <!--slutt 7.4.2-->
+                  
+               <div xml:id="msDesc_PG8894_material">
+                  <!--7.4.3--> 
+<head rend="level4">mengde, struktur og rekkefølge.</head>
+                 
+<p>Manuskriptet består av ett bind (trykt bok). Boken har 259 paginerte sider. Pagineringen begynner med første akt (s. [1]) og løper fra 2 til 259, med utelatelse av sidetall ved begynnelsen av aktene. Foran s. [1] er to upaginerte blad, først tittelbladet, så et blad med tittelen på rectosiden og rollelisten på versosiden. Versosiden av tittelbladet og av s. 259 er blanke. S. 69–76 er ujevnt tilskåret i nedre kant. Bindet måler ca. 119 × 178 mm. Rygg og hjørner er i blått skinn, bindets innhold er angitt med gulltrykk på ryggen, som også har dekorasjoner i gull. Permen har overtrekkspapir marmorert i sort og grått. Forsatspapiret er gulaktig. Kapitelbåndet er i rødt og hvitt. Snittet er rødspettet.</p>
+
+               </div>
+                <!--slutt 7.4.3-->
+                           
+               <div xml:id="msDesc_PG8894_condition">
+                  <!--7.4.4--> 
+<head rend="level4">tilstand.</head>
+
+<p>Bindet er noe slitt. Bokblokken er beskåret, med tap av enkelte bokstavdeler og tegn, og den har vært foldet på langs. En del blad er delvis løsnet fra ryggen. Bladene fra og med tittelbladet til og med s. 5/6 samt s. 11–16 er helt løse, men henger delvis sammen innbyrdes. Hele boken har mange fingermerker. Det finnes også noen andre flekker, samt noen små rifter.</p>
+
+               </div>
+                  <!--slutt 7.4.4-->
+                          
+               <div xml:id="msDesc_PG8894_paper">
+                  <!--7.4.5--> 
+<head rend="level4">papir.</head>
+
+<p>Papiret er gulaktig. Siden måler ca. 109 × 172 mm. S. 69–76 er ca. 170 mm høye.</p>
+
+               </div>
+                <!--slutt 7.4.5-->
+                          
+               <div xml:id="msDesc_PG8894_pen">
+                  <!--7.4.6--> 
+<head rend="level4">skriveredskap og -stoff.</head>
+
+<p>Ibsens og Sigurd Ibsens rettelser er skrevet med blyant. August Larsens rettelser er med sort blekk; det finnes også noen streker og tegn med fiolett blekk som kan være hans. Settermarkeringene er med blekk og blyant. Et fingermerke er med fiolett blekk.</p>
+
+               </div>
+                <!--slutt 7.4.6-->
+                          
+               <div xml:id="msDesc_PG8894_handwriting">
+                  <!--7.4.7--> 
+<head rend="level4">hender og skrift.</head><lb/>
+<p>1. <hi rend="italic">Henrik Ibsen</hi>: Skriften er venstrehellende og overveiende omhyggelig. De korrekturtegnene som antas å være hans, er enkelt og tydelig skrevet.</p>   <p>2. <hi rend="italic">Sigurd Ibsen</hi>: Det er sannsynlig at det er han som har utført de gjennomgående korrekturene; de ligner svært på hans korrekturer i manuskript 3 (NBO Ms.8° 1926) til <hi rend="italic">Hærmændene paa Helgeland</hi> 1858 (jf. HIS 3k, 229), selv om skriftbildet alene ikke gir tilstrekkelig grunnlag når det gjelder streker m.m. Disse korrekturene er til dels noe skjødesløst utført. Det kan ikke utelukkes at enkelte av de fullt utskrevne ordene (i hvert fall <quote>sjelden</quote> på s. 115) er i hans hånd; skriften er omhyggelig. Sigurd Ibsens håndskrift i 1874 finnes i hans brev til foreldrene (NBO Brevs. 200).</p>
+<p>3. <hi rend="italic">August Larsen</hi>: Tittelsidens angivelse av utgiversted, trykkeri og år er rettet av ham. Det er sannsynlig at de små blekkstrekene osv. ved trykkfeil er hans (jf. Logeman 1917, 413). Om Larsen, se beskrivelsen av trykkmanuskriptet (manuskript 2) til <hi rend="italic">Brand</hi>, under <HIS:hisRef target="Br_msbeskr.xml#msDesc_Br42622_handwriting"><hi rend="italic">Hender og skrift</hi></HIS:hisRef>.</p>
+<p>4. Settermarkeringene.</p>
+
+               </div>
+                 <!--slutt 7.4.7-->
+                          
+               <div xml:id="msDesc_PG8894_stamp">
+                  <!--7.4.8--> 
+<head rend="level4">stempel og katalogsignatur.</head>
+
+<p>Bibliotekets stempel og katalogsignatur finnes på ryggen.</p>
+
+               </div>
+                  <!--slutt 7.4.8-->
+                          
+               <div xml:id="msDesc_PG8894_provenance">
+                  <!--7.4.9--> 
+<head rend="level4">proveniens.</head>
+
+<p>Manuskriptet tilhører Nasjonalbiblioteket, Oslo. Det ble overført til Håndskriftsamlingen fra det daværende universitetsbiblioteks Norske avdeling i 1931.</p>
+
+               </div>
+                  <!--slutt 7.4.9-->
+                           
+                </div>
+                  <!--slutt 7.4-->
+                        
+                 <div xml:id="msDesc_PG44461">
+                   <!--7.5 -->
+<head rend="level3"><HIS:hisRef target="PG44461.xml">5. nbo m<hi rend="miniscule">s</hi>.4° 4461</HIS:hisRef></head>
+                   
+<p rend="noIndent">Trykt eksemplar av sjette utgave av <hi rend="italic">Peer Gynt</hi> (1885) med strykninger m.m. av Theodor Andersen og Ibsen til oppførelsen ved Dagmarteatret i København 1886.</p>
+
+                   <div xml:id="msDesc_PG44461_content">
+                  <!--7.5.1--> 
+<head rend="level4">innhold og genetisk status.</head>
+
+<p>Eksemplaret er gjennomarbeidet med en rekke strykninger og noen tilføyelser, rettelser og notater, først og fremst av Andersen, men også av Ibsen. Ibsen har skrevet og strøket, ofte begge deler samtidig. Om en strykning er hans eller ei, må i noen tilfeller baseres på skjønn, jf. nedenfor. Det er mulig at også andre har strøket og notert i boken. Som påpekt av Neiiendam (1976, 106) kan man ikke være sikker på hvilke strykninger og notater som er utført av Andersen; for eksempel kan også teatersensoren ha strøket.</p>
+                     
+<p>Ibsen har gjort noen av sceneanvisningene mer utførlige, gjerne som kompensasjon for tekst som han stryker. Av samme grunn utvider han enkelte replikker. At strykningene på disse stedene er hans, sannsynliggjøres ved at de er utført med blekk i samme farve som hans tilføyelser. Det finnes også noen strykninger med slikt blekk uten tekst, også disse er trolig Ibsens. Noen av disse er utført både med blekk og med (uspisset) blyant, det er uvisst hvem som har brukt blyanten. De største inngrepene har Ibsen gjort i første akt, i scenen der Peer setter moren på kverntaket. Ved slutten av scenen med Aases død har han skrevet en instruksjon om at Peers replikker må sies med dempet røst. To ord (boken s. 85 og 100) er rettet i samsvar med de fire første utgavene (1867–76) av stykket. Innlagt finnes to lapper som begge har kommentar av Andersen med Ibsens svar. Den ene gjelder scenen med Aase på kverntaket; i tekst og tegning foreslår Ibsen hvordan scenen kan løses. Den andre har sammenheng med en blekkstrykning (uten tekst) i dialogen mellom Master Cotton, Monsieur Ballon, Trumpeterstraale og v. Eberkopf; Andersen ber om ny tekst som overgang mellom replikkene før og etter strykningen, men Ibsen skriver på lappen at dette ikke er nødvendig, <quote>spillet må udfylde</quote>. I begge tilfeller synes lappene å forutsette Ibsens strykninger/tilføyelser og må følgelig være skrevet etter at Andersen hadde fått eksemplaret tilbake. Ibsens egenhendige kontrakt med Dagmarteatret er limt inn i boken, her oppgir han stykkets tittel slik: <quote>‹Peer Gynt›, Eventyrkomedie i 5 akter</quote>.</p>
+
+<p>De fleste strykningene er foretatt med rød blyant og må være Andersens. De omfatter blant annet hele scenen med Aslak smed i første akt, Peers innledende monolog og scenen med Kari og Aase først i tredje akt, svært mye av fjerde akt, og prestens tale og deler av scenene med Dovregubben og Knappestøberen i femte akt. Ett sted (s. 233) finnes en blekkstrykning (trolig Ibsens) som inngår i en lengre strykning med rød blyant (trolig Andersens); blekkstrykningen opphever ikke den røde, og det kan tyde på at Andersen kan ha fortsatt å stryke etter at Ibsen hadde gjort sitt. Andersen, muligens også andre, har skrevet inn noen regianvisninger, og det finnes en del klammer rundt teksten i rød, blå og alminnelig blyant, til dels flere på en gang. Noen av disse klammene er ledsaget av sidetall som viser at den markerte teksten skal flyttes, noen er ledsaget av regianvisninger, og noen kan indikere strykning. Andersen (eventuelt andre) har dessuten skrevet inn fordanskninger av ord, ofte med blå blyant; i noen tilfeller er særnorske ord bare markert med understrekning, ikke foreslått erstattet. Ingen av fordanskningene er kommentert av Ibsen; de kan være utført etter at han var ferdig med boken.</p>
+                     
+<p>Rettelsene og forkortelsene har ikke fått konsekvenser for senere utgaver av stykket.</p>
+
+                   </div>
+                  <!--slutt 7.5.1-->
+                  
+                <div xml:id="msDesc_PG44461_date">
+                  <!--7.5.2--> 
+<head rend="level4">datering.</head>
+
+<p>Ibsens arbeid med eksemplaret kan ha begynt da kontrakten med Dagmarteatret ble undertegnet 26. oktober 1885, og var ferdig da han returnerte det til Andersen 16. november 1885 (jf. hans brev til Andersen <HIS:hisRef target="B1880-1889ht.xml#B18851117TAn">17. november</HIS:hisRef>). Om lappene, se <HIS:hisRef target="msDesc_PG44461_content"><hi rend="italic">Innhold og genetisk status</hi></HIS:hisRef> ovenfor.</p>
+
+                </div>
+                <!--slutt 7.5.2-->
+                  
+               <div xml:id="msDesc_PG44461_material">
+                  <!--7.5.3--> 
+<head rend="level4">mengde, struktur og rekkefølge.</head>
+
+<p>Manuskriptet består av ett bind (trykt bok). Boken har 263 paginerte sider. Pagineringen begynner med tittelsiden (s. [1]) og løper fra 6 til 263, med utelatelse av sidetall ved begynnelsen av aktene. Versosidene av tittelbladet og av s. 263 er blanke. Bindet måler ca. 115 × 180 mm. Rygg og hjørner er i rødt skinn, bindets innhold er angitt med gulltrykk på ryggen, som også har striper i gull. Permen er trukket med sort shirting. Forsatspapiret har fine rifler og trykt blomstermønster på gulaktig bunn, versosiden er umønstret. Snittet er svakt rødspettet.</p>
+
+<p>I boken finnes to løse lapper med tekst av Andersen og Ibsen, se <HIS:hisRef target="msDesc_PG44461_content"><hi rend="italic">Innhold og genetisk status</hi></HIS:hisRef> ovenfor. Den som gjelder scenen med Aase på kvernhustaket, mangler øvre del, med tap av noe av Andersens tekst. Ibsens tekst står under denne, med hans tegning og mer tekst på versosiden. Lappen måler 104 × 98 mm. Den andre lappen har tekst av Andersen og Ibsen på samme side, versosiden er blank. Den måler 90 × 137 mm.</p>
+
+<p>Festet til boken, foran tittelbladet, ligger Ibsens kontrakt med Dagmarteatret 26. oktober 1885 samt et telegram fra ham til Hegel <HIS:hisRef target="1880-1889ht.xml#B18851023FH">23. oktober 1885</HIS:hisRef>. Bak bokblokken er festet tre brev fra Ibsen til Andersen (<HIS:hisRef target="1880-1889ht.xml#B18860204TAn">4. februar 1886</HIS:hisRef>, <HIS:hisRef target="B1880-1889ht.xml#B18851117TAn">17. november 1885</HIS:hisRef>, <HIS:hisRef target="B1880-1889ht.xml#B18860807TAn">7. august 1886</HIS:hisRef>, i denne rekkefølge). Løst i boken ligger videre et udatert brev fra Edvard Grieg til Andersen (avslag på en invitasjon), Griegs kontrakt med Andersen om musikken til <hi rend="italic">Peer Gynt</hi> 25. november 1885, et fotografi av Andersen, et trykt program for oppførelsen av <hi rend="italic">Peer Gynt</hi> på Det ny Teater 27. september 1933, samt en bekreftet gjennomslagskopi av brev fra l. Bense til R. Neiiendam 28. august 1933.</p>
+
+               </div>
+                <!--slutt 7.5.3-->
+                           
+               <div xml:id="msDesc_PG44461_condition">
+                  <!--7.5.4--> 
+<head rend="level4">tilstand.</head>
+
+<p>Bokblokken er beskåret ved innbindingen, med tap av bokstaver og tegn (gjelder også Ibsens tekst), og det finnes noen flekker og misfarving. Den løse lappen med Ibsens tegning er noe skadet i overkant med tap av tekst, lappen har ellers mindre bretter og skrukker.</p>
+
+               </div>
+                  <!--slutt 7.5.4-->
+                          
+               <div xml:id="msDesc_PG44461_paper">
+                  <!--7.5.5--> 
+<head rend="level4">papir.</head>
+
+<p>Papiret i boken er gulaktig. Siden måler ca. 106 × 172 mm. Papiret i de to lappene er gulaktig med bunn- og kjedelinjer. Om størrelsen på lappene, se <HIS:hisRef target="msDesc_PG44461_material"><hi rend="italic">Mengde, struktur og rekkefølge</hi></HIS:hisRef> ovenfor.</p>
+
+               </div>
+                <!--slutt 7.5.5-->
+                          
+               <div xml:id="msDesc_PG44461_pen">
+                  <!--7.5.6--> 
+<head rend="level4">skriveredskap og -stoff.</head>
+
+<p>Ibsen har brukt blekk til tekst og strykninger i boken og til tekst og tegning på lappene. Skriftbildet er brunt, til dels mørkebrunt. Ett sted (s. 117) har han skrevet i boken med blyant. Andersen (og muligens andre) har brukt alminnelig blyant samt rød og blå farveblyant (hovedsakelig slik: alminnelig blyant til tekst og til klammer rundt tekst, rød blyant til strykninger og klammer rundt tekst, blå blyant til fordanskninger, men sporadisk også til annen tekst, til klammer rundt tekst og til strykning).</p>
+
+               </div>
+                <!--slutt 7.5.6-->
+                          
+               <div xml:id="msDesc_PG44461_handwiting">
+                  <!--7.5.7--> 
+<head rend="level4">hender og skrift.</head><lb/>
+<p>1. <hi rend="italic">Henrik Ibsen</hi>: Ibsens skrift er venstrehellende og omhyggelig.</p>                 
+<p>2. <hi rend="italic">Theodor Andersen</hi>: Han skriver til dels noe skjødesløst. Andersen (1835–1909), opprinnelig skuespiller, var direktør ved Dagmarteatret i tre sesonger fra 1883/84 til 1885/86 (Ibsen 1979–81, b. 2, 87).</p>                 
+<p>3. <hi rend="italic">Andre</hi>: Det er mulig at også andre har strøket og skrevet i boken, jf. <HIS:hisRef target="msDesc_PG44461_content"><hi rend="italic">Innhold og genetisk status</hi></HIS:hisRef> ovenfor.</p>
+
+               </div>
+                  <!--slutt 7.5.7-->
+                          
+               <div xml:id="msDesc_PG44461_provenance">
+                  <!--7.5.8--> 
+<head rend="level4">proveniens.</head>
+
+<p>Boken med innlagte dokumenter tilhører Nasjonalbiblioteket, Oslo. Biblioteket kjøpte den i 2006 fra Norman Kokkin og hans barn Per Kokkin, Annelise Kokkin og Wenche Kokkin Øyjordsbakken. De hadde mottatt den som gave fra Norman Kokkins svigerfar (barnas morfar) Louis Bense, gift med Theodor Andersens eldste datter (Theodora Bense).</p>
+
+               </div>
+                  <!--slutt 7.5.8-->
+                             
+                </div>
+                  <!--slutt 7.5-->
+                                        
+             </div>
+            </body>
+            </text>
+    
+</TEI>

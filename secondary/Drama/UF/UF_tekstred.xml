@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title level="s">Henrik Ibsens skrifter, elektronisk versjon</title>
+<title level="a">Tekstredegjørelse til De unges Forbund</title>
+<author>ved Christian Janss</author>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
+<respStmt>
+<resp>Kodeteknisk støtte og utvikling</resp>
+<name>AKSIS: Avdeling for kultur, språk og informasjonsteknologi, Universitetsforskning i Bergen (Unifob AS)</name>
+</respStmt>
+<respStmt>
+<resp>Koding</resp>
+<name xml:id="NME">Nina Marie Evensen</name>
+</respStmt>
+<respStmt>
+<resp>Tekstarbeid</resp>
+<name>Nina Marie Evensen</name>
+<name>Erlend Lønnum</name>
+</respStmt>
+<respStmt>
+<resp>Kontroll av sitater og referanser m.m.</resp>
+<name>Gaute Sortland</name>
+<name/>
+</respStmt>
+<respStmt>
+<resp>Kommentarentiteter</resp>
+<name>Erlend Lønnum</name>
+</respStmt>
+<respStmt>
+<resp>Kodekontroll</resp>
+<name>Nina Marie Evensen</name>
+</respStmt>
+</titleStmt>
+<publicationStmt>
+<publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+<distributor xml:id="HISe">Universitetet i Oslo</distributor>
+<date when="2012" xml:id="HISe-date"/>
+<pubPlace>Oslo</pubPlace>
+</publicationStmt>
+<sourceDesc>
+<p>Dette dokumentet har ingen kilde.</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<tagsDecl>
+
+</tagsDecl>
+</encodingDesc>
+<profileDesc>
+<langUsage>
+<language ident="nob"/>
+<language ident="fre"/>
+<language ident="eng"/>
+<language ident="ger"/>
+<language ident="rus"/>
+<language ident="spa"/>
+<language ident="ita"/>
+<language ident="swe"/>
+<language ident="ice"/>
+<language ident="pol"/>
+<language ident="dut"/>
+<language ident="fin"/>
+<language ident="cze"/>
+</langUsage>
+</profileDesc>
+<revisionDesc>
+<change>
+<date>17.01.2013</date>
+<name>SBT</name><title>Lenkekoding</title>
+</change>
+<change>
+<date>30.09.2012</date>
+<name>SBT</name><title>Omkoding til TEI P5 og HISe</title>
+</change>
+<change>
+<date>Februar-mars 2009</date>
+<name>AH</name><title>Oppdatering</title>
+Kodet Oversettelser i Ibsens levetid. Filen er valid.
+</change>
+<change>
+<date>13.02.2008</date>
+<name>NME</name><title>Opprettet xml-fil</title>
+Opprettet xml-fil med overordnet struktur og tei-header for 6k. Filen er valid.
+</change>
+</revisionDesc>
+</teiHeader>
+<text type="introduction">
+<body>
+<div type="editorialStatement" xml:id="edState">
+
+<div xml:id="edState_basetext">
+<head rend="level3">valg av grunntekst</head>
+<p rend="noIndent">Grunnteksten, grunnlaget for HIS’ hovedtekst, er førstetrykket fra 1869.</p>
+</div>
+
+<div xml:id="edState_bibl">
+<head rend="level3">bibliografiske opplysninger</head>
+<p rend="noIndent">Ved tekstetableringen er det kollasjonert følgende eksemplarer:</p>
+
+<list type="standardList">
+<item n="1">Nasjonalbibliotekets eksemplar (74ga05813)</item>
+<item n="2">Nasjonalbibliotekets eksemplar (84ga07075)</item>
+<item n="3">Nasjonalbibliotekets eksemplar (84ga07076)</item>
+</list>
+
+<p rend="noIndent">Det er avdekket satsintern variasjon (endringer foretatt under trykkeprosessen i samme opplag) i teksten i de tre eksemplarene. Det er derfor kollasjonert ytterligere fem eksemplarer:</p>
+
+<list type="standardList">
+<item n="4"><hi rend="italic">Henrik Ibsens skrifter</hi>s eksemplar</item>
+<item n="5">Deichmanske biblioteks eksemplar (S Ibs 1 Ex)</item>
+<item n="6">Vigdis Ystads eksemplar</item>
+<item n="7">Universitetsbiblioteket i Bergens eksemplar (75d926901)</item>
+<item n="8">Universitetsbiblioteket i Trondheims eksemplar (06a129884)</item>
+</list>
+
+<p rend="noIndent">Variasjonen mellom eksemplarene angår manglende tegnsetting i ark 14, som derfor er kollasjonert i de fem ekstraeksemplarene. Det opplyses om internvariasjonen i eksemplarene 1–3 i de tekstkritiske notene. Nr. 1, det mest feilfrie, er brukt som hovedeksemplar og er grunnlag for beskrivelsen i det følgende.</p>
+</div>
+
+<div xml:id="edState_bibl_binding">
+<head rend="level4">innbinding, forsatsblad og omslag.</head>
+<p>Boken er beskåret, har tresidet gullsnitt og er bundet inn uten originalt omslagsblad. Innbindingen er håndverksmessig utført, forlagsbind i grønn helshirting. Ryggen har forfatternavn og tittel i gullpreg (<quote>H. Ibsen, / De Unges Forbund</quote>, tittelen i fraktur) med ornamenter over og under. Forpermen er dekorert med tittel i fraktur omgitt av et blomsterornament i gullpreg. På bakpermen står forlagets logo i blindpreg. Forsatsbladene er dobbeltblad i glanset, tykt, hvitt papir, med den ene delen limt til for- og bakperm. Et flyblad er limt til forsatsbladenes frie del foran og bak. Eksemplaret er tidligere eid av Johan Schweigaard, hvis ex libris med teksten <quote>Fructus inter Folia</quote> er innlimt på forpermens innside. Under står et tidligere ex libris der man kan skimte teksten <quote>J. Schweigaard</quote> samt en annen tekst. Schweigaards navnetrekk står dessuten øverst på fremre flyblads rectoside.</p>
+</div>
+
+<div xml:id="edState_bibl_format">
+<head rend="level4">format og paginering.</head>
+<p>Boken består av 14 ark falset i oktavformat (8 blad, 16 sider pr. ark), ca. 110 × 171 mm.<note type="footer">Målene gjelder bokens blad, bredde × høyde.</note> Arksignaturene 1–14 (med teksten <quote>Henrik Ibsen: De unges Forbund.</quote>) finnes på s. 17, 33, 49, 65, 81, [97], 113, 129, 145, 161, 177, 193 og 209. Bokens omfang er på 226 sider; den siste tekstsiden står på et innlimt blad (med blank versoside). Pagineringen er med arabiske tall og inkluderer tittelblad s. [1], blank s. [2], stykkets tittel s. [3], rollelisten s. [4], begynnelsen på første akt s. [5] og løper fra s. 6 til 225. På sidene [46], [97], [134] og [185] begynner nye akter, og sidetall er her utelatt.</p>
+</div>
+
+<div xml:id="edState_bibl_typo">
+<head rend="level4">typografi.</head>
+<p>Teksten i <title rend="italic">De unges Forbund</title> (1869) er satt i antikva. Tittelbladet er satt med midtstilte majuskler. Tittelen s. [3] er midtstilt og satt i konturerte majuskler. Rollelisten er venstrestilt, i en mindre skriftgrad enn replikkene, rollenavnene i et fett snitt, overskriften <quote>Personerne</quote> er sentrert, sperret og satt i et fett snitt. Aktoverskrifter er satt med midtstilte majuskler, i en større grad enn replikkene. Rollenavn før replikk står sperret og midtstilt på egen linje og er satt i samme grad som replikkene. Sceneanvisninger er satt i en mindre grad enn replikkene (samme som rollelisten), etter rollenavn står de på midtstilt, egen linje. De frittstående sceneanvisningene er blokkjustert; ved slutten av eller i replikker står de i flukt med teksten. Alle sceneanvisninger står i parentes. Sperring er benyttet som utheving. Rollenavn i sceneanvisninger står i samme grad som disse, men er sperret. Etter rollelisten og aktoverskrifter står enkle skillestreker. Ved aktslutt er det benyttet en dobbel finalstrek. Sidetall er plassert i overmarg med en strek under.</p>
+<p>Trykkvaliteten er jevnt god, men det er forekomster av svakt trykk og skadede typer, feilaktig bruk av fett snitt, gal typestørrelse, for store mellomrom, manglende sluttparenteser, forskyvninger i satsen og <hi rend="italic">ö</hi> for <hi rend="italic">ø</hi>. Slike typografiske mangler er i HIS’ hovedtekst rettet stilltiende.</p>
+</div>
+
+<div xml:id="edState_bibl_paper">
+<head rend="level4">papir og tilstand.</head>
+<p>Fremre forsats er sprukket i falsen. Papiret i bokblokken er svakt gulnet. Ryggen og permens hjørner er svakt slitt. For øvrig er eksemplaret i god stand.</p>
+</div>
+
+<div xml:id="edState_textsources">
+<head rend="level3">øvrige tekstkilder</head>
+<p rend="noIndent">De øvrige tekstkildene fra Ibsens levetid består av manuskripter og trykte utgaver. Manuskriptene omfatter et egenhendig arbeidsmanuskript, NBO Ms. 4° 1109a (første fullstendige, bevarte utkast); et egenhendig arbeidsmanuskript, NBO Ms. 4° 1109b (midlertidig renskrift, med rettelser); et egenhendig trykkmanuskript, KBK Collin 262, 4°, II.1; en rolleliste, NBO Ms. 8° 1937a (sannsynligvis utkast til vedlegg i tapt brev); et trykt eksemplar av annen utgave med egenhendige rettelser til tredje utgave, NBO Ms. 8° 1924. (For nærmere beskrivelser, se <HIS:hisRef target="UF_msbeskr.xml"><hi rend="italic">Manuskriptbeskrivelse</hi></HIS:hisRef>.) De trykte utgavene i Ibsens levetid omfatter: 1. utg. 1869, 2. utg. 1869, 3. utg. 1874, 4. utg. 1880, 5. utg. 1883, 6. utg. 1895, FU 4 1898.</p>
+<p>Det er mange større og mindre forskjeller mellom tekstkildene. NBO Ms. 4° 1109a er et utkast, men til grunn for dette ligger et eldre utkast, jf. Ibsens brev til Hegel <HIS:hisRef target="B1844-1871ht.xml#B18681031FH">31. oktober 1868</HIS:hisRef>, hvor han forteller at stykket, i prosa og med tittelen <title rend="italic">De unges Forbund eller Vorherre &amp; Comp:</title>, foreligger som et ferdig utkast, og at første akt allerede er ferdig skrevet ut. Det eldste utkastet er ikke bevart, men vi har grunn til å tro at den ferdige akten som Ibsen omtaler, er den vi finner i Ms. 4° 1109a, som ble ferdig i slutten av november 1868 (jf. manuskriptets egen datering). Jf. også ES 3, 424 som omtaler (uten å gi eksempler) feil i Ms. 4° 1109a som må skyldes avskrift. Ibsen gikk bort fra den siste delen av tittelen etter Hegels anmodning, den ville etter dennes oppfatning vekke anstøt i Danmark, men også i Norge og Sverige. Hegel ønsket også at han ikke måtte bruke undertittelen i selve teksten (jf. Hegels brevkonsept 2. november 1868 (KBK NKS 3742, 4°, II), og HIS 12k, 382). Ibsen etterkom begge deler. De stedene Ibsen har brukt uttrykket i Ms. 4° 1109a, er i Ms. 4° 1109b enten omformulert eller videreført, men strøket. Fjeldbos karakteristikk av Stenborg som <quote>Vorherre junior</quote> i Ms. 4° 1109a ble heller ikke videreført i Ms. 4° 1109b. Under utarbeidelsen av Ms. 4° 1109a har Ibsen foretatt flere rettelser og endringer, blant annet bytter Margrete navn til Selma i slutten av annen akt, Stenborg til Stensgaard i begynnelsen av tredje akt, og Madam Bagholmen får midtveis i stykket (etter noe vakling) navnet Rundholmen.</p>
+<p>Selv om Ms. 4° 1109b har mer karakter av renskrift, er også det i partier et utkast. ES (3, 423–24) argumenterer overbevisende for at Ms. 4° 1109b er skrevet ennå mens Ms. 4° 1109a var under arbeid, slik at renskriften (b) er utført akt for akt etter hvert som utkastet (a) ble ferdig, jf. <HIS:hisRef target="UF_msbeskr.xml"><hi rend="italic">Manuskriptbeskrivelse</hi></HIS:hisRef>. De rettelser som finnes i Ms. 4° 1109a, og som er opptatt i Ms. 4° 1109b, tilhører derfor noenlunde samme arbeidsfase. Forskjellene mellom Ms. 4° 1109a og b omfatter stilistikk, ortografi og rollenavn, men det er ingen større strukturelle endringer. Beretningen i annen akt om hvordan Lundestad sørget for å sikre sin sønn mot <quote>Krigsmolest</quote> ved å gjøre ham til militær, skrives av etter 1109a, men strykes (og gjenfinnes senere som motiv i diktet <quote>Troens grund</quote>, jf. HU 6, 349; stedet har også en referanse til sesjonsscenen i <title rend="italic">Peer Gynt</title>, <ptr type="ht" target="PGht.xml" corresp="koPG_ht_7"/>). Ms. 4° 1109b har dessuten flere sceneanvisninger enn Ms. 4° 1109a.</p>
+<p>Til grunn for trykkmanuskriptet, KBK Collin 262, 4°, II.1, ligger NBO Ms. 4° 1109b, noe det eldre manuskriptets datering samt en del tekstendringer der som er tatt til følge i trykkmanuskriptet, viser. Ibsen har i NBO Ms. 4° 1109b notert datoer for forsendelse av trykkmanuskriptets deler til Hegel. Endringen fra <quote>en Anbefaling for Stensgaards Valg</quote> i NBO Ms. 4° 1109b (legg 21, bl. [3]v) til det endelige <quote>politiske testament til det norske folk</quote> (legg 14, bl. [2]r) tilskriver ES (3, 424) Ole Gabriel Uelands tale i Stortinget 12. mars 1869, jf. kommentar til <ptr type="internal" target="UFht.xml" corresp="koUF_890"/>. Dersom formuleringen er et sitat fra talen, kan fjerde akt av trykkmanuskriptet ikke være skrevet før denne datoen. Det stemmer ellers med Ibsens egen datering i Ms. 4° 1109b. Trykkmanuskriptet adskiller seg for øvrig svært lite fra forelegget, og heller ikke fra førstetrykket (med unntak av en tekstlakune i trykkmanuskriptet som skyldes to tapte blad, jf. <HIS:hisRef target="UF_msbeskr.xml"><hi rend="italic">Manuskriptbeskrivelse</hi></HIS:hisRef>). Forlagets korrekturleser har tilføyd flere kommaer i førstetrykket, særlig foran bisetning etter hovedsetning.</p>
+<p><quote>Rollebesættning</quote>, NBO Ms. 8° 1937a, stammer sannsynligvis fra sommeren 1869, før stykkets førsteoppførelse på Christiania Theater 18. oktober 1869. (Om avvik fra den rollefordeling som faktisk ble brukt, se <HIS:hisRef target="UF_innl.xml#intro_performance"><hi rend="italic">Oppførelser</hi></HIS:hisRef>.) Rollelisten er tatt med som tekstkilde i HIS siden den kan ha vært et ledd i utarbeidelsen av stykket. Opplysningen nederst på siden om hvor handlingen foregår, er en unødvendig del av forslaget til besetningen av rollene, og dette kan tyde på at Ibsen har tatt et kassert blad fra et arbeidsmanuskript og brukt det som utgangspunkt for å kladde rollefordelingen.</p>
+<p>Hegel hadde ifølge brevkonsept av 2. november 1868 (KBK NKS 3742, 4°, II) foreslått å la stykket sette og trykke i tre eksemplarer slik at det kunne innleveres til teatrene med håp om oppførelse i vintersesongen 1869. Siden, etter femte gangs oppførelse, skulle det trykkes som bok og sendes ut i handelen. Men Ibsen rakk ikke å bli ferdig så tidlig, først <HIS:hisRef target="B1844-1871ht.xml#B18690220FH">20. februar 1869</HIS:hisRef> kunne han meddele Hegel at renskriften var underveis. Hegel svarer (i brevkonsept 4. mars 1869, KBK NKS 3742, 4°, II): <quote>Kan Bogtr. ikke lade Skriften staae i saa lang Tid, hvad jo er rimeligt, er der vel fra Deres Side Intet til Hinder for at Oplaget trykkes strax, naar jeg kun indestaaer for, at der ikke kommer flere Exp. ud end de 3 til Direct. og 1 til Dem Selv.</quote> I brevet til Hegel <HIS:hisRef target="B1844-1871ht.xml#B18690314FH">14. mars</HIS:hisRef> sier Ibsen seg enig i at utgaven kan trykkes med en gang, <quote>thi jeg kan intet forandre eller rette</quote>. Hegel kvitterer (i brevkonsept 16. mars 1869, KBK NKS 3742, 4°, II) med å meddele at <quote>Oplaget trykkes strax og bliver liggende hos Bogtrykkeren</quote>. I mai var stykket trykkeklart, og satsen ble, som det fremgår av korrespondansen, med en gang benyttet til et helt opplag. Først i juni 1869, etter forsinkelser i setteriet, var det ferdig trykt, og 31. september 1869 forelå det i bokhandelen. At teksten i de eksemplarene som samme måned ble sendt til teaterdireksjonene (jf. kommentarer til brev til Hegel <HIS:hisRef target="B1844-1871ht.xml#B18690922FH">22. september 1869</HIS:hisRef>), skulle være annerledes enn i opplaget som helhet, er derfor usannsynlig. I et brevkonsept datert 21. mai 1869 (KBK NKS 3742, 4°, II) redegjør Hegel for forsinkelser som oppstod i setteriet, og skriver samtidig at han har sendt Ibsen to korrekturark til gjennomsyn og vil sende de øvrige fortløpende. Ibsen hadde fått rettet noen feil i trykkmanuskriptet før dette, jf. hans brev til Hegel <HIS:hisRef target="B1844-1871ht.xml#B18690407FH">7. april 1869</HIS:hisRef>: <quote>De paapegede Smaafejl er ganske rigtigt rettede i Korrekturen.</quote> Den <HIS:hisRef target="B1844-1871ht.xml#B18690502FH">2. mai</HIS:hisRef> skriver han til Hegel og sier seg tilfreds med korrekturen. HIS kjenner ikke til hva som videre hendte med disse arkene; det er sannsynlig at de ble returnert til forlaget.</p>
+<p>NBO Ms. 8° 1924 er et trykt eksemplar av annen utgave med egenhendige rettelser til tredje utgave. Her finnes hovedsakelig ortografiske rettelser i tråd med anbefalingene fra det skandinaviske rettskrivningsmøtet i Stockholm 25.–30. juli 1869, der Ibsen deltok, om ny ortografi i norsk, svensk og dansk. Vi kjenner til at det kan ha eksistert et teatermanuskript med egenhendige endringer, utarbeidet på bakgrunn av Adolf Strodtmanns oversettelse i 1872 beregnet på en oppførelse i München 1877. Det er ingenting som tyder på at <title rend="italic">De unges forbund</title> ble oppført i München før 1900, men en oppsetning har åpenbart vært under forberedelse allerede i 1877. Teatermanuskriptet som skulle brukes i 1877, var et samarbeid mellom Carl Jenke og Ibsen og dreide seg om forkortelser og bearbeidelser, noe vi antar med støtte i et brev fra Ibsen til oversetteren Wilhelm Lange 17. april 1880. Lange hadde ønsket å oversette stykket på nytt, og Ibsen svarer at han gjerne går inn på forslaget, men ber Lange om å ta hensyn til forkortelser og forandringer som han har foretatt i teksten sammen med Carl Jenke. Et <quote>sådant rettet exemplar</quote> tilbyr Ibsen seg å få utlånt fra biblioteket i Münchens Hof- und Nationaltheater. Om Wilhelm Lange virkelig fulgte resultatet av Ibsens og Jenkes endringer i sin nyoversettelse, kan vi ikke si med sikkerhet, i og med at scenemanuskriptet ikke har latt seg oppspore innenfor HIS’ rammer.<note type="footer">Det befinner seg ikke i Deutsches Theatermuseum, München. Das Archiv des Bayerischen Staatsschauspiels kunne ikke gi opplysninger i saken siden det har vært stengt under HIS’ arbeid med teksten.</note> Imidlertid viser en sammenligning av Langes oversettelse med Strodtmanns betydelige forskjeller. Forkortelsene bidrar til knappere, mindre ordrike replikker. De endringer hvor også ny tekst er lagt til, kan styrke teorien om at Ibsen har hatt andel i dem. En mer detaljert undersøkelse av forskjellene mellom førsteutgavens tekst og Langes oversettelse ville være av interesse dersom det kunne sies med større sikkerhet at Ibsens egenhendige eller autoriserte endringer lå til grunn for Langes tekst.</p>
+<p>I de senere trykkene er enkelte mindre trykkfeil kommet til etter førsteutgaven (jf. også MU 5, 12). I alle de trykte utgavene står teksten <quote>Teppet falder</quote> etter hver akt, mens ingen av manuskriptene har denne.</p>
+<p>I tillegg til HIS’ hovedtekst finnes en diplomatarisk og søkbar gjengivelse samt en fotografisk faksimile av grunnteksten. De øvrige tekstkildene gjengis diplomatarisk, manuskriptene også med faksimile, med mulighet for søk og sammenligning med grunnteksten.</p>
+<p>HIS har i margen sidereferanser til grunnteksten og til HU.</p>
+</div>
+
+<div xml:id="edState_critical">
+<head rend="level3">tekstkritiske bemerkninger</head>
+<p rend="noIndent">Ved emendasjoner er også de andre tekstkildene fra Ibsens levetid blitt konsultert.</p>
+<p>Ordvalg, ortografi og grammatikk i grunnteksten er, som offisiell norsk i samtiden, i tråd med danske normer, men med visse særegenheter, som hos Ibsen øker i omfang særlig fra <title rend="italic">Kjærlighedens Komedie</title>, jf. innledningene til <title rend="italic">Kjærlighedens Komedie</title> (under <HIS:hisRef target="KK_innl.xml#intro_background_dramaform"><hi rend="italic">Dramaform</hi></HIS:hisRef>, siste del) og <title rend="italic">Kongs-Emnerne</title> (under <HIS:hisRef target="KE_innl.xml#intro_background"><hi rend="italic">Bakgrunn</hi></HIS:hisRef>, siste del). Ibsen fortsetter i <title rend="italic">De unges Forbund</title> dobbeltskrivningen av konsonant etter kort vokal i trykksterk stavelse (f.eks. <hi rend="italic">opp</hi>, <hi rend="italic">till</hi>), men er ikke helt konsekvent (f.eks. <hi rend="italic">Øjeblik</hi>). I tråd med anbefalingene fra det skandinaviske rettskrivningsmøtet i Stockholm 1869 skriver han <hi rend="italic">ej</hi>, <hi rend="italic">øj</hi>, mot før <hi rend="italic">ei</hi>, <hi rend="italic">øi</hi>. Men i strid med anbefalingene beholder han stor forbokstav i substantiver og <hi rend="italic">aa</hi> for <hi rend="italic">å</hi>. (Se også <HIS:hisRef target="UF_komm.xml"><hi rend="italic">Ord- og sakkommentarer</hi></HIS:hisRef>.)</p>
+<p>I HIS er tegnsetting standardisert på følgende måte: Etter titler, overskrifter og rolleinnførsler i rollelister samt replikkåpner i dramateksten er eventuelle skilletegn (punktum, komma, kolon) fjernet. I sceneanvisninger først i akt og scener, i frittstående sceneanvisninger mellom replikker og i stedsbeskrivelser etter rolleliste er eventuell parentes fjernet. Disse elementene har gjennomgående fått stor forbokstav og avsluttes med punktum. Frittstående sceneanvisninger har beholdt eventuelle <quote>indre</quote> parenteser. Sceneanvisninger til slutt i replikker regnes som del av replikken dersom de er ufullstendige setninger, og som frittstående, utenfor replikken, dersom setningen er fullstendig.</p>
+<p>Sceneanvisninger inne i replikk, inkludert de som står til slutt i replikk (ikke frittstående), begynner med liten forbokstav og avsluttes uten interpunksjon. Sceneanvisninger som følger rett etter replikkinnehaverens navn, har ikke parenteser. Øvrige sceneanvisninger i replikk har parentes.</p>
+<p>Skillestreker er beholdt der de har strukturerende funksjon, for eksempel når de markerer sceneskift og sceneskiftet ikke er markert på annen måte. Skillestreker som bare har karakter av ornament, er ikke gjengitt. Grunntekstens typografiske system for øvrig er ikke forsøkt imitert i HIS.</p>
+<p>Tekstfeilene i <title rend="italic">De unges Forbund</title> (1869) omfatter i hovedsak mindre setterfeil, som for eksempel <quote>ubønhønligt</quote> for <quote>ubønhørligt</quote>, men også gal grammatikk: Ibsen bruker ikke lenger flertallsformer av verb, men det er to forekomster i <title rend="italic">De unges Forbund</title>, som begge skyldes setteren siden de ikke finnes i manuskriptene: <quote>Der synge Degnene Amen</quote> (<ptr type="ht" target="UFht.xml" corresp="koUF_ht_5"/>) og <quote>at vi ogsaa ere frisindede</quote> (<ptr type="ht" target="UFht.xml" corresp="koUF_ht_6"/>). Det siste tilfellet har Ibsen selv rettet i NBO Ms. 8° 1924. Begge tilfellene er rettet i HIS’ hovedtekst. Alle HIS’ rettelser, bortsett fra de stilltiende, er anført i det tekstkritiske noteapparatet. Vakling i ortografi (f.eks. <hi rend="italic">til/till</hi>, <hi rend="italic">Ytringer/Yttringer</hi>) og interpunksjon som avspeiler tidens og Ibsens vekslende praksis, er ikke rettet i HIS. Det samme gjelder hans særegne stavemåte <hi rend="italic">skjelden</hi>, jf. kommentar til <ptr type="internal" target="UFht.xml" corresp="koUF_317"/>.</p>
+<p>For en mer generell oversikt over samtidens språknormer og Ibsens språk vises det til redegjørelser i innledningene til <title rend="italic">Catilina</title> <HIS:hisRef target="C1_innl.xml#intro_background_language">1850</HIS:hisRef> og <HIS:hisRef target="C2_innl.xml#intro_background_language">1875</HIS:hisRef>. Det vises dessuten til de <HIS:hisRef target="tekstkritiskeRetningslinjer.xml">tekstkritiske retningslinjene</HIS:hisRef> for HIS.</p>
+</div>
+
+<div xml:id="edState_editions">
+<head rend="level3">tidligere tekstkritiske utgaver</head>
+<p rend="noIndent">I FU er <title rend="italic">De unges Forbund</title> trykt i bind 4, med en innledning om tilblivelsen, oversettelser, sekundærlitteratur og oppførelser på s. I–V. (HIS har oppdaget flere internvariasjoner i FU: I ett eksemplar er tittelblad og rolleliste plassert i de bibliografiske opplysningene til <title rend="italic">Brand</title> i bind 3; ett annet eksemplar mangler deler av J.B. Halvorsens bibliografiske innledning.) I MU er <title rend="italic">De unges Forbund</title> trykt i bind 2. Rettelser foretatt av Johan Storm mot hans tekstgrunnlag, FU, og etter sammenligning av alle trykte utgaver i Ibsens levetid er oppført i MU 5, 11–12; errata på s. 40. I ES er forarbeider og utkast til <title rend="italic">De unges Forbund</title> trykt i bind 2, [113]– 54, med opplysninger og varianter i bind 3, 420–34. ES har ikke kjent eller hatt tilgang til NBO Ms. 8° 1937a og NBO Ms. 8° 1924. I SU er <title rend="italic">De unges Forbund</title> trykt i bind 3, tekstgrunnlaget oppgis (SU 7, 296) å være tredje utgave, rettet etter NBO Ms. 8° 1924 og MU. De viktigste feilene er nevnt på s. 296. I HU er <title rend="italic">De unges Forbund</title> trykt i bind 6. Grunnteksten er førsteutgaven, men tegnsettingen og noen ortografiske inkonsekvenser er endret med støtte i trykkmanuskriptet, KBK Collin 262, 4°, II.1 (jf. HU 6, 616–17). I HU 6, 493–619 redegjøres for og trykkes de tekststedene i NBO Ms. 8° 1937a–b og KBK Collin 262, 4°, II.1 som avviker fra førstetrykket. I HU 19, 45 er rollebesetningen, NBO Ms. 8° 1937a, gjengitt.</p>
+</div>
+</div>
+</body>
+</text>
+</TEI>

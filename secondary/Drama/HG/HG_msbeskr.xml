@@ -1,0 +1,654 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title level="s">Henrik Ibsens skrifter, elektronisk versjon</title>
+        <title level="a">Manuskriptbeskrivelser til Hedda Gabler</title>
+        <author>ved Tone Modalsli</author>
+        <funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+        <editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
+        <respStmt>
+          <resp>Kodeteknisk støtte og utvikling</resp>
+          <name>AKSIS: Avdeling for kultur, språk og informasjonsteknologi, Universitetsforskning i Bergen (Unifob AS)</name></respStmt>
+        <respStmt><resp>Koding</resp>
+          <name>Erlend Lønnum</name></respStmt>
+        <respStmt><resp>Tekstarbeid</resp>
+          <name>Erlend Lønnum</name></respStmt>
+        <respStmt><resp>Kontroll av sitater og ordbøker</resp>
+          <name xml:id="IK">Ingrid Korvald</name>
+          <name>Erlend Lønnum</name></respStmt>
+        <respStmt><resp>Kontroll av littlist og referanser</resp>
+          <name>Erlend Lønnum</name></respStmt>
+        <respStmt><resp>Kommentar-, intern- og ht-entiteter</resp>
+          <name>Erlend Lønnum</name></respStmt>
+        <respStmt><resp>Kodekontroll</resp>
+          <name/>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+        <distributor xml:id="HISe">Universitetet i Oslo</distributor>
+        <date when="2011" xml:id="HISe-date"/>
+        <pubPlace>Oslo</pubPlace>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Fila bygger på 9k_sisteversjon.xml.</p>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <tagsDecl>
+        
+      </tagsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="nob"/>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change>
+        <date>07.11.11</date>
+        <name>SBT</name><title>Skilte ut manuskriptbeskrivelsene til HG i en egen fil. Kodet om til HISe og TEI P5.</title>
+      </change><change>
+        <date/>
+        <name>Erlend Lønnum</name><title>Koding og oppdatering</title>
+      </change>
+      <change>
+        <date/>
+        <name>Erlend Lønnum</name><title>Opprettet xml-fil</title>
+      </change>
+    </revisionDesc>
+  </teiHeader>
+  
+<text type="introduction">
+<body>
+<div type="msDescription" xml:id="msDesc">
+
+<p rend="noIndent">De mindre notatene og arbeidsmanuskriptene til <title rend="italic">Hedda Gabler</title> er samlet under katalogsignaturene NBO Ms.8° 809, 1942 og 2638–39. Ms.8° 1942 og 2638–39 var ikke kjent for ES. Den relative kronologien er usikker, og rekkefølgen manuskriptene presenteres i, er tentativ. I det følgende omtales delene av Ms.8° 809 som manuskript 1, 5, 6 og 9, Ms.8° 1942 som manuskript 3 og 7 og Ms.8° 2638–39 som manuskript 4 og 2, jf. ES (3, 486–89) og <title rend="italic">The Oxford Ibsen</title> <bibl>(Ibsen 1960–77, b. 7, 475–97)</bibl>. Ms.8° 809 (ikke Ms.8° 809:4) og Ms.8° 1942 er skrevet på samme slags papir; i Ms.8° 809:1–3, 5–7 og Ms.8° 1942 er formatet ca. halvparten av formatet i Ms.8° 809:8–13. I Ms.8° 809:4 (se manuskript 9) er papirtypen den samme som i trykkmanuskriptet (manuskript 10).</p>
+
+<div xml:id="msDesc_HG82639"> 
+<head rend="level3">2. nbo m<hi rend="miniscule">s</hi>.8° 2639</head>
+<p rend="noIndent">Egenhendige notater og arbeidsmanuskripter (replikkutkast). En innbundet notisblokk. Blokken er foliert 1–93. Den er omtalt i HU (11, 398–99) og gjengitt som opptegnelse 3. Den er også beskrevet og drøftet i Høst <bibl>(1958, 74, 76–77)</bibl>.</p>
+
+<div xml:id="msDesc_HG82639_content"> 
+<head rend="level4">innhold og genetisk status.</head>
+<p>Blokken inneholder både opptegnelser til <title rend="italic">Hedda Gabler</title> og forskjellige regnestykker (regnskaper og budsjetter). Opptegnelsene står på bl. 1r, 7, 8r, 9r, 10, 11r, 92v og 93v. De består av notater med bakgrunn og personkarakteristikker og noen få replikkutkast. Av navn brukes Holger for det senere Ejlert (bl. 8r, 10r) og fru Rising (bl. 8r) for fru Elvsted. Løvborg heter Holger også i manuskript 3 (Ms.8° 1942:1), i deler av manuskript 4 (Ms.8° 2638), i personlisten i manuskript 5 (Ms.8° 809:2) og i første skriveomgang av første akt i manuskript 8 (Ms.8° 808). Men det er bare her i manuskript 2 og i manuskript 3 at fru Elvsted har navnet Rising, alle andre steder har hun varianter av Elvsted-navnet (med pikenavnet Rysing i trykkmanuskriptet, angitt med <quote>R.</quote> ett sted i manuskript 9, i Ms.8° 809:6). Det tyder på at manuskript 2 og 3 må være tidlige. Replikkutkastene kan ikke sees brukt andre steder i materialet til stykket. På bl. 1r er det i tillegg til teksten en tegning (kan se ut som grunnplan av en stor bygning). På bl. 2r, 3r, 4r, 5r og 6r har Ibsen skrevet regnestykker (regnskaper og budsjetter), oppstillingene på bl. 2r og 6r har han datert henholdsvis 7. april 1890 og 26. juni 1890.</p>
+</div>
+  
+<div xml:id="msDesc_HG82639_date"> 
+<head rend="level4">datering.</head>
+<p>Det er nærliggende å regne med at notatene og replikkutkastene, i hvert fall på bl. 1–11, er fra omtrent samme tid som de daterte regnskapsoversiktene, dvs. april–juni 1890, jf. <title rend="italic">The Oxford Ibsen</title> <bibl>(Ibsen 1960–77, b. 7, 475)</bibl> og <bibl>Høst (1958, 77)</bibl>. Opptegnelsene bakerst i blokken er av samme art som de foran; det er ikke noe ved dem som tilsier at de skulle være skrevet vesentlig senere.</p>
+</div>
+  
+<div xml:id="msDesc_HG82639_material"> 
+<head rend="level4">mengde, struktur og rekkefølge.</head>
+<p>Manuskriptet består av en notisblokk med 93 blad. Den er foliert 1–93. <bibl>Høst (1958, 76)</bibl> oppgir bare foliering 1–12 og sier at den er utført av Ibsen selv. Folieringen nevnes ikke i HU, mens <title rend="italic">The Oxford Ibsen</title> <bibl>(Ibsen 1960–77, b. 7, 489)</bibl> gir samme opplysning som Høst. Blokken ble katalogisert i 1969, det er sannsynlig at de resterende bladtallene ble påført da. At de første tolv bladtallene er Ibsens, kan ikke verifiseres. Bl. 1v, 2v, 3v, 4v, 5v, 6v, 8v, 9v, 11v, 12–91, 92r og 93r er blanke. Mange av de beskrevne sidene har tekst bare på en del av siden. Bladene er perforert til avriving. For alle notatene og replikkutkastene er skriveretningen parallell med avrivningskanten, på rectosider med første linje ved denne, på versosider med første linje ved ytterkanten. For regnskapene etc. er skriveretningen som det normale i en bok, med teksten parallell med kortsiden. Noen blad synes å være revet bort foran bl. 1, og ett blad er klippet bort mellom bl. 5 og 6. Blokken har et omslag som den har løsnet fra. Omslaget er formet som en bokperm trukket i brunt skinn. Forpermen har ornamenter i opphøyd relieff. Den bakre permen er en plate noe større enn blokken, med skråskårne kanter. Undersiden av platen er dekket av brunt papir. Forpermen måler ca. 90 × 138 mm. Platen måler 104 × 154 mm. Blokkens bakpapp sitter fortsatt limt på bakplaten. Langs bakpappens ytterkant er det en hylse til blyant. Innsiden av forpermen er dekket med grønnaktig papir med en strimmel gulldekorert papir rundt de tre ytterkantene. Selve blokkens rygg er kledd med skinn i samme brune farve som omslaget, skinnet går frem til avrivningskanten på bl. 1r (dekker ca. 10 mm av første side). Blokkens snitt er rødt.</p>
+</div>
+  
+<div xml:id="msDesc_HG82639_condition"> 
+<head rend="level4">tilstand.</head>
+<p>Blokken har løsnet fra den platen den var montert til, se <hi rend="italic">Mengde, struktur og rekkefølge</hi>. Manuskriptet ble reparert i 1987, bl.a. ble papiret avsyret og gammelt limbånd fjernet. Særlig de første bladene har skrukker, flekker og andre mindre skader, uten følger for teksten.</p>
+</div>
+  
+<div xml:id="msDesc_HG82639_paper"> 
+<head rend="level4">papir.</head>
+<p>Papiret er gulaktig. Siden (regnet fra avrivningskanten) måler ca. 74 × 132 mm.</p>
+</div>
+  
+<div xml:id="msDesc_HG82639_pen">
+<head rend="level4">skriveredskap og -stoff.</head>
+<p>Alt er skrevet med blyant.</p>
+</div>
+  
+<div xml:id="msDesc_HG82639_handwriting"> 
+<head rend="level4">hender og skrift.</head><lb/>
+<p>1. <hi rend="italic">Henrik Ibsen</hi>: Skriften er venstrehellende. Notatene og replikkutkastene er skjødesløst skrevet. Mellom de to notatene på bl. 8r har Ibsen satt uregelmessige streker, også mellom de to notatene på bl. 93v har han satt en strek. Talloppstillingene på bl. 2r, 5r og 6r er omhyggelig skrevet.</p>
+<p>2. Folieringen, se <hi rend="italic">Mengde, struktur og rekkefølge</hi>.</p>
+</div>
+  
+<div xml:id="msDesc_HG82639_stamp"> 
+<head rend="level4">stempel og katalogsignatur.</head>
+<p>Bibliotekets stempel og katalogsignatur finnes på innsiden av forpermen og på bl. 1r.</p>
+</div>
+  
+<div xml:id="msDesc_HG82639_provenance"> 
+<head rend="level4">proveniens.</head>
+<p>Manuskriptet tilhører Nasjonalbiblioteket, Oslo. Biblioteket (den gang Universitetsbiblioteket) kjøpte det sammen med Ms.8° 2638 av Ibsens arvinger ved Tancred Ibsen i 1969.</p>
+</div>
+</div>
+
+<div xml:id="msDesc_HG82638"> 
+<head rend="level3">4. nbo m<hi rend="miniscule">s</hi>.8° 2638</head>
+<p rend="noIndent">Egenhendige notater og arbeidsmanuskripter (replikkutkast). En innbundet notisbok med to innlagte løse blad og ett visittkort. Selve boken er foliert 1–80. Den er omtalt i HU (11, 398–99) og gjengitt som opptegnelse 1, 4, 5 og 7. Enkelte deler er ikke gjengitt i HU, se <hi rend="italic">Tekstkritisk redegjørelse</hi>, avsnittet <hi rend="italic">Tidligere tekstkritiske utgaver</hi>. Notisboken er også utførlig beskrevet og drøftet i <bibl>Høst (1958, 74–91)</bibl>.</p>
+
+<div xml:id="msDesc_HG82638_content"> 
+<head rend="level4">innhold og genetisk status.</head>
+<p>Bokens tekst står på bl. 1–46 og 80. Den inneholder mange forskjellige korte opptegnelser, ofte bare på noen få linjer. Noen av opptegnelsene er generelle og gjelder bakgrunn, plan og personkarakteristikker, andre dreier seg om enkeltscener eller spredte replikker. Navneformene varierer, det samme gjør skriften, skriveredskapet og -retningen. Enkelte deler må være svært tidlige, mens det meste kan ligge til grunn for utformingen i manuskript 8 (Ms.8° 808). Ikke alt gjelder <title rend="italic">Hedda Gabler</title>. Mange sider og hele blad er blanke, se <hi rend="italic">Mengde, struktur og rekkefølge</hi>. HU (11, 284) presenterer opptegnelsene i den <quote>ville uorden som de er skrevet i</quote>, det aller meste som opptegnelse 5. <title rend="italic">The Oxford Ibsen</title> <bibl>(Ibsen 1960–77, b. 7, 480)</bibl> påpeker at det ikke er sikkert at opptegnelsene står i boken i kronologisk tilblivelsesorden, men se nærmere om bl. 4–46 nedenfor.</p>
+<p><hi rend="italic">Bl. 1–2, 3</hi>. HU gjør et skille mellom bl. 1–2 og 3: Bl. 1–2 er kalt opptegnelse 1, bl. 3 innleder opptegnelse 5. <title rend="italic">The Oxford Ibsen</title> omtaler de tre bladene samlet som A6 (a) (Ibsen 1960–77, b. 7, 480). På disse sidene (bortsett fra bl. 2v, se nedenfor) har Ibsen skrevet med blyant, og skriveretningen er den vanlige, parallell med bokens kortside. Innholdet består av korte notater, uten bruk av navn, på bl. 1 om særtrekk ved gifte kvinner, selvmord, <quote>hun</quote> og <quote>han</quote> og hennes negative følelser overfor ham og hans livsoppgave, en venninne med en slik oppgave, et etterlatt manuskript m.m., på bl. 2 om <quote>‹Den forlornes› apologi for kulturmennesket</quote>, på bl. 3 om tanten. HU (11, 270) mener at i hvert fall et par av notatene på bl. 1r må være det eldste kjente materialet til <title rend="italic">Hedda Gabler</title>. HU bygger dette på noen linjer øverst på bl. 1r som står i sammenheng med Ibsens kontakt med Moritz Prozor i oktober 1889; dessuten kan det som står om gifte kvinner, muligens være inspirert av et brev til Ibsen fra Camilla Collett i februar 1889. <bibl>Høst (1958, 75, 77–81)</bibl> omtaler alle notatene på bl. 1 som en avdeling for seg. Hun bygger bl.a. på skriften, som er noenlunde ensartet på bl. 1, forskjellig fra den på bl. 2r, se <hi rend="italic">Skrift</hi> nedenfor. Se <hi rend="italic">Tekstkritisk redegjørelse</hi>, avsnittet <hi rend="italic">Øvrige tekstkilder</hi>, for diskusjon om disse notatenes relevans for <title rend="italic">Hedda Gabler</title> og om HUs dateringsforsøk. På bl. 2v har Ibsen brukt blekk, skriveretningen er som på bl. 4–46. Teksten har ikke noe med <title rend="italic">Hedda Gabler</title> å gjøre. Ibsen skriver her at han avslutter all <quote>omgang med</quote> intervjuere, noe som kanskje står i sammenheng med hans brev til Hans Lien Brækstad 18. august 1890.</p>
+<p><hi rend="italic">Bl. 80</hi>. HU har kalt bl. 80v opptegnelse 4. Dette er første side når man åpner boken bakfra, med tekst plassert som om det var første side, motsatt skriveretningen på bl. 1–3. Skriften er som på bl. 1, og innholdet dreier seg om en kvinnes forhold til en mann: dels respekt, dels ubehag og forakt. Det er ikke brukt navn. På bl. 80r står, i samme skriveretning som bl. 1–3, et regnestykke (årlig inntekt). Begge sider er skrevet med blyant.</p>
+<p><hi rend="italic">Bl. 4–46</hi>. Overskrift på bl. 4r: <quote>Optegnelser.</quote> I HU er dette opptegnelse 5 (sammen med bl. 3). Alt her er skrevet med skriveretningen parallell med bokens rygg. Det meste er skrevet med blyant, noe er med blekk. Noen av innførslene er skilt med strek; noen ganger står det bare noen få linjer på siden. Tekst forskjellige steder i boken kan høre innholdsmessig sammen. Ved en notat på bl. 42r om <quote>E. L<hi rend="raised">s</hi></quote> tanker om kameratskap mellom mann og kvinne har Ibsen skrevet <quote>Se foran i bogen</quote>; det må gjelde bl. 31r, der han skriver om det samme. På bl. 26r og 36r står det noe som gjelder <quote>5. akt</quote>, det er et indisium på at dette er skrevet før Ibsen hadde fastlagt stykkets endelige aktstruktur. Mye kan ligge til grunn for replikker i manuskript 8 (Ms.8° 808). Eksempler: Bl. 6r, om tantens hatt, peker mot Ms.8° 808, legg 5, bl. [2]r. Et replikkutkast på bl. 6v, om Heddas mistrivsel i villaen, kan til dels bygge på bl. 4–5 og kan ligge til grunn for replikker i Ms.8° 808, legg 22, bl. [2]v. To steder (bl. 15r og 30v) finnes utkast til stykkets siste linjer med Bracks sluttreplikk (Ms.8° 808, legg 59, bl. [2]r). Tantens etternavn er på bl. 6r og 8r Rising som i første akt av Ms.8° 808 (jf. også personlisten i manuskript 5, Ms.8° 809:2, og manuskript 6, Ms.8° 809:3, bl. [1]r). På bl. 14v heter hun Rysing, som i annen og tredje akt i Ms.8° 808. På bl. 45r er hennes etternavn angitt bare med <quote>T.</quote>, det tilsvarer fjerde akt i Ms.8° 808, der hun heter frøken Tesman. Løvborg har fornavnet Holger på bl. 7r og 11v, som i første akt av Ms.8° 808 (se manuskript 2, Ms.8° 2639, om hvor dette navnet ellers brukes), fra bl. 12r Ejlert som fra og med annen akt i Ms.8° 808. For det endelige Elvsted brukes på bl. 10r og 12r Elfstad som i første halvdel av første akt i Ms.8° 808, på bl. 10v Elvsted, fra bl. 12v Elfsted som i resten av Ms.8° 808 (jf. manuskript 5, personlisten). Denne utviklingen i navneformene svarer til bruken i Ms.8° 808 og kan tyde på at notatenes tilblivelsesrekkefølge stort sett svarer til den rekkefølgen de står i, og dermed kanskje ikke er fullt så vilkårlig som HU og <title rend="italic">The Oxford Ibsen</title> gir uttrykk for.</p>
+<lb/>
+<p rend="noIndent">I en lomme i bakpermen ligger ett visittkort og to blad. <hi rend="italic">Visittkortet</hi> har det trykte navnet Natalie von Eperjesy. På begge sider har Ibsen skrevet replikkutkast til <title rend="italic">Hedda Gabler</title>, i HU kalt opptegnelse 7. Navnene er gitt som initialer og svarer til de endelige. To linjer over det trykte navnet kan peke frem mot en eller flere av Løvborgs replikker i samtale med Hedda på første side i legg 29 i Ms.8° 808 (manuskript 8) om å måtte kalle henne fru Tesman. Under det trykte navnet står det noe om at tanten og <quote>B.</quote> (trolig Berte) i motsetning til Tesman har forstått at Hedda er gravid, med en forbauset replikk av ham når også han forstår det. Dette peker frem mot utformingen i Ms.8° 809:11, bl. [2]v, som ligger til grunn for trykkmanuskriptets s. 194 (se manuskript 9). Teksten på versosiden peker frem mot replikker i legg 48 i Ms.8° 808, der Løvborg forteller fru Elvsted hva han har gjort med manuskriptet.</p>
+<p><hi rend="italic">De to bladene</hi>: Teksten har ikke noe med <title rend="italic">Hedda Gabler</title> å gjøre, og de kan være lagt i boken ved en tilfeldighet. Det meste er tre korte notater (utkast) som kanskje hører sammen. Ibsen skriver om at nordmenn ikke forstår ham, ett av notatene er rettet til Det Norske Studentersamfund og kan ha sammenheng med hans brev til Studentersamfundet 23. oktober 1885, se <hi rend="italic">Tekstkritisk redegjørelse</hi>, avsnittet <hi rend="italic">Øvrige tekstkilder</hi>. På en bakside har han bl.a. skrevet noe om hoteller i Basel; Susanna og Sigurd Ibsen overnattet i Basel i 1884, ifølge Sigurd Ibsens brev til faren 5. juli 1884 (NBO Brevs. 200). Disse to bladene blir ikke nærmere beskrevet.</p>
+</div>
+  
+<div xml:id="msDesc_HG82638_date"> 
+<head rend="level4">datering.</head>
+<p>De forskjellige opptegnelsene kan være skrevet til forskjellige tider. Som nevnt ovenfor, er det mulig at de første notatene på bl. 1r er skrevet i eller etter oktober 1889, og noe av dette kan ha forbindelse med et brev i februar 1889. Skriften og skriftretningen på bl. 1 og 80 (se <hi rend="italic">Skrift</hi> nedenfor) kan kanskje også tas til inntekt for at teksten her er skrevet til andre tider enn det øvrige. At de skiftende navneformene i bl. 4–46 svarer til utviklingen i manuskript 8 (Ms.8° 808), tyder på at denne delen av manuskriptet kan være blitt til parallelt med Ms.8° 808, jf. <bibl>Høst (1958, 77)</bibl>.</p>
+</div>
+  
+<div xml:id="msDesc_HG82638_material"> 
+<head rend="level4">mengde, struktur og rekkefølge.</head>
+<p>Manuskriptet består av en notisbok med 80 blad og med to blad og ett visittkort i en lomme i bakpermen. De 80 bladene er foliert 1–80. <bibl>Høst (1958, 75)</bibl> oppgir bare foliering 1–48 og sier at den er utført av Ibsen selv. Folieringen nevnes ikke i HU, mens <title rend="italic">The Oxford Ibsen</title> <bibl>(Ibsen 1960–77, b. 7, 480)</bibl> gir samme opplysning som Høst. Boken ble katalogisert i 1969, det er sannsynlig at de resterende bladtallene ble påført da. At de første 48 bladtallene er Ibsens, kan ikke verifiseres. Biblioteket har notert på bl. 9 og 10 at de to bladene egentlig skulle vært foliert i motsatt rekkefølge; teksten på bl. 8v fortsetter på bl. 10r (gjengitt slik i HU 11, 501). Feilen kan ha skjedd ved at bl. 9 har vært løst da folieringen ble foretatt, og kommet til å ligge etter bl. 8, og at folieringen er foretatt mekanisk, uten hensyn til innholdet. Bl. 41 står umiddelbart foran bl. 40, men teksten er gjengitt i riktig rekkefølge i HU (11, 512); de to bladene kan ha byttet plass ved reparasjon av boken, bl. 41 kan ha vært løst. Bl. 3v, 35v, 46v og 47–79 er blanke. Mange av de beskrevne sidene har tekst bare på en del av siden. Bl. 1–2r, 3r og 80 har tekst i normal skriveretning, men på bl. 80v som om dette var første blad i boken. Resten er skrevet med teksten parallell med bokens rygg, på rectosider med første linje ved falsen, på versosider med første linje ved ytterkanten. Det som ligger i lommen i bakpermen, er ikke foliert eller paginert. Visittkortet har tekst på begge sider; på siden med trykt navn står Ibsens tekst opp ned i forhold til navnet. Boken er bundet inn. Bindet er i sort skinn med preget mønster og med hylse til blyant langs ytterkanten av bakpermen. Bindet måler ca. 85 × 141 mm. Forsatspapiret har rankemønster i brunt, med bokens rutepapir limt til versosiden av begge forsatsbladene. Heftetråden er lyst gulaktig. Snittet er rødt.</p>
+</div>
+  
+<div xml:id="msDesc_HG82638_condition"> 
+<head rend="level4">tilstand.</head>
+<p>Bindet er noe slitt. Manuskriptet ble reparert i 1987, bl.a. ble papiret avsyret og gammelt limbånd fjernet. Ved reparasjonen ble det brukt hvite papirremser som er synlige særlig langs falsen på første og siste oppslag (mot bl. 1r og 80v). Bl. 35 er løst, en del andre blad er delvis løse. Bl. 34 har en langsgående sprekk, oppstått ved at en overstrykning med blekk på versosiden har tæret på papiret (blekkoksydasjon, <quote>Tintenfrass</quote>); deler av teksten er dermed svært vanskelig å lese. Det finnes en del tilfeller av blyantsmitte og blekkgjennomslag samt mindre skader i ytterkant (særlig bl. 10). Sidene er stedvis noe misfarvet. Særlig versosiden av fremre forsatsblad har flekker. Visittkortet er delvis misfarvet og har en brist i øvre høyre hjørne (sett fra siden med trykt navn og orientert ut fra dette).</p>
+</div>
+  
+<div xml:id="msDesc_HG82638_paper"> 
+<head rend="level4">papir.</head>
+<p>Papiret i boken er gulaktig med kvadratiske ruter. Siden måler ca. 82 × 136 mm. Visittkortet er gulaktig, det måler 89 × 52 mm.</p>
+</div>
+  
+<div xml:id="msDesc_HG82638_pen"> 
+<head rend="level4">skriveredskap og -stoff.</head>
+<p>Det meste er skrevet med blyant, også visittkortet. Følgende sider er med blekk: bl. 2v, 27r–v, 34v, 35r og 37v. På bl. 24v og 36r er to linjer med blekk, resten med blyant. I det som er skrevet med blekk, er skriftbildet nærmest sort.</p>
+</div>
+  
+<div xml:id="msDesc_HG82638_handwriting"> 
+<head rend="level4">hender og skrift.</head><lb/>
+<p>1. <hi rend="italic">Henrik Ibsen</hi>: Skriften er venstrehellende og skjødesløs, i varierende grad. Også trykket på blyanten og pennen varierer. Det meste er svært skjødesløst skrevet. Skriften på bl. 1 og 80 skiller seg ut ved å være mindre og til dels mindre skjødesløs. Men det er vanskelig å være enig med <bibl>Høst (1958, 75)</bibl> som sier at bokstavene på bl. 1 er <quote>sirlige</quote>, og at skriftbildet særlig på første side virker <quote>så rolig som om det skulle dreie seg om renskrift efter en kladd</quote>. Også <title rend="italic">The Oxford Ibsen</title> <bibl>(Ibsen 1960–77, b. 7, 480)</bibl> mener at skriften på bl. 1 er mye mer omhyggelig enn ellers i boken. <quote>Mye mer</quote> synes for sterkt uttrykt. Mellom noen av opptegnelsene (bl.a. på bl. 2r, 7r og 38v) har Ibsen satt en strek. På bl. 7v og 8 har han streket under rollenavn.</p>
+<p>2. Folieringen, se <hi rend="italic">Mengde, struktur og rekkefølge</hi>.</p>
+</div>
+  
+<div xml:id="msDesc_HG82638_stamp"> 
+<head rend="level4">stempel og katalogsignatur.</head>
+<p>Bibliotekets stempel og katalogsignatur finnes på versosiden av fremre forsatsblad og på visittkortets side med trykt tekst.</p>
+</div>
+  
+<div xml:id="msDesc_HG82638_provenance"> 
+<head rend="level4">proveniens.</head>
+<p>Se manuskript 2 (Ms.8° 2639).</p>
+</div>
+</div>
+
+  <div xml:id="msDesc_HG81942">
+  <div xml:id="msDesc_HG81942_1"> 
+    <head rend="level3">3. nbo m<hi rend="miniscule">s</hi>.8° 1942:1</head>
+    <p rend="noIndent">Egenhendig arbeidsmanuskript til personliste. Seks linjer. Overskrift: <quote>Personerne:</quote>. Manuskriptet er omtalt i HU (11, 399) og gjengitt som opptegnelse 8, sammen med personlisten i manuskript 5 (Ms.8° 809:2).</p>
+    
+    <div xml:id="msDesc_HG81942_1_content"> 
+      <head rend="level4">innhold og genetisk status.</head>
+      <p>Personlisten inneholder fem navn. Tesmans fornavn er Axel og Løvborgs Holger, jf. manuskript 5 (Ms.8° 809:2) og manuskript 8 (Ms.8° 808); jf. manuskript 2 om øvrige forekomster av navnet Holger. Heddas pikenavn er ikke oppgitt. Tanten heter frøken Tesman, og det er oppført en fru Rising, som må være den senere fru Elvsted. Hun har dette navnet bare her og i manuskript 2 (Ms.8° 2639), se dette; navnet tilsier at personlisten må være tidlig. Listen står på en ytterside i et dobbeltblad. På den andre yttersiden har Ibsen skrevet navnet Løvborg og på versosiden av siden med personlisten noe som trolig er et utkast til et telegram til teaterdirektør Kreukniet.</p>
+    </div>
+    
+    <div xml:id="msDesc_HG81942_1_date"> 
+      <head rend="level4">datering.</head>
+      <p>Dateringen er uviss, men listen må være tidlig, jf. <hi rend="italic">Innhold og genetisk status</hi>. Telegramutkastet kan ifølge HU (11, 399) være skrevet i anledning oppførelser av <title rend="italic">Et dukkehjem</title> i Amsterdam i november 1889 eller september 1890. Det er vanskelig å avgjøre om personlisten eller telegramutkastet er skrevet først.</p>
+    </div>
+    
+    <div xml:id="msDesc_HG81942_1_material"> 
+      <head rend="level4">mengde, struktur og rekkefølge.</head>
+      <p>Personlisten står på en ytterside (bl. [1]r) i et lite dobbeltblad, som eneste tekst på siden. Den er skrevet slik at falsen er til høyre, som om siden var den siste i dobbeltbladet. På den andre yttersiden står bare navnet Løvborg, skrevet langs ytterkanten, som om det var første ord på siden dersom bladet var brettet ut (jf. papiret i Ms.8° 809:8–13, se manuskript 9). Telegramutkastet på bl. [1]v står skrevet motsatt vei (opp ned). Den andre innersiden er blank. Nedre kant (orientert ut fra skriftretningen i personlisten) synes revet eller skåret.</p>
+    </div>
+    
+    <div xml:id="msDesc_HG81942_1_condition"> 
+      <head rend="level4">tilstand.</head>
+      <p>Dobbeltbladet har en liten rift i falsen. Bladet med personlisten har skrukker og en liten rift i nedre kant.</p>
+    </div>
+    
+    <div xml:id="msDesc_HG81942_1_paper"> 
+      <head rend="level4">papir.</head>
+      <p>Papiret er som i manuskript 1 (Ms.8° 809:1, bl. [1]r), med rutene orientert som der. Siden måler 111 × 142 mm.</p>
+    </div>
+    
+    <div xml:id="msDesc_HG81942_1_pen">
+      <head rend="level4">skriveredskap og -stoff.</head>
+      <p>Manuskriptet er skrevet med blekk. Skriftbildet er brunt.</p>
+    </div>
+    
+    <div xml:id="msDesc_HG81942_1_handwriting"> 
+      <head rend="level4">skrift.</head>
+      <p>Skriften er venstrehellende og omhyggelig.</p>
+    </div>
+    
+    <div xml:id="msDesc_HG81942_1_stamp"> 
+      <head rend="level4">stempel og katalogsignatur.</head>
+      <p>Bibliotekets stempel og katalogsignatur finnes på siden med personlisten.</p>
+    </div>
+    
+    <div xml:id="msDesc_HG81942_1_provenance"> 
+      <head rend="level4">proveniens.</head>
+      <p>Manuskriptet tilhører Nasjonalbiblioteket, Oslo. Biblioteket (den gang Universitetsbiblioteket) kjøpte Ms.8° 1942 av Henrik Ibsens arvinger i 1968–69. Det var i 1956 innlevert til biblioteket av Halvdan Koht. Da HUs redegjørelse for manuskriptene til <title rend="italic">Hedda Gabler</title> ble skrevet, var materialet i Ms.8° 1942 i Bergliot Ibsens eie (HU 11, 399–400, utgitt 1934).</p>
+    </div>
+  </div>
+  
+  <div xml:id="msDesc_HG81942_2"> 
+<head rend="level3">7. nbo m<hi rend="miniscule">s</hi>.8° 1942:2</head>
+<p rend="noIndent">Egenhendig notat/arbeidsmanuskript med plan for de to første aktene, med noen replikkutkast. To dobbeltblad. Overskrift på første side: <title rend="quotes">Hedda. / Skuespil i fire akter.</title> Manuskriptet er i HU (11, 400) omtalt som III, planskisse.</p>
+
+    <div xml:id="msDesc_HG81942_2_content"> 
+<head rend="level4">innhold og genetisk status.</head>
+<p>Manuskriptet gir handlingsgangen for første og annen akt, med enkelte rettelser. Under overskriften <quote>Første akt</quote> kommer først en redegjørelse for noen av personene og bakgrunnen for stykket, deretter følger <quote>Scenegang</quote> for de to aktene. Scenegangsnotatene har noen replikker, skrevet i linjen, ikke satt opp med ny linje for hver replikk. Ibsen har satt kryss ved de tre første scenene i annen akt. Tesmans fornavn er Jørgen, Løvborgs Ejlert, og tantens etternavn er Rysing. Dette svarer til bruken i manuskript 8 (Ms.8° 808), annen og tredje akt (forskjellig fra første og fjerde). Flere steder henviser Ibsen til <quote>konceptet</quote> (f.eks. <quote>Hovedsagelig således som i konceptet</quote>), det må være Ms.8° 808, jf. hans brev til August Larsen 26. oktober 1890, der han bruker nettopp dette ordet om Ms.8° 808. I en av de første scenene i annen akt skal en samtale være <quote>anderledes end i konceptet</quote>; på dette stedet i Ms.8° 808 (legg 21, bl. [1]) er en del tekst strøket over. Slike henvisninger finnes tre ganger i det som gjelder første akt, og en gang i begynnelsen av annen. Manuskript 7 forutsetter derfor at første og i hvert fall begynnelsen av annen akt i Ms.8° 808 var skrevet, og det må høre til i en fase da Ibsen gjennomgikk og rettet (se avsnittet <hi rend="italic">Innhold og genetisk status</hi> i beskrivelsen av manuskript 8). Men det må ha skjedd før han begynte på fjerde akt i Ms.8° 808, fordi tanten helt fra aktens første side heter frøken Tesman, og før han utvidet tittelen med Heddas etternavn. Scenegangen for de to aktene svarer til Ms.8° 808, men med forskjeller i detaljer; det er heller ikke fullt samsvar med den endelige utformingen. I den innledende sceneanvisningen til annen akt sitter Hedda <quote>ved ovnen</quote>; dette er forskjellig fra begge de to åpningene av  akten som finnes i Ms.8° 808, og også forskjellig fra trykkmanuskriptet. Replikkutkastene synes ikke å ha vært brukt i trykkmanuskriptet og skiller seg derved fra det meste av Ms.8° 809 (se manuskript 9).</p>
+</div>
+  
+    <div xml:id="msDesc_HG81942_2_date"> 
+<head rend="level4">datering.</head>
+<p>Manuskriptet må være være skrevet etter at annen akt i Ms.8° 808 ble påbegynt 6. september 1890, men før fjerde akt, som ble påbegynt 30. september. Se manuskript 8.</p>
+</div>
+  
+    <div xml:id="msDesc_HG81942_2_material"> 
+<head rend="level4">mengde, struktur og rekkefølge.</head>
+<p>Manuskriptet består av to små dobbeltblad. Det første gjelder første akt og har tekst på alle fire sider, på siste side til litt nedenfor midten. Det andre dobbeltbladet gjelder annen akt, teksten står på første side og øverst på annen (åtte linjer), resten er blankt. På begge dobbeltbladene synes nedre kant revet eller skåret.</p>
+</div>
+  
+    <div xml:id="msDesc_HG81942_2_condition"> 
+<head rend="level4">tilstand.</head>
+<p>Begge dobbeltbladene har svake skrukker og en liten rift nederst i falsen, det andre også mindre skader i nedkant.</p>
+</div>
+  
+    <div xml:id="msDesc_HG81942_2_paper"> 
+<head rend="level4">papir.</head>
+<p>Papiret er som i manuskript 1 (Ms.8° 809:1, bl. [1]r), med rutene orientert som der. Siden måler ca. 110 × 142 mm.</p>
+</div>
+  
+    <div xml:id="msDesc_HG81942_2_pen"> 
+<head rend="level4">skriveredskap og -stoff.</head>
+<p>Manuskriptet er skrevet med blekk. Skriftbildet er brunt.</p>
+</div>
+  
+    <div xml:id="msDesc_HG81942_2_handwriting"> 
+<head rend="level4">skrift.</head>
+<p>Skriften er venstrehellende og overveiende omhyggelig, med mer skjødesløse innslag fra og med siste side i første dobbeltblad. Overskriften på første side er skrevet med større skrift.</p>
+</div>
+  
+    <div xml:id="msDesc_HG81942_2_stamp"> 
+<head rend="level4">stempel og katalogsignatur.</head>
+<p>Bibliotekets stempel og katalogsignatur finnes på hvert dobbeltblads første side, på det første dobbeltbladet står også undersignaturen 2.</p>
+</div>
+  
+    <div xml:id="msDesc_HG81942_2_provenance">
+<head rend="level4">proveniens.</head>
+<p>Se manuskript 4 (Ms.8° 1942:1).</p>
+</div>
+  </div>
+    </div>
+     
+<div xml:id="msDesc_HG8808"> 
+<head rend="level3">8. nbo m<hi rend="miniscule">s</hi>.8° 808</head>
+<p rend="noIndent">Egenhendig arbeidsmanuskript til hele stykket. Ett unummerert og 59 egenhendig nummererte legg. Ett bind. På bl. [1]r: <title rend="quotes">Hedda Gabler. / Skuespil i fire akter / af / Henrik Ibsen. / 1890.</title> Manuskriptet er i ES (3, 486–87) kalt B.a. I HU (11, 397–98) er det omtalt som et fullstendig utkast.</p>
+
+<div xml:id="msDesc_HG8808_content"> 
+<head rend="level4">innhold og genetisk status.</head>
+<p>Bl. [1]r tittelside, bl. [1]v <quote>Personerne:</quote>, bl. [2]r–v innledende sceneanvisning til første akt, legg 1–59 resten av teksten, fra og med første replikk. Manuskriptet har preg av renskrift. Det har noen umiddelbare og en rekke senere rettelser. Tittelen på bl. [1]r var først bare <title rend="quotes">Hedda</title>, Ibsen har senere tilføyd <quote>Gabler</quote>. Han må først ha skrevet stykket igjennom. I denne prosessen har han begynt på annen akt to ganger. På siste side i legg 16 står den første begynnelsen på akten, kraftig strøket over. Jf. manuskript 6 (Ms.8° 809:3) om mulige spor etter mer av denne forkastede første versjonen av akten. Ibsen har så begynt på nytt på første side i legg 17. Ibsen har datert aktene, se <hi rend="italic">Datering</hi>. Noen av replikkene bygger på manuskript 4 (Ms.8° 2638, se også om det vedlagte visittkortet der) og manuskript 5 (Ms.8° 809:2). Personnavnene endrer seg underveis, med et markant skille mellom første og annen akt. Der forandres Tesmans og Løvborgs fornavn fra Axel og Holger til Jørgen og Ejlert, Heddas pikenavn fra Rømer til Gabler (navnet Rømer forekommer bare her i hele materialet) og tantens etternavn fra Rising til Rysing, i fjerde akt heter hun Tesman. Dette skillet kan kanskje ha sammenheng med at det gikk påfallende lang tid mellom de to begynnelsene på annen akt, se <hi rend="italic">Datering</hi>, men også i den første, overstrøkne og derfor vanskelig lesbare teksten skimtes navnet Eilert Løvborg. For Elvsted brukes Elfstad til ut i legg 8 (midt i første akt), deretter Elfsted. Noen ganske få steder (i legg 6, 7 og 13) ser det ut til at Ibsen først har skrevet navnets første stavelse med <hi rend="italic">v</hi>, som han (trolig umiddelbart) har rettet til <hi rend="italic">f</hi>; dessuten finnes <quote>Elvsted</quote> urettet en gang i legg 32. Jf. manuskript 4 (Ms.8° 2638, bl. 4–46) og personlisten i manuskript 5 (Ms.8° 809:2). Den personlisten som står på bl. [1]v, har bl.a. navnene Jørgen Tesman, frøken Mariane Rysing (rettet til Juliane Tesman), fru Elfsted og Ejlert Løvborg. Den må (før rettelsen av tantens navn) være skrevet etter første og trolig før fjerde akt; i rettet form må den ligge til grunn for trykkmanuskriptets liste. Også den innledende sceneanvisningen på bl. [2] er svært lik utformingen i trykkmanuskriptet, noe som kanskje tyder på at også den er blitt til da Ibsen nærmet seg fullførelsen av de 59 leggene. – Ibsen har så gått igjennom og rettet og bearbeidet. Det som kan kalles annen skriveomgang, sees som rettelser (inklusive strykninger og tillegg) med blyant og som rettelser med blekk med mer skjødesløs og noe mindre skrift enn i første skriveomgang, jf. <hi rend="italic">Skriveredskap og -stoff</hi> og <hi rend="italic">Skrift</hi>. Rollenavn er nå som regel angitt i forkortet form. Som manuskript 7 (Ms.8° 1942:2) viser, kan han ha begynt bearbeidelsen, i hvert fall av de to første aktene, før han skrev fjerde akt. Mye kan være foretatt under arbeidet med trykkmanuskriptet; de fleste av disse rettelsene er tatt til følge der, eventuelt  videre bearbeidet. Jf. også manuskript 9 (det meste av Ms.8° 809). Mange lengre tekstpartier (deler av sider, hele sider, sekvenser av sider) er strøket. Den største sammenhengende strykningen går fra siste side i legg 39 til og med hele legg 42. Noen strykninger i legg 4 er erstattet med ny tekst på et blad, merket <hi rend="italic">a</hi>, som er lagt inn i legget; den nye teksten ligger til grunn for dette sted i trykkmanuskriptets legg 6 og 7 (s. 19–21). I tillegg til dateringen av aktene har Ibsen også skrevet inn datoer for når han renskrev teksten, dvs. når han på grunnlag av dette manuskriptet skrev trykkmanuskriptet, se <hi rend="italic">Datering</hi>. Dette andre datosettet kan derfor også gi antydning om når de forskjellige aktene ble bearbeidet. På tittelsiden har Ibsen senere tilføyd <quote>Tilhører Hildur!</quote>, jf. <hi rend="italic">Proveniens</hi>.</p>
+</div>
+  
+<div xml:id="msDesc_HG8808_date"> 
+<head rend="level4">datering.</head>
+<p>På tittelsiden: <quote>1890</quote>. I første skriveomgang har Ibsen skrevet inn datoer ved begynnelsen og slutten av annen, tredje og fjerde akt. Datoene er (alle i 1890): 13. august (legg 16, bl. [2]v, første begynnelse av annen akt), 6. september (legg 17, bl. [1]r, ny begynnelse av annen akt), 15. september (legg 36, bl. [2]v, slutten av annen akt), 16. september (legg 37, bl. [1]r, begynnelsen av tredje akt), 28. september (legg 50, bl. [2]r, slutten av tredje akt), 30. september (legg 50, bl. [2]v, begynnelsen av fjerde akt) og 7. oktober (legg 59, bl. [2]r, slutten av fjerde akt). Jf. hans brev til August Larsen 26. oktober 1890: <quote>Den 7. dennes fuldførte jeg konceptet</quote>. Det er uvisst når han begynte på første akt, men han skrev til Larsen 27. juni at arbeidet med stykket etter forstyrrelser nå var <quote>i jævn god gang igen</quote>. Ved begynnelsen og slutten av annen akt og ved begynnelsen av fjerde har Ibsen også skrevet inn datoer for når han utarbeidet disse delene av trykkmanuskriptet (og dermed gis det også indikasjon om når han foretok bearbeidelsene i annen skriveomgang). Disse datoene er (alle i 1890): 22. oktober (legg 17, bl. [1]r, gjelder slutten av trykkmanuskriptets første akt), 23. oktober (legg 17, bl. [1]r, gjelder begynnelsen av trykkmanuskriptets annen akt), 3. november (legg 36, bl. [2]v, gjelder slutten av trykkmanuskriptets annen akt) og 11. november (legg 50, bl. [2]v, gjelder begynnelsen av trykkmanuskriptets fjerde akt).</p>
+</div>
+
+<div xml:id="msDesc_HG8808_material"> 
+<head rend="level4">mengde, struktur og rekkefølge.</head>
+<p>Manuskriptet består av ett unummerert og 59 nummererte legg à to blad (ett dobbeltblad), samt ett innlagt blad i legg 4, i alt 121 blad. Ibsen har nummerert leggene 1–59 i øvre venstre hjørne av hvert leggs første side. Det innlagte bladet har han merket <hi rend="italic">a</hi> på tilsvarende sted; dette bladet synes revet eller skåret i nedre kant. Siste side i legg 59 er blank, alle andre sider er beskrevne. Manuskriptet er håndinnbundet av bokbinderfirmaet Refsum, etter 1948. Beskrivelsen i <bibl>Lie (1948, 92)</bibl> forutsetter at delene er løse. I katalogen over bibliotekets Ibsen-utstilling 1956 (<title rend="italic">Minneutstilling</title> 1956, 97) er teksten tatt fra Lie. Bindet måler ca. 140 × 209 mm. Rygg og hjørner er i rødt skinn; bindets innhold er angitt med gulltrykk på ryggen. Permene har overtrekkspapir med mønster i grønt og grått. Forsatspapiret har mønster i brunt, beige og gult med gullskimmer. Mellom selve manuskriptet og fremre og bakre forsatsblad er et dobbelt flyblad med det ene bladet (den ene halvparten av dobbeltbladet) limt sammen med respektive forsatsblad. Flybladet er gulaktig med bunn- og kjedelinjer. Kapitelbåndet er i rødt og hvitt. Heftetråden er gulaktig.</p>
+</div>
+  
+<div xml:id="msDesc_HG8808_condition">
+<head rend="level4">tilstand.</head>
+<p>Bindet er noe slitt. Legg 20 og 31 er løse, og legg 30 er delvis løst. I legg 31 henger de to bladene bare så vidt sammen øverst. I legg 42 er første blad løst, og i legg 14 er annet blad i ferd med å løsne. Bl. [2], begge blad i legg 1 og det første i legg 2 er løse nederst og/eller øverst. Tittelsiden og den siste (ubeskrevne) siden er skitne. Siste side i legg 33 og første i legg 34, også siste side i legg 47 og første i legg 48, fremstår som særlig skitne; det kan skyldes blyantsmitte, som finnes i mindre grad mange andre steder. Det finnes også skitne og misfarvede partier langs noen av kantene, særlig øverst på første blad i legg 24, samt enkelte flekker. Noen blad, særlig det innlagte blad i legg 4, har mindre skader i ytterkant.</p>
+</div>
+  
+<div xml:id="msDesc_HG8808_paper"> 
+<head rend="level4">papir.</head>
+<p>Papiret (også i tilleggsbladet <hi rend="italic">a</hi>) er gulaktig, noe stivt, med bunn- og kjedelinjer og med vannmerke Pirie’s Old Style. Siden måler ca. 126 × 201 mm.</p>
+</div>
+  
+<div xml:id="msDesc_HG8808_pen"> 
+<head rend="level4">skriveredskap og -stoff.</head>
+<p>Manuskriptet er i første skriveomgang skrevet med blekk. Skriftbildet er brunt. I annen skriveomgang har Ibsen brukt blekk og blyant. Tilleggsbladet <hi rend="italic">a</hi> er påbegynt med blekk, men Ibsen har midt i en replikk nede på første side gått over til blyant. I det som er skrevet med blekk i annen skriveomgang, har skriftbildet samme farve som i første, til dels noe mørkere. I det blyantskrevne virker blyanten overveiende noe grov, særlig i overstrykningene. Påskriften på tittelsiden (<quote>Tilhører Hildur!</quote>) er med blekk, skriftbildet er nærmest sort.</p>
+</div>
+  
+<div xml:id="msDesc_HG8808_handwriting"> 
+<head rend="level4">skrift.</head>
+<p>Skriften er venstrehellende. I første skriveomgang er den overveiende omhyggelig, noe mindre omhyggelig i deler av fjerde akt. Det første datosettet er omhyggelig skrevet, datoene for skrivingen av trykkmanuskriptet noe mer skjødesløst. Ibsen har satt skillestrek mellom aktene og til slutt. I annen skriveomgang er skriften skjødesløs og særlig i blekkrettelsene noe mindre. På første side i legg 2 har Ibsen føyd til tekst på langs i venstre marg. Påskriften på tittelsiden er med større skrift enn det øvrige på siden. Overstrykningen av den forkastede begynnelsen på annen akt er gjort med svært tette små bølge- og skråstreker (blekk). Strykninger for øvrig er gjerne utført med (ujevn) strek i linjen (blekk og blyant) eller med store kryss over hele siden (blyant).</p>
+</div>
+  
+<div xml:id="msDesc_HG8808_stamp"> 
+<head rend="level4">stempel og katalogsignatur.</head>
+<p>Bibliotekets stempel og katalogsignatur finnes på bindets rygg, stempelet også på rectosiden av fremre flyblad og på bl. [2]r, katalogsignaturen på versosiden av fremre forsatsblad og på siste (ubeskrevne) side i legg 59.</p>
+</div>
+  
+<div xml:id="msDesc_HG8808_provenance"> 
+<head rend="level4">proveniens.</head>
+<p>Manuskriptet tilhører Nasjonalbiblioteket, Oslo. Biblioteket (den gang Universitetsbiblioteket) mottok det som gave fra Hildur Andersen i 1928. Om Hildur Andersen (1864–1956), se HIS 15k og Ibsen 1979–81, b. 2, 120–27.</p>
+</div>
+</div>
+
+  <div xml:id="msDesc_HG8809">
+  <div xml:id="msDesc_HG8809_1_1r">
+    <head rend="level3">1. nbo m<hi rend="miniscule">s</hi>.8° 809:1, bl. [1]<hi rend="miniscule">r</hi></head>
+    <p rend="noIndent">Egenhendig notat. Seks linjer. Manuskriptet er i ES (3, 486) omtalt som del av A.a. Det er omtalt i HU (11, 399) og gjengitt som opptegnelse 2. Se også manuskript 9 (det meste av Ms.8° 809).</p>
+    
+    <div xml:id="msDesc_HG8809_1_1r_content">
+      <head rend="level4">innhold og genetisk status.</head>
+      <p>Manuskriptet er et notat med kort karakteristikk av en kvinne og en mann som <quote>nu endelig har besejret hende</quote>. Det er ikke brukt navn. Notatene er såpass generelle at det er rimelig å anta som ES (3, 488) at de representerer et tidlig stadium i utviklingen av stykket. De står på en side i et dobbeltblad; om dobbeltbladets øvrige innhold, se manuskript 9.</p>
+    </div>
+    
+    <div xml:id="msDesc_HG8809_1_1r_date">
+      <head rend="level4">datering.</head>
+      <p>Dateringen er uviss, men jf. <hi rend="italic">Innhold og genetisk status</hi>.</p>
+    </div>
+    
+    <div xml:id="msDesc_HG8809_1_1r_material"> 
+      <head rend="level4">mengde, struktur og rekkefølge.</head>
+      <p>Manuskriptet består av seks linjer tekst øverst på en ytterside (bl. [1]r) i et lite dobbeltblad. Dobbeltbladet har tekst også på den andre yttersiden (bl. [2]v) og på begge sider av bladet med de seks linjene. Denne andre teksten er skrevet motsatt vei og står på s. [1]r nederst på siden og altså opp ned i forhold til sekslinjersnotatet. Nedre kant (orientert ut fra skriftretningen i notatet) synes revet eller skåret.</p>
+    </div>
+    
+    <div xml:id="msDesc_HG8809_1_1r_condition"> 
+      <head rend="level4">tilstand.</head>
+      <p>Dobbeltbladet har betydelige rifter øverst og nederst i falsen. Øvre kant har en liten brett. Bladet har skrukker.</p>
+    </div>
+    
+    <div xml:id="msDesc_HG8809_1_1r_paper"> 
+      <head rend="level4">papir.</head>
+      <p>Papiret er gulaktig med svake rektangulære ruter. Siden måler 110 × 141 mm<note type="footer">Alle mål er bredde × høyde, målt midt på siden (bind måles midt på forpermen).</note>; rutene er liggende (jf. Ms.8° 809:8–13 i manuskript 9, med stående ruter).</p>
+    </div>
+    
+    <div xml:id="msDesc_HG8809_1_1r_pen"> 
+      <head rend="level4">skriveredskap og -stoff.</head>
+      <p>Manuskriptet er skrevet med blekk. Skriftbildet er brunt.</p>
+    </div>
+    
+    <div xml:id="msDesc_HG8809_1_1r_handwriting"> 
+      <head rend="level4">skrift.</head>
+      <p>Skriften er venstrehellende og omhyggelig.</p>
+    </div>
+    
+    <div xml:id="msDesc_HG8809_1_1r_stamp"> 
+      <head rend="level4">stempel og katalogsignatur.</head>
+      <p>Bibliotekets stempel og katalogsignatur (Ms.8° 809) står på bl. [2]r, undersignaturen 1 på bl. [1]r.</p>
+    </div>
+    
+    <div xml:id="msDesc_HG8809_1_1r_provenance"> 
+      <head rend="level4">proveniens.</head>
+      <p>Manuskriptet tilhører Nasjonalbiblioteket, Oslo. Biblioteket (den gang Universitetsbiblioteket) mottok hele Ms.8° 809 som gave fra Henrik Ibsens familie i 1906. Det ble aksesjonsført først i 1928, som gave fra Hildur Andersen (jf. manuskript 8, Ms.8° 808), men Halvdan Koht opplyste i 1949 at det kom fra Susanna Ibsen i 1906. Proveniensopplysningene i <bibl>Holtsmark red. (1928, 18</bibl>; Ms.8° 809 omtales der som <quote>13 ark i 8°</quote>) er derfor misvisende.</p>
+    </div>
+  </div>
+    
+    <div xml:id="msDesc_HG8809_2"> 
+      <head rend="level3">5. nbo m<hi rend="miniscule">s</hi>.8° 809:2</head>
+      <p rend="noIndent">Egenhendig arbeidsmanuskript til personliste og til replikker. To sider i et dobbeltblad. Manuskriptet er i ES (3, 486) kalt A.b. Personlisten er omtalt i HU (11, 399) og gjengitt som opptegnelse 8, sammen med manuskript 4 (Ms.8° 1942:1). Replikkutkastene er omtalt i HU (11, 400), de inngår i punkt 1 under avsnitt V.</p>
+      
+      <div xml:id="msDesc_HG8809_2_content"> 
+        <head rend="level4">innhold og genetisk status.</head>
+        <lb/>
+        <p><hi rend="italic">Personlisten</hi>: Listen inneholder syv navn samt opplysning om stedet for handlingen. Som i manuskript 3 (Ms.8° 1942:1) og første akt i manuskript 8 (Ms.8° 808) er Tesmans fornavn Axel og Løvborgs Holger, jf. manuskript 2 om øvrige forekomster av navnet Holger. Heddas pikenavn er ikke oppgitt. Navnet Rising er her brukt til tanten, som i første akt i Ms.8° 808, jf. også manuskript 4 (Ms.8° 2638) og 6 (Ms.8° 809:3). Listen er derfor trolig senere enn manuskript 3, der tantens etternavn er Tesman. Hun som der het fru Rising, heter her fru Elvstad. I Ms.8° 808 brukes først formen Elfstad, som i legg 8 avløses av Elfsted (med enkelte spredte forekomster av <hi rend="italic">Elv</hi>-, se manuskript 8; jf. også manuskript 4, bl. 4–46). På grunn av sammenfallet med navn i første akt i Ms.8° 808, men med forskjellen <hi rend="italic">Elv</hi>- for <hi rend="italic">Elf</hi>-, er det mulig at denne listen er tidligere enn første akt i Ms.8° 808.</p>
+        <p><hi rend="italic">Replikkutkastene</hi>: Replikkene kan ligge til grunn for Ms.8° 808, legg 23, i samtalen mellom Hedda og Brack om hennes kjedsomhet og ønske om at Tesman kunne bli politiker. Replikkene er mye kortere enn i Ms.8° 808 (og i trykkmanuskriptet, som her bygger på Ms.8° 808). Nedenfor står en kort replikk av Løvborg om bot og bedring for hans ville liv, den gjenfinnes hverken i Ms.8° 808 eller i trykkmanuskriptet.</p>
+      </div>
+      
+      <div xml:id="msDesc_HG8809_2_date"> 
+        <head rend="level4">datering.</head>
+        <p>Dateringen er uviss, men jf. <hi rend="italic">Innhold og genetisk status</hi>.</p>
+      </div>
+      
+      <div xml:id="msDesc_HG8809_2_material"> 
+        <head rend="level4">mengde, struktur og rekkefølge.</head>
+        <p>De to delene av manuskriptet står på hver sin ytterside av et lite dobbeltblad. Replikkutkastene står på det som fremstår som dobbeltbladets første side. Personlisten på det som da blir siste side, er skrevet slik at teksten går parallelt med falsen, med første linje mot den. De to midtsidene er blanke. Dobbeltbladets øvre kant, sett fra siden med replikker, synes revet eller skåret.</p>
+      </div>
+      
+      <div xml:id="msDesc_HG8809_2_condition"> 
+        <head rend="level4">tilstand.</head>
+        <p>Manuskriptet har ubetydelige skrukker og flekker.</p>
+      </div>
+      
+      <div xml:id="msDesc_HG8809_2_paper"> 
+        <head rend="level4">papir.</head>
+        <p>Papiret er som i manuskript 1 (Ms.8° 809:1, bl. [1]r), med rutene orientert som der. Siden måler ca. 110 × 142 mm.</p>
+      </div>
+      
+      <div xml:id="msDesc_HG8809_2_pen"> 
+        <head rend="level4">skriveredskap og -stoff.</head>
+        <p>Manuskriptet er skrevet med blekk. Skriftbildet er brunt.</p>
+      </div>
+      
+      <div xml:id="msDesc_HG8809_2_handwriting"> 
+        <head rend="level4">skrift.</head>
+        <p>Skriften er venstrehellende og omhyggelig.</p>
+      </div>
+      
+      <div xml:id="msDesc_HG8809_2_stamp"> 
+        <head rend="level4">stempel og katalogsignatur.</head>
+        <p>Bibliotekets stempel og katalogsignatur (Ms.8° 809) finnes på bl. [1]v (versosiden av replikkene), undersignaturen 2 på bl. [2]v (personlisten).</p>
+      </div>
+      
+      <div xml:id="msDesc_HG8809_2_provenance"> 
+        <head rend="level4">proveniens.</head>
+        <p>Se manuskript 1 (Ms.8° 809:1, bl. [1]r).</p>
+      </div>
+    </div>
+    
+    <div xml:id="msDesc_HG8809_3">
+      <head rend="level3">6. nbo m<hi rend="miniscule">s</hi>.8° 809:3</head>
+      <p rend="noIndent">Egenhendige notater og arbeidsmanuskripter (replikkutkast). Ett dobbeltblad. Manuskriptet er i ES (3, 486) kalt A.c. Det er omtalt i HU (11, 399) og gjengitt som opptegnelse 6.</p>
+      
+      <div xml:id="msDesc_HG8809_3_content"> 
+        <head rend="level4">innhold og genetisk status.</head>
+        <p>Dobbeltbladets første side, bl. [1]r, gjelder første akt, resten av manuskriptet hovedsakelig annen og tredje akt. Navnebruken svarer til manuskript 8 (Ms.8° 808), med samme forskjell mellom første og annen akt som der. Det som gjelder annen og tredje akt, kan på grunn av navnene være skrevet senere enn første akt i Ms.8° 808.</p>
+        <p><hi rend="italic">Bl. [1]r</hi>: Ibsen har merket siden med et ett-tall, og utkastet kan være tenkt som åpningsreplikker til stykket; tanten og Berte snakker om alle blomstene som er kommet i forbindelse med hjemkomsten fra bryllupsreisen. Tantens navn er frøken Rising, som på personlisten i manuskript 5 (Ms.8° 809:2), jf. også manuskript 4 (Ms.8° 2638). Det kan tyde på at personlisten og disse replikkene kan være skrevet noenlunde samtidig. Replikkene er ikke brukt i Ms.8° 808 og kan være tidligere enn utformingen der.</p>
+        <p><hi rend="italic">Bladets øvrige tre sider</hi> inneholder notater om stykkets innhold, holdt i løpende prosa, iblandet replikkutkast. Det meste gjelder annen og tredje akt. Over teksten har Ibsen skrevet <quote>NB!</quote>. I et replikkskifte mellom Hedda og Tesman kommer det frem at hun ikke liker hans fornavn, det kan tyde på at navnet er Jørgen, jf. ES (3, 489). Nesten hele bl. [2]r er replikker til scenene mellom Hedda og Brack i annen akt, de kan ikke sees brukt i denne form i Ms.8° 808 eller i trykkmanuskriptet. Noen av replikkene her innledes med tre eller flere prikker. De må derfor være ment som utfylling av noe Ibsen allerede hadde skrevet. Det kan hende at dette knytter an til en forkastet begynnelse til annen akt, nå bevart i Ms.8° 808 (legg 16, bl. [2]v) bare som innledningen til akten og de aller første replikkene.</p>
+      </div>
+      
+      <div xml:id="msDesc_HG8809_3_date"> 
+        <head rend="level4">datering.</head>
+        <p>Dateringen er uviss, men jf. <hi rend="italic">Innhold og genetisk status</hi>.</p>
+      </div>
+      
+      <div xml:id="msDesc_HG8809_3_material"> 
+        <head rend="level4">mengde, struktur og rekkefølge.</head>
+        <p>Manuskriptet består av ett lite dobbeltblad med tekst på alle fire sider. Det som gjelder første akt, står på dobbeltbladets første side, i normal skriveretning. Ibsen har nummerert denne siden med et ett-tall i øvre venstre hjørne. Nedre halvdel av siden er blank. Det øvrige står bakfra i rekkefølgen bl. [2]v, [1]v og [2]r. På disse tre sidene er skriveretningen den samme som på bl. [1]v, som om det var skrevet i flukt med dette. Dobbeltbladets nedre kant synes revet eller skåret.</p>
+      </div>
+      
+      <div xml:id="msDesc_HG8809_3_condition"> 
+        <head rend="level4">tilstand.</head>
+        <p>Dobbeltbladet har en større rift i nedre del av falsen og en mindre i øvre del. Det har noen mindre skrukker og flekker.</p>
+      </div>
+      
+      <div xml:id="msDesc_HG8809_3_paper"> 
+        <head rend="level4">papir.</head>
+        <p>Papiret er som i manuskript 1 (Ms.8° 809:1, bl. [1]r), med rutene orientert som der. Siden måler ca. 111 × 142 mm.</p>
+      </div>
+      
+      <div xml:id="msDesc_HG8809_3_pen"> 
+        <head rend="level4">skriveredskap og -stoff.</head>
+        <p>Manuskriptet er skrevet med blekk. Skriftbildet er mørkebrunt.</p>
+      </div>
+      
+      <div xml:id="msDesc_HG8809_3_handwriting">
+        <head rend="level4">skrift.</head>
+        <p>Skriften er venstrehellende og overveiende omhyggelig med mer skjødesløse innslag, bl. [2]r er mer skjødesløst skrevet enn det øvrige. På bl. [1]r har Ibsen streket under rollenavnene. På bl. [1]v har han satt en liten strek mellom to av notatene.</p>
+      </div>
+      
+      <div xml:id="msDesc_HG8809_3_stamp"> 
+        <head rend="level4">stempel og katalogsignatur.</head>
+        <p>Bibliotekets stempel og katalogsignatur (Ms.8° 809) finnes på bl. [1]r, undersignaturen 3 på bl. [2]v.</p>
+      </div>
+      
+      <div xml:id="msDesc_HG8809_3_provenance"> 
+        <head rend="level4">proveniens.</head>
+        <p>Se manuskript 1 (Ms.8° 809:1, bl. [1]r).</p>
+      </div>
+    </div>
+    
+  <div xml:id="msDesc_HG8809_1_1v-4_13"> 
+<head rend="level3">9. nbo m<hi rend="miniscule">s</hi>.8° 809:1, bl. [1]<hi rend="miniscule">v</hi>–[2]; m<hi rend="miniscule">s</hi>.8° 809:4–13</head>
+<p rend="noIndent">Egenhendige arbeidsmanuskripter til spredte deler av stykket. Elleve dobbeltblad. I ES (3, 486–87) er Ms.8° 809:1 kalt A.a og B.f, Ms.8° 809:4–7 kalt B.b–e og Ms.8° 809:8–13 kalt B.g–l. I HU (11, 400–01) er Ms.8° 809 omtalt i avsnittet V, <quote>replikkutkast og lignende, som ligger til grunn for den endelige utarbeidelse</quote>, Ms.8° 809:1–3, 5–7 under punkt 1, Ms.8° 809:4 under 2 og Ms.8° 809:8–13 under 3.</p>
+
+<div xml:id="msDesc_HG8809_1_1v-4_13_content"> 
+<head rend="level4">innhold og genetisk status.</head>
+<p>Under katalogsignaturen Ms.8° 809 er samlet en rekke utkast til replikker o.a. Det meste, som her beskrives som manuskript 9, er trolig skrevet under utarbeidelsen av trykkmanuskriptet, som tillegg til og erstatning for tekst i manuskript 8 (Ms.8° 808), noen ganger i korrespondanse med tegn eller strykninger der. De delene av Ms.8° 809 som synes å være skrevet før Ms.8° 808, er beskrevet separat foran, som manuskript 1, 5 og 6. Sammen med Ms.8° 808 ligger manuskript 9 til grunn for utformingen i trykkmanuskriptet. Ofte er formuleringene svært nær de endelige. Mange av replikkene er skrevet uten angivelse av talende person, og personnavn er ofte angitt bare med initial.</p>
+<p>Ms.8° 809:1 inneholder, foruten manuskript 1, utkast til annen akt; Ms.8° 809:4–7 utkast til første akt, Ms.8° 809:8 utkast til annen akt, Ms.8° 809:9–10 utkast til tredje akt og Ms.8° 809:11–13 utkast til fjerde akt. For oversiktens skyld tas det i den følgende redegjørelsen utgangspunkt i trykkmanuskriptets tekst, dvs. hvilke sider der som svarer til teksten i de forskjellige utkastene.</p>
+<p rend="noIndent"><hi rend="italic">Til første akt</hi>:</p>
+<list type="bulleted">
+<item>Trykkmanuskriptets s. 7–8 (tilsvarer HIS 9, fra og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_39"/> til og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_40"/>): Ms.8° 809:4, bl. [1]r. Dette gjelder Tesmans første entré. Men han heter A[xel], som i første akt i Ms.8° 808. Det kan være en forglemmelse, eventuelt fordi Ibsen har hatt Ms.8° 808 foran seg under skrivingen, eller det kan være skrevet under arbeidet med første akt i Ms.8° 808.</item>
+<item>Trykkmanuskriptets s. 10 (tilsvarer HIS 9, fra og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_41"/> til og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_42"/>): Ms.8° 809:4, bl. [1]r, under det som gjelder s. 7–8. Ut fra skriftbildet (svakere trykk på pennen) ser det ut til at dette ikke er skrevet i umiddelbar flukt med det som står over.</item>
+<item>Trykkmanuskriptets s. 21–25 (tilsvarer HIS 9, fra og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_43"/> til og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_44"/>): Ms.8° 809:5, bl. [1]r – øverst på bl. [1]v. Etter første avsnitt, som gjelder presentasjonen av Hedda, kommer replikken <quote>Alle disse velsignede blomsterne</quote>, innledet med tre prikker, som viser at teksten skal suppleres fra annen kilde, nemlig Ms.8° 808, legg 5; den umiddelbart foregående teksten i trykkmanuskriptet er svært lik den i Ms.8° 808.</item>
+<item>Trykkmanuskriptets s. 27–30 (tilsvarer HIS 9, fra og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_45"/> til og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_46"/>): Ms.8° 809:5, bl. [2]v–r, [1]v; på bl. [1]v er teksten skrevet opp ned i forhold til det som gjelder trykkmanuskriptets s. 21–25.</item>
+<item>Trykkmanuskriptets s. 33–34 (tilsvarer HIS 9, fra og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_47"/> til og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_48"/>): Ms.8° 809:6, bl. [2]r, øvre del av siden</item>
+<item>Trykkmanuskriptets s. 35 (tilsvarer HIS 9, fra og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_49"/> til og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_50"/>): Ms.8° 809:6, bl. [2]r, siste avsnitt</item>
+<item>Trykkmanuskriptets s. 45–46 (tilsvarer HIS 9, fra og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_51"/> til og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_52"/>): Ms.8° 809:6, bl. [1]v. Dette knytter an til Ms.8° 808, legg 9, bl. [2]v. Teksten er først skrevet som en direkte fortsettelse av en påbegynt setning som Ibsen har føyd til Ms.8° 808 i annen skriveomgang (<quote>For De sad en klasse</quote>). Men Ibsen har strøket denne fortsettelsen (<quote>over m</quote>) og skrevet setningen på nytt og føyd til ny tekst.</item>
+<item>Trykkmanuskriptets s. 56–58 (tilsvarer HIS 9, fra og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_53"/> til og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_54"/>): Ms.8° 809:6, bl. [1]r, første avsnitt. På tilsvarende sted i Ms.8° 808 (legg 12, bl. [2]v – legg 13, bl. [1]r) er et sammenhengende tekstparti strøket. I avsnittets venstre marg står det en kort blyantstrek.</item>
+<item>Trykkmanuskriptets s. 60 (tilsvarer HIS 9, fra og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_55"/> til og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_56"/>): Ms.8° 809:6, bl. [1]r, annet avsnitt</item>
+<item>Trykkmanuskriptets s. 61 (tilsvarer HIS 9, fra og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_57"/> til og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_58"/>): Ms.8° 809:6, bl. [2]v. På tilsvarende sted i Ms.8° 808 (legg 14, bl. [1]) er et sammenhengende tekstparti strøket.</item>
+<item>Trykkmanuskriptets s. 69 (tilsvarer HIS 9, fra og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_59"/> til og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_60"/>): Ms.8° 809:7, bl. [1]r</item>
+<item>Trykkmanuskriptets s. 71–74 (tilsvarer HIS 9, fra og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_61"/> til og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_62"/>): Ms.8° 809:4, bl. [2]v</item>
+</list>
+
+<lb/>
+<p rend="noIndent"><hi rend="italic">Til annen akt</hi>:</p>
+<list type="bulleted">
+<item>Trykkmanuskriptets s. 86–87 (tilsvarer HIS 9, fra og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_63"/> til og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_64"/>): Ms.8° 809:1, bl. [2]v. Replikken finnes ikke i Ms.8° 808, men på tilsvarende sted (legg 20, bl. [1]v) har Ibsen i annen skriveomgang satt et kryss.</item>
+<item>Trykkmanuskriptets s. 93 (tilsvarer HIS 9, fra og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_65"/> til og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_66"/>): Ms.8° 809:1, bl. [1]r, de øverste tre linjer i noe som er skrevet opp ned i forhold til notatet som ovenfor er beskrevet som manuskript 1. På tilsvarende sted i Ms.8° 808 (legg 22, bl. [1]v) er en replikk strøket.</item>
+<item>Trykkmanuskriptets s. 95 (tilsvarer HIS 9, fra og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_67"/> til og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_68"/>): Ms.8° 809:1, bl. [1]r, like etter det som gjelder s. 93 og i samme skriveretning som det. På tilsvarende sted i Ms.8° 808 (legg 22, bl. [2]v) er noen replikker strøket.</item>
+<item>Trykkmanuskriptets s. 100 (tilsvarer HIS 9, fra og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_69"/> til og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_70"/>): Ms.8° 809:1, bl. [1]v, øverst</item>
+<item>Trykkmanuskriptets s. 102 (tilsvarer HIS 9, fra og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_71"/> til og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_72"/>): Ms.8° 809:1, bl. [1]v, nedenfor det som gjelder s. 100</item>
+<item>Trykkmanuskriptets s. 119–22 (tilsvarer HIS 9, fra og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_73"/> til og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_74"/>): Ms.8° 809:8, bl. [1]r, frem til en liten strek nede på siden. Først er teksten skrevet fullt ut, svært lik utformingen i Ms.8° 808, annen og tredje side i legg 30. Deretter gis bare de første ordene i en rekke replikker fulgt av o. s. v. eller prikker; begynnelsesordene svarer til replikker i samme rekkefølge i Ms.8° 808, siste side i legg 30 og de to første sidene i legg 31.</item>
+<item>Trykkmanuskriptets s. 123–24 (tilsvarer HIS 9, fra og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_75"/> til og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_76"/>): Ms.8° 809:8, bl. [1]r, under en strek nederst på siden, med fortsettelse på bl. [1]v. På (delvis) tilsvarende sted i Ms.8° 808 (legg 31, bl. [2]v – legg 32, bl. [1]v) er et sammenhengende tekstparti strøket.</item>
+<item>Trykkmanuskriptets s. 139 (tilsvarer HIS 9, fra og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_77"/> til og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_78"/>): Ms.8° 809:8, bl. [1]v, tredje linje i noe som er skrevet opp ned i forhold til det meste av teksten på siden; dette er merket med et ett-tall og korresponderer trolig med tilsvarende sted i Ms.8° 808 (legg 36, bl. [2]r), hvor Ibsen under annen skriveomgang har føyd til et lite ett-tall i margen. På bl. [2]r i Ms.8° 809:8 står tre linjer med mer fullstendig tekst til samme sted, i trykkmanuskriptet brukt i to replikker.</item>
+<item>Trykkmanuskriptets s. 140 (tilsvarer HIS 9, fra og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_79"/> til og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_80"/>): Ms.8° 809:8, bl. [1]v, over det som gjelder s. 139 og i samme skriveretning som dette. Utkastet består av to korte setninger. Ibsen har merket den første setningen med et kryss og den andre med et kryss og et ett-tall, dette korresponderer med tilsvarende tegn i Ms.8° 808 (legg 36, bl. [2]v).</item>
+</list>
+
+<lb/>
+
+<p rend="noIndent"><hi rend="italic">Til tredje akt</hi>:</p>
+<list type="bulleted">
+<item>Trykkmanuskriptets s. 150–56 (tilsvarer HIS 9, fra og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_81"/> til og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_82"/>): Ms.8° 809:9, bl. [1]. Over teksten på første side har Ibsen skrevet <quote>3. akt</quote>. Dette erstatter overstrøken tekst i Ms.8° 808 (fra og med siste side i legg 39 til og med siste side i legg 42).</item>
+<item>Trykkmanuskriptets s. 159–68 (tilsvarer HIS 9, fra og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_83"/> til og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_84"/>): Ms.8° 809:9, bl. [2] og Ms.8° 809:10. Siste side i Ms.8° 809:9 er ikke beskrevet helt ned, slutten her overlapper med  begynnelsen av Ms.8° 809:10. Deler av den tilsvarende teksten i Ms.8° 808 (i legg 45 og 46) er strøket.</item>
+</list>
+
+<lb/>
+
+<p rend="noIndent"><hi rend="italic">Til fjerde akt</hi>:</p>
+
+<list type="bulleted">
+<item>Trykkmanuskriptets s. 185–95 (tilsvarer HIS 9, fra og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_85"/> til og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_86"/>): Ms.8° 809:11. Som overskrift har Ibsen skrevet <quote>3. akt</quote>, det må være feilskrift for fjerde. Deler av den tilsvarende teksten i Ms.8° 808 er strøket (i legg 51 og 52). Mellom to tekstavsnitt på tredje side i Ms.8° 809:11 har Ibsen skrevet tallet 53, det må være en henvisning til legg 53 i Ms.8° 808. Akkurat der dette tallet står i Ms.8° 809:11, bl. [2]r, har Ibsen satt et lite, åpent rom, og replikken om at Hedda hadde brent manuskriptet, mangler. Ibsen kan ha ment å supplere den fra siste side i legg 52 i Ms.8° 808, den følgende teksten bygger på utformingen i legg 53. En replikk på bl. [2]v kan bygge på noe Ibsen har skrevet på et visittkort som ligger sammen med manuskript 4 (Ms.4° 2638), se dette.</item>
+<item>Trykkmanuskriptets s. 198 (tilsvarer HIS 9, <ptr type="ht" target="HGht.xml" corresp="koHG_ht_94"/>): <quote>og hilser</quote>: Ms.8° 809:12, bl. [2]v. Den eneste teksten på bl. [2]v er <quote>(Hilser til T. og)</quote>, dette kan gjelde sceneanvisningen på s. 198, idet Brack kommer inn. Trykkmanuskriptet følger her utformingen i Ms.8° 808 (legg 54, bl. [1]v), men med en tilføyelse om at Brack hilser.</item>
+<item>Trykkmanuskriptets s. 209–11 (tilsvarer HIS 9, fra og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_87"/> til og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_88"/>): Ms.8° 809:12. Foran teksten har Ibsen skrevet et ett-tall, det korresponderer med et tilsvarende tall tilføyd inne i en replikk på siste side i legg 56 i Ms.8° 808, resten av replikken der er strøket over. Mange av de følgende replikkene i Ms.8° 809:12 er bare antydet med begynnelsesordene fulgt av prikker; noen av begynnelsesordene svarer til replikker på første side i legg 57 i Ms.8° 808.</item>
+<item>Trykkmanuskriptets s. 218–19 (tilsvarer HIS 9, fra og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_89"/> til og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_90"/>): Ms.8° 809:13</item>
+<item>Trykkmanuskriptets s. 219–20 (tilsvarer HIS 9, fra og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_91"/> til og med <ptr type="ht" target="HGht.xml" corresp="koHG_ht_92"/>): Ms.8° 809:13, under det som gjelder s. 218–19, men neppe skrevet i flukt med dette</item>
+</list>
+</div>
+  
+<div xml:id="msDesc_HG8809_1_1v-4_13_date"> 
+<head rend="level4">datering.</head>
+<p>Det meste kan være skrevet under utarbeidelsen av trykkmanuskriptet (manuskript 10, se nedenfor om dateringen av det), jf. <hi rend="italic">Innhold og genetisk status</hi>.</p>
+</div>
+  
+<div xml:id="msDesc_HG8809_1_1v-4_13_material"> 
+<head rend="level4">mengde, struktur og rekkefølge.</head>
+<p>Hele Ms.8° 809 består av 13 dobbeltblad, nummerert 1–13 av biblioteket. Ingen av dobbeltbladene er foliert eller paginert av Ibsen. I gjennomgåelsen ovenfor omtales bladene i hvert dobbeltblad som [1] og [2]; i Ms.8° 809:1 er rekkefølgen bestemt av antatt kronologi, ellers av tekstens plass i verket. Om størrelsen på dobbeltbladene, se innledningen foran manuskript 1.</p>
+<p>Ms.8° 809:1. Dobbeltbladet har tekst på tre sider. Bl. [2]r er blankt. Utkastene til annen akt er skrevet i motsatt skriveretning av notatet i manuskript 1, på begge sider av samme blad som dette, og på dobbeltbladets siste side, bl. [2]v. Men snur man bladet, slik at notatenes skriveretning følges, står de på første, tredje og fjerde side; ingen av disse har tekst på hele siden, bare øverst. På det som er kalt bl. [1]r, er det altså tekst både øverst og nederst på siden, opp ned i forhold til hverandre, med et blankt felt mellom. Nedre kant (orientert ut fra manuskript 1) er revet eller skåret.</p>
+<p>Ms.8° 809:4. Dobbeltbladet har tekst på de to yttersidene. De to midtsidene er blanke. Den første siden har tekst bare på øvre halvdel, siste side er fullskreven. Skriftretningen på de to tekstsidene er opp ned i forhold til hverandre, slik at begge sider kunne være første side i dobbeltbladet. Nedre kant (sett fra bl. [1]r) synes revet eller skåret.</p>
+<p>Ms.8° 809:5. Dobbeltbladet har tekst på alle fire sider. Den består av to tekstsekvenser som hver for seg er sammenhengende, bl. [1]r – øverst på bl. [1]v, og bl. [2]v–r – resten av bl. [1]v. På bl. [1]r og [2]v (de to yttersidene) og øverst på bl. [1]v er skriftretningen den samme, på resten av bl. [1]v og på bl. [2]r er skriftretningen motsatt (opp ned i forhold til yttersidene). Bl. [1]v har altså tekst øverst og nederst på siden, opp ned i forhold til hverandre, med et blankt felt mellom. De øvrige sidene er fullskrevne. Øvre kant (orientert ut fra skriftretningen på bl. [1]r) er revet eller skåret.</p>
+<p>Ms.8° 809:6. Dobbeltbladet har tekst på alle fire sider. Første side er fullskreven, på annen og siste side er det bare noen linjer tekst øverst, på tredje side dekker teksten noe over halvparten av siden. Nedre kant synes revet eller skåret.</p>
+<p>Ms.8° 809:7. Dobbeltbladet har bare noen linjer tekst øverst på første side. De øvrige sidene er blanke. Nedre kant synes revet eller skåret.</p>
+<p>Ms.8° 809:8. Dobbeltbladet har tekst på de tre første sidene. Siste side er blank. Teksten nederst på bl. [1]r fortsetter på bl. [1]v. Første side er fullskreven, på annen side er det et blankt felt nede på siden, med tre linjer i motsatt skriveretning nederst. Disse linjene hører sammen med tre linjer som er eneste tekst på bl. [2]r, i samme skriveretning og plassert på samme måte.</p>
+<p>Ms.8° 809:9. Dobbeltbladet har tekst på alle fire sider. De to første sidene har sammenhengende tekst, også de to siste. De tre første sidene er fullskrevne, på siste side fyller teksten omtrent øvre halvpart, med et lite tillegg lenger nede på siden.</p>
+<p>Ms.8° 809:10. Dobbeltbladet har tekst bare på første side; teksten fyller det meste av siden. De øvrige sidene er blanke.</p>
+<p>Ms.8° 809:11. Dobbeltbladet har sammenhengende tekst som fyller alle fire sider.</p>
+<p>Ms.8° 809:12. Dobbeltbladet har tekst på første og siste side. På første side fyller teksten omtrent øvre halvpart, med et lite tillegg lenger nede på siden. På siste side står det bare noen få ord (en påbegynt sceneanvisning), i motsatt skriveretning. De to midtsidene er blanke.</p>
+<p>Ms.8° 809:13. Dobbeltbladet har tekst bare på øvre del av første side. De øvrige sidene er blanke.</p>
+</div>
+  
+<div xml:id="msDesc_HG8809_1_1v-4_13_condition"> 
+<head rend="level4">tilstand.</head>
+<p>De fleste dobbeltbladene har skrukker, mindre skader i kantene og små rifter i falsen. Ms.8° 809:1 har betydelige rifter øverst og nederst i falsen.</p>
+</div>
+  
+<div xml:id="msDesc_HG8809_1_1v-4_13_paper"> 
+<head rend="level4">papir.</head>
+<p>Alt i Ms.8° 809, bortsett fra Ms.8° 809:4, er i samme papir: gulaktig med svake rektangulære ruter. Ms.8° 809:8–13 har <quote>normal</quote> dobbeltbladstørrelse, med stående ruter; det øvrige er halvparten så stort, med liggende ruter, fremkommet ved falsing av en <quote>normal</quote> side. I Ms.8° 809:1 og 5 måler siden ca. 110 × 142 mm, i Ms.8° 809:6 og 7 ca. 111 × 144 mm og i Ms.8° 809:8–13 ca. 143 × 221 mm. Det samme papiret, falset som i Ms.8° 809:1–3, 5–7, er også brukt i Ms.8° 1942 (manuskript 3 og 7).</p>
+<p>I Ms.8° 809:4 er papiret gulaktig, noe stivt, med vannmerke MYRTL[E MILL] JVORY [PAPER] med ornament. Siden måler 105 × 160 mm. Den samme papirtypen er brukt i trykkmanuskriptet (manuskript 10).</p>
+</div>
+  
+<div xml:id="msDesc_HG8809_1_1v-4_13_pen"> 
+<head rend="level4">skriveredskap og -stoff.</head>
+<p>Alt i Ms.8° 809 er skrevet med blekk. Skriftbildet er brunt, til dels mørkebrunt. På første side i Ms.8° 809:6 er det satt en liten blyantstrek i margen.</p>
+</div>
+  
+<div xml:id="msDesc_HG8809_1_1v-4_13_handwriting"> 
+<head rend="level4">hender og skrift.</head><lb/>
+<p>1. <hi rend="italic">Henrik Ibsen</hi>: Skriften er venstrehellende og overveiende skjødesløs, i varierende grad.</p>
+<p>2. <hi rend="italic">Andre</hi>: Det er uvisst hvem som har satt til blyantstreken på første side i Ms.8° 809:6 (se <hi rend="italic">Innhold og genetisk status</hi>, det som gjelder trykkmanuskriptets s. 56–58).</p>
+</div>
+  
+<div xml:id="msDesc_HG8809_1_1v-4_13_stamp">
+<head rend="level4">stempel og katalogsignatur.</head>
+<p>Hvert dobbeltblad har bibliotekets stempel og katalogsignatur Ms.8° 809, Ms.8° 809:5 har bare katalogsignaturen. Stempelet og katalogsignaturen finnes alltid sammen, i Ms.8° 809:1 på bl. [2]r, i Ms.8° 809:4, 10, 12 og 13 på bl. [1]v, i Ms.8° 809:5 (ikke stempel), 7 og 11 på bl. [1]r, i Ms.8° 809:6, 8 og 9 på bl. [2]v. Undersignaturene 1–13 er tilføyd med blyant, alltid på bl. [1]r (men se manuskript 5 og 6, Ms.8° 809:2 og 3, ovenfor).</p>
+</div>
+  
+<div xml:id="msDesc_HG8809_1_1v-4_13_provenance"> 
+<head rend="level4">proveniens.</head>
+<p>Se manuskript 1 (Ms.8° 809:1, bl. [1]r).</p>
+</div>
+  </div>
+    </div>
+
+<div xml:id="msDesc_HG4262III4"> 
+<head rend="level3">10. kbk collin 262, 4°, III.4</head>
+<p rend="noIndent">Egenhendig trykkmanuskript. Løse legg, egenhendig nummerert 1–57, senere paginert 1–223 fra og med første side i legg 2. Denne pagineringen brukes nedenfor ved henvisning til sider i manuskriptet. På første side i legg 1: <title rend="quotes">Hedda Gabler. / Skuespil i fire akter / af / Henrik Ibsen. / 1890.</title></p>
+
+<div xml:id="msDesc_HG4262III4_content"> 
+<head rend="level4">innhold og genetisk status.</head>
+<p>Legg 1, bl. [1]r tittelside, bl. [2]r tittelen, bl. [2]v <quote>Personerne:</quote>, s. 1–223 skuespillets tekst (fullstendig), med enkelte rettelser. Settermarkeringer og merker etter svertede fingre viser at manuskriptet har vært brukt som trykkforelegg. Manuskriptet bygger på det rettede manuskript 8 (Ms.8° 808) og på manuskript 9 (det meste av Ms.8° 809). At deler av teksten har Ms.8° 808 som forelegg, fremgår bl.a. av s. 49, der teksten følger Ms.8° 808, legg 10, bl. [1]v og [2]r i den grad at Ibsen først skriver <quote>Holger</quote> som der (umiddelbart rettet til <quote>Ejlert</quote>). Enkelte tilføyelser og rettelser kan være utført under gjennomlesning. Eksempler: På s. 21–22 har Ibsen først skrevet en sceneanvisning på grunnlag av Ms.8° 809:5, men så strøket slutten om farvene i Heddas klær; på s. 24 har han i en replikk av Tesman tilføyd <quote>Tøflerne, du!</quote>, det står ikke i Ms.8° 809:5, og skriftbildet sannsynliggjør at dette er en senere tilføyelse. En innskutt replikk på s. 175 skyldes derimot forglemmelse, replikken finnes i forelegget i Ms.8° 808, legg 48, bl. [1]v, og innskuddet kan være gjort umiddelbart. Noen steder er det med fiolett blekk satt en liten strek under skrivefeil. På s. 121 og 125 står det et kryss i venstre marg etter tredje linje ovenfra; kryssene er skrevet med mørkt blekk i noenlunde samme farve som korrekturstrekene (og settermarkeringene). Inne i legg 1 ligger en lapp der August Larsen har skrevet tekst til baksiden av tittelbladet om utgaver på andre språk, se Ibsens brev til ham 27. november 1890. På s. 221 (første side i legg 57) har ukjent hånd skrevet <quote>Hedda Gabler</quote> med blyant.</p>
+</div>
+  
+<div xml:id="msDesc_HG4262III4_date"> 
+<head rend="level4">datering.</head>
+<p>Legg 1, bl. [1]r (tittelsiden): <quote>1890.</quote> Ifølge sitt brev til August Larsen 26. oktober 1890 hadde Ibsen arbeidet <quote>uafbrudt</quote> på trykkmanuskriptet etter at manuskript 8 (Ms.8° 808) var ferdig 7. oktober. Datoer som Ibsen har skrevet inn i Ms.8° 808, forteller at trykkmanuskriptets første akt var ferdig 22. oktober 1890, at han begynte på annen akt 23. oktober og ble ferdig med den 3. november, og at han begynte på fjerde akt 11. november 1890. Se avsnittet <hi rend="italic">Datering</hi> i beskrivelsen av manuskript 8. Han sendte trykkmanuskriptet samlet til forlaget 18. november 1890, se hans brev til Larsen 17. november og til Moritz Prozor 20. november 1890.</p>
+</div>
+  
+<div xml:id="msDesc_HG4262III4_material"> 
+<head rend="level4">mengde, struktur og rekkefølge.</head>
+<p>Manuskriptet består av 57 løse legg à to blad (ett dobbeltblad), i alt 114 blad. Ibsen har nummerert leggene i øvre venstre hjørne av hvert leggs første side. August Larsen har paginert sidene 1–223, pagineringen løper fra og med første side i legg 2 til og med tredje side i legg 57 (dvs. alle sidene i stykkets tekst, etter personlisten). Versosiden av første blad i legg 1 og av annet blad i legg 57 er blanke, alle andre sider er beskrevne. I legg 1 ligger det en lapp, skrevet av Larsen.</p>
+</div>
+  
+<div xml:id="msDesc_HG4262III4_condition"> 
+<head rend="level4">tilstand.</head>
+<p>En del av leggene har små rifter i falsen, og noen har mindre skader i ytterkant. Det finnes mange flekker, bl.a. fingermerker. Særlig s. 1 og siste (ubeskrevne) side i legg 57 er misfarvet og skitne.</p>
+</div>
+  
+<div xml:id="msDesc_HG4262III4_paper"> 
+<head rend="level4">papir.</head>
+<p>Papiret er gulaktig, noe stivt, med vannmerke MYRTLE MILL JVORY PAPER med ornament. Siden måler 160 × 211 mm.</p>
+</div>
+  
+<div xml:id="msDesc_HG4262III4_pen"> 
+<head rend="level4">skriveredskap og -stoff.</head>
+<p>Manuskriptet er skrevet med blekk. Skriftbildet er brunt. Larsens lapp er skrevet med blekk i noenlunde samme farve. Hans sidetall er med blyant, det samme er tittelen på s. 221. De små korrekturstrekene og de to kryssene på s. 121 og 125 er med fiolett blekk, til dels mørkt. Settermarkeringene er med fiolett blekk og forskjellige blyanter.</p>
+</div>
+  
+<div xml:id="msDesc_HG4262III4_handwriting"> 
+<head rend="level4">hender og skrift.</head><lb/>
+<p>1. <hi rend="italic">Henrik Ibsen</hi>: Skriften er venstrehellende og omhyggelig. Ibsen har brukt et system av understrekninger i tekst som ikke er replikker, og satt skillestrek etter hver akt. Strykninger er gjerne utført med små skråstreker.</p>
+<p>2. <hi rend="italic">August Larsen</hi>: Sidetallene og den vedlagte lappen. Hans skrift er tydelig. Det kan være han som har satt korrekturstrekene. Det er uvisst om de to kryssene også er hans. August Larsen (1843–1906) var dansk bokhandler; han var ansatt i Gyldendals forlag fra 1863 og utførte korrekturtjenesten på Ibsens manuskripter. Hans håndskrift finnes blant annet i hans brev til Ibsen (NBO Brevs. 200).</p>
+<p>3. <hi rend="italic">Andre</hi>: Settermarkeringene, tittelen på s. 221.</p>
+</div>
+  
+<div xml:id="msDesc_HG4262III4_stamp"> 
+<head rend="level4">stempel og katalogsignatur.</head>
+<p>Første side i legg 1 (tittelsiden) er stemplet <quote>Den Collinske Manuscriptsamling</quote>.</p>
+</div>
+  
+<div xml:id="msDesc_HG4262III4_provenance"> 
+<head rend="level4">proveniens.</head>
+<p>Manuskriptet tilhører Det Kongelige Bibliotek, København, som del av bibliotekets Collinske Samling. Ibsen hadde gitt sitt samtykke til at hans forlegger Frederik Hegel kunne avlevere trykkmanuskriptene til Edvard og Jonas Collin <bibl>(L. Nielsen 1943, XXXI)</bibl>. Ordningen kan ha blitt etablert i 1870. Den 4. januar det året skrev Ibsen til Jonas Collin:
+<quote rend="proseIndent">Hvad de omhandlede Manuscripter betræffer, saa anser jeg mig ikke som ejendomsberettiget till disse. Men dersom Cancelliraad Hegel er villig till at afstaa dem, saa er det en Selvfølge at jeg vil betragte det som en Ære at faa dem indlemmede i Deres Herr Faders Samling.</quote></p>
+</div>
+</div>
+</div>
+</body>
+</text>
+</TEI>

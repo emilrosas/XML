@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title level="s">Henrik Ibsens skrifter, elektronisk versjon</title>
+<title level="a">Manuskriptbeskrivelser til Et dukkehjem</title>
+<author>ved Tone Modalsli</author>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
+<respStmt>
+<resp>Innlemming i elektronisk utgave</resp>
+<name>EDD: Eining for digital dokumentasjon</name></respStmt>
+<respStmt><resp>Kodeteknisk støtte og utvikling</resp>
+<name>AKSIS: Avdeling for kultur, språk og informasjonsteknologi, Universitetsforskning i Bergen (Unifob AS)</name></respStmt>
+<respStmt><resp>HISe-koding</resp>
+<name xml:id="SBT">Stine Brenna Taugbøl</name>
+<name xml:id="EFS">Eivor Finset Spilling</name></respStmt>
+<respStmt><resp>Koding</resp>
+<name xml:id="AMB">Aasta Marie Bjorvand Bjørkøy</name>
+<name xml:id="MA">Maria Alnæs</name>
+<name>Nina Marie Evensen</name></respStmt>
+<respStmt><resp>Tekstarbeid</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Maria Alnæs</name>
+<name>Nina Marie Evensen</name></respStmt>
+<respStmt><resp>Kontroll av sitater og ordbøker</resp>
+<name xml:id="IK">Ingrid Korvald</name>
+<name xml:id="GB">Gry Berg</name></respStmt>
+<respStmt><resp>Kontroll av littlist og referanser</resp>
+<name xml:id="HS">Hege Stensrud</name>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Maria Alnæs</name></respStmt>
+<respStmt><resp>Kommentar-, intern- og ht-entiteter</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name></respStmt>
+<respStmt><resp>Kodekontroll</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+</respStmt>
+</titleStmt>
+<publicationStmt>
+<publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+<distributor xml:id="HISe">Universitetet i Oslo</distributor>
+<date when="2010" xml:id="HISe-date"/>
+<pubPlace>Oslo</pubPlace>
+</publicationStmt>
+<sourceDesc>
+<p>Filen er opprettet fra 7k_sisteversjon.xml (0309).</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<tagsDecl>
+
+</tagsDecl>
+</encodingDesc>
+<profileDesc>
+<langUsage>
+<language ident="nob"/>
+</langUsage>
+</profileDesc>
+<revisionDesc>
+ <change>
+  <date>30.01.2012</date>
+  <name>SBT</name><title>Id-verdier</title>
+  La inn manglende id-verdier.
+ </change>
+ <change>
+  <date>21.08.2011</date>
+  <name>SBT</name><title>Entiteter</title>
+  Erstattet entiteter for æ/ø/å med bokstaver. Validert.
+ </change>
+ <change>
+  <date>11.08.2011</date>
+  <name>SBT</name><title>Validering</title>
+  Endret sti til skjema i dokumenttopp.
+ </change>
+ <change>
+  <date>05.07.2011</date>
+  <name>EFS</name><title>Lenkekoding</title>
+  La inn id-verdier i div-strukturen (noen manuskripter gjenstår fortsatt fordi de er slått sammen) og lenkekoding i referanser til tekster som er med i første versjon av HISe.
+ </change>
+ <change>
+  <date>04.07.2011</date>
+  <name>SBT</name><title>P5</title>
+  Kodet om til valid P5.
+ </change>
+ <change>
+  <date>05.01.2011</date>
+  <name>SBT</name><title>Listekoding</title>
+  Oppdaterte listekoding.
+ </change>
+ <change>
+  <date>24.11.2010</date>
+  <name>SBT</name><title>Validering</title>
+  Fjernet ref til files og figures i dokumenttoppen. Fila er valid.
+ </change>
+ <change>
+<date>10-13.09.2010</date>
+<name>SBT</name><title>Opprettet xml-fil</title>
+Endret teiHeader. Kodet om overskrifter, lister og ryddet i fila (fjernet blanke og blanklinjer). Gjorde om koding av hender til listekoding. Validerte fila.
+</change>
+</revisionDesc>
+</teiHeader>
+
+<text type="introduction">
+<body>
+<div type="msDescription" xml:id="msDesc">
+
+<p rend="noIndent">Det meste av manuskriptmaterialet til <title rend="italic">Et dukkehjem</title> er ordnet under katalogsignaturen NBO Ms. 4° 1113. Materialet er delt inn i a–i, jf. Lie <bibl>(1948, 91)</bibl> (der a–g; h og i er kommet til senere). De forskjellige notatene og arbeidsmanuskriptene beskrives hver for seg nedenfor, i tentativ genetisk rekkefølge, uavhengig av den orden biblioteket har lagt dem i, men likevel slik at sammenhengende manuskripter (som manuskript 3) ikke deles opp, men beskrives samlet, selv om andre manuskripter er blitt til underveis i utarbeidelsen.</p>
+              
+<div xml:id="msDesc_genetic">
+<head rend="level3">sammenfatning om den genetiske rekkefølgen</head>
+<p rend="noIndent">En oversikt i listeform over den genetiske rekkefølgen av det meste av materialet er gitt i <title rend="italic">The Oxford Ibsen</title> <bibl>(Ibsen 1960–77, b. 5, 452, 454)</bibl>. Deres oppfatning av genesen svarer i hovedtrekk til HIS’. Listen gjentas her, men manuskriptbetegnelsene er erstattet med dem som brukes nedenfor (alle manuskriptene er i NBO). Begrunnelsen for rekkefølgen vil fremgå av gjennomgåelsen av delene.</p>
+   
+<list type="bulleted">
+<item><quote>Optegnelser til nutids-tragedien</quote> i manuskript 1 <bibl>(Ms. 4° 1113a, bl. 1)</bibl></item>
+<item><quote>Scenegang. Første handling</quote> i manuskript 1 <bibl>(Ms. 4° 1113a, bl. 2)</bibl></item>               
+<item><quote>Personerne</quote> i manuskript 1 <bibl>(Ms. 4° 1113a, bl. 1v)</bibl></item>               
+<item>Første akt i manuskript 3 <bibl>(Ms. 4° 1113f)</bibl></item>                
+<item><quote>Scenegang. Anden handling</quote> i manuskript 1 <bibl>(Ms. 4° 1113a, bl. 3)</bibl></item>                
+<item>Annen akt i manuskript 3 <bibl>(Ms. 4° 1113f)</bibl></item>               
+<item>Scenegang for <quote>Tredje handling</quote> i manuskript 1 <bibl>(Ms. 4° 1113a, bl. 3v–4)</bibl></item>               
+<item>Tredje akt i manuskript 3 <bibl>(Ms. 4° 1113f)</bibl></item>               
+<item>Scenegangsnotat for annen akt, manuskript 4 <bibl>(Ms. 4° 1113a, bl. 4v)</bibl></item>              
+<item>Revisjoner til annen akt, manuskript 5 og 6 <bibl>(Ms. 4° 1113b, legg 1–4 og a–d)</bibl></item>               
+<item>Revisjoner til tredje akt, manuskript 10 <bibl>(Ms. 4° 1113c)</bibl></item>              
+<item>Trykkmanuskriptet, manuskript 12 (Ms. 8° 952)</item>              
+</list>
+</div>
+ 
+<div xml:id="msDesc_Du41113">
+<div xml:id="msDesc_Du41113a-f">
+<head rend="level3">nbo m<hi rend="miniscule">s</hi>. 4° 1113 <hi rend="miniscule">a–g</hi></head>
+  
+<p rend="noIndent">Ms. 4° 1113a–g er bundet inn sammen, i rekkefølgen a–g, og har samme proveniens. Innledningsvis beskrives derfor trekk som er felles for disse delene.</p>
+
+<div xml:id="msDesc_Du41113a-f_date">
+<head rend="level4">datering.</head>
+<p>Bare Ms. 4° 1113a, bl. 1r og Ms. 4° 1113f er datert, se disse (manuskript 1 og 3). Den relative kronologien blir diskutert i avsnittet <hi rend="italic">Innhold og genetisk status</hi> i beskrivelsen av de forskjellige delene og også antydet i nummereringen av manuskriptene. Når det ikke kan sies noe om datering ut over det, utelates avsnittet <hi rend="italic">Datering</hi> i beskrivelsene.</p>
+</div>
+              
+<div xml:id="msDesc_Du41113a-f_material">
+<head rend="level4">mengde, struktur og rekkefølge.</head>
+<p>Bibliotekets første katalogtekst for Ms. 4° 1113a–g (1910) deler materialet inn annerledes, i 1–3. Del 1 var det som nå heter Ms. 4° 1113f. Del 2 var <quote>Optegnelser pag. [dvs. foliert] rødt 1–28</quote>, dette tilsvarer delene a–e. Bl. 1–4 er nå Ms. 4° 1113a, bl. 5–20 er Ms. 4° 1113b, bl. 21–26 er Ms. 4° 1113c, bl. 27 er Ms. 4° 1113d, og bl. 28 er Ms. 4° 1113e. Den røde folieringen er nyere og ikke egenhendig, se nærmere i manuskriptbeskrivelsen til <title rend="italic">Samfundets støtter</title>, innledningen om hele Ms. 4° 1112. Denne folieringen er ikke nevnt i ES og HU. Del 3 var Ms. 4° 1113g. HU bruker tall (ikke bokstaver) for de forskjellige delene av Ms. 4° 1113 (se HU 8, 367, 368, 373, 450, 470), men ikke slik som i den eldste katalogen, blant annet synes undernumrene 1 og 2 å være byttet om; detaljer om dette gis nedenfor i beskrivelsen av delene. På grunn av innbindingen er det ofte ikke mulig å se hvilke blad som opprinnelig har hørt sammen i dobbeltblad, da må opplysninger om <quote>ark</quote> (= dobbeltblad) i ES legges til grunn.</p>
+<p>Bindet er håndlaget av bokbinderfirmaet Refsum, etter 1948. Beskrivelsen i katalogen over Universitetsbibliotekets Ibsen-utstilling 1928 <bibl>(Holtsmark red. 1928, 15)</bibl> forutsetter at delene er løse, det samme synes å gjelde i Lie <bibl>(1948, 91)</bibl>. I katalogen over bibliotekets Ibsen-utstilling 1956 <bibl>(<title rend="italic">Minneutstilling</title> 1956, 76–77)</bibl> er teksten tatt fra Lie. Bindets tittelblad er skrevet av Solveig Tunold, som var leder for bibliotekets håndskriftsamling 1948–70. Bindet måler ca. 186 × 231 mm.<note type="footer">Alle mål er bredde × høyde, målt midt på siden (bind måles midt på forpermen).</note> Rygg og hjørner er i rødt skinn; bindets innhold er angitt med gulltrykk på ryggen. Permene har overtrekkspapir med mønster i nyanser av brunt. Forsatspapiret er marmorert i grått med gullskimmer. Mellom manuskriptene og fremre og bakre forsatsblad er et gulaktig dobbelt flyblad med det ene bladet (den ene halvdelen av dobbeltbladet) limt sammen med respektive forsatsblad, det fremre flybladet er brukt som bibliotekets tittelblad. Ved innbindingen er det satt inn blanke ufolierte blad foran delene a, b, c, e og f. Bladet foran Ms. 4° 1113a er i gulaktig konseptpapir, de fire andre er i lyst gulaktig papir av forskjellig størrelse. Kapitelbåndet er i rødt og hvitt. Heftetråden er gulaktig.</p>
+</div>
+              
+<div xml:id="msDesc_Du41113a-f_condition">
+<head rend="level4">tilstand.</head>
+<p>Bindet er noe slitt. Speilet (innsiden av forpermen) har begynnende brist mot ryggen. Det blanke bladet foran Ms. 4° 1113c er løst.</p>
+</div>
+              
+<div xml:id="msDesc_Du41113a-f_paper">
+<head rend="level4">papir.</head>
+<p>Mye er av samme type, i det følgende kalt hovedtypen. Dette papiret er lyst gulaktig med bunn- og kjedelinjer og med vannmerke Joynson Superfine. Siden måler 175–77 × 221–23 mm (for detaljer, se beskrivelsene nedenfor). Jf. papir 31 i HIS 13, 537. Hovedtypen er brukt i Ms. 4° 1113f (manuskript 3), i b, legg 1–4 og legg a (manuskript 5 og første del av manuskript 6), i d (manuskript 8) og i c (manuskript 10). Samme papir er brukt i manuskript 11 <bibl>(Ms. 4° 1113i)</bibl> og 12 (Ms. 8° 952).</p>
+</div>
+              
+<div xml:id="msDesc_Du41113a-f_handwriting">
+<head rend="level4">hender og skrift.</head><lb/>
+<list type="numbered">
+<item n="1"><hi rend="italic">Henrik Ibsen</hi>: Se beskrivelsen av delene.</item>                
+<item n="2"><hi rend="italic">Julius Elias</hi>: I Ms. 4° 1113f (manuskript 3) og b, legg 1–4 (manuskript 5) har Elias under arbeidet med ES satt til noen klammer og streker med blyant, i manuskript 3 til dels blå farveblyant. Jf. manuskriptbeskrivelsen til <title rend="italic">Samfundets støtter</title>, innledningen om hele Ms. 4° 1112. I Elias’ brev til Koht 18. mai 1907 som det henvises til der, opplyser han også at han iblant bruker farveblyant for å forhindre feil.</item>                
+<item n="3"><hi rend="italic">Andre</hi>: Den røde folieringen.</item>
+</list>
+</div>
+              
+<div xml:id="msDesc_Du41113a-f_stamp">
+<head rend="level4">stempel og katalogsignatur.</head>
+<p>Bibliotekets stempel og katalogsignatur finnes på bindets rygg. Stempelet og undersignaturene (bokstavbetegnelsene) finnes også på rectosiden av de blanke ufolierte bladene foran delene a, b, c, e og f, undersignaturen d på bl. 27r, e også på bl. 28r. Stempelet finnes dessuten på Ms. 4° 1113a, bl. 1r og på tittelsiden i Ms. 4° 1113g, katalogsignaturen Ms. 4° 1113 på Ms. 4° 1113a, bl. 2v.</p>
+</div>
+              
+<div xml:id="msDesc_Du41113a-f_provenance">
+<head rend="level4">proveniens.</head>
+<p>Ms. 4° 1113 tilhører Nasjonalbiblioteket, Oslo. Biblioteket (den gang Universitetsbiblioteket) mottok delene a–g som gave fra Henrik Ibsens familie i 1906.</p>
+</div>
+</div>
+
+   
+<div xml:id="msDesc_Du41113a">
+<head rend="level3">1. nbo m<hi rend="miniscule">s</hi>.4° 1113<hi rend="miniscule">a</hi>, bl. 1<hi rend="miniscule">–</hi>4<hi rend="miniscule">r</hi></head>
+<p rend="noIndent">Egenhendige notater. Bl. 1–2: fire sider. På bl. 1r <quote>Optegnelser / til / nutids-tragedien. / Rom, / 19.10.78.</quote>, på bl. 1v <quote>Personerne:</quote>, bl. 2r <quote>Scenegang. / Første handling.</quote> Bl. 3–4r: tre sider. På bl. 3r <quote>Scenegang. / Anden handling.</quote>, på bl. 3v <quote>Tredje handling.</quote> I ES (3, 456) er dette kalt A; i HU (8, 368) er det nr. 1 av <quote>Optegnelser</quote>, katalogsignaturen oppgis feilaktig som Ms. 4° 1113:1.</p>
+              
+<div xml:id="msDesc_Du41113a_content">
+<head rend="level4">innhold og genetisk status.</head>
+<p>Notatene består blant annet av skisser til scenegang for de tre aktene. De forskjellige notatene er ikke skrevet samtidig. Scenegangsnotatene må være utarbeidet på forskjellige stadier i arbeidet med arbeidsmanuskriptet Ms. 4° 1113f (manuskript 3): notatet for første akt før selve nedskrivningen begynte, notatene for de to neste før Ibsen begynte på utformingen av annen respektive tredje akt.</p>
+                
+<p><hi rend="italic">Bl. 1–2</hi> inneholder to notater og en personliste og er det eldste kjente materialet til stykket. <quote>Optegnelser til nutids-tragedien</quote> fyller første og det meste av annen side. Det er et notat hovedsakelig om forholdet mellom kjønnene i dagens samfunn, med skisse til hovedelementer av handlingen. Personnavn er ikke brukt, bortsett fra <quote>Krogstad</quote> i to linjer som Ibsen har føyd til i margen på annen side. Navnet kan være tatt fra personlisten som følger etter opptegnelsene nederst på bl. 1v. For øvrig har <quote>Optegnelser</quote> bare en mindre rettelse. Notatet <quote>Scenegang. Første handling</quote> fyller hele bl. 2. Notatet har bare små rettelser. Det må ligge til grunn for utformingen av akten i manuskript 3 <bibl>(Ms. 4° 1113f)</bibl>. Som i <quote>Optegnelser</quote> er det heller ikke i notatet brukt navn, men de personene som er omtalt, svarer til de åtte første av de ni navnene som står i personlisten på bl. 1v. Det er derfor sannsynlig at personlisten er skrevet senere enn scenegangsnotatet, men før Ibsen begynte utarbeidelsen av første akt i Ms. 4° 1113f. I listen heter barnepiken Karen, i utarbeidelsen av akten Anna/Anne. Det niende navnet i personlisten, <quote>Doktor Hank</quote>, synes å være skrevet med noe lysere brunt blekk og kan være føyd til senere. Det samme kan være tilfelle med Ibsens rettelse i listen av <quote>Frøken Lind</quote> til <quote>Fru Lind, enke</quote>. Begge disse tilføyelsene/rettelsene kan være gjort i forbindelse med utarbeidelsen av første akt i Ms. 4° 1113f, se om navnebruken der nedenfor. Jf. ES (3, 458).</p>
+                
+<p><hi rend="italic">Bl. 3–4r</hi> inneholder notater til scenegangen for annen og tredje akt, med rettelser i det som gjelder annen akt. Notatet for annen akt er svært detaljert. I motsetning til scenegangsnotatet for første akt i manuskript 1 brukes nå personnavn. Doktoren heter Hank i notatet for annen akt, men omtales bare som <quote>Doktoren</quote> i notatet for tredje akt. Disse to notatene må være skrevet underveis i arbeidet med manuskript 3 <bibl>(Ms. 4° 1113f)</bibl>, før utformingen av hver av de to siste aktene der. Mens begynnelsen av første akt i Ms. 4° 1113f har navneformen <quote>Lind</quote> som på personlisten på bl. 1v, har notatet for annen akt <quote>Linde</quote>, som i Ms. 4° 1113f brukes fra og med et lite stykke ute i første akt (legg 2, bl. [4]v). Det viser at notatet for annen akt må være skrevet i løpet av eller etter utarbeidelsen av første akt i Ms. 4° 1113f. Tilsvarende må gjelde for notatet for tredje akt, som er blitt til i løpet av eller etter utarbeidelsen av annen akt. I notatet brukes navnet <quote>Helmer</quote>, mot tidligere <quote>Stenborg</quote>; <quote>Helmer</quote> er brukt fra og med legg 8 (mot slutten av annen akt) i Ms. 4° 1113f. Som ES (3, 458) påpeker, viser også den gjentatte overskriften <quote>Scenegang</quote> på bl. 3r at dette ikke er skrevet som direkte fortsettelse av scenegangsnotatet for første akt på bl. 2. Denne overskriften er ikke gjentatt over notatet for tredje akt på bl. 3v. At Ibsen for alle tre scenegangsnotatene bruker betegnelsen <quote>handling</quote>, mot <quote>akt</quote> i hele Ms. 4° 1113f (jf. ES 3, 458), behøver ikke tale mot antagelsen om at de to siste er skrevet underveis i arbeidet med Ms. 4° 1113f; Ibsen kan ha hatt bl. 1 og 2 for hånden da han skrev bl. 3, og formet overskriften etter bl. 1.</p>
+                
+<p>På bl. 4v står manuskript 4, se dette.</p>
+</div>
+              
+<div xml:id="msDesc_Du41113a_date">
+<head rend="level4">datering.</head>
+<p><quote>Optegnelser […]</quote> er i overskriften på bl. 1r datert 19. oktober 1878. Personlisten på bl. 1v må være skrevet etter det følgende scenegangsnotatet til første akt (bl. 2), som HU (8, 261) mener kan være fra april 1879, under henvisning blant annet til at Ibsen i brev til Lorentz Dietrichson 18. april forteller at han forbereder seg <quote>til i sommer at skrive et nyt dramatisk arbejde</quote>. Skrivingen av Ms. 4° 1113f (manuskript 3, se dette) ble påbegynt 2. mai. Hvis HU har rett, er notatet på bl. 2 blitt til like før han begynte med utformingen av første akt. Men det at notatet til første akt finnes på samme dobbeltblad som opptegnelsene 19. oktober 1878 og som disse ikke bruker personnavn, kan kanskje indikere at det er eldre. Jf. Ibsens brev til Nils Lund 5. november 1878: <quote>Jeg beskæftiger mig nu med forarbejderne til et nyt skuespil</quote>; til Frederik Hegel 7. desember 1878 og 18. februar 1879: <quote>jeg […] beskæftiger mig overhovedet kun med forberedelserne til mit nye dramatiske arbejde</quote>, <quote>mit nye dramatiske arbejde optager alle mine tanker og hele min interesse</quote>.</p>
+                
+<p>Scenegangsnotatene for annen og tredje akt må være skrevet før utformingen av aktene i Ms. 4° 1113f, se nedenfor om de datoene Ibsen har ført inn i dette. Notatet for annen akt må følgelig være skrevet før 4. juni 1879, for tredje akt før 18. juli.</p>
+</div>
+              
+<div xml:id="msDesc_Du41113a_material">
+<head rend="level4">mengde, struktur og rekkefølge.</head>
+<p>Manuskriptet består av syv sider på fire blad som ifølge ES (3, 456) utgjør to dobbeltblad. Rekkefølgen av innholdet på bl. 1–2 svarer ikke til kronologien for tilblivelsen, idet personlisten synes å være føyd til på ledig plass på bl. 1v etter at bl. 2 var skrevet. Bladene er foliert 1–4 med rødt. De er bundet inn sammen med andre deler av Ms. 4° 1113, se ovenfor om Ms. 4° 1113a–g. Bl. 1–2 er klippet noe skjevt i nedre kant.</p>
+</div>
+              
+<div xml:id="msDesc_Du41113a_condition">
+<head rend="level4">tilstand.</head>
+<p>Innbindingen har på bl. 2v ført til at teksten går helt ut til indre marg, og på bl. 3v til tap av enkelte tegn mot indre marg. Bl. 3 og 4 er brettet ca. 15 mm fra nedre kant for å passe inn i bindet. På bl. 3 går bretten over tekst, men uten følger for lesbarheten. Begge steder har den innbrettede nedre delen mindre skader. Disse to bladene er løsnet fra ryggen noen cm opp fra nedre kant, slik at det nå er mulig å brette bladene helt ut. Bl. 3 har her en liten rift mot ryggen. Alle bladene har skader i øvre kant med en gjennomgående mindre rift i hvert av dobbeltbladene, størst på bl. 1, på bl. 2r er riften reparert med gjennomsiktig limbånd. Første side er stedvis svakt misfarvet. Det finnes noen mindre flekker.</p>
+</div>
+              
+<div xml:id="msDesc_Du41113a_paper"> 
+<head rend="level4">papir.</head>
+<p>Papiret er gulaktig, forholdsvis tykt, med bunn- og kjedelinjer og med vannmerke Pirie’s Old Style. I bl. 1 og 2 måler siden 161 × 224 mm, i bl. 3 og 4 måler den utbrettede siden 161 × 231 mm. Jf. papiret i manuskript 14 <bibl>(Ms. 4° 1112f)</bibl> til <title rend="italic">Samfundets støtter</title>.</p>
+</div>
+              
+<div xml:id="msDesc_Du41113a_pen"> 
+<head rend="level4">skriveredskap og -stoff.</head>
+<p>Manuskriptet er skrevet med blekk. Skriftbildet er brunt.</p>
+</div>
+              
+<div xml:id="msDesc_Du41113a_handwriting"> 
+<head rend="level4">skrift.</head>
+<p>Skriften er venstrehellende og overveiende omhyggelig, men blir mer skjødesløs utover i scenegangsnotatene. På bl. 1v har Ibsen tilføyd tekst i margen, på tvers av skriveretningen, dette er skjødesløst skrevet. Han har satt skillestrek etter hvert av de tre scenegangsnotatene.</p>
+</div>
+</div>
+   
+<div xml:id="msDesc_Du41113h"> 
+<head rend="level3">2. <HIS:hisRef target="Du41113h.xml">nbo m<hi rend="miniscule">s</hi>.4° 1113<hi rend="miniscule">h</hi></HIS:hisRef></head>
+<p rend="noIndent">Egenhendig notat og arbeidsmanuskript (replikkutkast) til noe av første akt. En side. Manuskriptet er i HU (8, 374) omtalt i forbindelse med <quote>Første (fullstendige) utkast</quote>, dvs. manuskript 3 <bibl>(Ms. 4° 1113f)</bibl>.</p>
+              
+<div xml:id="msDesc_Du41113h_content"> 
+<head rend="level4">innhold og genetisk status.</head>
+<p>Innholdet er et sammenhengende utkast som begynner med stikkord og så går over i fulle replikker i dialog mellom fru Linde og Nora. Replikkene er skrevet fortløpende, ikke med ny linje for hver. De talende er angitt i forkortet form, som <quote>Fru L.</quote> og <quote>Fru St.</quote>. Det må derfor være skrevet før Ibsen endret hovedpersonens etternavn til Helmer. Det synes å ligge til grunn for utformingen i manuskript 3 (Ms. 4° 1113f, legg 2, bl. [1]r). På motstående side i dobbeltbladet har Ibsen skrevet en liste over trykkfeil i annen utgave av <title rend="italic">Digte</title> (1875) som må rettes i tredje utgave (1879).</p>
+</div>
+              
+<div xml:id="msDesc_Du41113h_date"> 
+<head rend="level4">datering.</head>
+<p>Manuskriptet må være eldre enn første akt i manuskript 3, som ble skrevet mellom 2. og 24. mai 1879. Trykkfeillisten kan være skrevet like etter 10. mars 1879, jf. Ibsens brev til Hegel 18. februar og 10. mars 1879, og derfor sannsynligvis før manuskriptet.</p>
+</div>
+              
+<div xml:id="msDesc_Du41113h_material"> 
+<head rend="level4">mengde, struktur og rekkefølge.</head>
+<p>Manuskriptet står på en side i et løst dobbeltblad. Dobbeltbladet er nå brettet slik at teksten står på en innerside. Trykkfeillisten står på motstående innerside, men skrevet opp ned i forhold til det som gjelder <title rend="italic">Et dukkehjem</title>. Siden med trykkfeil er av Ibsen merket 8 i øvre venstre hjørne, trolig et leggnummer som kan ha stått der fra før. Det er derfor sannsynlig at dobbeltbladet opprinnelig har vært brettet slik at den siden som er merket 8, var første side. De to andre sidene av dobbeltbladet er blanke.</p>
+</div>
+              
+<div xml:id="msDesc_Du41113h_condition"> 
+<head rend="level4">tilstand.</head>
+<p>Dobbeltbladet har skrukker og en liten rift i falsen.</p>
+</div>
+              
+<div xml:id="msDesc_Du4113h_paper"> 
+<head rend="level4">papir.</head>
+<p>Papiret er gulaktig med bunn- og kjedelinjer. Siden måler 140 × 217 mm. Jf. papir 22 i HIS 13, 536.</p>
+</div>
+              
+<div xml:id="msDesc_Du41113h_pen"> 
+<head rend="level4">skriveredskap og -stoff.</head>
+<p>Manuskriptet er skrevet med blekk. Skriftbildet er brunt.</p>
+</div>
+              
+<div xml:id="msDesc_Du41113h_handwriting"> 
+<head rend="level4">skrift.</head>
+<p>Skriften er rett eller svakt venstrehellende og skjødesløs.</p>
+</div>
+              
+<div xml:id="msDesc_Du41113h_stamp"> 
+<head rend="level4">stempel og katalogsignatur.</head>
+<p>Bibliotekets stempel og katalogsignatur finnes på versosiden av manuskript 2.</p>
+</div>
+              
+<div xml:id="msDesc_Du41113h_provenance"> 
+<head rend="level4">proveniens.</head>
+<p>Manuskriptet tilhører Nasjonalbiblioteket, Oslo. Biblioteket (den gang Universitetsbiblioteket) kjøpte det av Henrik Ibsens arvinger i 1968–69. Det var i 1956 innlevert til biblioteket av Halvdan Koht. Da HUs redegjørelse for manuskriptet ble skrevet, var det i Bergliot Ibsens eie <bibl>(HU 8, 374, utgitt 1933)</bibl>.</p>
+</div>
+</div>
+   
+<div xml:id="msDesc_Du41113f"> 
+<head rend="level3">3. <HIS:hisRef target="Du41113f.xml">nbo m<hi rend="miniscule">s</hi>.4° 1113<hi rend="miniscule">f</hi></HIS:hisRef></head>
+<p rend="noIndent">Egenhendig arbeidsmanuskript til hele skuespillet. 12 legg, egenhendig nummerert 1–12. På bl. [1]r i legg 1: <quote>Første akt.</quote> I ES (3, 456) er manuskriptet kalt B.a; i HU (8, 373) <quote>Første (fullstendige) utkast</quote>, katalogsignaturen oppgis feilaktig som Ms. 4° 1113:2.</p>
+              
+<div xml:id="msDesc_Du41113f_content"> 
+<head rend="level4">innhold og genetisk status.</head>
+<p>Manuskriptet inneholder fullstendig og sammenhengende tekst til hele skuespillet, men er uten tittelblad og personliste. Teksten har noen rettelser, som til dels (på grunn av blekkfarven og skriftpreget) åpenbart er utført senere. Forut for hver akt har Ibsen utarbeidet scenegangsnotatene i manuskript 1. Første akt bygger på scenegangsnotatet for akten i manuskript 1, bl. 2. Navnene svarer til den rettede personlisten i manuskript 1, bortsett fra at barnepiken heter Anna/Anne. Noras venninne er først (legg 1, bl. [3]r) kalt <quote>Frøken Lind</quote>, dette er rettet til <quote>Fru Lind</quote> (jf. personlisten i manuskript 1, Ms. 4° 1113a, bl. 1v), som er den navneformen som er brukt fra legg 1, bl. [3]v til legg 2, bl. [4]v. Fra og med hennes neste replikk på bl. [4]v i legg 2 brukes <quote>Fru Linde</quote>. Annen akt bygger på scenegangsnotatet i manuskript 1, bl. 3, med bare få mindre avvik fra detaljene der. Doktorens navn Hank er nå blitt til Rank. Tredje akt bygger på scenegangsnotatet i manuskript 1, bl. 3v–4r, men den store scenen mellom fru Linde og Krogstad kommer tidligere i akten enn det som er angitt i notatet. På grunn av de datoene Ibsen har ført inn i manuskriptet (se <HIS:hisRef target="msDesc_Du41113f_date"><hi rend="italic">Datering</hi></HIS:hisRef>), er det sannsynlig at det er denne utarbeidelsen Ibsen i sitt brev til Hegel <HIS:hisRef target="B1871-1879ht.xml#B18790522FH">22. mai 1879</HIS:hisRef> omtaler som <quote>så langt fremskredet</quote> at han regner med å kunne sende den første porsjonen av trykkmanuskriptet omkring 8. juli. På det tidspunkt var han nesten ferdig med første akt, han regnet altså med å kunne skrive ferdig de to neste aktene på tilsvarende tid, ca. tre uker på hver, hvis han da ikke ville gjøre ferdig arbeids- og trykkmanuskriptene parallelt (akt for akt), slik han gjorde det med deler av <title rend="italic">Peer Gynt</title>, se HIS 5k, 622–23, jf. om de to arbeidsmanuskriptene til <title rend="italic">De unges Forbund</title> (HIS 6k, 72). Men <HIS:hisRef target="B1871-1879ht.xml#B18790619FH">19. juni 1879</HIS:hisRef>, da han var i gang med annen akt, melder han til Hegel at han har funnet det nødvendig å skrive stykket igjennom enda en gang (se <HIS:hisRef target="Du_innl.xml#intro_creation"><hi rend="italic">Tilblivelse</hi></HIS:hisRef>). Det er uklart om dette skal forstås slik at han dermed avbryter den utformingen han var i gang med, og går i gang på nytt. Et mulig indisium på et slikt avbrudd kan være skiftet fra <quote>Stenborg</quote> til <quote>Helmer</quote> i annen akt, fra og med legg 8 (akten begynner i legg 5). ES (3, 457) og HU (8, 373) slår på generelt grunnlag (feilskrift, uten eksempler) fast at manuskriptet til dels er avskrift av spredte tidligere utkast, dette diskuteres og belegges nærmere i <hi rend="italic">Tekstkritisk redegjørelse</hi>, avsnittet <HIS:hisRef target="Du_tekstred.xml#edState_textsources"><hi rend="italic">Øvrige tekstkilder</hi></HIS:hisRef>. Noen få formuleringer er overtatt direkte fra scenegangsnotatene (manuskript 1), andre tidligere utkast enn manuskript 2 <bibl>(Ms. 4° 1113h)</bibl> er ellers ikke kjent. De følgende arbeidsmanuskriptene til deler av verket er senere enn Ms. 4° 1113f og vitner om fornyet gjennomgåelse. På bl. [6]r i legg 5 og bl. [2]v i legg 6 står kryss før og etter et tekststykke som nok skal settes inn mellom to tilsvarende kryss i manuskript 5 <bibl>(Ms. 4° 1113b, legg 1–4)</bibl>. I legg 6 er det nederst på bl. [1]v tilføyd tekst som ikke henger sammen med det omkringstående, men som er brukt i senere utforminger av den replikken som står før og etter. Jf. manuskript 11 <bibl>(Ms. 4° 1113i)</bibl>. Teksten mellom dobbeltkryss i legg 7 (bl. [6]v) og legg 8 (bl. [3]v) kan svare til legg a i manuskript 6 <bibl>(Ms. 4° 1113b, legg a–d)</bibl>. På bl. [4]v og [5]r i legg 10 har Ibsen markert noe av teksten med strek i margen, dette korresponderer med tekst som ikke er skrevet fullt ut i manuskript 10 <bibl>(Ms. 4° 1113c)</bibl>. Julius Elias har satt til noen klammer og streker. I legg 2, bl. [5]r har han skrevet inn en sidehenvisning til førsteutgaven.</p>
+</div>
+              
+<div xml:id="msDesc_Du41113f_date"> 
+<head rend="level4">datering.</head>
+<p>Ibsen har skrevet inn datoer ved begynnelsen og slutten av hver akt. Datoene er: 2. mai (legg 1, bl. [1]r, begynnelsen av første akt), 24. mai (legg 5, bl. [2]v, slutten av første akt), 4. juni (legg 5, bl. [3]r, begynnelsen av annen akt), 14. juli (legg 9, bl. [3]r, slutten av annen akt), 18. juli (legg 9, bl. [3]v, begynnelsen av tredje akt) og 3. august (legg 12, bl. [4]v, slutten av tredje akt) (alt i 1879). Datoene må gjelde skrivingen av dette manuskriptet, jf. <title rend="italic">Samfundets støtter</title>, manuskript 9 og 14.</p>
+</div>
+              
+<div xml:id="msDesc_Du41113f_material"> 
+<head rend="level4">mengde, struktur og rekkefølge.</head>
+<p>Manuskriptet består av 12 legg. De elleve første leggene har seks blad (tre dobbeltblad), legg 12 har fire blad (to dobbeltblad), i alt 70 blad. Ibsen har nummerert leggene 1–12 i øvre venstre hjørne av hvert leggs første side. Alle sider er beskrevne. I legg 11 er bl. [4] paginert 7 og 8 (annen hånd). Manuskriptet er bundet inn sammen med andre deler av Ms. 4° 1113, se ovenfor om Ms. 4° 1113a–g.</p>
+</div>
+              
+<div xml:id="msDesc_Du41113f_condition"> 
+<head rend="level4">tilstand.</head>
+<p>Første og siste side er noe misfarvet og skitne. Det finnes noen mindre flekker, blant annet blekkflekker og merker etter svertede fingre.</p>
+</div>
+              
+<div xml:id="msDesc_Du41113f_paper"> 
+<head rend="level4">papir.</head>
+<p>Papiret er av hovedtypen, se ovenfor om Ms. 4° 1113a–g. Siden måler 175 × 223 mm, som i manuskript 5, legg 1.</p>
+</div>
+              
+<div xml:id="msDesc_Du41113f_pen"> 
+<head rend="level4">skriveredskap og -stoff.</head>
+<p>Manuskriptet er skrevet med blekk. Skriftbildet er brunt. Klammer og streker i annen hånd er med blyant, til dels med blå farveblyant. De to sidetallene i legg 11 er med blyant.</p>
+</div>
+              
+<div xml:id="msDesc_Du41113f_handwriting"> 
+<head rend="level4">hender og skrift.</head>
+<list type="numbered">
+<item n="1"><hi rend="italic">Henrik Ibsen</hi>: Skriften er venstrehellende. Hele første akt er overveiende omhyggelig skrevet, men i de to siste aktene veksler det mellom omhyggelig og skjødesløs skrift. Helt fra begynnelsen finnes det skjødesløst skrevne innskudd og rettelser. Noen steder har Ibsen skrevet innføyningstegn o.l. I legg 10 har han satt en ujevn strek eller klamme i venstre marg ved de fem siste replikkene på bl. [4]v og i høyre marg ved de to første på bl. [5]r. Strykninger er gjerne utført med skråstreker eller ujevne gjennomstrekninger. Han har satt skillestrek/finalstrek etter første og tredje akt.</item>
+<item n="2"><hi rend="italic">Julius Elias</hi>: Klammer o.a., se ovenfor om Ms. 4° 1113a–g.</item>
+<item n="3"><hi rend="italic">Andre</hi>: Det er uvisst hvem som har skrevet sidetallene 7 og 8 i legg 11.</item>
+</list>
+</div>
+</div>
+   
+<div xml:id="msDesc_Du41113a_4v"> 
+<head rend="level3">4. nbo m<hi rend="miniscule">s</hi>.4° 1113<hi rend="miniscule">a</hi>, bl. 4<hi rend="miniscule">v</hi></head>
+<p rend="noIndent">Egenhendig notat med scenegang for annen akt. En side. Overskrift: <quote>2. akt.</quote> I ES (3, 456) er dette omtalt som del av A, i HU (8, 372) er det nr. 2 av <quote>Optegnelser</quote>.</p>
+              
+<div xml:id="msDesc_Du41113a_4v_content"> 
+<head rend="level4">innhold og genetisk status.</head>
+<p>Manuskriptet inneholder et utkast til scenegang for annen akt, med rettelser. Scenegangen har avvik fra manuskript 3 <bibl>(Ms. 4° 1113f)</bibl>, men stor grad av samsvar med utformingen av akten i manuskript 5 og 6 (1113b, legg 1–4 og a–d) og kan ligge til grunn for disse. Navnet Helmer viser også at notatet må være skrevet senere enn annen akt i Ms. 4° 1113f.</p>
+</div>
+              
+<div xml:id="msDesc_Du41113a_4v_material"> 
+<head rend="level4">mengde, struktur og rekkefølge.</head>
+<p>Notatet står på siste side i et dobbeltblad foliert 3 og 4 med rødt, se manuskript 1. Teksten er skrevet motsatt vei (opp ned) av det øvrige på dobbeltbladet. Manuskriptet er bundet inn sammen med andre deler av Ms. 4° 1113, se ovenfor om Ms. 4° 1113a–g.</p>
+</div>
+              
+<div xml:id="msDesc_Du41113a_4v_condition"> 
+<head rend="level4">tilstand.</head>
+<p>Siden har noen flekker. Se for øvrig manuskript 1. Bretten på bladet går rett ovenfor overskriften og skjuler ikke tekst.</p>
+</div>
+              
+<div xml:id="msDesc_Du41113a_4v_paper"> 
+<head rend="level4">papir.</head>
+<p>Se manuskript 1.</p>
+</div>
+              
+<div xml:id="msDesc_Du41113a_4v_pen"> 
+<head rend="level4">skriveredskap og -stoff.</head>
+<p>Manuskriptet er skrevet med blekk. Skriftbildet er brunt.</p>
+</div>
+              
+<div xml:id="msDesc_Du41113a_4v_handwriting"> 
+<head rend="level4">skrift.</head>
+<p>Skriften er svakt venstrehellende og overveiende svært skjødesløs. Overskriften er omhyggelig skrevet.</p>
+</div>
+</div>
+   
+<div xml:id="msDesc_Du41113b">
+<div xml:id="msDesc_Du41113b_1-4"> 
+<head rend="level3">5. nbo m<hi rend="miniscule">s</hi>.4° 1113<hi rend="miniscule">b</hi>, legg 1<hi rend="miniscule">–</hi>4</head>
+<p rend="noIndent">Egenhendig arbeidsmanuskript til begynnelsen av annen akt. Fire dobbeltblad, egenhendig nummerert 1–4. På bl. 5r: <quote>Anden akt.</quote> Manuskriptet er i ES (3, 456) kalt B.b; i HU (8, 450) er det omtalt som a under <quote>Mindre utkast</quote>, katalogsignaturen oppgis feilaktig som Ms. 4° 1113:1.</p>
+              
+<div xml:id="msDesc_Du41113b_1-4_content"> 
+<head rend="level4">innhold og genetisk status.</head>
+<p>Manuskriptet inneholder et utkast til begynnelsen av annen akt, tilsvarende teksten til og med sceneanvisningen HIS 7, <ptr type="ht" target="Duht.xml" corresp="koDu_ht_43"/>.</p>
+                
+<p>Manuskriptet har til dels store avvik fra manuskript 3 <bibl>(Ms. 4° 1113f)</bibl> og ligger nærmere den endelige teksten. Det bygger på manuskript 4 <bibl>(Ms. 4° 1113a, bl. 4v)</bibl>. Helmers fornavn har den endelige formen Torvald, ikke Thorvald som i hele Ms. 4° 1113f. Replikkinnehavernes navn er som regel angitt bare med initial, også navn i selve replikkene er for det meste forkortet på samme måte. På bl. 8r står to kryss som indikerer at tekst skal fylles inn, sannsynligvis fra Ms. 4° 1113f legg 5, bl. [6]r – legg 6, bl. [2]v, der et tekststykke som passer inn, er markert med kryss før og etter. Nederst på siste side (bl. 12r) har Ibsen tilføyd en omarbeidelse av scenen like foran (der stuepiken kommer inn); det er skrevet med kraftigere penn og er nok fra en senere gjennomgåelse av stoffet, teksten gjøres her mer lik den endelige. Foran dette står to innsettingstegn e.l. som må være fra samme skriveomgang som tilføyelsen. På første side (bl. 5r) har Julius Elias skrevet noen klammer o.a.</p>
+</div>
+              
+<div xml:id="msDesc_Du41113b_1-4_condition"> 
+<head rend="level4">tilstand.</head>
+<p>Første side har flekker og er noe skitten.</p>
+</div>
+              
+<div xml:id="msDesc_Du41113b_1-4_material"> 
+<head rend="level4">mengde, struktur og rekkefølge.</head>
+<p>Manuskriptet består av åtte blad (fire dobbeltblad). Siste side er blank. Ibsen har nummerert dobbelbladene 1–4 i øvre venstre hjørne av hvert dobbeltblads første side. Bladene er foliert 5–12 med rødt, se ovenfor om Ms. 4° 1113a–g. De er bundet inn sammen med andre deler av Ms. 4° 1113.</p>
+</div>
+              
+<div xml:id="msDesc_Du41113b_1-4_paper"> 
+<head rend="level4">papir.</head>
+<p>Papiret er av hovedtypen, se ovenfor om Ms. 4° 1113a–g. I legg 1 måler siden 175 × 223 mm, som i manuskript 3. I legg 2–4 måler siden 176 × 222 mm, som i manuskript 6, legg a.</p>
+</div>
+              
+<div xml:id="msDesc_Du41113b_1-4_pen"> 
+<head rend="level4">skriveredskap og -stoff.</head>
+<p>Manuskriptet er skrevet med blekk. Skriftbildet er brunt. Klammer o.a. i annen hånd er med blyant.</p>
+</div>
+              
+<div xml:id="msDesc_Du41113b_1-4_handwriting"> 
+<head rend="level4">hender og skrift.</head>
+<list type="numbered">
+<item n="1"><hi rend="italic">Henrik Ibsen</hi>: Skriften er venstrehellende. Aktoverskriften og den følgende linjen er omhyggelig skrevet, men i det følgende er skriften overveiende og til dels svært skjødesløs. Tillegget på siste side synes svært raskt skrevet.</item>                
+<item n="2"><hi rend="italic">Julius Elias</hi>: Klammer o.a., se ovenfor om Ms. 4° 1113a–g.</item>
+</list>
+</div>
+</div>
+              
+<div xml:id="msDesc_Du41113b_a-d"> 
+<head rend="level3">6. nbo m<hi rend="miniscule">s</hi>.4° 1113<hi rend="miniscule">b</hi>, legg <hi rend="miniscule">a–d</hi></head>
+<p rend="noIndent">Egenhendig arbeidsmanuskript til slutten av annen akt. Fire dobbeltblad, egenhendig merket a–d. Manuskriptet er i ES (3, 456–57) kalt B.c; i HU (8, 459) er det omtalt som b under <quote>Mindre utkast</quote>, katalogsignaturen oppgis på s. 450 feilaktig som Ms. 4° 1113:1.</p>
+              
+<div xml:id="msDesc_Du41113b_a-d_content"> 
+<head rend="level4">innhold og genetisk status.</head>
+<p>Manuskriptet inneholder et sammenhengende utkast til slutten av annen akt, med rettelser. Teksten begynner litt etter der manuskript 5 <bibl>(Ms. 4° 1113b, legg 1–4)</bibl> slutter, begynnelsen tilsvarer Noras replikk til Krogstad: <quote>Hvor kan De tænke, at han har fået det at vide?</quote> (HIS 7, <ptr type="ht" target="Duht.xml" corresp="koDu_ht_31"/>). Manuskriptet har til dels store avvik fra manuskript 3 <bibl>(Ms. 4° 1113f)</bibl> og ligger nærmere den endelige teksten; det synes å tilhøre samme fase av arbeidet som manuskript 5 <bibl>(Ms. 4° 1113b, legg 1–4)</bibl> og bygger som dette på manuskript 4 <bibl>(Ms. 4° 1113a, bl. 4v)</bibl>. Som i manuskript 5 brukes navneformen <quote>Torvald</quote>, og replikkinnehaverne angis oftest med initial, også navn i selve replikkene er for det meste forkortet på samme måte. Men manuskript 6 er ingen umiddelbar fortsettelse av manuskript 5, de første replikkene i denne scenen mellom Nora og Krogstad finnes hverken i manuskript 5 eller her i manuskript 6. At Ibsens merking begynner med <quote>a</quote> på første side, tyder på at dette ikke er skrevet som direkte fortsettelse av noe annet, kanskje heller som erstatnings- eller innskuddstekst. Legg a kan være erstatning for teksten mellom dobbeltkryssene i manuskript 3 <bibl>(Ms. 4° 1113f)</bibl>, legg 7, bl. [6]v og legg 8, bl. [3]v.</p>
+</div>
+              
+<div xml:id="msDesc_Du41113b_a-d_material"> 
+<head rend="level4">mengde, struktur og rekkefølge.</head>
+<p>Manuskriptet består av åtte blad (fire dobbeltblad). Ibsen har merket dobbeltbladene a–d i øvre venstre hjørne av hvert dobbeltblads første side. Bladene er foliert 13–20 med rødt, se ovenfor om Ms. 4° 1113a–g. Bl. 16 er blankt, men teksten før og etter henger sammen. Også bl. 20 er blankt. Legg b–d er i annet papir og format enn legg a (se <hi rend="italic">Papir</hi>); nedre kant er revet eller skåret. Manuskriptet er bundet inn sammen med andre deler av Ms. 4° 1113.</p>
+</div>
+              
+<div xml:id="msDesc_Du41113b_a-d_condition"> 
+<head rend="level4">tilstand.</head>
+<p>Det finnes noen få flekker og enkelte tilfeller av blekksmitte. Legg a har et gjennomgående nålestikk litt ovenfor nedre kant.</p>
+</div>
+              
+<div xml:id="msDesc_Du41113b_a-d_paper"> 
+<head rend="level4">papir.</head>
+ 
+<list type="bulleted">
+<item>Legg a: Papiret er av hovedtypen, se ovenfor om Ms. 4° 1113a–g. Siden måler 176 × 222 mm, som i manuskript 5, legg 2–4.</item>
+<item>Legg b–d: Papiret er gulaktig, litt mørkere og tynnere enn i legg a. Siden måler 154 × 211 mm.</item>
+</list>
+</div>
+              
+<div xml:id="msDesc_Du41113b_a-d_pen"> 
+<head rend="level4">skriveredskap og -stoff.</head>
+<p>Manuskriptet er skrevet med blekk. Skriftbildet er brunt.</p>
+</div>
+              
+<div xml:id="msDesc_Du41113b_a-d_handwriting"> 
+<head rend="level4">skrift.</head>
+<p>Skriften er venstrehellende og forholdsvis omhyggelig fra begynnelsen, men blir allerede i legg a skjødesløs, til dels svært skjødesløs.</p>
+</div>
+</div>
+</div>
+ 
+ <div xml:id="msDesc_Du41113d"> 
+  <head rend="level3"><HIS:hisRef target="Du41113e.xml">8. nbo m<hi rend="miniscule">s</hi>.4° 1113<hi rend="miniscule">d</hi></HIS:hisRef></head>
+  <p rend="noIndent">Egenhendig arbeidsmanuskript til noe av annen akt. En side. Manuskriptet er i ES (3, 457) kalt B.e; i HU (8, 470) er det omtalt som d under <quote>Mindre utkast</quote>, katalogsignaturen oppgis på s. 450 feilaktig som Ms. 4° 1113:1.</p>
+  
+  <div xml:id="msDesc_Du41113d_content"> 
+   <head rend="level4">innhold og genetisk status.</head>
+   <p>Manuskriptet inneholder et utkast til en del av scenen med Nora og doktor Rank i annen akt, svarende til HIS 7 fra og med <ptr type="ht" target="Duht.xml" corresp="koDu_ht_34"/> (ordet <quote>gåseleverpostejer</quote>) til og med Noras replikk <quote>Jeg er så opsat på galskaber idag</quote> <ptr type="ht" target="Duht.xml" corresp="koDu_ht_35"/>. Teksten ligger nær den endelige. Replikkinnehaverne er som oftest angitt med initial, også navn i selve replikkene er forkortet på samme måte.</p>
+  </div>
+  
+  <div xml:id="msDesc_Du41113d_material"> 
+   <head rend="level4">mengde, struktur og rekkefølge.</head>
+   <p>Manuskriptet består av ett blad med tekst på rectosiden. Versosiden er blank. Venstre kant (sett fra tekstsiden) synes ujevn, jf. ES (3, 457) og HU (8,470) som sier at bladet er avrevet. Bladet er foliert 27 med rødt, se ovenfor om Ms. 4° 1113a–g. Det er bundet inn sammen med andre deler av Ms. 4° 1113.</p>
+  </div>
+  
+  <div xml:id="msDesc_Du41113d_condition"> 
+   <head rend="level4">tilstand.</head>
+   <p>Bladet har vært brettet, i to på tvers med tekstsiden inn, og i tre på tvers med tekstsiden ut. Det har skrukker, noen flekker og en liten rift i ytterkant. Versosiden er skitten.</p>
+  </div>
+  
+  <div xml:id="msDesc_Du41113d_paper"> 
+   <head rend="level4">papir.</head>
+   <p>Papiret er av hovedtypen, se ovenfor om Ms. 4° 1113a–g. Siden måler 177 × 221 mm, som i manuskript 10–12.</p>
+  </div>
+  
+  <div xml:id="msDesc_Du41113d_pen"> 
+   <head rend="level4">skriveredskap og -stoff.</head>
+   <p>Manuskriptet er skrevet med blekk. Skriftbildet er brunt.</p>
+  </div>
+  
+  <div xml:id="msDesc_Du41113d_handwriting"> 
+   <head rend="level4">skrift.</head>
+   <p>Skriften er svakt venstrehellende og skjødesløs.</p>
+  </div>
+ </div>
+ 
+ <div xml:id="msDesc_Du41113e"> 
+  <head rend="level3">9. <HIS:hisRef target="Du41113e.xml">nbo m<hi rend="miniscule">s</hi>.4° 1113<hi rend="miniscule">e</hi></HIS:hisRef></head>
+  <p rend="noIndent">Egenhendig notat, trolig til replikker i annen akt. En side. Manuskriptet er i ES (3, 457) kalt B.f; i HU (8, 373) er det nr. 3 av <quote>Optegnelser</quote>, katalogsignaturen oppgis på s. 368 feilaktig som Ms. 4° 1113:1.</p>
+  
+  <div xml:id="msDesc_Du41113e_content"> 
+   <head rend="level4">innhold og genetisk status.</head>
+   <p>Innholdet er stikkord og en ufullstendig setning. ES (3, 457) setter det i sammenheng med Noras replikk HIS 7, <ptr type="ht" target="Duht.xml" corresp="koDu_ht_36"/>. Denne replikken finnes ikke i de foregående manuskriptene og kan derfor være kommet til på et sent stadium.</p>
+  </div>
+  
+  <div xml:id="msDesc_Du41113e_material"> 
+   <head rend="level4">mengde, struktur og rekkefølge.</head>
+   <p>Notatet består av fire linjer på en side. Resten av siden og versosiden av bladet er blanke. Bladet omtales i ES (3, 457) og HU (8, 368) som avrevet; venstre kant (sett fra tekstsiden) er skjult på grunn av innbindingen, høyre kant kan være revet eller skåret. Nedre kant er ujevn etter klipping. Bladet er foliert 28 med rødt, se ovenfor om Ms. 4° 1113a–g. Det er bundet inn sammen med andre deler av Ms. 4° 1113.</p>
+  </div>
+  
+  <div xml:id="msDesc_Du41113e_condition"> 
+   <head rend="level4">tilstand.</head>
+   <p>Bladet har noen skrukker og mindre skader i over- og ytterkant og er misfarvet i overkant. Øvre høyre hjørne (sett fra tekstsiden) har en skade som er reparert med gjennomsiktig limbånd på versosiden. Versosiden er stedvis noe skitten.</p>
+  </div>
+  
+  <div xml:id="msDesc_Du41113e_paper"> 
+   <head rend="level4">papir.</head>
+   <p>Papiret er gulaktig og linjert med blå linjer. Siden måler ca. 166 × 220 mm.</p>
+  </div>
+  
+  <div xml:id="msDesc_Du41113e_pen"> 
+   <head rend="level4">skriveredskap og -stoff.</head>
+   <p>Manuskriptet er skrevet med blekk. Skriftbildet er brunt.</p>
+  </div>
+  
+  <div xml:id="msDesc_Du41113e_handwriting"> 
+   <head rend="level4">skrift.</head>
+   <p>Skriften er svakt venstrehellende og svært skjødesløs.</p>
+  </div>
+ </div>
+ 
+ <div xml:id="msDesc_Du41113c"> 
+  <head rend="level3">10. <HIS:hisRef target="Du41113c.xml">nbo m<hi rend="miniscule">s</hi>.4° 1113<hi rend="miniscule">c</hi></HIS:hisRef></head>
+  <p rend="noIndent">Egenhendig arbeidsmanuskript til en del av tredje akt. Tre dobbeltblad, egenhendig nummerert 1–3. Manuskriptet er i ES (3, 457) kalt B.d, i HU (8, 459) er det omtalt som c under <quote>Mindre utkast</quote>, katalogsignaturen oppgis på s. 450 feilaktig som Ms. 4° 1113:1.</p>
+  
+  <div xml:id="msDesc_Du41113c_content"> 
+   <head rend="level4">innhold og genetisk status.</head>
+   <p>Manuskriptet inneholder et sammenhengende utkast til noen scener i tredje akt, med rettelser. Teksten tilsvarer HIS 7 fra og med sceneanvisningen <ptr type="ht" target="Duht.xml" corresp="koDu_ht_37"/> til og med ordet <quote>domino</quote> i sceneanvisningen <ptr type="ht" target="Duht.xml" corresp="koDu_ht_38"/>. Rolleinnehaverne er for det meste angitt med initial, også navn i selve replikkene er forkortet på samme måte. Teksten er svært lik den endelige. På bl. 25v er tekst bare antydet med <quote>o.s.v</quote> og prikker. Her skal tekst suppleres fra Ms. 4° 1113f: Den teksten som er utelatt, svarer til den teksten i manuskript 3 (Ms. 4° 1113f, legg 10, bl. [4]v og [5]r) som Ibsen har markert med strek i margen; utformingen der er svært lik den endelige.</p>
+  </div>
+  
+  <div xml:id="msDesc_Du41113c_material"> 
+   <head rend="level4">mengde, struktur og rekkefølge.</head>
+   <p>Manuskriptet består av seks blad (tre dobbeltblad). Ibsen har merket dobbeltbladene 1–3 i øvre venstre hjørne av hvert dobbeltblads første side. Alle sider er beskrevne. Bladene er foliert 21–26 med rødt, se ovenfor om Ms. 4° 1113a–g. De er bundet inn sammen med andre deler av Ms. 4° 1113.</p>
+  </div>
+  
+  <div xml:id="msDesc_Du41113c_condition"> 
+   <head rend="level4">tilstand.</head>
+   <p>Det finnes noen mindre flekker og skrukker samt enkelte tilfeller av blekksmitte.</p>
+  </div>
+  
+  <div xml:id="msDesc_Du41113c_paper"> 
+   <head rend="level4">papir.</head>
+   <p>Papiret er av hovedtypen, se ovenfor om Ms. 4° 1113a–g. Siden måler 177 × 221 mm, som i manuskript 8, 11 og 12.</p>
+  </div>
+  
+  <div xml:id="msDesc_Du41113c_pen"> 
+   <head rend="level4">skriveredskap og -stoff.</head>
+   <p>Manuskriptet er skrevet med blekk. Skriftbildet er brunt.</p>
+  </div>
+  
+  <div xml:id="msDesc_Du41113c_handwriting"> 
+   <head rend="level4">skrift.</head>
+   <p>Skriften er venstrehellende og overveiende skjødesløs. På bl. 21v har Ibsen tilføyd en setning i venstre marg, på tvers av skriveretningen for øvrig.</p>
+  </div>
+ </div>
+ 
+ <div xml:id="msDesc_Du41113i"> 
+  <head rend="level3">11. <HIS:hisRef target="Du41113i.xml">nbo m<hi rend="miniscule">s</hi>.4° 1113<hi rend="miniscule">i</hi></HIS:hisRef></head>
+  <p rend="noIndent">Egenhendige arbeidsmanuskripter til deler av annen akt og til slutten av stykket. Ett blad, egenhendig nummerert 20.</p>
+  
+  <div xml:id="msDesc_Du41113i_content"> 
+   <head rend="level4">innhold og genetisk status.</head>
+   <p>Rectosiden av bladet har Ibsens leggnummer 20. Øvre del av siden er renskrevet og svarer nøyaktig til første side i legg 20 i trykkmanuskriptet (manuskript 12), i samtalen mellom Nora og fru Linde først i annen akt. Men fra tredje replikk på siden er teksten forskjellig fra trykkmanuskriptet. Bladet må opprinnelig ha vært en del av trykkmanuskriptet, men Ibsen har avbrutt skrivingen og ønsket å utforme deler av dette på nytt. Den ledige plassen på siden har han så brukt til forskjellige utkast som derfor må være blitt til underveis i arbeidet med trykkmanuskriptet. Først følger et utkast til en replikk av Nora som i trykkmanuskriptet er brukt nederst på tilsvarende side (første side i legg 20), dvs. replikken som begynner på <ptr type="ht" target="Duht.xml" corresp="koDu_ht_39"/> i HIS 7. Nederst på siden har han føyd til stykkets slutteffekt med drønnet fra porten, dette finnes ikke tidligere i materialet. Etter skriften å dømme er de to tilføyelsene på siden ikke skrevet samtidig.</p>
+   
+   <p>På versosiden står utkast til replikker i en scene med Nora og Helmer lenger ute i annen akt. Øverst står replikker som svarer til HIS 7 fra og med <ptr type="ht" target="Duht.xml" corresp="koDu_ht_40"/> til og med <ptr type="ht" target="Duht.xml" corresp="koDu_ht_41"/>, ikke mye forskjellig fra den endelige teksten. På nedre del av siden står utkast til Helmers replikk <ptr type="ht" target="Duht.xml" corresp="koDu_ht_42"/> i HIS 7, men her i manuskript 11 er replikken lengre. Den svarer til en kortere replikk i manuskript 3 (Ms. 4° 1113f, legg 6, bl. [1]v–[2]r) og har tatt opp i seg elementer fra tillegget der nederst på bl. [1]v. Alle utkastene på denne siden i manuskript 11 hører til i den delen av stykket som i Ms. 4° 1113f, legg 5, bl. [6]r – legg 6, bl. [2]v står mellom to kryss.</p>
+  </div>
+  
+  <div xml:id="msDesc_Du41113i_date"> 
+   <head rend="level4">datering.</head>
+   <p>Manuskriptet må være skrevet mens Ibsen holdt på med annen akt i trykkmanuskriptet, som trolig ble påbegynt etter 2. september og var ferdig 13. september 1879 (se om dateringen av manuskript 12).</p>
+  </div>
+  
+  <div xml:id="msDesc_Du41113i_material"> 
+   <head rend="level4">mengde, struktur og rekkefølge.</head>
+   <p>Manuskriptet består av ett løst blad med Ibsens leggnummer 20. Venstre kant (sett fra rectosiden) er revet eller skåret.</p>
+  </div>
+  
+  <div xml:id="msDesc_Du41113i_condition"> 
+   <head rend="level4">tilstand.</head>
+   <p>Bladet har vært brettet i to, med mindre rifter i begge ender av bretten. Begge ytterkantene har mindre skader. Det finnes mindre flekker og skrukker.</p>
+  </div>
+  
+  <div xml:id="msDesc_Du41113i_paper"> 
+   <head rend="level4">papir.</head>
+   <p>Papiret er som hovedtypen i Ms. 4° 1113a–g, se ovenfor. Siden måler 177 × 221 mm, som i manuskript 8, 10 og 12.</p>
+  </div>
+  
+  <div xml:id="msDesc_Du41113i_pen"> 
+   <head rend="level4">skriveredskap og -stoff.</head>
+   <p>Manuskriptet er skrevet med blekk. Skriftbildet er brunt.</p>
+  </div>
+  
+  <div xml:id="msDesc_Du41113i_handwriting"> 
+   <head rend="level4">skrift.</head>
+   <p>Den renskrevne delen er omhyggelig skrevet, men uten understrekninger av tekst som ikke er replikker (jf. trykkmanuskriptet). Utkastene er alle skjødesløst skrevet, men skriften har forskjellig preg. Sceneanvisningen nederst på rectosiden er skrevet med kraftigere penn og større bokstaver enn det øvrige. Skriften på versosiden har samme preg som skriften i manuskript 10 (Ms. 4° 1113c).</p>
+  </div>
+  
+  <div xml:id="msDesc_Du41113i_stamp"> 
+   <head rend="level4">stempel og katalogsignatur.</head>
+   <p>Bibliotekets stempel og katalogsignatur finnes på rectosiden.</p>
+  </div>
+  
+  <div xml:id="msDesc_Du41113i_provenance"> 
+   <head rend="level4">proveniens.</head>
+   <p>Manuskriptet tilhører Nasjonalbiblioteket, Oslo. Det ble kjøpt fra Tancred Ibsen i 1970.</p>
+  </div>
+ </div>
+</div>
+              
+<div xml:id="msDesc_Du200"> 
+<head rend="level3">7. <HIS:hisRef target="Du200.xml">nbo brevs. 200</HIS:hisRef>, på brev fra sigurd ibsen til henrik ibsen 12. april <hi rend="miniscule">[</hi>1879<hi rend="miniscule">]</hi>.</head>
+<p>Egenhendig arbeidsmanuskript til noen få replikker i annen akt. En side. Det er omtalt i HU (19, 53).</p>
+              
+<div xml:id="msDesc_Du200_content"> 
+<head rend="level4">innhold og genetisk status.</head>
+<p>Replikkutkastet synes å høre til i annen akt, og tilsvarer trolig HIS 7 fra og med <ptr type="ht" target="Duht.xml" corresp="koDu_ht_32"/> til og med <ptr type="ht" target="Duht.xml" corresp="koDu_ht_44"/>, rett forut for teksten i manuskript 8 <bibl>(Ms. 4° 1113d)</bibl>. Det er til dels utformet bare med stikkord. Sammenlignet med utformingen av tilsvarende sted i manuskript 5 <bibl>(Ms. 4° 1113b, legg 1–4)</bibl> synes replikkutkastet å peke mot den endelige teksten. Foran utkastet står et brev fra Sigurd Ibsen til Henrik Ibsen 12. april [1879].</p>
+</div>
+              
+<div xml:id="msDesc_Du200_date"> 
+<head rend="level4">datering.</head>
+<p>Utkastet må være skrevet etter at Ibsen mottok brevet fra Sigurd.</p>
+</div>
+              
+<div xml:id="msDesc_Du200_material"> 
+<head rend="level4">mengde, struktur og rekkefølge.</head>
+<p>Utkastet står på siste ubeskrevne side i Sigurd Ibsens brev til faren. Brevet består av ett dobbeltblad med brevtekst på de tre første sidene.</p>
+</div>
+              
+<div xml:id="msDesc_Du200_condition"> 
+<head rend="level4">tilstand.</head>
+<p>Brevet har vært brettet på tvers, på midten.</p>
+</div>
+              
+<div xml:id="msDesc_Du200_paper"> 
+<head rend="level4">papir.</head>
+<p>Papiret er gulaktig med bunn- og kjedelinjer og med vannmerke Imperial Treasury de la Rue med krone og DLR-emblem. Siden måler 113 × 178 mm.</p>
+</div>
+              
+<div xml:id="msDesc_Du200_pen"> 
+<head rend="level4">skriveredskap og -stoff.</head>
+<p>Utkastet er skrevet med grov blyant.</p>
+</div>
+              
+<div xml:id="msDesc_Du200_handwriting"> 
+<head rend="level4">skrift.</head>
+<p>Skriften er svakt venstrehellende og skjødesløs.</p>
+</div>
+              
+<div xml:id="msDesc_Du200_stamp"> 
+<head rend="level4">stempel og katalogsignatur.</head>
+<p>Bibliotekets stempel og katalogsignatur finnes på brevets første side.</p>
+</div>
+              
+<div xml:id="msDesc_Du200_provenance"> 
+<head rend="level4">proveniens.</head>
+<p>Manuskriptet tilhører Nasjonalbiblioteket, Oslo. Biblioteket (den gang Universitetsbiblioteket) mottok det som gave fra Bergliot Ibsen i 1949.</p>
+</div>
+</div>
+              
+              
+<div xml:id="msDesc_Du8952"> 
+<head rend="level3">12. <HIS:hisRef target="Du8952.xml">nbo m<hi rend="miniscule">s</hi>.8° 952</HIS:hisRef></head>
+<p rend="noIndent">Egenhendig trykkmanuskript. Ett bind. Egenhendig leggnummerering 1–44. På første side: <quote>Et dukkehjem. / Skuespil i tre akter / af / Henrik Ibsen. / 1879.</quote></p>
+              
+<div xml:id="msDesc_Du8952_content"> 
+<head rend="level4">innhold og genetisk status.</head>
+<p>Legg 1, bl. [1]r tittelside, bl [2]r tittelen, bl. [2]v <quote>Personerne</quote>, legg 2 – legg 44, bl. [1]r skuespillets tekst (fullstendig), med noen rettelser. Settermarkeringer og merker etter svertede fingre viser at manuskriptet har vært brukt som trykkforelegg. Det stemmer langt på vei overens med manuskriptene 5–11 og må bygge på disse sammen med manuskript 3.</p>
+</div>
+              
+<div xml:id="msDesc_Du8952_date"> 
+<head rend="level4">datering.</head>
+<p>Ibsen sendte manuskriptet porsjonsvis til Hegel etter hvert som det ble ferdig. Første akt ble sendt <HIS:hisRef target="B1871-1879ht.xml#B18790902FH">2. september 1879</HIS:hisRef>, annen akt <HIS:hisRef target="B1871-1879ht.xml#B18790913FH">13. september</HIS:hisRef> og tredje akt noen dager etter <HIS:hisRef target="B1871-1879ht.xml#B18790915FH">15. september</HIS:hisRef>, se Ibsens brev til Hegel disse datoer. Jf. <HIS:hisRef target="Du_innl.xml#intro_creation"><hi rend="italic">Tilblivelse</hi></HIS:hisRef></p>
+</div>
+              
+<div xml:id="msDesc_Du8952_material"> 
+<head rend="level4">mengde, struktur og rekkefølge.</head>
+<p>Manuskriptet består av 44 legg (dobbeltblad, to blad) i ett bind, i alt 88 blad. Ibsen har nummerert dobbeltbladene 1–44 i øvre venstre hjørne av hvert dobbeltblads første side. Versosiden av første blad i legg 1 (tittelbladet) og av første blad i legg 44 samt hele annet blad i legg 44 er blanke, alle andre sider er beskrevne. Manuskriptet er håndinnbundet av bokbinderfirmaet Refsum; firmaets stempel finnes på versosiden av fremre forsatsblad. Innbindingen må være foretatt etter 1931 og før 1948 (bibliotekets katalogtekst, trolig skrevet i 1931, tyder på uinnbundet manuskript, mens beskrivelsen i Lie <bibl>(1948, 91)</bibl> forutsetter innbinding). Ifølge katalogteksten fra 1931 var dobbeltbladene på det tidspunkt til dels oppskårne i falsen. Det kan være grunnen til at en ukjent hånd har gjentatt leggnummeret på annet blad i legg 22, 31, 33, 35 og 39, sannsynligvis for å holde orden på rekkefølgen ved innbindingen. Bindet måler ca. 186 × 227 mm. Rygg og hjørner er i rødt skinn; bindets innhold er angitt med gulltrykk på ryggen. Permene har overtrekkspapir med mønster i brunt og beige. Forsatspapiret er marmorert i grågrønt med gullskimmer. Mellom selve manuskriptet og fremre og bakre forsatsblad er et gulaktig dobbelt flyblad med det ene bladet (den ene halvdelen av dobbeltbladet) limt sammen med respektive forsatsblad. Flybladets papir er glanset. Kapitelbåndet er i rødt og hvitt. Heftetråden er gulaktig.</p>
+</div>
+              
+<div xml:id="msDesc_Du8952_condition"> 
+<head rend="level4">tilstand.</head>
+<p>Bindet er noe slitt. Innbindingen har enkelte steder ført til tap av bokstav- og tegndeler ved linjeslutt på versosider, og noen av leggnumrene er delvis dekket til. Selve manuskriptet har vært foldet på langs. Det finnes en del flekker og smuss, særlig mange fingermerker som til dels får sidene til å virke skitne. Fremre flyblad har to bretter, noe på skrå.</p>
+</div>
+              
+<div xml:id="msDesc_Du8952_paper"> 
+<head rend="level4">papir.</head>
+<p>Papiret er som hovedtypen i Ms. 4° 1113a–g, se ovenfor. Siden måler 177 × 221 mm, som i manuskript 8, 10 og 11.</p>
+</div>
+              
+<div xml:id="msDesc_Du8952_pen"> 
+<head rend="level4">skriveredskap og -stoff.</head>
+<p>Manuskriptet er skrevet med blekk. Skriftbildet er brunt. Settermarkeringene er med blyant.</p>
+</div>
+              
+<div xml:id="msDesc_Du8952_handwriting"> 
+<head rend="level4">hender og skrift.</head>
+<list type="numbered">
+<item n="1"><hi rend="italic">Henrik Ibsen</hi>: Skriften er venstrehellende og omhyggelig. Strykninger er utført med små skråstreker. Ibsen har brukt et system av understrekninger i tekst som ikke er replikker, og han har satt skillestrek etter aktene.</item>
+<item n="2">Settermarkeringene o.a.</item>
+</list>
+</div>
+              
+<div xml:id="msDesc_Du8952_stamp"> 
+<head rend="level4">stempel og katalogsignatur.</head>
+<p>Bibliotekets stempel og katalogsignatur finnes på bindets rygg og på versosiden av tittelbladet (legg 1, bl. [1]v).</p>
+</div>
+              
+<div xml:id="msDesc_Du8952_provenance"> 
+<head rend="level4">proveniens.</head>
+<p>Manuskriptet tilhører Nasjonalbiblioteket, Oslo. Biblioteket (den gang Universitetsbiblioteket) mottok det som gave fra boktrykker Ejnar Levison, København, i 1931, jf. om proveniensen til trykkmanuskriptet (manuskript 16) til <title rend="italic">Samfundets støtter</title> ovenfor.</p>
+</div>
+</div>
+              
+<div xml:id="msDesc_Du41113g"> 
+<head rend="level3">13. nbo m<hi rend="miniscule">s</hi>.4° 1113<hi rend="miniscule">g</hi></head>
+<p rend="noIndent">Avskrift av trykkmanuskriptet ved Sigurd Ibsen med Henrik Ibsens egenhendige omslagstekst, <quote>Afskrift / af / original-manuskriptet / til / ‹Et dukkehjem.›</quote> Avskriften omtales i HU (8, 470) under <quote>Renskriften</quote>, katalogsignaturen oppgis feilaktig som Ms. 4° 1113:13.</p>
+
+<p>Denne avskriften er bundet inn sammen med Ms. 4° 1113a–f, se ovenfor om Ms. 4° 1113a–g. Det er ikke opplyst noe sted at det er Sigurd Ibsen som har skrevet den, men ved sammenligning med hans brev fra 1879 (NBO Brevs. 200) kan det neppe være tvil om at håndskriften er hans. Siden det dreier seg om en ikke-egenhendig avskrift av trykkmanuskriptet uten selvstendig tekstlig verdi, blir den ikke nærmere beskrevet. Se <hi rend="italic">Tekstkritisk redegjørelse</hi>, avsnittet <HIS:hisRef target="Du_tekstred.xml#edState_textsources"><hi rend="italic">Øvrige tekstkilder</hi></HIS:hisRef>, for diskusjon.</p>
+
+<p>Henrik Ibsens egen tekst står på et blad som må stamme fra et tidligere omslag. Dette bladet er bundet inn foran selve avskriften; en eventuell bakre del av omslaget finnes ikke lenger. Holtsmark skriver at manuskriptet da var <quote>pakket inn i papir med utenpåskrift av Ibsen selv</quote> <bibl>(Holtsmark red. 1928, 15)</bibl>. Ibsens tekst går på langs av siden (parallelt med falsen). Han har skrevet med blekk; skriftbildet er mørkebrunt. Skriften er omhyggelig og venstrehellende. Papiret er gulaktig. Siden måler ca. 150 × 211 mm. Bladet har vært brettet og har noen skader, uten følger for Ibsens tekst.</p>
+</div>
+              
+ <div xml:id="msDesc_Du39"> 
+<head rend="level3">14. <HIS:hisRef target="Du39.xml">nbo brevs. 39, i brev fra henrik ibsen til heinrich laube 18. februar 1880</HIS:hisRef></head>
+<p rend="noIndent">Egenhendig manuskript til den forandrede slutten, på tysk. To sider. På første side: <quote>Aenderung</quote>. Det er omtalt i HU (8, 475–76).</p>
+              
+<div xml:id="msDesc_Du39_content"> 
+<head rend="level4">innhold og genetisk status.</head>
+<p>Manuskriptet er en omskrivning på tysk av stykkets avslutning (åtte replikker), med Ibsens henvisning til s. 90 i den tyske utgaven <bibl>(Ibsen 1879)</bibl>. Teksten står som tilføyelse etter Ibsens brev til Laube <HIS:hisRef target="B1880-1889ht.xml#B18800218HLa">18. februar 1880</HIS:hisRef> og omtales i brevet som en avskrift. Den kan bygge på et utkast til endring som Ibsen ifølge sitt brev til <title rend="italic">Nationaltidende</title> <HIS:hisRef target="B1880-1889ht.xml#18890217Nat">17. februar 1880</HIS:hisRef> tidligere hadde sendt til Wilhelm Lange. Hverken dette utkastet eller et eventuelt medfølgende brev til Lange er kjent.</p>
+</div>
+              
+<div xml:id="msDesc_Du39_date"> 
+<head rend="level4">datering.</head>
+<p>Avskriften må være samtidig med brevet, 18. februar 1880.</p>
+</div>
+              
+<div xml:id="msDesc_Du39_material"> 
+<head rend="level4">mengde, struktur og rekkefølge.</head>
+<p>Manuskriptet står på de to siste sidene i et dobbeltblad. På de to første sidene står Ibsens brev til Laube.</p>
+</div>
+              
+<div xml:id="msDesc_Du39_condition"> 
+<head rend="level4">tilstand.</head>
+<p>Dobbeltbladet har vært brettet, har skrukker og flekker samt rifter i brettene og i falsen. Tverrbretten har ført til en betydelig rift som skader en tekstlinje på manuskriptets første side. En brett på langs berører teksten øverst på siste side, uten følger for lesbarheten. Noen av riftene har vært forsøkt reparert med pålimte papirstrimler, disse dekker ikke tekst.</p>
+</div>
+              
+<div xml:id="msDesc_Du39_paper"> 
+<head rend="level4">papir.</head>
+<p>Papiret er gulaktig med bunn- og kjedelinjer. Siden måler 141 × 219 mm.</p>
+</div>
+              
+<div xml:id="msDesc_Du39_pen"> 
+<head rend="level4">skriveredskap og -stoff.</head>
+<p>Manuskriptet er skrevet med blekk. Skriftbildet er brunt.</p>
+</div>
+              
+<div xml:id="msDesc_Du39_handwriting">
+<head rend="level4">skrift.</head>
+<p>Skriften er venstrehellende og omhyggelig. Ibsen har brukt et system av understrekninger i tekst som ikke er replikker og satt finalstrek til slutt.</p>
+</div>
+              
+<div xml:id="msDesc_Du39_stamp"> 
+<head rend="level4">stempel og katalogsignatur.</head>
+<p>Bibliotekets stempel og katalogsignatur finnes på dobbeltbladets andre og fjerde side.</p>
+</div>
+              
+<div xml:id="msDesc_Du39_provenance"> 
+<head rend="level4">proveniens.</head>
+<p>Manuskriptet tilhører Nasjonalbiblioteket, Oslo. Det ble kjøpt fra Damms antikvariat i 1977. I 1976 ble det solgt på auksjon hos Hartung &amp; Karl, München.</p>
+</div>
+</div>
+</div>
+</body>
+</text>
+</TEI>

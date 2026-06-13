@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Henrik Ibsens skrifter, elektronisk versjon</title>
+                <title level="a">Tekstredegjørelse til Vildanden</title>
+                <author>ved Christian Janss</author>
+                <funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+                <editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
+                <respStmt>
+                    <resp>Kodeteknisk støtte og utvikling</resp>
+                    <name>AKSIS: Avdeling for kultur, språk og informasjonsteknologi, Universitetsforskning i Bergen (Unifob AS)</name></respStmt>
+                <respStmt><resp>HISe-koding</resp>
+                    <name>Stine Brenna Taugbøl</name></respStmt>
+                <respStmt><resp>Koding</resp>
+                    <name>Gaute M. Sortland</name></respStmt>
+                <respStmt><resp>Tekstarbeid</resp>
+                    <name>Gaute M. Sortland</name>
+                    <name>Erlend Lønnum</name></respStmt>
+                <respStmt><resp>Kontroll av sitater og ordbøker</resp>
+                    <name xml:id="IK">Ingrid Korvald</name>
+                    <name xml:id="GB">Gry Berg</name></respStmt>
+                <respStmt><resp>Kontroll av littlist og referanser</resp>
+                    <name xml:id="HS">Hege Stensrud</name>
+                    <name>Gaute M. Sortland</name>
+                    <name>Hanne Sine Andresen</name>
+                    <name>Erlend Lønnum</name></respStmt>
+                <respStmt><resp>Kommentar-, intern- og ht-entiteter</resp>
+                    <name>Gaute M. Sortland</name>
+                    <name>Erlend Lønnum</name></respStmt>
+                <respStmt><resp>Kodekontroll</resp>
+                    <name/>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+                <distributor xml:id="HISe">Universitetet i Oslo</distributor>
+                <date when="2011" xml:id="HISe-date"/>
+                <pubPlace>Oslo</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Fila bygger på 8k_sisteversjon.xml.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <tagsDecl>
+                
+            </tagsDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="nob"/>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change>
+                <date>04.10.11</date>
+                <name>SBT</name><title>Skilte ut Vi_tekstred-fil, gjorde om til HISe-koding og TEI P5. Fila er valid.</title>
+            </change>
+            <change>
+                <date/>
+                <name/><title>Koding og oppdatering</title>
+            </change>
+            <change>
+                <date/>
+                <name/><title>Opprettet xml-fil</title>
+            </change>
+        </revisionDesc>
+    </teiHeader>    
+    
+<text type="introduction">
+<body>
+<div type="editorialStatement" xml:id="edState">
+                
+<div xml:id="edState_basetext">
+    
+<head rend="level3">valg av grunntekst</head>
+<p rend="noIndent">Grunnteksten, grunnlaget for HIS’ hovedtekst, er <HIS:hisRef target="Vi84.xml">førstetrykket fra 1884</HIS:hisRef>.</p>
+</div>
+    
+<div xml:id="edState_bibl"> 
+<head rend="level3">bibliografiske opplysninger</head>
+<p rend="noIndent">Ved tekstetableringen er det kollasjonert følgende eksemplarer:</p>            
+        
+<list type="numbered">
+<item n="1"><hi rend="italic">Henrik Ibsens skrifter</hi>s eksemplar</item>
+<item n="2">Nasjonalbibliotekets eksemplar (97ga12406)</item>
+<item n="3">Nasjonalbibliotekets eksemplar (80ga25380)</item>
+</list>
+        
+<p rend="noIndent">Det er avdekket satsintern variasjon (endringer foretatt under trykkeprosessen i samme opplag) i teksten i de tre eksemplarene. Det er derfor delkollasjonert ytterligere fem eksemplarer:</p>
+        
+<list type="numbered">
+<item n="4">Vigdis Ystads eksemplar (grønt privatbind)</item>
+<item n="5">Vigdis Ystads eksemplar (brunt privatbind)</item>
+<item n="6">Vigdis Ystads eksemplar (rødbrunt forlagsbind)</item>
+<item n="7">Bergen offentlige biblioteks eksemplar (sjI14v, eks. 2)</item>
+<item n="8">Nasjonalbibliotekets eksemplar (80ga25381)</item>
+</list>
+                
+<p rend="noIndent">Variasjonen mellom eksemplarene finnes på fire steder, i arkene 4, 6 og 13; disse er derfor kollasjonert i de fem ekstraeksemplarene. På s. 49, l. 19 og s. 93, l. 16 mangler <quote>Å</quote> ring i eksemplar 3; på s. 193, l. 23 mangler punktum etter parentes i eksemplar 2, 4 og 5. Med unntak av det siste tilfellet, som omfattes av HIS’ standardisering ved sceneanvisninger (jf. <HIS:hisRef target="edState_critical"><hi rend="italic">Tekstkritiske bemerkninger</hi></HIS:hisRef>), opplyses det om internvariasjonen i eksemplarene 1–3 i de tekstkritiske notene.</p>
+<p>Nr. 1, det mest feilfrie, er brukt som hovedeksemplar og er grunnlag for beskrivelsen i det følgende.</p>
+                
+<div xml:id="edState_bibl_binding">
+<head rend="level4">innbinding, forsatsblad og omslag.</head>
+<p rend="noIndent">Boken er beskåret og bundet inn uten originalt omslagsblad. Innbindingen er et håndverksmessig privatbind i grønn helshirting (utført av Otto von Schoultz, Göteborg). Ryggen har enkle ornamenter med forfatternavn og tittel i gullpreg. For- og bakperm er uten dekor. Forsatsbladene er dobbeltblad i glanset, tykt, gulaktig papir med brunt blomstermønster, og med den ene delen limt til for- og bakperm.</p>
+</div>
+        
+<div xml:id="edState_bibl_format">
+<head rend="level4">format og paginering.</head>
+<p rend="noIndent">Boken består av 16 ark falset i oktavformat (8 blad, 16 sider pr. ark), ca. 112 × 172 mm.<note type="footer">Målene gjelder bokens blad, bredde × høyde.</note> Arksignaturene 1–16 (med teksten <quote>Henrik Ibsen: Vildanden.</quote>) finnes på s. [1], 17, 33, 49, 65, 81, 97, 113, 129, 145, 161, 177, 193, 209, 225 og 241. Det siste arket har to blad, og bokens omfang er på 244 sider. Pagineringen er med arabiske tall og inkluderer begynnelsen på første akt s. [1] og løper fra s. 2 til 244. Et upaginert dobbeltblad omfatter stykkets tittelblad på s. [1]r, blank s. [1]v, stykkets tittel s. [2]r og personlisten s. [2]v. På side [44], [95], [150] og [201] begynner nye akter, og sidetall er her utelatt.</p>
+</div>
+        
+<div xml:id="edState_bibl_typo">
+<head rend="level4">typografi.</head>
+<p rend="noIndent">Teksten i <title rend="italic">Vildanden</title> (1884) er satt i antikva. Tittelbladet er satt med midtstilte majuskler. Tittelen på s. [2]r er midtstilt og satt i majuskler. Personlisten er venstrestilt, i en mindre skriftgrad enn replikkene, rollenavnene sperret, overskriften <quote>Personerne:</quote> er sentrert og satt i majuskler. Aktoverskrifter er satt med midtstilte kapiteler, i en større grad enn replikkene. Rollenavn før replikk står sperret og midtstilt på egen linje og er satt i samme grad som replikkene. Sceneanvisninger er satt i en mindre grad enn replikkene og personlisten, etter rollenavn står de på midtstilt, egen linje. De frittstående sceneanvisningene er blokkjustert med innrykket førstelinje; i replikker står de i flukt med teksten, ved slutten midstilt. Alle sceneanvisninger står i parentes. Sperring er benyttet som utheving. Rollenavn i sceneanvisninger står i samme grad som disse, men er sperret. Etter personlisten og aktoverskrifter står enkle skillestreker. Ved aktslutt er det benyttet en dobbel finalstrek, etter siste akts slutt en ornamentert strek. Sidetall er plassert i overmargen med en kort strek under.</p>            
+<p>Trykkvaliteten er jevnt god, men det er forekomster av svakt trykk og skadde typer. Slike typografiske mangler er i HIS’ hovedtekst rettet stilltiende.</p>
+</div>
+        
+<div xml:id="edState_bibl_paper">
+<head rend="level4">papir og tilstand.</head>
+<p rend="noIndent">Papiret i bokblokken er svakt gulnet. For øvrig er eksemplaret i god stand.</p>
+</div>
+</div>
+    
+<div xml:id="edState_textsources">
+<head rend="level3">øvrige tekstkilder</head>
+<p rend="noIndent">De øvrige tekstkildene fra Ibsens levetid består av manuskripter og trykte utgaver.</p>
+<p>Manuskriptene til <title rend="italic">Vildanden</title> omfattes av fire hovedsignaturer: egenhendige notater (<HIS:hisRef target="Vi41674.xml">NBO Ms. 4° 1674</HIS:hisRef>), egenhendige notater og arbeidsmanuskripter (<HIS:hisRef target="Vi81944.xml">NBO Ms. 8° 1944</HIS:hisRef>), egenhendige arbeidsmanuskripter <bibl>(<HIS:hisRef target="Vi41115a.xml">NBO Ms. 4° 1115</HIS:hisRef>)</bibl> og et egenhendig trykkmanuskript (<HIS:hisRef target="Vi4262III1.xml">KBK Collin 262, 4°, III.1</HIS:hisRef>). (For nærmere beskrivelser, se <HIS:hisRef target="Vi_msbeskr.xml"><hi rend="italic">Manuskriptbeskrivelse</hi></HIS:hisRef>.) De trykte utgavene i Ibsens levetid omfatter: <HIS:hisRef target="Vi84.xml">1. utg. 1884</HIS:hisRef>, <HIS:hisRef target="Vi84a.xml">2. utg. 1884</HIS:hisRef> og <HIS:hisRef target="ViFU.xml">FU 7 1900</HIS:hisRef>.</p>
+<p>Det er mange større og mindre forskjeller mellom tekstkildene. Skriveprosessen gjennomgikk faser som det er vanskelig å rekonstruere fullstendig, og ordningen av manuskriptene, særlig enkeltdelene av NBO Ms. 8° 1944 (a–i) og NBO Ms. 4° 1115b, gjenspeiler ikke tidslinjen i tilblivelsesprosessen (jf. diskusjonen i <hi rend="italic">Manuskriptbeskrivelse</hi>). Både ES og HU presenterer materialet etter innhold og grad av utarbeidelse, men med formodninger om genetisk sammeheng.</p>
+<p>NBO Ms. 4° 1674 (manuskript 1) er et notat der Ibsen under overskriften <quote>Optegnelser</quote> har samlet dels sentensaktige kommentarer til samfunnet, særlig til forholdet mellom kjønnene. En del av innholdet er utformet som kommentarer til to samtidige menns ståsteder og livsførsel, til <quote>A. K.</quote>, dvs. Alexander Kielland, og <quote>E. L.</quote>, dvs. forfatter og fotograf Edvard Lassen. Notatet lar seg til tross for bruken av yrkestittelen <quote>Fotografen</quote> (jf. <hi rend="italic">Bakgrunn</hi>) ikke entydig knytte til <title rend="italic">Vildanden</title>. Men det at initialene <quote>E. L.</quote> og <quote>A. K.</quote> gjenfinnes i NBO Ms. 8° 1944h, a og c (manuskript 2, 3 og 4), gjør at <title rend="italic">Vildanden</title> er det mest naturlige verk å tilordne notatet. Det har videre fellestrekk med innholdet i noen av Ibsens brev fra første halvdel av 1880-årene, jf. f.eks. <HIS:hisRef target="B1880-1889ht.xml#B18840323BB">brev til Bjørnstjerne Bjørnson 23. mars 1884</HIS:hisRef> (om særeie for kvinner), og til <HIS:hisRef target="B1880-1889ht.xml#B18831227FH">Frederik Hegel 27. desember 1883</HIS:hisRef> (om Holger Drachmanns feide med Georg Brandes). Begrepet <quote>adel</quote> finner vi også igjen i Ibsens tale <quote>Til arbeidernes fanetog i Trondhjem</quote> 14. juni 1885 (Ibsen 1885). Notatet har også elementer fra andre dramaer, f.eks. omtales boktrykker <quote>A.</quote>, trolig en henvisning til boktrykker Aslaksen i <title rend="italic">En folkefiende</title>. Det finnes dessuten andre formuleringer som peker frem mot f.eks. <title rend="italic">Rosmersholm</title> (Rosmers ønske om å <quote>gøre alle mennesker i landet til adelsmennesker</quote> (HIS 8, s. 367 l. 18)), mot <title rend="italic">Fruen fra Havet</title> og <title rend="italic">Bygmester Solness</title> (jf. ES 3, 367 for flere mulige tilknytningspunkter i Ibsens brev og dramaer). Halvdan Koht argumenterte i 1909 (ES 3, 366–67) for at prosanotatet kunne knyttes til et drama. Det er sannsynlig; skisser i samme, sentensaktige stil har i andre tilfeller latt seg knytte til tilblivelsen av skuespill, f.eks. <title rend="italic">Gengangere</title> (jf. HIS 7k, 482–85). Dateringen av notatet har imidlertid vært gjenstand for diskusjon. Koht daterte det til 1883, og ikke senere enn begynnelsen av 1884 (ES 3, 365–67, 465), ut fra formuleringen om særeie for kvinner i ekteskapet, som Koht mener er en kommentar til et odelstingsvedtak fra høsten 1882, samt ut fra den nevnte striden mellom Holger Drachmann og Georg Brandes, som Ibsen var orientert om. Koht opprettholder dateringen i 1929 <bibl>(Koht 1928–29, b. 2, 229)</bibl>, men viser nå dessuten til at Ibsen allerede i desember 1882 skal ha vist dette notatet til en tysk <quote>bokmann</quote>, trolig forfatteren, litteraturforskeren og kritikeren Alfred Klaar. Nå, i 1929, bemerker Koht at opplysningen kanskje ikke er <quote>heilt trygg</quote>. Koht viser til <title rend="italic">Vossische Zeitung</title> 15. oktober 1909, hvor Klaar skriver at Ibsen hadde gitt <quote>einem deutschen Schriftsteller</quote> innsyn <bibl>(Klaar 1909)</bibl>. Det er altså ikke Klaar selv som er blitt forevist notatet. Den teksten Klaar siterer, er en oversettelse av utdrag fra NBO Ms. 4° 1674, og har ingen innholdsmessige avvik fra dette. Klaars artikkel er en anmeldelse av den tyske oversettelsen av ES, <title rend="italic">Nachgelassene Schriften</title>, og det er mye som tyder på at Klaars datering skyldes en enkel misforståelse: Ibsens fødselsdagshilsen til Leopold von Sacher-Masoch 12. desember 1882 (se HIS 14k, 217) har i <title rend="italic">Nachgelassene Schriften</title> overskriften <quote>An einen deutschen Schriftsteller. / (Rom, 12. Dezember 1882.)</quote> (Ibsen 1909b, b. 1, 205); i flukt med hilsenen til Sacher-Masoch følger oversettelsen av NBO Ms. 4° 1674 under tittelen <quote>Aufzeichnungen</quote>. I farten kan det se ut som om den første overskriften også gjelder manuskriptet. I 1954 legger Koht avgjørende vekt på Klaars <quote>opplysning</quote>. Koht tilføyer at Ibsens <HIS:hisRef target="B1880-1889ht.xml#B18830111FH">brev til Hegel 11. januar 1883</HIS:hisRef> – <quote>Jeg går allerede igen og komponerer og lægger planer til et nyt skuespil af samtidslivet</quote> – derfor må dreie seg om begynnelsen på arbeidet med <title rend="italic">Vildanden</title> <bibl>(Koht 1954, b. 2, 144; jf. også Francis Bulls innledning i HU 10, 13)</bibl>. Formuleringen i brevet til Hegel er ikke noe entydig tegn i retning <title rend="italic">Vildanden</title>, og lignende setninger finnes i flere brev i 1883. Så sent som <HIS:hisRef target="B1880-1889ht.xml#B18840330OWe">30. mars 1884</HIS:hisRef> finner vi den i et brev til Oscar Wergeland: <quote>Jeg går nu og beskæftiger mig i tankerne med et nyt dramatisk arbejde</quote>. Kohts argumentasjon kan videre trekkes i tvil fordi Ibsen kan ha hatt både spørsmålet om særeie for kvinner og Drachmanns politiske ståsted i tankene senere enn høsten 1882. I tillegg støtter det papiret som er brukt i notatet, antagelsen om en senere datering (jf. <HIS:hisRef target="Vi_msbeskr.xml"><hi rend="italic">Manuskriptbeskrivelse</hi></HIS:hisRef>), slik at første halvdel av 1884 fremstår som mer sannsynlig.</p>
+<p>NBO Ms. 8° 1944h (manuskript 2) er et notat om levende modeller for stykkets personer, <quote>E. L.</quote> og <quote>A. K.</quote> peker tilbake på manuskript 1. HU opptar med reservasjon NBO Ms. 8° 1944h blant kildene til <title rend="italic">Vildanden</title> <bibl>(HU 19, 56)</bibl>, men lar intialene og papirtypen (jf. <HIS:hisRef target="Vi_msbeskr.xml"><hi rend="italic">Manuskriptbeskrivelse</hi></HIS:hisRef>) tale for, en vurdering HIS deler. NBO Ms. 8° 1944a (manuskript 3) er notater til personlisten og replikkutkast som uten tvil hører til <title rend="italic">Vildanden</title>, men som tyder på et tidlig stadium, siden f.eks. Hedvig mangler. NBO Ms. 8° 1944c (manuskript 4) er en sides replikkutkast for personen <quote>E. L.</quote> og en navnløs motpart; teksten er ikke brukt i det videre arbeidet med <title rend="italic">Vildanden</title>. NBO Ms. 8° 1944b, bl. [1]r (manuskript 5) er en personliste med noen av personenes alder og en stedsangivelse. Flere av personnavnene stemmer nå overens med de endelige. NBO Ms. 8° 1944d (manuskript 6) er et arbeidsmanuskript til begynnelsen av første akt, datert 20. april 1884, og ligger til grunn for samme tekst i NBO Ms. 4° 1115a (manuskript 7), den eldste bevarte utforming av hele første akt og begynnelsen av annen. Tittel og personliste mangler, men manuskriptet er en renskrift med rettelser. I tillegg til NBO Ms. 8° 1944d bygger det sannsynligvis også på et tapt forelegg (jf. <HIS:hisRef target="Vi_msbeskr.xml"><hi rend="italic">Manuskriptbeskrivelse</hi></HIS:hisRef> og ES 3, 463). Det adskiller seg fra den endelige utformingen i en del enkeltheter, f.eks. i scenebeskrivelsen, i navn og yrker og i omtalte hendelser i fortiden. NBO Ms. 8° 1944e (manuskript 8) er et dobbeltblad med notater og replikkutkast som ligger nærmere de to neste, korte manuskriptene NBO Ms. 8° 1944b, bl. [2]v (manuskript 9) og NBO Ms. 8° 1944f (manuskript 10), også de med notater og replikkutkast som må tilhøre arbeidet med <title rend="italic">Vildanden</title> på et stadium etter de første opptegnelsene, trolig etter manuskript 7. NBO Ms. 8° 1944g (manuskript 11) inneholder scenegangen for de første aktene og kan ut fra navneformene (de som finnes her, er de endelige) bestemmes som et senere manuskript enn tilsvarende opptegnelser i manuskript 7.</p>
+<p>Det mest kompliserte av manuskriptene til <title rend="italic">Vildanden</title> er NBO Ms. 4° 1115b (manuskript 12), et egenhendig arbeidsmanuskript til hele stykket som består av en renskrevet, første fullstendige utforming av stykket (som bygger på manuskript 7 så langt dette rekker, sannsynligvis også på andre, tapte forelegg), men med en mengde senere rettelser og tillegg på innlagte blad. Med ett unntak (jf. <HIS:hisRef target="Vi_msbeskr.xml"><hi rend="italic">Manuskriptbeskrivelse</hi></HIS:hisRef>) er det nå samsvar mellom alle navneformer og de endelige. Første hovedfase, gjennomskrivningen av hele stykket med umiddelbare rettelser, adskiller seg en del fra teksten i trykkmanuskriptet, som er ferdigstilt under hensyntagen til annen fase av arbeidet med NBO Ms. 4° 1115b, dvs. de senere rettelsene og tilleggsbladene. Det er i hovedsak enkelt å skille fasene fra hverandre: Første fase har rollenavnene skrevet ut og har renskriftkarakter. Annen fase er skrevet mindre omhyggelig, på egne blad, men også i form av rettelser i den første fasens tekst, og har forkortede rollenavn. Et eksempel på rettelser i teksten, uten bruk av tilleggsblad, finnes i Ibsens arbeid med replikkvekslingen i slutten av tredje akt (bl. 82) mellom Gina, Relling, Hjalmar, Molvik og Hedvig om Gregers’ mulige galskap og sykelige rettskaffenthet. Til den endelige teksten har Ibsen foretatt ytterligere endringer på samme sted<!-- (HIS 8, 147–48)-->. Et eksempel på tekst som i første fase avviker fra den endelige, og som er erstattet på tilleggstekst, finner vi på bl. 41v og 42r, der replikkvekslingen mellom Gregers og Ekdal om en jul hvor det ble sett mye ulv oppe ved verket, er strøket og erstattet av (bl.a.) Ekdals omtale av seg selv som bjørnejeger<!-- (HIS 8, s. 80 l. 20)-->. Den største avdelingen erstattet tekst finner vi i leggene 25–39 (jf. <HIS:hisRef target="Vi_msbeskr.xml"><hi rend="italic">Manuskriptbeskrivelse</hi></HIS:hisRef>). Et eksempel på de rene tillegg finner vi på bl. 34, som inneholder Hedvigs og Hjalmars dialog om hans utseende og det at han glemte å ta med mat fra middagen til henne (HIS 8, 64–66). Den er innføyd mellom det stedet i første fase av manuskriptet hvor Hjalmar omtaler lånet av Molviks kjole og siden går over til å samtale med sin far om villandens tilvenning til livet i en kurv på loftet (bl. 33v). Hedvigs svake øyne er et eksempel på et karaktertrekk som utvikles i løpet av annen hovedfase, jf. f.eks. tilleggsteksten på bl. 58r om farens redsel for at hun skal forderve øynene (HIS 8, 108). Siden Ibsen ikke har strøket all tekst som skal erstattes av tilleggene i annen fase, og det finnes få tegn som viser nøyaktig hvor omformulerte og nye passasjer skal inn i det opprinnelige, er det flere steder vanskelig å avgjøre nøyaktig hvor erstatningsteksten skal inn ut fra manuskriptet selv. Noe hjelp gir de løse bladenes plassering i manuskriptet og den endelige teksten. Ikke all tekst på tilleggene er benyttet videre i trykkmanuskripet, f.eks. et replikkutkast på tilleggslegg a, bl. 24–25 mellom Hjalmar og Gregers (om Hjalmars redning og farens straff) som innholdsmessig ville tilhøre deres dialog i første akt.</p>
+<p>NBO Ms. 8° 1944i (manuskript 13), med syv linjer tekst, er en første begynnelse på trykkmanuskriptet, skrevet på grunnlag av manuskript 12, men forkastet (jf. <HIS:hisRef target="Vi_msbeskr.xml"><hi rend="italic">Manuskriptbeskrivelse</hi></HIS:hisRef>). Ibsen begynte deretter på ny med et trykkmanuskript, NBO Ms. 4° 1115c (manuskript 14), også det avbrutt, midt i en replikk i begynnelsen av første akt.</p>
+<p>KBK Collin 262, 4, III.1 (manuskript 15) er det endelige og fullstendige trykkmanuskriptet. Det adskiller seg i ubetydelig grad fra grunnteksten og de øvrige trykte utgavene. Variasjonen dem i mellom gjelder bare ortografi og skrive- og trykkfeil. Kommateringen er som vanlig i Ibsens trykkmanuskripter mangelfull ut fra dansk standard. Ibsen gjorde selv oppmerksom på en feillesning av trykkmanuskriptet i et <HIS:hisRef target="B1880-1889ht.xml#B18841130HSch">brev til teatersjef Hans Schrøder 30. november 1884</HIS:hisRef>: På s. 167, l. 9 sier Hjalmar til Gregers: <quote>Ja, herre gud, jeg ved det nok. Men du må jage på mig, Gregers. Der skal tid til, ser du.</quote> Trykkmanuskriptet har <quote>du må ikke jage</quote>, og HIS har fulgt dette. Ibsen gjorde Hegel oppmerksom på feilen for sent til annen utgave (i <HIS:hisRef target="B1880-1889ht.xml#B18841208FH">brev av 8. desember 1884</HIS:hisRef>), men rettelsen ble heller ikke tatt inn i FU.</p>
+<p>Det går svært kort tid mellom første og annen utgave av <title rend="italic">Vildanden</title> (henholdsvis 11. november og 1. desember 1884), men utgavene er ikke satsidentiske; det er kommet rettelser, men også feil inn i annen utgave.</p>
+<p>I tillegg til HIS’ hovedtekst finnes en diplomatarisk og søkbar gjengivelse samt en fotografisk faksimile av grunnteksten i den elektroniske delen av HIS. Her gjengis også de øvrige tekstkildene diplomatarisk, manuskriptene også med faksimile, med mulighet for søk og sammenligning med grunnteksten.</p>
+<p>HIS har i margen sidereferanser til grunnteksten og til HU.</p>
+</div>
+    
+<div xml:id="edState_critical">
+<head rend="level3">tekstkritiske bemerkninger</head>
+<p rend="noIndent">Ved etableringen av hovedteksten er de andre tekstkildene fra Ibsens levetid blitt konsultert. Emendasjoner er foretatt med utgangspunkt i samtlige trykte utgaver samt trykkmanuskriptet KBK Collin 262, 4°, III.1 og arbeidsmanuskriptene NBO Ms. 4° 1115a–c og NBO Ms. 8° 1944i.</p>        
+<p>Ordvalg, ortografi og grammatikk i grunnteksten er, som offisiell norsk i samtiden, i tråd med danske normer, men med tiltagende grad av fornorskning og folkemålsformer, som økte i omfang særlig fra <title rend="italic">Kjærlighedens Komedie</title> av, jf. innledningene til <title rend="italic">Kjærlighedens Komedie</title><!-- (HIS 4k, 91–92)--> og <title rend="italic">Kongs-Emnerne</title><!-- (HIS 4k, 363–64)-->. Ibsen følger i <title rend="italic">Vildanden</title> fortsatt anbefalingene fra det skandinaviske rettskrivningsmøtet i Stockholm i 1869<!-- (jf. HIS 12k, 480–82)-->. En mer utførlig gjennomgang av språklige trekk i <title rend="italic">Vildanden</title> finnes i <hi rend="italic">Innledningen</hi>, under <HIS:hisRef target="Vi_innl.xml#intro_background_language"><hi rend="italic">Ibsens språklige utvikling</hi></HIS:hisRef>.</p>
+<p>I HIS er tegnsetting standardisert på følgende måte: Etter titler, overskrifter og rolleinnførsler i personlister samt replikkåpner i dramateksten er eventuelle skilletegn (punktum, komma, kolon) fjernet. I sceneanvisninger først i akt og scener, i frittstående sceneanvisninger mellom replikker og i stedsbeskrivelser etter personliste er eventuell parentes fjernet. Disse elementene har gjennomgående fått stor forbokstav og avsluttes med punktum. Frittstående sceneanvisninger har beholdt eventuelle <quote>indre</quote> parenteser. Sceneanvisninger til slutt i replikker regnes som del av replikken dersom de er ufullstendige setninger, og som frittstående, utenfor replikken, dersom setningen er fullstendig.</p>
+<p>Sceneanvisninger inne i replikk, inkludert de som står til slutt i replikk (ikke frittstående), begynner med liten forbokstav og avsluttes uten interpunksjon. Sceneanvisninger som følger rett etter replikkinnehaverens navn, har ikke parenteser. Øvrige sceneanvisninger i replikk har parentes.</p>
+<p>Skillestreker er beholdt der de har strukturerende funksjon, for eksempel når de markerer sceneskift og sceneskiftet ikke er markert på annen måte. Skillestreker som bare har karakter av ornament, er ikke gjengitt. Grunntekstens typografiske system for øvrig er ikke forsøkt imitert i HIS.</p>
+<p>Tekstfeilene i <title rend="italic">Vildanden</title> (1884) omfatter i hovedsak mindre setterfeil og feil av typen <hi rend="italic">aa</hi> for <hi rend="italic">å</hi>, samt majuskel for minuskel. Alle HIS’ rettelser, bortsett fra de stilltiende (typografiske feil), er anført i det tekstkritiske noteapparatet. Når teksten avviker betydelig i kilder som anvendes ved rettelser, føres ikke tekst herfra i rettelsesnoten, og formuleringen <quote>teksten mangler</quote> benyttes heller ikke. Den avvikende teksten vises derimot i sin sammenheng i den elektroniske delen av HIS. Dersom det er relevant for vår rettelse, vil tekstendringer i kilden det siteres fra, kommenteres kort i rettelsesnoten. Vakling i ortografi (f.eks. <hi rend="italic">blive/bli’/bli</hi>), tilsiktede særegenheter (f.eks. Ginas <hi rend="italic">potrætter</hi> for <hi rend="italic">portrætter</hi>) og interpunksjon som avspeiler tidens og Ibsens vekslende praksis, er ikke rettet i HIS.</p>
+    <p>For en mer generell oversikt over samtidens språknormer og Ibsens språk vises det til redegjørelser i innledningene til <title rend="italic">Catilina</title> 1850 og 1875<!-- (HIS 1k, 34–40 og 146–48)-->. Det vises dessuten til de <HIS:hisRef target="tekstkritiskeRetningslinjer.xml">tekstkritiske retningslinjene</HIS:hisRef> for HIS.</p>
+</div>
+    
+<div xml:id="edState_editions">
+<head rend="level3">tidligere tekstkritiske utgaver</head>
+<p rend="noIndent">I FU er <title rend="italic">Vildanden</title> trykt i bind 7, med en kort innledning om tilblivelsen, oversettelser, sekundærlitteratur, mottagelse, parodier og oppførelser på s. VII–XII. Det gis ikke tekstkritiske opplysninger. I MU er <title rend="italic">Vildanden</title> trykt i bind 4. Rettelser foretatt av Johan Storm mot hans tekstgrunnlag, FU, og etter sammenligning av trykte utgaver i Ibsens levetid, er oppført i MU 5, 16; errata på s. 41. I ES er forarbeider og utkast til <title rend="italic">Vildanden</title> trykt i bind 2, 11–78, med opplysninger og varianter i b. 3, 463–69. ES har ikke kjent eller hatt tilgang til manuskripten 2–6, 8–11 og 13; de er omtalt og delvis avtrykt i Bull 1932b (på <title rend="italic">Aftenposten</title>s forside for 23. april, med faksimile av NBO Ms. 8° 1944a; den danske versjonen av artikkelen ble trykt samme dag i <title rend="italic">Berlingske Tidende</title>, uten faksimile). I SU er <title rend="italic">Vildanden</title> trykt i bind 5, tekstgrunnlaget oppgis (SU 7, 301) å være førsteutgaven, med enkelte rettelser. I HU er <title rend="italic">Vildanden</title> trykt i bind 10. I HU 10, 163–310 og 19, 56–58 redegjøres for og trykkes, dels fullstendig, dels som variantapparat, alle manuskripter til <title rend="italic">Vildanden</title>. Grunnteksten for HU er førstetrykket, med rettelser etter trykkmanuskriptet. Disse er ikke spesifisert, men utgiverne skriver at de har fjernet en hel del kommaer i tråd med trykkmanuskriptet <bibl>(HU 10, 306)</bibl>. I appendiks 2 til oversettelsen av dramaet i <title rend="italic">The Oxford Ibsen</title> <bibl>(Ibsen 1960–77, b. 6, [438])</bibl> finnes en oppstilling av rollenavnene og deres utvikling i manuskriptmaterialet. Utgiveren James McFarlane har publisert en artikkel hvor han påpeker transkripsjonsfeil i ES og anfører mulige emendasjoner dersom man skulle utgi NBO Ms. 4° 1115 og NBO Ms. 8° 1944 (McFarlane 1959).</p>
+</div>
+</div>
+</body>
+</text>
+</TEI>

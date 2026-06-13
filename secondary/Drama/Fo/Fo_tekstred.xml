@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title level="s">Henrik Ibsens skrifter, elektronisk versjon</title>
+<title level="a">Tekstkritisk redegjørelse til En folkefiende</title>
+<author>ved Stine Brenna Taugbøl</author>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
+<respStmt>
+<resp>Innlemming i elektronisk utgave</resp>
+<name>EDD: Eining for digital dokumentasjon</name></respStmt>
+<respStmt><resp>Kodeteknisk støtte og utvikling</resp>
+<name>AKSIS: Avdeling for kultur, språk og informasjonsteknologi, Universitetsforskning i Bergen (Unifob AS)</name></respStmt>
+<respStmt><resp>HISe-koding</resp>
+<name xml:id="SBT">Stine Brenna Taugbøl</name></respStmt>
+<respStmt><resp>Koding</resp>
+<name xml:id="AMB">Aasta Marie Bjorvand Bjørkøy</name>
+<name xml:id="MA">Maria Alnæs</name>
+<name>Nina Marie Evensen</name></respStmt>
+<respStmt><resp>Tekstarbeid</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Maria Alnæs</name>
+<name>Nina Marie Evensen</name></respStmt>
+<respStmt><resp>Kontroll av sitater og ordbøker</resp>
+<name xml:id="IK">Ingrid Korvald</name>
+<name xml:id="GB">Gry Berg</name></respStmt>
+<respStmt><resp>Kontroll av littlist og referanser</resp>
+<name xml:id="HS">Hege Stensrud</name>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Maria Alnæs</name></respStmt>
+<respStmt><resp>Kommentar-, intern- og ht-entiteter</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name></respStmt>
+<respStmt><resp>Kodekontroll</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+</respStmt>
+</titleStmt>
+<publicationStmt>
+<publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+<distributor xml:id="HISe">Universitetet i Oslo</distributor>
+<date when="2010" xml:id="HISe-date"/>
+<pubPlace>Oslo</pubPlace>
+</publicationStmt>
+<sourceDesc>
+<p>Filen er opprettet fra 7k_sisteversjon.xml (0510).</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<tagsDecl>
+
+</tagsDecl>
+</encodingDesc>
+<profileDesc>
+<langUsage>
+<language ident="nob"/>
+</langUsage>
+</profileDesc>
+<revisionDesc>
+    <change>
+        <date>22.08.2011</date>
+        <name>SBT</name><title>Entiteter</title>
+        Erstattet æ/ø/å-entiteter med bokstaver. Validert.
+    </change>
+    <change>
+        <date>11.08.2011</date>
+        <name>SBT</name><title>Validering</title>
+        Endret sti til skjema i dokumenttopp.
+    </change>
+    <change>
+        <date>04.07.2011</date>
+        <name>SBT</name><title>P5</title>
+        Kodet om til valid P5.
+    </change>
+    <change>
+        <date>17.06.2011</date>
+        <name>SBT</name><title>Lenkekoding</title>
+        La inn id-verdier i overskrifter og foreløpig lenkekoding.
+    </change>
+    <change>
+        <date>05.01.2011</date>
+        <name>SBT</name><title>Listekoding</title>
+        Oppdaterte listekoding.
+    </change>
+    <change>
+        <date>24.11.2010</date>
+        <name>SBT</name><title>Validering</title>
+        Fjernet ref til files og figures i dokumenttoppen. Fila er valid.
+    </change>
+    <change>
+<date>17.09.2010</date>
+<name>SBT</name><title>Opprettet xml-fil</title>
+Endret teiHeader. Kodet om overskrifter, lister og ryddet i fila (fjernet blanke og blanklinjer). Validerte fila.
+</change>
+</revisionDesc>
+</teiHeader>
+
+<text type="introduction">
+<body>
+<div type="editorialStatement" xml:id="edState">
+
+    <div xml:id="edState_basetext">
+<head rend="level3">valg av grunntekst</head>
+<p rend="noIndent">Grunnteksten, grunnlaget for HIS’ hovedtekst, er førstetrykket fra 1882.</p>
+</div>
+
+    <div xml:id="edState_bibl">
+<head rend="level3">bibliografiske opplysninger</head>           
+<p rend="noIndent">Ved tekstetableringen er det kollasjonert følgende eksemplarer:</p>
+
+<list type="numbered">
+<item n="1">Nasjonalbibliotekets eksemplar (80ga25615)</item>
+<item n="2">Nasjonalbibliotekets eksemplar (80ga25620)</item>
+<item n="3"><title rend="italic">Henrik Ibsens skrifter</title>s eksemplar</item>
+</list>
+
+<p rend="noIndent">Det er avdekket satsintern variasjon (endringer foretatt under trykkeprosessen i samme opplag) i teksten i de tre eksemplarene. Ytterligere fem eksemplarer er derfor delkollasjonert (ark 1 og 6):</p>
+
+<list type="numbered">
+<item n="4">Nasjonalbibliotekets eksemplar (80ga25613)</item>
+<item n="5">Nasjonalbibliotekets eksemplar (80ga25614)</item>
+<item n="6">Nasjonalbibliotekets eksemplar (80ga25618)</item>
+<item n="7">Nasjonalbibliotekets eksemplar (80ga25619)</item>
+<item n="8">Nasjonalbibliotekets eksemplar (80ga25621)</item>
+</list>
+
+<p rend="noIndent">Variasjonen mellom eksemplarene finnes på tre steder: I ark 1, s. 2 l. 20 mangler <quote>Å</quote> ring i ekspl. 2, 4 og 8; i ark 6, s. 86 l. 3 mangler <quote>Å</quote> ring i ekspl. 1 og 6; i ark 6, s. 87 l. 23 mangler spørsmålstegn til slutt i <quote>Synes De ikke doktoren er bra’ hvas?</quote> i ekspl. 2, 3, 4, 7 og 8. Det opplyses om internvariasjon i ekspl. 1–3 i de tekstkritiske notene.</p>
+<p>Nr. 1, det mest feilfrie, er brukt som hovedeksemplar og er grunnlag for beskrivelsen i det følgende.</p>
+      
+        <div xml:id="edState_bibl_binding">
+<head rend="level4">innbinding, forsatsblad og omslag.</head>
+<p>Boken er beskåret og bundet inn uten originalt omslagsblad. Innbindingen er håndverksmessig utført i halvbind med rygg og hjørner i blå shirting. Permen har papirovertrekk med marmorering i grått, rødt og grønt. Snittet er også marmorert. Ryggen er dekorert med ornamenterte, horisontale streker, et blomsterpreg og teksten <quote><title rend="italic">H. IBSEN</title> / En Folkefiende</quote>, alt i gullpreg. Forsatsbladene har grafisk mønster i grønt og beige.</p>
+<p>Det finnes også halvbind med rygg og hjørner i brunt eller sort skinn/papir og perm med papirovertrekk i ulike farvesjatteringer (ekspl. 5, 6 og 7).</p>
+<p>Boken finnes dessuten som forlagsbind i helshirting i flere farvevarianter; blant HIS’ eksemplarer er en brun (ekspl. 3), en rosa (ekspl. 2), en grågrønn (ekspl. 4) og en rød (ekspl. 8) variant. Forlagsbindet er rikt ornamentert og har gullpreg både på rygg, forperm og snitt; Gyldendalske Boghandels forlagslogo er i blindtrykk på bakpermen.</p>
+<p>Ifølge Schiøtz og Ringstrøm <bibl>(2006, 170)</bibl> skal det også forekomme helshirtingsbind i litt større format og uten gullsnitt. Det skal dessuten finnes en variant med smusstittelblad foran tittelbladet. HIS har ingen slike varianter blant sine eksemplarer.</p>
+</div>
+
+        <div xml:id="edState_bibl_format">
+<head rend="level4">format og paginering.</head>
+<p>Boken består av 14 ark falset i oktavformat (8 blad, 16 sider pr. ark), 110 × 170 mm.<note type="footer">Målene gjelder boksiden, bredde × høyde.</note> Arksignaturene 1–14 (med teksten <quote>Henrik Ibsen: En folkefiende.</quote>) finnes på s. [1], 17, 33, 49, 65, 81, 97, 113, 129, 145, 161, 177, 193 og 209. Det siste arket har 6 blad, og bokens omfang er 4 + 219 sider. Pagineringen er med arabiske tall og inkluderer første akts begynnelse s. [1] og løper fra s. 2 til 219. Tittelbladet med blank versoside og påfølgende mellomtittelblad med rollelisten på versosiden er ikke inkludert i pagineringen. På sidene [40], [87], [135] og [176] begynner nye akter, og sidetall er her utelatt.</p>
+</div>
+
+        <div xml:id="edState_bibl_typo">
+<head rend="level4">typografi.</head>
+<p>Teksten i <title rend="italic">En folkefiende</title> (1882) er satt i antikva. Tittel og mellomtittel er midtstilte, med sperrede majuskler; tittelen er i et fett snitt. Rollelisten er i en mindre skriftgrad enn replikkene; den er venstrestilt, og rollenavnene er sperret. Rollelistens overskrift <quote>Personerne</quote> er midtstilt, i majuskler. Aktoverskriftene er midtstilte, i majuskler i samme grad som rollenavn og replikktekst. Rollenavn før replikk står sperret og midtstilt på egen linje. Sceneanvisningene er satt i en mindre skriftgrad enn replikkene og står i parentes. Rollenavn i sceneanvisninger er sperret. Etter mellomtittel, rolleliste og aktoverskrifter brukes en enkel skillestrek, ved aktslutt i akt 1–4 brukes dobbel skillestrek, og ved stykkets slutt er det en ornamentert finalstrek. Sidetall er plassert i overmarg med en kort strek under.</p>
+<p>Trykkvaliteten er jevnt god. Det er noen få forekomster av skadde typer, som er rettet stilltiende i HIS’ hovedtekst.</p>
+</div>
+
+        <div xml:id="edState_bibl_paper">
+<head rend="level4">papir og tilstand.</head>
+<p>Papiret er litt gulnet, og det er noe smuss på tittelsiden. Innbindingen har en liten revne øverst mellom rygg og forperm, og noe av papirovertrekket er slitt vekk. For øvrig er eksemplaret i god stand.</p>
+</div>
+</div>
+
+    <div xml:id="edState_textsources">
+<head rend="level3">øvrige tekstkilder</head>    
+        <p rend="noIndent">De øvrige tekstkildene fra Ibsens levetid består av et manuskript og to trykte utgaver. Det eneste bevarte manuskriptet er trykkmanuskriptet, NBO Ms. 8° 954. (For nærmere beskrivelse, se manuskriptbeskrivelsen.) Av brev til Frederik Hegel <HIS:hisRef target="B1880-1889ht.xml#B18820828FH">28. august 1882</HIS:hisRef>, der de fire første aktene av trykkmanuskriptet sendes som vedlegg, fremgår det at det foruten et første arbeidsmanuskript også må ha eksistert en midlertidig renskrift: <quote>jeg har skrevet stykket rent to gange efter hinanden for at opnå den størst mulige fuldkommenhed i dialogen</quote>. Det er også bevart noen korrekturark (de fire siste arkene) til førsteutgaven med ikke-egenhendige rettelser, NBO Ms. 8° 954, tillegg. De trykte utgavene i Ibsens levetid omfatter: førsteutgaven 1882, annenutgaven 1897 og FU 7 1900.</p>
+        <p>Trykkmanuskriptets tekst er i all hovedsak identisk med førstetrykket. En rettelse som Ibsen ber om i brev til Frederik Hegel <HIS:hisRef target="B1880-1889ht.xml#B18820909FH">9. september 1882</HIS:hisRef>, er tatt til følge: I Morten Kiils replikk <quote>Det kan bli’ Dem dyrt</quote><ptr type="ht" target="Foht.xml" corresp="koFo_ht_15"/> er <quote>kan</quote> rettet fra <quote>skal</quote>. Enkelte ord er fordansket i førstetrykket: <quote>apespil</quote> er endret til <quote>abespil</quote>, og <quote>udkik</quote> er endret til <quote>udkig</quote>. Av korrekturarkene går det frem at korrekturleseren har lagt til kommaer. I de senere trykte utgavene er det ingen vesentlige endringer.</p>
+        <p>I tillegg til HIS’ hovedtekst finnes en diplomatarisk og søkbar gjengivelse samt en fotografisk faksimile av grunnteksten. De øvrige tekstkildene gjengis diplomatarisk, manuskriptene også med faksimile, med mulighet for søk og sammenligning med grunnteksten.</p>
+<p>HIS har i margen sidereferanser til grunnteksten og til HU.</p>
+</div>
+             
+    <div xml:id="edState_critical">
+<head rend="level3">tekstkritiske bemerkninger</head>        
+<p rend="noIndent">Ved emendasjoner er også de andre tekstkildene fra Ibsens levetid blitt konsultert.</p>
+        <p>Ordvalg, ortografi og grammatikk i grunnteksten er, som offisiell norsk i samtiden, i tråd med danske normer. En del inkonsekvenser i skrivemåten forekommer, for eksempel benyttes sammendragninger ofte for å gjøre enkelte replikker mer talespråksnære: <quote>be’</quote> vs. <quote>frabede</quote>, <quote>ta’</quote> vs. <quote>tage</quote>, <quote>sa’</quote> vs. <quote>sagde</quote> mfl., jf. <HIS:hisRef target="Du_innl.xml#intro_background_language"><hi rend="italic">Ibsens språklige utvikling</hi></HIS:hisRef> i innledningen til <hi rend="italic">Et dukkehjem</hi>.</p>
+<p>I HIS er tegnsetting standardisert på følgende måte: Etter titler, overskrifter og rolleinnførsler i rollelister samt replikkåpner i dramateksten er eventuelle skilletegn (punktum, komma, kolon) fjernet. I sceneanvisninger først i akt og scener, i frittstående sceneanvisninger mellom replikker og i stedsbeskrivelser etter rolleliste er eventuell parentes fjernet. Disse elementene har gjennomgående fått stor forbokstav og avsluttes med punktum. Frittstående sceneanvisninger har beholdt eventuelle <quote>indre</quote> parenteser. Sceneanvisninger til slutt i replikker regnes som del av replikken dersom de er ufullstendige setninger, og som frittstående, utenfor replikken, dersom setningen er fullstendig.</p>
+<p>Sceneanvisninger inne i replikk, inkludert sceneanvisninger som står til slutt i replikk (ikke frittstående), begynner med liten forbokstav og avsluttes uten interpunksjon.</p>
+<p>Sceneanvisninger som følger rett etter replikkinnehaverens navn, har ikke parenteser. Øvrige sceneanvisninger i replikk har parentes.</p>
+<p>Skillestreker er beholdt der de har strukturerende funksjon, for eksempel når de markerer sceneskift og sceneskiftet ikke er markert på annen måte. Skillestreker som bare har karakter av ornament, er ikke gjengitt. Grunntekstens typografiske system for øvrig er ikke forsøkt imitert i HIS.</p>
+<p>Tekstfeilene i <title rend="italic">En folkefiende</title> (1882) angår foruten internvariasjon (se ovenfor) først og fremst feilstavinger og setterfeil, tegnsettingsfeil og majuskel for minuskel. Flere av feilene følger med til senere utgaver, som i <quote>Gutterne stikker hodet ind gennem dørene</quote>, der bare trykkmanuskriptet har den riktige formen <quote>døren</quote><ptr type="ht" target="Foht.xml" corresp="koFo_ht_16"/>. Alle rettelser er anført i HIS’ tekstkritiske noteapparat.</p>
+<p>Vakling i ortografi og interpunksjon som avspeiler tidens og Ibsens vekslende praksis, er ikke rettet i HIS. Minuskel etter spørsmålstegn, som i <quote>Ja, kan du huske det, Petra? jeg skrev imod</quote><ptr type="ht" target="Foht.xml" corresp="koFo_ht_10"/>, står urettet for å vise utviklingen i skrivemåte innenfor forfatterskapet. Ibsen benyttet ofte minuskel etter spørsmålstegn/utropstegn tidligere i forfatterskapet, men gikk gradvis over til majuskel, og i <title rend="italic">En folkefiende</title> er dette eksemplet eneste forekomst med minuskel. Et par mulige feil i redaktør Hovstads replikker er ikke rettet fordi de kan være personkarakteriserende og dermed tilsiktede: <quote>manuskriftet</quote><ptr type="ht" target="Foht.xml" corresp="koFo_ht_11"/> og <quote>Ja lad <hi rend="italic">dem</hi> gå for dem de er</quote><ptr type="ht" target="Foht.xml" corresp="koFo_ht_12"/>.</p>
+        <p>For en oversikt over samtidens språknormer og Ibsens språk vises det dessuten til en redegjørelse i innledningene til <title rend="italic">Catilina</title> 1850 og 1875, HIS 1k, 34–40 og 146–48. Det vises for øvrig til de <HIS:hisRef target="tekstkritiskeRetningslinjer.xml">tekstkritiske retningslinjene</HIS:hisRef> for HIS.</p>
+</div>
+             
+    <div xml:id="edState_editions">
+<head rend="level3">tidligere tekstkritiske utgaver</head>              
+        <p rend="noIndent">I FU er <title rend="italic">En folkefiende</title> trykt i bind 7, med en innledning om tilblivelse, senere utgaver, oversettelser, sekundærlitteratur og oppførelser s. I–VII. Det gis ikke tekstkritiske opplysninger. I MU er <title rend="italic">En folkefiende</title> trykt i bind 4. Bakerst i MU 5, i redegjørelsen for <quote>Mindeudgavens tekst</quote>, oppgis FU som tekstgrunnlag (MU 5, 3). Redegjørelsen inneholder også noen språklige kommentarer og en errataliste (MU 5, 15–16 og 41). I ES inngår ikke noe materiale til <title rend="italic">En folkefiende</title>. I SU er <title rend="italic">En folkefiende</title> trykt i bind 4 med førsteutgaven som tekstgrunnlag (SU 7, 301). Det opplyses om et par rettelser i interpunksjonen, samt om Ibsens egen rettelse omtalt i brev til Frederik Hegel <HIS:hisRef target="B1880-1889ht.xml#B18820909FH">9. september 1882</HIS:hisRef> (jf. <HIS:hisRef target="edState_textsources"><hi rend="italic">Øvrige tekstkilder</hi></HIS:hisRef>). Trykkfeil er rettet stilltiende. I HU er <title rend="italic">En folkefiende</title> trykt i bind 9. Tekstgrunnlag er førsteutgaven, men interpunksjonen følger trykkmanuskriptet. De bevarte korrekturarkene (jf. manuskriptbeskrivelsen) viser at korrekturleseren har lagt til kommaer. Disse kommaene (samt ekstra kommaer fra de stedene i stykket som det ikke er bevart korrekturark til) har HU fjernet igjen i sin tekst. Enkelte steder er HUs tekst rettet etter trykkmanuskriptet. Ikke alle rettelser er gjort rede for. Det opplyses om noen av Ibsens rettelser og endringer i trykkmanuskriptet. HU har ikke forholdt seg til senere utgaver av <title rend="italic">En folkefiende</title>.</p>
+</div>
+</div>
+</body>
+</text>
+</TEI>

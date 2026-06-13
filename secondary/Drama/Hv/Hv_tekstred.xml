@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Henrik Ibsens skrifter, elektronisk versjon</title>
+                <title level="a">Tekstredegjørelse til Hvide heste</title>
+                <author>ved Mette Witting</author>
+                <funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+                <editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
+                <respStmt>
+                    <resp>Kodeteknisk støtte og utvikling</resp>
+                    <name>AKSIS: Avdeling for kultur, språk og informasjonsteknologi, Universitetsforskning i Bergen (Unifob AS)</name></respStmt>
+                <respStmt><resp>Koding</resp>
+                    <name>Gaute M. Sortland</name></respStmt>
+                <respStmt><resp>Tekstarbeid</resp>
+                    <name>Gaute M. Sortland</name>
+                    <name>Erlend Lønnum</name></respStmt>
+                <respStmt><resp>Kontroll av sitater og ordbøker</resp>
+                    <name xml:id="IK">Ingrid Korvald</name>
+                    <name xml:id="GB">Gry Berg</name></respStmt>
+                <respStmt><resp>Kontroll av littlist og referanser</resp>
+                    <name xml:id="HS">Hege Stensrud</name>
+                    <name>Gaute M. Sortland</name>
+                    <name>Hanne Sine Andresen</name>
+                    <name>Erlend Lønnum</name></respStmt>
+                <respStmt><resp>Kommentar-, intern- og ht-entiteter</resp>
+                    <name>Gaute M. Sortland</name>
+                    <name>Erlend Lønnum</name></respStmt>
+                <respStmt><resp>Kodekontroll</resp>
+                    <name/>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+                <distributor xml:id="HISe">Universitetet i Oslo</distributor>
+                <date when="2012" xml:id="HISe-date"/>
+                <pubPlace>Oslo</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Fila bygger på 8k_sisteversjon.xml.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <tagsDecl>
+                
+            </tagsDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="nob"/>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change>
+                <date>12.07.12</date>
+                <name>SBT</name><title>La inn lenkekoding.</title>
+            </change>
+            <change>
+                <date>13.04.12</date>
+                <name>SBT</name><title>Omkoding til TEI P5 og HISe</title>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    
+<text type="introduction">
+<body>
+<div type="editorialStatement" xml:id="edState">
+
+<div xml:id="edState_basetext">
+<head rend="level3">valg av grunntekst</head>
+<p rend="noIndent">Grunnteksten, grunnlaget for HIS’ hovedtekst, er et egenhendig, ufullført arbeidsmanuskript, NBO Ms. 4° 1291c. Når det ikke finnes førstetrykk fra Ibsens levetid, men egenhendig manuskript, velger HIS dette til grunntekst.</p>
+        
+<div>
+<head rend="level3">bemerkninger om grunnteksten</head>
+<p>Det er visse trekk ved manuskriptet som det synes nødvendig å gjøre nærmere rede for. Det mest påfallende er de skiftende navnene, spesielt på den kvinnelige hovedpersonen, samt den relasjonen hun står i til sin mannlige motpart. Det er gjort detaljert rede for de skiftende navneformene både i ES (3, 471–72), i HU (10, 334–35) og i <hi rend="italic">The Oxford Ibsen</hi> <bibl>(Ibsen 1960–77, b. 6, [446])</bibl>, men utgiverne reflekterer ikke over hvorfor Ibsen har latt dem bli stående slik. Navnene er forskjellige i ulike deler av manuskriptet, og Ibsen har ikke rettet dem:</p>
+<!--<figure type="getFile" id="table-1" entity="bd8k_Tabell_1"></figure>-->
+<p><table>
+<row role="label"><cell role="data">1. akt</cell><cell role="data">2. akt</cell><cell role="data">3. akt</cell></row>
+<row role="data"><cell role="data">Fru Agate Rosmer</cell><cell role="data">Rebekka; men fra tredje side i legg 11: Frøken Dankert</cell><cell role="data">Frøken West</cell></row>
+<row role="data"><cell role="data">Ulrik Rosenhjelm</cell><cell role="data">Ulrik Sejerhjelm</cell><cell role="data">Hekfeldt</cell></row>
+<row role="data"><cell role="data">Eilert Alfred Rosmer</cell><cell role="data">Johannes Rosmer</cell><cell role="data">Johannes Rosmer</cell></row>
+<row role="data"><cell role="data">Agnete Rosmer</cell><cell role="data">Beate Rosmer</cell><cell role="data">[ikke nevnt]</cell></row>
+<row role="data"><cell role="data">Gylling</cell><cell role="data">Gylling</cell><cell role="data">Gylling</cell></row>
+</table></p>
+<p>Tabell 1. Navneformer i <title rend="italic">Hvide heste</title>, <HIS:hisRef target="Hv41291c.xml">NBO Ms.4° 1291c</HIS:hisRef></p>
+<p>Endringene i navnene henger sammen med endring i personkonstellasjonene i handlingen. Slik manuskriptet foreligger, er det innholdsmessig inkonsistent. I første akt av NBO Ms. 4° 1291c er Agate og Eilert Alfred Rosmer gift etter at Eilert Alfreds første hustru Agnete og <quote>lille Alfred</quote> (første side i legg 3) er død. Et stykke ut i annen akt forandrer dette seg, og Rebekka Dankert bor nå i huset hos Johannes Rosmer etter at Johannes’ hustru Beate Rosmer er død. Denne inkonsistensen blir nevnt i ES (3, 471): <quote>Så prøver Ibsen i <hi rend="italic">B.b</hi> [NBO Ms. 4° 1291c] med at la Rosmer netop være gift med Rebekka; men allerede et lidet stykke ud i 2den akt opgir han dette</quote>. Hvorvidt innholdsskiftet på dette sted i teksten faktisk betyr at Ibsen også samtidig oppgir denne versjonen av handlingen, er vanskelig å si. I HU tas inkonsistensen bare opp indirekte i redegjørelsen for navnene (HU 10, 334–35). HU har før det skrevet: <quote>Da [mai 1886] var Ibsen endelig kommet til noget større klarhet over hvad han vilde; første akt forelå ferdig 1. juni, annen akt blev skrevet i tiden 3.–8. juni, og tredje akt påbegynt 10. juni; men da han var nådd litt inn i den, stanset han atter op, og tok 15. juni fatt på en ny, fullstendig utarbeidelse [NBO Ms. 4° 1291d]</quote> (HU 10, 333). Hverken ES eller HU kommenterer at inkonsistensen i manuskriptet <hi rend="italic">ikke</hi> kunne blitt stående i det ferdige stykket.</p>
+<p>At Ibsen ikke har rettet navnene underveis i skriveprosessen, kan tyde på at han har skrevet av fra flere forelegg, der navnene har vært forskjellige. Også den overveiende omhyggelige håndskriften og det lave antallet rettelser i teksten viser at dette kan være en avskrift. Men ikke noe av det kjente materialet kan ha vært direkte forelegg, ikke bare på grunn av navnene, men også på grunn av innholdet som enten er for lite utarbeidet eller for forskjellig fra Ms. 4° 1291c, jf. <HIS:hisRef target="edState_textsources"><hi rend="italic">Øvrige tekstkilder</hi></HIS:hisRef>.</p>
+<p>Det er kort tid mellom NBO Ms. 4° 1291c, med tittelen <quote>Hvide heste</quote>, og NBO Ms. 4° 1291d, som har fått tittelen <quote>Rosmersholm</quote>. Ibsens nedskrivning av tredje akt i NBO Ms. 4° 1291c ble påbegynt 10. juni 1886 (første side i legg 13). Teksten er avbrutt litt under midten på siden, og siste blad av det siste dobbeltbladet er blankt. Det er dermed sannsynlig at det ikke har eksistert mer av NBO Ms. 4° 1291c. Det utelukker likevel ikke at eventuelle forelegg kan ha hatt mer tekst. <hi rend="italic">Når</hi> nedskrivningen ble avbrutt, er ikke dokumentert, men NBO Ms. 4° 1291d ble påbegynt 15. juni 1886, og det er rimelig å anta at nedskrivningen av tredje akt i NBO Ms. 4° 1291c er avbrutt etter kort tid, kanskje allerede samme dag som den ble påbegynt (altså 10. juni), i og med at tredje akts tekst bare fyller knappe seks sider. Selve tittelskiftet (fra <quote>Hvide heste</quote> til <quote>Rosmersholm</quote>) kan godt ha skjedd noe senere, i og med at formen <quote>Rosmersholm</quote> kommer inn fra og med annen akt i NBO Ms. 4° 1291d. I første akt brukes formen <quote>Rosmerholm</quote>.</p>
+<p><title rend="italic">Hvide heste</title> ble stående som et forlatt stadium. Herfra er det verket <title rend="italic">Rosmersholm</title> Ibsen arbeider videre med.</p>
+</div>
+</div>
+    
+<div xml:id="edState_bibl"> 
+<head rend="level3">bibliografiske opplysninger</head>
+<p rend="noIndent">Det finnes ingen trykk fra Ibsens levetid.</p>
+</div>
+    
+<div xml:id="edState_textsources"> 
+<head rend="level3">øvrige tekstkilder</head>
+<p>De øvrige tekstkildene består av mindre notater og påbegynte arbeidsmanuskripter, samlet i NBO Ms. 4° 1291a, bl. 1–4, og Ms. 4° 1291b. NBO Ms. 4° 1291a, bl. 1r er en side med opptegnelser, Ms. 4° 1291, bl. 2–3 et dobbeltblad med en halv side tekst under tittelen <quote>Udkast</quote>, og Ms. 4° 1291, bl. 4 et blad med fire linjer <quote>Udkast</quote> til scenegang for første akt. NBO Ms. 4° 1291b inneholder to legg med et påbegynt utkast til første akt. (For nærmere beskrivelser, herunder navneendringer i NBO Ms. 4° 1291a–c, se manuskriptbeskrivelsene.) Som påpekt foran kan ingen av disse manuskriptene ha vært direkte forelegg for NBO Ms. 4° 1291c.</p>
+<p>I tillegg til HIS’ hovedtekst finnes en diplomatarisk gjengivelse samt fotografisk faksimile av grunnteksten. De øvrige tekstkildene gjengis diplomatarisk, med faksimile og med mulighet for søk og sammenligning med grunnteksten.</p>
+</div>
+    
+<div xml:id="edState_critical"> 
+<head rend="level3">tekstkritiske bemerkninger</head>
+<p rend="noIndent">Ved ederingen av grunnteksten er også de andre tekstkildene til <title rend="italic">Hvide heste</title> i NBO Ms. 4° 1291a, bl. 1–4 og b blitt konsultert.</p>
+<p>Håndskriften i grunnteksten er overveiende lett leselig, jf. manuskriptbeskrivelsen. Tilfeller av utydelig eller uleselig tekst er markert med &lt;tekst&gt; eller &lt;…&gt;&lt;/…&gt;. Tekst som er utydelig, er forsøkt rekonstruert innenfor vinkelparenteser dersom dette har vært mulig å gjøre med stor grad av sannsynlighet. I en del tilfeller mangler diakritisk tegn over <hi rend="italic">i</hi> og <hi rend="italic">j</hi>. I slike tilfeller er tegnene likevel transkribert som <hi rend="italic">i</hi> eller <hi rend="italic">j</hi>. I to tilfeller kan lesemåten med <hi rend="italic">e</hi> istedenfor <hi rend="italic">i</hi> gi mening. Det ene er <quote>kompromitteret</quote> (fjerde side i legg 7), som uten diakritisk tegn kan leses som <quote>komprometteret</quote>. Siden den vanlige stavemåten i dansk og norsk på Ibsens tid var <hi rend="italic">kompromitteret</hi>, velger HIS denne. Det andre tilfellet er <quote>din</quote> (<quote>din skyldbetyngede samvittighed</quote>, fjerde side i legg 12), som uten diakritisk tegn kan leses som <quote>den</quote>. Også her finner vi det rimelig at ordet skal leses med <hi rend="italic">i</hi> og gjengir derfor ordet som <quote>din</quote>.</p>
+<p>Flere av rollenavnene endres i løpet av manuskriptet, jf. ovenfor. HIS har beholdt rollenavnene slik de er i manuskriptet.</p>
+<p>Ordvalg, ortografi og grammatikk i grunnteksten er, som offisiell norsk i samtiden, i tråd med danske normer.</p>
+<p>Tegnsettingen i grunnteksten er regelmessig, med få unntak. Ibsens egne rettelser i grunnteksten omfatter i svært liten grad tegnsetting. Komma mangler noen steder der det ellers er forventet, for eksempel etter <quote>Ja</quote> i en setning som denne: <quote>Ja du er jo det</quote> (annen side i legg 3). Dette er en vanlig utelatelse hos Ibsen. Det finnes også et stort antall spørsmålsformuleringer uten spørsmålstegn, og anførselstegn mangler noen steder ved sitater. I ett tilfelle (tredje side i legg 9) mangler avsluttende parentes. Uregelmessigheter i tegnsettingen kommenteres ikke i noteapparatet. HIS har ikke standardisert tegnsettingen (etter overskrifter, replikkåpner og sceneanvisninger) som i de øvrige dramatekstene (om retningslinjene for dette, se innledningen til <title rend="italic">Rosmersholm</title>, under <HIS:hisRef target="Ro_innl.xml#edState_critical"><hi rend="italic">Tekstkritiske bemerkninger</hi></HIS:hisRef>).</p>
+<p>HIS gjengir de egenhendige, ufullførte grunntekstene tilnærmet diplomatarisk. Originale linjeskift er beholdt (dermed også bindestreker i orddeling ved linjeskift). Oppsettet er lagt så nært det opprinnelige som mulig, for eksempel slik at original understrekning er gjengitt. Ibsen veksler mellom enkel og dobbel bindestrek, i HIS gjengis begge som enkel bindestrek.</p>
+<p>Siden manuskriptet er etterlatt ufullført, har ikke Ibsen foretatt de endelige valg for teksten. Derfor kan ikke utgiveren alltid vite hva som skulle bli stående, om endringer skulle gjenopprettes, nye endringer foretas osv. Ibsens endringer i manuskriptet (tilføyelser, strykninger og erstatninger) er derfor gjengitt i sin helhet i den løpende teksten. Endringene er gjengitt så diplomatarisk som mulig, slik at tilføyelser er plassert der de står i manuskriptet, for eksempel over linjen, og er markert med innføyningstegn. Strykninger er markert med gjennomstreking, mens overskrevet tekst er satt foran tilføyd tekst og markert med særlige klammer. Tydeliggjøring av tegn ved overskriving er markert med fet skrift. Ikke alle endringer i et håndskrift kan gjengis diplomatarisk, som eksempel kan nevnes overskriving av tekst. HIS plasserer overskrevet tekst foran tilføyd tekst. I <title rend="italic">Hvide heste</title> er endringene få og uten større omfang.</p>
+<p>Tekstfeilene i <title rend="italic">Hvide heste</title> (1886) angår i hovedsak feilstaving av ord og avskriftsfeil. Det er noen forekomster av liten for stor begynnelsesbokstav i ord for høflig tiltale; <quote>de</quote> og <quote>dem</quote> for <hi rend="italic">De</hi> og <hi rend="italic">Dem</hi>. Ett sted er skrevet <quote>dig</quote> for <hi rend="italic">mig</hi> (tredje side i legg 9), og i flere tilfeller mangler det hele eller halve ord. I tillegg kommer rene skrivefeil som <quote>os</quote> og <quote>om</quote> for <hi rend="italic">og</hi>. HIS retter ikke tekstfeil i de grunntekstene som gjengis diplomatarisk. Feil og mulige feil er i stedet anført i det tekstkritiske noteapparatet. Vakling i ortografi og interpunksjon som avspeiler tidens og Ibsens vekslende praksis, er heller ikke rettet i HIS. Forventningene til ortografisk og grammatisk riktighet må nødvendigvis være mindre ved manuskripter enn ved trykte skrifter, som er gått gjennom flere normerings- og kontrollinstanser. Referanser til manuskriptets leggnummerering er plassert i tekstens yttermarg, sammen med sidereferanser til HU.</p>
+<p>For en oversikt over samtidens språknormer og Ibsens språk vises det til redegjørelser i innledningene til <hi rend="italic">Catilina</hi> <HIS:hisRef target="C1_innl.xml#intro_background_language">1850</HIS:hisRef> og <HIS:hisRef target="C2_innl.xml#intro_background_language">1875</HIS:hisRef>. Det vises for øvrig til de <HIS:hisRef target="tekstkritiskeRetningslinjer.xml">tekstkritiske retningslinjene</HIS:hisRef> for HIS.</p>
+</div>
+    
+<div xml:id="edState_editions"> 
+<head rend="level3">tidligere tekstkritiske utgaver</head>
+<p rend="noIndent">Manuskriptet ble trykt første gang i ES 3, 88–119. ES retter de aller fleste feilene, store som små, uten å gjøre oppmerksom på feilen eller rettelsen. På fjerde side i legg 2 er for eksempel ordet <quote>fod</quote> falt ut av uttrykket <quote>på spændt fod med</quote>. Dette er i ES supplert stilltiende (ES 3, 91). Manuskriptet inneholder to feilskrivninger av ordet <hi rend="italic">herr</hi> på formen <quote>her</quote> (fjerde side i legg 5 og fjerde side i legg 13). ES har bare rettet den andre forekomsten, jf. ES 3, 117. Det er ett unntak fra de stilltiende rettelsene. Feilen <quote>dig</quote> for <quote>mig</quote> (tredje side i legg 9) er ikke rettet, men bemerket i ES (3, 470). Ibsens egne endringer er ikke bemerket, med unntak av tre tilføyelser som er satt i skarpe klammer.</p>
+<p>NBO Ms. 4° 1291c er siden trykt i HU 10, 450–82. Manuskriptet er gjengitt med de få, større endringene i skarpe klammer (se f.eks. HU 10, 452, 456). På samme måte er det satt inn bemerkninger om uteglemte ord o.l. (HU 10, 472). Et avvik herfra er det uteglemte <quote>fod</quote>, jf. ovenfor om samme feil i ES, som også i HU er supplert stilltiende. <quote>Rosenhjem</quote> for <quote>Rosenhjelm</quote> (HU 10, 459) er et eksempel på stilltiende rettelser. Som i ES har også HU bare rettet den ene av de to forekomstene av <quote>her</quote> for <hi rend="italic">herr</hi> (HU 10, 480), den første står urettet (HU 10, 461). (Slike sammenfallende feil tyder på at HU har benyttet ES som tekstgrunnlag.)</p>
+</div>
+</div>
+</body>
+</text>
+</TEI>

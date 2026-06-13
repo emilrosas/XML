@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">    
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Henrik Ibsens skrifter, elektronisk versjon</title>
+                <title level="a">Tekstredegjørelse til Samfundets støtter</title>
+                <author>ved Mette Witting</author>
+                <funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+                <editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
+                <respStmt>
+                    <resp>Kodeteknisk støtte og utvikling</resp>
+                    <name>AKSIS: Avdeling for kultur, språk og informasjonsteknologi, Universitetsforskning i Bergen (Unifob AS)</name></respStmt>
+                    <respStmt><resp>Koding</resp>
+                    <name xml:id="AMB">Aasta Marie Bjorvand Bjørkøy</name>
+                    <name xml:id="MA">Maria Alnæs</name>
+                    <name>Nina Marie Evensen</name></respStmt>
+                    <respStmt><resp>Tekstarbeid</resp>
+                    <name>Aasta Marie Bjorvand Bjørkøy</name>
+                    <name>Maria Alnæs</name>
+                    <name>Nina Marie Evensen</name></respStmt>
+                    <respStmt><resp>Kontroll av sitater og ordbøker</resp>
+                    <name xml:id="IK">Ingrid Korvald</name>
+                    <name xml:id="GB">Gry Berg</name></respStmt>
+                    <respStmt><resp>Kontroll av littlist og referanser</resp>
+                    <name xml:id="HS">Hege Stensrud</name>
+                    <name>Aasta Marie Bjorvand Bjørkøy</name>
+                    <name>Maria Alnæs</name></respStmt>
+                    <respStmt><resp>Kommentar-, intern- og ht-entiteter</resp>
+                    <name>Aasta Marie Bjorvand Bjørkøy</name></respStmt>
+                    <respStmt><resp>Kodekontroll</resp>
+                    <name>Aasta Marie Bjorvand Bjørkøy</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+                <distributor xml:id="HISe">Universitetet i Oslo</distributor>
+                <date when="2012" xml:id="HISe-date"/>
+                <pubPlace>Oslo</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Fila bygger på 7k_sisteversjon.xml.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <tagsDecl>
+                
+            </tagsDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="nob"/>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change>
+                <date>10.07.12</date>
+                <name>SBT</name><title>Lenkesjekk m/enkelte rettelser.</title>
+            </change><change>
+                <date>09.07.12</date>
+                <name>EFS</name><title>La inn lenkekoding.</title>
+            </change><change>
+                <date>03.02.2012</date>
+                <name>SBT</name><title>Kodet om til TEI P5 for HISe.</title>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    
+<text type="introduction">
+<body>
+<div type="editorialStatement" xml:id="edState">
+<div xml:id="edState_basetext">
+<head rend="level3">valg av grunntekst</head>
+<p rend="noIndent">Grunnteksten, grunnlaget for HIS’ hovedtekst, er førstetrykket fra 1877.</p>
+</div>
+            
+<div xml:id="edState_bibl"> 
+<head rend="level3">bibliografiske opplysninger</head>
+<p rend="noIndent">Ved tekstetableringen er det kollasjonert følgende eksemplarer:</p>                
+<list type="numbered">
+<item n="1">Nasjonalbibliotekets eksemplar (80ga25954)</item>
+<item n="2">Nasjonalbibliotekets eksemplar (01ga20361)</item>
+<item n="3"><hi rend="italic">Henrik Ibsens skrifter</hi>s eksemplar</item>
+</list>
+                
+<p rend="noIndent">Det er avdekket satsintern variasjon (endringer foretatt under trykkeprosessen i samme opplag) i teksten i de tre eksemplarene. Det er derfor delkollasjonert ytterligere 5 eksemplarer (ark 3 og 5):</p>
+                
+<list type="numbered">
+<item n="4">Nasjonalbibliotekets eksemplar (80ga25955)</item>
+<item n="5">Høgskulen i Voldas eksemplar (92uv20304)</item>
+<item n="6">Nasjonalbibliotekets eksemplar (96sd38232)</item>
+<item n="7">Universitetsbiblioteket i Bergens eksemplar (98do42324)</item>
+<item n="8">Universitetsbiblioteket i Trondheims eksemplar (06a129723)</item>
+</list>
+                
+<p rend="noIndent">Variasjon mellom eksemplarene finnes to steder: I ark 3, s. 41 l. 15 mangler <hi rend="italic">Å</hi> ring i alle eksemplarer unntatt eksemplar 1; i ark 5, s. 72 l. 10 mangler punktum etter <quote>Bernick</quote> i eksemplar 1 og 6. Den første satsinterne variasjonen blir det opplyst om i de tekstkritiske notene (for eksemplarene 1–3), mens den andre omfattes av HIS’ standardisering ved replikkåpner (se <HIS:hisRef target="edState_critical"><hi rend="italic">Tekstkritiske bemerkninger</hi></HIS:hisRef> nedenfor). Schiøtz &amp; Ringstrøm <bibl>(2006, 169)</bibl> nevner enda en satsintern variasjon: I ark 14, s. 211 l. 5 står det i noen eksemplarer <quote>Du</quote> i stedet for <quote>du</quote>. Denne varianten ble ikke funnet i eksemplarene 1–3 og er derfor ikke dokumentert i vår hovedtekst. Varianten ble derimot funnet i fire av de fem ekstraeksemplarene (eksemplar 4, 5, 7 og 8).</p>
+<p>Nr. 1, det mest feilfrie, er brukt som hovedeksemplar og er grunnlag for beskrivelsen i det følgende.</p>
+                
+<div xml:id="edState_bibl_binding"> 
+<head rend="level4">innbinding, forsatsblad og omslag.</head>
+<p>Boken har tresidet gullsnitt og er bundet inn uten originalt omslagsblad og med enkle, limte forsatsblad av grått papir. Innbindingen er håndverksmessig utført, forlagsbind i blå helshirting. Ryggen har forfatternavn og tittel i gullpreg med ornamenter i gull- og blindpreg over og under. Forpermen er dekorert med ornamenter og tre rammer med border i sort, og forfatternavn og tittel er med gullpreg. Bakpermen har en ornamentert ramme samt forlagslogoen i blindpreg. Kapitelbåndet er i rødt og hvitt. Boken har bokmerkebånd i grønt. Det finnes minst to andre typer originalinnbinding: en med mønster i blindtrykk på for- og bakperm, og en med mønster i svart på forpermen og blindtrykk på bakpermen, men uten forlagets logo <bibl>(Schiøtz &amp; Ringstrøm 2006, 169)</bibl>. Disse typene er ikke blant HIS’ konsulterte eksemplarer.</p>
+</div>
+                
+<div xml:id="edState_bibl_format">
+<head rend="level4">format og paginering.</head>
+<p>Boken består av 14 ark falset i oktavformat (8 blad, 16 sider pr. ark), ca. 110 × 169 mm.<note type="footer">Målene gjelder boksiden, bredde × høyde.</note> Arksignaturene 2–14 (tekst: <quote>Henrik Ibsen: Samfundets støtter.</quote>) finnes på s. 17, 33, 49, 65, 81, 97, 113, 129, 145, [161], 177, 193 og 209. Det siste arket har to blad, og bokens omfang er på 211 sider. Pagineringen er med arabiske tall, inkluderer smusstittelblad s. [1–2], tittelblad s. [3–4], rolleliste s. [5], blank side [6], første akts begynnelse s. [7] og løper fra s. 8 til 211. På sidene [57], [117] og [161] begynner nye akter, og pagineringen er her utelatt.</p>
+</div>
+                
+<div xml:id="edState_bibl_typo"> 
+<head rend="level4">typografi.</head>
+    <p>Teksten i <title rend="italic">Samfundets støtter</title> 1877 er satt i antikva. <!--En faksimile av tittelsiden gjengis på s.  <ref targType="figure" target="illus-1"> -->Tittelen er satt midtstilt med majuskler. Rollelisten er venstrestilt, i en mindre skriftgrad enn replikkene, rollenavnene er sperret, overskriften <quote>Personerne</quote> er satt midtstilt med sperrede majuskler, likeledes aktoverskrifter, som står i samme skriftgrad som replikkene. Rollenavn før replikk og/eller sceneanvisning er sperret og midtstilt på egen linje, og i samme grad som replikkene. Sceneanvisninger er satt i en mindre grad enn replikkene, i parentes. Rollenavn i sceneanvisninger står i samme grad som disse, men er sperret. Etter tittelen på smusstittelbladet og etter aktoverskrift brukes enkel skillestrek; etter rollelisten og ved aktslutt brukes dobbel skillestrek. Sidetall er plassert i overmarg med en kort strek under.</p>
+<p>Trykkvaliteten er jevnt god, men det er forekomster av svakt trykk.</p>
+</div>
+                
+<div xml:id="edState_bibl_paper"> 
+<head rend="level4">papir og tilstand.</head>
+<p>Papiret er svakt gulnet i kantene og har enkelte bruksspor (fingermerker). En mørk fuktskade på innsiden av bakre perm har skadet papiret i de siste to arkene, og samme fuktskade skimtes i øvre kant av hele bokblokken. Permen er noe slitt i ryggen, og den holder på å løsne fra bokblokken. For øvrig er eksemplaret i god stand.</p> 
+</div>
+</div>
+            
+<div xml:id="edState_textsources">
+<head rend="level3">øvrige tekstkilder</head>
+<p rend="noIndent">De øvrige tekstkildene fra Ibsens levetid består av både manuskripter og trykte utgaver. Manuskriptene, som alle er egenhendige, omfatter notatene NBO Ms. 8° 1469, notatene og arbeidsmanuskriptene samlet under signaturen NBO Ms. 4° 1112, replikkutkastene i NBO Ms. 8° 1931 og på baksiden av et brev fra Sigurd Ibsen til Henrik Ibsen 10. august [1877] i NBO Brevs. 200, samt trykkmanuskriptet NBO Ms. 8° 956. (For nærmere beskrivelser, se de enkelte manuskriptbeskrivelsene.) Trykte utgaver etter førstetrykket omfatter: 2. utg. 1877, 3. utg. 1893, FU 6 1899 og 4. utg. 1900. Det kom uautoriserte ettertrykk av <title rend="italic">Samfundets støtter</title> i USA i Ibsens levetid. HIS kjenner til en utgave fra 1890 på Skandinavens Boghandels Forlag i Chicago. I Holtsmark <bibl>(red. 1928, 40)</bibl> er denne utgaven benevnt <quote>Nytt opl.</quote>, så det finnes muligens et tidligere opplag. Ulovlige ettertrykksutgaver er det ikke tatt hensyn til under tekstetableringen.</p>
+<p>De tidligste notater som kan knyttes til <title rend="italic">Samfundets støtter</title>, er fra 1870. Det dreier seg om to manuskripter samlet under betegnelsen NBO Ms. 8° 1469, nemlig NBO Ms. 8° 1469:1 og NBO Ms. 8° 1469:2. Under samme manuskriptsignatur er det et notat <bibl>(NBO Ms. 8° 1469:3)</bibl> med oversikt over scener i annen akt; dette er trolig senere. Innholdet i notatene ligger ganske fjernt fra den endelige utformingen av <title rend="italic">Samfundets støtter</title>, men det er noen trekk som peker frem mot nettopp dette dramaet – blant annet kan <quote>skibsrederen</quote> peke frem mot konsul Bernick og <quote>plejebarnet</quote> mot Dina. Det er ikke tatt hensyn til NBO Ms. 8° 1469 under etableringen av hovedteksten på grunn av den store ulikheten. Halvdan Koht fikk i 1932 tilgang til NBO Ms. 8° 1469, og han mente da å ha fått bevis for det han tidligere hadde antatt i sin Ibsen-biografi <bibl>(Koht 1928–29, b. 2, 144)</bibl>, nemlig at Ibsen begynte arbeidet med <title rend="italic">Samfundets støtter</title> like etter at <title rend="italic">De unges Forbund</title> ble utgitt i 1869 <bibl>(Koht 1932)</bibl>.</p>
+<p>NBO Ms. 4° 1112 inneholder det mest omfattende og kompliserte manuskriptmateriale til <title rend="italic">Samfundets støtter</title>. Skriveprosessen gjennomgikk faser det er vanskelig å rekonstruere. Både ES og HU presenterer materialet etter innhold og grad av utarbeidelse, med formodninger om genetisk sammenheng. I HIS følger inndelingen av manuskriptet manuskriptbeskrivelsen, som relaterer delene til hverandre og til de øvrige manuskriptene. Der gis også referanse til omtalen i ES og HU.</p>
+<p>NBO Ms. 4° 1112a består av fem udaterte korte deler som trolig hører til i begynnelsen av skriveprosessen fra 1875 av. NBO Ms. 4° 1112a har for lite ferdig utformet replikktekst til at det har kunnet tjene som grunnlag for etableringen av hovedteksten i HIS.</p>
+<p>NBO Ms. 4° 1112b inneholder den første gjennomskrivningen av deler av dramaet, nemlig første akt og begynnelsen av annen akt. Scenegangen i NBO Ms. 4° 1112b er stort sett lik scenegangen i den endelige teksten, men noen av personene kommer ikke med videre, og replikkvekslingene blir utbygget og omformulert. Underveis i utformingen av første akt i NBO Ms. 4° 1112b har Ibsen notert noen engelske replikker på et dobbeltblad <bibl>(NBO Ms. 8° 1931)</bibl>. Replikkene er tatt med i NBO Ms. 4° 1112b (og senere også i NBO Ms. 4° 1112c), men finnes ikke i den endelige teksten. Forskjellene mellom teksten i NBO Ms. 8° 1931 og det tilsvarende tekststedet i NBO Ms. 4° 1112b er små.</p>
+<p>Ved en sammenligning av persongalleriet, scenegangen og replikkvekslingene i de fire arbeidsmanuskriptene NBO Ms. 4° 1112c–f ser man en utvikling mot trykkmanuskriptet. Allerede i NBO Ms. 4° 1112c er scenegangen stort sett som den blir i trykkmanuskriptet. Noen nye opptrinn kommer inn i NBO Ms. 4° 1112c og er med også i den endelige teksten, for eksempel innledningsscenen med Aune og Krap (som tidligere bare er nevnt i et notat i NBO Ms. 4° 1112a), samt sluttscenen i første akt med Lona Hessel som vil lufte ut hos Bernicks. Men i NBO Ms. 4° 1112d er innledningsscenen mellom Krap og Aune ikke med, selv om den er med i NBO Ms. 4° 1112c og igjen tas inn fra og med NBO Ms. 4° 1112e. Det kan være en forglemmelse fra Ibsens side, og det kan være grunnen til at han begynner forfra i NBO Ms. 4° 1112e. NBO Ms. 4° 1112e er nesten som en avskrift av NBO Ms. 4° 1112c når det gjelder innledningsscenen med Aune og Krap, og av NBO Ms. 4° 1112d for resten av teksten. Det er bare gjort små endringer. Dessuten slutter teksten nøyaktig samme sted som NBO Ms. 4° 1112d. Fra NBO Ms. 4° 1112e til NBO Ms. 4° 1112f er det bare noen få ord, en enkelt replikk og noe av tegnsettingen som er endret i den teksten disse to manuskriptene har felles.</p>
+<p>NBO Ms. 4° 1112f inneholder sammenhengende tekst til begynnelsen av første akt og siste del av fjerde akt, med noen rettelser. Manuskriptet har trolig opprinnelig vært en full gjennomskrivning av dramaet, hvor de midterste legg er tapt, for leggnummereringen i det bevarte manuskriptet er 1, 2, 9, 10. Handlingsgangen i NBO Ms. 4° 1112f er i store trekk samsvarende med NBO Ms. 8° 956, men noen scener og replikkvekslinger blir i trykkmanuskriptet utbygget eller omformulert. Det gjelder for eksempel omtalen av jernbanesaken i første akt, Hilmar og Olafs samtale om Amerika og bjørnejakt, damenes samtale om affæren mellom Dinas mor og Johan Tønnesen og Dinas samtale med adjunkten om hvordan damene omtaler henne. Det finnes også mindre forskjeller i personlisten.</p>
+<p>Førstetrykket baserer seg helt på trykkmanuskriptet <bibl>(NBO Ms. 8° 956)</bibl>, og alle rettelser i trykkmanuskriptet er tatt til følge i førstetrykket. Forskjellene dem imellom gjelder: feil i trykkmanuskriptet som er rettet i førstetrykket (eks. <quote>skiger</quote> rettet til <quote>skriger</quote> s. 48; <quote>skumlene</quote> rettet til <quote>skumlende</quote> s. 66; <quote>tid</quote> rettet til <quote>til</quote> s. 112); noen få feil som er oppstått i førstetrykket (eks. <quote>paa</quote> for <quote>på</quote> s. [7]; <quote>Du</quote> for <quote>du</quote> s. 11; <quote>skøne</quote> for <quote>skønne</quote> s. 31) eller tegnsetting som er forandret bevisst eller ubevisst. Underveis i utformingen av trykkmanuskriptet brukte Ibsen baksiden av et brev fra Sigurd Ibsen datert 10. august [1877] (NBO Brevs. 200) til å lage utkast til en del av en replikk. Replikkteksten, som hører til sist i fjerde akt, er tatt med i trykkmanuskriptet, bare med endring av et semikolon til punktum. NBO Ms. 4° 1112b–f og NBO Ms. 8° 956 har vært benyttet under etableringen av HIS’ hovedtekst.</p>
+<p>Første utgave utkom 11. oktober 1877 (i 6000 eksemplarer), og allerede 30. november samme år ble det nødvendig med en ny utgave (4000 eksemplarer). Det ser ut til at innsetting av kommaer foran leddsetninger, som vanligvis ble utført av August Larsen, Ibsens faste korrekturleser ved Gyldendal, ikke skjedde før i annen utgave. Trykkmanuskriptet og første utgave har stort sett ikke kommaer foran leddsetninger, men i annen utgave er kommaer satt inn i slike tilfeller. Kommabruken er ytterligere utvidet i tredje utgave. I et tapt brev fra 13. oktober 1877 skriver Ibsen til forlaget at han ønsker <quote>midtsommertid</quote> endret til <quote>sommertid</quote> (2. utg., s. 144) og <quote>opvikler</quote> til <quote>opvigler</quote> (2. utg., s. 121). Begge disse rettelsene tas inn i annen utgave. (Brevet er omtalt i de tekstkritiske bemerkninger i SU (7, 298), jf. <HIS:hisRef target="edState_editions"><hi rend="italic">Tidligere tekstkritiske utgaver</hi></HIS:hisRef> nedenfor.) For hvert senere trykk kommer det inn nye feil i teksten som føres videre i de neste trykkene, eksempelvis: I annen utgave faller ordet <quote>sammen</quote> ut av en sceneanvisning (s. 79), og i en annen sceneanvisning blir <quote>ud</quote> endret til <quote>bort</quote> (s. 101); i tredje utgave endres rekkefølgen av de to ordene <quote>ialfald dog</quote> til <quote>dog ialfald</quote> (s. 200); i fjerde utgave endres <quote>Forhængene</quote> til <quote>Forhænget</quote> (s. 161). Fjerde utgave og FU er svært like; de har mange av de samme feilene (<quote>Tønneser</quote> for <quote>Tønnesen</quote> (4. utg. s. 12); <quote>histore</quote> for <quote>historie</quote> (s. 17); <quote>Sadstad</quote> for <quote>Sandstad</quote> (s. 141)), noe som tyder på at de er trykt med samme sats. Fjerde utgave er et særtrykk av FU med samme sats, men nytt omslag, ny tittelside og nye arksignaturer.</p>
+<p>I tillegg til HIS’ hovedtekst finnes en diplomatarisk og søkbar gjengivelse samt en fotografisk faksimile av grunnteksten i den elektroniske delen av HIS. I den elektroniske utgaven gjengis også de øvrige tekstkildene diplomatarisk, manuskriptene også med faksimile, med mulighet for søk og sammenligning med grunnteksten.</p>
+<p>HIS har i margen sidereferanser til grunnteksten og til HU.</p>
+</div>
+            
+<div xml:id="edState_critical">
+<head rend="level3">tekstkritiske bemerkninger</head>
+<p rend="noIndent">Ved etableringen av hovedteksten er også de andre tekstkildene fra Ibsens levetid blitt konsultert. Emendasjoner er foretatt med utgangspunkt i samtlige trykte utgaver samt trykk- og arbeidsmanuskriptene NBO Ms. 4° 1112b–f og NBO Ms. 8° 956.</p>
+<p>Ordvalg, ortografi og grammatikk i grunnteksten er i hovedtrekk som offisiell norsk i samtiden (for unntak, se ord- og sakkommentarer til teksten).</p>
+<p>I HIS er tegnsetting standardisert på følgende måte: Etter titler, overskrifter og rolleinnførsler i rollelister samt replikkåpner i dramateksten er eventuelle skilletegn (punktum, komma, kolon) fjernet. I sceneanvisninger først i akt og scener, i frittstående sceneanvisninger mellom replikker og i stedsbeskrivelser etter rolleliste er eventuell parentes fjernet. Disse elementene har gjennomgående fått stor forbokstav og avsluttes med punktum. Frittstående sceneanvisninger har beholdt eventuelle <quote>indre</quote> parenteser. Sceneanvisninger til slutt i replikker regnes som del av replikken dersom de er ufullstendige setninger, og som frittstående, utenfor replikken, dersom setningen er fullstendig.</p>
+<p>Sceneanvisninger inne i replikk, inkludert sceneanvisninger som står til slutt i replikk (ikke frittstående), begynner med liten forbokstav og avsluttes uten interpunksjon. Sceneanvisninger som følger rett etter replikkinnehaverens navn, har ikke parenteser. Øvrige sceneanvisninger i replikk har parentes.</p>
+<p>Skillestreker er beholdt der de har strukturerende funksjon, for eksempel når de markerer sceneskift og sceneskiftet ikke er markert på annen måte. Skillestreker som bare har karakter av ornament, er ikke gjengitt. Grunntekstens typografiske system for øvrig er ikke forsøkt imitert i HIS.</p>
+<p>Tekstfeilene i <title rend="italic">Samfundets støtter</title> 1877 omfatter i hovedsak setterfeil som gal tegnsetting, majuskel for minuskel eller omvendt (for eksempel <quote>Moder</quote> for <quote>moder</quote>, <quote>de</quote> for <quote>De</quote>) samt feilstavinger (for eksempel <quote>skøne</quote> for <quote>skønne</quote>). Alle rettelser er anført i HIS’ tekstkritiske noteapparat. Når teksten avviker betydelig i kilder som anvendes ved rettelser, føres ikke tekst herfra i rettelsesnoten, og formuleringen <quote>teksten mangler i</quote> benyttes heller ikke. Den avvikende teksten vises derimot i sin sammenheng i den elektroniske delen av HIS. Dersom det er relevant for vår rettelse, vil tekstendringer i kilden det siteres fra, kommenteres kort i rettelsesnoten. Vakling i ortografi og interpunksjon som avspeiler tidens og Ibsens vekslende praksis, er ikke rettet i HIS.</p>
+<p>For en oversikt over samtidens språknormer og Ibsens språk vises det dessuten til redegjørelser i innledningene til <title rend="italic">Catilina</title> <HIS:hisRef target="C1_innl.xml#intro_background_language">1850</HIS:hisRef> og <HIS:hisRef target="C2_innl.xml#intro_background_language">1875</HIS:hisRef>. Det vises for øvrig til de <HIS:hisRef target="tekstkritiskeRetningslinjer.xml">tekstkritiske retningslinjene</HIS:hisRef>.</p>
+</div>
+      
+<div xml:id="edState_editions">
+<head rend="level3">tidligere tekstkritiske utgaver</head>
+<p rend="noIndent">I FU er <title rend="italic">Samfundets støtter</title> trykt i b. 6, med en innledning om tilblivelse, oversettelser, sekundærlitteratur og oppførelser s. I–VII. Det gis ikke tekstkritiske opplysninger. I MU er <title rend="italic">Samfundets støtter</title> trykt i b. 3. Tekstgrunnlaget for MU er FU (MU 5, [3]). Rettelser foretatt av Storm og et utvalg feil i FU og tidligere utgaver er oppgitt i MU (5, 15; tillegget). I ES 2 er deler av NBO Ms. 4° 1112 gjengitt på s. 263–324. Det redegjøres for manuskriptet og dets tilblivelse samt Ibsens tekstendringer i ES (3, 449–56). ES’ utgivere har ikke kjent til eller omtalt følgende manuskripter til <title rend="italic">Samfundets støtter</title>: NBO Ms. 8° 1469, NBO Ms. 8° 1931 og replikkutkastet i NBO Brevs. 200. I SU er <title rend="italic">Samfundets støtter</title> trykt i b. 4, tekstgrunnlaget oppgis (SU 7, 298) å være originalutgaven. Trykkfeil er rettet, og to av dem er nevnt (SU 7, 298). Dessuten nevner SU det nå tapte brevet fra Ibsen 13. oktober 1877 hvor han ber om å få rettet <quote>midtsommertid</quote> til <quote>sommertid</quote> og <quote>opvikler</quote> til <quote>opvigler</quote> (jf. <HIS:hisRef target="edState_textsources"><hi rend="italic">Øvrige tekstkilder</hi></HIS:hisRef> ovenfor). I HU er <title rend="italic">Samfundets støtter</title> trykt i b. 8. Tekstgrunnlaget er trykkmanuskriptet <bibl>(NBO Ms. 8° 956)</bibl> (jf. HU 8, 153). Det redegjøres ikke for utgivernes rettelser, men rettelser foretatt av Ibsen (og en tilføyelse i August Larsens hånd, se manuskriptbeskrivelsen) i trykkmanuskriptet er tatt til følge i teksten (jf. HU 8, 242–43). HU gjengir en del av manuskriptmaterialet i sin helhet, nærmere bestemt NBO Ms. 8° 1469 og de delene av NBO Ms. 4° 1112 som ligger fjernt fra den endelige teksten (HU 8, 154–91). Resten av NBO Ms. 4° 1112 gjengis som utvalgte varianter til hovedteksten. I HU (19, 52) er replikkutkastet i NBO Brevs. 200 gjengitt. HU har ikke kjent til eller hatt tilgang til NBO Ms. 8° 1931.</p>
+</div>
+</div>
+</body>
+</text>
+</TEI>

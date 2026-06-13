@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title level="s">Henrik Ibsens skrifter</title>
+<title level="a">Tekstredegjørelse til Catilina, 2. versjon</title>
+<author>ved Christian Janss</author>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
+<respStmt>
+<resp>Koding</resp>
+<name xml:id="HIS-HB">Hilde Bøe</name>
+<name xml:id="HIS-IF">Ingrid Falkenberg</name>
+<name xml:id="HIS-SBT">Stine Brenna Taugbøl</name>
+<name xml:id="HIS-AMB">Aasta Marie Bjorvand Bjørkøy</name>
+<name xml:id="HIS-NME">Nina M Evensen</name>
+</respStmt>
+<respStmt>
+<resp>Kommentarentiteter</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+</respStmt>
+<respStmt>
+<resp>Rettelser i manuskriptbeskrivelsene</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+</respStmt>
+<respStmt>
+<resp>Implementering av kode</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+<name>Nina M Evensen</name>
+</respStmt>
+<respStmt>
+<resp>Kodekontroll</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+<name>Nina M Evensen</name>
+</respStmt>
+<respStmt>
+<resp>Tekstarbeid</resp>
+<name>Nina M Evensen</name>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+</respStmt>
+</titleStmt>
+<publicationStmt>
+<p>Standardtekst skal utarbeides.</p>
+</publicationStmt>
+<sourceDesc>
+<p>Denne filen har ingen kilde.</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<tagsDecl>
+
+</tagsDecl>
+</encodingDesc>
+<profileDesc>
+<langUsage>
+<language ident="nob"/>
+<language ident="fre"/>
+<language ident="eng"/>
+<language ident="rus"/>
+<language ident="ger"/>
+</langUsage>
+</profileDesc>
+<revisionDesc>
+<change><date>14.02.13</date>
+<name>SBT</name><title>Lenkekoding</title>
+</change>
+<change>
+<date>20.09.2012</date>
+<name>SBT</name><title>Omkoding til TEI P5 og HISe</title>
+</change>
+</revisionDesc>
+</teiHeader>
+<text type="introduction">
+<body>
+<div type="editorialStatement" xml:id="edState">
+
+<div xml:id="edState_basetext">
+<head rend="level3">valg av grunntekst</head>
+<p>Grunnteksten, grunnlaget for HIS’ hovedtekst, er
+førstetrykket fra 1875. (Om forholdet til den
+første hovedversjonen HIS utgir, <title rend="italic">Catilina</title> 1850, se avsnittet <HIS:hisRef target="C2_innl.xml#intro_creation"><hi rend="italic">Tilblivelse</hi></HIS:hisRef>.)</p>
+</div>
+
+<div xml:id="edState_bibl">
+<head rend="level3">bibliografiske opplysninger</head>
+<p>Ved tekstetableringen er det kollasjonert følgende
+eksemplarer:
+<list type="standardList">
+<item n="1">Deichmanske biblioteks eksemplar (*Ib8c 5 ex)</item>
+<item n="2">Nasjonalbibliotekets eksemplar (74ga05815)</item>
+<item n="3">Vigdis Ystads eksemplar</item>
+</list>
+</p>
+<p>Det er ikke avdekket satsintern variasjon (endringer foretatt
+under trykkeprosessen i samme opplag) i teksten i de tre eksemplarene.</p>
+<p>Nr. 1 er brukt som hovedeksemplar og er grunnlag for beskrivelsen
+i det følgende.</p>
+
+<div xml:id="edState_bibl_binding">
+<head rend="level4">innbinding, forsatsblad og omslag.</head>
+<p>Boken er beskåret og bundet inn sammen med
+omslagsbladet. Innbindingen er bibliotekets egen, solid,
+utført i rødt kunstskinn med gulltrykk
+på ryggen. Rectosiden av fremre og versosiden av
+bakre forsatsblad har bibliotekets emblem i symmetrisk
+mønster. Versosiden av fremre og rectosiden av
+bakre forsatsblad er blanke, ensfarvet
+grågrønne. Omslagsbladene er
+grønne; fremre omslag har tittel og kolofon
+på rectosiden og forlagsreklame på
+versosiden; bakre har forlagsreklame på begge sider.</p>
+</div>
+
+<div xml:id="edState_bibl_format">
+<head rend="level4">format og paginering.</head>
+<p>Boken består av ni ark falset i oktavformat (8
+blad, 16 sider pr. ark), ca. 112 x 170 mm.<note type="footer">Målene gjelder bokens blad, bredde x høyde.</note> Arksignaturene 2–9 (tekst: <quote>Henrik Ibsen: Catilina</quote>)
+finnes på s. 17, 33, 49, 65, 81, 97, 113 og 129.
+Bokens omfang er 144 sider. Pagineringen er med arabiske
+tall, inkluderer smusstittel s. [1], blank
+s. [2], tittelside s.
+[3], blank s. [4] og
+går fra side 6 til 140. Teksten
+<quote>Forord</quote> står på s.
+[5]–12, nytt tittelblad
+følger på s. [13],
+rollelisten s. [14]. Dramateksten begynner
+på s. [15]. S.
+[141]–[144]
+inneholder forlagsreklame. På s.
+[48] og [96] begynner
+nye akter, og pagineringen er utelatt.</p>
+</div>
+
+<div xml:id="edState_bibl_typo">
+<head rend="level4">typografi.</head>
+<p>Smusstittelen, forordets overskrift og tittelen på tittelbladet s. [13] er midtstilt i et fett snitt. Initial er brukt i forordet. Rollelisten er venstrestilt, rollenavnene er uthevet ved sperring. Rollenavn og aktoverskrifter er satt i samme grad som replikkene, men er uthevet ved sperring. Sceneanvisninger er satt i en mindre grad enn forordet og replikkene. Sceneanvisninger står i parentes. Mellom akt- og sceneoverskrifter og etter sceneslutt brukes enkel skillestrek av varierende lengde. Ved aktslutt brukes dobbel finalstrek. Pagina er plassert i overmarg med en kort strek under.</p>
+<p>Trykkvaliteten er god, men noen få steder litt svak,
+med den følge at punktum enkelte steder ikke er
+synlig. Det er et lite antall typografiske mangler og
+inkonsekvenser, som er rettet stilltiende i HIS’ hovedtekst.</p>
+</div>
+
+<div xml:id="edState_bibl_paper">
+<head rend="level4">papir og tilstand.</head>
+<p>Papiret er solid, noe gulnet, med flere små, brune
+flekker. Gullpregene er noe slitt. Det finnes enkelte
+innbrettede hjørner som følge av skjev
+beskjæring. For øvrig er eksemplaret i
+god stand.</p>
+</div>
+</div>
+
+<div xml:id="edState_textsources">
+<head rend="level3">øvrige tekstkilder</head>
+<p>Det er bevart tre egenhendige manuskripter til <title rend="italic">Catilina</title> 1875: et utkast til
+forordet, NBO Ms.4° 1938:1,
+en påbegynt renskrift, NBO Ms.4° 1938:2, og et trykkmanuskript, NBO Ms.4° 1395 (se <hi rend="italic">Manuskriptbeskrivelse</hi>). Utkastet til
+forordet og den påbegynte renskriften inneholder noen
+egenhendige rettelser og endringer av mindre omfang og avviker i
+liten grad fra trykkmanuskriptet. Dette har noen få
+stilistiske ulikheter som <quote>savnede</quote> for
+<quote>manglede</quote> og <quote>erindrede</quote> for
+<quote>mindedes</quote> i de to øvrige kildene. I
+trykkmanuskriptet har Ibsen foretatt en del rettelser som er
+tatt til følge i grunnteksten. Med unntak av avvik i
+tegnsettingen er det likt med grunnteksten.</p>
+<p>I <bibl>ES (3, 377)</bibl> bemerkes det
+som eiendommelig at noen få formuleringer som er
+endret i det bevarte manuskriptet til <title rend="italic">Catilina</title> 1850 <bibl>(NBO Ms.4° 936)</bibl>, har
+funnet veien til <title rend="italic">Catilina</title> 1875 i
+sin urettede, strøkne form. F.eks. er i NBO Ms.4° 936 <quote>Ja under
+Venskabs maske!</quote> rettet til <quote>Blandt dine
+Venner</quote>, som tilsvarer teksten i <title rend="italic">Catilina</title> 1850, mens <title rend="italic">Catilina</title> 1875 og trykkmanuskriptet
+NBO Ms.4° 1395 har
+<quote>Forrådt bag venskabs maske!</quote>. ES gir ingen forklaring på dette; <bibl>
+HU (1, 216)</bibl> gjentar
+opplysningen, og føyer til at Ibsen ikke har hatt
+tilgang til NBO Ms.4° 936.
+Det er lite trolig at han har hatt det nå tapte
+trykkmanuskriptet til <title rend="italic">Catilina</title>
+1850 for hånden under bearbeidelsen av <title rend="italic">Catilina</title> 1875. I et brev til Ole
+Schulerud 5. januar 1859 ber han riktignok om å
+få <title rend="italic">Catilina</title>-manuskriptet tilbake (hvilket sies ikke),
+men om Schulerud faktisk returnerte noe manuskript, vet vi ikke.
+Det kan imidlertid ikke utelukkes at Ibsen har hatt erindringer
+om de opprinnelige formuleringene, særlig siden det
+dreier seg om tekst i bunden form.</p>
+<p>I Ibsens levetid kom <title rend="italic">Catilina</title> 1875
+også ut i 1891 og i 1898. Avvikene mellom utgavene i
+1875, 1891 og 1898 angår mindre endringer i
+stavemåte, tegnsetting og enkle (rettede og nye) trykkfeil.</p>
+<p>I tillegg til HIS’ hovedtekst finnes en diplomatarisk
+gjengivelse samt fotografisk faksimile av grunnteksten. De
+øvrige tekstkildene gjengis diplomatarisk (og for
+manuskriptene: med faksimile), med mulighet for søk
+og sammenligning. Her finnes også en metrisk analyse
+av teksten.</p>
+<p>HIS har i margen sidereferanser til grunnteksten og til HU.</p>
+</div>
+
+<div xml:id="edState_critical">
+<head rend="level3">tekstkritiske bemerkninger</head>
+<p>Ved emendasjoner er også de øvrige
+tekstkilder fra Ibsens levetid blitt konsultert. Egenhendighet
+er gitt prioritet.</p>
+<p>Ordvalg, ortografi og grammatikk i <title rend="italic">Catilina</title>
+1875 er, som offisiell norsk i samtiden, i
+tråd med danske normer. Ibsen hadde dessuten sluttet
+seg til anbefalingene fra det nordiske
+språkmøtet 25.–30. juli 1869,
+også de valgfrie (f.eks. dobbel konsonant for
+å markere kort vokal). Dette gjør at de to
+hovedversjonene av <title rend="italic">Catilina</title> er
+svært ulike i ortografien.</p>
+<p>Ibsen beholder i <title rend="italic">Catilina</title> 1875 i noen tilfeller
+også eldre skrivemåter (f.eks.
+<quote>foer</quote> i stedet for
+språkmøtets anbefalte
+<quote>fór</quote>), og i valget mellom det gjeldende
+<quote>Heelt anderledes</quote> og det anbefalte <quote>Helt
+anderledes</quote> går han tilbake til det eldre
+<quote>Hel anderledes</quote>. Det er få
+norvagismer, men noen finnes, f.eks. <quote>ved sidste blinket
+ifra vestens sol</quote>, med dobbel bestemmelse og utelatt
+foranstilt artikkel. Den avvikende formen
+<quote>Allebroger</quote> (for <quote>Allobroger</quote>) holder
+Ibsen fast ved her som i <title rend="italic">Catilina</title> 1850.</p>
+<p>I rollelisten står <quote>En olding</quote>
+oppført, mens dramateksten har <quote>En gammel
+Soldat</quote> og <quote>Soldaten</quote>. Det er trolig en
+forglemmelse som henger igjen fra <title rend="italic">Catilina</title> 1850. Et lignende tilfelle er
+<quote>Sullas genfærd</quote> i rollelisten. Det
+dukker opp <quote>i lignelse af en olding i rustning og
+toga</quote> og som <quote>Et skyggebillede</quote> og
+<quote>Skyggen</quote> <ptr type="ht" target="C2ht.xml" corresp="koC2_ht_2"/>.</p>
+<p>Alle tekstkilder til <title rend="italic">Catilina</title> 1875
+har formen <quote>Germanniens</quote> <ptr type="ht" target="C2ht.xml" corresp="koC2_ht_3"/>. MU hevder at <quote>nn skyldes en falsk, forlængst forladt tydning (Geir-mann); lat.
+Germani</quote> og retter derfor til <quote>Germanien</quote> og
+<quote>Germaner</quote>. Men mer sannsynlig er det nok at Ibsen
+kan ha hentet inn -nn- fra et analogt ord, kanskje
+<quote>alemanner</quote>. Endelig skal det nevnes at Ibsen har
+valgt formen <quote>trær</quote> for
+<quote>træer</quote>. Rimordet er <quote>der</quote>,
+og ODS skriver at ordet undertiden skrives <quote>trær</quote>.</p>
+<p>I HIS er tegnsetting standardisert på
+følgende måte: Etter titler, overskrifter
+og rolleinnførsler i rollelister samt
+replikkåpner i dramateksten er eventuelle skilletegn
+(punktum, komma, kolon) fjernet. I sceneanvisninger
+først i akt og scener, i frittstående
+sceneanvisninger mellom replikker og i stedsbeskrivelser etter
+rolleliste er eventuell parentes fjernet. Disse elementene har
+gjennomgående fått stor forbokstav og
+avsluttes med punktum. Frittstående sceneanvisninger
+har beholdt eventuelle <quote>indre</quote> parenteser.
+Sceneanvisninger til slutt i replikker regnes som del av
+replikken dersom de er ufullstendige setninger, og som
+frittstående, utenfor replikken, dersom setningen er fullstendig.</p>
+<p>Sceneanvisninger inne i replikk, inkludert sceneanvisninger som
+står til slutt i replikk (ikke
+frittstående), begynner med liten forbokstav og
+avsluttes uten interpunksjon. Sceneanvisninger som
+følger rett etter replikkinnehaverens navn, har ikke
+parenteser. Øvrige sceneanvisninger i replikk har parentes.</p>
+<p>Skillestreker er beholdt der de har strukturerende funksjon,
+f.eks. når de markerer sceneskift, og sceneskiftet
+ikke er markert på annen måte. Skillestreker
+som har karakter av ornament alene, er ikke gjengitt.
+Grunntekstens typografiske system for øvrig er ikke
+forsøkt imitert i HIS.</p>
+<p>Tekstfeilene i <title rend="italic">Catilina</title> 1875 angår manglende punktum på steder der det er satt av plass til slike (rettet stilltiende i samsvar med HIS’ standardisering, se ovenfor), samt ett tilfelle av
+spørsmålstegn for utropstegn (der vi retter
+i tråd med MU 5, 5). Vakling i ortografi og interpunksjon som avspeiler tidens og
+Ibsens vekslende praksis, er ikke rettet i HIS. Rettelsen er
+anført i det tekstkritiske noteapparatet. En mulig
+feil som ikke kan rettes entydig, er også
+anført i noteapparatet.</p>
+<p>For en oversikt over samtidens språknormer og Ibsens
+språk vises det til en <HIS:hisRef target="C2_innl.xml#intro_background_language">redegjørelse</HIS:hisRef> i
+innledningen til <title rend="italic">Catilina</title> 1875.
+Det vises dessuten til de <HIS:hisRef target="tekstkritiskeRetningslinjer.xml">tekstkritiske retningslinjene</HIS:hisRef> for HIS.</p>
+</div>
+
+<div xml:id="edState_editions">
+<head rend="level3">tidligere tekstkritiske utgaver</head>
+<p>I MU og SU er <title rend="italic">Catilina</title> 1875 trykt i de
+respektive b. 1 (i SU er <title rend="italic">Catilina</title> 1850 trykt i b. 7). I HU er begge hovedversjonene trykt i b. 1.</p>
+<p>ES (som ikke trykker <title rend="italic">Catilina</title> 1875) samt MU, SU og HU har tekstkritiske bemerkninger til <title rend="italic">Catilina</title> 1875. Kommentarene dreier seg vesentlig om forholdet mellom <title rend="italic">Catilina</title> 1850 og 1875. Hverken ES, MU eller
+SU omtaler manuskriptmaterialet
+til <title rend="italic">Catilina</title> 1875, ettersom dette
+ikke var kjent for utgiverne. (HU omtaler NBO Ms.4° 1938:1 og
+2, og utgiverne har visst om, men ikke hatt tilgang til
+trykkmanuskriptet NBO Ms.4°
+1395, se <bibl>HU 1, 216</bibl>.)</p>
+<p>MU kommenterer rettelser som er
+foretatt. I HU er <title rend="italic">Catilina</title> 1875 stilltiende rettet noen
+få steder i tegnsettingen.</p>
+</div>
+</div>
+</body>
+</text>
+</TEI>

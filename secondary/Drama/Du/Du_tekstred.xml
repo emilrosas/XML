@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title level="s">Henrik Ibsens skrifter, elektronisk versjon</title>
+<title level="a">Tekstkritisk redegjørelse til Et dukkehjem</title>
+<author>ved Christian Janss</author>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
+<respStmt>
+<resp>Innlemming i elektronisk utgave</resp>
+<name>EDD: Eining for digital dokumentasjon</name></respStmt>
+<respStmt><resp>Kodeteknisk støtte og utvikling</resp>
+<name>AKSIS: Avdeling for kultur, språk og informasjonsteknologi, Universitetsforskning i Bergen (Unifob AS)</name></respStmt>
+<respStmt><resp>HISe-koding</resp>
+<name xml:id="SBT">Stine Brenna Taugbøl</name>
+<name xml:id="EFS">Eivor Finset Spilling</name></respStmt>
+<respStmt><resp>Koding</resp>
+<name xml:id="AMB">Aasta Marie Bjorvand Bjørkøy</name>
+<name xml:id="MA">Maria Alnæs</name>
+<name>Nina Marie Evensen</name></respStmt>
+<respStmt><resp>Tekstarbeid</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Maria Alnæs</name>
+<name>Nina Marie Evensen</name></respStmt>
+<respStmt><resp>Kontroll av sitater og ordbøker</resp>
+<name xml:id="IK">Ingrid Korvald</name>
+<name xml:id="GB">Gry Berg</name></respStmt>
+<respStmt><resp>Kontroll av littlist og referanser</resp>
+<name xml:id="HS">Hege Stensrud</name>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Maria Alnæs</name></respStmt>
+<respStmt><resp>Kommentar-, intern- og ht-entiteter</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name></respStmt>
+<respStmt><resp>Kodekontroll</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+</respStmt>
+</titleStmt>
+<publicationStmt>
+<publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+<distributor xml:id="HISe">Universitetet i Oslo</distributor>
+<date when="2010" xml:id="HISe-date"/>
+<pubPlace>Oslo</pubPlace>
+</publicationStmt>
+<sourceDesc>
+<p>Filen er opprettet fra 7k_sisteversjon.xml (0309).</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<tagsDecl>
+
+</tagsDecl>
+</encodingDesc>
+<profileDesc>
+<langUsage>
+<language ident="nob"/>
+</langUsage>
+</profileDesc>
+<revisionDesc>
+    <change>
+        <date>21.08.2011</date>
+        <name>SBT</name><title>Entiteter</title>
+        Erstattet entiteter for æ/ø/å med bokstaver. Validert.
+    </change>
+    <change>
+        <date>11.08.2011</date>
+        <name>SBT</name><title>Validering</title>
+        Endret sti til skjema i dokumenttopp.
+    </change>
+    <change>
+        <date>05.07.2011</date>
+        <name>EFS</name><title>Lenkekoding</title>
+        La inn id-verdier i div-strukturen og lenkekoding i referanser til tekster som er med i første versjon av HISe.
+    </change>
+    <change>
+        <date>04.07.2011</date>
+        <name>SBT</name><title>P5</title>
+        Kodet om til valid P5.
+    </change>
+    <change>
+        <date>05.01.2011</date>
+        <name>SBT</name><title>Listekoding</title>
+        Oppdaterte listekoding.
+    </change>
+    <change>
+        <date>24.11.2010</date>
+        <name>SBT</name><title>Validering</title>
+        Fjernet ref til files og figures i dokumenttoppen. Fila er valid.
+    </change>
+    <change>
+<date>10.-13.09.2010</date>
+<name>SBT</name><title>Opprettet xml-fil</title>
+Endret teiHeader. Kodet om overskrifter, lister og ryddet i fila (fjernet blanke og blanklinjer). Kodet om dramasitater fra verskoding(!) til dramakoding. Validerte fila.
+</change>
+</revisionDesc>
+</teiHeader>
+
+<text type="introduction">
+<body>
+<div type="editorialStatement" xml:id="edState">
+<div xml:id="edState_basetext">
+
+<head rend="level3">valg av grunntekst</head>
+<p rend="noIndent">Grunnteksten, grunnlaget for HIS’ hovedtekst, er førstetrykket fra 1879.</p>
+</div>
+              
+<div xml:id="edState_bibl">
+<head rend="level3">bibliografiske opplysninger</head>
+<p rend="noIndent">Ved tekstetableringen er det kollasjonert følgende eksemplarer:</p>
+
+<list type="numbered">
+<item n="1">Nasjonalbibliotekets eksemplar (80ga25606)</item>
+<item n="2">Nasjonalbibliotekets eksemplar (84ga25605)</item>
+<item n="3"><hi rend="italic">Henrik Ibsens skrifter</hi>s eksemplar</item>
+</list>
+
+<p rend="noIndent">Det er avdekket satsintern variasjon (endringer foretatt under trykkeprosessen i samme opplag) i teksten i de tre eksemplarene. Det er derfor delkollasjonert ytterligere fem eksemplarer:</p>
+  
+<list type="numbered">
+<item n="4">Nasjonalbibliotekets eksemplar (80ga25604)</item>
+<item n="5">Nasjonalbibliotekets eksemplar (80ga25607)</item>
+<item n="6">Nasjonalbibliotekets eksemplar (80ga25608)</item>
+<item n="7">Nasjonalbibliotekets eksemplar (82ga55394)</item>
+<item n="8">Nasjonalbibliotekets eksemplar (80ga25609)</item>
+</list>
+ 
+<p rend="noIndent">Variasjonen mellom eksemplarene angår manglende ring over Å i arkene 4, 5, 8 og 10; disse er derfor kollasjonert i de fem ekstraeksemplarene. Det opplyses om internvariasjonen i eksemplarene 1–3 i de tekstkritiske notene. Nr. 1, det mest feilfrie, er brukt som hovedeksemplar og er grunnlag for beskrivelsen i det følgende.</p>
+              
+<div xml:id="edState_bibl_binding">
+<head rend="level4">innbinding, forsatsblad og omslag.</head>
+<p>Boken er beskåret, har tresidet gullsnitt og er bundet inn uten originalt omslagsblad. Innbindingen er håndverksmessig utført i dekorert, lilla helshirting. Ryggen har forfatternavn og tittel i gullpreg (<quote>IBSEN. ET DUKKEHJEM.</quote>) med ornamenter over og under. Forpermen er dekorert med ornamenter og tre rammer med border i gullpreg og sort. Bakpermen har en ornamentert ramme i blindpreg. Forsatsbladene er dobbeltblad i glanset, tykt, hvitt papir, med den ene delen limt til for- og bakperm. Et flyblad har vært limt til forsatsbladets frie del foran. Eksemplaret er tidligere eid av Bjarne Aagaard, hvis ex libris er innlimt på forpermens innside. Nicoline Aagaards navnetrekk står øverst på tittelbladet. Bindet er trolig et forlagsbind <bibl>(jf. oversikt over variantene i Schiøtz &amp; Ringstrøm 2006, 169)</bibl>, men mangler forlagets segl i blindpreg på bakpermen.</p>
+</div>
+              
+<div xml:id="edState_bibl_format">
+<head rend="level4">format og paginering.</head>
+<p>Boken består av 12 ark falset i oktavformat (8 blad, 16 sider pr. ark), ca. 110 × 174 mm.<note type="footer">Målene gjelder bokens blad, bredde × høyde.</note> Arksignaturene 1–12 (med teksten <quote>Henrik Ibsen: Et dukkehjem.</quote>) finnes på s. 17, 33, 49, 65, 81, 97, 113, [129], 145, 161 og 177. Det siste arket har to blad, og bokens omfang er på 180 sider. Pagineringen er med arabiske tall og inkluderer stykkets tittel s. [1], blank s. [2], tittelblad s. [3], blank s. [4], rollelisten s. [5], blank s. [6], begynnelsen på første akt s. [8] og løper fra s. 8 til 180. På side [75] og [129] begynner nye akter, og sidetall er her utelatt.</p>
+</div>
+              
+<div xml:id="edState_bibl_typo">
+<head rend="level4">typografi.</head>
+    <p>Teksten i <title rend="italic">Et dukkehjem</title> (1879) er satt i antikva. <!--En faksimile av tittelsiden gjengis på s. 189 (HIS, 7k) <HIS:hisRef targType="figure" target="illus-4">. -->Tittelbladet er satt med midtstilte majuskler. Tittelen s. [3] er midtstilt og satt i majuskler. Rollelisten er venstrestilt, i en mindre skriftgrad enn replikkene, rollenavnene sperret, overskriften <quote>Personerne:</quote> er sentrert og sperret. Aktoverskrifter er satt med midtstilte majuskler, i en større grad enn replikkene. Rollenavn før replikk står sperret og midtstilt på egen linje og er satt i samme grad som replikkene. Sceneanvisninger er satt i en mindre grad enn replikkene og rollelisten, etter rollenavn står de på midtstilt, egen linje. De frittstående sceneanvisningene er blokkjustert; ved slutten av eller i replikker står de i flukt med teksten. Alle sceneanvisninger står i parentes. Sperring er benyttet som utheving. Rollenavn i sceneanvisninger står i samme grad som disse, men er sperret. Etter aktoverskrifter står enkle skillestreker. Ved aktslutt er det benyttet en dobbel finalstrek. Sidetall er plassert i overmarg med en strek under.</p>
+                
+<p>Trykkvaliteten er jevnt god, men det er forekomster av svakt trykk, skadde typer og mindre satsforskyvninger (for store mellomrom). Slike typografiske mangler er i HIS’ hovedtekst rettet stilltiende.</p>
+</div>
+              
+<div xml:id="edState_bibl_paper">
+<head rend="level4">papir og tilstand.</head>
+<p>Forsatsbladene er sprukket i falsen. Hele materien samt fribladet er løsnet fra ryggen og henger dårlig sammen. Papiret i bokblokken er svakt gulnet. Ryggen og permen er slitt og falmet.</p>
+</div>
+</div>
+              
+<div xml:id="edState_textsources">
+<head rend="level3">øvrige tekstkilder</head>
+<p rend="noIndent">De øvrige tekstkildene fra Ibsens levetid består av manuskripter og trykte utgaver. Manuskriptene til <title rend="italic">Et dukkehjem</title> som er samlet under signaturen NBO Ms. 4° 1113a–i, omfatter notater, skisser, utkast, en første fullstendig utforming og en ikke egenhendig avskrift. Manuskriptmaterialet omfatter videre et egenhendig trykkmanuskript (NBO Ms. 8° 952), replikkutkast på baksiden av et brev fra Sigurd Ibsen til Henrik Ibsen 12. april [1879] (NBO Brevs. 200), og den forandrede slutten for tyske teatre vedlagt brev til Heinrich Laube 18. februar 1880 (NBO Brevs. 39). (For nærmere beskrivelser, se <HIS:hisRef target="Du_msbeskr.xml"><hi rend="italic">Manuskriptbeskrivelse</hi></HIS:hisRef>.) De trykte utgavene i Ibsens levetid omfatter: 1. utg. 1879, 2. utg. 1880, 3. utg. 1880, 4. utg. 1896, FU 6 1899 og 5. utg. 1901. Det kom uautoriserte ettertrykk av <title rend="italic">Et dukkehjem</title> i USA i Ibsens levetid. HIS kjenner til en utgave fra 1890 på Skandinavens Boghandels forlag, Chicago. Ulovlige ettertrykksutgaver er det ikke tatt hensyn til under tekstetableringen.</p>
+
+<p>Det er mange større og mindre forskjeller mellom tekstkildene. NBO Ms. 4° 1113a–i inneholder det mest omfattende og kompliserte manuskriptmaterialet. Skriveprosessen gjennomgikk faser som det er vanskelig å rekonstruere fullstendig, og ordningen a–i gjenspeiler ikke kronologien i tilblivelsen, jf. <HIS:hisRef target="Du_msbeskr.xml"><hi rend="italic">Manuskriptbeskrivelse</hi></HIS:hisRef>. Både ES og HU presenterer materialet etter innhold og grad av utarbeidelse, men med formodninger om genetisk sammeheng. I HIS vil inndelingen av manuskriptet i den elektroniske delen (HISe) følge manuskriptbeskrivelsen nedenfor, som relaterer delene til hverandre i større grad enn ES og HU. Der gis også referanse til omtalen i ES og HU. Under etableringen av HIS’ hovedtekst har særlig følgende manuskripter vært konsultert: NBO Ms. 4° 1113b, c, d, f og i, samt NBO Ms. 8° 952.</p>
+                
+<p>NBO Ms. 4° 1113a, bl. 1–4 (manuskript 1) inneholder en skisse til stykkets tematikk datert 19. oktober 1878, en rolleliste, og skisser (<quote>Scenegang</quote>) til de tre aktene. NBO Ms. 4° 1113h (manuskript 2, notat og replikkutkast til første akt) er sannsynligvis grunnlag for utarbeidelsen på tilsvarende sted i Ms. 4° 1113f. Delene a og h har ikke hatt betydning for etableringen av HIS’ hovedtekst; det har derimot arbeidsmanuskriptet NBO Ms. 4° 1113f. Forskjellene mellom denne første, fullstendige utforming og den endelige teksten er i noen partier store, sammenlign f.eks. doktor Ranks replikker i første akt med den ferdige teksten. Også strukturelle forskjeller finnes, jf. begynnelsen av annen akt, der den første opptredende etter Noras samtale med barnepiken i Ms. 4° 1113f er Helmer, mens det i den ferdige teksten er kommet inn en samtale mellom Nora og fru Linde før Helmers inntreden (svarende nærmest til denne tekstens utarbeidelse i manuskript 5, NBO Ms. 4° 1113b, legg 1–4). I begynnelsen av tredje akt finnes i NBO Ms. 4° 1113f en samtale mellom fru Linde, Nora og Helmer, mens tredje akt i den ferdige teksten starter med den i NBO Ms. 4° 1113f påfølgende samtalen mellom fru Linde og Krogstad. Samtalen mellom fru Linde og Nora og Helmer er i den ferdige teksten med annen form og ordlyd flyttet til stedet hvor samtalen mellom fru Linde og Krogstad er avsluttet. I lengre partier er forskjellene ubetydelige hva angår strukturen, men replikkene kan være svært forskjellig utformet, noe et lite utsnitt illustrerer. Rank kommer i tredje akt på besøk etter maskeraden, og i Ms. 4° 1113f (legg 10, bl. [3]r heter det:</p>
+
+<quote rend="indent">
+<HIS:hisSp><HIS:spOpener><speaker>Doktor Rank</speaker>
+<HIS:hisStage>(kommer)</HIS:hisStage></HIS:spOpener>
+<p>Tør man komme ind så sent.</p></HIS:hisSp>
+
+<HIS:hisSp><HIS:spOpener><speaker>Helmer</speaker>.</HIS:spOpener>
+<p>Nej, er det dig? Ja vær så god.</p></HIS:hisSp>
+</quote>
+
+<p rend="noIndent">Slik er avsnittet i den endelige teksten (jf. HIS 7, <ptr type="ht" target="Duht.xml" corresp="koDu_ht_33"/>):</p>
+
+<quote rend="indent">
+<HIS:hisSp><HIS:spOpener><speaker>Doktor Rank</speaker> <HIS:hisStage>udenfor</HIS:hisStage></HIS:spOpener>
+<p>Det er mig. Tør jeg komme ind et øjeblik?</p></HIS:hisSp>
+
+<HIS:hisSp><HIS:spOpener><speaker>Helmer</speaker> <HIS:hisStage>sagte, fortrædelig</HIS:hisStage></HIS:spOpener>
+<p>Å hvad vil han da nu? <HIS:hisStage>(højt)</HIS:hisStage> Vent lidt.</p></HIS:hisSp>
+</quote>
+
+<p rend="noIndent">Ibsen har gitt aktene i Ms. 4° 1113f dateringer i tidsrommet 2. mai – 3. august 1879. Han skriver til Hegel den <HIS:hisRef target="B1871-1879ht.xml#B18790619FH">19. juni 1879</HIS:hisRef> at han planlegger å reise til Amalfi, hvilket vil forsinke arbeidet med <title rend="italic">Et dukkehjem</title> noe. I dette brevet meddeler han også Hegel sin beslutning om å skrive gjennom dramaet en gang til (jf. <hi rend="italic">Tilblivelse</hi>). Forskjellene mellom NBO Ms. 4° 1113f og trykkmanuskriptet NBO Ms. 8° 952 kan for en del forklares ved de mellomliggende manuskriptene (nummer 5–11 i <hi rend="italic">Manuskriptbeskrivelse</hi>). Mer uklart er det om Ms. 4° 1113f kan være en avskrift av ett eller flere tidligere, nå tapte manuskripter. HU er av den oppfatning, og viser (uten belegg) til <quote>feilskrifter som straks er rettet i manuskriptet</quote> (HU 7, 373). HU antar at Ms. 4° 1113f bygger på <quote>foreløpige utkast på særskilte papirer; dem har han så omarbeidet eller skrevet av i sitt fullstendige utkast</quote>. Som eksempel nevnes NBO Ms. 4° 1113h (HU 7, 374). Om vi ser på feil i f som straks er rettet, er det i mange tilfeller vanskelig å hevde at de skyldes avskrift fra et forelegg. En typisk rettelse er denne: <quote>Fru Stenborg rydder lidt op i <HIS:hisDel rend="overstrike">stuen</HIS:hisDel> værelset. Stuepigen åbner døren</quote> (legg 1, bl. [3]r). Feil av denne typen finner vi også i manuskripter som ikke er avskrifter (<quote>stuen</quote> blir den endelige ordlyd). Men andre feiltyper er et godt argument for HU’ påstand, jf. f.eks. følgende sted i teksten, der fru Stenborg er i samtale med fru Lind, og spør om hun har hørt om mannens forfremmelse:</p>
+
+<quote rend="indent">
+<HIS:hisSp><HIS:spOpener><speaker>Fru Stenborg</speaker>.</HIS:spOpener>
+<p>[…] Ved du den store lykke, som er hændt os i disse dage?</p></HIS:hisSp>
+
+<HIS:hisSp><HIS:spOpener><speaker>Fru Lind</speaker>.</HIS:spOpener>
+<p><HIS:hisDel rend="overstrike">Tænk, min mand er bleven direktør i Aktie-</HIS:hisDel>
+<lb/><HIS:hisDel rend="overstrike">banken!</HIS:hisDel> Nej. Hvad er det?</p></HIS:hisSp>
+
+<HIS:hisSp><HIS:spOpener><speaker>Fru Stenborg</speaker>.</HIS:spOpener>
+<p>Tænk, min mand er bleven direktør i Aktiebanken!</p></HIS:hisSp>
+</quote>
+
+<p rend="noIndent">Denne feilen og rettelsen (legg 1, bl. [4]v) er et indisium på at HU har rett i sin antagelse; det er lite sannsynlig at Ibsen ville skrive hele fru Stenborgs replikk under <quote>Fru Lind</quote> under en første utarbeidelse, da ville han nok ha vært mer oppmerksom på gangen i dialogen.</p>
+
+<p>Manuskript 5 <bibl>(NBO Ms. 4° 1113b, legg 1–4, omtalt ovenfor)</bibl> og 6 <bibl>(NBO Ms. 4° 1113b, legg a–d)</bibl> tilhører fasen mellom NBO Ms. 4° 1113f og trykkmanuskriptet i arbeidet med annen akt, og har vært konsultert under etableringen av HIS’ hovedtekst. Manuskript 7 (replikkutkast på baksiden av et brev fra Sigurd Ibsen til Henrik Ibsen 12. april [1879], NBO Brevs. 200) og manuskript 9 (en sides notat til replikker i annen akt, NBO Ms. 4° 1113e) har for lite ferdig utformet tekst til at de har kunnet tjene som sammenligningsgrunnlag, mens manuskript 8 (et kort utkast til annen akt, tett opp til den ferdige teksten, NBO Ms. 4° 1113d) har vært konsultert. Manuskript 10 (et lengre utkast til tredje akt, NBO Ms. 4° 1113c) og manuskript 11 (ett blad med utkast til replikker i annen akt og til stykkets slutteffekt, NBO Ms. 4° 1113i) har likeledes vært konsultert i tekstetableringen.</p>
+
+<p>NBO Ms. 8° 952, trykkmanuskriptet, adskiller seg i ubetydelig grad fra førsteutgaven og de øvrige trykte utgavene. Forskjellene gjelder bare ortografi og skrivefeil. Ibsen mente selv at manuskriptet var uten skrivefeil, men at ett og annet komma kunne være uteglemt (i brev til Hegel <HIS:hisRef target="B1871-1879ht.xml#18790913FH">13. september 1879</HIS:hisRef>). Manuskriptet er uvanlig feilfritt, men enkelte feil finnes (eks. <quote>frå</quote> for <quote>fra</quote>), og kommateringen er som vanlig hos Ibsen mangelfull ut fra dansk standard. Ibsen overlater til August Larsen å fylle inn manglende kommaer, og han ber Hegel passe på særlig ett sted: <quote>I en parenthes i en replik i 23. ark 1. side står (kæler for hende); lad endelig ikke sætteren få lov til at sætte: knæler o.s.v.!</quote> Ordet ble korrekt satt. Ibsen var svært tilfreds med førsteutgaven og oppdaget ingen trykkfeil, noe han meddeler Hegel <HIS:hisRef target="B1871-1879ht.xml#B18791120FH">14. november 1879</HIS:hisRef> og siden takker Larsen for <HIS:hisRef target="B1880-1889ht.xml#B18800120FH">20. januar 1880</HIS:hisRef>: <quote>det hænder vistnok kun yderlig sjelden at en bog første gang udkommer uden nogensomhelst trykfejl.</quote> I de senere trykkene er det ingen vesentlige endringer, men enkelte mindre trykkfeil er kommet til etter førsteutgaven. I forbindelse med fjerde utgave av <title rend="italic">Et dukkehjem</title> og av <title rend="italic">Digte</title> skriver Ibsen 12. februar 1896 til Hegel: <quote>Jeg har ingen rettelser at gøre i disse bøger og trykkingen kan således for mit vedkommende gerne påbegyndes nårsomhelst det er Dem belejligt.</quote> Femte utgave er et særtrykk av FU med samme sats, men med nytt omslag, ny tittelside, ny paginering og nye arksignaturer.</p>
+                
+<p>NBO Ms. 4° 1113g er en fullstendig, ikke-egenhendig avskrift utført av Sigurd Ibsen (jf. <HIS:hisRef target="Du_msbeskr.xml"><hi rend="italic">Manuskriptbeskrivelse</hi></HIS:hisRef>). Omslagsteksten er imidlertid egenhendig. Siden Ibsen selv har skrevet omslagsteksten og vi derfor må anta at han har gått god for avskriften, har HIS undersøkt forskjellene mellom denne og grunnlaget, som må være trykkmanuskriptet, NBO Ms. 8° 952. Avskriften har stor grad av samsvar med dette. Om avskriften hadde hatt større samsvar med førstetrykket enn med trykkmanuskriptet eller hadde hatt spor av egenhendig tekstbearbeidelse, eller også hadde vært mer fullstendig og riktigere enn trykkmanuskriptet, ville avskriften vært av betydning for tekstetableringen. Sammenligninger viser at teksten i avskriften er mer lik trykkmanuskriptet etter at det er gjort rettelser i dette enn før, noe som viser at avskriften har hatt trykkmanuskriptet som grunnlag etter at de tidligste rettelsene er utført i dette. Imidlertid er ikke alle endringer i trykkmanuskriptet tatt til følge i avskriften, f.eks. er ett av barnas navn, <quote>Harald</quote>, radert ut og overskrevet <quote>Ivar</quote> i trykkmanuskriptet (bl. 3r), mens avskriften samme sted har <quote>Harald</quote>. Trykkmanuskriptet er derfor rettet ytterligere etter at avskriften er foretatt. (De senere rettelsene er også kommet med i førstetrykket.) Det finnes også tekstvarianter i avskriften: uteglemt tekst, gal interpunksjon og avskriftsfeil, f.eks. <quote>sandelig</quote> for <quote>endelig</quote>. Ingen av disse feilene er kommet med i førstetrykket. Avskriften har sannsynligvis fungert som en sikkerhetskopi, og HIS’ konklusjon er at teksten ikke bør ha plass i verkets tilblivelseshistorie. HU noterer (8, 470) likeledes at avskriften er <quote>uten betydning for teksten</quote>. Avskriften er ikke omtalt i Ibsens brev.</p>
+                
+<p>Den forandrede slutten for tyske teatre vedlagt brev til Heinrich Laube <HIS:hisRef target="B1880-1889ht.xml#B18800218HLa">18. februar 1880</HIS:hisRef> (NBO Brevs. 39) ble trykt første gang som tillegg til Wilhelm Langes oversettelse fra 1879 <bibl>(Ibsen 1879, 91–92)</bibl>. Oversettelsen mangler årstall, men en samtidig anmeldelse fra 1880 tilsier at den kom senest i juni 1880 <bibl>(jf. Benfey 1880)</bibl>. Den endrede slutten, under overskriften <quote>Variante</quote> og etterfulgt av brevet til Laube, finnes ikke i alle eksemplarene av denne utgaven, og kan derfor ha blitt tilføyd i nye opplag av samme utgave. Senere ble den forandrede slutten offentliggjort i <title rend="italic">Das litterarische Echo</title> <bibl>(Anonym 1900)</bibl> i skuespillerinnen Hedwig Niemann-Raabes artikkel om bakgrunnen for endringen. Samme år ble teksten publisert i Ibsens <title rend="italic">Sämtliche Werke in deutscher Sprache</title> <bibl>(1898–1904, b. 6, XXIV)</bibl>, der med <title rend="italic">Das litterarische Echo</title> som tekstgrunnlag. (I HIS finnes teksten i b. 14 som del av brevet til Laube.) I brevet til <title rend="italic">Nationaltidende</title> <HIS:hisRef target="B1880-1889ht.xml#B18800217Nat">17. februar 1880</HIS:hisRef> tilbakeviser Ibsen en påstand fremsatt i bladet om at en endret slutt ble oppført i Flensburg etter pålegg fra Ibsen. Ibsen forklarer også hvorfor han så seg tvunget til å skrive en alternativ slutt, at han betraktet det som en <quote>barbarisk voldshandling</quote> mot stykket, og at han håpet den ville bli lite anvendt (jf. også <HIS:hisRef target="Du_innl.xml#intro_performance"><hi rend="italic">Oppførelser</hi></HIS:hisRef>). Ibsen ble senere spurt om å autorisere en alternativ slutt fra italiensk hold. I brev til Luigi Capuana 22. januar 1891 insisterer Ibsen på at slutten må forbli uendret og at det italienske publikum nok vil forstå hans intensjoner; i brev til Moritz Prozor 23. januar 1891 skriver Ibsen at han foretrekker den slutten Prozor hadde skrevet fremfor Capuanas alternativ, men at han ikke kan autorisere noen av dem. Nå betoner Ibsen også den litterære grunnen til ikke å godkjenne en endret slutt: <quote>Jeg kan næsten sige at netop for slutningsscenens skyld er det hele stykke skrevet.</quote> Hverken teksten i replikkutkastet på brevet fra Sigurd Ibsen (NBO Brevs. 200) eller den forandrede tyske slutten i brevet til Laube (NBO Brevs. 39) har vært konsultert under etableringen av hovedteksten.</p>
+                
+<p>I tillegg til HIS’ hovedtekst finnes en diplomatarisk og søkbar gjengivelse samt en fotografisk faksimile av grunnteksten i den elektroniske delen av HIS. Her gjengis også de øvrige tekstkildene diplomatarisk, manuskriptene også med faksimile, med mulighet for søk og sammenligning med grunnteksten.</p>
+                
+<p>HIS har i margen sidereferanser til grunnteksten og til HU.</p>
+</div>
+              
+<div xml:id="edState_critical">
+<head rend="level3">tekstkritiske bemerkninger</head>
+<p rend="noIndent">Ved etableringen av hovedteksten er også de andre tekstkildene fra Ibsens levetid blitt konsultert. Emendasjoner er foretatt med utgangspunkt i samtlige trykte utgaver, trykkmanuskriptet NBO Ms. 8° 952 og arbeidsmanuskriptene NBO Ms. 4° 1114b, c og f.</p>
+
+<p>Ordvalg, ortografi og grammatikk i grunnteksten er, som offisiell norsk i samtiden, i tråd med danske normer, men med tiltagende grad av fornorskning, som økte i omfang særlig fra <title rend="italic">Kjærlighedens Komedie</title> av, jf. innledningene til <title rend="italic">Kjærlighedens Komedie</title> (HIS 4k, 121) og <title rend="italic">Kongs-Emnerne</title> (HIS 4k, 363–64). Ibsen følger i <title rend="italic">Et dukkehjem</title> fortsatt anbefalingene fra det skandinaviske rettskrivningsmøtet i Stockholm 1869 (jf. kommentarer til Ibsens brev til Hegel <HIS:hisRef target="B1844-1871ht.xml#B18700212FH">12. februar 1870</HIS:hisRef>). Dag Gundersen har undersøkt Ibsens forfatterskap for HIS med henblikk på overgangen fra tostavings- til enstavingsform av verb, f.eks. <hi rend="italic">be(de)/be(de)r/bed(e)t, bli(ve)/bli(ve)r/bl(eve)t, dra(ge)/dra(ge)r/dra(ge)t, gi(ve)/gi(ve)r/gi(ve)t, ta(ge)/ta(ge)r/ta(ge)t</hi>, som i norsk foregikk som en gradvis påvirkningsprosess fra talespråket til skriftspråket, og finner mange slike former i <title rend="italic">Et dukkehjem</title>, imidlertid også nye varianter som <hi rend="italic">bli’e</hi> (infinitiv) og <hi rend="italic">gier</hi> (presens). Gundersen finner at valgene og vaklingen både er tidstypisk og i stor grad beror på handling, situasjoner og sinnsstemninger og på stilnivå og betydningsnyanser, f.eks. <hi rend="italic">blive</hi> om å forbli, tostavingsform som etterledd i sammensetninger og <hi rend="italic">lade</hi> med til dels de ulike betydninger som ordet har fremdeles. Men ved å sammenligne hvilke former som kommer og går og kommer igjen, får man også inntrykk av adskillig eksperimentering og vakling. (For mer utførlige beskrivelser av språket i <title rend="italic">Et dukkehjem</title>, se <HIS:hisRef target="Du_innl.xml#intro_background_language"><hi rend="italic">Ibsens språklige utvikling</hi></HIS:hisRef>. Se også <hi rend="italic">Ord- og sakkommentarer</hi>.)</p>
+
+<p>I HIS er tegnsetting standardisert på følgende måte: Etter titler, overskrifter og rolleinnførsler i rollelister samt replikkåpner i dramateksten er eventuelle skilletegn (punktum, komma, kolon) fjernet. I sceneanvisninger først i akt og scener, i frittstående sceneanvisninger mellom replikker og i stedsbeskrivelser etter rolleliste er eventuell parentes fjernet. Disse elementene har gjennomgående fått stor forbokstav og avsluttes med punktum. Frittstående sceneanvisninger har beholdt eventuelle <quote>indre</quote> parenteser. Sceneanvisninger til slutt i replikker regnes som del av replikken dersom de er ufullstendige setninger, og som frittstående, utenfor replikken, dersom setningen er fullstendig.</p>
+
+<p>Sceneanvisninger inne i replikk, inkludert de som står til slutt i replikk (ikke frittstående), begynner med liten forbokstav og avsluttes uten interpunksjon. Sceneanvisninger som følger rett etter replikkinnehaverens navn, har ikke parenteser. Øvrige sceneanvisninger i replikk har parentes.</p>
+
+<p>Skillestreker er beholdt der de har strukturerende funksjon, for eksempel når de markerer sceneskift og sceneskiftet ikke er markert på annen måte. Skillestreker som bare har karakter av ornament, er ikke gjengitt. Grunntekstens typografiske system for øvrig er ikke forsøkt imitert i HIS.</p>
+
+<p>Tekstfeilene i <title rend="italic">Et dukkehjem</title> (1879) omfatter i hovedsak mindre setterfeil og feil av typen <hi rend="italic">aa</hi> for <hi rend="italic">å</hi> og majuskel for minuskel.</p>
+
+<p>Ibsen har også selv forårsaket en mindre feil; i trykkmanuskriptet er en spørresetning feilaktig etterfulgt av punktum. Alle HIS’ rettelser, bortsett fra de stilltiende (typografiske feil), er anført i det tekstkritiske noteapparatet. Når teksten avviker betydelig i kilder som anvendes ved rettelser, føres ikke tekst herfra i rettelsesnoten, og formuleringen <quote>teksten mangler i</quote> benyttes heller ikke. Den avvikende teksten vises derimot i sin sammenheng i den elektroniske delen av HIS. Dersom det er relevant for vår rettelse, vil tekstendringer i kilden det siteres fra, kommenteres kort i rettelsesnoten. Vakling i ortografi (f.eks. <hi rend="italic">bliver/bli’r/blir</hi>) og interpunksjon som avspeiler tidens og Ibsens vekslende praksis, er ikke rettet i HIS.</p>
+
+<p>For en mer generell oversikt over samtidens språknormer og Ibsens språk vises det til redegjørelser i innledningene til <title rend="italic">Catilina</title> 1850 og 1875 (HIS 1k, 34–40 og 146–48). Det vises for øvrig til de tekstkritiske retningslinjene for HIS i registerbindet.</p>
+</div>
+              
+<div xml:id="edState_editions">
+<head rend="level3">tidligere tekstkritiske utgaver</head>
+<p rend="noIndent">I FU er <title rend="italic">Et dukkehjem</title> trykt i b. 6, med en innledning om tilblivelsen, oversettelser, sekundærlitteratur, mottagelse, parodier og oppførelser på s. VII–XX. Det gis ikke tekstkritiske opplysninger. I MU er <title rend="italic">Et dukkehjem</title> trykt i b. 4. Rettelser foretatt av Johan Storm mot hans tekstgrunnlag, FU, og etter sammenligning av trykte utgaver i Ibsens levetid, er oppført i MU (5, 15; errata på s. 41). I ES er forarbeider og utkast til <title rend="italic">Et dukkehjem</title> trykt i b. 2, 327–413, med opplysninger og varianter i b. 3, 456–60. ES har ikke kjent eller hatt tilgang til NBO Ms. 4° 1113, delene g, h og i, heller ikke til replikkutkastet på brevet fra Sigurd Ibsen (NBO Brevs. 200). I SU er <title rend="italic">Et dukkehjem</title> trykt i b. 4, tekstgrunnlaget oppgis (SU 7, 298) å være førsteutgaven, med noen ganske få rettelser. I HU er <title rend="italic">Et dukkehjem</title> trykt i b. 8. Grunnteksten er førstetrykket, men tegnsettingen følger trykkmanuskriptet. I HU (8, 367–474) redegjøres for og trykkes, dels fullstendig, dels som variantapparat, alle manuskriptkilder til <title rend="italic">Et dukkehjem</title>, med unntak av NBO Ms. 4° 1113i, som HU ikke har kjent eller hatt tilgang til. I HU (19, 53) trykkes replikkutkastet på brevet fra Sigurd Ibsen 12. april [1879] (NBO Brevs. 200). I appendiks 2 til oversettelsen av dramaet i <title rend="italic">The Oxford Ibsen</title> <bibl>(Ibsen 1960–77, b. 5)</bibl> finnes en oppstilling av rollenavnene og deres utvikling i manuskriptmaterialet.</p>
+</div>
+</div>
+</body>
+</text>
+</TEI>

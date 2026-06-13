@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Henrik Ibsens skrifter, elektronisk versjon</title>
+                <title level="a">Tekstredegjørelse til John Gabriel Borkman</title>
+                <author>ved Christian Janss</author>
+                <funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+                <editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
+                <respStmt>
+                    <resp>Kodeteknisk støtte og utvikling</resp>
+                    <name>AKSIS: Avdeling for kultur, språk og informasjonsteknologi, Universitetsforskning i Bergen (Unifob AS)</name></respStmt>
+                    <respStmt><resp>Koding</resp>
+                    <name>Erlend Lønnum</name></respStmt>
+                    <respStmt><resp>Tekstarbeid</resp>
+                    <name>Erlend Lønnum</name></respStmt>
+                    <respStmt><resp>Kontroll av sitater og ordbøker</resp>
+                    <name xml:id="IK">Erlend Lønnum, Gaute Sortland og Ingrid Korvald</name>
+                    <name>Erlend Lønnum</name></respStmt>
+                    <respStmt><resp>Kontroll av littlist og referanser</resp>
+                    <name>Erlend Lønnum</name></respStmt>
+                    <respStmt><resp>Kommentar-, intern- og ht-entiteter</resp>
+                    <name>Erlend Lønnum</name>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+                <distributor xml:id="HISe">Universitetet i Oslo</distributor>
+                <date when="2012" xml:id="HISe-date"/>
+                <pubPlace>Oslo</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Fila bygger på 10k_sisteversjon.xml.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <tagsDecl>
+                
+            </tagsDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="nob"/>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change>
+                <date>13.07.2012</date>
+                <name>SBT</name><title>La inn resterende lenker, gikk gjennom arbeidsnoter.</title>
+            </change>
+            <change>
+                <date>10.07.12</date>
+                <name>EFS</name><title>La inn lenkekoding.</title>
+            </change><change>
+                <date>02.03.2012</date>
+                <name>Stine Brenna Taugbøl</name><title>Omkoding til TEI P5 og HISe</title>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    
+<text type="introduction">
+<body>
+<div type="editorialStatement" xml:id="edState">
+
+<div xml:id="edState_basetext">
+<head rend="level3">valg av grunntekst</head>
+<p rend="noIndent">Grunnteksten, grunnlaget for HIS’ hovedtekst, er førstetrykket fra 1896.</p>
+</div>
+    
+<div xml:id="edState_bibl"> 
+<head rend="level3">bibliografiske opplysninger</head>
+<p rend="noIndent">Ved tekstetableringen er det kollasjonert følgende eksemplarer:</p>
+<list type="numbered">
+<item n="1"><hi rend="italic">Henrik Ibsens skrifter</hi>s eksemplar 1</item>
+<item n="2">Nasjonalbibliotekets eksemplar (97ga12407)</item>
+<item n="3"><hi rend="italic">Henrik Ibsens skrifter</hi>s eksemplar 2</item>
+</list>
+        
+<p rend="noIndent">Det er avdekket satsintern variasjon (endringer foretatt under trykkeprosessen i samme opplag) i teksten i de tre eksemplarene. Det er derfor delkollasjonert ytterligere fem eksemplarer:</p>        
+        
+<list type="numbered">
+<item n="4">Nasjonalbibliotekets eksemplar (80ga25089)</item>
+<item n="5">Nasjonalbibliotekets eksemplar (89ga02517)</item>
+<item n="6">Nasjonalbibliotekets eksemplar (80ga25091)</item>
+<item n="7">Nasjonalbibliotekets eksemplar (80ga25092)</item>
+<item n="8">Nasjonalbibliotekets eksemplar (80ga22775)</item>
+</list>
+
+<p rend="noIndent">Variasjonen mellom eksemplarene finnes i ark 13 og 15; disse er derfor kollasjonert i de fem ekstraeksemplarene. På s. 204 l. 10 mangler utropstegn i eksemplar 3 og 5; på s. 238 l. 1 har eksemplar 3, 4 og 6 punktum etter nest siste setning i Borkmans replikk, mens de øvrige eksemplarene har utropstegn. Det opplyses om internvariasjonen i eksemplarene 1–3 i de tekstkritiske notene.</p>
+<p>Nr. 1, det mest feilfrie, er brukt som hovedeksemplar og er grunnlag for beskrivelsen i det følgende.</p>
+                
+<div xml:id="edState_bibl_binding"> 
+<head rend="level4">innbinding, forsatsblad og omslag.</head>
+<p rend="noIndent">Boken har tresidet gullsnitt og er bundet inn uten originalt omslagsblad. Innbindingen er et forlagsbind i gulldekorert, koboltblå helshirting. Ryggen og forpermen har forfatternavn og tittel i gullpreg. På bakpermen står forlagets logo i blindpreg. Forsatsbladene er dobbeltblad av tykt, liljemønstret papir, begge limt med den ene delen til for- og bakpermen og den andre bundet inn sammen med bokblokken. Boken har tilhørt Marie Rasmussen (ifølge julehilsen til henne foran i boken fra Borghild og Aasta Aarrestad 24. desember 1896).</p>
+</div>
+        
+<div xml:id="edState_bibl_format"> 
+<head rend="level4">format og paginering.</head>
+<p rend="noIndent">Boken består av 16 ark falset i oktavformat (8 blad, 16 sider pr. ark), ca. 112 × 171 mm.<note type="footer">Målene gjelder bokens blad, bredde × høyde.</note> Arksignaturene 1–16 (uten tekst) finnes på s. [1], 17, 33, 49, 65, 81, 97, 113, 129, 145, 161, 177, 193, 209, 225 og 241. Det siste arket har fire blad, og bokens omfang er på 245 sider. Pagineringen er med arabiske tall, inkluderer begynnelsen på første akt s. [1] og løper fra s. 2 til 245. To upaginerte dobbeltblad foran omfatter blank s. [I], opplysninger om oversettelser s. [II], stykkets tittel s. [III], blank s. [IV], tittelblad s. [V], blank s. [VI], personlisten s. [VII] og blank s. [VIII]. På side [1], [75], [156] og [206] begynner nye akter, og sidetall er her utelatt.</p>
+</div>
+        
+<div xml:id="edState_bibl_typo"> 
+<head rend="level4">typografi.</head>
+<p rend="noIndent">Teksten i <title rend="italic">John Gabriel Borkman</title> (1896) er satt i antikva. Tittelbladet er satt med midtstilte majuskler. Tittelen på s. [III] er midtstilt og satt i majuskler. Personlisten er venstrestilt, i en mindre skriftgrad enn replikkene, overskriften <quote>Personerne:</quote> er sentrert og satt i majuskler, rollenavnene i listen i majuskel og kapiteler. Aktoverskrifter er satt med midtstilte majuskler, i en større grad enn replikkene. Rollenavn før replikk står midtstilt på egen linje i majuskel og kapiteler. Sceneanvisninger er satt i en mindre grad enn replikkene og personlisten, etter rollenavn står de på midtstilt, egen linje. De frittstående sceneanvisningene er blokkjustert med innrykket førstelinje; i replikker står de i flukt med teksten, ved slutten midtstilt. Alle sceneanvisninger står i parentes. Sperring er benyttet som utheving (med unntak av ordene <quote>Danse macabre</quote>, s. 70 og 75, som er satt i kursiv). Rollenavn i sceneanvisninger står i samme grad som disse, i majuskel og kapiteler. Etter aktoverskrifter og ved aktslutt står enkle skillestreker, ved siste akts slutt en ornamentert strek. Sidetall er plassert i overmargen med en kort strek under. Trykkvaliteten er jevnt god, men det er forekomster av svakt trykk/bortfall av tegn. Slike typografiske mangler er i HIS’ hovedtekst rettet stilltiende.</p>
+</div>
+        
+<div xml:id="edState_bibl_paper"> 
+<head rend="level4">papir og tilstand.</head>
+<p rend="noIndent">Papiret i bokblokken er av normal kvalitet, svakt gulnet og noe løsnet fra ryggen. For øvrig er eksemplaret i god stand.</p>
+</div>
+</div>
+    
+<div xml:id="edState_textsources"> 
+<head rend="level3">øvrige tekstkilder</head>
+<p rend="noIndent">De øvrige tekstkildene fra Ibsens levetid består av manuskripter og trykte utgaver.</p>
+<p>Manuskriptene til <title rend="italic">John Gabriel Borkman</title> omfatter et egenhendig arbeidsmanuskript til hele stykket (NBO Ms.4° 1118b), et egenhendig arbeidsmanuskript til tittelside og personliste (NBO Ms.4° 2590, s. 93), egenhendige arbeidsmanuskripter til deler av annen, tredje og fjerde akt (NBO Ms.4° 1118a) og et egenhendig trykkmanuskript (KBK Collin 262, 4°, IV.3). (For nærmere beskrivelser, se manuskriptbeskrivelsen.) De trykte utgavene i Ibsens levetid omfatter 1. utg. 1896, den såkalte London-utgaven 1896, 2. utg. 1896 og FU 9 1900. Det er flere større og mindre forskjeller mellom tekstkildene.</p>
+<p>Arbeidsmanuskriptet NBO Ms.4° 1118b inneholder hele stykket. Det renskrevne preget tyder på at det bygger på et nå tapt forelegg, men det er likevel mange umiddelbare og senere endringer; de siste peker mot at Ibsen har gått gjennom manuskriptet igjen etter at han har ferdigskrevet hele eller deler av det. De spredte arbeidsmanuskriptene under NBO Ms.4° 1118a (to dobbeltblad) stammer trolig fra samme tid som arbeidet med 1118b. Navneformene gjennomgår mange endringer i manuskriptet (jf. manuskriptbeskrivelsene). Et eksempel fra annen akt viser tekstens utvikling fra 1118b og a frem til trykkmanuskriptet, KBK Collin 262, 4°, IV.3. I eksemplet ser vi i 1118b bl.a. en typisk, senere endring (her som mange andre steder: en tilføyelse). Vi kan også legge merke til hvordan den knappe teksten i 1118b utfylles og utbroderes av 1118a slik at tekst fra disse to sammen inngår i den endelige utforming i trykkmanuskriptet. I trykkmanuskriptet er det så kommet til en rekke sceneanvisninger. Frida er i sceneanvisningen som går forut for det første eksemplet, dvs. i 1118b, 17 år og har mørke klær, i trykkmanuskriptet er hun 15 og har lys påkledning. Videre er situasjonen en annen i 1118b: Frida har akkompagnert Borkman på fiolin i et stykke av Beethoven, mens hun har spilt <quote>Danse macabre</quote> alene på piano i trykkmanuskriptet.
+<quote rend="indent">
+<HIS:hisSp><HIS:spOpener><speaker>Borkman</speaker></HIS:spOpener>
+<lb/><p>De har den musikalske ild i Dem. Og dette
+<lb/>med ild i sindet, – det er det afgørende. I alle for-
+<lb/>hold det afgørende. <HIS:hisStage>(blader i nodebogen)</HIS:hisStage> Lad mig
+<lb/>se –. Hvad skal vi nu vælge for et nummer –
+<lb/>Ved De hvor jeg første gang hørte de toner</p></HIS:hisSp>
+                
+<lb/><HIS:hisSp><HIS:spOpener><speaker>Frida</speaker></HIS:spOpener>
+<lb/><p><HIS:hisStage>(ser på sit ur)</HIS:hisStage>
+<lb/>Om forladelse, herr Borkman, – men jeg må
+<lb/>nok desværre gå –</p></HIS:hisSp>
+<lb/>(NBO Ms.4° 1118b, legg 14, bl. [1]r–v)</quote>
+<lb/>
+
+<quote rend="indent">
+<HIS:hisSp><p>Ved De hvor jeg f.
+<lb/>Jeg er en bergmands søn, ved De vel. Eller ved
+<lb/>De kanske ikke det?</p></HIS:hisSp>
+                
+<lb/><HIS:hisSp><p>Nej, herr B.</p></HIS:hisSp>
+                
+<lb/><HIS:hisSp><p>En bergmands søn. Og min far tog mig med sig ned i gr. iblandt.
+<lb/>Dernede synger malmen.</p></HIS:hisSp>
+                
+<lb/><HIS:hisSp><p>Ja så, synger den?</p></HIS:hisSp>
+                
+<lb/><HIS:hisSp><p>Når den blir løsnet. Hammerslagene, som løser den, det
+<lb/>er midn klokken, som slår og gør den fri. Derfor synger
+<lb/>malmen af glæde – på sin vis.</p></HIS:hisSp>
+                
+<lb/><HIS:hisSp><p>Det vidste jeg ikke.</p></HIS:hisSp>
+                
+<lb/><HIS:hisSp><p>Nej det er det, som folk ikke ved. De ved ikke at malmen
+<lb/>ligger dernede og stunder efter at bli fri.</p></HIS:hisSp>
+                
+<lb/><HIS:hisSp><p>Hvorfor gør den det, herr B.</p></HIS:hisSp>
+                
+<lb/><HIS:hisSp><p>Den vil op i dagens lys og tjene menneskene</p></HIS:hisSp>
+                
+<lb/>(NBO Ms.4° 1118a, dobbeltblad 1)</quote>
+            
+<lb/>
+            
+<quote rend="indent">
+<HIS:hisSp><HIS:spOpener><speaker>Borkman</speaker>.</HIS:spOpener>
+<lb/><p>Kan De gætte Dem til, hvor jeg første gang
+<lb/>hørte slige toner, som disse her?</p></HIS:hisSp>
+                
+<lb/><HIS:hisSp><HIS:spOpener><speaker>Frida</speaker>
+<lb/><HIS:hisStage>(sér op på ham)</HIS:hisStage></HIS:spOpener>
+<lb/><p>Nej, herr Borkman?</p></HIS:hisSp>
+                
+<lb/><HIS:hisSp><HIS:spOpener><speaker>Borkman</speaker>.</HIS:spOpener>
+<lb/><p>Det var nede i gruberne.</p></HIS:hisSp>
+                
+<lb/><HIS:hisSp><HIS:spOpener><speaker>Frida</speaker>
+<lb/><HIS:hisStage>(forstår ikke)</HIS:hisStage></HIS:spOpener>
+<lb/><p>Ja så? Nede i gruberne?</p></HIS:hisSp>
+                
+<lb/><HIS:hisSp><HIS:spOpener><speaker>Borkman</speaker>.</HIS:spOpener>
+<lb/><p>Jeg er en bergmands søn, véd De vel. Eller
+<lb/>véd De kanske ikke det?</p></HIS:hisSp>
+                
+<lb/><HIS:hisSp><HIS:spOpener><speaker>Frida</speaker>.</HIS:spOpener>
+<lb/><p>Nej, herr Borkman.</p></HIS:hisSp>
+                
+<lb/><HIS:hisSp><HIS:spOpener><speaker>Borkman</speaker>.</HIS:spOpener>
+<lb/><p>En bergmands søn. Og min far tog mig med
+<lb/>sig ned i gruberne iblandt. – Dernede synger
+<lb/>malmen.</p></HIS:hisSp>
+                
+<lb/><HIS:hisSp><HIS:spOpener><speaker>Frida</speaker>.</HIS:spOpener>
+<lb/><p>Ja så, – synger den?</p></HIS:hisSp>
+                
+<lb/><HIS:hisSp><HIS:spOpener><speaker>Borkman</speaker>
+<lb/><HIS:hisStage>(nikker)</HIS:hisStage></HIS:spOpener>
+<lb/><p>Når den blir løsnet. Hammerslagene, som løs-
+<lb/>ner den, – det er midnatsklokken, som slår, og gør
+<lb/>den fri. Derfor synger malmen – af glæde – på
+<lb/>sin vis.</p></HIS:hisSp>
+                
+<lb/><HIS:hisSp><HIS:spOpener><speaker>Frida</speaker>.</HIS:spOpener>
+<lb/><p>Hvorfor gør den det, herr Borkman?</p></HIS:hisSp>
+                
+<lb/><HIS:hisSp><HIS:spOpener><speaker>Borkman</speaker>.</HIS:spOpener>
+<lb/><p>Den vil op i dagens lys og tjene menneskene.</p></HIS:hisSp>
+<lb/><HIS:hisStage>(Han går frem og tilbage på salsgulvet, be-
+<lb/>standig med hænderne på ryggen)</HIS:hisStage>
+                
+<lb/><HIS:hisSp><HIS:spOpener><speaker>Frida</speaker>
+<lb/><HIS:hisStage>(sidder lidt og venter; sér på sit ur og rejser sig)</HIS:hisStage></HIS:spOpener>
+<lb/><p>Om forladelse, herr Borkman, – men jeg
+<lb/>må nok desværre gå, jeg.</p></HIS:hisSp>
+                
+<lb/>(KBK Collin 262, 4°, IV.3, s. 66–68)</quote></p>
+        
+<p rend="noIndent">Det er ingen større, strukturelle forskjeller mellom manuskriptene, men det kan være verdt å nevne at Ella Rentheims ønske om å la Erhart skifte navn fra Borkman til Rentheim blir omtalt tidligere og motivert annerledes i NBO Ms.4° 1118b (der i første akt) enn i den endelige teksten (der i annen akt). Den manglende tittelsiden og personlisten i NBO Ms.4° 1118b må være NBO Ms.4° 2590, s. 93 (se argumentasjon for det i manuskriptbeskrivelsene).</p>
+<p>KBK Collin 262, 4°, IV.3 er det endelige og fullstendige trykkmanuskriptet. Det adskiller seg i liten grad fra grunnteksten og de øvrige trykte utgavene. Unntaket er Ibsens manglende kommatering, som forlaget på vanlig måte har bragt i samsvar med dansk norm i førstetrykket. Trykkmanuskriptet har også en del mindre rettelser i Ibsens hånd, samt småfeil som forlaget har rettet i førsteutgaven. Førsteutgaven har svært få feil, som stort sett angår tegnsettingen. Ibsen takker <HIS:hisRef target="B1890-1905ht.xml#B18961129JH">29. november</HIS:hisRef> Jacob Hegel for det store opplaget (12 000). <HIS:hisRef target="B1890-1905ht.xml#B18961129AuLa">Samme dato</HIS:hisRef> gjentar han gleden overfor August Larsen, som han også ber om ikke å utgi boken i København før 15. desember for <quote>de udenlandske udgavers skyld</quote>, det vil si for at oversettelsene, som var under arbeid, skulle rekke å bli ferdige samtidig (jf. Ibsens brev til August Larsen <HIS:hisRef target="B1890-1905ht.xml#B18961021AuLa">21. oktober</HIS:hisRef> og <HIS:hisRef target="B1890-1905ht.xml#B18961111AuLa">11. november 1896</HIS:hisRef>, hvor han ber om at korrekturarkene blir tilsendt de som skal oversette til fransk, engelsk og russisk). <title rend="italic">John Gabriel Borkman</title> utkom 15. desember 1896. Boken var utsolgt på forhånd, slik at annen utgave måtte trykkes med en gang; også den utkom 15. desember (3000 i opplag). Dramaet ble også utgitt av W. Heineman i London 12. desember 1896, altså tidligere enn i København, jf. Ibsens brev til August Larsen <HIS:hisRef target="B1890-1905ht.xml#B18961201AuLa">1. desember 1896</HIS:hisRef>, der han ber om å få sendt seks eksemplarer til Heinemann noen dager før offentliggjørelsen for å sikre rettighetene gjennom en oppførelse/opplesning (som fant sted 14. desember på Avenue Theatre). Av August Larsens brev til A.C. Drolsum 18. desember 1896 fremgår det at Gyldendal sendte tolv eksemplarer til Heinemann. Brevet, skrevet på Gyldendalske Boghandels brevpapir, er innlimt i Nasjonalbibliotekets eksemplar av London-utgaven (80ga25090) og siteres her i sin helhet:
+                        
+<quote rend="proseIndent">Kjøbenhavn den 18 Decbr. 1896.
+<p>Herr Bibliothekar A. C. Drolsum,</p>
+<p>Ridder af St. Olafs Ord.</p>
+<lb/>
+<p>Af vedlagte Titel til Ibsens nye Skuespil blev der trykt 12 Explr. for at sikkre Forlagsretten til den engelske Udgave. Jeg antager, at det vil kunne interessere Universitetsbibliotheket at eje et Explr. af «John Gabriel Borkman» med denne Titel, det eneste Explr., der fremkommer udenfor England.</p>
+<p>Med Højagtelse</p>
+<p>ærbødigst</p>
+<p>August Larsen.</p></quote></p>
+        
+<p rend="noIndent">London-utgaven er satsidentisk med førsteutgaven, med unntak av London-utgavens to tittelblader. Det ene er identisk med førsteutgavens, men det andre adskiller seg fra dennes ved at teksten <quote>Græbes Bogtrykkeri</quote> på rectosiden er erstattet av <quote>London / William Heinemann</quote>. På dette tittelbladet står trykkeriopplysningen på versosiden, der det også opplyses om rettigheter: <quote>Copyright 1896 / Entered at Stationer’s Hall and at Library of / Congress Washington, U.S.A., / by Paul Reynolds.</quote> Mellom første og annen utgave er det ingen forskjeller. I FU er det ikke kommet til vesentlige endringer, men enkelte mindre feil i de foregående utgavene er rettet, og noen få nye er kommet til.</p>
+<p>I tillegg til HIS’ hovedtekst finnes en diplomatarisk og søkbar gjengivelse samt en fotografisk faksimile av grunnteksten. De øvrige tekstkildene gjengis diplomatarisk, manuskriptene også med faksimile, med mulighet for søk og sammenligning med grunnteksten.</p>
+<p>HIS har i margen sidereferanser til grunnteksten, til den trykte utgaven av HIS og til HU.</p>
+</div>
+    
+<div xml:id="edState_critical"> 
+<head rend="level3">tekstkritiske bemerkninger</head>
+<p rend="noIndent">Ved etableringen av hovedteksten er alle tekstkilder fra Ibsens levetid blitt konsultert. Emendasjoner er foretatt med utgangspunkt i de trykte utgavene samt trykkmanuskriptet KBK Collin 262, 4°, IV.3 og arbeidsmanuskriptet NBO Ms.4° 1118b.</p>
+    <p>Ordvalg, ortografi og grammatikk i grunnteksten er, som offisiell norsk i samtiden, i tråd med danske normer, men med eksempler på mindre kondisjonert tale, f.eks. når stuepiken sier <quote>Sån’t et fælt snøvejr</quote> <ptr type="ht" target="JGht.xml" corresp="koJG_ht_25"/>. En tiltagende grad av fornorskning sees hos Ibsen fra <title rend="italic">Kjærlighedens Komedie</title> av, jf. innledningen til dette stykket, under <HIS:hisRef target="KK_innl.xml#intro_background_verse"><hi rend="italic">Versifikasjonen</hi></HIS:hisRef> og <title rend="italic">Kongs-Emnerne</title>, under <HIS:hisRef target="KE_innl.xml#intro_background_language"><hi rend="italic">Språkformen</hi></HIS:hisRef>. Ibsen følger i <title rend="italic">John Gabriel Borkman</title> fortsatt anbefalingene fra det skandinaviske rettskrivningsmøtet i Stockholm i 1869 (jf. kommentar til <quote>Sprogkongressens Rettskrivning</quote> i brev til Frederik Hegel <HIS:hisRef target="B1844-1871ht.xml#B18700212FH">12. februar 1870</HIS:hisRef>). En mer utførlig gjennomgåelse av språklige trekk i <title rend="italic">John Gabriel Borkman</title> finnes under Ibsens språklige utvikling.</p>
+<p>I HIS er tegnsetting standardisert på følgende måte: Etter titler, overskrifter og rolleinnførsler i personlister samt replikkåpner i dramateksten er eventuelle skilletegn (punktum, komma, kolon) fjernet. I sceneanvisninger først i akt og scener, i frittstående sceneanvisninger mellom replikker og i stedsbeskrivelser etter personliste er eventuell parentes fjernet. Disse elementene har gjennomgående fått stor forbokstav og avsluttes med punktum. Frittstående sceneanvisninger har beholdt eventuelle <quote>indre</quote> parenteser. Sceneanvisninger til slutt i replikker regnes som del av replikken dersom de er ufullstendige setninger, og som frittstående, utenfor replikken, dersom setningen er fullstendig.</p>
+<p>Sceneanvisninger inne i replikk, inkludert de som står til slutt i replikk (ikke frittstående), begynner med liten forbokstav og avsluttes uten interpunksjon. Sceneanvisninger som følger rett etter replikkinnehaverens navn, har ikke parenteser. Øvrige sceneanvisninger i replikk har parentes.</p>
+<p>Skillestreker er beholdt der de har strukturerende funksjon, for eksempel når de markerer sceneskift og sceneskiftet ikke er markert på annen måte. Skillestreker som bare har karakter av ornament, er ikke gjengitt. Grunntekstens typografiske system for øvrig er ikke forsøkt imitert i HIS.</p>
+<p>Tekstfeilene i <title rend="italic">John Gabriel Borkman</title> (1896) omfatter mindre setterfeil og feil av typen <hi rend="italic">aa</hi> for <hi rend="italic">å</hi>. Alle HIS’ rettelser, bortsett fra de stilltiende (typografiske feil), er anført i det tekstkritiske noteapparatet. Når teksten avviker betydelig i kilder som anvendes ved rettelser, føres ikke tekst herfra i rettelsesnoten, og formuleringen <quote>teksten mangler i</quote> benyttes heller ikke. Den avvikende teksten vises derimot i sin sammenheng i den elektroniske delen av HIS. Dersom det er relevant for vår rettelse, vil tekstendringer i kilden det siteres fra, kommenteres kort i rettelsesnoten. Vakling i ortografi (f.eks. <hi rend="italic">ta’t/taget</hi>) og interpunksjon som avspeiler tidens og Ibsens vekslende praksis, er ikke rettet i HIS.</p>
+<p>For en oversikt over samtidens språknormer og Ibsens språk vises det til redegjørelser i innledningene til <title rend="italic">Catilina</title> <HIS:hisRef target="C1_innl.xml#intro_background_language">1850</HIS:hisRef> og <HIS:hisRef target="C2_innl.xml#intro_background_language">1875</HIS:hisRef>. Det vises for øvrig til de <HIS:hisRef target="tekstkritiskeRetningslinjer.xml">tekstkritiske retningslinjene</HIS:hisRef></p>
+</div>
+    
+<div xml:id="edState_editions"> 
+<head rend="level3">tidligere tekstkritiske utgaver</head>
+<p rend="noIndent">I FU er <title rend="italic">John Gabriel Borkman</title> trykt i bind 9, med en kort innledning om tilblivelsen, en liste med oversettelser, sekundærlitteratur, parodier og oppførelser på s. XII–XVII. Det gis ikke tekstkritiske opplysninger. I MU er <title rend="italic">John Gabriel Borkman</title> trykt i bind 5. Rettelser foretatt av Johan Storm mot hans tekstgrunnlag (FU) og etter sammenligning av trykte utgaver i Ibsens levetid er oppført i MU 5, 18; errata på s. 42. I ES er utdrag av NBO Ms.4° 1118b trykt i bind 3, s. 313–261, opplysninger og varianter s. 502–07. ES omtaler ikke NBO Ms.4° 2590, s. 93 og KBK Collin 262, 4°, IV.3. I SU er <title rend="italic">John Gabriel Borkman</title> trykt i bind 6, tekstgrunnlaget oppgis (SU 7, 305) å være førsteutgaven, med enkelte rettelser. I HU er <title rend="italic">John Gabriel Borkman</title> trykt i bind 13; på s. 129–80 redegjøres det i form av variantapparat for forskjellen mellom arbeidsmanuskriptene og den endelige teksten. Grunnteksten for HU er <quote>i regelen</quote> (HU 13, 181) trykkmanuskriptet. I HU 19, 62 gjengis og omtales NBO Ms.4° 2590, s. 93. I appendiks 2 til oversettelsen av dramaet i <title rend="italic">The Oxford Ibsen</title> <bibl>(Ibsen 1960–77, b. 8, 329)</bibl> finnes en oppstilling av rollenavnene og deres utvikling i manuskriptmaterialet samt henvisninger til forskjeller mellom arbeidsmanuskriptene og den endelige teksten (s. 330–35).</p>
+</div>
+</div>
+</body>
+</text>
+</TEI>

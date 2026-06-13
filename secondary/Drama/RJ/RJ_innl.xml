@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title level="s">Henrik Ibsens skrifter</title>
+<title level="a">Innledning til Rypen i Justedal</title>
+<author>ført i pennen av Asbjørn Aarseth</author>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder><editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
+<respStmt>
+<resp>Kodeteknisk støtte og utvikling</resp>
+<name>AKSIS: Avdeling for kultur, språk og informasjonsteknologi, Universitetsforskning i Bergen (Unifob AS)</name>
+</respStmt>
+<respStmt>
+<resp>Koding</resp>
+<name xml:id="NME">Nina Marie Evensen</name>
+</respStmt>
+<respStmt>
+<resp>Tekstarbeid</resp>
+<name>Nina Marie Evensen</name>
+<name>Erlend Lønnum</name>
+</respStmt>
+<respStmt>
+<resp>Kontroll av sitater og referanser</resp>
+<name>Erlend Lønnum</name>
+</respStmt>
+<respStmt>
+<resp>Kommentarentiteter</resp>
+<name>Nina Marie Evensen</name>
+</respStmt>
+<respStmt>
+<resp>Kodekontroll</resp>
+<name/>
+</respStmt>
+</titleStmt>
+<publicationStmt>
+<publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+<distributor xml:id="HISe">Universitetet i Oslo</distributor>
+<date when="2012" xml:id="HISe-date"/>
+<pubPlace>Oslo</pubPlace>
+</publicationStmt>
+<sourceDesc>
+<p>Dette dokumentet har ingen kilde.</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<tagsDecl>
+
+</tagsDecl>
+</encodingDesc>
+<profileDesc>
+<langUsage>
+<language ident="nob"/>
+</langUsage>
+</profileDesc>
+<revisionDesc>
+<change><date>08.11.12</date>
+<name>SBT</name><title>Omkoding til TEI P5 og HISe</title>
+</change>
+</revisionDesc>
+</teiHeader>
+<text>
+<body>
+<div type="introduction" xml:id="intro">
+<div type="background" xml:id="intro_background">
+<head rend="level2">BAKGRUNN</head>
+<p rend="noIndent">I løpet av 1840-årene var den nasjonale fortiden i økende grad blitt et sentralt element i så godt som alle kunstarter i Norge, og innsamlingen av vitnemål om folketroens og folkekulturens skapende evne var kommet i gang på flere felter. En av de aller første som trådte frem i offentligheten med en slik nasjonal dokumentasjon, var sagnsamleren Andreas Faye, som i 1833 gav ut <title rend="italic">Norske Sagn</title> (annenutgaven <title rend="italic">Norske Folke-Sagn</title> kom i 1844). I en <quote>Fortale</quote> argumenterer han for verdien av sagn. Et av argumentene er den produktive virkningen en viss type sagn vil kunne ha for diktningen. Det er en alminnelig mening, skriver Faye, at</p>
+<quote rend="proseIndent">et Digt, der grunder sig paa et Sagn eller Factum, næsten stedse lykkes bedre, end hvor Stoffet ogsaa er opdigtet. Mig vilde det meget glæde, om denne Samling af Sagn kunde tjene vore unge Skjalde til en Slags Haandbog, og opmuntre dem til hellere at dyrke og opelske de vel ei saa glimrende, men dog friske levende Blomster, der voxe frodige blandt Norges Fjelde, end at søge baade Stof og Billeder fra fjerne og for Mængden ubekjendte Gjenstande, kort at blive mere Folkedigtere, end tilforn har været Tilfælde <bibl>(Faye 1844, IV)</bibl>.</quote>
+<p rend="noIndent">I alt tolv av Fayes sagn handler om bygder og dalfører som ble gjenoppdaget etter at de opprinnelige beboerne var blitt rammet av svartedauden, og hvor alle eller nesten alle var døde. Det mest kjente av disse sagnene er <title rend="quotes">Rypen i Justedalen</title>; i annen utgave er tittelen endret til <title rend="quotes">Rypa i Justedalen</title>. Sagnet forteller at da pesten kom til Norge (i 1349), dro en del av de rikeste og fornemste menneskene i Sogn til den nokså isolerte Justedalen, hvor de bosatte seg. De forsøkte å avskjære enhver forbindelse med verden utenfor, men kunne ikke hindre at epidemien også nådde dit. Dødeligheten var nesten total; bare en liten pike på gården Birkehaug overlevde. Noe senere oppdaget man i nabosognet at det fra Justedalen kom flokker av husdyr som ikke så ut til å ha noen eier, og for å undersøke forholdene dro en del menn dit:</p>
+<quote rend="proseIndent">Hvor disse nu kom, fandt de Folket uddød og Husene tomme. Efterat de havde besøgt de fleste Gaarde, men ingensteds funden nogen Levende, opgave de Haabet om at træffe Nogen og vilde begive sig paa Hjemveien, da de uformodentlig i Birkehaugskoven fik Øie paa et Pigebarn, der ved Synet af de Fremmede havde søgt tilskovs. De raabte hende an; men bange som et opjaget Stykke Vildt flygtede hun dybere ind i Skoven for at skjule sig. De besluttede nu om muligt at fange hende, og efter megen Anstrengelse lykkedes det dem. Hun var imidlertid sky og vild som en Fugl, hvorfor man ogsaa kaldte hende Rypa. Hendes Tale kunde de ligesaa lidt forstaae, som de kunde gjøre sig forstaaelige for hende. De tog Pigebarnet med sig til Vaage, hvor hun blev opforstret [sic] og skikkede sig vel. […] Da Rypa var kommen til Aar og Alder, drog hun til sit Fødested, hvor hun giftede sig og levede lige til sin Død. Hun efterlod sig en gjev Æt, der gjennem Aarhundreder efter hende blev kaldet <hi rend="italic">Rypeslægten</hi> og stod i stor Anseelse i hele Dalen <bibl>(Faye 1844, 130)</bibl>.</quote>
+<p rend="noIndent">Beretninger om individer som hadde vokst opp enten som medlemmer av et såkalt primitivt samfunn eller uten kontakt med andre mennesker, og som på et tidspunkt var blitt integrert i et høyere utviklet sosialt fellesskap, var omfattet med markant interesse både i det 18. og i det 19. århundre. Opplysningstidens bruk av den kulturelle forskjellen som ble profilert ved en slik omplassering, gikk gjerne i retning av en satirisk belysning av den avanserte sivilisasjonen (for eksempel Holbergs latinske fortelling om Niels Klims reise under jorden), mens romantikken, under innflytelse av Rousseau og hans forestilling om <hi rend="italic">le bon sauvage</hi> <bibl>(jf. Gran 1910–11, b. 2, 170)</bibl>, hadde større interesse for naturmennesket, <quote>den edle ville</quote>, som var ufordervet av kulturen og i sin adferd preget av uskyld, naivitet og spontan tillitsfullhet.</p>
+<p>Sagnet om Justedalsrypa kunne spille på to viktige strenger i norsk litteratur omkring 1850 – både svermeriet for det opprinnelig norske, fortellingen om mennesker i en tilvokst og glemt fjelldal i en dunkel fortid, og interessen for det sivilisasjonskritiske perspektivet, natur kontra kultur. For Ibsen hadde sagnet trolig i tillegg sin særlige attraksjon ved at tittelfiguren ved en overføring til scenen kunne utformes med sikte på å prøve ut et ideal som tidens viktigste teaterteoretiker, Johan Ludvig Heiberg, hadde skissert i sine genreteoretiske arbeider. I en artikkel fra 1844 drøfter han hvilke krav man kan stille til en person i et karakterstykke, en egentlig dramatisk karakter, som han kaller det. Karakteren er <quote>det ethiske Præg, som Mennesket selv har givet sig</quote> <bibl>(Heiberg 1861–62, b. 4, 483)</bibl>. Karakterskuespillet (motsatt intrigestykket) må altså ha personer som er etisk preget, det vil si som har tilegnet seg menneskelige egenskaper som viser seg i deres handlinger. Imidlertid kan et slikt skuespill også inneholde en type personer som ikke har noe etisk preg, nemlig den typen som betegnes som <hi rend="italic">ingenue</hi> – den unge, naive piken. Denne typen er ifølge Heiberg den <quote>interessanteste og meest berettigede af de herhenhørende sceniske Masker</quote>, og grunnen er at</p>
+<quote rend="proseIndent">en ung Pige skal ikke have en stærkt udpræget Characteer; den skal hun først med Tiden erhverve sig. Det, hvorved den qvindelige Ungdom fortryller, er netop den rige Mulighed, som hviler i dens Blomsterknop, denne <hi rend="italic">tabula rasa</hi>, hvorpaa ethvert Indhold kan skrives, dette bløde Leer, hvoraf det skjønneste Kunstverk kan formes. Derimod, den samme Characteer, overført paa en ung Mand, er strax langt mindre en Gjenstand for Kunsten, thi han vinder ikke, saaledes som Qvindekjønnet, Elskværdighed ved den, den bringer ikke ham, saaledes som Qvinden, til at realisere et Skjønheds-Ideal. Man kan ikke med Velbehag dvæle ved hans Muligheder, thi af Manden venter man Virkeligheder <bibl>(Heiberg 1861–62, b. 4, 483–84)</bibl>.</quote>
+<p rend="noIndent">Her kunne sagnet by et utmerket eksempel på <hi rend="italic">tabula rasa</hi>, en pike som i lengre tid hadde vært uten kontakt med andre mennesker, og skuespillet kunne ta sitt utgangspunkt i den dramatiske oppdagelsen av hennes eksistens i en ellers folketom, vill fjelldal. Visse modifikasjoner av sagnet har dikteren imidlertid funnet nødvendige. Av hensyn til skuespillets dialog har piken måttet utstyres med språk. Hennes mangelfulle kontakt med andre mennesker er likevel markert ved en språklig særegenhet; hun omtaler seg selv med få unntak i tredje person. Og av hensyn til muligheten for en erotisk forviklingsintrige er hun i skuespillet gjort til <quote>en ung Pige</quote>, ikke <quote>et Pigebarn</quote>.</p>
+<p>En mer radikal forskjell fra sagnet er det at Ibsen har valgt å gi Alfhild en informator en god stund før hun blir <quote>oppdaget</quote>. En gammel mann, den omvandrende visekunstneren og fortelleren Sangerknud, er blitt kjent med henne, slik at hun til en viss grad er forberedt på hvordan det er i menneskenes verden. Dermed opptrer hun ikke så sky og vill i møtet med Bjørn i skuespillets annen akt som den lille piken i sagnet, som hadde mer av rypens adferd i møtet med mennesker. Vennskapet med Sangerknud blir et problem i Alfhilds historie; dikteren har visse vanskeligheter med å forklare at den gamle vandreren ikke har formidlet kontakt med andre. På spørsmål fra Bjørn om dette svarer Knud: <quote>Jeg raader ei / for hendes Skjæbne; kun i mine Strænge / og i min Sang er lagt hvad jeg formaaer!</quote> <bibl>(HIS 2, <ptr type="ht" target="RJht.xml" corresp="koRJ_ht_1"/>)</bibl>.</p>
+<p>Den omvandrende sangeren som har fått sine toner som en gave fra naturen, og som med sin kunst kan utøve en viss makt over andre mennesker, er en figur som Ibsen har benyttet flere steder, også i sin lyrikk fra tiden omkring 1850. Eksempler finnes i diktene <title rend="quotes">Møllergutten</title>, <title rend="quotes">Naturens Stemme</title>, <title rend="quotes">Til: En Troubadour</title>, og med en bredere skildring i <title rend="quotes">En Løverdagsaften i Hardanger</title>, hvor hovedpersonen er en gammel omgangsskredder som har lært sitt kvad fra elvens bunn. Motivet med sangeren eller spillemannen som får sin kunst fra naturen eller fra overnaturlige vesener, er utbredt i norsk folketro, og finnes blant annet i en del dikt av Welhaven, mest karakteristisk i <title rend="quotes">Møllergutten</title>, trykt første gang i <title rend="italic">Norsk Folke-Kalender</title> 1850, 51–63 <bibl>(Welhaven 1990–92, b. 2, 280–81)</bibl>. Både Welhavens og Ibsens dikt med samme tittel refererer til mesterspillemannen Torgeir Augundsson Øygarden (1801–72), kjent som Myllarguten fra Telemark, som kom til Kristiania første gang i 1849. Den store interessen omkring denne mannen og hans spill er en del av bakgrunnen for at Ibsen gjør bruk av skikkelsen Sangerknud i <title rend="italic">Rypen i Justedal</title>.</p>
+<p>Av ukjente grunner kom Ibsen aldri til å fullføre dette skuespillet. Han hadde beregnet det til fire akter, men det renskrevne manuskriptet som er bevart, inneholder bare første og det meste av annen akt. Det finnes ikke noe utkast som antyder hvordan den videre handlingen var ment å utfolde seg, men det er klart nok at Sangerknud, som i første akt er kalt Harald, er anlagt som en viktig handlingspådriver. Han kjenner til tidligere begivenheter i familien til Bengt af Bjerkehoug, og fremfører gjerne viser eller eventyr som han mener kan ha en positiv virkning på menneskene. I sin evne til å knytte forbindelse mellom fortid og nåtid har han en funksjon som er tilnærmet lik den eneboeren Bernhard har i <title rend="italic">Kjæmpehøien</title>; også i gamle Bernhards oppfostring av sin pleiedatter Blanka ser vi et forhold som kan svare til Sangerknuds faderlige relasjon til Alfhild.</p>
+
+<div xml:id="intro_background_dramaform">
+<head rend="level3">dramaform</head>
+<p rend="noIndent">Mens både <title rend="italic">Catilina</title> og <title rend="italic">Kjæmpehøien</title> er versdramaer, er det bemerkelsesverdig at de scenene som finnes av <title rend="italic">Rypen i Justedal</title>, veksler mellom vers og prosa. Slik veksling mellom scener i femfotede jamber og scener i prosa, som innebærer at høystilen skifter til lavstil, finnes også hos Shakespeare, i Oehlenschlägers historiske dramatikk og i enkelte av J.L. Heibergs skuespill. En av de store suksessene på Det kongelige Theater i København på 1800-tallet var Heibergs romantiske skuespill <title rend="italic">Elverhøi</title> (1828), Danmarks første nasjonalromantiske musikkdrama. Det er mye som tyder på at Ibsen hadde dette stykket som sitt viktigste forbilde da han arbeidet med <title rend="italic">Rypen i Justedal</title> <bibl>(jf. Jæger 1887, 100)</bibl>. Det gjelder vekslingen mellom versdialog med innslag av sang og enkelte kortere prosadialoger, og det gjelder en tydelig parallellitet i personkonstellasjonene <bibl>(jf. også Bull 1929, 126)</bibl>. Til kong Christian 4., som har bestemt at hans lensmann Albert Ebbesen skal gifte seg med Elisabeth Munk, myndling av Erik Walkendorff, herren til Høistrup, svarer odelsbonden Bengt af Bjerkehoug, som har bestemt at hans sønn Bjørn skal gifte seg med hans pleiedatter og myndling Mereta. Liksom Elisabeth elskes av Poul Flemming, kongens hoffmann, elskes Mereta av den unge odelsbonden Einar. Mens Albert Ebbesen har knyttet sine følelser til Agnete, en enkel og meget vakker bondepike som av folkefantasien og en dunkel opprinnelse er forbundet med alvene ved Elverhøi, har Bjørn i Ibsens skuespill fattet kjærlighet til naturbarnet Alfhild, som er vokst opp i ensomhet og har alvene som sine lekekamerater. Knutens løsning består i Heibergs stykke i å la de unges følelser komme til sin rett. Mye taler for at en tilsvarende utgang har vært Ibsens plan i <title rend="italic">Rypen i Justedal</title>.</p>
+<p>I scener hvor dialogen dreier seg om naturopplevelser, om haugfolk og huldrer, om eventyr og sagn, eller om unge menneskers følelser for hverandre, tales det på vers. Når samtalen dreier seg om mer jordnære ting, om eiendomsforhold eller om en fars planer om giftermål for sin sønn, blir det talt i prosa. Presten, hr. Mogens, kommer inn i bjelkehallen og er opptatt av å få noe å drikke: <quote>hvad har du i Hornet der, – naa, Mjød</quote> <bibl>(HIS 2, <ptr type="ht" target="RJht.xml" corresp="koRJ_ht_2"/>)</bibl>. Det er <hi rend="italic">genus humile</hi>, jevn tale. Både første akt og det som eksisterer av annen akt, består av en relativt kort prosadialog innrammet av en lengre versdialog før og etter, slik at vekslingen virker vel gjennomtenkt; den er også tematisk godt motivert.</p>
+<p>I samtidens danske skuespilldiktning var denne splittelsen mellom vekten på personenes indre liv, det fantasibårne og ideelle, og en mer spissborgerlig tenkemåte, preget av sosiale ambisjoner og egennyttige hensyn, en velkjent situasjon. Det kunne være motsetningen mellom foreldregenerasjonen og de unge som skapte forviklinger i erotiske relasjoner, og sympatien var klart på følelsenes side mot det som gikk for å være fornuftig.</p>
+<p>Ved Alfhilds nærvær er det ingenting prosaisk. Hun viser seg for den forventningsfulle Bjørn med lurtoner og visesang fra en høyde i bakgrunnen. Hun fremstår som et naturvesen i idylliske omgivelser, med et fortrolig forhold til blomster, småfugler, lam og geiter, og hun oppgir at hun leker med alvene i skogen. Da hun har bestemt seg for å følge Bjørn, opptrer et kor av alver som hviskende til akkompagnement av svak musikk synger farvel til henne; Bjørn forveksler det med kveldsvinden. Scenen lukkes med markerende rim, et tradisjonelt trekk:</p>
+<quote rend="indent">
+<HIS:hisLg>
+<HIS:hisSp>
+<HIS:spOpener>
+<speaker rend="smallCaps">Bjørn</speaker>, <HIS:hisStage>halv sagte</HIS:hisStage></HIS:spOpener>
+<l>Du hvisker Alfhild, kom, hvad fattes dig,</l>
+<l>jeg bli’er saa sært tilmode, – lad os gaa –</l></HIS:hisSp>
+<HIS:hisSp>
+<HIS:spOpener>
+<speaker rend="smallCaps">Alfhild</speaker> <HIS:hisStage>griber hans Haand</HIS:hisStage></HIS:spOpener>
+<l>Nu følger Alfhild dig, nu har hun hvisket</l>
+<l>Farvel til Blomster og til Alfer smaae –</l><lb/>
+<HIS:hisStage>(de gaae)</HIS:hisStage></HIS:hisSp>
+</HIS:hisLg>
+<bibl>(HIS 2, <ptr type="ht" target="RJht.xml" corresp="koRJ_ht_3"/>)</bibl>
+</quote>
+<p rend="noIndent">På gården Bjerkehoug er stemningen mer blandet; odelsbonden Bengt kan overtales til å fordype seg i fortellingen om den gamle spillemannen, og da skjer det på vers, men konflikten er aldri langt unna, og Bengts normale talestil er prosa. Foruten de nevnte prosainnslagene brytes blankversdialogen av noen få innlagte sanger i folkeviseform, samt et enkelt knittelverspar. Det forekommer i scenen på gården da den gamle spillemannen Knud kommer inn og fremsier sin hilsen:</p>
+<quote rend="indent">
+<HIS:hisLg>
+<l>Guds Fred med eder alle, baade Mand og Kvinde.</l>
+<l>Guds Fred med enhver som i Stuen er at finde!</l>
+</HIS:hisLg>
+<bibl>(HIS 2, <ptr type="ht" target="RJht.xml" corresp="koRJ_ht_4"/>)</bibl>
+</quote>
+<p rend="noIndent">Knittelen skaper en gammeldags, høytidsfull stemning på scenen. Den er en hilsen fra folketroens urgrunn, som spillemannen representerer. Etter den innledende hilsenen fortsetter dialogen i fordringsløse folkevisestrofer. Ulike utforminger av den firelinjede folkevisestrofen tas i bruk i stykket, og de er alle bærere av den samme naive og fortrolige grunnholdningen:</p>
+<quote rend="indent">
+<HIS:hisLg>
+<l>Jeg standser min Gang ved Bondens Gaard</l>
+<l>og rører ved mine Strenge,</l>
+<l>jeg synger min Vise, og siger Farvel</l>
+<l>og ingensteds dvæler jeg længe!</l>
+</HIS:hisLg>
+<bibl>(HIS 2, <ptr type="ht" target="RJht.xml" corresp="koRJ_ht_18"/>)</bibl>
+</quote>
+<p rend="noIndent">Versbehandlingen i <title rend="italic">Rypen i Justedal</title> avviker en del fra den i <title rend="italic">Catilina</title> og i <title rend="italic">Kjæmpehøien</title>. I begge de to fullførte skuespillene finner vi lyriske innslag i form av rytmiske avvik fra grunnverset eller i form av rimdannelser. I <title rend="italic">Rypen i Justedal</title> har femfotsjamben en annen tone. For det første gjennomføres den stort sett urimet, det vil si som <hi rend="italic">blankvers</hi>, for det andre byr den på en livligere avveksling i dialogen. Replikkene er gjennomsnittlig kortere og deles også her opp mellom personer i det stiltrekket som kalles <hi rend="italic">antilabe</hi> (replikkdeling). Begge disse virkemidlene fremhever handlingen og bidrar dermed til versenes dramatiske effekt. Blankversene følger den klassiske rammen, <note type="metKomm">bi '10'11 x|X</note>. Enstavede (monosyllabiske) og tostavede (bisyllabiske) utganger veksler fritt; dermed oppstår det ingen symmetriske grupper som ville kunne hemme den dramatiske fremdriften ved å minne om urimede strofer. Stavelsestallet fravikes kun i noen ganske få tilfeller.</p>
+<p>Språket er gjennomgående dansk som i de andre tidlige stykkene, for eksempel finnes flertallsbøyning av verbet i åpningsreplikken: <quote>Vi <hi rend="italic">faa</hi> nok skynde os</quote> (HIS 2, <ptr type="ht" target="RJht.xml" corresp="koRJ_ht_5"/>, uth. her). Den <hi rend="italic">ha-stemte</hi> stilen fra <title rend="italic">Catilina</title> er stort sett forlatt; et enkelt <quote>ha</quote> forekommer på <ptr type="ht" target="RJht.xml" corresp="koRJ_ht_6"/>: <quote>Ti! ha, vil du haane mig!</quote>  Enkelte avvik fra vanlig ortografi forekommer: <hi rend="italic">Huldreslotten</hi> og <quote>jeg skal nok <hi rend="italic">voge</hi> over dig</quote> (HIS 2, <ptr type="ht" target="RJht.xml" corresp="koRJ_ht_7"/>, uth. her). En ikke-etymologisk, men ikke helt uvanlig <quote>ibsenisme</quote> (også i <title rend="italic">Brand</title> og <title rend="italic">Peer Gynt</title>) er <quote>skjelden</quote> for det vanligere <quote>sjelden</quote> (norr. <hi rend="italic">sjaldan</hi>).</p>
+<p>Et norsk innslag er ordet <quote>rype</quote> i selve tittelen; det er tatt opp i dansk i den norske formen (også <hi rend="italic">Ryppe</hi>) av eldre forfattere (Holberg, Petter Dass, Zetlitz, Baggesen, Oehlenschläger) i forbindelse med norske forhold (fuglen forekommer ikke i Danmark). Andre særnorske innslag er <quote>ilyse</quote>, <quote>Haugafolket</quote>, <quote>hun Gunborg</quote>, <quote>Hulder</quote> (<quote>Huldra</quote>, <quote>Huldren</quote>) og <quote>Huldreslotten</quote>, <quote>Luur</quote>, <quote>Sæterjente</quote> og hilsenen <quote>Godkvæld</quote> (selv om Molbech 1859 har <hi rend="italic">Qvæl(d)</hi>), <quote>Aare</quote> (ildsted). Selv om <hi rend="italic">og</hi> finnes i dansk som adverbet <hi rend="italic">også</hi>, har Molbech det bare under <hi rend="italic">ogsaa</hi>, som variant av <quote>saavel – som ogsaa (som <hi rend="italic">og</hi>, ell[er] blot <hi rend="italic">som</hi>)</quote>; <quote>Det troer jeg <hi rend="italic">og</hi></quote> (uth. her) bør derfor tas med blant norvagismene. Det samme gjelder <quote>hvor <hi rend="italic">veent</hi> hun sang</quote>, <quote>mit <hi rend="italic">vene</hi> Barn</quote> (uth. her) (dansk skrivemåte er <hi rend="italic">væn</hi>).</p>
+<p>Som det fremgår nedenfor, er det tilløp til språklig karakterisering ved at den gamle jegeren Paal bruker enkelte folkelige former – skjønt ikke konsekvent – der den sosialt høyerestående bondesønnen Bjørn ikke gjør det. Presten Mogens liker å vise at han er latinkyndig, ved å sitere sentenser <bibl>(HIS 2, <ptr type="ht" target="RJht.xml" corresp="koRJ_ht_8"/> og <ptr type="ht" target="RJht.xml" corresp="koRJ_ht_23"/>)</bibl>. Den unge pleiedatteren Mereta kan bruke en muntlig form som <quote>Bedstefa’r</quote>, men i neste øyeblikk <quote>jeg sad paa gamle Bedstefaders Knæ</quote> (HIS 2, <ptr type="ht" target="RJht.xml" corresp="koRJ_ht_9"/>). Naturbarnet Alfhild omtaler seg selv konsekvent i 3. person med sitt eget navn, og bruker naturbilder som <quote>det store Øie lukker sig bag Aasen</quote> <bibl>(HIS 2, <ptr type="ht" target="RJht.xml" corresp="koRJ_ht_10"/>)</bibl> om solen og <quote>det store Lys fra Aasen der</quote> <bibl>(HIS 2, <ptr type="ht" target="RJht.xml" corresp="koRJ_ht_11"/>)</bibl> om månen.</p>
+</div>
+</div>
+
+<div type="creation" xml:id="intro_creation">
+<head rend="level2">TILBLIVELSE</head>
+<p rend="noIndent">Det dramatiske prosjektet Ibsen gikk i gang med etter at han sommeren 1850 hadde fått antatt <title rend="italic">Kjæmpehøien</title> ved Christiania Theater, eksisterer som et renskrevet manuskript av én fullført og én nesten fullført akt, med påskriften <quote>Rypen i Justedal, nationalt Skuespil i fire Acter, af Brynjolf Bjarme. 1850</quote>. Det er ikke noen referanse til dette arbeidet i Ibsens korrespondanse, og vi vet ikke om han hadde ferdig noe utkast til alle fire akter da arbeidet ble avbrutt. For så vidt må det betegnes som en blindgate i Ibsens dramatiske diktning. Likevel har det interesse som et vitnesbyrd om hvilken retning hans fantasi var i ferd med å orientere seg i på dette tidlige stadiet i karrieren. Med <title rend="italic">Kjæmpehøien</title> hadde han nærmet seg sagaens verden og møtet mellom kristendom og hedendom i en oehlenschlägersk fortolkning; det var et tema fra Nordens heroiske fortid, men stedet var en fremmed kyst. Med <title rend="italic">Rypen i Justedal</title> ville han gå et skritt lenger i nasjonal retning; handlingen ble lagt til en norsk fjelldal og tidfestet til senmiddelalderen.</p>
+<p>Vi kjenner ikke grunnen til at Ibsen i 1850 valgte å ikke fullføre dette skuespillet. Han kan ha kommet til at det var for lite selvstendig, for eksempel i forhold til Heibergs <title rend="italic">Elverhøi</title>. At det inneholdt tydelige lån fra Fayes sagnsamling og fra Welhavens nasjonalromantiske lyrikk, har neppe vært medvirkende til at prosjektet ble lagt til side; det var genremessig noe helt annet. Da det viste seg utover på 1850-tallet at interessen for norsk folkediktning holdt seg, må Ibsen ha fått ny tro på at stoffet omkring Alfhild-skikkelsen og hennes møte med menneskene utenfor dalen kunne brukes til et scenisk verk. En god del av det finner vi igjen i skuespillet <title rend="italic">Olaf Liljekrans</title>, som ble skrevet i 1856.</p>
+</div>
+
+<div type="publication" xml:id="intro_publication">
+<head rend="level2">UTGIVELSE</head>
+<p rend="noIndent">Det ufullførte skuespillet <title rend="italic">Rypen i Justedal</title> ble naturlig nok ikke offentliggjort i Ibsens levetid. Det ble tatt hånd om av en kreditor da Ibsen forlot Norge i 1864, og han så det aldri igjen (se <hi rend="italic">Manuskriptbeskrivelse</hi>, under <hi rend="italic">Proveniens</hi>). Manuskriptet er trykt første gang i <title rend="italic">Efterladte skrifter</title>, utgitt av Halvdan Koht og Julius Elias i 1909 <bibl>(ES 1, 339–70)</bibl>, og annen gang i <title rend="italic">Samlede verker</title> (Hundreårsutgaven), utgitt av Francis Bull, Halvdan Koht og Didrik Arup Seip i 1929 <bibl>(HU 3, 239–72)</bibl>.</p>
+</div>
+</div>
+</body>
+</text>
+</TEI>

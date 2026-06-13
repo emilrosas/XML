@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title>Henrik Ibsens skrifter</title>
+<title>Kommentarer til Kjæmpehøien, 2. versjon</title>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
+<respStmt>
+<resp>Kodeteknisk støtte og utvikling</resp>
+<name>AKSIS: Avdeling for kultur, språk og informasjonsteknologi, Universitetsforskning i Bergen (Unifob AS)</name>
+</respStmt>
+<respStmt>
+<resp>Koding</resp>
+<name xml:id="HIS-HB">Hilde Bøe</name>
+<name xml:id="HIS-IF">Ingrid Falkenberg</name>
+<name xml:id="HIS-SBT">Stine Brenna Taugbøl</name>
+<name xml:id="HIS-AMB">Aasta Marie Bjorvand Bjørkøy</name>
+<name xml:id="HIS-NME">Nina M Evensen</name>
+</respStmt>
+<respStmt>
+<resp>Kommentarentiteter</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+</respStmt>
+<respStmt>
+<resp>Rettelser i manuskriptbeskrivelsene</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+</respStmt>
+<respStmt>
+<resp>Implementering av kode</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+<name>Nina M Evensen</name>
+</respStmt>
+<respStmt>
+<resp>Kodekontroll</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+<name>Nina M Evensen</name>
+</respStmt>
+<respStmt>
+<resp>Tekstarbeid</resp>
+<name>Nina M Evensen</name>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+</respStmt>
+</titleStmt>
+<publicationStmt>
+<publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+<distributor xml:id="HISe">Universitetet i Oslo</distributor>
+<date when="2012" xml:id="HISe-date"/>
+<pubPlace>Oslo</pubPlace>
+</publicationStmt>
+<sourceDesc>
+<p>Dette dokumentet har ingen kilde.</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<tagsDecl>
+
+</tagsDecl>
+</encodingDesc>
+<profileDesc>
+<langUsage>
+<language ident="nob"/>
+<language ident="fre"/>
+<language ident="eng"/>
+<language ident="rus"/>
+<language ident="ger"/>
+</langUsage>
+</profileDesc>
+<revisionDesc>
+<change>
+<date>06.12.2012</date>
+<name>Stine Brenna Taugbøl</name><title>Omkoding til TEI P5 og HISe</title>
+</change>
+</revisionDesc>
+</teiHeader>
+    <text type="commentary">
+<body>
+<div type="commentary">
+<head rend="level1">ORD- OG SAKKOMMENTARER</head>
+<div>
+<head rend="level2">TITTELSIDE</head>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_1a" xml:id="koK2_1a"/><HIS:hisTerm>Kjæmpehøien]</HIS:hisTerm> <HIS:hisGloss><HIS:hisRef>jf. kommentar til <title rend="italic">Kjæmpehøien</title> 1850, <seg type="red"><ptr type="internal" target="K1ht.xml" corresp="koK1_1"/></seg></HIS:hisRef></HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_1b" xml:id="koK2_1b"/><HIS:hisTerm>Dramatisk Digtning]</HIS:hisTerm> <HIS:hisGloss><HIS:hisRef>jf. kommentar til <title rend="italic">Kjæmpehøien</title> 1850, <seg type="red"><ptr type="internal" target="K1ht.xml" corresp="koK1_2"/></seg></HIS:hisRef></HIS:hisGloss></item>
+</list>
+</div>
+<!--Slutt på Tittelblad-->
+<div>
+<head rend="level2">ROLLELISTE</head>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_1" xml:id="koK2_1"/><HIS:hisTerm>Roderik]</HIS:hisTerm> <HIS:hisGloss>mannsnavn av gotisk opprinnelse (bl.a. navnet til
+vestgoternes siste konge i Spania, d. 711), sammensatt av
+norr. <hi rend="italic">Hróð</hi>
+‘ære, berømmelse’ og
+norr. <hi rend="italic">ríkr</hi>
+‘mektig, eller en som har makt, fyrste’.
+Formen Roderik er ikke brukt i de norrøne
+kildene, bortsett fra én mann i <title rend="italic">Landnámabók</title> som kan være av ikke-nordisk avstamning (Lind
+1905–15, sp. 594–95). Norrøn
+form er <hi rend="italic">Hrürekr</hi>. Om
+forholdet til 1850-versjonen på dette punktet
+skriver Francis Bull: <quote rend="proseIndent">En navneforandring på en av hovedpersonene er et lite varsel om Ibsens trang til realistisk å sannsynliggjøre den avsløring av forhistorien som
+utgjør dramaets hovedscene: Den fromme
+Bernhard, som før han blev kristen eremitt,
+het Audun, får nu navnet Roderik, der bare er
+en lett endring av hans gamle vikingnavn Rørek <bibl>(Bull 1928b, 251).</bibl></quote></HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_1c" xml:id="koK2_1c"/><HIS:hisTerm>Blanka]</HIS:hisTerm> <HIS:hisGloss><HIS:hisRef>jf. kommentar til <title rend="italic">Kjæmpehøien</title> 1850, <seg type="red"><ptr type="internal" target="K1ht.xml" corresp="koK1_4"/></seg></HIS:hisRef></HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_1d" xml:id="koK2_1d"/><HIS:hisTerm>Gandalf]</HIS:hisTerm> <HIS:hisGloss><HIS:hisRef>jf. kommentar til <title rend="italic">Kjæmpehøien</title> 1850, <seg type="red"><ptr type="internal" target="K1ht.xml" corresp="koK1_5"/></seg></HIS:hisRef></HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_2" xml:id="koK2_2"/><HIS:hisTerm>Søkonge]</HIS:hisTerm> <HIS:hisGloss>viking-konge, viking-høvding av
+kongeætt (norr. <hi rend="italic">sækonungr</hi>). At Gandalf, som i
+1850-versjonen var <quote>Vikingehøvding</quote>,
+nå er <quote>Søkonge</quote>,
+innebærer en litt høyere status.</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_2a" xml:id="koK2_2a"/><HIS:hisTerm>Asgaut]</HIS:hisTerm> <HIS:hisGloss><HIS:hisRef>jf. kommentar til <title rend="italic">Kjæmpehøien</title> 1850, <seg type="red"><ptr type="internal" target="K1ht.xml" corresp="koK1_6"/></seg></HIS:hisRef></HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_2b" xml:id="koK2_2b"/><HIS:hisTerm>Hrolloug]</HIS:hisTerm> <HIS:hisGloss><HIS:hisRef>jf. kommentar til <title rend="italic">Kjæmpehøien</title> 1850, <seg type="red"><ptr type="internal" target="K1ht.xml" corresp="koK1_10"/></seg></HIS:hisRef></HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_3" xml:id="koK2_3"/><HIS:hisTerm>Jostein]</HIS:hisTerm> <HIS:hisGloss>var i 1850-versjonen <quote>Merkismand</quote>; nå er han bare en av flere <quote>Vikinger</quote></HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_3a" xml:id="koK2_3a"/><HIS:hisTerm>Hemming]</HIS:hisTerm> <HIS:hisGloss><HIS:hisRef>jf. kommentar til <title rend="italic">Kjæmpehøien</title> 1850, <seg type="red"><ptr type="internal" target="K1ht.xml" corresp="koK1_7"/></seg></HIS:hisRef></HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_3b" xml:id="koK2_3b"/><HIS:hisTerm>Skjald]</HIS:hisTerm> <HIS:hisGloss>av norr. <hi rend="italic">skáld</hi> ‘dikter’. Skrivemåten <hi rend="italic">skjald</hi> var vanlig i dansk-norsk romantikk.</HIS:hisGloss></item>
+</list>
+</div>
+<!--Slutt på Rolleliste-->
+<div>
+<head rend="level2">HOVEDTEKST</head>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_53a" xml:id="koK2_53a"/><HIS:hisTerm>Bauta]</HIS:hisTerm> <HIS:hisGloss>minnesten over en avdød; av norr. <hi rend="italic">bautaðarsteinn</hi>, <hi rend="italic">bauta(r)steinn</hi>, av <hi rend="italic">bauta</hi> ‘slå, støte’, altså tilhugget sten</HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_4" xml:id="koK2_4"/><HIS:hisTerm>Aftenrødens sidste Luer]</HIS:hisTerm> <HIS:hisGloss>trokeisk firtakter i strofisk form med varierende rimskjema: <note type="metKomm"><hi rend="italic">bi 7|8 r|R</hi></note></HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_5" xml:id="koK2_5"/><HIS:hisTerm>Daler som en Due ned]</HIS:hisTerm> <HIS:hisGloss>jf. Matt 3,16: <quote>han saae Guds Aand fare ned som en Due, og komme over ham.</quote>
+</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_6" xml:id="koK2_6"/><HIS:hisTerm>Orangekrattet]</HIS:hisTerm> <HIS:hisGloss>kratt av slekten <hi rend="italic">Citrus</hi> (appelsin,
+sitron, mandarin). Appelsinen er et velkjent romantisk bilde
+på det varme og fruktbare Syden, oftest om Spania
+og Italia. At Ibsen kaller det <hi rend="italic">-krattet</hi>, er overraskende, siden
+appelsiner vokser på trær, mens <hi rend="italic">Krat</hi> forklares som skog av busker og
+småtrær, underskog, risskog hos Molbech (1859).</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_7" xml:id="koK2_7"/><HIS:hisTerm>det sjunkne Syden]</HIS:hisTerm> <HIS:hisGloss>det forfalne Syden, Sør-Europa etter
+Vestromerrikets undergang sent på 400-tallet.
+På Ibsens tid regnet man den kulturelle
+nedgangstiden helt frem til overgangen til kristen tid.</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_8" xml:id="koK2_8"/><HIS:hisTerm>Hvis jeg havde Svanehammen]</HIS:hisTerm> <HIS:hisGloss>avbrutt strofe</HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_9" xml:id="koK2_9"/><HIS:hisTerm>Svanehammen]</HIS:hisTerm> <HIS:hisGloss>Å få evnen til å fly ved
+å ta på seg en svaneham er velkjent i
+folketro. Det eldste eksemplet er de tre valkyrjene i <title rend="italic">Vǫlundarkviða</title>.
+Motivet var en del brukt i dansk romantikk; Ibsen har trolig
+sett dets utforming i Henrik Hertz’ <title rend="italic">Svanehammen : romantisk Skuespil i tre
+Acter</title> (1841).</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_10" xml:id="koK2_10"/><HIS:hisTerm>Da, hedder det, har Ragnarok forsonet]</HIS:hisTerm> <HIS:hisGloss>basisvers: femfotsjambe<HIS:hisRef>, jf. kommentar til <title rend="italic">Kjæmpehøien</title> 1850, <seg type="red"><ptr type="internal" target="K1ht.xml" corresp="koK1_13"/></seg></HIS:hisRef></HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_11" xml:id="koK2_11"/><HIS:hisTerm>Ragnarok]</HIS:hisTerm> <HIS:hisGloss><HIS:hisRef>jf. kommentar til <title rend="italic">Kjæmpehøien</title> 1850, <seg type="red"><ptr type="internal" target="K1ht.xml" corresp="koK1_14"/></seg></HIS:hisRef></HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_12" xml:id="koK2_12"/><HIS:hisTerm>Alfader]</HIS:hisTerm> <HIS:hisGloss>betegnelse for Odin. <quote>Odin befalede over dem alle; han
+var den øverste, den mægtigste Gud,
+alle Tings Opholder, derfor kaldtes han og Alfader</quote>
+<bibl>(Munch 1840, 8)</bibl>.</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_13" xml:id="koK2_13"/><HIS:hisTerm>Balder]</HIS:hisTerm> <HIS:hisGloss>norrøn gud. Skrivemåten er endret i forhold til 1850-versjonen; den moderne
+islandske <hi rend="italic">ur</hi>-endelsen (jf. <hi rend="italic">Baldur</hi>) er erstattet med en moderne
+norsk form med endelsen <hi rend="italic">-er</hi>, i tråd med
+P.A. Munchs skrivemåte <bibl>(Munch 1840)</bibl>.</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_14" xml:id="koK2_14"/><HIS:hisTerm>Freia]</HIS:hisTerm> <HIS:hisGloss>norrøn kjærlighets- og
+fruktbarhetsgudinne, kjent for sin skjønnhet.
+Andre skrivemåter i 1840-årene er <hi rend="italic">Freya</hi> og <hi rend="italic">Freyja</hi>,
+senere <hi rend="italic">Frøya</hi>.</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_15" xml:id="koK2_15"/><HIS:hisTerm>Askurs Æt]</HIS:hisTerm> <HIS:hisGloss>etterkommerne etter Ask. (<hi rend="italic">Askur</hi>: islandsk form av <hi rend="italic">Ask</hi>.) I norrøn mytologi er
+Ask og Embla det første menneskeparet. Selv om
+skrivemåten <hi rend="italic">Balder</hi> har
+erstattet <hi rend="italic">Baldur</hi> i 1854, har dette
+ikke fått følger for navneformen <hi rend="italic">Askur</hi>, som er ny i 1854-versjonen, og
+hvor den moderne norske formen er <hi rend="italic">Ask</hi>
+<bibl>(Munch 1840)</bibl>. Oehlenschläger har den
+samme islandske formen som Ibsen, jf. <quote>Askurs
+Æt</quote> i <title rend="italic">Baldur hin Gode</title>
+<bibl>(Oehlenschläger 1849, b. 1, 57)</bibl> og i
+<title rend="italic">Nordens Guder</title>
+<bibl>(trykt 1819; Oehlenschläger 1862, 179)</bibl>.</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_16" xml:id="koK2_16"/><HIS:hisTerm>nu drømmer du igjen]</HIS:hisTerm> <HIS:hisGloss><HIS:hisRef>jf. kommentar til <title rend="italic">Kjæmpehøien</title> 1850, <seg type="red"><ptr type="internal" target="K1ht.xml" corresp="koK1_18"/></seg></HIS:hisRef></HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_17" xml:id="koK2_17"/><HIS:hisTerm>Thule]</HIS:hisTerm> <HIS:hisGloss>Navnet <hi rend="italic">Thule</hi> er brukt i antikken og
+var også kjent i norrøn tid. I tiden
+omkring 1850 blir Thule vanligvis plassert innenfor
+Skandinavia, f.eks. i Norge mellom Trondheim og polarsirkelen.</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_17a" xml:id="koK2_17a"/><HIS:hisTerm>Snekke]</HIS:hisTerm> <HIS:hisGloss>lett seilfartøy, jaktskip; av norr. <hi rend="italic">snekkja</hi>. Ifølge
+<bibl>Molbech (1859)</bibl> i fornyet bruk hos diktere
+på 1800-tallet. Her brukt arkaiserende om vikingskip.</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_18" xml:id="koK2_18"/><HIS:hisTerm>gylden Fløi]</HIS:hisTerm> <HIS:hisGloss>forgylt fløy på
+vikingskip. En <hi rend="italic">fløy</hi> er en plate eller pil av
+metall eller tre, festet på stang slik at den kan
+dreie seg etter vinden. Etter at kristendommen var
+innført og vikingtiden slutt, ble
+skipsfløyer ofte satt som pynt på
+kirkespir, og flere er derfor bevart (åtte fra Norden), jf.
+<bibl>KLNM <hi rend="italic">Merke og Fløy</hi></bibl>.</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_19" xml:id="koK2_19"/><HIS:hisTerm>Kobberhjelmen]</HIS:hisTerm> <HIS:hisGloss>Det finnes ingen kobberhjelm nevnt i norrøn
+litteratur. Ibsen kan ha tenkt på Håkon
+den godes gullhjelm i slaget ved Fitjar i 960 eller 961
+(<title rend="italic">Heimskringla</title>, <title rend="italic">Håkon den godes saga</title>,
+kap. 31) og utstyrt Blankas <quote>unge Helt</quote> med en
+som ikke var fullt så prektig, men likevel
+skinnende. En annen mulighet er at Ibsen har kjent til
+oldfunn av bronsehjelmer; kobber står i eldre
+litteratur ofte for bronse, f.eks. kalles kjempen Goliats
+hjelm bronsehjelm i dagens bibelutgaver (1. Sam 17,5), mens den ble
+kalt <hi rend="italic">Kobberhjælm</hi> på 1850-tallet.</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_20" xml:id="koK2_20"/><HIS:hisTerm>Holmgang]</HIS:hisTerm> <HIS:hisGloss><HIS:hisRef>jf. kommentar til <title rend="italic">Kjæmpehøien</title> 1850, <seg type="red"><ptr type="internal" target="K1ht.xml" corresp="koK1_63"/></seg></HIS:hisRef></HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_21" xml:id="koK2_21"/><HIS:hisTerm>Ludurhornets Klang]</HIS:hisTerm> <HIS:hisGloss>klang av luren; av norr. <hi rend="italic">lúðr</hi>, nyislandsk <hi rend="italic">lúður</hi>. Formen er ikke belagt hos Oehlenschläger eller hos P.A. Munch, men
+derimot hos Henrik Hertz i diktsyklusen <title rend="italic">Tyrfing</title>
+<bibl>(trykt 1847; Hertz 1862–77, b. 4, 260)</bibl>, med motiv fra norrøn tid. Om Ibsens
+bruk av formen <hi rend="italic">-ur</hi><HIS:hisRef>, jf. kommentarer til <seg type="red"><ptr type="internal" target="K2ht.xml" corresp="koK2_13"/></seg> og <seg type="red"><ptr type="internal" target="K2ht.xml" corresp="koK2_15"/></seg></HIS:hisRef>.</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_21a" xml:id="koK2_21a"/><HIS:hisTerm>Hvo]</HIS:hisTerm> <HIS:hisGloss>nominativ form av spørrende (og relativt) substantivisk pronomen. I dativ og akkusativ <hi rend="italic">hvem</hi>, i genitiv <hi rend="italic">hvis</hi>. Bruken av nominativformen <hi rend="italic">hvo</hi> var alderdommelig allerede omkring 1850, men ble fortsatt brukt i bibelsk språk, jf. 1. Mos 3,11: <quote>hvo gav dig tilkiende, at du var nøgen?</quote> (<bibl>Molbech 1859</bibl>, under <hi rend="italic">hvo</hi> og <hi rend="italic">hvem</hi>).</HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_22" xml:id="koK2_22"/><HIS:hisTerm>Normannerne]</HIS:hisTerm> <HIS:hisGloss>nordiske vikinger som under Gange-Rolv i 911 etablerte et
+hertugdømme i Nord-Frankrike (Normandie). I eldre
+tid ble <hi rend="italic">normanner</hi> (entall) til dels
+skrevet <hi rend="italic">Nordmand</hi> og særlig
+assosiert med Norge som opphavsland.</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_23" xml:id="koK2_23"/><HIS:hisTerm>lakker]</HIS:hisTerm> <HIS:hisGloss>presens av <hi rend="italic">lakke</hi>: å gå, særlig
+gå langsomt og bedagelig. Verbet brukes
+derfor i overført betydning om en jevnt
+fremadskridende bevegelse. I nyere språkbruk, men
+ennå ikke i 1850-årene, er det mer
+vanlig å bruke uttrykket <hi rend="italic">lakke
+mot</hi> om et lengre tidsspenn (<hi rend="italic">enden</hi>, <hi rend="italic">vinteren</hi>)
+enn om tidsrommet fra morgen til kveld.</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_24" xml:id="koK2_24"/><HIS:hisTerm>fattes]</HIS:hisTerm> <HIS:hisGloss>ikke finnes, mangle (litt., bib.); her: hva er i veien med deg, hva feiler deg? (NRO)</HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_25" xml:id="koK2_25"/><HIS:hisTerm>forglemt]</HIS:hisTerm> <HIS:hisGloss>Vekslingen mellom bruk av formen <hi rend="italic">forglemt</hi> og kortformen <hi rend="italic">glemt</hi> skyldes her hensynet til
+versrytmen; det er ingen betydningsforskjell. <bibl>Molbech
+(1859)</bibl> kaller <hi rend="italic">forglemme</hi> et
+overflødig ord.</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_26" xml:id="koK2_26"/><HIS:hisTerm>baade]</HIS:hisTerm> <HIS:hisGloss>her: gagne</HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_27" xml:id="koK2_27"/><HIS:hisTerm>traske]</HIS:hisTerm> <HIS:hisGloss>ordets eldre betydning: ‘å gå med
+sterke og faste skritt’, ifølge
+<bibl>Molbech (1859)</bibl> brukt kun i dagligtale og
+mest i betydningen ‘å gå hvor
+det er sølet’, eller ‘å
+gå mye omkring’. Det er altså et
+muntlig innslag i stil med bl.a. Asgauts replikk like foran:
+<quote>Den [en rest av muren] staaer
+der sagtens endnu tænker jeg.</quote>
+</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_28" xml:id="koK2_28"/><HIS:hisTerm>Konning]</HIS:hisTerm> <HIS:hisGloss>et arkaiserende eller poetisk ord for konge, hos Ibsen bare
+brukt på 1850-tallet og i samtidig veksling med
+<hi rend="italic">Kong(e)</hi>: <quote>Kong Sigmunds
+Ætling</quote>, <quote>Konning Sigmund</quote>
+(<title rend="italic">Helge Hundingsbane</title>, ES 1,
+92), <quote>Kongehallen</quote>, <quote>Konninghallen</quote> <bibl>(ES 1, 92, 93)</bibl></HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_29" xml:id="koK2_29"/><HIS:hisTerm>Ledingsfærd]</HIS:hisTerm> <HIS:hisGloss><HIS:hisRef>jf. kommentar til <title rend="italic">Kjæmpehøien</title> 1850, <seg type="red"><ptr type="internal" target="K1ht.xml" corresp="koK1_30"/></seg></HIS:hisRef></HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_30" xml:id="koK2_30"/><HIS:hisTerm>Rov for Ravnen]</HIS:hisTerm> <HIS:hisGloss>Det er en vanlig forestilling i norrøn diktning at
+de falnes lik blir spist opp av ravner, og det ble betraktet
+som usømmelig og vanærende å
+ikke bli begravd.</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_31" xml:id="koK2_31"/><HIS:hisTerm> værer]</HIS:hisTerm> <HIS:hisGloss>imperativ flertall av <hi rend="italic">være</hi>
+</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_32" xml:id="koK2_32"/><HIS:hisTerm>Leding]</HIS:hisTerm> <HIS:hisGloss><HIS:hisRef><hi rend="italic">Ledingsfærd</hi>, jf. kommentar til <title rend="italic">Kjæmpehøien</title> 1850, <seg type="red"><ptr type="internal" target="K1ht.xml" corresp="koK1_30"/></seg></HIS:hisRef></HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_33" xml:id="koK2_33"/><HIS:hisTerm>Bretland]</HIS:hisTerm> <HIS:hisGloss>norr. betegnelse på <hi rend="italic">Britannia</hi>, især Wales og
+Cornwall. Navneformen er brukt i Oehlenschlägers
+<title rend="italic">Palnatoke</title>, <title rend="italic">Hakon Jarl</title> og <title rend="italic">Landet fundet og forsvundet</title> <bibl>(Oehlenschläger 1849, b. 3, 29, 133; b. 4, 132)</bibl>.</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_33a" xml:id="koK2_33a"/><HIS:hisTerm>Valland]</HIS:hisTerm> <HIS:hisGloss><HIS:hisRef>jf. kommentar til <title rend="italic">Kjæmpehøien</title> 1850, <seg type="red"><ptr type="internal" target="K1ht.xml" corresp="koK1_11"/></seg></HIS:hisRef></HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_34" xml:id="koK2_34"/><HIS:hisTerm>Blaaland]</HIS:hisTerm> <HIS:hisGloss>Norr. <hi rend="italic">Bláland</hi> betegner
+Etiopia og Nordvest-Afrika. I <title rend="italic">Ynglingesagaen</title> omtales <hi rend="italic">Blaaland</hi> <bibl>(Snorri Sturluson 1838–39, b. 1)</bibl>.</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_35" xml:id="koK2_35"/><HIS:hisTerm>Sikiløi]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">Sikiley</hi> er den norr. betegnelsen
+på Sicilia. I sin <title rend="italic">Heimskringla</title>-utgave oversetter Aall
+<bibl>(Snorri Sturluson 1838–39, b. 2, 30)</bibl> den med <hi rend="italic">Sicilien</hi>, men
+oppgir <hi rend="italic">Sikiley</hi> i en anmerkning.
+<bibl>Oehlenschläger (1849, b. 4, 132, 134)</bibl> skriver <hi rend="italic">Sikilei</hi> i <title rend="italic">Landet fundet og forsvundet</title>, mens han i <title rend="italic">Væringerne i Miklagard</title> har skrevet <hi rend="italic">Sicilien</hi> <bibl>(jf. Oehlenschläger 1849, b. 5, 115)</bibl>.</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_36" xml:id="koK2_36"/><HIS:hisTerm>under Stranden]</HIS:hisTerm> <HIS:hisGloss>her: i le av eller på stranden, jf. <hi rend="italic">under Ø</hi>, en mye brukt
+språkformel i folkevisene, f.eks. i den danske visen <title rend="quotes">Liden Kirsten</title></HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_37" xml:id="koK2_37"/><HIS:hisTerm>Berserkergangen]</HIS:hisTerm> <HIS:hisGloss>av norr. <hi rend="italic">berserkr</hi>, egentlig
+‘kriger kledt i bjørneskinnsskjorte’. <hi rend="italic">Berserkergangen</hi> var et slags
+raserianfall som kom over krigerne under kamp, idet de med
+høye brøl raste frem uten å
+bry seg om fiendens våpen. Hos Snorre er fenomenet
+forklart i <title rend="italic">Ynglingesagaen</title>,
+kap. 6; det forekommer også i flere
+fornaldarsagaer og dessuten i latinske middelalderkilder,
+kalt <hi rend="italic">furor berserkicus</hi> (jf. <bibl>KLNM <hi rend="italic">Berserk</hi></bibl>).</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_37a" xml:id="koK2_37a"/><HIS:hisTerm>Valhal]</HIS:hisTerm> <HIS:hisGloss>navn på stedet der krigerne havnet etter
+døden i norrøn mytologi.
+Skrivemåten her følger
+<bibl>Oehlenschläger (f.eks. 1849, b. 1,
+11)</bibl>. P.A. Munch (1840) skriver derimot Valhall.</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_38" xml:id="koK2_38"/><HIS:hisTerm>Færø]</HIS:hisTerm> <HIS:hisGloss>Vanlig skrivemåte i Ibsens samtid var <hi rend="italic">Færøerne</hi> med
+flertallsendelse, jf. f.eks. <bibl>Aall (Snorri Sturluson 1838–39, b. 1, 68)</bibl> og N.M. Petersens
+utgave av <title rend="italic">Laxdøla : Fortælling om Laxdølerne</title> <bibl>(Petersen red. 1839–44, b. 2, 52)</bibl>.</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_38a" xml:id="koK2_38a"/><HIS:hisTerm>Thi]</HIS:hisTerm> <HIS:hisGloss>derfor (av norr. <hi rend="italic">því</hi>), på
+Ibsens tid et poetisk ord. Også brukt i eldre
+rettsspråk; <hi rend="italic">thi kjennes for rett</hi>. Her fungerer ordet dessuten som en
+saga-alluderende detalj.</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_39" xml:id="koK2_39"/><HIS:hisTerm>Drage]</HIS:hisTerm> <HIS:hisGloss>langskip (hærskip) med utskåret dragehode i stavnen; av norr. <hi rend="italic">dreki</hi></HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_40" xml:id="koK2_40"/><HIS:hisTerm>Velskland]</HIS:hisTerm> <HIS:hisGloss>tilsvarer ingen norr. betegnelse, selv om adjektivet <hi rend="italic">valskr</hi> viser til det å
+være fra <hi rend="italic">Valland</hi>, eller
+det å snakke språket der, dvs. fransk.
+Her ser det imidlertid ut som om <hi rend="italic">Velskland</hi> refererer til et annet sted,
+siden <hi rend="italic">Valland</hi> er nevnt tidligere<HIS:hisRef>, jf. kommentarer til <seg type="red"><ptr type="internal" target="K1ht.xml" corresp="koK1_11"/></seg> og <seg type="red"><ptr type="internal" target="K2ht.xml" corresp="koK2_33a"/></seg></HIS:hisRef>. Oehlenschläger bruker <hi rend="italic">Velskland</hi> i <title rend="italic">Hakon
+Jarl</title> og i <title rend="italic">Landet fundet og forsvundet</title> <bibl>(Oehlenschläger 1849, b. 3, 186; b. 4, 134)</bibl>.</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_41" xml:id="koK2_41"/><HIS:hisTerm>med Ild og Sværd]</HIS:hisTerm> <HIS:hisGloss>lat. <hi rend="italic">ferro et igne</hi>. Kombinasjonen
+forekommer et utall steder i krigsskildringer i latinsk
+litteratur, som oftest i formen <hi rend="italic">igni
+ferroque</hi> eller <hi rend="italic">igni atque ferro</hi>; uttrykk for grusom og hensynsløs herjing.</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_43" xml:id="koK2_43"/><HIS:hisTerm>fuldbragt]</HIS:hisTerm> <HIS:hisGloss>Formen <hi rend="italic">fuldbragt</hi> forbindes i dag
+utelukkende med Jesu siste ord på korset (Joh
+19,30), og ordet hadde nok sterke konnotasjoner til Bibelen
+også i 1850. ODS har riktignok belegg for at
+verbet <hi rend="italic">fuldbringe</hi> brukes av flere
+forfattere utover på 1800-tallet, men gir ingen
+henvisning til at formen <hi rend="italic">fuldbragt</hi>
+brukes andre steder enn i Bibelen etter 1800. Både
+i DO 1819 og DBUB 1834 finner vi i Joh 19,30: <quote>det er
+fuldbragt</quote>, men <title rend="italic">Grimstad-bibelen</title> (<title rend="italic">Billed-Bibel for Det norske Folk</title> 1840) har <quote>det er fuldkommet</quote>.</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_43a" xml:id="koK2_43a"/><HIS:hisTerm>Gubbe]</HIS:hisTerm> <HIS:hisGloss><HIS:hisRef>jf. kommentar til <title rend="italic">Kjæmpehøien</title> 1850, <seg type="red"><ptr type="internal" target="K1ht.xml" corresp="koK1_46"/></seg></HIS:hisRef></HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_46" xml:id="koK2_46"/><HIS:hisTerm>Egebordet]</HIS:hisTerm> <HIS:hisGloss>bord av ek (lat. <hi rend="italic">Quercus</hi>); et velkjent innslag i
+nasjonalromantisk møblering av en høvdinghall, jf. Wergeland i <title rend="quotes">Brestes og Beines Drapa</title>: <quote rend="indent">
+<HIS:hisLg>
+<l>To mørke Guder bag Egebord,</l>
+<l>hvergang Ilden blusser, træde:</l>
+<l>Odin det er og Asathor,</l>
+<l>som staae ved Husbondens Sæde.</l>
+</HIS:hisLg>
+<bibl>(H. Wergeland 1918–40, del 1, b. 1, 52)</bibl>
+</quote>
+Likeså hos Welhaven i <title rend="quotes">En norsk Alpedal</title> <bibl>(Welhaven 1990–92, b. 1, 280)</bibl>: <quote>Nu drøned i Egebordet / et drabelig Næveslag</quote> (under en diskusjon mellom kristendommens og hedenskapets tilhengere).</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_46a" xml:id="koK2_46a"/><HIS:hisTerm>Munkekutten]</HIS:hisTerm> <HIS:hisGloss>en munks ordensdrakt (ev. kappe) med hette <bibl>(ODS)</bibl>; av ty. <hi rend="italic">kutte</hi> ‘kappe for geistlig person’</HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_47" xml:id="koK2_47"/><HIS:hisTerm>muggen]</HIS:hisTerm> <HIS:hisGloss>fordervet (i smak og lukt) av fuktighet og skimmel <bibl>(Molbech 1859)</bibl>. I artikkelen <title rend="quotes">Broderlandets servile Presse</title> i <title rend="italic">Andhrimner</title> (13. juli 1851) nevner Ibsen <quote>det svenske mugne Adelsaristokrati</quote> <bibl>(Ibsen 1851a; HU 15, 85–86)</bibl>.</HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_48" xml:id="koK2_48"/><HIS:hisTerm>Held mig]</HIS:hisTerm> <HIS:hisGloss>Jeg er heldig (arkaisk hos Ibsen). Av form
+er <hi rend="italic">Held mig</hi> en dativkonstruksjon og
+<hi rend="italic">Held</hi> et substantiv, mens <hi rend="italic">heill</hi> i det tilsvarende
+norrøne uttrykket <hi rend="italic">heill þú</hi> er adjektiv. Det svarer til
+ty. <hi rend="italic">Heil (sei) dir</hi> <bibl>(Falk &amp; Torp 1900, 25)</bibl>.</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_48a" xml:id="koK2_48a"/><HIS:hisTerm>Asathor]</HIS:hisTerm> <HIS:hisGloss>betegnelse på guden Tor, der
+førsteleddet er det norr. <hi rend="italic">áss</hi> i genitiv flertall.
+Betegnelsen er ikke brukt av P.A. Munch 1840, men brukes i
+<title rend="italic">Hárbarðsljóð</title>
+<bibl>(<title rend="italic">Den ældre
+Edda</title> 1847, 54)</bibl>, og forekommer
+også i flere av Oehlenschlägers verk,
+deriblant <title rend="italic">Asa-Thor</title> i <title rend="italic">Nordens Guder</title>
+<bibl>(Oehlenschläger 1862, 41, 286)</bibl>.</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_49" xml:id="koK2_49"/><HIS:hisTerm>Mjølner]</HIS:hisTerm> <HIS:hisGloss>guden Tors hammer. Denne skrivemåten forekommer også hos <bibl>Munch (1840, 12)</bibl>, mens Oehlenschläger gjennomgående skriver <hi rend="italic">Miølnir</hi>.</HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_50" xml:id="koK2_50"/><HIS:hisTerm>Meeldug]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">meldugg</hi> (bot. <hi rend="italic">Erisibaceae</hi>); sopp som angriper planter. Et hvitt belegg som ligner mel og legger seg på planter og ødelegger dem <bibl>(Molbech 1859)</bibl>.</HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_51" xml:id="koK2_51"/><HIS:hisTerm>billigt]</HIS:hisTerm> <HIS:hisGloss>her: passende, rett og rimelig; <quote>At giøre, hvad ret og billigt er</quote> <bibl>(Molbech 1859)</bibl></HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_51a" xml:id="koK2_51a"/><HIS:hisTerm>Arneflammen]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">arne</hi>: åpent ildsted (foreldet eller poetisk)(ODS)</HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_51b" xml:id="koK2_51b"/><HIS:hisTerm>Thor]</HIS:hisTerm> <HIS:hisGloss>norrøn gud. Skrivemåten var den vanlige i Ibsens samtid.</HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_51c" xml:id="koK2_51c"/><HIS:hisTerm>Førstegrøden]</HIS:hisTerm> <HIS:hisGloss>den første avlingen som høstes inn <bibl>(NRO)</bibl></HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_52" xml:id="koK2_52"/><HIS:hisTerm>Kjærminder]</HIS:hisTerm> <HIS:hisGloss>også kalt <hi rend="italic">forglemmegei</hi> (bot. <hi rend="italic">Myosotis palustris</hi>); <quote>særlig brukt som symbol på det uskyldsrene, på (barndommens) uskyldighet ell. lign.</quote> (NRO). Brukt av Wergeland, Welhaven, Andreas Munch, også brukt av Ibsen i <title rend="italic">Catilina</title> 1850 <HIS:hisRef>(<seg type="red"><ptr type="ht" target="C1ht.xml" corresp="koC1_ht_2"/></seg>)</HIS:hisRef>,<HIS:hisRef> jf. kommentar til <title rend="italic">Catilina</title> 1850, <seg type="red"><ptr type="internal" target="C1ht.xml" corresp="koC1_181"/></seg></HIS:hisRef>. Blomsternavnet <hi rend="italic">kærminde</hi> ble innført i Danmark 1793 som erstatning for oversettelseslånet (fra ty.) <hi rend="italic">forglemmigei</hi>, og slo straks igjennom i poesien. Oehlenschläger benytter det allerede i <title rend="italic">Aladdin</title> (1803) og senere i <title rend="italic">Hakon Jarl</title> (1807) <bibl>(Brøndegaard 1987, b. 4, 82)</bibl>. I blomsterspråket som ble utviklet mot slutten av 1700-tallet, er blått et symbol for troskap, og blomsten <hi rend="italic">Myosotis</hi> står for håpet om ikke å bli glemt. <quote>Man har opfattet blomsten som symbol på troskab, og den anvendes vel endnu [1885] som troskabens pant og som lønligt bud mellem elskende hjerter</quote> <bibl>(Brøndegaard 1987, b. 4, 81)</bibl>.</HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_53" xml:id="koK2_53"/><HIS:hisTerm>hun stiger op paa Høien, hænger Krandsen over Bautastenen]</HIS:hisTerm> <HIS:hisGloss>jf. Oehlenschlägers <title rend="italic">Hakon Jarl</title> (1807), første akt, scenen
+med Gudrun i offerlunden med de tolv gudebildene: <quote>Hun stiger op paa Foden af Billedstøtten og sætter Krandsen paa Freyas Hoved</quote> <bibl>(Oehlenschläger 1849, b. 3, 123)</bibl>. I begge skuespillene er dette scenen hvor helten og heltinnen møtes for første gang.</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_54" xml:id="koK2_54"/><HIS:hisTerm>Kongestol]</HIS:hisTerm> <HIS:hisGloss>trone. Ordet er særlig godt kjent
+fra Georg Sverdrups tale i riksforsamlingen på
+Eidsvoll 17. mai 1814. Etter avstemningen om kongevalget
+<quote>udbrød Presidenten omtrent saaledes:
+‘Opreist er igjen Norges gamle Kongestoel,
+hvorpaa Adelstener og Sverrer styrede gamle Norge med
+Viisdom og Kraft. Gud bevare gamle Norge!’</quote> <bibl>(N. Wergeland 1830, 132)</bibl>.</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_55" xml:id="koK2_55"/><HIS:hisTerm>Egekrandsen]</HIS:hisTerm> <HIS:hisGloss>krans av ekeløv; den
+synes her å være brukt av Blanka som
+vanlig pynt, men den er bedre kjent som utmerkelse. Eken
+(<hi rend="italic">Quercus</hi>) ble under antikken
+ansett som viet til Zevs/Jupiter, som tilkjennegav sin vilje gjennom suset fra ekeløvet i lunden
+Dodona. Kranser av ekeløv ble tegn på
+de italienske herskernes verdighet; senere et symbol
+på borgerdyd. Eken kan også symbolisere
+evighet og udødelighet. Mot slutten av
+1700-tallet ble det utviklet et eget
+blomsterspråk, som fikk ny aktualitet i
+biedermeier-perioden. Ekeløv hadde i dette
+tegnsystemet betydningen ‘dydens og sedelighetens krone’
+<bibl>(Biedermann 1991)</bibl>. I <title rend="quotes">Prolog ved Studentersamfundets Aftenunderholdning for Det norske Theater i Bergen</title> (15. oktober 1851) lar Ibsen betydninger som borgerdyd og verdighet spille med: <quote rend="indent">
+<HIS:hisLg>
+<l>Det [Folket] havde ei som før en Egekrands</l>
+<l>At slynge taksomt om sin Digters Tinding.</l>
+</HIS:hisLg>
+</quote>
+</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_56" xml:id="koK2_56"/><HIS:hisTerm>Blodhævn]</HIS:hisTerm> <HIS:hisGloss><quote>drap til hevn på drap (øvet av
+den dreptes slektninger på drapsmannen selv
+ell. på en av hans slektninger)</quote> (NRO).
+Som praksis er blodhevn eldgammelt, men ordet regnes som en
+oversettelse av ty. <hi rend="italic">Blutrache</hi>,
+dannet til Luthers ord <hi rend="italic">Bluträcher</hi>
+<bibl>(jf. KLNM <hi rend="italic">Hämnd</hi>)</bibl>.</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_56a" xml:id="koK2_56a"/><HIS:hisTerm>Fast]</HIS:hisTerm> <HIS:hisGloss>nesten (foreldet)</HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_57" xml:id="koK2_57"/><HIS:hisTerm>bede for Din Avindsmand]</HIS:hisTerm> <HIS:hisGloss><HIS:hisRef>jf. kommentar til <title rend="italic">Kjæmpehøien</title> 1850, <seg type="red"><ptr type="internal" target="K1ht.xml" corresp="koK1_58"/></seg></HIS:hisRef></HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_57a" xml:id="koK2_57a"/><HIS:hisTerm>Avindsmand]</HIS:hisTerm> <HIS:hisGloss>fiende; <hi rend="italic">avind</hi>: nag, hat (nå foreldet); av norr. <hi rend="italic">ofundr</hi></HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_58" xml:id="koK2_58"/><HIS:hisTerm>Straadød]</HIS:hisTerm> <HIS:hisGloss>dø på sotteseng, dvs. ikke i kamp (av norr. <hi rend="italic">verða strádauða</hi>). Ifølge norrøn tro ville den som døde slik, ikke komme til Odin i Valhall.</HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_59" xml:id="koK2_59"/><HIS:hisTerm>Valfader]</HIS:hisTerm> <HIS:hisGloss>navn på Odin, norr. <hi rend="italic">Valfǫðr</hi> ‘de falnes far’; brukt i <title rend="italic">Vǫluspá</title> og <title rend="italic">Grímnismál</title> (jf. <bibl><title rend="italic">Den ældre Edda</title> 1847, 32</bibl>) og forklart av Snorre i <title rend="italic">Gylfaginning</title>. Munch (1840) har ikke betegnelsen, mens Oehlenschläger har skrivemåtene <hi rend="italic">Valfader(s)</hi> og <hi rend="italic">Valfaudur</hi> i tragedien <title rend="italic">Baldur hin Gode</title> <bibl>(Oehlenschläger 1849, b. 1, 13, 24)</bibl>.</HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_60" xml:id="koK2_60"/><HIS:hisTerm>Han er borte! Lydløst Stille]</HIS:hisTerm> <HIS:hisGloss>trokeisk firtakter i strofisk form med varierende rimskjema: <note type="metKomm"><hi rend="italic">bi 7|8 r|R</hi></note></HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_61" xml:id="koK2_61"/><HIS:hisTerm>Ha! hvad var det! Et Horn, det kom fra Skoven]</HIS:hisTerm> <HIS:hisGloss>femfotsjambe<HIS:hisRef>, jf. kommentar til <title rend="italic">Kjæmpehøien</title> 1850, <seg type="red"><ptr type="internal" target="K1ht.xml" corresp="koK1_13"/></seg></HIS:hisRef></HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_63" xml:id="koK2_63"/><HIS:hisTerm>Blodmand]</HIS:hisTerm> <HIS:hisGloss>blodtørstig mann, dessuten ‘blotmann, avgudsdyrker’, jf. ODS med belegg fra Oehlenschlägers <title rend="italic">Hakon Jarl</title> <bibl>(Oehlenschläger 1849, b. 3, 220, 236)</bibl>. Brukt av Ibsen også i <title rend="italic">Catilina</title> 1850<HIS:hisRef> (<seg type="red"><ptr type="ht" target="C1ht.xml" corresp="koC1_ht_1"/></seg>)</HIS:hisRef>.</HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_63a" xml:id="koK2_63a"/><HIS:hisTerm>Hel]</HIS:hisTerm> <HIS:hisGloss>i norrøn folketro både
+dødsriket og dødsgudinnen <bibl>(jf. Munch 1840, 39)</bibl></HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_64" xml:id="koK2_64"/><HIS:hisTerm>Kvindens glatte Tunge]</HIS:hisTerm> <HIS:hisGloss><quote>sledsk, smigrende […] At have en glat Tunge</quote> <bibl>(Molbech 1859</bibl> <hi rend="italic">Glat</hi> 3b). Jf. <title rend="italic">Billed-Bibel for Det norske Folk</title> (<title rend="italic">Grimstad-bibelen</title>), Ordsp 6,24: <quote>Paa det at du skal forsvares fra den onde Quinde, fra den Fremmedes glatte Tunge.</quote>
+</HIS:hisGloss></item></list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_65" xml:id="koK2_65"/><HIS:hisTerm>Hvermands Nidding]</HIS:hisTerm> <HIS:hisGloss>norr. <hi rend="italic">verða hvers manns niðing</hi> ‘bli gjenstand for alle menneskers forakt’ (på grunn av skammelig oppførsel) (NRO <hi rend="italic">niding</hi>)</HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_66" xml:id="koK2_66"/><HIS:hisTerm>Skjoldmø]</HIS:hisTerm> <HIS:hisGloss>ugift kvinne (særlig i vikingtiden) som bar våpen og deltok i kamp (NRO); norr. <hi rend="italic">skjaldmær</hi></HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_67" xml:id="koK2_67"/><HIS:hisTerm>høilagt]</HIS:hisTerm> <HIS:hisGloss>hauglagt, ærefullt begravd i en gravhaug</HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_68" xml:id="koK2_68"/><HIS:hisTerm>I holde]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">holde</hi>: imperativ flertall av verbet <hi rend="italic">holde</hi>; med foranstilt pronomen er endelsen ikke <hi rend="italic">-er</hi>, men <hi rend="italic">-e</hi>.<HIS:hisRef> Jf. kommentar til <seg type="red"><ptr type="internal" target="K2ht.xml" corresp="koK2_31"/></seg></HIS:hisRef>.</HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_69" xml:id="koK2_69"/><HIS:hisTerm>Paa Fortids Viis]</HIS:hisTerm> <HIS:hisGloss><HIS:hisRef>jf. kommentar til <title rend="italic">Kjæmpehøien</title> 1850, <seg type="red"><ptr type="internal" target="K1ht.xml" corresp="koK1_89"/></seg></HIS:hisRef></HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_70" xml:id="koK2_70"/><HIS:hisTerm>koglet]</HIS:hisTerm> <HIS:hisGloss>av ty. <hi rend="italic">gaukeln</hi>, jf. norr. <hi rend="italic">kukl</hi>, som i <hi rend="italic">kuklaraskapr</hi> ‘blendverk, synkverving, trollskap’, som ifølge <bibl>Molbech (1859)</bibl> vil si å <quote>frembringe Blendværk eller Giøgleri ved legemlig Hændighed og skiulte Konster; forblinde (fortrylle) ved slige Konster</quote>. Ordet er nå foreldet, og ble mest brukt poetisk, bl.a. av Welhaven. Hos Ibsen forekommer det hyppigst i de tidlige dramaene.</HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_71" xml:id="koK2_71"/><HIS:hisTerm>mit Kald … vort Kjæmpeliv]</HIS:hisTerm> <HIS:hisGloss>I 1850-utgaven er begrepet <hi rend="italic">kall</hi> knyttet til <quote>Qvindens Lod paa Jorden</quote>; i 1854-utgaven er dette endret, og <hi rend="italic">kall</hi> er i stedet brukt om Gandalfs særskilte oppgave<HIS:hisRef> (jf. kommentar til <title rend="italic">Kjæmpehøien</title> 1850, <seg type="red"><ptr type="internal" target="K1ht.xml" corresp="koK1_102"/></seg>)</HIS:hisRef>.</HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_72" xml:id="koK2_72"/><HIS:hisTerm>Rørek]</HIS:hisTerm> <HIS:hisGloss>en form av <hi rend="italic">Roderik</hi><HIS:hisRef>, jf. kommentar til <seg type="red"><ptr type="internal" target="K2ht.xml" corresp="koK2_1"/></seg></HIS:hisRef>. En hirdmann i Oehlenschlägers <title rend="italic">Amleth</title> (1847) har navnet <hi rend="italic">Rørik</hi>.</HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_73" xml:id="koK2_73"/><HIS:hisTerm>de sjunkne Tider]</HIS:hisTerm> <HIS:hisGloss>referanse til vikingtiden, som Roderik mener vil gå i graven med ham; tilsvarende betydning som <hi rend="italic">det sjunkne Syden</hi><HIS:hisRef>, jf. kommentar til <seg type="red"><ptr type="internal" target="K2ht.xml" corresp="koK2_7"/></seg></HIS:hisRef></HIS:hisGloss></item>
+</list>
+<list type="commentary">
+<item><ptr type="lemma" target="K2ht.xml" corresp="koK2_74" xml:id="koK2_74"/><HIS:hisTerm>Idavold]</HIS:hisTerm> <HIS:hisGloss>sletten der gudene (ifølge <title rend="italic">Vǫluspá</title>) levde
+lykkelig og spilte tavl i <hi rend="italic">gullalderen</hi>, og der de igjen skal samles
+på den nye jorden, etter ragnarok.
+Skrivemåten med norr. <hi rend="italic">a</hi>-genitiv (<hi rend="italic">Ida-Slette</hi>) er også brukt av
+Oehlenschläger i <title rend="quotes">Volas
+Spaadom</title>, <title rend="italic">Nordens
+Guder</title> <bibl>(Oehlenschläger 1862)</bibl>, mens <bibl>Munch (1840,
+8)</bibl> har <hi rend="italic">Ide-Volden</hi> og <hi rend="italic">Ide-Sletten</hi>.</HIS:hisGloss></item></list>
+</div>
+<!--Slutt på hovedtekst-->
+</div>
+</body>
+</text>
+</TEI>

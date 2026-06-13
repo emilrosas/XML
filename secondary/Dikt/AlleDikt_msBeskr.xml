@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Henrik Ibsens skrifter. elektronisk versjon</title>
+        <title>Manuskriptbeskrivelser til hvert enkelt dikt</title>
+        <funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+        <editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
+        <respStmt>
+          <resp>Innlemming i elektronisk utgave</resp>
+          <name>EDD: Eining for digital dokumentasjon</name></respStmt>
+          <respStmt><resp>Kodeteknisk støtte og utvikling</resp>
+          <name>AKSIS: Avdeling for kultur, språk og informasjonsteknologi, Universitetsforskning i Bergen (Unifob AS)</name></respStmt>
+          <respStmt><resp>HISe-koding</resp>
+          <name xml:id="SBT">Stine Brenna Taugbøl</name></respStmt>
+          <respStmt><resp>Koding</resp>
+          <name xml:id="GMS">Gaute M. Sortland</name>
+          <name xml:id="AMB">Aasta Marie Bjorvand Bjørkøy</name></respStmt>
+          <respStmt><resp>Tekstarbeid</resp>
+          <name>Aasta Marie Bjorvand Bjørkøy</name>
+          <name>Maria Alnæs</name>
+          <name>Gaute M. Sortland</name></respStmt>
+          <respStmt><resp>Kontroll av sitater og ordbøker</resp>
+          <name xml:id="IK">Ingrid Korvald</name>
+          <name>Aasta Marie Bjorvand Bjørkøy</name>
+          <name>Maria Alnæs</name></respStmt>
+          <respStmt><resp>Kontroll av littlist og referanser</resp>
+          <name xml:id="AH">Anette Hjerde</name>
+          <name>Gaute M. Sortland</name>
+          <name>Aasta Marie Bjorvand Bjørkøy</name>
+          <name>Maria Alnæs</name>
+          <name xml:id="EL">Erlend Lønnum</name></respStmt>
+          <respStmt><resp>Kommentar-, intern- og ht-entiteter</resp>
+          <name>Aasta Marie Bjorvand Bjørkøy</name>
+          <name>Gaute M. Sortland</name></respStmt>
+          <respStmt><resp>Kodekontroll</resp>
+          <name>Aasta Marie Bjorvand Bjørkøy</name>
+          <name>Gaute M. Sortland</name>
+        </respStmt>
+      </titleStmt>
+<publicationStmt>
+ <publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+        <distributor xml:id="HISe">Universitetet i Oslo</distributor>
+        <date when="2010" xml:id="HISe-date"/>
+ <pubPlace>Oslo</pubPlace>
+      </publicationStmt>
+      <sourceDesc>
+ <p>Filen bygger på 11k_sisteversjon.xml.</p>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <tagsDecl>
+      </tagsDecl>
+    </encodingDesc>
+<profileDesc>
+      <langUsage>
+        <language ident="nob"/>
+        <language ident="dut"/>
+        <language ident="cze"/>
+        <language ident="ger"/>
+        <language ident="fre"/>
+        <language ident="ice"/>
+        <language ident="eng"/>
+        <language ident="ita"/>
+        <language ident="spa"/>
+        <language ident="swe"/>
+        <language ident="scc"/>
+        <language ident="rus"/>
+        <language ident="por"/>
+        <language ident="hun"/>
+        <language ident="pol"/>
+        <language ident="fin"/>
+        <language ident="jpn"/>
+        <language ident="ukr"/>
+        <language ident="bul"/>
+        <language ident="rum"/>
+        <language ident="scr"/>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change><date>07.09.2011</date>
+        <name>SBT</name><title>TEI P5</title>
+        Endret fra P4 til P5.</change>
+      <change><date>22.12.2010</date>
+        <name>SBT</name><title>Omkoding</title>
+        Kodet om overskrifter for HISe.</change>
+      <change><date>09.12.2010</date>
+            <name>SBT</name><title>Splitting</title>
+            Denne fila inneholder manuskriptbeskrivelser til enkelte dikt (ikke diktsamlinger).</change>
+        <change><date>24.11.2010</date>
+        <name>SBT</name><title>Validering</title>
+        Fjernet ref til files og figures i dokumenttoppen. La manuskriptregisteret over i en egen fil! Fila er valid.</change>
+      <change><date>13.09.2010</date>
+    <name>SBT</name><title>dokumentforfatter</title>
+    La inn dokumentforfatter etter hovedoverskrift. NB: vurder om dokumentet bør deles i to, eller om forfatterne bør stå under hver sin del!</change>
+      <change>
+      <date>16.07.2010</date>
+        <name>SBT</name><title>Validering</title>
+        Får feilmeldinger på lenkene fra manuskriptregisteret til tekstredegjørelsene som nå ligger i en annen fil. Vurder om registeret skal legges i en egen fil; må ev. endre lenkene da.</change>
+      <change>
+        <date>15.07.2010</date>
+        <name>SBT</name><title>Opprettet xml-fil</title>
+        Skilte ut manuskriptbeskrivelsene til diktbindet i en egen fil. Har lagt inn opplysninger vedr HISe i teiHeader. Har foreløpig latt rend-attr. og bokstavtyper (majuskler/minuskler/kapiteler) i overskriftene stå; dette er endret i Ge. Samkjør! Er nå mest stemt for å beholde mest mulig av bokutgaveoppsettet. Det er mulig at fila bør deles opp i mindre deler: Digte, Blandede Digtninger, enkeltdikt. Forfattere av manuskriptbeskrivelsene bør vel også hentes inn. MANUSKRIPTREGISTRET NEDERST I DOKUMENTET BØR KANSKJE VÆRE I EN EGEN FIL?
+      </change>
+    </revisionDesc>
+  </teiHeader>
+
+<text type="msBeskr" xml:id="Dikt_msBeskr">
+<body>
+<div type="msDescription">
+<head rend="level1">MANUSKRIPTBESKRIVELSER FOR DE ENKELTE DIKTENE (IKKE DIKTSAMLINGER)</head>
+<byline><docAuthor>Mette Refslund Witting</docAuthor></byline>
+    
+<div type="filRedMsDescription">
+<p rend="noIndent">For å få et fullstendig overblikk over det enkelte dikts manuskripthistorie, bør både de følgende manuskriptbeskrivelsene og beskrivelsen ovenfor av manuskriptet <title rend="italic">Blandede Digtninger</title> og manuskriptene til samlingen <title rend="italic">Digte</title> konsulteres. Flere av Ibsens dikt har en historie både som selvstendig publisert tekst med tilhørende manuskripter og som del av de to samlingene, og vil derfor være behandlet to steder. Ett eksempel: <title rend="quotes">Paa Vidderne</title> ble publisert i 1862, og vi kjenner én manuskriptkilde fra denne tiden. Denne er behandlet nedenfor under de enkeltvis ordnede manuskriptbeskrivelsene. Senere ble diktet tatt opp i <title rend="italic">Digte</title> (1871), og manuskriptbeskrivelsen til denne samlingen inneholder diktets videre historie (som ikke-egenhendig avskrift og trykkmanuskript). I tekstredegjørelsene (under <hi rend="italic">Tekstgrunnlag og øvrige tekstkilder</hi>) er det i alle tilfeller opplyst om diktet også tilhører samlingsmanuskriptene, slik at man derfra vil bli henvist til å oppsøke diktets eventuelle, videre historie. Forskjellene mellom de ulike versjonene er i store trekk omtalt i manuskriptbeskrivelsene og under <hi rend="italic">Tekstgrunnlag og øvrige tekstkilder</hi>, men sees best i sine detaljer ved direkte sammenligning av tekstene i HISe og/eller ved hjelp av variantapparatene der.</p>
+
+<div>
+<head rend="level2">ENKELTDIKT 1844–50</head>
+
+<div>
+<head rend="level4">sigurd von finkelbech’s gravsted</head>
+<div type="msDescriptionPart" xml:id="DSigFinkelbechsGrav3848_Ms">
+<p><hi rend="italic">NBO Ms. fol.3848 (fotografi av egenhendig renskrevet manuskript). «Sigurd von Finkelbech’s / Gravsted.»</hi> Manuskriptet er beskrevet på grunnlag av fotografiet. Det har én side tekst. Over hovedtittelen har Ibsen tegnet et gravsted med en vintønne som gravsten (jf. HU 14, 11–13; Mohr 1953, 20, 73). Av kopien ser det ut til at manuskriptet er i ganske dårlig stand. Det har vært brettet og er senere reparert med limbånd. Det er misfarvet, har flekker og en fuktskade i nedre kant. Skadene etter brettene berører teksten og har følger for lesbarheten flere steder. Manuskriptet må være skrevet med blekk, og skriften er høyrehellende og omhyggelig. Deltitlene i diktet er understreket. Nederst er det en utydelig påskrift, trolig eieropplysninger. På langs i venstre marg har en ukjent hånd skrevet et dikt, sannsynligvis med blyant, med tittelen «Den sidste Bøn». Fotografiet tilhører Nasjonalbiblioteket, Oslo; det ble tatt i 1977 av originalen som da var i privat eie. Originalen er nå tapt. Ved fotograferingen ble originalens mål oppgitt: 210 × 330 mm.</p>
+</div>
+</div>
+</div>
+
+<div>
+<head rend="level2">DIKT SOM INNGÅR I BLANDEDE DIGTNINGER</head>
+
+<div>
+<head rend="level4">til stjernen</head>
+<div type="msDescriptionPart" xml:id="BlaDigtTilStjernenIbsenhuset_Ms">
+<p><hi rend="italic">Ibsen-museet i Grimstad. «Til Stjernen.»</hi> Egenhendig signert, renskrevet manuskript. Manuskriptet består av ett dobbeltblad med tekst på de to første sider. Manuskriptet har vært brettet, er noe misfarvet og har flekker og andre skader, uten følger for teksten. Papiret er gråaktig med bunn- og kjedelinjer og med del av et uidentifisert vannmerke. Siden måler 100 × 165 mm. Manuskriptet er skrevet med blekk; skriftbildet er mørkebrunt. Skriften er høyrehellende og omhyggelig. Tittelen har enkel understrekning, og etter diktet er det satt en pyntestrek. Manuskriptet tilhører Ibsen-museet i Grimstad.</p>
+</div>
+<div type="msDescriptionPart" xml:id="BlaDigt8191TilStjernen_200">
+<p><hi rend="italic">NBO Brevs. 200, varia. Uten tittel.</hi>
+Avskrift i ukjent hånd med underskrift som kanskje er Ibsens egenhendige. Manuskriptet består av ett blad med tekst på begge sider. Manuskriptet har betydelige skader som berører teksten, uten følger for lesbarheten. Papiret er forholdsvis tynt. Siden måler 153 × 190 mm. Både diktet og underskriften er skrevet med blekk; skriftbildet er brunt. Skriften i diktet er gotisk og omhyggelig. Underskriften er nesten rettstående og noe skjødesløs. Bibliotekets stempel og katalogsignatur finnes på versosiden. Manuskriptet tilhører Nasjonalbiblioteket, Oslo; trolig mottatt i 1949 som gave fra Bergliot Ibsen.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">i natten</head>
+<div type="msDescriptionPart" xml:id="BlaDigtINattenIbsenhuset_Ms">
+<p><hi rend="italic">Ibsen-museet i Grimstad. «I Natten.»</hi> Egenhendig renskrevet manuskript, sendt sammen med flere dikt til Clara Ebbell rundt nyttår 1850/51, jf. HIS 12, 43. Manuskriptet består av ett dobbeltblad med dikttekst på alle fire sider. Diktet «I Natten» dekker dobbeltbladets første side. På de neste sider står diktene «Fugl og Fuglefænger» (jf. «Fugl og Fuglefænger.», Ibsen-museet i Grimstad og «Bjergmanden» (jf. «Bjergmanden.»), Ibsen-museet i Grimstad). Manuskriptet har vært brettet, er noe misfarvet og har flekker og andre skader, uten følger for teksten. Papiret er blåaktig med et blindstempel med teksten «BATH» i øvre høyre hjørne på dobbeltbladets første side. Siden måler 134 × 214 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Tittelen har enkel understrekning. Skriften er høyrehellende og omhyggelig. Manuskriptet tilhører Ibsen-museet i Grimstad.</p>
+</div>
+<div type="msDescriptionPart" xml:id="BlaDigtINatten365_Ms">
+<p><hi rend="italic">UBiT Ms Oct. 365. «I Natten.»</hi> Egenhendig renskrevet manuskript, signert «Brynjolf Bjarme». Manuskriptet består av ett blad med tekst på begge sider. Manuskriptet har vært brettet, er misfarvet, har skrukker, flekker og rifter i kantene. Midt på første tekstside er det en markant flekk som berører teksten, uten følger for lesbarheten. Høyre kant sett fra første tekstside er beskåret, og nedre kant er ujevn. Papiret er gulaktig med bunn- og kjedelinjer og med del av et uidentifisert vannmerke. Siden måler ca. 164 × 191 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er høyrehellende og omhyggelig. Tittelen har enkel understrekning. Bibliotekets stempel finnes på rectosiden, og på versosiden finnes Det Kongelige Norske Videnskabers Selskabs stempler, samt henvisning til hvor diktet er trykt. Manuskriptet tilhører Gunnerusbiblioteket, Universitetsbiblioteket i Trondheim, Thorvald Boecks brev- og autografsamling, som ble kjøpt fra Boeck i 1899.</p>
+</div>
+<div type="msDescriptionPart" xml:id="BlaDigtINattenSamfBlAvskrift_Ms">
+<p><hi rend="italic">RAO PA 1322 Det Norske Studentersamfund, serie Xa Samfundsbladet, nr. 6, 25. oktober 1850. «I Natten.»</hi> Avskrift i ukjent hånd i <title rend="italic">Samfundsbladet</title> (håndskreven avis). Diktet står på versosiden av et blad og slutter på neste blads rectoside. På versosiden av det siste bladet begynner diktet «Stemmer fra Skoven», skrevet av samme hånd (jf. «Stemmer fra Skoven.», RAO PA 1322 Det Norske Studentersamfund, serie Xa Samfundsbladet, nr. 6, 25. oktober 1850). Papiret er gulaktig og kraftig. Avskriften er skrevet med blekk; skriftbildet er blått. Skriften er gotisk og tydelig. Manuskriptet tilhører Riksarkivet, Oslo; Det Norske Studentersamfunds arkiv ble overført dit i 2002.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">maaneskinsstemning</head>
+<div type="msDescriptionPart" xml:id="BlaDigt8191Maaneskinsstemning_3214">
+<p><hi rend="italic">NBO Ms. fol.3214. «Maaneskinsstemning.»</hi> Egenhendig signert, renskrevet manuskript. Manuskriptet består av ett dobbeltblad med tekst på første side. Manuskriptet har vært brettet og er senere reparert i brettene med gjennomsiktige papirstrimler. Det er stedvis misfarvet, har skrukker og andre skader som berører teksten, uten følger for lesbarheten. Papiret er blåaktig og forholdsvis tynt. Siden måler 104 × 145 mm. Manuskriptet er skrevet med blekk; skriftbildet er mørkebrunt. Skriften er høyrehellende og omhyggelig. Tittelen har dobbel understrekning utført med linjal. Teksten er rammet inn med en enkel strek. Bibliotekets stempel og katalogsignatur finnes på s. [4]. Manuskriptet tilhører Nasjonalbiblioteket, Oslo; mottatt i 1968 som testamentarisk gave fra h.r.advokat Jonas Skougaard (jf. Tunold 1969 og 1972).</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">maaneskinsvandring efter et bal</head>
+<div type="msDescriptionPart" xml:id="BlaDigt8191MaaneskinsvandEftBal_3215">
+<p><hi rend="italic">NBO Ms. fol.3215. «Maaneskinsvandring / efter / et Bal.»</hi> Egenhendig signert, renskrevet manuskript. Manuskriptet består av ett dobbeltblad med tekst på første side. Manuskriptet har vært sendt som brev til Sophie Holst og er datert 12. april 1850. Manuskriptet har vært brettet og er senere reparert i brettene med gjennomsiktige papirstrimler. Det er stedvis misfarvet og har andre skader som berører teksten, uten følger for lesbarheten. Papiret er gråblåaktig og forholdsvis tynt. Siden måler 137 × 213 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er høyrehellende og omhyggelig. Bibliotekets stempel og katalogsignatur finnes på s. [4]. Manuskriptet tilhører Nasjonalbiblioteket, Oslo; mottatt i 1968 som testamentarisk gave fra h.r.advokat Jonas Skougaard (jf. Tunold 1969 og 1972).</p>
+</div>
+<div type="msDescriptionPart" xml:id="BlaDigt8191MaaneskinsvandEftBal_39">
+<p><hi rend="italic">NBO Brevs. 39, brev fra Henrik Ibsen til Cathrine Martini (fotokopi av egenhendig signert, renskrevet manuskript). «Maaneskinsvandring / efter / et Bal.»</hi> Manuskriptet er beskrevet på grunnlag av kopien. Det har én side tekst. Manuskriptet har vært sendt som brev og er datert 12. april 1850, jf. HIS 12, 42. Manuskriptet har vært brettet og har skader og flekker som berører teksten, uten følger for lesbarheten. På kopien måler siden ca. 108 × 135 mm. Skriften er høyrehellende og omhyggelig. Kopien har bibliotekets stempel og katalogsignatur på baksiden. Kopien tilhører Nasjonalbiblioteket, Oslo; mottatt i 1974 fra Cappelens antikvariat, Oslo. Originalen har tilhørt redaktør Olav Myre; deler av hans bibliotek ble solgt på Cappelens auksjon 6.–7. mai 1974.</p>
+</div>
+</div>
+</div>
+
+<div>
+<head rend="level2">ENKELTDIKT 1850–71</head>
+<div>
+<head rend="level4">stemmer fra skoven</head>
+<div type="msDescriptionPart" xml:id="DStemmerSkoven373_Ms">
+<p><hi rend="italic">UBiT Ms Oct. 373. «Stemmer fra Skoven»</hi> Egenhendig renskrevet manuskript, signert «Brynjolf Bjarme». Manuskriptet består av ett blad med tekst på begge sider. Høyre kant (sett fra første side) synes revet eller skåret. Langs venstre kant er bladet limt til et pappstykke, på dette er det limt et bilde av Ibsen. På versosiden kan tegnsetting ved linjeslutt være skjult av monteringen. Manuskriptet har vært brettet, er misfarvet, har flekker og en ca. tre cm lang rift horisontalt fra høyre kant. Ingen av skadene har følger for teksten. Papiret er ujevnt i kantene og i tillegg ujevnt skåret i nedre kant. Papiret er gulaktig og forholdsvis kraftig med bunn- og kjedelinjer og med del av et uidentifisert vannmerke. Siden måler ca. 163 × 206 mm. Manuskriptet er skrevet med blekk; skriftbildet er mørkebrunt. Skriften er høyrehellende og omhyggelig. Hovedtittelen er understreket, og mellom undertittelen og selve diktet er det satt en pyntestrek. Bladet er bundet inn i halvbind med rygg og hjørner i brun shirting. Permene har overtrekkspapir marmorert i grått. Ryggen har gulldekor. Forsatspapiret er gulaktig. Heftetråden er gulaktig. Bibliotekets stempel finnes på rectosiden, og på versosiden finnes Det Kongelige Norske Videnskabers Selskabs stempler. Stempel og katalogsignatur finnes flere steder i bindet, også ex libris og andre identifikasjonsmerker, samt henvisning til hvor diktet er trykt. Manuskriptet tilhører Gunnerusbiblioteket, Universitetsbiblioteket i Trondheim, Thorvald Boecks brev- og autografsamling, som ble kjøpt fra Boeck i 1899.</p>
+</div>
+<div type="msDescriptionPart" xml:id="DStemmerSkovenSamfBlAvskrift_Ms">
+<p><hi rend="italic">RAO PA 1322 Det Norske Studentersamfund, serie Xa Samfundsbladet, nr. 6, 25. oktober 1850. «Stemmer fra Skoven.»</hi> Avskrift i ukjent hånd i <title rend="italic">Samfundsbladet</title> (håndskreven avis). Diktet står på versosiden av et blad og slutter på neste blads rectoside. På rectosiden av det første bladet slutter diktet «I Natten», skrevet av samme hånd (jf. «I Natten.», RAO PA 1322 Det Norske Studentersamfund, serie Xa Samfundsbladet, 25. oktober 1850, nr. 6). Papiret er gulaktig og kraftig. Avskriften er skrevet med blekk; skriftbildet er blått. Skriften er gotisk og tydelig. Avskriften tilhører Riksarkivet, Oslo; Det Norske Studentersamfunds arkiv ble overført dit i 2002.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">blandt ruiner</head>
+<div type="msDescriptionPart" xml:id="DBlandtRuiner_Ms">
+<p><hi rend="italic">Ibsen-museet i Grimstad. «Blandt Ruiner.»</hi> Egenhendig signert, renskrevet manuskript med få rettelser; sendt sammen med flere dikt til Clara Ebbell rundt nyttår 1850/51, jf. HIS 12, 43. Manuskriptet består av ett blad med tekst på begge sider. Manuskriptet har vært brettet, er noe misfarvet og har flekker og andre skader, uten følger for teksten. Papiret er blåaktig med et blindstempel med teksten «BATH» i øvre høyre hjørne på første tekstside. Siden måler 135 × 214 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er høyrehellende og omhyggelig. Tittelen har enkel understrekning, og etter diktet er det satt en skillestrek. Manuskriptet tilhører Ibsen-museet i Grimstad.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">ungdomsdrømme</head>
+<div type="msDescriptionPart" xml:id="DUngdomsdroemme_Ibsenhuset_Ms">
+<p><hi rend="italic">Ibsen-museet i Grimstad. «Ungdomsdrømme.»</hi> Egenhendig renskrevet manuskript med få rettelser; sendt sammen med flere dikt til Clara Ebbell rundt nyttår 1850/51, jf. HIS 12, 43. Manuskriptet består av to dobbeltblad som er lagt inn i hverandre, med tekst på alle åtte sider. Diktet «Ungdomsdrømme» dekker de fire første sidene, og det etterfølges av diktet «Sonetter». Manuskriptet har vært brettet, er noe misfarvet og har flekker, rifter og andre skader som berører teksten, uten følger for lesbarheten. Papiret er blåaktig med et blindstempel med teksten «BATH» i øvre høyre hjørne på hvert dobbeltblads første side. Siden måler 135 × 214 mm. Manuskriptet er skrevet med blekk; skriftbildet er mørkebrunt. Skriften er høyrehellende og omhyggelig. Manuskriptet tilhører Ibsen-museet i Grimstad.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">sonetter</head>
+<div type="msDescriptionPart" xml:id="DSonetterIbsenhuset_Ms">
+<p><hi rend="italic">Ibsen-museet i Grimstad. «Sonetter.»</hi> Egenhendig renskrevet manuskript, sendt sammen med flere dikt til Clara Ebbell rundt nyttår 1850/51, jf. HIS 12, 43. Manuskriptet består av to dobbeltblad som er lagt inn i hverandre, med tekst på alle åtte sider. Diktet «Sonetter» dekker de fire siste sidene, og før det står diktet «Ungdomsdrømme». For tilstand og papir, se «Ungdomsdrømme», Ibsen-museet i Grimstad ovenfor. Manuskriptet er skrevet med blekk; skriftbildet er mørkebrunt. Skriften er høyrehellende og omhyggelig. Tittelen har enkel understrekning. Manuskriptet tilhører Ibsen-museet i Grimstad.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">naturens stemme</head>
+<div type="msDescriptionPart" xml:id="DNaturensStemmeSamfBl_Ms">
+<p><hi rend="italic">RAO PA 1322 Det Norske Studentersamfund, serie Xa Samfundsbladet, nr. 2, 25. januar 1851. «Naturens Stemme»</hi> Egenhendig renskrevet manuskript med noen rettelser i <title rend="italic">Samfundsbladet</title> (håndskreven avis). Diktet står på versosiden av et blad og slutter på neste blads rectoside. Manuskriptet er misfarvet i kantene, har flekker og andre skader som berører teksten, uten følger for lesbarheten. Papiret er gulaktig og kraftig. Siden måler 190 × 250 mm. Manuskriptet er skrevet med blekk; skriftbildet er mørkebrunt. Skriften er høyrehellende og omhyggelig. Teksten på det første bladet er delt i to spalter, egenhendig nummerert 7 og 8, mens teksten på det andre bladet er skrevet i én bred spalte nummerert 9. Tittelen er understreket med bølgestrek. Manuskriptet tilhører Riksarkivet, Oslo; Det Norske Studentersamfunds arkiv ble overført dit i 2002.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">til: en troubadour</head>
+<div type="msDescriptionPart" xml:id="DTilTroubadourIbsenhuset_Ms">
+<p><hi rend="italic">Ibsen-museet i Grimstad. «Til: En Troubadour.»</hi> Egenhendig signert, renskrevet manuskript med få rettelser. Manuskriptet består av ett dobbeltblad med tekst på første side. Manuskriptet har vært brettet, er noe misfarvet og har flekker, rifter og andre skader som berører teksten, uten følger for lesbarheten. Papiret er blåaktig med et blindstempel med teksten «BATH» samt en krone i øvre høyre hjørne på første tekstside. Siden måler 139 × 222 mm. Manuskriptet er skrevet med blekk; skriftbildet er mørkebrunt. Skriften er høyrehellende og omhyggelig. Tittelen er understreket kraftig. Manuskriptet tilhører Ibsen-museet i Grimstad.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">helge hundingsbane</head>
+<div type="msDescriptionPart" xml:id="DHelgeHundingsbane363_Ms">
+<p><hi rend="italic">UBiT Ms Oct. 363. «Helge Hundingsbane.»</hi> Egenhendig trykkmanuskript til annen og tredje del av diktet, med en del rettelser. Annen del, «Helge Hundingsbane. 2. Helge og Sigrun.», består av tre blad med tekst på alle seks sider. Det første bladet er upaginert, de to neste er egenhendig paginert 1–4 og bundet inn med rekkefølgen 2, 1, 3, 4; 2 og 1 har byttet plass ved innbindingen slik at tekstflyten er brutt. På første side er det rester etter papir som har vært limt til venstre marg. Manuskriptets papir er blåaktig. Siden måler ca. 168 × 214 mm. Tredje del av diktet, «Helge Hundingsbane. (Af Brynjolf Bjarme.) 3. Helges Død.», består av fire blad med tekst på de syv første sidene. Sidene 1–7 er senere paginert (ikke av Ibsen). Papiret er gråaktig og forholdsvis tynt. Siden måler ca. 130 × 214 mm. Denne delen av manuskriptet er blitt beskåret ujevnt i høyre kant (sett fra første tekstside). Manuskriptet er sannsynligvis grunnlag for trykket i <title rend="italic">Andhrimner</title>, da rettelser er tatt til følge i trykket. Begge de to delene har vært brettet, er noe misfarvet og har skrukker, flekker (bl.a. fingermerker) og andre mindre skader, uten følger for teksten. Begge er skrevet med blekk; skiftbildet er mørkebrunt i annen del, brunt i tredje. Skriften er høyrehellende og dels omhyggelig, dels skjødesløs. De to manuskriptene er bundet inn sammen i halvbind med rygg og hjørner i brun shirting. Permene har overtrekkspapir marmorert i gråsvart. Ryggen har gulldekor. Forsatspapiret er gulaktig. Heftetråden er brunaktig. Bibliotekets og Det Kongelige Norske Videnskabers Selskabs stempler finnes på den første siden med dikttekst. Stempel og katalogsignatur finnes flere steder i bindet, også ex libris og andre identifikasjonsmerker, samt henvisning til hvor diktet er trykt. Manuskriptet tilhører Gunnerusbiblioteket, Universitetsbiblioteket i Trondheim, Thorvald Boecks brev- og autografsamling, som ble kjøpt fra Boeck i 1899.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">toget til ulrikken den 15<hi rend="raised">de</hi> mai 1853</head>
+<div type="msDescriptionPart" xml:id="DTogetUlrikken185341471_Ms">
+<p><hi rend="italic">NBO Ms. 4° 1471. «Toget til Ulrikken / den 15<hi rend="raised">de</hi> Mai 1853.»</hi> Egenhendig signert, renskrevet manuskript med få rettelser. Manuskriptet består av ett dobbeltblad med tekst på de tre første sider. Manuskriptet har vært brettet og er reparert i noen av brettene med gjennomsiktige papirstrimler; et mindre papirtap er fylt igjen. Manuskriptet har flekker, skrukker og rifter som berører teksten, uten følger for lesbarheten. Papiret er blåaktig og forholdsvis tynt. Siden måler ca. 210 × 272 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er høyrehellende og omhyggelig. De to undertitlene er understreket med bølgestrek, og det er satt skillestrek foran del 2. Ibsens navn er avsluttet med krusedull. Manuskriptet er bundet inn av biblioteket. (Følgende manuskripter med Ibsendikt har samme type innbinding som NBO Ms. 4° 1471: NBO Ms. 4° 925, NBO Ms. 4° 929, NBO Ms. 4° 930, NBO Ms. 4° 931, NBO Ms. 4° 933, NBO Ms. 4° 934, NBO Ms. 8° 777, NBO Ms. 8° 1154). Bindet måler ca. 217 × 278 mm. Ryggen er i rød shirting, og permene har overtrekkspapir marmorert i grått. Forsatspapiret er gulaktig med bunn- og kjedelinjer, og det er et mørkt gulaktig flyblad mellom fremre forsatsblad og selve manuskriptet. Fremre forsatsblad er brukt som bibliotekets tittelblad. Heftetråden er gulaktig. Bibliotekets stempel og katalogsignatur finnes på forpermen og på manuskriptets første side, katalogsignaturen også på innsiden av forpermen. Manuskriptet tilhører Nasjonalbiblioteket, Oslo; kjøpt i 1935 fra J. Rønne Petersen.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">til min aurikel</head>
+<div type="msDescriptionPart" xml:id="DTilMinAurikel8777_Ms">
+<p><hi rend="italic">NBO Ms. 8° 777. «Til min Aurikel.»</hi> Egenhendig signert, renskrevet manuskript med få rettelser. Manuskriptet består av ett dobbeltblad med tekst på første side. Det har vært sendt som brev, se HIS 12, 59–60, der med HU som tekstgrunnlag, jf. errataliste, HISe. Manuskriptet har vært brettet og har skader og flekker, uten følger for teksten; de største skadene er reparert med forskjellig typer pålimt papir. Papiret er gulaktig og forholdsvis tynt med avrundede hjørner og med ramme og hjørneornamenter i blindtrykk. Siden måler 133 × 205 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er høyrehellende og omhyggelig. Tittelen har dobbel understrekning utført med linjal. Rundt teksten er en ramme i blått blekk. Manuskriptet er av biblioteket bundet inn sammen med to andre dikt, alle sendt til Rikke Holst i mai–juni 1853 (se «Til R. H.» og «Med en Rose» nedenfor), på samme måte som NBO Ms. 4° 1471 («Toget til Ulrikken»). Det er limt til en fals langs høyre kant av fjerde side, som er uten tekst. Bindet måler ca. 149 × 225 mm. Bibliotekets stempel og katalogsignatur finnes på forpermen og på dobbeltbladets siste side, på tekstsiden har biblioteket påført nummeret 1. Manuskriptet tilhører Nasjonalbiblioteket, Oslo; mottatt 1917 som gave fra Rikke Tresselt, født Holst. Hun hadde gitt diktene til Hanna Lossius (senere gift Aas), som hadde overdratt dem til sin søster Sofie Petersen; fra henne kom de ca. 1897 i hennes sønn Jacob Rønne Petersens eie. Da han ville offentliggjøre dem, krevde Rikke Tresselt brevene tilbake, men fikk dem først etter høyesterettsdom 31. januar 1917 (Høyesterett 1917). Hennes gavebrev til biblioteket (den gang Universitetsbiblioteket) 10. mars 1917 er bundet inn sammen med diktene.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">til r: h!</head>
+<div type="msDescriptionPart" xml:id="DTilRH8777_Ms">
+<p><hi rend="italic">NBO Ms. 8° 777. «Til R: H!»</hi> Egenhendig signert, renskrevet manuskript. Manuskriptet består av ett dobbeltblad med tekst på de tre første sider. Manuskriptet har vært sendt som brev, se HIS 12, 60–61. Manuskriptet har vært brettet og har skader; de største er reparert med gjennomsiktige papirstrimler på s. [4]. Skadene berører teksten, uten følger for lesbarheten. Papiret er gulaktig med ramme i blindtrykk. Siden måler 101 × 160 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er høyrehellende og omhyggelig. Understrekningene i diktet er utført med linjal. Dobbeltbladet er bundet inn sammen med to andre dikt, alle sendt til Rikke Holst i mai–juni 1853 (se «Til min Aurikel» ovenfor og «Med en Rose» nedenfor). Det er limt til en fals langs høyre kant av s. [4], som er uten tekst. Bibliotekets stempel og katalogsignatur finnes på s. [4], på s. [1] har biblioteket påført nummeret 3. Om proveniensen, se «Til min Aurikel», NBO Ms. 8° 777.</p>
+</div>
+</div>
+
+
+<div>
+<head rend="level4">med en rose</head>
+<div type="msDescriptionPart" xml:id="DMedEnRose8777_Ms">
+<p><hi rend="italic">NBO Ms. 8° 777. «Med en Rose.»</hi> Egenhendig signert, renskrevet manuskript, som del av et brev, se HIS 12, 61. Manuskriptet består av ett blad med tekst på én side. Manuskriptet har vært brettet og har andre skader, uten følger for teksten. Papiret er gulaktig og forholdsvis tynt med avrundede hjørner, med ramme i blindtrykk og med grønn kant; over- og ytterkanten (sett fra tekstsiden) er i tungemønster. Siden måler 160 × 107 mm. Manuskriptet er skrevet med blekk; skriftbildet er mørkebrunt. Skriften er høyrehellende og omhyggelig. Tittelen og diktets siste linje er understreket med linjal. Manuskriptet er bundet inn sammen med to andre dikt, alle sendt til Rikke Holst i mai–juni 1853 (se «Til min Aurikel» og «Til R: H!» ovenfor). Det er limt til en fals langs venstre kant av tekstsiden, uten teksttap. Bibliotekets stempel og katalogsignatur finnes på versosiden, på tekstsiden har biblioteket påført nummeret 2. Om proveniensen, se «Til min Aurikel», NBO Ms. 8° 777.</p>
+</div>
+</div>
+
+
+<div>
+<head rend="level4">til hr. capt. edward sontum og jfr. susanna bruun paa deres bryllupsdag den 27<hi rend="raised">de</hi> februar 1855</head>
+<div type="msDescriptionPart" xml:id="DBryllupssang1855022781511_Ms">
+  <p><hi rend="italic">NBO Ms. 8° 1511. «Til / Hr. Capt: Edvard Sontum og Jfr: Susanna / Bruun / paa deres Bryllupsdag / den 27de Februar / 1855.»</hi> Egenhendig renskrevet manuskript. Manuskriptet består av ett dobbeltblad med tekst på de tre første sider. Manuskriptet har betydelige skader. Det har vært brettet, er misfarvet, har flekker og rifter som er forsøkt reparert med limbånd av forskjellig kvalitet. Bl. [1] må ha gått i to langs en brett ca. ⅔ ned på bladet, den nederste del av bladet er nå tapt. Papirtapet har medført tap av nedre del av en krusedull på bl. [1]r; om det har stått tekst på versosiden av det som er borte, vites ikke. Øvrige skader berører teksten og har følger for lesbarheten. Papiret er gulaktig. Første blad måler ca. 168 × 147 mm; det andre måler ca. 168 × 210 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er høyrehellende og omhyggelig. Nederst på tittelsiden og etter diktteksten har Ibsen satt en krusedull. Han har dessuten skriblet noen regnestykker på tittelsiden, og en ukjent hånd har på samme side med penn skrevet: «Ibsens original». Bibliotekets katalogsignatur finnes på første side. Manuskriptet tilhører Nasjonalbiblioteket, Oslo; mottatt i 1948 som gave fra H. Sontum.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">til frøken estance steen!</head>
+<div type="msDescriptionPart" xml:id="DTilFrkSteen83060_Ms">
+<p><hi rend="italic">NBO Ms. 8° 3060. «Til Frøken Estance Steen!»</hi> Egenhendig signert dedikasjon i et eksemplar av førsteutgaven av <title rend="italic">Gildet paa Solhoug</title> (1856), datert 29. april 1856. Diktet står på rectosiden av fremre flyblad. Bladet diktet er skrevet på, er noe misfarvet, har skrukker og flekker med følger for lesbarheten i første strofe. Papiret er gulaktig, noe tynt. Siden måler ca. 119 × 182 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er høyrehellende og omhyggelig. Eksemplaret er bundet inn i mørkebrun shirting med ornamentering i blindtrykk på for- og bakperm og med tittel i gulltrykk på forpermen. Bindet måler ca. 123 × 186 mm. Sammen med boken ligger et fotografi av Estance Steen. Bibliotekets stempel og katalogsignatur finnes på versosiden av bladet med dikttekst samt på versosiden av fremre forsatsblad. Boken tilhører Nasjonalbiblioteket, Oslo; kjøpt i 1978 fra Thora Holm.</p>
+</div>
+</div>
+
+
+<div>
+<head rend="level4">serenade udført ved hans kongelige høihed vicekongens besøg i bergen d. 24. juli 1856</head>
+<div type="msDescriptionPart" xml:id="DNordensSommerqveldS242_Ms">
+<p><hi rend="italic">KBS S 242. Uten tittel.</hi> Avskrift i ukjent hånd skrevet som tekst til musikknoter i et notehefte. Noteheftet består av to løse dobbeltblad lagt inni hverandre, med omslag. På omslaget står det: «Två Sångkompositioner, satta för mansröster, af O. Lübbert. Bergen, 1856.» Ibsens dikt begynner på første side av det innerste dobbeltbladet og strekker seg over hele dette samt rectosiden av bl. [2] i det ytre dobbeltbladet. Komposisjonens tittel er «Serenade». Dobbeltbladene og omslaget har sannsynligvis vært sydd sammen, men bladene er nå løse. Notepapiret har trykte notelinjer med margdekor i gull. Det har ubetydelige skader. Avskriften er skrevet med blekk; skriftbildet er mørkeblått. Skriften er høyrehellende og omhyggelig. Bibliotekets stempel og katalogsignatur finnes på rectosiden av første omslagsside. Manuskriptet tilhører Kungliga biblioteket, Stockholm; mottatt i 1873 fra Karl 15.s bibliotek.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">sang ved hr: skuespiller h. nielsens og skuespillerinde jfr: f. jensens bryllup den 27. november 1856</head>
+<div type="msDescriptionPart" xml:id="DBryllupssang18561127_Ms">
+<p><hi rend="italic">Tark UiB nr. 1041 i Sigvald Johannessens katalog. «Sang / ved / Hr: skuespiller H. Nielsens / og / Skuespillerinde jfr: F. Jensens / Bryllup / den 27 November 1856.»</hi> Avskrift i ukjent hånd. Manuskriptet består av ett dobbeltblad med tekst på alle fire sider. Tittelen står over flere linjer midtstilt på første side av dobbeltbladet. Diktteksten dekker annen og tredje side, mens siste side gjentar opplysning om melodi, skrevet på langs. Papiret er kraftig og har ubetydelige skader. Avskriften er skrevet med blekk; skriftbildet er fiolett. Skriften er omhyggelig. Bergens Teatermuseums stempel og nummeret finnes på første side, på tredje side bare stempelet. Manuskriptet tilhører De kulturhistoriske samlinger, Bergen Museum, Universitetet i Bergen, og er deponert i Teaterarkivet, Institutt for lingvistiske, litterære og estetiske studier. Bergens Teatermuseum ble overført til Bergen Museum i 1998.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">prolog ved fjeldeventyrets første opførelse paa christiania norske theater</head>
+<div type="msDescriptionPart" xml:id="DProlog18570918371_Ms">
+<p><hi rend="italic">UBiT Ms Oct. 371. «Prolog / ved / Fjeldeventyrets første Opførelse / paa / Kristiania norske Theater. – »</hi> Egenhendig trykkmanuskript med få rettelser. Manuskriptet består av ett blad med tekst på begge sider. Det er sannsynligvis grunnlag for trykket i <title rend="italic">Illustreret Nyhedsblad</title>, da rettelser her er tatt til følge i trykket. Manuskriptet har vært brettet, er misfarvet, har flekker og andre mindre skader, uten følger for teksten. Kantene er ujevne. Papiret er mørkt gulaktig. Siden måler ca. 167 × 207 mm. Manuskriptet er skrevet med blekk; skriftbildet er mørkebrunt. Skriften er høyrehellende og omhyggelig. Etter tittelen og etter diktet er det satt pyntestreker. En enkelt rettelse er utført med blyant, det er uvisst om den er egenhendig. Bibliotekets og Det Kongelige Norske Videnskabers Selskabs stempler finnes på versosiden, og på rectosiden er det henvisning til hvor diktet er trykt. Manuskriptet tilhører Gunnerusbiblioteket, Universitetsbiblioteket i Trondheim, Thorvald Boecks brev- og autografsamling, som ble kjøpt fra Boeck i 1899.</p>
+</div>
+</div>
+
+<div>
+  <head rend="level4">[naar birkegrenen bugned]</head>
+<div type="msDescriptionPart" xml:id="DSleden10413Brev_Ms">
+<p><hi rend="italic">RAO PA 40 Holst, Christian, serie J–E. Brev m.v. vedkommende personer, nr. 279. Uten tittel.</hi> Egenhendig renskrevet dikt, som del av et brev til Christian Holst 4. juni 1858, se HIS 12, 104–05. Brevet består av ett dobbeltblad med tekst på de to første sider, hvorav diktteksten strekker seg over hele første side og halvparten av annen side. Manuskriptet har vært brettet, har skader og flekker som berører teksten, uten følger for lesbarheten. Diktet har hatt en tittel, men den er radert bort. Brevet var forseglet med oblat. Papiret er blåaktig og forholdsvis tynt. Siden måler 133 × 213 mm (første blad), annet blads bredde er 135 mm. Nedre kant er ujevn. Manuskriptet er skrevet med blekk; skriftbildet er mørkebrunt. Skriften er høyrehellende og overveiende omhyggelig. Etter diktet og før den avsluttende brevteksten er det satt en skillestrek. På s. [3] finnes en del tall/regnestykker i uidentifisert hånd; s. [4] er adresseside med frimerke. Manuskriptet tilhører Riksarkivet, Oslo. Holsts arkiv ble mottatt i 1890 som testamentarisk gave. Anker (1979–81, b. 2, 31) opplyser om at en del brev og diktmanuskripter adressert til Holst, var funnet i Holsts kontor og oversendt Riksarkivet i 1907.</p>
+</div>
+  
+<div type="msDescriptionPart" xml:id="DSleden10413_Ms">
+<p><hi rend="italic">RAO PA 40 Holst, Christian, serie J–E. Brev m.v. vedkommende personer, nr. 279. «Slæden / (af H. Ibsen).»</hi> Korrekturtrykk med en håndskreven rettelse (to bokstaver) som sannsynligvis er egenhendig. Trykket består av ett blad med tekst på den ene siden. Korrekturtrykket bygger trolig på brevet (se ovenfor), da diktteksten der er svært lik. Korrekturtrykket kan være grunnlag for småtrykket, da teksten er identisk og rettelsene er tatt til følge i småtrykket. Tittelen er satt med en større teksttype enn selve teksten og i et fett snitt. Forfatternavnet er satt under tittelen i parentes med tynnere skrift. Tre av bladets kanter er ujevne. Nedre kant er dessuten ujevnt skåret eller revet. Det finnes noen fingermerker. Ingen av skadene har følger for teksten. Papiret er mørkt gulaktig med bunn- og kjedelinjer. Siden måler ca. 97 × 140 mm. Rettelsen er skrevet med blyant. Skriften er svakt høyrehellende og skjødesløs. I øvre høyre marg er det en blyantstrek. Trykket tilhører Riksarkivet, Oslo. Holsts arkiv ble mottatt i 1890 som testamentarisk gave. Anker (1979–81, b. 2, 31) opplyser om at en del brev og diktmanuskripter adressert til Holst, var funnet i Holsts kontor og oversendt Riksarkivet i 1907.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">kong haakons gildehal, fortællende digt</head>
+<div type="msDescriptionPart" xml:id="DKongHaakonsGildehalFortDigt366_Ms">
+<p><hi rend="italic">UBiT Ms Oct. 366. «Kong Haakons Gildehal, / Digt / af / Henrik Ibsen / Christiania 1858.»</hi> Egenhendig trykkmanuskript med mange rettelser. Manuskriptet består av ett dobbeltblad pluss to legg à fire blad. På grunn av innbindingen er det ikke mulig å se om bladene har hørt sammen i dobbeltblad. Det første dobbeltbladet er tittel-legg med fulle opplysninger på første side (gjengitt ovenfor) og med tittelen på tredje; annen og fjerde side er blanke. Selve diktteksten finnes på de følgende 16 sidene. Manuskriptet er sannsynligvis grunnlag for trykket i <title rend="italic">Illustreret Nyhedsblad</title>. Det har merker etter svertede fingre, og rettelser i manuskriptet er tatt til følge i trykket. Manuskriptet har vært brettet, er misfarvet, har flekker (bl.a. fingermerker), skrukker og andre skader, uten følger for teksten. Papiret er gulaktig med bunn- og kjedelinjer. Siden måler ca. 183 × 224 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er høyrehellende og dels omhyggelig, dels mer skjødesløs. Tittelsiden er forseggjort utført med krusedull under Ibsens navn og pyntestrek nederst. På siste side har Ibsen satt en krusedull under teksten. Manuskriptet er bundet inn i halvbind med rygg og hjørner i brun shirting. Permene har overtrekkspapir marmorert i brunt og gult. Ryggen har gulldekor. Forsatspapiret er gulaktig. Heftetråden er gulaktig. På s. [4] har en ukjent hånd skrevet hvor diktet har vært trykt. Bibliotekets stempel finnes på tittelsiden, og på versosiden av samme blad finnes Det Kongelige Norske Videnskabers Selskabs stempler. Stempel og katalogsignatur finnes flere steder i bindet, også ex libris og andre identifikasjonsmerker, samt henvisning til hvor diktet er trykt. Manuskriptet tilhører Gunnerusbiblioteket, Universitetsbiblioteket i Trondheim, Thorvald Boecks brev- og autografsamling, som ble kjøpt fra Boeck i 1899.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">en livsvaar</head>
+<div type="msDescriptionPart" xml:id="DEnLivsvaar4928_Ms">
+  <p><hi rend="italic">NBO Ms. 4° 928. «En Livsvaar / Digte / af / Henr: Ibsen / 1858.»</hi> Egenhendig arbeidsmanuskript. Manuskriptet består av to dobbeltblad lagt inn i hverandre. Første side er utformet som en tittelside med tittel, forfatternavn og årstall. Selve diktet står på s. [3]–[7].  S. [2] og [8] er blanke. Manuskriptet er misfarvet, har flekker, skrukker og rifter, uten følger for teksten. Papiret er mørkt gulaktig med bunn- og kjedelinjer. Siden måler ca. 174 × 210 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er høyrehellende og dels omhyggelig, dels mer skjødesløs. Ibsen har satt skillestrek mellom de nummererte bolkene. Manuskriptet er bundet inn av biblioteket. Bindet, som er i rød shirting, måler ca. 180 × 220 mm. Forsatspapiret er gulaktig. Heftetråden er gulaktig. Bindets innhold er angitt med gulltrykk på forpermen. Bibliotekets stempel og katalogsignatur finnes på forpermen, stempelet også på s. [1], [3] og [8]. Manuskriptet tilhører Nasjonalbiblioteket, Oslo. Biblioteket (den gang Universitetsbiblioteket) kjøpte manuskriptet, sammen med andre Ibsen-manuskripter, av journalist Oskar Nandrup i 1901. Etter at Ibsen hadde reist fra Norge i 1864, ble det oppbevart sammen med andre av Ibsens papirer og eiendeler i Kristiania. For å dekke Ibsens gjeld lot hans kreditor, overrettssakfører Hans Jacob Nandrup (Oskar Nandrups far), en del av sakene bli solgt på auksjon i 1864. Ibsens private papirer, blant dem manuskriptene, ble ikke budt ut (P.K.H. Dahl 2001, 46).</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">et gravøl</head>
+<div type="msDescriptionPart" xml:id="DEtGravoel4933_Ms">
+<p><hi rend="italic">NBO Ms. 4° 933. «Et Gravøl.»</hi> Egenhendig signert arbeidsmanuskript med en del rettelser. Manuskriptet består av ett blad med tekst på begge sider. Manuskriptet er misfarvet, har skrukker, flekker og andre skader, uten følger for teksten. Papiret er gulaktig og kraftig med bunn- og kjedelinjer. Siden måler ca. 183 × 221 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er høyrehellende og dels omhyggelig, dels mer skjødesløs. Tittelen er understreket med bølgestrek.  På annen side er siste strofe føyd til på langs i margen. På første side har en ukjent hånd med blyant skrevet en henvisning til Halvorsens forfatterleksikon. Bladet er bundet inn av biblioteket på samme måte som NBO Ms. 4° 1471 («Toget til Ulrikken»). Bindet måler ca. 190 × 224 mm. Bibliotekets stempel og katalogsignatur finnes på forpermen og på manuskriptets rectoside, stempelet også på versosiden, katalogsignaturen på innsiden av forpermen. Manuskriptet tilhører Nasjonalbiblioteket, Oslo. Det har samme proveniens som NBO Ms. 4° 928 («En Livsvaar»).</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">maageskrig</head>
+<div type="msDescriptionPart" xml:id="DMaageskrig4934_Ms">
+<p><hi rend="italic">NBO Ms. 4° 934. «Maageskrig. / (tilegnet Danmark.)»</hi> Egenhendig arbeidsmanuskript med en del rettelser. Manuskriptet består av ett blad med tekst på én side. Det inneholder bare første strofe og fire linjer av annen. Ibsen har rettet i selve teksten. I venstre marg er det med blyant skrevet inn enkelte forslag til rettelser, de tilsvarende ordene i diktet er streket under med blyant. Samme hånd har føyd til to linjer i annen strofe, disse er strøket. Noen av de foreslåtte rettelsene er tatt til følge i den endelige teksten. Det er usikkert om hånden er Ibsens. Førstetrykket i <title rend="italic">Illustreret Nyhedsblad</title> kan ikke ha NBO Ms. 4° 934 som grunnlag, da teksten er ufullstendig og tilføyelser er strøket, så det må ha eksistert et nå tapt trykkmanuskript til diktet. Manuskriptet er misfarvet spesielt i kantene, og det har skrukker, flekker og andre skader, uten følger for teksten. Papiret er gulaktig med bunn- og kjedelinjer. Siden måler ca. 184 × 221 mm. Manuskriptet er skrevet med blekk; skriftbildet er mørkebrunt. Skriften er høyrehellende og omhyggelig. Hovedtittelen er understreket. I blyantrettelsen er skriften mindre, høyrehellende og noe skjødesløs. På tekstsiden har en ukjent hånd med blyant skrevet henvisning til trykkested og Halvorsens forfatterleksikon. Bladet er bundet inn av biblioteket på samme måte som NBO Ms. 4° 1471 («Toget til Ulrikken»). Bindet måler ca. 192 × 225 mm. Bibliotekets stempel og katalogsignatur finnes på forpermen og på manuskriptets tekstside, stempelet også på versosiden og på rectosiden av fremre flyblad, katalogsignaturen på innsiden av forpermen. Manuskriptet tilhører Nasjonalbiblioteket, Oslo. Det har samme proveniens som NBO Ms. 4° 928 («En Livsvaar»).</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">hastværkslinjer til h. ø. blom</head>
+<div type="msDescriptionPart" xml:id="DHastvaerkslinjerBlom42415c_Ms">
+<p><hi rend="italic">NBO Ms. 4° 2415c. «Hastværkslinjer / til / H. Ø. Blom.»</hi> Egenhendig signert arbeidsmanuskript med en del rettelser, se HIS 12k, 157. Manuskriptet består av to dobbeltblad med tekst på de fem første sider. Annet dobbeltblad er av Ibsen nummerert 2. Manuskriptet har vært brettet og har skader og flekker, uten følger for teksten. Papiret er grått med skjær av rosa, med bunn- og kjedelinjer. I første dobbeltblad måler siden 145 × 213 mm, i annet 145 × 227 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er høyrehellende og overveiende omhyggelig. Deler av tittelen har dobbel understrekning. Bibliotekets stempel og katalogsignatur finnes på s. [2] og [6]. Manuskriptet tilhører Nasjonalbiblioteket, Oslo; kjøpt i 1969 fra Tancred Ibsen. Ifølge Halvdan Koht ble manuskriptet funnet senest 1911 blant papirer etter Bjørnstjerne Bjørnson (Ibsen 1911, 363).</p>
+</div>
+</div>
+
+<div>
+  <head rend="level4">prolog [ved en forestilling på studentersamfundets theater 19. mars 1860]</head>
+<div type="msDescriptionPart" xml:id="DProlog18600319Avskrift_Ms">
+<p><hi rend="italic">NBO [Småtrykk og håndskrifter fra Det Norske Studentersamfund] (02ga05637), nr. 39. «Prolog / ved Forestillingen paa Studentersamfundets Theater / 24 Marts 1860»</hi> Avskrift i ukjent hånd; avskriveren har også skrevet Ibsens navn under diktet. Manuskriptet består av to blad som sannsynligvis opprinnelig har vært ett dobbeltblad, med tekst på alle fire sider. Tittelen står over flere linjer midtstilt på første side av dobbeltbladet. (For opplysninger om de to forskjellige datoer, se kommentar til diktet.) Manuskriptet har ubetydelige skader. Avskriften er skrevet med blekk; skriftbildet er blått. Skriften er omhyggelig. Manuskriptet er bundet inn sammen med andre manuskripter og småtrykk fra Det Norske Studentersamfund. Dokumentene i bindet er nummerert. Bindet er svært slitt og ryggen holder på å løsne. I diktet er noen tegn i slutten av et par verslinjer forsvunnet på grunn av innbindingen; det gjelder i første, tredje, fjerde og tiende strofe. Bibliotekets stempel og katalogsignatur finnes på bindets fremre forsatsblad. De tre bindene tilhører Nasjonalbiblioteket, Oslo; kjøpt i 2002 fra Ruuds Antikvariat, Oslo.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">i havsnød</head>
+<div type="msDescriptionPart" xml:id="DIHavsnoed364_Ms">
+<p><hi rend="italic">UBiT Ms Oct. 364. «I Havsnød.»</hi> Egenhendig signert renskrevet manuskript. Manuskriptet består av to dobbeltblad lagt inn i hverandre, med tekst på de syv første sidene. Manuskriptet er muligens grunnlag for trykket i <title rend="italic">Illustreret Nyhedsblad</title>, da det har merker etter svertede fingre, og det stort sett bare er ortografiske forskjeller mellom manuskriptet og trykket. Men en omformulert verslinje («Og rider imag for Anker» (avistrykk) vs. «Og vugger de stolte Planker» (manuskript)) taler imot at manuskriptet kan ha fungert som trykkmanuskript. Manuskriptet har vært brettet, er misfarvet, har flekker (bl.a. fingermerker), uten følger for teksten. Papiret er gulaktig med bunn- og kjedelinjer. Siden måler 174 × 213 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er høyrehellende og omhyggelig. Manuskriptet er bundet inn i halvbind med rygg og hjørner i mørkebrun shirting, og permene har overtrekkspapir marmorert i brunt og gult. Forsatspapiret er gulaktig. Heftetråden er gulaktig. Bibliotekets og Det Kongelige Norske Videnskabers Selskabs stempler finnes på første tekstside. Stempel og katalogsignatur finnes flere steder i bindet, også ex libris og andre identifikasjonsmerker, samt henvisning til hvor diktet er trykt. Manuskriptet tilhører Gunnerusbiblioteket, Universitetsbiblioteket i Trondheim, Thorvald Boecks brev- og autografsamling, som ble kjøpt fra Boeck i 1899.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">i lund. ved det nordiske studentermøde 1862</head>
+<div type="msDescriptionPart" xml:id="DILundNordStudMoede18624929_Ms">
+<p><hi rend="italic">NBO Ms. 4° 929. «Til Sverig.»</hi> Egenhendig arbeidsmanuskript med en del rettelser. Manuskriptet består av ett blad med tekst på én side. Manuskriptet har vært brettet. Rifter i brettene og i øvre kant er reparert med gjennomsiktige papirstrimler. Manuskriptet er misfarvet, har noen flekker og andre skader, uten følger for teksten. Papiret er gulaktig. Siden måler ca. 174 × 213 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er høyrehellende og dels omhyggelig, dels mer skjødesløs. Tittelen er understreket med bølgestrek. På første side har en ukjent hånd med blyant skrevet om begivenheten diktet er skrevet til, samt hvor det har vært trykt. Bladet er bundet inn av biblioteket på samme måte som NBO Ms. 4° 1471 («Toget til Ulrikken»). Bindet måler ca. 178 × 219 mm. Bibliotekets stempel og katalogsignatur finnes på forpermen og på manuskriptets versoside, stempelet også på rectosiden, katalogsignaturen på innsiden av forpermen. Manuskriptet tilhører Nasjonalbiblioteket, Oslo. Det har samme proveniens som NBO Ms. 4° 928 («En Livsvaar»).</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">sæterhytten paa dronningbjerget</head>
+<div type="msDescriptionPart" xml:id="DSaeterhytteDronnbjBrev_Ms">
+<p><hi rend="italic">RAO PA 40 Holst, Christian, serie J–E. Brev m.v. vedkommende personer, nr. 279. Uten tittel.</hi> Egenhendig renskrevet manuskript. Manuskriptet består av ett blad med tekst på én side. Diktet ble sendt som vedlegg til et brev fra Ibsen til Christian Holst [25. august 1862], se HIS 12, 154. Manuskriptet har vært brettet, er noe misfarvet og har rifter og andre mindre skader som berører teksten, uten følger for lesbarheten. Papiret er gulaktig med bunn- og kjedelinjer. Siden måler 174 × 214 mm. Manuskriptet er skrevet med blekk; skriftbildet er mørkebrunt. Skriften er høyrehellende og omhyggelig. Ibsen har satt en krusedull etter diktet. Manuskriptet tilhører Riksarkivet, Oslo. Holsts arkiv ble mottatt i 1890 som testamentarisk gave. Anker (1979–81, b.  2, 31) opplyser om at en del brev og diktmanuskripter adressert til Holst, var funnet i Holsts kontor og oversendt Riksarkivet i 1907.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">hil sangen!</head>
+<div type="msDescriptionPart" xml:id="DHilSangen4930_Ms">
+<p><hi rend="italic">NBO Ms. 4° 930. Uten tittel.</hi> Egenhendig arbeidsmanuskript med en del rettelser. Manuskriptet består av ett blad med tekst på begge sider. Manuskriptet har vært brettet, er noe misfarvet og har skrukker, uten følger for teksten. Papiret er gulaktig med bunn- og kjedelinjer. Siden måler ca. 170 × 216 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er høyrehellende og dels omhyggelig, dels mer skjødesløs. På første side har en ukjent hånd med blyant skrevet om begivenheten diktet er skrevet til, samt hvor det har vært trykt. Bladet er bundet inn av biblioteket på samme måte som NBO Ms. 4° 1471 («Toget til Ulrikken»). Bindet måler ca. 178 × 221 mm. Bibliotekets stempel og katalogsignatur finnes på forpermen og på manuskriptets versoside, stempelet også på rectosiden og på rectosidene av fremre forsatsblad og flybladet, katalogsignaturen på innsiden av forpermen. Manuskriptet tilhører Nasjonalbiblioteket, Oslo. Det har samme proveniens som NBO Ms. 4° 928 («En Livsvaar»).</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">fanesang</head>
+<div type="msDescriptionPart" xml:id="DVedIndvielSangerfanen185981951_Ms">
+<p><hi rend="italic">NBO Ms. 8° 1951. «Ved Indvielsen / af / Sangerfanen. / Den 23<hi rend="raised">de</hi> Novbr. 1859.»</hi> Småtrykk med rettelser, trolig egenhendige. Småtrykket består av ett dobbeltblad med dikttekst på de to siste sidene, første side er tittelside. Rettelsene i diktteksten er udaterte, men de har sannsynligvis sammenheng med Ibsens revidering av diktet i 1863, siden rettelsene er tatt til følge der. De er skrevet med blekk; skriftbildet er brunt. Skriften er høyrehellende og omhyggelig. På tittelsiden er det med blyant skrevet opplysninger om anledningen for diktet. Denne påskriften kan også være skrevet av Ibsen, men det er mer usikkert; skriften er høyrehellende, liten og noe mindre tydelig. Tittelopplysningene på s. [1] har innramning med ornamenterte hjørner. Over diktteksten s. [3] er det trykt en tegning av en fane. Etter diktet er det satt en dobbel skillestrek. Småtrykket har vært brettet, er stedvis misfarvet, har skrukker, rifter og andre skader, uten følger for teksten. Papiret er gulaktig. Siden måler ca. 149 × 239 mm. Bibliotekets stempel og katalogsignatur finnes på tittelsiden. Småtrykket tilhører Nasjonalbiblioteket, Oslo; overført til Håndskriftsamlingen fra bibliotekets Norske avdeling (for norske trykk), trolig i 1956.</p>
+</div>
+</div>
+</div>
+
+<div>
+<head rend="level2">DIKT SOM INNGÅR I DIGTE</head>
+<p rend="noIndent">Manuskriptbeskrivelsene er sortert under titlene diktene har i <title rend="italic">Digte</title> 1871.</p>
+
+<div>
+<head rend="level4">med en vandlilje</head>
+<div type="msDescriptionPart" xml:id="DiMedEnVandlilje24227_Ms">
+<p><hi rend="italic">John Hay Library, Brown University, Providence, Rhode Island, Ms. 24. 227. «Med en Vandlilje.»</hi> Manuskriptet er beskrevet på grunnlag av fotokopi av originalen, som er et egenhendig signert, renskrevet manuskript. Kopien består av én tekstside. Av kopien ser det ut til at manuskriptet er i god stand. På kopien måler siden  174 × 212 mm. Manuskriptet må være skrevet med blekk. Skriften er høyrehellende og omhyggelig. Tittelen er understreket. Manuskriptet tilhører John Hay Library, Brown University, Providence, Rhode Island.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">fugl og fuglefænger</head>
+<div type="msDescriptionPart" xml:id="DiFuglFuglefaenger_Ms">
+<p><hi rend="italic">Ibsen-museet i Grimstad. «Fugl og Fuglefænger.»</hi> Egenhendig renskrevet manuskript, sendt sammen med flere dikt til Clara Ebbell rundt nyttår 1850/51, jf. HIS 12, 43. Manuskriptet består av ett dobbeltblad med dikttekst på alle fire sider. Diktet «Fugl og Fuglefænger» dekker s. [2] i dobbeltbladet. Før dette står diktet «I Natten» og etter følger «Bjergmanden» (jf. «I Natten», Ibsen-museet i Grimstad og «Bjergmanden.», Ibsen-museet i Grimstad). For tilstand og beskrivelse av papiret, se «I Natten», Ibsen-museet i Grimstad. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er høyrehellende og omhyggelig. Tittelen har enkel understrekning. Manuskriptet tilhører Ibsen-museet i Grimstad.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">bergmanden</head>
+<div type="msDescriptionPart" xml:id="DBjergmanden_Ms">
+<p><hi rend="italic">Ibsen-museet i Grimstad. «Bjergmanden.»</hi> Egenhendig renskrevet manuskript, sendt sammen med flere dikt til Clara Ebbell rundt nyttår 1850/51, jf. HIS 12, 43. Manuskriptet består av ett dobbeltblad med dikttekst på alle fire sider. Diktet «Bjergmanden» dekker begge sidene av andre blad. Foran står diktene «I Natten» og «Fugl og Fuglefænger» (jf. «I Natten», Ibsen-museet i Grimstad og «Fugl og Fuglefænger», Ibsen-museet i Grimstad). For tilstand og beskrivelse av papiret, se «I Natten», Ibsen-museet i Grimstad. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er høyrehellende og omhyggelig. Manuskriptet tilhører Ibsen-museet i Grimstad.</p>
+</div>
+<div type="msDescriptionPart" xml:id="DiBergmanden358_renskrift_Ms">
+<p><hi rend="italic">UBiT Ms Oct. 358, trykkmanuskript. «Bergmanden.»</hi> Egenhendig signert trykkmanuskript. Manuskriptet består av ett blad med tekst på begge sider. Det er sannsynligvis grunnlag for korrekturtrykket (se nedenfor), da teksten stort sett er identisk der. Venstre kant (sett fra første side) er beskåret ujevnt. Manuskriptet har vært brettet, er misfarvet, har skrukker, flekker og andre mindre skader, uten følger for teksten. På første side er det rester etter blålig papir som har vært limt til manuskriptet; på papirrestene kan man skimte trykte tegn. Manuskriptets papir er gulaktig. Siden måler ca. 164 × 213 mm. Manuskriptet er skrevet med blekk; skriftbildet er mørkebrunt. Skriften er høyrehellende og omhyggelig. Manuskriptet er bundet inn foran et korrekturtrykk av diktet. Bindet er et halvbind med rygg og hjørner i brun shirting, og permene har overtrekkspapir marmorert i blått. Ryggen har gulldekor. Forsatspapiret er gulaktig. Heftetråden er gulaktig. Bibliotekets stempel finnes på første side. Stempel og katalogsignatur finnes flere steder i bindet, også ex libris og andre identifikasjonsmerker, samt henvisning til hvor diktet er trykt. Manuskriptet tilhører Gunnerusbiblioteket, Universitetsbiblioteket i Trondheim, Thorvald Boecks brev- og autografsamling, som ble kjøpt fra Boeck i 1899.</p>
+</div>
+<div type="msDescriptionPart" xml:id="DiBergmanden358_korrekturark_Ms">
+<p><hi rend="italic">UBiT Ms Oct. 358, korrekturtrykk. «Bergmanden.»</hi> Korrekturtrykk med et par små håndskrevne rettelser. Trykket består av ett blad med tekst på den ene siden og med et par korrekturrettelser i form av korrekturtegn og en bokstav, for lite til at skriverhånd kan identifiseres. Det bygger sannsynligvis på trykkmanuskriptet som har stort sett identisk tekst, og er grunnlaget for trykket i <title rend="italic">Illustreret Nyhedsblad</title> (jf. tekstfeilen som finnes i både korrekturtrykket og <title rend="italic">Illustreret Nyhedsblad</title>). Bladet er misfarvet, har skrukker, flekker og andre skader, uten følger for teksten. Papiret er mørkt gulaktig. Siden måler ca. 82 × 185 mm. Rettelsene er skrevet med blekk; skriftbildet er mørkebrunt. Korrekturtegnene er tydelige. Trykket er bundet inn sammen med et trykkmanuskript til diktet. For beskrivelse av bindet samt proveniens, se trykkmanuskriptet ovenfor.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">lysræd</head>
+<div type="msDescriptionPart" xml:id="DiLysraedd368_Ms">
+<p><hi rend="italic">UBiT Ms Oct. 368. «Lysrædd.»</hi> Egenhendig signert, renskrevet manuskript med få rettelser. Manuskriptet består av ett blad med tekst på begge sider. Manuskriptet er muligens grunnlag for trykket i <title rend="italic">Illustreret Nyhedsblad</title>, da tekstene er ganske like. Manuskriptet har vært brettet, er misfarvet, har skrukker, rifter og andre skader, uten følger for teksten. Papiret er gulaktig. Siden måler ca. 160 × 213 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er høyrehellende og omhyggelig. Tittelen har enkel understrekning. Det Kongelige Norske Videnskabers Selskabs stempler finnes på versosiden, og på rectosiden er det henvisning til hvor diktet er trykt. Manuskriptet tilhører Gunnerusbiblioteket, Universitetsbiblioteket i Trondheim, Thorvald Boecks brev- og autografsamling, som ble kjøpt fra Boeck i 1899.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">på sangertog</head>
+<div type="msDescriptionPart" xml:id="DiFraSangertog836_Ms">
+<p><hi rend="italic">UBiT Ms Oct. 836. «Fra Sangertoget.»</hi> Egenhendig signert, renskrevet manuskript med en del rettelser. Manuskriptet består av ett dobbeltblad med tekst på de tre første sider. Det er muligens grunnlag for trykket i <title rend="italic">Illustreret Nyhedsblad</title>, da rettelser her er tatt til følge i trykket. Manuskriptet har vært brettet, er misfarvet, har flekker (bl.a. fingermerker), skrukker og andre skader. Det er skadet i hele nedre kant med rifter, kutt og folder, og disse skadene berører teksten, uten følger for lesbarheten. Papiret er gulaktig med bunn- og kjedelinjer. Siden måler ca. 173 × 216 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er høyrehellende og dels omhyggelig, dels mer skjødesløs. Hoved- og undertittel har enkel understrekning. Bibliotekets stempel finnes på s. [4], og Det Kongelige Norske Videnskabers Selskabs stempler samt katalogsignatur på første side. Manuskriptet tilhører Gunnerusbiblioteket, Universitetsbiblioteket i Trondheim, Thorvald Boecks brev- og autografsamling, som ble kjøpt fra Boeck i 1899.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">til en bortdragende kunstner</head>
+<div type="msDescriptionPart" xml:id="DiftSangKunstnerforFest1863_4931">
+<p><hi rend="italic">NBO Ms. 4° 931. Uten tittel.</hi> Egenhendig signert arbeidsmanuskript med en del rettelser. Manuskriptet består av ett blad med tekst på begge sider. Manuskriptet har vært brettet, er stedvis misfarvet og har flekker og andre skader, uten følger for teksten. Papiret er gulaktig med bunn- og kjedelinjer. Siden måler ca. 172 × 216 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er høyrehellende og noe skjødesløs. På første side har en ukjent hånd med blyant skrevet om begivenheten diktet er skrevet til, samt en henvisning til Halvorsens forfatterleksikon. Bladet er bundet inn av biblioteket på samme måte som NBO Ms. 4° 1471 («Toget til Ulrikken»). Bindet måler ca. 178 × 221 mm. Bibliotekets stempel og katalogsignatur finnes på forpermen og på manuskriptets rectoside, stempelet også på versosiden og på rectosiden av fremre forsatsblad, katalogsignaturen på innsiden av forpermen. Manuskriptet tilhører Nasjonalbiblioteket, Oslo. Det har samme proveniens som NBO Ms. 4° 928 («En Livsvaar»).</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">en broder i nød!</head>
+<div type="msDescriptionPart" xml:id="DiEnBroderNoed359_arbms_Ms">
+<p><hi rend="italic">UBiT Ms Oct. 359, arbeidsmanuskript. «Til Norge!»</hi> Egenhendig signert, renskrevet manuskript med noen rettelser. Manuskriptet består av ett dobbeltblad med tekst på alle fire sider. Manuskriptet har vært brettet, er misfarvet og har skrukker, flekker og andre mindre skader, uten følger for teksten. Det har en rift i ryggfalsen, og manuskriptet er ujevnt i nedre kant. Papiret er gulaktig. Siden måler 174 × 212 mm. De fem første strofene samt tittelen «Til Norge!» er skrevet med penn; skriftbildet er mørkebrunt. Skriften er høyrehellende og omhyggelig. De siste to strofene og underskriften er skrevet med blyant. Skriften er svakt høyrehellende og noe skjødesløs. Manuskriptet er bundet inn sammen med og foran to andre manuskripter til diktet: et trykkmanuskript til deler av diktet og et blad av et korrekturtrykk; delene er fortløpende nummerert 1–3. Bindet er halvbind med rygg og hjørner i brun shirting, og permene har overtrekkspapir marmorert i brunt og gult. Forsatspapiret er gulaktig. Ryggen er i ferd med å løsne. På første side finnes bibliotekets og Det Kongelige Norske Videnskabers Selskabs stempler. Stempel og katalogsignatur finnes flere steder i bindet, også ex libris og andre identifikasjonsmerker, samt henvisning til hvor diktet er trykt. Manuskriptet tilhører Gunnerusbiblioteket, Universitetsbiblioteket i Trondheim, Thorvald Boecks brev- og autografsamling, som ble kjøpt fra Boeck i 1899.</p>
+</div>
+<div type="msDescriptionPart" xml:id="DiEnBroderNoed359_korrekturark_Ms">
+  <p><hi rend="italic">UBiT Ms Oct. 359, korrekturtrykk. «En Broder i Nød!»</hi> Korrekturtrykk med håndskrevne rettelser, trolig egenhendige. Trykket består av ett blad med tekst på én side. Trykket bygger sannsynligvis på arbeidsmanuskriptet (se ovenfor), da rettelser derfra er tatt til følge i korrekturtrykket. Korrekturtrykket er sannsynligvis grunnlag for trykket i <title rend="italic">Illustreret Nyhedsblad</title>, da rettelser i korrekturtrykket er tatt til følge der. For strofene [5]–[6], som er strøket her i korrekturtrykket, finnes det et senere manuskript (se nedenfor). Bladet har vært brettet, er misfarvet, har skrukker og svarte flekker etter pennen Ibsen har rettet med. Ingen av skadene har følger for teksten, men venstre del av en rettelse er ikke synlig på grunn av innbindingen. Papiret er mørkt gulaktig. Siden måler ca. 130 × 288 mm. Rettelsene er skrevet med blekk; skriftbildet er mørkebrunt. Skriften er høyrehellende og noe skjødesløs. Trykket er bundet inn sammen med to andre manuskripter til diktet. For beskrivelse av bindet samt proveniens, se arbeidsmanuskriptet ovenfor.</p>
+</div>
+<div type="msDescriptionPart" xml:id="DiEnBroderNoed359_arbmsBruddstykke_Ms">
+  <p><hi rend="italic">UBiT Ms Oct. 359, fragment. Uten tittel.</hi> Egenhendig trykkmanuskript med mange rettelser, fragment. Det inneholder bare strofene [5]–[6], de samme strofer som er strøket i korrekturtrykket (se ovenfor). Manuskriptet består av ett blad med tekst på den ene siden. Trykkmanuskriptet her bygger sannsynligvis på korrekturtrykket og er grunnlag for trykket i <title rend="italic">Illustreret Nyhedsblad</title>, da rettelsene  er tatt til følge der. Manuskriptet har vært brettet, er misfarvet og har skrukker, flekker og andre mindre skader, uten følger for teksten. Papiret er gulaktig og tynt. Siden måler ca. 140 × 202 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er høyrehellende og noe skjødesløs. Manuskriptet er bundet inn sammen med to andre manuskripter til diktet. For beskrivelse av bindet samt proveniens, se arbeidsmanuskriptet ovenfor.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">terje vigen</head>
+<div type="msDescriptionPart" xml:id="DiftTerjeVigen_4925">
+<p><hi rend="italic">NBO Ms. 4° 925. Uten tittel.</hi> Egenhendig renskrevet manuskript med få rettelser, fragment. Manuskriptet består av ett dobbeltblad med tekst på alle sider og inneholder strofene [24]–[35]. Dobbeltbladet er egenhendig nummerert 3, resten av manuskriptet må ha gått tapt. Manuskriptet har vært brettet. Rifter er reparert med gjennomsiktige papirstrimler. Det er noe misfarvet og har ubetydelige skader. Papiret er gulaktig. Siden måler ca. 173 × 213 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er høyrehellende og omhyggelig. På første side har en ukjent hånd med blyant skrevet: «Brudstykke af ‹Terje Vigen›». Dessuten er det med blyant satt en stjerne i margen på siste side. Manuskriptet er bundet inn av biblioteket på samme måte som NBO Ms. 4° 1471 («Toget til Ulrikken»). Bindet måler ca. 179 × 219 mm. Bibliotekets stempel og katalogsignatur finnes på forpermen, katalogsignaturen på innsiden av forpermen, stempelet på første og tredje side. Manuskriptet tilhører Nasjonalbiblioteket, Oslo. Det har samme proveniens som NBO Ms. 4° 928 («En Livsvaar»).</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">forviklinger</head>
+<div type="msDescriptionPart" xml:id="DiForviklinger375_utkast_Ms">
+  <p><hi rend="italic">UBiT Ms Oct. 375, strøket utkast i arbeidsmanuskript til <title rend="italic">Kjærlighedens Komedie</title>. Uten tittel.</hi> Egenhendig arbeidsmanuskript til dramaet <title rend="italic">Kjærlighedens Komedie</title> med strøket utkast til diktet «Forviklinger». For beskrivelse av hele manuskriptet, se HIS 4k, 123–28. Diktet finnes på legg 11, bl. [3]v–[4]r. Det er gjort rettelser i diktteksten før det hele er strøket, sannsynligvis alt med samme penn. Utkastet inneholder hele diktet, og det er trolig grunnlag for trykkmanuskriptet (se nedenfor), da rettelser er tatt til følge der. Manuskriptet tilhører Gunnerusbiblioteket, Universitetsbiblioteket i Trondheim, Thorvald Boecks brev- og autografsamling, som ble kjøpt fra Boeck i 1899.</p>
+</div>
+<div type="msDescriptionPart" xml:id="DiForviklinger361_renskrift_Ms">
+<p><hi rend="italic">UBiT Ms Oct. 361, trykkmanuskript. «Forviklinger.»</hi> Egenhendig signert trykkmanuskript med få rettelser. Manuskriptet består av ett dobbeltblad med tekst på de tre første sider. Det er sannsynligvis grunnlag for korrekturtrykket (se nedenfor). Manuskriptet har merker etter svertede fingre, og en rettelse i manuskriptet er tatt til følge i korrekturtrykket. Manuskriptet har vært brettet, er misfarvet, har noen rifter og fingermerker. På annen og tredje side er det blekkflekker som berører teksten, med følger for lesbarheten. Papiret er gulaktig og forholdsvis kraftig med bunn- og kjedelinjer. Siden måler 174 × 213 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er høyrehellende og omhyggelig. Manuskriptet er bundet inn sammen med et korrekturtrykk av diktet. Korrekturtrykket (ett blad) er plassert inni dobbeltbladet med trykkmanuskriptet. Bindet er et halvbind med rygg og hjørner i brun shirting, og permene har overtrekkspapir marmorert i mørkebrunt. Ryggen har gulldekor. Forsatspapiret er gulaktig. Heftetråden er gulaktig. Bibliotekets og Det Kongelige Norske Videnskabers Selskabs stempler finnes på første side. Stempel og katalogsignatur finnes flere steder i bindet, også ex libris og andre identifikasjonsmerker, samt henvisning til hvor diktet er trykt. Manuskriptet tilhører Gunnerusbiblioteket, Universitetsbiblioteket i Trondheim, Thorvald Boecks brev- og autografsamling, som ble kjøpt fra Boeck i 1899.</p>
+</div>
+<div type="msDescriptionPart" xml:id="DiForviklinger361_korrekturark_Ms">
+<p><hi rend="italic">UBiT Ms Oct. 361, korrekturtrykk. «Forviklinger.»</hi> Korrekturtrykk med håndskrevne rettelser, hånden er kanskje Paul Botten-Hansens. Trykket består av ett blad med tekst på den ene siden. Det bygger sannsynligvis på trykkmanuskriptet og er grunnlag for trykket i <title rend="italic">Illustreret Nyhedsblad</title>, da rettelser i korrekturtrykket er tatt til følge der. Manuskriptet har vært brettet, er misfarvet og har flekker og andre mindre skader, uten følger for teksten. Trykket har slått kraftig igjennom til versosiden av bladet. Papiret er mørkt gulaktig. Siden måler ca. 106 × 206 mm. Rettelsene er skrevet med blekk; skriftbildet er mørkebrunt. Skriften er høyrehellende og tydelig. Trykket er bundet inn sammen med et trykkmanuskript til diktet. For beskrivelse av bindet samt proveniens, se trykkmanuskriptet ovenfor.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">på vidderne</head>
+<div type="msDescriptionPart" xml:id="DiPaaVidderne369_Ms">
+<p><hi rend="italic">UBiT Ms Oct. 369. Uten tittel.</hi> Egenhendig renskrevet manuskript med en del rettelser, fragment. Manuskriptet består av ett dobbeltblad og to løse blad med tekst på alle åtte sider. Manuskriptet inneholder bare strofene [44]–[69]. Dobbeltbladet er egenhendig nummerert 5 og det første løse blad 6, resten av manuskriptet må ha gått tapt. De to løse bladene hørte trolig opprinnelig sammen i et dobbeltblad (begge er revet eller skåret i venstre kant sett fra første tekstside). Manuskriptet ligger muligens til grunn for trykket i <title rend="italic">Illustreret Nyhedsblad</title>, da rettelser her er tatt til følge i trykket. Manuskriptet har vært brettet, er misfarvet, har flekker (bl.a. fingermerker), skrukker og andre skader, uten følger for teksten. Papiret er gråaktig med skjær av rosa og har bunn- og kjedelinjer. Siden måler 144 × 227 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er høyrehellende og noe skjødesløs. Bibliotekets og Det Kongelige Norske Videnskabers Selskabs stempler finnes på første side; det sistnevnte stempel finnes også på første løse blads forside. På første side er det dessuten henvisning til hvor diktet er trykt. Manuskriptet tilhører Gunnerusbiblioteket, Universitetsbiblioteket i Trondheim, Thorvald Boecks brev- og autografsamling, som ble kjøpt fra Boeck i 1899.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">abraham lincolns mord</head>
+<div type="msDescriptionPart" xml:id="DiftLincolnsMord_81591">
+<p><hi rend="italic">NBO Ms. 8° 1591. «Lincolns Mord.»</hi> Egenhendig signert trykkmanuskript med få rettelser. Manuskriptet består av to løse blad med tekst på alle fire sider. Det er uvisst om manuskriptet er trykkmanuskript til avistrykket i <title rend="italic">Fædrelandet</title> eller <title rend="italic">Aftenbladet</title>, da det er forskjeller mellom manuskriptet og begge avistrykkene. Men det må være et trykkmanuskript (jf. påskriften til setteren). Manuskriptet er datert 30. april 1865. Manuskriptet har vært brettet, er misfarvet og har skrukker og rifter, spesielt langs bretten på tvers av annet blad. Det er noen flekker og andre skader som berører teksten, men ingen av skadene har følger for lesbarheten. Papiret er gulaktig og forholdsvis tynt med bunn- og kjedelinjer. Første blad måler 135 × 213 mm, andre måler 135 × 214 mm. Manuskriptet er skrevet med blekk; skriftbildet er mørkebrunt. Skriften er høyrehellende og omhyggelig. Tittelen er understreket med bølgestrek. En ukjent hånd har med penn notert øverst på første side: «Ny» og «Den sædvanlige ortographi følges.» Det er dessuten satt blå kryss i øvre høyre hjørne på første blads versoside og på annet blads rectoside. Bibliotekets stempel og katalogsignatur finnes på første blads rectoside og på annet blads versoside. Manuskriptet tilhører Nasjonalbiblioteket, Oslo. Arthur Thuesen, formann i Bibliofilklubben, overrakte manuskriptet til det daværende Universitetsbibliotek i depositum 13. mars 1923. Den 13. mars 1972 gav Bibliofilklubben ved formann Harald L. Tveterås manuskriptet til det daværende Universitetsbibliotek.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">ballonbrev til en svensk dame</head>
+<div type="msDescriptionPart" xml:id="DiBallonbrevVu91_Ms">
+<p><hi rend="italic">KBS Vu. 91. «Til Fru Frederika Limnell!»</hi> Egenhendig signert, renskrevet manuskript med få rettelser, sendt som brev til Fredrika Limnell desember 1870, jf. HIS 12, 440–54. Manuskriptet består av fem dobbeltblad med tekst på de første 19 sider. Dobbeltbladene (ikke det første) er av Ibsen merket 2–5, men tallene er bare delvis synlige fordi manuskriptet er bundet inn. Det har vært brettet, og det har noen flekker, uten følger for teksten. Papiret er gulaktig med bunn- og kjedelinjer. Siden måler 141 × 220 mm. Manuskriptet er skrevet med blekk; skriftbildet er fiolett. Skriften er venstrehellende og omhyggelig. Brevet tilhører Kungliga biblioteket, Stockholm; mottatt i 1925 som gave fra Lotten Lindberg.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">rimbrev til fru heiberg</head>
+<div type="msDescriptionPart" xml:id="DiRimbrevFruHeiberg187134_Ms">
+<p><hi rend="italic">Teatermuseet i København, brev fra Henrik Ibsen til Johanne Luise Heiberg. «Til fru etatsrådinde Heiberg!»</hi> Egenhendig signert, renskrevet manuskript sendt som brev til Johanne Luise Heiberg 15. april 1871, se HIS 12, 492–501. Manuskriptet består av tre dobbeltblad, av Ibsen nummerert 1–3 med tekst på alle tolv sider. Manuskriptet har vært brettet, har noen skrukker og andre mindre skader, uten følger for teksten. Særlig yttersidene av dobbeltblad 1 og 3 er misfarvet. Papiret er gulaktig med bunn- og kjedelinjer. Siden måler 140 × 219 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er venstrehellende og omhyggelig. Manuskriptet tilhører Teatermuseet, København.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">i en komponists stambog</head>
+<div type="msDescriptionPart" xml:id="DiIKomponistStambog18660330EGr_Ms">
+<p><hi rend="italic">BOB Edvard Grieg arkiv, Griegs minnebok 1859–72. «Till Edvard Grieg!»</hi> Egenhendig signert innførsel i Edvard Griegs minnebok, datert 30. mars 1866. Manuskriptet består av ett blad med tekst på den ene siden. Manuskriptet er siste blad i Griegs minnebok, som har blått fløyelstrekk med dekor i gull og teksten «Album» på forpermen. Bladet med Ibsendiktet er limt fast til bakre forsatsblad i bindet. Bindet har vært konservert. Papiret er gulaktig, stivt, av samme kvalitet og størrelse som de øvrige blad i bindet. Bladet måler 256 × 190 mm. Manuskriptet er skrevet med blekk; skriftbildet er mørkebrunt. Skriften er høyrehellende og omhyggelig. Manuskriptet tilhører Bergen Offentlige Bibliotek; mottatt som testamentarisk gave fra Edvard og Nina Grieg.</p>
+</div>
+</div>
+
+<div>
+  <head rend="level4">[variant til brændte skibe]</head>
+<div type="msDescriptionPart" xml:id="DiVarBraendSkibe83516">
+<p><hi rend="italic">NBO Ms. 8° 3516 (fotografi av egenhendig signert manuskript, trolig dedikasjon). Uten tittel.</hi> Manuskriptet er beskrevet på grunnlag av fotografiet. Det har én side tekst og er datert 21. januar 1892. Av kopien ser det ut til at manuskriptet er i god stand. Manuskriptet må være skrevet med blekk. Skriften er venstrehellende og omhyggelig. Kopien tilhører Nasjonalbiblioteket, Oslo. På baksiden av fotografiet er det notert «Julebluss 1892 til Johan Sverdrup»; det er mulig det skal bety at Ibsen hadde skrevet dette som dedikasjon til Sverdrup.</p>
+</div>
+<div type="msDescriptionPart" xml:id="DiVarBraendSkibe83680">
+<p><hi rend="italic">NBO Ms. 8° 3680. Uten tittel.</hi> Egenhendig signert dedikasjon i et eksemplar av tredje utgave av <title rend="italic">Catilina</title> (1891). Diktet står på rectosiden av fremre flyblad. Dedikasjonen er datert 21. januar 1892. Bladet diktet er skrevet på, er misfarvet og har ubetydelige flekker. Papiret er gulaktig. Siden måler 110 × 173 mm. Manuskriptet er skrevet med blekk; skriftbildet er mørkebrunt. Skriften er venstrehellende og omhyggelig. Eksemplaret har innbinding i halvbind med rygg og hjørner i lysebrun shirting. Permene har mønster i brunt. Bindet måler ca. 118 × 177 mm. Ryggen har tittel, forfatternavn og ornamentering i gulltrykk. Bibliotekets stempel og katalogsignatur finnes på innsiden av forpermen og på smusstittelsiden. Boken tilhører Nasjonalbiblioteket, Oslo; mottatt i 2005 som gave fra Roderick Rudler. Den har tilhørt Thorvald Meyers bibliotek.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">langt borte</head>
+<div type="msDescriptionPart" xml:id="DiLangtBorte43557_Ms">
+<p><hi rend="italic">KBK NKS 3557, 4°. «Langt borte.»</hi> Egenhendig trykkmanuskript med få rettelser, fragment. Manuskriptet består av ett dobbeltblad med tekst på alle fire sider. Det inneholder bare de første 24 strofer av i alt 32. Teksten slutter nederst på bl. [2], uten noen form for avslutning (f.eks. finalstrek eller underskrift). Manuskriptet er sannsynligvis grunnlag for trykket i <title rend="italic">Det nittende Aarhundrede</title>, da rettelser i manuskriptet er tatt til følge i trykket, og det har trolig opprinnelig vært fullstendig. Diktet ble sendt som vedlegg til et brev til Georg Brandes 8. juni 1875, HIS 13k, 385.  Manuskriptet har vært brettet, er stedvis skittent, har skrukker, flekker og andre mindre skader, uten følger for teksten. Papiret er gulaktig og glatt. Siden måler 138 × 218 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er venstrehellende og omhyggelig. Tittelen har dobbel understrekning, og det er satt enkle streker mellom avdelinger av strofer, begge deler utført med linjal. På siste side har en ukjent hånd med blyant skrevet hvor diktet har vært trykt. Manuskriptet tilhører Det Kongelige Bibliotek, København; NKS 3557, 4°; tre dikt av Ibsen («Et rimbrev», «Langt borte» og «Nordens signaler») er tatt ut av Brandes’ papirer.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">et rimbrev</head>
+<div type="msDescriptionPart" xml:id="DiEtRimbrev43557_Ms">
+<p><hi rend="italic">KBK NKS 3557, 4°. «Et rimbrev.»</hi> Egenhendig signert, renskrevet manuskript med få rettelser. Manuskriptet består av to dobbeltblad med tekst på alle åtte sider. Det andre dobbeltbladet er egenhendig nummerert 2. Diktet ble sendt som vedlegg til et brev til Georg Brandes 14. juli 1875, HIS 13, 260. Manuskriptet er trolig grunnlag for trykket i <title rend="italic">Det nittende Aarhundrede</title>, da rettelser i manuskriptet er tatt til følge i trykket. Manuskriptet har vært brettet, er stedvis skittent, har skrukker, flekker og andre mindre skader, uten følger for teksten. Papiret er gulaktig med bunn- og kjedelinjer. Siden måler 138 × 217 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er venstrehellende og omhyggelig. Tittelen har dobbel understrekning utført med linjal. På siste side har en ukjent hånd med blyant skrevet hvor diktet har vært trykt. Manuskriptet tilhører Det Kongelige Bibliotek, København; NKS 3557, 4°; tre dikt av Ibsen («Et rimbrev», «Langt borte» og «Nordens signaler») er tatt ut av Brandes’ papirer.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">ved tusendårs-festen den 18<hi rend="raised">de</hi> juli 1872</head>
+<div type="msDescriptionPart" xml:id="DiVedTusenFest187281932">
+<p><hi rend="italic">NBO Ms. 8° 1932. «Ved tusendårs-festen.»</hi> Egenhendig signert arbeidsmanuskript med mange rettelser, dels mellom linjene, dels på langs i margen. Manuskriptet består av to løse dobbeltblad med tekst på alle åtte sider. Manuskriptet er trolig tidligere enn både NBO Ms. fol.3217 og BOB hBI og er grunnlaget for det førstnevnte, da rettelser i NBO Ms. 8° 1932 er tatt til følge der. Manuskriptet er stedvis misfarvet, har flekker og andre ubetydelige skader. Papiret er mørkt gulaktig med bunn- og kjedelinjer. Det første dobbeltbladet er litt kraftigere enn det andre og måler ca. 141 × 220 mm; det andre dobbeltbladet måler ca. 141 × 223 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er venstrehellende og skjødesløs. Bibliotekets stempel og katalogsignatur finnes på s. [1] og [3], på s. [5] og [7] bare stempelet. Manuskriptet tilhører Nasjonalbiblioteket, Oslo; kjøpt i 1968–69 fra Ibsens arvinger. Det var i 1956 innlevert til biblioteket av Halvdan Koht.</p>
+</div>
+<div type="msDescriptionPart" xml:id="DiVedTusenFest18723217">
+<p><hi rend="italic">NBO Ms. fol.3217. «Ved tusendårs-festen.»</hi> Egenhendig signert arbeidsmanuskript med mange rettelser. Manuskriptet består av to dobbeltblad med tekst på alle åtte sider. Det andre dobbeltbladet er egenhendig nummerert 2. Manuskriptet bygger sannsynligvis på NBO Ms. 8° 1932, da rettelsene der er tatt til følge. Manuskriptet har vært brettet, er ujevnt skåret eller revet i nedre kant og har noen flekker og andre ubetydelige skader. Det er rester etter limbånd på første dobbeltblads rectoside og siste dobbeltblads versoside; de to dobbeltbladene har trolig vært festet til hverandre. Papiret er gulaktig med bunn- og kjedelinjer. Det første dobbeltbladet måler ca. 141 × 218 mm, det andre ca. 140 × 219 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er venstrehellende og dels omhyggelig, dels mer skjødesløs. Bibliotekets stempel og katalogsignatur finnes på s. [1] og s. [8]. Manuskriptet tilhører Nasjonalbiblioteket, Oslo; mottatt i 1968 som testamentarisk gave fra h.r.advokat Jonas Skougaard (jf. Tunold 1969 og 1972).</p>
+</div>
+<div type="msDescriptionPart" xml:id="DiVedTusenFest1872BOB_Ms">
+<p><hi rend="italic">BOB hBI. «Ved tusendårs-festen.»</hi> Egenhendig signert, renskrevet manuskript med få rettelser, sendt som vedlegg til et brev til Komiteen for tusenårsfesten i Berlin 11. juli 1872, se HIS 13, 560. I brevet diktet er vedlagt, skriver Ibsen at manuskriptet er avskrift av et dikt skrevet til en annen anledning. Manuskriptet består av to dobbeltblad med tekst på alle åtte sider. De to dobbeltbladene har Ibsens egen nummerering 1–2 på første side. Manuskriptet har vært brettet, nedre kant er ujevn, det er stedvis misfarvet, har flekker og andre mindre skader, uten følger for teksten. Papiret er gulaktig med bunn- og kjedelinjer. Siden måler 142 × 219 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er venstrehellende og omhyggelig. Tittelen har dobbel understrekning utført med linjal. Bibliotekets katalogsignatur finnes på første side av hvert dobbeltblad. Manuskriptet tilhører Bergen Offentlige Bibliotek.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">et vers</head>
+<div type="msDescriptionPart" xml:id="DiEtVers166">
+<p><hi rend="italic">NBO Brevs. 166, brev fra Henrik Ibsen til Ludwig Passarge. Uten tittel.</hi> Egenhendig renskrevet manuskript, som del av et brev til Ludwig Passarge 16. juni 1880, se HIS 14, 46–48. Manuskriptet består av ett dobbeltblad med brevtekst på alle fire sider. Diktet finnes som en del av brevet satt innenfor anførselstegn øverst på s. [3]. Manuskriptet har vært brettet og har flekker og andre skader, uten følger for teksten. Papiret er gulaktig, noe stivt, med vannmerke Antique Parchment Note Paper, våpenskjold og initialene A P &amp; S i fraktur. Siden måler 125 × 201 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er venstrehellende og omhyggelig. Uthevede ord i diktteksten har enkel understrekning. På første side har biblioteket påført mottagerens navn. Bibliotekets stempel og katalogsignatur finnes på siste side. Brevet tilhører Nasjonalbiblioteket, Oslo; mottatt i 1945 som gave fra Julius Elias’ dødsbo.</p>
+</div>
+<div type="msDescriptionPart" xml:id="DiEtVersGrobner_Ms">
+<p><hi rend="italic">NBO fotokopi i Øyvind Ankers arkiv av egenhendig signert innførsel i gjesteboken på Hotel Gröbner i Gossensass. Uten tittel.</hi> Manuskriptet er beskrevet på grunnlag av kopien. Rundt Ibsens dikt er det signerte innførsler med andre hender. Ibsen har først skrevet diktet på norsk, og under dette en tysk oversettelse i parentes. Ibsens innførsel er datert 10. august 1883. Av kopien ser det ut til at manuskriptet er i god stand. Manuskriptet må være skrevet med blekk. Skriften er venstrehellende og omhyggelig. Kopien tilhører Nasjonalbiblioteket, Oslo. Øyvind Ankers forarbeider til utgaven av Ibsen-brev ble mottatt som gave fra ham i 1982.</p>
+</div>
+<div type="msDescriptionPart" xml:id="DiEtVers43742_Ms">
+<p><hi rend="italic">KBK NKS 3742, 4°, brev fra Henrik Ibsen til Frederik Hegel. «Et vers.»</hi> Egenhendig renskrevet manuskript, som del av et brev til Frederik Hegel 28. august 1886, se HIS 14, 744–45. Manuskriptet består av ett dobbeltblad med brevtekst på de to første sider og diktet tilføyd på s. [3]. Manuskriptet er montert inn i et hefte sammen med andre brev fra Ibsen til Hegel 1886; det er limt til en fals som dekker høyre kant av s. [4], som er uten tekst. Brevets nummer i samlingen (329) står på første side. Manuskriptet har vært brettet. Papiret er gulaktig, noe stivt, med vannmerke Antique Parchment Note Paper, våpenskjold og latinske initialer A P &amp; S. Siden måler 124 × 200 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er venstrehellende og omhyggelig. Både den doble understrekning av tittelen samt uthevninger i diktteksten er utført med linjal. Manuskriptet tilhører Det Kongelige Bibliotek, København; mottatt i 1920 som gave fra Julie Hegel og forlaget Gyldendalske Boghandel.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">til frederik hegel</head>
+<div type="msDescriptionPart" xml:id="DiTilFrHegel43742_Ms">
+<p><hi rend="italic">KBK NKS 3742, 4°. «Til Cancelliråd F: Hegel!»</hi> Egenhendig renskrevet manuskript, sendt som vedlegg til et brev til Frederik Hegel. Det er nå av biblioteket plassert sammen med et brev datert 8. januar 1871, men det må være feil, for diktet er sendt tidligere, jf. <hi rend="italic">Tekstgrunnlag og øvrige tekstkilder</hi>. Vedlegget består av ett blad med tekst på én side. Brevet og vedlegget med diktet er montert inn i et hefte sammen med andre brev fra Ibsen til Hegel 1886; det er limt til en fals som dekker høyre kant av s. [2] av vedlegget, som er uten tekst. Vedleggets nummer i samlingen (143 2) står på samme side som diktteksten. Manuskriptet har vært brettet. Papiret er gulaktig med bunn- og kjedelinjer. Siden måler 141 × 219 mm. Venstre kant (sett fra tekstsiden) synes revet eller skåret. Manuskriptet er skrevet med blekk; skriftbildet er fiolett. Skriften er venstrehellende og omhyggelig. Manuskriptet tilhører Det Kongelige Bibliotek, København; mottatt i 1920 som gave fra Julie Hegel og forlaget Gyldendalske Boghandel.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">ved et bryllup</head>
+<div type="msDescriptionPart" xml:id="DiBryllupssang1874100981930">
+<p><hi rend="italic">NBO Ms. 8° 1930. «Ved / Herr Jakob Hegels og frøken Elisabet Bagges / bryllupsfest, / den 9<hi rend="raised">de</hi> Oktober 1874.»</hi> Egenhendig trykkmanuskript med få rettelser. Manuskriptet består av ett dobbeltblad med tekst på begge sider av første blad. Det er trolig grunnlag for småtrykket trykt til anledningen, da rettelser i manuskriptet er tatt til følge der. Manuskriptet er stedvis misfarvet, har noen skrukker i kantene og andre ubetydelige skader. Papiret er gulaktig og forholdsvis tynt. Siden måler 142 × 277 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er venstrehellende og overveiende omhyggelig. Bibliotekets stempel og katalogsignatur finnes på s. [3]. Manuskriptet tilhører Nasjonalbiblioteket, Oslo; kjøpt i 1968–69 fra Ibsens arvinger. Det var i 1956 innlevert til biblioteket av Halvdan Koht.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">stjerner i lyståge</head>
+<div type="msDescriptionPart" xml:id="DiStjernerLystaage81988">
+<p><hi rend="italic">NBO Ms. 8° 1988. «Stjerner i lyståge.»</hi> Egenhendig arbeidsmanuskript med noen rettelser. Manuskriptet består av ett dobbeltblad med tekst på de første to sider. Det er datert 17. desember 1885 og er trolig grunnlag for NBO Ms. fol.3216, siden rettelser i NBO Ms. 8° 1988 er tatt til følge der. Manuskriptet har vært brettet, er noe misfarvet, er revnet noe i bretten og har andre ubetydelige skader. Papiret er gulaktig med bunn- og kjedelinjer. Siden måler 173 × 221 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er venstrehellende og omhyggelig. Bibliotekets stempel og katalogsignatur finnes på forsiden av dobbeltbladet. Manuskriptet tilhører Nasjonalbiblioteket, Oslo; mottatt i 1956 som gave fra Francis Bull.</p>
+</div>
+<div type="msDescriptionPart" xml:id="DiStjernerLystaage3216">
+<p><hi rend="italic">NBO Ms. fol.3216. «Stjerner i lyståge.»</hi> Egenhendig signert trykkmanuskript med få rettelser. Manuskriptet består av ett dobbeltblad med tekst på begge sider av første blad. Manuskriptet bygger på NBO Ms. 8° 1988, da rettelser der er tatt til følge, og det er sannsynligvis grunnlag for trykket i <title rend="italic">Norden</title>, da teksten der er nesten identisk, og det er en feillesning i førstetrykket i ordet «bares» (for «bæres») som skyldes at blekket er rent ut i manuskriptet her. Manuskriptet har vært brettet og senere reparert i brettene med gjennomsiktig limbånd. Det er misfarvet, har noen flekker og andre skader, uten følger for teksten. Papiret er gulaktig med bunn- og kjedelinjer og med vannmerke Delta Mill Fine. Siden måler 176 × 225 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er venstrehellende og omhyggelig. Et par steder er blekket utflytende (jf. «bares» ovenfor). Tittelen har understrekning utført med linjal. Bibliotekets stempel og katalogsignatur finnes på s. [4]. Manuskriptet tilhører Nasjonalbiblioteket, Oslo; mottatt i 1968 som testamentarisk gave fra h.r.advokat Jonas Skougaard (jf. Tunold 1969 og 1972).</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">de sad der, de to –</head>
+<div type="msDescriptionPart" xml:id="DiDeSadDerDeTo41117b_utkast_Ms">
+  <p><hi rend="italic">NBO Ms. 4° 1117, renskrift i arbeidsmanuskript til <title rend="italic">Lille Eyolf</title>. Uten tittel.</hi> Egenhendig arbeidsmanuskript til dramaet <title rend="italic">Lille Eyolf</title> med renskrift til diktet «De sad der, de to –». For beskrivelse av hele manuskriptet, se HIS 9k, under <hi rend="italic">Manuskriptbeskrivelse</hi>. Diktet finnes på legg 31, bl. [2]r–v. Renskriften inneholder hele diktet, og det er bare få forskjeller i forhold til førstetrykket i FU (jf. tekstredegjørelsen under <hi rend="italic">Tekstgrunnlag og øvrige tekstkilder</hi>). Manuskriptet tilhører Nasjonalbiblioteket, Oslo. For proveniens, se HIS 9k, under <hi rend="italic">Manuskriptbeskrivelse</hi>.</p>
+</div>
+</div>
+</div>
+
+<div>
+<head rend="level2">ENKELTDIKT 1871–1906</head>
+<div>
+<head rend="level4">nordens signaler</head>
+<div type="msDescriptionPart" xml:id="DNordensSignaler43557_Ms">
+<p><hi rend="italic">KBK NKS 3557, 4°. «Nordens signaler.»</hi> Egenhendig signert, renskrevet manuskript. Manuskriptet består av ett dobbeltblad med tekst på de tre første sider. Manuskriptet har vært brettet, er stedvis misfarvet, er ujevnt skåret i nedre kant og har andre mindre skader, uten følger for teksten. Papiret er gulaktig med bunn- og kjedelinjer. Siden måler ca. 141 × 219 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er venstrehellende og omhyggelig. Tittelen har dobbel understrekning utført med linjal. En ukjent hånd har med blyant skrevet «1872?» på tredje side og hvor diktet har vært trykt på siste side. Manuskriptet tilhører Det Kongelige Bibliotek, København; NKS 3557, 4°; tre dikt av Ibsen («Et rimbrev», «Langt borte» og «Nordens signaler») er tatt ut av Brandes’ papirer.</p>
+</div>
+</div>
+
+
+<div>
+<head rend="level4">amalie holck</head>
+<div type="msDescriptionPart" xml:id="DVedHolcksBaare81929_Ms">
+<p><hi rend="italic">NBO Ms. 8° 1929. «Amalie Holck.»</hi> Egenhendig arbeidsmanuskript med en del rettelser. Manuskriptet består av ett dobbeltblad med dikttekst på begge sider av det ene bladet. På annet blad, opp ned i forhold til diktet har Ibsen skrevet utkast til et brev (jf. HIS 13, 598), og Sigurd Ibsen har skrevet en tysk oversettelse under. Manuskriptet har flekker og andre ubetydelige skader. Papiret er gulaktig. Siden måler 144 × 222 mm. Diktet er skrevet med blekk; skriftbildet er brunt. Skriften er venstrehellende og dels omhyggelig, dels mer skjødesløs. Bibliotekets stempel og katalogsignatur finnes på dobbeltbladets to midterste sider. Manuskriptet tilhører Nasjonalbiblioteket, Oslo; kjøpt i 1968–69 fra Ibsens arvinger. Det var i 1956 innlevert til biblioteket av Halvdan Koht.</p>
+</div>
+  
+<div type="msDescriptionPart" xml:id="DVedHolcksBaare43503_Ms">
+<p><hi rend="italic">NBO Ms. 4° 3503 (fotokopi av egenhendig signert, renskrevet manuskript). «Amalie Holck.»</hi> Manuskriptet er beskrevet på grunnlag av kopien. Det har tekst på to sider. Av kopien ser det ut til at manuskriptet er i god stand. Det må være skrevet med blekk. Skriften er venstrehellende og omhyggelig. Tittelen har dobbel understrekning utført med linjal. Bibliotekets stempel og katalogsignatur finnes på den første kopisiden. Kopien tilhører Nasjonalbiblioteket, Oslo; mottatt i 1980 fra Øyvind Anker. Originalen var da i privat eie.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">til frøken emma klingenfeld</head>
+<div type="msDescriptionPart" xml:id="DTilFrkKlingenfeld81931_Ms">
+  <p><hi rend="italic">NBO Ms. 8° 1931. Uten tittel.</hi> Egenhendig renskrevet manuskript uten rettelser. Manuskriptet består av ett dobbeltblad med dikttekst på de to første sider. På s. [4] opp ned i forhold til diktteksten har Ibsen skrevet utkast til noen replikker i <title rend="italic">Samfundets støtter</title> (jf. HIS 7k, 90–91), dessuten regnestykker på de blanke områder av dobbeltbladet (s. [2]–[4]). Manuskriptet er trolig grunnlag for NBO Ms. 8° 1154, da teksten der stort sett er identisk. Manuskriptet er stedvis misfarvet, har noen skrukker og andre ubetydelige skader. Papiret er gulaktig. Siden måler 139 × 218 mm. Diktet er skrevet med blekk; skriftbildet er brunt. Skriften er venstrehellende og overveiende omhyggelig. Bibliotekets stempel og katalogsignatur finnes på s. [2] og s. [4]. Manuskriptet tilhører Nasjonalbiblioteket, Oslo; kjøpt i 1968–69 fra Ibsens arvinger. Det var i 1956 innlevert til biblioteket av Halvdan Koht.</p>
+</div>
+  
+<div type="msDescriptionPart" xml:id="DTilFrkKlingenfeld81154_Ms">
+<p><hi rend="italic">NBO Ms. 8° 1154. «Til / frøken Emma Klingenfeld»</hi> Egenhendig signert, renskrevet manuskript. Manuskriptet består av ett blad med tekst på begge sider. Manuskriptet har vært brettet og er reparert i brettene med pålimte strimler av gjennomsiktig papir. Det er misfarvet, har flekker og andre ubetydelige skader. Papiret er gulaktig med bunn- og kjedelinjer. Siden måler ca. 139 × 216 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er venstrehellende og omhyggelig. Mellom tittelen og diktet er det en skillestrek satt med linjal. Over tittelen er det en blyantpåskrift av Emma Klingenfeld om bakgrunnen for diktet. Bladet er bundet inn av biblioteket på samme måte som NBO Ms. 4° 1471 («Toget til Ulrikken»), men der er det flybladet som er brukt som bibliotekets tittelblad (riktignok uten tittel, bare med Ibsens navn). Bindet måler ca. 146 × 222 mm. Bibliotekets stempel og katalogsignatur finnes på forpermen, stempelet også på rectosidene av fremre forsatsblad, flybladet og selve manuskriptet, katalogsignaturen på innsiden av forpermen. Manuskriptet tilhører Nasjonalbiblioteket, Oslo; kjøpt i 1935 fra Emma Klingenfeld.</p>
+</div>
+</div>
+
+<div>
+  <head rend="level4">[til denne bog]</head>
+<div type="msDescriptionPart" xml:id="DTilDenneBog82818_Ms">
+<p><hi rend="italic">NBO Ms. 8° 2818. Uten tittel.</hi> Egenhendig signert dedikasjon i et eksemplar av <title rend="italic">Die Herrin von Oestrot</title> (1877). Diktet står på rectosiden av fremre flyblad. Bladet diktet er skrevet på, er noe misfarvet og har flekker, uten følger for teksten. Papiret er gulaktig. Siden måler ca. 125 × 167 mm. Manuskriptet er skrevet med blekk; skriftbildet er mørkebrunt. Skriften er venstrehellende og omhyggelig. Eksemplaret har innbinding i rød shirting med ramme i blindtrykk på for- og bakperm og med tittel og forfatternavn i gulltrykk på forpermen. Bindet måler ca. 132 × 174 mm. Boken har tilhørt Susanna Ibsen, og hennes navnetrekk står øverst på samme side som diktet. Bibliotekets stempel og katalogsignatur finnes på innsiden av forpermen. Boken tilhører Nasjonalbiblioteket, Oslo; mottatt i 1972 som gave fra Tancred Ibsen.</p>
+</div>
+</div>
+
+<div>
+  <head rend="level4">[deviser]</head>
+<div type="msDescriptionPart" xml:id="DDeviser_Ms">
+<p><hi rend="italic">NBO Ms. 4° 2590, s. 92. Uten tittel.</hi> Egenhendig arbeidsmanuskript med noen rettelser. Første side fremstår som et renskrevet manuskript, mens annen side er mer skjødesløst skrevet og med mange rettelser. Manuskriptet består av ett dobbeltblad med dikttekst på de to første sider. Manuskriptet har noen skrukker og andre ubetydelige skader. Papiret er gulaktig med bunn- og kjedelinjer. Siden måler ca. 140 × 217 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er venstrehellende og omhyggelig. Manuskriptet er limt til et blad i Bergliot Ibsens minnealbum. Bindet er «slaktet» og alle bladene er nå løse. Bladet, som er ujevnt skåret, måler ca. 162 × 230 mm. På s. [2] og [3] har Bergliot Ibsen notert at diktteksten er skrevet av Ibsen. Bibliotekets stempel og katalogsignatur finnes på s. [3]. Manuskriptet tilhører Nasjonalbiblioteket, Oslo; kjøpt i 1970 fra Tancred Ibsen.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">til herr hartmann!</head>
+<div type="msDescriptionPart" xml:id="DDevise_Hartmann39_Ms">
+<p><hi rend="italic">NBO Brevs. 39, brev fra Henrik Ibsen til G. Hartmann. «Til / herr Hartmann!»</hi> Egenhendig renskrevet manuskript med få rettelser. Manuskriptet består av ett dobbeltblad med tekst på første side. Et utkast til dette diktet finnes i NBO Ms. 4° 2590, s. 92 (se ovenfor). Manuskriptet har vært brettet, er noe misfarvet og har andre ubetydelige skader. Papiret er gulaktig med bunn- og kjedelinjer. Siden måler ca. 140 × 217 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er venstrehellende og omhyggelig. Bibliotekets stempel og katalogsignatur finnes på forsiden. På tekstsiden har en ukjent hånd skrevet «Fra Henrik Ibsen 24/12 1876.». På dobbeltbladets siste side står nummeret 7. Manuskriptet tilhører Nasjonalbiblioteket, Oslo. Det ble gitt i gave til biblioteket av Aage Henriksen 1945.</p>
+</div>
+</div>
+
+<div>
+<head rend="level4">til herr prom!</head>
+<div type="msDescriptionPart" xml:id="DDevise_Prom3219_Ms">
+<p><hi rend="italic">NBO Ms. fol.3219. «Til / herr Prom!»</hi> Egenhendig renskrevet manuskript. Manuskriptet består av ett dobbeltblad med tekst på første side. Manuskriptet har vært brettet, er stedvis misfarvet og har andre ubetydelige skader. Papiret er gulaktig med bunn- og kjedelinjer. Siden måler ca. 139 × 216 mm. Manuskriptet er skrevet med blekk; skriftbildet er brunt. Skriften er venstrehellende og omhyggelig. Bibliotekets stempel og katalogsignatur finnes på s. [2]. På tekstsiden har Jonas Skougaard skrevet «Devise Julaften 1876 i München.» På dobbeltbladets siste side står nummeret 10. Manuskriptet tilhører Nasjonalbiblioteket, Oslo; mottatt i 1968 som testamentarisk gave fra h.r.advokat Jonas Skougaard (jf. Tunold 1969 og 1972). På en vedlagt lapp har Skougaard skrevet at han kjøpte det i 1946 av frk. Helene Prom Fearnley. Adressaten Prom var hennes morbror; han var født 1856 og var sønn av skuespilleren Prom i Bergen.</p>
+</div>
+</div>
+
+<div>
+  <head rend="level4">[mit fædreland]</head>
+<div type="msDescriptionPart" xml:id="DMitFaedreland63_Ms">
+<p><hi rend="italic">KBS Ep. L 22 a, nr. 63 (fotokopi av egenhendig signert, renskrevet manuskript). Uten tittel.</hi> Manuskriptet er beskrevet på grunnlag av en fotokopi. Det har tekst på én side, og kopien er beskåret og limt under et portrettfotografi av Ibsen. Manuskriptet er datert mai 1891. Det pålimte manuskriptet er skåret ujevnt spesielt i venstre og øvre kant, og det har noen flekker, uten følger for teksten. Papiret er gulaktig og kraftig. Siden måler ca. 142 × 53 mm. Manuskriptet må være skrevet med blekk; skriften er venstrehellende og omhyggelig. Bibliotekets stempel og et aksesjonsnummer finnes på kopien. Nummeret 63 står ovenfor portrettet. Kopien tilhører Kungliga biblioteket, Stockholm; kjøpt i 1959 fra Gerda Lundequists datter Cecilia Shaw.</p>
+</div>
+</div>
+
+<div>
+  <head rend="level4">[til lille eldrid!]</head>
+<div type="msDescriptionPart" xml:id="DMedBrandAarsgmlPige_Ms">
+<p><hi rend="italic">Ms. i privat eie. «Til lille Eldrid!»</hi> Egenhendig signert dedikasjon i et eksemplar av ellevte utgave av <title rend="italic">Brand</title> (1889). Diktet står på versosiden av fremre flyblad. Bladet diktet er skrevet på, er i god stand, men noe misfarvet. Papiret er gulaktig og glatt. Siden måler 110 × 171 mm. Manuskriptet er skrevet med blekk; skriftbildet er mørkebrunt. Skriften er venstrehellende og omhyggelig. Eksemplaret er bundet inn med forlagsbind i beige shirting med dekor i sort og gull på forperm og rygg. Boken tilhører Henning Arstal, Oslo. Den har vært i familiens eie siden Ibsen gav den til Eldrid Arstal i 1896.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</text>
+</TEI>

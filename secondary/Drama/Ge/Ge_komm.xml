@@ -1,0 +1,1060 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+  <teiHeader>
+   <fileDesc>
+     <titleStmt>
+      <title>Henrik Ibsens skrifter, elektronisk versjon</title>
+      <title level="a">Kommentarer til Gengangere</title>
+      <funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+      <editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
+      <respStmt>
+<resp>Innlemming i elektronisk utgave</resp>
+<name>EDD: Eining for digital dokumentasjon</name></respStmt>
+<respStmt><resp>Kodeteknisk støtte og utvikling</resp>
+<name>AKSIS: Avdeling for kultur, språk og informasjonsteknologi, Universitetsforskning i Bergen (Unifob AS)</name></respStmt>
+<respStmt><resp>HISe-koding</resp>
+<name xml:id="SBT">Stine Brenna Taugbøl</name></respStmt>
+<respStmt><resp>Koding</resp>
+<name xml:id="AMB">Aasta Marie Bjorvand Bjørkøy</name>
+<name xml:id="MA">Maria Alnæs</name>
+<name>Nina Marie Evensen</name></respStmt>
+<respStmt><resp>Tekstarbeid</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Maria Alnæs</name>
+<name>Nina Marie Evensen</name></respStmt>
+<respStmt><resp>Kontroll av sitater og ordbøker</resp>
+<name xml:id="IK">Ingrid Korvald</name>
+<name xml:id="GB">Gry Berg</name></respStmt>
+<respStmt><resp>Kontroll av littlist og referanser</resp>
+<name xml:id="HS">Hege Stensrud</name>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Maria Alnæs</name></respStmt>
+<respStmt><resp>Kommentar-, intern- og ht-entiteter</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name></respStmt>
+<respStmt><resp>Kodekontroll</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+</respStmt>
+   </titleStmt>
+    <publicationStmt>
+      <publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+      <distributor xml:id="HISe">Universitetet i Oslo</distributor>
+      <date when="2010" xml:id="HISe-date"/>
+      <pubPlace>Oslo</pubPlace>
+   </publicationStmt>
+     <sourceDesc>
+      <p>Dette dokumentet har ingen kilde.</p>
+   </sourceDesc>
+  </fileDesc>
+   <encodingDesc>
+     <tagsDecl>
+       
+    </tagsDecl>
+  </encodingDesc>
+   <profileDesc>
+     <langUsage>
+      <language ident="nob"/>
+      </langUsage>
+  </profileDesc>
+   <revisionDesc>
+     <change>
+       <date>23.08.2011</date>
+       <name>SBT</name><title>term</title>
+       Erstattet term med HIS:hisTerm. Fila er valid!
+     </change>
+     <change>
+       <date>19.08.2011</date>
+       <name>SBT</name><title>Tilpasning</title>
+       La inn level-attributt i title. Erstattet entiteter for æ/ø/å med bokstaver.
+     </change>
+     <change>
+       <date>11.08.2011</date>
+       <name>SBT</name><title>Validering</title>
+       Endret sti til skjema i dokumenttopp. Endret fra gloss til HIS:hisGloss. Validert.
+     </change>
+     <change>
+       <date>03.07.2011</date>
+       <name>SBT</name><title>P5</title>
+       Kodet om til P5. Ikke validert: må gjøre om gloss til HIS-element - skal kunne inneholde quote og bibl.
+     </change><change>
+       <date>24.11.2010</date>
+       <name>SBT</name><title>Validering</title>
+       Fjernet ref til files og figures i dokumenttoppen. Fila er valid.
+     </change>
+     <change>
+      <date>13.09.2010</date>
+      <name>SBT</name><title>koding</title>
+      Fjernet liste over kommentatorer.
+    </change>
+        <change>
+      <date>17.08.2010</date>
+      <name>SBT</name><title>koding</title>
+      Fjernet overflødig p i kommentarene. La inn igjen overskriften 'Ord- og sakkommentarer' + innledende tekst. Gjorde om overskriftene til majuskler igjen, som i HISb. La inn liste over kommentatorer.
+    </change>
+        <change>
+      <date>19.05.2010</date>
+      <name>SBT</name><title>rs-koding</title>
+      Justerte rs-koding etter samråd med Ellen og Sibylle; fjernet rs-koding av institusjoner og Ibsen-verk. Nå rs-kodes bare personer i kommentarene.
+    </change>
+    <change>
+      <date>25.03.2010</date>
+      <name>SBT</name><title>Validering</title>
+      Fila er validert (har tillatt bibl og quote innenfor gloss) og klar. Oversendes EDD.
+    </change>
+    <change>
+      <date>24.03.2010</date>
+      <name>SBT</name><title>Navnekoding</title>
+      Gjorde ferdig navnekoding og egensjekket innføringen; Sibylle har sett over utvalget (utguling). Ryddet opp i title/hi-koding (denne var tydligvis ikke sjekket etter scripting). Utførte enkel kodekontroll (sjekket alle starttagger). Gjenstår: validering (får ikke kontakt med pizzasjefen).
+    </change>
+    <change>
+      <date>23.03.2010</date>
+      <name>SBT</name><title>Navnekoding</title>
+      Ryddet i fila; fjernet blanke og blanklinjer. Påbegynte navnekoding.
+    </change>
+    <change>
+      <date>23.03.2010</date>
+      <name>SBT</name><title>Omkoding</title>
+      Kodet om kommentarene til mer TEI-standard. Nå er alle kommentarene samlet i en liste per div (for tittelside, rolleliste og akter); vi kan ev. vurdere å fjerne div-inndelingene (det kommer an på om vi ønsker en samlet visning av kommentarene med overskrifter for disse delene). Hver kommentar er kodet med term-gloss. NB: VI BØR VURDERE Å KODE OM YTTERLIGERE (VED OVERGANG TIL TEI P5?), f.eks. ved å kode lemma i ht-fil med index-term (element med innhold:)) og dernest kode kommentarene som en indeksert liste (jf. diskusjon på TEI-lista 22.03.10 og beskrivelse av index i P5). Da får vi markert lengden på lemma i teksten, og det trenger ikke gjentas i kommentaren. OBS: krever en del manuell gj.gang, og vil derfor ta litt tid. Usikker på om det er bryet verdt... Validerte; det trengs dtd-endring: tillate 'bibl' og 'quote' i gloss.
+    </change>
+    <change>
+      <date>22.03.2010</date>
+      <name>SBT</name><title>Omkoding</title>
+      Validerte fila.
+    </change>
+    <change>
+      <date>17.03.2010</date>
+      <name>SBT</name><title>Opprettet xml-fil</title>
+      Skilte ut kommentarene til Ge i en egen fil til HISe. Har lagt inn opplysninger vedr HISe i teiHeader. HAR IKKE INKLUDERT OVERSIKT OVER KOMMENTATORENE ELLER GENERELLE OPPLYSNINGER OM KOMMENTERINGEN (BRUK AV NRO) I FILA. DETTE ER METAOPPLYSNINGER SOM FORELØPIG TENKES PLASSERT ANDRE STEDER I HISE, F.EKS. I KOMMENTARREGULATIVET OG I EGNE MEDARBEIDEROVERSIKTER. Fjernet typografisk koding, jf. KP. FJERNET ILLUSTRASJON MED TILHØRENDE TEKST; DENNE BØR PLASSERES ANNETSTEDS, F.EKS. UNDER OPPFØRELSER I INNLEDNINGEN.
+    </change>
+    </revisionDesc>
+ </teiHeader>
+
+<text type="commentary">
+<body>
+<div type="lemmaCommentary">
+<head rend="level1">ORD- OG SAKKOMMENTARER</head>      
+                   
+<p rend="noIndent">I ordkommentarene har HIS blant annet benyttet <hi rend="italic">Norsk Riksmålsordbok</hi> (NRO) som autoritativ kilde. En stor del av eksempelmaterialet i NRO er hentet fra Ibsens verker. I de tilfellene hvor ordkommentarene til <title rend="italic">Gengangere</title> gjør bruk av NRO, er opplysninger om at NRO henviser til dette stedet hos Ibsen, utelatt av plasshensyn.</p>
+  
+<div>
+<head rend="level2">TITTELSIDE</head>
+
+<list type="commentary">
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_1" xml:id="koGe_1"/><HIS:hisTerm>Gengangere]</HIS:hisTerm> <HIS:hisGloss>Tittelens betydning har sammenheng med stykkets innhold. Betydningen er forskjellig fra den mer konkrete mening ‘spøkelse’, ‘gjenferd’ e.l. og sikter bl.a. mot mentale forestillinger og overlevert tro og moral. Eivind Tjønneland har satt ordet <hi rend="italic">genganger</hi> i sammenheng med forestillinger om ubevisst psykologisk arv, utbredt i samtidig utviklingspsykologi. Teorien impliserte at nedarvede, ubevisste forestillinger kunne utløse spontane handlinger og reaksjoner, uten medvirkning av menneskets bevisste vilje. Slike forestillinger om psykologisk arv kan innebære en form for determinisme. Tjønneland peker på at man i stykkets samtid trodde på muligheten av <quote>repetition of action due to heredity of unconscious memory</quote> <bibl>(Tjønneland 2005, 204)</bibl>.</HIS:hisGloss>
+    
+<quote rend="proseIndent">[The subject] falls prey to its own recollections, which are repeated compulsory in action and not displayed as images in the mind. Memory is expressed through what returns and haunts the subject, that is, as «ghosts». This repetitive character of the ghosts is more eloquently expressed in the Norwegian term «gengangere», the German «Wiedergänger» and the French «Les Revients» than in English «Ghosts». When memory is not only the recollective use of imagination, but is tied to action in this way, the field of memory is extended enormously <bibl>(Tjønneland 2005, 198–99)</bibl>.</quote>
+    
+<HIS:hisGloss>Den samtidige tyske forfatterinnen og feministen <rs type="person" corresp="peHDo">Hedwig Dohms</rs> bruk av ordet <quote>Gespenster</quote> stemmer overens med en slik oppfatning: <quote>Det er det tragiske ved våre samfunnsforhold, at formene ofte overlever den ånd som en gang levde i dem. Og disse døde formene, disse gjengangerne [Gespenster] er så uhørt anmassende at de ved høylys dag vil herske over levende ånder!</quote> <bibl>(Dohm 1872; til norsk ved HIS)</bibl>. Ordet <hi rend="italic">gengangere</hi> ble også brukt i samtidens diskusjon om muligheten for nedarvet syfilis. Den franske syfilislegen <rs type="person" corresp="peAFou">Alfred Fournier</rs> hevdet at</HIS:hisGloss>
+    
+<quote rend="proseIndent">föreldrarnas syfilis kan gå i arf uppå barnen icke endast såsom syfilis utan jemväl såsom mångfaldiga svaghets- och sjukdomstillstånd, hvilka visserligen sakna de kännetecken, som äro typiska för syfilis, men hvilka icke dess mindre äro blotta modifikationer, ett slags «gengångare» af den luetiska diatesen hos föräldrarne <bibl>(1882, 55–56)</bibl>.</quote></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_2" xml:id="koGe_2"/><HIS:hisTerm>familjedrama]</HIS:hisTerm> <HIS:hisGloss>Betegnelsen er (og var) ingen innarbeidet term i dramatikkens genreteori. Ibsens bruk av <hi rend="italic">familiedrama</hi> dekker sannsynligvis både innhold, persongalleri og konfliktstoff i et drama som utspilles innenfor rammene av en familie og dennes nærmeste omgivelser (i motsetning til skuespill med et større persongalleri og større bredde når det gjelder sosialt miljø, samt kategorier som tid og sted for handlingen). En senere betegnelse på dette og andre av Ibsens samtidsskuespill er <hi rend="italic">dagligstuedrama</hi>, som karakteriserer noe av den samme strenge begrensning til et konfliktstoff som utspilles innenfor familiens rammer og hjemmets fire vegger.</HIS:hisGloss></item>
+</list>
+</div>
+      
+<div>
+<head rend="level2">ROLLELISTE</head>
+            
+<list type="commentary">   
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_3" xml:id="koGe_3"/><HIS:hisTerm>Fru]</HIS:hisTerm> <HIS:hisGloss>gift kvinne av borgerskapet <bibl>(Heggstad, Hødnebø &amp; Simensen 1975, 128)</bibl>. På den tiden da <title rend="italic">Gengangere</title> utkom, hadde <hi rend="italic">frue</hi> avløst <hi rend="italic">madam</hi> som nøytral eller høflig tittel for gifte kvinner av borgerskapet, mens <hi rend="italic">madam</hi>, som opprinnelig ble brukt til og om fornemme gifte kvinner og deretter gifte kvinner av borgerskapet, gikk over til tittel for kvinner <quote>av folket</quote> (f.eks. madam Rundholmen i <title rend="italic">De unges Forbund</title>). Skiftet angis vanligvis til midten av 1800-tallet, jf. ODS (<hi rend="italic">frue</hi> 3), som likevel tilføyer: <quote>paa det kgl. teaters plakater erstattedes Madam ved de gifte skuespillerinders navne af Frue fra sæsonen 1870/71</quote>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_4" xml:id="koGe_4"/><HIS:hisTerm>Helene]</HIS:hisTerm> <HIS:hisGloss>gresk navn, med betydningen ‘den strålende, skinnende’. Det fremste navneforbildet fra oldkirken er den hellige Helena (ca. 250 – ca. 329), mor til Konstantin den store. Navnet er kjent i Norge fra ca. 1300 i formen <hi rend="italic">Elin</hi>. I etterreformatorisk tid ble <hi rend="italic">Elen</hi> (inkludert uttalen <hi rend="italic">Eli</hi>) den vanligste formen, men i løpet av 1700- og 1800-tallet fikk også hovedformen <hi rend="italic">Helene</hi> stor utbredelse. I folketellingen 1865 har den tyngdepunktet på Østlandet og nedover mot Agder. Skrivemåten er mest <hi rend="italic">Helene</hi>, men stundom også <hi rend="italic">Hellene</hi> og <hi rend="italic">Helena</hi>. Endelsen -<hi rend="italic">a</hi> kommer fra latin.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_5" xml:id="koGe_5"/><HIS:hisTerm>Alving]</HIS:hisTerm> <HIS:hisGloss>slektsnavn, ikke kjent i autentisk bruk, men det slutter seg formelt til navn på -<hi rend="italic">ing</hi> og -<hi rend="italic">ving</hi>, f.eks. <hi rend="italic">Alsing</hi>, <hi rend="italic">Døving</hi>, <hi rend="italic">Elving</hi>, <hi rend="italic">Kvarving</hi> og <hi rend="italic">Malling</hi>. Gruppen er tallrik både i norsk, dansk, svensk og tysk. De norske kommer oftest av gårdsnavn (<hi rend="italic">Døving</hi>, <hi rend="italic">Kvarving</hi> mfl.). De danske er gjerne stedsnavn (<hi rend="italic">Malling</hi> mfl.) eller tilnavn av stedsnavn (<hi rend="italic">Alsing</hi> ‘person fra Als’). Det samme gjelder tysk, som dessuten har en stor gruppe patronymer på -<hi rend="italic">ing</hi> (<hi rend="italic">Gehring</hi> mfl.). De svenske er dels stedsnavnsbasert, dels nydannet, f.eks. <hi rend="italic">Elving</hi> av <hi rend="italic">Elvius</hi> + <hi rend="italic">ing</hi> <bibl>(Tegnér [1882], 115)</bibl>. Folketellingen 1865 nevner bl.a. <hi rend="italic">Alsing</hi> i Kragerø (sør for Skien) og <hi rend="italic">Elving</hi> i Fjære ved Grimstad.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_6" xml:id="koGe_6"/><HIS:hisTerm>kaptejn]</HIS:hisTerm> <HIS:hisGloss>offiser i hæren (unntatt i kavaleriet, der det het rittmester) eller marinen med grad mellom løytnant og major eller kommandørkaptein (høyeste grad av subalterne, dvs. underordnede, offiserer) (NRO <hi rend="italic">kaptein</hi> 1). I første del av <title rend="italic">Tjeneste-Reglement for den Kongelige norske Armee</title> lyder det i § 43: <quote>Ritmesteren, eller Capitainen, skal være Corps:Chefen ansvarlig for Esqvadronens, eller Compagniets Tjenestedygtighed og tilbørlige Øvelse i Alt hvad, der hører til Tjenestens forskjellige Dele.</quote> I reglementets § 1, annen del, heter det: <quote>Corps-Cheferne skulle boe paa deres Chefsgaarde, eller inden deres respective Corps-Districter. Compagnie-Chefen og Compagnie-Officererne skulle ligeledes tage Boepæl inden Compagnie-Districtet</quote> <bibl>(<title rend="italic">Tjeneste-Reglement</title> 1820)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_7" xml:id="koGe_7"/><HIS:hisTerm>kammerherre]</HIS:hisTerm> <HIS:hisGloss>tittel som kunne deles ut av en fyrstelig person som en ren hederstittel; gir i Danmark rang i annen rangklasse, nummer fem av de ni klasser som danske rangspersoner var inndelt i (<title rend="italic">Salmonsen</title>). Brukt om en embetsmann i hofftjeneste (f.eks. kabinetskammerherre i Sverige) betegner tittelen en <quote>herre som ved et hoff går en fyrstelig person til hånde og som til tegn på sin verdighet bærer en forgylt innsydd nøkkel på høire frakkeskjøt</quote> (NRO). I Alvings tilfelle er det tale om en hederstittel.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_8" xml:id="koGe_8"/><HIS:hisTerm>Osvald]</HIS:hisTerm> <HIS:hisGloss>germansk mannsnavn som i denne formen har bakgrunn både i norr. <hi rend="italic">Osvaldr</hi> (sideform av <hi rend="italic">Ásvaldr</hi>), nty. <hi rend="italic">Oswald</hi> og angelsaksisk <hi rend="italic">Osweald</hi>. Det er sammensatt av leddene <hi rend="italic">Ans</hi>- (norr. <hi rend="italic">Ás-/Os</hi>-) ‘gud’ og -<hi rend="italic">vald</hi> ‘hersker’. En kjent, tidlig navnebærer er kong Osweald i Northumbria, som døde som martyr i år 642. I folketellingen 1801 er navnet bare registrert i Vinje i Telemark, med grunnlag i norrøn tradisjon. Fra 1840–50-årene kom det noe mer i bruk, først særlig på Østlandet og Sørlandet. Navnet hadde da også hatt et oppsving på nasjonalt grunnlag i England, med klar ringvirkning til Tyskland <bibl>(Drosdowski 1974, 164; Hanks &amp; Hodges 1990, 258)</bibl>. Det er derfor rimelig å se den nye bruken i Norge som en påvirkning fra engelsk og tysk. Ibsen kan dessuten ha et autentisk forbilde i den unge tyske legen <rs type="person" corresp="peOSch">Oswald Schmidt</rs>, som han møtte jevnlig i München i 1876 <bibl>(Dietrichson 1896–1917, 357)</bibl>. I norsk skrives navnet mest <hi rend="italic">Osvald</hi>, sjeldnere <hi rend="italic">Oswald</hi>. Navnet Osvald er sentralt i <rs type="person" corresp="peMdSt">madame de Staëls</rs> roman <title rend="italic">Corinne, ou l’Italie</title>. Romanen åpner med å berette om hvorfor en av hovedpersonene, den skotsk-engelske lord Osvald Nelvil reiser til Italia: <quote>dyb Kummer havde svækket hans Helbred, og da Lægerne frygtede for at hans Bryst skulle blive angrebet, saa havde de foreskrevet ham Luften i de sydlige Lande</quote> <bibl>(Staël 1824–25, b. 1, 3)</bibl>. Boken inneholder en rekke skildringer av italiensk natur, folkeliv, kunst og kultur, og den ble i stor grad lest som en form for reisefører av de mange Roma-reisende på 1800-tallet. Sydlandsk (italiensk) og nordeuropeisk (engelsk-skotsk) kultur er her satt opp mot hverandre som kontraster, preget henholdsvis av lekende frihetsglede og stiv konservatisme. Hovedpersonen Corinne, som har skotsk far og italiensk mor, legemliggjør denne dobbeltheten og opplever den som en smertefull konflikt. Hun bærer en indre uro på grunn av et uavklart forhold til lord Osvald Nelvil, pair av Skottland, som ender med å forlate henne til fordel for en annen kvinne. Navnet Oswald forekommer også i <rs type="person" corresp="peMCH">Maurits Hansens</rs> <quote>Theodors Dagbog</quote>, en novelle som behandler både et gjenganger- og incestmotiv. Hos Hansen er Oswald en ung tysk student som drømmer om å gjenreise hjemlandets storhet og frihet. Hans venn Theodor er av norsk avstamning, men vokser opp i Frankrike. Theodors far kjøper en herregård på Vestlandet i Norge. På hjemreisen til Norge treffer Theodor en ung kvinne, Amalie, og forelsker seg i henne. Amalie har fått en god oppdragelse, er meget belest og ber Theodor fortelle henne om franske og tyske forhold. Senere får han opplysninger som gjør at han tror hun er hans halvsøster. Han tenker da å reise tilbake til Oswald: <quote>Lad den blege, aflevede Yngling da vegetere hos Dig [dvs. hos Oswald] det Par Aar, han endnu skal gaa om som Gjenganger […] Gid jeg maa beholde min Forstand […] til jeg har drukket det hele Malurtbeger til Bunden</quote> <bibl>(M.C. Hansen 1841–43, b. 2, 151)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_10" xml:id="koGe_10"/><HIS:hisTerm>Manders]</HIS:hisTerm> <HIS:hisGloss>Navnet finnes ikke i norske kilder, men det svarer til et autentisk slektsnavn i engelsk og nederlandsk. Det engelske kommer visstnok av et utolket tilnavn (<hi rend="italic">Mander</hi>), det nederlandske snarest av et stedsnavn (<hi rend="italic">Mandel</hi> eller <hi rend="italic">Mander</hi>), men opphavet er på flere punkter uklart <bibl>(Hanks 2003, b. 2, 503)</bibl>. Endelsen -<hi rend="italic">s</hi> er en patronymform. Navnet står formelt nær andre slektsnavn som <hi rend="italic">Anders</hi>, <hi rend="italic">Landers</hi>, <hi rend="italic">Lammers</hi>, <hi rend="italic">Randers</hi> og <hi rend="italic">Sanders</hi>. De fleste stammer fra tysk og er i likhet med <hi rend="italic">Manders</hi> patronymer på -<hi rend="italic">s</hi>. I Norge forekommer tyske og andre utenlandske slektsnavn først og fremst i embets- og borgerfamilier, jf. presten <rs type="person" corresp="peGAL">Gustav Adolph Lammers</rs> i Ibsens hjemby Skien. Dette gir også <hi rend="italic">Manders</hi> et klart borgerlig preg.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_11" xml:id="koGe_11"/><HIS:hisTerm>Engstrand]</HIS:hisTerm> <HIS:hisGloss>Navnet svarer til et autentisk svensk slektsnavn. Det hører til den store gruppen av toleddede svenske slektsnavn som ikke bygger direkte på stedsnavn, men som er sammensatt av et naturord i etterleddet og et naturord eller forkortet stedsnavn i forleddet. Navnetypen vokste frem på 1600-tallet og ble særlig utbredt i borgerlige kretser <bibl>(Modéer 1964, 126–27)</bibl>. Folketellingen 1865 nevner bokbindersvenn <rs type="person" corresp="peGEng">Gustav Engstrand</rs> (34 år) med familie. Han var født i Sverige. Denne familien utgjør også de eneste navnebærerne i folketellingen 1875. Navnet har dessuten formell støtte i norske slekts- og gårdsnavn som inneholder leddene <hi rend="italic">Eng</hi>- og -<hi rend="italic">strand</hi> hver for seg, f.eks. <hi rend="italic">Enggrav</hi> og <hi rend="italic">Bogstrand</hi>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_12" xml:id="koGe_12"/><HIS:hisTerm>Regine]</HIS:hisTerm> <HIS:hisGloss>lat. kvinnenavn, variant av <hi rend="italic">Regina</hi> ‘dronning’. Det var opprinnelig et appellativ, men ble tatt i bruk som navn med forbilde i jomfru Maria som himmeldronningen (<hi rend="italic">regina coeli</hi>). Kjent i Norge fra ca. 1710 (Stavanger). Navnet fikk et markert oppsving på midten av 1800-tallet. I folketellingen 1865 står det sterkest i Vestfold og Agder. I skrift mest <hi rend="italic">Regine</hi>, sjeldnere <hi rend="italic">Regina</hi>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_13" xml:id="koGe_13"/><HIS:hisTerm>i huset]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">være i huset hos en</hi>: være i ens hjem, som medlem av husstanden (familien) (NRO <hi rend="italic">hus</hi> 2 a). <hi rend="italic">Å være i huset</hi> kan også bety ‘å tjene’, dvs. være ansatt som tjenestepike.</HIS:hisGloss></item>         
+            
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_14" xml:id="koGe_14"/><HIS:hisTerm>landejendom]</HIS:hisTerm> <HIS:hisGloss>en eiendom som består av land (jord), særlig eiendom på landet (NRO <hi rend="italic">landeiendom</hi>); sikter til en jordeiendom av større omfang enn en vanlig norsk bondegård, som gjerne kan bestå av flere gårder.</HIS:hisGloss></item>
+</list>   
+</div>
+
+<div> 
+<head rend="level2">FØRSTE AKT</head>
+
+<list type="commentary">
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_15" xml:id="koGe_15"/><HIS:hisTerm>venstre … til højre … tilvenstre]</HIS:hisTerm> <HIS:hisGloss>Ibsens scenografi ser ut til å ha sammenheng med det klassiske perspektiv- og kulisseteateret og med tradisjoner tilbake til barokken. Man opererte her med <quote>den faste</quote> (høyre) og <quote>den bevegelige</quote> (venstre) side av scenen, sett fra skuespillernes plass. Til høyre opptrådte de aktede personer, og her var de mest betydningsfulle dekorasjonene plassert. Til venstre foregikk de fleste sortier og entreer, og her plasserte barokkteateret ondskapens representanter. Ibsen ser derimot alltid scenen fra tilskuerplass. Det svarer til at det positive plasseres eller foregår til venstre, det negative til høyre. <quote>Og det ser ud til at [de konventioner] der gjaldt for brugen af højre- og venstresiden ofte var stærkere hos ham end de realistiske krav</quote> <bibl>(Christiansen 1983, 51)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_16" xml:id="koGe_16"/><HIS:hisTerm>sybord]</HIS:hisTerm> <HIS:hisGloss>bord til sysaker og sytøy (NRO), ofte forsynt med skuffer eller med en oppfellbar bordplate over et rom hvor sysakene oppbevares</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_17" xml:id="koGe_17"/><HIS:hisTerm>blomsterværelse]</HIS:hisTerm> <HIS:hisGloss>havestue hvor veggen ut mot haven er åpnet opp med flere vinduer og en dør som fører til havetrappen <bibl>(Sundt 1862, 61–62)</bibl>. I <title rend="italic">Slegten fra 1814</title> karakteriserer Carl W. Schnitler blomstenes funksjon slik: <quote>Et fint og karakteristisk litet træk ved disse gamle embedsmandshjem paa landet – og ofte i byene med – er <hi rend="italic">blomsterkulturen</hi>, haverne baade i og utenfor vinduene</quote> <bibl>(Schnitler 1911, 263)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_18" xml:id="koGe_18"/><HIS:hisTerm>træklods]</HIS:hisTerm> <HIS:hisGloss>klamp av tre; her: under støvlesålen (for å kompensere for en deformitet)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_19" xml:id="koGe_19"/><HIS:hisTerm>blomstersprøjte]</HIS:hisTerm> <HIS:hisGloss>havesprøyte, sprøyte til å vanne særlig potteplanter med (NRO <hi rend="italic">blomstersprøite</hi>)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_20" xml:id="koGe_20"/><HIS:hisTerm>Jøss’]</HIS:hisTerm> <HIS:hisGloss>omdannelse av <hi rend="italic">Jesus</hi>; utrop for å uttrykke forferdelse eller (forferdet) overraskelse (NRO 2); en svak ed</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_21" xml:id="koGe_21"/><HIS:hisTerm>Klamp]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">klampe</hi>: gå tungt og larmende (så sko eller støvler smeller mot underlaget) (NRO B)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_22" xml:id="koGe_22"/><HIS:hisTerm>menneske]</HIS:hisTerm> <HIS:hisGloss>brukt om eller til en bestemt person, oftest med tydelig følelsesbetoning (som regel nedlatende, medlidende eller hånlig, irritert, bebreidende, sjeldnere beundrende); i hardt tilrettevisende eller befalende tiltale (NRO b)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_23" xml:id="koGe_23"/><HIS:hisTerm>vi mennesker er skrøbelige]</HIS:hisTerm> <HIS:hisGloss>religiøs talemåte. <quote>Skrøbelighed</quote> brukes i Det nye testamente for å beskrive menneskets ufullkomne natur, jf. Rom 6,19: <quote>Jeg taler efter menneskelig Vis formedelst Eders Kjøds Skrøbelighed</quote>. Matt 8,17 sier om Jesus at han med Jesajas ord <quote>tog vore Skrøbeligheder, og bar vore Sygdomme</quote>. Jf. også 2. Kor 12,9: <quote>Derfor vil jeg helst rose mig af mine Skrøbeligheder, for at Christi Kraft kan bo i mig</quote>; og Matt 26,41: <quote>Vaager og beder, at I ikke skulle komme i Fristelse! Aanden er villig, men Kjødet er skrøbeligt.</quote> Jf. fjerde strofe i salme nr. 390 i <rs type="person" corresp="peMaLa">Landstads</rs> <title rend="italic">Kirkesalmebog</title>: <quote>Ret grant dit klare Øie ser / Hvor skrøbelig vor Tilstand er</quote> <bibl>(Landstad 1869)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_24" xml:id="koGe_24"/><HIS:hisTerm>fristelserne er mangfoldige]</HIS:hisTerm> <HIS:hisGloss>religiøs talemåte, jf. Jak 1,2–15. <quote>Agter det for idel Glæde, naar I falde i forskjellige Fristelser, da I vide, at Eders Troes Prøvelse virker Taalmodighed. Men Taalmodigheden frembringe fuldkommen Gjerning</quote> (Jak 1,2–3). Jf. Anstensen <bibl>(1936, 195)</bibl> som viser til 1. Pet 1,6: <quote>I […] ere blevne bedrøvede i forskjellige Fristelser</quote>. Jf. Matt 26,41: <quote>Vaager og beder, at I ikke skulle komme i Fristelse!</quote> I Pontoppidans forklaring til Luthers lille katekisme kan det å bli utsatt for fristelser også oppfattes postivt: <quote>Bede vi da i den sjette Bøn, at Gud aldeles ei skal friste os? Nei, thi det er os ofte meget gavnligt</quote> <bibl>(Pontoppidan 1832, spørsmål 607)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_25" xml:id="koGe_25"/><HIS:hisTerm>ja Gu’]</HIS:hisTerm> <HIS:hisGloss>i den svekkede formen <hi rend="italic">gu’</hi> i forsikringer, alminnelig etter <hi rend="italic">ja</hi> og <hi rend="italic">nei</hi> i formene <hi rend="italic">jaggu</hi>, <hi rend="italic">neiggu</hi> (NRO <hi rend="italic">gud</hi> B 1 a); en middels sterk ed</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_26" xml:id="koGe_26"/><HIS:hisTerm>rendez-vous’er]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">rendezvous</hi>: avtalt møte; stevnemøte (foreldet eller litt.-fam.) (NRO)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_27" xml:id="koGe_27"/><HIS:hisTerm>vil ikke ha’]</HIS:hisTerm> <HIS:hisGloss>vil ikke vite av (jf. NRO <hi rend="italic">ha</hi> B 2 a)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_28" xml:id="koGe_28"/><HIS:hisTerm>Se så]</HIS:hisTerm> <HIS:hisGloss>brukt i utålmodig oppfordring (NRO <hi rend="italic">se</hi> 5 c b)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_29" xml:id="koGe_29"/><HIS:hisTerm>Nej Gu’]</HIS:hisTerm> <HIS:hisGloss>utrop brukt for å bedyre en nektelse (NRO <hi rend="italic">neigu</hi>); den svekkede formen <hi rend="italic">gu’</hi> i forsikringer, alminnelig etter <hi rend="italic">ja</hi> og <hi rend="italic">nei</hi> i formene <hi rend="italic">jaggu</hi>, <hi rend="italic">neiggu</hi> (NRO <hi rend="italic">gud</hi> B 1 a); en middels sterk ed</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_30" xml:id="koGe_30"/><HIS:hisTerm>stryger]</HIS:hisTerm> <HIS:hisGloss>farer plutselig av sted, blir borte; reiser (NRO <hi rend="italic">stryke</hi> B 2 c)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_31" xml:id="koGe_31"/><HIS:hisTerm>til byen med dampbåden]</HIS:hisTerm> <HIS:hisGloss>I et fjordlandskap med dårlig utbygget veinett foregikk persontrafikk i den aktuelle epoken enklest ved rutegående dampskip.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_32" xml:id="koGe_32"/><HIS:hisTerm>asylet]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">asyl</hi>: tilfluktssted, pleieanstalt (NRO); på denne tid vanlig om f.eks. barnehjem, der man mottok foreldreløse og andre pleietrengende barn</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_33" xml:id="koGe_33"/><HIS:hisTerm>skal ingen sige på Jakob Engstrand, at han]</HIS:hisTerm> <HIS:hisGloss>Egenomtale i tredje person formaliserer og forsterker troverdigheten i vedkommendes egenskaper og karakter. Utsagn av denne typen kan imidlertid lett få en ironisk klang.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_34" xml:id="koGe_34"/><HIS:hisTerm>Jakob]</HIS:hisTerm> <HIS:hisGloss>hebr. mannsnavn. I Bibelen blir det knyttet til ord med betydningen ‘den som holder i hælen’, med sekundær betydning ‘etterfølger’ ved patriarken Jakobs fødsel (jf. 1. Mos 25,26), og betydningen ‘den som narrer, lurer’ ved Jakobs list mot Esau (1. Mos 27, 35–36). Navnelitteraturen anfører stort sett de samme forklaringene, jf. Levinsen <bibl>(1854, 146)</bibl>, Rugaard <bibl>(1872, 47)</bibl> og Støylen <bibl>(1887, 51)</bibl>. Navnet er kjent i Norge siden 1300-tallet og har vært mye brukt i etterreformatorisk tid <bibl>(Kruken &amp; Stemshaug 1995, 145)</bibl>. Frem til midten av 1800-tallet ble det for det meste skrevet <hi rend="italic">Jacob</hi>, men senere oftest <hi rend="italic">Jakob</hi> i tråd med datidens bibelske form <bibl>(f.eks. i DNB 1854 og 1873)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_35" xml:id="koGe_35"/><HIS:hisTerm>holde sig undaf]</HIS:hisTerm> <HIS:hisGloss>holde seg borte fra, vekk fra, utenfor forbindelse, befatning, samkvem e.l. med (foreldet) (NRO <hi rend="italic">unda</hi> 3 c e); <hi rend="italic">holde seg fra noe</hi>: ikke innlate seg på, ikke la seg friste av, nekte seg (NRO <hi rend="italic">holde</hi> 3 b)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_36" xml:id="koGe_36"/><HIS:hisTerm>er det <hi rend="italic">så</hi> fat]</HIS:hisTerm> <HIS:hisGloss>står det slik eller slik til (med) (NRO II <hi rend="italic">fatt</hi>)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_37" xml:id="koGe_37"/><HIS:hisTerm>visst]</HIS:hisTerm> <HIS:hisGloss>fast, sikkert</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_38" xml:id="koGe_38"/><HIS:hisTerm>gælen]</HIS:hisTerm> <HIS:hisGloss>gal (fam.) (NRO)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_39" xml:id="koGe_39"/><HIS:hisTerm>kammerherreinde]</HIS:hisTerm> <HIS:hisGloss>en kammerherres frue. Suffikset -<hi rend="italic">inne</hi> brukt om personer (til forskjell fra om hunnen av en dyreart, f.eks. <hi rend="italic">løvinne</hi>, <hi rend="italic">ulvinne</hi>) ble føyd til en manns tittel som tittel for hustruen til en rangsperson, som her (andre eksempler er <hi rend="italic">bispinne</hi>, <hi rend="italic">statsrådinne</hi>, <hi rend="italic">keiserinne</hi>, <hi rend="italic">fyrstinne</hi>, de to siste også om kvinnelig innehaver av rangen). En avglans av den mannlige tittelens status ble dermed hustruen til del. I motsetning til dette ble -<hi rend="italic">inne</hi>, skjønt også her som tillegg til betegnelsen for en mannlig utøver, brukt uten tanke på status om en kvinnes yrke (<hi rend="italic">lærerinne</hi>, <hi rend="italic">danserinne</hi>), eller tilstand, forhold, egenskaper osv. (­<hi rend="italic">elskerinne</hi>, <hi rend="italic">gudinne</hi>) eller geografisk tilknytning, nasjonalitet (<hi rend="italic">pariserinne</hi>, <hi rend="italic">amerikanerinne</hi>) (NRO -<hi rend="italic">­inne</hi>; ODS -<hi rend="italic">inde</hi>). I diktet <quote>Gaffelen</quote> bruker <rs type="person" corresp="peJHW">Johan Herman Wessel</rs> <quote>Mand</quote> og <quote>Mandinde</quote> <bibl>(Wessel 1901, 46)</bibl>, og i eldre bibelutgaver het det i 1. Mos 2,23: <quote>hun skal kaldes Mandinde, thi af Manden er hun taget</quote>, nå i den etymologisk sett meningsløse formen <quote>hun skal kalles kvinne, for av mannen er hun tatt</quote>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_40" xml:id="koGe_40"/><HIS:hisTerm>Hvad fan’ er <hi rend="italic">det?</hi> Sætter du dig op imod din far]</HIS:hisTerm> <HIS:hisGloss>jf. normene som kommer til uttrykk i <rs type="person" corresp="peErikPont">Pontoppidans</rs> forklaring:</HIS:hisGloss>
+     
+<quote rend="proseIndent">Hvad er Børnenes Pligt imod Forældrene? Med Hjerte, Ord, Gebærder og Gjerning at ære, elske, tjene og adlyde dem, endogsaa da, naar Børnene ere myndige, vise, rige og anseelige, samt og at bede for dem. Syr. 3,7. Ær din Fader med Gjerning og Ord, at Velsignelsen kan komme over dig fra ham. v. 11. Kjære Barn! hjælp din Fader i Alderdom, og du skal ikke bedrøve ham, medens han lever. v. 15. Hvo, som forlader sin Fader, han er som en Gudsbespotter, og hvo, som gjør sin Moder vred, er forbandet af Herren <bibl>(Pontoppidan 1832, spørsmål 181)</bibl>.</quote></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_41" xml:id="koGe_41"/><HIS:hisTerm>tøs]</HIS:hisTerm> <HIS:hisGloss>pike, jente (foreldet eller i bymål) (NRO 1)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_42" xml:id="koGe_42"/><HIS:hisTerm>Fi donc]</HIS:hisTerm> <HIS:hisGloss>(fr.) fy da; interjeksjon som uttrykker avsky</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_43" xml:id="koGe_43"/><HIS:hisTerm>sanser]</HIS:hisTerm> <HIS:hisGloss>husker (dial., folk.) (NRO I <hi rend="italic">sanse</hi> 3); vanlig i betydningen ‘huske’ eller ‘erindre’ i Skien-dialekten</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_44" xml:id="koGe_44"/><HIS:hisTerm>var på en kant]</HIS:hisTerm> <HIS:hisGloss>var (lett) beruset, påseilet (fam.) (NRO <hi rend="italic">kant</hi> 4 a)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_45" xml:id="koGe_45"/><HIS:hisTerm>Rosenvold]</HIS:hisTerm> <HIS:hisGloss>Navnet svarer til et dansk herregårdsnavn ved Vejle på Jylland, laget som avledning til adelsnavnet <hi rend="italic">Rosenkrantz</hi> sist på 1500-tallet <bibl>(Jørgensen 1994, 235)</bibl>. Norske stedsnavn på <hi rend="italic">Rosen</hi>- er bl.a. <hi rend="italic">Rosendal</hi> og <hi rend="italic">Rosenborg</hi>. Førsteleddet er opprinnelig en tysk genitivsform av subst. <hi rend="italic">rose</hi> <bibl>(Skautrup 1944–70, b. 2, 93–94, 112)</bibl>. Det ble svært populært i navn på slott og herregårder i Danmark og Sverige. Noen svarer direkte til tyske navn (<hi rend="italic">Rosenthal</hi> mfl.), mens andre er hjemlige nydannelser <hi rend="italic">(Rosenvold</hi> mfl.). I Norge er <hi rend="italic">Rosenvold</hi> kjent som slektsnavn med utgangspunkt i en offisersfamilie på 1600-tallet <bibl>(Ovenstad 1948–49, b. 2, 324)</bibl>, men det er uvisst om det ligger noe norsk stedsnavn bak. Senere ble imidlertid gårdsnavnet <hi rend="italic">Rosevall</hi> i Bygland brukt som slektsnavn i formen <hi rend="italic">Rosenvold</hi> <bibl>(Veka 2000, 341)</bibl>. I folketellingene 1801 og 1865 er <hi rend="italic">Rosenvold</hi> registrert som slektsnavn i Skien i Telemark – Ibsens barndomsby – og flere steder i Agder.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_46" xml:id="koGe_46"/><HIS:hisTerm>Stakkers]</HIS:hisTerm> <HIS:hisGloss>adj. brukt medfølende, medlidende om fattig person eller lidende, mishandlet, hjelpeløs, ulykkelig person eller skapning; foreldet eller dialektalt for <hi rend="italic">stakkar</hi> (NRO 1 a); her svarende til ord som <hi rend="italic">arm, elendig, ulykkelig</hi> (NRO 2 a). Genitivs-s-en hører til beskrivende (deskriptiv) genitiv <bibl>(jf. Falk &amp; Torp 1900, § 40)</bibl>. Siden ordet kommer av norr. <hi rend="italic">stafkarl</hi> ‘tigger’, er <hi rend="italic">e</hi>-en sekundær både i norsk og dansk (<hi rend="italic">stakkel</hi>). <quote>Udtalt i en mild og venlig Tone er Ordet […] ogsaa et Udtryk af Ømhed og Deeltagelse. I dette Tilfælde forbindes det ofte med et andet Ord og sættes da i Genitivform, f. Ex. Stakars Barn!</quote> <bibl>(Aasen 1873 <hi rend="italic">Stakar</hi> 3)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_47" xml:id="koGe_47"/><HIS:hisTerm>Pied de mouton]</HIS:hisTerm> <HIS:hisGloss>(fr.) egentlig blek piggsopp (<hi rend="italic">Hydnum repandum</hi>), en god matsopp, men direkte oversatt ‘sauefot’, dvs. fot (på sau, <hi rend="italic">Ovis aries</hi>) med klov; her siktes det trolig til Engstrands vanskapte fot</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_48" xml:id="koGe_48"/><HIS:hisTerm>blæser]</HIS:hisTerm> <HIS:hisGloss>hånlig, med forakt (NRO <hi rend="italic">blåse</hi> 1 a); utblåsning av luft som tegn på forakt (ODS <hi rend="italic">blæse</hi> 1.4)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_49" xml:id="koGe_49"/><HIS:hisTerm>Fan’ æte mig]</HIS:hisTerm> <HIS:hisGloss>vanligvis forklart som en avbleket forsikring om at djevelen kan ete, rive, hakke osv. vedkommende om ikke det han sier, er sant. Engstrands ed er av de relativt kraftige; <hi rend="italic">fanden</hi>: i eder eller forsterkende, forsikrende uttrykk, for å gi uttrykk for ergrelse, uvilje eller for overraskelse, beundring (folk.) (NRO 1).</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_50" xml:id="koGe_50"/><HIS:hisTerm>lagt ikke så lidet penger op]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">legge (seg) opp penger</hi>: (kunne) gjemme, spare (seg) opp penger (av det man tjener) (NRO <hi rend="italic">legge</hi> 3 a). Formen <hi rend="italic">penger</hi> i Engstrands munn kan her være et folkelig, dialektalt trekk, jf. bruk av formen <hi rend="italic">penge</hi> ellers i dramateksten.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_51" xml:id="koGe_51"/><HIS:hisTerm>skillingen]</HIS:hisTerm> <HIS:hisGloss>pengene (NRO <hi rend="italic">skilling</hi> 2)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_52" xml:id="koGe_52"/><HIS:hisTerm>beværtning]</HIS:hisTerm> <HIS:hisGloss>mindre, tarvelig kafé (NRO <hi rend="italic">bevertning</hi> 3)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_53" xml:id="koGe_53"/><HIS:hisTerm>matroser]</HIS:hisTerm> <HIS:hisGloss>menige sjømenn (NRO <hi rend="italic">matros</hi>)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_54" xml:id="koGe_54"/><HIS:hisTerm>skibskaptejner]</HIS:hisTerm> <HIS:hisGloss>skipsførere (jf. NRO <hi rend="italic">kaptein</hi> 2)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_55" xml:id="koGe_55"/><HIS:hisTerm>styrmænder]</HIS:hisTerm> <HIS:hisGloss>skipsoffiserer som assisterer skipsføreren i de fleste gjøremål vedrørende skipets drift (NRO <hi rend="italic">styrmann</hi> 2)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_56" xml:id="koGe_56"/><HIS:hisTerm>svært]</HIS:hisTerm> <HIS:hisGloss>besværlig, vanskelig (NRO <hi rend="italic">svær</hi> 2 a a)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_57" xml:id="koGe_57"/><HIS:hisTerm>rakt]</HIS:hisTerm> <HIS:hisGloss>akkurat, aldeles (i sammenlignende uttrykk; folk.) (NRO I <hi rend="italic">rak</hi> 3)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_58" xml:id="koGe_58"/><HIS:hisTerm>fruentimmer]</HIS:hisTerm> <HIS:hisGloss>kvinner (fam., spøkefullt eller nedsettende) (NRO). Betydningen kan her peke i retning av ‘kvinne(r) av lavere sosial stand eller med mangelfull dannelse’; <quote>(fra midten af 19. aarh.; dagl.) m. nedsættende bet., om kvinde af simpel stand, optræden olgn.</quote> (ODS 4.2).</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_59" xml:id="koGe_59"/><HIS:hisTerm>sanse på]</HIS:hisTerm> <HIS:hisGloss>være oppmerksom på; passe på (NRO I <hi rend="italic">sanse</hi> 1 d). Alternativt kan det bety ‘huske, erindre’, jf. kommentar til <ptr type="internal" target="Geht.xml" corresp="koGe_43"/>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_60" xml:id="koGe_60"/><HIS:hisTerm>vejfarendes sjømænder på verdens hav]</HIS:hisTerm> <HIS:hisGloss>et eksempel på snekker Engstrands forsøk på å etterape en høyere stil for å gi sine ord vekt. <hi rend="italic">Veifarende</hi> kommer av gno. <hi rend="italic">vegfarandi</hi>, og er også kjent fra eldre dansk lovverk i forbindelsen <quote>vejfarende mand</quote>. Hos Engstrand blir den selvmotsigende sammenstillingen med <hi rend="italic">sjømænder</hi> en feil som blottstiller ham; brukt bevisst som stilmiddel kalles det <hi rend="italic">contradictio in adjecto</hi> (f.eks. <quote>en klok dåre</quote>). <hi rend="italic">Verdens hav</hi>: kan også forstås i overført betydning som livet her i verden med alle dets omskiftelser (ODS I <hi rend="italic">hav</hi> 2.1); jf. <quote>Hvad vindes ved Verdens vidtløftige Hav? / O, tusinde Farer i skummende Trav!</quote> <bibl>(Stub 1879, 40)</bibl> og <quote>en ulykkelig Kvinde, ondt omtumlet paa Livets Hav</quote> <bibl>(Schandorph 1889–98, b. 1, 10)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_61" xml:id="koGe_61"/><HIS:hisTerm>vejfarendes … glupendes … vejledendes]</HIS:hisTerm> <HIS:hisGloss>Tillegg av -<hi rend="italic">s</hi> i presens partisipp var et talemålstrekk på denne tiden, og den tilføyde <hi rend="italic">s</hi>-en har dels opphav i sen norrøn verbbøyning og dels i det adverbiale <hi rend="italic">s</hi>, jf. <hi rend="italic">hodekulls</hi> osv. <bibl>(Falk &amp; Torp 1900, § 137)</bibl>. Aars, Hofgaard og Moe tar avstand fra å utstyre presens partisipp med en -<hi rend="italic">s</hi> som om det fantes en passivdannelse med -<hi rend="italic">s</hi> av adjektiviske former (f.eks. <quote>et optagendes lån</quote>): <quote>Noget andet er det at byernes hverdagssprog hos os, likesom i Danmark, gjennemgående føier -<hi rend="italic">s</hi> til ved det aktive præsens partisipium: ‹han kom gåendes, han fik det til giendes, en levendes (eller levvannes) unge›</quote> <bibl>(1898, 135)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_62" xml:id="koGe_62"/><HIS:hisTerm>glupendes]</HIS:hisTerm> <HIS:hisGloss>voldsom, sterk (NRO <hi rend="italic">glupe</hi> 2 b)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_63" xml:id="koGe_63"/><HIS:hisTerm>syv – otte hundrede kroner]</HIS:hisTerm> <HIS:hisGloss>Summen tilsvarer noe under en årslønn for en håndverker, noe over en årslønn for en arbeider <bibl>(jf. Vogt 1877, 12; Lie &amp; Roll-Hansen 2001, 214–16).</bibl></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_64" xml:id="koGe_64"/><HIS:hisTerm>sætte sig ivej med]</HIS:hisTerm> <HIS:hisGloss>komme i gang med; <hi rend="italic">i vei</hi>: (på energisk eller effektiv måte) i gang (med arbeid, virksomhet e.l.) (jf. NRO <hi rend="italic">vei</hi> 1 b d)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_65" xml:id="koGe_65"/><HIS:hisTerm>Lille Havnegaden]</HIS:hisTerm> <HIS:hisGloss>Navnet <hi rend="italic">Havnegaden</hi> betegner en gate ved eller mot havnen. Tillegget <hi rend="italic">Lille</hi> angir at samme by også har en større (og mer betydningsfull) havnegate. Folketellingen 1865 nevner <quote>Havnegaden</quote> som bostedsadresse i Risør. Navnet finnes også i andre havnebyer.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_67" xml:id="koGe_67"/><HIS:hisTerm>savoir vivre]</HIS:hisTerm> <HIS:hisGloss>(fr.) livskunst; eg. ‘å vite hvordan man skal leve’</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_68" xml:id="koGe_68"/><HIS:hisTerm>la’ bli’]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">la bli</hi>: ikke røre eller forstyrre; også med betydningen ‘avholde seg fra, unnlate’ (folk., fam.) (NRO I <hi rend="italic">late</hi> 8 a); om bruk av kortformer av verb, jf. innledningen, under <hi rend="italic">Dramaform</hi></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_69" xml:id="koGe_69"/><HIS:hisTerm>lystkutteren]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">lystkutter</hi>: kutterrigget fartøy til lystseilas; mindre seilfartøy, bygget spesielt til lystseilas (NRO); <quote>fintbygget, letsejlende, sædvanlig enmastet, mindre skib (med lige stævn og spejlgattet hæk); tidligere især anv. som krigsfartøj, nu især som fisker-, lods- eller lystfartøj (jf. Fiske(r)-, Lods-, Lystkutter)</quote> (ODS <hi rend="italic">kutter</hi>)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_70" xml:id="koGe_70"/><HIS:hisTerm>tre hundrede speciedaler]</HIS:hisTerm> <HIS:hisGloss>I 1875 sluttet Norge seg til den skandinaviske myntunionen og innførte krone som den nye myntenhet. Ved overgangen ble en spesidaler (Speciedaler, eg. <hi rend="italic">daleren in specie</hi>, altså ‘i ett stykke’) satt lik 4 kroner. Jf. for øvrig kommentar til <ptr type="internal" target="Geht.xml" corresp="koGe_63"/>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_71" xml:id="koGe_71"/><HIS:hisTerm>sagtere]</HIS:hisTerm> <HIS:hisGloss>stillere, med lavere stemme, mer dempet; særlig om tale (NRO <hi rend="italic">sakte</hi> A 1 a)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_74" xml:id="koGe_74"/><HIS:hisTerm>køkkentrappen]</HIS:hisTerm> <HIS:hisGloss>Både våningshus på landet og leiligheter i bygårder kunne ha to trappehus: hovedtrapp og baktrapp. Baktrappen (kjøkkentrappen) i bygårdene gikk forbi leilighetenes kjøkkeninnganger, og ble brukt av familiens tjenerskap samt bybud og andre som skulle levere varer osv. Hovedtrapp og hovedinngang var reservert for herskapet og deres gjester.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_72" xml:id="koGe_72"/><HIS:hisTerm>mand for at sige dig, hvad et barn skylder sin far]</HIS:hisTerm> <HIS:hisGloss>jf. normene som kommer til uttrykk hos Pontoppidan, jf. kommentar til <ptr type="internal" target="Geht.xml" corresp="koGe_40"/></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_73" xml:id="koGe_73"/><HIS:hisTerm>bevise af kirkebogen]</HIS:hisTerm> <HIS:hisGloss>Kirkebøkene fungerte lenge som landets folkeregistre. I sognets ministerialbok eller kirkebok ble alle kirkelige handlinger som dåp, konfirmasjon, vielse og begravelse opptegnet.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_75" xml:id="koGe_75"/><HIS:hisTerm>kravebånd]</HIS:hisTerm> <HIS:hisGloss>bånd til å binde sammen en halskrave (foreldet) (ODS). Båndet var gjerne av silke og hadde en viss bredde. Det var vanlig i bruk til de høyhalsede bluser som var del av tjenestepikeuniformen, og ble knyttet som en sløyfe eller med løst nedhengende ender. Jf. <rs type="person" corresp="peHCA">H.C. Andersens</rs> dikt <quote>Med et Kravebaand</quote>:</HIS:hisGloss>
+ 
+<quote rend="indent">
+<lg>
+<l>Fordi man gaaer med Kravebaand,</l>
+<l>Derfor har man ej Slaveaand;</l>
+<l>Det trøste Dig, du Lilievaand!</l>
+</lg>
+<bibl>(H.C. Andersen 1876–80, b. 12, 427)</bibl></quote>
+</item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_76" xml:id="koGe_76"/><HIS:hisTerm>en liden rejsetaske]</HIS:hisTerm> <HIS:hisGloss>veske eller mappe av lær eller skinn, til bruk ved reise</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_77" xml:id="koGe_77"/><HIS:hisTerm>jomfru]</HIS:hisTerm> <HIS:hisGloss>ung, ugift kvinne (om eldre forhold). Som standsmarkerende tittel ble ordet opprinnelig bare brukt om ugifte adelsdamer, men fra slutten av 1600-tallet til frem på 1800-tallet mer alment om ugifte kvinner av borgerstand (ODS 1,1; NRO 1 a). I titulering ble ordet <hi rend="italic">jomfru</hi> senere avløst av <hi rend="italic">frøken</hi>. Endringen medførte at <hi rend="italic">jomfru</hi> som tittel fikk et alderdommelig, konservativt preg i siste halvdel av 1800-tallet.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_78" xml:id="koGe_78"/><HIS:hisTerm>fortrædeligt]</HIS:hisTerm> <HIS:hisGloss>som volder ubehag, uleilighet, bryderi e.l. (NRO <hi rend="italic">fortredelig</hi>); brysom, ubehagelig</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_79" xml:id="koGe_79"/><HIS:hisTerm>landmanden]</HIS:hisTerm> <HIS:hisGloss>bonden</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_80" xml:id="koGe_80"/><HIS:hisTerm>må ikke jeg]</HIS:hisTerm> <HIS:hisGloss>kunne ikke jeg; får jeg ikke lov til; for å uttrykke tillatelse, frihet, anledning for subjektet til å foreta den handling eller komme (være) i den tilstand som hovedverbet betegner (i de fleste tilfeller svarende til <hi rend="italic">kunne</hi>) (NRO <hi rend="italic">måtte</hi> 2)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_81" xml:id="koGe_81"/><HIS:hisTerm>forstuen]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">forstue</hi>: det første rommet (bak en inngang, entré e.l.) i et hus eller en leilighet, hvorfra det er adgang (inngang) til de øvrige rommene (NRO). I <title rend="italic">Om Bygnings-Skikken paa Landet i Norge</title> omtaler <rs type="person" corresp="peESu">Eilert Sundt</rs> en ny boligtype som ble vanlig både i byene og på landet fra og med slutten av 1850-årene <bibl>(Sundt 1862, 142–43)</bibl>. Det nye i denne arkitekturen, som etter hvert fikk navnet sveitserstil, lå ifølge Sundt i en friere og mindre tradisjonell funksjonsdeling av værelsene. Hvert værelse kunne ha flere dører som ledet til naborommene i stedet for til en felles gang. Med henvisning til våningshuset på gården Hof i Aker beskriver Sundt grunnplanet i første etasje slik: <quote>1, Entree eller Gang, 2, Forværelse, med Kakkelovn, saa man, naar der er Gjæstebud om Vinteren, kan byde de Fremmede et varmt Værelse til at hænge Reisetøiet, 3, Dagligstue</quote> <bibl>(1862, 142)</bibl>. Beboere og gjester ble ledet fra entré, trappehus og forværelse til dagligstue, havestue, storstue og andre selskapsværelser gjennom dører i hvert rom. Leilighetene i de leiegårdene som ble bygget i Kristiania i siste del av 1800-tallet, var som regel delt i to ulike og klart adskilte avdelinger. Mot gaten lå familiens værelser, den såkalte herskapsavdelingen, med værelser hvor man også mottok gjester. Her kunne det være både en forstue med ildsted og flere andre stuer. Inn mot bakgården lå kjøkken, spiskammers og pikeværelse <bibl>(Schrumpf 1978, 42)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_82" xml:id="koGe_82"/><HIS:hisTerm>kors]</HIS:hisTerm> <HIS:hisGloss>brukt i ed, høytidelig forsikring, opprinnelig idet man sverger ved Jesu kors (NRO 1 a), senere oftest med sterkt avsvekket betydning; brukt i bekreftende og benektende uttrykk, i utrop av forskrekkelse, forbauselse eller glad forundring (NRO 2)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_83" xml:id="koGe_83"/><HIS:hisTerm>chokoladen]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">sjokolade</hi>: finere selskapsdrikk, laget av kakaobønner tilsatt melk (NRO 2 a). Drikken ble brukt på samme måte som man i våre dager bruker kaffe, og var tidligere langt mer vanlig enn nå. Sjokoladen ble servert i særskilte (store, høye) kopper og fra egne sjokolademugger, som var forsynt med et fastmontert lokk for at innholdet skulle holde seg varmt.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_84" xml:id="koGe_84"/><HIS:hisTerm>kommen]</HIS:hisTerm> <HIS:hisGloss>samsvarsbøyd perf. part. av verbet <hi rend="italic">komme</hi>; brukt adjektivisk i predikativ funksjon og derfor samsvarsbøyd i kjønn og tall</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_85" xml:id="koGe_85"/><HIS:hisTerm>før som]</HIS:hisTerm> <HIS:hisGloss>før enn, før; brukt (mest dial., folk.) sammenlignende etter komparativ (eller komparativiske ord) i forbindelsen <hi rend="italic">enn som</hi> (f.eks. <hi rend="italic">ikke mer enn som</hi>) (NRO <hi rend="italic">som</hi> konj. 2 c)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_86" xml:id="koGe_86"/><HIS:hisTerm>i et kør]</HIS:hisTerm> <HIS:hisGloss> uten avbrytelse og raskt, i ett trekk (om bevegelse, virksomhet e.l.); eg. ‘kjørsel’ (NRO <hi rend="italic">kjør</hi>). Hjalmar Falk forklarer det derimot med utgangspunkt i det greske <hi rend="italic">kyrie eleison</hi>, kjent fra flere salmer: <quote>i Danmark haves endnu den ældre form: i en kjør i leis</quote> <bibl>(Falk 1894, 55)</bibl>; jf. <hi rend="italic">kyrie leis</hi>: om hurtig, uforståelig snakk, lang oppramsing o.l.; ofte i forbindelsen <hi rend="italic">een kørilejs</hi>, <hi rend="italic">i en køre</hi> (dial.) (ODS <hi rend="italic">kørilejs</hi>). Regine må oppfatte uttrykket som dialektalt eller ikke tilhørende dannet tale, idet hun straks etter korrigerer seg selv og erstatter uttrykket med <quote>et og samme træn</quote>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_87" xml:id="koGe_87"/><HIS:hisTerm>træn]</HIS:hisTerm> <HIS:hisGloss>tog; av eng. <hi rend="italic">train</hi> (NRO II <hi rend="italic">tren</hi>)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_88" xml:id="koGe_88"/><HIS:hisTerm>sagte]</HIS:hisTerm> <HIS:hisGloss>dempet, stille; særlig om tale (NRO <hi rend="italic">sakte</hi> A 1 a)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_89" xml:id="koGe_89"/><HIS:hisTerm>herr pastoren]</HIS:hisTerm> <HIS:hisGloss>Tiltaleordet <hi rend="italic">herr</hi> ble i middelalderen brukt ved titler og navn på fyrster, stormenn og de høyeste geistlige, senere også på riddere og andre standspersoner, spesielt prester (ODS <hi rend="italic">herre</hi> 4; NRO <hi rend="italic">herre</hi> 3 a). På 1700- og 1800-tallet hadde bruken blitt utvidet til å omfatte alle embets- og borgerskapstitler og dessuten en rekke andre yrker uten nærmere sosial gradering. Tittelen kunne settes både i ubestemt og bestemt form. Den bestemte formen rommer et tredjepersonsaspekt som på en viss måte avdemper det personlige forhold mellom den talende og den tiltalte. Ved omtale – dvs. når utsagnet gjelder en reell tredjeperson – er bestemt form obligatorisk.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_90" xml:id="koGe_90"/><HIS:hisTerm>tilforladelig]</HIS:hisTerm> <HIS:hisGloss>sannelig, sant for dyden, virkelig (NRO <hi rend="italic">tilforlatelig</hi> 2)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_91" xml:id="koGe_91"/><HIS:hisTerm>lagt mig ud]</HIS:hisTerm> <HIS:hisGloss>blitt tykk(ere) (særlig fam.) (NRO <hi rend="italic">legge</hi> 4 a); her vel om at Regine har fått yppigere kvinnelige former</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_92" xml:id="koGe_92"/><HIS:hisTerm>sige fruen til]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">si en til</hi>: varsle en (NRO I <hi rend="italic">si</hi> 5 a)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_93" xml:id="koGe_93"/><HIS:hisTerm>får stunder]</HIS:hisTerm> <HIS:hisGloss>har, får anledning, leilighet, tilstrekkelig tid (til) (litt., dial.) (NRO <hi rend="italic">stund</hi> 4 a)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_94" xml:id="koGe_94"/><HIS:hisTerm>en ledende hånd]</HIS:hisTerm> <HIS:hisGloss>religiøs talemåte, jf. f.eks. sjette strofe i salme nr. 364 i <rs type="person" corresp="peMaLa">Landstads</rs> <title rend="italic">Kirkesalmebog</title>: <quote>Lover Guds Aand, / Kysser hans ledende Haand!</quote> <bibl>(Landstad 1869)</bibl></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_95" xml:id="koGe_95"/><HIS:hisTerm>være af med]</HIS:hisTerm> <HIS:hisGloss>unnvære (NRO I <hi rend="italic">være</hi> 4 a)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_96" xml:id="koGe_96"/><HIS:hisTerm>gruelig]</HIS:hisTerm> <HIS:hisGloss>forferdelig, voldsomt; nå mindre alminnelig brukt som forsterkende adv. til å uttrykke en meget høy grad (NRO 2)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_96a" xml:id="koGe_96a"/><HIS:hisTerm>nødig]</HIS:hisTerm> <HIS:hisGloss>ugjerne (NRO 3 a)</HIS:hisGloss></item>
+      
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_97" xml:id="koGe_97"/><HIS:hisTerm>den datterlige pligt]</HIS:hisTerm> <HIS:hisGloss>hensyn eller oppgave som en datter skylder sin far; jf. normene som kommer til uttrykk i <rs type="person" corresp="peErikPont">Pontoppidans</rs> forklaring:</HIS:hisGloss>
+
+<quote rend="proseIndent">Hvad er Børnenes Pligt imod Forældrene? Med Hjerte, Ord, Gebærder og Gjerning at ære, elske, tjene og adlyde dem, endogsaa da, naar Børnene ere myndige, vise, rige og anseelige, samt og at bede for dem. Syr. 3,7. Ær din Fader med Gjerning og Ord, at Velsignelsen kan komme over dig fra ham. v. 11. Kjære Barn! hjælp din Fader i Alderdom, og du skal ikke bedrøve ham, medens han lever. v. 15. Hvo, som forlader sin Fader, han er som en Gudsbespotter, og hvo, som gjør sin Moder vred, er forbandet af Herren <bibl>(Pontoppidan 1832, spørsmål 181)</bibl>.</quote></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_98" xml:id="koGe_98"/><HIS:hisTerm>reel]</HIS:hisTerm> <HIS:hisGloss>redelig (og grei); ærlig og oppriktig (om person eller opptreden, handlemåte) (NRO <hi rend="italic">reell</hi> 2)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_99" xml:id="koGe_99"/><HIS:hisTerm>plads]</HIS:hisTerm> <HIS:hisGloss>(lavere) lønnet stilling; post (NRO <hi rend="italic">plass</hi> 9)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_100" xml:id="koGe_100"/><HIS:hisTerm>dersom at]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">at</hi> er mer eller mindre overflødig sammen med andre konjunksjoner, jf. andre folkelige uttrykk for det samme: <hi rend="italic">fordi at</hi>, <hi rend="italic">siden at</hi>, <hi rend="italic">mens at</hi>, <hi rend="italic">hvis at</hi>, <hi rend="italic">hvis(s)om at(te)</hi>, <hi rend="italic">hvissåskjønt (at)</hi> (NRO <hi rend="italic">at</hi> konj. 2; <hi rend="italic">hvis</hi> konj.). Det vanligste, også når <hi rend="italic">dersom at</hi> tas med, er <hi rend="italic">hvis(s)om</hi>, ev. med tillagt -<hi rend="italic">at(te)</hi>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_101" xml:id="koGe_101"/><HIS:hisTerm>velsignede]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">velsignet</hi>: brukt attributivt for å uttrykke ergrelse, irritasjon eller utålmodighet over det som er betegnet med det karakteriserte substantivet, svarende til <hi rend="italic">forbannet, fordømt, elendig</hi> (NRO <hi rend="italic">velsigne</hi> B 2)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_102" xml:id="koGe_102"/><HIS:hisTerm>betids]</HIS:hisTerm> <HIS:hisGloss>i tide, i rette tid (NRO)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_103" xml:id="koGe_103"/><HIS:hisTerm>Gud bevares]</HIS:hisTerm> <HIS:hisGloss>brukt (i utrop) når den talende vil verge seg mot at man tillegger ham den eller den mening, slik at han erklærer seg enig i noe nettopp uttalt eller i tankegangen i noe nettopp nevnt, med betydningen ‘selvfølgelig, naturligvis’ eller ‘selvfølgelig, naturligvis ikke’ (fam.) (NRO <hi rend="italic">bevare</hi>). Her er betydningen snarere ‘nei du verden’, ‘kjære, vene’.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_104" xml:id="koGe_104"/><HIS:hisTerm>overstadig]</HIS:hisTerm> <HIS:hisGloss>i meget høy grad, voldsomt, overordentlig (NRO 1 b)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_105" xml:id="koGe_105"/><HIS:hisTerm>smukt og sønligt]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">sønnlig</hi>: ærbødig, respektfull som det sømmer seg en mann (gutt) i egenskap av sønn (NRO 2); her vel heller ‘kjærlig’; jf. kommentar til <ptr type="internal" target="Geht.xml" corresp="koGe_97"/>; <hi rend="italic">smukk</hi>: som fortjener ros og moralsk anerkjennelse; moralsk, etisk tiltalende (om handling, tankegang) (NRO 2)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_106" xml:id="koGe_106"/><HIS:hisTerm>hjerte for]</HIS:hisTerm> <HIS:hisGloss>kjærlige følelser for (om følelsesliv, ofte om medfølelse) (NRO <hi rend="italic">hjerte</hi> 2 b); jf. <hi rend="italic">hjertelag</hi>: trang til å hjelpe og glede andre (NRO)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_107" xml:id="koGe_107"/><HIS:hisTerm>sådanne ting]</HIS:hisTerm> <HIS:hisGloss>slike ting, den slags ting (NRO <hi rend="italic">sådan</hi> A 1 a a); brukt i uttrykk for karakteristikk eller vurdering av (abstrakt eller konkret) forhold eller (særlig) fenomen, foreteelse, fremtoning (vesen) (NRO <hi rend="italic">ting</hi> 3 c c); i dette tilfellet er vel vurderingen utvilsomt negativ</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_108" xml:id="koGe_108"/><HIS:hisTerm>ikke … nogen nød med]</HIS:hisTerm> <HIS:hisGloss>ingen fare, ingen vanskelighet (NRO <hi rend="italic">nød</hi> 2 b)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_109" xml:id="koGe_109"/><HIS:hisTerm>den slags]</HIS:hisTerm> <HIS:hisGloss>ting av den art; slike ting, slikt (NRO <hi rend="italic">slags</hi> 1 b b)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_110" xml:id="koGe_110"/><HIS:hisTerm>rigtignok]</HIS:hisTerm> <HIS:hisGloss>sannelig, virkelig; brukt for å forsterke utsagnet, her som forsikringsadverb (NRO 2 a)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_111" xml:id="koGe_111"/><HIS:hisTerm>forlade sig på]</HIS:hisTerm> <HIS:hisGloss>stole på, være sikker på (NRO <hi rend="italic">forlate</hi> 4)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_112" xml:id="koGe_112"/><HIS:hisTerm>deslige]</HIS:hisTerm> <HIS:hisGloss>lignende, slike (NRO <hi rend="italic">desslike</hi>)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_113" xml:id="koGe_113"/><HIS:hisTerm>asyl]</HIS:hisTerm> <HIS:hisGloss>tilfluktssted, pleieanstalt (NRO); på denne tid vanlig om f.eks. barnehjem, der man mottok foreldreløse og andre pleietrengende barn</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_114" xml:id="koGe_114"/><HIS:hisTerm>fuldkommen]</HIS:hisTerm> <HIS:hisGloss>fullstendig, ubetinget, helt (NRO <hi rend="italic">fullkommen</hi> 1). Funksjonen av den ubøyde formen av partisippet (av det foreldede verbet <hi rend="italic">fullkomme</hi>) er ikke predikativ, som den formelt ligner (men som ikke passer med innholdet av setningen), men adverbial; også Molbech (1859 <hi rend="italic">fuldkommen</hi> 4) har ubøyd form. Som adverbial står adjektivet normalt i nøytrumsformen, men <hi rend="italic">t</hi>-en kan utelates ved visse adjektiver, særlig i dem med endelsen -<hi rend="italic">lig</hi> og i ord som kan oppfattes som adverb. En enkel forklaring kan være at mens <hi rend="italic">fullkomme</hi> ennå hørte til samtidsspråket, ble <hi rend="italic">fullkommen</hi> henført til verbet som en bøyningsform av dette og dermed sperret for ytterligere bøyning <bibl>(jf. Diderichsen 1962, 49)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_115" xml:id="koGe_115"/><HIS:hisTerm>thinglæst]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">tinglese</hi>: tinglyse; innføre i tingbok, panteregister e.l. (sammendrag av dokument om rettshandel, f.eks. skjøte, pantobligasjon, ektepakt) for dermed å gi rettshandelen full rettslig beskyttelse overfor en tredjemann (NRO)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_116" xml:id="koGe_116"/><HIS:hisTerm>skøde]</HIS:hisTerm> <HIS:hisGloss>skriftlig erklæring, dokument (på stemplet papir) om overdragelse av eiendomsrett til fast eiendom eller skip (NRO I <hi rend="italic">skjøte</hi>)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_117" xml:id="koGe_117"/><HIS:hisTerm>herregården]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">herregård</hi>: opprinnelig et sted hvor en herre, dvs. en adelsmann, bor, og som det hører bondebruk (leilendingsbruk) under (NRO). For gårdene hvor de bodde, setegårdene, hadde aristokratiet oppnådd visse privilegier, særlig skatte- og tiendefrihet. Etter innføringen av eneveldet i 1660 fikk også borgerlige rett til å erverve herregårder. Med avskaffelsen av adelen i Norge i 1821 falt all skattefrihet bort ved eierens død. Det var da bare 21 setegårder igjen. Begrepet herregård fikk etter hvert et mer uklart innhold, men kan sies å betegne et gårdsbruk som ikke bare er stort, men som det også er knyttet en historisk tradisjon til, og som har spilt en rolle både økonomisk, sosialt og kulturelt <bibl>(Coldevin 1950, b. 1, 9–11; Imsen &amp; Winge 1999, 372)</bibl>. Jf. for øvrig kommentar til <ptr type="internal" target="Geht.xml" corresp="koGe_14"/>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_118" xml:id="koGe_118"/><HIS:hisTerm>approbationen]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">approbasjon</hi>: godkjennelse (særlig adm.) (NRO)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_119" xml:id="koGe_119"/><HIS:hisTerm>legatet]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">legat</hi>: formuesrettigheter, pengebeløp som ved testamentarisk forordning tilfaller en eller flere personer, eller tilgodeser en stiftelse, et bestemt formål e.l. (jur.) (NRO)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_120" xml:id="koGe_120"/><HIS:hisTerm>stiftelsen]</HIS:hisTerm> <HIS:hisGloss>En stiftelse dannes ved at en formuesverdi ved testament, gave eller annen rettslig disposisjon selvstendig blir stilt til rådighet for et bestemt formål av ideell, humanitær, sosial, utdannelsesmessig, økonomisk eller annen art. Som stiftelser regnes også selvstendige legater, institusjoner og fond som private har opprettet <bibl>(jf. <hi rend="italic">Salmonsen</hi> Stiftelse)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_121" xml:id="koGe_121"/><HIS:hisTerm>bramfrit]</HIS:hisTerm> <HIS:hisGloss>jevnt og liketil (NRO <hi rend="italic">bramfri</hi>)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_122" xml:id="koGe_122"/><HIS:hisTerm>bli’]</HIS:hisTerm> <HIS:hisGloss>om bruk av kortformer av verb, jf. innledningen, under <hi rend="italic">Dramaform</hi></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_123" xml:id="koGe_123"/><HIS:hisTerm>panteobligation]</HIS:hisTerm> <HIS:hisGloss>gjeldsbrev hvorved kreditor får pant i fast eiendom, skip e.l. som sikkerhet for gjeldens betaling (jur.) (NRO <hi rend="italic">pantobligasjon</hi>)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_124" xml:id="koGe_124"/><HIS:hisTerm>første prioritet]</HIS:hisTerm> <HIS:hisGloss>fortrinnsrett (i en bestemt rekkefølge) til betaling hvilende på pant i fast eiendom; panterett i fast eiendom (særlig jur.) (NRO <hi rend="italic">prioritet</hi> 2)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_125" xml:id="koGe_125"/><HIS:hisTerm>assureres]</HIS:hisTerm> <HIS:hisGloss>forsikres (NRO <hi rend="italic">assurere</hi>); om person som skal oppebære erstatning hvis forsikringstilfellet inntreffer (NRO <hi rend="italic">forsikre</hi> 1 b). Det fremgår av det følgende at enkelte religiøse grupperinger kunne oppfatte forsikring som uttrykk for manglende tillit til at en institusjon av denne typen stod under beskyttelse av <quote>en højere styrelse</quote> (HIS 7, <ptr type="ht" target="Geht.xml" corresp="koGe_ht_1"/>). Fra midten av 1800-tallet ble det som ledd i en generell moderniseringstendens etablert private assuranseselskaper i en rekke norske byer. Et eksempel finner vi i Bergen:</HIS:hisGloss> 
+   
+<quote rend="proseIndent">I 1850-årene er Bergen på mange måter i ferd med å legge grunnlaget for en framtid som skulle følge helt andre linjer enn fortiden – byen får sine forretningsbanker og assuranseselskaper, sine første dampskipsselskaper, sitt første mekaniske verksted, telegraf og kjernen i en noenlunde moderne sentrumsbebyggelse <bibl>(Lorentzen 1949, 155)</bibl>.</quote></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_126" xml:id="koGe_126"/><HIS:hisTerm>ligesom]</HIS:hisTerm> <HIS:hisGloss>noe i likhet med, noe i retning av; brukt til å angi at noe minner om, best kan sammenlignes med det som et tilknyttet substantiv betegner (NRO <hi rend="italic">likesom</hi> 2 a)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_127" xml:id="koGe_127"/><HIS:hisTerm>sandeligen]</HIS:hisTerm> <HIS:hisGloss>så menn, virkelig (NRO <hi rend="italic">sannelig</hi> 2). Endelsen -<hi rend="italic">en</hi> er tillagt adjektivet (og til adverb) for å danne adverbform. Den norrøne adverbendelsen -<hi rend="italic">liga, -lega</hi> ble til -<hi rend="italic">lig</hi>, og i <quote>den nyere Tid er til denne Afledningsform føiet Endelsen <hi rend="italic">en</hi>: høiligen […] Denne Tilføielse af <hi rend="italic">en</hi> til Adverbier paa <hi rend="italic">lig</hi> er ligesaa unødvendig, som Tilføielsen af Adjektivets Intetkjønsmerke <hi rend="italic">t</hi> er urigtigt (f.Ex. temmeligt)</quote> <bibl>(Løkke 1855, § 147, anm. 1)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_128" xml:id="koGe_128"/><HIS:hisTerm>har det sig]</HIS:hisTerm> <HIS:hisGloss>forholder det seg, henger det sammen (NRO <hi rend="italic">ha</hi> A 3 b)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_129" xml:id="koGe_129"/><HIS:hisTerm>meningsberettigede]</HIS:hisTerm> <HIS:hisGloss>som (etter stilling, kunnskaper, innsikt) har rett til eller krav på å ytre en mening og bli hørt på (i et visst spørsmål) (NRO <hi rend="italic">meningsberettiget</hi>). Grunnloven av 1814 gav stemmerett til menn som var eiendomsbesitter eller som hadde embete. Den desidert største velgergruppen var selveiende bønder og leilendinger. Med veksten i middelklassegrupper som var velutdannede og tjente bra, men ikke hadde tilstrekkelig eiendom og heller ikke embetsstillinger, vokste presset for utvidelse av stemmeretten. Folketellingen 1875 ble preget av ønsket om å beregne konsekvensene av en utvidelse av stemmeretten, og hovedsaken ble å skille mellom personenes mer og mindre selvstendige, overordnede eller underordnede stilling i arbeidet. Til dette formål ble de offentlig ansatte inndelt i 1) embetsmenn, 2) bestillingsmenn og tilsvarende og 3) arbeidere, og de private på tilsvarende måte i 1) selvstendig næringsdrivende, 2) private betjenter, funksjonærer og tilsvarende og 3) arbeidere <bibl>(Lie &amp; Roll-Hansen 2001, 117–20; Myhre 2004, 110–18)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_130" xml:id="koGe_130"/><HIS:hisTerm>ta’ anstød]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">anstøt</hi>: følelse som vekkes når noe støter ens begreper om det moralske eller passende; forargelse (NRO 2); jf. Matt 11,6 (par.) samt <rs type="person" corresp="peErikPont">Pontoppidans</rs> forklaring: <quote>Hvad er Forargelse? Et Anstød, som ligger i Veien for vor Sjel, og kan føre den i Fald</quote> <bibl>(Pontoppidan 1832, spørsmål 614)</bibl>. Om bruk av kortformer av verb, jf. innledningen, under <hi rend="italic">Dramaform</hi>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_131" xml:id="koGe_131"/><HIS:hisTerm>min embedsbroders tilhængere]</HIS:hisTerm> <HIS:hisGloss>kan sikte til vekkelseskristne grupperinger. Manders benytter kanskje begrepet embete slik det i lutherske kirker kunne bli brukt om det kall eller den oppgave hver enkelt hadde. Her er dette sannsynligvis en henspilling på kollegaforholdet til en av stedets lokale menighetsprester – som ansatte i den offisielle kirke var de regelmessig statlige embetsmenn. Omkring 1850 oppstod det i Norge en vekkelseskristendom med forankring i teologutdannelsen ved universitetet i Kristiania. Universitetslektor, senere (fra 1860) professor <rs type="person" corresp="peGJo">Gisle Johnson</rs> ledet denne utviklingen, som etablerte en nær forbindelse mellom teologi og lavkirkelig legmannsreligiøsitet. De eldre prestene var fortsatt preget av en rasjonalistisk, såkalt liberal kristendomsoppfatning, mens de nye prestene som fra midten av århundret ble uteksaminert fra Det teologiske fakultet, hadde synd, anger, valg og omvendelse som sine hovedtemaer og gjeninnførte helvetesstraffen i sine prekener. Troen skulle nå individualiseres, og Johnson gav støtet til en landsomfattende vekkelse med vekt på syndsbekjennelse og omvendelse til et nytt levesett. For en bredere fremstilling av denne utviklingen, se innledningen til <title rend="italic">Brand</title>, HIS 5k, 249–54.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_132" xml:id="koGe_132"/><HIS:hisTerm>den rette tillid til en højere styrelse]</HIS:hisTerm> <HIS:hisGloss>Kravet om tillit til Guds styrelse kommer sterkt til uttrykk i <rs type="person" corresp="peErikPont">Pontoppidans</rs> forklaring: <quote>Hvorfor kalde vi Gud en Fader, som er i Himmelen? For at opløfte Hjertet, og destomere opvække en ærbødig Tillid til den Allerhøieste, som seer og formaaer alle Ting</quote>; <quote>Styrer og opholder Guds Forsyn alle andre Ting i den ganske Verden? Ja</quote>; <quote>Hvad er det at forlade sig paa Gud allene? Det er, med fuld Tillid at overgive sig i Guds Forsyn, vente alt Godt fra ham, og sætte al sin Sag i hans Haand. Ordsp. 3,5. Haab paa Herren i dit ganske Hjerte, og forlad dig ikke paa din Forstand</quote> <bibl>(Pontoppidan 1832, spørsmål 570, 360, 98)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_133" xml:id="koGe_133"/><HIS:hisTerm>bevidsthed]</HIS:hisTerm> <HIS:hisGloss>det å være (politisk, sosialt, religiøst) bevisst (mest litt.) (NRO <hi rend="italic">bevissthet</hi> 3); <quote>ofte nærmende sig bet.: samvittighed</quote> (ODS <hi rend="italic">bevidsthed</hi> 1)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_134" xml:id="koGe_134"/><HIS:hisTerm>lettelig]</HIS:hisTerm> <HIS:hisGloss>med letthet; uten vanskelighet (NRO 1); om avledning av adverb fra adjektiv, jf. Løkke <bibl>(1855, § 147, anm. 1)</bibl>. Ordet kan også bety ‘ubesindig’, dvs. uten at en handling eller konsekvens er gjennomtenkt; jf. ODS, som samtidig angir at ordet i slik betydning kan være foreldet: <quote>dels (nu næppe br.) som udtr. for, at man handler letsindigt eller ubetænksomt. Derfor skulle hver Christen vogte sig for falsk Eed og for lettelig at svære […] (jf. bet. 2.1; dial.) som udtr. for, at man udfører noget ligegyldigt eller overfladisk, tager sig det let</quote> (ODS 1.5). At pastor Manders velger denne høyprosaformen og ikke <hi rend="italic">let</hi> eller <hi rend="italic">med lethed</hi>, kan oppfattes som en religiøs yrkessjargong etter mønster av <hi rend="italic">sandelig</hi> o.l. i bibel- og postillspråk.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_135" xml:id="koGe_135"/><HIS:hisTerm>kommunale fattigbyrder]</HIS:hisTerm> <HIS:hisGloss>Etter fattigloven av 1845 ble fattigvesenet underlagt det kommunale selvstyret. Etter loven hadde tre grupper rett til fattigstøtte: 1) arbeidsuføre, gamle og syke, 2) delvis arbeidsføre, men trengende og 3) fattige barn uten forsørger. En ny fattiglov av 1863 tok sikte på å få ned utgiftene og strammet inn ytelsene både overfor fattige arbeidsføre og gamle og syke <bibl>(Pryser 1999, 255–56)</bibl>. Utgiftene til fattigvesenet økte også i de gode 1870-årene, men f.eks. i Kristiania gikk fattigutgiftenes andel av de samlede kommunale utgifter likevel ned, fra over 50 % enkelte år i 1840-årene til snaut 30 % i perioden 1867–76. I landkommunene stod fattigvesenet ennå i 1883 for nesten 40 % av utgiftene. Fattigskatten ble betalt særskilt og utlignet etter jordeiendom, formue og inntekt. Fattigloven av 1863 definerte formue og inntekt mer presist enn før og gav klarere regler for utligning av by- og fattigskatt <bibl>(Myhre 1990, 348, 355; Try 1979, 354, 472)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_136" xml:id="koGe_136"/><HIS:hisTerm>fattigbyrder]</HIS:hisTerm> <HIS:hisGloss>(tyngende) utlegg til forsorgsvesenet (NRO <hi rend="italic">fattigbyrde</hi>)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_137" xml:id="koGe_137"/><HIS:hisTerm>befrygte]</HIS:hisTerm> <HIS:hisGloss>frykte for; frykte (litt., foreldet) (NRO <hi rend="italic">befrykte</hi>)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_140" xml:id="koGe_140"/><HIS:hisTerm>vække forargelse i menigheden]</HIS:hisTerm> <HIS:hisGloss>Utsagnet har bibelsk klangbunn, jf. 1. Kor 10,32: <quote>Værer uden Forargelse baade for Jøder og Grækere og for Guds Menighed</quote>; jf. også <rs type="person" corresp="peErikPont">Pontoppidans</rs> forklaring: <quote>Hvad er Forargelse? Et Anstød, som ligger i Veien for vor Sjel, og kan føre den i Fald</quote> <bibl>(Pontoppidan 1832, spørsmål 614)</bibl>; jf. Matt 18,6–7: <quote>Men hvo, som forarger een af disse Smaa, som troe paa mig, ham var det bedre, at der var hængt en Møllesten om hans Hals, og han var sænket i Havets Dyb. Ve Verden for Forargelserne! Thi det er nødvendigt, at Forargelser komme, dog ve det Menneske, ved hvem Forargelsen kommer!</quote> Jf. for øvrig kommentar til <ptr type="internal" target="Geht.xml" corresp="koGe_23"/>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_138" xml:id="koGe_138"/><HIS:hisTerm>beskærmelse]</HIS:hisTerm> <HIS:hisGloss>beskyttelse (ODS 1); jf. <rs type="person" corresp="peMaLa">Landstads</rs> <title rend="italic">Kirkesalmebog</title>, salme nr. 390, syvende strofe: <quote>Beskjærm os du, som ene kan</quote> <bibl>(Landstad 1869)</bibl>. Jf. kommentar til <ptr type="internal" target="Geht.xml" corresp="koGe_132"/>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_141" xml:id="koGe_141"/><HIS:hisTerm>la’ det stå til]</HIS:hisTerm> <HIS:hisGloss>dristig (eller likegyldig) la tingene ha fritt løp, la det gå som det best kan (uten å tenke på risiko eller følger) (NRO <hi rend="italic">stå</hi> 9 d); om bruk av kortformer av verb, jf. innledningen, under <hi rend="italic">Dramaform</hi></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_142" xml:id="koGe_142"/><HIS:hisTerm>gåt ild]</HIS:hisTerm> <HIS:hisGloss>tatt fyr (ODS <hi rend="italic">ild</hi> 3)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_143" xml:id="koGe_143"/><HIS:hisTerm>anfægtelser]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">anfektelse</hi>: eg. det å anfekte(s); fristelse eller tvil som volder sinnsuro og indre kamp (NRO). Ofte brukt i religiøs betydning, jf. <rs type="person" corresp="peErikPont">Pontoppidans</rs> forklaring: <quote>Er den sande Troe altid og hos alle lige stærk? Nei, thi naar den anfægtes af Vantroe, da er den undertiden meget svag som en skjælvende og bævende Haand</quote>; <quote>Hvem har saaledes bevaret sin Kydskhed imod Anfægtelse? Joseph, da han sagde til Potifars Hustru: Hvorledes skulde jeg gjøre denne store Ondskab og synde imod Gud? 1 Mos 39,9</quote> <bibl>(Pontoppidan 1832, spørsmål 500, 227)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_144" xml:id="koGe_144"/><HIS:hisTerm>at føre et ulasteligt levnet]</HIS:hisTerm> <HIS:hisGloss>bibelsk stiltone, jf. Rom 6,4: <quote>Vi ere altsaa begravne med ham ved Daaben til Døden, for at, ligesom Christus er opreist fra de Døde formedelst Faderens Herlighed, saa skulle og vi vandre i et nyt Levnet.</quote></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_139" xml:id="koGe_139"/><HIS:hisTerm>fornødenhed]</HIS:hisTerm> <HIS:hisGloss>nødvendighet; av ty. <hi rend="italic">Vonnöten</hi>; <quote>især: det forhold at noget behøves, tiltrænges, er paakrævet, ikke (godt) kan undværes; ogs.: det forhold at trænge til eller behøve noget; behov</quote> (ODS 1)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_145" xml:id="koGe_145"/><HIS:hisTerm>rigtignok]</HIS:hisTerm> <HIS:hisGloss>sannelig, virkelig; brukt for å forsterke utsagnet, her som forsikringsadverb (NRO <hi rend="italic">riktignok</hi> 2 a)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_146" xml:id="koGe_146"/><HIS:hisTerm>taget Regine til mig]</HIS:hisTerm> <HIS:hisGloss>tatt henne inn som familiemedlem; <hi rend="italic">ta</hi>: føre, sette (en, noe) i den eller den tilstand, det eller det forhold (NRO D 4 b a); <quote>m. h. t. person (levende væsen): lade komme til sig; modtage; antage sig; spec. m. h. t. barn: adoptere</quote> (ODS <hi rend="italic">tage</hi> B 20.10)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_147" xml:id="koGe_147"/><HIS:hisTerm>let overfrakke]</HIS:hisTerm> <HIS:hisGloss>enten en kort, ettersittende, enkeltspent overfrakk kneppet med tre eller fire knapper og med nedhengende skjøter bak, oftest grå eller sort, eller en kort (til knærne eller kortere), rett avskåret og smalt ettersittende (ikke figursydd) frakk med skjult knepping <bibl>(C.W. Cunnington &amp; P. Cunnington 1973, 290–301)</bibl></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_148" xml:id="koGe_148"/><HIS:hisTerm>merskumspibe]</HIS:hisTerm> <HIS:hisGloss>(lang)pipe med merskumshode (NRO <hi rend="italic">merskum</hi>); <hi rend="italic">merskum</hi>: hvitgrått eller gulaktig porøst mineral som lett lar seg tildanne og særlig er brukt til å lage pipehoder; av ty. <hi rend="italic">Meerschaum</hi> ‘havskum’</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_149" xml:id="koGe_149"/><HIS:hisTerm>den forlorne søn]</HIS:hisTerm> <HIS:hisGloss>Uttrykket stammer fra fortellingen om den fortapte sønn i Luk 15,11–32: En mann hadde to sønner. Den ene ble hjemme og tjente faren, mens den andre fikk med seg sin del av farsarven, reiste bort og <quote>ødte der sit Gods i et overdaadigt Levnet</quote>. Da han så vendte tilbake til faren, ble han likevel overdådig tatt imot. Han hadde vært <quote>fortabt</quote>, men var nå <quote>funden</quote>. Den tradisjonelle betegnelsen <quote>den forlorne Søn</quote> har sitt opphav i <rs type="person" corresp="peMLut">Luthers</rs> tyske bibeloversettelse, der det heter at sønnen <quote>war verloren</quote>. Uttrykket er ikke brukt i selve teksten, hverken i danske eller norske bibeloversettelser. Derimot finnes det <quote>en forloren Søn</quote> i summariet til Lukasevangeliet, kapittel 15. <title rend="italic">Billed-Bibel for Det norske Folk</title>, den såkalte <title rend="italic">Grimstad-bibelen</title> fra 1840, har også en illustrasjon som er kalt <quote>Den forlorne Søn</quote>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_150" xml:id="koGe_150"/><HIS:hisTerm>den hjemkomne søn]</HIS:hisTerm> <HIS:hisGloss>jf. foregående kommentar</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_151" xml:id="koGe_151"/><HIS:hisTerm>kalde Dem ved fornavn]</HIS:hisTerm> <HIS:hisGloss>Å benytte fornavn var et uttrykk for høy grad av intimitet eller nært bekjentskap. Manders demonstrerer med dette at han som den eldste av de to mennene (i samsvar med regler for god takt og tone) har rett til å foreslå tiltaleform, og hans behandling av Osvald er egnet til å understreke både pastorens nære forhold til familien og hans overlegne stilling overfor Osvald. Mennesker utenom den nærmeste familiekretsen titulerte man med deres sivile og eventuelt yrkesmessige tittel (herr, fru, frøken; banksjef, sakfører osv.) og – når det dreide seg om direkte tiltale – med høflighetsformen <hi rend="italic">De</hi>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_152" xml:id="koGe_152"/><HIS:hisTerm>sit indre menneske … sit ydre menneske]</HIS:hisTerm> <HIS:hisGloss>jf. Paulus språkbruk i Rom 7,22–23: <quote>thi jeg haver Lyst til Guds Lov efter det indvortes Menneske; men jeg seer en anden Lov i mine Lemmer</quote>. Jf. også 2. Kor 4,16: <quote>Derfor blive vi ikke trætte, men om end vort udvortes Menneske gaar tilgrunde, fornyes dog det indvortes Dag for Dag</quote>; og i Ef 3,16: <quote>det indvortes menneske</quote>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_153" xml:id="koGe_153"/><HIS:hisTerm>tilforladelig]</HIS:hisTerm> <HIS:hisGloss>sannelig, sant for dyden, virkelig (NRO <hi rend="italic">tilforlatelig</hi> 2)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_154" xml:id="koGe_154"/><HIS:hisTerm>på det sidste]</HIS:hisTerm> <HIS:hisGloss>i den seneste tid (NRO <hi rend="italic">sist</hi> A 1 b)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_155" xml:id="koGe_155"/><HIS:hisTerm>hvor]</HIS:hisTerm> <HIS:hisGloss>her brukt som et måtesadverb, svarende til <hi rend="italic">hvordan, hvorledes</hi> i direkte spørsmål (NRO B II 1 a)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_156" xml:id="koGe_156"/><HIS:hisTerm>slægter jo mig på]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">slekte på</hi>: ligne (i utseende eller vesen, eg. på grunn av avstamningsforhold) (NRO <hi rend="italic">slekte</hi>). Ordstillingen må regnes som en danisme, jf. forbindelsen <hi rend="italic">slægte paa en</hi> eller (som i riksspråket) <hi rend="italic">slægte en paa</hi> (ODS <hi rend="italic">slægte</hi> 2.1).</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_157" xml:id="koGe_157"/><HIS:hisTerm>presteligt]</HIS:hisTerm> <HIS:hisGloss>som tilhører, tilkommer eller er eget for en prest (NRO <hi rend="italic">prestelig</hi>)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_158" xml:id="koGe_158"/><HIS:hisTerm>ikke ældre end han blev]</HIS:hisTerm> <HIS:hisGloss>selv om han ikke ble eldre enn han gjorde. Konstruksjonen er en innrømmelsessetning innledet av et fritt subjektspredikativ bygget opp etter mønsteret <hi rend="italic">ikke</hi> + komparativ + <hi rend="italic">enn</hi> (ikke mer enn, ikke oftere enn, ikke større enn osv.), som danner en innholdsmessig motsetning til en foranstilt (som her) eller (oftere) etterfølgende hovedsetning.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_159" xml:id="koGe_159"/><HIS:hisTerm>smukt]</HIS:hisTerm> <HIS:hisGloss>pent; som fortjener ros og moralsk anerkjennelse; moralsk, etisk tiltalende (om handling, tankegang) (NRO <hi rend="italic">smukk</hi> 2)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_160" xml:id="koGe_160"/><HIS:hisTerm>rask]</HIS:hisTerm> <HIS:hisGloss>livsmodig og handlekraftig; djerv og kjekk (NRO 3)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_161" xml:id="koGe_161"/><HIS:hisTerm>forkælet]</HIS:hisTerm> <HIS:hisGloss>forvent ved overdreven omsorg eller hensynsfullhet; skjemmet bort (NRO <hi rend="italic">forkjæle</hi>)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_162" xml:id="koGe_162"/><HIS:hisTerm>såre]</HIS:hisTerm> <HIS:hisGloss>i høy grad (NRO 1 b)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_163" xml:id="koGe_163"/><HIS:hisTerm>ikke har råd til at gifte sig]</HIS:hisTerm> <HIS:hisGloss>Gifte kvinner i over- og middelklassen skulle ikke ha lønnsarbeid, men bli forsørget av mannen, som dermed ikke kunne gifte seg før han hadde utsikt til å kunne forsørge en familie med sin inntekt. Unge menn av borgerskapet kunne i regelen ikke forsørge en hustru før de var minst 25 år gamle.</HIS:hisGloss> 
+    
+<quote rend="proseIndent">Og da det naturligvis var umuligt at gennemføre, at borgerskabets sønner levede i kønslig afholdenhed i over ti år fra kønsmodenhedens indtræden, tolererede en stor del af dette borgerskab den autoriserede prostitution som en acceptabel nødløsning for mændene […] Den reglementerede prostitution (lovfæstet i Norge 1868, i Danmark 1874 og i Sverige 1875) betragtedes af mange agtværdige samfundsborgere som en nødvendig sikkerhedsventil <bibl>(Bredsdorff 1973, 12, 14)</bibl>.</quote></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_164" xml:id="koGe_164"/><HIS:hisTerm>du forbarmende]</HIS:hisTerm> <HIS:hisGloss>du som viser forbarmelse; av <hi rend="italic">forbarme</hi>: ha medlidenhet med; i gjerning vise medlidenhet <bibl>(Molbech 1859)</bibl>; ynkes (over en), ha medlidenhet (med) og tilgi eller hjelpe (en); uten refleksivt pronomen i adjektivisk presens partisipp som utrop (bib., rel.) (NRO); eg. en allusjon til en barmhjertig gud (ODS <hi rend="italic">forbarmer</hi>). Uttrykket er pastor Manders’ typiske utbrudd av forferdelse.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_165" xml:id="koGe_165"/><HIS:hisTerm>forstøde]</HIS:hisTerm> <HIS:hisGloss>støte vekk; vise vekk fra samkvem med seg (NRO <hi rend="italic">forstøte</hi> 1)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_166" xml:id="koGe_166"/><HIS:hisTerm>ulovlige forhold]</HIS:hisTerm> <HIS:hisGloss>På dette tidspunkt gjaldt straffeloven av 1842. Den fastsatte i kap. 18, § 7 at <quote>Den, som gjør sig skyldig i Hor, straffes, naar det sker med ugift Person, med Fængsel eller Bøder. Den Ugifte straffes med Bøder</quote> <bibl>(<title rend="italic">Den norske Straffelov</title> 1874)</bibl>. I samme kapittel, § 22, den såkalte konkubinatparagrafen (som gjaldt som norsk lov frem til 1972), heter det:</HIS:hisGloss>
+ 
+<quote rend="proseIndent">Leve ugifte Personer sammen, som om de vare Ægtefolk, straffes de med Bøder eller Fængsel. Ved Bedømmelsen af, hvorvidt saadant Samliv finder Sted, kommer det ikke i Betragtnig, at de Angjældende intet Fællesskab have i Indtægter og Udgifter. Hvo, som heri paany gjør sig skyldig, ansees med Fængsel eller Strafarbeide i femte Grad. Straf efter denne § bortfalder, hvis Nogen af dem, der saaledes have forseet sig, siden lovligen kommer i Ægteskab <bibl>(<title rend="italic">Den norske Straffelov</title> 1874)</bibl>.</quote></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_167" xml:id="koGe_167"/><HIS:hisTerm>såkaldte vilde ægteskaber]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">vilt ekteskap</hi>: fritt erotisk forhold, kameratekteskap (NRO <hi rend="italic">vill</hi> 6 c c). Uttrykket var ikke tidligere kjent fra dansk eller norsk, og stammer sannsynligvis fra tysk. Det mangler i flere vanlige tyske ordbøker, men finnes i <hi rend="italic">Der Sprach-Brockhaus</hi>: <quote>avvikende (i skadelig forstand) fra det alminnelige: <hi rend="italic">vilt ekteskap</hi>, inngått hverken lovformelig eller kirkelig</quote> <bibl>(1954 <hi rend="italic">wild</hi> 4; til norsk ved HIS)</bibl>. Uttrykket ble (etter anvendelsen hos Ibsen) alminnelig i den dansk-norske debatt om kjønnsmoralen i 1880-årene, den såkalte <quote>sædelighedsfejde</quote>, med innlegg av bl.a. <rs type="person" corresp="peBB">Bjørnstjerne Bjørnson</rs> (<title rend="italic">En hanske</title>) og <rs type="person" corresp="peGB">Georg Brandes</rs> <bibl>(1899–1910, b. 13, 447–94)</bibl>. Med referanse til det tyske uttrykket <quote>wilde Ehe</quote> anfører ODS <quote>vildt ægteskab, (foræld., især alm. (efter H Ibsens brug af udtrykket i Gengangere. (1881). 50) i sædelighedsfejdens tid i 1880erne) om frit samliv</quote> (ODS V <hi rend="italic">vild</hi> 7.3). Sannsynligvis reflekterer uttrykket religiøs terminologi (gjennom pastor Manders), som motsetning til Osvalds avvikende holdning når han deretter anfører at han aldri har lagt merke til noe <quote>særlig vildt ved de folks samliv</quote> (HIS 7, <ptr type="ht" target="Geht.xml" corresp="koGe_ht_4"/>). Osvald refererer med dette ikke nødvendigvis til begrepet <quote>fri kjærlighet</quote>, slik ordbøkene ser ut til å forutsette. Sannsynligvis fantes det ikke noe slikt språklig uttrykk i samtiden, da samboerskap ikke var sosialt akseptert og heller ikke tillatt etter loven, jf. kommentar til <ptr type="internal" target="Geht.xml" corresp="koGe_166"/>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_168" xml:id="koGe_168"/><HIS:hisTerm>herr]</HIS:hisTerm> <HIS:hisGloss>På 1800-tallet hadde <hi rend="italic">herr</hi> kommet i bruk foran navn og titler uten sosial gradering (NRO <hi rend="italic">herre</hi> 3 a).</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_169" xml:id="koGe_169"/><HIS:hisTerm>går i svang]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">gå i svang</hi>: være (komme til å bli) alminnelig utøvet, være (bli) gjengs, (komme til å) råde (om noe forkastelig, klanderverdig) (NRO <hi rend="italic">svang</hi> subst.)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_170" xml:id="koGe_170"/><HIS:hisTerm>hævd]</HIS:hisTerm> <HIS:hisGloss>eksistensberettigelse, anerkjennelse som har sitt grunnlag i stadig og alminnelig bruk, sedvane, tradisjon (litt.) (NRO I <hi rend="italic">hevd</hi>)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_171" xml:id="koGe_171"/><HIS:hisTerm>tarvelige]</HIS:hisTerm> <HIS:hisGloss>som innskrenker seg til det strengt nødvendige; enkle, billige eller av dårlig kvalitet; simple (NRO <hi rend="italic">tarvelig</hi> 2 a)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_172" xml:id="koGe_172"/><HIS:hisTerm>knejper]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">kneipe</hi>: enkelt (eller særlig tarvelig) utstyrt bevertningssted, restaurant hvor det serveres øl og/eller vin (NRO)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_173" xml:id="koGe_173"/><HIS:hisTerm>deslige]</HIS:hisTerm> <HIS:hisGloss>lignende, slike (NRO <hi rend="italic">desslike</hi>)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_174" xml:id="koGe_174"/><HIS:hisTerm>forivre dig]</HIS:hisTerm> <HIS:hisGloss>bli så ivrig, så opphisset at du sier eller gjør noe uoverlagt, noe du senere angrer e.l.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_175" xml:id="koGe_175"/><HIS:hisTerm>den forlorne søn]</HIS:hisTerm> <HIS:hisGloss>Uttrykket stammer fra fortellingen om den fortapte sønn i Luk 15,11–32, jf. kommentar til <ptr type="internal" target="Geht.xml" corresp="koGe_149"/>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_176" xml:id="koGe_176"/><HIS:hisTerm>hædersmindet]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">hedersminne</hi>: minnesmerke, monument som reises for å hedre en avdød (NRO)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_177" xml:id="koGe_177"/><HIS:hisTerm>Deres pligt var … knyttet ved hellige bånd]</HIS:hisTerm> <HIS:hisGloss>Ekteskapet betegnes som hellig i <title rend="italic">Danmarks og Norges Kirke-Ritual</title>, der presten sier: <quote>at I tilforn have indbyrdes samtykt hverandre at ville leve tilsammen i den hellige Ægteskabs-Stat</quote> <bibl>(1863, 123)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_178" xml:id="koGe_178"/><HIS:hisTerm>Alving]</HIS:hisTerm> <HIS:hisGloss>Formelle regler for takt og tone krevde også at når f.eks. en hustru omtalte sin mann overfor utenforstående, ble det regnet for korrekt at hun benyttet hans etternavn.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_179" xml:id="koGe_179"/><HIS:hisTerm>billiger]</HIS:hisTerm> <HIS:hisGloss>erklærer seg enig i, bifaller, godkjenner (NRO <hi rend="italic">billige</hi>)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_180" xml:id="koGe_180"/><HIS:hisTerm>en hustru er ikke sat til at være sin husbonds dommer]</HIS:hisTerm> <HIS:hisGloss>jf. Paulus’ ord til efeserne i Ef 5,22–24:</HIS:hisGloss>
+    
+<quote rend="proseIndent">I Kvinder! Værer Eders egne Mænd underdanige, som Herren! Thi Manden er Kvindens Hoved, ligesom og Christus er Menighedens Hoved […] Men ligesom Menigheden er Christus underdanig, saaledes skulle og Kvinderne være sine egne Mænd underdanige i alle Ting.</quote></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_181" xml:id="koGe_181"/><HIS:hisTerm>bære det kors]</HIS:hisTerm> <HIS:hisGloss>et alminnelig religiøst uttrykk, jf. <quote>å ta sitt kors opp</quote> og <quote>å bære sitt kors</quote>. Det henspilles på Jesu ord i Matt 10,38: <quote>og hvo, som ikke tager sit Kors og følger efter mig, er mig ikke værd</quote>; og Matt 16,24: <quote>vil Nogen komme efter mig, han fornægte sig selv, og tage sit Kors, og følge mig.</quote> I <rs type="person" corresp="peJA">Johan Arndts</rs> <title rend="italic">Postille</title> (utgitt første gang i 1615) brukes uttrykket i sammenheng med ekteskapet: <quote>Ægtestanden skal være en Skole for mange Dyder, et Troens, Bønnens og Taalmodigheds Værksted, ja vi lære her, hvorledes vi skulle skikke os i vort Kors, at vi ret kunne bære det</quote> <bibl>(Arndt 1855, 167)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_182" xml:id="koGe_182"/><HIS:hisTerm>eragtet]</HIS:hisTerm> <HIS:hisGloss>ment, ansett (NRO <hi rend="italic">erakte</hi>)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_183" xml:id="koGe_183"/><HIS:hisTerm>forlader den snublende]</HIS:hisTerm> <HIS:hisGloss>religiøs talemåte, jf. skriftsteder som Sal 121,3: <quote>Han skal ikke lade din Fod snuble</quote>; og Jes 35,3: <quote>Styrker de afmægtige Hænder og bekræfter de snublende Knæ!</quote></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_184" xml:id="koGe_184"/><HIS:hisTerm>fornødne]</HIS:hisTerm> <HIS:hisGloss>nødvendige (NRO <hi rend="italic">fornøden</hi>)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_185" xml:id="koGe_185"/><HIS:hisTerm>visselig]</HIS:hisTerm> <HIS:hisGloss>brukt for å uttrykke absolutt, sikker forvissning; overbevisning, mening (mest litt.) (NRO 1 a)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_186" xml:id="koGe_186"/><HIS:hisTerm>Jeg var kun et ringe redskab i en højeres hånd]</HIS:hisTerm> <HIS:hisGloss>jf. kommentar til <ptr type="internal" target="Geht.xml" corresp="koGe_132"/>. I Apg 9,15 kaller Herren Paulus <quote>et udvalgt Redskab</quote>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_187" xml:id="koGe_187"/><HIS:hisTerm>til velsignelse]</HIS:hisTerm> <HIS:hisGloss>religiøs talemåte. Jf. slutten av <rs type="person" corresp="peBB">Bjørnsons</rs> novelle <quote>Faderen</quote> (1859): <quote>Nu tænker jeg, at Sønnen din endelig er bleven dig til Velsignelse</quote> <bibl>(Bjørnson 1919–20, b. 1, 439)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_188" xml:id="koGe_188"/><HIS:hisTerm>hustruens pligter … moderens]</HIS:hisTerm> <HIS:hisGloss>sikter til den tradisjonelle familieetikken som foreskriver at en hustru har plikter overfor sin mann, samtidig som en mor har plikter overfor sitt barn. Det vielsesritualet som fremdeles gjaldt på denne tid (inntil 1889), inngikk i <title rend="italic">Danmarks og Norges Kirke-Ritual</title> fra 1863 og var i samsvar med <title rend="italic">Kong Christian den Femtes Norske Lov</title> av 1687. I vielsesritualet dras det veksel på og siteres fra Paulus’ ord til efeserne, jf. kommentar til <ptr type="internal" target="Geht.xml" corresp="koGe_180"/>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_189" xml:id="koGe_189"/><HIS:hisTerm>således har De siden fornægtet moderens]</HIS:hisTerm> <HIS:hisGloss>I samtiden stod først og fremst kvinnene for barneoppdragelsen. I <rs type="person" corresp="peErikPont">Pontoppidans</rs> forklaring omtales imidlertid foreldrenes plikter, ikke særskilt morens: <quote>Hvad er de naturlige Forældres saa og Formynderes Pligt imod de Unge? At bede for dem, og bære Omsorg for deres timelige, aandelige og evige Velfærd. Eph. 6,4. Opføder eders Børn i Tugt og Herrens Formanelse</quote> <bibl>(Pontoppidan 1832, spørsmål 177)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_190" xml:id="koGe_190"/><HIS:hisTerm>uheldsvanger]</HIS:hisTerm> <HIS:hisGloss>ulykkebringende, skjebnesvanger, farlig (NRO <hi rend="italic">uhellsvanger</hi> 1)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_191" xml:id="koGe_191"/><HIS:hisTerm>tragten]</HIS:hisTerm> <HIS:hisGloss>higen, streben (NRO <hi rend="italic">trakten</hi>)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_192" xml:id="koGe_192"/><HIS:hisTerm>satte Deres barn ud]</HIS:hisTerm> <HIS:hisGloss>anbragte sitt barn i fast opphold eller i pleie hos fremmede (NRO <hi rend="italic">sette</hi> 3 a a). Uttrykksmåten <quote>sette ut</quote> virker i våre dager påfallende, da den kan assosieres med den gamle hedenske skikk å sette ut uønskede spebarn i skog og mark. Den vanlige uttrykksmåten for det å gi fra seg sitt barn til andre ville i våre dager være å <quote>sette bort</quote>. Dette var imidlertid ikke tilfelle midt på 1800-tallet, da <hi rend="italic">sætte ud</hi> kunne brukes om <quote>At sætte et Barn ud af Huset, altsaa i Kost hos Fremmede</quote> <bibl>(Molbech 1859 <hi rend="italic">sætte ud</hi>)</bibl>; <quote>anbringe under andre leveforhold; navnlig: udsætte som hittebarn; ogs. (dial.): anbringe i pleje eller tjeneste hos fremmede</quote> (ODS II <hi rend="italic">sætte</hi> E 55.1).</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_195" xml:id="koGe_195"/><HIS:hisTerm>det tør endnu være tid]</HIS:hisTerm> <HIS:hisGloss>kan anses som et uttrykk for pietismens vektlegging av at omvendelsen ikke kan utsettes, jf. <rs type="person" corresp="peHABr">Brorsons</rs> salme: <quote>I Dag er Naadens Tid, I Dag er Gud at finde</quote> <bibl>(Landstad 1869, nr. 387)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_193" xml:id="koGe_193"/><HIS:hisTerm>tør]</HIS:hisTerm> <HIS:hisGloss>vil, kan; brukt på samme måte som <hi rend="italic">kunne</hi>, men ofte med sterkere betydning av det mulige av eller det forsiktige i påstanden (NRO I <hi rend="italic">tore</hi> A 2)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_194" xml:id="koGe_194"/><HIS:hisTerm>være tid]</HIS:hisTerm> <HIS:hisGloss>nok tid til at det er mulig; <hi rend="italic">tid</hi>: kort, begrenset stund, frist (som man har igjen eller foran seg til å utføre noe) (NRO 7 b)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_196" xml:id="koGe_196"/><HIS:hisTerm>føre ham tilbage fra forvildelsens stier]</HIS:hisTerm> <HIS:hisGloss>religiøst farvet språkbruk. Ordet <hi rend="italic">forvildelse</hi> kan føres tilbake til Jes 53,6: <quote>vi fore alle vild som Faarene</quote>. Jf. også <rs type="person" corresp="peMaLa">Landstads</rs> <title rend="italic">Kirkesalmebog</title>: <quote>Det Faar, som forvildet er og mist</quote> <bibl>(Landstad 1869, nr. 466)</bibl>. Det snakkes også om <hi rend="italic">sti(er)</hi> en rekke steder i Bibelen, jf. Sal 119,9: <quote>Hvormed skal en ung holde sin sti ren?</quote>; og Ordsp 4,11: <quote>jeg leder dig paa de rette Stier</quote>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_197" xml:id="koGe_197"/><HIS:hisTerm>Vend selv om]</HIS:hisTerm> <HIS:hisGloss>Oppfordring til omvendelse finnes en rekke steder i Det gamle testamente, f.eks. i Esek 33,11: <quote>vender om, vender om fra Eders onde Veie!</quote>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_199" xml:id="koGe_199"/><HIS:hisTerm>oprejs, hvad der dog måske endnu kan oprejses i ham]</HIS:hisTerm> <HIS:hisGloss>religiøs talemåte, jf. <rs type="person" corresp="peErikPont">Pontoppidans</rs> forklaring:</HIS:hisGloss>
+    
+<quote rend="proseIndent">Hvem har da forhvervet Menneskene Guds Naade saa de kan opreises af Faldet og føres tilbage i en salig Stand? Det har alene Jesus Christus, Guds egen Søn, hvilken strax efter Syndefaldet blev lovet, og i Tidens Fylde sendt al Verden til en Saliggjører og Opreiser af Faldet <bibl>(Pontoppidan 1832, spørsmål 396; jf. 433)</bibl>.</quote></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_198" xml:id="koGe_198"/><HIS:hisTerm>Thi]</HIS:hisTerm> <HIS:hisGloss>for</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_200" xml:id="koGe_200"/><HIS:hisTerm>skyldbetynget]</HIS:hisTerm> <HIS:hisGloss>belastet av skyld på grunn av sine handlinger</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_201" xml:id="koGe_201"/><HIS:hisTerm>Helene]</HIS:hisTerm> <HIS:hisGloss>Pastor Manders tiltaler ellers vertinnen som <hi rend="italic">fru Alving</hi>; at han her bruker hennes fornavn, røper at de egentlig er eller har vært fortrolige omgangsvenner, og at han et øyeblikk glemmer sin formelle tiltalemåte. Vanlig høflighet innebar at man heller ikke kunne si <hi rend="italic">du</hi> til andre enn dem man var på fornavn med – som oftest bare den nærmeste familie. Mennesker utenom den nærmeste familiekretsen titulerte man med deres sivile og eventuelt yrkesmessige tittel (herr, fru, frøken; banksjef, sakfører osv.) og – når det dreide seg om direkte tiltale – med høflighetsformen <hi rend="italic">De</hi>. Formelle regler for takt og tone krevde også at når f.eks. en hustru omtalte sin mann overfor noen som ikke var dus med ham, ble det regnet for korrekt at hun benyttet hans etternavn. Fru Alving omtaler i samsvar med dette sin avdøde mann ved hans etternavn. Dersom to personer kjente hverandre godt, kunne de benytte du-form og fornavn på hverandre i mer offisielle og/eller forretningsmessige sammenhenger. Var det andre til stede, som hver av dem bare var dis med, var det naturlig at de benyttet De-form, tittel og etternavn overfor hverandre.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_202" xml:id="koGe_202"/><HIS:hisTerm>bortløben]</HIS:hisTerm> <HIS:hisGloss>som er løpt bort (fra sin herre, sine foresatte e.l.) (mest litt.) (NRO <hi rend="italic">bortløpen</hi>). Fru Alving sikter muligens til <title rend="italic">Kong Christian den Femtes Norske Lov</title> av 1687, som fastsatte adgang til skilsmisse dersom den ene ektefelle uten lovlig grunn forlot den andre. Loven fastsatte at skilsmisse kunne innvilges på grunnlag av horeri, <hi rend="italic">Desertio</hi> (dvs. <quote>naar den ene Egte Person foruden nogen skiellig Aarsag eller den andens Samtykke, forlader den anden og drager bort</quote>) og <hi rend="italic">Impotentia</hi> (dvs. <quote>naar nogen er ubeqvem til Egteskab […] om den hafde den Brøst før Bryllupet</quote>) <bibl>(<title rend="italic">Norske Lov</title> 1687, bok 3, kap. 18, § 15)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_203" xml:id="koGe_203"/><HIS:hisTerm>fruentimmer]</HIS:hisTerm> <HIS:hisGloss>kvinner (fam., spøkefullt eller nedsettende), jf. kommentar til <ptr type="internal" target="Geht.xml" corresp="koGe_58"/></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_204" xml:id="koGe_204"/><HIS:hisTerm>ryggesløs]</HIS:hisTerm> <HIS:hisGloss>som hensynsløst setter seg ut over moralens bud, som er moralsk fordervet, som lever et utsvevende liv (NRO 1). Den syntaktiske funksjonen er fritt subjektspredikativ (derfor felleskjønnsform (entall) i samsvar med subjektet).</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_205" xml:id="koGe_205"/><HIS:hisTerm>forargelsen]</HIS:hisTerm> <HIS:hisGloss><quote>Gierningen at forarge, eller den Handling, hvorved man forarger</quote> <bibl>(Molbech 1859)</bibl>; religiøs ordbruk, jf. Rom 14,13: <quote>Ingen maa give sin Broder Anstød eller Forargelse!</quote></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_206" xml:id="koGe_206"/><HIS:hisTerm>kom undervejr med]</HIS:hisTerm> <HIS:hisGloss>fikk vite, rede på (noe som søkes holdt skjult) (NRO II <hi rend="italic">vær</hi> A 4 b)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_207" xml:id="koGe_207"/><HIS:hisTerm>sagte]</HIS:hisTerm> <HIS:hisGloss>dempet, stille; særlig om tale (NRO <hi rend="italic">sakte</hi> A 1 a)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_209" xml:id="koGe_209"/><HIS:hisTerm>fik sin vilje med pigen]</HIS:hisTerm> <HIS:hisGloss>klarte å forføre; <hi rend="italic">få sin vilje</hi>: oppnå det man vil hos en person av det motsatte kjønn, få sin erotiske lyst stillet (NRO <hi rend="italic">vilje</hi> 2 a d)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_210" xml:id="koGe_210"/><HIS:hisTerm>lønlige]</HIS:hisTerm> <HIS:hisGloss>hemmelige (NRO <hi rend="italic">lønnlig</hi>)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_208" xml:id="koGe_208"/><HIS:hisTerm>utérlige]</HIS:hisTerm> <HIS:hisGloss>urene, skitne; men bare i overført betydning, om det som i moralsk forstand er urent; ukysk, uanstendig, lidderlig <bibl>(Molbech 1859 <hi rend="italic">uteerlig</hi>)</bibl></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_211" xml:id="koGe_211"/><HIS:hisTerm>ha’]</HIS:hisTerm> <HIS:hisGloss>om bruk av kortformer av verb, jf. innledningen, under <hi rend="italic">Dramaform</hi></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_212" xml:id="koGe_212"/><HIS:hisTerm>fremfærd]</HIS:hisTerm> <HIS:hisGloss>trang og evne til å komme frem, til å få noe utrettet; arbeidslyst og initiativ (NRO <hi rend="italic">fremferd</hi> 2)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_213" xml:id="koGe_213"/><HIS:hisTerm>statskalender]</HIS:hisTerm> <HIS:hisGloss>årlig utgitt verk som inneholder opplysninger om det aktuelle lands statsinstitusjoner, deres saksområder, samt fortegnelse over deres embetsmenn, tjenestemenn, av og til også fortegnelse over hoffinstitusjoner, ridderordener og deres medlemmer m.m. Opprinnelig var slike bøker private foretak med svært forskjelligartet innhold, der årets kalender (derav betegnelsen <hi rend="italic">statskalender</hi>), fyrstehusenes genealogier og hoffinstitusjonene tok en betydelig plass. Den første dansk-norske statskalender ble utgitt i 1734 med tittelen <title rend="italic">Königlich dänischer Hof- und Staats-Kalender</title>. Den første norske statskalender utkom i 1815, og deretter med kortere og lengre mellomrom. Fra 1877 utkom den årlig under offentlig redaksjon (<title rend="italic">Salmonsen</title> Statshaandbog).</HIS:hisGloss></item>
+    
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_215" xml:id="koGe_215"/><HIS:hisTerm>dra’ hele læsset]</HIS:hisTerm> <HIS:hisGloss>gjøre hele (eller det meste, det tyngste) arbeidet (ODS I <hi rend="italic">læs</hi> 2)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_214" xml:id="koGe_214"/><HIS:hisTerm>dra’]</HIS:hisTerm> <HIS:hisGloss>om bruk av kortformer av verb, jf. innledningen, under <hi rend="italic">Dramaform</hi></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_217" xml:id="koGe_217"/><HIS:hisTerm>Bien]</HIS:hisTerm> <HIS:hisGloss>(fr.) godt</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_218" xml:id="koGe_218"/><HIS:hisTerm>Ja, forargelse kan vi jo dog ikke vække]</HIS:hisTerm> <HIS:hisGloss>religiøs talemåte jf. kommentar til <ptr type="internal" target="Geht.xml" corresp="koGe_140"/></HIS:hisGloss></item>
+</list>
+</div>
+
+<div> 
+<head rend="level2">ANNEN AKT</head>
+
+<list type="commentary">
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_219" xml:id="koGe_219"/><HIS:hisTerm>strygeværelset]</HIS:hisTerm> <HIS:hisGloss>I den standardiserte planen <title rend="italic">Veiledning til Anlæg og Bebyggelse af Præstegaarde paa Landet</title> er produksjonsrommene skilt ut fra oppholdsrommene. Det gjelder bl.a. en egen <quote>Rullebod</quote> som ligger i naboværelset til et <quote>Bryggerhuus</quote> <bibl>(Sverdrup 1835)</bibl>. Det var altså egne rom til arbeid med renhold og vedlikehold av tøy, som ble utført adskilt fra kjøkkenarbeidet. Slike rom var ofte plassert i kjelleren.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_220" xml:id="koGe_220"/><HIS:hisTerm>synke]</HIS:hisTerm> <HIS:hisGloss>svelge (NRO B 2 a)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_221" xml:id="koGe_221"/><HIS:hisTerm>min tro]</HIS:hisTerm> <HIS:hisGloss>sannelig (som forsikring) (NRO I <hi rend="italic">tro</hi> 1 d)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_222" xml:id="koGe_222"/><HIS:hisTerm>deslige]</HIS:hisTerm> <HIS:hisGloss>lignende, slike (NRO <hi rend="italic">desslike</hi>)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_223" xml:id="koGe_223"/><HIS:hisTerm>forbyde]</HIS:hisTerm> <HIS:hisGloss>forhindre, avvende (NRO <hi rend="italic">forby</hi> 2); her som oppfordrende konjunktiv</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_224" xml:id="koGe_224"/><HIS:hisTerm>sa’ … ta’]</HIS:hisTerm> <HIS:hisGloss>om bruk av kortformer av verb, jf. innledningen, under <hi rend="italic">Dramaform</hi></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_226" xml:id="koGe_226"/><HIS:hisTerm>Johanne]</HIS:hisTerm> <HIS:hisGloss>kvinnenavn, fra lat. og gr. <hi rend="italic">Joanna</hi>, hunkjønnsform til mannsnavnet <hi rend="italic">Jo(h)annes</hi>, av hebr. <hi rend="italic">Jochanan</hi> ‘Gud er nådig’. Navnet finnes i Det nye testamente (Luk 8,3; 24,10), men er også blitt nydannet i flere språk som avledning til ulike former av <hi rend="italic">Johannes</hi>. Kjent i Norge siden 1400-tallet. Svært mye brukt på 1700- og 1800-tallet. Medregnet varianten <hi rend="italic">Johanna</hi> ligger det på femte plass for hele landet i folketellingen 1865.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_227" xml:id="koGe_227"/><HIS:hisTerm>gå til bekendelse]</HIS:hisTerm> <HIS:hisGloss>tilstå (noe man er anklaget eller mistenkt for) (NRO <hi rend="italic">bekjennelse</hi> 1)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_228" xml:id="koGe_228"/><HIS:hisTerm>kom … af tjenesten]</HIS:hisTerm> <HIS:hisGloss>ble oppsagt, måtte slutte (ODS <hi rend="italic">tjeneste</hi> 3.4)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_229" xml:id="koGe_229"/><HIS:hisTerm>lod sig vel forlyde med]</HIS:hisTerm> <HIS:hisGloss>uttalte, ytret, lot forstå (NRO <hi rend="italic">forlyde</hi>)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_230" xml:id="koGe_230"/><HIS:hisTerm>tilforladelig]</HIS:hisTerm> <HIS:hisGloss>sannelig, sant for dyden, virkelig (NRO <hi rend="italic">tilforlatelig</hi> 2)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_232" xml:id="koGe_232"/><HIS:hisTerm>belave sig på]</HIS:hisTerm> <HIS:hisGloss>lage seg i stand til, gjøre seg ferdig til; forberede seg på; innstille seg på; regne med (NRO <hi rend="italic">belage</hi>)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_233" xml:id="koGe_233"/><HIS:hisTerm>tre hundrede specier]</HIS:hisTerm> <HIS:hisGloss>I 1873–75 endret man myntenhet fra spesidaler til kroner. Verdien av en spesidaler ble satt til 4 kroner. Det her omtalte beløp svarer til 1200 kroner i 1881, og tilsvarer 64 690,91 kroner i 2007. Sammenlignet med hva som mot slutten av 1800-tallet var vanlig lønn for en tjenestepike, var det omtalte beløpet meget høyt. Ellen Schrumpf refererer i en studie av tjenestepikers lønns- og arbeidsforhold ca. 1890 en undersøkelse som sier at utgiftene for å holde en tjenespike var <quote>omtrent 300 kr. aarlig, hvilket dog vel nærmest maa gjælde tjenere i de bedre stillede familier. Som tilnærmelsesvis rigtige gjennemsnitstall kan løn med tillæg af verdien af kost m.m. maaske ansættes til 200 a 220 kr. i landdistrikterne og 300–350 kr. i byerne</quote> <bibl>(Schrumpf 1978, 38)</bibl>. Velger vi det høyeste av disse beløpene, ble altså Johanne betalt ut med fire årslønner.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_234" xml:id="koGe_234"/><HIS:hisTerm>lumpne]</HIS:hisTerm> <HIS:hisGloss>usle, ynkelige (NRO <hi rend="italic">lumpen</hi> 2)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_235" xml:id="koGe_235"/><HIS:hisTerm>en falden kvinde … falden mand]</HIS:hisTerm> <HIS:hisGloss>Uttrykket <quote>en fallen kvinne</quote> er alminnelig brukt om en kvinne som har brutt den rådende seksualmoral, som er blitt forført eller blitt med barn utenfor ekteskap (fam.) (NRO <hi rend="italic">ulykke</hi> 3 b b). Molbech har <quote>falden (forført) Pige</quote>, der <quote>falden</quote> og <quote>forført</quote> synes å være ensbetydende (1859 <hi rend="italic">falde</hi> 4 c). Uttrykket <quote>falden mand</quote> er snarere en nyskapning. <quote>Det var nemlig dengang et udbredt dogme, at kvinder ikke var i besiddelse af kønsdrift […] og dobbeltmoralen gjaldt derfor kun mændene, hvis eskapader man var parat til at se igjennem fingre med, navnlig hvis de blev foretaget i dybeste diskretion</quote> <bibl>(Bredsdorff 1973, 8)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_236" xml:id="koGe_236"/><HIS:hisTerm>endda]</HIS:hisTerm> <HIS:hisGloss>likevel; fremhever med innrømmende betydning om det utsagn det står i, at dets innhold gjelder tross visse motsetninger til noe tidligere meddelt (svarende til uttrykkene <hi rend="italic">tross alt</hi>, <hi rend="italic">allikevel</hi>, <hi rend="italic">når alt kommer til alt</hi>), ofte uttalt med trykk på siste ledd når det står trykksterkt sist eller på siste trykksterke plass i setningen (NRO <hi rend="italic">enda</hi> A 3)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_237" xml:id="koGe_237"/><HIS:hisTerm>rigtignok]</HIS:hisTerm> <HIS:hisGloss>sannelig, virkelig; brukt for å forsterke utsagnet, her som innrømmelsesadverb (NRO <hi rend="italic">riktignok</hi> 2 a)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_239" xml:id="koGe_239"/><HIS:hisTerm>berådet Dem med Deres hjerte og med Deres pårørende]</HIS:hisTerm> <HIS:hisGloss>allusjon til samtidens ritualer for trolovelse og vielse, der presten spør: <quote>Om I har beraad Eder med Gud i Himmelen, dernæst med Eders eget Hjertelag, siden ogsaa med Eders Slægt og Venner, at I vil have denne […] som hos Eder staaer</quote> <bibl>(<title rend="italic">Danmarks og Norges Kirke-Ritual</title> 1863, 120)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_238" xml:id="koGe_238"/><HIS:hisTerm>berådet]</HIS:hisTerm> <HIS:hisGloss>tenkt seg om; områdd seg (NRO <hi rend="italic">berå</hi>); overlagt, tatt i betenkning; jf. uttrykket <hi rend="italic">med velberådt hu</hi> ‘med fullt overlegg’ <bibl>(Molbech 1859 <hi rend="italic">beraade</hi> 1)</bibl></HIS:hisGloss></item>
+
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_240" xml:id="koGe_240"/><HIS:hisTerm>som foreskrevet er]</HIS:hisTerm> <HIS:hisGloss>jf. <title rend="italic">Kong Christian den Femtes Norske Lov</title> av 1687 (ny lov erstattet denne først i 1888), der det heter: <quote>Hvo Hustrue vil have, bede hende af Forældre, eller rette Værge; Dog med hendis Ja og Villie</quote> (<title rend="italic">Norske Lov</title> 1687, bok 3, kap. 18, § 1).</HIS:hisGloss></item>
+
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_241" xml:id="koGe_241"/><HIS:hisTerm>Om mor kunde se op]</HIS:hisTerm> <HIS:hisGloss>om avdød person; fra graven se opp på jorden, på hva som foregår i ens hus o.l. (jf. ODS <hi rend="italic">se</hi> 11.13); ikke registrert i NRO (<hi rend="italic">se</hi> 4) eller i Molbech 1859</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_242" xml:id="koGe_242"/><HIS:hisTerm>hvor al den herlighed]</HIS:hisTerm> <HIS:hisGloss>Ordbruken kan ha religiøse konnotasjoner, jf. Matt 4,8: <quote>Atter tog Djævelen ham med sig op paa et saare høit Bjerg, og viste ham alle Verdens Riger og deres Herlighed</quote>. Vi finner allusjoner til dette bibelstedet i <title rend="italic">Olaf Liljekrans</title> (<quote>Alverdens Herlighed</quote>; HIS 2, bl.a. s. 312 l. 5), <title rend="italic">Gildet paa Solhoug</title> (<quote>al den Herlighed</quote>; HIS 2, s. 72 l. 16), <title rend="italic">Fru Inger til Østeraad</title> (<quote>al Livets Herlighed</quote>; HIS 3, s. 153 l. 13), <title rend="italic">Kongs-Emnerne</title> (<quote>al Jordens Herlighed</quote>; HIS 4, s. 427 l. 23) og <title rend="italic">Kejser og Galilæer</title> (<quote>Al jordens herlighed</quote>; HIS 6, s. 393 l. 11).</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_243" xml:id="koGe_243"/><HIS:hisTerm>lov og orden]</HIS:hisTerm> <HIS:hisGloss>Lov og orden var idealer med fremtredende plass i sammenheng med tidens kvinnesyn og tidens diskusjon om kvinnens kall. Jf. <rs type="person" corresp="peJAJ">John Angell James’</rs> populære fremstilling i boken <title rend="italic">Den unge Kvinde</title>: <quote>Tugt og Orden er i Familien, hvad Retspleien er i et Samfund; hvor den fattes, kunne vel Lovene være gode, men de blive dog en død Bogstav, og Forbrydelser og Forvirring er den nødvendige Følge</quote> <bibl>(James 1878, 309)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_244" xml:id="koGe_244"/><HIS:hisTerm>står ikke i det]</HIS:hisTerm> <HIS:hisGloss>holder det ikke ut (mest dial.) (NRO <hi rend="italic">stå</hi> 7 f c)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_245" xml:id="koGe_245"/><HIS:hisTerm>lagt dølgsmål på]</HIS:hisTerm> <HIS:hisGloss>lagt skjul på (NRO <hi rend="italic">dølgsmål</hi>)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_246" xml:id="koGe_246"/><HIS:hisTerm>forfaldent menneske]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">forfallen</hi>: som til stadighet drikker for meget alkoholholdig drikk (alminnelig som mindre sterkt uttrykk enn <hi rend="italic">fordrukken</hi>) (NRO <hi rend="italic">forfalle</hi> 2)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_247" xml:id="koGe_247"/><HIS:hisTerm>du forbarmende]</HIS:hisTerm> <HIS:hisGloss>du som viser forbarmelse jf. kommentar til <ptr type="internal" target="Geht.xml" corresp="koGe_164"/></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_248" xml:id="koGe_248"/><HIS:hisTerm>rub og stub]</HIS:hisTerm> <HIS:hisGloss>smitt og smule, stort og smått, alt uten unntak (fam.) (NRO <hi rend="italic">rubb</hi> 2)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_249" xml:id="koGe_249"/><HIS:hisTerm>agte og elske sin fader og sin moder]</HIS:hisTerm> <HIS:hisGloss>jf. det fjerde bud, med forklaring hos <rs type="person" corresp="peErikPont">Pontoppidan</rs>: <quote>Hædre din Fader og din Moder, at det kan gaae dig vel og du maa længe leve paa Jorden. Det er: Vi skulle frygte og elske Gud, ikke foragte vore Forældre, item dem, som have at byde og raade over os, og ei fortørne dem; men gjøre dem Ære, tjene, adlyde, agte og ære dem</quote> <bibl>(Pontoppidan 1832, spørsmål 158)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_250" xml:id="koGe_250"/><HIS:hisTerm>almindeligt]</HIS:hisTerm> <HIS:hisGloss>alment, generelt (NRO <hi rend="italic">almindelig</hi> 1)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_251" xml:id="koGe_251"/><HIS:hisTerm>hårdeligen]</HIS:hisTerm> <HIS:hisGloss>hardt (litt., ofte arkais.) (NRO). Endelsen -<hi rend="italic">en</hi> er tillagt adjektivet (og til adverb) for å danne adverbform, jf. kommentar til <ptr type="internal" target="Geht.xml" corresp="koGe_127"/>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_252" xml:id="koGe_252"/><HIS:hisTerm>under pligten]</HIS:hisTerm> <HIS:hisGloss>Preposisjonen <hi rend="italic">under</hi> er her brukt i forbindelse med et ord som betegner noe tyngende, knugende, trykkende e.l. (jf. NRO I <hi rend="italic">under</hi> A 3 c).</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_253" xml:id="koGe_253"/><HIS:hisTerm>maskepi]</HIS:hisTerm> <HIS:hisGloss>hemmelig kompaniskap eller forståelse (litt., nedsettende) (NRO)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_254" xml:id="koGe_254"/><HIS:hisTerm>bli’]</HIS:hisTerm> <HIS:hisGloss>om bruk av kortformer av verb, jf. innledningen, under <hi rend="italic">Dramaform</hi></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_255" xml:id="koGe_255"/><HIS:hisTerm>visseligen]</HIS:hisTerm> <HIS:hisGloss>foreldet eller familiært for <hi rend="italic">visselig</hi>: brukt for å uttrykke absolutt, sikker forvissning, overbevisning, mening (mest litt.) (NRO 1 a)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_256" xml:id="koGe_256"/><HIS:hisTerm>tilstæde]</HIS:hisTerm> <HIS:hisGloss>tillate; la skje eller finne sted (NRO <hi rend="italic">tilstede</hi> 1 a)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_257" xml:id="koGe_257"/><HIS:hisTerm>vi stammer nu … forbindelser]</HIS:hisTerm> <HIS:hisGloss>en henspilling på at alle mennesker ifølge skapelsesmyten i 1. Mos 2 stammer fra Adam og Eva. I <rs type="person" corresp="peMCH">Maurits Hansens</rs> novelle <quote>Theodors Dagbog</quote> (jf. kommentar til <ptr type="internal" target="Geht.xml" corresp="koGe_8"/>) tror hovedpersonen Theodor og hans elskede Amalie lenge at de er halvsøsken (noe som allikevel viser seg å ikke være tilfelle). Theodor skriver til sin venn, den tyske studenten Oswald, at han ikke tror det ville være vederstyggelig for Gud om de to allikevel giftet seg:  <quote>Kjære Oswald […] Evangeliets Aand, der borttog Lovens Bogstav, har Intet, der lærer at afsky et saadant Forhold. Men for Menneskene var det en Afskylighed, og det laa jo i Tingens Natur, at vi maatte adskilles</quote> <bibl>(M.C. Hansen 1841–43, b. 2, 145)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_258" xml:id="koGe_258"/><HIS:hisTerm>langtfra ikke]</HIS:hisTerm> <HIS:hisGloss>slett ikke; ikke på langt nær; brukt som adv. <hi rend="italic">langt</hi> (i forbindelsen <hi rend="italic">langt fra</hi>) om fjernhet fra tanke, sinn, hensikt e.l. (NRO <hi rend="italic">lang</hi> 2 b)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_259" xml:id="koGe_259"/><HIS:hisTerm>gengangeragtige]</HIS:hisTerm> <HIS:hisGloss>Betydningen av <hi rend="italic">genganger</hi> er her forskjellig fra den mer konkrete mening ‘spøkelse’, ‘gjenferd’ e.l. jf. kommentar til <ptr type="internal" target="Geht.xml" corresp="koGe_1"/>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_260" xml:id="koGe_260"/><HIS:hisTerm>lysrædde]</HIS:hisTerm> <HIS:hisGloss>som skyr dagens lys, dagens liv og kamp, den dagklare virkelighet (NRO <hi rend="italic">lysredd</hi> 2 a); her sannsynligvis om frykten for å opponere mot samfunnets konvensjonelle oppfatninger</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_261" xml:id="koGe_261"/><HIS:hisTerm>ha’]</HIS:hisTerm> <HIS:hisGloss>om bruk av kortformer av verb, jf. innledningen, under <hi rend="italic">Dramaform</hi></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_262" xml:id="koGe_262"/><HIS:hisTerm>maskinsøm]</HIS:hisTerm> <HIS:hisGloss>Symaskinen ble oppfunnet midt på 1800-tallet. Det fantes maskiner med både én og to tråder. De eldste var maskiner med én tråd. De sydde ved at en nål førte en tråd ovenfra og ned gjennom stoffet, før den samme tråden igjen ble hentet opp til stoffets overside. Fikk man tak i enden av denne tråden, var det lett å trekke ut hele sømmen: <quote>Sytraaden danner paa denne Maade en sammenhængende Kæde, der imidlertid har den Ulempe, at den løber op i hele sin Længde, dersom der dannes et enkelt Fejlsting […] eller dersom den beskadiges et enkelt Sted</quote> (<title rend="italic">Salmonsen</title> Symaskiner). Maskiner med to tråder (dvs. over- og undertråd) sydde de mest solide sømmer. Den første symaskin med to tråder (og en underliggende skyttel som førte undertråden) ble patentert av amerikaneren <rs type="person" corresp="peEHow">Elias Howe</rs> i 1846. I slike tilfeller fører én nål med øye i spissen overtråden ned gjennom stoffet, denne henter opp undertråden, og de to trådene forbindes for hvert enkelt sting. Derved blir sømmen vanskeligere å trekke ut. Fru Alvings billedbruk sikter sannsynligvis til det første av de to alternativene, dvs. til den eldste type symaskiner. Slike enkelttrådede symaskiner ble produsert så sent som i 1870. <rs type="person" corresp="peJHo">Julius Hoffory</rs> gjengir en kommentar av Ibsen i forbindelse med oppsetningen av <title rend="italic">Gengangere</title> ved Residenz-Theater Berlin i januar 1887. Man hadde der strøket fru Alvings replikk om maskinsøm, med den begrunnelse at det nå fantes <quote>Maskiner af saa fuldkommen Konstruktion, at Syingen umulig kunde løbe op af sig selv. Men denne Innvending vilde Ibsen ikke lade gælde. ‹De kan være sikker paa›, sagde han med sit fine Smil, ‹at Fru Alving oppe paa Rosenvold har sin gammeldags Symaskine endnu›</quote> <bibl>(Hoffory 1888, 64)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_263" xml:id="koGe_263"/><HIS:hisTerm>tungeste]</HIS:hisTerm> <HIS:hisGloss>uomlydt form av <hi rend="italic">tung</hi> i superlativ; jf. Molbech (1859), som kun angir de uomlydte formene <hi rend="italic">tungere</hi> og <hi rend="italic">tungest</hi>, og Løkke: <quote>Stundom: tung – tyngre – tyngst, ved Siden af de nu mere brugelige Former: tungere, tungest</quote> <bibl>(1879, § 52)</bibl>. I forbindelsen <hi rend="italic">et tungt slag</hi>: motgang, prøvelse e.l. som rammer en hardt (jf. NRO <hi rend="italic">tung</hi> 6 a b).</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_264" xml:id="koGe_264"/><HIS:hisTerm>kvinde, gå hjem]</HIS:hisTerm> <HIS:hisGloss>en mulig henspilling på samtalen mellom Jesus og en samaritansk kvinne i Johannesevangeliet. Kvinnen har hatt en rekke menn, og Jesus sier til henne: <quote>Gak bort, kald din Mand og kom hid. Kvinden svarede og sagde: Jeg har ikke Mand. Jesus siger til hende: Du sagde riktig […] Thi du har havt fem Mænd</quote> (Joh 4,16–18).</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_265" xml:id="koGe_265"/><HIS:hisTerm>Helene]</HIS:hisTerm> <HIS:hisGloss>Bruk av fornavn signaliserte høy grad av intimitet. Det kunne bare forekomme mellom familiemedlemmer og nære venner. Det var f.eks. ikke uvanlig at hustruen både tiltalte og omtalte sin ektemann med etternavn, i alle fall i nærvær av mennesker de ikke var fullt fortrolige med, jf. kommentarer til <ptr type="internal" target="Geht.xml" corresp="koGe_151"/> og <ptr type="internal" target="Geht.xml" corresp="koGe_201"/>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_266" xml:id="koGe_266"/><HIS:hisTerm>En går sig selv så let af minde]</HIS:hisTerm> <HIS:hisGloss>man glemmer så lett hvordan man en gang var; <hi rend="italic">gå en av minne</hi>: bli glemt, ikke lenger huskes av en (NRO <hi rend="italic">minne</hi> A 1 a)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_267" xml:id="koGe_267"/><HIS:hisTerm>ubefæstet]</HIS:hisTerm> <HIS:hisGloss>som (ennå) ikke er moden nok til å ha faste moralske prinsipper; som lett lar seg påvirke av dårlig moralsk innflytelse (NRO <hi rend="italic">ubefestet</hi> 3)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_268" xml:id="koGe_268"/><HIS:hisTerm>forsørget … godt gift]</HIS:hisTerm> <HIS:hisGloss>jf. kommentar til <ptr type="internal" target="Geht.xml" corresp="koGe_163"/></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_269" xml:id="koGe_269"/><HIS:hisTerm>svæver mig for]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">foresveve</hi>: stå, vise seg (uklart, ubestemt) for ens bevissthet (om forestilling, bilde) (litt.) (NRO I <hi rend="italic">sveve</hi> A 2 b)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_270" xml:id="koGe_270"/><HIS:hisTerm>fordølge]</HIS:hisTerm> <HIS:hisGloss>legge skjul på, fortie (NRO 2)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_272" xml:id="koGe_272"/><HIS:hisTerm>fælt gerne]</HIS:hisTerm> <HIS:hisGloss>brukt som forsterkende adv. til ord som uttrykker ubehag e.l. (fam.) (NRO <hi rend="italic">fæl</hi> 2)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_273" xml:id="koGe_273"/><HIS:hisTerm>klarering]</HIS:hisTerm> <HIS:hisGloss>sluttoppgjør; <hi rend="italic">klarere</hi>: gjøre opp med (en) (ved å betale ham det han har til gode, særlig lønn eller godtgjørelse) (NRO 1 b)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_274" xml:id="koGe_274"/><HIS:hisTerm>altingen]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">alle ting</hi>: alt; med attributivt (særlig ubestemt) pronomen brukt (folk. alm. i formen <hi rend="italic">tingen</hi>) med vid, omfattende betydning, slik at forbindelsen i funksjon svarer til et (ubestemt) pronomen (NRO <hi rend="italic">ting</hi> 3 d); jf. <hi rend="italic">allting</hi>, <hi rend="italic">alltingen</hi></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_275" xml:id="koGe_275"/><HIS:hisTerm>andagt]</HIS:hisTerm> <HIS:hisGloss>det å tenke på noe, vie noe oppmerksomhet; en samling i hjem eller andre steder utenfor kirkerommet – med bibellesning, og ofte tekstutleggelse, bønn og salmesang; av ty. <hi rend="italic">Andacht</hi></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_276" xml:id="koGe_276"/><HIS:hisTerm>en liden opbyggelse]</HIS:hisTerm> <HIS:hisGloss>alminnelig betegnelse på et religiøst møte, gjerne i et privat hjem, der hensikten er <quote>Veiledning til Gudsfrygt, til et religiøst Levnet</quote> (Molbech 1859 <hi rend="italic">Opbyggelse</hi>)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_277" xml:id="koGe_277"/><HIS:hisTerm>at kalde for]</HIS:hisTerm> <HIS:hisGloss>så å si; som man sier, som man kunne kalle det (NRO <hi rend="italic">kalle</hi> 3 b)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_278" xml:id="koGe_278"/><HIS:hisTerm>gaverne]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">gave</hi>: begavelse, talent (NRO I 3)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_279" xml:id="koGe_279"/><HIS:hisTerm>Gu’ bedre mig]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">Gud bedre</hi> (folk. <hi rend="italic">Gu(d) bære</hi>): et slags resignert utrop for å uttrykke at det nå engang ikke kan være annerledes; skam å si; <hi rend="italic">bedre</hi>: gjøre bedre, råde bot på, gjøre godt igjen</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_280" xml:id="koGe_280"/><HIS:hisTerm>Gu’ hjælpe]</HIS:hisTerm> <HIS:hisGloss>uttrykk brukt i edlignende forsikring, ofte med betydning som et forsterket <hi rend="italic">sannelig, virkelig</hi> (fam.); formelaktig utbrudd som gir uttrykk for fortvilelse, beklagelse, harme (og hvor påkallelsen av Gud ofte trer i skyggen for affektbetydningen) (NRO <hi rend="italic">hjelpe</hi> 1 a)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_280a" xml:id="koGe_280a"/><HIS:hisTerm>Jøss’]</HIS:hisTerm> <HIS:hisGloss>omdannelse av <hi rend="italic">Jesus</hi>; utrop for å uttrykke forferdelse eller (forferdet) overraskelse (NRO 2); en svak ed</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_281" xml:id="koGe_281"/><HIS:hisTerm>er … galt fat]</HIS:hisTerm> <HIS:hisGloss>er slik eller slik bevendt (med), står slik eller slik til (med) (NRO II <hi rend="italic">fatt</hi>). Engstrand tror at Regine er gravid, noe som ville være sosialt stigmatiserende da alminnelig moral ikke aksepterte samliv før ekteskapet, og man så ned på kvinner som fødte barn utenfor ekteskap. Jf. kommentarer til <ptr type="internal" target="Geht.xml" corresp="koGe_166"/> og <ptr type="internal" target="Geht.xml" corresp="koGe_167"/>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_282" xml:id="koGe_282"/><HIS:hisTerm>så skulde da]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">Skulle</hi> er her brukt i preteritum for å uttrykke (uoppfyllelig) ønske eller tanke (NRO <hi rend="italic">skulle</hi> 9 c); også brukt som trussel (jf. ODS III <hi rend="italic">skulle</hi> B 7.2). Her kan dette oppfattes som en interjeksjon og en undertrykt, middels sterk ed, i betydningen ‘så skulle da fanden ta deg’ e.l.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_283" xml:id="koGe_283"/><HIS:hisTerm>stedse]</HIS:hisTerm> <HIS:hisGloss>alltid, bestandig (NRO <hi rend="italic">stetse</hi> 1)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_284" xml:id="koGe_284"/><HIS:hisTerm>redebon]</HIS:hisTerm> <HIS:hisGloss>villig og parat (til hjelp, tjeneste e.l.); beredvillig (NRO 1). Ordet har bibelske konnotasjoner, jf. f.eks. Tit 3,1; <quote>at være redebonne til al god Gjerning</quote>; og Matt 26,41: <quote>Aanden er vel redebon, men Kjødet er skrøbeligt</quote> <bibl>(DNB 1854).</bibl></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_285" xml:id="koGe_285"/><HIS:hisTerm>ministrialbogen]</HIS:hisTerm> <HIS:hisGloss>kirkeboken. Kirkebøkene fungerte lenge (men ikke på samme måte nå) som landets folkeregistre. I sognets ministerialbok eller kirkebok ble alle kirkelige handlinger som dåp, konfirmasjon, vielse, begravelse opptegnet. Skrivemåten er her feilaktig for <hi rend="italic">ministerial</hi>-, kanskje etter mønster av fremmedord som <hi rend="italic">ministrant</hi>, <hi rend="italic">ministrere</hi>. Det kan også leses som en hyperkorreksjon av en antatt feilaktig <hi rend="italic">e</hi> som er kjent fra visse konsonantgrupper der den blir satt inn for å lette uttalen.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_286" xml:id="koGe_286"/><HIS:hisTerm>forholder]</HIS:hisTerm> <HIS:hisGloss>urettmessig holder (noe) tilbake for (en); urettmessig unnlater å gi (en) (noe); urettmessig skjuler (noe) for (en) (NRO <hi rend="italic">forholde</hi> 1)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_287" xml:id="koGe_287"/><HIS:hisTerm>Ja, for hvorledes vilde De vel kunne retfærdiggøre Dem]</HIS:hisTerm> <HIS:hisGloss>ordbruk med mulige religiøse konnotasjoner, jf. <rs type="person" corresp="peErikPont">Pontoppidans</rs> forklaring: <quote>Hvad er da Retfærdiggjørelsen? Den er Igjenfødelsens allernærmeste Frugt, og bestaaer derudi, at den Treenige Gud, af idel Naade, for sin Dom frikjender en sand bodfærdig og troende Synder, baade fra sin Synd og dens fortjente Straf</quote> <bibl>(Pontoppidan 1832, spørsmål 503)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_288" xml:id="koGe_288"/><HIS:hisTerm>skamferet sig]</HIS:hisTerm> <HIS:hisGloss>bragt seg i vanry; skjemmet seg ut (folk.) (NRO <hi rend="italic">skamfere</hi> 2)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_289" xml:id="koGe_289"/><HIS:hisTerm>skæms]</HIS:hisTerm> <HIS:hisGloss>skamme seg (NRO <hi rend="italic">skjemmes</hi>, <hi rend="italic">skjems</hi>)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_290" xml:id="koGe_290"/><HIS:hisTerm>som de siger]</HIS:hisTerm> <HIS:hisGloss>pleier å uttale; har som munnhell, ordtak e.l. (NRO <hi rend="italic">si</hi> 1 f). Diderichsen samler slike innskudd og tillegg under betegnelsen <quote>Sproglig Selvkritik</quote>, dvs. uttrykk som <quote>kritiserer, modificerer eller understreger det anvendte Udtryk</quote> <bibl>(1962, 197)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_291" xml:id="koGe_291"/><HIS:hisTerm>oprejser den faldende]</HIS:hisTerm> <HIS:hisGloss>jf. kommentarer til <ptr type="internal" target="Geht.xml" corresp="koGe_199"/> og <ptr type="internal" target="Geht.xml" corresp="koGe_302"/>. Jf. også uttrykk som <quote>falle ut i fristelser</quote>, jf. kommentar til <ptr type="internal" target="Geht.xml" corresp="koGe_23"/>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_292" xml:id="koGe_292"/><HIS:hisTerm>falden i ulykke]</HIS:hisTerm> <HIS:hisGloss>(om kvinne) blitt forført, blitt med barn utenfor ekteskap (fam.) (NRO <hi rend="italic">ulykke</hi> 3 b b), jf. kommentar til <ptr type="internal" target="Geht.xml" corresp="koGe_235"/></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_293" xml:id="koGe_293"/><HIS:hisTerm>desformedelst]</HIS:hisTerm> <HIS:hisGloss>preposisjon (vanligst adv.), med betydningen ‘formedelst, på grunn av’ (NRO <hi rend="italic">dessformedelst</hi>)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_294" xml:id="koGe_294"/><HIS:hisTerm>Stakker]</HIS:hisTerm> <HIS:hisGloss>adj. brukt medfølende, medlidende om fattig person eller lidende, mishandlet, hjelpeløs, ulykkelig person eller skapning, jf. kommentar til <ptr type="internal" target="Geht.xml" corresp="koGe_46"/></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_295" xml:id="koGe_295"/><HIS:hisTerm>minds]</HIS:hisTerm> <HIS:hisGloss>husker; familiær form av <hi rend="italic">minnes</hi> (NRO <hi rend="italic">minne</hi> 2)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_296" xml:id="koGe_296"/><HIS:hisTerm>rejerte]</HIS:hisTerm> <HIS:hisGloss>var i voldsom, urolig og oftest støyende bevegelse; romsterte, tumlet, ståket, bar seg (NRO <hi rend="italic">regjere</hi> 3 b)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_297" xml:id="koGe_297"/><HIS:hisTerm>i et nyt levnet]</HIS:hisTerm> <HIS:hisGloss>bibelsk stiltone, jf. Rom 6,4: <quote>saa skulde og vi vandre i et nyt Levnet</quote></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_298" xml:id="koGe_298"/><HIS:hisTerm>grædendes tårer]</HIS:hisTerm> <HIS:hisGloss>S-endelsen gir uttrykket et folkelig preg. Uttrykket forekommer ofte i <rs type="person" corresp="peLuH">Holbergs</rs> komedier, men da alltid med preposisjonen <hi rend="italic">med</hi> og særlig i forbindelser med <hi rend="italic">bede</hi>, f.eks. i <title rend="italic">Erasmus Montanus</title> (V.v.): <quote>Jeg beder eder da ydmygst med grædende Taare alle om Forladelse</quote> <bibl>(Holberg 1913–63, b. 4, 435)</bibl>, og i <title rend="italic">Pernilles korte Frøkenstand</title> (II.i.): <quote>Alt hvad her er at giøre imidlertid, er, at I med grædende Taarer beder Hr. Jeronimus staae fra sit Forsæt</quote> <bibl>(1913–63, b. 4, 458)</bibl>. Siden uttrykket har en viss bibelsk klang, kan det ha utgangspunkt i to versjoner av Paulus’ brev til Filipperne 3,18: <quote>Mange vandre, hvilke jeg ofte haver sagt Eder, og endnu siger med Taarer (Chr.VI: grædendes), at være Christi Korses Fiender</quote> (ODS I <hi rend="italic">taare</hi> 1.5).</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_299" xml:id="koGe_299"/><HIS:hisTerm>tænders gnidsel]</HIS:hisTerm> <HIS:hisGloss>en henspilling på uttrykk som brukes flere ganger i kapittel 8 i Matteusevangeliet, jf. Matt 8,12, der det fortelles at mange skal komme fra øst og vest for å sitte til bords i Guds rike, mens <quote>Rigets Børn skulle udkastes i det yderste Mørke; der skal være Graad og Tænders Gnidsel</quote></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_300" xml:id="koGe_300"/><HIS:hisTerm>sa’]</HIS:hisTerm> <HIS:hisGloss>om bruk av kortformer av verb, jf. innledningen, under <hi rend="italic">Dramaform</hi></HIS:hisGloss></item>
+
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_301" xml:id="koGe_301"/><HIS:hisTerm>syndefald]</HIS:hisTerm> <HIS:hisGloss>henspilling på historien i 1. Mos 3 om hvordan Adam og Eva brøt Herrens påbud om ikke å spise frukten av treet i Eden og ble straffet for dette. Denne menneskehetens første synd kalles gjerne syndefallet.</HIS:hisGloss></item>
+
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_302" xml:id="koGe_302"/><HIS:hisTerm>en falden skabning]</HIS:hisTerm> <HIS:hisGloss>jf. kommentar til <ptr type="internal" target="Geht.xml" corresp="koGe_235"/>. Uttrykket har først og fremst konnotasjoner til syndefallet, der mennesket som guds skapning likevel falt i synd. Jf. <rs type="person" corresp="peErikPont">Pontoppidans</rs> forklaring: <quote>Hvad er et Menneske? En meget ædel Guds Skabning</quote>; <quote>Er nu intet Menneske mere i denne Uskyldighedsstand? Nei, desværre! det lærer Forfarenhed, at Adam og med ham alle hans Børn ere faldne af Uskyldigheds-Stand i Synde-Standen</quote> <bibl>(Pontoppidan 1832, spørsmål 368, 379)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_303" xml:id="koGe_303"/><HIS:hisTerm>står på to reelle ben]</HIS:hisTerm> <HIS:hisGloss>er en stø og solid kar; <hi rend="italic">reell</hi>: (om person eller om opptreden, handlemåte) redelig (og grei); ærlig og oppriktig (NRO 2). Uttrykket <hi rend="italic">to reelle ben</hi> er uvanlig og signaliserer en folkelig uttrykksmåte som også kan forstås som et ordspill, ved at <hi rend="italic">reell</hi> også betyr ‘virkelig’, jf. ironien i at Engstrands ene ben er deformert.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_304" xml:id="koGe_304"/><HIS:hisTerm>lignelse]</HIS:hisTerm> <HIS:hisGloss>billedlig uttrykk, særlig i Det nye testamente; enkle fortellinger som med emne fra dagliglivet i overført betydning anskueliggjør viktige religiøse sannheter.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_305" xml:id="koGe_305"/><HIS:hisTerm>Ja, så var det jeg oprejste hende]</HIS:hisTerm> <HIS:hisGloss>jf. kommentar til <ptr type="internal" target="Geht.xml" corresp="koGe_199"/></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_306" xml:id="koGe_306"/><HIS:hisTerm>billige]</HIS:hisTerm> <HIS:hisGloss>erklære seg enig i, bifalle, godkjenne (NRO)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_307" xml:id="koGe_307"/><HIS:hisTerm>Ikke en styver]</HIS:hisTerm> <HIS:hisGloss>ikke en døyt; <hi rend="italic">styver</hi>: brukt litt.-fam., særlig i nektende uttrykk, for å betegne en helt ubetydelig, forsvinnende liten pengesum, verdi e.l. (både <hi rend="italic">styver</hi> og <hi rend="italic">døyt</hi> er gamle mynter av liten verdi) (NRO 2 b)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_308" xml:id="koGe_308"/><HIS:hisTerm>mammon]</HIS:hisTerm> <HIS:hisGloss>penger; jf. Matt 6,24 (par.): <quote>Ingen kan tjene to Herrer: […] I kunne ikke tjene Gud og Mammon.</quote></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_309" xml:id="koGe_309"/><HIS:hisTerm>syndens sold]</HIS:hisTerm> <HIS:hisGloss>jf. Rom 6,23: <quote>Thi Syndens Sold er Døden</quote>. Jf. også <rs type="person" corresp="peNFSGr">N.F.S. Grundtvigs</rs> salme <quote>Paaske-Morgen slukker sorgen</quote>, der M.B. Landstads versjon av femte vers lød <quote>Bødt er Brøden, død er Døden, død er Døden som Syndens Sold</quote> (Landstad 1861, 384). <hi rend="italic">Sold</hi>: lønn, straff, gjengjeldelse (NRO I 1 b).</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_310" xml:id="koGe_310"/><HIS:hisTerm>Men det tør jeg sige … øvet hustugten, som skrevet står]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">hustukt</hi>: <quote>Tugt og Orden, som en Huusfader holder i sit Huus</quote> <bibl>(Molbech 1859 <hi rend="italic">Huustugt</hi>)</bibl>. Det finnes ingen skriftsteder om hustukt i Bibelen, men dette kan likevel være en henspilling på Heb 12,7: <quote>thi hvo er den Søn, som Faderen ikke revser?</quote> Jf. også <rs type="person" corresp="peErikPont">Pontoppidans</rs> forklaring, der det heter at ektemannen skal <quote>elske, ære, styre, regjere og forsørge</quote> sin hustru, mens hustruen skal <quote>være ham underdanig</quote>, med henvisning til 1. Mos 3,16: <quote>Din Attraa skal være til din Mand, men han skal herske over dig</quote> <bibl>(Pontoppidan 1832, spørsmål 209–10)</bibl>. Om foreldres plikter overfor barn viser Pontoppidan til Ef 6,4: <quote>Opføder eders Børn i Tugt og Herrens Formanelse</quote>; og til Ordsp 13,24: <quote>Hvo som sparer sit Riis, hader sin Søn, men den, som elsker ham, tugter ham tidligen</quote> (1832 spørsmål 177–78). <title rend="italic">Kong Christian den Femtes Norske Lov</title>, som fortsatt gjaldt på dette tidspunkt, fastsatte at husbonden kunne bruke korporlige midler for å holde tukt og orden i sitt hus: <quote>Husbond maa refse sine Børn og Tyende med Kæp, eller Vond, og ej med Vaaben</quote> <bibl>(<title rend="italic">Norske Lov</title> 1687, bok 6, kap. 5, § 5)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_313" xml:id="koGe_313"/><HIS:hisTerm>som skrevet står]</HIS:hisTerm> <HIS:hisGloss>Diderichsen samler innskudd og tillegg av denne typen under betegnelsen <quote>Sproglig Selvkritik</quote>, dvs. uttrykk som <quote>kritiserer, modificerer eller understreger det anvendte Udtryk</quote> <bibl>(1962, 197)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_312" xml:id="koGe_312"/><HIS:hisTerm>hovmode mig … gjort en god gerning]</HIS:hisTerm> <HIS:hisGloss>alminnelig pietistisk norm, jf. syvende strofe i salme nr. 463 i <rs type="person" corresp="peMaLa">Landstads</rs> <title rend="italic">Kirkesalmebog</title>:</HIS:hisGloss>
+ 
+<quote rend="indent">
+<lg>
+<l>Den sande Kjærlighed</l>
+<l>Af ingen Hovmod veed,</l>
+<l>Vil gjerne ringe være,</l>
+<l>Kan dog de Svage bære</l>
+</lg>
+<bibl>(Landstad 1869)</bibl>
+</quote>
+</item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_314" xml:id="koGe_314"/><HIS:hisTerm>hovmode mig]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">hovmode seg av noe</hi>: føle eller vise hovmod ved noe, gjøre seg til av noe (NRO <hi rend="italic">hovmode</hi>)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_315" xml:id="koGe_315"/><HIS:hisTerm>hændes]</HIS:hisTerm> <HIS:hisGloss>foregår, inntreffer, skjer (NRO <hi rend="italic">hende</hi> 2); som her passivt, eller refleksivt, som <hi rend="italic">hænde sig</hi> (HIS 7, <ptr type="ht" target="Geht.xml" corresp="koGe_ht_2"/>)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_317" xml:id="koGe_317"/><HIS:hisTerm>be’]</HIS:hisTerm> <HIS:hisGloss>om bruk av kortformer av verb, jf. innledningen, under <hi rend="italic">Dramaform</hi></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_318" xml:id="koGe_318"/><HIS:hisTerm>kors da]</HIS:hisTerm> <HIS:hisGloss>brukt i ed, høytidelig forsikring (opprinnelig idet man sverger ved Jesu kors, Jesu offerdød, senere oftest med sterkt avsvekket betydning) i bekreftende og benektende uttrykk, i utrop av forskrekkelse, forbauselse eller glad forundring (NRO <hi rend="italic">kors</hi> 2)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_319" xml:id="koGe_319"/><HIS:hisTerm>fortrydelse]</HIS:hisTerm> <HIS:hisGloss>anger (NRO <hi rend="italic">fortrytelse</hi> 2)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_320" xml:id="koGe_320"/><HIS:hisTerm>lagt mig tilbedste]</HIS:hisTerm> <HIS:hisGloss>spart opp; <hi rend="italic">ha, legge seg noe til beste</hi>: legge seg opp penger (av ty. <hi rend="italic">was zum Besten haben</hi>, opprinnelig uttrykk fra skytterfester hvor <hi rend="italic">das Beste</hi> betegnet kampprisen) (NRO <hi rend="italic">best</hi> A 2; jf. også ODS <hi rend="italic">bedst</hi> 5.2)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_321" xml:id="koGe_321"/><HIS:hisTerm>Fristelserne er så mangfoldige]</HIS:hisTerm> <HIS:hisGloss>religiøs talemåte, jf. kommentar til <ptr type="internal" target="Geht.xml" corresp="koGe_24"/></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_322" xml:id="koGe_322"/><HIS:hisTerm>lige rakt]</HIS:hisTerm> <HIS:hisGloss>akkurat, aldeles (folk., som adv., i sammenlignende uttrykk) (NRO I <hi rend="italic">rak</hi> 3)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_323" xml:id="koGe_323"/><HIS:hisTerm>deslige]</HIS:hisTerm> <HIS:hisGloss>lignende, slike (NRO <hi rend="italic">desslike</hi>)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_324" xml:id="koGe_324"/><HIS:hisTerm>taske]</HIS:hisTerm> <HIS:hisGloss>veske (NRO 1 a a)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_325" xml:id="koGe_325"/><HIS:hisTerm>Jeg må jo ikke]</HIS:hisTerm> <HIS:hisGloss>jeg får jo ikke lov til å (NRO <hi rend="italic">måtte</hi> 2)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_326" xml:id="koGe_326"/><HIS:hisTerm>bestille]</HIS:hisTerm> <HIS:hisGloss>gjøre, utføre; være sysselsatt med (NRO 2)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_327" xml:id="koGe_327"/><HIS:hisTerm>krammer]</HIS:hisTerm> <HIS:hisGloss>trykker, knuger med fingrene, hendene (NRO I <hi rend="italic">kramme</hi> 1 b)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_328" xml:id="koGe_328"/><HIS:hisTerm>må jeg]</HIS:hisTerm> <HIS:hisGloss>kunne jeg (om tillatelse) (NRO <hi rend="italic">måtte</hi> 2)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_329" xml:id="koGe_329"/><HIS:hisTerm>komme mig for]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">komme seg til</hi>: få overvunnet seg til, bringe seg til, få seg til (NRO <hi rend="italic">komme</hi> B 2 c)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_330" xml:id="koGe_330"/><HIS:hisTerm>skrive dig til]</HIS:hisTerm> <HIS:hisGloss>sende deg et brev; ordstillingen <hi rend="italic">skrive en til</hi> er mest foreldet (jf. NRO <hi rend="italic">skrive</hi> 4 a e)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_331" xml:id="koGe_331"/><HIS:hisTerm>skød]</HIS:hisTerm> <HIS:hisGloss>fang (NRO <hi rend="italic">skjød</hi> 1 a)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_332" xml:id="koGe_332"/><HIS:hisTerm>første]</HIS:hisTerm> <HIS:hisGloss>beste, dyktigste (NRO <hi rend="italic">først</hi> 2)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_333" xml:id="koGe_333"/><HIS:hisTerm>vermoulu]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">état vermoulu</hi>: en medisinsk term, forklart som ormstukket (markspist) utseende av storhjernebarken hos eldre ved vevshenfall på grunn av sklerotiserte (dvs. tiltettede) arterioler (dvs. svært små arterier). Når arteriolene som forsyner vevet nærmest omkring, tetter seg, oppstår det multippelt vevshenfall og mange små hull, derav betegnelsen <quote>ormstukket</quote> <bibl>(<title rend="italic">Roche Lexicon Medizin</title> 2003)</bibl>. Tilstanden var også beskrevet hos syfilispasienter <bibl>(jf. Voß 2004)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_334" xml:id="koGe_334"/><HIS:hisTerm>fædrenes synder hjemsøges på børnene]</HIS:hisTerm> <HIS:hisGloss>en henspilling på gammeltestamentlige forestillinger i 2. Mos 20,5–6:</HIS:hisGloss> 
+    
+<quote rend="proseIndent">thi jeg, Herren din Gud, er en nidkjær Gud, som hjemsøger Fædres Misgjerning paa Børn, paa dem i tredie og paa dem i fjerde Led, paa dem som hade mig; og den, som gjør Miskundhed mod tusinde Led, mod dem, som elske mig, og mod dem som holde mine Bud.</quote></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_335" xml:id="koGe_335"/><HIS:hisTerm>turde tænke]</HIS:hisTerm> <HIS:hisGloss>våge tenke (NRO I <hi rend="italic">tore</hi> A 1 a). NRO anser fravær av infinitivsmerke som norm og kaller bruken av <hi rend="italic">å</hi> folkelig og familiær.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_336" xml:id="koGe_336"/><HIS:hisTerm>ha’]</HIS:hisTerm> <HIS:hisGloss>om bruk av kortformer av verb, jf. innledningen, under <hi rend="italic">Dramaform</hi></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_337" xml:id="koGe_337"/><HIS:hisTerm>tungeste]</HIS:hisTerm> <HIS:hisGloss>uomlydt form av <hi rend="italic">tung</hi> i superlativ jf. kommentar til <ptr type="internal" target="Geht.xml" corresp="koGe_263"/></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_338" xml:id="koGe_338"/><HIS:hisTerm>punch]</HIS:hisTerm> <HIS:hisGloss>blandingsdrikk av asiatisk opprinnelse, bragt fra India til Europa av engelskmennene mot slutten av 1700-tallet. I opprinnelsesområdet skulle drikken bestå av fem ingredienser svarende til fem naturelementer (derav det indiske navn <hi rend="italic">pantscha</hi> ‘fem’). Punsjen ble stadig mer populær i Europa i løpet av 1800-tallet. En av ingrediensene kunne være varm te, og ellers inngikk gjerne sitronsaft, sukker, kanel og arak. Etter hvert ble teen gjerne sløyfet, og rom inngikk som fast bestanddel. Punsjebollen ble ofte et samlingspunkt i ulike klubber og ved sammenkomster, bl.a. i Det Norske Selskab, og drikken ble vanlig også ved studentsammenkomster og i andre sosiale sammenhenger utover på 1800-tallet (<title rend="italic">Salmonsen</title> Punch). <rs type="person" corresp="peJSW">Welhaven</rs> beskriver i sitt dikt <quote>Punsch</quote> (1834) drikkens popularitet og opprinnelse i lystige ordelag, og understreker dens opprinnelse under primitive forhold:</HIS:hisGloss>
+      
+<quote rend="indent">
+<lg>
+<l>Jon Bull fandt Heden i Hindostan</l>
+<l>for heed,</l>
+<l>[…]</l>
+<l>da laved han Punschen af fem Slags Varer,</l>
+<l>thi «Punsch» er «fem» hos de Malabarer.</l>
+<l>Saa reen barbarisk</l>
+<l>og malabarisk</l>
+<l>er Punsch!</l>
+</lg>
+<bibl>(Welhaven 1990–92, b. 1, 60)</bibl></quote>
+ 
+<HIS:hisGloss>I <title rend="italic">Slegten fra 1814</title> beskriver Carl W. Schnitler punsjens rolle slik: <quote>Efter middagen fik man sig saa en velstoppet pipe, og saa gik det løs med hjemmelavet punsj eller bisp</quote> <bibl>(Schnitler 1911, 279)</bibl>. Bredbukede punsjemugger i engelsk stentøy som var produsert på bestilling etter 1814, hadde ofte <quote>prospekter som Eidsvollsbygningen eller portrætter som prins Christian Augusts eller nationalhelten Christian Krohgs</quote> <bibl>(1911, 261)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_339" xml:id="koGe_339"/><HIS:hisTerm>klokkestreng]</HIS:hisTerm> <HIS:hisGloss>streng (snor) som man trekker i for å få en ringeklokke (dørklokke, entréklokke av eldre type) til å lyde (NRO 2). Slike klokkestrenger fantes også i familiens dagligrom, med forbindelse til kjøkken og andre rom hvor tjenerskapet oppholdt seg. De var prydgjenstander og bestod ofte av et relativt langt tøystykke, som kanskje var opp til 20 cm bredt, og som enten hadde et vevet mønster eller var rikt brodert.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_340" xml:id="koGe_340"/><HIS:hisTerm>forbeholden]</HIS:hisTerm> <HIS:hisGloss>reservert, forsiktig i sine uttalelser eller handlinger</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_341" xml:id="koGe_341"/><HIS:hisTerm>brikke]</HIS:hisTerm> <HIS:hisGloss>liten plate, lite brett, særlig av tre, mest brukt til serveringsbrett for forfriskninger e.l. (NRO 1)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_342" xml:id="koGe_342"/><HIS:hisTerm>La’]</HIS:hisTerm> <HIS:hisGloss>om bruk av kortformer av verb, jf. innledningen, under <hi rend="italic">Dramaform</hi></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_343" xml:id="koGe_343"/><HIS:hisTerm>prægtig]</HIS:hisTerm> <HIS:hisGloss>storartet (NRO <hi rend="italic">prektig</hi> 2); <quote>især talespr. m. mere alm., stærkere eller svagere rosende, anerkendende bet.: som vækker (stærk) lystfølelse, behag, tilfredshed; i høj grad tiltalende; udmærket; ypperlig; brillant; herlig; storartet</quote> (ODS <hi rend="italic">prægtig</hi> 2.2)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_344" xml:id="koGe_344"/><HIS:hisTerm>at hun skulde komme noget til]</HIS:hisTerm> <HIS:hisGloss>at det skulle skje henne noe galt; <hi rend="italic">komme til noe</hi>, <hi rend="italic">komme noe til</hi>: bli utsatt for en ulykke, rammes av ulykke (litt.) (NRO <hi rend="italic">komme</hi> 6 c)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_345" xml:id="koGe_345"/><HIS:hisTerm>ha’]</HIS:hisTerm> <HIS:hisGloss>om bruk av kortformer av verb, jf. innledningen, under <hi rend="italic">Dramaform</hi></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_346" xml:id="koGe_346"/><HIS:hisTerm>klokkestrængen]</HIS:hisTerm> <HIS:hisGloss>I <title rend="italic">Gengangere</title> veksler Ibsen mellom den gamle skrivemåten med -<hi rend="italic">æ</hi>- og den nyere skrivemåten med -<hi rend="italic">e</hi>-, <quote>klokkestreng</quote>, som var i ferd med å slå gjennom på denne tid; jf. <ptr type="internal" target="Geht.xml" corresp="koGe_339"/> med kommentar.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_347" xml:id="koGe_347"/><HIS:hisTerm>sa’ … bli’]</HIS:hisTerm> <HIS:hisGloss>om bruk av kortformer av verb, jf. innledningen, under <hi rend="italic">Dramaform</hi></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_349" xml:id="koGe_349"/><HIS:hisTerm>lagt sig efter]</HIS:hisTerm> <HIS:hisGloss>prøvd å lære seg, søkt å dyktiggjøre seg i (NRO <hi rend="italic">legge</hi> 7 b)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_350" xml:id="koGe_350"/><HIS:hisTerm>sagte]</HIS:hisTerm> <HIS:hisGloss>dempet, stille; særlig om tale (NRO <hi rend="italic">sakte</hi> A 1 a)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_351" xml:id="koGe_351"/><HIS:hisTerm>her læres folk op til … en syndestraf]</HIS:hisTerm> <HIS:hisGloss>jf. Bibelens syndefallsberetning, der Gud sa til Adam: <quote>da vorde Jorden forbandet for din Skyld! Med Kummer skal du æde deraf alle dit Livs Dage. […] I dit Ansigts Sved skal du æde Brødet</quote> (1. Mos 3,17–19).</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_352" xml:id="koGe_352"/><HIS:hisTerm>livet er noget jammerligt … En jammerdal]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">Jammerdal</hi> som betegnelse på den jordiske tilværelse er brukt i en rekke salmer, jf. f.eks. <rs type="person" corresp="peMaLa">Landstads</rs> <title rend="italic">Kirkesalmebog</title>, salme nr. 479, annen strofe: <quote>Hjem jeg længes! Ei jeg trives / Her i Jordens Jammer-Dal</quote>; og nr. 305, tiende strofe: <quote>Naar jeg engang faar træde / Fra denne Verdens Jammerdal / Til evig Fryd og Glæde</quote> <bibl>(Landstad 1869).</bibl></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_353" xml:id="koGe_353"/><HIS:hisTerm>Der er lys og solskin … fornøjede menneskeansigter]</HIS:hisTerm> <HIS:hisGloss>Beskrivelsen svarer til det karakteristiske ved impresjonismen, som oppstod i fransk malerkunst omkring 1870, og som kan beskrives slik: <quote>företrädesvis en figur- och landskapskonst, vari solljuset skildras med så vitt möjligt rena, oblandade och ljusa färger och där även skuggorna äro bärare av en bestämd kolorit</quote> <bibl>(<title rend="italic">Svensk uppslagsbok</title> 1947–55 <hi rend="italic">impressionism</hi>)</bibl>. Også en mulig allusjon til de såkalte Skagen-malerne, en nordisk kunstnergruppe som var virksom på Skagen (Jylland) i 1870- og -80-årene. De skapte realistiske friluftsmalerier, kjennetegnet ved intense lysskildringer. De mest kjente maleriene fra denne kunstnergruppen ble til <hi rend="italic">etter</hi> 1881, bl.a. <rs type="person" corresp="pePSK">P.S. Krøyers</rs> <quote>Hip hip hurra! Kunstnerfest paa Skagen</quote> fra 1888.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_354" xml:id="koGe_354"/><HIS:hisTerm>som er oppe i mig]</HIS:hisTerm> <HIS:hisGloss>som jeg har interesse og følelser for; <hi rend="italic">være oppe i det</hi>: være midt i, være sterkt opptatt av krevende arbeid, noe vanskelig, sørgelig e.l. (NRO <hi rend="italic">oppe</hi> 1 b d); <quote>som betegnelse for […] at noget er genstand for almindelig drøftelse, vækker alles interesse […] der var i Dag noget Mildt oppe i (ham)</quote> (ODS II <hi rend="italic">oppe</hi> 3.2.)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_355" xml:id="koGe_355"/><HIS:hisTerm>arte ud i]</HIS:hisTerm> <HIS:hisGloss>utarte (NRO <hi rend="italic">arte</hi> 1)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_356" xml:id="koGe_356"/><HIS:hisTerm>Pardon]</HIS:hisTerm> <HIS:hisGloss>(fr.) om forlatelse</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_357" xml:id="koGe_357"/><HIS:hisTerm>du forbarmende]</HIS:hisTerm> <HIS:hisGloss>du som viser forbarmelse, jf. kommentar til <ptr type="internal" target="Geht.xml" corresp="koGe_164"/></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_358" xml:id="koGe_358"/><HIS:hisTerm>kan ikke gøre for det]</HIS:hisTerm> <HIS:hisGloss>kan ikke foreta noe for å hindre det; kan ikke hjelpe for det (NRO <hi rend="italic">gjøre</hi> B 1 b)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_359" xml:id="koGe_359"/><HIS:hisTerm>forstyrrelsens hus]</HIS:hisTerm> <HIS:hisGloss>ødeleggelsens hus (NRO forstyrrelse 1); et hus der all orden (i overført betydning) er forsvunnet</HIS:hisGloss></item>
+</list>
+</div>
+
+<div> 
+<head rend="level2">TREDJE AKT</head>
+
+<list type="commentary">
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_360" xml:id="koGe_360"/><HIS:hisTerm>tørklæde over hodet]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">tørkle</hi>: plagg av tilpasset (firkantet) stykke tøy, klede (silke) eller strikket stoff, sedvanlig farverikt og med trykt eller vevet mønster (ofte også med frynser), til å legge (knytte) om halsen eller (av kvinner) om hodet eller om skuldre og overkropp. Gjerne brukt som ytterplagg, da de var lette å tilpasse de til dels vide kjoleskjørtene som vanskeliggjorde bruk av mer ettersittende jakker, kåper osv. <bibl>(C.W. Cunnington &amp; P. Cunnington 1973, 447)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_361" xml:id="koGe_361"/><HIS:hisTerm>Har han ikke sin hat]</HIS:hisTerm> <HIS:hisGloss>I det 19. århundre og tidligere var hodeplagg en fast del av antrekket for menn utendørs: <quote>No gentleman would have dreamed of going out-of-doors bare-headed</quote> <bibl>(C.W. Cunnington &amp; P. Cunnington 1973, 340)</bibl>. I tiåret 1880–90 kunne mannshatten enten være en såkalt <hi rend="italic">top hat</hi> (dvs. en hatt med rett avskåret, høy pull og oppovervendt brem), som ble båret sammen med mer formelt antrekk, eller en bowlerhatt (med høy rund pull og oppovervendt brem på hver side, ofte fremstilt av hard filt) <bibl>(1973, 309, 341)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_362" xml:id="koGe_362"/><HIS:hisTerm>jomfru]</HIS:hisTerm> <HIS:hisGloss>ung, ugift kvinne jf. kommentar til <ptr type="internal" target="Geht.xml" corresp="koGe_77"/></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_363" xml:id="koGe_363"/><HIS:hisTerm>Gu’ døde mig]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">døde</hi>: drepe, la lide døden; bevart litt.-fam. i eden <hi rend="italic">gud døde meg</hi> (foreldet) (NRO 1); en middels sterk ed</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_364" xml:id="koGe_364"/><HIS:hisTerm>Jøss]</HIS:hisTerm> <HIS:hisGloss>omdannelse av <hi rend="italic">Jesus</hi>; utrop for å uttrykke forferdelse eller (forferdet) overraskelse (NRO 2); en svak ed</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_365" xml:id="koGe_365"/><HIS:hisTerm>sagte]</HIS:hisTerm> <HIS:hisGloss>dempet, stille; særlig om tale (NRO <hi rend="italic">sakte</hi> A 1 a)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_366" xml:id="koGe_366"/><HIS:hisTerm>gøken]</HIS:hisTerm> <HIS:hisGloss>Gjøken (<hi rend="italic">Cuculus canorus</hi>) er egentlig en fugl, men blir her benyttet billedlig, i betydningen ‘tosk’ e.l.; jf. Aasen: <quote>en Stymper, sløv eller taabelig Person</quote> (1873 <hi rend="italic">Gauk</hi> 2).</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_367" xml:id="koGe_367"/><HIS:hisTerm>rejerte]</HIS:hisTerm> <HIS:hisGloss>var i voldsom, urolig og oftest støyende bevegelse, romsterte, tumlet, ståket, bar seg (NRO <hi rend="italic">regjere</hi> 3 b)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_368" xml:id="koGe_368"/><HIS:hisTerm>snød]</HIS:hisTerm> <HIS:hisGloss>renset, pusset (brennende stearinlys) ved å knipe av den utbrente delen av veken med fingrene eller med lysesaks (om eldre forhold) (NRO <hi rend="italic">snyte</hi> 1 b)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_369" xml:id="koGe_369"/><HIS:hisTerm>tanen]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">tande</hi> (eller <hi rend="italic">tane</hi>): øverste (bare utbrente) del av veken i lys; lysetande (litt. eller om eldre forhold) (NRO). I vestlandsdialekter (bl.a. i Bergen) er dette ordet vanligere i bruk enn det normalspråklige (østlandske) <hi rend="italic">veke</hi>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_370" xml:id="koGe_370"/><HIS:hisTerm>hænde sig]</HIS:hisTerm> <HIS:hisGloss>foregå, inntreffe, skje (NRO <hi rend="italic">hende</hi> 2); som her refleksivt, eller passivt, som <hi rend="italic">hændes</hi> (HIS 7, <ptr type="ht" target="Geht.xml" corresp="koGe_ht_3"/>)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_371" xml:id="koGe_371"/><HIS:hisTerm>til … velsignelse]</HIS:hisTerm> <HIS:hisGloss>religiøs talemåte, jf. kommentar til <ptr type="internal" target="Geht.xml" corresp="koGe_187"/></HIS:hisGloss></item>
+      
+      
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_372" xml:id="koGe_372"/><HIS:hisTerm>ta’]</HIS:hisTerm> <HIS:hisGloss>om bruk av kortformer av verb, jf. innledningen, under <hi rend="italic">Dramaform</hi></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_373" xml:id="koGe_373"/><HIS:hisTerm>Legatets … bestemmelse]</HIS:hisTerm> <HIS:hisGloss>det som var bestemt i legatet; <hi rend="italic">legat</hi>: formuesrettigheter, pengebeløp som ved testamentarisk forordning tilfaller en eller flere personer, eller tilgodeser en stiftelse, et bestemt formål e.l. (jur.) (NRO)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_374" xml:id="koGe_374"/><HIS:hisTerm>gårdparten Solvik]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">Solvik</hi> finnes som matrikkelført bruksnavn i Eidanger i nedre Telemark <bibl>(Rygh 1897–1936, b. 8, 81)</bibl>. Navnet er kjent fra 1700-tallet. Førsteleddet <hi rend="italic">Sol</hi>- forekommer dessuten i en rekke gamle gårdsnavn med andre etterledd, f.eks. <hi rend="italic">Solberg</hi>, <hi rend="italic">Solem</hi> og <hi rend="italic">Solli</hi> <bibl>(1897–1936, b. 19, 268–69)</bibl>. I siste halvdel av 1800-tallet fikk navnegruppen en sterk tilvekst gjennom nydannede bruks- og villanavn som <hi rend="italic">Solhaug</hi>, <hi rend="italic">Solheim</hi> og <hi rend="italic">Solvang</hi>. De unge navnene er oftest ønskenavn av sjablongaktig karakter, men de gamle gårdsnavnene viser som regel reelt til solvendte steder med gode vekstvilkår.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_375" xml:id="koGe_375"/><HIS:hisTerm>landsognet]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">landsogn</hi>: sogn på landet; landdistrikt som hører til en kjøpstad og utgjør en selvstendig sognekommune (NRO)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_376" xml:id="koGe_376"/><HIS:hisTerm>Jordvejen]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">jordvei</hi>: dyrket jord (hørende til gård, bruk) (NRO 2)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_377" xml:id="koGe_377"/><HIS:hisTerm>tilforladelig]</HIS:hisTerm> <HIS:hisGloss>sannelig, sant for dyden, virkelig (NRO <hi rend="italic">tilforlatelig</hi> 2)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_378" xml:id="koGe_378"/><HIS:hisTerm>fan’ ikke]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">fanden</hi>: i eder eller forsterkende, forsikrende uttrykk, for å gi uttrykk for ergrelse, uvilje eller for overraskelse, beundring (folk.) (NRO 1); her er eden forsterkende, med betydningen ‘for all del’ e.l.; en middels sterk ed</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_379" xml:id="koGe_379"/><HIS:hisTerm>nøde mig til]</HIS:hisTerm> <HIS:hisGloss>ved makt tvinge (til) (NRO <hi rend="italic">nø</hi> 1 a)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_380" xml:id="koGe_380"/><HIS:hisTerm>Jakob Engstrand og jeg]</HIS:hisTerm> <HIS:hisGloss>Personnavn med tillegg av første persons pronomen er en talespråklig uttrykksmåte som ved et slags dobbeltaspekt forsterker og høytideliggjør eget utsagn. Konstruksjonen kan lett få en ironisk klang. Ifølge <title rend="italic">Holberg-ordbog</title> blir første persons pronomen brukt i sideordnede forbindelser med den talendes eget navn, <quote>for at give et udsagn el. en erklæring eftertryk el. som pralende, selvfølende fremhævelse af den talendes egen person</quote> <bibl>(<title rend="italic">Holberg-ordbog</title> jeg 1.1)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_381" xml:id="koGe_381"/><HIS:hisTerm>taget skylden på sig for andre engang før]</HIS:hisTerm> <HIS:hisGloss>Ordbruken kan ha konnotasjoner til forestillinger om stedfortredende soning, som Jesu stedfortredende soningsdød på korset, jf. f.eks. Rom 4,25: <quote>han, som blev given hen for vore Overtrædelser og opreist for vor Retfærdiggørelse</quote>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_382" xml:id="koGe_382"/><HIS:hisTerm>forhjulpen]</HIS:hisTerm> <HIS:hisGloss>hjulpet (til, med) (foreldet) (NRO <hi rend="italic">forhjelpe</hi>). Molbech (1859) henfører <hi rend="italic">forhielpe</hi> til ty. <hi rend="italic">verhelfen</hi> og tilføyer <quote>et overflødigt Ord</quote>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_383" xml:id="koGe_383"/><HIS:hisTerm>tøs]</HIS:hisTerm> <HIS:hisGloss>pike, jente (foreldet eller bymål) (NRO 1), vanlig ord for pike i Bergens-dialekten</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_384" xml:id="koGe_384"/><HIS:hisTerm>leve som guld i et æg]</HIS:hisTerm> <HIS:hisGloss>ha det så godt at man ikke kan ha det bedre; jf. uttrykket <quote>ha det som plommen i egget</quote> (jf. NRO <hi rend="italic">gull</hi> 2 a). Eggeplommen kalles mange steder <quote>gulen</quote> eller <quote>gula</quote> i egget.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_385" xml:id="koGe_385"/><HIS:hisTerm>Merci]</HIS:hisTerm> <HIS:hisGloss>(fr.) takk</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_386" xml:id="koGe_386"/><HIS:hisTerm>ordenens og lovlydighedens ånd]</HIS:hisTerm> <HIS:hisGloss>Manders uttrykker seg her ganske annerledes enn Paulus, jf. 2. Kor 3,17: <quote>hvor Herrens Aand er, der er Frihed</quote>. Vektlegging av lov og orden (samt kvinnelig underordning) hadde imidlertid en sterk plass i tidens kvinnesyn, jf. kommentar til <ptr type="internal" target="Geht.xml" corresp="koGe_243"/>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_387" xml:id="koGe_387"/><HIS:hisTerm>sagte]</HIS:hisTerm> <HIS:hisGloss>dempet, stille; særlig om tale (NRO <hi rend="italic">sakte</hi> A 1 a)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_388" xml:id="koGe_388"/><HIS:hisTerm>bli’]</HIS:hisTerm> <HIS:hisGloss>om bruk av kortformer av verb, jf. innledningen, under <hi rend="italic">Dramaform</hi></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_390" xml:id="koGe_390"/><HIS:hisTerm>Hvor falder du på det]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">falle på noe</hi>: få den eller den tanke, det eller det innfall (NRO <hi rend="italic">falle</hi> 4 d)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_389" xml:id="koGe_389"/><HIS:hisTerm>Hvor]</HIS:hisTerm> <HIS:hisGloss>her brukt som et måtesadverb, svarende til <hi rend="italic">hvordan, hvorledes</hi> i direkte spørsmål (NRO B II 1 a)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_391" xml:id="koGe_391"/><HIS:hisTerm>angst]</HIS:hisTerm> <HIS:hisGloss>som føler angst, (ubestemt) frykt (NRO adj.)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_392" xml:id="koGe_392"/><HIS:hisTerm>gi’]</HIS:hisTerm> <HIS:hisGloss>om bruk av kortformer av verb, jf. innledningen, under <hi rend="italic">Dramaform</hi></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_393" xml:id="koGe_393"/><HIS:hisTerm>sige du til mig]</HIS:hisTerm> <HIS:hisGloss>Vanlig høflighet innebar at man ikke kunne si <hi rend="italic">du</hi> til andre enn dem man var på fornavn med; jf. kommentar til <ptr type="internal" target="Geht.xml" corresp="koGe_201"/></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_394" xml:id="koGe_394"/><HIS:hisTerm>Hvorfor kalder du mig ikke Osvald]</HIS:hisTerm> <HIS:hisGloss>Bruk av fornavn signaliserte høy grad av intimitet. Det kunne bare forekomme mellom familie og nære venner, jf. kommentarer til <ptr type="internal" target="Geht.xml" corresp="koGe_151"/> og <ptr type="internal" target="Geht.xml" corresp="koGe_201"/>. Både overgangen fra <hi rend="italic">De</hi> (eller tiltale i 3. person) til <hi rend="italic">du</hi> og overgang til tiltale med fornavn betydde å oppheve sosial forskjell og krevde egentlig et initiativ fra den med høyest rang.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_396" xml:id="koGe_396"/><HIS:hisTerm>ha’]</HIS:hisTerm> <HIS:hisGloss>om bruk av kortformer av verb, jf. innledningen, under <hi rend="italic">Dramaform</hi></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_397" xml:id="koGe_397"/><HIS:hisTerm>embede]</HIS:hisTerm> <HIS:hisGloss>stilling i statens tjeneste hvortil det kreves utnevnelse av kongen (NRO 2)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_398" xml:id="koGe_398"/><HIS:hisTerm>var mægtig]</HIS:hisTerm> <HIS:hisGloss>hadde kraft, evne (til noe), var i stand (til) (NRO <hi rend="italic">mektig</hi> 1); jf. uttrykket <quote>være noe mektig</quote></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_399" xml:id="koGe_399"/><HIS:hisTerm>søndagsvejr]</HIS:hisTerm> <HIS:hisGloss>Beskrivelsen svarer til det karakteristiske ved impresjonismen, jf. kommentar til <ptr type="internal" target="Geht.xml" corresp="koGe_353"/>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_400" xml:id="koGe_400"/><HIS:hisTerm>bra’]</HIS:hisTerm> <HIS:hisGloss>apostrof i stedet for utelatt <hi rend="italic">v</hi> (NRO <hi rend="italic">brav</hi> 2); om bruk av kortformer, jf. innledningen, under <hi rend="italic">Dramaform</hi></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_401" xml:id="koGe_401"/><HIS:hisTerm>sige Osvald]</HIS:hisTerm> <HIS:hisGloss>Siden Regine og Osvald er halvsøsken, mener hun vel at de er så likestilte at hun kan foreslå å endre tiltaleformen dem imellom, jf. kommentar til <ptr type="internal" target="Geht.xml" corresp="koGe_394"/>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_403" xml:id="koGe_403"/><HIS:hisTerm>stå på en bar bakke]</HIS:hisTerm> <HIS:hisGloss>(plutselig) stå uten eksistensmidler (NRO I <hi rend="italic">bakke</hi> 2). Uttrykket skulle egentlig lyde <quote>på bar bakke</quote>. Regine behersker ikke idiomet og gjør med sitt tillegg av den ubestemte artikkelen uttrykket for konkret.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_404" xml:id="koGe_404"/><HIS:hisTerm>Må jeg spørge]</HIS:hisTerm> <HIS:hisGloss>kunne jeg få spørre, tør jeg spørre; brukt i beskjeden, høflig anmodning eller forespørsel; i uttrykk avhengig av verb som <hi rend="italic">be, spørre</hi> e.l. (NRO <hi rend="italic">måtte</hi> 2)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_405" xml:id="koGe_405"/><HIS:hisTerm>ha’]</HIS:hisTerm> <HIS:hisGloss>om bruk av kortformer av verb, jf. innledningen, under <hi rend="italic">Dramaform</hi></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_406" xml:id="koGe_406"/><HIS:hisTerm>konditioneret]</HIS:hisTerm> <HIS:hisGloss>(om person) som hører til en rang- eller embetsklasse; som hører til de fornemmere klasser, overklassen (foreldet, i adj. perf. part.) (NRO <hi rend="italic">kondisjonere</hi> 3)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_408" xml:id="koGe_408"/><HIS:hisTerm>skidt]</HIS:hisTerm> <HIS:hisGloss>brukt i utrop svarende til <hi rend="italic">pytt, blås, la gå</hi> (NRO <hi rend="italic">skitt</hi> 3 c b)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_407" xml:id="koGe_407"/><HIS:hisTerm>champagnevin]</HIS:hisTerm> <HIS:hisGloss>vin fra det franske landskapet Champagne, i videre betydning ‘skummende vin fra Champagne og andre distrikter’; vanligvis bare kalt <hi rend="italic">champagne</hi> (jf. ODS, med eksempler fra samtidige forfattere som H.C. Andersen, Kierkegaard, Sneedsdorff, Baggesen, Drachmann). <hi rend="italic">Champagne-vin</hi> er ifølge ODS en mer faglig betegnelse, mens NRO (<hi rend="italic">champagne</hi>) også sier at betegnelsen kan være folkelig, noe som trolig er tilfelle når Regine benytter den her.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_409" xml:id="koGe_409"/><HIS:hisTerm>asyl]</HIS:hisTerm> <HIS:hisGloss>tilfluktssted, pleieanstalt (NRO); på denne tid vanlig om f.eks. barnehjem, der man mottok foreldreløse og andre pleietrengende barn</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_410" xml:id="koGe_410"/><HIS:hisTerm>Adieu]</HIS:hisTerm> <HIS:hisGloss>(fr.) adjø</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_411" xml:id="koGe_411"/><HIS:hisTerm>rinder]</HIS:hisTerm> <HIS:hisGloss>står opp (litt.) (NRO <hi rend="italic">rinne</hi> A 2 a b)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_412" xml:id="koGe_412"/><HIS:hisTerm>sa’]</HIS:hisTerm> <HIS:hisGloss>om bruk av kortformer av verb, jf. innledningen, under <hi rend="italic">Dramaform</hi></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_413" xml:id="koGe_413"/><HIS:hisTerm>kraftfuldt]</HIS:hisTerm> <HIS:hisGloss>full av kraft; kraftig (NRO <hi rend="italic">kraftfull</hi>)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_414" xml:id="koGe_414"/><HIS:hisTerm>arvelod]</HIS:hisTerm> <HIS:hisGloss>arv; eg. den del av den samlede arv som tilfaller en (NRO <hi rend="italic">arvelodd</hi>). Samtidens legevitenskap anså syfilis som en arvelig sykdom som kunne overføres fra far til sønn (jf. innledningen, under <hi rend="italic">Bakgrunn</hi>). Man trodde at det oftest var arv fra faren som resulterte i et sykt barn. Dette ble f.eks. fremhevet av den kjente franske legen og syfilisforskeren <rs type="person" corresp="peAFou">Alfred Fournier</rs>, som ble regnet som en internasjonal autoritet på området. Fournier mente at en sykdom som i den grad gjennomtrenger organismen, må avsette virkning i form av arv: <quote>det är otänkbart, att faderns syfilis kan vara utan inverkan på befruktningsprodukten</quote> <bibl>(Fournier 1882, 36)</bibl>. Den norske syfilisforskeren <rs type="person" corresp="peCWB">Carl Wilhelm Boeck</rs> er mer usikker, men utelater ikke muligheten av at <quote>Manden i exceptionelle Tilfælde kan overføre Syphilis til Afkommet, men jeg vil ikke gjøre Undtagelsen til Regel</quote> <bibl>(Boeck 1875, 148)</bibl>. Fournier skriver om arvet syfilis at den kjennetegnes ved at <quote>den genast uppträder med konstitutionela symptom, att den icke har något initialstadium, att den med ett ord saknar just det, som är utmärkande för hvarje syfilis, förvärfvad på vanligt sätt</quote> <bibl>(1882, 31)</bibl>. Dette ville i så fall innebære at den som er smittet gjennom arv, ikke ville merke andre symptomer enn dem som slår ut i sykdommens siste stadium. Forestillingene om at sykdommen kunne nedarves gjennom flere generasjoner, var også levende: Ifølge arvehygieniske teorier trodde man at en syfilitiker fikk svakelige, syfilitiske barn som utviklet blindhet, galskap, arbeidsudyktighet osv., og at disse egenskapene kunne gå i arv gjennom flere generasjoner fordi sykdommen preget og brøt ned arvematerialet. Man regnet derfor med en stor, såkalt uskyldig gruppe som ikke selv hadde pådratt seg sykdommen. Likevel var det knyttet stor skam til lidelsen <bibl>(Koren 2003, 41)</bibl>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_415" xml:id="koGe_415"/><HIS:hisTerm>den sidder herinde]</HIS:hisTerm> <HIS:hisGloss>Osvald antyder at hans sykdom har angrepet hjernen. Dette var en kjent tilstand i hva man anså som tredje og siste stadium av syfilis, der hele organismen, men særlig sentralnervesystemet, ryggmarg og hjerne, ble påvirket. <rs type="person" corresp="peCWB">Boeck</rs> (som for øvrig bare regner med to stadier av sykdommen, det begynnende og det senere, som han kaller konstitusjonell syfilis) beskriver de relativt tidlige symptomer på såkalt konstitusjonell syfilis slik: <quote>Almindeligt Ildebefindende, Mathed, Chlorose, rheumatoide eller neuralgiske Smerter, især i Hovedet […] i enkelte Tilfælde […] meget vedholdende og voldsomme, de kunne plage den Syge gjennem Uger</quote> <bibl>(Boeck 1875, 118)</bibl>. Boeck mener at symptomer på sykdommens konstitusjonelle stadium kan være bl.a. <quote>Benaffection</quote> (lidelser i brusk- og bensystemet), <quote>tubercolo-serpiginøs Syphilide</quote>, <quote>Nyreaffection</quote> og <quote>Leveraffection</quote>. Han viser også til symptomer som <quote>Neuralgier i alle Former, chroniske Muskelbetændelser (Contrakturer) [Affectioner der] udgaa fra Corium</quote> <bibl>(1875, 122–23)</bibl>.</HIS:hisGloss>
+     
+<quote rend="proseIndent">Affectionerne af det centrale Nervesystem tilhøre som Regel den langt fremskredne constitutionelle Syphilis; apoplectiforme Anfald med paafølgende Paralyser er en altfor hyppig Følge af Syphilis […] Denne Lidelse af det centrale Nervesystem kan ogsaa optræde i en tidlig Periode af den constitutionelle Syphilis, endnu førend de tidlige Affectioner af Hud og Slimhinder har gjort sig gjeldende. Dette kan ikke undre os saameget, naar vi observere de Hovedsmerter, der ofte gaar forud for Udbruddet af den constitutionelle Syphilis, og ikke sjelden bliver saa voldsomme, at de berøver den Syge al Nattero gjennem Uger <bibl>(Boeck 1875, 135)</bibl>.</quote></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_415a" xml:id="koGe_415a"/><HIS:hisTerm>Jeg har havt et anfald]</HIS:hisTerm> <HIS:hisGloss>jf. <rs type="person" corresp="peAFou">Fournier</rs>: <quote>en sjuk, som lyckligt gått igenom ett första anfall af hjernsyfilis, dukar ofta under i en andra eller tredje attack</quote> <bibl>(1882, 110)</bibl>; jf. innledningen, under <hi rend="italic">Bakgrunn</hi></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_417" xml:id="koGe_417"/><HIS:hisTerm>forvandlet til et spædt barn]</HIS:hisTerm> <HIS:hisGloss>Når syfilis har angrepet hjernen og sentralnervesystemet, er følgene grusomme. <rs type="person" corresp="peAFou">Fournier</rs> skriver at symptomer på hjernesyfilis er <quote>epileptiskt anfall, första symptomet af hjernsyfilis, harefter inställa sig rubbningar inom den psykiska sferen […] cerebralaffektion: apoplektiforma anfall med hemiplegi, fullständig förlust af minnet och andra psykiska rubbningar m.m.</quote> <bibl>(Fournier 1882, 75, 112)</bibl>. Han sier også at <quote>egendomligt nog tyckes hjernsyfilis liksom ryggmärgssyfilis med en viss förkärlek angripa just de personer, som kunna åberopa godartade specifika antecedentia</quote> <bibl>(1882, 105–06)</bibl>, dvs. pasienter som har hatt svake sekundære symptomer. Jf. innledningen, under <hi rend="italic">Bakgrunn</hi>.</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_418" xml:id="koGe_418"/><HIS:hisTerm>drapperier]</HIS:hisTerm> <HIS:hisGloss><hi rend="italic">draperi</hi>: vevet stoff, åkle, teppe e.l. som henger (er bestemt til å henge) løst og fritt, i rike folder omkring noe eller ned fra noe; folderikt, kunstnerisk arrangert gevant (litt.) (NRO). Skrivemåten med -<hi rend="italic">pp</hi>- er ikke kjent i nordisk eller fransk, men kommer kanskje av it. <hi rend="italic">drappo</hi>.</HIS:hisGloss></item>
+
+ <item><ptr type="lemma" target="Geht.xml" corresp="koGe_419" xml:id="koGe_419"/><HIS:hisTerm>sa’]</HIS:hisTerm> <HIS:hisGloss>om bruk av kortformer av verb, jf. innledningen, under <hi rend="italic">Dramaform</hi></HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_420" xml:id="koGe_420"/><HIS:hisTerm>forføjninger at træffe]</HIS:hisTerm> <HIS:hisGloss>ting å ordne, beslutninger å ta; <hi rend="italic">forføyning</hi>: bestemmelse, forholdsregel, ordning (litt., adm.) (NRO <hi rend="italic">forføining</hi>)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_421" xml:id="koGe_421"/><HIS:hisTerm>toneløst]</HIS:hisTerm> <HIS:hisGloss>(særlig om stemme) som er uten tone, klang; klangløst (NRO <hi rend="italic">toneløs</hi> 1)</HIS:hisGloss></item>
+
+<item><ptr type="lemma" target="Geht.xml" corresp="koGe_422" xml:id="koGe_422"/><HIS:hisTerm>Dette bæres ikke]</HIS:hisTerm> <HIS:hisGloss>Uttrykket omfatter mer enn fru Alvings individuelle situasjon og innebærer at den byrden hun føler er lagt på henne, er for stor til å bæres (tåles) av noe menneske.</HIS:hisGloss></item>
+</list>
+</div>
+</div>          
+</body>
+</text>
+</TEI>

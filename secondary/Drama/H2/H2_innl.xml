@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title level="s">Henrik Ibsens skrifter, elektronisk versjon</title>
+<title level="a">Innledning til Hærmændene på Helgeland, 2. versjon</title>
+<author>ført i pennen av Asbjørn Aarseth</author>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
+<respStmt>
+<resp>Kodeteknisk støtte og utvikling</resp>
+<name>AKSIS: Avdeling for kultur, språk og informasjonsteknologi, Universitetsforskning i Bergen (Unifob AS)</name>
+</respStmt>
+<respStmt>
+<resp>Koding</resp>
+<name xml:id="AMB">Aasta Marie Bjorvand Bjørkøy</name>
+<name xml:id="EL">Erlend Lønnum</name>
+</respStmt>
+<respStmt>
+<resp>Tekstarbeid</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Erlend Lønnum</name>
+</respStmt>
+<respStmt>
+<resp>Kontroll av sitater og referanser</resp>
+<name>Erlend Lønnum</name>
+</respStmt>
+<respStmt>
+<resp>Kommentarentiteter</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Erlend Lønnum</name>
+</respStmt>
+<respStmt>
+<resp>Kodekontroll</resp>
+<name/>
+</respStmt>
+</titleStmt>
+<publicationStmt>
+<publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+<distributor xml:id="HISe">Universitetet i Oslo</distributor>
+<date when="2012" xml:id="HISe-date"/>
+<pubPlace>Oslo</pubPlace>
+</publicationStmt>
+<sourceDesc>
+<p>Dette dokumentet har ingen kilde.</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<tagsDecl>
+
+</tagsDecl>
+</encodingDesc>
+<profileDesc>
+<langUsage>
+<language ident="nob"/>
+<language ident="ger"/>
+<language ident="rus"/>
+<language ident="eng"/>
+<language ident="swe"/>
+<language ident="spa"/>
+<language ident="fre"/>
+<language ident="ita"/>
+</langUsage>
+</profileDesc>
+<revisionDesc>
+<change>
+<date>14.10.2012</date>
+<name>SBT</name><title>Gjorde manuelle endringer etter skripting til P5.</title>
+</change>
+<change>
+<date>27.02.2009</date>
+<name>AH</name><title>Oppdatering</title>
+Kodet Oversettelser i Ibsens levetid. Validert.
+</change>
+<change>
+<date>17.01.2006</date>
+<name>AMB</name><title>Opprettet xml-fil</title>
+Opprettet xml-fil med overordnet struktur og tei-header for 3k. Filen er valid.
+</change>
+</revisionDesc>
+</teiHeader>
+<text type="introduction">
+<body>
+<div type="introduction" xml:id="intro">
+<div type="background" xml:id="intro_background">
+<head rend="level2">BAKGRUNN</head>
+<p>I sine erindringer <title rend="italic">Samliv med Ibsen</title> forteller John Paulsen at det var Edvard Grieg som introduserte ham for Ibsen. Det skjedde sommeren 1876 da Grieg og Paulsen hadde overvært Wagner-forestillingene i Bayreuth, og de etter forslag fra Grieg tok toget til Gossensass for å hilse på Ibsen. Under samtalene i Gossensass kom Grieg inn på et ønske han hadde om å komponere musikk til en lyrisk opera. Ibsen nevnte da sitt skuespill <title rend="italic">Olaf Liljekrans</title>, men Grieg var ikke fristet av det, og det ble ikke gjort noen avtale. Men så skriver John Paulsen:
+<quote rend="proseIndent">Mange, mange år efter denne mindeværdige sommer i Gossensasz betrodde Grieg mig, at han endelig hadde fået sit yndlingsønske opfyldt. Ibsen vilde af <quote>Hærmændene på Helgeland</quote> lage en operatekst for ham. Grieg var henrykt. <quote>Hærmændene</quote> med sine stærke dramatiske optrin og sit klangfulde sagapræg passed jo udmærket. En tid efter fik han ganske rigtig en pakke fra Ibsen. Det var begyndelsen af den lovede tekst, de første optrin af <quote>Hærmændene</quote> sat på sirlige vers og skrevet med Ibsens elegante, concise håndskrift. Men Grieg fik bange anelser, da han begyndte at gjennemgå Ibsens manuskript. Han så snart, at digteren ikke hadde sammentrængt stoffet og fremhævet hovedmomenterne, men holdt sig til skuespillet som det forelå og kun indskrænket sig til at rime replikkerne. Og pludselig stansed det begyndte samarbeide mellem digter og komponist – og vi gik glip af det uerstattelige, en national opera fra Griegs hånd. Hvad der egentlig var årsagen, ved jeg ikke. Jeg indbilder mig, at Grieg ikke kunde bruge Ibsens arbeide, fordi dette ikke svarte til musikens fordringer og desuden var for bredt. Ét er at skrive skuespil, et andet operatekster <bibl>(Paulsen 1913, 17–18)</bibl>.</quote></p>
+<p rend="noIndent">Helt siden urpremieren 24. november 1858 på Kristiania Norske Theater hadde <title rend="italic">Hærmændene paa Helgeland</title> møtt stor velvilje blant teaterpublikum hjemme og ute. Det var det mest spilte av Ibsens stykker i hans levetid. At det romantiske sagadramaet viste seg å ha et så sterkt scenetekke, har trolig vært en viktig grunn til at Ibsen ønsket å lage en opera av dette stoffet. Da han en søndag i juli 1893 var på besøk hos sine gamle venner fra Bergens-tiden, familien Sontum, som nå bodde på Grefsen i Kristiania, kontaktet han Edvard Grieg, som av helsemessige grunner hadde lagt seg inn ved sanatoriet på Grefsen. Grieg sluttet seg til selskapet. Bolette Sontum forteller at de to berømte mennene, som ikke hadde vært sammen på noen år, hadde mye å samtale om. Blant emnene som ble berørt, var Ibsens idé om å lage en opera av <title rend="italic">Hærmændene paa Helgeland</title>. Hvor seriøst denne ideen skulle oppfattes, er det ikke lett å lese ut av Bolette Sontums observasjoner: <quote>Half serious, half jesting, they discussed the plan of Grieg’s setting <hi rend="italic">The Vikings at Helgoland</hi> to music</quote> <bibl>(Sontum 1913, 251)</bibl>. Planen er ikke nevnt av Ibsen i noe kjent brev eller i andre sammenhenger, men Grieg omtaler den i et brev til Max Abraham i C.F. Peters Musikverlag i Leipzig 19. juni 1893, skrevet fra Grefsen sanatorium:
+<quote rend="proseIndent">Gestern war Ibsen hier. Er will mir durchaus einen Operntext machen, nämlich: <quote>Eine nordische Heerfahrt</quote>, ein Stof, welcher er für ein Schauspiel benutzt hat, und für Musik allerdings ganz ausgezeichnet ist. […] Ich muss mir die Sache noch überlegen und vor Allem sehen, wie Ibsen die Sache machen wird. Er hat nämlich, wie er sagte, schon bald einen Act fertig <bibl>(Grieg 1997, 291–92)</bibl>.</quote></p>
+<p>I oversettelse:</p>
+<quote rend="proseIndent">I går var Ibsen her. Han vil absolutt lage en operatekst til meg, nemlig <title rend="italic">Hærmændene paa Helgeland</title>, et stoff som han har benyttet i et skuespill, og som er helt utmerket for musikk. […] Jeg må fortsatt tenke igjennom saken og fremfor alt se hvordan Ibsen vil gjøre det. Han er nemlig, som han sa, snart ferdig med én akt (til norsk ved HIS).</quote>
+<p rend="noIndent">Det eneste bevarte manuskriptet til en slik opera er det ufullendte NBO Ms. 8° 1935, med antatt datering 1893. Manuskriptet teller fire små sider, og innholdet tilsvarer første og deler av annen scene av skuespillet fra 1858, der Sigurd og Ørnulf møtes og forenes som venner. Mens skuespillet er i prosa, er teksten i operautkastet delvis omarbeidet til vers. Versbehandlingen vitner om at teksten ikke er gjennomarbeidet.</p>
+<p>Librettoen starter i femfotsjamber. På første side forekommer et par enderim (før/gør, nord/ord), men teksten går snart over i den urimede varianten, blankvers. Valget av versemål er noe påfallende. Ibsen satte selv spørsmålstegn ved Oehlenschlägers bruk av dette klassiske versemålet til behandlingen av norrønt sagastoff (jf. innledningen til <title rend="italic">Hærmændene paa Helgeland</title> 1858, under <hi rend="italic">Tilblivelse</hi>). Blankverset er dessuten et versemål som forbindes med dramaet snarere enn med operaen. Kanskje dette kan være noe av årsaken til at versene gradvis går over i prosa.</p>
+<p>Versifikasjonen er nokså skjødesløs allerede på første side. Den uregelmessige verslinjen <quote>Jeg for en mødig kvinde! \ Mer værd</quote> <note type="metKomm">(∪ - ∪ - ∪ - ∪ - -)</note> <bibl>(HIS 3, <ptr type="ht" target="HH2ht.xml" corresp="koHH2_ht_2"/>)</bibl> kunne enkelt blitt rettet opp ved å beholde skuespillets ordlyd <quote>mer<hi rend="italic">e</hi> værd</quote>. På andre side i operautkastet begynner prosareplikker å fortrenge versene, først i form av korte utrop: <quote>Til hjælp for gubben!</quote> <bibl>(se HIS 3, <ptr type="ht" target="HH2ht.xml" corresp="koHH2_ht_3"/>)</bibl>. Prosaen synes stedvis å opptre som kamuflerte verslinjer. Et eksempel på dette finnes på andre side, der to korte prosareplikker i følge, <quote>Dit blod vil jeg sé!</quote> og <quote>Se først dit eget</quote> <bibl>(se HIS 3, <ptr type="ht" target="HH2ht.xml" corresp="koHH2_ht_4"/>)</bibl>, står henholdsvis venstre- og høyrestilt på siden, slik verslinjedeler gjør når en verslinje er delt mellom to replikker. Prosareplikkene får ytterligere grafisk likhet med vers når tekst som ikke får plass på én linje, plasseres til høyre på siden, som i følgende eksempler:
+<quote rend="indent">
+<HIS:hisLg>
+<l>Tre hundred i sølv. Med det er din ger-</l>
+<l><seg type="indent" rend="alignRight">ning sonet.</seg></l>
+</HIS:hisLg>
+<bibl>(HIS 3, <ptr type="ht" target="HH2ht.xml" corresp="koHH2_ht_5"/>)</bibl>
+</quote>
+<quote rend="indent">
+<HIS:hisLg>
+<l>Har tjent konger i mange fremmede</l>
+<l><seg type="indent" rend="alignRight">lande.</seg></l>
+</HIS:hisLg>
+<bibl>(HIS 3, <ptr type="ht" target="HH2ht.xml" corresp="koHH2_ht_6"/>)</bibl>
+</quote>
+Selv når prosaen helt har overtatt for versene (fra midt på andre side), er tendensen til linjestil påtagelig. Den opprinnelige prosaen i skuespillet er gjort mer korthuggen i operalibrettoen, og den normale ordstillingen blir ofte snudd. Eksempler på dette har vi i denne omarbeidelsen av Ørnulfs replikk:
+<quote rend="proseIndent">For fem Vintre siden laa Sigurd og Gunnar Herse som Vikinger paa Island og havde Fredland der den Vinter tæt under min Gaard <bibl>(HIS 3, <ptr type="ht" target="HH1ht.xml" corresp="koHH1_ht_3"/>)</bibl>.</quote>
+<quote rend="indent">
+<HIS:hisLg>
+<l>Fem vintre er det siden Gunnar herse</l>
+<l>og du til Island kom.</l>
+<l>I fik mit gæstevenskab</l>
+<l>og fredlyst havn for eders skibe.</l>
+</HIS:hisLg>
+<bibl>(HIS 3, <ptr type="ht" target="HH2ht.xml" corresp="koHH2_ht_1"/>)</bibl>
+</quote></p>
+<p rend="noIndent">Prosaen ligger tett opp til vers, noe som vil gjøre den enklere å synge i en operaoppsetning. Det forblir imidlertid uklart om en videre bearbeidelse av teksten ville foregått på vers eller i prosa. Dikterens siste forsøk på å skrive en opera oppgis altså før teksten har funnet sin nye form.</p>
+<p>Om det var Griegs manglende entusiasme som fikk Ibsen til å gi opp prosjektet, er ikke kjent.</p>
+</div>
+</div>
+</body>
+</text>
+</TEI>

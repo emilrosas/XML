@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Henrik Ibsens skrifter, elektronisk versjon</title>
+                <title level="a">Tekstredegjørelse til Når vi døde vågner</title>
+                <author>ved Helene Grønlien</author>
+                <funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+                <editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
+                <respStmt>
+                    <resp>Kodeteknisk støtte og utvikling</resp>
+                    <name>AKSIS: Avdeling for kultur, språk og informasjonsteknologi, Universitetsforskning i Bergen (Unifob AS)</name></respStmt>
+                <respStmt><resp>Koding</resp>
+                    <name>Erlend Lønnum</name></respStmt>
+                <respStmt><resp>Tekstarbeid</resp>
+                    <name>Erlend Lønnum</name></respStmt>
+                <respStmt><resp>Kontroll av sitater og ordbøker</resp>
+                    <name xml:id="IK">Ingrid Korvald</name>
+                    <name>Erlend Lønnum</name></respStmt>
+                <respStmt><resp>Kontroll av littlist og referanser</resp>
+                    <name>Erlend Lønnum</name></respStmt>
+                <respStmt><resp>Kommentar-, intern- og ht-entiteter</resp>
+                    <name>Erlend Lønnum</name></respStmt>
+                <respStmt><resp>Kodekontroll</resp>
+                    <name/>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+                <distributor xml:id="HISe">Universitetet i Oslo</distributor>
+                <date when="2011" xml:id="HISe-date"/>
+                <pubPlace>Oslo</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Fila bygger på 10k_sisteversjon.xml.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <tagsDecl>
+                
+            </tagsDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="nob"/>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change>
+                <date>13.07.2012</date>
+                <name>SBT</name><title>La inn resterende lenker, gikk gjennom arbeidsnoter.</title>
+            </change>
+            <change>
+                <date>12.07.2012</date>
+                <name>EFS</name><title>La inn lenker.</title>
+            </change>
+            <change>
+                <date>22.12.11</date>
+                <name>SBT</name><title>Ferdigstilling.</title>
+            </change>
+            <change>
+                <date>12.12.11</date>
+                <name>EFS</name><title>La inn attributtverdier i div.</title>
+            </change>
+            <change>
+                <date>12.12.11</date>
+                <name>SBT</name><title>Kodet om til HISe og TEI P5.</title>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+
+<text type="introduction">
+<body>
+<div type="editorialStatement" xml:id="edState">
+<div xml:id="edState_basetext">
+<head rend="level3">valg av grunntekst</head>
+<p rend="noIndent">Grunnteksten, grunnlaget for HIS’ hovedtekst, er førstetrykket fra 1899.</p>
+</div>
+
+<div xml:id="edState_bibl"> 
+<head rend="level3">bibliografiske opplysninger</head>
+<p rend="noIndent">Ved tekstetableringen er det kollasjonert følgende eksemplarer:</p>
+<list type="numbered">
+<item n="1"><hi rend="italic">Henrik Ibsens skrifter</hi>s eksemplar 1</item>
+<item n="2"><hi rend="italic">Henrik Ibsens skrifter</hi>s eksemplar 2</item>
+<item n="3">Nasjonalbibliotekets eksemplar (80ga25094)</item>
+</list>
+
+<p rend="noIndent">Det er avdekket satsintern variasjon (endringer foretatt under trykkeprosessen i samme opplag) i teksten i de tre eksemplarene. Det er derfor kollasjonert ytterligere fem eksemplarer:</p>
+
+<list type="numbered">
+<item n="4">Nasjonalbibliotekets eksemplar (80ga25095)</item>
+<item n="5">Nasjonalbibliotekets eksemplar (08ga22782)</item>
+<item n="6">Nasjonalbibliotekets eksemplar (80ga25097)</item>
+<item n="7">Nasjonalbibliotekets eksemplar (80ga25096)</item>
+<item n="8">Nasjonalbibliotekets eksemplar (87ga45453)</item>
+</list>
+
+<p rend="noIndent">Variasjonen mellom eksemplarene finnes på åtte steder. Ark 4: På s. 49 l. 10 er <hi rend="italic">g</hi> i <quote>Jeg kender di[g]</quote> falt bort i eksemplar 4, 5 og 8, på s. 60 l. 10 er <hi rend="italic">b</hi> i rollenavnet <quote>Ru[b]ek</quote> falt bort i eksemplar 1, 2, 3, 6 og 7, og på s. 60 l. 11 er <hi rend="italic">h</hi> i <quote>[h]ende</quote> falt bort i eksemplar 4, 5 og 8. Ark 7: På s. 103 l. 5 er komma etter <quote>mig[,]</quote> falt bort i eksemplar 3 og 7, på ark 8, s. 118 l. 5 er punktum etter <quote>over vidden[.]</quote> falt bort i eksemplar 3, 4 og 5, på s. 118 l. 6 er punktum etter <quote>hende imøde[.]</quote> falt bort i eksemplar 1, 2, 3, 4 og 5, på s. 120 l. 15 er punktum etter <quote>drømmefuldte søvn</quote> falt bort i eksemplar 6 og 8, og på s. 124 l. 11 er <quote>udrbydende</quote> feilstavet for <hi rend="italic">udbrydende</hi> i eksemplar 3, 6, 7 og 8.</p>
+<p>Det opplyses om internvariasjonen i eksemplarene 1–3 i de tekstkritiske notene. Nr. 1, det mest feilfrie, er brukt som hovedeksemplar og er grunnlag for beskrivelsen i det følgende.</p>
+        
+<div xml:id="edState_bibl_binding">
+<head rend="level4">innbinding, forsatsblad og omslag.</head>
+<p rend="noIndent">Boken har tresidet gullsnitt og er bundet inn uten originalt omslagsblad. Innbindingen er et forlagsbind i gulldekorert, lysebrunt imitert skinn. Ryggen og forpermen er dekorert med ornamenter og rammer med border og har forfatternavn og tittel i gullpreg. På bakpermen står forlagets logo i blindpreg. Forsatsbladene er dobbeltblad av tykt papir med monogrammønster i gullpreg, begge limt med den ene delen til for- og bakpermen og den andre bundet inn sammen med bokblokken.</p>
+</div>
+        
+<div xml:id="edState_bibl_format">
+<head rend="level4">format og paginering.</head>
+<p rend="noIndent">Boken består av 13 ark falset i oktavformat (8 blad, 16 sider pr. ark), ca. 111 × 172 mm.<note type="footer">Målene gjelder bokens blad, bredde × høyde.</note> Arksignaturene 1–13 (uten tekst) finnes på s. [1], 17, 33, 49, 65, 81, 97, 113, 129, 145, 161, 177 og 193. På arkets tredje side er arksignaturen gjentatt (sekundasignatur) med en etterfølgende stjerne. Sekundasignaturen 4∗ på s. 51 er falt bort i eksemplar 1, 5 og 8. Det siste arket har seks blad, og bokens omfang er på 202 sider. Pagineringen er med arabiske tall, inkluderer begynnelsen på første akt s. [1] og løper fra s. 2 til 202. To upaginerte dobbeltblad foran omfatter blank s. [I], opplysninger om samtidige autoriserte oversettelser s. [II], stykkets tittel s. [III], blank s. [IV], tittelblad s. [V], navn på boktrykker s. [VI], personlisten s. [VII] og blank s. [VIII]. På side [82] og [163] begynner nye akter, og sidetall er her utelatt.</p>
+</div>
+        
+<div xml:id="edState_bibl_typo"> 
+<head rend="level4">typografi.</head>
+    <p rend="noIndent">Teksten i <title rend="italic">Når vi døde vågner</title> (1899) er satt i antikva. <!--En faksimile av tittelsiden gjengis på s. <ref targType="figure" target="illus-8">. -->Tittelbladet er satt med midtstilte majuskler, bortsett fra stykkets tittel som er satt med majuskel og minuskler. Tittelen s. [III] er midtstilt og satt i majuskel og minuskler. Personlisten er venstrestilt, i en mindre skriftgrad enn replikkene, overskriften <quote>De optrædende personer:</quote> er sentrert og satt med majuskler i en større skriftgrad enn rollenavnene, rollenavnene i listen i majuskel og kapiteler. Aktoverskrifter er satt med midtstilte majuskler, i en større grad enn replikkene. Rollenavn før replikk står midtstilt på egen linje i majuskel og kapiteler i samme grad som replikkene. Sceneanvisninger er satt i en mindre grad enn replikkene og rollelisten. Etter rollenavn og i replikker står de på midtstilt, egen linje. Ved slutten av replikker står de dels midtstilt og dels blokkjustert på egen linje. De frittstående sceneanvisningene er blokkjustert (med innrykk). Alle sceneanvisninger står i parentes. Sperring er benyttet som utheving i replikk. Rollenavn i sceneanvisninger står i samme grad som disse, i majuskel og kapiteler. Etter aktoverskrifter og ved aktslutt står enkle skillestreker, ved siste akts slutt en ornamentert strek. Sidetall er plassert i overmargen, midtstilt med en strek under.</p>
+<p>Trykkvaliteten er jevnt god, men det er forekomster av svakt trykk, skadde typer og mindre satsforskyvninger (for store mellomrom). Slike typografiske mangler er i HIS’ hovedtekst rettet stilltiende.</p>
+</div>
+        
+<div xml:id="edState_bibl_paper">
+<head rend="level4">papir og tilstand.</head>
+<p>Papiret i bokblokken er svakt gulnet. For øvrig er eksemplaret i god stand.</p>
+</div>
+</div>
+    
+<div xml:id="edState_textsources"> 
+<head rend="level3">øvrige tekstkilder</head>
+<p rend="noIndent">De øvrige tekstkildene fra Ibsens levetid består av manuskripter og trykte utgaver.</p>
+<p>Manuskriptene til <title rend="italic">Når vi døde vågner</title> omfatter et egenhendig arbeidsmanuskript med rettelser til hele stykket (NBO Ms.4° 1119b), egenhendige notater, skisser og utkast til deler av annen, tredje og fjerde akt (NBO Ms.4° 1119a) og et egenhendig trykkmanuskript (KBK Collin 262, 4°, IV.4). (For nærmere beskrivelser, se de enkelte manuskriptbeskrivelsene.) De trykte utgavene i Ibsens levetid omfatter 1. utg. 1899, 2. utg. 1899 og FU 10 1902.</p>
+<p>Det er mange større og mindre forskjeller mellom tekstkildene. Skriveprosessen gjennomgikk faser som det er vanskelig å rekonstruere fullstendig. Bibliotekets ordning av enkeltdelene NBO Ms.4° 1119a–b gjenspeiler ikke kronologien i tilblivelsesprosessen. Både ES og HU presenterer materialet etter innhold og grad av utarbeidelse, men med formodninger om genetisk sammenheng. I HIS vil inndelingen av manuskriptet følge manuskriptbeskrivelsen, som relaterer delene til hverandre. Det gis også referanse til omtalen i ES og HU.</p>
+<p>NBO Ms.4° 1119a, bl. 1 og 7 (manuskript 1) er notater med overskriften <quote>Notitser og udkast</quote> med datoen 20. februar 1899. Notatene inneholder forskjellige forarbeider som stedfesting av handlingen for stykkets tre akter, en kort karakteristikk av de to hovedkarakterene, en pennetegning av et badested, en tidlig personliste og en scenegangsskisse for første akt. Innholdet svarer i hovedtrekk til den endelige gangen i stykket, men personlisten avviker noe. Enkelte figurer som <quote>Den sladderagtige frue</quote> og <quote>Badelægen</quote> er ikke ført videre, og stykkets hovedkarakter er oppført med navneformene <quote>Rambow</quote> og <quote>Erik Stubow</quote>. NBO Ms.4° 1119a, bl. 6 (manuskript 2) består av en replikkveksling mellom Irene og Rubek, etterfulgt av skisser til spredte scener mellom Rubek og Irene i annen akt, samt en skisse til scenegangen for annen akt. Manuskript 1 og 2 ligger trolig til grunn for det sammenhengende arbeidsmanuskriptet NBO Ms.4° 1119b.</p>
+<p>Arbeidsmanuskriptet NBO Ms.4° 1119b (manuskript 3) er en fullstendig gjennomskrivning av stykket med mange rettelser. Det er sannsynlig at manuskript 3 bygger på ett eller flere tidligere, nå tapte manuskripter, mer om dette i manuskriptbeskrivelsen. Rettelsene i manuskript 3 er trolig gjort i flere omganger, til dels parallelt med utarbeidelsen av trykkmanuskriptet.</p>
+<p>Stykkets første tittel <title rend="italic">Opstandelsens dag</title> er strøket og endret til <title rend="italic">Når de døde vågner</title>, senere rettet til <title rend="italic">Når vi døde vågner</title>. På bl. [2]v står derimot den første tittelen uendret. Ekteparet Rubek får først sitt endelige rollenavn etter Irenes entré i første akt, se <hi rend="italic">Manuskriptbeskrivelse</hi> for mer om endringer av rollenavn. Fra og med scenen som begynner med Rubek og Irenes møte med Ulfhejm og Maja ved Ulfhejms jakthytte, foreligger det to versjoner av slutten, en tidlig og en omskrevet versjon; den siste ligger til grunn for trykkmanuskriptet. I korte trekk inneholder den tidligste sluttversjonen en lengre dialog mellom Maja og Rubek hvor de to forsones og enes om å oppløse ekteskapet. Ulfhejm henter frem en flaske champagne fra jakthytten, og de fire feirer bruddet med <quote>Frihedens skål</quote> før Maja og Ulfhejm går ned til dalen. Irene og Rubek fortsetter videre oppover for – som Rubek sier – <quote>[å l]eve opstandelsens dag og skabe den om til en ny lignelse, – i din lignelse, Irene</quote>. Paret forsvinner inn i tåken med kurs mot fjelltoppen som <quote>lyser […] i solopgangen</quote>. Her slutter den tidligste versjonen, med et mulig håp om en lysere fremtid for Rubek og Irene. Denne avslutningen av tredje akt er gjengitt i sin helhet i ES (3, 323) under overskriften <quote>Opstandelsens dag</quote> og vil finnes i fullstendig versjon i HISe.</p>
+<p>Den andre og endelige sluttversjonen ble ferdigskrevet 21. november 1899, dagen før Ibsen sendte trykkmanuskriptet til Jacob Hegel. I denne versjonen, som i store trekk sammenfaller med trykkmanuskriptet, er hele partier enten utelatt eller helt omarbeidet. Scenen hvor de fire møtes ved Ulfhejms jakthytte, er kortet ned, blant annet er den forsonende samtalen mellom Maja og Rubek og den påfølgende frihetsskålen fjernet. Dette bidrar til at atmosfæren mellom Rubek og Maja virker mer tilspisset.</p>
+<p>Forskjellene mellom NBO Ms.4° 1119b (manuskript 3) og trykkmanuskriptet KBK Collin 262, 4°, IV.4 (manuskript 5) kan for en del forklares ved det mellomliggende manuskriptet NBO Ms.4° 1119a, bl. 2–5 (manuskript 4). Manuskript 4 ble trolig skrevet mens Ibsen gjennomarbeidet arbeidsmanuskriptet (jf. <hi rend="italic">Manuskriptbeskrivelse</hi>). Rollenavnene er innarbeidet og gjengitt i forkortede varianter eller utelatt. Manuskriptet inneholder opptegnelser til deler av alle aktene og omfatter i hovedsak scener mellom Maja og Ulfhejm som ligger til grunn for tilsvarende steder i trykkmanuskriptet, blant annet Majas frihetsvers i slutten av annen akt (bl. 2r), hennes fortelling i tredje person til Ulfhejm om ekteskapet med Rubek (bl. 2r) og utkast til scenen hvor Ulfhejm viser Maja jakthytten for første gang (bl. 5r). Denne scenen kan være skrevet i forbindelse med utarbeidelsen av den nye og endelige versjonen av slutten i manuskript 3.</p>
+<p>I lengre partier er forskjellene mellom manuskript 3 og manuskript 5 ubetydelige hva angår strukturen. Replikkene kan ha forskjellig ordlyd, noe forskjellene mellom de to versjonene av Ulfhejms første replikk til Rubek kan tjene som eksempel på. I arbeidsmanuskriptet står det <quote>Her er nok en plebejer kommen i fint selskab</quote>; i trykkmanuskriptet er replikken endret til <quote>Her er nok en bondekøter kommen i fin-fint selskab</quote>. I tillegg er det lagt til en rekke nye sceneanvisninger i trykkmanuskriptet som ikke har konsekvenser for den overordnede strukturen i stykket. Derimot medfører enkelte anvisninger endringer på innholdsplanet. Eksempelvis har Ibsen føyd tre sceneanvisninger med ordet <quote>spotsk</quote> inn mellom replikkvekslingene til Rubek og Maja: <quote>lidt spotsk</quote> <ptr type="ht" target="NVht.xml" corresp="koNV_ht_70"/>, <quote>lér spotsk</quote> <ptr type="ht" target="NVht.xml" corresp="koNV_ht_71"/>, <quote>lér spotsk og bittert</quote> <ptr type="ht" target="NVht.xml" corresp="koNV_ht_72"/>. De tilføyde sceneanvisningene får forholdet mellom Rubek og Maja til å virke kjøligere i trykkmanuskriptet, et utviklingstrekk som bekreftes i den siste sluttversjonen som virker mindre forsonende enn den første.</p>
+<p>I brev til Gyldendalske Boghandel <HIS:hisRef target="B1890-1905ht.xml#B18991120Gyl">20. november 1899</HIS:hisRef> annonserer Ibsen at stykket er ferdig. To dager senere blir trykkmanuskriptet sendt til Hegel. Det virker sannsynlig at Ibsen påbegynte trykkmanuskriptet etter at den første sluttversjonen i arbeidsmanuskriptet var fullført 21. september, og at manuskriptet deretter ble renskrevet fortløpende.</p>
+<p>Trykkmanuskriptet KBK Collin 262, 4°, IV.4 og førstetrykket er i stor grad sammenfallende. Over halvparten av variasjonen mellom de to tekstkildene skyldes forskjell i kommatering – det er adskillig flere kommaer i førstetrykket enn i trykkmanuskriptet. Trykkmanuskriptet har også en del mindre rettelser i Ibsens hånd, samt småfeil som forlaget har rettet i førsteutgaven, for eksempel er <quote>skillelse</quote> rettet til <quote>skikkelse</quote>, <quote>frmmede</quote> til <quote>fremmede</quote>. Til gjengjeld er noen nye feil kommet til (jf. <HIS:hisRef target="edState_critical"><hi rend="italic">Tekstkritiske bemerkninger</hi></HIS:hisRef>).</p>
+<p>I brev til Ibsen 25. november takker Hegel for det mottatte manuskriptet og forteller at bokhandler Fischer i Berlin har foreslått at hans forlag settes på tittelbladet i den norsk-danske utgave og omvendt: <quote>Han mener at denne Fremgangsmaade vil have Betydning med Hensyn til dens litterære Ejendomsret</quote> <bibl>(KBK NKS 3742, 4°, III)</bibl>. Ibsen skriver til Hegel <HIS:hisRef target="B1890-1905ht.xml#B18991127JH">27. november</HIS:hisRef> at han imøtekommer <quote>Det af herr Fischer foreslåede arrangement</quote>. Slik ble det også. Den endelige utgaven bar S. Fischers navn, og omvendt hadde den tyske utgaven Gyldendalske Boghandel på tittelbladet (jf. <HIS:hisRef target="NV_innl.xml#intro_publication"><hi rend="italic">Utgivelse</hi></HIS:hisRef>).</p>
+<p>Den <HIS:hisRef target="B1890-1905ht.xml#B18991203AuLa">3. desember</HIS:hisRef> takker Ibsen August Larsen for <quote>den forbausende hurtighed, hvormed trykningen af mit nye stykke skrider fremad</quote>. Allerede 8. desember mottok Ibsen de siste korrekturarkene sammen med en veksel på 3000 kroner. <HIS:hisRef target="B1890-1905ht.xml#B18991213AuLa">Fem dager senere</HIS:hisRef> ber han August Larsen om å tilsende Einar Christiansen <quote>to hæftede exemplarer af mit nye stykke med bemærkninger om at jeg derved betragter stykket som officielt indleveret til Det kgl. Teater</quote>.</p>
+<p><title rend="italic">Når vi døde vågner</title> ble lagt ut for salg i de fire nordiske hovedstedene 19. desember 1899 i et opplag på 12 000 eksemplarer. Boken var allerede på forhånd utsolgt fra forlegger, og en ny utgave med et opplag på 2000 eksemplarer utkom allerede 22. desember (FU 10, VII).</p>
+<p>Dramaet ble utgitt av W. Heinemann i London 19. desember 1899. London-utgaven er satsidentisk med førsteutgaven, med unntak av tittelbladet. Der førsteutgaven oppgir S. Fischer som forlegger, har London-utgaven William Heinemann. På baksiden av tittelbladet er trykkeriopplysninger erstattet med opplysninger om rettigheter: <quote>Copyright 1899. / Entered at Stationers’ Hall. / and at the / Library of Congress, Washington, U.S.A. / By Paul Reynolds.</quote> Forskjellen mellom de trykte utgavene av <title rend="italic">Når vi døde vågner</title> er små og gjelder i all hovedsak tegnsetting og ortografi. Trykkfeil er rettet, og nye har kommet til, men ingen av større betydning. Den mest gjennomgående forskjellen er at FU har fjernet aksent over <hi rend="italic">e</hi> i <hi rend="italic">se</hi>.</p>
+<p>I tillegg til HIS’ hovedtekst finnes en diplomatarisk og søkbar gjengivelse samt en fotografisk faksimile av grunnteksten. De øvrige tekstkildene gjengis diplomatarisk, manuskriptene også med faksimile, med mulighet for søk og sammenligning med grunnteksten.</p>
+<p>HIS har i margen sidereferanser til grunnteksten, til den trykte utgaven av HIS og til HU.</p>
+</div>
+    
+<div xml:id="edState_critical">
+<head rend="level3">tekstkritiske bemerkninger</head>
+<p rend="noIndent">Ved etableringen av hovedteksten er også de andre tekstkildene fra Ibsens levetid blitt konsultert. Emendasjonen er foretatt med utgangspunkt i samtlige trykte utgaver, trykkmanuskriptet KBK Collin 262, 4°, IV.4 og arbeidsmanuskriptet NBO Ms.4° 1119b.</p>
+<p>Ordvalg, ortografi og grammatikk i grunnteksten er, som offisiell norsk i samtiden, i tråd med danske normer, men med tiltagende grad av fornorskning, som sees hos Ibsen fra og med <title rend="italic">Kjærlighedens Komedie</title>jf. innledningen til dette stykket, under <HIS:hisRef target="KK_innl.xml#intro_background_verse"><hi rend="italic">Versifikasjonen</hi></HIS:hisRef> og <title rend="italic">Kongs-Emnerne</title>, under <HIS:hisRef target="KE_innl.xml#intro_background_language"><hi rend="italic">Språkformen</hi></HIS:hisRef>. Ibsen følger i <title rend="italic">Når vi døde vågner</title> fortsatt anbefalingene fra det skandinaviske rettskrivningsmøtet i Stockholm i 1869 (jf. kommentar til <quote>Sprogkongressens Rettskrivning</quote> i brev til Frederik Hegel <HIS:hisRef target="B1844-1871ht.xml#B18700212FH">12. februar 1870</HIS:hisRef>). En mer utførlig gjennomgåelse av språklige trekk i <title rend="italic">Når vi døde vågner</title> finnes under <HIS:hisRef target="NV_innl.xml#intro_background_language"><hi rend="italic">Ibsens språklige utvikling</hi></HIS:hisRef>.</p>
+<p>I HIS er tegnsetting standardisert på følgende måte: Etter titler, overskrifter og rolleinnførsler i rollelister samt replikkåpner i dramateksten er eventuelle skilletegn (punktum, komma, kolon) fjernet. I sceneanvisninger først i akt og scener, i frittstående sceneanvisninger mellom replikker og i stedsbeskrivelser etter rolleliste er eventuell parentes fjernet. Disse elementene har gjennomgående fått stor forbokstav og avsluttes med punktum. Frittstående sceneanvisninger har beholdt eventuelle <quote>indre</quote> parenteser. Sceneanvisninger til slutt i replikker regnes som del av replikken dersom de er ufullstendige setninger, og som frittstående, utenfor replikken, dersom setningen er fullstendig.</p>
+<p>Sceneanvisninger inne i replikk, inkludert de som står til slutt i replikk (ikke frittstående), begynner med liten forbokstav og avsluttes uten interpunksjon. Sceneanvisninger som følger rett etter replikkinnehaverens navn, har ikke parenteser. Øvrige sceneanvisninger i replikk har parentes.</p>
+<p>Skillestreker er beholdt der de har strukturerende funksjon, for eksempel når de markerer sceneskift og sceneskiftet ikke er markert på annen måte. Skillestreker som bare har karakter av ornament, er ikke gjengitt. Grunntekstens typografiske system for øvrig er ikke forsøkt imitert i HIS.</p>
+<p>Tekstfeilene i <title rend="italic">Når vi døde vågner</title> (1899) omfatter i hovedsak mindre setterfeil av typen <hi rend="italic">aa</hi> for <hi rend="italic">å</hi> og tegnsettingsfeil. Alle HIS’ rettelser, bortsett fra de stilltiende (typografiske feil), er anført i det tekstkritiske noteapparatet. Når teksten avviker betydelig i kilder som anvendes ved rettelser, føres ikke tekst herfra i rettelsesnoten, og formuleringen <quote>teksten mangler i</quote> benyttes heller ikke. Den avvikende teksten vises derimot i sin sammenheng i den elektroniske delen av HIS. Dersom det er relevant for vår rettelse, vil tekstendringer i kilden det siteres fra, kommenteres kort i rettelsesnoten. Vakling i ortografi (f.eks. <hi rend="italic">si’e</hi>/<hi rend="italic">sige hovedet</hi>/<hi rend="italic">hodet</hi>) og interpunksjon som avspeiler tidens og Ibsens vekslende praksis, er ikke rettet i HIS.</p>
+<p>For en oversikt over samtidens språknormer og Ibsens språk vises det til redegjørelser i innledningene til <title rend="italic">Catilina</title> <HIS:hisRef target="C1_innl.xml#intro_background_language">1850</HIS:hisRef> og <HIS:hisRef target="C2_innl.xml#intro_background_language">1875</HIS:hisRef>. Det vises for øvrig til de <HIS:hisRef target="tekstkritiskeRetningslinjer.xml">tekstkritiske retningslinjene</HIS:hisRef>.</p>
+</div>
+    
+<div xml:id="edState_editions"> 
+<head rend="level3">tidligere tekstkritiske utgaver</head>
+<p rend="noIndent">I FU er <title rend="italic">Når vi døde vågner</title> trykt i bind 10, med en innledning om tilblivelsen, oversettelser, sekundærlitteratur, mottagelse, parodier og oppførelser på s. VII–XIV. Det gis ikke tekstkritiske opplysninger. I MU er <title rend="italic">Når vi døde vågner</title> trykt i bind 5. Rettelser foretatt av Johan Storm mot hans tekstgrunnlag (FU) og etter sammenligning av trykte utgaver i Ibsens levetid, er oppført i MU 5, 18; errata på s. 42. I ES er utdrag av NBO Ms.4° 1119a og b trykt i b. 3, 319–327, med opplysninger og varianter i b. 3, 507–512. ES omtaler ikke KBK Collin 262, 4°, IV.4. I SU er <title rend="italic">Når vi døde vågner</title> trykt i bind 6, tekstgrunnlaget oppgis å være annenutgaven (SU 7, 305–06), siden feil i førsteutgaven er rettet her. I HU er <title rend="italic">Når vi døde vågner</title> trykt i bind 13. Grunnteksten er førstetrykket, men tegnsettingen følger trykkmanuskriptet. I HU 13, 287–345 trykkes og redegjøres det for, dels fullstendig, dels som variantapparat, alle manuskriptkilder til <title rend="italic">Når vi døde vågner</title>. I appendiks 3 til oversettelsen av dramaet i <title rend="italic">The Oxford Ibsen</title> <bibl>(Ibsen 1960–77, b. 8, 351)</bibl> finnes en oversikt over dateringer i arbeids- og trykkmanuskript, samt en oversettelse av NBO Ms.4° 1119a.</p>
+</div>
+</div>
+</body>
+</text>
+</TEI>

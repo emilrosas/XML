@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Henrik Ibsens skrifter, elektronisk versjon</title>
+                <title level="a">Tekstredegjørelse til Bygmester Solness</title>
+                <author>ved Henninge Margrethe Solberg</author>
+                <funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+                <editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
+                <respStmt>
+                    <resp>Kodeteknisk støtte og utvikling</resp>
+                    <name>AKSIS: Avdeling for kultur, språk og informasjonsteknologi, Universitetsforskning i Bergen (Unifob AS)</name></respStmt>
+                    <respStmt><resp>Koding</resp>
+                    <name>Erlend Lønnum</name></respStmt>
+                    <respStmt><resp>Tekstarbeid</resp>
+                    <name>Erlend Lønnum</name></respStmt>
+                    <respStmt><resp>Kontroll av sitater og ordbøker</resp>
+                    <name xml:id="IK">Ingrid Korvald</name>
+                    <name>Erlend Lønnum</name></respStmt>
+                    <respStmt><resp>Kontroll av littlist og referanser</resp>
+                    <name>Erlend Lønnum</name></respStmt>
+                    <respStmt><resp>Kommentar-, intern- og ht-entiteter</resp>
+                    <name>Erlend Lønnum</name></respStmt>
+                    <respStmt><resp>Kodekontroll</resp>
+                    <name/>
+                </respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+                <distributor xml:id="HISe">Universitetet i Oslo</distributor>
+                <date when="2012" xml:id="HISe-date"/>
+                <pubPlace>Oslo</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Fila bygger på 9k_sisteversjon.xml.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <tagsDecl>
+                
+            </tagsDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="nob"/>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change>
+                <date>13.07.2012</date>
+                <name>SBT</name><title>La inn resterende lenker, gikk gjennom arbeidsnoter.</title>
+            </change>
+            <change>
+                <date>12.07.2012</date>
+                <name>EFS</name><title>La inn lenker.</title>
+            </change>
+            <change>
+                <date>20.-21.02.2012</date>
+                <name>Stine Brenna Taugbøl</name><title>Omkoding til TEI P5 og HISe</title>
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    
+<text type="introduction">
+<body>
+<div type="editorialStatement" xml:id="edState">
+
+<div xml:id="edState_basetext">
+<head rend="level3">valg av grunntekst</head>
+<p rend="noIndent">Grunnteksten, grunnlaget for HIS’ hovedtekst, er førstetrykket fra 1892.</p>
+</div>
+    
+<div xml:id="edState_bibl">
+<head rend="level3">bibliografiske opplysninger</head>
+<p rend="noIndent">Ved tekstetableringen er det kollasjonert følgende eksemplarer:</p>        
+<list type="numbered">
+<item n="1"><hi rend="italic">Henrik Ibsens skrifter</hi>s eksemplar 1</item>
+<item n="2"><hi rend="italic">Henrik Ibsens skrifter</hi>s eksemplar 2</item>
+<item n="3">Nasjonalbibliotekets eksemplar (75ga09618)</item>
+</list>
+        
+<p rend="noIndent">Det er ikke avdekket satsintern variasjon (endringer foretatt under trykkeprosessen i samme opplag) i teksten i de tre eksemplarene. Nr. 1 er brukt som hovedeksemplar og er grunnlag for beskrivelsen i det følgende.</p>
+        
+<div xml:id="edState_bibl_binding"> 
+<head rend="level4">innbinding, forsatsblad og omslag.</head>
+<p rend="noIndent">Boken er beskåret og bundet inn uten originalt omslagsblad. Innbindingen er håndverksmessig utført i grønn helshirting. Ryggen er dekorert med horisontale rette og ornamenterte border samt en dekorasjon (et blad) i gullpreg. På ryggens øvre halvdel står teksten <title rend="quotes">Ibsen / Bygmester / Solness</title>. Forsatsbladene er i lys brunt, tynt papir med blomstermønster. På bakre limte forsatsblad er det festet et klistremerke fra Otto von Schoultz’ bokbinderi i Göteborg.</p>
+<p>Ulik innbinding har ført til at rekkefølgen på tittelsidene og personlisten, som står trykt på to dobbeltblad, ikke er den samme i de tre eksemplarene som er brukt ved tekstetableringen. I eksemplar 1 og 3 er rekkefølgen den samme: blank side, side med opplysninger om samtidige oversettelser av stykket, smusstittelside, blank side, hovedtittelside, blank side, rolleliste, blank side – og deretter siden der første akt begynner. I eksemplar 2 er de to dobbeltbladene feilinnbundet, slik at rekkefølgen er: hovedtittelside, blank side, personliste, to blanke sider, tekst om oversettelser, smusstittelside, blank side.</p>
+</div>
+        
+<div xml:id="edState_bibl_format">
+<head rend="level4">format og paginering.</head>
+<p rend="noIndent">Boken består av 15 ark falset i oktavformat (8 blad, 16 sider pr. ark), ca. 111 × 172 mm.<note type="footer">Målene gjelder boksiden, bredde × høyde.</note> Det første arket består av sidene før første akt (se <HIS:hisRef target="edState_bibl_binding"><hi rend="italic">Innbinding, forsatsblad og omslag</hi></HIS:hisRef>) og har fire blad. Det mangler arksignatur og paginering. Arksignaturene 1–14 finnes på s. 1, 17, 33, 49, 65, 81, 97, 113, 129, 145, 161, 177, 193 og 209. Det siste arket har seks blad, og bokens omfang er 228 sider. Pagineringen er med arabiske tall. Den begynner ved begynnelsen av første akt s. [1] og løper fra s. 2 til 220. På sidene [85] og [163] begynner nye akter, og sidetall er her utelatt.</p>
+</div>
+        
+<div xml:id="edState_bibl_typo"> 
+<head rend="level4">typografi.</head>
+    <p rend="noIndent">Teksten i <title rend="italic">Bygmester Solness</title> (1892) er satt i antikva. <!--En faksimile av tittelsiden gjengis på s. 233 (HIS 9k) <ref targType="figure" target="illus-5">. -->Tittelen er forstørret og midtstilt. Rollelisten er venstrestilt og i en mindre skriftgrad enn replikkene. Overskriften <quote>Personerne</quote> er sentrert og i majuskler; rollenavnene er i kapiteler. Aktoverskrifter er satt med midtstilte, sperrede majuskler, i større grad enn replikkene. Rollenavn før replikk og/eller sceneanvisning står med kapiteler og midtstilt på en egen linje. Sceneanvisningene er satt i en mindre skriftgrad enn replikkene og står i parentes. Rollenavn i sceneanvisninger står i samme grad som disse, men i kapiteler. Etter tittelen på smusstittelsiden, etter stedsbeskrivelsen, etter aktoverskrifter og etter aktslutt står enkle skillestreker av varierende lengde; etter tittelen på smusstittelsiden og siste akt er skillestreken ornamentert. Sidetall er plassert i overmarg med en kort strek under.</p>
+<p>Trykkvaliteten er jevnt god. Det er et lite antall typografiske mangler og inkonsekvenser, som er rettet stilltiende i HIS’ hovedtekst.</p>
+</div>
+        
+<div xml:id="edState_bibl_paper"> 
+<head rend="level4">papir og tilstand.</head>
+<p rend="noIndent">Bindet er i god stand. Papiret er noe gulnet.</p>
+</div>
+</div>
+    
+<div xml:id="edState_textsources"> 
+<head rend="level3">øvrige tekstkilder</head>
+<p rend="noIndent">De øvrige tekstkildene fra Ibsens levetid består av manuskripter og trykte utgaver. Manuskriptene er alle egenhendige og omfatter arbeidsmanuskriptet NBO Ms.4° 1292 og trykkmanuskriptet KBK Collin 262, 4°, IV.1. (For nærmere beskrivelser, se de enkelte manuskriptbeskrivelsene.) De trykte utgavene i Ibsens levetid omfatter 1. utg. 1892, den såkalte London-utgaven samme år, FU 9 1900 og 2. utg. 1901. HIS kjenner til et ulovlig, uautorisert ettertrykk fra 1893 ved C. Rasmussens bogh., i serien <title rend="italic">Skandinavisk national-bibliothek</title>, vol. 11, nr. 153–54 (Minneapolis og Chicago). Ulovlige ettertrykksutgaver er det ikke tatt hensyn til under tekstetableringen.</p>
+<p>Diktet <HIS:hisRef target="Diktht.xml#DiDeSadDerDeTo"><title rend="quotes">De sad der, de to –</title></HIS:hisRef> er den eneste bevarte mindre opptegnelsen som kan knyttes til <title rend="italic">Bygmester Solness</title>. I manuskriptform kjenner vi bare til diktet slik det står i arbeidsmanuskriptet NBO Ms.4° 1117b til <title rend="italic">Lille Eyolf</title>, jf. manuskriptbeskrivelsen. Det ble trykt første gang i FU 4, 436, der Ibsen knytter diktet til <title rend="italic">Bygmester Solness</title> gjennom undertittelen <quote>Første forarbejde til ‹Bygmester Solness›</quote>. Det er i FU datert 16. mars 1892, altså tidligere enn NBO Ms.4° 1117b og de kjente manuskriptene til <title rend="italic">Bygmester Solness</title>. Motivet – et par hvis hus brenner ned – finnes igjen som et sentralt motiv i <title rend="italic">Bygmester Solness</title>. Diktet ble ikke med videre i den endelige utgaven av dette stykket, heller ikke i den endelige utgaven av <title rend="italic">Lille Eyolf</title>. Diktet er med blant diktene i HIS.</p>
+<p>Utgiverne av HU har imidlertid sett et annet manuskript til dette diktet. I HU 19, 59 omtales <quote>en notisbok fra Ibsen i fru Bergliot Ibsens eie, og i den står det et par notater som hører til forarbeidene for dette stykket [<title rend="italic">Bygmester Solness</title>]</quote>: på første side fra den ene enden av notisboken diktet <title rend="quotes">De sad der, de to –</title>, skrevet i blyant, og under dette et par replikker som her gjengis etter HU 19, 60:
+<quote rend="proseIndent">
+<p>Hilde: Det kunde jo lige så gerne været mit barn</p>
+<p rend="noIndent">som hendes. <hi rend="italic">(går ud med det)</hi></p>
+<p>Han: Å gud, – hun er gal!</p></quote>
+På første side fra den andre enden av boken står ifølge HU følgende notat (HU 19, 60):
+<quote rend="proseIndent">
+<p>Han kan ikke <quote>vanhellige sine erindringer</quote> fra den</p>
+<p rend="noIndent">afdøde kone. Hun var til trods for alt storslået.</p>
+<p>Så – i sin dæmoniske genialitet tar hun skylden</p>
+<p rend="noIndent">for venindens barn på sig –</p>
+<p>Går heroisk ud med det –</p>
+<p><quote>Det er <hi rend="italic">dit</hi> barn</quote>! –</p></quote>
+Som også HU bemerker, er det lite i disse linjene som gjør det mulig å knytte tekstene til <title rend="italic">Bygmester Solness</title> med sikkerhet. Navnet Hilde er en indikasjon på at opptegnelsene kan tilhøre dette stykket, men tilknytningen er for usikker til at HIS anser dem som tilhørende manuskriptmaterialet til <title rend="italic">Bygmester Solness</title>.</p>
+<p>NBO Ms.8° 1943 innholder egenhendige brevutkast og regnskap, men også et lite notat som HU med forbehold knytter til <title rend="italic">Bygmester Solness</title>, <quote>som et uttrykk for stemninger og tanker som ‹Bygmester Solness› vokste opp av</quote> (HU 19, 59). Teksten lyder: <quote>Solopgang. Transfusion af det unge dyrs blod. Luftskibet, som kan styres. Indblik i Marsbeboernes liv.</quote> HIS anser det ikke som mulig å knytte denne teksten til noe bestemt stykke – til det er innholdet for fjernt fra innholdet i noen av Ibsens dramaer. Teksten inngår derfor i utgavens avdeling med øvrige tekster (varia) sammen med opptegnelsene i HU 19, 60.</p>
+<p>NBO Ms.4° 1292 er det tidligste av de to bevarte manuskriptene til <title rend="italic">Bygmester Solness</title>. Det er en fullstendig gjennomskrivning av stykket og er en midlertidig renskrift, gjennomarbeidet med rettelser og tillegg (jf. manuskriptbeskrivelsen). Teksten ligger relativt nær den endelige utgaven av stykket. Det er med andre ord overveiende sannsynlig at Ibsen har skrevet dette på grunnlag av tidligere utkast som nå er tapt, jf. <HIS:hisRef target="BS_innl.xml#intro_creation"><hi rend="italic">Tilblivelse</hi></HIS:hisRef>. Den mest gjennomgripende forskjellen mellom teksten i Ms.4° 1292 og i den endelige utgaven av stykket dreier seg om unge Broviks fornavn: Han heter Alfred, ikke Ragnar, i hele første akt av manuskriptet (men Ragnar i rollelisten og i annen og tredje akt). For øvrig er det gjennomgående en del mindre forskjeller i formuleringene. Det er merkbart færre sceneanvisninger i Ms.4° 1292 enn i trykkmanuskriptet, og de eksisterende sceneanvisningene i Ms.4° 1292 finnes ofte i en mer utarbeidet form i den endelige utgaven av stykket. Enkelte replikker i den endelige utgaven mangler i arbeidsmanuskriptet, andre replikker er ikke tatt med videre fra dette manuskriptet. For øvrig er det et relativt høyt antall skrivefeil i Ms.4° 1292. I sceneanvisningen som innleder annen akt, er det for eksempel så mye som seks slike feil: <quote>bagvægen</quote>, <quote>sidevægen</quote> for -<hi rend="italic">væggen</hi>, <quote>almidelig</quote> for <hi rend="italic">almindelig</hi>, <quote>borden</quote> for <hi rend="italic">bordet</hi>, <quote>det</quote> for <hi rend="italic">dem</hi> og <quote>ansige</quote> for <hi rend="italic">ansigt</hi>.</p>
+<p>Trykkmanuskriptet KBK Collin 262, 4°, IV.1 og førstetrykket sammenfaller i det store og hele. Rundt en tredjedel av all variasjon mellom de to tekstkildene skyldes forskjell i kommasetting – det er adskillig flere kommaer i førstetrykket og de øvrige tekstkildene enn i trykkmanuskriptet. Av andre forskjeller kan skrivefeilene i trykkmanuskriptet nevnes, disse er rettet i førsteutgaven. For eksempel er <quote>bydsomt</quote> rettet til <quote>brydsomt</quote> (1. utg., 37), <quote>Solnes</quote> og <quote>Solnæss</quote> til <quote>Solness</quote> (1. utg., 43, 45, 75 og 219) og <quote>allrig</quote> til <quote>aldrig</quote> (1. utg., 93). Til gjengjeld er et par nye feil kommet til (jf. <HIS:hisRef target="edState_critical"><hi rend="italic">Tekstkritiske bemerkninger</hi></HIS:hisRef>). Ibsens få rettelser i trykkmanuskriptet er tatt til følge i grunnteksten.</p>
+<p>Forskjellene mellom de trykte utgavene av <title rend="italic">Bygmester Solness</title> er små og gjelder i det vesentligste tegnsetting og ortografi. Teksten i London-utgaven er satsidentisk med teksten i 1. utg., men har ny tittelside (jf. <HIS:hisRef target="BS_innl.xml#intro_publication"><hi rend="italic">Utgivelse</hi></HIS:hisRef>). FU og 2. utg. er satsidentiske med unntak av tittelsider og arksignaturer. Den eneste variansen dem imellom dreier seg om bortfalte tegn og andre mindre forskjeller i trykkvaliteten.</p>
+<p>I all hovedsak er det FU og 2. utg. som avviker fra de øvrige trykte tekstkildene. En fjerdedel av all variasjon tekstkildene imellom skyldes at FU og 2. utg. skriver ord som <quote>sé</quote> og <quote>lé</quote> med aksent, mens de øvrige kildene på noen unntak nær skriver disse ordene uten aksent. Videre har enkelte uttrykk fått en noe annen form i FU og 2. utg. enn i de øvrige tekstkildene: <quote>afbrydende</quote> i en sceneanvisning i 1. akt er blitt til <quote>afbryder</quote> i FU og 2. utg (1. utg., 39), <quote>da</quote> er i FU og 2. utg. utelatt i <quote>For engang må da vel omslaget komme</quote> (1. utg., 44), og <quote>jo</quote> er utelatt i <quote>Først så brændte det jo for Dem –</quote> (1. utg., 168).</p>
+<p>I tillegg til HIS’ hovedtekst finnes en diplomatarisk og søkbar gjengivelse samt en fotografisk faksimile av grunnteksten. De øvrige tekstkildene gjengis diplomatarisk, manuskriptene også med faksimile, med mulighet for søk og sammenligning med grunnteksten.</p>
+<p>HIS har i margen sidereferanser til grunnteksten, til den trykte utgaven av HIS og til HU.</p>
+</div>
+    
+<div xml:id="edState_critical"> 
+<head rend="level3">tekstkritiske bemerkninger</head>
+<p rend="noIndent">Ved etableringen av hovedteksten er også de andre tekstkildene fra Ibsens levetid blitt konsultert. Emendasjoner er foretatt med utgangspunkt i samtlige trykte utgaver samt trykk- og arbeidsmanuskriptene KBK Collin 262, 4°, IV.1 og NBO Ms.4° 1292.</p>
+<p>Ordvalg, ortografi og grammatikk i grunnteksten er i hovedtrekk som offisiell norsk i samtiden (men jf. <HIS:hisRef target="BS_innl.xml#intro_background_language"><hi rend="italic">Ibsens språklige utvikling</hi></HIS:hisRef> og ord- og sakkommentarer til teksten).</p>
+<p>I HIS er tegnsetting standardisert på følgende måte: Etter titler, overskrifter og rolleinnførsler i rollelister samt replikkåpner i dramateksten er eventuelle skilletegn (punktum, komma, kolon) fjernet. I sceneanvisninger først i akt og scener, i frittstående sceneanvisninger mellom replikker og i stedsbeskrivelser etter rolleliste er eventuell parentes fjernet. Disse elementene har gjennomgående fått stor forbokstav og avsluttes med punktum. Frittstående sceneanvisninger har beholdt eventuelle <quote>indre</quote> parenteser. Sceneanvisninger til slutt i replikker regnes som del av replikken dersom de er ufullstendige setninger, og som frittstående, utenfor replikken, dersom setningen er fullstendig.</p>
+<p>Sceneanvisninger inne i replikk, inkludert sceneanvisninger som står til slutt i replikk (ikke frittstående), begynner med liten forbokstav og avsluttes uten interpunksjon. Sceneanvisninger som følger rett etter replikkinnehaverens navn, har ikke parenteser. Øvrige sceneanvisninger i replikk har parentes. Grunntekstens typografiske system for øvrig er ikke forsøkt imitert i HIS.</p>
+<p>Tekstfeilene i <title rend="italic">Bygmester Solness</title> (1892) er få. Det dreier seg om to setterfeil: Trykkmanuskriptets <quote>tomt</quote> er i 1. utg. blitt til <quote>stomt</quote>, og <quote>de</quote> er blitt til <quote>De</quote>. Disse er i HIS emendert i tråd med trykkmanuskriptet. I ett tilfelle har HIS fulgt lesemåten til arbeidsmanuskriptet Ms.4° 1292 og valgt spørsmålstegn fremfor de øvrige tekstkildenes punktum i <quote>Har De set på dem?</quote>. Alle rettelser er anført i det tekstkritiske noteapparatet. Vakling i ortografi og interpunksjon som avspeiler tidens og Ibsens vekslende praksis, er ikke rettet i HIS.</p>
+<p>For en oversikt over samtidens språknormer og Ibsens språk vises det til en redegjørelse i innledningene til <title rend="italic">Catilina</title> <HIS:hisRef target="C1_innl.xml#intro_backgroud_language">1850</HIS:hisRef> og <HIS:hisRef target="C2_innl.xml#intro_background_language">1875</HIS:hisRef>. Det vises for øvrig til de <HIS:hisRef target="tekstkritiskeRetningslinjer.xml">tekstkritiske retningslinjene</HIS:hisRef>.</p>
+</div>
+    
+<div xml:id="edState_editions"> 
+<head rend="level3">tidligere tekstkritiske utgaver</head>
+<p rend="noIndent">I FU er <title rend="italic">Bygmester Solness</title> trykt i bind 9, med en innledning om tilblivelsen, oversettelser, sekundærlitteratur og oppførelser på s. [I]–VII. Det gis ikke tekstkritiske opplysninger. I MU er <title rend="italic">Bygmester Solness</title> trykt i bind 5. Bakerst i MU 5, i redegjørelsen for MUs tekst, oppgis FU som tekstgrunnlag (MU 5, [3]). Rettelser foretatt av Storm og et utvalg feil i tidligere utgaver finnes på s. 17–18. Diktet <title rend="quotes">De sad der, de to –</title> er trykt i MU 3, 151. I ES 3, [265]–71 er utdrag fra NBO Ms.4° 1292 gjengitt, med opplysninger og varianter på s. 493–97. <title rend="quotes">De sad der, de to –</title> omtales på s. 493 og er trykt sammen med andre utdrag fra NBO Ms.4° 1117b (arbeidsmanuskript til <title rend="italic">Lille Eyolf</title>) i ES 3, 307. Øvrige manuskripter nevnes ikke. I SU er <title rend="italic">Bygmester Solness</title> trykt i bind 6. Tekstgrunnlaget oppgis å være <quote>originalutgaven</quote>, det vil si førstetrykket (SU 7, 304). Et par trykkfeil skal være rettet. <title rend="quotes">De sad der, de to –</title> er trykt i SU 6, 413. I HU er <title rend="italic">Bygmester Solness</title> trykt i bind 12. Tekstgrunnlaget oppgis å være trykkmanuskriptet (HU 12, 168). I tekstkritisk apparat gjøres det rede for Ibsens egne endringer i trykkmanuskriptet samt for de tekststedene der utgiverne følger førstetrykket eller arbeidsmanuskriptet Ms.4° 1292 fremfor trykkmanuskriptet. Videre gjøres det rede for forholdet mellom Ms.4° 1292 og teksten i HU 12 samt for Ibsens egne endringer i arbeidsmanuskriptet, dels i apparat, dels som løpende tekst. Mulige forarbeider til <title rend="italic">Bygmester Solness</title> gjengis i HU 19, 59–60, jf. <HIS:hisRef target="edState_textsources"><hi rend="italic">Øvrige tekstkilder</hi></HIS:hisRef>. I appendiks 3 til oversettelsen av dramaet i <title rend="italic">The Oxford Ibsen</title> <bibl>(Ibsen 1960–77, b. 7)</bibl> beskrives manuskriptmaterialet i tråd med HU. Større avvikende tekststeder mellom Ms.4° 1292 og den endelige teksten gjengis som løpende tekst, med manuskriptendringer, oversatt til engelsk.</p>
+</div>
+</div>
+</body>
+</text>
+</TEI>

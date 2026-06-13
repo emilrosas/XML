@@ -1,0 +1,1591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title level="s">Henrik Ibsens skrifter</title>
+<title level="a">Innledning til Catilina, 1. versjon</title>
+<author>ført i pennen av Vigdis Ystad</author>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
+<respStmt>
+<resp>Koding</resp>
+<name xml:id="HIS-HB">Hilde Bøe</name>
+<name xml:id="HIS-IF">Ingrid Falkenberg</name>
+<name xml:id="HIS-SBT">Stine Brenna Taugbøl</name>
+<name xml:id="HIS-AMB">Aasta Marie Bjorvand Bjørkøy</name>
+<name xml:id="HIS-NME">Nina M Evensen</name>
+</respStmt>
+<respStmt>
+<resp>Kommentarentiteter</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+</respStmt>
+<respStmt>
+<resp>Rettelser i manuskriptbeskrivelsene</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+</respStmt>
+<respStmt>
+<resp>Implementering av kode</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+<name>Nina M Evensen</name>
+</respStmt>
+<respStmt>
+<resp>Kodekontroll</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+<name>Nina M Evensen</name>
+</respStmt>
+<respStmt>
+<resp>Tekstarbeid</resp>
+<name>Nina M Evensen</name>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+</respStmt>
+</titleStmt>
+<publicationStmt>
+<publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+<distributor xml:id="HISe">Universitetet i Oslo</distributor>
+<date when="2012" xml:id="HISe-date"/>
+<pubPlace>Oslo</pubPlace>
+</publicationStmt>
+<sourceDesc>
+<p>Denne filen har ingen kilde.</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<tagsDecl>
+<namespace name="www.tei-c.org/ns/1.0"><tagUsage gi="id-who">
+<list>
+<headLabel>castItem id=""</headLabel><headItem>castItem/speaker</headItem>
+<label>AMBIORIX</label><item>Ambiorix</item>
+<label>AURELIA</label><item>Aurelia</item>
+<label xml:id="CATILINA">CATILINA</label><item>Lucius Catilina/Catilina</item>
+<label>CETHEGUS</label><item>Cethegus</item>
+<label>COEPARIUS</label><item>Coeparius</item>
+<label xml:id="CURIUS">CURIUS</label><item>Curius</item>
+<label xml:id="FURIA">FURIA</label><item>Furia</item>
+<label>GABINIUS</label><item>Gabinius</item>
+<label>GLADIATOR</label><item>-/1ste Gladiator,2den Gladiator</item>
+<label>LENTULUS</label><item>Lentulus</item>
+<label>MANLIUS</label><item>Manlius</item>
+<label>OLDING</label><item>-/En gammel Soldat, Soldaten</item>
+<label>OLLOVICO</label><item>Ollovico</item>
+<label>STATILIUS</label><item>Statilius</item>
+<label>VESTALINDEN</label><item>-/En Vestalinde, Vestalinden</item>
+<label>AANDEN</label><item>En Aand/Aanden</item>
+</list>
+</tagUsage></namespace>
+
+</tagsDecl>
+</encodingDesc>
+<profileDesc>
+<langUsage>
+<language ident="nob"/>
+<language ident="fre"/>
+<language ident="eng"/>
+<language ident="rus"/>
+<language ident="ger"/>
+</langUsage>
+</profileDesc>
+<revisionDesc>
+    <change><date>07.09.22</date>
+        <name>NME</name><title>La inn type-attributt i text.</title>
+    </change>
+    <change><date>08.02.13</date>
+<name>SBT</name><title>Lenkekoding</title>
+</change>
+<change><date>13.09.12</date>
+<name>SBT</name><title>Omkoding til TEI P5 og HISe</title>
+</change>
+</revisionDesc>
+</teiHeader>
+<text type="introduction">
+<body>
+<div type="introduction" xml:id="intro">
+<div type="background" xml:id="intro_background">
+<head rend="level2">BAKGRUNN</head><p><quote>Siden Wergelands <title rend="italic">Venetianerne</title> udkom, har ingen af vore egentlige dramatiske Digtere beriget vor Literatur med noget dramatisk Arbeide</quote>, skrev Paul Botten-Hansen i Det Norske Studentersamfunds håndskrevne avis <title rend="italic">Samfundsbladet</title> 13. april 1850, i den første anmeldelse som ble <title rend="italic">Catilina</title> til del. Og da den unge apotekerbetjent Henrik Ibsen skrev sitt første skuespill, var norsk dramatisk diktning ganske riktig inne i en bølgedal. Brynjolf Bjarmes <title rend="italic">Catilina</title> var det første seriøse norske drama på flere år, og det eneste seriøse skuespill som utkom i Norge året 1850.<note type="footer">Bare ett annet skuespill ble trykt i Norge året 1850, nemlig stud.art., senere professor Ludvig Daaes <title rend="italic">En Langvigsaften : Farcette i 1 Act.</title> Af Eisteen Aslaksen [pseud.]. Trykt i <title rend="italic">Markedsgave for 1850</title>.</note> Henrik Anker Bjerregaard hadde utgitt <title rend="italic">Magnus Barfods Sønner</title> (1830), og Wergeland tragediene <title rend="italic">Sinclairs Død</title> (1828), <title rend="italic">Barnemordersken</title> (1835) og
+<title rend="italic">Campbellerne</title> (1837), den siste
+utkom samme år som Maurits Hansens <title rend="italic">Hakon Athelstan</title> og Andreas
+Munchs <title rend="italic">Kong Sverres Ungdom</title>.
+Tre år senere utgav Andreas Munch <title rend="italic">Donna Clara</title> (1840), deretter fulgte
+Wergelands <title rend="italic">Venetianerne</title> i 1843.
+Dette skulle bli det siste betydelige drama før
+<title rend="italic">Catilina</title>. Mellom 1843 og 1850
+ble det altså ikke utgitt norske seriøse
+skuespill av betydning.<note type="footer">For oversikt, se <HIS:hisRef target="intro_supplement_plays">Utgitte norske skuespill i perioden 1840–50</HIS:hisRef>.</note></p>
+<p>Heller ikke teatersituasjonen i Norge i tiårene
+før <title rend="italic">Catilina</title> kunne
+oppmuntre noen til å skrive seriøs
+dramatikk. De teaterstykkene som ble oppført ved
+vårt eneste institusjonsteater, Christiania Theater, i
+løpet av 1830- og 40-årene, var gjerne
+komedier, syngespill, intrigedramaer og historiske skuespill
+<bibl>(Anker 1956)</bibl>. I Ibsens gutteår mottok
+Skien teaterforestillinger av amatørselskaper og
+omreisende teaterselskaper, som i årene
+1838–43 blant annet oppførte stykker av Johan Ludvig Heiberg, Adam Oehlenschläger og Andreas Munch <bibl>(Koht 1954, b. 1, 26)</bibl>. Også Eugène Scribe, Alexandre Dumas d.e. og Henrik Hertz
+ble spilt i Skien i samme periode, men vi vet ikke om Ibsen
+så noe av dette <bibl>(Larson 1999a, 34–35)</bibl>.</p>
+<p>Det er vel grunn til å anta at de teaterimpulser den
+unge Ibsen hadde mottatt, først og fremst skrev seg
+fra tradisjonen innenfor tidens amatørteater og
+omreisende teaterselskaper, skjønt hans lesning av
+mer seriøs dramatikk kan ha supplert dette bildet.
+Hva Ibsen kan ha kjent av dramatisk diktning før han
+skrev <title rend="italic">Catilina</title>, er imidlertid
+usikkert. Men vi vet at han som gutt oppførte en
+dukketeaterforestilling han selv hadde skrevet teksten til.
+Stykket hadde tittelen <title rend="italic">Ferdinand og
+Isabella</title>, handlet om det berømte spanske kongepar fra 1400-tallet,
+og var kanskje et ridderskuespill i den franske stil som var
+videreutviklet i blant annet tysk litteratur, etter forfattere
+som Calderon og Lope de Vega <bibl>(Larson 1999a, 40)</bibl>.</p>
+<p><title rend="italic">Catilina</title>s tilblivelse og stykkets
+preg av historisk tragedie må vi derfor også
+se mot en bredere bakgrunn. Felleslitteraturen hadde mot slutten
+av 1700-tallet vært preget av norske diktere, med
+Johan Nordahl Bruns fransk-inspirerte tragedier og Johan Herman
+Wessels tragedieparodi <title rend="italic">Kierlighed uden
+Strømper</title> (1772) som fremstående
+eksempler. Mot slutten av 1700-tallet oppstod en
+førromantisk <quote>nordisk renessanse</quote>, der dikterne vendte seg bort fra klassiske og
+antikke motivkretser og valgte stoff fra den nasjonale fortiden
+som emne. Saxos <title rend="italic">Den danske
+krønike</title> (i oversettelse av Sejer
+Schousbølle, 1752) ble en viktig kilde for mange
+<bibl>(E. Steen 1976, 10)</bibl>. Tallrike utgaver av dette
+verket forelå også i form av Anders
+Sørensen Vedels oversettelse (opprinnelig fra 1575).
+Inspirasjonen fra fransk klassisisme holdt ikke lenge stand og
+ble snart avløst av Johannes Ewalds
+førromantiske tragedier og borgerlige dramaer. Ewald
+brukte stoff fra Saxo i dramaene <title rend="italic">Rolf
+Krage</title> (1770) og <title rend="italic">Balders
+Død</title> (1775). Hans hegemoni ble fra begynnelsen
+av 1800-tallet avløst av Adam
+Oehlenschlägers, og begge kom til å inspirere
+en rekke etterfølgere.</p>
+<p>Den fremste skuespillforfatter innenfor den dansk-norske
+felleslitteraturen de første tiårene av
+1800-tallet var Adam Oehlenschläger, som fikk stor
+innflytelse med sine romantiske tragedier. Størst
+utbredelse og påvirkningskraft fikk <title rend="italic">Hakon Jarl</title> (originaltittel 1807: <title rend="italic">Hakon Jarl : Tragødie i 5 Handlinger</title>, senere <title rend="italic">Hakon Jarl hin Rige</title>), som fremstiller kampen om kongsverdighet mellom Hakon Jarl og Olaf
+Tryggvesøn. Ifølge kritikeren J.L. Heiberg var dette <quote>den fuldkomneste af Digterens Tragedier</quote> <bibl>(Heiberg 1861–62, b. 3, 172)</bibl>, og den ble
+et forbilde for mange senere dramatikere.
+Oehlenschläger valgte gjerne nordiske emner for sine
+historiske tragedier. Motivene kunne være mytologiske
+(<title rend="italic">Baldur hin Gode</title> 1807,
+<title rend="italic">Palnatoke</title> 1809, <title rend="italic">Stærkodder</title> 1812), inspirert
+av norrøn litteratur og middelalderdiktning (<title rend="italic">Axel og Valborg</title> 1810, <title rend="italic">Hagbarth og Signe</title> 1815, <title rend="italic">Fostbrødrene</title> 1817, <title rend="italic">Væringerne i Miklagard</title>
+1827, <title rend="italic">Kiartan og Gudrun</title> 1848)
+og nasjonalhistoriske emner (<title rend="italic">Dronning
+Margareta</title> 1834, <title rend="italic">Olaf den
+Hellige</title> 1838, <title rend="italic">Knud den
+Store</title> 1839). I noen ganske få tilfeller
+skrev han om emner fra verdenshistorien, som i <title rend="italic">Karl den Store</title> (1829) og <title rend="italic">Sokrates</title> (1836). Oehlenschlägers
+nasjonale emnevalg harmonerer med en almen tendens
+også i vårt eget land; i perioden
+1830–79 var gjennomsnittlig en fjerdedel av all
+nyskreven norsk dramatikk nasjonalhistorisk <bibl>(E. Steen 1976, 12)</bibl>.</p>
+<p>Men Oehlenschläger var ikke periodens eneste dramatiker.
+En annen var Carsten Hauch, som i perioden 1846–51 var
+litteraturprofessor i Kiel. Han utgav i 1830- og
+40-årene flere tragedier (bl.a. <title rend="italic">Gregorius den syvende</title> og <title rend="italic">Don Juan</title>). De fleste av hans
+skuespill hadde historiske, gjerne nasjonale emner, for eksempel <title rend="italic">Svend Grathe</title> (1841). Noen umiddelbare forbilder for en tragedie med emne fra romersk
+historie fantes med andre ord ikke i den dansk-norske
+felleslitteraturen i tiårene forut for <title rend="italic">Catilina</title>.</p>
+<p>Også europeiske dramatikere var i første
+halvdel av 1800-tallet velkjente i det dansk-norske
+litterære miljø og ved teatrene. En rekke
+skuespill fantes i oversettelse, noe som sier mye om deres
+utbredelse. Shakespeare var kjent både gjennom tyske
+og danske oversettelser. Den viktigste kilden kan ha
+vært Peter Foersom, som 1807–18 utgav elleve
+av Shakespeares tragedier og historiske dramaer i dansk
+oversettelse, medregnet <title rend="italic">Macbeth</title> som var oversatt til dansk etter Schillers tyske versjon. Foersoms serie ble supplert av åtte nye skuespill oversatt av P.F. Wulff 1818–25. I tillegg
+oversatte Adam Oehlenschläger <title rend="italic">A
+Midsummer Night’s Dream</title> (<title rend="italic">En Skiærsommernats
+Drøm</title>, 1816), og Simon Meisling og A.E. Boye
+ytterligere fire av komediene for første gang til
+dansk. En revidert utgave av Foersom og Wulffs oversettelser kom
+ut i København 1845–50, supplert med en
+rekke av komediene, slik at det totale antall Shakespeare-stykker
+på dansk ved dette tidspunkt utgjorde 24 skuespill
+<bibl>(Smidt 2004, 10)</bibl>.</p>
+<p>Også mange av Schillers dramaer var tilgjengelige i
+dansk språkdrakt: <title rend="italic">Røverne</title> forelå i en
+tidlig oversettelse av Matthias Rahbek i 1801, og Knud Lyhne
+Rahbek utgav blant annet <title rend="italic">Vilhelm
+Tell</title> 1805, <title rend="italic">Maria Stuart</title>
+1812, <title rend="italic">Johanna d’Arc</title>,
+<title rend="italic">Orleans Mø</title> 1813
+og <title rend="italic">Wallenstein</title> 1816. <title rend="italic">Don Carlos</title> ble utgitt i oversettelse
+både i Kristiania og København:
+først av nordmannen Johan Storm Munch (<title rend="italic">Don Karlos</title>, 1812), og senere av en
+ukjent dansk oversetter i 1830. Voltaires skuespill ser ikke ut
+til å ha oppnådd samme popularitet blant
+oversetterne, men tragediene <title rend="italic">Zaïre</title>, <title rend="italic">Merope</title> og <title rend="italic">Alzire</title> ble oversatt av H.v. Buchwald og
+utgitt i København i 1832.</p>
+<p>Sine første skoleår (1833–35)
+tilbragte Ibsen i Borgerskolen i Skien, en betalingsskole for
+borgerskapets barn <bibl>(Roksund 1998, 125)</bibl>. Etter Knud
+Ibsens økonomiske ruin (1835–40) kjenner vi
+intet konkret om Henriks skolegang, men han kan ha
+gått i skole hos klokker Christen Lund, som
+også underviste barna til kammerherre Severin
+Løvenskiold på det nærliggende
+Fossum gods. Det er også mulig at Henrik i denne
+perioden var elev ved Fossum Jernverks skole, der
+funksjonærenes barn gikk <bibl>(Roksund 1998,
+128–29)</bibl>. Da kan han ha hatt kontakt med
+Løvenskiold-barna og fått adgang til å lese eller høre om bøker fra kammerherrens rikholdige bibliotek.
+Denne boksamlingen inneholdt rundt 1844 samlede utgaver av
+Shakespeare og Schiller, A.W. Schlegel og Lessing, Iffland og
+Tieck, samt franske forfattere som Molière og Racine
+<bibl>(Larson 1999b)</bibl>.</p>
+<p>Hvilke bøker familien Ibsen eide, vet vi på
+det nærmeste intet om, men det er grunn til
+å tro at i alle fall Schiller har vært
+representert i familiens boksamling. I det eldste bevarte brev
+fra Ibsen, datert <HIS:hisRef target="B1844-1871ht.xml#B18440520PL">20. mai 1844</HIS:hisRef> og stilet til barndomsvennen Poul
+Lieungh i Skien, ber han om at Poul må
+sørge for å returnere en bok Pouls bror
+Hedevall har lånt, til Ibsens foreldre. Ibsen omtaler
+boken som <title rend="italic">Vilhelm Tell</title>, og vi kan
+derfor anta at det dreier seg om Schillers drama <title rend="italic">Wilhelm Tell</title> i dansk oversettelse ved
+K.L. Rahbek 1805. En av Ibsens venner i gutteårene i
+Skien var den senere prost Boye Ording, sønn av
+Jørgen Flood Ording, som var skipsfører og
+bankbokholder, og dessuten eide et leiebibliotek og bestyrte et
+leseselskap <bibl>(Mosfjeld 1949, 119)</bibl>. Også
+her kunne han ha lånt bøker. Dessuten drev
+Gjerpen Sogneselskab utlån av bøker, og
+eide blant annet Ludvig Holbergs skrifter i sitt bibliotek
+<bibl>(Mosfjeld 1949, 122)</bibl>.</p>
+<p>I leseåret 1841–42 var Ibsen elev ved en
+privatskole ledet av de teologiske kandidater W.F. Stockfleth og
+Johan Hansen. Sannsynligvis har lærebøkene
+her vært de samme som i den lærde skole
+<bibl>(Roksund 1998, 127)</bibl>. I 1842 var Ibsen tilbake
+som elev i øverste klasse ved Borgerskolen, og i
+1842–43 atter ved Stockfleth og Hansens privatskole.
+Her leste han latin, fransk og tysk. Pensum i tidens
+lærde skole var preget av at det fungerte som
+forberedelse til <hi rend="italic">examen artium</hi>, som i
+perioden 1813–83 ble avlagt som adgangseksamen ved
+universitetet.<note type="footer">Jf. <HIS:hisRef target="intro_supplement_classic">Pensum i klassisk litteratur ved examen artium</HIS:hisRef>.</note>
+</p>
+<p>I sine Grimstad-år skal Ibsen ha lest
+<quote>mærkværdig meget, utrolig meget i
+Betragtning af de for Literatur lidet
+tilgjængelige Forhold, hvori han levede</quote>,
+skriver vennen fra disse år, <bibl>Christopher Due
+(1909, 39)</bibl>. Da Ibsen ankom til Grimstad i 1843, hadde han
+med seg en kasse full av bøker – men vi vet
+ikke hvilke <bibl>(Eitrem 1940, 24)</bibl>. I tillegg til de
+bøkene han selv eide, kan Ibsen i disse
+årene også ha lånt
+bøker både privat og ved Grimstad
+Læseselskab. Dette selskapet var stiftet i 1835 og
+skal ha hatt et godt utvalg av fag- og
+skjønnlitteratur, særlig av utenlandske
+forfattere i oversettelse <bibl>(Eitrem 1940, 44)</bibl>.
+Både apoteker Jens Arup Reimann og Niels Peter Nielsen
+(far til Ibsens arbeidsgiver, apoteker Lars Nielsen) var
+medlemmer i leseselskapet. En av familien Nielsens omgangsvenner
+var den skotskfødte Georgiana Crawfurd, som var kjent
+for sin store boksamling. Hun skal ha eid både
+Kierkegaard, Wergeland og Oehlenschläger <bibl>(Ebbell
+1966, 82)</bibl>. Det er vel ikke usannsynlig at hun med sin
+bakgrunn også har eid skuespill av Shakespeare. Den
+bokelskende dame og den unge apotekerbetjent skal ha blitt gode
+venner <bibl>(Larson 1999a, 56)</bibl>.</p>
+<p>Christopher L. Due kan fortelle at Ibsen og vennene <quote>studerede
+ivrig […]
+Øhlenschlägers [sic] Tragedier</quote>, og
+nevner også Kierkegaards <title rend="italic">Enten – Eller</title> og Mathilde Fibigers brevroman <title rend="italic">Clara Raphael : tolv Breve</title> som verk de var opptatt av.<note type="footer">Dues opplysning om Fibigers roman <title rend="italic">Clara Raphael : tolv Breve</title> utgitt av J.L. Heiberg må bygge på en feilerindring; boken kom ikke ut før i 1851.</note> Den Don
+Juan-beslektede kierkegaardske forføreren i <title rend="italic">Enten – Eller</title> kan ha inspirert visse sider
+ved Ibsens Catilina-skikkelse.</p>
+<p><quote>Blandt de Forfattere, han med Forkjærlighed
+havde studeret, var Voltaire</quote>, skriver <bibl>Due
+(1909, 38–40)</bibl>. Men om Ibsen hadde lest
+Voltaires tragedie <title rend="italic">Rome
+sauvée : ou Catilina</title> fra 1749, kjenner vi ikke til.</p>
+<p>Under Ibsens Grimstad-år ble nabobyer som Arendal og
+Kristiansand jevnlig gjestet av omreisende teaterselskaper, og i
+Grimstad ble det spilt amatørteater. Her kan Ibsen ha
+sett komedier, intrigestykker og danske vaudeviller.
+Amatørteaterforeningen i Grimstad, der apoteker
+Reimann var medlem, oppførte både Holbergs
+<title rend="italic">Den Stundesløse</title> og
+Pierre August Caron de Beaumarchais’ <title rend="italic">Figaros Bryllup</title>, skuespill av August
+von Kotzebue og vaudeviller av Johan Ludvig og Johanne Luise Heiberg <bibl>(Eitrem 1940, 45; Larson 1999a, 81)</bibl>. Repertoaret ved de omreisende teaterselskapene bestod i disse
+årene stort sett av forfattere som Eugène
+Scribe, Kotzebue, Johan Ludvig og Johanne Luise Heiberg, Jens Christian Hostrup, Thomas Overskou og Henrik Hertz, mens den tyngre litterære kanon (forfattere som Goethe, Schiller og
+Shakespeare) var fraværende på repertoaret
+<bibl>(Ansteinsson 1968)</bibl>. At Ibsen kan ha kjent
+Hostrups rykende ferske syngespill <title rend="italic">Gjenboerne</title> fra 1847, fremgår av
+at han under sine seneste Grimstad-år skal ha skrevet
+satiriske dikt til melodier fra dette syngestykket <bibl>(Due
+1909, 30)</bibl>. Det samme skuespillet inneholder
+for øvrig en satirisk fremstilling av Søren
+Kierkegaards filosofi, lagt i munnen på en student ved
+navn Søren Torp.</p>
+<p>En av de ivrige amatørskuespillere i Grimstad var
+Henning Junghans Thue, som hadde studert i Kristiania sammen med
+brødrene Søren Christian Monrad (Ibsens
+manuduktør til examen artium) og den senere
+filosofiprofessor Marcus Jacob Monrad, begge fra Skien. Thue
+studerte klassisk mytologi og arkeologi ved
+Københavns universitet <bibl>(Thue 1853, 8)</bibl>.
+Han var i årene 1844–48 rektor ved Arendals
+middelskole og realskole, og ble senere (fra 1848 til sin
+død i 1851) universitetslektor i klassisk filologi
+ved universitetet i Kristiania. Under studieårene i
+København hadde han opponert ex auditorio ved
+Søren Kierkegaards doktordisputas. 1846 utgav Thue
+<title rend="italic">Læsebog i Modersmaalet for
+Norske og Danske, tilligemed en Exempelsamling af den
+svenske Literatur og med æsthetiske og
+literaturhistoriske Oplysninger</title>. Da Ibsen omtrent
+fra 1848 av begynte målrettede forberedelser til
+examen artium <bibl>(jf. Bull 1928a, 29)</bibl>, kan han ha
+benyttet denne leseboken som forberedelseslitteratur. Thues
+lesebok inneholder blant annet en
+<quote>æsthetisk-retorisk</quote> avdeling, der
+<quote>Dramatisk Poesie</quote> er representert ved
+underavdelingene <quote>Sørgespil</quote>,
+<quote>Lystspil</quote>, <quote>Egentlig Drama</quote>,
+<quote>Syngespil</quote> og <quote>Vaudeville</quote>. Under
+<quote>Sørgespil</quote> inkluderer Thue utdrag fra
+tre historiske tragedier: Oehlenschlägers <title rend="italic">Hakon Jarl</title>, O.J. Samsøes
+<title rend="italic">Dyveke : Kristian den Andens
+Elskede</title> og Bernhard von Beskows <title rend="italic">Gustav Adolf i
+Tyskland</title>. Henrik Hertz
+representerer <quote>Egentlig Drama</quote> med <title rend="italic">Den blinde Pige</title> (et utdrag fra <title rend="italic">Kong Renés Datter</title>).</p>
+
+<div xml:id="intro_background_dramaform">
+<head rend="level3">dramaform</head>
+<p>Konflikten i <title rend="italic">Catilina</title> bygger
+på <quote>Kamp mellem Kjærlighed og Pligt,
+– den Første seirer</quote>, som det
+heter i det bevarte manuskriptet <bibl>(<HIS:hisRef target="C14936_NBO.xml">NBO Ms.4° 936</HIS:hisRef>; Ibsen 2000)</bibl>. Catilina vakler
+mellom kjærligheten til hustruen Aurelia og sin
+lidenskap for vestalinnen Furia, hver for seg
+følelser knyttet til eros og pasjon, og på
+den annen side et kall til å rense republikken Roma
+for korrupsjon og forfall. Denne konflikten mellom
+kjærlighet og plikt er beslektet med klassisk
+tragediestruktur. Stykket bygges opp med en rekke sceneskifter
+som kan ha forbilder såvel hos Shakespeare som
+Schiller, og som også har paralleller hos for eksempel Oehlenschläger. Halvdan Koht har med rette pekt på at sluttscenen i <title rend="italic">Catilina</title> er beslektet med det siste
+møtet mellom Hakon Jarl og Tora i
+Oehlenschlägers <title rend="italic">Hakon Jarl</title>, og minner også om at Catilina, i likhet
+med Hakon Jarl, blir stukket ihjel med sitt eget
+våpen <bibl>(Koht 1954, b. 1, 41)</bibl>.</p>
+<p>Bakgrunnen for skuespillets konflikt er en fortidig,
+hemmelighetsfull hendelse som leder til et dramatisk hevnmotiv
+med preg av uunngåelig skjebne eller nemesis. Catilina
+har forført Furias søster og er slik blitt
+indirekte årsak til hennes selvmord. Det er dette
+dødsfall Furia krever hevnet, noe Catilina
+påtar seg, uten å kjenne den fulle
+sammenhengen. Først gradvis blir det klart for ham at
+han selv er den forfører som skal straffes. En slik
+opprulling av fortidige gåter som utløser
+dramatiske nåtidshendelser, kan Ibsen ha kjent fra
+Maurits Hansens fortellinger, der dette er et
+gjennomgående særtrekk. Motivet ble mye
+benyttet i romantikkens diktning. Christen Collin var kanskje
+den første som påpekte denne mulige
+sammenhengen mellom Maurits Hansens diktning og <title rend="italic">Catilina</title>, samtidig som han understreket
+den retrospektive teknikkens sammenheng såvel med
+romantikken generelt som med den eldre tragediediktning, for eksempel i Sofokles’ <title rend="italic">Oedipus Rex</title> og Shakespeares <title rend="italic">Hamlet</title>
+<bibl>(Collin 1906)</bibl>.</p>
+<p>Når Ibsens første skuespill er formet som en
+tragedie, knytter han altså an til en hederskronet
+tradisjon innenfor europeisk dramatikk. Tragediediktningen under
+første del av 1800-tallet stod i sterk gjeld til
+impulser fra Shakespeare. I sitt berømte forord til
+dramaet <title rend="italic">Cromwell</title> (1827) hadde
+Victor Hugo karakterisert Shakespeare som teaterets gud, og hans
+skuespill som et høydepunkt i moderne (dvs. ikke
+klassisk) diktning. Hugo ser den moderne diktnings kombinasjon
+av det sublime og det groteske, det komiske og det tragiske, det
+sjelelige og det dyriske, som veien til å skildre de
+dypeste drag av det sant menneskelige. På denne
+måten kan de store tragediediktere nærme seg
+naturens almene lover og skape sannhet og skjønnhet,
+skriver Hugo. Han ser dramaet som den fremste genre for
+fremstilling av slike dypere naturlover, og mener at
+dramatikerne bør strebe etter å fremstille
+menneskene som de komplekse vesener de er, nettopp i
+øyeblikk da deres særegne karakter viser
+flest mulig av sine fasetter.</p>
+<p>Catilinas sammensatte vesen stemmer godt overens med slike
+idealer. Men samtidig er han fremstilt med grunnlag i eldre
+dramatradisjoner. H.J. Thue karakteriserer i sin lesebok fra
+1846 tragediegenren i pakt med klarere klassiske forbilder, som
+diktning om en konflikt mellom <hi rend="italic">vilje</hi> og
+<hi rend="italic">skjebne</hi> (<quote>styrende
+Nødvendighed</quote>,
+<quote>Verdensstyrelse</quote>): <quote>de enkelte Momenter af
+den dramatiske Handling [viser] sig som
+fremkaldte ved de handlende Personers af deres Karakter
+bestemte Villie</quote>, samtidig som <quote>en
+høiere Styrelse fører dem til en med
+sine Planer stemmende Udgang; det er Kampen mellem den
+menneskelige Villies ensidige Tendentser eller Retninger og
+den evig styrende Nødvendighed, der her skal anskueliggjøres</quote>
+<bibl>(Thue 1846, 233)</bibl>. Ifølge Thue
+fremstiller sørgespillet eller tragedien <quote>en
+over det Almindelige hævet Karakters Kamp med den
+evige Verdensstyrelse for at realisere en Ide, der ikke
+stemmer med denne Verdensstyrelses Planer</quote>
+<bibl>(Thue 1846, 233)</bibl>. I den antikke tragedie tar dette
+form som heltens kamp med <quote>en ubøjelig
+Skjæbne</quote>, i den nyere kristelige tragedie
+går tragediehelten til grunne fordi han trer i veien
+for et guddommelig forsyn: <quote rend="proseIndent">Han kan her ikke saaledes som
+i den antikke Tragedie lide aldeles uskyldig, idet
+nødvendigvis en vildfarende Retning af hans
+Villie maa være Grunden til hans
+Optræden mod Forsynets Raadslagninger. Men ved den
+Kraft, hvormed han hævder sin Frihed lige til det
+Sidste og heller gaar tilgrunde end opgiver den,
+vækker han vor Beundring og Deltagelse, og hans
+Skjæbne bliver tragisk <bibl>(Thue 1846, 234).</bibl></quote></p>
+<p>Thues fremstilling av den moderne tragedie, med vekt på
+dens kompliserende moment av <hi rend="italic">skyld</hi>, kan
+bygge på impulser fra Søren Kierkegaards
+drøfting av forholdet mellom den antikke og den
+moderne (dvs. nyere) tragedie, slik dette var utformet i
+Kierkegaards avhandling <quote>Det antike Tragiskes Reflex i det
+moderne Tragiske</quote> i <title rend="italic">Enten – Eller</title> (1842). I den antikke
+tragedie var karakterene sekundære i forhold til
+handlingen, individene hvilte i substansielle bestemmelser som
+stat, familie og skjebne, og deres rolle i forhold til handling
+og konflikt ble bestemt ut fra det. I motsetning til dette ser
+Kierkegaard situasjon og karakter som det fremherskende i den
+moderne tragedie. Den moderne tragedieperson reflekterer seg
+(subjektivt) ut av ethvert forhold til stat, slekt og skjebne,
+og av og til også ut av sitt eget foregående
+liv, slik at <quote>Helten staaer og falder aldeles paa sine
+egne Gjerninger</quote>
+<bibl>(Kierkegaard 1997, b. 2, 143)</bibl>. Kierkegaard ser i
+samsvar med dette ulike former for <hi rend="italic">skyld</hi>
+i den antikke og den moderne tragedie. Den antikke skyld
+bestemmes ut fra personenes forhold til slekt, stat og skjebne,
+den moderne skyld er et rent subjektivt fenomen. Mens den
+antikke tragiske motsetning ligger i en mellomting mellom
+<quote>Handlen</quote> og <quote>Liden</quote>
+<bibl>(Kierkegaard 1997, b. 2, 143)</bibl>, følger det av
+den moderne reflekterte subjektivitet at skylden blir et <hi rend="italic">etisk</hi> problem. Dersom individet er uskyldig,
+oppheves den tragiske interesse; er individet imidlertid
+absolutt skyldig, <quote>saa interesserer han os ikke mere tragisk</quote>
+<bibl>(Kierkegaard 1997, b. 2, 144)</bibl>. For at et moderne
+skuespill skal være tragisk, kreves derfor noe som kan
+erstatte de overindividuelle instanser i den antikke tragedie. I
+Kierkegaards fremstilling av den <hi rend="italic">moderne</hi>
+Antigone er dette overindividuelle aspekt en dyp hemmelighet,
+knyttet til den kjærlighet hun føler for
+sin far.</p>
+<p>Catilina kan vi se som en bekreftelse av Kierkegaards tanker om
+den moderne tragediediktnings subjektive skyld, idet Catilina
+blir gjort subjektivt ansvarlig for sitt overgrep mot Furias
+søster. Men samtidig kan fremstillingen av
+hovedpersonen sidestilles med den antikke tragedies mer
+substansielle bestemmelse, idet Catilinas skjebne også
+er knyttet intimt sammen med tilstandene i Roma i hans samtid.</p>
+<p>På samme tid som Kierkegaard skrev sin avhandling om
+den moderne tragediediktning, hadde også
+Oehlenschläger fornyet sitt forfatterskap. Det skjedde
+med sørgespillet <title rend="italic">Dina</title>
+(1842), der et <quote>vanlig</quote> menneske, Corfitz Ulfelds
+elskerinne Dina, er hovedperson. <title rend="italic">Dina</title> ble sterkt rost av tidens
+litterære smaksdommer, forfatteren og teatersjefen
+J.L. Heiberg. I artikkelen <title rend="quotes">Oehlenschlägers Dina</title> (1842)
+ser han stykket i forhold til Oehlenschlägers tidligere
+tragedier, og understreker at det <quote>er fornemmelig <hi rend="italic">Characteertegningen</hi>, dette den tragiske
+Digtnings Hoved-Element, hvori her den nye Behandling viser sig</quote>
+<bibl>(Heiberg 1861–62, b. 3, 371–72)</bibl>.
+Det nye fremstår ifølge Heiberg
+særlig i form av karakterens <hi rend="italic">utvikling</hi>, samtidig med at replikkene rommer
+noe usagt <quote>som just derved virker stærkere</quote>
+<bibl>(Heiberg 1861–62, b. 3, 372)</bibl>. Heiberg
+mener (i likhet med Kierkegaard) at det psykologiske
+nå blir viktigere enn stykkets fabel eller handling.
+Han peker på at det var Shakespeare som la grunnen til
+en slik moderne karaktertegning, samtidig som han beholdt det
+antikke dramas patos i replikkene. Forfattere som Schiller,
+Oehlenschläger og Goethe videreførte hver
+på sitt vis elementer fra Shakespeares karaktertegning
+og replikkføring, sier Heiberg, men det er i det
+franske drama han finner at den moderne, sterkt
+individualiserende karaktertegning har slått klarest
+igjennom. I særlig grad mener han at dette preger
+Victor Hugos dramatikk.</p>
+<p>I den senere artikkelen <title rend="quotes">Det nyere Dramas
+Opgave</title> (1843) viderefører og presiserer
+Heiberg disse synsmåtene ved å hevde at det
+moderne dramas fremste mål ikke er å skildre
+det individuelle liv, men den <hi rend="italic">idé</hi> som oppfyller hovedpersonen.
+<quote>Den idealistiske Fremgang fordrer, at Charactererne
+nu skulle sees i deres Afhængighed af Ideen, og at
+følgelig denne skal indtage det
+Overherredømme, som inden Shakspeares Tid var
+indrømmet Fabelen</quote>
+<bibl>(Heiberg 1861–62, b. 5, 347)</bibl>. Det store
+hos Shakespeare, heter det her, er at han <quote>seer alle
+Enkeltheder i Historiens Lys, og lader dens
+ubøielige Nemesis holde Dommedag over alle Charactererne</quote>
+<bibl>(Heiberg 1861–62, b. 5, 350)</bibl>. Av dette
+utleder Heiberg en oppfatning i slekt med hegelsk filosofi,
+nemlig at forholdet mellom historisk ramme og karaktertegning er
+uoppløselig: Historien er tidens levende og
+uforgjengelige ånd og gjenspeiler seg i de
+menneskelige karakterer og den menneskelige handling
+<bibl>(Heiberg 1861–62, b. 5, 351)</bibl>.</p>
+<p>Selv om Ibsen overfor sin biograf Herman Jæger
+påstod at han bare kjente Shakespeare av navn den gang
+han skrev <title rend="italic">Catilina</title>, mener
+Jæger at Ibsen må ha kjent Shakespeares
+romerske tragedier, især siste akt av <title rend="italic">Julius Caesar</title>
+<bibl>(Jæger 1888, 45)</bibl>. I dette stykket
+forfekter Brutus republikanske idealer, som Ibsen delte (Due 1909, 42), mens
+Cassius uttrykker en lignende forakt for romersk usselhet som Catilina gjør i sin innledende monolog, samtidig som Sullas gjengangeropptreden i <title rend="italic">Catilina</title>s tredje akt kan ha sitt forbilde
+i <title rend="italic">Julius Caesar</title> <bibl>(Koht 1954, b. 1, 42; Smidt 2004, 17)</bibl>. Også andre innslag hos Shakespeare kan ha inspirert Ibsen – Hamlets øyeblikkelige ed
+om å hevne før han får vite hvem
+morderen er, kan ha vært inspirasjonskilde for Catilinas raske
+løfte om hevn til Furia i dramaets
+første akt.</p>
+<p>At Ibsen også må ha hatt andre kilder til
+sitt drama, fremgår av de klare paralleller mellom
+Furia-skikkelsen i <title rend="italic">Catilina</title> og
+<title rend="quotes">Vestalinden</title> i diktet med samme
+tittel (1838) av den danske forfatter Frederik
+Paludan-Müller. Her skildres hvordan Vesta-prestinnen
+Fulvia blir levende begravet: <quote rend="indent">
+<HIS:hisLg>
+<l>Der sluttes Fulvia, den unge Qvinde,</l>
+<l>Bestemt til Gravens rige Offer, inde;</l>
+<l>Der bæres Vestalinden til sin Død</l>
+<l>Fordi sit Løfte og sin Eed hun brød,</l>
+<l>Mens hist paa Torvet, som til Templet støder,</l>
+<l>Nu hendes Elsker – nu Marcellus bløder.</l>
+</HIS:hisLg>
+<bibl>(Paludan-Müller 1836–38, b. 2, 205)</bibl></quote>
+I sitt underjordiske gravkammer er Fulvia
+dømt til en langsom død: <quote rend="indent">
+<HIS:hisLg>
+<l>Da griber Raseriets stærke Haand</l>
+<l>Med sine Kæmpekræfter hennes Aand:</l>
+<l>[…]</l>
+<l>Og Furien fordobler hendes Skræk.</l>
+<l>Stærkt imod Væggens Steen hun
+Ho’det støder,</l>
+<l>Saa Pandens marmorhvide Bue bløder,</l>
+<l>Og gjennem vilde Skrig hun laaner Ord</l>
+<l>Til Eumenidernes det skjulte Chor. –</l>
+<l>Saa raser hun til hendes Kræfter svinde,</l>
+<l>[…]</l>
+<l>Som død paa Leiet hun tilbage faldt.</l>
+</HIS:hisLg>
+<bibl>(Paludan-Müller 1836–38, b. 2, 226–27)</bibl></quote>
+Navnet Fulvia ble benyttet av Ibsen i deler av det
+bevarte utkastet til stykket <bibl>(<HIS:hisRef target="C14936_NBO.xml">NBO Ms.4° 936</HIS:hisRef>; Ibsen
+2000)</bibl>, men i senere deler av manuskriptet og i
+førstetrykket er det endret til Furia, som hos
+Paludan-Müller opptrer som en personifikasjon av
+Fulvias opprør og angst.</p>
+<p>Også versifikasjonen (og tildels rimsystemet) i store
+deler av Ibsens tekst stemmer overens med
+Paludan-Müllers dikt. Men samtidens europeiske
+versdrama har like sannsynlig vært hans forbilde.
+<title rend="italic">Catilina</title>s komposisjon som
+versdrama er tilstrebet klassisk. Den handlende kraft er uttrykt
+gjennom blankverset, som behersker dialogen, mot slutningen
+avløst av scener med trokeiske langvers. Noen steder
+avbrytes denne dynamikken av mer lyriske (her rimede) partier
+samt av en enkelt korsang (drikkevisen) i moderne
+versemål. Slik svarer <title rend="italic">Catilina</title> i sine grunntrekk til den
+romantiske versjon av det antikke drama.</p>
+<p>Formelt benytter Ibsens debutdrama seg for det meste av urimede
+femfotsjamber, dvs. blankvers. I det engelske <hi rend="italic">blank verse</hi> veksler ti- og
+elleve-stavelsesvers fullstendig fritt. Det engelske blankvers
+slo igjennom i tysk dramatikk i 1770-årene, men fikk i
+Danmark-Norge sin dramatiske debut med Oehlenschlägers
+sørgespill <title rend="italic">Hakon Jarl</title> (1807), som etablerer formen som det store, moderne
+tragiske vers. Oehlenschlägers blankvers er mer
+beslektet med Schillers enn med Shakespeares. Mens den engelske
+dikters blankvers er mettet med metaforer og sammenligninger som
+kan ligge så tett at de hemmer handlingen, er
+Schillers billedbruk av mer generell og oratorisk karakter og
+hans blankvers mer argumentative, preget av ordstillingsfigurer
+og gjentagelser, som i dette eksemplet fra frihetsdramaet <title rend="italic">Wilhelm Tell</title> (IV.ii.): <quote rend="indent">
+<HIS:hisLg>
+<l>Der Adel steigt von seinen alten Burgen</l>
+<l>Und schwört den Städten seinen Bürgereid,</l>
+<l>Im <hi rend="italic">Üchtland</hi> schon, im <hi rend="italic">Thurgau</hi> hats begonnen,</l>
+<l>Die edle <hi rend="italic">Bern</hi> erhebt ihr herrschend Haupt,</l>
+<l><hi rend="italic">Freiburg</hi> ist eine sichre Burg der Freien,</l>
+<l>Die rege <hi rend="italic">Zürich</hi> waffnet ihre Zünfte</l>
+<l>Zum kriegerischen Heer – es bricht die Macht</l>
+<l>Der Könige sich an ihren ewgen
+Wällen –</l>
+<l>[…]</l>
+<l>Die Fürsten seh ich und die edeln Herrn</l>
+<l>In Harnischen herangezogen kommen,</l>
+<l>Ein harmlos Volk von Hirten zu bekriegen.</l>
+<l>Auf Tod und Leben wird gekämpft, und herrlich</l>
+<l>Wird mancher Paß durch blutige Entscheidung.</l>
+<l>Der Landmann stürzt sich mit der nackten Brust,</l>
+<l>Ein freies Opfer, in die Schar der Lanzen,</l>
+<l>Er bricht sie, und des Adels Blüte fällt,</l>
+<l>Es hebt die Freiheit siegend ihre Fahne.</l>
+<l>[…]</l>
+<l>Drum haltet fest zusammen – fest und ewig –</l>
+<l>Kein Ort der Freiheit sei dem andern fremd –</l>
+<l>Hochwachten stellet aus auf euren Bergen,</l>
+<l>Daß sich der Bund zum Bunde rasch versammle –</l>
+<l>Seid einig – einig – einig –</l>
+</HIS:hisLg>
+<bibl>(Schiller 1980, 87–88)</bibl></quote>
+Når Catilina taler om sine planer, er det i
+den schillerske oratoriske stil <ptr type="ht" target="C1ht.xml" corresp="koC1_ht_59"/>: <quote rend="indent">
+<HIS:hisLg>
+<l>See, Venner! endnu findes Romeraanden,</l>
+<l>end er dens sidste Gnist ei ganske slukket!</l>
+<l>Ha! pustes skal den op til lyse Flammer,</l>
+<l>saa klart, saa høit, som aldrig
+før den steg;</l>
+<l>see, altfor længe laa et Trældomsmørke</l>
+<l>saa sort som Natten over Roma spredt!</l>
+<l>Og dette Rige, om end stolt og mægtigt</l>
+<l>det synes, – vakler alt, og synke vil. –</l>
+<l>Thi maa en kraftig Haand til Roret gribe, –</l>
+<l>– men, Venner! renses, renses maa her først,</l>
+<l>tillive maa det gamle Roma kaldes,</l>
+<l>tilintetgjøres al den Usselhed,</l>
+<l>her findes, og som snarlig kvæle vil</l>
+<l>den allersidste Rest af Frihedssindet. –</l>
+<l>– See, Frihed! Frihed er det, jeg vil skabe,</l>
+<l>saa reen, som eengang i den svundne Tid</l>
+<l>den blomstred’ her, – jeg kalde vil tilbage</l>
+<l>den Tid, da hver en Romer med sit Liv</l>
+<l>med Glæde kjøbte
+Fædrelandets Hæder,</l>
+<l>og offred’ Alt, – at
+værne om dets Glands! –</l>
+</HIS:hisLg>
+</quote>
+Det var en gammel skikk å pryde blankverset
+med tilfeldig inntredende rim. Ibsen bruker dem på to
+måter: mest til karakteristikk av personenes
+følelser, et par ganger også til markering
+av sceneslutning.</p>
+<p>Av de klassiske versemålene er det den fleksible
+femfotsjamben (blankverset) som ligger nærmest
+dagligtalen; derfor brukes den gjerne som basisvers i
+versdramaer. Versemålet har en normal rytmisk bygning,
+som er <hi rend="italic">dipodisk</hi>, dvs. med fri veksling
+av metriske hoved- og biaksenter (betegnet med <hi rend="italic">acutus</hi> og <hi rend="italic">gravis</hi>,
+´ og `): <quote>jeg fø`ler
+Kráft og Mód til nòget bédre</quote> <ptr type="ht" target="C1ht.xml" corresp="koC1_ht_57"/>. Monopodisk rytme unngås.</p>
+<p>Femfotsjambens lengde muliggjør en variert og naturlig
+replikkdeling (antilabe). I folkeverset, som har fire trykk, vil
+antilaben stort sett falle i symmetriske rekker på 2 +
+2 metriske betoninger, mens femfotsjamben har flere
+variasjonsmuligheter, som her med henholdsvis 2 + 3 og 3 + 2
+betoninger <ptr type="ht" target="C1ht.xml" corresp="koC1_ht_58"/>: <quote rend="indent">
+<HIS:hisLg>
+<HIS:hisSp who="CATILINA">
+<HIS:spOpener>
+<speaker>Catilina</speaker>
+<HIS:hisStage>urolig</HIS:hisStage>
+</HIS:spOpener>
+<l part="I">Du kjender ham?</l>
+</HIS:hisSp>
+<HIS:hisSp who="FURIA">
+<HIS:spOpener>
+<speaker>Furia</speaker>
+</HIS:spOpener>
+<l part="F">– – Jeg saae ham
+aldrig der –</l>
+<l>jeg vidste Intet, før det var for seent!</l>
+<l part="I">Nu kjender jeg hans Navn – –</l>
+</HIS:hisSp>
+<HIS:hisSp who="CATILINA">
+<HIS:spOpener>
+<speaker>Catilina</speaker>
+</HIS:spOpener>
+<l part="F">– – Saa nævn
+det da!</l>
+</HIS:hisSp>
+</HIS:hisLg>
+</quote>
+Bindingsstilen, som i <title rend="italic">Catilina</title> dominerer fremfor linjestilen,
+bidrar også til å bringe femfotsjamben
+nærmere prosaen, og dermed til dagligtalen <ptr type="ht" target="C1ht.xml" corresp="koC1_ht_33"/>: <quote rend="indent">
+<HIS:hisLg>
+<HIS:hisSp who="CATILINA">
+<HIS:spOpener>
+<speaker>Catilina</speaker>
+</HIS:spOpener>
+<l>Nu vel! hvad Enden bli’er veed Guderne</l>
+<l>alene, – maaskee det min Skjæbne er</l>
+<l>at knuses paa min Bane, førend jeg</l>
+<l>har Maalet naaet; – nu, lad saa det være!</l>
+<l>– Men Dig, min Curius, der alt som Dreng</l>
+<l>jeg elsked’, Dig vil jeg ei drage ind</l>
+<l>i Farens Malstrøm, – lov mig,
+bliv tilbage</l>
+<l>i Roma her, til Alting er forbi – –</l>
+</HIS:hisSp>
+</HIS:hisLg>
+</quote>
+Omvendte ordstillinger som <quote>Maalet naaet</quote>
+ovenfor er vi så vant til at vi knapt merker dem. Det
+er poetisk-retorisk stil, som oftest begrunnet i metrisk tvang.
+I det anførte sitatet ville vanlig ordstilling ha
+vært mulig.</p>
+<p>Både de tallrike replikkdelingene, undertiden med
+aposiopeser (<hi rend="italic">fortielser</hi> i form av
+avbrutte setninger eller utsagn), og den fremadstrebende
+bindingsstilen gir samtidig dialogen et deklamatorisk preg. I
+den artifisielle, <hi rend="italic">retoriske</hi> stil
+overskrider meningen gjerne versets metriske grenser i stadige
+versbindinger. I <hi rend="italic">naiv</hi> folkelig stil er
+tendensen derimot gjennomgående parallellitet mellom
+meningshelheter og vers (linjestil). Versfugen faller sammen med
+de syntaktiske innsnittene. Det deklamatoriske forsterkes av en
+rekke gjentagelsesfigurer, som epanalepser (ett og samme ord
+gjentas med korte mellomrom, for eksempel ved begynnelsen av
+på hverandre følgende setninger, for eksempel
+<quote>See, Frihed! Frihed er det, jeg vil skabe</quote>).</p>
+<p>Et alment anerkjent variasjonmiddel i femfotsjamben (ved siden av
+bindingsstilen og antilaben), særlig på
+steder som skal ha en viss deklamatorisk vekt, er korjamben
+(<note type="metKomm">- ∪ ∪ -</note>). I verset <ptr type="ht" target="C1ht.xml" corresp="koC1_ht_22"/> <quote>Vaagn, Catilina! Vaagn, og vord en Mand! – –</quote> er den ekspressive korjambe en
+nærliggende mulighet (<note type="metKomm">- ∪ ∪ - ∪ - ∪ - ∪ -</note>). Korjamben kan imidlertid dempes ved i stedet å bruke trykkskifte, dvs. at man erstatter stavelsens metriske aksent
+med en trykkløs høytone: <quote><note type="metKomm">↑</note>Vaagn, Catilina! Vaagn, og vord en Mand! – –</quote> (<note type="metKomm">∪ - ∪ - ∪ - ∪ - ∪ -</note>). Trykkskifte sikrer en rolig deklamasjon som
+ikke bryter med metret. Korjamben er teoretisk sett den eneste
+mulighet for trestavelser (trisyllabler) i det ellers jambiske
+versemål, men med enkelte tradisjonelle unntagelser
+som går tilbake til Shakespeares liberale bruk av
+blankverset. Noen få steder i <title rend="italic">Catilina</title> finnes det mulighet for <hi rend="italic">forskjøvet nummerskifte</hi>,
+affektiv korjambe inne i verslinjen <ptr type="ht" target="C1ht.xml" corresp="koC1_ht_28"/>:
+<quote>dit Flammeblik, vildt som en Hævngudindes</quote>
+(<note type="metKomm">∪ - ∪ -
+- ∪ ∪ - ∪
+- ∪ vs. ∪ - ∪
+- ∪ - ∪ -
+∪ - ∪</note>).</p>
+<p>I <title rend="italic">Catilina</title> finnes også en
+god del uregelmessigheter som må betegnes som rene
+avvik fra versemålet. Formviljen går ikke i
+retning av en glatt, harmonisk versbygning, men mer mot en
+ekspressiv. Av og til er rytmen ubehjelpelig, og det finnes
+tallrike eksempler på ufullstendig utfylt metrum,
+for eksempel ved mangel på opptakt eller ved
+over-/undertallige vers. Det er også noen
+forekomster av substitusjon (flere trykksvake stavelser etter hverandre) og reduksjon (manglende trykksvake stavelser).</p>
+<p>Kadensforhold og rimstruktur følger ikke noe fast
+mønster. I begynnelsen av første akt veksles det
+regelmessig mellom monosyllabisk (<note type="metKomm">-</note>) og bisyllabisk (<note type="metKomm">- ∪</note>) kadens. Versene
+er urimede. Rimede partier forekommer noen steder, som regel med
+kryssrim med vekslende monosyllabisk/bisyllabisk kadens.
+I enkelte avsnitt gjennomføres parrim. De
+øvrige versemålene som benyttes i dramaet,
+er alle rimede.</p>
+<p>Blankversene skifter til trokeiske, parrimede langrekker
+på et par avgjørende steder. I tredje akt
+betror Catilina sin <quote>Ængstelse</quote>. Det er
+de tusen planer som forvirrer og opprører hans sinn,
+noe rimene bidrar til å understreke <ptr type="ht" target="C1ht.xml" corresp="koC1_ht_21"/>: <quote rend="indent">
+<HIS:hisLg>
+<l>Om jeg slumred’ eller vaaged, veed jeg ikke selv,</l>
+<l>tusind’ Tanker, tusind’ Planer
+krydsede i min Sjæl, –</l>
+<l>see, da vorder meer og mere dunkelt Alting brat,</l>
+<l>og sin brede Vinge sænker i min Barm en Nat.</l>
+</HIS:hisLg>
+</quote>
+Ikke mindre påfallende er det at vi her har
+å gjøre med en form som er temmelig sjelden
+i eldre verstradisjon, men som får en gjenkomst i det
+19. århundres politiske frihetspoesi, for eksempel Carsten
+Hauchs revolusjonære dikt <title rend="quotes">Hvorfor
+svulmer Weichselfloden</title>.</p>
+<p>Drikkevisen i annen akt utgjør også en avvikelse fra basisverset. Visen
+tilhører ikke noe kjent versemål, men
+formen kan være påvirket fra ulike hold. Et
+umiddelbart forelegg er kanskje <title rend="quotes">Champagnearien</title> fra Mozarts opera <title rend="italic">Don Giovanni</title>, som gjennom N.C.L.
+Abrahams hadde funnet veien til den dansk-norske scene. Strofen
+er også metrisk enslydende med diktet <title rend="quotes">Rings Drapa</title> i Esaias
+Tegnérs <title rend="italic">Frithiofs Saga</title> (1825).
+Med B.H. Crusells melodi fikk strofen en omfattende utbredelse i
+det nordiske sangfellesskap. Carl Ploug brukte den i 1842 til
+sin fellesnordiske sang <title rend="quotes">Længe var
+Nordens herlige Stamme</title>. Operaarien er med
+andre ord forvandlet til <hi rend="italic">oldnordiske</hi>
+totrykksvers, som siden ble brukt i rikelig omfang av Grundtvig,
+Ingemann, H.P. Holst, Mads Hansen og mange andre (om
+eddavers og syngespill: jf. <bibl>Fafner 1989–2000, b.
+2:2, 142–44</bibl>).</p>
+<p>Fafner viser til at de trisyllabiske kortversene henter sin
+begeistrings- og henføringsetos fra opera og
+syngespill (f.eks. Mozarts <title rend="italic">Così fan tutte</title>). Herfra får
+de snart innpass i dramaer og syngespill av Goethe (<title rend="italic">Götz von Berlichingen</title>) og
+Oehlenschläger, og i Paludan-Müllers dikt
+<bibl>(Fafner 1989–2000, b. 2:1, 260–64)</bibl>. Trisyllabiske kortvers behandlet emner som <hi rend="italic">amor militans</hi> (den kjempende amor),
+cupidoer og alver, men også forventning, natur- og
+jaktglede og dødsmelankoli. Ibsens drikkevise kan
+eventuelt ha røtter tilbake til barokke
+syngespillarier, og viser kanskje formelle reminisenser fra
+Goethe, Paludan-Müller og Oehlenschläger, jf.
+likheten med Oehlenschlägers <title rend="quotes">Flugten af Klosteret</title>: <quote rend="indent">
+<HIS:hisLg>
+<l>Os Amor tilsmiler,</l>
+<l>Nu smiler os Vaaren,</l>
+<l>Og Sukket og Taaren</l>
+<l>Med Skyen bortiler</l>
+</HIS:hisLg>
+<bibl>(Fafner 1989–2000, b. 2:1, 262)</bibl>
+</quote>
+Innholdsmessig er drikkevisen i <title rend="italic">Catilina</title> også beslektet med
+andre kjente viser som hyller Bacchus, vinens og
+fruktbarhetens gud. Vi kan nevne drikkevisen <title rend="quotes">Bache bene venies</title> som befinner seg i
+sangsyklusen <title rend="italic">Carmina burana</title>, en
+samling verdslig latinsk lyrikk fra 1100- og 1200-tallet fra
+Bayern (<quote>Beuren</quote>), som for første gang
+ble utgitt i 1847 av J.A. Schmeller. Det er teoretisk mulig at
+Ibsen har kjent til denne utgivelsen, men mer sannsynlig har han
+truffet Bacchus-hyllende viser gjennom danske og norske
+visebøker eller tyske <title rend="italic">Kommersbücher</title>.</p>
+<p>I samlingen <title rend="italic">Studenterviser i dansk, islandsk,
+latinsk og græsk Maal</title> (1819) finnes enstemmige
+melodier til elleve av sangene. Samlingen inneholder hovedsakelig drikkeviser og sanger om studenten, for eksempel den
+latinske vinhyllende <title rend="quotes">Mihi est propositum in
+taberna mori / vinum sit appositum morientis
+ori</title>. Denne og flere andre studenter- og drikkeviser har
+fått plass i <title rend="italic">Visebog for norske
+Selskabskredse indeholdende 550 Sange</title> (1851).</p>
+<p>En av de mest kjente tyske Kommerslieder som ble tatt opp i
+norske selskaps- og studenterkretser, går i
+3/4-takt: <quote rend="indent">
+<HIS:hisLg>
+<l>Ça, ça, geschmauset,</l>
+<l>lasst uns nicht rappelköpfisch sein!</l>
+<l>Wer nicht mithauset,</l>
+<l>der bleib’ daheim!</l>
+<l>Edite, bibite</l>
+<l>collegiales,</l>
+<l>per multa saecula</l>
+<l>pocula nulla!</l>
+</HIS:hisLg>
+<bibl>(<title rend="italic">Deutsches Kommersbuch</title> 1896, 98)</bibl>
+</quote>
+Teksten stammer visstnok fra det 18.
+århundre. Melodien er ifølge Reiserts
+<title rend="italic">Deutsches Kommersbuch</title> hentet fra <bibl>A. Methfessels <title rend="italic">Kommersbuch</title> (1818)</bibl>.
+Ifølge Lorentz Dietrichson hører denne
+visen til blant det tyske galgenhumoristiske visestoffet (hvor
+Bacchus og Gambrinus spilte hovedrollen) som var så
+populært blant norske studenter i første
+halvdel av 1800-tallet, og som ble omplantet hos oss i flere
+viser, blant annet Christian August Heyerdahls <title rend="quotes">Saasnart jeg er indskreven blandt
+Pallas’ Rytteri</title>
+<bibl>(Dietrichson 1896–1917, b. 1, 241)</bibl>.</p>
+<p>En annen vise som kan ha vært mulig melodiforelegg for
+Ibsens drikkevise, er den tyske Kommerslied <title rend="quotes">Brüder, lagert euch im
+Kreise</title>. Ifølge <bibl><title rend="italic">Schauenburgs Allgemeines deutsches Commersbuch</title> (ca. 1895, nr. 129)</bibl> er melodien til denne såkalte <quote>Trinklied im Freien</quote> en folketone som trolig
+stammer fra andre halvpart av 1700-tallet. Sangen går
+i 3/4-takt, og første strofe lyder slik:
+<quote rend="indent">
+<HIS:hisLg>
+<l>Brüder, lagert</l>
+<l>euch im Kreise,</l>
+<l>trinkt nach alter</l>
+<l>Väter Weise,</l>
+<l>leert die Gläser,</l>
+<l>schwenkt die Hüte</l>
+<l>auf der goldnen</l>
+<l>Freiheit Wohl.</l>
+</HIS:hisLg>
+</quote>
+Også teksten i H.P. Holsts vise til samme
+melodi (1832), <title rend="quotes">Her i muntre Venners
+Klynge</title>, kan ha visse fellestrekk med den tyske <title rend="quotes">Brüder, lagert euch im Kreise</title>.</p>
+<p>Denne melodien (i variert form), sammen med Holsts tekst, har
+vært kjent og brukt i Norge. Den står på
+trykk i <bibl>
+<title rend="italic">Sangsamling for norske
+Selskabskredse</title> (1839–42, 189)</bibl> som ble utgitt heftevis etter mange års iherdig
+innsamlingsarbeid foretatt av studenter i regi av Det Norske
+Studentersamfund. Lorentz Dietrichson påstår
+at i Norge var dette <quote>den første med Noder
+forsynede Sangsamling</quote>
+<bibl>(Dietrichson 1896–1917, b. 1, 241)</bibl>.</p>
+<p>Det er lite trolig at Ibsen var totalt ukjent med den
+dansk-norske drikkevise- og selskapssangtradisjonen. Det er i
+alle fall mulig å synge drikkevisen fra annen akt av
+<title rend="italic">Catilina</title> til <title rend="quotes">Ça, ça
+geschmauset</title>-melodien. Også den tyske <title rend="quotes">Brüder, lagert euch im
+Kreise</title>, eventuelt med den dansk-norske variant slik den
+står i <title rend="italic">Sangsamling for norske
+Selskabskredse</title>, kan ha vært Ibsens assosiasjonsgrunnlag.</p>
+<p>Men Ibsens Bacchus-visetekst har likevel intet metrisk forelegg i
+de ulike latinske drikke- og studentervisene som var kjent i
+hans samtid. Derimot kan for eksempel metret brukt i
+soldaterkoret eller i åndekoret i <title rend="italic">Faust</title> ha vært
+nærværende i Ibsens bevissthet. Soldatene
+synger om <quote rend="indent">
+<HIS:hisLg>
+<l>Burgen mit hohen</l>
+<l>Mauern und Zinnen,</l>
+<l>Mädchen mit stolzen</l>
+<l>Höhnenden Sinnen</l>
+<l>Möcht’ ich gewinnen!</l>
+</HIS:hisLg>
+<bibl>(Goethe 1999, 50–51)</bibl>
+</quote>
+I oversettelse: <quote rend="indent">
+<HIS:hisLg>
+<l>Borge med høie</l>
+<l>Mure og Tinder</l>
+<l>Piger med stolte,</l>
+<l>Glødende Kinder</l>
+<l>Vi overvinder!</l>
+</HIS:hisLg>
+<bibl>(Goethe 1847, 48–49)</bibl>
+</quote>
+</p>
+</div>
+
+<div xml:id="intro_background_language">
+<head rend="level3">språket i catilina</head>
+<p>Da <title rend="italic">Catilina</title> ble utgitt i 1850, var
+offisielt norsk skriftspråk i hovedtrekkene likt
+dansk. Ibsen følger denne normen i første
+del av sitt forfatterskap. Men i begge land var det
+språkfolk og skjønnlitterære
+forfattere som i større eller mindre grad avvek fra
+offisielle regler ved å gå lenger enn disse
+tillot, når det gjaldt å tilpasse
+ortografien til sin egen uttale eller til uttalemåter
+som var vanlige i samtiden. Dette gjelder også i noen
+grad Ibsen.</p>
+<p>Blant samtidens språkbøker i Norge var
+Maurits Hansens trolig den best kjente og mest autoritative.
+Hans <title rend="italic">Practisk Veiledning i
+Modersmaalet</title> (1825) kom i <title rend="quotes">Andet
+forbedrede Oplag</title> i 1831, og hans <title rend="italic">Norsk Grammatik</title> (1822) kom i <title rend="quotes">Femte omarbeidede Oplag</title> i 1837. Den
+største ordbok i samtiden, <title rend="italic">Dansk Ordbog udgiven under Videnskabernes
+Selskabs Bestyrelse</title> (1793–1905), var i
+1848 kommet til slutten av S (T–U kom i 1863).
+Samtidens eneste større ordbok med fullstendig
+alfabet var Chr. Molbech: <title rend="italic">Dansk
+Ordbog</title> (1833, utvidet utg. 1859). Der Molbech kommer til
+kort, finnes ofte relevante opplysninger i <title rend="italic">Ordbog over det danske sprog</title> (ODS
+1918–56). Når det gjelder fremmedord, der
+både Molbech og ODS er forholdsvis sparsomme, var
+Ludvig Meyers danske <title rend="italic">Fremmedordbog</title> utkommet i 2. utgave i
+1844. Om Ibsen kjente disse bøkene i
+1849–50, er uvisst.</p>
+<p>Den offisielle ortografien var preget av detaljer som gjengivelse
+av <hi rend="italic">i-</hi>lyden med <hi rend="italic">j</hi>
+og <hi rend="italic">j-</hi>lyden med <hi rend="italic">i</hi>
+i innlyd etter dansk fordeling, dobbeltskrevet lang vokal og
+understøttende <hi rend="italic">e</hi>, dvs. stum
+<hi rend="italic">e</hi> etter vokal i trykksterke
+enstavelsesord. Reglene for hvorvidt <hi rend="italic">e-</hi>en
+var stum, eller om den var <quote>lydelig</quote> og
+altså hørte til bøyningen, var
+ganske kompliserte. Når Ibsen for eksempel skriver
+<quote>ei</quote> og ikke <quote>ej</quote>, så var
+dette også offisiell dansk form til 1885. Det er en
+gjennomført konsekvens i ortografi,
+bøyning, orddannelse og ordvalg. Dette går
+klart frem når man sammenholder Ibsens
+språkform med Molbechs ordbok (1833).</p>
+<p>Molbechs ordbok er ikke rent registrerende, men i noen grad
+bevisst normerende, både skjult (ved utelatelser) og
+åpent (ved tilrådinger). Et velkjent
+eksempel er at Molbech utelot <hi rend="italic">Geburtsdag</hi>, som var vanlig, men tysk, og i
+stedet tok med <hi rend="italic">Fødselsdag</hi>,
+som var mindre vanlig, men dansk. At for eksempel <hi rend="italic">Uretfærd</hi> (hos Ibsen bare i <title rend="italic">Catilina</title>) mangler hos Molbech, kan
+være tilfeldig (M. har <hi rend="italic">Retfærd</hi>) eller tilsiktet (ordet
+var velkjent og er i ODS belagt fra 1796 og 1829, så
+Molbech har trolig kjent det).</p>
+    
+<div xml:id="intro_background_language_ortography">
+<head rend="level4">ortografi og bøyning.</head>
+<p><title rend="italic">Catilina</title> begynner med
+<quote>Jeg maa, jeg maa</quote>, mot <quote>det maae vi
+ham indrømme</quote>. Dette er etter reglene,
+der <quote>jeg maa</quote>, men <quote>vi maae</quote> er et
+av Hansens eksempelpar (1837, § 278). Ellers
+forekommer <quote>de gaae</quote>, <quote>O! tie med
+Sligt</quote>, <quote>boer</quote> o.fl. Det finnes flere forekomster av dobbeltskrevet vokal: <quote>Jeg kjender een, der mægter os at lede</quote>, <quote>Saa lov mig Eet</quote>, <quote>Eensomhedens</quote>,
+<quote>seer</quote>, <quote>maaskee</quote>,
+<quote>deelviis</quote>, <quote>viid</quote>,
+<quote>siig</quote>, <quote>huult</quote> o.fl.
+Dobbeltskrivningen ble brukt dels for å markere
+lengde, dels for å markere trykk og dels for
+å skape entydighet.</p>
+<p>I likhet med Molbech skriver Ibsen
+<quote>Qvindeværk</quote> med <hi rend="italic">Q</hi>, men han skriver derimot
+<quote>kvægsom</quote>, mens Molbech har
+<quote>qvægsom</quote>. Selv om <hi rend="italic">kvæge</hi> med <hi rend="italic">k</hi> ikke var helt ukjent i eldre dansk,
+var det en sjelden form, og kan kanskje tas som et
+fornorskende innslag hos Ibsen.</p>
+<p>Andre rettskrivningsavvik skyldes hensyn til rim og rytme, og
+slike er ganske vanlige, for eksempel:
+<quote>Underverdnen</quote>, <quote>Virklighedens</quote>,
+<quote>Udød’ligheden</quote>,
+<quote>Læg’dom</quote>, og i
+bøyningsendelser: <quote>da Krigen var tilende
+leved’ jeg / i Rolighed, til
+Nød det mig ernæred’;
+/ nu er det mig berøvet, som det
+hed’</quote>; <quote>jeg skulde agte Eder, om I
+bored’ / jer’s Dolke ind i
+Catilinas Bryst; –</quote>. Utelatt bokstav
+markeres ofte med apostrof, oftest i utlyd i
+bøyningsendelser, men ikke alltid: <quote>Og jeg,
+der tappert kjæmped</quote>; <quote>styrted</quote>.</p>
+<p>At slike strykninger av bokstaver kunne gi
+bøyningen et tilsynelatende mer norsk preg, er
+altså tilfeldig. Derimot kan kanskje formene
+<quote>hvert et Haab jeg <hi rend="italic">nærte</hi></quote> (uth. her), <quote>Hvad har han <hi rend="italic">svart</hi>?</quote> (uth. her; i annen utgave endret til
+<quote>svaret</quote>) være norske innslag. Men de
+er usikre; ifølge ODS forekom begge i
+både dansk skriftspråk og dialekt.</p>
+<p>I verbbøyningen er flertallsformer godt
+gjennomført i tidsbøyningen, for eksempel
+<quote>de gaae</quote>. I imperativ er det vakling;
+skillet entall/flertall stemmer i
+<quote>tie</quote>, <quote>Nei, venter lidt</quote>
+(flertall), men derimot: <quote>tænk Eder
+kun</quote> (flertall), <quote>ledsag I mig</quote> (som
+imidlertid ifølge tekstkritisk note må
+regnes som feil for <quote>ledsager I mig</quote>).</p>
+<p>Som tidshjelpeverb brukes <hi rend="italic">være</hi> og <hi rend="italic">ha</hi> med vanlig fordeling som i dansk og
+eldre norsk, dvs. <hi rend="italic">være</hi> ved
+verb som betegner bevegelse eller overgang. Dette
+må regnes som et avvik: <quote>Det er Ulykke nok
+og dog en værre / er rammet mig, som
+snart I høre skal; –</quote>.</p>
+<p>I adverbbøyningen hadde både dansk, og
+dansknorsk til 1907, <hi rend="italic">-t</hi> i adverb
+på <hi rend="italic">-(l)ig</hi>. Man kan dermed
+se om ordet er brukt adverbialt eller adjektivisk
+(predikativt): <quote>[Tullia] har skjændigt mig
+forladt</quote>; <quote>det Fordærv […] / fremtræder skarpt og klarlig for min Sjæl</quote>, <quote>det mig
+forundtes ikke / saa ligegyldig at imødesee / en Fremtid, da ei Mere er tilovers</quote>.</p>
+</div>
+
+<div xml:id="intro_background_language_punctuation">
+<head rend="level4">tegnsetting.</head>
+<p>Også tegnsettingen i <title rend="italic">Catilina</title> (førstetrykket)
+følger reglene i dansk, bl.a. med komma foran
+enhver leddsetning. Særlig ved linjeslutt bruker
+Ibsen hyppig komma sammen med etterfølgende
+tankestrek som markering av en tydeligere pause. Semikolon
+brukes riktig mellom setninger som et tegn for en pause
+mindre enn punktum og større enn komma.</p>
+</div>
+
+<div xml:id="intro_background_language_morphology">
+<head rend="level4">orddannelse og formvalg.</head>
+<p>Et studium av orddannelse og ordvalg i <title rend="italic">Catilina</title> må basere seg
+på en sammenligning med Molbechs ordbok (1833) samt det eldre materialet i ODS. Foruten råd om brukbarhet nevner Molbech også av og til at et ord
+er <quote>nyere</quote> eller sjeldent.</p>
+<p>En hyppig ordtype er verbalsubstantiv på <hi rend="italic">-en</hi>: <hi rend="italic">Febergysen</hi>,
+<hi rend="italic">Dvælen</hi>, <hi rend="italic">Spotten</hi>, <hi rend="italic">Rasen</hi>,
+<hi rend="italic">Opvaagnen</hi>, <hi rend="italic">Klynken</hi>, <hi rend="italic">Klagen</hi>, <quote><hi rend="italic">Speiden</hi> er ei min Bedrift –</quote>, <quote>i sidste <hi rend="italic">Gløden</hi> ifra Vestens Sol</quote> (uth. her). Disse ordene faller sammen med bestemt form entall for substantiver av felleskjønn, og det kan en sjelden gang være tvil om hvilken av de to formene som er ment: <quote>Jeg kjender <hi rend="italic">Frygten</hi> ei</quote> (uth. her); fortsettelsen, <quote>at møde Faren stedse var min Lyst</quote>, tyder på bestemt form av <hi rend="italic">Frygt</hi>.</p>
+<p>I nomina agentis for kvinner foretrekkes <hi rend="italic">-inde</hi>: <hi rend="italic">Forbryderinde</hi>, <hi rend="italic">Hævnerinde</hi>, <hi rend="italic">Sværmerinde</hi>.</p>
+<p>Enkelte formvarianter bidrar til det arkaiserende
+høytidspreg som er typisk for ordvalget i <title rend="italic">Catilina</title>. <hi rend="italic">Hvo</hi>
+for <hi rend="italic">hvem</hi> og <hi rend="italic">hvi</hi> for <hi rend="italic">hvorfor</hi>
+er vanlig. I <quote>Holdt inde!</quote> er <hi rend="italic">holdt</hi> hos Molbech ikke imperativ eller
+en egen interjeksjon, men preteritum av <hi rend="italic">holde</hi>; som imperativform var det etter
+ODS’ eksempler å dømme på vei
+til å bli avleggs. Det samme gjelder <hi rend="italic">kuns</hi> for <hi rend="italic">kun</hi>;
+med <hi rend="italic">-s</hi> analogisk fra andre adverb
+på <hi rend="italic">-s</hi>. ODS sier at det <quote>fastholdtes endnu i skrift i beg. af 19. aarh. af enkelte forfattere af folkelig Retning</quote>. Enda mer gjelder det <hi rend="italic">ikkuns</hi> for <hi rend="italic">ikkun</hi>; brukt to ganger i <title rend="italic">Catilina</title>. Ifølge ODS er formen <quote>selv i 18. aarh. ret usædvanlig</quote>.</p>
+<p>En ordtype på fremmarsj i dansk fra sent 1700-tall
+og gjennom romantikken er rotordene, substantiviske
+nullavledninger, dvs. uten avledningssuffiks. De var vanlige
+også på 1500- og 1600-tallet, men
+på 1700-tallet florerte lengre avledninger
+på <hi rend="italic">-hed</hi>. Som en reaksjon
+mot disse lange ordene ble nye rotord dannet i analogi med
+de eldre, jf. <bibl>Peter Skautrup: <title rend="italic">Det danske sprogs historie</title>
+(1944–70, b. 3, 349)</bibl>. Den opprinnelige
+betegnelsen <quote>rodfund</quote>
+<bibl>(Sprogvild 1901)</bibl> gjaldt tilbakedannelser til
+verb. Av slike har <title rend="italic">Catilina</title>
+<hi rend="italic">Hjernespind</hi>, som også
+Molbech har med henvisning til blant annet <quote>Hovitz</quote> (F.G. Howitz 1789–1826), <hi rend="italic">Fordærv</hi>, hos Molbech bare med henvisning til <hi rend="italic">Fordærvelse</hi>. Andre nullavledninger er <hi rend="italic">Frisind</hi>, <hi rend="italic">Letsind</hi>, <hi rend="italic">Overdaad</hi>, <hi rend="italic">Uretfærd</hi>, <hi rend="italic">Utaalmod</hi>. Molbech har <hi rend="italic">frisindet</hi>, men ikke <hi rend="italic">Frisind</hi>. Han har <hi rend="italic">letsindig</hi> og <hi rend="italic">Letsindighed</hi>, men ikke <hi rend="italic">Letsind</hi>. Som nevnt har han ikke <hi rend="italic">Uretfærd</hi>, men <hi rend="italic">uretfærdig</hi> og <hi rend="italic">Uretfærdighed</hi>. Han har ikke
+<hi rend="italic">Utaalmod</hi>, men <hi rend="italic">utaalmodig</hi> og <hi rend="italic">Utaalmodighed</hi>. Om <hi rend="italic">Overdaad</hi> sier Molbech, etter å
+ha henvist til <hi rend="italic">Overdaadighed</hi>:
+<quote>Enkelte Nyere have brugt hiin mindre antagne
+Form. ‹Langt fra Vindelyst og
+Overdaad.› Thaarup.</quote> (Th. Taarup 1749–1821). Molbechs behandling vitner om disse nyere ordenes inntog, og Ibsens bruk av dem gjenspeiler hans kjennskap til dem.</p>
+</div>
+
+<div xml:id="intro_background_language_vocabulary">
+<head rend="level4">ordforrådet.</head>
+<p>En rekke ord i <title rend="italic">Catilina</title>
+forekommer hos Ibsen bare der, og de fleste av dem som enefunn (<hi rend="italic">hapax
+legomenon</hi>).</p>
+</div>
+
+<div xml:id="intro_background_language_dictionary">
+<head rend="level4">ordforklaringer.</head>
+<p>Det er neppe noe ord i <title rend="italic">Catilina</title>
+som er uforståelig ut fra ordbøkenes
+forklaringer eller som ibsenske orddannelser. Men enkelte
+ord brukes i betydninger som i dag er foreldede og derfor
+kan bli misforstått eller for overfladisk
+forstått. Et eksempel kan være <hi rend="italic">rædselfuld</hi>, som i <title rend="italic">Catilina</title> brukes i den gamle
+betydningen <quote>1. som medfører, forvolder
+Rædsel; rædsom; […] 2. som
+vækker, maa vække Rædsel,
+som man maa forfærdes over</quote>
+<bibl>(Molbech 1859)</bibl>. I nyere norsk oppfattes <hi rend="italic">redselsfull</hi> særlig som synonym
+til <hi rend="italic">skrekkelig</hi>, <hi rend="italic">forferdelig</hi>, brukt om mindre
+dyptgående følelser enn i <title rend="italic">Catilina</title>.</p>
+</div>
+    
+<div xml:id="intro_background_language_biblical">
+<head rend="level4">bibelallusjoner og bibelsk språkbruk.</head>
+<p><title rend="italic">Catilina</title> inneholder en rekke
+formuleringer i form av direkte eller indirekte
+bibelallusjoner (se <HIS:hisRef target="C1_komm.xml">Ord- og
+sakkommentarer</HIS:hisRef>). Ibsen leste Bibelen fra sin tidligste
+barndom, men vi vet ikke hvilken oversettelse som fantes i
+barndomshjemmet. På det tidspunkt hans foreldre
+giftet seg, var den danske oversettelsen fra 1819 (DO 1819)
+den vanligste i bruk også i Norge.</p>
+<p>Oversettelsen av GT er her den samme som i Christian den
+sjettes bibel fra 1740, mens NT er revidert. Revisjonen har
+også medført at det i NT er
+innført bruk av stor bokstav i substantiv.
+Når ikke annet er anført, vises det til
+denne bibelutgaven.</p>
+<p>I Danmark finnes det på 1700-tallet to
+oversettelsestradisjoner side om side. Den ene tradisjonen
+skriver seg fra den første danske
+bibeloversettelsen, Christian den tredjes bibel fra 1550,
+som følger Luthers oversettelse fra 1545.
+<title rend="italic">Luther-bibelen</title> ble berømmet for
+klarhet og god språkføring, men
+samtidig kritisert for at den ikke gjengav grunnteksten
+korrekt. Denne bibeloversettelsen kom i reviderte utgaver
+helt frem til 1802. For Ibsens vedkommende er det av
+interesse at <title rend="italic">Grimstad-bibelen</title>
+<bibl>(<title rend="italic">Billed-Bibel for Det norske
+Folk</title> 1840)</bibl>, dvs. en bibel Ibsen fikk
+låne av apotekeren i Grimstad, følger
+den reviderte <title rend="italic">Luther-bibelen</title> av 1738.
+<title rend="italic">Grimstad-bibelen</title> inneholder også apokryfene.</p>
+<p>Den andre oversettelsestradisjonen, som ble den dominerende i
+Danmark og Norge, innledes med H.P. Resens radikale revisjon
+fra 1607, der idealet er å gjengi grunntekstens
+ordvalg og setningsbygning så nøyaktig
+som mulig. I samsvar med dette tilføres teksten
+også en mengde forklarende parenteser og fotnoter.
+Resens oversettelse, revidert av Hans Svaning 1647, dannet
+grunnlag for flere senere mindre revisjoner, som
+også gjorde teksten mer leservennlig.</p>
+<p>Det norske Bibelselskab (DNB) ble stiftet i 1816, og deres
+utgaver følger Resen-Svaning. DNBs reviderte
+utgaver av Det nye testamente forelå i 1819 og
+1830. I 1818 begynte The British and Foreign Bible Society
+– <title rend="quotes">Det Brittiske og Udenlandske Bibelselskab</title> (DBUB)
+– å selge og utdele nytestamenter og
+bibler i Norge, den første tiden som
+samarbeidspartner med DNB. De første
+årene benyttet DBUB danske oversettelser. Etter
+hvert som DNBs oversettelser kom ut, ble disse fulgt, men
+med enkelte avvik i ordvalg. Den viktigste forskjellen var
+likevel at DBUB trykte bibler uten apokryfene. Vi finner
+også forskjeller i sammendragene foran hvert
+kapittel. Fra 1834 ble biblene trykt i Norge. De britiske
+biblene kom til å dominere det norske markedet
+størstedelen av århundret.</p>
+<p>Selv om vi finner to oversettelsestradisjoner og en rekke
+revisjoner, bør ikke forskjellen mellom de
+enkelte bibeloversettelsene overdrives. Når det
+gjelder de bibelske motiver og bibelallusjoner Ibsen
+benytter seg av, vil det i de fleste tilfeller ikke ha noen
+betydning om man viser til den ene eller den andre av
+bibelutgavene på 1800-tallet.</p>
+</div>
+</div>
+
+<div xml:id="intro_background_sources">
+<head rend="level3">kilder</head>
+<p>Da Ibsen skrev <title rend="italic">Catilina</title>, var han
+<quote>fuldblods republikaner</quote>
+<bibl>(Due 1909, 42)</bibl>, og sterkt opptatt av
+februarrevolusjonen og dens følger, noe
+også forfatteren selv understreker i forordet til
+stykkets annen utgave (1875). Han skrev manende dikt preget av
+skandinavismens ideer (<title rend="quotes">Vaagner Skandinaver!</title>) og støttet ungarernes
+frihetskamp i diktet <title rend="quotes">Til Ungarn!</title>,
+der en av linjene lyder: <quote>Frihedshelteskaren segned for
+Barbarers vilde Horder</quote> <bibl>(ES 1, 30)</bibl>. Samtidig forberedte han seg
+til å avlegge examen artium. Ifølge
+forordet til stykkets annen utgave <quote>slugte</quote> han i den
+forbindelse Sallusts og Ciceros beskrivelser av Catilina,
+tekster som utgjorde vesentlige innslag i hans latinske
+artiumspensum. Men han <quote>delte […] ikke
+dengang de to gamle romerske skribenters opfatning af
+Catilinas karakter og handlemåde</quote>, sier han
+selv <ptr type="ht" target="C2ht.xml" corresp="koC2_ht_5"/>.</p>
+<p>Lucius Sergius Catilina (108–62 f.Kr.) er en av de
+kontroversielle skikkelser fra Romas
+revolusjonsårhundre. Det bevarte kildematerialet om
+ham er relativt omfattende og består av mange
+primærvitnesbyrd som har en viss slagside i negativ
+retning. Dette gjelder både Ciceros <title rend="italic">In Catilinam</title> (<hi rend="italic">Taler mot Catilina</hi> 1–4) og
+Sallusts <title rend="italic">Bellum Catilinae</title> (<title rend="italic">Krigen
+mot Catilina</title>).</p>
+<p>Også før Ibsen hadde ulike dramatikere
+skrevet skuespill som bygget på den
+opprørske Catilinas skjebne, men det er umulig
+å si om Ibsen kjente noen av dem. I Ben Jonsons <title rend="italic">Catiline His Conspiracy</title> (1611) lar
+forfatteren Sullas ånd opptre i begynnelsen av
+handlingen og egge Catilina til verre grusomheter enn hans egne.
+Prosper Jolyot Crébillons <title rend="italic">Catilina</title> (1748) ble senere omarbeidet og
+utgitt i nye versjoner, såvel av Voltaire (<title rend="italic">Rome sauvée : ou Catilina</title>
+1749) som Lessing. I 1844 utkom C.E. Guichards <title rend="italic">Catilina Romantique</title>, og det skal
+også ha blitt oppført et nytt drama om
+Catilina av Alexandre Dumas d.e. i Paris så sent som
+1848 <bibl>(Koht 1954, b. 1, 40; <title rend="italic">Nordisk Conversationslexikon</title>, 573 <hi rend="italic">Dumas</hi>)</bibl>, men det er lite trolig at
+Ibsen kjente til det sistnevnte da han i 1848 begynte arbeidet
+med sin egen tekst.</p>
+<p>Sitt artiumspensum må Ibsen i alle fall ha studert, og
+det er sannsynligvis her han har funnet stoffet til sin
+første tragedie <bibl>(Holmboe red. 1834–40, b.
+1, 307–13)</bibl>.</p>
+<p>Samtidens historieforskning baserte sin fremstilling av Catilina
+hovedsakelig på Cicero og Sallust, og det var egentlig
+ikke før med Theodor Mommsens store verk <title rend="italic">Römische Geschichte</title>
+(1854–56) at et mer nyansert bilde ble tegnet. Dette
+verket kunne Ibsen av gode grunner ikke hatt tilgang til da han
+skrev sitt stykke. Ibsen-biografen Henrik Jæger, som
+bygger på opplysninger fra dikteren selv, skriver at
+Ibsen ikke kjente noe til den historiske forskning om Catilina
+da han skrev skuespillet; hans fremstilling av personen bygget
+utelukkende på Cicero og Sallust
+<bibl>(Jæger 1888, 34)</bibl>.</p>
+<p>Ibsen selv skrev et etterord til dramaet der han nevner at
+teksten inneholder <quote>Afvigelser […] fra
+det historisk Sande</quote>, og sier at <quote>det Historiske
+blot deelviis er benyttet, saaledes at dette
+nærmest maa betragtes kun som en
+Iklædning for den gjennem Stykket gaaende
+Idee</quote>. Han legger til at personene i stykket
+<quote>optræde anderledes, end man fra Historien
+lærer dem at kjende</quote>. Om han her siktet til
+primærkildenes fremstillinger eller til samtidige
+historikeres oppfatning, vet vi ikke. Allikevel er ikke
+primærkildene så ensidig negative som Henrik
+Ibsen sier i sitt <HIS:hisRef target="C2ht.xml">forord</HIS:hisRef> til den senere utgaven av <title rend="italic">Catilina</title> 1875. Særlig hos
+Sallust tegnes et mangesidig bilde av Catilina. Ibsen
+fremstiller med andre ord sitt eget Catilina-bilde som mer
+originalt enn det kanskje var.</p>
+</div>
+</div>
+    
+<div type="creation" xml:id="intro_creation">
+<head rend="level2">TILBLIVELSE</head>
+<p>I sitt forord til annen omarbeidede utgave av <title rend="italic">Catilina</title> 1875 skriver Ibsen at stykket
+<quote>er skrevet vinteren 1848–49, altså i
+mit enogtyvende år</quote> <ptr type="ht" target="C2ht.xml" corresp="koC2_ht_6"/>.
+Ifølge Francis Bull gjorde Ibsen opptegnelser til <title rend="italic">Catilina</title> allerede vinteren 1848 <bibl>(Bull
+1928a, 27)</bibl>. Manuskriptet ble skrevet i løpet
+av vinteren 1848–49 og inneholder to dateringer
+(på tittelsiden står 1849, ved enden av annen
+akt 25. februar 1849). Ibsen <quote>forelæste de
+første af Dramaets Scener</quote> for sine venner
+Christopher L. Due og Ole Carelius Schulerud, og fortsatte i <quote>en
+Række uforglemmelige Aftener [å
+lese opp] hvad han hver Gang havde skrevet, til
+– Censur</quote>, forteller <bibl>Due (1909, 45–46)</bibl>.</p>
+<p>Christopher L. Due forteller hvordan han selv fikk oppdraget med
+å renskrive manuskriptet, mens vennen Schulerud
+påtok seg å bringe det til Kristiania med tanke
+på oppførelse og utgivelse <bibl>(Due 1909,
+47)</bibl>. Renskriften, som sannsynligvis tjente som
+trykkmanuskript, anses nå tapt.</p>
+</div>
+    
+<div type="publication" xml:id="intro_publication">
+<head rend="level2">UTGIVELSE</head>
+<p>I brev av <HIS:hisRef target="B1844-1871ht.xml#B18500105OS">5. januar 1850</HIS:hisRef> fra Ibsen til Schulerud skriver forfatteren
+at han har <quote>modtaget ‹Catilinas›
+Dødsdom</quote>, noe som må sikte til at
+Christiania Theater hadde avslått å sette opp
+stykket. Men han trøster seg med at det av dette avslaget
+ikke fremgår at <quote>Mangel paa indre Gehalt har
+bevirket at det [stykket] ikke blev
+antaget</quote>. I denne situasjonen mener han at det er
+<quote>rigtigst at sælge Stykket</quote> til et forlag
+– <quote>dog, dette maa lempes efter
+Omstændighederne</quote>, sier han, noe som sikter til
+muligheten av å utgi <title rend="italic">Catilina</title> på eget forlag. Ibsen
+understreker dessuten: <quote>lad endelig ingen Trykfeil indsnige
+sig. – Manuscriptet vil jeg gjerne have
+tilbage</quote>. Han innføyer også i brevet
+teksten til en orientering om stykkets bakgrunn, et <title rend="quotes">Forord</title> der han opplyser om teaterets avslag,
+og henvender seg til sitt tenkte publikum med bønn om
+<quote>den skaansomme Bedømmelse, som en Begynders
+første Fremtræden billigviis kan
+gjøre Fordring paa.</quote> Denne
+redegjørelsen kom ikke med i den trykte utgaven.</p>
+<p>Schulerud lyktes heller ikke i å finne forlegger til
+manuskriptet. Han påtok seg derfor forleggeransvaret selv
+og finansierte trykkingen med arvede og lånte midler
+<bibl>(HFL 3, 7; FU 1; Bing 1904,
+158)</bibl>. Boken ble trykt ved F. Steens Bogtrykkeri og tatt i
+kommisjon hos bokhandler P.F. Steensballe, begge Kristiania.
+Steensballe var representant for forleggeren Johan Dahl og
+Christiania Theaters faste bokhandler alt fra 1848, og fremstod
+trolig som et naturlig valg når det gjaldt salg av en
+dramatisk tekst <bibl>(Tveterås 1950–96, b. 2,
+94)</bibl>. Dramaet forelå ferdig trykt fredag 12. april
+1850 med Brynjolf Bjarme som forfatternavn og kom i handelen 15.
+april s.å. <bibl>(Thuesen 1922, 12–15)</bibl>.</p>
+<p>Opplagstallet er usikkert og varierer i ulike kilder mellom 205
+<bibl>(FU 1)</bibl> og 250. Det kan også ha
+vært større, kanskje 300–400
+eksemplarer. Ibsen og Schulerud skal ha solgt en del av opplaget som
+makulatur, og dette kan være de overskytende eksemplarer i
+forhold til de kanskje 250 eksemplarene som i samsvar med
+kommisjonsavtalen gikk til bokhandelen <bibl>(Thuesen 1922, 4;
+Tveterås 1950–96, b. 2, 426, note 131)</bibl>.</p>
+<p>Prisen for et heftet eksemplar av <title rend="italic">Catilina</title> var 48 skilling <bibl>(Thuesen 1922,
+13)</bibl>. Salgstallene er usikre, fra i underkant av 30 til ca. 45
+det første året. Ifølge Due ble det
+solgt 32 eksemplarer <bibl>(Due 1909, 47)</bibl>. Totalt antall
+solgte eksemplarer (frem til 1875) er beregnet til mellom ca.
+70–80 <bibl>(Thuesen 1922, 11–12)</bibl> og 195
+<bibl>(Tveterås 1950–96, b. 2, 426, note
+131)</bibl>. Da Gyldendalske Boghandel i København i 1874
+overtok restopplaget fra Steensballe, ble <title rend="italic">Catilina</title> 1850 priset til kr 1,75 for heftet
+eksemplar, mens pris for innbundet eksemplar var kr 3,00
+<bibl>(Bing 1904, 298)</bibl>. I 1875 ble det usolgte
+restopplaget (55 eksemplarer) makulert <bibl>(Thuesen 1922, 10)</bibl>.</p>
+
+<div xml:id="intro_publication_reception">
+<head rend="level3">mottagelse av utgaven</head>
+<p>Dagen etter at stykket forelå trykt, ble det anmeldt av
+Paul Botten-Hansen i <title rend="italic">Samfundsbladet</title>. Botten-Hansen sammenligner
+<title rend="italic">Catilina</title> med verker av Dante,
+Goethe og Paludan-Müller, og mer konkret med
+Shakespeares <title rend="italic">Coriolanus</title>, der
+skildringen av romerske historiske skikkelsers higen etter makt
+og rettigheter kan ha vært forbilde for Catilinas
+tilsvarende holdning. Anmeldelsen finner <quote>sand og sund
+Poesi</quote> i teksten, og mener at forfatteren viser dramatisk
+talent og en <quote>shakespearisk Kraft og Alvor</quote> som
+gjør at han vil vinne anerkjennelse også
+på scenen. Den eneste innvending er at
+<quote>Forfatteren ikke [er] stærk i sin Metrik</quote> <bibl>(RAO PA-1322 Xa. Det Norske Studentersamfunds arkiv)</bibl>.</p>
+<p>Den anonyme anmelder i <title rend="italic">Christiania-Posten</title> 16. mai 1850, senere
+identifisert som den klassiske filolog F.L. Vibe (<bibl>Koht
+1954, b. 1, 57–58)</bibl>, betrakter Catilina som
+en tragisk helt, og finner at tungsinn og blidhet, lys og
+mørke er stilt mot hverandre på en
+fortreffelig måte gjennom hans forhold til de to
+kvinnene Furia og Aurelia. <quote>Forfatteren har en
+sjælden Evne til at hæve sig til tragisk
+Højde og Kraft, han har en sjælden Evne
+til at lade Lidenskaberne træde frem i hele sin
+Styrke, og hans Sprog er saa rent, som vi sjælden
+træffe det</quote>, skriver anmelderen. Versene
+finner han <quote>smukke og velklingende</quote>, og teksten
+røper et <quote>umiskjendelig Talent</quote>
+– men kritiseres også for innslag av
+<quote>forskruet Pathos</quote>, og for de mange
+sceneskiftene som gjør stykket vanskelig å oppføre <bibl>(Vibe 1850)</bibl>.</p>
+<p>En anonym anmelder i <title rend="italic">Morgenbladet</title>
+5. juli 1850 sier at stykket har vakt <quote>en ikke ubetydelig
+Sensation</quote> i den litterære verden, ikke minst
+fordi dette ellers er en fattig tid når det gjelder
+nyskreven norsk dramatikk. Anmelderen aksepterer den poetiske
+frihet som tillater forfatteren å avvike fra hva de
+historiske kilder har å si om Catilina, men han
+kritiserer samtidig <quote>en altfor stærk
+Tilbøielighed til Pathos</quote>,
+<quote>Overspændthed i
+Charakteerskildringen</quote>, en <quote>knudret</quote>
+versifikasjon og ukorrekte rim <bibl>(Anonym 1850a)</bibl>.</p>
+<p>Den kanskje viktigste anmeldelsen ble trykt i <title rend="italic">Norsk Tidsskrift for Videnskab og
+Litteratur</title> 1850, og var forfattet av pseudonymet
+Tö (<quote>en videnskabeligt og literært
+dannet Mand</quote>, ifølge tidsskriftets
+redaktør), av Koht identifisert som den klassiske
+filolog Carl Müller <bibl>(Koht 1954, b. 1, 58)</bibl>.
+Anmeldelsen var forsynt med et tillegg av redaktøren
+selv, filosofiprofessoren Monrad. Müller anser at
+Brynjolf Bjarme, <quote>om hvem man kan nære gode
+Forhaabninger</quote>, er verdt publikums oppmerksomhet. Men han
+har flere kritiske innvendinger mot skuespillet. Omformingen av
+det historiske stoffet fører til <quote>store Fejl i
+Dramaets hele Udvikling</quote>, især ved at
+Catilina fremstår som en vaklende karakter uten klare
+planer for sine handlinger: <quote>hans hele Væsen er
+en ubestemt Famlen og Higen efter Noget, som han selv ej
+gjør sig Rede for.</quote> Også de
+<quote>hastemte Toner</quote> og svakheter i versbygningen
+er gjenstand for anmelderens kritikk <bibl>(Müller 1850, 304–10)</bibl>.</p>
+<p>I motsetning til dette understreker Monrad at <quote>Digtets <hi rend="italic">Hovedtanke</hi> er baade klar og skjøn</quote>. <quote>Udviklingen begynder indenfra, fra Ideen</quote>, og selv om teksten i det ytre preges av
+svakheter, er <quote rend="proseIndent">Digtets skjønne Hovedtanke
+[…] den skarpt udhævede
+Modsætning mellem det sædelige, det til
+de bestaaende sædelige Magter tilsluttende
+Princip, og Individets dunkle Uafhængigheds-Higen <bibl>(Monrad 1850, 311–12).</bibl></quote> Monrad ser ikke det vaklende i heltens karakter som en svakhet ved stykket; han finner motsigelsene i hans handlemåte <quote>aldeles
+psychologisk rigtige</quote>. Til og med det retorisk
+oppskrudde språket finner nåde for Monrads
+øyne, fordi <quote>en rhetoriserende Tone i
+Almindelighed er egte <hi rend="italic">romersk</hi></quote> <bibl>(Monrad 1850, 311–12)</bibl>.</p>
+</div>
+</div>
+    
+<div type="performance" xml:id="intro_performance">
+<head rend="level2">OPPFØRELSE</head>
+<p>1850-versjonen av <title rend="italic">Catilina</title> ble ikke oppført i Ibsens
+levetid. Renskriften ble i september 1849 bragt til Kristiania av
+Ole Carelius Schulerud, som uten hell forsøkte
+å få stykket antatt ved Christiania Theater
+<bibl>(Due 1909, 45–47)</bibl>. Ibsen ventet spent
+på resultatet, og må i utålmodighet ha
+skrevet et anklagende (nå tapt) brev om saken til sin
+venn. I et senere brev av <HIS:hisRef target="B1844-1871ht.xml#B18491015OS">15. oktober 1849</HIS:hisRef> unnskylder han sin
+reaksjon, og finner at han ikke har grunn til å reise tvil
+ved Schuleruds <quote>Fremgangsmaade</quote>. Hva Ibsen sikter til
+med dette ordet, fremgår ikke, men man kan anta at det
+viser til Schuleruds kontakt med Christiania Theater. I Christiania Theaters kopibok 24.
+desember 1849 <bibl>(NBO TS ark A2 25)</bibl> finnes tekst til et
+avslagsbrev stilet til Brynjolf Bjarme. Direksjonen, som bestod av
+general Ferdinand Carl Maria Wedel-Jarlsberg, amtmann Erik
+Rørik Møinichen, borgermester Christian
+Zetlitz Bretteville, lektor Lorentz Christian Langberg og
+ingeniørkaptein Theodor Christian Anton Broch
+<bibl>(Blanc 1899, 138)</bibl>, anførte i
+direksjonsmøtet den 24. desember 1849: <quote>Ved at
+tilbagesende det af Dem indsendte Drama
+‘Catilina’ maa Directionen beklage at den
+ikke kan finde dette forøvrigt velskrevne Stykke
+skikket til Opførelse paa vor scene</quote> (Christiania Theater 1849). Samtidig ble det rykket inn en annonse i <title rend="italic">Christiania-Posten</title> 27. desember
+1849 med beskjed til Brynjolf Bjarme om at han kunne hente post hos
+<quote>Theatrets Opsynsmand</quote>, en ordning som
+sannsynligvis skyldtes at teaterets ledelse ikke kjente forfatterens
+rette identitet.</p>
+</div>
+
+<div xml:id="intro_supplement">
+<head rend="level2">TILLEGG TIL NOTER</head>
+<div xml:id="intro_supplement_plays">
+<head rend="level3">utgitte norske skuespill i perioden 1840–50</head>
+<p><list type="simple">
+<item>
+<label rend="simple">1840:</label>
+</item>
+<item>Konow, Wollert. <title rend="italic">Manfred : Drama i 5 Acter</title>. København</item>
+<item>Munch, Andreas. <title rend="italic">Donna Clara : en Natscene</title>. Kristiania</item>
+<item>Olsen, Rolf. <title rend="italic">Den sidste Viking : Tragoedie i fem Acter</title>. Kristiania</item>
+<item>Wergeland, Henrik. <title rend="italic">Lyv ikke! eller Dompapen : Fugle- og Blomsterstykke</title>. Af Siful Sifadda [pseud.]. Kristiania</item>
+<item>Wergeland, Henrik. <title rend="italic">«Verden tilhører Os Jurister!» : dramatisk Eventyr</title>. Af Siful Sifadda [pseud.]. Kristiania</item>
+<item>
+<label rend="simple">1841:</label>
+</item>
+<item>Dahl, Olavus Johannes. <title rend="italic">Kjærligheds Magt eller Slaget ved Solskjel : et historisk
+Sørgespil i tre Acter</title>. Kristiania</item>
+<item>Wergeland, Henrik. <title rend="italic">Engelsk Salt : Farce</title>. Af Siful Sifadda [pseud.]. Kristiania</item>
+<item>Wergeland, Henrik. <title rend="italic">Vinægers Fjeldeventyr</title>. Af Siful Sifadda [pseud.]. Kristiania</item>
+<item>
+<label rend="simple">1843:</label>
+</item>
+<item>Stabell, Eleonore Wilhelmine. <title rend="italic">Den gode Datter : et Skuespil</title>. Kristiania</item>
+<item>Wergeland, Henrik. <title rend="italic">Venetianerne eller Venskab og Kjærlighed : Drama i fem Akter</title>. Kristiania</item>
+<item>
+<label rend="simple">1844:</label>
+</item>
+<item>Faye, Ludvig. <title rend="italic">Leopold : original Tragedie i 5 Acter</title>. Bergen</item>
+<item>Homann, Peter Jacob. <title rend="italic">Ordinær Kjærlighed : dramatisk Skizze i 3 Acter</title>. Kristiania</item>
+<item>
+<label rend="simple">1846:</label>
+</item>
+<item>Brun, Michael Wallem. <title rend="italic">Gustav den III : Drama i 5 Acter</title>. København</item>
+<item>Faye, Ludvig. <title rend="quotes">Fyrstens Død</title>. Trykt i <title rend="italic">Digtninger</title>. Bergen</item>
+<item>
+<label rend="simple">1847:</label>
+</item>
+<item>Blom, Hans Ørn. <title rend="italic">Markedsgjæsterne og Samfundsballet : Studentercomedie med Efterspil</title>. Kristiania</item>
+<item>
+<label rend="simple">1848:</label>
+</item>
+<item>Bjerregaard, Henrik Anker. <title rend="quotes">Skuespillerne i Negligee : Efterspil i 1 Act</title>. Trykt i <title rend="italic">Literære Bagateller</title>. Kristiania</item>
+<item>Brun, Michael Wallem. <title rend="italic">Sanct Olafs Dag : Drama</title>. København</item>
+<item>Olsen, Rolf. <title rend="italic">Salonen eller Intrigen i Kræmmerhuset : Vaudeville i een Akt</title>. Kristiania</item>
+<item>Wergeland, Henrik. <title rend="italic">Fjeldstuen : Skuespil med Sang i tre Akter</title>. Kristiania</item>
+<item>Wergeland, Henrik. <title rend="italic">Søkadetterne iland : Lystspil med Sang i tre Akter</title>. Kristiania</item>
+<item>
+<label rend="simple">1849:</label>
+</item>
+<item>Horn, Erik Frederik Barth. <title rend="italic">Evige løier : burlesk-dramatisk skizze i een act</title>. Kristiania</item>
+<item>Olsen, Rolf. <title rend="italic">Kontrolløren eller Eventyr paa Landet : Vaudeville i een Act</title>. Kristiania</item>
+<item>
+<label rend="simple">1850:</label>
+</item>
+<item>Daae, Ludvig. <title rend="italic">En Langvigsaften : Farcette i 1 Act.</title> Af Eisteen Aslaksen [pseud.]. Trykt i <title rend="italic">Markedsgave for 1850</title>. Kristiania</item>
+</list>
+</p>
+<p>
+<list type="sources">
+<item>
+<label rend="sources"><hi rend="italic">Kilder:</hi></label>
+</item>
+<item>Halvorsen, Jens Braage 1885–1908. <title rend="italic">Norsk Forfatter-Lexikon 1814–1880</title></item>
+<item><hi rend="italic">Kortkatalog i Norsk rikskringkastings bibliotek</hi></item>
+<item>Kraft, Jens E. og Christian C.A. Lange 1863. <title rend="italic">Norsk Forfatter-Lexikon 1814–1856</title></item>
+<item>Nissen, Mart. 1848. <title rend="italic">Norsk Bog-Fortegnelse 1814–1847</title></item>
+</list>
+</p>
+</div>
+<div xml:id="intro_supplement_classic">
+<head rend="level3">pensum i klassisk litteratur ved examen artium</head>
+<p>Ifølge kongelig resolusjon av 11. januar 1826 skulle følgende pensum leses:</p>
+<p><list type="standardList">
+<item>a. Latinske prosaister: enten: tre bøker av Justinius, Sallusts <title rend="italic">Bellum Catilinae</title> og <title rend="italic">Jugurtha</title>, Ciceros fire catilinariske taler, Ciceros bøker <title rend="italic">De senectute</title> og <title rend="italic">De amicitia</title>, Tacitus’ <title rend="italic">Germania</title> og et par bøker av Quintilian; eller: Cornelius Nepos, Cæsars <title rend="italic">Bellum Gallicum</title>, tre bøker av Livius, Ciceros taler <title rend="italic">Pro lege Manilia</title> og <title rend="italic">Pro Archia</title> samt en til to bøker av hans skrift <title rend="italic">De officiis</title></item>
+<item>b. Latinske diktere: to bøker av Vergils <title rend="italic">Aeneis</title> og to bøker av Horats’ oder, samt enten: Phaedrus’ <title rend="italic">Fabler</title>, to bøker av Ovids <title rend="italic">Metamorfoser</title> og Vergils <title rend="italic">Ekloger</title> (hyrdedikt); eller: en komedie av Terents, Horats’ <title rend="italic">Epistler</title> og hans <title rend="italic">Ars poetica</title></item>
+<item>c. Greske prosaister: en bok av Herodot og en av Platons dialoger, samt enten: Herodian og en bok av Xenophons <title rend="italic">Memorabilia</title>; eller: en bok av Xenophons <title rend="italic">Cyropædi</title> og en av Plutarks biografier</item>
+<item>d. Greske diktere: tre bøker av Homers <title rend="italic">Iliaden</title> eller <title rend="italic">Odysseen</title>, samt enten: en tragedie av Sofokles; eller: Hesodius’ <title rend="italic">Theogonie</title>, samt Bions og Moschus’ <title rend="italic">Idyller</title></item>
+<item>e. Av hebraisk: enten: de deler av Moses’ og Dommernes bøker samt Davids salmer som er tatt inn i Gesenius’ hebraiske lesebok; eller: ti av Davids salmer og tyve kapitler enten av Genesis, Dommernes bok, Samuels bøker eller Kongenes bøker</item>
+</list>
+</p>
+<p>Det var overlatt til lærerne ved de enkelte latinskoler
+å velge hvilke tekster og forfattere de ville
+gjennomgå med sine elever, så lenge et
+bestemt omfang av pensum ble overholdt. Examen artium ble
+avholdt hvert år i begynnelsen av august
+måned (bestemt ved kongelig resolusjon av 17. april
+1816). Ved eksamen skulle studenten skrive en fremstilling i
+morsmålet, oversette en del av sitt latinske pensum og
+skrive en latinsk stil. I tillegg fulgte en muntlig eksamen <bibl>(Holmboe red. 1834–40, b. 1, 307–13)</bibl>.</p>
+</div>
+</div>
+</div>
+</body>
+</text>
+</TEI>

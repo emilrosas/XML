@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Henrik Ibsens skrifter, elektronisk versjon</title>
+        <title>Manuskriptbeskrivelse til Blandede Digtninger</title>
+        <author>Tone Modalsli</author>
+        <funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+        <editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
+        <respStmt>
+          <resp>Innlemming i elektronisk utgave</resp>
+          <name>EDD: Eining for digital dokumentasjon</name></respStmt>
+          <respStmt><resp>Kodeteknisk støtte og utvikling</resp>
+          <name>AKSIS: Avdeling for kultur, språk og informasjonsteknologi, Universitetsforskning i Bergen (Unifob AS)</name></respStmt>
+          <respStmt><resp>HISe-koding</resp>
+          <name xml:id="SBT">Stine Brenna Taugbøl</name></respStmt>
+          <respStmt><resp>Koding</resp>
+          <name xml:id="GMS">Gaute M. Sortland</name>
+          <name xml:id="AMB">Aasta Marie Bjorvand Bjørkøy</name></respStmt>
+          <respStmt><resp>Tekstarbeid</resp>
+          <name>Aasta Marie Bjorvand Bjørkøy</name>
+          <name>Maria Alnæs</name>
+          <name>Gaute M. Sortland</name></respStmt>
+          <respStmt><resp>Kontroll av sitater og ordbøker</resp>
+          <name xml:id="IK">Ingrid Korvald</name>
+          <name>Aasta Marie Bjorvand Bjørkøy</name>
+          <name>Maria Alnæs</name></respStmt>
+          <respStmt><resp>Kontroll av littlist og referanser</resp>
+          <name xml:id="AH">Anette Hjerde</name>
+          <name>Gaute M. Sortland</name>
+          <name>Aasta Marie Bjorvand Bjørkøy</name>
+          <name>Maria Alnæs</name>
+          <name xml:id="EL">Erlend Lønnum</name></respStmt>
+          <respStmt><resp>Kommentar-, intern- og ht-entiteter</resp>
+          <name>Aasta Marie Bjorvand Bjørkøy</name>
+          <name>Gaute M. Sortland</name></respStmt>
+          <respStmt><resp>Kodekontroll</resp>
+          <name>Aasta Marie Bjorvand Bjørkøy</name>
+          <name>Gaute M. Sortland</name>
+        </respStmt>
+      </titleStmt>
+<publicationStmt>
+ <publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+        <distributor xml:id="HISe">Universitetet i Oslo</distributor>
+        <date when="2011" xml:id="HISe-date"/>
+ <pubPlace>Oslo</pubPlace>
+      </publicationStmt>
+      <sourceDesc>
+ <p>Filen bygger på 11k_sisteversjon.xml.</p>
+      </sourceDesc>
+    </fileDesc>
+<profileDesc>
+      <langUsage>
+        <language ident="nob"/>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change><date>25.11.2011</date>
+        <name>SBT</name><title>TEI P5</title>
+        Omkoding til TEI P5.</change>
+      <change><date>20.01.2011</date>
+        <name>SBT</name><title>Listekoding</title>
+        Oppdaterte listekoding.</change>
+      <change><date>22.12.2010</date>
+        <name>SBT</name><title>Omkoding</title>
+        Kodet om overskrifter for HISe.</change>
+      <change><date>09.12.2010</date>
+            <name>SBT</name><title>Splitting</title>
+            Denne fila inneholder manuskriptbeskrivelse til Blandede Digtninger.</change>
+        <change><date>24.11.2010</date>
+        <name>SBT</name><title>Validering</title>
+        Fjernet ref til files og figures i dokumenttoppen. La manuskriptregisteret over i en egen fil! Fila er valid.</change>
+      <change><date>13.09.2010</date>
+    <name>SBT</name><title>dokumentforfatter</title>
+    La inn dokumentforfatter etter hovedoverskrift. NB: vurder om dokumentet bør deles i to, eller om forfatterne bør stå under hver sin del!</change>
+      <change>
+      <date>16.07.2010</date>
+        <name>SBT</name><title>Validering</title>
+        Får feilmeldinger på lenkene fra manuskriptregisteret til tekstredegjørelsene som nå ligger i en annen fil. Vurder om registeret skal legges i en egen fil; må ev. endre lenkene da.</change>
+      <change>
+        <date>15.07.2010</date>
+        <name>SBT</name><title>Opprettet xml-fil</title>
+        Skilte ut manuskriptbeskrivelsene til diktbindet i en egen fil. Har lagt inn opplysninger vedr HISe i teiHeader. Har foreløpig latt rend-attr. og bokstavtyper (majuskler/minuskler/kapiteler) i overskriftene stå; dette er endret i Ge. Samkjør! Er nå mest stemt for å beholde mest mulig av bokutgaveoppsettet. Det er mulig at fila bør deles opp i mindre deler: Digte, Blandede Digtninger, enkeltdikt. Forfattere av manuskriptbeskrivelsene bør vel også hentes inn. MANUSKRIPTREGISTRET NEDERST I DOKUMENTET BØR KANSKJE VÆRE I EN EGEN FIL?
+      </change>
+    </revisionDesc>
+  </teiHeader>
+
+<text type="msBeskr" xml:id="BlaDigt_msBeskr">
+<body>
+<div type="msDescription">
+  <head rend="level1">MANUSKRIPTBESKRIVELSE AV BLANDEDE DIGTNINGER</head>
+<byline><docAuthor>Tone Modalsli</docAuthor></byline>
+
+<div xml:id="BlaDigt8191_msBeskr">
+<head rend="level2">nbo m<hi rend="miniscule">s</hi>.8 ° 191</head>
+<p rend="noIndent">Egenhendig endelig manuskript til påtenkt diktsamling. Ett bind, senere paginert 1–86. På tittelsiden: <quote>Blandede Digtninger. / Fra Aarene / 1848, / 1849 og 1850.</quote> Manuskriptet er omtalt i ES 3, 331 og HU 14, 467.</p>
+
+<div>
+<head rend="level3">innhold og genetisk status</head>
+<p>Først tittelblad, deretter, på s. 1–78, 26 dikt i egenhendig renskrift, med noen rettelser. Noen steder har Ibsen strøket (s. 62, 64) eller radert ut (s. 66, 77) tidligere tekst så kraftig at den ikke er lesbar; en overstrykning på s. 78 er mindre kraftig. På s. 62 og 64 synes overstrykningen forsøkt utradert. Manuskriptets renskrevne karakter kan indikere at Ibsen hadde tenkt at dette skulle trykkes (ES 3, 331), jf. <hi rend="italic">Ibsens lyriske forfatterskap</hi> ovenfor.</p>
+<p>Diktene er nummerert 1–26 av en senere hånd. Den samme hånden har på rectosiden av bakre forsatsblad skrevet innholdsfortegnelse (<quote>Indhold:</quote>), med diktnumre og sidetall. På tittelsiden står navnet <quote>J. Nandrup</quote>, og <quote>H. Ibsen</quote> er tilføyd under Ibsens tekst. Det ser ut som disse to navnene er skrevet av samme hånd som innholdsfortegnelsen og numrene, og det er nærliggende å tro at hånden er (Hans) Jacob Nandrups (se <hi rend="italic">Proveniens</hi>). Hans skrift og navnetrekk fra midten av 1870-årene til 1897 finnes i en rekke dokumenter i Vestre Aker lensmannsarkiv <bibl>(SAO A-10638, Fd, Hb og Ia)</bibl>. I motsetning til tilføyelsene i Ms. 8° 191 er Nandrups skrift i lensmannsarkivet gotisk og kan derfor ikke tjene som sammenligning. Navnetrekkene hans der er derimot ikke skrevet med gotiske bokstaver, til dels noe forskjellig fra navnet på tittelsiden i manuskriptet, men det er ikke dermed utelukket at det er skrevet av samme mann. Ved fire av diktene (nr. 7 <title rend="quotes">Afskedens Minde</title>, nr. 9 <title rend="quotes">Sjælens Solglimt</title>, nr. 11 <title rend="quotes">Midnatsstemning</title> og nr. 12 <title rend="quotes">Til Stjernen</title>) er det i listen tilføyd <quote>NB</quote> med rød blyant. Det er muligens gjort under arbeidet med ES, jf. tilsvarende (og til dels svært like) <quote>NB</quote> bl.a. i Ms. 4° 1112f til <hi rend="italic">Samfundets støtter</hi>, se HIS 7k, 102. På s. 78 har annen hånd med blyant skrevet inn igjen navn som Ibsen hadde strøket over (<quote>Holst</quote> er gjengitt <quote>Holt</quote>). Sammen med manuskriptet ligger en tom konvolutt, med påskrift: <quote>Originalen til nr. 25 pag. 77 [<title rend="quotes">Maaneskinsstemning</title>] er dateret 12te april 1850 beror hos Gustav Heber Oscars gate 49.</quote> Dette er skrevet av Heber (jf. hans underskrift bl.a. i brev til Francis Bull, NBO Brevs. 435). Påskriften kan bero på sammenblanding med <title rend="quotes">Maaneskinsvandring efter et Bal</title>; Ibsens signerte manuskript til dette <bibl>(NBO Ms. fol. 3215)</bibl> er datert 12. april 1850.</p>
+</div>
+    
+<div>
+<head rend="level3">datering</head>
+<p>På tittelsiden fremgår det at diktene er fra 1848, 1849 og 1850. Noen dikt og diktsekvenser er ytterligere datert: Under tittelen <title rend="quotes">Resignation</title> (s. 1) har Ibsen har skrevet årstallet 1847; over <title rend="quotes">Erindringskilden</title> (s. 9) årstallet 1849, som sannsynligvis gjelder de følgende dikt frem til s. 51, der han over <title rend="quotes">Til Norges Skjalde</title> har skrevet <quote>Digte fra 1850</quote>, som overskrift over resten av samlingen. Dessuten har han under tittelen <title rend="quotes">Vaagner Skandinaver! Et Opraab til de norske og svenske Brødre</title> skrevet årstallet 1849 (s. 39), og under tittelen <title rend="quotes">Maaneskinsstemning</title> <quote>Leveret den 7<hi rend="raised">de</hi> April</quote> (s. 77). HU (14, 467) regner med at manuskriptet ble gjort ferdig til trykking våren 1850, dette gjentas av H. Dahl 1958, 10; jf. <hi rend="italic">Ibsens lyriske forfatterskap</hi> ovenfor, med henvisning til Jæger 1888, 239 og Botten-Hansen 1863, 130, som begge har mer upresis årsangivelse.</p>
+</div>
+    
+<div>
+<head rend="level3">mengde, struktur og rekkefølge</head>
+<p>Manuskriptet består av 44 blad i ett bind. Fra og med første side med tekst (rectosiden av bladet etter tittelbladet) er manuskriptet senere (ikke av Ibsen) paginert 1–86. Versosiden av tittelbladet samt s. 79–86 er blanke, alle andre sider samt rectosiden av bakre forsatsblad er beskrevne. Bindet måler ca. 142 x 215 mm.<note type="footer">Alle mål er bredde x høyde, målt midt på siden (bind måles midt på forpermen).</note> Rygg og hjørner var opprinnelig i grønt skinn, se <hi rend="italic">Tilstand</hi> om reparasjoner. Ryggen har mønster i gull. Permene har overtrekkspapir marmorert i grønt og sort. På forpermen er det limt en lapp med påskriften <quote>Digte</quote>. Forsatspapiret er marmorert i brunt, rosa og hvitt. Heftetråden er gulaktig.</p>
+</div>
+   
+<div>
+<head rend="level3">tilstand</head>
+<p>Bindet er slitt. Ryggen er reparert ved at det er lagt en ny rygg i grønn shirting med den originale ryggen limt på. Som forsterkning i falsen mellom forperm og fremre forsatsblad er det limt på en grønn shirtingstrimmel, som delvis er løsnet nederst. Det er brudd i bokblokken mellom fremre forsatsblad og selve manuskriptet, også mellom s. 38 og 39. Frem til og med s. 37/38 er heftetrådene slakke, særlig slakke til og med s. 5/6. S. 65/66 og 67/68 er delvis løse. Manuskriptet er til dels noe skittent (særlig tittelsiden) og har flekker, bl.a. fingermerker og blekkflekker. Teksten på rectosiden av bakre forsatsblad har smittet noe over til motstående side (s. 86). S. 49/50 har en loddrett rift fra overkanten og ned i første tekstlinje, uten følger for lesbarheten. En del steder er det rifter nederst i falsen, det finnes også enkelte andre mindre rifter, til dels i kombinasjon med bretter.</p>
+</div>
+    
+<div>
+<head rend="level3">papir</head>
+<p>Papiret i den beskrevne delen av manuskriptet (tittelsiden + s. 1–78) er gulaktig. Siden måler 134 x 211 mm. De ubeskrevne bladene (s. 79–86) har samme størrelse og noenlunde samme farve, men er noe grovere og tykkere.</p>
+</div>
+    
+<div>
+<head rend="level3">skriveredskap og -stoff</head>
+<p>Ibsen har skrevet med blekk. Skriftbildet er brunt. Også den andre hånden (Nandrup?) har skrevet med blekk. I navnene på tittelsiden og i de tilføyde numrene ved dikttitlene er skriftbildet brunt, i innholdslisten mørkere brunt. Tilføyde navn på s. 78 og sidetallene er med blyant, <quote>NB</quote> ved innholdslisten er med rød blyant.</p>
+</div>
+    
+<div>
+<head rend="level3">hender og skrift</head>
+  <list type="numbered">
+<item n="1"><hi rend="italic">Henrik Ibsen</hi>: Skriften er høyrehellende og omhyggelig. Diktene er plassert noenlunde midt på siden eller mot høyre. Ibsen har med få unntak satt en form for strek under titlene og etter hvert dikt. Strekene er oftest forseggjorte dekorasjoner, med en blomst, stjerne e.l. i midten og ofte også ved hver ende, med fine små pyntede linjer ut fra midten i avtagende tykkelse. Tittelen <quote>Digtninger</quote> på s. 1 og angivelsen av årstallsbolker (s. 9 og 51) er også utstyrt med dekorasjoner på hver side og under. På tittelsiden er hovedtittelen omgitt av elegante slyngede linjer, og det er satt dekorert skillestrek mellom den og undertittelen. Større overstrykninger er gjerne utført med tette skråstreker.</item>
+    <item n="2"><hi rend="italic">(Hans) Jacob Nandrup</hi>: Se <hi rend="italic">Innhold og genetisk status</hi> om innslag som kanskje kan være skrevet av ham, og om usikkerhet. Skriften er tydelig, men noe skjødesløs.</item>
+    <item n="3"><hi rend="italic">Gustav Heber</hi>: Påskriften på den vedlagte konvolutten. Heber (1873–1962) var høyesterettsadvokat. Ifølge hans brev til Francis Bull 24. mai 1951 var Sophie Holst hans hustrus mormor.</item>
+    <item n="4"><hi rend="italic">Andre</hi>: Pagineringen, gjeninnskrevne navn på s. 78, de tilføyde <quote>NB</quote> ved innholdslisten.</item>
+  </list>
+</div>
+    
+<div>
+<head rend="level3">stempel og katalogsignatur</head>
+<p>Bibliotekets stempel og katalogsignatur finnes på versosiden av fremre forsatsblad, stempelet også på tittelsiden og på rectosiden av bakre forsatsblad (siden med <quote>Indhold</quote>). På en shirtingstrimmel som er limt til innsiden av forpermen og stikker opp over boken, står nummeret 191.</p>
+</div>
+    
+<div>
+<head rend="level3">proveniens</head>
+  <p>Manuskriptet tilhører Nasjonalbiblioteket, Oslo. Det ble katalogisert uten angivelse av aksesjonsår eller proveniens, men det synes å være katalogisert i 1901–02. Lie (1948, 96) opplyser, men med spørsmålstegn, at manuskriptet ble kjøpt fra Oskar Nandrup i 1901, jf. proveniensopplysningene for NBO Ms. 4° 928 nedenfor, under <hi rend="italic">Andre manuskripter</hi>, <title rend="quotes">En Livsvaar</title>. Henrik Jæger (1888, 49) forteller at han (Jæger) ved <quote>et overordentlig heldigt sammentræf af omstændigheder</quote> hadde kommet <quote>på spor efter</quote> manuskriptet, som han beskriver som <quote>en samling af 26 digte, sirlig indskrevne i et lidet indbundet hefte</quote>. I FU (4, V, utgitt i 1899) skriver J. B. Halvorsen at Universitetsbiblioteket i Kristiania (dvs. det senere Nasjonalbiblioteket) ervervet dette manuskriptet for <quote>nogle Aar siden</quote>, sammen med andre Ibsen-manuskripter fra hans tidligste forfatterår. Disse manuskriptene kan vanskelig være andre enn de som ble kjøpt fra Nandrup (NBO Ms. 4° 923–36). Halvorsens formulering kan tyde på at de kom til biblioteket noen år før overdragelsen ble formalisert i 1901.</p>
+</div>
+</div>
+</div>
+</body>
+</text>
+</TEI>

@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title level="s" type="main">Henrik Ibsens skrifter</title>
+<title level="a" type="desc">Innledning til Kjæmpehøien, 1. versjon</title>
+<author>ført i pennen av Asbjørn Aarseth</author>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
+<respStmt>
+<resp>Kodeteknisk støtte og utvikling</resp>
+<name>AKSIS: Avdeling for kultur, språk og informasjonsteknologi, Universitetsforskning i Bergen (Unifob AS)</name>
+</respStmt>
+<respStmt>
+<resp>Koding</resp>
+<name xml:id="HIS-HB">Hilde Bøe</name>
+<name xml:id="HIS-IF">Ingrid Falkenberg</name>
+<name xml:id="HIS-SBT">Stine Brenna Taugbøl</name>
+<name xml:id="HIS-AMB">Aasta Marie Bjorvand Bjørkøy</name>
+<name xml:id="HIS-NME">Nina M Evensen</name>
+</respStmt>
+<respStmt>
+<resp>Kommentarentiteter</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+</respStmt>
+<respStmt>
+<resp>Rettelser i manuskriptbeskrivelsene</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+</respStmt>
+<respStmt>
+<resp>Implementering av kode</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+<name>Nina M Evensen</name>
+</respStmt>
+<respStmt>
+<resp>Kodekontroll</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+<name>Nina M Evensen</name>
+</respStmt>
+<respStmt>
+<resp>Tekstarbeid</resp>
+<name>Nina M Evensen</name>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+</respStmt>
+</titleStmt>
+<publicationStmt>
+<publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+<distributor xml:id="HISe">Universitetet i Oslo</distributor>
+<date when="2012" xml:id="HISe-date"/>
+<pubPlace>Oslo</pubPlace>
+</publicationStmt>
+<sourceDesc>
+<p>Dette dokumentet har ingen kilde.</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<tagsDecl>
+
+</tagsDecl>
+</encodingDesc>
+<profileDesc>
+<langUsage>
+<language ident="nob"/>
+<language ident="fre"/>
+<language ident="eng"/>
+<language ident="rus"/>
+<language ident="ger"/>
+</langUsage>
+</profileDesc>
+<revisionDesc>
+<change><date>04.12.12</date>
+<name>SBT</name><title>Omkoding til TEI P5 og HISe</title>
+</change>
+</revisionDesc>
+</teiHeader>
+<text>
+<body>
+<div type="introduction" xml:id="intro">
+<div type="background" xml:id="intro_background">
+<head rend="level2">BAKGRUNN</head>
+<p>Det sentrale forbildet for en ung norsk dramatiker i tiden omkring
+1850 var den danske dikteren Adam Oehlenschläger
+(1779–1850). I sin diktning hadde han mer enn noen annen
+søkt å utnytte de dramatiske motsetningene som
+kildene fra det store religionsskiftet i Norden ved slutten av
+vikingtiden forteller om, og som vakte så stor interesse
+blant publikum i første halvdel av det 19.
+århundre. Ved meldingen om Oehlenschlägers
+død i januar 1850 skrev Ibsen minnediktet <title rend="quotes">Skjalden i Valhall</title>, trykt i <title rend="italic">Christiania-Posten</title> 16. februar 1850. Her
+forestiller han seg at den døde dikteren på sin
+ferd mot de kristnes himmel gjør et opphold i det
+hedenske Valhall, <quote>Asernes Sal</quote>, hvor han som har
+vært de norrøne gudenes og heltenes talsmann
+på jorden, hylles av dem og loves evig ry.</p>
+<p>Både i dansk og svensk litteratur hadde sagaromantikken
+utgjort et viktig innslag, mens utnyttelsen av stoff fra vikingtid
+og middelalder hadde vært langt spinklere i norsk
+litteratur. Enkeltstående skuespill som Johan Nordahl
+Bruns <title rend="italic">Einer Tambeskielver</title> (1772),
+Henrik Anker Bjerregaards <title rend="italic">Magnus Barfods
+Sønner</title> (1829) og Andreas Munchs <title rend="italic">Kong Sverres Ungdom</title> (1837) hadde ikke
+fått noen etterfølgere. Mot slutten av
+1840-årene var Oehlenschlägers posisjon
+så sterk i publikums bevissthet at det var naturlig
+å følge hans eksempel for den som ville lykkes
+på teateret. Det er ikke vanskelig å finne spor
+etter den danske dramatikeren i den unge Ibsens tidlige
+forsøk på diktning for scenen.</p>
+<p>Etter skuffelsen med <title rend="italic">Catilina</title>, som ikke
+nådde scenen i første omgang, ønsket
+Ibsen å få til et verk som var mer i publikums
+smak. Da var Oehlenschlägers dramatiske stil
+nærliggende. Som han stiller Ibsen opp mot hverandre den
+tradisjonelle norrøne etikken, som legitimerte vikingenes
+brutale fremferd, og den kristne etikken, som man på
+Ibsens tid oppfattet som eksemplarisk forsonlig og ettergivende.
+Personene er karakterisert primært som representanter for
+hver sin ideologi. Til Vallands skogkledte og fredelige kyst kommer
+vikinger fra nord, ledet av sin unge høvding, Gandalf,
+på hevntokt etter at de noen år tidligere har
+mistet sin daværende høvding, Gandalfs far
+Audun, under et blodig strandhugg i disse traktene. Ved sin
+inntreden på scenen sverger Gandalf ved de
+norrøne gudene Thor og Alfader at han skal hevne sin fars
+død ved å drepe alle de støter
+på, mann eller kvinne, eller selv dø
+før han vender tilbake til Norden. Dermed er fundamentet
+lagt for den dramatiske konflikten.</p>
+<p>Den som først identifiserte sporene etter
+Oehlenschläger i <title rend="italic">Kjæmpehøien</title>, var Henrik
+Jæger i kapitlet <title rend="quotes">Fra Henrik Ibsens
+Rusaar</title>, trykt i samlingen <title rend="italic">Norske
+Forfattere</title>, som han gav ut i 1883. Jæger finner at
+motivet med eneboeren som holder til i Syden, og som viser seg
+å være nordfra, er brukt av
+Oehlenschläger både i <title rend="italic">Væringerne i Miklagard</title> (1827),
+hvor den gamle eremitten fra Syrien åpenbarer seg for sine
+tidligere landsmenn som Olaf Tryggvason, og i <title rend="italic">Landet fundet og forsvundet</title> (1845), hvor
+den gamle Quetzalcoatl i Vinland i <quote>Anden Handling</quote> er
+identisk med islendingen Biørn Asbrandson som opptrer i
+<quote>Første Handling</quote> 25 år
+tidligere. At den opprinnelig norrøne Audun
+ønsker å bli igjen i Valland når
+Gandalf og Blanka drar nordover, er også en parallell til
+Oehlenschlägers to eremitter. Kontrasten mellom Blankas
+sydlandske mildhet og Gandalfs nordiske hardhet minner om
+det tilsvarende forholdet mellom Maria og Harald i <title rend="italic">Væringerne i Miklagard</title>.
+Oehlenschläger hadde allerede i <title rend="italic">Hakon
+Jarl</title> (1807) latt den gamle Auden peke
+på en slik motsetning: <quote rend="indent">
+<HIS:hisLg>
+<l>Da triner Kraft mod Kraft;</l>
+<l>Og Tapperhed og Manddom vorder Præget</l>
+<l>I Nord, som hist i Syden kiælen Ømhed.</l>
+</HIS:hisLg>
+<bibl>(Oehlenschläger 1849, b. 3, 210)</bibl></quote>
+På ett punkt ser Jæger en tydelig forskjell
+mellom den eldre og den yngre dramatikeren i deres behandling av
+norrønt stoff: Ibsens vikinger er en tanke mer barbariske
+og ville enn Oehlenschlägers nordiske helter <bibl>(jf. Jæger 1883, 176–78)</bibl>.</p>
+<p>Motiver hos Ibsen som kunne ha vært hentet fra
+norrøne kilder, har fått en utforming som
+gjør det så godt som sikkert at de har
+gått via Oehlenschläger. Også
+når det gjelder enkelte detaljer i <title rend="italic">Kjæmpehøien</title> som kunne ha
+vært lånt hos en samtidig som P.A. Munch, kan vi
+se at han må ha fått dem fra
+Oehlenschläger. Det gjelder gudenavnet <hi rend="italic">Baldur</hi>, en islandsk form som
+Oehlenschläger bruker, jf. f.eks. <title rend="italic">Baldur hin Gode</title> (Oehlenschläger
+1849, b. 1), mens Munch har formen <hi rend="italic">Balder</hi>
+både i <title rend="italic">Nordens gamle Gude- og Helte-Sagn</title> (1840) og i <title rend="italic">Den ældre Edda</title> (1847), hvor han har norsk tekst i
+kommentarene. Ifølge Francis Bull er det vanskelig
+å finne noe element i stykket som Ibsen må ha
+hentet direkte fra norrøne kilder. Når det
+gjelder den historiske oppfatningen, har Ibsen etter Bulls syn ikke
+fulgt Oehlenschläger slavisk: <quote>Hos
+Oehlenschläger var gjerne farvelegningen anderledes,
+med større beundring for den gamle nordiske kraft, og
+med uvilje og kritikk overfor sydens vekhet og nydelseslyst</quote>
+<bibl>(Bull 1928b, 247)</bibl>.</p>
+<p>Samuel G. McLellan har pekt på en annen forskjell mellom
+Oehlenschläger og Ibsen, nemlig i hovedpersonenes
+karaktersammensetning. Hos Oehlenschläger representerer
+personene enten en utpreget hedensk eller en utpreget kristen
+tenkemåte, der de stilles overfor hverandre i en markert,
+men ikke særlig dynamisk konfrontasjon. I Ibsens <title rend="italic">Kjæmpehøien</title> finner vi, tydeligst i Gandalf, en mer sammensatt karakter, en integrert kontrast, slik at Gandalf med sin bakgrunn i norrøn
+mytologi og viking-etos er mottagelig for påvirkning fra
+Blankas kristne forsoningslære. På tilsvarende
+måte er hverken Blanka eller hennes pleiefar
+endimensjonale representanter for en kristen ideologi. De har
+både kunnskap om og sans for sider ved det
+norrøne verdisynet <bibl>(jf. McLellan 1982, 278)</bibl>.</p>
+<p>Liksom så ofte i Oehlenschlägers skuespill er
+dialogen i <title rend="italic">Kjæmpehøien</title> for det
+meste i blankvers, dvs. urimede femfotsjamber (se utfyllende omtale
+i innledningen til <title rend="italic">Catilina</title> 1850). Men
+i noen rolige og mer lyriske partier er det innslag av kryssrim
+eller parrim. Det gjelder særlig enkelte av Blankas
+replikker, og svarer til Bernhards påpekning av at hun <quote>drømmer</quote>
+<HIS:hisRef> (<seg type="red"><ptr type="ht" target="K1ht.xml" corresp="koK1_ht_2"/></seg>)</HIS:hisRef> og <quote>sværmer</quote>
+<HIS:hisRef> (<seg type="red"><ptr type="ht" target="K1ht.xml" corresp="koK1_ht_3"/></seg>)</HIS:hisRef>, men det gjelder også noen
+replikker av Gandalf<HIS:hisRef> (<seg type="red"><ptr type="ht" target="K1ht.xml" corresp="koK1_ht_4"/></seg>)</HIS:hisRef>, og spesielt i
+replikkvekslinger mellom de to hovedpersonene<HIS:hisRef> (<seg type="red"><ptr type="ht" target="K1ht.xml" corresp="koK1_ht_5"/></seg> og <seg type="red"><ptr type="ht" target="K1ht.xml" corresp="koK1_ht_6"/></seg>)</HIS:hisRef>. Samtidig blir
+billedspråket mer preget av poetiske omskrivninger, bl.a.
+noen som ser ut til å være inspirert av
+kjenninger i den norrøne skaldediktningen (<HIS:hisRef><seg type="red"><ptr type="ht" target="K1ht.xml" corresp="koK1_ht_7"/></seg>,</HIS:hisRef> uth. her):
+<quote rend="indent">
+<HIS:hisLg>
+<l>O, kjender Du da ingen bedre Strid,</l>
+<l>End der, hvor <hi rend="italic">Sværdets røde Tunger tale</hi>?</l>
+</HIS:hisLg>
+</quote>
+Disse innslagene kan ha sammenheng med at verket er betegnet som dramatisk diktning;
+dramaverset fungerer ikke helt som i den klassiske tragedien, men
+har noe til felles med opera, hvor man veksler mellom resitativ og
+arier. De rimede partiene til Blanka og Gandalf kan anses som arier,
+selv om de ikke er ment å skulle synges.</p>
+<p>Ved tre anledninger<HIS:hisRef> (jf. <seg type="red"><ptr type="ht" target="K1ht.xml" corresp="koK1_ht_8"/></seg>, <seg type="red"><ptr type="ht" target="K1ht.xml" corresp="koK1_ht_9"/></seg> og
+<seg type="red"><ptr type="ht" target="K1ht.xml" corresp="koK1_ht_10"/></seg>)</HIS:hisRef> lar dikteren den gjennomgående
+blankversdialogen bli avløst av innlagte dikt eller
+sanger i andre versemål, som kan gi inntrykk av en
+norrøn stil. Dette er et trekk som er typisk for
+norrøne sagagenrer, men Ibsen kan ha det fra
+Oehlenschläger. Noen detaljer tyder likevel på at
+han kjenner skaldestrofer fra oversatte sagatekster. Dikt betegnes i
+dialogen som <quote>Drapakvæde</quote>
+<HIS:hisRef> (<seg type="red"><ptr type="ht" target="K1ht.xml" corresp="koK1_ht_11"/></seg>)</HIS:hisRef> og <quote>Drapa</quote>
+<HIS:hisRef> (<seg type="red"><ptr type="ht" target="K1ht.xml" corresp="koK1_ht_12"/></seg>)</HIS:hisRef>, men dikteren har avstått
+fra direkte etterligninger av norrøne
+skaldeversemål. Et annet eksempel er dette <HIS:hisRef>(<seg type="red"><ptr type="ht" target="K1ht.xml" corresp="koK1_ht_13"/></seg>, uth. her)</HIS:hisRef>:
+<quote rend="indent">
+<HIS:hisLg>
+<l>Paa <hi rend="italic">Muspels Vinger</hi> vil jeg stige op</l>
+<l>Imod min Faders Aand i Valhals Sale!</l>
+</HIS:hisLg>
+</quote>
+Den første av disse omskrivningene betyr noe i retning av ‘blodig våpenstrid’, den siste betyr
+‘flammer’ eller ‘ild’.
+Sagaoversettere i første halvdel av 1800-tallet, for eksempel N.M. Petersen, tok svært ofte vare på kjenningene i sine oversettelser, og forklarer dem gjerne i fotnoter.</p>
+<p>Om Ibsen har hatt klare forestillinger om hva en <hi rend="italic">dråpa</hi> var, er ikke godt å
+si. I alle fall bruker han en del norrøne begreper meget
+fritt. Når han for eksempel bruker ordet <quote>Ledingsfærd</quote>
+<HIS:hisRef> (jf. <seg type="red"><ptr type="ht" target="K1ht.xml" corresp="koK1_ht_14"/></seg> og <seg type="red"><ptr type="ht" target="K1ht.xml" corresp="koK1_ht_15"/></seg>)</HIS:hisRef> om Gandalfs
+private reise til Vallands kyst med det formål å
+hevne drapet på faren, er det en bruk av begrepet <hi rend="italic">leidang</hi> som er uten hjemmel i
+norrønt, men som svarer til den arkaiserende bruken av
+<quote>Ledingstog</quote> i dansk litteratur på
+1840-tallet<HIS:hisRef> (jf. kommentar til <seg type="red"><ptr type="internal" target="K1ht.xml" corresp="koK1_30"/></seg>)</HIS:hisRef>. I
+norrønt betyr <hi rend="italic">leidang</hi> en
+sjøvæpning som er basert på plikt til
+å stille med utrustning til ett skip i hver skipreide
+(enhet for inndeling av kysten). Trolig har Ibsen ikke lagt vekt
+på å bruke norrøne begreper i samsvar
+med deres opprinnelige betydning. Ord som <quote>Drapa</quote>, <quote>Drapakvæde</quote> og <quote>Ledingsfærd</quote> er nok brukt
+først og fremst for å bidra til tekstens tidskoloritt.</p>
+<p>De fleste guder og mytologiske skikkelser Ibsen nevner i teksten, kan
+han ha fått kjennskap til gjennom lesning av
+Oehlenschläger. Det er et nokså stort mytologisk
+persongalleri som blir omtalt i denne relativt korte teksten. Han
+tar også med noen mytologiske figurer som er mindre
+vanlige, for eksempel gudinnen Saga: <quote>Snart stiger Odin ned i Sagas Haller</quote>
+<HIS:hisRef> (jf. <seg type="red"><ptr type="ht" target="K1ht.xml" corresp="koK1_ht_16"/></seg>)</HIS:hisRef>. Forestillingen om Odin som
+stiger ned til Saga, må bygge på P.A. Munchs
+fremstilling av den norrøne gudelæren:
+<quote>Saga, der i Edda nævnes næstefter
+Frigga, har en Bolig ved Søkkvabek (: den synkende
+Bæk) hvor de svale Bølger bruse, og hvor
+Odin og hun hver Dag drikke af gyldne Kar</quote>
+<bibl>(Munch 1840, 28)</bibl>. Gudinnen (eller personifikasjonen)
+Saga nevnes også hos Oehlenschläger, i slutten av
+<title rend="italic">Landet fundet og forsvundet</title>. Gamle
+Biørn Asbrandson, som vil bli værende i
+Vinland, har en ring som hans kjære Thuride har ristet
+noen runer på. Sammen med andre runer Biørn
+selv har ristet, vil disse for fremtiden være et
+vitnesbyrd: <quote rend="indent">
+<HIS:hisLg>
+<l>Saa vide de, at Nordens Mænd fandt dette Land,</l>
+<l>Før Andre kom; og muligt saadan vriste vi</l>
+<l>Den Ære, som tilkommer os, af fremmed Haand.</l>
+<l>Thi Saga, som kun Sandhed vil, tillader ei Usandhed, at
+den Løgn paa hendes Tavle skrev</l>
+</HIS:hisLg>
+<bibl>(Oehlenschläger 1849, b. 4, 174)</bibl></quote>
+I alle fall synes Ibsen å ha sikrere forestillinger om
+norrøn mytologi enn om andre historiske og
+kulturhistoriske emner fra norrøn tid, og han bruker de
+mytologiske navnene på en måte som viser at han
+også kjenner mytene hvor disse figurene opptrer. Denne
+kunnskapen har han mest sannsynlig fra P.A. Munch, <title rend="italic">Nordens gamle Gude- og Helte-Sagn</title> (1840), ikke fra Oehlenschläger alene.</p>
+<p>Den norrøne troen på <hi rend="italic">fylgjer</hi> – en forestilling om at
+mennesker kan være ledsaget av en vernende eller varslende
+ånd i skikkelse av et dyr eller en kvinne <bibl>(jf. KLNM <hi rend="italic">fylgja</hi>)</bibl> – må Ibsen ha blitt kjent med enten gjennom oversatte sagatekster eller gjennom <bibl>P.A. Munch (1840, 31–32)</bibl>. Ibsen lar
+skalden Hemming si til Gandalf <HIS:hisRef>(<seg type="red"><ptr type="ht" target="K1ht.xml" corresp="koK1_ht_17"/></seg>)</HIS:hisRef>: <quote rend="indent">
+<HIS:hisLg>
+<l> – see, jeg maa ledsage Dig</l>
+<l>Hvorhen Du gaaer, som Fylgie paa din Vei!</l>
+</HIS:hisLg>
+</quote>
+Eksemplet sier ikke noe om hvor klare forestillinger Ibsen har om den norrøne
+fylgjetroen, siden skalden her bare sammenligner seg selv med en fylgje.</p>
+<p>Den unge Ibsens store forbilde i 1850 var utvilsomt
+Oehlenschläger. Imidlertid er det mye som tyder
+på at han på denne tiden var begynt å
+bli kjent med deler av Shakespeares diktning. For den som kjenner
+<title rend="italic">The Tempest</title>, er likhetene mellom
+dette skuespillet og den første versjonen av <title rend="italic">Kjæmpehøien</title> så
+tydelige at det må være legitimt å antyde en
+mulig påvirkning, selv om Thomas Van Laan i innledningen
+til sin engelske utgave, <title rend="italic">The Burial
+Mound</title>, antar at likhetene kan være tilfeldige
+<bibl>(Van Laan 1992b, 399–400)</bibl>. Ibsen kan ha lest <title rend="italic">The Tempest</title> enten i Simon Meislings danske oversettelse, <title rend="italic">Stormen</title>, som kom ut i hans <title rend="italic">William Shakespeares
+Lystspil</title> i 1810, eller i August Wilhelm von Schlegels tyske,
+<title rend="italic">Der Sturm</title> (1798) – de to
+er nokså like.</p>
+<p>Den landsforviste hertugen Prospero og hans datter Miranda er
+sentrale personer i Shakespeares stykke, liksom den gamle
+vikinghøvdingen Audun, alias Bernhard, og hans
+pleiedatter Blanka er det i Ibsens. Både Prospero og
+Bernhard holder til som eneboere på et øde sted
+ved sjøen og har holdt sin identitet skjult i mange
+år. I begge tilfeller kommer en flokk gamle fiender i
+land. Den unge piken og den nyankomne høvdingen, eller
+prinsen, forelsker seg i hverandre, og de reiser tilbake til hans
+hjemland. I siste del av begge stykkene gir den gamle eneboeren seg
+til kjenne, og en far og en sønn finner hverandre igjen.
+Hevn og forsoning er hovedmotiver i begge skuespillene.</p>
+<p><title rend="italic">Kjæmpehøien</title> er
+forfattet dels på shakespearsk blankvers (urimede femfotsjamber), dels – særlig i Blankas og Gandalfs replikker – i rimede
+femfotsjamber, som av og til brukes i Shakespeares øvrige
+skuespill. Disse versformene er ellers ikke uvanlige i
+Oehlenschlägers dramatikk. En rekke verbale paralleller
+mellom <title rend="italic">Kjæmpehøien</title> og <title rend="italic">The Tempest</title> blir gjenstand for kommentar nedenfor,<HIS:hisRef> (jf. kommentarer til <seg type="red"><ptr type="internal" target="K1ht.xml" corresp="koK1_18"/></seg>, <seg type="red"><ptr type="internal" target="K1ht.xml" corresp="koK1_44"/></seg>, <seg type="red"><ptr type="internal" target="K1ht.xml" corresp="koK1_58"/></seg>, <seg type="red"><ptr type="internal" target="K1ht.xml" corresp="koK1_85"/></seg>, <seg type="red"><ptr type="internal" target="K1ht.xml" corresp="koK1_92"/></seg>, <seg type="red"><ptr type="internal" target="K1ht.xml" corresp="koK1_93"/></seg> og <seg type="red"><ptr type="internal" target="K1ht.xml" corresp="koK1_101"/></seg>)</HIS:hisRef>.</p>
+</div>
+
+<div type="creation" xml:id="intro_creation">
+<head rend="level2">TILBLIVELSE</head>
+<p>Det var i 1849, etter at <title rend="italic">Catilina</title> var
+ferdig som manuskript, at Ibsen vendte seg mot norsk historie. Han
+hadde først valgt Olav Tryggvason som sitt emne, en
+person også Oehlenschläger tidlig hadde brukt i
+sin diktning. I et brev til vennen Ole Schulerud i
+Kristiania 15. oktober forteller Ibsen at han har nesten hele
+første akt ferdig, og på tross av skuffelsene i
+strevet med å få <title rend="italic">Catilina</title> oppført er han
+nå ved godt mot. I det neste bevarte brevet til den
+hjelpsomme Schulerud, datert 5. januar 1850, kan han ikke melde om
+noen videre fremgang med stykket om Olav Tryggvason. Derimot nevner
+han nå for første gang et mindre skuespill som
+han tydeligvis har arbeidet med tidligere, og som vennen trolig har
+hatt kjennskap til: <quote>det lille Eenactsstykke
+‹Normannerne› er omarbeidet, eller rettere,
+skal omarbeides, hvilket jeg fortiden beskjæftiger mig
+med, og vil i sin nye Skikkelse fremtræde som
+Iklædning for en mere udvidet Idee, end den for
+hvilken det oprindelig var bestemt</quote>. Etter at Ibsen kom
+til Kristiania i begynnelsen av april 1850, ble enakteren
+omarbeidet; blant annet fikk den ny tittel, <title rend="italic">Kjæmpehøien : dramatisk
+Digtning i 1 Act</title>. Skuespillet ble ferdig før
+sommeren, visstnok i pinsen, dvs. i tiden omkring 19. mai, da Ibsen
+hadde fri fra Heltbergs skole <bibl>(HFL 3, 7)</bibl>.</p>
+</div>
+
+<div type="performance" xml:id="intro_performance">
+<head rend="level2">OPPFØRELSE</head>
+<p>Under pseudonymet Brynjolf Bjarme ble enakteren på
+forsommeren 1850 innlevert til Christiania Theater med
+spørsmål om den kunne oppføres.
+På teaterdireksjonens møte 22. juli ble
+følgende vedtak, trolig stilet til Ole Schulerud, fattet:
+<quote>At det av Dem indsendte Stykke
+Kjæmpehøien er antaget til
+Opførelse meddeles herved, med Tilføiende
+at man forventer de manglende Musiknumre</quote> (NBO TS ark A2 25).</p>
+<p>De mannlige skuespillerne ved Christiania Theater var alle danske. En
+av dem, Christian Jørgensen, fikk ansvaret for
+sceneinstruksjonen og rollen som Bernhard. De øvrige
+rollene ble fordelt slik: Gandalf ble spilt av Anthon Smidth, Asgaut
+av Jean Nielsen, Hemming av Theodorus Rasmussen, Jostein av Carl
+Hagen og Hrolloug av Carl Thornam, mens den eneste norske
+medvirkende var Laura Svendsen (senere Gundersen) i rollen som
+Blanka (Rudler 1981, 297). Premieren var først
+planlagt til 8. september, men ble utsatt i flere omganger. Endelig,
+26. september 1850, kunne teppet for første gang
+gå opp for et skuespill av Henrik Ibsen (jf. NBO TS ark A2 25).</p>
+<!--<figure type="getFile" xml:id="illus-8" entity="k1_teaterplakat"><p><hi rend="italic">Plakat for urpremieren av <title rend="normal">Kjæmpehøien</title> 1850 ved Christiania Theater – verdens første oppførelse av noe skuespill av Henrik Ibsen.</hi> <hi rend="kreditering">Nasjonalbiblioteket, Teatersamlingen, UiB</hi></p></figure>-->
+<p>På programmet stod også to andre enaktere:
+lystspillet <title rend="italic">Lises
+Halvstøvler</title> av Paul Aimé Chapelle
+Laurencin, Lucien Desvergers og Gustave van Nieuwheysen
+Vaëz og den dramatiske idyllen <title rend="italic">Til
+Sæters</title> av Claus Pavels Riis. Disse stykkene var
+tidligere fremført henholdsvis ni og tretten ganger, slik
+at de knapt hadde nyhetens interesse nå. På
+plakaten fra førsteoppførelsen sies det ikke
+noe om musikken til forestillingene, ikke engang at F.A. Reissiger
+hadde skrevet musikken til <title rend="italic">Til
+Sæters</title>. Musikken til dette stykket bestod av
+norske folketoner som Reissiger hadde arrangert. Det eneste som
+opplyses, er at <quote>Musiken til ‹Til
+Sæters› faaes i W. Lindorff &amp;
+Hansens Musikhandel</quote>.</p>
+<p><title rend="italic">Kjæmpehøien</title>, slik
+den ble oppført på Christiania Theater, stiller
+små krav til musikalsk medvirkning. Bare én
+sang er angitt av Ibsen: Kort før slutten kommer Hemming
+med en harpe, og <quote>han synger til Harpen</quote>:
+<quote>Klippen der kneiser</quote>.</p>
+<p>Det er ikke noe som tyder på at det har vært
+komponert egen musikk til <title rend="italic">Kjæmpehøien</title>, og Ibsen
+har ikke angitt noen melodi. Teksten har imidlertid samme strofeform
+som Carl Plougs <title rend="quotes">Længe var Nordens
+herlige Stamme</title> med melodi av Bernhard Crusell. Denne
+sangen hadde en viss popularitet rundt midten av
+århundret, og den var med i den første utgitte
+samlingen av mannskorsanger: <title rend="italic">Udvalgt Samling
+af norske, svenske og danske flerstemmige Mandssange</title>,
+<quote>udgiven ved en Del Studenter. Andet Bind. Kristiania
+1845</quote>, som J.D. Behrens stod bak. Denne samlingen fikk
+betydelig spredning i mannskormiljøene, og det er god
+grunn til å anta at Ibsen kjente sangen og melodien. Han
+kan også ha kjent til <title rend="quotes">Rings
+Drapa</title> fra Esaias Tegnérs <title rend="italic">Frithiofs Saga</title> (1825), som Crusells
+melodi opprinnelig ble komponert til (nr. 11 av <title rend="italic">12 Sange av Frithiofs saga</title>).</p>
+<p>Både utgaven i Behrens’ samling og Crusells egen
+utgave er skrevet for mannskor. Det er klart fra teksten i <title rend="italic">Kjæmpehøien</title> at <title rend="quotes">Klippen der kneiser</title> skal synges av en
+solostemme akkompagnert av harpe. Det er sikkert
+meningen at orkesteret skal spille akkompagnementet, eventuelt som
+harpeetterligning. Crusells melodi forutsetter at to tekststrofer
+brukes til en melodisk enhet. Formen er |:A:| |:B:|, og
+både Crusells originalutgave og Behrens’ utgave
+har repetisjonstegn for begge delene. Da Ibsens tekst har fem
+strofer, lar den seg ikke uten videre tilpasse til Crusells melodi.</p>
+<p>Om vi godtar som sannsynlig at Ibsen har tenkt seg Crusells melodi
+til <title rend="quotes">Klippen der kneiser</title> på
+tross av de fem strofene (det burde altså ha
+vært fire eller seks), kan en mulig musikalsk realisering
+rekonstrueres omtrent som eksemplet nedenfor. Det forutsettes da at
+Ibsen har oversett at Crusells melodi krever to tekststrofer av den
+lengde Ibsen bruker. Problemet er i eksemplet løst ved
+å la første repetisjon av A synges til andre
+tekststrofe. Alle andre repetisjoner må synges med
+gjentatt tekst, men ved en oppførelse er det muligens
+bedre å utelate alle eller noen av de andre repetisjonene.
+Akkompagnementet bygger på Crusells harmonisering.</p>
+<!--<figure type="getFile" xml:id="illus-1eps" entity="K1_106001"/>-->
+<p>To sanger av Gandalf (<title rend="quotes">Maalet er vundet!</title>
+og <title rend="quotes">Naar udi Barmen</title>) i 1850-utgaven er
+trukket frem som egne dikt i Hundreårsutgaven <bibl>(HU
+14, 90)</bibl>. Det er imidlertid ikke noe fra Ibsens
+hånd som tyder på at disse avsnittene er blitt
+sunget eller skulle synges.</p>
+<p>Ved denne aller første oppførelsen av et
+Ibsen-skuespill var det 557 betalende tilskuere. Av i alt 103
+spillekvelder på Christiania Theater i løpet av
+sesongen 1850–51 var det bare 15 med flere tilskuere enn
+ved forestillingen 26. september. Publikums interesse gjaldt trolig
+først og fremst urpremieren på <title rend="italic">Kjæmpehøien</title>, et nytt
+norsk skuespill. Forestillingen gikk også 29. september og
+24. oktober. Ibsen var til stede ved urpremieren. Han skal ha
+beskrevet sin opplevelse slik: <quote>jeg gjemte mig i den
+mørkeste krok, – det var fryktelig!</quote> <bibl>(Koht 1928–29, b. 1, 81)</bibl>.</p>
+
+<div xml:id="intro_performance_reception">
+<head rend="level3">mottagelse av oppførelsen</head>
+<p>Den første urpremieren på et Ibsen-skuespill
+ble anmeldt i tre hovedstadsaviser: <title rend="italic">Morgenbladet</title>, <title rend="italic">Christiania-Posten</title> og <title rend="italic">Krydseren</title>. Anmelderen i <title rend="italic">Morgenbladet</title> (28/9 1850) er den
+mest kritiske av de tre. Emnet <quote>Kjærlighedens Seier over Vildheden</quote> er ifølge anmelderen tidligere fremstilt på mesterlig vis så mange ganger at det skal mye til for
+å vekke interesse igjen. Anmelderen finner at stykket
+mangler viktige betingelser som drama. Det har poetisk fine
+passasjer, men det er ikke tilstrekkelig: <quote>Paa Scenen skal
+fremstilles Charakterer og Situationer, der skulle
+være Grundlaget for den poetiske Bearbeidelse og
+ikke omvendt.</quote> Som dikt eller lesedrama ville dette
+verket <quote>have taget sig ret godt ud, da det aldeles ikke er
+blottet for Poesi og poetiske Skjønheder</quote>.
+Denne anmelderen legger stor vekt på et genremessig
+skille mellom poesi og drama: <quote>En Digtning som denne vil
+man derfor nok med Interesse kunne gjennemlæse,
+men paa Scenen hører den ikke hjemme</quote> <bibl>(Anonym 1850d)</bibl>.</p>
+<p>Anmelderen i <title rend="italic">Christiania-Posten</title>
+(28/9 1850) er ikke tilfreds med det bildet stykket gir
+av de norske vikingenes liv og adferd. Fremstillingen virket
+<quote>yderlig løs og skizzeret, og oven i
+Kjøbet har Forfatteren i sit Hastværk
+tillagt de gamle Vikinger Træk, som hverken vi
+eller vore Fædre kan være tjent
+med</quote> <bibl>(Anonym 1850b)</bibl>. Å hevne seg på
+vergeløse kvinner eller svi av en ussel
+eremitthytte var ifølge anmelderen neppe i deres
+stil. At kristendommen måtte seire over hedningenes
+sverd, blir ikke motivert på noen overbevisende
+måte. Også denne anmelderen finner mangler
+ved <title rend="italic">Kjæmpehøien</title> som
+scenisk verk – han savner <quote>sand dramatisk
+Effekt</quote>. På den annen side er han mer
+generøs med positiv omtale når det gjelder
+det dikteriske språket. Betraktet som <quote>et
+episk-lyrisk Digt</quote> er verket av <quote>ikke ringe
+poetisk Værd</quote>. Anmelderen har merket seg at
+<quote>næsten enhver Replik udmærker sig
+ved et lyrisk Sving, en Fylde af poetiske Tanker, hvoraf man
+rimeligvis vil finde endnu mere ved at læse
+Stykket end ved en enkelt Gang at se det
+opført</quote>. Det er tale om
+<quote>særdeles smukke velklingende Vers, hvori
+Forfatteren synes at have ualmindelig Styrke</quote>.
+Konklusjonen blir for denne anmelderen at forfatteren av <title rend="italic">Catilina</title> og <title rend="italic">Kjæmpehøien</title>
+<quote>vidne om et digteriskt Pund, som fortjener
+Opmærksomhed og som forhaabentlig med Tiden ogsaa
+vil kunne gjøre sig til Herre over den dramatiske Form</quote> <bibl>(Anonym 1850b)</bibl>.</p>
+<p><title rend="italic">Krydseren</title>s anmeldelse kom 5.
+oktober 1850, dvs. noen dager etter annen forestilling.
+Også denne anmelderen vurderer stykket på
+bakgrunn av den samme forfatterens nylig trykte skuespill <title rend="italic">Catilina</title>: <quote>Atter har Brynjolf
+Bjarme ved sit Drama, <title rend="italic">Kjæmpehøien</title>,
+tildraget sig Publikums Opmærksomhed</quote> <bibl>(Anonym 1850c)</bibl>.
+Enakteren har sine svakheter; den viktigste er at den mangler
+<quote>Mangfoldighed, Rigdom, maaske Dristighed og
+– for at bruge et tilsynelatende underligt Udtryk
+– literær Foretagelsesaand</quote>. Mer
+konkret hevder anmelderen at <quote>Ideen er smuk; men Sujettet
+er ikke udviklet; det har formeget historisk Indhold til at
+concentreres i een Akt til enkelte smukke Tableauer</quote>.
+Videre påpeker anmelderen at begynnelsen har
+tilløp til spenning, men det hele etterlater en viss
+<quote>Tomhed og Skuffelse, der maaske havde bortfaldt, hvis
+Stykket havde faaet en tragisk Ende</quote>. Anmelderen har
+inntrykk av at helheten er mer <quote>romantisk</quote>
+– og det ville i 1850-årene si tysk-lignende
+– enn <quote>nordisk</quote>; for eksempel viser skalden
+Hemming seg mer <quote>som en ægte Troubadour end som
+ægte nordisk Skjald</quote>. Likevel har
+også <title rend="italic">Krydseren</title>s anmelder
+positive ting å si om <title rend="italic">Kjæmpehøien</title>. Han
+anmoder forfatteren om <quote>at beholde i sine fremtidige
+Arbeider […] de smukke og indholdsrige
+Vers, hvis rene Klang virkelig skjænkede os en
+ublandet Nydelse</quote>. Det var også grunnlag
+for mer generell ros: <quote>Reenhed i Formen, ideal
+Værdighed og en ualmindelig ædel
+Holdning gaaer igjennem dette Arbeide saavelsom det
+forrige.</quote> Anmelderen finner at teksten røper
+både lyst og evne til å gå i
+dybden i de aktuelle emnene, og stiller et
+spørsmål om forfatterens videre veivalg:
+<quote>Skulde Forfatteren maaskee være mer
+disponeret for Tragedien?</quote> <bibl>(Anonym 1850c)</bibl>.</p>
+<p>De tre anmeldelsene av førsteoppførelsen av
+<title rend="italic">Kjæmpehøien</title> i 1850
+vitner om at denne enakteren ikke ble oppfattet som en bagatell.
+I et tilbakeblikk fra 1883 skriver Henrik Jæger:
+<quote rend="proseIndent">hvad <title rend="italic">Kjæmpehøjen</title>
+angaaer, saa var Opførelsen af et Skuespil af en
+ung norsk Forfatter paa Kristiania danske Theater dengang en
+saa stor Sjeldenhed, at det nødvendigvis maatte
+blive bemærket og opfattet som en Begivenhed <bibl>(Jæger 1883, 181)</bibl>.</quote> I løpet av høstsesongen 1850 ble stykket sett av 1171 tilskuere; dette utgjorde den gang om lag fire prosent av
+Kristianias innbyggere (jf. <bibl>Rudler 1963</bibl>).</p>
+</div>
+</div>
+
+<div type="publication" xml:id="intro_publication">
+<head rend="level2">UTGIVELSE</head>
+<p>Ole Schulerud henvendte seg til bokhandler Steensballe, som hadde
+hatt <title rend="italic">Catilina</title> i kommisjon, for
+å få ham til å kjøpe retten
+til å gi ut <title rend="italic">Kjæmpehøien</title> sammen med
+dikterens episke dikt <title rend="italic">Guldharpen</title>
+(senere tapt) for 25 spesidaler. Bokhandleren gikk med på det,
+og betalte straks et forskudd på 10 spesidaler. Imidlertid ble
+trykkingen stoppet etter at første korrekturark (16
+sider) ble levert <bibl>(jf. HFL 3, 7–8, note)</bibl>. Teksten til denne versjonen av
+<title rend="italic">Kjæmpehøien</title>
+ble ikke trykt i Ibsens levetid.</p>
+</div>
+</div>
+</body>
+</text>
+</TEI>

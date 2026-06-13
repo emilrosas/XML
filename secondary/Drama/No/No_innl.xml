@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title level="s">Henrik Ibsens skrifter</title>
+<title level="a">Innledning til Norma</title>
+<author>ført i pennen av Vigdis Ystad</author>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
+<respStmt>
+<resp>Kodeteknisk støtte og utvikling</resp>
+<name>AKSIS: Avdeling for kultur, språk og informasjonsteknologi, Universitetsforskning i Bergen (Unifob AS)</name>
+</respStmt>
+<respStmt>
+<resp>Koding</resp>
+<name xml:id="HIS-HB">Hilde Bøe</name>
+<name xml:id="HIS-IF">Ingrid Falkenberg</name>
+<name xml:id="HIS-SBT">Stine Brenna Taugbøl</name>
+<name xml:id="HIS-AMB">Aasta Marie Bjorvand Bjørkøy</name>
+<name xml:id="HIS-NME">Nina M Evensen</name>
+</respStmt>
+<respStmt>
+<resp>Kommentarentiteter</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+</respStmt>
+<respStmt>
+<resp>Rettelser i manuskriptbeskrivelsene</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+</respStmt>
+<respStmt>
+<resp>Implementering av kode</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+<name>Nina M Evensen</name>
+</respStmt>
+<respStmt>
+<resp>Kodekontroll</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+<name>Nina M Evensen</name>
+</respStmt>
+<respStmt>
+<resp>Tekstarbeid</resp>
+<name>Nina M Evensen</name>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+</respStmt>
+</titleStmt>
+<publicationStmt>
+<publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+<distributor xml:id="HISe">Universitetet i Oslo</distributor>
+<date when="2012" xml:id="HISe-date"/>
+<pubPlace>Oslo</pubPlace>
+</publicationStmt>
+<sourceDesc>
+<p>Dette dokumentet har ingen kilde.</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<tagsDecl>
+
+</tagsDecl>
+</encodingDesc>
+<profileDesc>
+<langUsage>
+<language ident="nob"/>
+<language ident="fre"/>
+<language ident="eng"/>
+<language ident="rus"/>
+<language ident="ger"/>
+</langUsage>
+</profileDesc>
+<revisionDesc>
+<change><date>20.12.12</date>
+<name>SBT</name><title>Omkoding til TEI P5 og HISe</title>
+</change>
+</revisionDesc>
+</teiHeader>
+<text>
+<body>
+<div type="introduction" xml:id="intro">
+<div type="background" xml:id="intro_background">
+<head rend="level2">BAKGRUNN</head>
+<p>Ibsens første politiske satire bærer tittelen
+<title rend="italic">Norma eller en Politikers Kjærlighed</title> med undertittelen <title rend="italic">Musik-Tragedie i tre Akter</title>, og er formet
+som en operaparodi. Teksten ble skrevet sommeren 1851, i en periode
+hvor dikteren samtidig vikarierte som stortingsreferent i bladet
+«<title rend="italic">Manden</title>»/<title rend="italic">Andhrimner</title>, under vennen og
+medredaktøren Aasmund Olavsson Vinjes fravær.
+Teksten ble publisert anonymt, men Ibsen omtaler selv <title rend="italic">Norma</title> i et brev til Alfred von Wolzogen,
+datert desember 1876, som <quote>nur eine politische Satire in
+dramatischer Form […], übrigens
+ohne tiefere Bedeutung</quote>, og vedkjenner seg dermed
+indirekte forfatterskapet. Stykket tilskrives videre Ibsen av J.B.
+Halvorsen i <title rend="italic">Norsk Forfatter-Lexikon</title>
+<bibl>(HFL 3, 82)</bibl>. Ibsen leste
+korrektur på Halvorsens omtale av ham selv, slik
+materialet forelå i en første uombrukket
+versjon. De egenhendig kommenterte korrekturarkene finnes ved
+Nasjonalbiblioteket i Oslo (NBO Ms.fol. 907), men det er ikke mulig
+å si sikkert om Ibsen har lest korrektur på den
+delen av artikkelen som omhandler <title rend="italic">Andhrimner</title>
+<bibl>(Holtsmark 1928, 140)</bibl>. Disse arkene kom til etter at
+Ibsen hadde sendt sine korreksjoner og kommentarer. I et brev til
+Heinrich Zschalig 4. september 1889 anbefaler Ibsen ham å
+gjøre seg kjent med Halvorsens artikkel: <quote>Denne er
+udtømmende og fuldt ud pålidelig i enhver
+henséende.</quote> Ut fra det foregående kan vi
+med rimelig sikkerhet hevde at Ibsen har vedkjent seg
+forfatterskapet til <title rend="italic">Norma</title>.</p>
+<p>Teksten er på en og samme tid politisk satire og
+litterær og musikalsk parodi, der forbildene kan
+være hentet innenfor ulike genrer med gamle aner.</p>
+<p>Den politiske bakgrunn for <title rend="italic">Norma</title>
+må søkes i samtidige forhandlinger og
+konflikter i det norske Storting, som i perioden
+1844–51 hadde inntatt vekslende opposisjonelle og mer
+forsonlige holdninger til regjeringens politikk. Fortalen til
+<title rend="italic">Norma</title> henviser til
+stortingsforhandlingene i mai 1851 som direkte
+utløsende for tekstens tilblivelse: <quote>Forleden
+Dag befandt jeg mig paa Storthingsgalleriet
+[og] lod […]
+Phantasien frit Spillerum […]</quote> (<seg type="red"><ptr type="ht" target="Noht.xml" corresp="koNo_ht_16"/></seg>).</p>
+<p>Helt konkret knytter Ibsens parodi seg til Stortingets
+såkalte <hi rend="italic">adressedebatt</hi> i 1851.
+Før parlamentarismen lå Stortingets
+muligheter til å påvirke regjeringen enten i
+kritiske bemerkninger fra protokollkomiteen eller i å
+reise tiltale for riksrett mot en statsråd.
+Påtale for riksrett ble reist seks ganger frem til
+1845 <bibl>(Seip 1974–81, b. 1, 84)</bibl>. Et tredje
+alternativ var <hi rend="italic">adresser</hi> med kritikk av
+regjeringen. I perioden 1844–51 ble adresseinstituttet
+tatt systematisk i bruk av opposisjonen.</p>
+<p>Opposisjonen 1844–51 er av J.A. Seip karakterisert som
+<quote>den tredje opposisjonsbevegelse</quote> etter 1814.
+Den var sammensatt av ulike strømninger som bare
+delvis løp sammen: videreføring av
+bondeopposisjonen fra 1830-årene, opposisjonelle
+tendenser blant kjøpmenn og håndverkere
+på bakgrunn av næringspolitiske
+spørsmål, og noen få, men
+markerte radikale akademikere. I 1845 avviste bøndene
+å støtte et adresseforslag fra Adolf Bredo
+Stabell som skulle tvinge frem utskiftninger i regjeringen.
+Under inntrykket av februarrevolusjonen 1848 stod Stabell og Ole
+Gabriel Ueland sammen bak et meget radikalt adresseforslag som
+uttrykte generell mistillit til regjeringen. Men da
+revolusjonsbølgen gav seg, slo de retrett, trakk
+forslaget tilbake og fikk heller ikke vedtatt en mer avsvekket
+kritikk. I stedet måtte de tåle
+hånende kommentarer fra A.M. Schweigaard og Hans Holmboe.</p>
+<p>Frem til neste storting i 1851 skjedde det igjen en almen
+radikalisering. Ved valget 1850 hadde håndverkerne
+meget sterk fremgang. Dessuten kom thranitterbevegelsen
+1849–51. Marcus Thrane (1817–90) hadde startet
+den første norske arbeiderbevegelse i desember 1848,
+bygget på en sosialisme med fransk forbilde. Hans
+praktiske krav var ikke faretruende radikale, og derfor kunne
+han søke samarbeid med de mest demokratiske
+bondeførerne. Thrane arbeidet for et ministerium
+Ueland <bibl>(ES 3, 352)</bibl>. Hans bevegelse var den første som
+mobiliserte også arbeidere og husmenn, ved siden av
+småbønder og håndverkere, og ett
+av bevegelsens hovedkrav var almen mannlig stemmerett. Da han
+24. februar 1851 prøvde å arrangere et
+demonstrasjonstog i Kristiania, nedla politiet forbud mot
+demonstrasjonen <bibl>(ES 3, 352)</bibl>. Ibsen var blant bevegelsens
+sympatisører, og leverte ifølge egne
+opplysninger (på korrekturarkene til Halvorsens
+forfatterbibliografi) bidrag til bevegelsens avis <title rend="italic">Arbeider-Foreningernes Blad</title>, som hans
+venn Theodor Abildgaard redigerte siden nyttår 1851.
+Bevegelsen hadde på det meste (juli 1851) over 400
+lokalforeninger og 30 000 medlemmer <bibl>(Seip
+1974–81, b. 1, 189)</bibl>.</p>
+<p>Den demokratiske opposisjon mente selv å
+utgjøre et overveldende flertall på
+Stortinget i 1851, og det ble dannet en klubb av <quote>lutter
+frihedsmænd</quote> som skulle forberede behandlingen
+av alle viktige saker <bibl>(ES 3, 335)</bibl>. Våren 1851 skjedde
+det en tilnærming mellom deler av thranitterbevegelsen
+og stortingsopposisjonen. Abildgaard agiterte for å
+erstatte den gamle regjeringen med en regjering utgått
+av opposisjonen, en <quote>regjering Ueland</quote>
+<bibl>(Seip 1974–81, b. 1, 205)</bibl>. Ueland og en
+gruppe radikale akademikere ønsket å
+få i stand en kritisk adresse som svar på
+regjeringens trontale. Denne gangen trakk Stabell seg unna. Han
+foreslo i stedet en motivert dagsorden som uttrykte at det
+hersket en <quote>skadelig uenighed mellem Storthinget og
+Regjeringen</quote>, et forslag som ble supplert av bl.a. Johan
+Sverdrup. Det ble forkastet av Stortinget 3. april, men
+oppnådde støtte fra et sterkt mindretall
+(59 mot 45). Nederlaget avslørte splittelse i
+bondeopposisjonen. Det skyldtes blant annet at
+østlandsbøndene ble skremt til moderasjon
+av thranitterbevegelsen, som hadde mobilisert landsdelens husmenn, og
+Stabell hadde en del av sin velgerbasis blant
+Akershus-bøndene <bibl>(Kaartvedt et al. 1964, b. 1,
+425–37; Seip 1974–81, b. 1, 165–206)</bibl>. Ueland skrev at det var arbeidersaken
+som hadde <quote>forskræmt Østlændingerne, saa de ere forvandlede
+fra Løver til Harer</quote> <bibl>(Bergsgård 1932, b. 1, 570)</bibl>. Stabell
+forklarte i Stortinget sin holdning ved å vise til
+<quote>Europas nærværende
+reaktionære Tilstand og det herskende
+Bajonetherredømme, som gjorde, at Tiden forekom
+ham noget ubeleilig til nu at gjøre
+Storthingspluralitetens Meninger og Rettigheder
+gjældende</quote>. Dessuten pekte han på
+statsrådssaken som en reform som pekte i riktig
+retning (<title rend="italic">Storthings-Efterretninger</title> 1888–1911, b. 3, 807). I
+<title rend="italic">Morgenbladet</title> skrev han som
+forsvar for sin retrett: <quote>Ungarn er kuet</quote>, m.a.o.
+etter at den ungarske oppstanden mot habsburgerne var
+slått ned med tsarens hjelp i august 1849, var den
+europeiske revolusjonen definitivt over, og da fikk reformer
+vente også i Norge <bibl>(Seip 1974–81, b. 1, 174)</bibl>.</p>
+<p>Også Ibsens revolusjonære glød var
+blitt tent av det ungarske nederlag, slik han gav uttrykk for det
+i diktet <title rend="quotes">Til Ungarn!</title> (1849), hvor strofe to lyder:
+<quote rend="indent">
+<HIS:hisLg>
+<l>Frihedshelteskaren segnet for Barbarers vilde Horder, –</l>
+<l>Paa Ruinen Tyranniet staaer igjen som Frihedsmorder.</l>
+<l>Fryder eder, purpursmykkede Monarker! Atter feired</l>
+<l>Magten sin Triumph, – paany er Frihedsflammen jo beseiret!</l>
+</HIS:hisLg>
+<bibl>(ES 1, 30)</bibl></quote>
+I Ibsens senere stortingsreferat <title rend="quotes">Handlinger
+og Træk af Stortinget</title>, trykt i «<title rend="italic">Manden</title>»/<title rend="italic">Andhrimner</title> 18. mai 1851, heter det
+ironisk at <quote rend="proseIndent">Begreberne forandre sig, at
+det, som paa forrige Thing ansaaes for liberalt, er nu det
+Modsatte, o. s. v. Heraf seer man, at Stabell igrunden ikke
+har skiftet Sind; hans Færd er fuldkommen
+konsekvent, – det tilsyneladende Inkonsekvente deri
+ligger kun i det Ydre <bibl>(Ibsen 1851b, sp. 99; HU 15, 62–64).</bibl></quote></p>
+<p>I juli 1851 gikk politiet til aksjon mot thranitterbevegelsen og
+arresterte dens ledere. Ibsen slapp så vidt unna
+politiransakningen av avisens kontorer <bibl>(M. Meyer 1971,
+78)</bibl>. Maleren Peder Balke ønsket i den
+anledning å arrangere en demonstrasjon som skulle
+juble for Ueland, Holst, Sverdrup og Lerche, men lage
+kattemusikk (<quote>Katzenjammer</quote>) for Schweigaard, Otto
+Vincent Lange og Holmboe <bibl>(Bergsgård 1932, b. 1,
+581)</bibl>. Adressedebatten 3. april er referert i <title rend="italic">Morgenbladet</title> 1851, nr. 94–99 og
+<title rend="italic">Storthings-Efterretninger</title> 1888–1911, b. 3, 803–20.</p>
+<p>Verket retter også sin brodd mot populære
+musikkdramatiske former, skjønt det kan diskuteres om
+ikke forholdet til Bellini snarere skal regnes som en travesti.
+Ibsen benytter nemlig operalibrettoen til primært
+å parodiere det politiske liv, som trekkes nedover ved
+hjelp av den komiske effekt han oppnår ved parodiens
+hjelp. Det er med andre ord politikerne som rammes, i
+høyere grad enn Bellinis opera. Men ved denne
+travesteringen knytter altså Ibsen sin tekst til en
+eldre litterær tradisjon, nemlig operaparodiene.</p>
+<p>Litterære parodier og operaparodier var ikke ukjente i
+hundreåret før Ibsen skrev <title rend="italic">Norma</title>. Ludvig Holbergs <title rend="italic">Peder Paars</title> (1719) og Johan Herman Wessels <title rend="italic">Kierlighed uden Strømper</title> (1772) må Ibsen ha kjent. Wessels verk er formet som opera eller syngespill, med den
+fransk-klassisistiske tragediegenre som forbilde. Man kjenner
+også en rekke rene operaparodier, især fra
+svensk teater, der den seriøse operagenren var blitt
+populær under Gustav den tredjes regjeringstid (de
+siste tiårene av 1700-tallet). Etter denne
+blomstringsperioden for svenske operaoppførelser
+fulgte en serie parodier, kanskje med franske forbilder. Carl
+Israel Hallmann kom til å spille en fremtredende rolle
+i den svenske utviklingen av genren, med parodier som <title rend="italic">Casper och Dorothea</title> (1775) (parodi
+på hoffsekretær Lalins heroiske ballett
+<title rend="italic">Acis och Galathea</title>), <title rend="italic">Skeppar Rolf</title> (1778) (parodi
+på Gustaf Fredrik Gyllenborgs <title rend="italic">Birger Jarl</title>) og <title rend="italic">Donnerpamp</title> (1783) (parodi på
+Jean-Baptiste Lully og Philippe Quinaults opera <title rend="italic">Roland</title> (1685 og senere bearbeidelser av
+denne)). Johan Gabriel Oxenstierna skrev <title rend="italic">Dårland : Parodie af Roland le
+Furieux</title> (mellom 1782 og 1786) (Frykenstedt 1968, 57). I
+<title rend="italic">En critik öfver
+critiker</title> går den svenske dikteren Thomas
+Thorild til storm mot sin samtids parodier, med unntak av dem
+som <quote>genom en Parodisk yrsel, kommit att blifva
+Mästare i det sanna Burleska</quote> – dit
+han også regner Hallmann <bibl>(Frykenstedt 1968, 43)</bibl>.</p>
+<p>Opera og musikkteater var også populære og
+tilnærmet dominerende genrer ved midten av
+1800-tallet, både i København og
+Kristiania. I sin artikkelserie <title rend="quotes">Om
+Theateret</title> (1840) skriver J.L. Heiberg om
+<quote rend="proseIndent">de tragiske Operaer af italienske Componister, som i
+den senere Tid begynde at komme i Mode ved vort Theater
+[…] hvilket sees deraf, at den fine
+Verden interesserer sig derfor. Hvergang en ny Opera af
+denne Art, især af Bellini, er ivente paa vor
+Scene, ere Forventningerne spændte <bibl>(Heiberg 1861–62, b. 6, 251–52).</bibl></quote> Christiania Theater hadde eget orkester som spilte både
+til operaer, syngespill og talte dramaer. Selv om teateret ikke
+var godt bevendt med sangere og orkesterets kvalitet kan ha
+vært ujevn, var det opera og syngespill publikum helst
+ville ha. Allerede før 1840 oppførtes ved
+Christiania Theater så vidt krevende verker som Daniel
+François Esprit Aubers <title rend="italic">Fra
+Diavolo</title>, Carl Maria von Webers <title rend="italic">Der
+Freischütz</title> og Wolfgang Amadeus Mozarts <title rend="italic">Don Giovanni</title>
+<bibl>(Anker 1956)</bibl>. I tiåret 1840–50
+fikk operaoppførelsene et kraftig oppsving.</p>
+<p>1850 ble to av våre første norske syngespill
+satt i scene ved teateret. I januar kom uroppførelsen
+av C.P. Riis’ <title rend="italic">Til
+Sæters</title> med musikk (arrangerte folketoner) av
+Friedrich August Reissiger. I april fulgte en
+nyoppførelse av Henrik Anker Bjerregaard og Waldemar
+Thranes <title rend="italic">Fjeldeventyret</title>.
+Også en rekke danske syngespill og vaudeviller stod
+på repertoaret under Ibsens første
+Kristiania-år, da teateret fremførte J.L. Heibergs <title rend="italic">Elverhøi</title> (1850 og 1851), J.Chr. Hostrups <title rend="italic">Gjenboerne</title> (1850) og <title rend="italic">En Spurv i Tranedans</title> (1850), Johanne Luise Heibergs <title rend="italic">En Søndag paa Amager</title> (1850–51) og <title rend="italic">Abekatten</title> (1850–51),
+Carsten Hauchs <title rend="italic">Søstrene paa
+Kinnekullen</title> (1850–51) og Henriette Nilsens
+<title rend="italic">Slægtningerne</title> (1850–51).</p>
+<p>1851 ble den danske teatermann Carl Borgaard ansatt som
+direktør ved Christiania Theater. Under Ibsens
+første opphold i Kristiania (fra våren 1850
+til høsten 1851) stod både operetter og
+operaer på teaterets program: <title rend="italic">Søvngjængersken</title>
+(<title rend="italic">La sonnambula</title>) av Vincenzo
+Bellini og Felice Romani, <title rend="italic">Den sorte
+Domino</title> av Auber og Eugène Scribe, <title rend="italic">Den Stumme fra Portici</title> (<title rend="italic">La muette de Portici</title>) av Auber med libretto av Scribe og Casimir Delavigne, <title rend="italic">Wilhelm Tell</title> av Gioacchino Rossini,
+og <title rend="italic">Norma</title> av Bellini med libretto
+av Romani i Adam Oehlenschlägers oversettelse
+<bibl>(Anker 1956)</bibl>.</p>
+<p>Ibsen anmeldte to av disse forestillingene. I en omtale av <title rend="italic">Wilhelm Tell</title> og <title rend="italic">Norma</title> i artikkelen <title rend="quotes">Theatret</title> («<title rend="italic">Manden</title>»/<title rend="italic">Andhrimner</title> 25. mai 1851) karakteriserer
+han operagenren ved at den danner en høyere enhet av
+musikk og drama:
+<quote rend="proseIndent">Dette Medium er altsaa i sit Grundvæsen en
+Komposition af to Elementer […] Operaen
+er Eenheden af Begge og kan følgelig ikke
+aabenbare sig gjennem et Medium, hvoraf det ene Moment
+mangler. […] Den inderligste Harmoni maa
+saaledes finde Sted mellem Musik og Text; Musiken er
+Operaens Sjæl, Texten dens konkrete Form, hvoraf
+den er omsluttet, og da vi i Operaen befinde os paa det
+Ideelles Gebet, saa kræve vi her en fuldkommen
+Overensstemmelse mellem Indhold og Form.
+[…] Disse aldeles nødvendige
+Betingelser for en reen og uforstyrret Nydelse af Operaen
+have neppe ved nogen foregaaende Anledning hos os
+været saa heldigen forenede som ved
+Opførelsen af «Norma» <bibl>(Ibsen 1851d; HU 15, 66–68)</bibl>.</quote>
+Slike teoretiske refleksjoner kan tyde på inspirasjon
+fra tidens store kritiker, J.L. Heiberg. I artikkelen
+<title rend="quotes">Om Operaen og Syngespillet</title>
+(1834) tar Heiberg avstand fra å betrakte musikken
+adskilt fra operaen som musikkdramatisk verk. Dersom musikken
+<quote rend="proseIndent">gjør sin Selvstændighed
+gjældende; saaledes er den ikke længer
+Opera-Musik, men Concert-Musik; og det er da ligesaa
+unødvendigt og urimeligt at lade en saadan Musiks
+Udførelse ledsages med de udvortes Apparater af
+et Skuespil, som om man ved et Maskineri vilde faae en
+død Mand til at bevæge sig
+<bibl>(Heiberg 1861–62, b. 6, 144).</bibl></quote>
+Operamusikken må nemlig, i likhet med operaen som
+helhet, forstås <hi rend="italic">dramatisk</hi>.
+Selv ikke Mozarts geni ville kunne sikre <title rend="italic">Don Giovanni</title>s storhet dersom
+librettoen hadde manglet dramatisk karakter, ifølge
+Heiberg. Noe tilsvarende gjelder syngestykket. Også
+her kreves en dramatisk tekst: Man <quote>gaaer nemlig ikke
+paa <hi rend="italic">Comedie</hi> for at høre
+<hi rend="italic">Musik</hi>, men for at nyde et <hi rend="italic">Skuespil</hi>, være sig i
+reciterende eller musikalsk Form</quote>
+<bibl>(Heiberg 1861–62, b. 6, 145)</bibl>. I en senere
+artikkel <title rend="quotes">Om den italienske Opera</title>
+(1842) skriver Heiberg at det dramatiske i seg selv forutsetter
+en totalitet der alle elementer går opp i en
+<quote>organisk, characteristisk</quote> enhet
+<bibl>(Heiberg 1861–62, b. 6, 159)</bibl>, noe han
+også stiller som krav til de musikkdramatiske verker.</p>
+
+<div xml:id="intro_background_dramaform">
+<head rend="level3">dramaform</head>
+<p>I fortalen til sitt eget stykke <title rend="italic">Norma</title> karakteriserer Ibsen Bellinis verk
+som opera, men like etter bruker han betegnelsen <quote>Skuespillet</quote>
+<HIS:hisRef> (<seg type="red"><ptr type="ht" target="Noht.xml" corresp="koNo_ht_4"/></seg>)</HIS:hisRef>. Mot slutten av fortalen
+benevner han også den opprinnelige operaen som <quote>Intriguestykket</quote>
+<HIS:hisRef> (<seg type="red"><ptr type="ht" target="Noht.xml" corresp="koNo_ht_5"/></seg>)</HIS:hisRef>. Tilsynelatende skiller han
+altså ikke mellom genrene, noe som kan tyde
+på slektskap med Heibergs omtale av opera- og syngespillgenren.</p>
+<p>I fortalen skriver Ibsen også om <quote>Tonernes
+Magt</quote> til å <quote>overhugge Tanketraadens
+gordiske Knuder</quote>, noe som gjorde det mulig for ham
+å tolke de underliggende betydninger i Stortingets
+arbeid (<seg type="red"><ptr type="ht" target="Noht.xml" corresp="koNo_ht_1"/></seg>). Dette kan minne om den kontrast mellom
+musikk og tanke som er et hovedpoeng i Søren
+Kierkegaards Mozart-avhandling i <title rend="italic">Enten
+– Eller</title> I (<title rend="quotes">De
+umiddelbare erotiske Stadier eller det
+Musikalsk-Erotiske</title>), et verk Ibsen hadde lest <bibl>(Due
+1909, 38)</bibl>. Ifølge Kierkegaard har musikken
+en makt tanken ikke kan fatte: <quote rend="proseIndent">Men denne Kraft, denne
+Magt kan Ordet ikke udtrykke, kun Musikken kan give os en
+Forestilling derom; den er nemlig for Reflexionen og Tanken
+uudsigelig. En ethisk bestemmet Forførers List
+kan jeg tydelig fremsætte i Ord, og Musikken vilde
+forgjæves vove sig til at løse denne
+Opgave. Med <hi rend="italic">Don Juan</hi> forholder det
+sig omvendt. Hvad er det for en Magt? – Ingen kan
+sige det, selv hvis jeg spurgte <hi rend="italic">Zerline</hi> derom, før hun gaaer
+paa Ballet: hvad er det for en Magt, hvormed han
+fængsler dig? – saa vilde hun svare: man
+veed det ikke; og jeg vilde sige: vel talt, mit Barn! Du
+taler visere end Indernes Viismænd, richtig, das
+weiß man nicht; og Ulykken er, at jeg heller ikke
+kan sige dig det <bibl>(Kierkegaard 1997, b. 2, 105).</bibl></quote></p>
+<p>Hos Kierkegaard ligger Don Juans makt i den sanselig-erotiske
+genialitet, som ødelegges av tanken og bevisstheten:
+<quote>Over Commandanten kan han ingen Magt
+udøve, han er Bevidsthed; de Andre ere i hans Magt</quote>
+<bibl>(Kierkegaard 1997, b. 2, 127)</bibl>. Det ville
+altså vært mer i samsvar med Kierkegaard om
+Ibsen hadde skrevet at den gordiske knute blir kuttet ved
+refleksjonens hjelp, i stedet for ved musikkens.</p>
+<p>Originalt for Ibsen er kombinasjonen av operaparodi og politisk
+satire. I sin fortale til stykket skriver han først
+om stortingsforhandlingene, og sier så<HIS:hisRef> (<seg type="red"><ptr type="ht" target="Noht.xml" corresp="koNo_ht_2"/></seg>)</HIS:hisRef>:
+<quote rend="proseIndent">Om Aftenen saa jeg «Norma», og pludselig
+gik der et Lys op for mig: «Storthinget er en
+dramatisk begavet Korporation!»
+[…] Disse Betragtninger var det, som
+bevægede mig til at arrangere Operaen
+«Norma eller en Politikers
+Kjærlighed», hvis Text
+medfølger aftrykt, og som jeg herved tilbyder
+Thinget til Opførelse […].</quote> Preget av parodi harmonerer med
+bladet <title rend="italic">Andhrimner</title>s profil, og med
+tonen i de stortingsreferater Ibsen publiserte annetsteds i bladet.</p>
+<p>Ibsens tekst er formet som et versdrama. Men her skifter han ut
+blankverset (tragedieverset; femfotsjamben) fra <title rend="italic">Catilina</title> med knittelverset. Samtidig
+endrer han stilnivå fra høypoesi til
+lavstil og satire. Knittelen (av <hi rend="italic">knittel</hi>, dvs. <hi rend="italic">rim</hi>)
+kjennetegnes ved at verslinjene ikke inndeles i strofer. Rytmen
+er relativt fri, men bygger på en jambisk grunnform
+med mulighet for fri utfylling med varierende antall lette
+stavelser. I hver verslinje skal det finnes fire
+betonte stavelser, og i slutten av hver rad et rim eller en
+assonans. Knittelen var en av hovedformene innenfor det
+såkalte folkeverset. Den andre hovedformen var
+balladeverset/folkeviseverset. Knittelen var vanlig i middelalderske
+krøniker og ballader innenfor det germanske
+språkområdet, og regnes som en hovedform i
+middelalderens og humanismens drama, også kjent som
+skolekomedien (jf. <bibl>Fafner 1989–2000, b. 2:2,
+50–53</bibl>). Formen ble forbundet med
+folkediktningen, i motsetning til blankverset, det femtaktede
+urimede jambiske versemål som var den dominerende form
+i klassisk dramatikk i første halvdel av 1800-tallet.</p>
+<p>Firtaktigheten har dype røtter i nordeuropeisk
+verskunst <bibl>(Fafner 1989–2000, b. 2:2,
+45–53, 148–49)</bibl>. Også den
+jambiske grunnformen er folkelig. Og endelig er den frie
+stavelsesfyllingen et folkelig motspill til barokkens og
+klassisismens polerte, stavelsestellende vers. Knittelen var
+<quote>eine nicht ganz ernst genommene Form</quote>, sier
+<bibl>Heusler (1956, § 1197)</bibl>. Knittelverset
+er altså dypest sett anti-poetisk, eller, om man vil,
+<hi rend="italic">prosaisk</hi>. Det nærmer seg
+også prosaen ved sine frie stavelsesopphopninger. I
+<title rend="italic">Norma</title> fører dette
+til at det kan være vanskelig å
+avgjøre om enkelte replikker er i prosa eller
+på vers.</p>
+<p>I tiden etter den prosodiske reform, dvs. overgangen til
+stavelsestelling og stavelsesregulering, ble det mote
+å bruke knittelverset satirisk og parodierende.</p>
+<p>Noen romantikere gjorde et stort nummer av knittelens
+versifikatoriske frihet, og behandlet verset utpreget <hi rend="italic">peonisk</hi> eller <hi rend="italic">tetrasyllabisk</hi>. Med en skjerpet fornemmelse
+for taktens betydning <bibl>(Fafner 1989–2000, b. 2:2,
+55–57)</bibl> ble det en sport for diktere og
+skuespillere å innpasse de mange løpske
+stavelsene i firtaktens strenge ramme. Om dette vitner ikke
+minst Oehlenschlägers og J.L. Heibergs teoretiske uttalelser.</p>
+<p>Goethe og romantikerne gav knittelen en uttrykkskarakter som
+på en gang var <hi rend="italic">gotisk</hi> og <hi rend="italic">burlesk</hi>. Den gammelgotiske djervheten fikk
+sitt monument i den udødelige inngangsscenen i
+Faust-tragediens første del: <quote rend="indent">
+<HIS:hisLg>
+<l>Habe nun, ach! Philosophie,</l>
+<l>Juristerei und Medizin,</l>
+<l>Und leider auch Theologie!</l>
+<l>Durchaus studiert, mit heißem Bemühn.</l>
+<l>Da steh’ ich nun, ich armer Tor!</l>
+<l>Und bin so klug als wie zuvor;</l>
+<l>Heiße Magister, heiße Doktor gar,</l>
+<l>Und ziehe schon an die zehen Jahr,</l>
+<l>Herauf, herab und quer und krumm,</l>
+<l>Meine Schüler an der Nase herum –</l>
+</HIS:hisLg>
+<bibl>(Goethe 1999, 33)</bibl></quote>
+Dette er den jevne eller lave stil, retorenes <hi rend="italic">genus humile</hi>, renset for heltemessig
+patos og høye bilder, og tvert imot farvet av
+prosaiske uttrykk som <quote>jeg stakkars fe</quote> og
+<quote>trekke rundt ved nesen</quote>. Knittelen ble et <hi rend="italic">alvorlig</hi> versemål på
+samme måte som aleksandrineren, men når man
+brukte den, skulle man ikke ta tingene <hi rend="italic">helt</hi> alvorlig, det var ikke langt til
+lavkomikken, som i Goethes <title rend="quotes">Jahrmarktsfest
+zu Plundersweilern</title> eller Oehlenschlägers
+<title rend="italic">Sanct Hansaften-Spil</title>. Om
+bruken av knittel i <title rend="italic">Norma</title> henvises
+samlet til Jørgen Fafners kommende behandling av
+emnet i <title rend="italic">Henrik Ibsens verskunst</title>
+(under utg.).</p>
+<p>Ved oppførelsen av Bellinis <title rend="italic">Norma</title> på Christiania Theater
+20. mai 1851 benyttet man Adam Oehlenschlägers danske
+oversettelse av Romanis libretto (<title rend="italic">Norma :
+Tragisk Opera i 2 Akter, med Musik af Bellini</title>, J.D.
+Qvist, København). Originalens undertittel, <title rend="italic">tragedia lirica in due atti</title>, angir at
+det dreier seg om en tragisk opera. Mens Bellinis opera bare har
+to akter, foreskriver Ibsens korte tekst tre, noe som var
+normalt for større operaer. Ibsen viser
+tilsynelatende til forbildets genrebetegnelse når han
+kaller sitt stykke <title rend="italic">Musik-Tragedie</title>,
+skjønt han altså sløyfer selve
+<hi rend="italic">opera</hi>-betegnelsen. Den kommer
+imidlertid inn i hans fortale til stykket, der han kaller sitt
+eget verk <quote>Operaen ‹Norma eller en Politikers Kjærlighed›</quote>
+<HIS:hisRef> (<seg type="red"><ptr type="ht" target="Noht.xml" corresp="koNo_ht_8"/></seg>)</HIS:hisRef>. Det er umulig å vite
+om Ibsen har studert librettoen (eventuelt i
+Oehlenschlägers oversettelse), eller om han bare har
+formet stykket (intrigen, scenografien, personene) etter
+hukommelsen, ut fra oppførelsen på
+Christiania Theater, eventuelt med støtte i en
+rolleliste. Av forbildets handling og intrige kan man bare
+gjenkjenne små glimt av den originale <title rend="italic">Norma</title>. Flere viktige trekk i denne, som
+Normas Medea-lignende planer om å drepe sine to
+små sønner, er utelatt i Ibsens versjon.
+Alt i alt er ulikhetene så store at Bellinis opera
+bare kan betraktes som incitament, idégrunnlag og
+inspirasjonskilde – på et relativt overfladisk nivå.</p>
+<p>Ibsens <title rend="italic">Norma</title> avviker altså fra operalibrettoen på sentrale punkter. Dette kan delvis skyldes at Ibsen må ha forholdt seg til Oehlenschlägers gjendiktning, som ble benyttet ved operaoppførelsen på Christiania Theater, men i tillegg har Ibsen også endret mer radikalt. <hi rend="italic">Pollione</hi>, den romerske prokonsul hos Romani, blir hos Ibsen til <hi rend="italic">Severus</hi> (<quote>begge Damers Elsker – en ‹Liberal› (eller i Mangel deraf: Hr. Stabell)</quote>). Hos Romani heter Druidenes overhode <hi rend="italic">Oroveso</hi>, mens Ibsen (og Oehlenschläger) kaller ham <hi rend="italic">Ariovist</hi>. <quote>Normas Fader, en gammel Druide – Hr. Ueland</quote> har intet tilsvar i Romanis libretto. Normas og Severus’ to gutter blir hos Ibsen til <quote>to svindsottige Sønner</quote>, <quote>Addressen af 1848, Do. af 1851</quote>. Normas venninne <hi rend="italic">Clotilde</hi> og Polliones venn <hi rend="italic">Flavius</hi> (fra originalen) forekommer ikke hos Ibsen. Han har heller ikke med operaens galliske krigere og soldater. Romanis Druider, Barder og Prestinner blir hos Ibsen til <quote>Chor af Druider – Fornuftige Oppositionsmænd samt Skjerkholdt</quote> og <quote>Do. af Druidinder – de Stumme i Thinget</quote>.</p>
+<p>Det er knapt mulig å sammenligne de to versjonene scene
+for scene. I Romanis libretto blir det rullet opp et
+trekantdrama, hvor Pollione har vært Normas elsker og
+er far til hennes to barn – noe som må holdes
+strengt hemmelig, da hun som prestinne plikter å leve
+i sølibat. Pollione forsmår Norma for den
+unge Adalgisa og vil forlate Gallia med henne. Sviket blir
+oppdaget, men det blir også Normas brudd med
+sølibatplikten. Som straff skal hun brennes. Pollione
+erkjenner nå sin skyld og bestiger bålet
+sammen med Norma.</p>
+<p>Oppløsningen av intrigen er forskjellig i
+operalibrettoen og i Ibsens <title rend="italic">Norma</title>.
+Hos Ibsen løses knuten ved at Severus (som tilsvarer
+Pollione) blir minister, slik at selv Norma bøyer seg
+i ærbødighet. Ibsen har bevart
+trekantdramaet mellom Norma, Adalgisa og
+Pollione/Severus, men overfører dette til en
+aktuell politisk situasjon i samtiden. Her bygger han
+på sine erfaringer som stortingsreferent. Han lar
+Norma og druidene representere opposisjonen, Adalgisa og
+Pollione/Severus, eller <quote>Hr. Stabell</quote>,
+Stortingets flertall. De to <quote>svindsottige Sønner</quote> er resultatene av opposisjonens arbeid
+i Stortinget.</p>
+<p>Sceneanvisningene i de to første aktene svarer
+noenlunde til operaen, og tredje akt er lagt til <quote>Samme
+Skov som i første Akt</quote>
+<HIS:hisRef> (<seg type="red"><ptr type="ht" target="Noht.xml" corresp="koNo_ht_9"/></seg>)</HIS:hisRef>. Inspirasjon til
+åpningsscenen kan Ibsen også ha
+fått fra Oehlenschlägers <title rend="italic">Hakon Jarl</title>, der akt 1, scene
+2 foregår i <quote><hi rend="italic">En Offerlund</hi>. (I Baggrunden de tolv store
+Guders Billeder af udhugne Graastene; i Midten Odins.
+– Solen gaaer ned og oplyser dem med sine røde Straaler.) <hi rend="italic">Gudrun</hi> og <hi rend="italic">Astrid</hi> komme ind i Lunden; den første med en Blomsterkrands</quote>
+<bibl>(Oehlenschläger 1849, b. 3)</bibl>.</p>
+<p>Likheten mellom Romani og Oehlenschlägers libretto og
+Ibsens tekst ligger likevel først og fremst i
+hovedtrekk ved trekantkonflikten mellom
+Pollione/Severus, Norma og Adalgisa. En
+fremførelse av Ibsens <title rend="italic">Norma</title> med musikk ville kanskje rent
+teknisk kunne fungere som et komisk-satirisk syngespill,
+eventuelt som en vaudeville, dersom det ble benyttet allerede
+kjent musikk (f.eks. utdrag av Bellinis komposisjon). Ibsens
+tekst kan ikke karakteriseres som noen operalibretto, selv om
+det kunne vært komponert musikk til stykket.
+Strukturen og innholdet svarer i liten grad til en libretto.
+Teksten preges mer av satire og farse, med klare innslag av
+parodi. Det finnes for eksempel ingen partier i Ibsens tekst som
+klart svarer til den opprinnelige operaens to <hi rend="italic">kavatiner</hi> (også kalt <hi rend="italic">arier</hi>). De to steder som hos Ibsen er klart
+angitt som <quote>Chor</quote>, forekommer i
+åpningsscenen og består hovedsakelig av en
+rekke gjentagelser: åtte ganger <quote>ja</quote> og
+fire (fem) ganger <quote>desværre</quote><HIS:hisRef> (<seg type="red"><ptr type="ht" target="Noht.xml" corresp="koNo_ht_10"/></seg>, <seg type="red"><ptr type="ht" target="Noht.xml" corresp="koNo_ht_11"/></seg>)</HIS:hisRef>. I en seriøs opera består ikke gjentagelser av serier med enkeltord; det
+vanlige er gjentagelser av korte fraser, eventuelt med gjentatte enkeltord.</p>
+<p>De dramatiske karakterene i <title rend="italic">Norma</title>
+fungerer som satiriske portretter av navngitte politikere, en
+ikke uvanlig teknikk. I en artikkel <title rend="quotes">Om
+Theatercensuren</title> opponerer J.L. Heiberg mot en
+anmelder i den danske avisen <title rend="italic">Fædrelandet</title>, og sier (med et
+sitat fra anmeldelsen) at dersom noen forfatter skulle
+nøle med å <quote rend="proseIndent">«udlevere til Lystspillet alle
+Geheime-, Conferens-, Etats-, Justiz- og andre Raader til
+fri Afbenyttelse», saa er herved at
+bemærke, at denne Udlevering for længe
+siden har fundet Sted […] for
+nærværende Tid kan der neppe
+være nogen Betænkelighed ved at anvende
+alle disse Klasser af Rangforordningen, foruden adskillige andre <bibl>(Heiberg 1861–62, b. 6, 375–76)</bibl>.</quote>
+Heiberg legger likevel til at det vil svekke den kunstneriske
+virkning dersom man innfører virkelige personer i et
+skuespill, <quote>thi det vilde ophæve den
+kunstneriske Virkning, naar Tanken saa umiddelbart reves ind
+i Virkeligheden</quote> <bibl>(Heiberg 1861–62, b. 6, 376)</bibl>.</p>
+<p>I fortalen til <title rend="italic">Norma</title> siterer Ibsen
+J.L. Heibergs karakteristikk av en bestemt type dramatiske
+karakterer <quote>som man mere maa gjætte sig til end
+anskue og som omsider ved Stykkets Slutning standse der,
+hvor man af Begyndelsen at dømme mindst skulde
+vente det</quote><HIS:hisRef> (<seg type="red"><ptr type="ht" target="Noht.xml" corresp="koNo_ht_12"/></seg>)</HIS:hisRef>.<note type="footer">Sitatet har
+ikke latt seg lokalisere.</note> Dette må
+forstås i lys av Heibergs teori om <hi rend="italic">skjulte</hi> dramapersoner, også
+beskrevet i en anmeldelse av Oehlenschlägers skuespill
+<title rend="italic">Dina</title>
+<bibl>(Heiberg 1861–62, b. 3, bl.a. 370–72,
+383–84; Ystad 1993, 111–13)</bibl>.</p>
+</div>
+</div>
+
+<div type="creation" xml:id="intro_creation">
+<head rend="level2">TILBLIVELSE</head>
+<p><title rend="italic">Norma</title> ble skrevet i Kristiania
+sommeren 1851. Vincenzo Bellinis opera <title rend="italic">Norma</title> hadde premiere ved Christiania Theater
+20. mai 1851 (tre senere oppførelser: 22., 27. og 29.
+mai, jf. <bibl>Anker 1956</bibl>). Ibsen, som antagelig var til stede ved
+premieren, anmeldte oppførelsen i artikkelen <title rend="quotes">Theatret</title>, trykt i «<title rend="italic">Manden</title>»/<title rend="italic">Andhrimner</title> 25. mai 1851. Arbeidet med <title rend="italic">Norma</title> ble sannsynligvis påbegynt
+umiddelbart etter 20. mai. Tredje akt må være
+skrevet etter 4. juni. Denne akten innledes nemlig med en
+sceneanvisning som angir <quote>vilde Hyl […]
+bag Scenen ligesom i ‹Huldrens Hjem›</quote>
+<HIS:hisRef> (<seg type="red"><ptr type="ht" target="Noht.xml" corresp="koNo_ht_13"/></seg>)</HIS:hisRef>. P.A. Jensens nasjonalromantiske
+skuespill <title rend="italic">Huldrens Hjem</title> var blitt
+oppført på Christiania Theater 4. og 6. juni
+1851, og ble anmeldt av Ibsen i «<title rend="italic">Manden</title>»/<title rend="italic">Andhrimner</title> 22. juni, sp. 182–86.</p>
+</div>
+
+<div type="publication" xml:id="intro_publication">
+<head rend="level2">UTGIVELSE</head>
+<p>Noe manuskript kjennes ikke. Teksten kjennes bare fra
+«<title rend="italic">Manden</title>»/<title rend="italic">Andhrimner</title> 2. kvartal, nr. 9, sp.
+137–43 (søndag 1. juni 1851) og nr. 10, sp.
+156–160 (søndag 8. juni 1851). Bladet utkom
+ukentlig i perioden fra 5. januar til 28. september 1851. Det var fra
+først av uten tittel, og ble da omtalt som
+«<title rend="italic">Manden</title>». Fra 3.
+kvartal fikk bladet tittelen <title rend="italic">Andhrimner</title>. «<title rend="italic">Manden</title>»/<title rend="italic">Andhrimner</title> var forlagt av N.F. Axelsen og
+trykt ved A.Th. Nissens boktrykkeri i Kristiania. Publikasjonen
+svarer genremessig til det danske satiriske ukebladet <title rend="italic">Corsaren</title>, utgitt 1840–46 av
+Meïr Aron Goldschmidt. Axelsen dekket alle utgifter ved
+utgivelsen, og forleggeren og de tre
+forfattere/redaktører, Paul Botten-Hansen, Aasmund
+Olavsson Vinje og Henrik Ibsen, skulle etter avtale dele et
+eventuelt overskudd <bibl>(Tveterås 1950–96, b.
+3, 276–79)</bibl>.</p>
+<p>«<title rend="italic">Manden</title>»/<title rend="italic">Andhrimner</title> hadde på det
+høyeste omtrent 100 abonnenter <bibl>(Falkman 1867,
+140)</bibl>. Abonnementspris var i første kvartal 100
+skilling kvartalet, pluss 17 skilling for postgangen. I
+første nummer av andre kvartal angis at prisen er nedsatt
+til 72 skilling pr. kvartal, pluss porto <bibl>(Tveterås 1950–96, b. 2, 95)</bibl>.</p>
+</div>
+</div>
+</body>
+</text>
+</TEI>

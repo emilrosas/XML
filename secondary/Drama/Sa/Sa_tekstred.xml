@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title level="s" type="main">Henrik Ibsens skrifter</title>
+<title level="a" type="desc">Tekstredegjørelse til Sancthansnatten</title>
+<author>ved Christian Janss</author>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
+<respStmt>
+<resp>Kodeteknisk støtte og utvikling</resp>
+<name>AKSIS: Avdeling for kultur, språk og informasjonsteknologi, Universitetsforskning i Bergen (Unifob AS)</name>
+</respStmt>
+<respStmt>
+<resp>Koding</resp>
+<name xml:id="HIS-HB">Hilde Bøe</name>
+<name xml:id="HIS-IF">Ingrid Falkenberg</name>
+<name xml:id="HIS-SBT">Stine Brenna Taugbøl</name>
+<name xml:id="HIS-AMB">Aasta Marie Bjorvand Bjørkøy</name>
+<name xml:id="HIS-NME">Nina M Evensen</name>
+</respStmt>
+<respStmt>
+<resp>Kommentarentiteter</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+</respStmt>
+<respStmt>
+<resp>Rettelser i manuskriptbeskrivelsene</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+</respStmt>
+<respStmt>
+<resp>Implementering av kode</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+<name>Nina M Evensen</name>
+</respStmt>
+<respStmt>
+<resp>Kodekontroll</resp>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+<name>Nina M Evensen</name>
+</respStmt>
+<respStmt>
+<resp>Tekstarbeid</resp>
+<name>Nina M Evensen</name>
+<name>Aasta Marie Bjorvand Bjørkøy</name>
+<name>Ingrid Falkenberg</name>
+</respStmt>
+</titleStmt>
+<publicationStmt>
+<publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+<distributor xml:id="HISe">Universitetet i Oslo</distributor>
+<date when="2012" xml:id="HISe-date"/>
+<pubPlace>Oslo</pubPlace>
+</publicationStmt>
+<sourceDesc>
+<p>Dette dokumentet har ingen kilde.</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<tagsDecl>
+
+</tagsDecl>
+</encodingDesc>
+<profileDesc>
+<langUsage>
+<language ident="nob"/>
+<language ident="fre"/>
+<language ident="eng"/>
+<language ident="rus"/>
+<language ident="ger"/>
+</langUsage>
+</profileDesc>
+<revisionDesc>
+<change><date>23.11.12</date>
+<name>SBT</name><title>Omkoding til TEI P5 og HISe</title>
+</change>
+</revisionDesc>
+</teiHeader>
+<text type="introduction">
+<body>
+<div type="editorialStatement" xml:id="edState">
+<head rend="level2">TEKSTKRITISK REDEGJØRELSE</head>
+
+<div xml:id="edState_prolog">
+<head rend="level3">prolog til sancthansnatten</head>
+<p/>
+</div>
+
+<div xml:id="edState_prolog_basetext">
+<head rend="level3">valg av grunntekst</head>
+<p>Grunnteksten, grunnlaget for HIS’ hovedtekst, er
+førstetrykket fra 1853 i <title rend="italic">Bergens Stiftstidende</title> onsdag 5.
+januar 1853, plassert umiddelbart etter en usignert
+anmeldelse av stykket. Prologen ble fremført ved
+førsteoppførelsen og kan derfor
+betraktes som tilhørende stykket slik det
+første gang fremstod for publikum. Prologen
+mangler overskrift og signatur, men kan tilskrives Ibsen ut
+fra teaterplakatens tekst: <quote>Sancthansnatten,
+Eventyrcomedie i 3 Acter, med Prolog af Henrik Ibsen</quote><HIS:hisRef><!-- (se illustrasjon s. <ptr target="illus-19"/>)--></HIS:hisRef>.</p>
+</div>
+
+<div xml:id="edState_prolog_bibl">
+<head rend="level3">bibliografiske opplysninger</head>
+<p>Ved tekstetableringen er det kollasjonert følgende
+eksemplarer av <title rend="italic">Bergens
+Stiftstidende</title>:
+<list type="standardList">
+<item n="1">Bergen Offentlige Biblioteks eksemplar (hvlb q078.1 B)</item>
+<item n="2">Nasjonalbibliotekets eksemplar (E00 OOO31892)</item>
+<item n="3">Bergen Offentlige Biblioteks eksemplar (fhB49811 1853)</item>
+</list>
+Det er ikke avdekket satsintern variasjon (endringer foretatt under trykkeprosessen i samme opplag) i prologens tekst i de tre eksemplarene.</p>
+<p>Nr. 1 er brukt som hovedeksemplar og er grunnlag for beskrivelsen i det følgende.</p>
+
+<div xml:id="edState_prolog_bibl_binding">
+<head rend="level4">innbinding.</head>
+<p>Hele årgang 14 fra 1853 er bundet sammen.
+Bindet er av papp med sort og gulaktig marmorert
+overtrekkspapir og med bredt, sort limbånd
+på ryggen.</p>
+</div>
+
+<div xml:id="edState_prolog_bibl_format">
+<head rend="level4">format og paginering.</head>
+<p>Hver avis består av ett ark falset i
+folioformat (to blad, fire sider pr. ark), ca. 310 x 410
+mm.<note type="footer">Målene gjelder
+avisens blad, bredde x høyde.</note>
+Sidene er upaginerte, spaltene unummererte. Prologen har
+elleve strofer med åtte linjer hver. 8 3/4 strofe står i den midterste av
+avisens tre spalter og 2 1/4 i den tredje
+spalten. Teksten er plassert litt til venstre i spalten
+og har rett venstremarg. Den foregående
+anmeldelsen leder direkte over i prologen med
+følgende tekst: <quote>Stykkets prolog lyder
+saaledes:</quote>. En ny artikkel følger
+umiddelbart etter prologen, innledet med avsnitt og
+tankestrek, uten signatur, skillestrek eller ny overskrift.</p>
+</div>
+
+<div xml:id="edState_prolog_bibl_typo">
+<head rend="level4">typografi.</head>
+<p>Prologen er satt i fraktur. I tråd med konvensjonen har de
+versifiserte deler av teksten majuskel i
+første ord i linjen. Trykkvaliteten er god.</p>
+</div>
+
+<div xml:id="edState_prolog_bibl_paper">
+<head rend="level4">papir og tilstand.</head>
+<p>Bindets hjørner, kanter og rygg er litt
+slitt, men det er ellers i god stand. Papiret er
+gulnet, tynt avispapir.</p>
+</div>
+</div>
+
+<div xml:id="edState_prolog_textsources">
+<head rend="level3">øvrige tekstkilder</head>
+<p>Det finnes ingen bevarte manuskripter til prologen. Den
+eneste øvrige tekstkilden fra Ibsens levetid er
+den trykte gjengivelsen hos Blanc 1884, 138–41
+(foruten teaterplakaten som gjengir tittelen
+<quote>Prolog</quote>). Teksten hos Blanc avviker flere
+steder ortografisk fra avistrykket. Avvikene kan skyldes
+feil avskrift etter avistrykket, noe den ene av de to
+betydningsbærende ulikhetene kan tyde
+på: I formuleringen <quote>Ensom paa dit stille Kammer</quote>
+<HIS:hisRef> (<seg type="red"><ptr type="ht" target="Saht.xml" corresp="koSa_ht_17"/></seg>)</HIS:hisRef> har Blanc <quote>det stille
+Kammer</quote>. Den andre ikke-ortografiske ulikheten finnes
+i femte strofe<HIS:hisRef> (<seg type="red"><ptr type="ht" target="Saht.xml" corresp="koSa_ht_18"/></seg>)</HIS:hisRef>. Blanc har
+for <quote>svundne Dage</quote> skrevet <quote>gamle
+Dage</quote>. Han kan i teateret eller i avisredaksjonen ha
+hatt tilgang til et for oss ukjent manuskript med denne
+teksten. I sitt forord skriver Blanc at han har hatt tilgang
+til <quote>Arkivsager</quote> ved Bergens Theater, men
+spesifiserer ikke dette nærmere. Like sannsynlig
+er det imidlertid at variasjonen skyldes feil avskrift.</p>
+<p>I tillegg til HIS’ hovedtekst finnes en
+diplomatarisk og søkbar gjengivelse samt en
+fotografisk faksimile av grunnteksten i den elektroniske
+delen av HIS. Her gjengis også den andre
+tekstkilden diplomatarisk, med mulighet for søk
+og sammenligning. Her finnes også en metrisk
+analyse av prologen.</p>
+<p>HIS har i margen sidereferanser til grunnteksten og til HU.</p>
+</div>
+
+<div xml:id="edState_prolog_critical">
+<head rend="level3">tekstkritiske bemerkninger</head>
+<p>Avistrykket mangler tittel. Denne finnes imidlertid
+på teaterplakaten, som HIS følger
+når det gjelder tittelen. Diktet introduseres
+dessuten i anmeldelsen som <quote>Prolog</quote>.</p>
+</div>
+
+<div xml:id="edState_prolog_editions">
+<head rend="level3">tidligere tekstkritiske utgaver</head>
+<p>Prologen er tidligere utgitt i ES 1 og i HU 2 og 14. I begge
+utgaver er avistrykket grunntekst.</p>
+</div>
+
+<div xml:id="edState_drama">
+<head rend="level3">sancthansnatten</head>
+<p/>
+</div>
+<div xml:id="edState_drama_basetext">
+<head rend="level3">valg av grunntekst</head>
+<p>Grunnteksten, grunnlaget for HIS’ hovedtekst, er en
+ikke-egenhendig sufflørbok<note type="footer"><hi rend="italic">Sufflørbok</hi> brukes her
+om scenemanuskript som inneholder hele teksten, i
+motsetning til rollehefter, også om det ikke
+kan påvises at boken har vært brukt
+til suffli.</note> fra Det norske Theater i Bergen,
+TarkUiB NT872, trolig ført i pennen av Ole Johan
+Bucher (se <hi rend="italic">Manuskriptbeskrivelse</hi>).</p>
+<p>Til <title rend="italic">Sancthansnatten</title> finnes det
+også en annen sufflørbok som har
+vært brukt ved førsteoppførelsen, BOB hBI.</p>
+<p>Når det ikke finnes førstetrykk, men
+manuskript fra Ibsens levetid, legger HIS som hovedregel
+vekt på graden av egenhendighet ved valget av
+grunntekst. Når det gjelder
+sufflørbøker, som HIS benytter som
+grunntekst i de tilfeller der hverken trykk eller egenhendig
+manuskript finnes, spiller også nærheten
+til førsteoppførelsen en viktig rolle
+– som den tekst som først ble presentert
+for et publikum. I HIS er sufflørbøker
+grunntekst for <title rend="italic">Kjæmpehøien</title>
+1850, <title rend="italic">Sancthansnatten</title> 1853 og
+<title rend="italic">Olaf Liljekrans</title> 1857.
+Teaterhistoriske studier <bibl>(Berg 2003 og 2004)</bibl>
+viser at sufflørbøkenes tekst av
+produksjonsmessige grunner, bl.a. kort prøvetid
+og derav følgende sterk
+suffløravhengighet, kom til å ligge
+svært nær opp til den teksten som ble
+fremført på scenen. Derfor kan den
+betraktes som en første publisering, om enn
+naturligvis av teksttypologisk annen art enn den
+første trykte offentliggjøring.
+Sufflørbøkene skiller seg
+altså ut både fra de trykte
+grunntekstene i HIS og fra de egenhendige
+manuskriptgrunntekstene, som foreligger ved brevene og
+ufullførte dramaer.</p>
+<p>Vi kan ikke avgjøre definitivt hvilken av
+sufflørbøkene til <title rend="italic">Sancthansnatten</title> som i
+størst grad har ligget til grunn for
+oppførelsen, og legger derfor vekten på
+de egenhendige innslagene: Disse er det flest av i TarkUiB
+NT872. De omfatter rettelser og endringer av ulikt omfang.
+Særlig viktige er de åtte innlimte
+lappene med passasjer som erstatter underliggende tekst. HU
+skriver følgende om dem: <quote>De innklebede
+tillegg er kommet til på slutten av
+året 1852; de inneholder en hel del replikker
+som tar hensyn til målstriden i hovedstaden
+høsten 1852</quote> <bibl>(HU 2, 94)</bibl>.</p>
+<p>Det at grunnteksten inneholder flere egenhendige rettelser,
+kan være et tegn på at den ligger
+nærmest opp til den teksten som ble
+fremført, ettersom Ibsen som
+sceneinstruktør kan ha ønsket
+endringer i forhold til den teksten som ble skrevet ut til
+bruk under prøvene. Motsatt kan de egenhendige
+endringene i TarkUiB NT872 også tale for at det
+var BOB hBI som ble brukt, siden en tekst med mange
+rettelser er mindre egnet til prøvebruk.
+Imidlertid er rettelsene pene og ordentlige, slik at det
+hefter usikkerhet også ved dette argumentet.</p>
+</div>
+
+<div xml:id="edState_drama_bibl">
+<head rend="level3">bibliografiske opplysninger</head>
+<p>Det finnes ingen trykk fra Ibsens levetid. (Om manuskriptmaterialet, se <hi rend="italic">Manuskriptbeskrivelse</hi>.)</p>
+</div>
+
+<div xml:id="edState_drama_textsources">
+<head rend="level3">øvrige tekstkilder</head>
+<p>Ved ederingen av grunnteksten er også de
+øvrige tekstkilder fra Ibsens levetid blitt
+konsultert. Egenhendighet er gitt prioritet.</p>
+<p>Det er bevart et egenhendig tilleggsblad til et tapt
+arbeidsmanuskript, NBO Ms.4° 927. Det finnes
+holdepunkter for at dette har inngått i et
+forelegg til grunnteksten. Videre har vi den nevnte, andre
+sufflørboken, BOB hBI, og dessuten rollehefter,
+TarkUiB NT238.</p>
+<p>Seks bl. noter med sangtekster, TarkUiB NT126en, og en
+unøyaktig avskrift av BOB hBI, NBO Ms.4°
+937a, er sekundære. De er ikke transkribert og har
+ikke hatt betydning for ederingen av grunnteksten. (Se
+også <hi rend="italic">Manuskriptbeskrivelse</hi>.)</p>
+<p>TarkUiB NT872 (sufflørbok og rollehefter) avviker
+i liten grad fra BOB hBI når det gjelder innhold.
+Noen steder er sceneanvisninger endret eller delvis flyttet,
+f.eks. helt til å begynne med, hvor TarkUiB NT872
+har sceneanvisningen i sin helhet etter
+<quote>Første Act</quote>, mens BOB hBI har
+plassert deler av den, dvs. den som gjelder Anna, etter
+<quote>1<hi rend="raised">ste</hi> Scene</quote>.</p>
+<p>Rettelsene i TarkUiB NT872 er stort sett ikke tatt til
+følge i BOB hBI. En av Ibsens
+tilføyelser i grunnteksten er del av den
+løpende tekst i BOB hBI. Dette kan, sammen med
+det faktum at BOB hBI i motsetning til grunnteksten har
+reginotater, være et indisium på at BOB
+hBI er yngre enn grunnteksten og således kanskje
+nærmere førsteoppførelsen.
+Men fordi BOB hBI også har tekst som ikke finnes i
+grunnteksten, kan grunnteksten vanskelig ha vært
+dens direkte eller eneste forelegg. Den viktigste teksten
+som mangler i grunnteksten, er Nissens replikk helt til sist
+i annen akt i BOB hBI, s. 116: <quote>Solen rinder i
+Øst bag Li – /
+Midtsommernattens Spil er forbi! / O, Nissen var
+dog en lykkelig Mand, / Hvis I har Jer moret saa
+godt som han.</quote> Etter Annes replikk <quote>Stille!
+Stille!</quote> står i BOB hBI s. 114
+sceneanvisningen <quote>(Fjeldet lukker sig.)</quote>, som
+heller ikke finnes i TarkUiB NT872.</p>
+<p>I begge sufflørbøkene er
+rolleinnehavernes navn angitt. Navnene er de samme som
+står skrevet utenpå rolleheftene.
+Rolleheftene ligger tekstlig nærmere BOB hBI enn
+TarkUiB NT872, men hva som eventuelt er avskrift og hva som
+er forelegg, kan altså ikke påvises sikkert.</p>
+<p>På s. 148 i TarkUiB NT872 er det satt av plass til
+tekst etter rollenavnet <quote>Chor af usynlige
+Alfer</quote>. Muligens skulle alvenes sang fra begynnelsen
+av annen akt gjentas her. Plass er også satt av
+samme sted i BOB hBI.</p>
+<p>I tillegg til HIS’ hovedtekst finnes en
+diplomatarisk gjengivelse samt fotografisk faksimile av
+grunnteksten i den elektroniske delen av HIS. Her gjengis
+også de øvrige tekstkildene
+diplomatarisk (og for manuskripter: med faksimile), med
+mulighet for søk og sammenligning. Her finnes
+også en metrisk analyse av de versifiserte delene
+av teksten.</p>
+<p>HIS har i margen sidereferanser til grunnteksten og til HU.</p>
+</div>
+
+<div xml:id="edState_drama_critical">
+<head rend="level3">tekstkritiske bemerkninger</head>
+<p>Grunnteksten er som regel lett leselig, med unntak av
+utradert tekst, tekst som er tapt på grunn av
+skader i manuskriptet, og noe av den strøkne
+teksten. Tilfeller av utydelig eller uleselig tekst er
+markert med &lt;tekst&gt; eller &lt;…&gt;,
+og dersom teksttapet skyldes skade, er dette forklart i
+fotnote (se også <hi rend="italic">Manuskriptbeskrivelse</hi>). Tekst som er
+tapt, uleselig eller utydelig, er forsøkt
+rekonstruert innenfor vinkelparenteser dersom dette har
+vært mulig å gjøre med stor
+grad av sannsynlighet.</p>
+<p>Ibsens egne endringer angis i det tekstkritiske apparatet som
+egenhendig, og skilles slik ut fra hovedhånden.
+Flere ukjente hender har med blekk og blyant foretatt mindre
+rettelser, tilføyelser og
+gjeninnføring av strøket tekst. Disse
+ukjente hendene er markert særskilt i den
+elektroniske, men ikke i den trykte hovedteksten.</p>
+<p>Ordvalg, ortografi og grammatikk i <title rend="italic">Sancthansnatten</title> er, som offisiell
+norsk i samtiden, i tråd med danske normer, men
+med enkelte særnorske ord, som f.eks.
+<quote>Hugsturhed</quote>, og med noen markeringer av
+muntlig tale (eks. <quote>hun bli’er
+værre og værre</quote>).</p>
+<p>I HIS er tegnsetting standardisert på
+følgende måte: Etter titler,
+overskrifter og rolleinnførsler i rollelister
+samt replikkåpner i dramateksten er eventuelle
+skilletegn (punktum, komma, kolon) fjernet. I
+sceneanvisninger først i akt og scener, i
+frittstående sceneanvisninger mellom replikker og
+i stedsbeskrivelser etter rolleliste er eventuell parentes
+fjernet. Disse elementene har gjennomgående
+fått stor forbokstav og avsluttes med punktum.
+Frittstående sceneanvisninger har beholdt
+eventuelle <quote>indre</quote> parenteser. Sceneanvisninger
+til slutt i replikker regnes som del av replikken dersom de
+er ufullstendige setninger, og som frittstående,
+utenfor replikken, dersom setningen er fullstendig.</p>
+<p>Sceneanvisninger inne i replikk, inkludert sceneanvisninger
+som står til slutt i replikk (ikke
+frittstående), begynner med liten forbokstav og
+avsluttes uten interpunksjon. Sceneanvisninger som
+følger rett etter replikkinnehaverens navn, har
+ikke parenteser. Øvrige sceneanvisninger i
+replikk har parentes.</p>
+<p>Skillestreker er beholdt der de har strukturerende funksjon,
+for eksempel når de markerer sceneskift, og sceneskiftet
+ikke er markert på annen måte.
+Skillestreker som har karakter av ornament alene, er ikke
+gjengitt. Grunntekstens typografiske system for
+øvrig er ikke forsøkt imitert i HIS. I
+sufflørbokens sceneanvisninger er
+skråstreker med kolon e.l. innenfor brukt i stedet
+for vanlige parentesbuer, eks.: <quote>/:
+hæftigt :/</quote>. I HIS er disse
+transkribert som parentesbuer.</p>
+<p>Som ved de øvrige
+sufflørbok-grunntekstene er det rettet i
+tekstfeil etter HIS’ definisjon av tekstfeil for
+trykte skrifter, men med større forsiktighet,
+ettersom grunnteksten er et håndskrift. Et
+eksempel på en rettelse ut over banale skrivefeil
+er at HIS setter inn ordet <quote>som</quote> i
+<quote>gået mig som hende der drak</quote>.</p>
+<p>De få forekomstene av <quote>Anne</quote> for
+<quote>Anna</quote> og <quote>Poulsen</quote> for
+<quote>Paulsen</quote> har HIS endret slik at
+<quote>Anna</quote> og <quote>Paulsen</quote> gjennomføres.</p>
+<p>I tråd med konvensjonen har de versifiserte deler
+av teksten majuskel i første ord i linjen.</p>
+<p>Tegnsettingen i grunnteksten er gjennomgående
+inkonsekvent, tilfeldig og delvis manglende, og
+ifølge HU i overensstemmelse <quote>med den litt
+skjødesløse tegnsetning Ibsen den
+gang brukte</quote> (HU 2, 95). Som særlig
+mangelfull, men ikke nødvendigvis feilaktig,
+fremstår kommateringen. Ibsens egne rettelser i
+grunnteksten omfatter ikke tegnsetting, som han ikke vektla
+i den tidlige delen av forfatterskapet. HIS retter derfor
+bare i et fåtall av tilfellene, nærmere
+bestemt der hvor feilen gjør teksten vanskelig
+å forstå, slik også manglende
+avsluttende tegn først og fremst rettes der
+mangelen er meningsforstyrrende og kan rettes entydig.</p>
+<p>Alle rettelser er anført i det tekstkritiske
+noteapparatet. Mulige feil og feil som ikke kan rettes
+entydig, er også anført i
+noteapparatet. Vakling i ortografi og interpunksjon som
+avspeiler tidens og Ibsens vekslende praksis, er ikke rettet
+i HIS.</p>
+<p>Tekstendringer i manuskriptet (tilføyelser,
+strykninger, erstatninger og omplasseringer) er gjengitt
+fullstendig som variantapparat i noter. Når
+endringen er egenhendig, gis det opplysning om dette.</p>
+<p>For en oversikt over samtidens språknormer og
+Ibsens språk vises det til en samlet
+redegjørelse i innledningen til <title rend="italic">Catilina</title> 1850. Det vises dessuten til
+de tekstkritiske retningslinjene for HIS i registerbindet.</p>
+<p>HIS har i margen sidereferanser til grunnteksten og til HU.</p>
+</div>
+
+<div xml:id="edState_drama_editions">
+<head rend="level3">tidligere tekstkritiske utgaver</head>
+<p>Stykket ble første gang trykt i ES 1. Grunnteksten
+der er BOB hBI (som trolig var den eneste av de to
+sufflørbøkene utgiverne kjente til).
+ES erstatter første scene i annen akt med den
+egenhendige teksten fra NBO Ms.4° 927.</p>
+<p>I HU brukes flere grunntekster. På samme
+måte som i ES erstattes tekst med NBO
+Ms.4° 927, og dessuten føyes det til
+tekst fra BOB hBI, som på slutten har noen flere
+sceneanvisninger og replikker enn grunnteksten. HU
+følger som hovedregel sine tekstkilders vaklende
+tegnsetting, men det er mange eksempler på at tegn
+(særlig komma, men også punktum og
+semikolon) stilltiende byttes ut, fjernes eller legges til
+(særlig punktum etter rollenavn) i usystematisk
+orden (med unntak av konsekvent tilføyelse av
+stedvis manglende punktum etter rollenavn/sceneanvisninger
+og etter akt- og sceneoverskrifter). HU endrer
+også bruken av stor/liten forbokstav og uthevning i
+forhold til sine grunntekster uten noe gjenkjennelig system.
+Stavemåten av egennavnene
+<quote>Anne</quote>/<quote>Anna</quote> og
+<quote>Paulsen</quote>/<quote>Poulsen</quote> harmoniseres i
+HU på samme måte som i HIS, bortsett fra
+at HU velger de stavemåtene som er
+gjennomført i BOB hBI og NBO Ms.4° 927: <quote>Anne</quote>/<quote>Poulsen</quote>.</p>
+</div>
+</div>
+</body>
+</text>
+</TEI>

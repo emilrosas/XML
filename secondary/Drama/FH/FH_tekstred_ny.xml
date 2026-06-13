@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+<teiHeader>
+<fileDesc>
+<titleStmt>
+<title level="s">Henrik Ibsens skrifter, elektronisk versjon</title>
+<title level="a">Tekstredegjørelse til Fruen fra havet</title>
+<author>ved Ellen Nessheim Wiger</author>
+<funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+<editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
+<respStmt>
+<resp>Kodeteknisk støtte og utvikling</resp>
+<name>AKSIS: Avdeling for kultur, språk og informasjonsteknologi, Universitetsforskning i Bergen (Unifob AS)</name>
+</respStmt>
+<respStmt>
+<resp>Koding</resp>
+<name>Gaute M. Sortland</name>
+</respStmt>
+<respStmt>
+<resp>Tekstarbeid</resp>
+<name>Gaute M. Sortland</name>
+<name>Erlend Lønnum</name>
+</respStmt>
+<respStmt>
+<resp>Kontroll av sitater og ordbøker</resp>
+<name xml:id="IK">Ingrid Korvald</name>
+<name xml:id="GB">Gry Berg</name>
+</respStmt>
+<respStmt>
+<resp>Kontroll av littlist og referanser</resp>
+<name xml:id="HS">Hege Stensrud</name>
+<name>Gaute M. Sortland</name>
+<name>Hanne Sine Andresen</name>
+<name>Erlend Lønnum</name>
+</respStmt>
+<respStmt>
+<resp>Kommentar-, intern- og ht-entiteter</resp>
+<name>Gaute M. Sortland</name>
+<name>Erlend Lønnum</name>
+</respStmt>
+<respStmt>
+<resp>Kodekontroll</resp>
+<name/>
+</respStmt>
+</titleStmt>
+<publicationStmt>
+<publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+<distributor xml:id="HISe">Universitetet i Oslo</distributor>
+<date when="2012" xml:id="HISe-date"/>
+<pubPlace>Oslo</pubPlace>
+</publicationStmt>
+<sourceDesc>
+<p>Dette dokumentet har ingen kilde.</p>
+</sourceDesc>
+</fileDesc>
+<encodingDesc>
+<tagsDecl>
+
+</tagsDecl>
+</encodingDesc>
+<profileDesc>
+<langUsage>
+<language ident="nob"/>
+</langUsage>
+</profileDesc>
+<revisionDesc>
+<change>
+<date>02.01.2013</date>
+<name>SBT</name><title>Fjernet henvisning til faksimile i bokutgaven.</title></change>
+<change>
+<date>13.12.2012</date>
+<name>SBT</name><title>Fjernet gjenværende henvisninger til bokutgaven.</title></change>
+<change>
+<date>12.12.2012</date>
+<name>EFS</name><title>Lenkekoding</title>
+</change>
+<change>
+<date>16.07.2012</date>
+<name>SBT</name><title>Omkoding til TEI P5 og HISe</title>
+</change></revisionDesc>
+</teiHeader>
+
+<text type="introduction">
+<body>
+<div type="editorialStatement" xml:id="edState">
+
+<div xml:id="edState_basetext">
+<head rend="level3">valg av grunntekst</head>
+<p rend="noIndent">Grunnteksten, grunnlaget for HIS’ hovedtekst, er førstetrykket fra 1888.</p>
+</div>
+
+<div xml:id="edState_bibl">
+<head rend="level3">bibliografiske opplysninger</head>
+<p rend="noIndent">Ved tekstetableringen er det kollasjonert følgende eksemplarer:</p>
+
+<list type="standardList">
+<item n="1"><hi rend="italic">Henrik Ibsen skrifter</hi>s eksemplar 1</item>
+<item n="2"><hi rend="italic">Henrik Ibsen skrifter</hi>s eksemplar 2</item>
+<item n="3"><hi rend="italic">Henrik Ibsen skrifter</hi>s eksemplar 3</item>
+</list>
+<p rend="noIndent">Det er avdekket satsintern variasjon (endringer foretatt under trykkeprosessen i samme opplag) i teksten i de tre eksemplarene. Det er derfor delkollasjonert ytterligere fem eksemplarer (ark 1, 4 og 10):</p>
+<list type="standardList">
+<item n="4"><hi rend="italic">Henrik Ibsen skrifter</hi>s eksemplar 4</item>
+<item n="5">Nasjonalbibliotekets eksemplar (80ga25393)</item>
+<item n="6">Nasjonalbibliotekets eksemplar (80ga25391)</item>
+<item n="7">Nasjonalbibliotekets eksemplar (80ga25390)</item>
+<item n="8">Nasjonalbibliotekets eksemplar (80ga25389)</item>
+</list>
+<p rend="noIndent">Variasjonen mellom eksemplarene finnes på tre steder: I ark 1, s. 8, l. 15 har eksemplar 3 <quote>sé</quote>, mens eksemplar 1 og 2 har <quote>se</quote>; i ark 4, s. 64, l. 2 mangler venstre parentesbue i sceneanvisning i eksemplar 3; i ark 10, s. 157, l. 2 mangler punktum etter sceneanvisning i eksemplar 3.</p>
+<p>Det opplyses om det første tilfellet av internvariasjonen i de tekstkritiske notene. De to siste tilfellene omfattes av HIS’ standardisering ved sceneanvisninger (jf. <HIS:hisRef target="edState_critical"><hi rend="italic">Tekstkritiske bemerkninger</hi></HIS:hisRef>).</p>
+<p>Nr. 1 er brukt som hovedeksemplar og er grunnlag for beskrivelsen i det følgende.</p>
+
+<div xml:id="edState_bibl_binding">
+<head rend="level4">innbinding, forsatsblad og omslag.</head>
+<p rend="noIndent">Boken er beskåret, har tresidet gullsnitt og er bundet inn med forlagsbind i brun shirting med dekor i sort og gull på forperm og rygg. På bakpermen er et blindstempel med Gyldendals logo og en ramme rundt kanten av permen. Forfatternavn og tittel er preget midt på forpermen og på ryggen. Forsatsbladene er dobbeltblad i tykt, brunmønstret papir, med den ene delen limt til for- og bakperm. Et flyblad er limt til forsatsbladenes frie del foran og bak.</p>
+<p>Deler av opplaget ble utgitt heftet med omslag; fremre omslagsblad har tittel og utgaveopplysninger på rectosiden og forlagsreklame på versosiden; bakre omslagsblad har forlagsreklame på rectosiden og blank versoside. Resten av opplaget ble utgitt innbundet i forlagsbind (shirting i forskjellige farver) <bibl>(Schiøtz &amp; Ringstrøm 2006, 170)</bibl>.</p>
+</div>
+
+<div xml:id="edState_bibl_format">
+<head rend="level4">format og paginering.</head>
+<p rend="noIndent">Boken består av 14 ark falset i oktavformat (8 blad, 16 sider pr. ark), ca. 110 × 170 mm.<note type="footer">Målene gjelder boksiden, bredde × høyde.</note> Arksignaturene 1–14 finnes på s. [1], 17, 33, 49, 65, 81, 97, 113, 129, 145, 161, 177, 193 og 209. Det siste arket har 15 sider, og bokens omfang er 223 sider. Pagineringen er med arabiske tall, inkluderer første akts begynnelse s. [1] og går fra s. 2 til 223. På s. [54], [94], [131] og [179] begynner nye akter, og pagineringen er her utelatt.</p>
+</div>
+
+<div xml:id="edState_bibl_typo">
+<head rend="level4">typografi.</head>
+<p rend="noIndent">Teksten i <title rend="italic">Fruen fra havet</title> (1888) er satt i antikva. Tittelen er midtstilt og sperret med majuskler. Rollelisten er venstrestilt med unntak av overskriften som er midtstilt og sperret i et fett snitt, rollenavnene er satt i majuskler og kapiteler. Aktoverskrifter er midtstilt med majuskler, i en større grad enn annen tekst. Rollenavn i replikk er satt med majuskler og kapiteler i samme grad som replikkteksten. Sceneanvisninger er satt i en mindre grad enn replikkene og står i parentes. Rollenavn i frittstående sceneanvisninger er satt med majuskler og kapiteler (i samme grad som omkringliggende tekst). På mellomtittelsiden, i rollelisten, etter aktoverskrifter og ved aktslutt brukes enkel, kort skillestrek av varierende lengde; ved siste akts slutt brukes ornamentert skillestrek. Sidetall er plassert i overmarg med en strek under.</p>
+<p>Trykkvaliteten er jevnt god. Det er noen få typografiske mangler og inkonsekvenser, som er rettet stilltiende i HIS’ hovedtekst.</p>
+</div>
+
+<div xml:id="edState_bibl_paper">
+<head rend="level4">papir og tilstand.</head>
+<p rend="noIndent">Papiret er litt gulnet og har noen mindre flekker. Bindet er løsnet fra ryggen. For øvrig er eksemplaret i god stand.</p>
+</div>
+</div>
+
+<div xml:id="edState_textsources">
+<head rend="level3">øvrige tekstkilder</head>
+<p rend="noIndent">De øvrige tekstkildene fra Ibsens levetid består av både manuskripter og trykte utgaver. Manuskriptene omfatter forskjellige forarbeider og utkast i NBO Ms. 4° 1116a, det egenhendige arbeidsmanuskriptet NBO Ms. 4° 1116b, det egenhendige trykkmanuskriptet KBK Collin 262, 4°, III.3 samt en egenhendig avskrift av tittelen og personlisten i brev fra Henrik Ibsen til Julius Hoffory 27. september 1888 (NBO Brevs. 166). (For nærmere beskrivelser, se <HIS:hisRef target="FH_msbeskr.xml"><hi rend="italic">Manuskriptbeskrivelse</hi></HIS:hisRef>.) De trykte utgavene i Ibsens levetid omfatter 1. utg. 1888, FU 8 1902 og 2. utg. 1902. Det kom (minst) to ulovlige, uautoriserte ettertrykk av <title rend="italic">Fruen fra havet</title> i USA i Ibsens levetid (begge Chicago 1889). Det tas ikke hensyn til ulovlige ettertrykksutgaver under tekstetableringen.</p>
+<p>NBO Ms. 4° 1116a, bl. 1–8 og 11 (manuskript 1–3) inneholder forskjellige forarbeider: scenegangsnotater, en tidlig personliste, mindre replikkutkast o.a., som må ligge til grunn for det sammenhengende arbeidsmanuskriptet NBO Ms. 4° 1116b (manuskript 4). Dette manuskriptet er et resultat av to skriveomganger. Den første ser ut som en renskrift, med få rettelser. Deretter gikk Ibsen igjennom og strøk og rettet, med skjødesløs skrift. Som erstatning for en del strykninger i de to siste aktene skrev han nye replikker på egne blad (manuskript 5, NBO Ms. 4° 1116a, bl. 9–10, 12–15). I forarbeidene og i første skriveomgang av arbeidsmanuskriptet er det mange variasjoner i navnebruken.</p>
+<p>Trykkmanuskriptet er utarbeidet på grunnlag av det rettede arbeidsmanuskriptet NBO Ms. 4° 1116b og replikkutkastene NBO Ms. 4° 1116a, bl. 9–10, 12–15. I trykkmanuskriptet har Ibsen foretatt noen rettelser som er tatt til følge i førstetrykket. Ibsen var selv involvert i korrekturarbeidet og fikk tilsendt korrekturark (omtalt i brev til August Larsen <HIS:hisRef target="B1880-1889ht.xml#B18881108AuLa">8. november 1888</HIS:hisRef>). Forskjellene mellom trykkmanuskriptet og førstetrykket er små og gjelder stort sett kommatering, det er adskillig flere kommaer i førstetrykket enn i trykkmanuskriptet. På ordnivå gjelder forskjellene stort sett sceneanvisninger som er utvidet eller lagt til, men det er også noen få forskjeller i replikktekst. Et eksempel på dette er Ellidas replikk <quote>Ah –! Skulde <hi rend="italic">her</hi> være gerning for mig!</quote> i slutten av fjerde akt (<ptr type="ht" target="FHht.xml" corresp="koFH_ht_73"/>). I trykkmanuskriptet sier hun bare <quote>Ah–!</quote>. I tillegg har trykkmanuskriptet stort sett <hi rend="italic">sé/sér/sés</hi> der førstetrykket har <hi rend="italic">se/ser/ses</hi>. Denne endringen ble foretatt av korrekturleser August Larsen, men med Ibsens godkjennelse: <quote>For Deres konsekvente udeladelse af akcenten i ordet se, ser o. s. v. er jeg Dem særdeles forbunden. Den er ganske overflødig […]</quote> (brev til A. Larsen 8. november 1888). Larsen ønsket også å endre <hi rend="italic">såmæn</hi> til <hi rend="italic">såmænd</hi>. Under korrekturen til Rosmersholm hadde Ibsen gått med på dette (jf. innledningen til <title rend="italic">Rosmersholm</title>, under <hi rend="italic">Tekstkritisk redegjørelse</hi>, avsnittet <HIS:hisRef target="Ro_tekstred.xml#edState_textsources"><hi rend="italic">Øvrige tekstkilder</hi></HIS:hisRef>), men nå ville han ikke:</p>
+<quote rend="proseIndent">Om skrivemåden af ordet: såmæn eller såmænd tror jeg der kan disputeres. Jeg har udeladt det stumme d for udtalens skyld. Ganske visst hænger ordet sammen med: mand, mænd; men det turde være et spørsmål om bogstavet d i dette ord er på sin rette plads. I de beslægtede sprog, svensk, tysk og engelsk forekommer det ikke og heller ikke direkte i det oldnordiske. Ligeledes skriver vi: menneske, skønt ordet jo har sit udspring af mand, mænd. Som sagt, jeg tror nok der er adskilligt, som taler for begge skrivemåder (brev til Larsen 8. november 1888).</quote>
+<p rend="noIndent">Larsen hadde også bedt om tillatelse til å rette uttrykket <quote>slet aldeles ikke</quote> (s. 149 i trykkmanuskriptet; samme formulering i NBO Ms. 4° 1116, legg 34, bl. 2v) til <quote>aldeles ikke</quote>. Ibsen skriver i sitt svar at <quote>Det af Dem i Deres forrige brev påpegede udtryk ‹slet aldeles› kan bruges på norsk i skødesløs og ivrig dagligtale. Men når det altså af danske læsere vilde blive betragtet som en blot og bar trykfejl, så er det absolut rigtigt at det blev rettet</quote> (brev til Larsen <HIS:hisRef target="B1880-1889ht.xml#B18881121AuLa">21. november 1888</HIS:hisRef>). Larsen rettet altså, jf. <ptr type="ht" target="FHht.xml" corresp="koFH_ht_74"/>.</p>
+<p>Den egenhendige avskriften av tittelen og personlisten ble sendt til Julius Hoffory, som oversatte <title rend="italic">Fruen fra havet</title> til tysk parallelt med settingen og trykkingen av første utgave i København. Det er ingen forskjeller mellom teksten i avskriften og tilsvarende tekst i trykkmanuskriptet/førstetrykket.</p>
+<p>Forskjellene mellom de trykte utgavene av <title rend="italic">Fruen fra havet</title> er små og gjelder i hovedsak tegnsetting og ortografi. Trykkfeil er rettet, og nye er kommet til, men ingen av større betydning. Færrest forskjeller er det mellom FU og annen utgave; de to utgavene er satsidentiske med unntak av tittelsider, paginering og arksignaturer. Den eneste variansen dem imellom dreier seg om bortfalte tegn og andre mindre forskjeller i trykkvaliteten.</p>
+<p>I tillegg til HIS’ hovedtekst finnes en diplomatarisk og søkbar gjengivelse samt en fotografisk faksimile av grunnteksten. De øvrige tekstkildene gjengis diplomatarisk, manuskriptene også med faksimile, med mulighet for søk og sammenligning.</p>
+<p>HIS har i margen sidereferanser til grunnteksten, til den trykte utgaevn av HIS og til HU.</p>
+</div>
+    
+<div xml:id="edState_critical">
+<head rend="level3">tekstkritiske bemerkninger</head>
+<p rend="noIndent">Ved etableringen av hovedteksten er også de andre tekstkildene fra Ibsens levetid blitt konsultert. Emendasjoner er foretatt med utgangspunkt i samtlige trykte utgaver, trykkmanuskriptet KBK Collin 262, 4°, III.3 og arbeidsmanuskriptet NBO Ms. 4° 1116b.</p>
+<p>Ordvalg, ortografi og grammatikk i grunnteksten er i hovedtrekk som offisiell norsk i samtiden. Men språket bærer preg av muntlige innslag (f.eks. mange kortformer som <quote>bli’</quote> <quote>ble’t</quote>, <quote>dra’</quote>, <quote>Værs’go</quote>), og i tillegg finnes det en rekke språklige nyanser og detaljer som er med på å karakterisere personene i stykket. En mer utførlig gjennomgang av språklige trekk i <title rend="italic">Fruen fra havet</title> finnes i <hi rend="italic">Innledningen</hi>, under <HIS:hisRef target="FH_innl.xml#intro_background_language"><hi rend="italic">Ibsens språklige utvikling</hi></HIS:hisRef>.</p>
+<p>I HIS er tegnsetting standardisert på følgende måte: Etter titler, overskrifter og rolleinnførsler i rollelister samt replikkåpner i dramateksten er eventuelle skilletegn (punktum, komma, kolon) fjernet. I sceneanvisninger først i akt og scener, i frittstående sceneanvisninger mellom replikker og i stedsbeskrivelser etter rolleliste er eventuell parentes fjernet. Disse elementene har gjennomgående fått stor forbokstav og avsluttes med punktum. Frittstående sceneanvisninger har beholdt eventuelle <quote>indre</quote> parenteser. Sceneanvisninger til slutt i replikker regnes som del av replikken dersom de er ufullstendige setninger, og som frittstående, utenfor replikken, dersom setningen er fullstendig.</p>
+<p>Sceneanvisninger inne i replikk, inkludert de som står til slutt i replikk (ikke frittstående), begynner med liten forbokstav og avsluttes uten interpunksjon. Sceneanvisninger som følger rett etter replikkinnehaverens navn, har ikke parenteser. Øvrige sceneanvisninger i replikk har parentes.</p>
+<p>Skillestreker er beholdt der de har strukturerende funksjon, for eksempel når de markerer sceneskift, og sceneskiftet ikke er markert på annen måte. Skillestreker som bare har karakter av ornament, er ikke gjengitt. Grunntekstens typografiske system for øvrig er ikke forsøkt imitert i HIS.</p>
+<p>Tekstfeilene i <title rend="italic">Fruen fra havet</title> (1888) angår i hovedsak feilstaving og manglende eller misvisende tegnsetting. Ibsen gjør oppmerksom på en av feilene i et brev til teatersjef Hans Schrøder <HIS:hisRef target="B1880-1889ht.xml#B18890206HSch">6. februar 1889</HIS:hisRef>: <quote>Undskyld at jeg med et par ord ulejliger Dem i anledning af en trykfejl, den eneste, som forefindes i ‹Fruen fra havet›. Side 193 står nemlig i en parentés ved en af Bolettes repliker: halvt for sig selv. Dette er urigtigt. Der skal stå: halvt <hi rend="italic">fra</hi> sig selv.</quote> Ibsen har altså ikke oppdaget alle trykkfeilene.</p>
+<p>Alle rettelser er anført i det tekstkritiske noteapparatet. Vakling i ortografi og interpunksjon som avspeiler tidens og Ibsens vaklende praksis, er ikke rettet i HIS.</p>
+<p>For en oversikt over samtidens språknormer og Ibsens språk vises det til redegjørelser i innledningene til <HIS:hisRef target="C1_innl.xml#intro_background_language"><hi rend="italic">Catilina</hi> 1850</HIS:hisRef> og <HIS:hisRef target="C2_innl.xml#intro_background_language"><hi rend="italic">Catilina</hi> 1875</HIS:hisRef>. Det vises for øvrig til de <HIS:hisRef target="tekstkritiskeRetningslinjer.xml">tekstkritiske retningslinjene</HIS:hisRef> for HIS.</p>
+</div>
+    
+<div xml:id="edState_editions">
+<head rend="level3">tidligere tekstkritiske utgaver</head>
+<p rend="noIndent">I FU er <title rend="italic">Fruen fra havet</title> trykt i b. 8, med en innledning om tilblivelsen, oversettelser, sekundærlitteratur og oppførelser s. VII–X. Det gis ikke tekstkritiske opplysninger. I MU er det trykt i b. 5 med FU som grunntekst, i samme bind finnes noen språklige kommentarer og en errataliste (MU 5, 17, 42). I ES er forarbeider og utkast til <title rend="italic">Fruen fra havet</title> trykt i b. 3, 137–86, med opplysninger og varianter i b. 3, 478–86. ES har ikke kjent til eller hatt tilgang til avskriften av tittelen og personlisten i brev til Julius Hoffory 27. september 1888 (NBO Brevs. 166). I SU er <title rend="italic">Fruen fra havet</title> trykt i b. 5, tekstgrunnlag er førstetrykket. I b. 7 finnes en kort redegjørelse for valg av grunntekst samt opplysninger om annen utgave (SU 7, 303). I HU er <title rend="italic">Fruen fra havet</title> trykt i b. 11. Tekstgrunnlaget er førstetrykket, men tegnsetting og noen ord (f.eks. sé/sér/sés) er rettet etter trykkmanuskriptet. I tillegg til opplysninger om genesen trykker HU forarbeider og utkast, delvis som løpende tekst og delvis i form av variantapparat (HU 11, 159–252). HU lister dessuten opp en del forskjeller mellom førstetrykket og trykkmanuskriptet (HU 11, 252–57). I appendiks 1 til oversettelsen av dramaet i <hi rend="italic">The Oxford Ibsen</hi> <bibl>(Ibsen 1960–77, b. 7, [456–57])</bibl> finnes en oppstilling av rollenavnene og deres utvikling i manuskriptmaterialet.</p>
+</div>
+</div>
+</body>
+</text>
+</TEI>

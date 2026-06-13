@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.ibsen.uio.no/schema/tei_his.rnc" type="application/relax-ng-compact-syntax"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:HIS="http://www.example.org/ns/HIS">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title level="s">Henrik Ibsens skrifter, elektronisk versjon</title>
+                <title level="a">Tekstkritisk redegjørelse til Brand</title>
+                <author>ved Ellen Nessheim Wiger</author>
+                <funder>Henrik Ibsens skrifter er et nasjonalt prosjekt finansiert av Norges forskningsråd og Kultur- og kirkedepartementet, og med støtte fra Høgskolen i Sør-Trøndelag, Nasjonalbiblioteket, Den norske kirke, Norges teknisk-naturvitenskapelige universitet, Universitetet i Bergen, Universitetet i Oslo, Universitetet i Tromsø og Eckbos legater.</funder>
+                <editor>Redaksjonskomité for Henrik Ibsens skrifter: Vigdis Ystad (hovedredaktør), Asbjørn Aarseth, Daniel Apollon, Thoralf Berg, Christian Janss, Jon Gunnar Jørgensen og Tone Modalsli.</editor>
+<respStmt>
+<resp>Innlemming i elektronisk utgave</resp>
+<name>EDD: Eining for digital dokumentasjon</name></respStmt>
+<respStmt><resp>Kodeteknisk støtte og utvikling</resp>
+<name>AKSIS: Avdeling for kultur, språk og informasjonsteknologi, Universitetsforskning i Bergen (Unifob AS)</name></respStmt>
+<respStmt><resp>HISe-koding</resp>
+<name xml:id="SBT">Stine Brenna Taugbøl</name>
+<name xml:id="EFS">Eivor Finset Spilling</name></respStmt>
+<respStmt><resp>Koding</resp>
+<name xml:id="EL">Erlend Lønnum</name></respStmt>
+<respStmt><resp>Tekstarbeid</resp>
+<name>Nina Marie Evensen</name>
+<name>Erlend Lønnum</name></respStmt>
+<respStmt><resp>Kontroll av sitater og referanser m.m.</resp>
+<name>Maria Alnæs</name>
+<name>Eva Rief</name></respStmt>
+<respStmt><resp>Kommentarentiteter</resp>
+<name>Erlend Lønnum</name></respStmt>
+<respStmt><resp>Kodekontroll</resp>
+<name>Erlend Lønnum</name>
+</respStmt>
+            </titleStmt>
+            <publicationStmt>
+                <publisher>Universitetet i Oslo ved Henrik Ibsens skrifter</publisher>
+                <distributor xml:id="HISe">Universitetet i Oslo</distributor>
+                <date when="2011" xml:id="HISe-date"/>
+                <pubPlace>Oslo</pubPlace>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Fila bygger på 5k_sisteversjon.xml.</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <tagsDecl>
+                
+            </tagsDecl>
+        </encodingDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="nob"/>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change>
+                <date>21.08.2011</date>
+                <name>SBT</name><title>Entiteter</title>
+                Endret æ/ø/å-entiteter til bokstaver. Validert.
+            </change>
+            <change>
+                <date>11.08.2011</date>
+                <name>SBT</name><title>Validering</title>
+                Endret sti til skjema i dokumenttopp.
+            </change>
+            <change>
+                <date>06.07.2011</date>
+                <name>EFS</name><title>Lenkekoding</title>
+                La inn id-verdier i div-strukturen og lenkekodet referansene til tekster som er med i første versjon av HISe.
+            </change>
+            <change>
+                <date>04.07.2011</date>
+                <name>SBT</name><title>P5</title>
+                Kodet om til valid P5.
+            </change>
+            <change>
+                <date>12.04.2011</date>
+                <name>SBT</name><title>Gjorde om til HISe-fil</title>
+                Endret teiHeader. Endret overskriftattributter og kodet om lista over førstetrykkseksemplarer. Fila er valid.
+            </change>
+        </revisionDesc>
+    </teiHeader>
+    
+    <text type="introduction">
+        <body>
+            <div type="editorialStatement" xml:id="edState">
+    <div xml:id="edState_basetext">
+                            
+        <head rend="level3">valg av grunntekst</head>
+        <p rend="noIndent">Grunnteksten, grunnlaget for HIS’ hovedtekst, er førstetrykket fra 1866.</p>
+        
+    </div>
+   
+    
+    <div xml:id="edState_bibl">
+   
+        <head rend="level3">bibliografiske opplysninger</head>
+        <p rend="noIndent">Ved tekstetableringen er det kollasjonert følgende eksemplarer:</p>
+        
+        <list type="numbered">
+            <item n="1">Deichmanske biblioteks eksemplar (Ib 8 br 1 ex)</item>
+            <item n="2">Nasjonalbibliotekets eksemplar (80ga27184)</item>
+            <item n="3">Nasjonalbibliotekets eksemplar (80ga31136)</item>
+        </list>
+        
+        <p rend="noIndent">Det er ikke avdekket satsintern variasjon (endringer foretatt under trykkeprosessen i samme opplag) i teksten i de tre eksemplarene. Nr. 1 er brukt som hovedeksemplar og er grunnlag for beskrivelsen i det følgende.</p>
+        
+        <div xml:id="edState_bibl_binding">
+   
+            <head rend="level4">innbinding, forsatsblad og omslag.</head>
+            
+            <p>Boken er beskåret og bundet inn uten originalt omslagsblad. Innbindingen er håndverksmessig utført i halvbind med hjørner og rygg i brunt skinn, permen er i sort kunstskinn. Ryggen er dekorert med tittel og horisontale striper i gullpreg. Forsatsbladene er tykkere enn papiret for øvrig og har brunt, blomsterlignende mønster.</p>
+            <p><hi rend="italic">Brand</hi> ble utgitt heftet med grått omslag. I tillegg gav forlaget ut noen få bind med Gyldendals sirkelrunde forleggerstempel og en rose i blindtrykk på ryggen (Schiøtz &amp; Ringstrøm 2006, 168), dette kan ha vært prøvebind eller gaveeksemplarer.</p>
+            
+        </div>
+   
+        
+        <div xml:id="edState_bibl_format">
+       
+            <head rend="level4">format og paginering.</head>
+            <p>Boken består av 17 ark falset i oktavformat (8 blad, 16 sider pr. ark), ca. 107 × 168 mm.<note type="footer">Målene gjelder bokens blad, bredde × høyde.</note> Arksignaturene 2–17 finnes på s. 17, 33, 49, 65, 81, 97, 113, [129], 145, 161, 177, 193, 209, 225, 241 og 257. Det siste arket har 15 sider, og bokens omfang er på 271 sider. Paginering er med arabiske tall, inkluderer tittelblad s. [1–2], mellomtittel s. [3], rolleliste s. [4], første akts begynnelse s. [5] og går fra s. 6 til 271. På s. [40], [82], [129] og [186] begynner nye akter, og pagineringen er her utelatt.</p>
+            
+        </div>
+       
+        
+        <div xml:id="edState_bibl_typo">
+       
+            <head rend="level4">typografi.</head>
+            <p>Teksten i <hi rend="italic">Brand</hi> er satt i antikva. <!-- En faksimile av tittelbladet gjengis på s. 223.  -->Tittelen er midtstilt og sperret med majuskler. Rollelisten er venstrestilt med unntak av overskriften som er midtstilt og sperret i et fett snitt, rollenavnene er også satt i et fett snitt. Aktoverskrifter er midtstilt med majuskler, i en større grad enn annen tekst. Rollenavn i replikk er sperret i samme grad som replikkteksten. Sceneanvisninger er satt i en mindre grad enn replikkene og står i parentes. Rollenavn i frittstående sceneanvisninger er satt enten i et fett snitt i en større grad eller sperret (i samme grad som omkringliggende tekst). På mellomtittelside, i rollelisten, etter aktoverskrifter og ved sceneskift i akt brukes enkel, kort skillestrek av varierende lengde; ved siste akts slutt brukes dobbel skillestrek. Sidetall er plassert i overmarg med en kort strek under.</p>
+            <p>Trykkvaliteten er jevnt god. Det er en del typografiske mangler og inkonsekvenser, som er rettet stilltiende i HIS’ hovedtekst.</p>
+            
+        </div>
+       
+        
+        <div xml:id="edState_bibl_paper">
+       
+            <head rend="level4">papir og tilstand.</head>  
+            <p>Papiret er litt gulnet og har noen mindre flekker. Bindet er slitt, særlig i hjørner og rygg. For øvrig er eksemplaret i god stand.</p>
+            
+        </div>
+       
+    </div>
+    
+    
+    <div xml:id="edState_textsources">
+    
+        <head rend="level3">øvrige tekstkilder</head>
+        
+        <p rend="noIndent">De øvrige tekstkildene fra Ibsens levetid består av både manuskripter og trykte utgaver. Manuskriptene omfatter det egenhendige arbeidsmanuskriptet KBK Collin 262, 4°, I.1.1, det egenhendige trykkmanuskriptet KBK Collin 262, 4°, I.1.2 samt et trykt eksemplar av femte utgave med egenhendige rettelser til sjette utgave, NBO Ms.8° 1925 (for nærmere beskrivelse, se <HIS:hisRef target="Br_msbeskr.xml"><hi rend="italic">Manuskriptbeskrivelse</hi></HIS:hisRef>). De trykte utgavene etter førstetrykket er: 2. utg. 1866, 3. utg. 1866, 4. utg. 1866, 5. utg. 1868, 6. utg. 1871, 7. utg. 1874, 8. utg. 1876, 9. utg. 1881, 10. utg. 1885, 11. utg. 1889, 12. utg. 1892, 13. utg. 1895, FU 3 1898, 14. utg. 1898 og 15. utg. 1903. <hi rend="italic">Brand</hi> er det av Ibsens verk som kom ut flest ganger i hans levetid.</p>
+        
+        <p>Arbeidsmanuskriptet veksler mellom renskrevne og kladdepregede partier og har mange rettelser og strykninger. Gjennom hele manuskriptet er enkeltord og små partier rettet eller strøket, men det finnes også eksempler på større rettede partier (f.eks. er nesten all tekst på s. [58] strøket, og på s. [18] og 19 er det som opprinnelig var én replikk, gjort om til en replikkveksling). Manuskriptet ligger til grunn for trykkmanuskriptet. I trykkmanuskriptet har Ibsen foretatt en del rettelser som er tatt til følge i førstetrykket. Forskjellene mellom trykkmanuskriptet og førstetrykket er små og gjelder stort sett interpunksjon.</p>
+        
+        <p><hi rend="italic">Brand</hi> kom ut i fire utgaver allerede i første utgivelsesår. Forskjellene mellom disse fire utgavene er små og gjelder i hovedsak interpunksjon og ortografi. Annen utgave har noen få tekstendringer (f.eks. er <quote>Slukk ikke Lampen, skjønt den oser, / før den har vist dig Vejens Spor</quote> endret til <quote>Slukk ikke Stikken, skjønt den oser, / før Lygten viser Vejens Spor</quote>), jf. brev til Frederik Hegel <HIS:hisRef target="B1844-1871ht.xml#B18660425FH">25. april 1866</HIS:hisRef>, hvor Ibsen hadde lagt ved en (nå tapt) trykkfeilliste. Tredje utgave inneholder en rekke nye trykkfeil og mange tilfeller av typografiske feil (snudde typer, gal skriftstørrelse, gal eller manglende tegnsetting). Mellom tredje og fjerde utgave er det små endringer, bortsett fra at mange av trykkfeilene i tredje utgave er rettet opp.</p>
+        
+        <p>Den <HIS:hisRef target="B1844-1871ht.xml#B18671123FH">23. november 1867</HIS:hisRef> skriver Ibsen til Frederik Hegel: <quote>At ‹Brand› kunde paaregne et 5<hi rend="raised">te</hi> Opplag saa snart var mig en stor Glæde. Naar den Tid kommer, kunde jeg maaske have Lyst till at foretage nogle smaa Rettelser</quote>. De <quote>smaa Rettelser</quote> består i hovedsak i nye uthevinger, flere tankestreker og noen mindre ortografiske endringer, men også noen tekstendringer. For eksempel er Bondens muntlige <quote>Hæ?</quote> i første akt endret til <quote>Hvad?</quote>, <quote>Mindet</quote> er endret til <quote>Sindet</quote> (i linjen <quote>jeg vilde dem af Sindet smugle</quote>), linjene <quote>Den Løgntrøsts Grød i Skrækkens Stund / blir kaldt for Mad af Naadens Mund</quote> er endret til <quote>Med Sang og Skrækk i Knibens Stund / en Dommer smøres nemt om Mund</quote>, og Fogden er i femte utgave <quote>næsten rørt</quote> i stedet for <quote>synlig rørt</quote>. Ifølge HU gjorde Ibsen disse endringene på bakgrunn av Georg Brandes’ kritikk i <hi rend="italic">Dansk Maanedsskrift</hi> 1867 (HU 5, 424–25).</p>
+        
+        <p>Under forberedelsen av sjette utgave gikk Ibsen gjennom femte utgave og foretok en del ortografiske endringer i tråd med anbefalingene fra det skandinaviske rettskrivningsmøtet i Stockholm 1869. Det gjaldt bl.a. små forbokstaver i substantiver, <hi rend="italic">aa</hi>&gt;<hi rend="italic">å</hi>, <hi rend="italic">gj</hi>/<hi rend="italic">kj</hi>&gt;<hi rend="italic">g</hi>/<hi rend="italic">k</hi> i ord som <hi rend="italic">gennem</hi> og <hi rend="italic">kærlighed</hi>, <hi rend="italic">x</hi>&gt;<hi rend="italic">ks</hi> i f.eks. <hi rend="italic">halvvoksne</hi> og enkel for tidligere dobbel konsonant i utlyd, f.eks. i ord som <hi rend="italic">op</hi> og <hi rend="italic">til</hi>, jf. innledningen til Catilina 1875 (HIS 1k, 146–48). Det rettede eksemplar er bevart (NBO Ms.8° 1925, jf. <HIS:hisRef target="Br_msbeskr.xml"><hi rend="italic">Manuskriptbeskrivelse</hi></HIS:hisRef>).</p>
+        
+        <p>De senere utgavene skiller seg minimalt fra sjette utgave, men i tolvte utgave i 1892 ble det foretatt en gjennomgående ortografisk endring (<hi rend="italic">e</hi>&gt;<hi rend="italic">é</hi> i ordet <hi rend="italic">véd</hi>), og i FU i 1898 ble <quote>handling</quote> endret til <quote>akt</quote> og sperret <hi rend="italic">en</hi>/<hi rend="italic">et</hi> ble endret til <hi rend="italic">én</hi>/<hi rend="italic">ét</hi>. For øvrig gjelder det for alle <hi rend="italic">Brand</hi>-utgavene at forutgående utgaves trykkfeil rettes i neste, samtidig som nye trykkfeil kommer til.</p>
+        
+        <p>I tillegg til HIS’ hovedtekst finnes en diplomatarisk og søkbar gjengivelse samt en fotografisk faksimile av grunnteksten i den elektroniske delen av HIS. I den elektroniske utgaven gjengis også de øvrige tekstkildene diplomatarisk, manuskriptene også med faksimile, med mulighet for søk og sammenligning med grunnteksten, samt en metrisk analyse av de versifiserte partiene i teksten.</p>
+        
+        <p>HIS har i margen sidereferanser til grunnteksten og til HU.</p>
+        
+    </div>
+    
+    
+    <div xml:id="edState_critical">
+    
+        <head rend="level3">tekstkritiske bemerkninger</head>
+        
+        <p rend="noIndent">Ved emendasjoner er også de øvrige tekstkilder fra Ibsens levetid blitt konsultert. Egenhendighet er gitt prioritet.</p>
+        
+        <p>Ortografi og grammatikk i grunnteksten er, som offisiell norsk i samtiden, i tråd med danske normer. Ordvalget er preget av et stort antall selvlagde ord, disse er som oftest sammensetninger (<quote>Afgrundssvar</quote>, <quote>Blegsotliv</quote>, <quote>Halvhedsaand</quote>, <quote>Daarekistetanke</quote>), men det finnes også eksempler på at det er adjektivabstrakter i form av avledninger på <hi rend="italic">-hed</hi> (<quote>Lidenhedens</quote>, <quote>Offerlydighed</quote>, <quote>Trangheds</quote>). Mange av de selvlagde ordene forekommer bare i <hi rend="italic">Brand</hi>. Til tross for at mange av stykkets rollefigurer tilhører <quote>Almuen</quote>, er det få eksempler på norvagismer eller folkemålsinnslag i stykket. Et unntak er replikkene til Bonden og Sønnen i begynnelsen av første akt, deres ordvalg er folkelig (f.eks. <quote>Fremmedkarl</quote>, <quote>Fanden nappe mig</quote>, <quote>Hæ?</quote>, <quote>Spriker</quote>).</p>
+        
+        <p>I HIS er tegnsetting standardisert på følgende måte: Etter titler, overskrifter og rolleinnførsler i rollelister samt etter replikkåpner i dramateksten er eventuelle skilletegn (punktum, komma, kolon) fjernet. I sceneanvisninger først i akt og scener, i frittstående sceneanvisninger mellom replikker og i stedsbeskrivelser etter rolleliste er eventuell parentes fjernet. Disse elementene har gjennomgående fått stor forbokstav og avsluttes med punktum. Frittstående sceneanvisninger har beholdt eventuelle <quote>indre</quote> parenteser. Sceneanvisninger til slutt i replikker regnes som del av replikken dersom de er ufullstendige setninger, og som frittstående, utenfor replikken, dersom setningen er fullstendig.</p>
+        
+        <p>Sceneanvisninger inne i replikk, inkludert de som står til slutt i replikk (ikke frittstående), begynner med liten forbokstav og avsluttes uten interpunksjon. Sceneanvisninger som følger rett etter replikkinnehaverens navn, har ikke parenteser. Øvrige sceneanvisninger i replikk har parentes. Avsnittsinnrykk først i versreplikker er fjernet.</p>
+        
+        <p>Skillestreker er beholdt der de har strukturerende funksjon, for eksempel når de markerer sceneskift og sceneskiftet ikke er markert på annen måte. Skillestreker som bare har karakter av ornament, er ikke gjengitt. Grunntekstens typografiske system for øvrig er ikke forsøkt imitert i HIS.</p>
+        
+        <p>Tekstfeilene i <hi rend="italic">Brand</hi> angår i hovedsak feilstaving og manglende eller misvisende tegnsetting. Alle rettelser er ført i det tekstkritiske noteapparatet. Når teksten avviker betydelig i kilder som anvendes ved rettelser, føres ikke tekst herfra i rettelsesnoten, og formuleringen <quote>teksten mangler i</quote> benyttes heller ikke. Den avvikende teksten vises derimot i sin sammenheng i den elektroniske delen av HIS. Dersom det er relevant for vår rettelse, vil tekstendringer i kilden det siteres fra, kommenteres kort i rettelsesnoten. Vakling i ortografi og interpunksjon som avspeiler tidens og Ibsens vekslende praksis, er ikke rettet i HIS.</p>
+        
+        <p>Ibsen kommenterer selv språket i <hi rend="italic">Brand</hi> i brev til Frederik Hegel <HIS:hisRef target="B1844-1871ht.xml#B18651125FH">25. november 1865</HIS:hisRef> (jf. også kommentarene til brevet). For en mer generell oversikt over samtidens språknormer og Ibsens språk vises det til redegjørelser i innledningen til <hi rend="italic">Catilina</hi> 1875 (HIS 1k, 146–48). Det vises dessuten til de tekstkritiske retningslinjene for HIS i registerbindet.</p>
+        
+    </div>
+    
+    
+    <div xml:id="edState_editions">
+    
+        <head rend="level3">tidligere tekstkritiske utgaver</head>
+        
+        <p rend="noIndent">Utdrag fra arbeidsmanuskriptet til <hi rend="italic">Brand</hi> er trykt i ES 2, i b. 3 redegjøres det for arbeidsmanuskriptet samt det episke utkastet ([<hi rend="italic">Episk Brand</hi>]), trykkmanuskriptet er ikke nevnt (ES 3, 396–412). Videre er teksten trykt i FU 3, med en innledning om tilblivelse, oversettelser, sekundærlitteratur og oppførelser s. I–IX, men uten tekstkritiske opplysninger. I MU er det trykt i b. 2 med FU som grunntekst. Noen språklige kommentarer og en errataliste finnes i b. 5 (MU 5, 8 og 39). I SU er det trykt i b. 2, tekstgrunnlag er sjette utgave. I b. 7 finnes en kort redegjørelse for valg av grunntekst samt opplysninger om de trykte utgavene av <hi rend="italic">Brand</hi> (SU 7, 287–91). I HU er teksten trykt i b. 5, med noen rettelser, tekstgrunnlaget er første utgave. HU lister dessuten opp forskjeller mellom de trykte utgavene av <hi rend="italic">Brand</hi>, samt forskjeller og rettelser i arbeidsmanuskriptet og trykkmanuskriptet. I tillegg gjøres det rede for forskjellene mellom det episke utkastet ([<hi rend="italic">Episk Brand</hi>]) og den endelige dramaversjonen (HU 5, 423–97).</p>
+        
+    </div>
+    
+    
+</div>
+
+        </body>
+    </text>
+    </TEI>

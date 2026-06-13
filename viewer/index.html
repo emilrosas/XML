@@ -1,0 +1,648 @@
+$ cat /home/user/XML/viewer/index.html
+
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Henrik Ibsens skrifter – Brand</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Georgia', serif;
+    font-size: 16px;
+    background: #f8f5f0;
+    color: #1a1a1a;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  header {
+    background: #2c2416;
+    color: #e8d8b0;
+    padding: 10px 24px;
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+    flex-shrink: 0;
+    border-bottom: 3px solid #8b6914;
+  }
+  header h1 { font-size: 1.15rem; font-weight: normal; letter-spacing: 0.04em; }
+  header .series { font-size: 0.8rem; color: #b8a878; }
+
+  .tab-bar {
+    background: #3d3020;
+    display: flex;
+    gap: 2px;
+    padding: 8px 24px 0;
+    flex-shrink: 0;
+  }
+  .tab {
+    padding: 6px 18px;
+    background: #2c2416;
+    color: #b8a878;
+    border: none;
+    cursor: pointer;
+    font-family: Georgia, serif;
+    font-size: 0.85rem;
+    border-radius: 4px 4px 0 0;
+    transition: background 0.15s;
+  }
+  .tab.active { background: #f8f5f0; color: #1a1a1a; font-style: italic; }
+  .tab:hover:not(.active) { background: #4d4030; color: #e0d0a0; }
+
+  .act-nav {
+    background: #f0e8d0;
+    border-bottom: 1px solid #d4c8a8;
+    padding: 6px 24px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    font-size: 0.78rem;
+    color: #5a4a2a;
+    align-items: center;
+  }
+  .act-nav span.lbl { font-variant: small-caps; letter-spacing: 0.05em; }
+  .act-link {
+    color: #6a4a0a;
+    cursor: pointer;
+    text-decoration: none;
+    border-bottom: 1px dotted #8b6914;
+  }
+  .act-link:hover { color: #3a2a0a; border-bottom-color: #3a2a0a; }
+
+  .main-layout {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+  }
+
+  .text-panel {
+    flex: 1;
+    overflow-y: auto;
+    padding: 36px 56px 60px;
+    max-width: 700px;
+  }
+
+  .sidebar {
+    width: 370px;
+    min-width: 260px;
+    background: #fff;
+    border-left: 1px solid #d4c8a8;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+  }
+
+  .sidebar-header {
+    background: #f0e8d0;
+    border-bottom: 1px solid #d4c8a8;
+    padding: 10px 16px;
+    font-size: 0.75rem;
+    color: #5a4a2a;
+    font-variant: small-caps;
+    letter-spacing: 0.08em;
+    flex-shrink: 0;
+    position: sticky;
+    top: 0;
+  }
+
+  .sidebar-body { padding: 20px; flex: 1; }
+
+  .sidebar-empty {
+    color: #aaa;
+    font-size: 0.88rem;
+    font-style: italic;
+    line-height: 1.6;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 20px;
+  }
+
+  /* ---- Drama text ---- */
+  .front-matter { margin-bottom: 2.5em; }
+
+  .title-page { text-align: center; margin: 1.5em 0 2em; }
+  .title-main { font-size: 1.9rem; letter-spacing: 0.12em; font-weight: bold; }
+  .title-sub { font-size: 1rem; margin-top: 0.4em; letter-spacing: 0.06em; }
+  .byline { margin-top: 1.2em; font-size: 0.9rem; letter-spacing: 0.06em; }
+  .imprint { margin-top: 2em; font-size: 0.8rem; color: #5a4a2a; line-height: 1.7; }
+
+  .cast-section { margin: 1.5em 0 2em; }
+  .cast-head {
+    font-size: 0.9rem;
+    font-variant: small-caps;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.7em;
+    color: #3a2a0a;
+  }
+  .cast-item {
+    display: flex;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    gap: 8px;
+  }
+  .cast-role { font-variant: small-caps; font-size: 0.85rem; }
+  .cast-desc { color: #4a3a1a; font-style: italic; }
+
+  .set-note { font-style: italic; color: #4a3a1a; font-size: 0.9rem; margin: 1em 0 2em; }
+
+  .act { margin-bottom: 3em; }
+  .act-head {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    text-align: center;
+    margin: 2em 0 1.2em;
+    color: #2c1a0a;
+    border-top: 1px solid #c8b88a;
+    border-bottom: 1px solid #c8b88a;
+    padding: 7px 0;
+  }
+  .scene-head {
+    text-align: center;
+    font-style: italic;
+    color: #5a4a2a;
+    font-size: 0.9rem;
+    margin: 1.4em 0 0.8em;
+  }
+
+  .stage-block {
+    font-style: italic;
+    color: #4a3a1a;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    margin: 0.5em 0;
+    padding-left: 0;
+  }
+
+  .speech { margin: 0.25em 0; }
+  .sp-opener { margin-bottom: 1px; }
+  .speaker {
+    font-variant: small-caps;
+    font-size: 0.9rem;
+    color: #1a0a00;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+  }
+  .stage-inline {
+    font-style: italic;
+    color: #5a4a2a;
+    font-size: 0.85rem;
+    font-weight: normal;
+    font-variant: normal;
+  }
+
+  .stanza { margin: 0.15em 0 0.5em; }
+  .line { line-height: 1.65; }
+  .line-indent { padding-left: 2em; }
+
+  em { font-style: italic; }
+  strong { font-weight: bold; }
+
+  .pb-num {
+    font-family: sans-serif;
+    font-size: 0.6rem;
+    color: #bbb;
+    vertical-align: super;
+    margin: 0 1px;
+    cursor: default;
+    user-select: none;
+  }
+
+  /* Commentary markers */
+  .ko-mark {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    line-height: 13px;
+    font-size: 8px;
+    text-align: center;
+    background: #9b7a14;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    vertical-align: super;
+    margin: 0 1px;
+    transition: background 0.15s;
+    font-style: normal;
+    font-variant: normal;
+    font-family: sans-serif;
+    text-decoration: none;
+    flex-shrink: 0;
+  }
+  .ko-mark:hover { background: #5a3e08; }
+  .ko-mark.lit { background: #c04010; }
+
+  /* TC note refs */
+  .tc-span {
+    border-bottom: 1px dashed #9b7a14;
+    cursor: pointer;
+  }
+  .tc-span:hover { background: #f5e8c0; border-bottom-color: #5a3e08; }
+  .tc-span.lit { background: #fde0b8; border-bottom-color: #c04010; }
+
+  /* Sidebar commentary */
+  .comm-term {
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #1a0a00;
+    border-left: 3px solid #9b7a14;
+    padding-left: 9px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  .comm-gloss {
+    font-size: 0.88rem;
+    line-height: 1.7;
+    color: #222;
+  }
+  .comm-gloss em { color: #2a1a00; }
+  .comm-gloss blockquote {
+    margin: 8px 0 8px 0;
+    padding: 4px 10px;
+    border-left: 2px solid #c8b88a;
+    font-style: italic;
+    color: #3a2a0a;
+    font-size: 0.86rem;
+  }
+  .tc-label {
+    font-size: 0.78rem;
+    font-variant: small-caps;
+    color: #888;
+    margin-bottom: 6px;
+    letter-spacing: 0.06em;
+  }
+  .tc-body {
+    font-size: 0.87rem;
+    line-height: 1.65;
+  }
+  .tc-body em { font-style: italic; }
+
+  .loading-msg {
+    padding: 60px 24px;
+    text-align: center;
+    color: #888;
+    font-style: italic;
+  }
+  .error-msg {
+    padding: 40px 24px;
+    color: #c04010;
+    font-size: 0.9rem;
+  }
+
+  @media (max-width: 860px) {
+    .sidebar { display: none; }
+    .text-panel { max-width: 100%; padding: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="series">Henrik Ibsens skrifter · bind 5</div>
+  <h1>Brand – et dramatisk digt (1866)</h1>
+</header>
+
+<div class="tab-bar">
+  <button class="tab active">Tekst</button>
+  <button class="tab">Kommentarer</button>
+  <button class="tab">Manuskripter</button>
+</div>
+
+<div class="act-nav" id="act-nav">
+  <span class="lbl">Gå til:</span>
+</div>
+
+<div class="main-layout">
+  <div class="text-panel" id="text-panel">
+    <div class="loading-msg">Laster tekst…</div>
+  </div>
+
+  <div class="sidebar">
+    <div class="sidebar-header" id="sidebar-hdr">Kommentarer og noter</div>
+    <div class="sidebar-body" id="sidebar-body">
+      <div class="sidebar-empty">Klikk på et <span style="background:#9b7a14;color:#fff;border-radius:50%;display:inline-block;width:14px;height:14px;text-align:center;font-size:9px;line-height:14px;font-family:sans-serif">●</span> (kommentarmerke) eller på et <span style="border-bottom:1px dashed #9b7a14">understreket ord</span> (tekstkritisk note) for å lese kommentaren.</div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ---- Utilities ----
+function esc(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+function byLocal(parent, name) {
+  // Works for both HTML and namespaced XML docs
+  return [...parent.getElementsByTagName('*')].filter(el => el.localName === name);
+}
+function firstByLocal(parent, name) {
+  return byLocal(parent, name)[0] || null;
+}
+
+// ---- Global stores ----
+const comm = {};   // koBr_ID -> {term: html, gloss: html}
+const tcn  = {};   // noteBr_ID -> html
+
+// ---- Load XML ----
+async function fetchXml(url) {
+  const r = await fetch(url);
+  if (!r.ok) throw new Error(`HTTP ${r.status} for ${url}`);
+  const txt = await r.text();
+  return new DOMParser().parseFromString(txt, 'application/xml');
+}
+
+// ---- Render a secondary-file node to HTML (for sidebar) ----
+function rSide(node) {
+  if (node.nodeType === 3) return esc(node.textContent);
+  if (node.nodeType !== 1) return '';
+  const local = node.localName;
+  const kids = () => [...node.childNodes].map(rSide).join('');
+  switch (local) {
+    case 'hi':
+      return node.getAttribute('rend') === 'italic'
+        ? `<em>${kids()}</em>`
+        : node.getAttribute('rend') === 'bold'
+          ? `<strong>${kids()}</strong>`
+          : kids();
+    case 'emph': return `<em>${kids()}</em>`;
+    case 'quote': return `<blockquote>${kids()}</blockquote>`;
+    case 'title': return `<em>${kids()}</em>`;
+    case 'hisRef': return `<em>${kids()}</em>`;
+    case 'ptr': return '';
+    case 'seg': return kids();
+    case 'ref': return kids();
+    case 'note': return kids();
+    // For TC notes: hisTerm and hisRef at start
+    case 'hisTerm': return '';
+    default: return kids();
+  }
+}
+
+// ---- Parse commentary XML ----
+function parseComm(doc) {
+  for (const item of byLocal(doc, 'item')) {
+    const ptr = firstByLocal(item, 'ptr');
+    if (!ptr) continue;
+    const id = ptr.getAttribute('corresp');
+    if (!id) continue;
+    const termEl = firstByLocal(item, 'hisTerm');
+    const glossEl = firstByLocal(item, 'hisGloss');
+    comm[id] = {
+      term: termEl ? esc(termEl.textContent.trim()) : '',
+      gloss: glossEl ? rSide(glossEl) : ''
+    };
+  }
+}
+
+// ---- Parse TC notes XML ----
+function parseTcn(doc) {
+  for (const note of byLocal(doc, 'note')) {
+    const id = note.getAttribute('xml:id') || note.getAttribute('id');
+    if (!id) continue;
+    tcn[id] = rSide(note);
+  }
+}
+
+// ---- Render main text nodes ----
+function rMain(node) {
+  if (node.nodeType === 3) return esc(node.textContent);
+  if (node.nodeType !== 1) return '';
+  const local = node.localName;
+  const kids = () => [...node.childNodes].map(rMain).join('');
+  const a = name => node.getAttribute(name);
+
+  switch (local) {
+    case 'TEI': case 'teiHeader': return '';
+    case 'text': case 'body': case 'back': return kids();
+
+    case 'front':
+      return `<div class="front-matter">${kids()}</div>`;
+
+    case 'titlePage':
+      return `<div class="title-page">${kids()}</div>`;
+    case 'docTitle': return kids();
+    case 'titlePart': {
+      const t = a('type') || 'main';
+      return `<div class="title-${t}">${kids()}</div>`;
+    }
+    case 'byline': return `<div class="byline">${kids()}</div>`;
+    case 'docAuthor': return kids();
+    case 'hisDocImprint': return `<div class="imprint">${kids()}</div>`;
+    case 'pubPlace': return `<div>${kids()}</div>`;
+    case 'publisher': return `<div>${kids()}</div>`;
+    case 'printer': return '';
+    case 'hisPrinter': return '';
+    case 'date': return `<div>${kids()}</div>`;
+
+    case 'hisCastList': {
+      return `<div class="cast-section">${kids()}</div>`;
+    }
+    case 'castList': return `<div class="cast-section">${kids()}</div>`;
+    case 'castItem': {
+      return `<div class="cast-item">${kids()}</div>`;
+    }
+    case 'role': return `<span class="cast-role">${kids()}</span>`;
+    case 'roleDesc': return `<span class="cast-desc">, ${kids()}</span>`;
+
+    case 'head': {
+      const t = a('type');
+      if (t === 'castList') return `<div class="cast-head">${kids()}</div>`;
+      if (t === 'act') return `<h2 class="act-head">${kids()}</h2>`;
+      if (t === 'scene') return `<div class="scene-head">${kids()}</div>`;
+      return `<div class="scene-head">${kids()}</div>`;
+    }
+
+    case 'set': return `<div class="set-note">${kids()}</div>`;
+    case 'p': return `<p style="margin:.5em 0;line-height:1.65">${kids()}</p>`;
+
+    case 'div': {
+      const t = a('type');
+      const xmlid = a('xml:id') || a('id') || '';
+      if (t === 'act') return `<section class="act"${xmlid ? ` id="${esc(xmlid)}"` : ''}>${kids()}</section>`;
+      if (t === 'scene') return `<div class="scene">${kids()}</div>`;
+      return kids();
+    }
+
+    case 'stage': return `<div class="stage-block">${kids()}</div>`;
+    case 'hisStage': return ` <span class="stage-inline">${kids()}</span>`;
+
+    case 'hisSp': return `<div class="speech">${kids()}</div>`;
+    case 'spOpener': return `<div class="sp-opener">${kids()}</div>`;
+    case 'speaker': return `<span class="speaker">${kids()}</span>`;
+
+    case 'hisLg': case 'lg': return `<div class="stanza">${kids()}</div>`;
+    case 'l': {
+      const part = a('part');
+      const cls = (part === 'M' || part === 'F') ? ' line-indent' : '';
+      return `<div class="line${cls}">${kids()}</div>`;
+    }
+
+    case 'anchor': {
+      const t = a('type');
+      const id = a('xml:id') || a('id');
+      if ((t === 'lemma' || t === 'ht') && id) {
+        return `<span class="ko-mark" data-id="${esc(id)}" title="Kommentar">●</span>`;
+      }
+      return '';
+    }
+
+    case 'hisRef': {
+      const t = a('type');
+      const id = a('xml:id') || a('id');
+      if (t === 'tcNote' && id) {
+        return `<span class="tc-span" data-id="${esc(id)}">${kids()}</span>`;
+      }
+      return kids();
+    }
+
+    case 'emph': return `<em>${kids()}</em>`;
+    case 'hi': {
+      if (a('rend') === 'italic') return `<em>${kids()}</em>`;
+      if (a('rend') === 'bold') return `<strong>${kids()}</strong>`;
+      return kids();
+    }
+    case 'title': return `<em>${kids()}</em>`;
+    case 'quote': return `<q>${kids()}</q>`;
+
+    case 'note': {
+      if (a('type') === 'met') return ''; // skip metrical annotation notes
+      return '';
+    }
+
+    case 'pb': {
+      const n = a('n');
+      const ed = a('ed');
+      // Only show main page numbers (not from specific editions)
+      if (n && !ed) return `<span class="pb-num" title="Side ${n}">[${n}]</span>`;
+      return '';
+    }
+
+    case 'seg': return kids();
+    case 'choice': {
+      // Prefer corr over orig
+      const corrEl = [...node.childNodes].find(c => c.localName === 'corr');
+      return corrEl ? rMain(corrEl) : kids();
+    }
+    case 'corr': return kids();
+    case 'orig': return '';
+    case 'del': return '';
+    case 'add': return kids();
+    case 'supplied': return `[${kids()}]`;
+    case 'gap': return '[…]';
+    case 'ref': return kids();
+
+    // Skip
+    case 'fw': case 'figure': case 'figDesc': return '';
+    case 'list': case 'item': case 'label': return kids(); // for lists in front matter
+
+    default: return kids();
+  }
+}
+
+// ---- Build act navigation ----
+function buildNav(doc) {
+  const nav = document.getElementById('act-nav');
+  const acts = [...doc.getElementsByTagName('*')]
+    .filter(el => el.localName === 'div' && el.getAttribute('type') === 'act');
+
+  acts.forEach((act, i) => {
+    const id = act.getAttribute('xml:id') || act.getAttribute('id');
+    const headEl = firstByLocal(act, 'head');
+    let label = headEl ? headEl.textContent.trim().replace(/\s+/g,' ').substring(0,50) : `Handling ${i+1}`;
+    const link = document.createElement('a');
+    link.className = 'act-link';
+    link.textContent = label;
+    link.href = '#';
+    link.onclick = e => {
+      e.preventDefault();
+      if (id) {
+        const el = document.getElementById(id);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    };
+    nav.appendChild(link);
+    if (i < acts.length - 1) {
+      nav.appendChild(document.createTextNode(' · '));
+    }
+  });
+}
+
+// ---- Show in sidebar ----
+function showSidebar(type, id) {
+  const hdr = document.getElementById('sidebar-hdr');
+  const body = document.getElementById('sidebar-body');
+
+  // Clear active state
+  document.querySelectorAll('.ko-mark.lit, .tc-span.lit').forEach(el => el.classList.remove('lit'));
+
+  if (type === 'ko') {
+    document.querySelectorAll(`.ko-mark[data-id="${id}"]`).forEach(el => el.classList.add('lit'));
+    const entry = comm[id];
+    hdr.textContent = 'Kommentar';
+    if (entry) {
+      body.innerHTML = `<div>
+        <div class="comm-term">${entry.term}</div>
+        <div class="comm-gloss">${entry.gloss}</div>
+      </div>`;
+    } else {
+      body.innerHTML = `<div class="sidebar-empty">Ingen kommentar registrert for <em>${esc(id)}</em>.</div>`;
+    }
+  } else if (type === 'tc') {
+    document.querySelectorAll(`.tc-span[data-id="${id}"]`).forEach(el => el.classList.add('lit'));
+    const note = tcn[id];
+    hdr.textContent = 'Tekstkritisk note';
+    if (note) {
+      body.innerHTML = `<div>
+        <div class="tc-label">Tekstkritisk variant</div>
+        <div class="tc-body">${note}</div>
+      </div>`;
+    } else {
+      body.innerHTML = `<div class="sidebar-empty">Ingen note funnet for <em>${esc(id)}</em>.</div>`;
+    }
+  }
+}
+
+// ---- Main ----
+async function main() {
+  const panel = document.getElementById('text-panel');
+  try {
+    const [mainDoc, commDoc, tcDoc] = await Promise.all([
+      fetchXml('../ibsen/drama/Br/Brht.xml'),
+      fetchXml('../secondary/Drama/Br/Br_komm.xml'),
+      fetchXml('../ibsen/drama/Br/Brht_noter.xml'),
+    ]);
+
+    parseComm(commDoc);
+    parseTcn(tcDoc);
+
+    // Find <text> in main doc
+    const textEl = firstByLocal(mainDoc, 'text');
+    if (!textEl) throw new Error('Ingen <text>-element funnet i XML');
+
+    panel.innerHTML = rMain(textEl);
+    buildNav(mainDoc);
+
+    // Event delegation for clicks
+    panel.addEventListener('click', e => {
+      const km = e.target.closest('.ko-mark');
+      const tc = e.target.closest('.tc-span');
+      if (km) showSidebar('ko', km.dataset.id);
+      else if (tc) showSidebar('tc', tc.dataset.id);
+    });
+
+  } catch (err) {
+    panel.innerHTML = `<div class="error-msg"><strong>Feil ved lasting:</strong><br>${esc(err.message)}</div>`;
+    console.error(err);
+  }
+}
+
+main();
+</script>
+</body>
+</html>
